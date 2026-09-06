@@ -17,7 +17,7 @@
 <meta content="https://b-atlas.org/images/batlas-logo.png" property="og:image"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"B-Atlas","url":"https://b-atlas.org/","description":"B-Atlas is a community-powered boat knowledge and research resource for discovering, comparing and researching cruising boat models and buyer trade-offs.","@id":"https://b-atlas.org/#website","inLanguage":"en"}</script>
-<link href="styles.css?v=6.71.3" rel="stylesheet"/>
+<link href="styles.css?v=6.72.0" rel="stylesheet"/>
 <link href="bscout-visual-standard.css?v=6.71.3" rel="stylesheet"/>
 <link href="guide-visual-standard.css?v=6.71.3" rel="stylesheet"/>
 <link href="home-visual-standard.css?v=6.71.3" rel="stylesheet"/>
@@ -567,8 +567,11 @@
 <h2>Saved Models</h2>
 <p id="decisionWorkspaceProfileName">Models and listings you are considering</p>
 </div>
+<div class="decision-workspace-header-actions">
+<button class="workspace-secondary-btn" id="moveShareSavedModelsBtn" type="button">Move / Share</button>
 <button disabled="" id="compareWorkspaceSelectionBtn" type="button">Compare Selected (0)</button>
-<button disabled="" id="createBoatWatchBtn" type="button">Create Boat Watch (0)</button></div>
+<button disabled="" id="createBoatWatchBtn" type="button">Create Boat Watch (0)</button>
+</div></div>
 <div aria-label="Saved model status filters" class="decision-workspace-filters" role="group">
 <button class="decision-filter-btn active" data-status="All" type="button">All</button>
 <button class="decision-filter-btn" data-status="Interested" type="button">Interested</button>
@@ -764,6 +767,45 @@ Engine manual — paper copy aboard..." rows="7"></textarea>
 </article>
 </section>
 <!-- =====================================================
+     SAVED MODELS MOVE / SHARE
+===================================================== -->
+<div class="modal" id="savedModelsTransferModal" aria-hidden="true">
+<div class="modal-content saved-models-transfer-modal-content">
+<button class="modal-close" id="closeSavedModelsTransferModal" aria-label="Close">×</button>
+<h2 id="savedModelsTransferTitle">Move / Share Saved Models</h2>
+<p class="saved-transfer-intro">Move your Saved Models to another device without an account, or share a shortlist with someone else.</p>
+<div id="savedModelsTransferBuilder">
+<div class="saved-transfer-choice-grid" role="group" aria-label="Transfer purpose">
+<label class="saved-transfer-choice"><input type="radio" name="savedTransferMode" value="move" checked><span><strong>Move to another device</strong><small>Includes Stage, Rating, My Notes, Tags and research history.</small></span></label>
+<label class="saved-transfer-choice"><input type="radio" name="savedTransferMode" value="share"><span><strong>Share shortlist</strong><small>Shares models and Stage by default. Personal notes stay private unless you include them.</small></span></label>
+</div>
+<div class="saved-transfer-options">
+<label><span>Models to include</span><select id="savedTransferScope"><option value="all">All Saved Models</option><option value="current">Current Stage view</option></select></label>
+<label class="saved-transfer-check"><input id="savedTransferIncludeNotes" type="checkbox" checked><span>Include My Notes</span></label>
+<label class="saved-transfer-check"><input id="savedTransferIncludeTags" type="checkbox" checked><span>Include Tags</span></label>
+<label class="saved-transfer-check"><input id="savedTransferIncludeHistory" type="checkbox" checked><span>Include research history</span></label>
+</div>
+<div class="saved-transfer-summary" id="savedTransferSummary"></div>
+<div class="saved-transfer-actions">
+<button id="copySavedTransferLinkBtn" type="button">Copy Transfer Link</button>
+<button class="workspace-secondary-btn" id="nativeShareSavedTransferBtn" type="button">Share…</button>
+</div>
+<p class="saved-transfer-privacy">The transfer is encoded in the link after the # symbol. B-Atlas does not require an account or store this transfer on its server.</p>
+<div class="saved-transfer-status" id="savedTransferStatus" aria-live="polite"></div>
+</div>
+<div id="savedModelsTransferImport" hidden>
+<div class="saved-transfer-import-summary" id="savedTransferImportSummary"></div>
+<div class="saved-transfer-preview" id="savedTransferPreview"></div>
+<div class="saved-transfer-actions">
+<button id="mergeSavedTransferBtn" type="button">Merge — Keep Newer</button>
+<button class="workspace-secondary-btn" id="replaceSavedTransferBtn" type="button">Replace Saved Models</button>
+<button class="workspace-tertiary-btn" id="cancelSavedTransferImportBtn" type="button">Cancel</button>
+</div>
+<p class="saved-transfer-privacy">Saved Listings are not transferred. Only Saved Model records are affected.</p>
+</div>
+</div>
+</div>
+<!-- =====================================================
      COMPARISON MODAL & FLOATING BUTTON
 ===================================================== -->
 <button class="floating-compare-btn" id="floatingCompareBtn">Compare (0)</button>
@@ -874,11 +916,11 @@ Engine manual — paper copy aboard..." rows="7"></textarea>
 <script src="recommendationengine.js"></script>
 <script src="communityguide.js?v=6.27.2"></script>
 <script src="modelknowledgescore.js?v=6.66.0"></script>
-<script src="boatworkspace.js?v=6.71.3"></script>
-<script src="script.js?v=6.71.3"></script>
+<script src="boatworkspace.js?v=6.72.0"></script>
+<script src="script.js?v=6.72.0"></script>
 <script src="appbootstrap.js"></script>
 <script src="ownership.js"></script>
-<script src="applicationpolish.js?v=6.71.3"></script>
+<script src="applicationpolish.js?v=6.72.0"></script>
 <script src="communityapi.js?v=6.67.0"></script>
 <script src="contributionentry.js?v=6.71.3"></script>
 <script src="moderatoraccess.js"></script>

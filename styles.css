@@ -3186,3 +3186,65 @@ body{padding-top:82px!important;}
 
 /* v6.69 Model Guide sharing */
 .boat-guide-heading-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.guide-share-wrap{position:relative;display:inline-flex}.guide-share-action{background:#fff;color:#0e4f79;border:1px solid #9fb9ca;border-radius:7px;padding:10px 16px;font-weight:700;cursor:pointer}.guide-share-action:hover,.guide-share-action:focus-visible{border-color:#146ca4;background:#f7fbfd}.guide-share-menu{position:absolute;z-index:120;top:calc(100% + 7px);left:0;min-width:210px;background:#fff;border:1px solid #cbd9e2;border-radius:8px;box-shadow:0 10px 28px rgba(15,42,60,.14);padding:6px}.guide-share-menu[hidden]{display:none}.guide-share-menu button{display:block;width:100%;border:0;background:transparent;text-align:left;padding:9px 10px;border-radius:5px;color:#102536;font:inherit;cursor:pointer}.guide-share-menu button:hover,.guide-share-menu button:focus-visible{background:#eef5f9}.guide-share-menu button+button{margin-top:1px}
+
+
+/* =====================================================
+   v6.72 SAVED MODELS PORTABILITY + UX CLOSEOUT
+===================================================== */
+.decision-workspace-header-actions{display:flex;gap:10px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
+.decision-workspace-header-actions button{width:auto;white-space:nowrap}
+.workspace-secondary-btn{background:#fff!important;color:#0b5fa5!important;border:1px solid #8fb3ce!important;font-weight:700}
+.workspace-secondary-btn:hover,.workspace-secondary-btn:focus-visible{background:#f4f9fc!important;border-color:#0b5fa5!important}
+.workspace-tertiary-btn{background:#fff!important;color:#475569!important;border:1px solid #cbd5e1!important}
+
+/* Saved model names are links, not filled action buttons. */
+.decision-workspace-table .workspace-boat-link,
+.decision-workspace-table .workspace-boat-link:hover,
+.decision-workspace-table .workspace-boat-link:focus-visible{
+  background:transparent!important;
+  color:#0b5fa5!important;
+  border:0!important;
+  box-shadow:none!important;
+  border-radius:0!important;
+  padding:0!important;
+  text-decoration:underline!important;
+  text-underline-offset:3px;
+}
+
+.saved-models-transfer-modal-content{width:min(760px,94vw);max-height:calc(100vh - 110px);overflow:auto}
+.saved-transfer-intro{color:#475569;margin-top:0}
+.saved-transfer-choice-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:18px 0}
+.saved-transfer-choice{display:flex;gap:10px;align-items:flex-start;padding:14px;border:1px solid #cbd5e1;border-radius:7px;background:#fff;cursor:pointer}
+.saved-transfer-choice input{margin-top:3px}
+.saved-transfer-choice span{display:grid;gap:4px}
+.saved-transfer-choice small{color:#64748b;line-height:1.35}
+.saved-transfer-options{display:grid;grid-template-columns:1fr 1fr;gap:12px 18px;padding:16px;border:1px solid #dbe3ec;border-radius:7px;background:#f8fafc}
+.saved-transfer-options>label:first-child{grid-column:1/-1;display:grid;gap:6px;font-weight:700}
+.saved-transfer-options select{width:100%;padding:9px;border:1px solid #cbd5e1;border-radius:5px;background:#fff}
+.saved-transfer-check{display:flex;gap:8px;align-items:center}
+.saved-transfer-summary,.saved-transfer-import-summary{display:flex;justify-content:space-between;gap:14px;align-items:center;margin:14px 0;padding:11px 13px;border-left:4px solid #0b5fa5;background:#f2f7fb}
+.saved-transfer-summary span,.saved-transfer-import-summary span{color:#64748b;text-align:right}
+.saved-transfer-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.saved-transfer-actions button{width:auto}
+.saved-transfer-privacy{font-size:12px;color:#64748b;line-height:1.45;margin:14px 0 0}
+.saved-transfer-status{min-height:1.4em;margin-top:8px;color:#0b5fa5;font-weight:700}
+.saved-transfer-preview{border:1px solid #dbe3ec;border-radius:7px;overflow:hidden;max-height:42vh;overflow-y:auto}
+.saved-transfer-preview-row{display:flex;justify-content:space-between;gap:16px;padding:12px 14px;border-bottom:1px solid #e2e8f0;background:#fff}
+.saved-transfer-preview-row:last-child{border-bottom:0}
+.saved-transfer-preview-row div{display:grid;gap:3px}.saved-transfer-preview-row span,.saved-transfer-preview-row small{color:#64748b}
+
+/* Fixed-header modal clearance in Chromium, including zoomed layouts. */
+#decisionWorkspaceModal,#boatWatchModal,#savedModelsTransferModal{padding-top:max(94px,env(safe-area-inset-top))!important;align-items:flex-start!important;overflow-y:auto!important}
+#decisionWorkspaceModal .modal-content,#boatWatchModal .modal-content,#savedModelsTransferModal .modal-content{margin:0 auto 28px!important}
+#compareWorkspaceSelectionBtn,#createBoatWatchBtn,#copySavedTransferLinkBtn,#mergeSavedTransferBtn,
+#boatWatchChatGPT,#boatWatchCopy{background:#0b5fa5!important;color:#fff!important;border-color:#0b5fa5!important}
+#compareWorkspaceSelectionBtn:disabled,#createBoatWatchBtn:disabled{opacity:.5}
+
+@media(max-width:760px){
+  .decision-workspace-header-actions{justify-content:flex-start;width:100%}
+  .saved-transfer-choice-grid,.saved-transfer-options{grid-template-columns:1fr}
+  .saved-transfer-options>label:first-child{grid-column:auto}
+  .saved-transfer-summary,.saved-transfer-import-summary,.saved-transfer-preview-row{align-items:flex-start;flex-direction:column}
+  .saved-transfer-summary span,.saved-transfer-import-summary span{text-align:left}
+  #decisionWorkspaceModal,#boatWatchModal,#savedModelsTransferModal{padding-top:14px!important}
+}

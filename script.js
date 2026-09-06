@@ -109,6 +109,8 @@ function initializeBScoutApplication(data) {
     displayBoats(allBoats);
     initMissionTemplates();
     initSearchProfiles();
+    // v6.72: resolve Saved Models transfer links only after canonical model data is available.
+    if (typeof detectSavedModelsTransferFromHash === "function") detectSavedModelsTransferFromHash();
 
     // SEO/deep-link bridge: crawlable model pages link here with ?model=BoatModelID.
     // Open the existing interactive Guide after application data is available.
@@ -3086,6 +3088,258 @@ function initDecisionWorkspaceControls() {
 
 if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", initDecisionWorkspaceControls);
 else initDecisionWorkspaceControls();
+
+
+// =====================================================
+// SAVED MODELS MOVE / SHARE — v6.72
+// =====================================================
+const SAVED_MODELS_TRANSFER_PREFIX = "saved-models-transfer=";
+let pendingSavedModelsTransfer = null;
+
+function cloneJson(value) { return JSON.parse(JSON.stringify(value)); }
+
+function base64UrlEncodeUnicode(value) {
+    const bytes = new TextEncoder().encode(value);
+    let binary = "";
+    bytes.forEach(byte => { binary += String.fromCharCode(byte); });
+    return btoa(binary).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/g, "");
+}
+
+function base64UrlDecodeUnicode(value) {
+    const normalized = value.replace(/-/g, "+").replace(/_/g, "/");
+    const padded = normalized + "=".repeat((4 - normalized.length % 4) % 4);
+    const binary = atob(padded);
+    const bytes = Uint8Array.from(binary, char => char.charCodeAt(0));
+    return new TextDecoder().decode(bytes);
+}
+
+function sanitizeTransferRelationship(rel, options = {}) {
+    const research = rel?.Research || {};
+    const clean = {
+        BoatModelID: String(rel?.BoatModelID || ""),
+        Status: normalizeModelStatus(rel?.Status || "Interested"),
+        Created: rel?.Created || null,
+        LastUpdated: rel?.LastUpdated || null,
+        Research: {
+            Rating: Number(research.Rating || 0),
+            Notes: options.includeNotes ? String(research.Notes || "") : "",
+            Tags: options.includeTags ? String(research.Tags || "") : "",
+            BrokerLinks: ""
+        }
+    };
+    if (options.includeHistory && Array.isArray(rel?.History)) clean.History = cloneJson(rel.History);
+    return clean;
+}
+
+function getTransferRowsForScope(scope) {
+    const workspace = getActiveBuyerWorkspace();
+    const rows = Array.isArray(workspace.BoatRelationships) ? workspace.BoatRelationships.filter(rel => rel?.Status) : [];
+    if (scope === "current" && decisionWorkspaceStatus !== "All") return rows.filter(rel => rel.Status === decisionWorkspaceStatus);
+    return rows;
+}
+
+function getSavedTransferOptions() {
+    const mode = document.querySelector('input[name="savedTransferMode"]:checked')?.value || "move";
+    return {
+        mode,
+        scope: document.getElementById("savedTransferScope")?.value || "all",
+        includeNotes: Boolean(document.getElementById("savedTransferIncludeNotes")?.checked),
+        includeTags: Boolean(document.getElementById("savedTransferIncludeTags")?.checked),
+        includeHistory: Boolean(document.getElementById("savedTransferIncludeHistory")?.checked)
+    };
+}
+
+function buildSavedModelsTransferPayload() {
+    const options = getSavedTransferOptions();
+    const relationships = getTransferRowsForScope(options.scope).map(rel => sanitizeTransferRelationship(rel, options));
+    return { schema: "b-atlas-saved-models-transfer", version: 1, mode: options.mode, exportedAt: new Date().toISOString(), relationships };
+}
+
+function buildSavedModelsTransferUrl() {
+    const payload = buildSavedModelsTransferPayload();
+    const encoded = base64UrlEncodeUnicode(JSON.stringify(payload));
+    return `${window.location.origin}${window.location.pathname}#${SAVED_MODELS_TRANSFER_PREFIX}${encoded}`;
+}
+
+function updateSavedTransferModeDefaults() {
+    const mode = document.querySelector('input[name="savedTransferMode"]:checked')?.value || "move";
+    const includeNotes = document.getElementById("savedTransferIncludeNotes");
+    const includeTags = document.getElementById("savedTransferIncludeTags");
+    const includeHistory = document.getElementById("savedTransferIncludeHistory");
+    if (mode === "move") {
+        if (includeNotes) includeNotes.checked = true;
+        if (includeTags) includeTags.checked = true;
+        if (includeHistory) includeHistory.checked = true;
+    } else {
+        if (includeNotes) includeNotes.checked = false;
+        if (includeTags) includeTags.checked = false;
+        if (includeHistory) includeHistory.checked = false;
+    }
+    updateSavedTransferSummary();
+}
+
+function updateSavedTransferSummary() {
+    const summary = document.getElementById("savedTransferSummary");
+    if (!summary) return;
+    const options = getSavedTransferOptions();
+    const count = getTransferRowsForScope(options.scope).length;
+    const fields = ["Stage", "Rating"];
+    if (options.includeNotes) fields.push("My Notes");
+    if (options.includeTags) fields.push("Tags");
+    if (options.includeHistory) fields.push("History");
+    summary.innerHTML = `<strong>${count} model${count === 1 ? "" : "s"}</strong><span>${escapeWorkspaceHtml(fields.join(" · "))}</span>`;
+}
+
+function openSavedModelsTransferBuilder() {
+    const modal = document.getElementById("savedModelsTransferModal");
+    const builder = document.getElementById("savedModelsTransferBuilder");
+    const importer = document.getElementById("savedModelsTransferImport");
+    const title = document.getElementById("savedModelsTransferTitle");
+    if (builder) builder.hidden = false;
+    if (importer) importer.hidden = true;
+    if (title) title.textContent = "Move / Share Saved Models";
+    pendingSavedModelsTransfer = null;
+    updateSavedTransferModeDefaults();
+    if (modal) { modal.style.display = "block"; modal.setAttribute("aria-hidden", "false"); }
+}
+
+function closeSavedModelsTransferModal() {
+    const modal = document.getElementById("savedModelsTransferModal");
+    if (modal) { modal.style.display = "none"; modal.setAttribute("aria-hidden", "true"); }
+}
+
+async function copySavedModelsTransferLink() {
+    const status = document.getElementById("savedTransferStatus");
+    const payload = buildSavedModelsTransferPayload();
+    if (!payload.relationships.length) {
+        if (status) status.textContent = "There are no Saved Models in this view to transfer.";
+        return;
+    }
+    const url = buildSavedModelsTransferUrl();
+    try {
+        await navigator.clipboard.writeText(url);
+        if (status) status.textContent = `Transfer link copied for ${payload.relationships.length} Saved Model${payload.relationships.length === 1 ? "" : "s"}.`;
+    } catch {
+        window.prompt("Copy this Saved Models transfer link:", url);
+        if (status) status.textContent = "Transfer link ready to copy.";
+    }
+}
+
+async function nativeShareSavedModelsTransfer() {
+    const payload = buildSavedModelsTransferPayload();
+    const status = document.getElementById("savedTransferStatus");
+    if (!payload.relationships.length) {
+        if (status) status.textContent = "There are no Saved Models in this view to share.";
+        return;
+    }
+    const url = buildSavedModelsTransferUrl();
+    if (navigator.share) {
+        try { await navigator.share({ title: "B-Atlas Saved Models", text: `${payload.relationships.length} Saved Model${payload.relationships.length === 1 ? "" : "s"} from B-Atlas`, url }); }
+        catch (error) { if (error?.name !== "AbortError" && status) status.textContent = "Sharing was not completed."; }
+    } else {
+        await copySavedModelsTransferLink();
+    }
+}
+
+function validateSavedModelsTransferPayload(payload) {
+    if (!payload || payload.schema !== "b-atlas-saved-models-transfer" || payload.version !== 1 || !Array.isArray(payload.relationships)) return null;
+    const relationships = payload.relationships.filter(rel => rel && rel.BoatModelID).map(rel => sanitizeTransferRelationship(rel, {
+        includeNotes: true, includeTags: true, includeHistory: true
+    }));
+    return { ...payload, relationships };
+}
+
+function renderSavedModelsTransferImport(payload) {
+    const modal = document.getElementById("savedModelsTransferModal");
+    const builder = document.getElementById("savedModelsTransferBuilder");
+    const importer = document.getElementById("savedModelsTransferImport");
+    const title = document.getElementById("savedModelsTransferTitle");
+    const summary = document.getElementById("savedTransferImportSummary");
+    const preview = document.getElementById("savedTransferPreview");
+    if (!modal || !importer || !preview) return;
+    pendingSavedModelsTransfer = payload;
+    if (builder) builder.hidden = true;
+    importer.hidden = false;
+    if (title) title.textContent = payload.mode === "share" ? "Add Shared Saved Models" : "Move Saved Models to This Device";
+    if (summary) summary.innerHTML = `<strong>${payload.relationships.length} model${payload.relationships.length === 1 ? "" : "s"} received</strong><span>Review before changing anything stored on this device.</span>`;
+    preview.innerHTML = payload.relationships.map(rel => {
+        const boat = allBoats.find(item => String(item.BoatModelID) === String(rel.BoatModelID));
+        const titleText = boat ? [boat.Manufacturer, boat.Model, boat.Variant].filter(Boolean).join(" ") : rel.BoatModelID;
+        const hasNotes = Boolean(String(rel.Research?.Notes || "").trim());
+        const hasTags = Boolean(String(rel.Research?.Tags || "").trim());
+        return `<div class="saved-transfer-preview-row"><div><strong>${escapeWorkspaceHtml(titleText)}</strong><span>${escapeWorkspaceHtml(rel.Status || "Interested")}${rel.Research?.Rating ? ` · ${"★".repeat(Number(rel.Research.Rating))}` : ""}</span></div><small>${hasNotes ? "Notes included" : "No notes"}${hasTags ? " · Tags included" : ""}</small></div>`;
+    }).join("");
+    modal.style.display = "block";
+    modal.setAttribute("aria-hidden", "false");
+}
+
+function clearSavedTransferFragment() {
+    if (window.location.hash.startsWith(`#${SAVED_MODELS_TRANSFER_PREFIX}`)) {
+        history.replaceState(history.state, "", `${window.location.pathname}${window.location.search}`);
+    }
+}
+
+function importSavedModelsTransfer(mode) {
+    const payload = pendingSavedModelsTransfer;
+    if (!payload) return;
+    const workspace = getActiveBuyerWorkspace();
+    if (!Array.isArray(workspace.BoatRelationships)) workspace.BoatRelationships = [];
+    const incoming = payload.relationships.map(cloneJson);
+    if (mode === "replace") {
+        workspace.BoatRelationships = incoming;
+    } else {
+        const byId = new Map(workspace.BoatRelationships.map(rel => [String(rel.BoatModelID), rel]));
+        incoming.forEach(rel => {
+            const id = String(rel.BoatModelID);
+            const existing = byId.get(id);
+            if (!existing) { workspace.BoatRelationships.push(rel); byId.set(id, rel); return; }
+            const existingTime = new Date(existing.LastUpdated || existing.Created || 0).getTime();
+            const incomingTime = new Date(rel.LastUpdated || rel.Created || 0).getTime();
+            if (!Number.isFinite(existingTime) || incomingTime >= existingTime) Object.assign(existing, rel);
+        });
+    }
+    migrateModelRelationshipStatuses(workspace);
+    saveBuyerWorkspace(workspace);
+    currentBuyerWorkspace = workspace;
+    updateBuyerWorkspaceCounts();
+    renderDecisionWorkspace();
+    clearSavedTransferFragment();
+    closeSavedModelsTransferModal();
+    openDecisionWorkspace();
+}
+
+function detectSavedModelsTransferFromHash() {
+    const hash = window.location.hash || "";
+    if (!hash.startsWith(`#${SAVED_MODELS_TRANSFER_PREFIX}`)) return;
+    try {
+        const encoded = hash.slice(SAVED_MODELS_TRANSFER_PREFIX.length + 1);
+        const payload = validateSavedModelsTransferPayload(JSON.parse(base64UrlDecodeUnicode(encoded)));
+        if (!payload) throw new Error("Invalid transfer payload");
+        renderSavedModelsTransferImport(payload);
+    } catch (error) {
+        console.warn("Saved Models transfer link could not be read.", error);
+        clearSavedTransferFragment();
+        alert("This Saved Models transfer link is invalid or incomplete.");
+    }
+}
+
+function initSavedModelsTransferControls() {
+    document.getElementById("moveShareSavedModelsBtn")?.addEventListener("click", openSavedModelsTransferBuilder);
+    document.getElementById("closeSavedModelsTransferModal")?.addEventListener("click", closeSavedModelsTransferModal);
+    document.getElementById("cancelSavedTransferImportBtn")?.addEventListener("click", () => { clearSavedTransferFragment(); closeSavedModelsTransferModal(); });
+    document.getElementById("copySavedTransferLinkBtn")?.addEventListener("click", copySavedModelsTransferLink);
+    document.getElementById("nativeShareSavedTransferBtn")?.addEventListener("click", nativeShareSavedModelsTransfer);
+    document.getElementById("mergeSavedTransferBtn")?.addEventListener("click", () => importSavedModelsTransfer("merge"));
+    document.getElementById("replaceSavedTransferBtn")?.addEventListener("click", () => {
+        if (confirm("Replace all Saved Models on this device with the models in this transfer? Saved Listings will not be changed.")) importSavedModelsTransfer("replace");
+    });
+    document.querySelectorAll('input[name="savedTransferMode"]').forEach(input => input.addEventListener("change", updateSavedTransferModeDefaults));
+    ["savedTransferScope", "savedTransferIncludeNotes", "savedTransferIncludeTags", "savedTransferIncludeHistory"].forEach(id => document.getElementById(id)?.addEventListener("change", updateSavedTransferSummary));
+    window.addEventListener("hashchange", detectSavedModelsTransferFromHash);
+}
+
+if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", initSavedModelsTransferControls);
+else initSavedModelsTransferControls();
 
 // =====================================================
 // COMPARE MODELS LOGIC
