@@ -78,7 +78,7 @@
     record.LastUpdated=nowIso(); write(records); $("ownedBoatTitle").textContent=displayName(record); const status=$("ownedBoatSaveStatus"); if(status){status.textContent="Boat record saved.";setTimeout(()=>status.textContent="",2200);} renderList(); openRecord(activeOwnedBoatId);
   }
   function showOwnedView(){
-    ["lifecycleHome","discoverView","guidedMatchView","boatGuideView"].forEach(id=>$(id)?.setAttribute("hidden",""));
+    ["lifecycleHome","discoverView","guidedMatchView","boatGuideView","decisionWorkspaceModal","informationModal"].forEach(id=>$(id)?.setAttribute("hidden",""));
     const view=$("ownedBoatsView"); if(view){view.hidden=false;view.scrollIntoView({behavior:"smooth",block:"start"});}
   }
   function applyLifecycleMode(mode){

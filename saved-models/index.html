@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<base href="/"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Saved Models | B-Atlas</title>
+<meta content="B-Atlas is a community-powered boat knowledge and research resource for discovering cruising boat models, comparing specifications, understanding trade-offs and making better buying decisions." name="description"/>
+<meta content="noindex, follow" name="robots"/>
+<link href="https://b-atlas.org/saved-models/" rel="canonical"/>
+<meta content="website" property="og:type"/>
+<meta content="B-Atlas" property="og:site_name"/>
+<meta content="B-Atlas | Boat Knowledge for Better Decisions" property="og:title"/>
+<meta content="Community-powered boat knowledge for discovering, comparing and researching cruising boat models, trade-offs and buyer considerations." property="og:description"/>
+<meta content="https://b-atlas.org/" property="og:url"/>
+<meta content="https://b-atlas.org/images/batlas-logo.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"B-Atlas","url":"https://b-atlas.org/","description":"B-Atlas is a community-powered boat knowledge and research resource for discovering, comparing and researching cruising boat models and buyer trade-offs.","@id":"https://b-atlas.org/#website","inLanguage":"en"}</script>
+<link href="styles.css?v=6.73.0" rel="stylesheet"/>
+<link href="bscout-visual-standard.css?v=6.73.0" rel="stylesheet"/>
+<link href="guide-visual-standard.css?v=6.71.3" rel="stylesheet"/>
+<link href="home-visual-standard.css?v=6.71.3" rel="stylesheet"/>
+<link href="batlas-design-system.css?v=6.71.3" rel="stylesheet"/>
+<meta content="B-Atlas — Boat Knowledge for Better Decisions" property="og:image:alt"/><meta content="B-Atlas | Boat Knowledge for Better Decisions" name="twitter:title"/><meta content="B-Atlas is a community-powered boat knowledge and research resource for discovering cruising boat models, comparing specifications, understanding trade-offs and making better buying decisions." name="twitter:description"/><meta content="https://b-atlas.org/images/batlas-logo.png" name="twitter:image"/><meta content="#0b2d55" name="theme-color"/></head>
+<body>
+<!-- =====================================================
+     FIXED HEADER
+==================================================== -->
+<header class="site-header">
+<div class="header-brand">
+<a aria-label="Return to B-Atlas home" class="header-logo header-home-link" data-app-action="home" href="#home" title="B-Atlas home">
+<img alt="B-Atlas — Boat Knowledge for Better Decisions" class="batlas-header-logo" src="images/batlas-logo.png?v=6.68.0"/>
+</a>
+</div>
+<nav aria-label="Primary navigation" class="top-nav">
+<a data-app-action="home" href="#home">Home</a>
+<a data-app-action="plan" href="#plan">Find Your Boat</a>
+<a data-app-action="dream" href="#dream">Boat Models</a>
+<a data-app-action="saved-models" href="/saved-models/">Saved Models</a>
+<a data-app-action="contribute" href="#contribute">Help Build B-Atlas</a>
+<a class="moderator-access-link" hidden="" href="developer/contribution-review.html" id="moderatorTopAccessLink">Moderator</a>
+<a data-app-action="about" href="/about/">About</a>
+</nav>
+</header>
+<!-- =====================================================
+     MAIN APPLICATION AREA
+===================================================== -->
+<main aria-labelledby="lifecycleHomeTitle" class="lifecycle-home" id="lifecycleHome">
+<section class="lifecycle-hero">
+<p class="workspace-eyebrow">Start with what you know</p>
+<h1 id="lifecycleHomeTitle">What kind of boat are you looking for?</h1>
+<p>B-Atlas is a community-powered boat knowledge and research resource. Compare cruising boat models, understand specifications and trade-offs, and use reviewed owner knowledge to make better buying decisions. Start by working out what you need, or go directly to the boats if you already have a good idea.</p>
+</section>
+<section aria-labelledby="startHereTitle" class="lifecycle-start-section">
+<h2 id="startHereTitle">Start here</h2>
+<div class="lifecycle-entry-grid lifecycle-entry-grid-primary">
+<button class="lifecycle-entry-card lifecycle-entry-card-primary" data-app-action="plan" type="button">
+<span class="lifecycle-stage-name">Plan</span>
+<strong>Help me understand what I want</strong>
+<span>Work through cruising area, size, hull behaviour, propulsion, features and crew needs before narrowing the field.</span>
+</button>
+<button class="lifecycle-entry-card lifecycle-entry-card-primary" data-app-action="dream" type="button">
+<span class="lifecycle-stage-name">Dream</span>
+<strong>I know enough to start looking</strong>
+<span>Go directly to the model search and explore boats, images and promising possibilities.</span>
+</button>
+</div>
+</section>
+<section aria-labelledby="continueTitle" class="lifecycle-continue-section">
+<h2 id="continueTitle">Continue where you left off</h2>
+<div class="lifecycle-entry-grid lifecycle-entry-grid-secondary">
+<button class="lifecycle-entry-card lifecycle-entry-card-secondary" data-app-action="saved-models" type="button">
+<span class="lifecycle-stage-name">Saved Models</span>
+<strong>Continue researching models</strong>
+<span>Return to models you saved, compare them, or open a Guide for deeper research and buying work.</span>
+</button>
+<button class="lifecycle-entry-card lifecycle-entry-card-secondary" data-app-action="contribute" type="button">
+<span class="lifecycle-stage-name">Contribute</span>
+<strong>Help improve B-Atlas</strong>
+<span>Share model knowledge, photos, manuals, corrections, or tell us about a manufacturer or model that is missing.</span>
+</button>
+</div>
+</section>
+<div class="lifecycle-principle"><strong>How the knowledge cycle works:</strong> Discover → Research → Decide → Contribute → Improve.</div>
+</main>
+<section aria-labelledby="contributionTitle" class="contribution-view" hidden="" id="contributionView">
+<div class="contribution-shell">
+<button class="contribution-back top-level-back" hidden="" id="contributionBack" type="button">← Back to B-Atlas</button>
+<header class="contribution-header">
+<p class="workspace-eyebrow">Improve B-Atlas</p>
+<h1 id="contributionTitle">Contribute knowledge</h1>
+<p id="contributionContextText">Share useful boat knowledge. Contributions are reviewed before they change B-Atlas.</p>
+</header>
+<div class="contribution-principle">
+<strong>Contributions are evidence.</strong> B-Atlas reviews and organizes that evidence before it becomes permanent Guide knowledge.<br/>
+<strong>Privacy by default.</strong> No account is required. Share boat knowledge, not personal information.
+    </div>
+<section class="contribution-support-card" aria-labelledby="supportBatlasHeading">
+<h2 id="supportBatlasHeading">Support B-Atlas</h2>
+<p>B-Atlas is free and independent. If the resource has helped you, voluntary support helps keep it available and improving.</p>
+<a class="support-batlas-button" href="https://ko-fi.com/batlas" target="_blank" rel="noopener noreferrer">Support B-Atlas on Ko-fi</a>
+</section>
+<div aria-live="polite" class="contribution-type-groups" id="contributionTypeGroups"></div>
+<div class="contribution-selection-state" hidden="" id="contributionSelectionState">
+<strong id="contributionSelectionTitle"></strong>
+<span id="contributionSelectionDetail"></span>
+</div>
+<section aria-labelledby="contributionFormTitle" class="contribution-form-panel" hidden="" id="contributionFormPanel">
+<div class="contribution-form-heading">
+<div>
+<p class="workspace-eyebrow">Contribution details</p>
+<h2 id="contributionFormTitle">Share what you know</h2>
+<p id="contributionFormIntro"></p>
+</div>
+<button class="contribution-change-type" id="changeContributionType" type="button">Change type</button>
+</div>
+<form id="contributionForm" novalidate=""></form>
+<div aria-live="polite" class="contribution-form-message" hidden="" id="contributionFormMessage"></div>
+</section>
+</div>
+</section>
+<section aria-labelledby="guidedMatchTitle" class="guided-match-view" hidden="" id="guidedMatchView">
+<div class="guided-match-shell">
+<button class="guided-back top-level-back" data-app-action="home" hidden="" type="button">← Back to lifecycle</button>
+<header class="guided-match-header">
+<p class="workspace-eyebrow">Plan your boating</p>
+<h1 id="guidedMatchTitle">Understand what you want from a boat</h1>
+<p>Work through the questions before searching. Firm requirements remove known poor fits; preferences improve ranking; unknown information remains visible.</p>
+<div class="guided-progress"><span id="guidedProgressBar"></span></div>
+<small id="guidedProgressText">Step 1 of 6</small>
+</header>
+<div class="guided-step active" data-guided-step="0">
+<h2>Where do you expect to cruise?</h2>
+<p>Broad cruising areas help you think about weather, range, shelter and local boating style. They do not remove models. Select the closest match, or choose Other to continue without using this choice as a filter.</p>
+<div class="guided-choice-grid guided-region-grid" id="guidedCruisingRegions">
+<label class="guided-choice guided-info-choice"><input name="guidedRegion" type="radio" value="Great Lakes"/><span><strong>Great Lakes</strong><small>Large open water, changing weather and a need for capable, comfortable cruising.</small></span></label>
+<label class="guided-choice guided-info-choice"><input name="guidedRegion" type="radio" value="Local Lakes"/><span><strong>Local lakes</strong><small>Shorter trips, nearby shelter and easier access to fuel, docks and service.</small></span></label>
+<label class="guided-choice guided-info-choice"><input name="guidedRegion" type="radio" value="Pacific Northwest"/><span><strong>Pacific Northwest</strong><small>Cool-weather cruising, tides, currents, protected passages and longer distances.</small></span></label>
+<label class="guided-choice guided-info-choice"><input name="guidedRegion" type="radio" value="Caribbean"/><span><strong>Caribbean</strong><small>Warm weather, ventilation, sun protection, anchoring and open-water passages.</small></span></label>
+<label class="guided-choice guided-info-choice"><input name="guidedRegion" type="radio" value="New England and North Atlantic"/><span><strong>New England &amp; North Atlantic</strong><small>Cooler water, fog, exposed coastlines, tides and variable sea conditions.</small></span></label>
+<label class="guided-choice guided-info-choice"><input name="guidedRegion" type="radio" value="Other"/><span><strong>Other / not sure</strong><small>No filtering. Continue learning without committing to a cruising area.</small></span></label>
+</div>
+<div class="guided-optional-block">
+<h3>Specific waterways with hard limits <span>Optional</span></h3>
+<p>Select these only when you expect the model to use that waterway. Bridge clearance, locks, draft or range may exclude known poor fits.</p>
+<div class="guided-choice-grid" data-mirror-class="routeFilter"></div>
+</div>
+</div>
+<div class="guided-step" data-guided-step="1" hidden="">
+<h2>What is your preferred length and beam?</h2>
+<p>Use maximums only when a larger model would create a real ownership problem. Confirm local marina slip limits, haul-out capacity and winter-storage restrictions. Unpermitted road trailering is commonly limited to about 8 ft 6 in wide; wider boats generally require permits and may need specialized transport.</p>
+<div class="guided-dimension-groups">
+<section aria-labelledby="guidedLengthHeading" class="guided-dimension-group">
+<h3 class="guided-dimension-heading" id="guidedLengthHeading">LENGTH</h3>
+<div class="guided-field-grid guided-dimension-fields">
+<label>Minimum <span>Use only when smaller models would not meet your needs. Unknown length remains a candidate.</span><input data-mirror-id="minLength" data-unit-input="length" inputmode="decimal" placeholder="Feet" type="number"/></label>
+<label>Maximum <span>Leave blank when flexible. Include swim platforms or pulpits when your marina measures overall length.</span><input data-mirror-id="maxLength" data-unit-input="length" inputmode="decimal" placeholder="Feet" type="number"/></label>
+</div>
+</section>
+<section aria-labelledby="guidedBeamHeading" class="guided-dimension-group">
+<h3 class="guided-dimension-heading" id="guidedBeamHeading">BEAM</h3>
+<div class="guided-field-grid guided-dimension-fields">
+<label>Minimum <span>Use only when a narrower model would be unsuitable. Unknown beam remains a candidate.</span><input data-mirror-id="minBeam" data-unit-input="length" inputmode="decimal" pattern="[0-9]*[.,]?[0-9]*" placeholder="Feet, e.g. 9.5" type="text"/></label>
+<label>Maximum <span>Confirm the usable width of your slip—not only its advertised size.</span><input data-mirror-id="maxBeam" inputmode="decimal" pattern="[0-9]*[.,]?[0-9]*" placeholder="Feet, e.g. 10.5" type="text"/></label>
+</div>
+</section>
+</div>
+</div>
+<div class="guided-step" data-guided-step="2" hidden="">
+<h2>What kind of model appeals to you?</h2>
+<p>These choices describe general layout and behaviour. Select only genuine requirements. Leaving choices blank keeps every model family available.</p>
+<h3>Boat family</h3><div class="guided-choice-grid guided-descriptive-grid" data-mirror-class="familyFilter"></div>
+<h3>Hull behaviour</h3><div class="guided-choice-grid guided-descriptive-grid" data-mirror-class="hullFilter"></div>
+</div>
+<div class="guided-step" data-guided-step="3" hidden="">
+<h2>Which fuel and propulsion arrangements suit you?</h2>
+<p>Fuel type affects efficiency, purchase cost and service needs. Propulsion affects simplicity, shallow-water access and close-quarters manoeuvring. Select only arrangements you would reject alternatives for.</p>
+<h3>Fuel</h3><div class="guided-choice-grid guided-descriptive-grid" data-mirror-class="fuelFilter"></div>
+<h3>Propulsion</h3><div class="guided-choice-grid guided-descriptive-grid" data-mirror-class="propulsionFilter"></div>
+<h3>Engine arrangement</h3><p class="guided-section-help">A single engine is simpler and usually less expensive to maintain. Twins add propulsion redundancy and can make close-quarters manoeuvring easier, but add a second engine, controls and running gear to service. Select an arrangement only when engine count is a firm requirement.</p><div class="guided-choice-grid guided-descriptive-grid" data-mirror-class="engineCountFilter"></div>
+</div>
+<div class="guided-step" data-guided-step="4" hidden="">
+<h2>Which features matter most to you?</h2>
+<p>Standard Preferences do not normally eliminate a model. They help B-Atlas rank known matches higher. Unknown features remain possible, with lower confidence.</p>
+<div class="guided-preference-list" id="guidedStandardPreferences"></div>
+</div>
+<div class="guided-step" data-guided-step="5" hidden="">
+<h2>Who will use the boat?</h2>
+<p>Crew Fit helps rank layouts that are more practical for the people aboard. It does not reject a model when the relevant information is missing.</p>
+<div class="guided-field-grid">
+<label>Primary crew<select data-mirror-id="crewComposition"></select></label>
+<label>Tallest crew member <span>Height in inches. Used only where headroom information is known.</span><input data-mirror-id="tallestCrewHeight" max="90" min="48" placeholder="74" type="number"/></label>
+<label>Overnight guests<select data-mirror-id="guestFrequency"></select></label>
+</div>
+<p class="guided-final-note">Your profile is ready. Review the matching models, then adjust any filter or preference directly as your needs become clearer.</p>
+</div>
+<footer class="guided-actions">
+<button class="secondary-action" disabled="" id="guidedPrevious" type="button">Previous</button>
+<button id="guidedNext" type="button">Next</button>
+<button hidden="" id="guidedViewMatches" type="button">View matching models</button>
+</footer>
+</div>
+</section>
+<div class="app-layout" hidden="" id="discoverView">
+<!-- =====================================================
+     SEARCH COLUMN
+===================================================== -->
+<aside class="search-panel">
+<h2>Refine Model Matches</h2><div class="model-text-search-top">
+
+
+<section class="filter-section">
+<div class="search-input-group">
+<input id="textSearch" placeholder="Models, engines, strengths, features..." type="text"/>
+<button id="clearTextSearch" title="Clear search text" type="button">✕</button>
+</div>
+<div class="crew-guidance-note">Matching text improves preference ranking. It does not exclude boats.</div>
+</section>
+
+</div>
+<div class="buyer-workspace-container" style="margin-bottom: 20px; border-bottom: 1px solid #e2e8f0; padding-bottom: 20px;">
+<h3 class="saved-models-sidebar-heading">Saved Models</h3>
+<button class="workspace-status-btn" id="viewFavoriteBoatsBtn" type="button">
+<span>☆ Interested</span>
+<span id="favoriteBoatsCount">0</span>
+</button>
+<button class="workspace-status-btn" id="viewCandidateBoatsBtn" type="button">
+<span>● Shortlist</span>
+<span id="candidateBoatsCount">0</span>
+</button>
+<button class="workspace-status-btn" id="viewResearchingBoatsBtn" type="button">
+<span>⌕ Researching</span>
+<span id="researchingBoatsCount">0</span>
+</button>
+<button class="workspace-status-btn" id="viewRejectedBoatsBtn" type="button">
+<span>🚫 Rejected</span>
+<span id="rejectedBoatsCount">0</span>
+</button>
+<button class="workspace-primary-btn" id="openDecisionWorkspaceBtn" type="button">Open Saved Models</button>
+</div>
+<div class="filter-group search-profile-group">
+<button class="filter-header" type="button">
+<span>Search Profile</span>
+<span class="arrow-icon">▼</span>
+</button>
+<div class="filter-content">
+<div class="search-profile-container">
+<p class="profile-description" id="cruisingProfileDescription">Built-in and personal searches are managed together. Locked profiles can be opened or duplicated.</p>
+<div aria-live="polite" class="search-profile-summary" id="searchProfileSummary">
+<strong>Current profile</strong>
+<span>No search criteria applied.</span>
+</div>
+<div class="profile-select-row">
+<select aria-label="Search Profile" id="searchProfileSelect">
+<option value="">New Search (empty)</option>
+</select>
+</div>
+<div class="search-profile-buttons">
+<button id="newProfileBtn" type="button">New</button>
+<button disabled="" id="saveProfileBtn" type="button">Save</button>
+<button id="duplicateProfileBtn" type="button">Duplicate</button>
+</div>
+</div>
+</div>
+</div>
+<div class="search-buttons primary-search-actions">
+<button id="searchButton">Search</button>
+<button id="clearButton">Clear</button>
+</div>
+<div aria-live="polite" class="sidebar-results-summary">
+<span>Results</span>
+<strong id="currentBoatsCount">0</strong>
+<small>of <span id="totalBoatsCount">0</span> models</small>
+</div>
+<h2 class="search-section-heading filters-heading">FILTERS</h2>
+
+<div class="filter-group">
+<button class="filter-header" type="button">
+<span>Dimensions</span>
+<span class="arrow-icon">▼</span>
+</button>
+<div class="filter-content">
+<section class="filter-section compact-number-row">
+<label for="minLength">Min Length (ft)</label>
+<input data-unit-input="length" id="minLength" inputmode="decimal" placeholder="24" type="number"/>
+</section>
+<section class="filter-section compact-number-row">
+<label for="maxLength">Max Length (ft)</label>
+<input data-unit-input="length" id="maxLength" inputmode="decimal" placeholder="33" type="number"/>
+</section>
+<section class="filter-section compact-number-row">
+<label for="minBeam">Min Beam (ft)</label>
+<input data-unit-input="length" id="minBeam" inputmode="decimal" pattern="[0-9]*[.,]?[0-9]*" placeholder="9.5" type="text"/>
+</section>
+<section class="filter-section compact-number-row">
+<label for="maxBeam">Max Beam (ft)</label>
+<input data-unit-input="length" id="maxBeam" inputmode="decimal" pattern="[0-9]*[.,]?[0-9]*" placeholder="10.5" type="text"/>
+</section>
+</div>
+</div>
+<div class="filter-group">
+<button class="filter-header" type="button">
+<span>Characteristics</span>
+<span class="arrow-icon">▼</span>
+</button>
+<div class="filter-content">
+<section class="filter-section taxonomy-section">
+<h3 class="show-header">Family</h3>
+<div class="compact-option-grid">
+<label><input class="familyFilter" type="checkbox" value="Trawler"/> Trawler</label>
+<label><input class="familyFilter" type="checkbox" value="Cruiser"/> Cruiser</label>
+<label><input class="familyFilter" type="checkbox" value="Tug"/> Tug</label>
+<label><input class="familyFilter" type="checkbox" value="Downeast"/> Downeast</label>
+<label><input class="familyFilter" type="checkbox" value="Sportfisher"/> Sportfisher</label>
+<label><input class="familyFilter" type="checkbox" value="Motor Yacht"/> Motor Yacht</label>
+</div>
+</section>
+<section class="filter-section taxonomy-section">
+<h3 class="show-header">Sub-Family</h3>
+<div class="compact-option-grid">
+<label><input class="configurationFilter" type="checkbox" value="Classic Trawler"/> Classic Trawler</label>
+<label><input class="configurationFilter" type="checkbox" value="Pilothouse Trawler"/> Pilothouse Trawler</label>
+<label><input class="configurationFilter" type="checkbox" value="Raised Pilothouse"/> Raised Pilothouse</label>
+<label><input class="configurationFilter" type="checkbox" value="Express Cruiser"/> Express Cruiser</label>
+<label><input class="configurationFilter" type="checkbox" value="Aft Cabin Cruiser"/> Aft Cabin Cruiser</label>
+<label><input class="configurationFilter" type="checkbox" value="Family Cruiser"/> Family Cruiser</label>
+</div>
+</section>
+<section class="filter-section taxonomy-section">
+<h3 class="show-header">Hull Behaviour</h3>
+<div class="compact-option-grid">
+<label><input class="hullFilter" type="checkbox" value="Full Displacement"/> Full Displacement</label>
+<label><input class="hullFilter" type="checkbox" value="Semi-Displacement"/> Semi-Displacement</label>
+<label><input class="hullFilter" type="checkbox" value="Planing"/> Planing</label>
+</div>
+</section>
+<section class="filter-section taxonomy-section">
+<h3 class="show-header">Construction Material</h3>
+<div class="compact-option-grid">
+<label><input class="constructionFilter" type="checkbox" value="Fiberglass"/> Fiberglass</label>
+<label><input class="constructionFilter" type="checkbox" value="Aluminum"/> Aluminum</label>
+<label><input class="constructionFilter" type="checkbox" value="Steel"/> Steel</label>
+<label><input class="constructionFilter" type="checkbox" value="Wood"/> Wood</label>
+</div>
+</section>
+<section class="filter-section">
+<h3 class="show-header">Fuel &amp; Propulsion</h3>
+<div class="compact-option-grid">
+<label><input class="fuelFilter" type="checkbox" value="Diesel"/> Diesel</label>
+<label><input class="fuelFilter" type="checkbox" value="Gas"/> Gas</label>
+<label><input class="propulsionFilter" type="checkbox" value="Shaft"/> Shaft Drive</label>
+<label><input class="propulsionFilter" type="checkbox" value="Outboard"/> Outboard</label>
+<label><input class="propulsionFilter" type="checkbox" value="Stern Drive"/> Outdrive / Stern Drive</label>
+<label><input class="engineCountFilter" type="checkbox" value="1"/> Single Engine</label>
+<label><input class="engineCountFilter" type="checkbox" value="2"/> Twin Engines</label>
+</div>
+</section>
+</div>
+</div>
+<h2 class="search-section-heading preferences-heading">PREFERENCES</h2>
+<div class="filter-group preference-group">
+<button class="filter-header" type="button">
+<span>Standard</span>
+<span class="arrow-icon">▼</span>
+</button>
+<div class="filter-content">
+<section class="filter-section feature-priority-list">
+<h3 class="show-header">Layout and Access</h3>
+<div class="feature-priority-row"><span>Walkthrough transom</span><select class="featurePriority" data-feature="Walkthrough Transom"><option value="">Not selected</option><option value="Required">High</option><option value="Preferred">Medium</option><option value="Bonus">Low</option></select></div>
+<div class="feature-priority-row"><span>Wide side decks</span><select class="featurePriority" data-feature="Wide Side Decks"><option value="">Not selected</option><option value="Required">High</option><option value="Preferred">Medium</option><option value="Bonus">Low</option></select></div>
+<div class="feature-priority-row"><span>Side helm door</span><select class="featurePriority" data-feature="Side Helm Door"><option value="">Not selected</option><option value="Required">High</option><option value="Preferred">Medium</option><option value="Bonus">Low</option></select></div>
+<div class="feature-priority-row"><span>Galley up with helm</span><select class="featurePriority" data-feature="Galley Up with Helm"><option value="">Not selected</option><option value="Required">High</option><option value="Preferred">Medium</option><option value="Bonus">Low</option></select></div>
+<div class="feature-priority-row"><span>Separate shower</span><select class="featurePriority" data-feature="Separate Shower"><option value="">Not selected</option><option value="Required">High</option><option value="Preferred">Medium</option><option value="Bonus">Low</option></select></div>
+<div class="feature-priority-row"><span>Aft cabin</span><select class="featurePriority" data-feature="Aft Cabin"><option value="">Not selected</option><option value="Required">High</option><option value="Preferred">Medium</option><option value="Bonus">Low</option></select></div>
+<div class="feature-priority-row"><span>Removable flybridge</span><select class="featurePriority" data-feature="Removable Flybridge"><option value="">Not selected</option><option value="Required">High</option><option value="Preferred">Medium</option><option value="Bonus">Low</option></select></div>
+<h3 class="show-header">Hull and Transport</h3>
+<div class="feature-priority-row"><span>Long keel</span><select class="featurePriority" data-feature="Long Keel"><option value="">Not selected</option><option value="Required">High</option><option value="Preferred">Medium</option><option value="Bonus">Low</option></select></div>
+<div class="feature-priority-row"><span>Skeg-hung rudder</span><select class="featurePriority" data-feature="Skeg-Hung Rudder"><option value="">Not selected</option><option value="Required">High</option><option value="Preferred">Medium</option><option value="Bonus">Low</option></select></div>
+<div class="feature-priority-row"><span>Trailerable</span><select class="featurePriority" data-feature="Trailerable"><option value="">Not selected</option><option value="Required">High</option><option value="Preferred">Medium</option><option value="Bonus">Low</option></select></div>
+</section>
+</div>
+</div>
+<div class="filter-group preference-group">
+<button class="filter-header" type="button">
+<span>Crew Fit</span>
+<span class="arrow-icon">▼</span>
+</button>
+<div class="filter-content">
+<section class="filter-section crew-preference-list">
+<div class="feature-priority-row"><span>Primary Crew</span><select id="crewComposition"><option value="">Not specified</option><option value="Solo">Solo cruiser</option><option value="Couple">Cruising couple</option><option value="TwoCouples">Two couples</option><option value="Family">Family</option></select></div>
+<div class="feature-priority-row"><span>Tallest Crew</span><input aria-label="Tallest Crew in inches" id="tallestCrewHeight" inputmode="numeric" max="90" min="48" placeholder="74" type="number"/></div>
+<div class="feature-priority-row"><span>Overnight Guests</span><select id="guestFrequency"><option value="">Not specified</option><option value="Rarely">Rarely</option><option value="Sometimes">Sometimes</option><option value="Often">Often</option></select></div>
+</section>
+<div class="crew-guidance-note">Crew Fit preferences improve ranking when model data confirms a match. Unknown data does not exclude a boat.</div>
+</div>
+</div>
+
+<div class="filter-group">
+<button class="filter-header" type="button">
+<span>Routes</span>
+<span class="arrow-icon">▼</span>
+</button>
+<div class="filter-content">
+<section class="filter-section">
+<h3>Routes</h3>
+<label>
+<input class="routeFilter" type="checkbox" value="RC"/> Rideau Canal
+            </label>
+<label>
+<input class="routeFilter" type="checkbox" value="TSW"/> Trent-Severn Waterway
+            </label>
+<label>
+<input class="routeFilter" type="checkbox" value="ICW"/> Intracoastal Waterway
+            </label>
+<label>
+<input class="routeFilter" type="checkbox" value="EC"/> Erie Canal
+            </label>
+<label>
+<input class="routeFilter" type="checkbox" value="HR"/> Hudson River
+            </label>
+<label>
+<input class="routeFilter" type="checkbox" value="MRS"/> Mississippi River System
+            </label>
+<label>
+<input class="routeFilter" type="checkbox" value="SLR"/> St. Lawrence River
+            </label>
+<label>
+<input class="routeFilter" type="checkbox" value="CSR"/> Columbia &amp; Snake Rivers
+            </label>
+</section>
+</div>
+</div></aside>
+<!-- =====================================================
+     RESULTS AREA
+===================================================== -->
+<main class="results-area" id="home">
+<div class="results-header">
+<div>
+<h2>Research Boat Models</h2>
+<p class="results-principle">Search or refine model matches. Known poor fits are eliminated; incomplete models remain visible.</p>
+</div>
+</div>
+<div class="boat-grid" id="boat-listings">
+<!-- JavaScript inserts boat cards here -->
+</div>
+<footer class="site-footer">
+<span><strong>B-Atlas</strong> — Boat knowledge for better decisions.</span>
+<nav aria-label="Footer navigation">
+<a data-app-action="about" href="/about/">About</a>
+<a data-app-action="research-models" href="#boat-guides">Research Models</a>
+<a href="models/">Browse Model Guides</a>
+<a href="boats/">Find by Criteria</a>
+<a href="compare/">Compare Models</a>
+<a data-app-action="saved-models" href="/saved-models/">Saved Models</a>
+<a data-app-action="contribute" href="#contribute">Help Build B-Atlas</a>
+<a href="https://ko-fi.com/batlas" target="_blank" rel="noopener noreferrer">Support B-Atlas</a>
+<a data-app-action="privacy" href="#privacy">Privacy</a>
+<a class="moderator-access-link" hidden="" href="developer/contribution-review.html" id="moderatorAccessLink">Moderator</a>
+</nav>
+<span>Version 6.73.0</span>
+</footer>
+</main>
+</div>
+<!-- =====================================================
+     PERMANENT BOAT GUIDE — CANONICAL MODEL PAGE
+===================================================== -->
+<main aria-labelledby="modalTitle" class="boat-guide-view" hidden="" id="boatGuideView">
+<div class="boat-guide-shell">
+<button class="boat-guide-back" id="closeModal" type="button">← Back to models</button>
+<header class="boat-guide-header">
+<div class="boat-guide-heading">
+<p class="workspace-eyebrow">Permanent Model Guide</p>
+<h1 id="modalTitle">Guide</h1>
+<p class="workspace-subtitle" id="workspaceIdentitySummary"></p>
+<div class="boat-guide-heading-actions">
+<button class="guide-contribute-action" data-contribution-source="guide" id="contributeToGuideBtn" type="button">Contribute to this Guide</button>
+<div class="guide-share-wrap">
+<button aria-expanded="false" aria-haspopup="menu" class="guide-share-action" id="shareGuideBtn" type="button">Share</button>
+<div class="guide-share-menu" hidden="" id="shareGuideMenu" role="menu">
+<button id="nativeShareGuide" role="menuitem" type="button">Share…</button>
+<button id="copyGuideLink" role="menuitem" type="button">Copy link</button>
+<button id="emailGuideLink" role="menuitem" type="button">Email</button>
+<button id="facebookGuideLink" role="menuitem" type="button">Facebook</button>
+<button id="copyGuideSummary" role="menuitem" type="button">Copy model summary</button>
+</div>
+</div>
+</div>
+<div aria-live="polite" class="workspace-status-message" id="boatWorkspaceStatus"></div>
+</div>
+<img alt="" class="boat-guide-image" id="modalImage" style="display:none;"/>
+</header>
+<div class="boat-guide-layout">
+<nav aria-label="Guide sections" class="boat-guide-stage-nav">
+<button aria-selected="true" class="boat-workspace-tab active" data-workspace-tab="research" type="button">Research<span>Understand the model</span></button>
+<button aria-selected="false" class="boat-workspace-tab" data-workspace-tab="buying" type="button">Buy<span>Saved listings and decisions</span></button>
+<button aria-selected="false" class="boat-workspace-tab" data-workspace-tab="owning" type="button">Owner Resources<span>Manuals, clubs and forums</span></button>
+<button aria-selected="false" class="boat-workspace-tab" data-workspace-tab="notebook" type="button">My Notes<span>Private research</span></button>
+</nav>
+<div class="boat-guide-content">
+<section class="boat-workspace-panel active" data-workspace-panel="research" id="workspacePanelResearch"></section>
+<section class="boat-workspace-panel" data-workspace-panel="buying" hidden="" id="workspacePanelBuying"></section>
+<section class="boat-workspace-panel" data-workspace-panel="owning" hidden="" id="workspacePanelOwning"></section>
+<section class="boat-workspace-panel" data-workspace-panel="notebook" hidden="" id="workspacePanelNotebook"></section>
+</div>
+</div>
+</div>
+</main>
+<!-- =====================================================
+     NOTEBOOK MODAL
+===================================================== -->
+<div class="modal" id="researchModal">
+<div class="modal-content">
+<button class="modal-close" id="closeResearchModal">×</button>
+<h2 id="researchModalTitle">Model Notes</h2>
+<div class="modal-section">
+<label style="display: block; font-weight: bold; margin-bottom: 5px;">Boat</label>
+<div id="researchBoatName" style="font-size: 1.2em; margin-bottom: 10px;"></div>
+</div>
+<div class="modal-section">
+<label style="display: block; font-weight: bold; margin-bottom: 5px;">Status (Read-only)</label>
+<div id="researchBoatStatus" style="padding: 8px; background: #f3f4f6; border-radius: 4px;"></div>
+</div>
+<div class="modal-section">
+<label style="display: block; font-weight: bold; margin-bottom: 5px;">Rating (1–5 stars)</label>
+<select id="researchRating">
+<option value="0">Unrated</option>
+<option value="1">1 Star</option>
+<option value="2">2 Stars</option>
+<option value="3">3 Stars</option>
+<option value="4">4 Stars</option>
+<option value="5">5 Stars</option>
+</select>
+</div>
+<div class="modal-section">
+<label style="display: block; font-weight: bold; margin-bottom: 5px;">Model Notes</label>
+<textarea id="researchNotes" rows="5" style="width: 100%; padding: 8px; border: 1px solid #bbb; border-radius: 4px;"></textarea>
+</div>
+<div class="modal-section">
+<label style="display: block; font-weight: bold; margin-bottom: 5px;">Tags (comma-separated)</label>
+<input id="researchTags" placeholder="e.g. offshore, weekend, family" type="text"/>
+</div>
+<div class="modal-section legacy-listing-compatibility" hidden="">
+<h3>Listing Discovery</h3>
+<p class="field-help">Marketplace discovery belongs in My Boats. These links are shown here only for compatibility with existing saved work.</p>
+<div class="notebook-listing-searches" id="notebookListingSearches">No model-specific listing searches are available.</div>
+</div>
+<div class="modal-section legacy-listing-compatibility">
+<label style="display: block; font-weight: bold; margin-bottom: 5px;">Legacy Saved Listing Links</label>
+<textarea id="researchBrokerLinks" rows="3" style="width: 100%; padding: 8px; border: 1px solid #bbb; border-radius: 4px;"></textarea>
+</div>
+<div style="margin-top: 20px; display: flex; gap: 10px;">
+<button id="saveResearchBtn">Save</button>
+<button id="cancelResearchBtn" style="background: #94a3b8;">Cancel</button>
+</div>
+</div>
+</div>
+<!-- =====================================================
+     SAVED MODELS PAGE
+===================================================== -->
+<main class="saved-models-page-view" id="decisionWorkspaceModal" hidden>
+<div class="saved-models-page-shell decision-workspace-modal-content">
+<div class="decision-workspace-header">
+<div>
+<h2>Saved Models</h2>
+<p id="decisionWorkspaceProfileName">Models and listings you are considering</p>
+</div>
+<div class="decision-workspace-header-actions">
+<button class="workspace-secondary-btn" id="moveShareSavedModelsBtn" type="button">Move / Share</button>
+<button disabled="" id="compareWorkspaceSelectionBtn" type="button">Compare Selected (0)</button>
+<button disabled="" id="createBoatWatchBtn" type="button">Create Boat Watch (0)</button>
+</div></div>
+<div aria-label="Saved model status filters" class="decision-workspace-filters" role="group">
+<button class="decision-filter-btn active" data-status="All" type="button">All</button>
+<button class="decision-filter-btn" data-status="Interested" type="button">Interested</button>
+<button class="decision-filter-btn" data-status="Shortlist" type="button">Shortlist</button>
+<button class="decision-filter-btn" data-status="Researching" type="button">Researching</button>
+<button class="decision-filter-btn" data-status="Rejected" type="button">Rejected</button>
+</div>
+<section class="my-boats-listings-panel">
+<div class="my-boats-listings-header">
+<div><h3>Saved Listings</h3><p>Individual boats for sale remain connected to their permanent Boat Guide.</p></div>
+</div>
+<div aria-label="Listing lifecycle summary" class="listing-lifecycle-summary">
+<span><strong id="listingTotalCount">0</strong> Total</span>
+<span><strong id="listingActiveCount">0</strong> Active</span>
+<span><strong id="listingOfferCount">0</strong> Offers</span>
+<span><strong id="listingClosedCount">0</strong> Closed</span>
+</div>
+<div aria-label="Filter specific listings" class="listing-lifecycle-filters" role="group">
+<button class="listing-filter-btn active" data-listing-status="All" type="button">All</button>
+<button class="listing-filter-btn" data-listing-status="Watching" type="button">Watching</button>
+<button class="listing-filter-btn" data-listing-status="Candidate" type="button">Candidates</button>
+<button class="listing-filter-btn" data-listing-status="Evaluating" type="button">Evaluating</button>
+<button class="listing-filter-btn" data-listing-status="Offer" type="button">Offers</button>
+<button class="listing-filter-btn" data-listing-status="Closed" type="button">Closed</button>
+</div>
+<div class="my-boats-listings" id="myBoatsListings"></div>
+</section>
+<section class="saved-models-heading"><h3>Saved Models</h3><p>Move models from interested to researching, shortlist or rejected as your decision develops.</p></section>
+<div class="decision-workspace-layout">
+<div class="decision-workspace-table-wrapper">
+<table class="decision-workspace-table">
+<thead><tr><th>Watch</th><th>Compare</th><th>Boat Model</th><th>Stage</th><th>My Rating</th><th>Updated</th><th>Actions</th></tr></thead>
+<tbody id="decisionWorkspaceTableBody"></tbody>
+</table>
+</div>
+<aside class="decision-timeline-panel">
+<h3>Research Timeline</h3>
+<div id="decisionTimeline">Select a boat to view its history.</div>
+</aside>
+</div>
+</div>
+</main><div class="modal" id="boatWatchModal" aria-hidden="true"><div class="modal-content boat-watch-modal-content"><button class="modal-close" id="closeBoatWatchModal" type="button">×</button><p class="workspace-eyebrow">B-Atlas Boat Watch</p><h2>Create Boat Watch</h2><p class="field-help">B-Atlas prepares monitoring instructions from your selected models. You can use them with ChatGPT to create an ongoing Boat Watch, or copy the same instructions into another AI.</p><div class="boat-watch-howto"><strong>Using Boat Watch with ChatGPT</strong><ol><li>Review the search area, price limit and any additional requirements below.</li><li>Click <strong>Copy &amp; Open ChatGPT</strong>. B-Atlas copies the complete monitoring request and opens ChatGPT in a new tab.</li><li>Paste the copied instructions into ChatGPT and send them.</li><li>Ask ChatGPT to run the search as a recurring monitoring task and confirm how often it should check. When recurring tasks are available on your ChatGPT account, it can notify you when a genuinely new qualifying listing appears.</li></ol><p>You can return to B-Atlas at any time and create a new watch with different models or requirements.</p></div><label class="workspace-field-label">Search area<input id="boatWatchArea" type="text" value="Canada and the United States"/></label><label class="workspace-field-label">Maximum price (optional)<input id="boatWatchPrice" placeholder="e.g. CAD $90,000" type="text"/></label><label class="workspace-field-label">Additional requirements (optional)<textarea id="boatWatchRequirements" placeholder="e.g. Prefer diesel; trailer is a strong positive" rows="3"></textarea></label><label class="workspace-field-label">Monitoring instructions<textarea id="boatWatchPrompt" readonly="" rows="14"></textarea></label><div class="boat-watch-actions"><button id="boatWatchChatGPT" type="button">Copy &amp; Open ChatGPT</button><button id="boatWatchCopy" type="button">Copy for another AI</button></div><p class="field-help boat-watch-status" id="boatWatchStatus" aria-live="polite"></p></div></div>
+<!-- =====================================================
+     LISTING WORKSPACE — INDIVIDUAL CANDIDATE BOAT
+===================================================== -->
+<div class="modal" id="listingWorkspaceModal">
+<div class="modal-content listing-workspace-modal-content">
+<button aria-label="Close listing workspace" class="modal-close" id="closeListingWorkspaceModal">×</button>
+<header class="listing-workspace-header">
+<div><p class="workspace-eyebrow">Specific Candidate Boat</p><h2 id="listingWorkspaceTitle">Listing Details</h2><p class="workspace-subtitle" id="listingWorkspaceModel"></p></div>
+<button class="workspace-secondary-action" id="listingOpenModelBtn" type="button">Open Guide</button>
+</header>
+<div class="listing-workspace-grid">
+<section class="workspace-card"><h3>Listing Summary</h3>
+<div class="listing-form-grid">
+<label>Listing title<input id="listingTitle" type="text"/></label>
+<label>Status<select id="listingStatus"><option value="Watching">Watching</option><option value="Candidate">Candidate</option><option value="Evaluating">Evaluating</option><option value="Offer">Offer</option><option value="Rejected">Rejected</option><option value="Sold">Sold</option><option value="Archived">Archived</option></select></label>
+<label>Year<input id="listingYear" max="2100" min="1900" type="number"/></label>
+<label>Price<input id="listingPrice" min="0" step="1" type="number"/></label>
+<label>Currency<select id="listingCurrency"><option value="CAD">CAD</option><option value="USD">USD</option><option value="EUR">EUR</option><option value="GBP">GBP</option><option value="Other">Other</option></select></label>
+<label>Location<input id="listingLocation" placeholder="Kingston, Ontario" type="text"/></label>
+<label>Broker or seller<input id="listingBroker" type="text"/></label>
+<label>Source<input id="listingSource" placeholder="Brokerage or marketplace" type="text"/></label>
+</div>
+<label class="workspace-field-label">Listing URL<input id="listingUrl" placeholder="https://..." type="url"/></label>
+</section>
+<section class="workspace-card"><h3>Listing Notebook</h3><p class="field-help">These observations apply only to this individual boat.</p>
+<label class="workspace-field-label">Notes<textarea id="listingNotes" rows="5"></textarea></label>
+<label class="workspace-field-label">Inspection notes<textarea id="listingInspection" rows="4"></textarea></label>
+<label class="workspace-field-label">Survey notes<textarea id="listingSurvey" rows="4"></textarea></label>
+<label class="workspace-field-label">Offer history<textarea id="listingOffer" rows="3"></textarea></label>
+<label class="workspace-field-label">Repair estimates<textarea id="listingRepairs" rows="3"></textarea></label>
+</section>
+</div>
+<div class="workspace-form-actions"><button id="saveListingWorkspace" type="button">Save Listing</button><button class="workspace-primary-btn" id="buyListingBoat" type="button">I bought this boat</button><button class="danger-action" id="deleteListingWorkspace" type="button">Delete Listing</button><a id="openExternalListing" rel="noopener noreferrer" target="_blank">Open Original Listing</a></div>
+<div aria-live="polite" class="workspace-status-message" id="listingWorkspaceStatusMessage"></div>
+</div>
+</div>
+<!-- =====================================================
+     MY BOATS — OWNED BOAT RECORDS
+===================================================== -->
+<section class="app-view owned-boats-view" hidden="" id="ownedBoatsView">
+<header class="owned-boats-page-header">
+<div>
+<p class="workspace-eyebrow" id="ownedBoatsEyebrow">Own</p>
+<h1 id="ownedBoatsPageTitle">My Boats</h1>
+<p id="ownedBoatsPageDescription">Permanent records for individual boats you own.</p>
+</div>
+<button class="workspace-secondary-action" data-app-action="home" id="ownedBoatsBackHome" type="button">Back to Home</button>
+</header>
+<div class="owned-boats-list" id="ownedBoatsList"></div>
+<article class="owned-boat-record" hidden="" id="ownedBoatRecord">
+<header class="owned-boat-record-header">
+<button class="context-back-button" id="backToOwnedBoats" type="button">← My Boats</button>
+<div>
+<p class="workspace-eyebrow">Individual Boat Record</p>
+<h2 id="ownedBoatTitle">My Boat</h2>
+<p class="workspace-subtitle" id="ownedBoatModelLink"></p>
+</div>
+<div class="owned-boat-record-actions">
+<button class="workspace-secondary-action" id="openOwnedBoatGuide" type="button">Open Guide</button>
+<button id="saveOwnedBoat" type="button">Save Record</button>
+</div>
+</header>
+<nav aria-label="Boat record sections" class="owned-boat-section-nav">
+<button data-owned-target="owned-identification" type="button">Identification</button>
+<button data-owned-target="owned-engine" type="button">Engine</button>
+<button data-owned-target="owned-documents" type="button">Documents</button>
+<button data-owned-target="owned-maintenance" type="button">Maintenance Notes</button>
+<button data-owned-target="owned-upgrades" type="button">Upgrades</button>
+<button data-owned-target="owned-contributions" type="button">Contributions</button>
+<button data-owned-target="owned-sale-readiness" type="button">Prepare to Sell</button>
+</nav>
+<div class="owned-boat-form-stack">
+<details class="owned-boat-section" id="owned-identification" open="">
+<summary>Identification and purchase</summary>
+<div class="owned-boat-section-body owned-boat-form-grid">
+<label>Boat name<input id="ownedBoatName" placeholder="Optional vessel name" type="text"/></label>
+<label>Model<input id="ownedBoatModel" readonly="" type="text"/></label>
+<label>Year<input id="ownedBoatYear" max="2100" min="1900" type="number"/></label>
+<label>HIN / serial number<input id="ownedBoatHin" type="text"/></label>
+<label>Registration number<input id="ownedBoatRegistration" type="text"/></label>
+<label>Home port<input id="ownedBoatHomePort" type="text"/></label>
+<label>Purchase date<input id="ownedBoatPurchaseDate" type="date"/></label>
+<label>Purchase price<input id="ownedBoatPurchasePrice" min="0" step="1" type="number"/></label>
+<label>Currency<select id="ownedBoatCurrency"><option>CAD</option><option>USD</option><option>EUR</option><option>GBP</option><option>Other</option></select></label>
+<label class="owned-wide-field">Purchase source<input id="ownedBoatPurchaseSource" placeholder="Broker, seller or marketplace" type="text"/></label>
+<label class="owned-wide-field">Original listing URL<input id="ownedBoatListingUrl" placeholder="https://..." type="url"/></label>
+<label class="owned-wide-field">Purchase notes<textarea id="ownedBoatPurchaseNotes" rows="4"></textarea></label>
+</div>
+</details>
+<details class="owned-boat-section" id="owned-engine">
+<summary>Engine and propulsion</summary>
+<div class="owned-boat-section-body owned-boat-form-grid">
+<label>Engine make<input id="ownedEngineMake" type="text"/></label>
+<label>Engine model<input id="ownedEngineModel" type="text"/></label>
+<label>Engine year<input id="ownedEngineYear" max="2100" min="1900" type="number"/></label>
+<label>Horsepower<input id="ownedEngineHp" min="0" type="number"/></label>
+<label>Fuel<input id="ownedEngineFuel" type="text"/></label>
+<label>Propulsion<input id="ownedEnginePropulsion" type="text"/></label>
+<label>Engine hours<input id="ownedEngineHours" min="0" step="0.1" type="number"/></label>
+<label>Engine serial number<input id="ownedEngineSerial" type="text"/></label>
+<label class="owned-wide-field">Engine notes<textarea id="ownedEngineNotes" rows="4"></textarea></label>
+</div>
+</details>
+<details class="owned-boat-section" id="owned-documents">
+<summary>Documents</summary>
+<div class="owned-boat-section-body">
+<p class="field-help">Record what exists and where it is stored. File uploads are deliberately deferred.</p>
+<textarea id="ownedBoatDocuments" placeholder="Survey — PDF stored in...
+Registration — renewed...
+Engine manual — paper copy aboard..." rows="7"></textarea>
+</div>
+</details>
+<details class="owned-boat-section" id="owned-maintenance">
+<summary>Maintenance notes</summary>
+<div class="owned-boat-section-body">
+<p class="field-help">A simple history of completed work and observations. Scheduling and reminders are deferred.</p>
+<textarea id="ownedBoatMaintenance" placeholder="Date — work completed — parts used — notes" rows="9"></textarea>
+</div>
+</details>
+<details class="owned-boat-section" id="owned-upgrades">
+<summary>Upgrades</summary>
+<div class="owned-boat-section-body"><textarea id="ownedBoatUpgrades" placeholder="Date — upgrade — reason — result" rows="8"></textarea></div>
+</details>
+<details class="owned-boat-section" id="owned-contributions">
+<summary>Owner knowledge contributions</summary>
+<div class="owned-boat-section-body">
+<p class="field-help">Capture model-specific experience that may help future buyers. Nothing is published automatically.</p>
+<label>Known problem or weakness<textarea id="ownedContributionProblem" rows="4"></textarea></label>
+<label>Maintenance or replacement experience<textarea id="ownedContributionMaintenance" rows="4"></textarea></label>
+<label>What should a buyer inspect or ask?<textarea id="ownedContributionBuyerAdvice" rows="4"></textarea></label>
+<label class="owned-check-row"><input id="ownedContributionShare" type="checkbox"/> Mark this contribution as ready for later review</label>
+</div>
+</details>
+<details class="owned-boat-section" id="owned-sale-readiness">
+<summary>Prepare to sell</summary>
+<div class="owned-boat-section-body">
+<p class="field-help">Organize the records, disclosures and details a future buyer will expect. Automated valuation and listing publication are deferred.</p>
+<div class="sale-readiness-grid">
+<label><input id="saleIdentityComplete" type="checkbox"/> Identity and registration records complete</label>
+<label><input id="saleEngineComplete" type="checkbox"/> Engine details and hours recorded</label>
+<label><input id="saleMaintenanceComplete" type="checkbox"/> Maintenance history organized</label>
+<label><input id="saleDocumentsComplete" type="checkbox"/> Survey, manuals and receipts located</label>
+<label><input id="saleUpgradesComplete" type="checkbox"/> Upgrades documented</label>
+<label><input id="saleConcernsComplete" type="checkbox"/> Unresolved concerns identified honestly</label>
+</div>
+<label>Buyer questions and unresolved items<textarea id="ownedSaleNotes" rows="6"></textarea></label>
+</div>
+</details>
+</div>
+<div aria-live="polite" class="workspace-status-message" id="ownedBoatSaveStatus"></div>
+</article>
+</section>
+<!-- =====================================================
+     SAVED MODELS MOVE / SHARE
+===================================================== -->
+<div class="modal" id="savedModelsTransferModal" aria-hidden="true">
+<div class="modal-content saved-models-transfer-modal-content">
+<button class="modal-close" id="closeSavedModelsTransferModal" aria-label="Close">×</button>
+<h2 id="savedModelsTransferTitle">Move / Share Saved Models</h2>
+<p class="saved-transfer-intro">Move your Saved Models to another device without an account, or share a shortlist with someone else.</p>
+<div id="savedModelsTransferBuilder">
+<fieldset class="saved-transfer-choice-grid" aria-label="Transfer purpose">
+<legend class="saved-transfer-section-label">What do you want to do?</legend>
+<label class="saved-transfer-choice"><input type="radio" name="savedTransferMode" value="move" checked><span><strong>Move to another device</strong><small>Transfer your complete Saved Models workspace.</small></span></label>
+<label class="saved-transfer-choice"><input type="radio" name="savedTransferMode" value="share"><span><strong>Share a shortlist</strong><small>Share models and Stage; personal details remain optional.</small></span></label>
+</fieldset>
+<div class="saved-transfer-options">
+<label><span>Models to include</span><select id="savedTransferScope"><option value="all">All Saved Models</option><option value="current">Current Stage view</option></select></label>
+<label class="saved-transfer-check"><input id="savedTransferIncludeNotes" type="checkbox" checked><span>Include My Notes</span></label>
+<label class="saved-transfer-check"><input id="savedTransferIncludeTags" type="checkbox" checked><span>Include Tags</span></label>
+<label class="saved-transfer-check"><input id="savedTransferIncludeHistory" type="checkbox" checked><span>Include research history</span></label>
+</div>
+<div class="saved-transfer-summary" id="savedTransferSummary"></div>
+<div class="saved-transfer-actions">
+<button id="copySavedTransferLinkBtn" type="button">Copy Transfer Link</button>
+<button class="workspace-secondary-btn" id="nativeShareSavedTransferBtn" type="button">Share…</button>
+</div>
+<p class="saved-transfer-privacy">The transfer is encoded in the link after the # symbol. B-Atlas does not require an account or store this transfer on its server.</p>
+<div class="saved-transfer-status" id="savedTransferStatus" aria-live="polite"></div>
+</div>
+<div id="savedModelsTransferImport" hidden>
+<div class="saved-transfer-import-summary" id="savedTransferImportSummary"></div>
+<div class="saved-transfer-preview" id="savedTransferPreview"></div>
+<div class="saved-transfer-actions">
+<button id="mergeSavedTransferBtn" type="button">Merge — Keep Newer</button>
+<button class="workspace-secondary-btn" id="replaceSavedTransferBtn" type="button">Replace Saved Models</button>
+<button class="workspace-tertiary-btn" id="cancelSavedTransferImportBtn" type="button">Cancel</button>
+</div>
+<p class="saved-transfer-privacy">Saved Listings are not transferred. Only Saved Model records are affected.</p>
+</div>
+</div>
+</div>
+<!-- =====================================================
+     COMPARISON MODAL & FLOATING BUTTON
+===================================================== -->
+<button class="floating-compare-btn" id="floatingCompareBtn">Compare (0)</button>
+<div class="modal" id="comparisonModal">
+<div class="modal-content compare-modal-content">
+<button class="modal-close" id="closeComparisonModal">×</button>
+<button class="context-back-button" data-close-modal="comparisonModal" data-open-modal="decisionWorkspaceModal" type="button">← Back to Saved Models</button>
+<h2>Compare Models</h2>
+<div class="comparison-table-wrapper">
+<table class="comparison-table" id="comparisonTable">
+<!-- Columns populated dynamically -->
+</table>
+</div>
+</div>
+</div>
+<!-- =====================================================
+     REJECT MODAL
+===================================================== -->
+<div class="modal" id="rejectModal">
+<div class="modal-content" style="max-width: 500px;">
+<button class="modal-close" id="closeRejectModal">×</button>
+<h2>Reject Boat</h2>
+<div class="modal-section">
+<h3 id="rejectModalBoatName" style="margin-top: 0; color: #1e293b;"></h3>
+</div>
+<div class="modal-section">
+<label for="rejectReason" style="display: block; font-weight: bold; margin-bottom: 5px;">Reason</label>
+<select id="rejectReason" required="" style="width: 100%; padding: 8px; border: 1px solid #bbb; border-radius: 4px;">
+<option value="">-- Select a Reason --</option>
+<option value="Too expensive">Too expensive</option>
+<option value="Too large">Too large</option>
+<option value="Too wide">Too wide</option>
+<option value="Wrong hull type">Wrong hull type</option>
+<option value="Poor layout">Poor layout</option>
+<option value="Not suitable for mission">Not suitable for mission</option>
+<option value="Other">Other</option>
+</select>
+</div>
+<div class="modal-section">
+<label for="rejectNotes" style="display: block; font-weight: bold; margin-bottom: 5px;">Notes (Optional)</label>
+<textarea id="rejectNotes" placeholder="Add details..." rows="4" style="width: 100%; padding: 8px; border: 1px solid #bbb; border-radius: 4px;"></textarea>
+</div>
+<div style="margin-top: 20px; display: flex; gap: 10px;">
+<button id="saveRejectBtn">Save Decision</button>
+<button id="cancelRejectBtn" style="background: #94a3b8;">Cancel</button>
+</div>
+</div>
+</div>
+<!-- =====================================================
+     REJECTED BOATS LIST MODAL
+===================================================== -->
+<div class="modal" id="rejectedBoatsModal">
+<div class="modal-content" style="max-width: 1000px; width: 95%;">
+<button class="modal-close" id="closeRejectedBoatsModal">×</button>
+<button class="context-back-button" data-close-modal="rejectedBoatsModal" type="button">← Back to search</button>
+<h2>Rejected Boats</h2>
+<div class="comparison-table-wrapper" style="margin-top: 20px;">
+<table class="comparison-table" style="width: 100%; border-collapse: collapse;">
+<thead>
+<tr style="background: #f1f5f9; text-align: left;">
+<th style="padding: 12px; border-bottom: 2px solid #cbd5e1;">Boat Name</th>
+<th style="padding: 12px; border-bottom: 2px solid #cbd5e1;">Previous Status</th>
+<th style="padding: 12px; border-bottom: 2px solid #cbd5e1;">Reject Reason</th>
+<th style="padding: 12px; border-bottom: 2px solid #cbd5e1;">Reject Notes</th>
+<th style="padding: 12px; border-bottom: 2px solid #cbd5e1; text-align: center;">Actions</th>
+</tr>
+</thead>
+<tbody id="rejectedBoatsTableBody">
+<!-- Dynamic content -->
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<main class="information-page-view" id="informationModal" hidden>
+<div class="information-page-shell information-modal-content">
+<div id="informationModalContent"></div>
+</div>
+</main>
+<script src="datarepository.js?v=6.43.0"></script>
+<script src="boatregistry.js"></script>
+<script src="taxonomyregistry.js"></script>
+<script src="imageassetmanager.js"></script>
+<script src="userProfile.js"></script>
+<script src="searchstatemanager.js"></script>
+<script src="valuenormalizer.js"></script>
+<script src="searchprofilemanager.js"></script>
+<script src="canonicaldata.js?v=6.69.0"></script>
+<script src="modelurls.js?v=6.69.0"></script>
+<script src="filterengine.js?v=6.28.3"></script>
+<script src="searchorchestrator.js"></script>
+<script src="engine.js"></script>
+<script src="knowledge/knowledgeengine.js"></script>
+<script src="knowledge/boatintelligencerepository.js"></script>
+<script src="knowledge/manufacturerknowledgerepository.js"></script>
+<script src="knowledge/knowledgelayerrepository.js"></script>
+<script src="knowledge/providers/boatintelligenceprovider.js"></script>
+<script src="knowledge/providers/curatedresourceprovider.js"></script>
+<script src="knowledge/providers/listingdiscoveryprovider.js"></script>
+<script src="knowledge/knowledgecardui.js?v=6.67.0"></script>
+<script src="boatintelligence.js"></script>
+<script src="evaluationrules.js"></script>
+<script src="actionmodel.js"></script>
+<script src="decisionreport.js"></script>
+<script src="intelligencelayer.js"></script>
+<script src="recommendationengine.js"></script>
+<script src="communityguide.js?v=6.27.2"></script>
+<script src="modelknowledgescore.js?v=6.66.0"></script>
+<script src="boatworkspace.js?v=6.72.0"></script>
+<script src="script.js?v=6.73.0"></script>
+<script src="appbootstrap.js"></script>
+<script src="ownership.js?v=6.73.0"></script>
+<script src="applicationpolish.js?v=6.73.0"></script>
+<script src="communityapi.js?v=6.67.0"></script>
+<script src="contributionentry.js?v=6.73.0"></script>
+<script src="moderatoraccess.js"></script>
+</body>
+</html>

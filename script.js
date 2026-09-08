@@ -3002,7 +3002,7 @@ function renderDecisionWorkspace() {
         return `<tr class="${decisionWorkspaceSelectedBoatId === id ? "selected" : ""}" data-workspace-boat-id="${escapeWorkspaceHtml(id)}">
             <td><input type="checkbox" class="workspace-watch-checkbox" data-id="${escapeWorkspaceHtml(id)}" ${boatWatchSelection.has(id) ? "checked" : ""} aria-label="Watch ${escapeWorkspaceHtml(title)} for sale"></td>
             <td><input type="checkbox" class="workspace-compare-checkbox" data-id="${escapeWorkspaceHtml(id)}" ${comparisonBoatIDs.includes(id) ? "checked" : ""} aria-label="Compare ${escapeWorkspaceHtml(title)}"></td>
-            <td><button type="button" class="workspace-boat-link" data-id="${escapeWorkspaceHtml(id)}">${escapeWorkspaceHtml(title)}</button></td>
+            <td><a class="workspace-boat-link" data-id="${escapeWorkspaceHtml(id)}" href="${escapeWorkspaceHtml(window.BAtlasModelURLs?.pathForBoat?.(boat) || "#")}">${escapeWorkspaceHtml(title)}</a></td>
             <td><select class="workspace-status-select" data-id="${escapeWorkspaceHtml(id)}">
                 <option value="Interested" ${rel.Status === "Interested" ? "selected" : ""}>Interested</option>
                 <option value="Shortlist" ${rel.Status === "Shortlist" ? "selected" : ""}>Shortlist</option>
@@ -3013,7 +3013,8 @@ function renderDecisionWorkspace() {
             <td><div class="workspace-row-actions"><button type="button" class="workspace-notebook-btn" data-id="${escapeWorkspaceHtml(id)}">Notebook</button><button type="button" class="workspace-remove-btn" data-id="${escapeWorkspaceHtml(id)}" aria-label="Remove ${escapeWorkspaceHtml(title)} from Saved Models">Remove</button></div></td>
         </tr>`;
     }).join("");
-    tbody.querySelectorAll(".workspace-boat-link").forEach(button => button.addEventListener("click", () => {
+    tbody.querySelectorAll(".workspace-boat-link").forEach(button => button.addEventListener("click", (event) => {
+        event.preventDefault();
         const boat = allBoats.find(item => String(item.BoatModelID) === String(button.dataset.id));
         if (!boat || !window.BScoutBoatWorkspace) return;
         window.BScoutWorkspaceReturnModal = "decisionWorkspaceModal";
@@ -3085,10 +3086,21 @@ function renderDecisionWorkspace() {
     updateWorkspaceCompareButton();
 }
 
-function openDecisionWorkspace() {
+function openDecisionWorkspace(options = {}) {
     renderDecisionWorkspace();
-    const modal = document.getElementById("decisionWorkspaceModal");
-    if (modal) modal.style.display = "block";
+    ["lifecycleHome","discoverView","boatGuideView","guidedMatchView","contributionView","informationModal"].forEach(id => {
+        const node = document.getElementById(id);
+        if (!node) return;
+        node.hidden = true;
+        if (id === "informationModal") node.style.display = "none";
+    });
+    document.querySelectorAll(".modal").forEach(modal => {
+        if (modal.id !== "boatWatchModal" && modal.id !== "comparisonModal" && modal.id !== "rejectModal") modal.style.display = "none";
+    });
+    const page = document.getElementById("decisionWorkspaceModal");
+    if (page) { page.hidden = false; page.style.display = "block"; }
+    if (options.history !== false && window.BScoutNavigation?.push) window.BScoutNavigation.push("saved-models");
+    window.scrollTo({ top: 0, behavior: "auto" });
 }
 
 function initDecisionWorkspaceControls() {

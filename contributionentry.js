@@ -200,7 +200,7 @@
     }
 
     function hidePrimaryViews() {
-        ["lifecycleHome", "discoverView", "guidedMatchView", "boatGuideView"].forEach(id => {
+        ["lifecycleHome", "discoverView", "guidedMatchView", "boatGuideView", "decisionWorkspaceModal", "informationModal"].forEach(id => {
             const element = $(id);
             if (element) element.hidden = true;
         });

@@ -3288,3 +3288,56 @@ body{padding-top:82px!important;}
   .saved-transfer-actions{display:grid!important;grid-template-columns:1fr!important}
   .saved-transfer-actions button{width:100%!important}
 }
+
+
+/* =====================================================
+   v6.73.0 — SAVED MODELS + ABOUT AS NORMAL PAGES
+===================================================== */
+.saved-models-page-view,.information-page-view{display:none;background:#fff;min-height:calc(100vh - 82px);padding:34px 28px 56px;box-sizing:border-box}
+.saved-models-page-shell,.information-page-shell{width:min(1180px,100%);margin:0 auto}
+.information-page-shell{width:min(980px,100%)}
+.saved-models-page-view .decision-workspace-modal-content,.information-page-view .information-modal-content{width:auto!important;max-width:none!important;max-height:none!important;overflow:visible!important;margin:0!important;padding:0!important;border:0!important;border-radius:0!important;box-shadow:none!important;background:transparent!important}
+#decisionWorkspaceModal.saved-models-page-view .decision-workspace-table .workspace-boat-link{display:inline!important;width:auto!important;min-height:0!important;padding:0!important;margin:0!important;background:none!important;background-color:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important;color:#0b5fa5!important;font-weight:700!important;text-decoration:underline!important;text-underline-offset:3px!important}
+#decisionWorkspaceModal.saved-models-page-view .decision-workspace-table .workspace-boat-link:hover,#decisionWorkspaceModal.saved-models-page-view .decision-workspace-table .workspace-boat-link:focus-visible{background:none!important;background-color:transparent!important;color:#084c85!important}
+#decisionWorkspaceModal.saved-models-page-view .decision-workspace-table .workspace-boat-link::selection{background:#cfe7f7;color:#102536}
+@media(max-width:980px){.saved-models-page-view,.information-page-view{min-height:calc(100vh - 76px);padding:26px 18px 44px}.decision-workspace-layout{grid-template-columns:1fr!important}.decision-timeline-panel{position:static!important}}
+@media(max-width:760px){.saved-models-page-view,.information-page-view{padding:20px 14px 36px}.decision-workspace-table-wrapper{overflow-x:auto}.decision-workspace-header{align-items:flex-start;flex-direction:column;gap:14px}.decision-workspace-header-actions{justify-content:flex-start}}
+
+/* v6.73.0 final page reset: neutralize legacy modal geometry retained for JS compatibility. */
+#decisionWorkspaceModal.saved-models-page-view{
+  position:static!important;
+  inset:auto!important;
+  top:auto!important;
+  right:auto!important;
+  bottom:auto!important;
+  left:auto!important;
+  width:100%!important;
+  height:auto!important;
+  min-height:calc(100vh - 82px)!important;
+  max-height:none!important;
+  padding:34px 28px 56px!important;
+  margin:0!important;
+  overflow:visible!important;
+  align-items:initial!important;
+  justify-content:initial!important;
+  z-index:auto!important;
+  background:#fff!important;
+  box-sizing:border-box!important;
+}
+#decisionWorkspaceModal.saved-models-page-view[hidden]{display:none!important}
+#decisionWorkspaceModal.saved-models-page-view:not([hidden]){display:block!important}
+#informationModal.information-page-view[hidden]{display:none!important}
+#informationModal.information-page-view:not([hidden]){display:block!important}
+#decisionWorkspaceModal.saved-models-page-view .workspace-remove-btn{
+  background:#fff!important;
+  color:#8a2f2f!important;
+  border:1px solid #d7b2b2!important;
+}
+#decisionWorkspaceModal.saved-models-page-view .workspace-remove-btn:hover,
+#decisionWorkspaceModal.saved-models-page-view .workspace-remove-btn:focus-visible{
+  background:#fff7f7!important;
+  color:#742525!important;
+  border-color:#a94a4a!important;
+}
+@media(max-width:980px){#decisionWorkspaceModal.saved-models-page-view{min-height:calc(100vh - 76px)!important;padding:26px 18px 44px!important}}
+@media(max-width:760px){#decisionWorkspaceModal.saved-models-page-view{min-height:0!important;padding:20px 14px 36px!important}}

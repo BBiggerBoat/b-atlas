@@ -26,6 +26,9 @@
         if (view === "guided") return "/#find-your-boat";
         if (view === "discover") return "/#boat-models";
         if (view === "contribute") return "/#help-build-b-atlas";
+        if (view === "saved-models") return "/saved-models/";
+        if (view === "about") return "/about/";
+        if (view === "privacy") return "/privacy/";
         if (view === "home") return "/";
         return undefined;
     }
@@ -55,15 +58,32 @@
         if (modal) modal.style.display = "block";
     }
 
-    function openInfo(page) {
+    function hidePrimaryViews(exceptId = "") {
+        ["lifecycleHome","discoverView","boatGuideView","guidedMatchView","contributionView","decisionWorkspaceModal","informationModal"].forEach(id => {
+            if (id === exceptId) return;
+            const node = document.getElementById(id);
+            if (!node) return;
+            node.hidden = true;
+            if (id === "decisionWorkspaceModal" || id === "informationModal") node.style.display = "none";
+        });
+    }
+
+    function openInfo(page, options = {}) {
         const content = document.getElementById("informationModalContent");
-        if (!content || !INFO_PAGES[page]) return;
+        const view = document.getElementById("informationModal");
+        if (!content || !view || !INFO_PAGES[page]) return;
+        hidePrimaryViews("informationModal");
+        document.querySelectorAll(".modal").forEach(modal => { modal.style.display = "none"; });
         content.innerHTML = INFO_PAGES[page];
-        openModal("informationModal");
+        view.hidden = false;
+        view.style.display = "block";
+        if (options.history !== false) updateHistory(page);
+        window.scrollTo({ top: 0, behavior: "auto" });
     }
 
     function showDiscover(options = {}) {
         if (options.history !== false) updateHistory("discover");
+        hidePrimaryViews("discoverView");
         window.BScoutOwnership?.hideOwnedView();
         closeModal("informationModal");
         const home = document.getElementById("lifecycleHome");
@@ -82,6 +102,7 @@
 
     function showHome(options = {}) {
         if (options.history !== false) updateHistory("home");
+        hidePrimaryViews("lifecycleHome");
         window.BScoutOwnership?.hideOwnedView();
         document.querySelectorAll(".modal").forEach(modal => { modal.style.display = "none"; });
         const home = document.getElementById("lifecycleHome");
@@ -100,6 +121,7 @@
 
     function showGuidedMatches(options = {}) {
         if (options.history !== false) updateHistory("guided", { guidedStep });
+        hidePrimaryViews("guidedMatchView");
         window.BScoutOwnership?.hideOwnedView();
         closeModal("informationModal");
         const home = document.getElementById("lifecycleHome");
@@ -397,9 +419,9 @@
         renderGuidedStep();
     }
 
-    function openSavedBoats() {
+    function openSavedBoats(options = {}) {
         closeModal("informationModal");
-        if (typeof window.openDecisionWorkspace === "function") window.openDecisionWorkspace();
+        if (typeof window.openDecisionWorkspace === "function") window.openDecisionWorkspace(options);
         else document.getElementById("openDecisionWorkspaceBtn")?.click();
     }
 
@@ -462,9 +484,17 @@
 
     if (!window.history.state?.bscoutView) {
         const requestedModel = new URLSearchParams(window.location.search).get("model");
+        const path = window.location.pathname.replace(/\/+$/, "") || "/";
         if (requestedModel) window.history.replaceState({ bscoutView:"guide", boatModelId:requestedModel, pendingDeepLink:true }, "", window.location.href);
+        else if (path === "/saved-models") updateHistory("saved-models", {}, true);
+        else if (path === "/about") updateHistory("about", {}, true);
+        else if (path === "/privacy") updateHistory("privacy", {}, true);
         else updateHistory("home", {}, true);
     }
+    const initialView = window.history.state?.bscoutView;
+    if (initialView === "saved-models") requestAnimationFrame(() => openSavedBoats({ history:false }));
+    else if (initialView === "about") requestAnimationFrame(() => openInfo("about", { history:false }));
+    else if (initialView === "privacy") requestAnimationFrame(() => openInfo("privacy", { history:false }));
     window.addEventListener("popstate", event => {
         const state = event.state || { bscoutView: "home" };
         if (state.bscoutView === "guide") {
@@ -477,6 +507,8 @@
             window.BScoutContributions?.openGlobal({ history: false });
             return;
         }
+        if (state.bscoutView === "saved-models") { openSavedBoats({ history:false }); return; }
+        if (state.bscoutView === "about" || state.bscoutView === "privacy") { openInfo(state.bscoutView, { history:false }); return; }
         if (state.bscoutView === "guided") {
             guidedStep = Number.isInteger(state.guidedStep) ? state.guidedStep : 0;
             showGuidedMatches({ history: false });
