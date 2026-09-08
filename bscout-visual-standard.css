@@ -510,3 +510,58 @@ body{color:var(--bs-text-primary)}
   #decisionWorkspaceModal,#boatWatchModal{top:0}
   #decisionWorkspaceModal .modal-content,#boatWatchModal .modal-content{max-height:calc(100dvh - 24px)}
 }
+
+/* =====================================================
+   v6.72.1 — Saved Models link treatment + mobile Boat Watch reliability
+   ===================================================== */
+/* Boat model names are navigation links, not primary action buttons. */
+#decisionWorkspaceModal .decision-workspace-table .workspace-boat-link,
+#decisionWorkspaceModal .decision-workspace-table .workspace-boat-link:hover,
+#decisionWorkspaceModal .decision-workspace-table .workspace-boat-link:focus-visible{
+  width:auto!important;
+  min-height:0!important;
+  padding:0!important;
+  margin:0!important;
+  background:transparent!important;
+  border:0!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+  color:#0b5fa5!important;
+  font-weight:700!important;
+  text-align:left!important;
+  text-decoration:underline!important;
+  text-underline-offset:3px!important;
+}
+#decisionWorkspaceModal .decision-workspace-table .workspace-boat-link *{color:#0b5fa5!important;}
+
+/* Boat Watch must sit above Saved Models on every viewport, including mobile Chrome. */
+#boatWatchModal{
+  z-index:10060!important;
+  overscroll-behavior:contain;
+}
+#boatWatchModal.is-open{
+  display:flex!important;
+  align-items:flex-start!important;
+  justify-content:center!important;
+}
+#boatWatchModal .boat-watch-modal-content{
+  position:relative;
+  width:min(760px,calc(100vw - 24px))!important;
+}
+@media(max-width:760px){
+  #boatWatchModal{
+    inset:0!important;
+    top:0!important;
+    bottom:0!important;
+    height:100dvh!important;
+    padding:max(12px,env(safe-area-inset-top)) 12px max(12px,env(safe-area-inset-bottom))!important;
+    overflow-y:auto!important;
+  }
+  #boatWatchModal .boat-watch-modal-content{
+    width:100%!important;
+    max-width:none!important;
+    max-height:none!important;
+    margin:0 auto!important;
+    overflow:visible!important;
+  }
+}

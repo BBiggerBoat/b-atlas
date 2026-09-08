@@ -3010,7 +3010,7 @@ function renderDecisionWorkspace() {
                 <option value="Rejected" ${rel.Status === "Rejected" ? "selected" : ""}>Rejected</option>
             </select></td>
             <td>${rating}</td><td>${escapeWorkspaceHtml(updated)}</td>
-            <td><button type="button" class="workspace-notebook-btn" data-id="${escapeWorkspaceHtml(id)}">Notebook</button></td>
+            <td><div class="workspace-row-actions"><button type="button" class="workspace-notebook-btn" data-id="${escapeWorkspaceHtml(id)}">Notebook</button><button type="button" class="workspace-remove-btn" data-id="${escapeWorkspaceHtml(id)}" aria-label="Remove ${escapeWorkspaceHtml(title)} from Saved Models">Remove</button></div></td>
         </tr>`;
     }).join("");
     tbody.querySelectorAll(".workspace-boat-link").forEach(button => button.addEventListener("click", () => {
@@ -3040,14 +3040,43 @@ function renderDecisionWorkspace() {
         renderDecisionWorkspace();
     }));
     tbody.querySelectorAll(".workspace-status-select").forEach(select => select.addEventListener("change", () => {
-        if (select.value === "Rejected") {
-            openRejectModal(select.dataset.id);
-            select.value = getBoatRelationship(select.dataset.id)?.Status || "None";
-        } else {
-            updateBoatRelationship(select.dataset.id, select.value);
-            renderDecisionWorkspace();
-            renderDecisionTimeline(select.dataset.id);
+        const boatId = String(select.dataset.id || "");
+        const nextStatus = normalizeModelStatus(select.value);
+        const rel = getBoatRelationship(boatId);
+        if (!rel) { renderDecisionWorkspace(); return; }
+        if (nextStatus === "Rejected") {
+            openRejectModal(boatId);
+            select.value = normalizeModelStatus(rel.Status);
+            return;
         }
+        const previousStatus = normalizeModelStatus(rel.Status);
+        rel.Status = nextStatus;
+        rel.LastUpdated = new Date().toISOString();
+        if (previousStatus !== nextStatus) {
+            appendDecisionHistory(rel, "status", `Stage changed to ${STATUS_LABELS[nextStatus] || nextStatus}`, `Previously ${STATUS_LABELS[previousStatus] || previousStatus}`);
+        }
+        const workspace = getActiveBuyerWorkspace();
+        saveBuyerWorkspace(workspace);
+        if (currentSearchProfile?.ProfileID === BUYER_WORKSPACE_PROFILE_ID) currentSearchProfile = workspace;
+        updateBuyerWorkspaceCounts();
+        decisionWorkspaceSelectedBoatId = boatId;
+        renderDecisionWorkspace();
+    }));
+    tbody.querySelectorAll(".workspace-remove-btn").forEach(button => button.addEventListener("click", () => {
+        const boatId = String(button.dataset.id || "");
+        const boat = allBoats.find(item => String(item.BoatModelID) === boatId);
+        const title = boat ? [boat.Manufacturer, boat.Model, boat.Variant].filter(Boolean).join(" ") : "this model";
+        if (!confirm(`Remove ${title} from Saved Models?\n\nIts Saved Model stage, rating, notes, tags and research history will be removed. Any separately saved individual listings will remain.`)) return;
+        const workspace = getActiveBuyerWorkspace();
+        workspace.BoatRelationships = (workspace.BoatRelationships || []).filter(rel => String(rel.BoatModelID) !== boatId);
+        saveBuyerWorkspace(workspace);
+        if (currentSearchProfile?.ProfileID === BUYER_WORKSPACE_PROFILE_ID) currentSearchProfile = workspace;
+        boatWatchSelection.delete(boatId);
+        const compareIndex = comparisonBoatIDs.indexOf(boatId);
+        if (compareIndex !== -1) comparisonBoatIDs.splice(compareIndex, 1);
+        if (decisionWorkspaceSelectedBoatId === boatId) decisionWorkspaceSelectedBoatId = null;
+        updateBuyerWorkspaceCounts();
+        renderDecisionWorkspace();
     }));
     if (!decisionWorkspaceSelectedBoatId || !rows.some(item => String(item.boat.BoatModelID) === decisionWorkspaceSelectedBoatId)) {
         decisionWorkspaceSelectedBoatId = String(rows[0].boat.BoatModelID);
@@ -3620,12 +3649,26 @@ async function copyBoatWatchPrompt() {
 function openBoatWatchModal() {
     refreshBoatWatchPrompt();
     const modal = document.getElementById("boatWatchModal");
-    if (modal) modal.style.display = "block";
+    if (!modal) return;
+    modal.classList.add("is-open");
+    modal.style.display = "flex";
+    modal.setAttribute("aria-hidden", "false");
+    // On compact screens the Saved Models modal can otherwise remain the active
+    // visual layer in Chromium. Boat Watch receives focus and its own overlay.
+    requestAnimationFrame(() => {
+        const firstField = document.getElementById("boatWatchArea");
+        if (firstField && window.matchMedia?.("(max-width: 760px)").matches) firstField.focus({ preventScroll: true });
+    });
 }
-
-document.addEventListener("DOMContentLoaded", () => {
-    document.getElementById("createBoatWatchBtn")?.addEventListener("click", openBoatWatchModal);
-    document.getElementById("closeBoatWatchModal")?.addEventListener("click", () => { document.getElementById("boatWatchModal").style.display = "none"; });
+function closeBoatWatchModal() {
+    const modal = document.getElementById("boatWatchModal");
+    if (!modal) return;
+    modal.classList.remove("is-open");
+    modal.style.display = "none";
+    modal.setAttribute("aria-hidden", "true");
+}
+function bindBoatWatchControls() {
+    document.getElementById("closeBoatWatchModal")?.addEventListener("click", closeBoatWatchModal);
     ["boatWatchArea","boatWatchPrice","boatWatchRequirements"].forEach(id => document.getElementById(id)?.addEventListener("input", refreshBoatWatchPrompt));
     document.getElementById("boatWatchCopy")?.addEventListener("click", async () => {
         const ok = await copyBoatWatchPrompt();
@@ -3636,4 +3679,18 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("boatWatchStatus").textContent = ok ? "Instructions copied. Paste them into ChatGPT and confirm the recurring task." : "Copy the instructions, then paste them into ChatGPT.";
         window.open("https://chatgpt.com/", "_blank", "noopener,noreferrer");
     });
+}
+
+// Bind immediately when scripts are loaded at the end of the document, and also
+// retain a DOMContentLoaded fallback for alternate embedding/deployment paths.
+if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", bindBoatWatchControls, { once: true });
+else bindBoatWatchControls();
+
+// Delegated fallback protects the dynamically refreshed Saved Models workspace
+// on mobile browsers even if a direct listener is lost during a future render.
+document.addEventListener("click", event => {
+    const trigger = event.target.closest?.("#createBoatWatchBtn");
+    if (!trigger || trigger.disabled) return;
+    event.preventDefault();
+    openBoatWatchModal();
 });

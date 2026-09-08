@@ -17,8 +17,8 @@
 <meta content="https://b-atlas.org/images/batlas-logo.png" property="og:image"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"B-Atlas","url":"https://b-atlas.org/","description":"B-Atlas is a community-powered boat knowledge and research resource for discovering, comparing and researching cruising boat models and buyer trade-offs.","@id":"https://b-atlas.org/#website","inLanguage":"en"}</script>
-<link href="styles.css?v=6.72.0" rel="stylesheet"/>
-<link href="bscout-visual-standard.css?v=6.71.3" rel="stylesheet"/>
+<link href="styles.css?v=6.72.2" rel="stylesheet"/>
+<link href="bscout-visual-standard.css?v=6.72.2" rel="stylesheet"/>
 <link href="guide-visual-standard.css?v=6.71.3" rel="stylesheet"/>
 <link href="home-visual-standard.css?v=6.71.3" rel="stylesheet"/>
 <link href="batlas-design-system.css?v=6.71.3" rel="stylesheet"/>
@@ -458,7 +458,7 @@
 <a data-app-action="privacy" href="#privacy">Privacy</a>
 <a class="moderator-access-link" hidden="" href="developer/contribution-review.html" id="moderatorAccessLink">Moderator</a>
 </nav>
-<span>Version 6.71.2</span>
+<span>Version 6.72.2</span>
 </footer>
 </main>
 </div>
@@ -613,7 +613,7 @@
 </aside>
 </div>
 </div>
-</div><div class="modal" id="boatWatchModal"><div class="modal-content boat-watch-modal-content"><button class="modal-close" id="closeBoatWatchModal" type="button">×</button><p class="workspace-eyebrow">B-Atlas Boat Watch</p><h2>Create Boat Watch</h2><p class="field-help">B-Atlas prepares monitoring instructions from your selected models. You can use them with ChatGPT to create an ongoing Boat Watch, or copy the same instructions into another AI.</p><div class="boat-watch-howto"><strong>Using Boat Watch with ChatGPT</strong><ol><li>Review the search area, price limit and any additional requirements below.</li><li>Click <strong>Copy &amp; Open ChatGPT</strong>. B-Atlas copies the complete monitoring request and opens ChatGPT in a new tab.</li><li>Paste the copied instructions into ChatGPT and send them.</li><li>Ask ChatGPT to run the search as a recurring monitoring task and confirm how often it should check. When recurring tasks are available on your ChatGPT account, it can notify you when a genuinely new qualifying listing appears.</li></ol><p>You can return to B-Atlas at any time and create a new watch with different models or requirements.</p></div><label class="workspace-field-label">Search area<input id="boatWatchArea" type="text" value="Canada and the United States"/></label><label class="workspace-field-label">Maximum price (optional)<input id="boatWatchPrice" placeholder="e.g. CAD $90,000" type="text"/></label><label class="workspace-field-label">Additional requirements (optional)<textarea id="boatWatchRequirements" placeholder="e.g. Prefer diesel; trailer is a strong positive" rows="3"></textarea></label><label class="workspace-field-label">Monitoring instructions<textarea id="boatWatchPrompt" readonly="" rows="14"></textarea></label><div class="boat-watch-actions"><button id="boatWatchChatGPT" type="button">Copy &amp; Open ChatGPT</button><button id="boatWatchCopy" type="button">Copy for another AI</button></div><p class="field-help boat-watch-status" id="boatWatchStatus" aria-live="polite"></p></div></div>
+</div><div class="modal" id="boatWatchModal" aria-hidden="true"><div class="modal-content boat-watch-modal-content"><button class="modal-close" id="closeBoatWatchModal" type="button">×</button><p class="workspace-eyebrow">B-Atlas Boat Watch</p><h2>Create Boat Watch</h2><p class="field-help">B-Atlas prepares monitoring instructions from your selected models. You can use them with ChatGPT to create an ongoing Boat Watch, or copy the same instructions into another AI.</p><div class="boat-watch-howto"><strong>Using Boat Watch with ChatGPT</strong><ol><li>Review the search area, price limit and any additional requirements below.</li><li>Click <strong>Copy &amp; Open ChatGPT</strong>. B-Atlas copies the complete monitoring request and opens ChatGPT in a new tab.</li><li>Paste the copied instructions into ChatGPT and send them.</li><li>Ask ChatGPT to run the search as a recurring monitoring task and confirm how often it should check. When recurring tasks are available on your ChatGPT account, it can notify you when a genuinely new qualifying listing appears.</li></ol><p>You can return to B-Atlas at any time and create a new watch with different models or requirements.</p></div><label class="workspace-field-label">Search area<input id="boatWatchArea" type="text" value="Canada and the United States"/></label><label class="workspace-field-label">Maximum price (optional)<input id="boatWatchPrice" placeholder="e.g. CAD $90,000" type="text"/></label><label class="workspace-field-label">Additional requirements (optional)<textarea id="boatWatchRequirements" placeholder="e.g. Prefer diesel; trailer is a strong positive" rows="3"></textarea></label><label class="workspace-field-label">Monitoring instructions<textarea id="boatWatchPrompt" readonly="" rows="14"></textarea></label><div class="boat-watch-actions"><button id="boatWatchChatGPT" type="button">Copy &amp; Open ChatGPT</button><button id="boatWatchCopy" type="button">Copy for another AI</button></div><p class="field-help boat-watch-status" id="boatWatchStatus" aria-live="polite"></p></div></div>
 <!-- =====================================================
      LISTING WORKSPACE — INDIVIDUAL CANDIDATE BOAT
 ===================================================== -->
@@ -775,10 +775,11 @@ Engine manual — paper copy aboard..." rows="7"></textarea>
 <h2 id="savedModelsTransferTitle">Move / Share Saved Models</h2>
 <p class="saved-transfer-intro">Move your Saved Models to another device without an account, or share a shortlist with someone else.</p>
 <div id="savedModelsTransferBuilder">
-<div class="saved-transfer-choice-grid" role="group" aria-label="Transfer purpose">
-<label class="saved-transfer-choice"><input type="radio" name="savedTransferMode" value="move" checked><span><strong>Move to another device</strong><small>Includes Stage, Rating, My Notes, Tags and research history.</small></span></label>
-<label class="saved-transfer-choice"><input type="radio" name="savedTransferMode" value="share"><span><strong>Share shortlist</strong><small>Shares models and Stage by default. Personal notes stay private unless you include them.</small></span></label>
-</div>
+<fieldset class="saved-transfer-choice-grid" aria-label="Transfer purpose">
+<legend class="saved-transfer-section-label">What do you want to do?</legend>
+<label class="saved-transfer-choice"><input type="radio" name="savedTransferMode" value="move" checked><span><strong>Move to another device</strong><small>Transfer your complete Saved Models workspace.</small></span></label>
+<label class="saved-transfer-choice"><input type="radio" name="savedTransferMode" value="share"><span><strong>Share a shortlist</strong><small>Share models and Stage; personal details remain optional.</small></span></label>
+</fieldset>
 <div class="saved-transfer-options">
 <label><span>Models to include</span><select id="savedTransferScope"><option value="all">All Saved Models</option><option value="current">Current Stage view</option></select></label>
 <label class="saved-transfer-check"><input id="savedTransferIncludeNotes" type="checkbox" checked><span>Include My Notes</span></label>
@@ -917,10 +918,10 @@ Engine manual — paper copy aboard..." rows="7"></textarea>
 <script src="communityguide.js?v=6.27.2"></script>
 <script src="modelknowledgescore.js?v=6.66.0"></script>
 <script src="boatworkspace.js?v=6.72.0"></script>
-<script src="script.js?v=6.72.0"></script>
+<script src="script.js?v=6.72.2"></script>
 <script src="appbootstrap.js"></script>
 <script src="ownership.js"></script>
-<script src="applicationpolish.js?v=6.72.0"></script>
+<script src="applicationpolish.js?v=6.72.2"></script>
 <script src="communityapi.js?v=6.67.0"></script>
 <script src="contributionentry.js?v=6.71.3"></script>
 <script src="moderatoraccess.js"></script>
