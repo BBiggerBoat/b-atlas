@@ -537,7 +537,7 @@
         const menu=[{id:"guide-buying-actions",label:"Saved Listings & Buying Actions"},{id:"guide-buying-knowledge",label:"Inspection Look-outs"}];
         if(cc.buyer) menu.push({id:"guide-community-inspection",label:"Owner Inspection Advice"});
         return `${sectionIntro("Buy", "Move from model research to a specific purchase: save individual listings, record seller conversations, review inspection findings, pricing and offers.")}
-            ${sectionMenu(menu)}${unknownPrinciple()}
+            <div class="buy-section-toolbar">${sectionMenu(menu)}<button type="button" class="buy-create-watchlist" id="createWorkspaceWatchlist">Create Watchlist</button></div>${unknownPrinciple()}
             ${progressiveSection("guide-buying-actions", "Saved listings and buying actions", renderBuyThisBoat(), true)}
             ${progressiveSection("guide-buying-knowledge", "Known concerns and inspection look-outs", renderIntelligence(), false)}
             ${cc.buyer?progressiveSection("guide-community-inspection", "Owner-informed inspection advice", renderCommunityBuyer(), false):""}`;
@@ -616,6 +616,9 @@
     }
     function bindBuyThisBoat() {
         document.getElementById("openInspectionKnowledge")?.addEventListener("click", () => setTab("buying"));
+        document.getElementById("createWorkspaceWatchlist")?.addEventListener("click", () => {
+            if (currentBoat?.BoatModelID && typeof root.openBoatWatchForModel === "function") root.openBoatWatchForModel(currentBoat.BoatModelID);
+        });
         bindListings();
     }
 

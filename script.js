@@ -3334,8 +3334,8 @@ function renderSavedModelsTransferImport(payload) {
     pendingSavedModelsTransfer = payload;
     if (builder) builder.hidden = true;
     importer.hidden = false;
-    if (title) title.textContent = payload.mode === "share" ? "Add Shared Saved Models" : "Move Saved Models to This Device";
-    if (summary) summary.innerHTML = `<strong>${payload.relationships.length} model${payload.relationships.length === 1 ? "" : "s"} received</strong><span>Review before changing anything stored on this device.</span>`;
+    if (title) title.textContent = payload.mode === "share" ? "Add Shared Saved Models" : "Move Saved Models to This Browser";
+    if (summary) summary.innerHTML = `<strong>${payload.relationships.length} model${payload.relationships.length === 1 ? "" : "s"} received</strong><span>Review the incoming models, then merge them into this browser or replace this browser’s Saved Models.</span>`;
     preview.innerHTML = payload.relationships.map(rel => {
         const boat = allBoats.find(item => String(item.BoatModelID) === String(rel.BoatModelID));
         const titleText = boat ? [boat.Manufacturer, boat.Model, boat.Variant].filter(Boolean).join(" ") : rel.BoatModelID;
@@ -3710,6 +3710,14 @@ function openBoatWatchModal() {
         if (firstField && window.matchMedia?.("(max-width: 760px)").matches) firstField.focus({ preventScroll: true });
     });
 }
+function openBoatWatchForModel(boatModelId) {
+    boatWatchSelection.clear();
+    if (boatModelId != null) boatWatchSelection.add(String(boatModelId));
+    updateBoatWatchButton();
+    openBoatWatchModal();
+}
+if (typeof window !== "undefined") window.openBoatWatchForModel = openBoatWatchForModel;
+
 function closeBoatWatchModal() {
     const modal = document.getElementById("boatWatchModal");
     if (!modal) return;

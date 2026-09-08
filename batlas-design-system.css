@@ -866,3 +866,81 @@ body{padding-top:82px!important;}
   body{padding-top:0!important;}
   .top-nav{white-space:nowrap!important;}
 }
+
+/* =====================================================
+   v6.75.0 — unified page geometry + Saved Models polish
+===================================================== */
+:root{--ba-page-wide:1360px;--ba-page-gutter:28px}
+.lifecycle-home,
+.guided-match-shell,
+.contribution-shell,
+.saved-models-page-shell,
+.information-page-shell,
+.boat-guide-view .boat-guide-shell{
+  width:min(var(--ba-page-wide),calc(100% - (var(--ba-page-gutter) * 2)))!important;
+  max-width:var(--ba-page-wide)!important;
+  margin-left:auto!important;
+  margin-right:auto!important;
+  box-sizing:border-box!important;
+}
+.information-page-shell .information-modal-content{max-width:980px!important}
+#decisionWorkspaceModal.saved-models-page-view{padding-left:0!important;padding-right:0!important}
+.saved-models-page-title{
+  margin:0 0 8px!important;
+  color:var(--batlas-blue,#176fa8)!important;
+  font-size:30px!important;
+  line-height:1.12!important;
+  font-weight:750!important;
+  letter-spacing:-.02em!important;
+}
+.decision-workspace-header>div>p{margin:0!important}
+
+/* Buy workspace controls */
+.boat-guide-view .buy-section-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:0 0 14px}
+.boat-guide-view .buy-section-toolbar .boat-guide-section-menu{margin:0!important;flex:1 1 auto}
+.boat-guide-view .buy-create-watchlist,
+.boat-guide-view #addWorkspaceListing{
+  background:var(--bs-accent,#0b5fa5)!important;
+  color:#fff!important;
+  border:1px solid var(--bs-accent,#0b5fa5)!important;
+}
+.boat-guide-view .buy-create-watchlist:hover,
+.boat-guide-view .buy-create-watchlist:focus-visible,
+.boat-guide-view #addWorkspaceListing:hover,
+.boat-guide-view #addWorkspaceListing:focus-visible{background:#084c85!important;color:#fff!important;border-color:#084c85!important}
+
+/* Compare should begin below the fixed site header, never behind it. */
+#comparisonModal.modal{
+  top:82px!important;
+  bottom:0!important;
+  height:calc(100dvh - 82px)!important;
+  inset-inline:0!important;
+  padding:14px var(--ba-page-gutter) 22px!important;
+  overflow:auto!important;
+  box-sizing:border-box!important;
+  align-items:flex-start!important;
+}
+#comparisonModal .compare-modal-content{
+  width:min(var(--ba-page-wide),100%)!important;
+  max-width:var(--ba-page-wide)!important;
+  max-height:calc(100dvh - 118px)!important;
+  margin:0 auto!important;
+  overflow:auto!important;
+}
+
+/* Transfer guidance */
+.saved-transfer-howto{margin:12px 0 8px;padding:10px 12px;border-left:3px solid var(--batlas-blue,#176fa8);background:#f5f9fc;color:#334155;font-size:12px;line-height:1.5}
+
+@media(max-width:980px){
+  :root{--ba-page-gutter:18px}
+  .saved-models-page-title{font-size:26px!important}
+  #comparisonModal.modal{top:76px!important;height:calc(100dvh - 76px)!important}
+  #comparisonModal .compare-modal-content{max-height:calc(100dvh - 104px)!important}
+}
+@media(max-width:760px){
+  :root{--ba-page-gutter:14px}
+  .saved-models-page-title{font-size:23px!important}
+  .boat-guide-view .buy-section-toolbar{align-items:stretch}
+  .boat-guide-view .buy-create-watchlist{width:100%}
+  #comparisonModal.modal{padding:10px!important}
+}
