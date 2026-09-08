@@ -3291,7 +3291,7 @@ body{padding-top:82px!important;}
 
 
 /* =====================================================
-   v6.73.0 — SAVED MODELS + ABOUT AS NORMAL PAGES
+   v6.74.0 — SAVED MODELS + ABOUT AS NORMAL PAGES
 ===================================================== */
 .saved-models-page-view,.information-page-view{display:none;background:#fff;min-height:calc(100vh - 82px);padding:34px 28px 56px;box-sizing:border-box}
 .saved-models-page-shell,.information-page-shell{width:min(1180px,100%);margin:0 auto}
@@ -3303,7 +3303,7 @@ body{padding-top:82px!important;}
 @media(max-width:980px){.saved-models-page-view,.information-page-view{min-height:calc(100vh - 76px);padding:26px 18px 44px}.decision-workspace-layout{grid-template-columns:1fr!important}.decision-timeline-panel{position:static!important}}
 @media(max-width:760px){.saved-models-page-view,.information-page-view{padding:20px 14px 36px}.decision-workspace-table-wrapper{overflow-x:auto}.decision-workspace-header{align-items:flex-start;flex-direction:column;gap:14px}.decision-workspace-header-actions{justify-content:flex-start}}
 
-/* v6.73.0 final page reset: neutralize legacy modal geometry retained for JS compatibility. */
+/* v6.74.0 final page reset: neutralize legacy modal geometry retained for JS compatibility. */
 #decisionWorkspaceModal.saved-models-page-view{
   position:static!important;
   inset:auto!important;
@@ -3341,3 +3341,10 @@ body{padding-top:82px!important;}
 }
 @media(max-width:980px){#decisionWorkspaceModal.saved-models-page-view{min-height:calc(100vh - 76px)!important;padding:26px 18px 44px!important}}
 @media(max-width:760px){#decisionWorkspaceModal.saved-models-page-view{min-height:0!important;padding:20px 14px 36px!important}}
+
+/* =====================================================
+   v6.74.0 — clean Saved Models bulk-selection workflow
+===================================================== */
+.home-version-badge{position:fixed;right:14px;bottom:10px;z-index:20;padding:3px 7px;border:1px solid #d5dde5;border-radius:4px;background:rgba(255,255,255,.92);color:#64748b;font-size:11px;line-height:1.2;box-shadow:0 1px 4px rgba(15,23,42,.06)}
+.saved-select-col{width:52px;text-align:center!important}.decision-workspace-table .workspace-select-checkbox,#selectAllSavedModels{width:16px;height:16px;min-width:16px;min-height:16px;margin:0;accent-color:#0b5fa5}.workspace-danger-btn{background:#fff!important;color:#a42424!important;border:1px solid #c97a7a!important}.workspace-danger-btn:hover:not(:disabled),.workspace-danger-btn:focus-visible:not(:disabled){background:#fff7f7!important;color:#861c1c!important;border-color:#a42424!important}.workspace-danger-btn:disabled{opacity:.45;cursor:not-allowed}.saved-transfer-options-selected{grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important}.saved-transfer-selected-note{grid-row:1/4;display:grid;align-content:start;gap:4px;margin:0;padding:0;font-size:13px;color:#334155}.saved-transfer-selected-note span{font-weight:400;color:#64748b;line-height:1.4}.decision-workspace-header-actions button{min-height:36px}.decision-workspace-table th:first-child,.decision-workspace-table td:first-child{text-align:center}.decision-workspace-table td{vertical-align:middle}
+@media(max-width:760px){.home-version-badge{right:8px;bottom:7px;font-size:10px}.decision-workspace-header-actions{display:grid!important;grid-template-columns:1fr 1fr;gap:8px!important;width:100%}.decision-workspace-header-actions button{width:100%!important}.saved-transfer-options-selected{grid-template-columns:1fr!important}.saved-transfer-selected-note{grid-row:auto}.decision-workspace-table{min-width:690px}}

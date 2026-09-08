@@ -248,13 +248,11 @@
             cruiser: "images/style-icons/express-cruiser.png",
             tug: "images/style-icons/tug.png",
             downeast: "images/style-icons/downeast.png",
+            sportfisher: "images/style-icons/sportfisher.png",
             "motor-yacht": "images/style-icons/motor-yacht.png"
         };
         if (approved[key]) {
             return `<img src="${approved[key]}" alt="" loading="lazy" decoding="async">`;
-        }
-        if (key === "sportfisher") {
-            return '<svg viewBox="0 0 72 40" aria-hidden="true"><path d="M6 29h51l9 5H22c-8 0-12-1.5-16-5Z"></path><path d="M23 18h18l7 11H15l8-11Z"></path><path d="M30 12h10v6H30z"></path><path d="M42 16l10-7"></path><path d="M34 8v10"></path></svg>';
         }
         return guidedSvgIcon("genericBoat");
     }
@@ -485,16 +483,24 @@
     if (!window.history.state?.bscoutView) {
         const requestedModel = new URLSearchParams(window.location.search).get("model");
         const path = window.location.pathname.replace(/\/+$/, "") || "/";
+        const hash = String(window.location.hash || "").toLowerCase();
         if (requestedModel) window.history.replaceState({ bscoutView:"guide", boatModelId:requestedModel, pendingDeepLink:true }, "", window.location.href);
+        else if (path === "/saved-models" && hash.startsWith("#saved-models-transfer=")) window.history.replaceState({ bscoutView:"saved-models" }, "", window.location.href);
         else if (path === "/saved-models") updateHistory("saved-models", {}, true);
         else if (path === "/about") updateHistory("about", {}, true);
         else if (path === "/privacy") updateHistory("privacy", {}, true);
+        else if (hash === "#find-your-boat") updateHistory("guided", { guidedStep:0 }, true);
+        else if (hash === "#boat-models") updateHistory("discover", {}, true);
+        else if (hash === "#help-build-b-atlas") updateHistory("contribute", {}, true);
         else updateHistory("home", {}, true);
     }
     const initialView = window.history.state?.bscoutView;
     if (initialView === "saved-models") requestAnimationFrame(() => openSavedBoats({ history:false }));
     else if (initialView === "about") requestAnimationFrame(() => openInfo("about", { history:false }));
     else if (initialView === "privacy") requestAnimationFrame(() => openInfo("privacy", { history:false }));
+    else if (initialView === "guided") requestAnimationFrame(() => { guidedStep = Number.isInteger(window.history.state?.guidedStep) ? window.history.state.guidedStep : 0; showGuidedMatches({ history:false }); renderGuidedStep(); });
+    else if (initialView === "discover") requestAnimationFrame(() => showDiscover({ history:false }));
+    else if (initialView === "contribute") requestAnimationFrame(() => window.BScoutContributions?.openGlobal({ history:false }));
     window.addEventListener("popstate", event => {
         const state = event.state || { bscoutView: "home" };
         if (state.bscoutView === "guide") {

@@ -2872,6 +2872,7 @@ if (typeof window !== "undefined") {
 
 let decisionWorkspaceStatus = "All";
 let decisionWorkspaceSelectedBoatId = null;
+const savedModelSelection = new Set();
 
 function escapeWorkspaceHtml(value) {
     return String(value == null ? "" : value)
@@ -2916,13 +2917,39 @@ function renderDecisionTimeline(boatId) {
     }).join("")}</ol>` : "<p>No decision history recorded yet.</p>"}`;
 }
 
-function updateWorkspaceCompareButton() {
-    const button = document.getElementById("compareWorkspaceSelectionBtn");
-    if (!button) return;
-    const count = comparisonBoatIDs.length;
-    button.textContent = `Compare Selected (${count})`;
-    button.disabled = count < 2;
+function updateSavedModelBulkActions() {
+    const count = savedModelSelection.size;
+    const compareButton = document.getElementById("compareWorkspaceSelectionBtn");
+    const moveShareButton = document.getElementById("moveShareSavedModelsBtn");
+    const removeButton = document.getElementById("removeWorkspaceSelectionBtn");
+    const watchButton = document.getElementById("createBoatWatchBtn");
+    if (compareButton) {
+        compareButton.textContent = `Compare (${count})`;
+        compareButton.disabled = count < 2 || count > 4;
+        compareButton.title = count > 4 ? "Compare supports up to 4 models at a time." : "";
+    }
+    if (moveShareButton) {
+        moveShareButton.textContent = `Move / Share (${count})`;
+        moveShareButton.disabled = count < 1;
+    }
+    if (removeButton) {
+        removeButton.textContent = `Remove (${count})`;
+        removeButton.disabled = count < 1;
+    }
+    if (watchButton) {
+        watchButton.textContent = `Create Boat Watch (${count})`;
+        watchButton.disabled = count < 1;
+    }
+    const selectAll = document.getElementById("selectAllSavedModels");
+    if (selectAll) {
+        const visibleIds = getDecisionWorkspaceRows().map(({boat}) => String(boat.BoatModelID));
+        const selectedVisible = visibleIds.filter(id => savedModelSelection.has(id)).length;
+        selectAll.checked = visibleIds.length > 0 && selectedVisible === visibleIds.length;
+        selectAll.indeterminate = selectedVisible > 0 && selectedVisible < visibleIds.length;
+    }
 }
+
+function updateWorkspaceCompareButton() { updateSavedModelBulkActions(); }
 
 
 function parseSavedListingLinks(value) {
@@ -2989,7 +3016,7 @@ function renderDecisionWorkspace() {
     if (profileLabel) profileLabel.textContent = currentSearchProfile?.ProfileName || "Saved Models";
     const rows = getDecisionWorkspaceRows();
     if (!rows.length) {
-        tbody.innerHTML = '<tr><td colspan="7" class="decision-workspace-empty">No boat models are saved at this stage.</td></tr>';
+        tbody.innerHTML = '<tr><td colspan="6" class="decision-workspace-empty">No boat models are saved at this stage.</td></tr>';
         renderDecisionTimeline(null);
         updateWorkspaceCompareButton();
         return;
@@ -3000,8 +3027,7 @@ function renderDecisionWorkspace() {
         const rating = rel.Research?.Rating ? "★".repeat(Number(rel.Research.Rating)) : "Unrated";
         const updated = rel.LastUpdated ? new Date(rel.LastUpdated).toLocaleDateString() : "Unknown";
         return `<tr class="${decisionWorkspaceSelectedBoatId === id ? "selected" : ""}" data-workspace-boat-id="${escapeWorkspaceHtml(id)}">
-            <td><input type="checkbox" class="workspace-watch-checkbox" data-id="${escapeWorkspaceHtml(id)}" ${boatWatchSelection.has(id) ? "checked" : ""} aria-label="Watch ${escapeWorkspaceHtml(title)} for sale"></td>
-            <td><input type="checkbox" class="workspace-compare-checkbox" data-id="${escapeWorkspaceHtml(id)}" ${comparisonBoatIDs.includes(id) ? "checked" : ""} aria-label="Compare ${escapeWorkspaceHtml(title)}"></td>
+            <td><input type="checkbox" class="workspace-select-checkbox" data-id="${escapeWorkspaceHtml(id)}" ${savedModelSelection.has(id) ? "checked" : ""} aria-label="Select ${escapeWorkspaceHtml(title)}"></td>
             <td><a class="workspace-boat-link" data-id="${escapeWorkspaceHtml(id)}" href="${escapeWorkspaceHtml(window.BAtlasModelURLs?.pathForBoat?.(boat) || "#")}">${escapeWorkspaceHtml(title)}</a></td>
             <td><select class="workspace-status-select" data-id="${escapeWorkspaceHtml(id)}">
                 <option value="Interested" ${rel.Status === "Interested" ? "selected" : ""}>Interested</option>
@@ -3010,7 +3036,7 @@ function renderDecisionWorkspace() {
                 <option value="Rejected" ${rel.Status === "Rejected" ? "selected" : ""}>Rejected</option>
             </select></td>
             <td>${rating}</td><td>${escapeWorkspaceHtml(updated)}</td>
-            <td><div class="workspace-row-actions"><button type="button" class="workspace-notebook-btn" data-id="${escapeWorkspaceHtml(id)}">Notebook</button><button type="button" class="workspace-remove-btn" data-id="${escapeWorkspaceHtml(id)}" aria-label="Remove ${escapeWorkspaceHtml(title)} from Saved Models">Remove</button></div></td>
+            <td><div class="workspace-row-actions"><button type="button" class="workspace-notebook-btn" data-id="${escapeWorkspaceHtml(id)}">Notebook</button></div></td>
         </tr>`;
     }).join("");
     tbody.querySelectorAll(".workspace-boat-link").forEach(button => button.addEventListener("click", (event) => {
@@ -3031,15 +3057,14 @@ function renderDecisionWorkspace() {
             showResearchPanel(button.dataset.id);
         }
     }));
-    tbody.querySelectorAll(".workspace-watch-checkbox").forEach(input => input.addEventListener("change", () => {
-        if (input.checked) boatWatchSelection.add(String(input.dataset.id)); else boatWatchSelection.delete(String(input.dataset.id));
-        updateBoatWatchButton();
+    tbody.querySelectorAll(".workspace-select-checkbox").forEach(input => input.addEventListener("change", () => {
+        const id = String(input.dataset.id || "");
+        if (input.checked) savedModelSelection.add(id); else savedModelSelection.delete(id);
+        decisionWorkspaceSelectedBoatId = id || decisionWorkspaceSelectedBoatId;
+        updateSavedModelBulkActions();
+        renderDecisionTimeline(decisionWorkspaceSelectedBoatId);
     }));
-    updateBoatWatchButton();
-    tbody.querySelectorAll(".workspace-compare-checkbox").forEach(input => input.addEventListener("change", () => {
-        toggleCompareBoat(input.dataset.id);
-        renderDecisionWorkspace();
-    }));
+    updateSavedModelBulkActions();
     tbody.querySelectorAll(".workspace-status-select").forEach(select => select.addEventListener("change", () => {
         const boatId = String(select.dataset.id || "");
         const nextStatus = normalizeModelStatus(select.value);
@@ -3063,27 +3088,13 @@ function renderDecisionWorkspace() {
         decisionWorkspaceSelectedBoatId = boatId;
         renderDecisionWorkspace();
     }));
-    tbody.querySelectorAll(".workspace-remove-btn").forEach(button => button.addEventListener("click", () => {
-        const boatId = String(button.dataset.id || "");
-        const boat = allBoats.find(item => String(item.BoatModelID) === boatId);
-        const title = boat ? [boat.Manufacturer, boat.Model, boat.Variant].filter(Boolean).join(" ") : "this model";
-        if (!confirm(`Remove ${title} from Saved Models?\n\nIts Saved Model stage, rating, notes, tags and research history will be removed. Any separately saved individual listings will remain.`)) return;
-        const workspace = getActiveBuyerWorkspace();
-        workspace.BoatRelationships = (workspace.BoatRelationships || []).filter(rel => String(rel.BoatModelID) !== boatId);
-        saveBuyerWorkspace(workspace);
-        if (currentSearchProfile?.ProfileID === BUYER_WORKSPACE_PROFILE_ID) currentSearchProfile = workspace;
-        boatWatchSelection.delete(boatId);
-        const compareIndex = comparisonBoatIDs.indexOf(boatId);
-        if (compareIndex !== -1) comparisonBoatIDs.splice(compareIndex, 1);
-        if (decisionWorkspaceSelectedBoatId === boatId) decisionWorkspaceSelectedBoatId = null;
-        updateBuyerWorkspaceCounts();
-        renderDecisionWorkspace();
-    }));
     if (!decisionWorkspaceSelectedBoatId || !rows.some(item => String(item.boat.BoatModelID) === decisionWorkspaceSelectedBoatId)) {
         decisionWorkspaceSelectedBoatId = String(rows[0].boat.BoatModelID);
     }
+    const validSavedIds = new Set((getActiveBuyerWorkspace().BoatRelationships || []).map(rel => String(rel.BoatModelID)));
+    [...savedModelSelection].forEach(id => { if (!validSavedIds.has(id)) savedModelSelection.delete(id); });
     renderDecisionTimeline(decisionWorkspaceSelectedBoatId);
-    updateWorkspaceCompareButton();
+    updateSavedModelBulkActions();
 }
 
 function openDecisionWorkspace(options = {}) {
@@ -3119,8 +3130,31 @@ function initDecisionWorkspaceControls() {
         document.querySelectorAll(".decision-filter-btn").forEach(item => item.classList.toggle("active", item === button));
         renderDecisionWorkspace();
     }));
+    document.getElementById("selectAllSavedModels")?.addEventListener("change", event => {
+        const ids = getDecisionWorkspaceRows().map(({boat}) => String(boat.BoatModelID));
+        if (event.target.checked) ids.forEach(id => savedModelSelection.add(id));
+        else ids.forEach(id => savedModelSelection.delete(id));
+        renderDecisionWorkspace();
+    });
+    document.getElementById("removeWorkspaceSelectionBtn")?.addEventListener("click", () => {
+        const ids = [...savedModelSelection];
+        if (!ids.length) return;
+        const label = ids.length === 1 ? "this Saved Model" : `these ${ids.length} Saved Models`;
+        if (!confirm(`Remove ${label}?\n\nStage, rating, notes, tags and research history for the selected model${ids.length === 1 ? "" : "s"} will be removed. Separately saved individual listings will remain.`)) return;
+        const workspace = getActiveBuyerWorkspace();
+        workspace.BoatRelationships = (workspace.BoatRelationships || []).filter(rel => !savedModelSelection.has(String(rel.BoatModelID)));
+        saveBuyerWorkspace(workspace);
+        if (currentSearchProfile?.ProfileID === BUYER_WORKSPACE_PROFILE_ID) currentSearchProfile = workspace;
+        ids.forEach(id => { boatWatchSelection.delete(id); const i = comparisonBoatIDs.indexOf(id); if (i !== -1) comparisonBoatIDs.splice(i,1); });
+        savedModelSelection.clear();
+        decisionWorkspaceSelectedBoatId = null;
+        updateBuyerWorkspaceCounts();
+        renderDecisionWorkspace();
+    });
     document.getElementById("compareWorkspaceSelectionBtn")?.addEventListener("click", () => {
-        if (comparisonBoatIDs.length < 2) return;
+        const ids = [...savedModelSelection];
+        if (ids.length < 2 || ids.length > 4) return;
+        comparisonBoatIDs.splice(0, comparisonBoatIDs.length, ...ids);
         renderComparisonTable();
         const modal = document.getElementById("comparisonModal");
         if (modal) modal.style.display = "block";
@@ -3172,18 +3206,17 @@ function sanitizeTransferRelationship(rel, options = {}) {
     return clean;
 }
 
-function getTransferRowsForScope(scope) {
+function getTransferRowsForScope() {
     const workspace = getActiveBuyerWorkspace();
     const rows = Array.isArray(workspace.BoatRelationships) ? workspace.BoatRelationships.filter(rel => rel?.Status) : [];
-    if (scope === "current" && decisionWorkspaceStatus !== "All") return rows.filter(rel => rel.Status === decisionWorkspaceStatus);
-    return rows;
+    return rows.filter(rel => savedModelSelection.has(String(rel.BoatModelID)));
 }
 
 function getSavedTransferOptions() {
     const mode = document.querySelector('input[name="savedTransferMode"]:checked')?.value || "move";
     return {
         mode,
-        scope: document.getElementById("savedTransferScope")?.value || "all",
+        scope: "selected",
         includeNotes: Boolean(document.getElementById("savedTransferIncludeNotes")?.checked),
         includeTags: Boolean(document.getElementById("savedTransferIncludeTags")?.checked),
         includeHistory: Boolean(document.getElementById("savedTransferIncludeHistory")?.checked)
@@ -3192,14 +3225,14 @@ function getSavedTransferOptions() {
 
 function buildSavedModelsTransferPayload() {
     const options = getSavedTransferOptions();
-    const relationships = getTransferRowsForScope(options.scope).map(rel => sanitizeTransferRelationship(rel, options));
+    const relationships = getTransferRowsForScope().map(rel => sanitizeTransferRelationship(rel, options));
     return { schema: "b-atlas-saved-models-transfer", version: 1, mode: options.mode, exportedAt: new Date().toISOString(), relationships };
 }
 
 function buildSavedModelsTransferUrl() {
     const payload = buildSavedModelsTransferPayload();
     const encoded = base64UrlEncodeUnicode(JSON.stringify(payload));
-    return `${window.location.origin}${window.location.pathname}#${SAVED_MODELS_TRANSFER_PREFIX}${encoded}`;
+    return `${window.location.origin}/saved-models/#${SAVED_MODELS_TRANSFER_PREFIX}${encoded}`;
 }
 
 function updateSavedTransferModeDefaults() {
@@ -3223,7 +3256,7 @@ function updateSavedTransferSummary() {
     const summary = document.getElementById("savedTransferSummary");
     if (!summary) return;
     const options = getSavedTransferOptions();
-    const count = getTransferRowsForScope(options.scope).length;
+    const count = getTransferRowsForScope().length;
     const fields = ["Stage", "Rating"];
     if (options.includeNotes) fields.push("My Notes");
     if (options.includeTags) fields.push("Tags");
@@ -3375,8 +3408,9 @@ function initSavedModelsTransferControls() {
         if (confirm("Replace all Saved Models on this device with the models in this transfer? Saved Listings will not be changed.")) importSavedModelsTransfer("replace");
     });
     document.querySelectorAll('input[name="savedTransferMode"]').forEach(input => input.addEventListener("change", updateSavedTransferModeDefaults));
-    ["savedTransferScope", "savedTransferIncludeNotes", "savedTransferIncludeTags", "savedTransferIncludeHistory"].forEach(id => document.getElementById(id)?.addEventListener("change", updateSavedTransferSummary));
+    ["savedTransferIncludeNotes", "savedTransferIncludeTags", "savedTransferIncludeHistory"].forEach(id => document.getElementById(id)?.addEventListener("change", updateSavedTransferSummary));
     window.addEventListener("hashchange", detectSavedModelsTransferFromHash);
+    if (window.location.hash.startsWith(`#${SAVED_MODELS_TRANSFER_PREFIX}`)) setTimeout(detectSavedModelsTransferFromHash, 0);
 }
 
 if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", initSavedModelsTransferControls);
@@ -3659,6 +3693,10 @@ async function copyBoatWatchPrompt() {
     }
 }
 function openBoatWatchModal() {
+    if (document.getElementById("decisionWorkspaceModal") && !document.getElementById("decisionWorkspaceModal").hidden) {
+        boatWatchSelection.clear();
+        savedModelSelection.forEach(id => boatWatchSelection.add(id));
+    }
     refreshBoatWatchPrompt();
     const modal = document.getElementById("boatWatchModal");
     if (!modal) return;

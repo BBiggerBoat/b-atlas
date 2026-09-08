@@ -17,8 +17,8 @@
 <meta content="https://b-atlas.org/images/batlas-logo.png" property="og:image"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"B-Atlas","url":"https://b-atlas.org/","description":"B-Atlas is a community-powered boat knowledge and research resource for discovering, comparing and researching cruising boat models and buyer trade-offs.","@id":"https://b-atlas.org/#website","inLanguage":"en"}</script>
-<link href="styles.css?v=6.73.0" rel="stylesheet"/>
-<link href="bscout-visual-standard.css?v=6.73.0" rel="stylesheet"/>
+<link href="styles.css?v=6.74.0" rel="stylesheet"/>
+<link href="bscout-visual-standard.css?v=6.74.0" rel="stylesheet"/>
 <link href="guide-visual-standard.css?v=6.71.3" rel="stylesheet"/>
 <link href="home-visual-standard.css?v=6.71.3" rel="stylesheet"/>
 <link href="batlas-design-system.css?v=6.71.3" rel="stylesheet"/>
@@ -83,6 +83,7 @@
 </div>
 </section>
 <div class="lifecycle-principle"><strong>How the knowledge cycle works:</strong> Discover → Research → Decide → Contribute → Improve.</div>
+<div class="home-version-badge" aria-label="B-Atlas version">v6.74.0</div>
 </main>
 <section aria-labelledby="contributionTitle" class="contribution-view" hidden="" id="contributionView">
 <div class="contribution-shell">
@@ -458,7 +459,7 @@
 <a data-app-action="privacy" href="#privacy">Privacy</a>
 <a class="moderator-access-link" hidden="" href="developer/contribution-review.html" id="moderatorAccessLink">Moderator</a>
 </nav>
-<span>Version 6.73.0</span>
+<span>Version 6.74.0</span>
 </footer>
 </main>
 </div>
@@ -566,9 +567,10 @@
 <p id="decisionWorkspaceProfileName">Models and listings you are considering</p>
 </div>
 <div class="decision-workspace-header-actions">
-<button class="workspace-secondary-btn" id="moveShareSavedModelsBtn" type="button">Move / Share</button>
-<button disabled="" id="compareWorkspaceSelectionBtn" type="button">Compare Selected (0)</button>
+<button disabled="" id="compareWorkspaceSelectionBtn" type="button">Compare (0)</button>
+<button class="workspace-secondary-btn" disabled="" id="moveShareSavedModelsBtn" type="button">Move / Share (0)</button>
 <button disabled="" id="createBoatWatchBtn" type="button">Create Boat Watch (0)</button>
+<button class="workspace-danger-btn" disabled="" id="removeWorkspaceSelectionBtn" type="button">Remove (0)</button>
 </div></div>
 <div aria-label="Saved model status filters" class="decision-workspace-filters" role="group">
 <button class="decision-filter-btn active" data-status="All" type="button">All</button>
@@ -601,7 +603,7 @@
 <div class="decision-workspace-layout">
 <div class="decision-workspace-table-wrapper">
 <table class="decision-workspace-table">
-<thead><tr><th>Watch</th><th>Compare</th><th>Boat Model</th><th>Stage</th><th>My Rating</th><th>Updated</th><th>Actions</th></tr></thead>
+<thead><tr><th class="saved-select-col"><input id="selectAllSavedModels" type="checkbox" aria-label="Select all visible Saved Models"></th><th>Boat Model</th><th>Stage</th><th>My Rating</th><th>Updated</th><th>Actions</th></tr></thead>
 <tbody id="decisionWorkspaceTableBody"></tbody>
 </table>
 </div>
@@ -778,15 +780,15 @@ Engine manual — paper copy aboard..." rows="7"></textarea>
 <label class="saved-transfer-choice"><input type="radio" name="savedTransferMode" value="move" checked><span><strong>Move to another device</strong><small>Transfer your complete Saved Models workspace.</small></span></label>
 <label class="saved-transfer-choice"><input type="radio" name="savedTransferMode" value="share"><span><strong>Share a shortlist</strong><small>Share models and Stage; personal details remain optional.</small></span></label>
 </fieldset>
-<div class="saved-transfer-options">
-<label><span>Models to include</span><select id="savedTransferScope"><option value="all">All Saved Models</option><option value="current">Current Stage view</option></select></label>
+<div class="saved-transfer-options saved-transfer-options-selected">
+<p class="saved-transfer-selected-note"><strong>Selected models</strong><span>The models checked on the Saved Models page will be included.</span></p>
 <label class="saved-transfer-check"><input id="savedTransferIncludeNotes" type="checkbox" checked><span>Include My Notes</span></label>
 <label class="saved-transfer-check"><input id="savedTransferIncludeTags" type="checkbox" checked><span>Include Tags</span></label>
 <label class="saved-transfer-check"><input id="savedTransferIncludeHistory" type="checkbox" checked><span>Include research history</span></label>
 </div>
 <div class="saved-transfer-summary" id="savedTransferSummary"></div>
 <div class="saved-transfer-actions">
-<button id="copySavedTransferLinkBtn" type="button">Copy Transfer Link</button>
+<button id="copySavedTransferLinkBtn" type="button">Copy Link</button>
 <button class="workspace-secondary-btn" id="nativeShareSavedTransferBtn" type="button">Share…</button>
 </div>
 <p class="saved-transfer-privacy">The transfer is encoded in the link after the # symbol. B-Atlas does not require an account or store this transfer on its server.</p>
@@ -914,12 +916,12 @@ Engine manual — paper copy aboard..." rows="7"></textarea>
 <script src="communityguide.js?v=6.27.2"></script>
 <script src="modelknowledgescore.js?v=6.66.0"></script>
 <script src="boatworkspace.js?v=6.72.0"></script>
-<script src="script.js?v=6.73.0"></script>
+<script src="script.js?v=6.74.0"></script>
 <script src="appbootstrap.js"></script>
-<script src="ownership.js?v=6.73.0"></script>
-<script src="applicationpolish.js?v=6.73.0"></script>
+<script src="ownership.js?v=6.74.0"></script>
+<script src="applicationpolish.js?v=6.74.0"></script>
 <script src="communityapi.js?v=6.67.0"></script>
-<script src="contributionentry.js?v=6.73.0"></script>
+<script src="contributionentry.js?v=6.74.0"></script>
 <script src="moderatoraccess.js"></script>
 </body>
 </html>
