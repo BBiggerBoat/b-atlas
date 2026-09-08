@@ -2193,6 +2193,8 @@ function persistCurrentSearchProfile() {
 window.getActiveBuyerWorkspace = getActiveBuyerWorkspace;
 window.persistCurrentSearchProfile = persistCurrentSearchProfile;
 window.getBoatRelationship = getBoatRelationship;
+window.ensureBoatRelationship = ensureBoatRelationship;
+window.normalizeModelStatus = normalizeModelStatus;
 
 let currentResearchBoatId = null;
 
@@ -2522,6 +2524,8 @@ function rejectBoat(boatId, reason, notes) {
     updateBuyerWorkspaceCounts();
     if (document.getElementById("decisionWorkspaceModal")?.style.display === "block") renderDecisionWorkspace();
 }
+
+window.rejectBoat = rejectBoat;
 
 function restoreBoat(boatId) {
     getActiveBuyerWorkspace();
@@ -3166,6 +3170,86 @@ else initDecisionWorkspaceControls();
 
 
 // =====================================================
+// LOCAL PERSONAL DATA BACKUP / RESTORE — v6.76
+// =====================================================
+const BATLAS_BACKUP_SCHEMA = "b-atlas-local-backup";
+const BATLAS_BACKUP_VERSION = 1;
+const BATLAS_BACKUP_KEYS = [
+    "bscout_buyer_workspace",
+    "bscout_search_profiles",
+    "bscout.ownedBoats.v1",
+    "bscoutPendingContributionsV1"
+];
+
+function buildBAtlasLocalBackup() {
+    const storage = {};
+    BATLAS_BACKUP_KEYS.forEach(key => {
+        const value = localStorage.getItem(key);
+        if (value !== null) storage[key] = value;
+    });
+    return {
+        schema: BATLAS_BACKUP_SCHEMA,
+        version: BATLAS_BACKUP_VERSION,
+        appVersion: "6.76.0",
+        exportedAt: new Date().toISOString(),
+        storage
+    };
+}
+
+function downloadBAtlasLocalBackup() {
+    const payload = buildBAtlasLocalBackup();
+    const blob = new Blob([JSON.stringify(payload, null, 2)], {type:"application/json"});
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = `B-Atlas-backup-${new Date().toISOString().slice(0,10)}.json`;
+    document.body.appendChild(link); link.click(); link.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+    const status = document.getElementById("backupRestoreStatus");
+    if (status) status.textContent = "Backup downloaded. Keep the JSON file somewhere outside this browser/computer.";
+}
+
+function validateBAtlasLocalBackup(payload) {
+    return payload && payload.schema === BATLAS_BACKUP_SCHEMA && payload.version === BATLAS_BACKUP_VERSION && payload.storage && typeof payload.storage === "object";
+}
+
+async function restoreBAtlasLocalBackupFile(file) {
+    const status = document.getElementById("backupRestoreStatus");
+    try {
+        const payload = JSON.parse(await file.text());
+        if (!validateBAtlasLocalBackup(payload)) throw new Error("This is not a valid B-Atlas backup file.");
+        const keys = Object.keys(payload.storage).filter(key => BATLAS_BACKUP_KEYS.includes(key));
+        if (!keys.length) throw new Error("The backup does not contain recognized B-Atlas personal data.");
+        if (!window.confirm("Restore this B-Atlas backup into this browser? Existing local B-Atlas data in the same categories will be replaced.\n\nThe backup file itself will not be uploaded to B-Atlas.")) return;
+        keys.forEach(key => localStorage.setItem(key, String(payload.storage[key])));
+        if (status) status.textContent = "Backup restored. Reloading Saved Models…";
+        setTimeout(() => window.location.reload(), 350);
+    } catch (error) {
+        if (status) status.textContent = error?.message || "The backup could not be restored.";
+    }
+}
+
+function initBackupRestoreControls() {
+    document.getElementById("backupRestoreBtn")?.addEventListener("click", () => {
+        const modal = document.getElementById("backupRestoreModal");
+        if (modal) { modal.style.display="block"; modal.setAttribute("aria-hidden","false"); }
+    });
+    document.getElementById("closeBackupRestoreModal")?.addEventListener("click", () => {
+        const modal = document.getElementById("backupRestoreModal");
+        if (modal) { modal.style.display="none"; modal.setAttribute("aria-hidden","true"); }
+    });
+    document.getElementById("downloadBackupBtn")?.addEventListener("click", downloadBAtlasLocalBackup);
+    document.getElementById("restoreBackupBtn")?.addEventListener("click", () => document.getElementById("restoreBackupFile")?.click());
+    document.getElementById("restoreBackupFile")?.addEventListener("change", event => {
+        const file = event.target.files?.[0];
+        if (file) restoreBAtlasLocalBackupFile(file);
+        event.target.value = "";
+    });
+}
+if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", initBackupRestoreControls);
+else initBackupRestoreControls();
+
+// =====================================================
 // SAVED MODELS MOVE / SHARE — v6.72
 // =====================================================
 const SAVED_MODELS_TRANSFER_PREFIX = "saved-models-transfer=";
@@ -3334,7 +3418,7 @@ function renderSavedModelsTransferImport(payload) {
     pendingSavedModelsTransfer = payload;
     if (builder) builder.hidden = true;
     importer.hidden = false;
-    if (title) title.textContent = payload.mode === "share" ? "Add Shared Saved Models" : "Move Saved Models to This Browser";
+    if (title) title.textContent = payload.mode === "share" ? "Add Shared Saved Models" : "Move Saved Models to This Device / Browser";
     if (summary) summary.innerHTML = `<strong>${payload.relationships.length} model${payload.relationships.length === 1 ? "" : "s"} received</strong><span>Review the incoming models, then merge them into this browser or replace this browser’s Saved Models.</span>`;
     preview.innerHTML = payload.relationships.map(rel => {
         const boat = allBoats.find(item => String(item.BoatModelID) === String(rel.BoatModelID));

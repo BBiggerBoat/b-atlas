@@ -471,7 +471,7 @@
         const rel = getRelationship();
         const research = rel?.Research || {};
         return `<div class="workspace-section-stack">
-            <section class="workspace-card"><h3>My model assessment</h3><div class="workspace-notebook-grid"><label>Stage<select id="workspaceNotebookStatus"><option value="None">Unreviewed</option><option value="Favorite">Interested</option><option value="Candidate">Shortlist</option><option value="Research">Researching</option><option value="Rejected">Rejected</option></select></label><label>Rating<select id="workspaceNotebookRating"><option value="0">Unrated</option><option value="1">1 star</option><option value="2">2 stars</option><option value="3">3 stars</option><option value="4">4 stars</option><option value="5">5 stars</option></select></label></div></section>
+            <section class="workspace-card"><h3>My model assessment</h3><div class="workspace-notebook-grid"><label>Stage<select id="workspaceNotebookStatus"><option value="Interested">Interested</option><option value="Shortlist">Shortlist</option><option value="Researching">Researching</option><option value="Rejected">Rejected</option></select></label><label>Rating<select id="workspaceNotebookRating"><option value="0">Unrated</option><option value="1">1 star</option><option value="2">2 stars</option><option value="3">3 stars</option><option value="4">4 stars</option><option value="5">5 stars</option></select></label></div></section>
             <section class="workspace-card"><label class="workspace-field-label" for="workspaceNotebookNotes">Model Notes</label><textarea id="workspaceNotebookNotes" rows="8" placeholder="Record research or preferences that apply to this model generally. Listing-specific observations belong in the Listing Workspace.">${esc(research.Notes||"")}</textarea></section>
             <section class="workspace-card"><label class="workspace-field-label" for="workspaceNotebookTags">Tags</label><input id="workspaceNotebookTags" type="text" value="${esc(research.Tags||"")}" placeholder="classic, project boat, inspect fuel tanks"></section>
             <section class="workspace-card workspace-notebook-separation"><h3>Listing-specific notes</h3><p>Observations about a particular engine, seller, condition, inspection, survey, offer or repair estimate belong in that boat’s <strong>Listing Workspace</strong>.</p><button type="button" id="openListingsFromNotebook" class="workspace-secondary-action">Open Model Listings</button></section>
@@ -599,7 +599,7 @@
         const research = rel?.Research || {};
         const status = document.getElementById("workspaceNotebookStatus");
         const rating = document.getElementById("workspaceNotebookRating");
-        if (status) status.value = rel?.Status || "None";
+        if (status) status.value = (typeof root.normalizeModelStatus === "function" ? root.normalizeModelStatus(rel?.Status) : rel?.Status) || "Interested";
         if (rating) rating.value = String(research.Rating || 0);
         document.getElementById("saveWorkspaceNotebook")?.addEventListener("click", saveNotebook);
         ["workspaceNotebookStatus", "workspaceNotebookRating", "workspaceNotebookNotes", "workspaceNotebookTags"].forEach(id => {
@@ -632,13 +632,25 @@
     }
 
     function saveNotebook() {
-        const rel = getRelationship(); if (!rel) return;
-        rel.Status = document.getElementById("workspaceNotebookStatus")?.value || rel.Status;
+        if (!currentBoat) return;
+        let rel = getRelationship();
+        if (!rel && typeof root.ensureBoatRelationship === "function") rel = root.ensureBoatRelationship(currentBoat.BoatModelID);
+        if (!rel) return;
+        const nextStatus = document.getElementById("workspaceNotebookStatus")?.value || "Interested";
+        const previousStatus = typeof root.normalizeModelStatus === "function" ? root.normalizeModelStatus(rel.Status) : rel.Status;
+        if (nextStatus === "Rejected" && typeof root.rejectBoat === "function") {
+            /* Keep notebook data attached to the relationship; rejection never deletes notes. */
+            rel.Status = "Rejected";
+            if (previousStatus && previousStatus !== "Rejected") rel.PreviousStatus = previousStatus;
+        } else {
+            rel.Status = nextStatus;
+        }
         rel.Research = rel.Research || {};
         rel.Research.Rating = Number(document.getElementById("workspaceNotebookRating")?.value || 0);
         rel.Research.Notes = document.getElementById("workspaceNotebookNotes")?.value || "";
         rel.Research.Tags = document.getElementById("workspaceNotebookTags")?.value || "";
         rel.LastUpdated = new Date().toISOString();
+        if (previousStatus !== nextStatus && typeof root.appendDecisionHistory === "function") root.appendDecisionHistory(rel, "status", `Stage changed to ${nextStatus}`, `Previously ${previousStatus || "Interested"}`);
         if (typeof root.appendDecisionHistory === "function") root.appendDecisionHistory(rel, "notebook", "Notebook updated", rel.Research.Tags || "Notes or rating changed");
         if (typeof root.persistCurrentSearchProfile === "function") root.persistCurrentSearchProfile();
         const state = document.getElementById("workspaceNotebookSaveState");

@@ -1,4 +1,4 @@
-# B-Atlas v6.75.0 — Page Consistency, Watchlist & Transfer Guidance
+# B-Atlas v6.76.0 — Page Consistency, Watchlist & Transfer Guidance
 
 ## Boat Guide / Buy
 - Added Create Watchlist to the Buy section. It opens the existing Boat Watch workflow with the current model preselected.
@@ -24,4 +24,4 @@
 - Updated Privacy copy so it no longer incorrectly suggests that changing browsers necessarily loses Saved Models.
 
 ## Version
-- Updated visible site version to v6.75.0.
+- Updated visible site version to v6.76.0.
