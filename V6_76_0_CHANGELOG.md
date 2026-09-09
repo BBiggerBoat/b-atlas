@@ -1,4 +1,4 @@
-# B-Atlas v6.76.0
+# B-Atlas v6.77.0
 
 - Added full local Backup / Restore for browser-stored personal research.
 - Unified My Notes Stage values with Saved Models (Interested, Shortlist, Researching, Rejected).

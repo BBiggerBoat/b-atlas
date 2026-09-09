@@ -3190,7 +3190,7 @@ function buildBAtlasLocalBackup() {
     return {
         schema: BATLAS_BACKUP_SCHEMA,
         version: BATLAS_BACKUP_VERSION,
-        appVersion: "6.76.0",
+        appVersion: "6.77.0",
         exportedAt: new Date().toISOString(),
         storage
     };
