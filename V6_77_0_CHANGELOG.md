@@ -1,4 +1,4 @@
-# B-Atlas v6.77.0
+# B-Atlas v6.78.0
 
 - Moved Support B-Atlas to the bottom of Help Build B-Atlas.
 - Removed “on Ko-fi” from user-facing support button wording, including About.

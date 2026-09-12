@@ -17,11 +17,11 @@
 <meta content="https://b-atlas.org/images/batlas-logo.png" property="og:image"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"B-Atlas","url":"https://b-atlas.org/","description":"B-Atlas is a community-powered boat knowledge and research resource for discovering, comparing and researching cruising boat models and buyer trade-offs.","@id":"https://b-atlas.org/#website","inLanguage":"en"}</script>
-<link href="styles.css?v=6.77.0" rel="stylesheet"/>
-<link href="bscout-visual-standard.css?v=6.77.0" rel="stylesheet"/>
-<link href="guide-visual-standard.css?v=6.77.0" rel="stylesheet"/>
-<link href="home-visual-standard.css?v=6.77.0" rel="stylesheet"/>
-<link href="batlas-design-system.css?v=6.77.0" rel="stylesheet"/>
+<link href="styles.css?v=6.78.0" rel="stylesheet"/>
+<link href="bscout-visual-standard.css?v=6.78.0" rel="stylesheet"/>
+<link href="guide-visual-standard.css?v=6.78.0" rel="stylesheet"/>
+<link href="home-visual-standard.css?v=6.78.0" rel="stylesheet"/>
+<link href="batlas-design-system.css?v=6.78.0" rel="stylesheet"/>
 <meta content="B-Atlas — Boat Knowledge for Better Decisions" property="og:image:alt"/><meta content="B-Atlas | Boat Knowledge for Better Decisions" name="twitter:title"/><meta content="B-Atlas is a community-powered boat knowledge and research resource for discovering cruising boat models, comparing specifications, understanding trade-offs and making better buying decisions." name="twitter:description"/><meta content="https://b-atlas.org/images/batlas-logo.png" name="twitter:image"/><meta content="#0b2d55" name="theme-color"/></head>
 <body>
 <!-- =====================================================
@@ -83,7 +83,7 @@
 </div>
 </section>
 <div class="lifecycle-principle"><strong>How the knowledge cycle works:</strong> Discover → Research → Decide → Contribute → Improve.</div>
-<div class="home-version-badge" aria-label="B-Atlas version">v6.77.0</div>
+<div class="home-version-badge" aria-label="B-Atlas version">v6.78.0</div>
 </main>
 <section aria-labelledby="contributionTitle" class="contribution-view" hidden="" id="contributionView">
 <div class="contribution-shell">
@@ -209,7 +209,7 @@
      SEARCH COLUMN
 ===================================================== -->
 <aside class="search-panel">
-<h2>Refine Model Matches</h2><div class="model-text-search-top">
+<h2>Search</h2><div class="model-text-search-top">
 
 
 <section class="filter-section">
@@ -217,35 +217,11 @@
 <input id="textSearch" placeholder="Models, engines, strengths, features..." type="text"/>
 <button id="clearTextSearch" title="Clear search text" type="button">✕</button>
 </div>
-<div class="crew-guidance-note">Matching text improves preference ranking. It does not exclude boats.</div>
+
 </section>
 
 </div>
-<div class="buyer-workspace-container" style="margin-bottom: 20px; border-bottom: 1px solid #e2e8f0; padding-bottom: 20px;">
-<h3 class="saved-models-sidebar-heading">Saved Models</h3>
-<button class="workspace-status-btn" id="viewFavoriteBoatsBtn" type="button">
-<span>☆ Interested</span>
-<span id="favoriteBoatsCount">0</span>
-</button>
-<button class="workspace-status-btn" id="viewCandidateBoatsBtn" type="button">
-<span>● Shortlist</span>
-<span id="candidateBoatsCount">0</span>
-</button>
-<button class="workspace-status-btn" id="viewResearchingBoatsBtn" type="button">
-<span>⌕ Researching</span>
-<span id="researchingBoatsCount">0</span>
-</button>
-<button class="workspace-status-btn" id="viewRejectedBoatsBtn" type="button">
-<span>🚫 Rejected</span>
-<span id="rejectedBoatsCount">0</span>
-</button>
-<button class="workspace-primary-btn" id="openDecisionWorkspaceBtn" type="button">Open Saved Models</button>
-</div>
-<div class="filter-group search-profile-group">
-<button class="filter-header" type="button">
-<span>Search Profile</span>
-<span class="arrow-icon">▼</span>
-</button>
+<div class="filter-group search-profile-group search-profile-always-open">
 <div class="filter-content">
 <div class="search-profile-container">
 <p class="profile-description" id="cruisingProfileDescription">Built-in and personal searches are managed together. Locked profiles can be opened or duplicated.</p>
@@ -270,6 +246,26 @@
 <button id="searchButton">Search</button>
 <button id="clearButton">Clear</button>
 </div>
+<div class="buyer-workspace-container" style="margin-bottom: 20px; border-bottom: 1px solid #e2e8f0; padding-bottom: 20px;">
+<h3 class="saved-models-sidebar-heading">Saved Models</h3>
+<button class="workspace-status-btn" id="viewFavoriteBoatsBtn" type="button">
+<span>☆ Interested</span>
+<span id="favoriteBoatsCount">0</span>
+</button>
+<button class="workspace-status-btn" id="viewCandidateBoatsBtn" type="button">
+<span>● Shortlist</span>
+<span id="candidateBoatsCount">0</span>
+</button>
+<button class="workspace-status-btn" id="viewResearchingBoatsBtn" type="button">
+<span>⌕ Researching</span>
+<span id="researchingBoatsCount">0</span>
+</button>
+<button class="workspace-status-btn" id="viewRejectedBoatsBtn" type="button">
+<span>🚫 Rejected</span>
+<span id="rejectedBoatsCount">0</span>
+</button>
+</div>
+
 <div aria-live="polite" class="sidebar-results-summary">
 <span>Results</span>
 <strong id="currentBoatsCount">0</strong>
@@ -460,7 +456,7 @@
 <a data-app-action="privacy" href="#privacy">Privacy</a>
 <a class="moderator-access-link" hidden="" href="developer/contribution-review.html" id="moderatorAccessLink">Moderator</a>
 </nav>
-<span>Version 6.77.0</span>
+<span>Version 6.78.0</span>
 </footer>
 </main>
 </div>
@@ -617,7 +613,7 @@
 </div>
 </main>
 <div class="modal" id="backupRestoreModal" aria-hidden="true"><div class="modal-content backup-restore-modal-content"><button class="modal-close" id="closeBackupRestoreModal" type="button">×</button><p class="workspace-eyebrow">Local data protection</p><h2>Backup / Restore B-Atlas Data</h2><p>Saved Models, Stage, Ratings, My Notes, Tags, research history, Saved Listings, saved Find Your Boat profiles and owned-boat records are stored in this browser. A computer rebuild, browser reset or cleared site data can erase that local copy.</p><div class="backup-restore-grid"><section><h3>Create backup</h3><p>Download a private JSON backup and store it somewhere outside this computer or browser, such as your normal document backup location.</p><button id="downloadBackupBtn" type="button">Download Backup</button></section><section><h3>Restore backup</h3><p>Choose a B-Atlas backup file to restore your local research into this browser. The file is read locally and is not uploaded to B-Atlas.</p><button class="workspace-secondary-btn" id="restoreBackupBtn" type="button">Restore Backup</button><input id="restoreBackupFile" type="file" accept="application/json,.json" hidden></section></div><p class="field-help"><strong>Transfer vs backup:</strong> Move / Share is best for selected Saved Models between devices or browsers. Backup / Restore is the safer full recovery method before rebuilding a computer or clearing browser data.</p><p class="workspace-status-message" id="backupRestoreStatus" aria-live="polite"></p></div></div>
-<div class="modal" id="boatWatchModal" aria-hidden="true"><div class="modal-content boat-watch-modal-content"><button class="modal-close" id="closeBoatWatchModal" type="button">×</button><p class="workspace-eyebrow">B-Atlas Boat Watch</p><h2>Create Boat Watch</h2><p class="field-help">B-Atlas prepares monitoring instructions from your selected models. You can use them with ChatGPT to create an ongoing Boat Watch, or copy the same instructions into another AI.</p><div class="boat-watch-howto"><strong>Using Boat Watch with ChatGPT</strong><ol><li>Review the search area, price limit and any additional requirements below.</li><li>Click <strong>Copy &amp; Open ChatGPT</strong>. B-Atlas copies the complete monitoring request and opens ChatGPT in a new tab.</li><li>Paste the copied instructions into ChatGPT and send them.</li><li>Ask ChatGPT to run the search as a recurring monitoring task and confirm how often it should check. When recurring tasks are available on your ChatGPT account, it can notify you when a genuinely new qualifying listing appears.</li></ol><p>You can return to B-Atlas at any time and create a new watch with different models or requirements.</p></div><label class="workspace-field-label">Search area<input id="boatWatchArea" type="text" value="Canada and the United States"/></label><label class="workspace-field-label">Maximum price (optional)<input id="boatWatchPrice" placeholder="e.g. CAD $90,000" type="text"/></label><label class="workspace-field-label">Additional requirements (optional)<textarea id="boatWatchRequirements" placeholder="e.g. Prefer diesel; trailer is a strong positive" rows="3"></textarea></label><label class="workspace-field-label">Monitoring instructions<textarea id="boatWatchPrompt" readonly="" rows="14"></textarea></label><div class="boat-watch-actions"><button id="boatWatchChatGPT" type="button">Copy &amp; Open ChatGPT</button><button id="boatWatchCopy" type="button">Copy for another AI</button></div><p class="field-help boat-watch-status" id="boatWatchStatus" aria-live="polite"></p></div></div>
+<div class="modal" id="boatWatchModal" aria-hidden="true"><div class="modal-content boat-watch-modal-content"><button class="modal-close" id="closeBoatWatchModal" type="button">×</button><p class="workspace-eyebrow">B-Atlas Boat Watch</p><h2>Create Boat Watch</h2><p class="field-help">B-Atlas prepares monitoring instructions from your selected models. You can use them with ChatGPT to create an ongoing Boat Watch, or copy the same instructions into another AI.</p><div class="boat-watch-howto"><strong>Using Boat Watch with ChatGPT</strong><ol><li>Review the search area, price limit and any additional requirements below.</li><li>Click <strong>Copy &amp; Open ChatGPT</strong>. B-Atlas copies the complete monitoring request and opens ChatGPT in a new tab.</li><li>Paste the copied instructions into ChatGPT and send them.</li><li>Ask ChatGPT to run the search as a recurring monitoring task and confirm how often it should check. When recurring tasks are available on your ChatGPT account, it can notify you when a genuinely new qualifying listing appears.</li></ol><p>You can return to B-Atlas at any time and create a new watch with different models or requirements.</p></div><label class="workspace-field-label">Search area<input id="boatWatchArea" type="text" value="Canada and the United States"/></label><label class="workspace-field-label">Maximum price (optional)<input id="boatWatchPrice" placeholder="e.g. CAD $90,000" type="text"/></label><label class="workspace-field-label">Additional requirements (optional)<textarea id="boatWatchRequirements" placeholder="e.g. Prefer diesel; trailer is a strong positive" rows="3"></textarea></label><section class="boat-watch-facebook"><strong>Facebook Marketplace searches</strong><p class="field-help">Open an individual Facebook Marketplace search for each selected model. Individual model searches are more reliable than combining several boats into one query.</p><div id="boatWatchFacebookLinks" class="boat-watch-facebook-links"></div></section><label class="workspace-field-label">Monitoring instructions<textarea id="boatWatchPrompt" readonly="" rows="14"></textarea></label><div class="boat-watch-actions"><button id="boatWatchChatGPT" type="button">Copy &amp; Open ChatGPT</button><button id="boatWatchCopy" type="button">Copy for another AI</button></div><p class="field-help boat-watch-status" id="boatWatchStatus" aria-live="polite"></p></div></div>
 <!-- =====================================================
      LISTING WORKSPACE — INDIVIDUAL CANDIDATE BOAT
 ===================================================== -->
@@ -919,11 +915,11 @@ Engine manual — paper copy aboard..." rows="7"></textarea>
 <script src="recommendationengine.js"></script>
 <script src="communityguide.js?v=6.27.2"></script>
 <script src="modelknowledgescore.js?v=6.66.0"></script>
-<script src="boatworkspace.js?v=6.77.0"></script>
-<script src="script.js?v=6.77.0"></script>
+<script src="boatworkspace.js?v=6.78.0"></script>
+<script src="script.js?v=6.78.0"></script>
 <script src="appbootstrap.js"></script>
 <script src="ownership.js?v=6.74.0"></script>
-<script src="applicationpolish.js?v=6.77.0"></script>
+<script src="applicationpolish.js?v=6.78.0"></script>
 <script src="communityapi.js?v=6.67.0"></script>
 <script src="contributionentry.js?v=6.74.0"></script>
 <script src="moderatoraccess.js"></script>

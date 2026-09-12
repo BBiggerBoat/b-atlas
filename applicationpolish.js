@@ -251,7 +251,7 @@
             cruiser: "images/style-icons/express-cruiser.png",
             tug: "images/style-icons/tug.png",
             downeast: "images/style-icons/downeast.png",
-            sportfisher: "images/style-icons/sportfisher.svg",
+            sportfisher: "images/style-icons/sportfisher.png",
             "motor-yacht": "images/style-icons/motor-yacht.png"
         };
         if (approved[key]) {

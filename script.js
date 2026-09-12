@@ -3190,7 +3190,7 @@ function buildBAtlasLocalBackup() {
     return {
         schema: BATLAS_BACKUP_SCHEMA,
         version: BATLAS_BACKUP_VERSION,
-        appVersion: "6.77.0",
+        appVersion: "6.78.0",
         exportedAt: new Date().toISOString(),
         storage
     };
@@ -3762,6 +3762,40 @@ function buildBoatWatchPrompt() {
     }).join("\n");
     return `Create a recurring Boat Watch for the following boat models and notify me when a genuinely new qualifying listing appears for sale.\n\nMODELS TO WATCH\n${modelLines}\n\nSEARCH AREA\n${area}\n${price ? `\nMAXIMUM PRICE\n${price}\n` : ""}${requirements ? `\nADDITIONAL REQUIREMENTS\n${requirements}\n` : ""}\nSEARCH INSTRUCTIONS\nSearch public dealer sites, brokerages, marketplaces, classifieds and other publicly accessible boat-for-sale sources. Account for reasonable model-name variations, aliases, punctuation and listings that omit a variant name when the boat can still reasonably be identified as one of the requested models.\n\nUse the B-Atlas model links above as identification references, not as listing sources. Do not reject a potentially relevant listing merely because specifications are missing. Missing information means unknown, not unsuitable. Reject only when known information clearly conflicts with the requested model or a stated hard requirement.\n\nDeduplicate listings that appear on multiple sites. Remember listings already reported and notify me only about genuinely new candidates or a meaningful change to an existing candidate, such as a substantial price reduction or relisting.\n\nFor each candidate report: model, year if known, asking price and currency, location, source, direct listing URL, date found, and a short note explaining any identification uncertainty or important missing information.\n\nRun this as a recurring monitoring task. Daily checking is sufficient unless I specify otherwise. If no new qualifying listing is found, do not notify me.`;
 }
+
+function boatWatchFacebookQuery(boat) {
+    const make = String(boat.Manufacturer || boat.Make || "").trim();
+    const model = String(boat.Model || "").trim();
+    const variant = String(boat.Variant || "").trim();
+    // Marketplace behaves better with one broad model query than long canonical names.
+    // Prefer make + core model; add a short variant only when it materially identifies the boat.
+    let core = [make, model].filter(Boolean).join(" ").replace(/\s+/g," ").trim();
+    if (!core) core = [make, variant].filter(Boolean).join(" ").trim();
+    const known = {
+        "Nordic Tugs 26": "Nordic Tug 26",
+        "Nordic Tug 26": "Nordic Tug 26",
+        "Camano 28/31 Gnome": "Camano 31",
+        "Windy 26 Snekke 26 SN / Norwegian Snekke": "Windy 26",
+        "Cheoy Lee 28 Sedan Trawler Sedan": "Cheoy Lee 28",
+        "Rosborough RF-246 Legacy Sedan Cruiser Diesel": "Rosborough 246",
+        "Nimble Wanderer Power Cruiser / Optional Motorsailer": "Nimble Wanderer"
+    };
+    const canonical = [make, model, variant].filter(Boolean).join(" ").replace(/\s+/g," ").trim();
+    return known[canonical] || known[core] || core || canonical;
+}
+function refreshBoatWatchFacebookLinks() {
+    const box = document.getElementById("boatWatchFacebookLinks");
+    if (!box) return;
+    const boats = getBoatWatchSelectedBoats();
+    if (!boats.length) { box.innerHTML = '<span class="field-help">Select at least one model.</span>'; return; }
+    box.innerHTML = boats.map(boat => {
+        const label = [boat.Manufacturer || boat.Make, boat.Model, boat.Variant].filter(Boolean).join(" ").replace(/\s+/g," ").trim();
+        const query = boatWatchFacebookQuery(boat);
+        const url = `https://www.facebook.com/marketplace/search/?query=${encodeURIComponent(query)}`;
+        return `<a class="workspace-secondary-btn boat-watch-facebook-link" href="${url}" target="_blank" rel="noopener noreferrer">Search Facebook: ${escapeHtml(label || query)}</a>`;
+    }).join("");
+}
+
 function refreshBoatWatchPrompt() {
     const field = document.getElementById("boatWatchPrompt");
     if (field) field.value = buildBoatWatchPrompt();
@@ -3782,6 +3816,7 @@ function openBoatWatchModal() {
         savedModelSelection.forEach(id => boatWatchSelection.add(id));
     }
     refreshBoatWatchPrompt();
+    refreshBoatWatchFacebookLinks();
     const modal = document.getElementById("boatWatchModal");
     if (!modal) return;
     modal.classList.add("is-open");
