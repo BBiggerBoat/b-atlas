@@ -1,0 +1,72 @@
+{
+  "batchId": "pilot-01",
+  "release": "6.29.0",
+  "schemaVersion": "1.3",
+  "status": "pilot-complete",
+  "modelIds": [
+    "NMBL-32-WA",
+    "ALBN-27-FC",
+    "GRBK-32-CL",
+    "CAMA-31-TR",
+    "CPDR-28-FB",
+    "MRTR-36-DO"
+  ],
+  "rulesConfirmed": [
+    "Do not convert a source measurement when the source unit is ambiguous.",
+    "Do not force one scalar canonical value when a specification varies materially by year/configuration.",
+    "Unknown, conflicting and not-applicable remain distinct states.",
+    "Community corrections are evidence inputs, not automatically authoritative facts.",
+    "During transition, verified legacy fields may be updated alongside canonical fields so old UI remains coherent.",
+    "Model naming duplicates should be repaired while preserving aliases/evidence."
+  ],
+  "modelFindings": {
+    "NMBL-32-WA": {
+      "status": "canonicalized",
+      "notable": "Published evidence supports motorsailer identity, separate shower compartment and skeg-supported rudder.",
+      "unresolved": [
+        "Power-only mastless hulls exist; model-level motorsailer classification has configuration variability.",
+        "Legacy tank capacities remain unverified."
+      ]
+    },
+    "ALBN-27-FC": {
+      "status": "canonicalized-with-conflict",
+      "notable": "Factory/stock evidence supports wet-head shower, not a dedicated shower stall.",
+      "unresolved": [
+        "Production end year conflicts between model guide and owner-club history.",
+        "Tank gallon type is not explicit in the principal spec source, so canonical litres are not assigned."
+      ]
+    },
+    "GRBK-32-CL": {
+      "status": "canonicalized-with-year-variation",
+      "notable": "Core dimensions and production total are well supported.",
+      "unresolved": [
+        "Hull material changes from wood to fiberglass during production; no single model-level HullMaterialCode is assigned.",
+        "Fuel capacity varies (225/250 gal); gallon basis is not explicitly labeled in the source."
+      ]
+    },
+    "CAMA-31-TR": {
+      "status": "canonicalized-with-era-variation",
+      "notable": "Camano handbook explicitly documents 28/31 naming history and US-gallon tankage.",
+      "unresolved": [
+        "Tank capacities changed materially across production, so early/general handbook capacities are evidence assertions rather than universal canonical scalars.",
+        "Published displacement varies by hull/year/equipment."
+      ]
+    },
+    "CPDR-28-FB": {
+      "status": "canonicalized-with-conflict",
+      "notable": "Duplicate public name fixed to Model 28 / Variant Flybridge Cruiser. Full keel and semi-displacement configuration supported.",
+      "unresolved": [
+        "Draft conflict: 2 ft 11 in in brochure-derived association data vs 2 ft 9 in in HMY; canonical Draft left unset.",
+        "Production dates and tankage differ among sources/year groups."
+      ]
+    },
+    "MRTR-36-DO": {
+      "status": "canonicalized-moderate-confidence",
+      "notable": "Duplicate public name fixed to Model 36 / Variant Double Cabin. HMY supports 36 x 12 ft 2 in x 3 ft 6 in and 21,000 lb.",
+      "unresolved": [
+        "Single and twin engine arrangements exist; EngineCount is intentionally not set at model level.",
+        "Taiwan-import builder/equipment variation requires hull-specific verification."
+      ]
+    }
+  }
+}

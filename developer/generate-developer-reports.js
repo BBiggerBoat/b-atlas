@@ -11,7 +11,6 @@ const generatedAt = new Date().toISOString();
 const boats = read("boatmodels.json");
 const manufacturers = read("data/registry/manufacturers.json");
 const registry = read("data/registry/boat-registry.json");
-const facts = read("knowledge/data/facts.json");
 const evidence = read("knowledge/data/evidence.json");
 const contradictions = read("knowledge/data/contradictions.json");
 const relationships = read("knowledge/data/relationships.json");
@@ -57,7 +56,7 @@ write("developer/data/taxonomy-validation.json", { schemaVersion: 2, generatedAt
 const scores = coverage.map(x => Number(x.CoverageScore ?? x.coverageScore ?? 0)).filter(Number.isFinite);
 const average = scores.length ? Math.round(scores.reduce((a,b)=>a+b,0)/scores.length) : 0;
 write("developer/data/knowledge-layer-summary.json", {
-    schemaVersion: 2, generatedAt, boatCount: boats.length, factCount: facts.length,
+    schemaVersion: 3, generatedAt, boatCount: boats.length, canonicalModelFieldSource: "boatmodels.json",
     evidenceCount: evidence.length, contradictionCount: contradictions.length, relationshipCount: relationships.length,
     coverage: { records: coverage.length, average },
     policy: "Known undesirable information may eliminate. Unknown information remains eligible and reduces confidence."

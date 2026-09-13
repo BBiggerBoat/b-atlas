@@ -35,8 +35,8 @@
 
     const fallbackModelFields = [
         ["FirstYear", "First production year"], ["LastYear", "Last production year"],
-        ["LOA_ft", "Length overall (LOA)"], ["Beam_ft", "Beam"], ["Draft_ft", "Draft"],
-        ["Displacement_lb", "Displacement"], ["NormalizedFuel", "Fuel"],
+        ["LOA", "Length overall (LOA)"], ["Beam", "Beam"], ["Draft", "Draft"],
+        ["Displacement", "Displacement"], ["NormalizedFuel", "Fuel"],
         ["NormalizedPropulsion", "Propulsion"], ["EngineCount", "Engine count"],
         ["BoatFamily", "Boat family"], ["HullBehaviour", "Hull behaviour"],
         ["KeelConfiguration", "Keel configuration"], ["RudderType", "Rudder type"],

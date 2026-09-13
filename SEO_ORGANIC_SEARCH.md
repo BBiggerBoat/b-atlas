@@ -23,8 +23,8 @@ Run `python developer/generate-search-landing-pages.py` after material changes t
 
 ```json
 {
-  "version": "6.69.0",
-  "generated": "2026-09-03",
+  "version": "6.85.0",
+  "generated": "2026-09-12",
   "model_pages": 259,
   "manufacturer_pages": 48,
   "constraint_pages": 23,

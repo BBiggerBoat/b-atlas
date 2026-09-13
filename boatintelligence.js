@@ -14,11 +14,18 @@
  * @param {Object} boat - The raw boat model object
  * @returns {string} One of: 'Pocket', 'Compact', 'Moderate', 'Spacious', 'Large', or 'Unknown'
  */
+function canonicalFeet(boat, field) {
+    if (!boat) return null;
+    if (typeof BAtlasCanonical !== "undefined" && BAtlasCanonical) return BAtlasCanonical.feet(boat, field, []);
+    const metres = Number(boat[field]);
+    return Number.isFinite(metres) && metres > 0 ? metres / 0.3048 : null;
+}
+
 function calculatePlatformSize(boat) {
-    if (!boat || boat.LOA_ft === undefined || boat.LOA_ft === null || typeof boat.LOA_ft !== 'number' || boat.LOA_ft <= 0) {
+    const loa = canonicalFeet(boat, "LOA");
+    if (loa === null) {
         return "Unknown";
     }
-    const loa = boat.LOA_ft;
     if (loa < 27) {
         return "Pocket";
     } else if (loa < 35) {
@@ -39,10 +46,9 @@ function calculatePlatformSize(boat) {
  * @returns {number|null} Theoretical hull speed in knots, or null if LWL does not exist
  */
 function calculateHullSpeed(boat) {
-    if (!boat || boat.LWL_ft === undefined || boat.LWL_ft === null || typeof boat.LWL_ft !== 'number' || boat.LWL_ft <= 0) {
-        return null;
-    }
-    return parseFloat((1.34 * Math.sqrt(boat.LWL_ft)).toFixed(2));
+    const lwl = canonicalFeet(boat, "LWL");
+    if (lwl === null) return null;
+    return parseFloat((1.34 * Math.sqrt(lwl)).toFixed(2));
 }
 
 /**
@@ -78,29 +84,15 @@ function calculateDataConfidence(boat) {
 
     // List of key database fields used across B-Atlas for scoring and analysis
     const trackingFields = [
-        "LOA_ft",
-        "LWL_ft",
-        "Beam_ft",
-        "Draft_ft",
-        "AirDraft_ft",
-        "Displacement_lb",
-        "HullType",
-        "Fuel",
-        "Propulsion",
-        "FuelCapacity",
-        "WaterCapacity",
-        "HoldingCapacity",
-        "Berths",
-        "Cabins",
-        "Heads"
+        "LOA", "LWL", "Beam", "Draft", "AirDraft", "Displacement",
+        "HullType", "Fuel", "Propulsion", "FuelCapacity", "WaterCapacity",
+        "HoldingCapacity", "Berths", "Cabins", "Heads"
     ];
 
     let presentCount = 0;
     trackingFields.forEach(field => {
         const val = boat[field];
-        if (val !== undefined && val !== null && val !== "" && val !== 0 && val !== false) {
-            presentCount++;
-        }
+        if (val !== undefined && val !== null && val !== "" && val !== 0 && val !== false) presentCount++;
     });
 
     return Math.round((presentCount / trackingFields.length) * 100);

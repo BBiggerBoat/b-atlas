@@ -1,0 +1,616 @@
+{
+  "release": "6.52.0",
+  "batch": "specification-completion-07",
+  "manufacturers": [
+    "Camano",
+    "Seaway",
+    "Sabre",
+    "Hunt Yachts",
+    "Nimbus"
+  ],
+  "updateCount": 53,
+  "updates": [
+    {
+      "BoatModelID": "CAMA-28-GN",
+      "Field": "LWL",
+      "Old": null,
+      "New": 8.001,
+      "Basis": "HMY identifies the Gnome as the same 28-foot hull without the flybridge; documented 28/31 hull examples publish approximately 26 ft 3 in to 26 ft 6 in LWL. Existing family shadow value of 26 ft 3 in is retained as the representative shared-hull LWL.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/camano/28-31-1990-2007",
+        "https://www.camanotrawlers.com/camano_31_trawler-boat-310067.html"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "CAMA-31-TR",
+      "Field": "Displacement",
+      "Old": null,
+      "New": 4535.9,
+      "Basis": "Powerboat Guide publishes 10,000 lb model weight for the Camano 28/31 family.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/camano/28-31-1990-2007",
+        "https://www.camanotrawlers.com/camano_31_trawler-boat-310067.html"
+      ],
+      "Unit": "kg"
+    },
+    {
+      "BoatModelID": "CAMA-31-TR",
+      "Field": "AirDraft_ft",
+      "Old": 12.42,
+      "New": null,
+      "Basis": "Published examples vary materially in bridge clearance (including about 13 ft 6 in); no single production-wide canonical air draft is supportable.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/camano/28-31-1990-2007",
+        "https://www.camanotrawlers.com/camano_31_trawler-boat-310067.html"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "CAMA-41",
+      "Field": "LWL",
+      "Old": null,
+      "New": 11.7602,
+      "Basis": "Model-specific Camano 41 documentation publishes 38 ft 7 in LWL.",
+      "EvidenceRefs": [
+        "https://studylib.net/doc/18298312/a-printable-pdf-brochure-of-specifications-and-images",
+        "https://midicanals.boatshed.com/camano_41_performance_trawler-boat-61600.html"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "CAMA-41",
+      "Field": "LWL_ft",
+      "Old": 38.58,
+      "New": 38.583333333333336,
+      "Basis": "Legacy imperial LWL aligned to the model-specific 38 ft 7 in figure.",
+      "EvidenceRefs": [
+        "https://studylib.net/doc/18298312/a-printable-pdf-brochure-of-specifications-and-images",
+        "https://midicanals.boatshed.com/camano_41_performance_trawler-boat-61600.html"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "CAMA-41",
+      "Field": "AirDraft_ft",
+      "Old": 16,
+      "New": null,
+      "Basis": "Camano 41 bridge clearance is equipment-state dependent: published examples report about 19 ft 6 in mast-up and 13 ft 6 in mast/bimini lowered, while another brochure lists 16 ft. A single fallback value is unsafe.",
+      "EvidenceRefs": [
+        "https://studylib.net/doc/18298312/a-printable-pdf-brochure-of-specifications-and-images",
+        "https://midicanals.boatshed.com/camano_41_performance_trawler-boat-61600.html"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "HUNT-29",
+      "Field": "AirDraft",
+      "Old": null,
+      "New": 1.7526,
+      "Basis": "Powerboat Guide publishes 5 ft 9 in clearance for the Surfhunter 29.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/hunt/29-surfhunter-2003-16",
+        "https://www.sportfishingmag.com/boats/boat-reviews/hunt-surfhunter-29/"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "HUNT-29",
+      "Field": "AirDraft_ft",
+      "Old": 10.5,
+      "New": 5.75,
+      "Basis": "Legacy imperial clearance corrected to the published 5 ft 9 in figure.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/hunt/29-surfhunter-2003-16",
+        "https://www.sportfishingmag.com/boats/boat-reviews/hunt-surfhunter-29/"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "HUNT-29",
+      "Field": "Displacement",
+      "Old": 4082.3,
+      "New": 3628.7,
+      "Basis": "Powerboat Guide and model-specific listings publish approximately 8,000 lb weight; prior 9,000 lb canonical value was not the better-supported model figure.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/hunt/29-surfhunter-2003-16",
+        "https://www.sportfishingmag.com/boats/boat-reviews/hunt-surfhunter-29/"
+      ],
+      "Unit": "kg"
+    },
+    {
+      "BoatModelID": "HUNT-29",
+      "Field": "Displacement_lb",
+      "Old": 9000,
+      "New": 8000,
+      "Basis": "Legacy imperial displacement aligned to the better-supported 8,000 lb figure.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/hunt/29-surfhunter-2003-16",
+        "https://www.sportfishingmag.com/boats/boat-reviews/hunt-surfhunter-29/"
+      ],
+      "Unit": "lb"
+    },
+    {
+      "BoatModelID": "HUNT-29",
+      "Field": "DisplacementLb",
+      "Old": 9000,
+      "New": 8000,
+      "Basis": "Legacy compatibility displacement aligned to the better-supported 8,000 lb figure.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/hunt/29-surfhunter-2003-16",
+        "https://www.sportfishingmag.com/boats/boat-reviews/hunt-surfhunter-29/"
+      ],
+      "Unit": "lb"
+    },
+    {
+      "BoatModelID": "HUNT-29",
+      "Field": "FuelCode",
+      "Old": "fuel.gasoline",
+      "New": "fuel.mixed",
+      "Basis": "Powerboat Guide documents a diesel jackshaft-drive configuration and an outboard version from 2015; other period specifications also document gasoline availability. Fuel is production/configuration dependent.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/hunt/29-surfhunter-2003-16",
+        "https://www.sportfishingmag.com/boats/boat-reviews/hunt-surfhunter-29/"
+      ]
+    },
+    {
+      "BoatModelID": "HUNT-29",
+      "Field": "Fuel",
+      "Old": "Gasoline",
+      "New": "Diesel/Gas",
+      "Basis": "Legacy fuel label aligned to the mixed canonical classification.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/hunt/29-surfhunter-2003-16",
+        "https://www.sportfishingmag.com/boats/boat-reviews/hunt-surfhunter-29/"
+      ]
+    },
+    {
+      "BoatModelID": "HUNT-29",
+      "Field": "MechanicalPropulsionCode",
+      "Old": "mechanical_propulsion.shaft",
+      "New": "mechanical_propulsion.mixed",
+      "Basis": "Documented production includes drive-unit/jackshaft installations and later outboards; one shaft-only classification would falsely filter valid examples.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/hunt/29-surfhunter-2003-16",
+        "https://www.sportfishingmag.com/boats/boat-reviews/hunt-surfhunter-29/"
+      ]
+    },
+    {
+      "BoatModelID": "HUNT-29",
+      "Field": "RudderTypeCode",
+      "Old": null,
+      "New": "rudder.none_external_drive",
+      "Basis": "Documented jackshaft-to-drive-unit and outboard configurations steer through the external drive rather than a separate conventional rudder.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/hunt/29-surfhunter-2003-16",
+        "https://www.sportfishingmag.com/boats/boat-reviews/hunt-surfhunter-29/"
+      ]
+    },
+    {
+      "BoatModelID": "HUNT-29",
+      "Field": "FuelCapacity",
+      "Old": 150,
+      "New": 567.81,
+      "Basis": "Powerboat Guide publishes 150 gal fuel capacity for this US-built model; normalized to canonical litres while preserving source US gallons.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/hunt/29-surfhunter-2003-16",
+        "https://www.sportfishingmag.com/boats/boat-reviews/hunt-surfhunter-29/"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "HUNT-29",
+      "Field": "FuelCapacityUnitStatus",
+      "Old": "legacy_gallon_basis_unverified",
+      "New": "canonical_litres",
+      "Basis": "Powerboat Guide publishes 150 gal fuel capacity for this US-built model; normalized to canonical litres while preserving source US gallons.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/hunt/29-surfhunter-2003-16",
+        "https://www.sportfishingmag.com/boats/boat-reviews/hunt-surfhunter-29/"
+      ]
+    },
+    {
+      "BoatModelID": "HUNT-29",
+      "Field": "WaterCapacity",
+      "Old": 28,
+      "New": 105.99,
+      "Basis": "Powerboat Guide publishes 28 gal water capacity for this US-built model; normalized to canonical litres while preserving source US gallons.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/hunt/29-surfhunter-2003-16",
+        "https://www.sportfishingmag.com/boats/boat-reviews/hunt-surfhunter-29/"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "HUNT-29",
+      "Field": "WaterCapacityUnitStatus",
+      "Old": "legacy_gallon_basis_unverified",
+      "New": "canonical_litres",
+      "Basis": "Powerboat Guide publishes 28 gal water capacity for this US-built model; normalized to canonical litres while preserving source US gallons.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/hunt/29-surfhunter-2003-16",
+        "https://www.sportfishingmag.com/boats/boat-reviews/hunt-surfhunter-29/"
+      ]
+    },
+    {
+      "BoatModelID": "HUNT-29",
+      "Field": "HoldingCapacity",
+      "Old": 20,
+      "New": 56.78,
+      "Basis": "Powerboat Guide publishes 15 gal waste capacity for this US-built model; normalized to canonical litres while preserving source US gallons.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/hunt/29-surfhunter-2003-16",
+        "https://www.sportfishingmag.com/boats/boat-reviews/hunt-surfhunter-29/"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "HUNT-29",
+      "Field": "HoldingCapacityGal",
+      "Old": null,
+      "New": 15,
+      "Basis": "Powerboat Guide publishes 15 gal waste capacity for this US-built model; normalized to canonical litres while preserving source US gallons.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/hunt/29-surfhunter-2003-16",
+        "https://www.sportfishingmag.com/boats/boat-reviews/hunt-surfhunter-29/"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "HUNT-29",
+      "Field": "HoldingCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "Powerboat Guide publishes 15 gal waste capacity for this US-built model; normalized to canonical litres while preserving source US gallons.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/hunt/29-surfhunter-2003-16",
+        "https://www.sportfishingmag.com/boats/boat-reviews/hunt-surfhunter-29/"
+      ]
+    },
+    {
+      "BoatModelID": "HUNT-36",
+      "Field": "MechanicalPropulsionCode",
+      "Old": "mechanical_propulsion.pod",
+      "New": "mechanical_propulsion.mixed",
+      "Basis": "Contemporary launch specifications document standard ZF pod drive plus optional conventional inboard installations; Plan must preserve both.",
+      "EvidenceRefs": [
+        "https://www.yachtingmagazine.com/new-coupe-hunt/"
+      ]
+    },
+    {
+      "BoatModelID": "HUNT-36",
+      "Field": "FuelCapacity",
+      "Old": 150,
+      "New": 567.81,
+      "Basis": "Contemporary Hunt launch specifications explicitly publish 150 US gal fuel capacity.",
+      "EvidenceRefs": [
+        "https://www.yachtingmagazine.com/new-coupe-hunt/"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "HUNT-36",
+      "Field": "FuelCapacityUnitStatus",
+      "Old": "legacy_gallon_basis_unverified",
+      "New": "canonical_litres",
+      "Basis": "Contemporary Hunt launch specifications explicitly publish 150 US gal fuel capacity.",
+      "EvidenceRefs": [
+        "https://www.yachtingmagazine.com/new-coupe-hunt/"
+      ]
+    },
+    {
+      "BoatModelID": "HUNT-36",
+      "Field": "WaterCapacity",
+      "Old": 50,
+      "New": 189.27,
+      "Basis": "Contemporary Hunt launch specifications explicitly publish two 25 US gal water tanks (50 US gal total).",
+      "EvidenceRefs": [
+        "https://www.yachtingmagazine.com/new-coupe-hunt/"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "HUNT-36",
+      "Field": "WaterCapacityUnitStatus",
+      "Old": "legacy_gallon_basis_unverified",
+      "New": "canonical_litres",
+      "Basis": "Contemporary Hunt launch specifications explicitly publish two 25 US gal water tanks (50 US gal total).",
+      "EvidenceRefs": [
+        "https://www.yachtingmagazine.com/new-coupe-hunt/"
+      ]
+    },
+    {
+      "BoatModelID": "NMBS-365-CO",
+      "Field": "FuelCapacity",
+      "Old": 185,
+      "New": 699.92,
+      "Basis": "Nimbus factory specifications publish 700 L / 184.9 US gal fuel capacity; canonical storage is litres.",
+      "EvidenceRefs": [
+        "https://nimbusboats.com/en-us/boats/365-coupe/"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "NMBS-365-CO",
+      "Field": "FuelCapacityGal",
+      "Old": null,
+      "New": 184.9,
+      "Basis": "Nimbus factory specifications publish 700 L / 184.9 US gal fuel capacity; canonical storage is litres.",
+      "EvidenceRefs": [
+        "https://nimbusboats.com/en-us/boats/365-coupe/"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "NMBS-365-CO",
+      "Field": "FuelCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "Nimbus factory specifications publish 700 L / 184.9 US gal fuel capacity; canonical storage is litres.",
+      "EvidenceRefs": [
+        "https://nimbusboats.com/en-us/boats/365-coupe/"
+      ]
+    },
+    {
+      "BoatModelID": "NMBS-365-CO",
+      "Field": "FuelCapacity",
+      "Old": 699.92,
+      "New": 700,
+      "Basis": "Nimbus factory primary specification is 700 litres.",
+      "EvidenceRefs": [
+        "https://nimbusboats.com/en-us/boats/365-coupe/"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "NMBS-365-CO",
+      "Field": "WaterCapacity",
+      "Old": 71,
+      "New": 269.9,
+      "Basis": "Nimbus factory specifications publish 270 L / 71.3 US gal fresh water capacity; canonical storage is litres.",
+      "EvidenceRefs": [
+        "https://nimbusboats.com/en-us/boats/365-coupe/"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "NMBS-365-CO",
+      "Field": "WaterCapacityGal",
+      "Old": null,
+      "New": 71.3,
+      "Basis": "Nimbus factory specifications publish 270 L / 71.3 US gal fresh water capacity; canonical storage is litres.",
+      "EvidenceRefs": [
+        "https://nimbusboats.com/en-us/boats/365-coupe/"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "NMBS-365-CO",
+      "Field": "WaterCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "Nimbus factory specifications publish 270 L / 71.3 US gal fresh water capacity; canonical storage is litres.",
+      "EvidenceRefs": [
+        "https://nimbusboats.com/en-us/boats/365-coupe/"
+      ]
+    },
+    {
+      "BoatModelID": "NMBS-365-CO",
+      "Field": "WaterCapacity",
+      "Old": 269.9,
+      "New": 270,
+      "Basis": "Nimbus factory primary specification is 270 litres.",
+      "EvidenceRefs": [
+        "https://nimbusboats.com/en-us/boats/365-coupe/"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "NMBS-365-CO",
+      "Field": "HoldingCapacity",
+      "Old": 32,
+      "New": 120.0,
+      "Basis": "Nimbus factory specifications publish 120 L / 31.7 US gal waste capacity; canonical storage is litres.",
+      "EvidenceRefs": [
+        "https://nimbusboats.com/en-us/boats/365-coupe/"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "NMBS-365-CO",
+      "Field": "HoldingCapacityGal",
+      "Old": null,
+      "New": 31.7,
+      "Basis": "Nimbus factory specifications publish 120 L / 31.7 US gal waste capacity; canonical storage is litres.",
+      "EvidenceRefs": [
+        "https://nimbusboats.com/en-us/boats/365-coupe/"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "NMBS-365-CO",
+      "Field": "HoldingCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "Nimbus factory specifications publish 120 L / 31.7 US gal waste capacity; canonical storage is litres.",
+      "EvidenceRefs": [
+        "https://nimbusboats.com/en-us/boats/365-coupe/"
+      ]
+    },
+    {
+      "BoatModelID": "SABR-34-EX",
+      "Field": "AirDraft",
+      "Old": null,
+      "New": 3.8608,
+      "Basis": "Sabre 2007 model-year factory specification publishes 12 ft 8 in air draft over DWL to top of radar mast.",
+      "EvidenceRefs": [
+        "https://sabreyachts.s3.us-east-2.amazonaws.com/sabre/wp-content/uploads/2012/09/12103435/34x-specs.pdf",
+        "https://www.sabreyachts.com/owners/heritage-models/sabre-34-hard-top-express"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "SABR-34-EX",
+      "Field": "AirDraft_ft",
+      "Old": 11.8,
+      "New": 12.666666666666666,
+      "Basis": "Legacy imperial air draft corrected to factory 12 ft 8 in specification.",
+      "EvidenceRefs": [
+        "https://sabreyachts.s3.us-east-2.amazonaws.com/sabre/wp-content/uploads/2012/09/12103435/34x-specs.pdf",
+        "https://www.sabreyachts.com/owners/heritage-models/sabre-34-hard-top-express"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "SABR-34-EX",
+      "Field": "Displacement",
+      "Old": null,
+      "New": 9071.8,
+      "Basis": "Factory specification explicitly publishes approximately 20,000 lb full-load displacement (16,000 lb estimated dry). Canonical value retains the existing representative full-load basis.",
+      "EvidenceRefs": [
+        "https://sabreyachts.s3.us-east-2.amazonaws.com/sabre/wp-content/uploads/2012/09/12103435/34x-specs.pdf",
+        "https://www.sabreyachts.com/owners/heritage-models/sabre-34-hard-top-express"
+      ],
+      "Unit": "kg"
+    },
+    {
+      "BoatModelID": "SABR-38-SA",
+      "Field": "LWL",
+      "Old": null,
+      "New": 10.4902,
+      "Basis": "Power & Motoryacht test data publishes 34 ft 5 in LWL for the Sabre 38 Salon Express.",
+      "EvidenceRefs": [
+        "https://www.sabreyachts.com/yachts/38-salon-express",
+        "https://powerandmotoryacht.com/boats/boat-tests/sabre-38-salon-express/"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "SABR-38-SA",
+      "Field": "LWL_ft",
+      "Old": 35.5,
+      "New": 34.416666666666664,
+      "Basis": "Legacy imperial LWL corrected to published 34 ft 5 in.",
+      "EvidenceRefs": [
+        "https://www.sabreyachts.com/yachts/38-salon-express",
+        "https://powerandmotoryacht.com/boats/boat-tests/sabre-38-salon-express/"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "SABR-38-SA",
+      "Field": "AirDraft",
+      "Old": null,
+      "New": 4.0386,
+      "Basis": "Sabre factory specifications publish 13 ft 3 in air draft with mast.",
+      "EvidenceRefs": [
+        "https://www.sabreyachts.com/yachts/38-salon-express",
+        "https://powerandmotoryacht.com/boats/boat-tests/sabre-38-salon-express/"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "SABR-38-SA",
+      "Field": "MechanicalPropulsionCode",
+      "Old": "mechanical_propulsion.pod",
+      "New": "mechanical_propulsion.mixed",
+      "Basis": "The canonical production span includes original Volvo IPS pod-drive boats and the reintroduced 2026 Volvo DPI sterndrive version; a pod-only Plan classification is no longer correct.",
+      "EvidenceRefs": [
+        "https://www.sabreyachts.com/yachts/38-salon-express",
+        "https://powerandmotoryacht.com/boats/boat-tests/sabre-38-salon-express/"
+      ]
+    },
+    {
+      "BoatModelID": "SABR-38-SA",
+      "Field": "RudderTypeCode",
+      "Old": null,
+      "New": "rudder.none_external_drive",
+      "Basis": "Both documented IPS pod and DPI sterndrive generations steer through the propulsion drive and do not use a separate conventional rudder.",
+      "EvidenceRefs": [
+        "https://www.sabreyachts.com/yachts/38-salon-express",
+        "https://powerandmotoryacht.com/boats/boat-tests/sabre-38-salon-express/"
+      ]
+    },
+    {
+      "BoatModelID": "SABR-38-SA",
+      "Field": "FuelCapacity",
+      "Old": 300,
+      "New": 1135.62,
+      "Basis": "Sabre factory specifications explicitly publish 300 US gal / about 1125 L fuel capacity.",
+      "EvidenceRefs": [
+        "https://www.sabreyachts.com/yachts/38-salon-express",
+        "https://powerandmotoryacht.com/boats/boat-tests/sabre-38-salon-express/"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "SABR-38-SA",
+      "Field": "FuelCapacityUnitStatus",
+      "Old": "legacy_gallon_basis_unverified",
+      "New": "canonical_litres",
+      "Basis": "Sabre factory specifications explicitly publish 300 US gal / about 1125 L fuel capacity.",
+      "EvidenceRefs": [
+        "https://www.sabreyachts.com/yachts/38-salon-express",
+        "https://powerandmotoryacht.com/boats/boat-tests/sabre-38-salon-express/"
+      ]
+    },
+    {
+      "BoatModelID": "SABR-38-SA",
+      "Field": "WaterCapacity",
+      "Old": 100,
+      "New": 378.54,
+      "Basis": "Sabre factory specifications explicitly publish 100 US gal / about 380 L water capacity.",
+      "EvidenceRefs": [
+        "https://www.sabreyachts.com/yachts/38-salon-express",
+        "https://powerandmotoryacht.com/boats/boat-tests/sabre-38-salon-express/"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "SABR-38-SA",
+      "Field": "WaterCapacityUnitStatus",
+      "Old": "legacy_gallon_basis_unverified",
+      "New": "canonical_litres",
+      "Basis": "Sabre factory specifications explicitly publish 100 US gal / about 380 L water capacity.",
+      "EvidenceRefs": [
+        "https://www.sabreyachts.com/yachts/38-salon-express",
+        "https://powerandmotoryacht.com/boats/boat-tests/sabre-38-salon-express/"
+      ]
+    },
+    {
+      "BoatModelID": "SABR-38-SA",
+      "Field": "HoldingCapacity",
+      "Old": 40,
+      "New": 151.42,
+      "Basis": "Sabre factory specifications explicitly publish 40 US gal / about 150 L holding capacity.",
+      "EvidenceRefs": [
+        "https://www.sabreyachts.com/yachts/38-salon-express",
+        "https://powerandmotoryacht.com/boats/boat-tests/sabre-38-salon-express/"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "SABR-38-SA",
+      "Field": "HoldingCapacityGal",
+      "Old": null,
+      "New": 40,
+      "Basis": "Sabre factory specifications explicitly publish 40 US gal / about 150 L holding capacity.",
+      "EvidenceRefs": [
+        "https://www.sabreyachts.com/yachts/38-salon-express",
+        "https://powerandmotoryacht.com/boats/boat-tests/sabre-38-salon-express/"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "SABR-38-SA",
+      "Field": "HoldingCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "Sabre factory specifications explicitly publish 40 US gal / about 150 L holding capacity.",
+      "EvidenceRefs": [
+        "https://www.sabreyachts.com/yachts/38-salon-express",
+        "https://powerandmotoryacht.com/boats/boat-tests/sabre-38-salon-express/"
+      ]
+    }
+  ]
+}

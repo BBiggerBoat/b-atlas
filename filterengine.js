@@ -141,10 +141,10 @@
             if (value === "Often") return { matched: berths >= 4 && (cabins === null || cabins >= 2), unknown: cabins === null };
         }
         if (key === "tallestCrewHeight") {
-            const canonicalInches = global.BAtlasCanonical?.inches(boat, "Headroom_m", [{key:"Headroom_in",unit:"in"},{key:"InteriorHeadroom_in",unit:"in"},{key:"Headroom_ft",unit:"ft"}]);
-            const headroom = canonicalInches ?? numericValue(boat.Headroom_in ?? boat.InteriorHeadroom_in ?? boat.Headroom_ft);
+            const canonicalInches = global.BAtlasCanonical?.inches(boat, "Headroom", []);
+            const headroom = canonicalInches;
             if (headroom === null) return { matched: false, unknown: true };
-            const inches = canonicalInches ?? (headroom < 10 ? headroom * 12 : headroom);
+            const inches = headroom;
             return { matched: inches >= numericValue(value), unknown: false };
         }
         return { matched: false, unknown: true };
@@ -242,10 +242,10 @@
         // Routes, Dimensions, and Characteristics are hard filters.
         // Missing registry data is retained; a known conflict eliminates the model.
         if (typeof routeEvaluator === "function" && !routeEvaluator(boat, profile, routes || [])) reasons.push("route-compatibility");
-        const loaFt = global.BAtlasCanonical ? global.BAtlasCanonical.feet(boat, "LOA", [{key:"LOA_ft",unit:"ft"},{key:"LengthFt",unit:"ft"}]) : boat.LOA_ft;
-        const beamFt = global.BAtlasCanonical ? global.BAtlasCanonical.feet(boat, "Beam", [{key:"Beam_ft",unit:"ft"},{key:"BeamFt",unit:"ft"}]) : boat.Beam_ft;
-        const draftFt = global.BAtlasCanonical ? global.BAtlasCanonical.feet(boat, "Draft", [{key:"Draft_ft",unit:"ft"},{key:"DraftFt",unit:"ft"}]) : boat.Draft_ft;
-        const airDraftFt = global.BAtlasCanonical ? global.BAtlasCanonical.feet(boat, "AirDraft", [{key:"AirDraft_ft",unit:"ft"}]) : boat.AirDraft_ft;
+        const loaFt = global.BAtlasCanonical ? global.BAtlasCanonical.feet(boat, "LOA", []) : (Number.isFinite(Number(boat?.LOA)) ? Number(boat.LOA) / 0.3048 : null);
+        const beamFt = global.BAtlasCanonical ? global.BAtlasCanonical.feet(boat, "Beam", []) : (Number.isFinite(Number(boat?.Beam)) ? Number(boat.Beam) / 0.3048 : null);
+        const draftFt = global.BAtlasCanonical ? global.BAtlasCanonical.feet(boat, "Draft", []) : (Number.isFinite(Number(boat?.Draft)) ? Number(boat.Draft) / 0.3048 : null);
+        const airDraftFt = global.BAtlasCanonical ? global.BAtlasCanonical.feet(boat, "AirDraft", []) : (Number.isFinite(Number(boat?.AirDraft)) ? Number(boat.AirDraft) / 0.3048 : null);
         if (belowMinimum(loaFt, profile.minLength)) reasons.push("min-length");
         if (exceedsMaximum(loaFt, profile.maxLength)) reasons.push("max-length");
         if (belowMinimum(beamFt, profile.minBeam)) reasons.push("min-beam");

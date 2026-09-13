@@ -1,0 +1,685 @@
+{
+  "release": "6.56.0",
+  "batch": "specification-completion-11",
+  "manufacturers": [
+    "Windy",
+    "True North",
+    "Prairie",
+    "Nimble",
+    "Holiday Mansion"
+  ],
+  "updateCount": 53,
+  "updates": [
+    {
+      "BoatModelID": "WIND-26-SN",
+      "Field": "Draft",
+      "Old": null,
+      "New": 0.72,
+      "Basis": "Model-specific Windy 26 SN broker specification publishes 7.75 x 2.93 x 0.72 m; this promotes the already-present imperial draft into the canonical metric field.",
+      "EvidenceRefs": [
+        "https://www.windyboats.com/company/previous-models/1980s/26-snekke/",
+        "https://canadianboating.ca/boat-reviews/windy-26-sn/",
+        "https://www.beekhuisyachtbrokers.com/en/sold-yachts/windy-26-sn-spitsgatter/"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "WIND-26-SN",
+      "Field": "AirDraft",
+      "Old": null,
+      "New": 2.3,
+      "Basis": "Model-specific Windy 26 SN broker specification explicitly publishes 2.30 m air draft.",
+      "EvidenceRefs": [
+        "https://www.windyboats.com/company/previous-models/1980s/26-snekke/",
+        "https://canadianboating.ca/boat-reviews/windy-26-sn/",
+        "https://www.beekhuisyachtbrokers.com/en/sold-yachts/windy-26-sn-spitsgatter/"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "WIND-26-SN",
+      "Field": "FuelCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "conflicting_legacy_capacity_values",
+      "Basis": "Windy historical specifications publish 148 L fuel while the 1984 Canadian test publishes 32.5 gal standard and 47.9 gal optional. Capacity is configuration/source dependent and is not normalized to one number.",
+      "EvidenceRefs": [
+        "https://www.windyboats.com/company/previous-models/1980s/26-snekke/",
+        "https://canadianboating.ca/boat-reviews/windy-26-sn/",
+        "https://www.beekhuisyachtbrokers.com/en/sold-yachts/windy-26-sn-spitsgatter/"
+      ]
+    },
+    {
+      "BoatModelID": "WIND-26-SN",
+      "Field": "WaterCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "conflicting_legacy_capacity_values",
+      "Basis": "Windy historical specifications publish 116 L fresh water while the 1984 Canadian test publishes 25.5 gal. Preserve the conflict rather than guessing gallon basis or model-year change.",
+      "EvidenceRefs": [
+        "https://www.windyboats.com/company/previous-models/1980s/26-snekke/",
+        "https://canadianboating.ca/boat-reviews/windy-26-sn/",
+        "https://www.beekhuisyachtbrokers.com/en/sold-yachts/windy-26-sn-spitsgatter/"
+      ]
+    },
+    {
+      "BoatModelID": "NMBL-24-NO",
+      "Field": "Draft",
+      "Old": 0.6096,
+      "New": 0.4064,
+      "Basis": "Multiple exact-model 1996 Nomad records publish 16 in / 1 ft 4 in draft; canonical 2 ft value was too deep.",
+      "EvidenceRefs": [
+        "https://www.boats.com/reviews/nimble-nomad-used-boat-review/",
+        "https://www.breweryacht.com/listings/1996-nimble-25-nomad-tropical-muliphen/2804392",
+        "https://boats-from-usa.com/not-specified/nimble-nomad-210835"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "NMBL-24-NO",
+      "Field": "Draft_ft",
+      "Old": 1.3,
+      "New": 1.3333333333333333,
+      "Basis": "Legacy draft aligned to the repeated 16-inch exact-model specification.",
+      "EvidenceRefs": [
+        "https://www.boats.com/reviews/nimble-nomad-used-boat-review/",
+        "https://www.breweryacht.com/listings/1996-nimble-25-nomad-tropical-muliphen/2804392",
+        "https://boats-from-usa.com/not-specified/nimble-nomad-210835"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "NMBL-24-NO",
+      "Field": "DraftFt",
+      "Old": 1.3,
+      "New": 1.3333333333333333,
+      "Basis": "Compatibility draft aligned to the repeated 16-inch exact-model specification.",
+      "EvidenceRefs": [
+        "https://www.boats.com/reviews/nimble-nomad-used-boat-review/",
+        "https://www.breweryacht.com/listings/1996-nimble-25-nomad-tropical-muliphen/2804392",
+        "https://boats-from-usa.com/not-specified/nimble-nomad-210835"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "NMBL-24-NO",
+      "Field": "LWL",
+      "Old": null,
+      "New": 6.8072,
+      "Basis": "A detailed exact-model Nomad specification publishes 22 ft 4 in LWL; promoted with moderate confidence because factory dimensional tables are scarce.",
+      "EvidenceRefs": [
+        "https://www.boats.com/reviews/nimble-nomad-used-boat-review/",
+        "https://www.breweryacht.com/listings/1996-nimble-25-nomad-tropical-muliphen/2804392",
+        "https://boats-from-usa.com/not-specified/nimble-nomad-210835"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "NMBL-24-NO",
+      "Field": "LWL_ft",
+      "Old": 23.9,
+      "New": 22.333333333333332,
+      "Basis": "Legacy LWL aligned to the documented 22 ft 4 in exact-model specification.",
+      "EvidenceRefs": [
+        "https://www.boats.com/reviews/nimble-nomad-used-boat-review/",
+        "https://www.breweryacht.com/listings/1996-nimble-25-nomad-tropical-muliphen/2804392",
+        "https://boats-from-usa.com/not-specified/nimble-nomad-210835"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "NMBL-24-NO",
+      "Field": "RudderTypeCode",
+      "Old": null,
+      "New": "rudder.none_external_drive",
+      "Basis": "The Nomad uses a single outboard mounted in a well; steering is through the outboard and there is no separate conventional rudder.",
+      "EvidenceRefs": [
+        "https://www.boats.com/reviews/nimble-nomad-used-boat-review/",
+        "https://www.breweryacht.com/listings/1996-nimble-25-nomad-tropical-muliphen/2804392",
+        "https://boats-from-usa.com/not-specified/nimble-nomad-210835"
+      ]
+    },
+    {
+      "BoatModelID": "NMBL-24-NO",
+      "Field": "AirDraft_ft",
+      "Old": 8,
+      "New": null,
+      "Basis": "The inherited 8 ft air-draft fallback is not supported by the reviewed model-specific sources. Air draft remains unknown rather than being promoted from an undocumented shadow value.",
+      "EvidenceRefs": [
+        "https://www.boats.com/reviews/nimble-nomad-used-boat-review/",
+        "https://www.breweryacht.com/listings/1996-nimble-25-nomad-tropical-muliphen/2804392",
+        "https://boats-from-usa.com/not-specified/nimble-nomad-210835"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "NMBL-24-NO",
+      "Field": "FuelCapacity",
+      "Old": 35,
+      "New": 90.85,
+      "Basis": "Boats.com documents a 24-gal fuel tank on a 1997 Nomad and a detailed 1996 brokerage specification explicitly identifies 24 US gal / 90.85 L.",
+      "EvidenceRefs": [
+        "https://www.boats.com/reviews/nimble-nomad-used-boat-review/",
+        "https://www.breweryacht.com/listings/1996-nimble-25-nomad-tropical-muliphen/2804392",
+        "https://boats-from-usa.com/not-specified/nimble-nomad-210835"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "NMBL-24-NO",
+      "Field": "FuelCapacityGal",
+      "Old": null,
+      "New": 24,
+      "Basis": "Boats.com documents a 24-gal fuel tank on a 1997 Nomad and a detailed 1996 brokerage specification explicitly identifies 24 US gal / 90.85 L.",
+      "EvidenceRefs": [
+        "https://www.boats.com/reviews/nimble-nomad-used-boat-review/",
+        "https://www.breweryacht.com/listings/1996-nimble-25-nomad-tropical-muliphen/2804392",
+        "https://boats-from-usa.com/not-specified/nimble-nomad-210835"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "NMBL-24-NO",
+      "Field": "FuelCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "Boats.com documents a 24-gal fuel tank on a 1997 Nomad and a detailed 1996 brokerage specification explicitly identifies 24 US gal / 90.85 L.",
+      "EvidenceRefs": [
+        "https://www.boats.com/reviews/nimble-nomad-used-boat-review/",
+        "https://www.breweryacht.com/listings/1996-nimble-25-nomad-tropical-muliphen/2804392",
+        "https://boats-from-usa.com/not-specified/nimble-nomad-210835"
+      ]
+    },
+    {
+      "BoatModelID": "NMBL-24-NO",
+      "Field": "WaterCapacity",
+      "Old": 30,
+      "New": 98.42,
+      "Basis": "A detailed 1996 Nomad brokerage specification explicitly identifies 26 US gal / 98.42 L fresh water.",
+      "EvidenceRefs": [
+        "https://www.boats.com/reviews/nimble-nomad-used-boat-review/",
+        "https://www.breweryacht.com/listings/1996-nimble-25-nomad-tropical-muliphen/2804392",
+        "https://boats-from-usa.com/not-specified/nimble-nomad-210835"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "NMBL-24-NO",
+      "Field": "WaterCapacityGal",
+      "Old": null,
+      "New": 26,
+      "Basis": "A detailed 1996 Nomad brokerage specification explicitly identifies 26 US gal / 98.42 L fresh water.",
+      "EvidenceRefs": [
+        "https://www.boats.com/reviews/nimble-nomad-used-boat-review/",
+        "https://www.breweryacht.com/listings/1996-nimble-25-nomad-tropical-muliphen/2804392",
+        "https://boats-from-usa.com/not-specified/nimble-nomad-210835"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "NMBL-24-NO",
+      "Field": "WaterCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "A detailed 1996 Nomad brokerage specification explicitly identifies 26 US gal / 98.42 L fresh water.",
+      "EvidenceRefs": [
+        "https://www.boats.com/reviews/nimble-nomad-used-boat-review/",
+        "https://www.breweryacht.com/listings/1996-nimble-25-nomad-tropical-muliphen/2804392",
+        "https://boats-from-usa.com/not-specified/nimble-nomad-210835"
+      ]
+    },
+    {
+      "BoatModelID": "NMBL-24-NO",
+      "Field": "Displacement",
+      "Old": 1814.4,
+      "New": 1111.3,
+      "Basis": "Boats.com used-boat review states 2,450 lb displacement for the reviewed 1997 Nomad; this corrects the inherited 4,000-lb-class canonical value.",
+      "EvidenceRefs": [
+        "https://www.boats.com/reviews/nimble-nomad-used-boat-review/",
+        "https://www.breweryacht.com/listings/1996-nimble-25-nomad-tropical-muliphen/2804392",
+        "https://boats-from-usa.com/not-specified/nimble-nomad-210835"
+      ],
+      "Unit": "kg"
+    },
+    {
+      "BoatModelID": "NMBL-24-NO",
+      "Field": "Displacement_lb",
+      "Old": 3500,
+      "New": 2450,
+      "Basis": "Legacy displacement aligned to the Boats.com reviewed-boat specification.",
+      "EvidenceRefs": [
+        "https://www.boats.com/reviews/nimble-nomad-used-boat-review/",
+        "https://www.breweryacht.com/listings/1996-nimble-25-nomad-tropical-muliphen/2804392",
+        "https://boats-from-usa.com/not-specified/nimble-nomad-210835"
+      ],
+      "Unit": "lb"
+    },
+    {
+      "BoatModelID": "NMBL-32-WA",
+      "Field": "AirDraft_ft",
+      "Old": 29.58,
+      "New": null,
+      "Basis": "Cruising World explicitly states the Wanderer was available with or without a mast and that the mast is tabernacle-stepped/lowerable. A single inherited 29.58 ft air-draft value is unsafe across the canonical power/optional-motorsailer record.",
+      "EvidenceRefs": [
+        "https://www.cruisingworld.com/sailboats/nimble-wanderer/"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "PRAI-29-TR",
+      "Field": "LWL_ft",
+      "Old": 27.4,
+      "New": 26.0,
+      "Basis": "Legacy LWL aligned to the model-specific Powerboat Guide specification.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/prairie/29-coastal-cruiser-1978-81",
+        "https://prairieboatworks.org/prairie-29-coastal-cruiser/",
+        "https://marinesource.com/boat/prairie-boat-works-coastal-cruiser-1978-port-charlotte-a9c2d10b-for-sale"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "PRAI-29-TR",
+      "Field": "Displacement_lb",
+      "Old": 12500,
+      "New": 12000,
+      "Basis": "Legacy displacement corrected from 12,500 lb to the published 12,000 lb model specification.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/prairie/29-coastal-cruiser-1978-81",
+        "https://prairieboatworks.org/prairie-29-coastal-cruiser/",
+        "https://marinesource.com/boat/prairie-boat-works-coastal-cruiser-1978-port-charlotte-a9c2d10b-for-sale"
+      ],
+      "Unit": "lb"
+    },
+    {
+      "BoatModelID": "PRAI-29-TR",
+      "Field": "AirDraft_ft",
+      "Old": 12.2,
+      "New": null,
+      "Basis": "A current refitted Prairie 29 publishes 14 ft to canvas and 17 ft to antenna, but these are equipment/refit-specific. The inherited 12.2 ft fallback is unsupported and removed.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/prairie/29-coastal-cruiser-1978-81",
+        "https://prairieboatworks.org/prairie-29-coastal-cruiser/",
+        "https://marinesource.com/boat/prairie-boat-works-coastal-cruiser-1978-port-charlotte-a9c2d10b-for-sale"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "PRAI-29-TR",
+      "Field": "WaterCapacity",
+      "Old": 100,
+      "New": 378.54,
+      "Basis": "Powerboat Guide publishes 100 gal water capacity for this US-built model; canonical storage normalized to litres.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/prairie/29-coastal-cruiser-1978-81",
+        "https://prairieboatworks.org/prairie-29-coastal-cruiser/",
+        "https://marinesource.com/boat/prairie-boat-works-coastal-cruiser-1978-port-charlotte-a9c2d10b-for-sale"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "PRAI-29-TR",
+      "Field": "WaterCapacityUnitStatus",
+      "Old": "legacy_gallon_basis_unverified",
+      "New": "canonical_litres",
+      "Basis": "Powerboat Guide publishes 100 gal water capacity for this US-built model; canonical storage normalized to litres.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/prairie/29-coastal-cruiser-1978-81",
+        "https://prairieboatworks.org/prairie-29-coastal-cruiser/",
+        "https://marinesource.com/boat/prairie-boat-works-coastal-cruiser-1978-port-charlotte-a9c2d10b-for-sale"
+      ]
+    },
+    {
+      "BoatModelID": "PRAI-29-TR",
+      "Field": "HoldingCapacity",
+      "Old": 30,
+      "New": 151.42,
+      "Basis": "Powerboat Guide publishes 40 gal waste capacity; canonical storage normalized to litres.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/prairie/29-coastal-cruiser-1978-81",
+        "https://prairieboatworks.org/prairie-29-coastal-cruiser/",
+        "https://marinesource.com/boat/prairie-boat-works-coastal-cruiser-1978-port-charlotte-a9c2d10b-for-sale"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "PRAI-29-TR",
+      "Field": "HoldingCapacityGal",
+      "Old": null,
+      "New": 40,
+      "Basis": "Powerboat Guide publishes 40 gal waste capacity; canonical storage normalized to litres.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/prairie/29-coastal-cruiser-1978-81",
+        "https://prairieboatworks.org/prairie-29-coastal-cruiser/",
+        "https://marinesource.com/boat/prairie-boat-works-coastal-cruiser-1978-port-charlotte-a9c2d10b-for-sale"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "PRAI-29-TR",
+      "Field": "HoldingCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "Powerboat Guide publishes 40 gal waste capacity; canonical storage normalized to litres.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/prairie/29-coastal-cruiser-1978-81",
+        "https://prairieboatworks.org/prairie-29-coastal-cruiser/",
+        "https://marinesource.com/boat/prairie-boat-works-coastal-cruiser-1978-port-charlotte-a9c2d10b-for-sale"
+      ]
+    },
+    {
+      "BoatModelID": "PRAI-36-TR",
+      "Field": "LOA_ft",
+      "Old": 36,
+      "New": 36.583333333333336,
+      "Basis": "Prairie archival material and Powerboat Guide publish 36 ft 7 in length.",
+      "EvidenceRefs": [
+        "https://prairieboatworks.org/prairie-36-coastal-cruiser/",
+        "https://www.hmy.com/yachting/powerboat-guide/atlantic/37-double-cabin-1982-92"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "PRAI-36-TR",
+      "Field": "LengthFt",
+      "Old": 36.58,
+      "New": 36.583333333333336,
+      "Basis": "Compatibility length aligned to the published 36 ft 7 in model specification.",
+      "EvidenceRefs": [
+        "https://prairieboatworks.org/prairie-36-coastal-cruiser/",
+        "https://www.hmy.com/yachting/powerboat-guide/atlantic/37-double-cabin-1982-92"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "PRAI-36-TR",
+      "Field": "Beam_ft",
+      "Old": 13.5,
+      "New": 13.75,
+      "Basis": "Legacy beam aligned to the published 13 ft 9 in specification.",
+      "EvidenceRefs": [
+        "https://prairieboatworks.org/prairie-36-coastal-cruiser/",
+        "https://www.hmy.com/yachting/powerboat-guide/atlantic/37-double-cabin-1982-92"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "PRAI-36-TR",
+      "Field": "Draft_ft",
+      "Old": 3.5,
+      "New": 3.25,
+      "Basis": "Legacy draft aligned to the published 3 ft 3 in specification.",
+      "EvidenceRefs": [
+        "https://prairieboatworks.org/prairie-36-coastal-cruiser/",
+        "https://www.hmy.com/yachting/powerboat-guide/atlantic/37-double-cabin-1982-92"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "PRAI-36-TR",
+      "Field": "AirDraft_ft",
+      "Old": 13.5,
+      "New": 19.75,
+      "Basis": "Prairie archival material and Powerboat Guide publish 19 ft 9 in mast-up clearance; stale 13.5 ft shadow corrected.",
+      "EvidenceRefs": [
+        "https://prairieboatworks.org/prairie-36-coastal-cruiser/",
+        "https://www.hmy.com/yachting/powerboat-guide/atlantic/37-double-cabin-1982-92"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "PRAI-36-TR",
+      "Field": "Displacement_lb",
+      "Old": 18500,
+      "New": 22000,
+      "Basis": "Prairie archival material and Powerboat Guide publish 22,000 lb weight; stale 18,500 lb shadow corrected.",
+      "EvidenceRefs": [
+        "https://prairieboatworks.org/prairie-36-coastal-cruiser/",
+        "https://www.hmy.com/yachting/powerboat-guide/atlantic/37-double-cabin-1982-92"
+      ],
+      "Unit": "lb"
+    },
+    {
+      "BoatModelID": "PRAI-36-TR",
+      "Field": "LWL_ft",
+      "Old": 33.2,
+      "New": null,
+      "Basis": "No sufficiently authoritative waterline length was found for the Prairie 36/Atlantic 37 shared hull; the inherited 33.2 ft fallback is removed.",
+      "EvidenceRefs": [
+        "https://prairieboatworks.org/prairie-36-coastal-cruiser/",
+        "https://www.hmy.com/yachting/powerboat-guide/atlantic/37-double-cabin-1982-92"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "PRAI-36-TR",
+      "Field": "HoldingCapacity",
+      "Old": 40,
+      "New": 113.56,
+      "Basis": "Powerboat Guide publishes 30 gal waste capacity for the Prairie 36/Atlantic 37 shared design; canonical storage normalized to litres.",
+      "EvidenceRefs": [
+        "https://prairieboatworks.org/prairie-36-coastal-cruiser/",
+        "https://www.hmy.com/yachting/powerboat-guide/atlantic/37-double-cabin-1982-92"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "PRAI-36-TR",
+      "Field": "HoldingCapacityGal",
+      "Old": null,
+      "New": 30,
+      "Basis": "Powerboat Guide publishes 30 gal waste capacity for the Prairie 36/Atlantic 37 shared design; canonical storage normalized to litres.",
+      "EvidenceRefs": [
+        "https://prairieboatworks.org/prairie-36-coastal-cruiser/",
+        "https://www.hmy.com/yachting/powerboat-guide/atlantic/37-double-cabin-1982-92"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "PRAI-36-TR",
+      "Field": "HoldingCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "Powerboat Guide publishes 30 gal waste capacity for the Prairie 36/Atlantic 37 shared design; canonical storage normalized to litres.",
+      "EvidenceRefs": [
+        "https://prairieboatworks.org/prairie-36-coastal-cruiser/",
+        "https://www.hmy.com/yachting/powerboat-guide/atlantic/37-double-cabin-1982-92"
+      ]
+    },
+    {
+      "BoatModelID": "TRUN-34",
+      "Field": "LWL",
+      "Old": null,
+      "New": 10.3124,
+      "Basis": "A model-specific 2009 original-diesel True North 34 publishes 33 ft 10 in LWL. This is kept separate from later outboard-generation specifications.",
+      "EvidenceRefs": [
+        "https://powerandmotoryacht.com/boats/boat-tests/true-north-34/",
+        "https://marinesource.com/boat/true-north-34-2009-annapolis-a8eb649b-for-sale",
+        "https://truenorth.yachts/about/",
+        "https://www.pearsonyachts.org/powerboats/pearson-true-north-33.html"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "TRUN-34",
+      "Field": "LWL_ft",
+      "Old": 32.2,
+      "New": 33.833333333333336,
+      "Basis": "Legacy LWL aligned to the 2009 original-diesel model-specific measurement.",
+      "EvidenceRefs": [
+        "https://powerandmotoryacht.com/boats/boat-tests/true-north-34/",
+        "https://marinesource.com/boat/true-north-34-2009-annapolis-a8eb649b-for-sale",
+        "https://truenorth.yachts/about/",
+        "https://www.pearsonyachts.org/powerboats/pearson-true-north-33.html"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "TRUN-34",
+      "Field": "Displacement",
+      "Old": null,
+      "New": 5669.9,
+      "Basis": "A model-specific 2009 original-diesel True North 34 publishes 12,500 lb dry weight; promoted as representative for this diesel canonical record.",
+      "EvidenceRefs": [
+        "https://powerandmotoryacht.com/boats/boat-tests/true-north-34/",
+        "https://marinesource.com/boat/true-north-34-2009-annapolis-a8eb649b-for-sale",
+        "https://truenorth.yachts/about/",
+        "https://www.pearsonyachts.org/powerboats/pearson-true-north-33.html"
+      ],
+      "Unit": "kg"
+    },
+    {
+      "BoatModelID": "TRUN-34",
+      "Field": "Displacement_lb",
+      "Old": 15000,
+      "New": 12500,
+      "Basis": "Legacy displacement aligned to the model-specific 2009 original-diesel specification.",
+      "EvidenceRefs": [
+        "https://powerandmotoryacht.com/boats/boat-tests/true-north-34/",
+        "https://marinesource.com/boat/true-north-34-2009-annapolis-a8eb649b-for-sale",
+        "https://truenorth.yachts/about/",
+        "https://www.pearsonyachts.org/powerboats/pearson-true-north-33.html"
+      ],
+      "Unit": "lb"
+    },
+    {
+      "BoatModelID": "TRUN-34",
+      "Field": "AirDraft_ft",
+      "Old": 10.8,
+      "New": null,
+      "Basis": "The inherited 10.8 ft air-draft fallback is not supported by reviewed original-diesel sources. Later outboard 34 specifications must not be reused for this generation.",
+      "EvidenceRefs": [
+        "https://powerandmotoryacht.com/boats/boat-tests/true-north-34/",
+        "https://marinesource.com/boat/true-north-34-2009-annapolis-a8eb649b-for-sale",
+        "https://truenorth.yachts/about/",
+        "https://www.pearsonyachts.org/powerboats/pearson-true-north-33.html"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "TRUN-34",
+      "Field": "FuelCapacity",
+      "Old": 200,
+      "New": 681.37,
+      "Basis": "Power & Motoryacht documents the original inboard diesel True North 34 with a standard 180-gal fuel tank; canonical storage normalized to litres.",
+      "EvidenceRefs": [
+        "https://powerandmotoryacht.com/boats/boat-tests/true-north-34/",
+        "https://marinesource.com/boat/true-north-34-2009-annapolis-a8eb649b-for-sale",
+        "https://truenorth.yachts/about/",
+        "https://www.pearsonyachts.org/powerboats/pearson-true-north-33.html"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "TRUN-34",
+      "Field": "FuelCapacityGal",
+      "Old": 200,
+      "New": 180,
+      "Basis": "Power & Motoryacht documents the original inboard diesel True North 34 with a standard 180-gal fuel tank; canonical storage normalized to litres.",
+      "EvidenceRefs": [
+        "https://powerandmotoryacht.com/boats/boat-tests/true-north-34/",
+        "https://marinesource.com/boat/true-north-34-2009-annapolis-a8eb649b-for-sale",
+        "https://truenorth.yachts/about/",
+        "https://www.pearsonyachts.org/powerboats/pearson-true-north-33.html"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "TRUN-34",
+      "Field": "FuelCapacityUnitStatus",
+      "Old": "legacy_gallon_basis_unverified",
+      "New": "canonical_litres",
+      "Basis": "Power & Motoryacht documents the original inboard diesel True North 34 with a standard 180-gal fuel tank; canonical storage normalized to litres.",
+      "EvidenceRefs": [
+        "https://powerandmotoryacht.com/boats/boat-tests/true-north-34/",
+        "https://marinesource.com/boat/true-north-34-2009-annapolis-a8eb649b-for-sale",
+        "https://truenorth.yachts/about/",
+        "https://www.pearsonyachts.org/powerboats/pearson-true-north-33.html"
+      ]
+    },
+    {
+      "BoatModelID": "HLMN-38-CO",
+      "Field": "MechanicalPropulsionCode",
+      "Old": "mechanical_propulsion.sterndrive",
+      "New": "mechanical_propulsion.mixed",
+      "Basis": "Exact-model evidence documents both Volvo sterndrive installations and Crusader V-drive inboards. Model-wide propulsion must therefore remain configuration-dependent.",
+      "EvidenceRefs": [
+        "https://www.ontariomarinebrokers.ca/1988HolidayMansion38HouseboatOntario.html",
+        "https://sjyachts.com/all-yachts-for-sale/1987-holiday-mansion-costal-barracuda-38-2852248/",
+        "https://www.boatsdata.com/1988-holiday-mansion-barracuda-coastal-cruiserhouseboat-1972/specs"
+      ]
+    },
+    {
+      "BoatModelID": "HLMN-38-CO",
+      "Field": "Propulsion",
+      "Old": "Shaft",
+      "New": "Sterndrive or V-Drive",
+      "Basis": "Legacy propulsion corrected from shaft-only to the documented mixed sterndrive/V-drive configurations.",
+      "EvidenceRefs": [
+        "https://www.ontariomarinebrokers.ca/1988HolidayMansion38HouseboatOntario.html",
+        "https://sjyachts.com/all-yachts-for-sale/1987-holiday-mansion-costal-barracuda-38-2852248/",
+        "https://www.boatsdata.com/1988-holiday-mansion-barracuda-coastal-cruiserhouseboat-1972/specs"
+      ]
+    },
+    {
+      "BoatModelID": "HLMN-38-CO",
+      "Field": "NormalizedPropulsion",
+      "Old": "Shaft",
+      "New": "Mixed",
+      "Basis": "Legacy normalized propulsion aligned to the canonical mixed classification.",
+      "EvidenceRefs": [
+        "https://www.ontariomarinebrokers.ca/1988HolidayMansion38HouseboatOntario.html",
+        "https://sjyachts.com/all-yachts-for-sale/1987-holiday-mansion-costal-barracuda-38-2852248/",
+        "https://www.boatsdata.com/1988-holiday-mansion-barracuda-coastal-cruiserhouseboat-1972/specs"
+      ]
+    },
+    {
+      "BoatModelID": "HLMN-38-CO",
+      "Field": "AirDraft_ft",
+      "Old": 11.5,
+      "New": null,
+      "Basis": "The inherited 11.5 ft air-draft fallback is not supported by reviewed exact-model evidence and upper-structure configuration varies; preserve Unknown.",
+      "EvidenceRefs": [
+        "https://www.ontariomarinebrokers.ca/1988HolidayMansion38HouseboatOntario.html",
+        "https://sjyachts.com/all-yachts-for-sale/1987-holiday-mansion-costal-barracuda-38-2852248/",
+        "https://www.boatsdata.com/1988-holiday-mansion-barracuda-coastal-cruiserhouseboat-1972/specs"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "HLMN-38-CO",
+      "Field": "LWL_ft",
+      "Old": 35,
+      "New": null,
+      "Basis": "A marketplace source reports an impossible/inconsistent 38 ft 10 in LWL on a 38 ft LOA boat. The inherited 35 ft LWL fallback has no reliable support and is removed.",
+      "EvidenceRefs": [
+        "https://www.ontariomarinebrokers.ca/1988HolidayMansion38HouseboatOntario.html",
+        "https://sjyachts.com/all-yachts-for-sale/1987-holiday-mansion-costal-barracuda-38-2852248/",
+        "https://www.boatsdata.com/1988-holiday-mansion-barracuda-coastal-cruiserhouseboat-1972/specs"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "TRUN-34",
+      "Field": "LOA",
+      "Old": 10.4648,
+      "New": null,
+      "Basis": "Original-diesel True North 34 sources conflict on overall length: a period 2007 specification gives 36 ft 2 in while a model-specific 2009 boat gives 37 ft 9 in. The 34-foot designation/hull length must not be used as model-wide LOA.",
+      "EvidenceRefs": [
+        "https://www.yachtingmagazine.com/blue-bloods/",
+        "https://marinesource.com/boat/true-north-34-2009-annapolis-a8eb649b-for-sale"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "TRUN-34",
+      "Field": "LOA_ft",
+      "Old": 34.33,
+      "New": null,
+      "Basis": "Legacy 34.33-ft fallback cleared because original-diesel overall length varies by documented transom/platform configuration and is not equivalent to nominal hull length.",
+      "EvidenceRefs": [
+        "https://www.yachtingmagazine.com/blue-bloods/",
+        "https://marinesource.com/boat/true-north-34-2009-annapolis-a8eb649b-for-sale"
+      ],
+      "Unit": "ft"
+    }
+  ]
+}

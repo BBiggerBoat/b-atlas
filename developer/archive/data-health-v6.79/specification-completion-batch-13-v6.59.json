@@ -1,0 +1,881 @@
+{
+  "release": "6.59.0",
+  "batch": "specification-completion-13",
+  "manufacturers": [
+    "Luhrs",
+    "Nordhavn",
+    "Oceania Yachts",
+    "PDQ",
+    "Saga"
+  ],
+  "updateCount": 71,
+  "updates": [
+    {
+      "BoatModelID": "LUHR-30",
+      "Field": "LWL_ft",
+      "Old": 27,
+      "New": 28.0,
+      "Basis": "HMY publishes 28 ft LWL; reconcile stale 27-ft imperial shadow.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/luhrs/30-alura-1987-90",
+        "https://www.boattrader.com/boat/1988-luhrs-alura-10114290/"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "LUHR-30",
+      "Field": "AirDraft",
+      "Old": null,
+      "New": 3.3528000000000002,
+      "Basis": "Exact-model 1988 listing publishes 11 ft bridge clearance; use as representative model clearance.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/luhrs/30-alura-1987-90",
+        "https://www.boattrader.com/boat/1988-luhrs-alura-10114290/"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "LUHR-30",
+      "Field": "Headroom_ft",
+      "Old": null,
+      "New": 6.333333333333333,
+      "Basis": "HMY publishes 6 ft 4 in interior headroom; align imperial display shadow with canonical value.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/luhrs/30-alura-1987-90",
+        "https://www.boattrader.com/boat/1988-luhrs-alura-10114290/"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "LUHR-30",
+      "Field": "Propulsion",
+      "Old": "Stern Drive",
+      "New": "Shaft",
+      "Basis": "HMY describes a single gasoline inboard in a full-keel hull; canonical mechanical propulsion is shaft, so clear stale Stern Drive shadow.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/luhrs/30-alura-1987-90",
+        "https://www.boattrader.com/boat/1988-luhrs-alura-10114290/"
+      ]
+    },
+    {
+      "BoatModelID": "LUHR-30",
+      "Field": "KeelType",
+      "Old": "Modified V",
+      "New": "Full Length",
+      "Basis": "HMY explicitly describes the Alura 30 as a full-keel fishing boat; reconcile stale Modified V keel shadow.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/luhrs/30-alura-1987-90",
+        "https://www.boattrader.com/boat/1988-luhrs-alura-10114290/"
+      ]
+    },
+    {
+      "BoatModelID": "LUHR-30",
+      "Field": "FuelCapacity",
+      "Old": 196,
+      "New": 741.940709664,
+      "Basis": "HMY publishes 196 gal fuel; normalize US-market specification to canonical litres.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/luhrs/30-alura-1987-90",
+        "https://www.boattrader.com/boat/1988-luhrs-alura-10114290/"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "LUHR-30",
+      "Field": "FuelCapacityGal",
+      "Old": null,
+      "New": 196,
+      "Basis": "HMY publishes 196 gal fuel; normalize US-market specification to canonical litres.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/luhrs/30-alura-1987-90",
+        "https://www.boattrader.com/boat/1988-luhrs-alura-10114290/"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "LUHR-30",
+      "Field": "FuelCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "HMY publishes 196 gal fuel; normalize US-market specification to canonical litres.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/luhrs/30-alura-1987-90",
+        "https://www.boattrader.com/boat/1988-luhrs-alura-10114290/"
+      ]
+    },
+    {
+      "BoatModelID": "LUHR-30",
+      "Field": "WaterCapacity",
+      "Old": 38,
+      "New": 143.845647792,
+      "Basis": "HMY publishes 38 gal water; normalize to canonical litres.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/luhrs/30-alura-1987-90",
+        "https://www.boattrader.com/boat/1988-luhrs-alura-10114290/"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "LUHR-30",
+      "Field": "WaterCapacityGal",
+      "Old": null,
+      "New": 38,
+      "Basis": "HMY publishes 38 gal water; normalize to canonical litres.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/luhrs/30-alura-1987-90",
+        "https://www.boattrader.com/boat/1988-luhrs-alura-10114290/"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "LUHR-30",
+      "Field": "WaterCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "HMY publishes 38 gal water; normalize to canonical litres.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/luhrs/30-alura-1987-90",
+        "https://www.boattrader.com/boat/1988-luhrs-alura-10114290/"
+      ]
+    },
+    {
+      "BoatModelID": "LUHR-30",
+      "Field": "HoldingCapacity",
+      "Old": 15,
+      "New": 56.78117676,
+      "Basis": "HMY publishes 15 gal waste; normalize to canonical litres.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/luhrs/30-alura-1987-90",
+        "https://www.boattrader.com/boat/1988-luhrs-alura-10114290/"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "LUHR-30",
+      "Field": "HoldingCapacityGal",
+      "Old": null,
+      "New": 15,
+      "Basis": "HMY publishes 15 gal waste; normalize to canonical litres.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/luhrs/30-alura-1987-90",
+        "https://www.boattrader.com/boat/1988-luhrs-alura-10114290/"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "LUHR-30",
+      "Field": "HoldingCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "HMY publishes 15 gal waste; normalize to canonical litres.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/luhrs/30-alura-1987-90",
+        "https://www.boattrader.com/boat/1988-luhrs-alura-10114290/"
+      ]
+    },
+    {
+      "BoatModelID": "NRDH-40",
+      "Field": "Draft_ft",
+      "Old": 5.17,
+      "New": null,
+      "Basis": "Factory/period Nordhavn specifications conflict at approximately 4 ft 9 in, 5 ft 2 in and later representative examples around 5 ft 6 in; clear fixed legacy fallback and preserve canonical Unknown.",
+      "EvidenceRefs": [
+        "https://nordhavn.com/nordhavn-yacht-models/retired-models/n40/",
+        "https://nordhavn.com/wp-content/uploads/2021/02/circumnavigatorII.pdf",
+        "https://archive.nordhavn.com/atw/specs/accommodations.htm"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "NRDH-40",
+      "Field": "AirDraft_ft",
+      "Old": 15.5,
+      "New": null,
+      "Basis": "Published Nordhavn configurations vary materially by mast/tabernacle setup (factory period literature gives 29 ft mast-up/13 ft 6 in mast-down while representative boats report higher lowered profiles); clear fixed 15.5-ft fallback.",
+      "EvidenceRefs": [
+        "https://nordhavn.com/nordhavn-yacht-models/retired-models/n40/",
+        "https://nordhavn.com/wp-content/uploads/2021/02/circumnavigatorII.pdf",
+        "https://archive.nordhavn.com/atw/specs/accommodations.htm"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "NRDH-40",
+      "Field": "Headroom",
+      "Old": null,
+      "New": 1.905,
+      "Basis": "Nordhavn archive publishes 6 ft 3 in main-saloon headroom; use main saloon as canonical standing-headroom reference.",
+      "EvidenceRefs": [
+        "https://nordhavn.com/nordhavn-yacht-models/retired-models/n40/",
+        "https://nordhavn.com/wp-content/uploads/2021/02/circumnavigatorII.pdf",
+        "https://archive.nordhavn.com/atw/specs/accommodations.htm"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "NRDH-40",
+      "Field": "Headroom_ft",
+      "Old": null,
+      "New": 6.25,
+      "Basis": "Nordhavn archive publishes 6 ft 3 in main-saloon headroom.",
+      "EvidenceRefs": [
+        "https://nordhavn.com/nordhavn-yacht-models/retired-models/n40/",
+        "https://nordhavn.com/wp-content/uploads/2021/02/circumnavigatorII.pdf",
+        "https://archive.nordhavn.com/atw/specs/accommodations.htm"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "NRDH-40",
+      "Field": "FuelCapacity",
+      "Old": 3482.6,
+      "New": 3482.57884128,
+      "Basis": "Nordhavn factory publishes 920 US gal / 3,482.6 L fuel; normalize provenance.",
+      "EvidenceRefs": [
+        "https://nordhavn.com/nordhavn-yacht-models/retired-models/n40/",
+        "https://nordhavn.com/wp-content/uploads/2021/02/circumnavigatorII.pdf",
+        "https://archive.nordhavn.com/atw/specs/accommodations.htm"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "NRDH-40",
+      "Field": "FuelCapacityGal",
+      "Old": null,
+      "New": 920,
+      "Basis": "Nordhavn factory publishes 920 US gal / 3,482.6 L fuel; normalize provenance.",
+      "EvidenceRefs": [
+        "https://nordhavn.com/nordhavn-yacht-models/retired-models/n40/",
+        "https://nordhavn.com/wp-content/uploads/2021/02/circumnavigatorII.pdf",
+        "https://archive.nordhavn.com/atw/specs/accommodations.htm"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "NRDH-40",
+      "Field": "FuelCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "Nordhavn factory publishes 920 US gal / 3,482.6 L fuel; normalize provenance.",
+      "EvidenceRefs": [
+        "https://nordhavn.com/nordhavn-yacht-models/retired-models/n40/",
+        "https://nordhavn.com/wp-content/uploads/2021/02/circumnavigatorII.pdf",
+        "https://archive.nordhavn.com/atw/specs/accommodations.htm"
+      ]
+    },
+    {
+      "BoatModelID": "NRDH-40",
+      "Field": "WaterCapacity",
+      "Old": 832.8,
+      "New": 832.79059248,
+      "Basis": "Nordhavn factory publishes 220 US gal / 832.8 L water; normalize provenance.",
+      "EvidenceRefs": [
+        "https://nordhavn.com/nordhavn-yacht-models/retired-models/n40/",
+        "https://nordhavn.com/wp-content/uploads/2021/02/circumnavigatorII.pdf",
+        "https://archive.nordhavn.com/atw/specs/accommodations.htm"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "NRDH-40",
+      "Field": "WaterCapacityGal",
+      "Old": null,
+      "New": 220,
+      "Basis": "Nordhavn factory publishes 220 US gal / 832.8 L water; normalize provenance.",
+      "EvidenceRefs": [
+        "https://nordhavn.com/nordhavn-yacht-models/retired-models/n40/",
+        "https://nordhavn.com/wp-content/uploads/2021/02/circumnavigatorII.pdf",
+        "https://archive.nordhavn.com/atw/specs/accommodations.htm"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "NRDH-40",
+      "Field": "WaterCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "Nordhavn factory publishes 220 US gal / 832.8 L water; normalize provenance.",
+      "EvidenceRefs": [
+        "https://nordhavn.com/nordhavn-yacht-models/retired-models/n40/",
+        "https://nordhavn.com/wp-content/uploads/2021/02/circumnavigatorII.pdf",
+        "https://archive.nordhavn.com/atw/specs/accommodations.htm"
+      ]
+    },
+    {
+      "BoatModelID": "NRDH-40",
+      "Field": "HoldingCapacity",
+      "Old": 257.4,
+      "New": 257.408001312,
+      "Basis": "Nordhavn factory publishes 68 US gal / 257.4 L black-water capacity; normalize provenance.",
+      "EvidenceRefs": [
+        "https://nordhavn.com/nordhavn-yacht-models/retired-models/n40/",
+        "https://nordhavn.com/wp-content/uploads/2021/02/circumnavigatorII.pdf",
+        "https://archive.nordhavn.com/atw/specs/accommodations.htm"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "NRDH-40",
+      "Field": "HoldingCapacityGal",
+      "Old": null,
+      "New": 68,
+      "Basis": "Nordhavn factory publishes 68 US gal / 257.4 L black-water capacity; normalize provenance.",
+      "EvidenceRefs": [
+        "https://nordhavn.com/nordhavn-yacht-models/retired-models/n40/",
+        "https://nordhavn.com/wp-content/uploads/2021/02/circumnavigatorII.pdf",
+        "https://archive.nordhavn.com/atw/specs/accommodations.htm"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "NRDH-40",
+      "Field": "HoldingCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "Nordhavn factory publishes 68 US gal / 257.4 L black-water capacity; normalize provenance.",
+      "EvidenceRefs": [
+        "https://nordhavn.com/nordhavn-yacht-models/retired-models/n40/",
+        "https://nordhavn.com/wp-content/uploads/2021/02/circumnavigatorII.pdf",
+        "https://archive.nordhavn.com/atw/specs/accommodations.htm"
+      ]
+    },
+    {
+      "BoatModelID": "OCEA-36-SE",
+      "Field": "LOA_ft",
+      "Old": 36.33,
+      "New": 38.5,
+      "Basis": "Canadian Yachting September 1980 spec box publishes 38.5 ft length overall; reconcile stale 36.33-ft hull-length shadow.",
+      "EvidenceRefs": [
+        "https://canadianboating.ca/boat-reviews/oceania-36-sedan/"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "OCEA-36-SE",
+      "Field": "LWL_ft",
+      "Old": 33.4,
+      "New": null,
+      "Basis": "The reviewed original Canadian test does not publish LWL; clear unsupported 33.4-ft fallback.",
+      "EvidenceRefs": [
+        "https://canadianboating.ca/boat-reviews/oceania-36-sedan/"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "OCEA-36-SE",
+      "Field": "Beam_ft",
+      "Old": 12.92,
+      "New": 12.5,
+      "Basis": "Canadian Yachting spec box publishes 12.5 ft beam (article text says 12 ft 2 in); canonical record already uses the spec-box value, so reconcile stale 12.92-ft shadow.",
+      "EvidenceRefs": [
+        "https://canadianboating.ca/boat-reviews/oceania-36-sedan/"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "OCEA-36-SE",
+      "Field": "AirDraft_ft",
+      "Old": 13.2,
+      "New": null,
+      "Basis": "The original Canadian test does not publish bridge clearance/air draft; clear unsupported 13.2-ft fallback.",
+      "EvidenceRefs": [
+        "https://canadianboating.ca/boat-reviews/oceania-36-sedan/"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "OCEA-36-SE",
+      "Field": "Displacement_lb",
+      "Old": 21000,
+      "New": 19000,
+      "Basis": "Canadian Yachting original test publishes 19,000 lb displacement; reconcile stale 21,000-lb shadow.",
+      "EvidenceRefs": [
+        "https://canadianboating.ca/boat-reviews/oceania-36-sedan/"
+      ],
+      "Unit": "lb"
+    },
+    {
+      "BoatModelID": "OCEA-36-SE",
+      "Field": "EngineConfiguration",
+      "Old": "Twin Inboard",
+      "New": "Single Ford Lehman 120 hp diesel",
+      "Basis": "The original Canadian test documents a single Ford-Lehman 120 hp diesel; correct stale Twin Inboard shadow.",
+      "EvidenceRefs": [
+        "https://canadianboating.ca/boat-reviews/oceania-36-sedan/"
+      ]
+    },
+    {
+      "BoatModelID": "OCEA-36-SE",
+      "Field": "TypicalEngineID",
+      "Old": "Ford Lehman 135",
+      "New": "Ford Lehman 120",
+      "Basis": "The original Canadian test documents a Ford-Lehman 120 hp diesel; correct stale 135-hp typical-engine shadow.",
+      "EvidenceRefs": [
+        "https://canadianboating.ca/boat-reviews/oceania-36-sedan/"
+      ]
+    },
+    {
+      "BoatModelID": "OCEA-36-SE",
+      "Field": "HoldingCapacityGal",
+      "Old": null,
+      "New": 40,
+      "Basis": "Canadian Yachting original test publishes 40 gal holding capacity; retain gallon source value while the gallon basis remains assumed US for canonical conversion.",
+      "EvidenceRefs": [
+        "https://canadianboating.ca/boat-reviews/oceania-36-sedan/"
+      ],
+      "Unit": "gal (basis assumed US)"
+    },
+    {
+      "BoatModelID": "OCEA-36-SE",
+      "Field": "HoldingCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres_assumed_us_gal",
+      "Basis": "Original Canadian source publishes 40 gal but does not explicitly state US vs Imperial gallon; preserve existing assumed-US conversion semantics.",
+      "EvidenceRefs": [
+        "https://canadianboating.ca/boat-reviews/oceania-36-sedan/"
+      ]
+    },
+    {
+      "BoatModelID": "PDQB-34-PA",
+      "Field": "LOA_ft",
+      "Old": 34,
+      "New": 34.5,
+      "Basis": "HMY publishes 34 ft 6 in LOA for the lengthened PDQ 34; reconcile stale nominal 34-ft shadow.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/pdq/32-34-power-catamaran-2000-07",
+        "https://www.boattrader.com/boat/2004-pdq-34-power-catamaran-10208873/",
+        "https://yachtr.com/34-pdq-2005-2798853/"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "PDQB-34-PA",
+      "Field": "LWL_ft",
+      "Old": 32.5,
+      "New": 33.916666666666664,
+      "Basis": "HMY publishes 33 ft 11 in LWL; reconcile stale 32.5-ft shadow.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/pdq/32-34-power-catamaran-2000-07",
+        "https://www.boattrader.com/boat/2004-pdq-34-power-catamaran-10208873/",
+        "https://yachtr.com/34-pdq-2005-2798853/"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "PDQB-34-PA",
+      "Field": "AirDraft",
+      "Old": null,
+      "New": 3.7338,
+      "Basis": "HMY and exact-model records publish 12 ft 3 in clearance.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/pdq/32-34-power-catamaran-2000-07",
+        "https://www.boattrader.com/boat/2004-pdq-34-power-catamaran-10208873/",
+        "https://yachtr.com/34-pdq-2005-2798853/"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "PDQB-34-PA",
+      "Field": "AirDraft_ft",
+      "Old": 12.5,
+      "New": 12.25,
+      "Basis": "HMY and exact-model records publish 12 ft 3 in clearance.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/pdq/32-34-power-catamaran-2000-07",
+        "https://www.boattrader.com/boat/2004-pdq-34-power-catamaran-10208873/",
+        "https://yachtr.com/34-pdq-2005-2798853/"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "PDQB-34-PA",
+      "Field": "Displacement_lb",
+      "Old": 15000,
+      "New": 12000,
+      "Basis": "HMY publishes 12,000 lb representative weight; reconcile stale 15,000-lb shadow.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/pdq/32-34-power-catamaran-2000-07",
+        "https://www.boattrader.com/boat/2004-pdq-34-power-catamaran-10208873/",
+        "https://yachtr.com/34-pdq-2005-2798853/"
+      ],
+      "Unit": "lb"
+    },
+    {
+      "BoatModelID": "PDQB-34-PA",
+      "Field": "RudderTypeCode",
+      "Old": null,
+      "New": "rudder.twin",
+      "Basis": "HMY explicitly describes protected props and rudders in the plural on the twin-shaft catamaran; classify as twin rudders without inferring attachment geometry.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/pdq/32-34-power-catamaran-2000-07",
+        "https://www.boattrader.com/boat/2004-pdq-34-power-catamaran-10208873/",
+        "https://yachtr.com/34-pdq-2005-2798853/"
+      ]
+    },
+    {
+      "BoatModelID": "PDQB-34-PA",
+      "Field": "Headroom",
+      "Old": null,
+      "New": 1.9812,
+      "Basis": "Exact-model listing publishes 6 ft 6 in cabin headroom.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/pdq/32-34-power-catamaran-2000-07",
+        "https://www.boattrader.com/boat/2004-pdq-34-power-catamaran-10208873/",
+        "https://yachtr.com/34-pdq-2005-2798853/"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "PDQB-34-PA",
+      "Field": "Headroom_ft",
+      "Old": null,
+      "New": 6.5,
+      "Basis": "Exact-model listing publishes 6 ft 6 in cabin headroom.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/pdq/32-34-power-catamaran-2000-07",
+        "https://www.boattrader.com/boat/2004-pdq-34-power-catamaran-10208873/",
+        "https://yachtr.com/34-pdq-2005-2798853/"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "PDQB-34-PA",
+      "Field": "FuelCapacity",
+      "Old": 696.52,
+      "New": 696.515768256,
+      "Basis": "HMY and exact-model sources consistently publish 184 US gal fuel.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/pdq/32-34-power-catamaran-2000-07",
+        "https://www.boattrader.com/boat/2004-pdq-34-power-catamaran-10208873/",
+        "https://yachtr.com/34-pdq-2005-2798853/"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "PDQB-34-PA",
+      "Field": "FuelCapacityGal",
+      "Old": null,
+      "New": 184,
+      "Basis": "HMY and exact-model sources consistently publish 184 US gal fuel.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/pdq/32-34-power-catamaran-2000-07",
+        "https://www.boattrader.com/boat/2004-pdq-34-power-catamaran-10208873/",
+        "https://yachtr.com/34-pdq-2005-2798853/"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "PDQB-34-PA",
+      "Field": "FuelCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "HMY and exact-model sources consistently publish 184 US gal fuel.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/pdq/32-34-power-catamaran-2000-07",
+        "https://www.boattrader.com/boat/2004-pdq-34-power-catamaran-10208873/",
+        "https://yachtr.com/34-pdq-2005-2798853/"
+      ]
+    },
+    {
+      "BoatModelID": "PDQB-34-PA",
+      "Field": "WaterCapacity",
+      "Old": 302.83,
+      "New": 302.83294272,
+      "Basis": "HMY and exact-model sources consistently publish 80 US gal water.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/pdq/32-34-power-catamaran-2000-07",
+        "https://www.boattrader.com/boat/2004-pdq-34-power-catamaran-10208873/",
+        "https://yachtr.com/34-pdq-2005-2798853/"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "PDQB-34-PA",
+      "Field": "WaterCapacityGal",
+      "Old": null,
+      "New": 80,
+      "Basis": "HMY and exact-model sources consistently publish 80 US gal water.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/pdq/32-34-power-catamaran-2000-07",
+        "https://www.boattrader.com/boat/2004-pdq-34-power-catamaran-10208873/",
+        "https://yachtr.com/34-pdq-2005-2798853/"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "PDQB-34-PA",
+      "Field": "WaterCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "HMY and exact-model sources consistently publish 80 US gal water.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/pdq/32-34-power-catamaran-2000-07",
+        "https://www.boattrader.com/boat/2004-pdq-34-power-catamaran-10208873/",
+        "https://yachtr.com/34-pdq-2005-2798853/"
+      ]
+    },
+    {
+      "BoatModelID": "PDQB-34-PA",
+      "Field": "HoldingCapacity",
+      "Old": 132.49,
+      "New": null,
+      "Basis": "Reviewed exact-model and guide sources conflict at approximately 35, 38 and 45 gal holding capacity; preserve Unknown rather than generalize one installation.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/pdq/32-34-power-catamaran-2000-07",
+        "https://www.boattrader.com/boat/2004-pdq-34-power-catamaran-10208873/",
+        "https://yachtr.com/34-pdq-2005-2798853/"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "PDQB-34-PA",
+      "Field": "HoldingCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "conflicting_legacy_capacity_values",
+      "Basis": "Model-specific sources conflict on holding capacity (35/38/45 gal); mark conflict explicitly.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/pdq/32-34-power-catamaran-2000-07",
+        "https://www.boattrader.com/boat/2004-pdq-34-power-catamaran-10208873/",
+        "https://yachtr.com/34-pdq-2005-2798853/"
+      ]
+    },
+    {
+      "BoatModelID": "SAGA-26-HT",
+      "Field": "LWL_ft",
+      "Old": 23.8,
+      "New": null,
+      "Basis": "Reviewed Saga/model sources do not publish a defensible LWL; clear unsupported 23.8-ft fallback.",
+      "EvidenceRefs": [
+        "https://www.maringuiden.se/batguiden/%3BbatID%3D304%26battypID%3D21",
+        "https://wales.boatshed.com/saga_26ht-boat-165654.html",
+        "https://www.svb-marine.fr/ownersclub/44652"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "SAGA-26-HT",
+      "Field": "Draft",
+      "Old": 1.05,
+      "New": null,
+      "Basis": "Saga 26 HT was offered as semi-planing keel/rudder and full-planing sterndrive versions; published draft varies roughly 0.8-1.0 m, so preserve configuration-dependent Unknown.",
+      "EvidenceRefs": [
+        "https://www.maringuiden.se/batguiden/%3BbatID%3D304%26battypID%3D21",
+        "https://wales.boatshed.com/saga_26ht-boat-165654.html",
+        "https://www.svb-marine.fr/ownersclub/44652"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "SAGA-26-HT",
+      "Field": "Draft_ft",
+      "Old": 2.62,
+      "New": null,
+      "Basis": "Saga 26 HT draft varies by documented version; clear fixed imperial fallback.",
+      "EvidenceRefs": [
+        "https://www.maringuiden.se/batguiden/%3BbatID%3D304%26battypID%3D21",
+        "https://wales.boatshed.com/saga_26ht-boat-165654.html",
+        "https://www.svb-marine.fr/ownersclub/44652"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "SAGA-26-HT",
+      "Field": "AirDraft_ft",
+      "Old": 8.8,
+      "New": null,
+      "Basis": "No reviewed source supports a model-wide 8.8-ft air draft; clear unsupported fallback.",
+      "EvidenceRefs": [
+        "https://www.maringuiden.se/batguiden/%3BbatID%3D304%26battypID%3D21",
+        "https://wales.boatshed.com/saga_26ht-boat-165654.html",
+        "https://www.svb-marine.fr/ownersclub/44652"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "SAGA-26-HT",
+      "Field": "MechanicalPropulsionCode",
+      "Old": "mechanical_propulsion.shaft",
+      "New": "mechanical_propulsion.mixed",
+      "Basis": "Maringuiden documents both semi-planing keel/rudder versions and full-planing V-bottom sterndrive versions under the Saga 26 HT identity.",
+      "EvidenceRefs": [
+        "https://www.maringuiden.se/batguiden/%3BbatID%3D304%26battypID%3D21",
+        "https://wales.boatshed.com/saga_26ht-boat-165654.html",
+        "https://www.svb-marine.fr/ownersclub/44652"
+      ]
+    },
+    {
+      "BoatModelID": "SAGA-26-HT",
+      "Field": "Propulsion",
+      "Old": "Unknown",
+      "New": "Mixed: shaft or sterndrive by version",
+      "Basis": "Saga 26 HT was offered in shaft/keel-rudder and sterndrive configurations.",
+      "EvidenceRefs": [
+        "https://www.maringuiden.se/batguiden/%3BbatID%3D304%26battypID%3D21",
+        "https://wales.boatshed.com/saga_26ht-boat-165654.html",
+        "https://www.svb-marine.fr/ownersclub/44652"
+      ]
+    },
+    {
+      "BoatModelID": "SAGA-26-HT",
+      "Field": "HullBehaviourCode",
+      "Old": "hull_behaviour.semi_displacement",
+      "New": "hull_behaviour.unknown",
+      "Basis": "The marketed identity spans semi-planing and full-planing versions; one normalized behaviour would cause false Plan exclusions, so preserve Unknown.",
+      "EvidenceRefs": [
+        "https://www.maringuiden.se/batguiden/%3BbatID%3D304%26battypID%3D21",
+        "https://wales.boatshed.com/saga_26ht-boat-165654.html",
+        "https://www.svb-marine.fr/ownersclub/44652"
+      ]
+    },
+    {
+      "BoatModelID": "SAGA-26-HT",
+      "Field": "HullBehaviour",
+      "Old": "Displacement",
+      "New": "Configuration-dependent: semi-planing or planing",
+      "Basis": "The Saga 26 HT was offered in semi-planing and full-planing versions.",
+      "EvidenceRefs": [
+        "https://www.maringuiden.se/batguiden/%3BbatID%3D304%26battypID%3D21",
+        "https://wales.boatshed.com/saga_26ht-boat-165654.html",
+        "https://www.svb-marine.fr/ownersclub/44652"
+      ]
+    },
+    {
+      "BoatModelID": "SAGA-26-HT",
+      "Field": "KeelConfigurationCode",
+      "Old": "keel.partial_skeg",
+      "New": null,
+      "Basis": "Keel/rudder applies to the semi-planing version while the full-planing sterndrive version uses a V-bottom; one canonical keel type would be misleading.",
+      "EvidenceRefs": [
+        "https://www.maringuiden.se/batguiden/%3BbatID%3D304%26battypID%3D21",
+        "https://wales.boatshed.com/saga_26ht-boat-165654.html",
+        "https://www.svb-marine.fr/ownersclub/44652"
+      ]
+    },
+    {
+      "BoatModelID": "SAGA-26-HT",
+      "Field": "KeelType",
+      "Old": "Full Skeg",
+      "New": "Configuration-dependent: keel/rudder or V-bottom sterndrive",
+      "Basis": "Documented versions use materially different underwater configurations.",
+      "EvidenceRefs": [
+        "https://www.maringuiden.se/batguiden/%3BbatID%3D304%26battypID%3D21",
+        "https://wales.boatshed.com/saga_26ht-boat-165654.html",
+        "https://www.svb-marine.fr/ownersclub/44652"
+      ]
+    },
+    {
+      "BoatModelID": "SAGA-26-HT",
+      "Field": "Headroom",
+      "Old": null,
+      "New": 1.85,
+      "Basis": "Exact-model Boatshed specification publishes 1.85 m headroom.",
+      "EvidenceRefs": [
+        "https://www.maringuiden.se/batguiden/%3BbatID%3D304%26battypID%3D21",
+        "https://wales.boatshed.com/saga_26ht-boat-165654.html",
+        "https://www.svb-marine.fr/ownersclub/44652"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "SAGA-26-HT",
+      "Field": "Headroom_ft",
+      "Old": null,
+      "New": 6.069553805774278,
+      "Basis": "Exact-model Boatshed specification publishes 1.85 m headroom.",
+      "EvidenceRefs": [
+        "https://www.maringuiden.se/batguiden/%3BbatID%3D304%26battypID%3D21",
+        "https://wales.boatshed.com/saga_26ht-boat-165654.html",
+        "https://www.svb-marine.fr/ownersclub/44652"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "SAGA-26-HT",
+      "Field": "FuelCapacity",
+      "Old": 52.8,
+      "New": 200,
+      "Basis": "Maringuiden and exact-model sources publish a 200 L fuel tank; correct gallon-equivalent value that had been stored in the litre field.",
+      "EvidenceRefs": [
+        "https://www.maringuiden.se/batguiden/%3BbatID%3D304%26battypID%3D21",
+        "https://wales.boatshed.com/saga_26ht-boat-165654.html",
+        "https://www.svb-marine.fr/ownersclub/44652"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "SAGA-26-HT",
+      "Field": "FuelCapacityGal",
+      "Old": null,
+      "New": 52.83,
+      "Basis": "Maringuiden and exact-model sources publish a 200 L fuel tank; correct gallon-equivalent value that had been stored in the litre field.",
+      "EvidenceRefs": [
+        "https://www.maringuiden.se/batguiden/%3BbatID%3D304%26battypID%3D21",
+        "https://wales.boatshed.com/saga_26ht-boat-165654.html",
+        "https://www.svb-marine.fr/ownersclub/44652"
+      ],
+      "Unit": "US gal equivalent"
+    },
+    {
+      "BoatModelID": "SAGA-26-HT",
+      "Field": "FuelCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "Maringuiden and exact-model sources publish a 200 L fuel tank; correct gallon-equivalent value that had been stored in the litre field.",
+      "EvidenceRefs": [
+        "https://www.maringuiden.se/batguiden/%3BbatID%3D304%26battypID%3D21",
+        "https://wales.boatshed.com/saga_26ht-boat-165654.html",
+        "https://www.svb-marine.fr/ownersclub/44652"
+      ]
+    },
+    {
+      "BoatModelID": "SAGA-26-HT",
+      "Field": "WaterCapacity",
+      "Old": 27.7,
+      "New": null,
+      "Basis": "Reviewed sources conflict at 95 L and 105 L water; preserve Unknown rather than generalize.",
+      "EvidenceRefs": [
+        "https://www.maringuiden.se/batguiden/%3BbatID%3D304%26battypID%3D21",
+        "https://wales.boatshed.com/saga_26ht-boat-165654.html",
+        "https://www.svb-marine.fr/ownersclub/44652"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "SAGA-26-HT",
+      "Field": "WaterCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "conflicting_legacy_capacity_values",
+      "Basis": "Model-specific sources conflict at 95 L and 105 L water capacity.",
+      "EvidenceRefs": [
+        "https://www.maringuiden.se/batguiden/%3BbatID%3D304%26battypID%3D21",
+        "https://wales.boatshed.com/saga_26ht-boat-165654.html",
+        "https://www.svb-marine.fr/ownersclub/44652"
+      ]
+    },
+    {
+      "BoatModelID": "SAGA-26-HT",
+      "Field": "HoldingCapacity",
+      "Old": 20,
+      "New": null,
+      "Basis": "A specific 1999 boat publishes 55 L holding, while the inherited 20 value lacks a verified model-wide basis; preserve Unknown.",
+      "EvidenceRefs": [
+        "https://www.maringuiden.se/batguiden/%3BbatID%3D304%26battypID%3D21",
+        "https://wales.boatshed.com/saga_26ht-boat-165654.html",
+        "https://www.svb-marine.fr/ownersclub/44652"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "SAGA-26-HT",
+      "Field": "HoldingCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "unknown",
+      "Basis": "No reliable model-wide holding capacity was established.",
+      "EvidenceRefs": [
+        "https://www.maringuiden.se/batguiden/%3BbatID%3D304%26battypID%3D21",
+        "https://wales.boatshed.com/saga_26ht-boat-165654.html",
+        "https://www.svb-marine.fr/ownersclub/44652"
+      ]
+    }
+  ]
+}

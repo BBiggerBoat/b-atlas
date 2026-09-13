@@ -1,0 +1,464 @@
+{
+  "release": "6.49.0",
+  "batch": "specification-completion-04",
+  "manufacturers": [
+    "CHB",
+    "Back Cove",
+    "Cape Dory",
+    "Rosborough",
+    "Nordic Tugs"
+  ],
+  "updateCount": 41,
+  "updates": [
+    {
+      "BoatModelID": "BKCV-26",
+      "Field": "Displacement",
+      "Old": null,
+      "New": 3855.5,
+      "Basis": "Factory brochure states estimated full-load displacement of 8,500 lb.",
+      "EvidenceRefs": [
+        "https://www.backcoveyachts.com/pdf/bc26.pdf",
+        "https://www.backcoveyachts.com/owners/heritage-models/back-cove-26"
+      ],
+      "Unit": "kg"
+    },
+    {
+      "BoatModelID": "BKCV-26",
+      "Field": "Displacement_lb",
+      "Old": 6000,
+      "New": 8500,
+      "Basis": "Legacy imperial displacement aligned to factory full-load specification.",
+      "EvidenceRefs": [
+        "https://www.backcoveyachts.com/pdf/bc26.pdf",
+        "https://www.backcoveyachts.com/owners/heritage-models/back-cove-26"
+      ],
+      "Unit": "lb"
+    },
+    {
+      "BoatModelID": "BKCV-26",
+      "Field": "DisplacementLb",
+      "Old": 6000,
+      "New": 8500,
+      "Basis": "Legacy imperial displacement aligned to factory full-load specification.",
+      "EvidenceRefs": [
+        "https://www.backcoveyachts.com/pdf/bc26.pdf",
+        "https://www.backcoveyachts.com/owners/heritage-models/back-cove-26"
+      ],
+      "Unit": "lb"
+    },
+    {
+      "BoatModelID": "BKCV-30",
+      "Field": "Displacement_lb",
+      "Old": 12000,
+      "New": 12300,
+      "Basis": "Legacy imperial displacement reconciled to factory-published specification.",
+      "EvidenceRefs": [
+        "https://www.backcoveyachts.com/backcove/wp-content/uploads/2017/03/BC_Full_Line_Bro_2017.pdf"
+      ],
+      "Unit": "lb"
+    },
+    {
+      "BoatModelID": "BKCV-30",
+      "Field": "DisplacementLb",
+      "Old": 12000,
+      "New": 12300,
+      "Basis": "Legacy imperial displacement reconciled to factory-published specification.",
+      "EvidenceRefs": [
+        "https://www.backcoveyachts.com/backcove/wp-content/uploads/2017/03/BC_Full_Line_Bro_2017.pdf"
+      ],
+      "Unit": "lb"
+    },
+    {
+      "BoatModelID": "BKCV-34",
+      "Field": "Displacement_lb",
+      "Old": 14200,
+      "New": 16500,
+      "Basis": "Legacy imperial displacement reconciled to factory-published specification.",
+      "EvidenceRefs": [
+        "https://www.backcoveyachts.com/backcove/wp-content/uploads/2017/03/BC_Full_Line_Bro_2017.pdf"
+      ],
+      "Unit": "lb"
+    },
+    {
+      "BoatModelID": "BKCV-34",
+      "Field": "DisplacementLb",
+      "Old": 14200,
+      "New": 16500,
+      "Basis": "Legacy imperial displacement reconciled to factory-published specification.",
+      "EvidenceRefs": [
+        "https://www.backcoveyachts.com/backcove/wp-content/uploads/2017/03/BC_Full_Line_Bro_2017.pdf"
+      ],
+      "Unit": "lb"
+    },
+    {
+      "BoatModelID": "BKCV-37",
+      "Field": "Displacement_lb",
+      "Old": 22100,
+      "New": 24300,
+      "Basis": "Legacy imperial displacement reconciled to factory-published specification.",
+      "EvidenceRefs": [
+        "https://www.backcoveyachts.com/backcove/wp-content/uploads/2017/03/BC_Full_Line_Bro_2017.pdf"
+      ],
+      "Unit": "lb"
+    },
+    {
+      "BoatModelID": "BKCV-37",
+      "Field": "DisplacementLb",
+      "Old": 22100,
+      "New": 24300,
+      "Basis": "Legacy imperial displacement reconciled to factory-published specification.",
+      "EvidenceRefs": [
+        "https://www.backcoveyachts.com/backcove/wp-content/uploads/2017/03/BC_Full_Line_Bro_2017.pdf"
+      ],
+      "Unit": "lb"
+    },
+    {
+      "BoatModelID": "BKCV-41",
+      "Field": "Displacement",
+      "Old": null,
+      "New": 13381.0,
+      "Basis": "Back Cove factory full-line brochure publishes 29,500 lb displacement.",
+      "EvidenceRefs": [
+        "https://www.backcoveyachts.com/backcove/wp-content/uploads/2017/03/BC_Full_Line_Bro_2017.pdf"
+      ],
+      "Unit": "kg"
+    },
+    {
+      "BoatModelID": "BKCV-41",
+      "Field": "Displacement_lb",
+      "Old": 24000,
+      "New": 29500,
+      "Basis": "Legacy imperial displacement reconciled to factory-published specification.",
+      "EvidenceRefs": [
+        "https://www.backcoveyachts.com/backcove/wp-content/uploads/2017/03/BC_Full_Line_Bro_2017.pdf"
+      ],
+      "Unit": "lb"
+    },
+    {
+      "BoatModelID": "BKCV-41",
+      "Field": "DisplacementLb",
+      "Old": 24000,
+      "New": 29500,
+      "Basis": "Legacy imperial displacement reconciled to factory-published specification.",
+      "EvidenceRefs": [
+        "https://www.backcoveyachts.com/backcove/wp-content/uploads/2017/03/BC_Full_Line_Bro_2017.pdf"
+      ],
+      "Unit": "lb"
+    },
+    {
+      "BoatModelID": "BKCV-39O",
+      "Field": "RudderTypeCode",
+      "Old": null,
+      "New": "rudder.none_external_drive",
+      "Basis": "The 39O uses steerable outboards; there is no separate conventional rudder.",
+      "EvidenceRefs": [
+        "https://www.backcoveyachts.com/motor-yachts/back-cove-39o"
+      ]
+    },
+    {
+      "BoatModelID": "CPDR-30-FB",
+      "Field": "AirDraft",
+      "Old": null,
+      "New": 3.7338,
+      "Basis": "Published model clearance is 12 ft 3 in.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/cape-dory/30-flybridge-1990-91"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "CPDR-33-FB",
+      "Field": "AirDraft",
+      "Old": null,
+      "New": 3.8608,
+      "Basis": "Published model clearance is 12 ft 8 in.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/cape-dory/33-flybridge-1988-94"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "CPDR-36-TR",
+      "Field": "FuelCode",
+      "Old": null,
+      "New": "fuel.mixed",
+      "Basis": "Published history documents standard gasoline engines and optional diesels, so fuel is configuration-dependent.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/cape-dory/36-flybridge-1988-90"
+      ]
+    },
+    {
+      "BoatModelID": "CPDR-36-TR",
+      "Field": "AirDraft",
+      "Old": null,
+      "New": 3.9624,
+      "Basis": "Published model clearance is 13 ft.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/cape-dory/36-flybridge-1988-90"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "CPDR-28-OF",
+      "Field": "AirDraft",
+      "Old": null,
+      "New": 2.4384,
+      "Basis": "Published model clearance is 8 ft.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/cape-dory/28-open-fisherman-1985-90"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "CPDR-28-FB",
+      "Field": "AirDraft",
+      "Old": null,
+      "New": 3.4036,
+      "Basis": "Published model clearance is 11 ft 2 in.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/cape-dory/28-flybridge-cruiser-1985-91"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "CPDR-28-FB",
+      "Field": "AirDraft_ft",
+      "Old": 11.17,
+      "New": 11.166666666666666,
+      "Basis": "Legacy imperial clearance aligned to published 11 ft 2 in.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/cape-dory/28-flybridge-cruiser-1985-91"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "CHBY-35",
+      "Field": "Displacement_lb",
+      "Old": 18000,
+      "New": 18700,
+      "Basis": "Legacy imperial displacement corrected to model-specific published 18,700 lb.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/chb/35-sundeck-1983-86"
+      ],
+      "Unit": "lb"
+    },
+    {
+      "BoatModelID": "CHBY-35",
+      "Field": "DisplacementLb",
+      "Old": 16500,
+      "New": 18700,
+      "Basis": "Legacy imperial displacement corrected to model-specific published 18,700 lb.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/chb/35-sundeck-1983-86"
+      ],
+      "Unit": "lb"
+    },
+    {
+      "BoatModelID": "CHBY-35",
+      "Field": "LOA_ft",
+      "Old": 35,
+      "New": 34.333333333333336,
+      "Basis": "Legacy imperial LOA corrected to published 34 ft 4 in.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/chb/35-sundeck-1983-86"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "CHBY-35",
+      "Field": "Draft_ft",
+      "Old": 3.5,
+      "New": 4.166666666666667,
+      "Basis": "Legacy imperial draft corrected to published 4 ft 2 in.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/chb/35-sundeck-1983-86"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "ROSB-246-WH",
+      "Field": "LWL",
+      "Old": null,
+      "New": 7.112,
+      "Basis": "Published RF-246 hull specification gives 23 ft 4 in LWL; applied to the shared RF-246 hull platform.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/rosborough/rf-246-sedan-cruiser-1988-13"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "ROSB-246-WH",
+      "Field": "LWL_ft",
+      "Old": null,
+      "New": 23.333333333333332,
+      "Basis": "Legacy imperial LWL populated from the published RF-246 hull specification.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/rosborough/rf-246-sedan-cruiser-1988-13"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "ROSB-246-WH",
+      "Field": "KeelConfigurationCode",
+      "Old": null,
+      "New": "keel.protective",
+      "Basis": "Manufacturer description identifies a center keel; classified as a protective/center keel, not a full-length trawler keel.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/rosborough/rf-246-sedan-cruiser-1988-13"
+      ]
+    },
+    {
+      "BoatModelID": "ROSB-246-WH",
+      "Field": "RudderTypeCode",
+      "Old": null,
+      "New": "rudder.none_external_drive",
+      "Basis": "This canonical RF-246 record uses outboard or sterndrive propulsion, so steering is by the drive rather than a separate rudder.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/rosborough/rf-246-sedan-cruiser-1988-13"
+      ]
+    },
+    {
+      "BoatModelID": "ROSB-246-LS",
+      "Field": "LWL",
+      "Old": null,
+      "New": 7.112,
+      "Basis": "Published RF-246 hull specification gives 23 ft 4 in LWL; applied to the shared RF-246 hull platform.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/rosborough/rf-246-sedan-cruiser-1988-13"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "ROSB-246-LS",
+      "Field": "LWL_ft",
+      "Old": null,
+      "New": 23.333333333333332,
+      "Basis": "Legacy imperial LWL populated from the published RF-246 hull specification.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/rosborough/rf-246-sedan-cruiser-1988-13"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "ROSB-246-LS",
+      "Field": "KeelConfigurationCode",
+      "Old": null,
+      "New": "keel.protective",
+      "Basis": "Manufacturer description identifies a center keel; classified as a protective/center keel, not a full-length trawler keel.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/rosborough/rf-246-sedan-cruiser-1988-13"
+      ]
+    },
+    {
+      "BoatModelID": "ROSB-246-LS",
+      "Field": "RudderTypeCode",
+      "Old": null,
+      "New": "rudder.none_external_drive",
+      "Basis": "This canonical RF-246 record uses outboard or sterndrive propulsion, so steering is by the drive rather than a separate rudder.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/rosborough/rf-246-sedan-cruiser-1988-13"
+      ]
+    },
+    {
+      "BoatModelID": "ROSB-246",
+      "Field": "LWL",
+      "Old": null,
+      "New": 7.112,
+      "Basis": "Published RF-246 hull specification gives 23 ft 4 in LWL; applied to the shared RF-246 hull platform.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/rosborough/rf-246-sedan-cruiser-1988-13"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "ROSB-246",
+      "Field": "LWL_ft",
+      "Old": null,
+      "New": 23.333333333333332,
+      "Basis": "Legacy imperial LWL populated from the published RF-246 hull specification.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/rosborough/rf-246-sedan-cruiser-1988-13"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "ROSB-246",
+      "Field": "KeelConfigurationCode",
+      "Old": null,
+      "New": "keel.protective",
+      "Basis": "Manufacturer description identifies a center keel; classified as a protective/center keel, not a full-length trawler keel.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/rosborough/rf-246-sedan-cruiser-1988-13"
+      ]
+    },
+    {
+      "BoatModelID": "ROSB-246",
+      "Field": "RudderTypeCode",
+      "Old": null,
+      "New": "rudder.none_external_drive",
+      "Basis": "This canonical RF-246 record uses outboard or sterndrive propulsion, so steering is by the drive rather than a separate rudder.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/rosborough/rf-246-sedan-cruiser-1988-13"
+      ]
+    },
+    {
+      "BoatModelID": "NDTG-37",
+      "Field": "Displacement_lb",
+      "Old": 22000,
+      "New": 22600,
+      "Basis": "Legacy imperial displacement corrected to Nordic Tugs 37 physical specification of 22,600 lb.",
+      "EvidenceRefs": [
+        "https://www.sentoa.org/Nordic%20Tug%20Physical%20Specification%20Diagrams.pdf"
+      ],
+      "Unit": "lb"
+    },
+    {
+      "BoatModelID": "NDTG-39",
+      "Field": "LOA",
+      "Old": null,
+      "New": 11.8618,
+      "Basis": "Documented 2015 Nordic Tug 39 gives 38 ft 11 in LOA; factory history confirms the 37-to-39 evolution.",
+      "EvidenceRefs": [
+        "https://ca.boats.com/power-boats/2015-nordic-tug-39-flybridge-9954380/",
+        "https://www.nordictugs.com/history"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "NDTG-39",
+      "Field": "LOA_ft",
+      "Old": 40,
+      "New": 38.916666666666664,
+      "Basis": "Legacy imperial LOA populated from documented Nordic Tug 39 measurement.",
+      "EvidenceRefs": [
+        "https://ca.boats.com/power-boats/2015-nordic-tug-39-flybridge-9954380/",
+        "https://www.nordictugs.com/history"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "NDTG-39",
+      "Field": "LWL",
+      "Old": null,
+      "New": 11.3792,
+      "Basis": "Documented Nordic Tug 39 measurement gives 37 ft 4 in LWL.",
+      "EvidenceRefs": [
+        "https://ca.boats.com/power-boats/2015-nordic-tug-39-flybridge-9954380/",
+        "https://www.nordictugs.com/history"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "NDTG-39",
+      "Field": "LWL_ft",
+      "Old": 37.4,
+      "New": 37.333333333333336,
+      "Basis": "Legacy imperial LWL populated from documented Nordic Tug 39 measurement.",
+      "EvidenceRefs": [
+        "https://ca.boats.com/power-boats/2015-nordic-tug-39-flybridge-9954380/",
+        "https://www.nordictugs.com/history"
+      ],
+      "Unit": "ft"
+    }
+  ]
+}

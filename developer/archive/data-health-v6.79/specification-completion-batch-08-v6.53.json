@@ -1,0 +1,491 @@
+{
+  "release": "6.53.0",
+  "batch": "specification-completion-08",
+  "manufacturers": [
+    "Monk",
+    "Ocean Alexander",
+    "Trojan",
+    "Tollycraft",
+    "Uniflite"
+  ],
+  "updateCount": 39,
+  "updates": [
+    {
+      "BoatModelID": "MONK-36-TR",
+      "Field": "FuelCapacity",
+      "Old": 320,
+      "New": 1211.33,
+      "Basis": "Powerboat Guide publishes 320 gal fuel and Canadian model-specific documentation explicitly identifies the Monk 36 capacity as 320 US gallons. Canonical storage is litres.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/monk/36-trawler-1982-2007",
+        "https://www.boatdealers.ca/boats-for-sale/675981/monk-monk-36-belleville-ontario"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "MONK-36-TR",
+      "Field": "FuelCapacityUnitStatus",
+      "Old": "legacy_gallon_basis_unverified",
+      "New": "canonical_litres",
+      "Basis": "Powerboat Guide publishes 320 gal fuel and Canadian model-specific documentation explicitly identifies the Monk 36 capacity as 320 US gallons. Canonical storage is litres.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/monk/36-trawler-1982-2007",
+        "https://www.boatdealers.ca/boats-for-sale/675981/monk-monk-36-belleville-ontario"
+      ]
+    },
+    {
+      "BoatModelID": "MONK-36-TR",
+      "Field": "WaterCapacity",
+      "Old": 120,
+      "New": 454.25,
+      "Basis": "Powerboat Guide publishes 120 gal fresh water and Canadian model-specific documentation explicitly identifies 120 US gallons. Canonical storage is litres.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/monk/36-trawler-1982-2007",
+        "https://www.boatdealers.ca/boats-for-sale/675981/monk-monk-36-belleville-ontario"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "MONK-36-TR",
+      "Field": "WaterCapacityUnitStatus",
+      "Old": "legacy_gallon_basis_unverified",
+      "New": "canonical_litres",
+      "Basis": "Powerboat Guide publishes 120 gal fresh water and Canadian model-specific documentation explicitly identifies 120 US gallons. Canonical storage is litres.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/monk/36-trawler-1982-2007",
+        "https://www.boatdealers.ca/boats-for-sale/675981/monk-monk-36-belleville-ontario"
+      ]
+    },
+    {
+      "BoatModelID": "MONK-36-TR",
+      "Field": "HoldingCapacity",
+      "Old": 45,
+      "New": 170.34,
+      "Basis": "Powerboat Guide publishes 45 gal waste capacity. Individual boats document 40-gal replacement/installation differences; the model-guide 45-gal figure is retained as the representative published model specification and normalized as US gallons.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/monk/36-trawler-1982-2007",
+        "https://www.boatdealers.ca/boats-for-sale/675981/monk-monk-36-belleville-ontario"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "MONK-36-TR",
+      "Field": "HoldingCapacityGal",
+      "Old": null,
+      "New": 45,
+      "Basis": "Powerboat Guide publishes 45 gal waste capacity. Individual boats document 40-gal replacement/installation differences; the model-guide 45-gal figure is retained as the representative published model specification and normalized as US gallons.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/monk/36-trawler-1982-2007",
+        "https://www.boatdealers.ca/boats-for-sale/675981/monk-monk-36-belleville-ontario"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "MONK-36-TR",
+      "Field": "HoldingCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "Powerboat Guide publishes 45 gal waste capacity. Individual boats document 40-gal replacement/installation differences; the model-guide 45-gal figure is retained as the representative published model specification and normalized as US gallons.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/monk/36-trawler-1982-2007",
+        "https://www.boatdealers.ca/boats-for-sale/675981/monk-monk-36-belleville-ontario"
+      ]
+    },
+    {
+      "BoatModelID": "OCAL-39-SE",
+      "Field": "LOA_ft",
+      "Old": 39.33,
+      "New": null,
+      "Basis": "Exact-model 1986 examples distinguish 39 ft deck/hull length from roughly 42 ft 6 in to 42 ft 8 in overall length with extensions. A single legacy LOA fallback would misstate Plan length for some boats.",
+      "EvidenceRefs": [
+        "https://www.boats.com/power-boats/1986-ocean-alexander-39-sedan-10098720/",
+        "https://seattle.boatshed.com/ocean_alexander_39_sedan-boat-335213.html",
+        "https://marinesource.com/boat/ocean-alexander-39-sedan-1986-bellingham-2461bed91-for-sale"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "OCAL-39-SE",
+      "Field": "LengthFt",
+      "Old": 39,
+      "New": null,
+      "Basis": "Legacy generic length cleared because it can be consumed as LOA fallback even though exact-model evidence shows extension-dependent overall length.",
+      "EvidenceRefs": [
+        "https://www.boats.com/power-boats/1986-ocean-alexander-39-sedan-10098720/",
+        "https://seattle.boatshed.com/ocean_alexander_39_sedan-boat-335213.html",
+        "https://marinesource.com/boat/ocean-alexander-39-sedan-1986-bellingham-2461bed91-for-sale"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "OCAL-39-SE",
+      "Field": "LWL_ft",
+      "Old": 36.2,
+      "New": null,
+      "Basis": "Exact-model listings conflict at approximately 36 ft and 38.67 ft LWL; no model-wide waterline length is currently supportable.",
+      "EvidenceRefs": [
+        "https://www.boats.com/power-boats/1986-ocean-alexander-39-sedan-10098720/",
+        "https://seattle.boatshed.com/ocean_alexander_39_sedan-boat-335213.html",
+        "https://marinesource.com/boat/ocean-alexander-39-sedan-1986-bellingham-2461bed91-for-sale"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "OCAL-39-SE",
+      "Field": "AirDraft_ft",
+      "Old": 13.8,
+      "New": null,
+      "Basis": "The inherited 13.8 ft clearance is not supported by the reviewed exact-model evidence; a surviving 1986 example reports 22 ft 6 in with its installed equipment. Air draft remains equipment-dependent and unresolved.",
+      "EvidenceRefs": [
+        "https://www.boats.com/power-boats/1986-ocean-alexander-39-sedan-10098720/",
+        "https://seattle.boatshed.com/ocean_alexander_39_sedan-boat-335213.html",
+        "https://marinesource.com/boat/ocean-alexander-39-sedan-1986-bellingham-2461bed91-for-sale"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "OCAL-39-SE",
+      "Field": "Displacement_lb",
+      "Old": 25000,
+      "New": null,
+      "Basis": "Exact-model 1986 evidence conflicts materially at about 22,500 lb, 23,004 lb and 38,000 lb depending on boat/refit/loading description; clear the unsupported 25,000 lb shadow rather than expose it as canonical.",
+      "EvidenceRefs": [
+        "https://www.boats.com/power-boats/1986-ocean-alexander-39-sedan-10098720/",
+        "https://seattle.boatshed.com/ocean_alexander_39_sedan-boat-335213.html",
+        "https://marinesource.com/boat/ocean-alexander-39-sedan-1986-bellingham-2461bed91-for-sale"
+      ],
+      "Unit": "lb"
+    },
+    {
+      "BoatModelID": "OCAL-39-SE",
+      "Field": "DisplacementLb",
+      "Old": 26000,
+      "New": null,
+      "Basis": "Legacy compatibility displacement cleared because exact-model evidence is materially conflicting and canonical displacement remains unresolved.",
+      "EvidenceRefs": [
+        "https://www.boats.com/power-boats/1986-ocean-alexander-39-sedan-10098720/",
+        "https://seattle.boatshed.com/ocean_alexander_39_sedan-boat-335213.html",
+        "https://marinesource.com/boat/ocean-alexander-39-sedan-1986-bellingham-2461bed91-for-sale"
+      ],
+      "Unit": "lb"
+    },
+    {
+      "BoatModelID": "TOLL-34-SE",
+      "Field": "LWL",
+      "Old": null,
+      "New": 9.5504,
+      "Basis": "Two model-specific Tollycraft 34 Sport Sedan records publish 31 ft 4 in LWL; this is promoted over the unsupported 31.8 ft shadow.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/tollycraft/34-sport-sedan-1987-93",
+        "https://seattle.boatshed.com/tollycraft_34_sport_sedan-boat-253225.html",
+        "https://seattle.boatshed.com/tollycraft_34_sport_sedan-boat-250737.html"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "TOLL-34-SE",
+      "Field": "LWL_ft",
+      "Old": 31.8,
+      "New": 31.333333333333332,
+      "Basis": "Legacy LWL aligned to the supported 31 ft 4 in model-specific figure.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/tollycraft/34-sport-sedan-1987-93",
+        "https://seattle.boatshed.com/tollycraft_34_sport_sedan-boat-253225.html",
+        "https://seattle.boatshed.com/tollycraft_34_sport_sedan-boat-250737.html"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "TOLL-34-SE",
+      "Field": "FuelCode",
+      "Old": null,
+      "New": "fuel.mixed",
+      "Basis": "Powerboat Guide explicitly states that several engine options were offered, including diesels, while gasoline engines were common. Plan must not exclude diesel examples.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/tollycraft/34-sport-sedan-1987-93",
+        "https://seattle.boatshed.com/tollycraft_34_sport_sedan-boat-253225.html",
+        "https://seattle.boatshed.com/tollycraft_34_sport_sedan-boat-250737.html"
+      ]
+    },
+    {
+      "BoatModelID": "TOLL-34-SE",
+      "Field": "WaterCapacity",
+      "Old": 116,
+      "New": 439.11,
+      "Basis": "Powerboat Guide publishes 116 gal water capacity for this US-built model. Normalized to canonical litres while preserving the published US-gallon value.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/tollycraft/34-sport-sedan-1987-93",
+        "https://seattle.boatshed.com/tollycraft_34_sport_sedan-boat-253225.html",
+        "https://seattle.boatshed.com/tollycraft_34_sport_sedan-boat-250737.html"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "TOLL-34-SE",
+      "Field": "WaterCapacityUnitStatus",
+      "Old": "legacy_gallon_basis_unverified",
+      "New": "canonical_litres",
+      "Basis": "Powerboat Guide publishes 116 gal water capacity for this US-built model. Normalized to canonical litres while preserving the published US-gallon value.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/tollycraft/34-sport-sedan-1987-93",
+        "https://seattle.boatshed.com/tollycraft_34_sport_sedan-boat-253225.html",
+        "https://seattle.boatshed.com/tollycraft_34_sport_sedan-boat-250737.html"
+      ]
+    },
+    {
+      "BoatModelID": "TOLL-37-SE",
+      "Field": "LOA_ft",
+      "Old": 37,
+      "New": 37.333333333333336,
+      "Basis": "Multiple model-specific records support 37 ft 4 in hull/overall length before owner-added platforms or extensions; legacy 37.0 ft shadow aligned to canonical measurement.",
+      "EvidenceRefs": [
+        "https://www.boattrader.com/boat/1980-tollycraft-37-sedan-9807336/",
+        "https://www.boats.com/power-boats/1978-tollycraft-37-sedan-10071940/",
+        "https://s3.amazonaws.com/pop.web.assets/Listing-Brochures/Pop-Brochure-167248.pdf"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "TOLL-37-SE",
+      "Field": "LengthFt",
+      "Old": 37.33,
+      "New": 37.333333333333336,
+      "Basis": "Legacy compatibility length aligned to the supported 37 ft 4 in model dimension; longer 40+ ft listing LOAs reflect installed extensions/platforms.",
+      "EvidenceRefs": [
+        "https://www.boattrader.com/boat/1980-tollycraft-37-sedan-9807336/",
+        "https://www.boats.com/power-boats/1978-tollycraft-37-sedan-10071940/",
+        "https://s3.amazonaws.com/pop.web.assets/Listing-Brochures/Pop-Brochure-167248.pdf"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "TOLL-37-SE",
+      "Field": "Draft_ft",
+      "Old": 3.17,
+      "New": 3.0,
+      "Basis": "Multiple model-specific records publish approximately 3 ft draft; legacy 3.17 ft shadow aligned to the canonical 3 ft representative value.",
+      "EvidenceRefs": [
+        "https://www.boattrader.com/boat/1980-tollycraft-37-sedan-9807336/",
+        "https://www.boats.com/power-boats/1978-tollycraft-37-sedan-10071940/",
+        "https://s3.amazonaws.com/pop.web.assets/Listing-Brochures/Pop-Brochure-167248.pdf"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "TOLL-37-SE",
+      "Field": "AirDraft_ft",
+      "Old": 13.2,
+      "New": 12.5,
+      "Basis": "A model-specific 1980 Tollycraft 37 Sedan listing publishes approximately 12 ft 6 in bridge clearance; legacy 13.2 ft shadow corrected to the canonical value.",
+      "EvidenceRefs": [
+        "https://www.boattrader.com/boat/1980-tollycraft-37-sedan-9807336/",
+        "https://www.boats.com/power-boats/1978-tollycraft-37-sedan-10071940/",
+        "https://s3.amazonaws.com/pop.web.assets/Listing-Brochures/Pop-Brochure-167248.pdf"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "TOLL-37-SE",
+      "Field": "FuelCapacity",
+      "Old": 300,
+      "New": 1135.62,
+      "Basis": "Multiple US model-specific Tollycraft 37 Sedan records publish 300 gal fuel capacity. Canonical storage is litres while retaining 300 US gal.",
+      "EvidenceRefs": [
+        "https://www.boattrader.com/boat/1980-tollycraft-37-sedan-9807336/",
+        "https://www.boats.com/power-boats/1978-tollycraft-37-sedan-10071940/",
+        "https://s3.amazonaws.com/pop.web.assets/Listing-Brochures/Pop-Brochure-167248.pdf"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "TOLL-37-SE",
+      "Field": "FuelCapacityUnitStatus",
+      "Old": "legacy_gallon_basis_unverified",
+      "New": "canonical_litres",
+      "Basis": "Multiple US model-specific Tollycraft 37 Sedan records publish 300 gal fuel capacity. Canonical storage is litres while retaining 300 US gal.",
+      "EvidenceRefs": [
+        "https://www.boattrader.com/boat/1980-tollycraft-37-sedan-9807336/",
+        "https://www.boats.com/power-boats/1978-tollycraft-37-sedan-10071940/",
+        "https://s3.amazonaws.com/pop.web.assets/Listing-Brochures/Pop-Brochure-167248.pdf"
+      ]
+    },
+    {
+      "BoatModelID": "TROJ-36-TR",
+      "Field": "AirDraft",
+      "Old": null,
+      "New": 3.7338,
+      "Basis": "Powerboat Guide publishes 12 ft 3 in clearance for the Trojan 36 Tri-Cabin.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/trojan/36-tri-cabin-1970-87",
+        "https://www.boatdealers.ca/boats-for-sale/672650/trojan-36-tri-cabin-midland-ontario"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "TROJ-36-TR",
+      "Field": "AirDraft_ft",
+      "Old": 12.5,
+      "New": 12.25,
+      "Basis": "Legacy imperial clearance corrected from 12 ft 6 in to the published 12 ft 3 in.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/trojan/36-tri-cabin-1970-87",
+        "https://www.boatdealers.ca/boats-for-sale/672650/trojan-36-tri-cabin-midland-ontario"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "TROJ-36-TR",
+      "Field": "FuelCode",
+      "Old": "fuel.gasoline",
+      "New": "fuel.mixed",
+      "Basis": "Powerboat Guide states diesels were factory options although most boats were gasoline-powered; a gasoline-only canonical filter would falsely eliminate legitimate diesel examples.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/trojan/36-tri-cabin-1970-87",
+        "https://www.boatdealers.ca/boats-for-sale/672650/trojan-36-tri-cabin-midland-ontario"
+      ]
+    },
+    {
+      "BoatModelID": "TROJ-36-TR",
+      "Field": "Fuel",
+      "Old": "Gasoline",
+      "New": "Gasoline or Diesel",
+      "Basis": "Legacy fuel label aligned to the mixed canonical classification.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/trojan/36-tri-cabin-1970-87",
+        "https://www.boatdealers.ca/boats-for-sale/672650/trojan-36-tri-cabin-midland-ontario"
+      ]
+    },
+    {
+      "BoatModelID": "TROJ-36-TR",
+      "Field": "MechanicalPropulsionCode",
+      "Old": "mechanical_propulsion.shaft",
+      "New": "mechanical_propulsion.mixed",
+      "Basis": "Powerboat Guide documents V-drives on the Sea Raider and some early Tri-Cabins, with direct-drive installations common later. Production-span propulsion is therefore configuration/era dependent.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/trojan/36-tri-cabin-1970-87",
+        "https://www.boatdealers.ca/boats-for-sale/672650/trojan-36-tri-cabin-midland-ontario"
+      ]
+    },
+    {
+      "BoatModelID": "TROJ-36-TR",
+      "Field": "Propulsion",
+      "Old": "Shaft",
+      "New": "Shaft/V-Drive",
+      "Basis": "Legacy propulsion label aligned to the documented direct-shaft and V-drive production history.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/trojan/36-tri-cabin-1970-87",
+        "https://www.boatdealers.ca/boats-for-sale/672650/trojan-36-tri-cabin-midland-ontario"
+      ]
+    },
+    {
+      "BoatModelID": "TROJ-36-TR",
+      "Field": "HoldingCapacity",
+      "Old": 40,
+      "New": 151.42,
+      "Basis": "Powerboat Guide publishes 40 gal waste capacity and a current model-specific Canadian example explicitly identifies 40 US gal. Canonical storage is litres.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/trojan/36-tri-cabin-1970-87",
+        "https://www.boatdealers.ca/boats-for-sale/672650/trojan-36-tri-cabin-midland-ontario"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "TROJ-36-TR",
+      "Field": "HoldingCapacityGal",
+      "Old": null,
+      "New": 40,
+      "Basis": "Powerboat Guide publishes 40 gal waste capacity and a current model-specific Canadian example explicitly identifies 40 US gal. Canonical storage is litres.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/trojan/36-tri-cabin-1970-87",
+        "https://www.boatdealers.ca/boats-for-sale/672650/trojan-36-tri-cabin-midland-ontario"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "TROJ-36-TR",
+      "Field": "HoldingCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "Powerboat Guide publishes 40 gal waste capacity and a current model-specific Canadian example explicitly identifies 40 US gal. Canonical storage is litres.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/trojan/36-tri-cabin-1970-87",
+        "https://www.boatdealers.ca/boats-for-sale/672650/trojan-36-tri-cabin-midland-ontario"
+      ]
+    },
+    {
+      "BoatModelID": "UNIF-36-DO",
+      "Field": "LWL",
+      "Old": null,
+      "New": 10.0584,
+      "Basis": "Powerboat Guide states the 36 Sport Sedan uses the same solid-fiberglass hull as the 36 Double Cabin; a model-specific 36 Sedan record publishes 33 ft LWL. Promoted as the shared-hull representative LWL.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/uniflite/36-double-cabin-1972-84",
+        "https://www.hmy.com/yachting/powerboat-guide/uniflite/36-sport-sedan-1970-79",
+        "https://seattle.boatshed.com/uniflite_36_sedan-boat-160556.html"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "UNIF-36-DO",
+      "Field": "LWL_ft",
+      "Old": 33.2,
+      "New": 33.0,
+      "Basis": "Legacy LWL corrected from 33.2 ft to the supported 33 ft shared-hull figure.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/uniflite/36-double-cabin-1972-84",
+        "https://www.hmy.com/yachting/powerboat-guide/uniflite/36-sport-sedan-1970-79",
+        "https://seattle.boatshed.com/uniflite_36_sedan-boat-160556.html"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "UNIF-36-DO",
+      "Field": "FuelCode",
+      "Old": "fuel.gasoline",
+      "New": "fuel.mixed",
+      "Basis": "Powerboat Guide states gasoline engines were standard but diesel engines were available. Gasoline-only Plan classification would incorrectly exclude factory diesel examples.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/uniflite/36-double-cabin-1972-84",
+        "https://www.hmy.com/yachting/powerboat-guide/uniflite/36-sport-sedan-1970-79",
+        "https://seattle.boatshed.com/uniflite_36_sedan-boat-160556.html"
+      ]
+    },
+    {
+      "BoatModelID": "UNIF-36-DO",
+      "Field": "Fuel",
+      "Old": "Gasoline",
+      "New": "Gasoline or Diesel",
+      "Basis": "Legacy fuel label aligned to mixed production availability.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/uniflite/36-double-cabin-1972-84",
+        "https://www.hmy.com/yachting/powerboat-guide/uniflite/36-sport-sedan-1970-79",
+        "https://seattle.boatshed.com/uniflite_36_sedan-boat-160556.html"
+      ]
+    },
+    {
+      "BoatModelID": "UNIF-36-DO",
+      "Field": "WaterCapacity",
+      "Old": 100,
+      "New": 378.54,
+      "Basis": "Powerboat Guide publishes 100 gal water capacity for this US-built model. Canonical storage is litres with preserved US-gallon value.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/uniflite/36-double-cabin-1972-84",
+        "https://www.hmy.com/yachting/powerboat-guide/uniflite/36-sport-sedan-1970-79",
+        "https://seattle.boatshed.com/uniflite_36_sedan-boat-160556.html"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "UNIF-36-DO",
+      "Field": "WaterCapacityUnitStatus",
+      "Old": "legacy_gallon_basis_unverified",
+      "New": "canonical_litres",
+      "Basis": "Powerboat Guide publishes 100 gal water capacity for this US-built model. Canonical storage is litres with preserved US-gallon value.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/uniflite/36-double-cabin-1972-84",
+        "https://www.hmy.com/yachting/powerboat-guide/uniflite/36-sport-sedan-1970-79",
+        "https://seattle.boatshed.com/uniflite_36_sedan-boat-160556.html"
+      ]
+    }
+  ]
+}

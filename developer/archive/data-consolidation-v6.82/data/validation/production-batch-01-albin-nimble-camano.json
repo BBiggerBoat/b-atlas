@@ -1,0 +1,48 @@
+{
+  "batchId": "production-01-albin-nimble-camano",
+  "release": "6.30.0",
+  "schemaVersion": "1.3",
+  "status": "complete-with-preserved-uncertainty",
+  "manufacturers": [
+    "Albin",
+    "Nimble",
+    "Camano"
+  ],
+  "modelCount": 14,
+  "modelIds": [
+    "ALBN-25",
+    "ALBN-27-FC",
+    "ALBN-27-SP",
+    "ALBN-28-TE-EB",
+    "ALBN-28-FL",
+    "ALBN-30-FC",
+    "ALBN-32-PL",
+    "ALBN-36-CL",
+    "ALBN-40-TR",
+    "CAMA-28-GN",
+    "CAMA-31-TR",
+    "CAMA-41",
+    "NMBL-24-NO",
+    "NMBL-32-WA"
+  ],
+  "evidenceAssertionCount": 93,
+  "rulesApplied": [
+    "Canonical measurements use SI/marine-standard internal units.",
+    "Source measurements retain source value and unit in evidence assertions.",
+    "Unlabeled 'gal' is not converted to litres.",
+    "Year/configuration-varying specifications are not forced into one universal scalar.",
+    "Engine count is left unresolved when the model family was offered as both single and twin.",
+    "Technical classifications are normalized separately from marketing style/family labels.",
+    "Legacy fields may remain during transition but canonical fields take precedence.",
+    "Community contributions remain subject to evidence validation."
+  ],
+  "importantFindings": [
+    "Albin 27 Family Cruiser production end remains disputed: owner-club history says approximately 1992; HMY/PowerBoat Guide says 1995.",
+    "Albin 28 TE Engine Box and Flush Deck are retained as separate B-Atlas configuration records sharing one hull family.",
+    "Albin 30 Family Cruiser legacy Sportfisher family classification was corrected toward Express Cruiser/family-cruiser usage.",
+    "Albin 32+2 and Albin 36 have meaningful single/twin engine variation, so model-level EngineCount is not forced.",
+    "Camano 28/31 tankage changed during production; handbook capacities are stored as era-scoped evidence rather than universal model scalars.",
+    "Nimble Nomad core dimensions are supported by owner/review evidence but remain moderate confidence because factory documentation is scarce.",
+    "Nimble Wanderer remains a motorsailer-capable model with power-only individual configurations."
+  ]
+}

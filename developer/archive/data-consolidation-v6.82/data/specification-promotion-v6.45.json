@@ -1,0 +1,797 @@
+{
+  "version": "6.45.0",
+  "changes": [
+    {
+      "BoatModelID": "AMTG-34",
+      "field": "KeelConfigurationCode",
+      "value": "keel.partial_skeg",
+      "basis": "explicit legacy keel description"
+    },
+    {
+      "BoatModelID": "AMTG-365",
+      "field": "KeelConfigurationCode",
+      "value": "keel.partial_skeg",
+      "basis": "explicit legacy keel description"
+    },
+    {
+      "BoatModelID": "AMTG-395",
+      "field": "KeelConfigurationCode",
+      "value": "keel.partial_skeg",
+      "basis": "explicit legacy keel description"
+    },
+    {
+      "BoatModelID": "BKCV-26",
+      "field": "KeelConfigurationCode",
+      "value": "keel.full_long",
+      "basis": "explicit legacy keel description"
+    },
+    {
+      "BoatModelID": "BKCV-29",
+      "field": "KeelConfigurationCode",
+      "value": "keel.full_long",
+      "basis": "explicit legacy keel description"
+    },
+    {
+      "BoatModelID": "BKCV-30",
+      "field": "KeelConfigurationCode",
+      "value": "keel.pocket",
+      "basis": "explicit legacy keel description"
+    },
+    {
+      "BoatModelID": "BKCV-32",
+      "field": "KeelConfigurationCode",
+      "value": "keel.pocket",
+      "basis": "explicit legacy keel description"
+    },
+    {
+      "BoatModelID": "BKCV-33",
+      "field": "KeelConfigurationCode",
+      "value": "keel.full_long",
+      "basis": "explicit legacy keel description"
+    },
+    {
+      "BoatModelID": "BKCV-34",
+      "field": "KeelConfigurationCode",
+      "value": "keel.pocket",
+      "basis": "explicit legacy keel description"
+    },
+    {
+      "BoatModelID": "BKCV-37",
+      "field": "KeelConfigurationCode",
+      "value": "keel.pocket",
+      "basis": "explicit legacy keel description"
+    },
+    {
+      "BoatModelID": "BKCV-41",
+      "field": "KeelConfigurationCode",
+      "value": "keel.full_long",
+      "basis": "explicit legacy keel description"
+    },
+    {
+      "BoatModelID": "BAYL-2452",
+      "field": "FuelCode",
+      "value": "fuel.gasoline",
+      "basis": "legacy validated Fuel"
+    },
+    {
+      "BoatModelID": "BAYL-2452",
+      "field": "MechanicalPropulsionCode",
+      "value": "mechanical_propulsion.sterndrive",
+      "basis": "legacy validated propulsion"
+    },
+    {
+      "BoatModelID": "BAYL-2855",
+      "field": "FuelCode",
+      "value": "fuel.gasoline",
+      "basis": "legacy validated Fuel"
+    },
+    {
+      "BoatModelID": "BAYL-2855",
+      "field": "MechanicalPropulsionCode",
+      "value": "mechanical_propulsion.sterndrive",
+      "basis": "legacy validated propulsion"
+    },
+    {
+      "BoatModelID": "BAYL-2859",
+      "field": "FuelCode",
+      "value": "fuel.gasoline",
+      "basis": "legacy validated Fuel"
+    },
+    {
+      "BoatModelID": "BAYL-2859",
+      "field": "MechanicalPropulsionCode",
+      "value": "mechanical_propulsion.sterndrive",
+      "basis": "legacy validated propulsion"
+    },
+    {
+      "BoatModelID": "BAYL-3055",
+      "field": "FuelCode",
+      "value": "fuel.gasoline",
+      "basis": "legacy validated Fuel"
+    },
+    {
+      "BoatModelID": "BAYL-3055",
+      "field": "MechanicalPropulsionCode",
+      "value": "mechanical_propulsion.sterndrive",
+      "basis": "legacy validated propulsion"
+    },
+    {
+      "BoatModelID": "BAYL-3058",
+      "field": "FuelCode",
+      "value": "fuel.gasoline",
+      "basis": "legacy validated Fuel"
+    },
+    {
+      "BoatModelID": "BAYL-3058",
+      "field": "MechanicalPropulsionCode",
+      "value": "mechanical_propulsion.sterndrive",
+      "basis": "legacy validated propulsion"
+    },
+    {
+      "BoatModelID": "BAYL-3218",
+      "field": "FuelCode",
+      "value": "fuel.diesel",
+      "basis": "legacy validated Fuel"
+    },
+    {
+      "BoatModelID": "BAYL-3218",
+      "field": "MechanicalPropulsionCode",
+      "value": "mechanical_propulsion.shaft",
+      "basis": "legacy validated propulsion"
+    },
+    {
+      "BoatModelID": "BAYL-3258",
+      "field": "FuelCode",
+      "value": "fuel.gasoline",
+      "basis": "legacy validated Fuel"
+    },
+    {
+      "BoatModelID": "BAYL-3258",
+      "field": "MechanicalPropulsionCode",
+      "value": "mechanical_propulsion.sterndrive",
+      "basis": "legacy validated propulsion"
+    },
+    {
+      "BoatModelID": "BAYL-3288-MO",
+      "field": "FuelCode",
+      "value": "fuel.diesel",
+      "basis": "legacy validated Fuel"
+    },
+    {
+      "BoatModelID": "BAYL-3288-MO",
+      "field": "MechanicalPropulsionCode",
+      "value": "mechanical_propulsion.shaft",
+      "basis": "legacy validated propulsion"
+    },
+    {
+      "BoatModelID": "BAYL-3288-MO",
+      "field": "KeelConfigurationCode",
+      "value": "keel.twin",
+      "basis": "explicit legacy keel description"
+    },
+    {
+      "BoatModelID": "BAYL-3388",
+      "field": "FuelCode",
+      "value": "fuel.diesel",
+      "basis": "legacy validated Fuel"
+    },
+    {
+      "BoatModelID": "BAYL-3388",
+      "field": "MechanicalPropulsionCode",
+      "value": "mechanical_propulsion.shaft",
+      "basis": "legacy validated propulsion"
+    },
+    {
+      "BoatModelID": "BAYL-3788",
+      "field": "FuelCode",
+      "value": "fuel.gasoline",
+      "basis": "legacy validated Fuel"
+    },
+    {
+      "BoatModelID": "BAYL-3788",
+      "field": "MechanicalPropulsionCode",
+      "value": "mechanical_propulsion.shaft",
+      "basis": "legacy validated propulsion"
+    },
+    {
+      "BoatModelID": "BAYL-3888-MO",
+      "field": "FuelCode",
+      "value": "fuel.diesel",
+      "basis": "legacy validated Fuel"
+    },
+    {
+      "BoatModelID": "BAYL-3888-MO",
+      "field": "MechanicalPropulsionCode",
+      "value": "mechanical_propulsion.shaft",
+      "basis": "legacy validated propulsion"
+    },
+    {
+      "BoatModelID": "BAYL-3888-MO",
+      "field": "KeelConfigurationCode",
+      "value": "keel.twin",
+      "basis": "explicit legacy keel description"
+    },
+    {
+      "BoatModelID": "BAYL-4087",
+      "field": "FuelCode",
+      "value": "fuel.gasoline",
+      "basis": "legacy validated Fuel"
+    },
+    {
+      "BoatModelID": "BAYL-4087",
+      "field": "MechanicalPropulsionCode",
+      "value": "mechanical_propulsion.shaft",
+      "basis": "legacy validated propulsion"
+    },
+    {
+      "BoatModelID": "BENE-30-SW",
+      "field": "KeelConfigurationCode",
+      "value": "keel.pocket",
+      "basis": "explicit legacy keel description"
+    },
+    {
+      "BoatModelID": "BENE-34-SW",
+      "field": "KeelConfigurationCode",
+      "value": "keel.pocket",
+      "basis": "explicit legacy keel description"
+    },
+    {
+      "BoatModelID": "BENE-35-SW",
+      "field": "KeelConfigurationCode",
+      "value": "keel.pocket",
+      "basis": "explicit legacy keel description"
+    },
+    {
+      "BoatModelID": "BENE-47",
+      "field": "KeelConfigurationCode",
+      "value": "keel.full_long",
+      "basis": "explicit legacy keel description"
+    },
+    {
+      "BoatModelID": "BENE-48",
+      "field": "KeelConfigurationCode",
+      "value": "keel.full_long",
+      "basis": "explicit legacy keel description"
+    },
+    {
+      "BoatModelID": "BENE-52",
+      "field": "KeelConfigurationCode",
+      "value": "keel.full_long",
+      "basis": "explicit legacy keel description"
+    },
+    {
+      "BoatModelID": "CALF-34-TR",
+      "field": "FuelCode",
+      "value": "fuel.diesel",
+      "basis": "legacy validated Fuel"
+    },
+    {
+      "BoatModelID": "CALF-38-TR",
+      "field": "FuelCode",
+      "value": "fuel.diesel",
+      "basis": "legacy validated Fuel"
+    },
+    {
+      "BoatModelID": "CPDR-30-FB",
+      "field": "FuelCode",
+      "value": "fuel.diesel",
+      "basis": "legacy validated Fuel"
+    },
+    {
+      "BoatModelID": "CPDR-33-FB",
+      "field": "FuelCode",
+      "value": "fuel.diesel",
+      "basis": "legacy validated Fuel"
+    },
+    {
+      "BoatModelID": "CPDR-40-TR",
+      "field": "FuelCode",
+      "value": "fuel.diesel",
+      "basis": "legacy validated Fuel"
+    },
+    {
+      "BoatModelID": "CARV-28-V",
+      "field": "FuelCode",
+      "value": "fuel.gasoline",
+      "basis": "legacy validated Fuel"
+    },
+    {
+      "BoatModelID": "CARV-28-V",
+      "field": "MechanicalPropulsionCode",
+      "value": "mechanical_propulsion.sterndrive",
+      "basis": "legacy validated propulsion"
+    },
+    {
+      "BoatModelID": "CARV-32-AC",
+      "field": "FuelCode",
+      "value": "fuel.gasoline",
+      "basis": "legacy validated Fuel"
+    },
+    {
+      "BoatModelID": "CARV-32-AC",
+      "field": "MechanicalPropulsionCode",
+      "value": "mechanical_propulsion.shaft",
+      "basis": "legacy validated propulsion"
+    },
+    {
+      "BoatModelID": "CARV-33-MAR",
+      "field": "FuelCode",
+      "value": "fuel.gasoline",
+      "basis": "legacy validated Fuel"
+    },
+    {
+      "BoatModelID": "CARV-33-MAR",
+      "field": "MechanicalPropulsionCode",
+      "value": "mechanical_propulsion.shaft",
+      "basis": "legacy validated propulsion"
+    },
+    {
+      "BoatModelID": "CARV-350-AF",
+      "field": "FuelCode",
+      "value": "fuel.diesel",
+      "basis": "legacy validated Fuel"
+    },
+    {
+      "BoatModelID": "CARV-350-AF",
+      "field": "MechanicalPropulsionCode",
+      "value": "mechanical_propulsion.shaft",
+      "basis": "legacy validated propulsion"
+    },
+    {
+      "BoatModelID": "CARV-356-AF",
+      "field": "FuelCode",
+      "value": "fuel.diesel",
+      "basis": "legacy validated Fuel"
+    },
+    {
+      "BoatModelID": "CARV-356-AF",
+      "field": "MechanicalPropulsionCode",
+      "value": "mechanical_propulsion.shaft",
+      "basis": "legacy validated propulsion"
+    },
+    {
+      "BoatModelID": "CARV-36-AC",
+      "field": "FuelCode",
+      "value": "fuel.gasoline",
+      "basis": "legacy validated Fuel"
+    },
+    {
+      "BoatModelID": "CARV-36-AC",
+      "field": "MechanicalPropulsionCode",
+      "value": "mechanical_propulsion.shaft",
+      "basis": "legacy validated propulsion"
+    },
+    {
+      "BoatModelID": "CARV-36-MAR",
+      "field": "FuelCode",
+      "value": "fuel.gasoline",
+      "basis": "legacy validated Fuel"
+    },
+    {
+      "BoatModelID": "CARV-36-MAR",
+      "field": "MechanicalPropulsionCode",
+      "value": "mechanical_propulsion.shaft",
+      "basis": "legacy validated propulsion"
+    },
+    {
+      "BoatModelID": "CARV-40-AC",
+      "field": "FuelCode",
+      "value": "fuel.gasoline",
+      "basis": "legacy validated Fuel"
+    },
+    {
+      "BoatModelID": "CARV-40-AC",
+      "field": "MechanicalPropulsionCode",
+      "value": "mechanical_propulsion.shaft",
+      "basis": "legacy validated propulsion"
+    },
+    {
+      "BoatModelID": "CARV-42-AC",
+      "field": "FuelCode",
+      "value": "fuel.gasoline",
+      "basis": "legacy validated Fuel"
+    },
+    {
+      "BoatModelID": "CARV-42-AC",
+      "field": "MechanicalPropulsionCode",
+      "value": "mechanical_propulsion.shaft",
+      "basis": "legacy validated propulsion"
+    },
+    {
+      "BoatModelID": "CRUY-2980",
+      "field": "MechanicalPropulsionCode",
+      "value": "mechanical_propulsion.sterndrive",
+      "basis": "legacy validated propulsion"
+    },
+    {
+      "BoatModelID": "CRUY-3375",
+      "field": "MechanicalPropulsionCode",
+      "value": "mechanical_propulsion.sterndrive",
+      "basis": "legacy validated propulsion"
+    },
+    {
+      "BoatModelID": "CRUY-3470",
+      "field": "FuelCode",
+      "value": "fuel.gasoline",
+      "basis": "legacy validated Fuel"
+    },
+    {
+      "BoatModelID": "CRUY-3470",
+      "field": "MechanicalPropulsionCode",
+      "value": "mechanical_propulsion.sterndrive",
+      "basis": "legacy validated propulsion"
+    },
+    {
+      "BoatModelID": "CRUY-3650-AF",
+      "field": "FuelCode",
+      "value": "fuel.diesel",
+      "basis": "legacy validated Fuel"
+    },
+    {
+      "BoatModelID": "CRUY-390-EXP",
+      "field": "FuelCode",
+      "value": "fuel.gasoline",
+      "basis": "legacy validated Fuel"
+    },
+    {
+      "BoatModelID": "CRUY-390-EXP",
+      "field": "MechanicalPropulsionCode",
+      "value": "mechanical_propulsion.shaft",
+      "basis": "legacy validated propulsion"
+    },
+    {
+      "BoatModelID": "CRUY-4050",
+      "field": "FuelCode",
+      "value": "fuel.gasoline",
+      "basis": "legacy validated Fuel"
+    },
+    {
+      "BoatModelID": "ENDE-36-TR",
+      "field": "KeelConfigurationCode",
+      "value": "keel.twin",
+      "basis": "explicit legacy keel description"
+    },
+    {
+      "BoatModelID": "FORT-33",
+      "field": "MechanicalPropulsionCode",
+      "value": "mechanical_propulsion.shaft",
+      "basis": "legacy validated propulsion"
+    },
+    {
+      "BoatModelID": "GRNL-33",
+      "field": "KeelConfigurationCode",
+      "value": "keel.twin",
+      "basis": "explicit legacy keel description"
+    },
+    {
+      "BoatModelID": "GRNL-39",
+      "field": "KeelConfigurationCode",
+      "value": "keel.twin",
+      "basis": "explicit legacy keel description"
+    },
+    {
+      "BoatModelID": "GULF-36-TR",
+      "field": "FuelCode",
+      "value": "fuel.diesel",
+      "basis": "legacy validated Fuel"
+    },
+    {
+      "BoatModelID": "GULF-43-TR",
+      "field": "FuelCode",
+      "value": "fuel.diesel",
+      "basis": "legacy validated Fuel"
+    },
+    {
+      "BoatModelID": "GULF-44-MC",
+      "field": "FuelCode",
+      "value": "fuel.diesel",
+      "basis": "legacy validated Fuel"
+    },
+    {
+      "BoatModelID": "GULF-49-MC",
+      "field": "FuelCode",
+      "value": "fuel.diesel",
+      "basis": "legacy validated Fuel"
+    },
+    {
+      "BoatModelID": "HUNT-29",
+      "field": "FuelCode",
+      "value": "fuel.gasoline",
+      "basis": "legacy validated Fuel"
+    },
+    {
+      "BoatModelID": "HUNT-29",
+      "field": "MechanicalPropulsionCode",
+      "value": "mechanical_propulsion.shaft",
+      "basis": "legacy validated propulsion"
+    },
+    {
+      "BoatModelID": "HUNT-36",
+      "field": "MechanicalPropulsionCode",
+      "value": "mechanical_propulsion.pod",
+      "basis": "legacy validated propulsion"
+    },
+    {
+      "BoatModelID": "MRTR-38-SD2",
+      "field": "KeelConfigurationCode",
+      "value": "keel.full_long",
+      "basis": "explicit legacy keel description"
+    },
+    {
+      "BoatModelID": "MERI-341-SE",
+      "field": "FuelCode",
+      "value": "fuel.gasoline",
+      "basis": "legacy validated Fuel"
+    },
+    {
+      "BoatModelID": "MERI-341-SE",
+      "field": "MechanicalPropulsionCode",
+      "value": "mechanical_propulsion.shaft",
+      "basis": "legacy validated propulsion"
+    },
+    {
+      "BoatModelID": "MERI-381-SE",
+      "field": "FuelCode",
+      "value": "fuel.gasoline",
+      "basis": "legacy validated Fuel"
+    },
+    {
+      "BoatModelID": "MERI-381-SE",
+      "field": "MechanicalPropulsionCode",
+      "value": "mechanical_propulsion.shaft",
+      "basis": "legacy validated propulsion"
+    },
+    {
+      "BoatModelID": "NMBS-365-CO",
+      "field": "MechanicalPropulsionCode",
+      "value": "mechanical_propulsion.shaft",
+      "basis": "legacy validated propulsion"
+    },
+    {
+      "BoatModelID": "OCEA-36-SE",
+      "field": "KeelConfigurationCode",
+      "value": "keel.full_long",
+      "basis": "explicit legacy keel description"
+    },
+    {
+      "BoatModelID": "OCAL-39-SE",
+      "field": "KeelConfigurationCode",
+      "value": "keel.full_long",
+      "basis": "explicit legacy keel description"
+    },
+    {
+      "BoatModelID": "PDQB-34-PA",
+      "field": "KeelConfigurationCode",
+      "value": "keel.twin",
+      "basis": "explicit legacy keel description"
+    },
+    {
+      "BoatModelID": "ROSB-246-WH",
+      "field": "FuelCode",
+      "value": "fuel.gasoline",
+      "basis": "legacy validated Fuel"
+    },
+    {
+      "BoatModelID": "ROSB-246-WH",
+      "field": "MechanicalPropulsionCode",
+      "value": "mechanical_propulsion.outboard",
+      "basis": "legacy validated propulsion"
+    },
+    {
+      "BoatModelID": "ROSB-246-LS",
+      "field": "FuelCode",
+      "value": "fuel.diesel",
+      "basis": "legacy validated Fuel"
+    },
+    {
+      "BoatModelID": "ROSB-246-LS",
+      "field": "MechanicalPropulsionCode",
+      "value": "mechanical_propulsion.sterndrive",
+      "basis": "legacy validated propulsion"
+    },
+    {
+      "BoatModelID": "ROSB-246",
+      "field": "FuelCode",
+      "value": "fuel.gasoline",
+      "basis": "legacy validated Fuel"
+    },
+    {
+      "BoatModelID": "ROSB-246",
+      "field": "MechanicalPropulsionCode",
+      "value": "mechanical_propulsion.outboard",
+      "basis": "legacy validated propulsion"
+    },
+    {
+      "BoatModelID": "SABR-38-SA",
+      "field": "MechanicalPropulsionCode",
+      "value": "mechanical_propulsion.pod",
+      "basis": "legacy validated propulsion"
+    },
+    {
+      "BoatModelID": "SAGA-26-HT",
+      "field": "KeelConfigurationCode",
+      "value": "keel.partial_skeg",
+      "basis": "explicit legacy keel description"
+    },
+    {
+      "BoatModelID": "SEAR-390-MO",
+      "field": "FuelCode",
+      "value": "fuel.diesel",
+      "basis": "legacy validated Fuel"
+    },
+    {
+      "BoatModelID": "SEAL-34-TC",
+      "field": "KeelConfigurationCode",
+      "value": "keel.protective",
+      "basis": "explicit legacy keel description"
+    },
+    {
+      "BoatModelID": "SEAP-35",
+      "field": "KeelConfigurationCode",
+      "value": "keel.full_long",
+      "basis": "explicit legacy keel description"
+    },
+    {
+      "BoatModelID": "SEAW-24-ST",
+      "field": "KeelConfigurationCode",
+      "value": "keel.partial_skeg",
+      "basis": "explicit legacy keel description"
+    },
+    {
+      "BoatModelID": "SEAW-28-CC",
+      "field": "KeelConfigurationCode",
+      "value": "keel.partial_skeg",
+      "basis": "explicit legacy keel description"
+    },
+    {
+      "BoatModelID": "SHAN-38-SRD",
+      "field": "MechanicalPropulsionCode",
+      "value": "mechanical_propulsion.shaft",
+      "basis": "legacy validated propulsion"
+    },
+    {
+      "BoatModelID": "SHAN-38-SRD",
+      "field": "KeelConfigurationCode",
+      "value": "keel.partial_skeg",
+      "basis": "explicit legacy keel description"
+    },
+    {
+      "BoatModelID": "SILV-34-MO",
+      "field": "FuelCode",
+      "value": "fuel.gasoline",
+      "basis": "legacy validated Fuel"
+    },
+    {
+      "BoatModelID": "SILV-34-MO",
+      "field": "MechanicalPropulsionCode",
+      "value": "mechanical_propulsion.shaft",
+      "basis": "legacy validated propulsion"
+    },
+    {
+      "BoatModelID": "SILV-352-MO",
+      "field": "FuelCode",
+      "value": "fuel.gasoline",
+      "basis": "legacy validated Fuel"
+    },
+    {
+      "BoatModelID": "SILV-352-MO",
+      "field": "MechanicalPropulsionCode",
+      "value": "mechanical_propulsion.shaft",
+      "basis": "legacy validated propulsion"
+    },
+    {
+      "BoatModelID": "SILV-372",
+      "field": "FuelCode",
+      "value": "fuel.gasoline",
+      "basis": "legacy validated Fuel"
+    },
+    {
+      "BoatModelID": "SILV-372",
+      "field": "MechanicalPropulsionCode",
+      "value": "mechanical_propulsion.shaft",
+      "basis": "legacy validated propulsion"
+    },
+    {
+      "BoatModelID": "SILV-40-AC",
+      "field": "FuelCode",
+      "value": "fuel.gasoline",
+      "basis": "legacy validated Fuel"
+    },
+    {
+      "BoatModelID": "SILV-40-AC",
+      "field": "MechanicalPropulsionCode",
+      "value": "mechanical_propulsion.shaft",
+      "basis": "legacy validated propulsion"
+    },
+    {
+      "BoatModelID": "SISU-22-CO",
+      "field": "FuelCode",
+      "value": "fuel.diesel",
+      "basis": "legacy validated Fuel"
+    },
+    {
+      "BoatModelID": "SISU-22-CO",
+      "field": "MechanicalPropulsionCode",
+      "value": "mechanical_propulsion.shaft",
+      "basis": "legacy validated propulsion"
+    },
+    {
+      "BoatModelID": "SISU-22-CO",
+      "field": "KeelConfigurationCode",
+      "value": "keel.partial_skeg",
+      "basis": "explicit legacy keel description"
+    },
+    {
+      "BoatModelID": "SISU-26-BA",
+      "field": "FuelCode",
+      "value": "fuel.diesel",
+      "basis": "legacy validated Fuel"
+    },
+    {
+      "BoatModelID": "SISU-26-BA",
+      "field": "KeelConfigurationCode",
+      "value": "keel.partial_skeg",
+      "basis": "explicit legacy keel description"
+    },
+    {
+      "BoatModelID": "TOLL-34-SE",
+      "field": "KeelConfigurationCode",
+      "value": "keel.full_long",
+      "basis": "explicit legacy keel description"
+    },
+    {
+      "BoatModelID": "TOLL-37-SE",
+      "field": "KeelConfigurationCode",
+      "value": "keel.full_long",
+      "basis": "explicit legacy keel description"
+    },
+    {
+      "BoatModelID": "TROJ-36-TR",
+      "field": "FuelCode",
+      "value": "fuel.gasoline",
+      "basis": "legacy validated Fuel"
+    },
+    {
+      "BoatModelID": "TRUN-34",
+      "field": "KeelConfigurationCode",
+      "value": "keel.partial_skeg",
+      "basis": "explicit legacy keel description"
+    },
+    {
+      "BoatModelID": "UNIV-36-TR",
+      "field": "KeelConfigurationCode",
+      "value": "keel.full_long",
+      "basis": "explicit legacy keel description"
+    },
+    {
+      "BoatModelID": "UNIV-40-TR",
+      "field": "KeelConfigurationCode",
+      "value": "keel.full_long",
+      "basis": "explicit legacy keel description"
+    },
+    {
+      "BoatModelID": "WIND-26-SN",
+      "field": "KeelConfigurationCode",
+      "value": "keel.partial_skeg",
+      "basis": "explicit legacy keel description"
+    },
+    {
+      "BoatModelID": "MERI-341-SE-03",
+      "field": "FuelCode",
+      "value": "fuel.gasoline",
+      "basis": "legacy validated Fuel"
+    },
+    {
+      "BoatModelID": "MERI-341-SE-03",
+      "field": "MechanicalPropulsionCode",
+      "value": "mechanical_propulsion.shaft",
+      "basis": "legacy validated propulsion"
+    },
+    {
+      "BoatModelID": "SEAR-340-SU-99",
+      "field": "FuelCode",
+      "value": "fuel.gasoline",
+      "basis": "legacy validated Fuel"
+    }
+  ]
+}

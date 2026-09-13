@@ -1,0 +1,406 @@
+{
+  "release": "6.48.0",
+  "batch": "specification-completion-03",
+  "manufacturers": [
+    "Albin",
+    "Grand Banks",
+    "Mainship",
+    "DeFever",
+    "Kadey-Krogen"
+  ],
+  "updateCount": 35,
+  "updates": [
+    {
+      "BoatModelID": "MNSH-34-MK1",
+      "Field": "AirDraft",
+      "Old": null,
+      "New": 4.1148,
+      "Basis": "Published clearance of 13 ft 6 in promoted into canonical metric field.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/mainship/34-diesel-cruiser-1978-82"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "MNSH-34-MK2",
+      "Field": "AirDraft",
+      "Old": null,
+      "New": 4.1148,
+      "Basis": "Published clearance of 13 ft 6 in promoted into canonical metric field.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/mainship/34-ii-1979-82"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "MNSH-34-MK3",
+      "Field": "AirDraft",
+      "Old": null,
+      "New": 4.1148,
+      "Basis": "Published clearance of 13 ft 6 in promoted into canonical metric field.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/mainship/34-iii-1983-88"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "MNSH-34-TR",
+      "Field": "AirDraft_ft",
+      "Old": 13.5,
+      "New": 15.0,
+      "Basis": "Legacy imperial shadow field aligned to canonical 15 ft published clearance.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/mainship/34-trawler-2005-09"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "GRBK-36-EU",
+      "Field": "Displacement_lb",
+      "Old": 26000,
+      "New": 27000,
+      "Basis": "Legacy imperial shadow field corrected to published 27,000 lb specification.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/grand-banks/36-europa-1988-98"
+      ],
+      "Unit": "lb"
+    },
+    {
+      "BoatModelID": "GRBK-46-CL",
+      "Field": "Displacement_lb",
+      "Old": 39000,
+      "New": 42960,
+      "Basis": "Legacy imperial shadow field corrected to published 42,960 lb specification.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/grand-banks/46-classic-1985-2005"
+      ],
+      "Unit": "lb"
+    },
+    {
+      "BoatModelID": "DEFE-34-TR",
+      "Field": "LWL_ft",
+      "Old": 31.5,
+      "New": 30.166666666666668,
+      "Basis": "Stale imperial shadow value reconciled to model-specific published specification; canonical metric value already reflected the validated figure.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/defever/34-passagemaker-1974-76"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "DEFE-40-EURO",
+      "Field": "LWL_ft",
+      "Old": 36,
+      "New": 35.5,
+      "Basis": "Stale imperial shadow value reconciled to model-specific published specification; canonical metric value already reflected the validated figure.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/defever/40-offshore-cruiser-1984-91"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "DEFE-40-EURO",
+      "Field": "Beam_ft",
+      "Old": 13,
+      "New": 14.5,
+      "Basis": "Stale imperial shadow value reconciled to model-specific published specification; canonical metric value already reflected the validated figure.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/defever/40-offshore-cruiser-1984-91"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "DEFE-40-EURO",
+      "Field": "Draft_ft",
+      "Old": 4,
+      "New": 3.8333333333333335,
+      "Basis": "Stale imperial shadow value reconciled to model-specific published specification; canonical metric value already reflected the validated figure.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/defever/40-offshore-cruiser-1984-91"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "DEFE-40-EURO",
+      "Field": "Displacement_lb",
+      "Old": 24000,
+      "New": 29000,
+      "Basis": "Stale imperial shadow value reconciled to model-specific published specification; canonical metric value already reflected the validated figure.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/defever/40-offshore-cruiser-1984-91"
+      ],
+      "Unit": "lb"
+    },
+    {
+      "BoatModelID": "DEFE-41",
+      "Field": "LWL_ft",
+      "Old": 37,
+      "New": 34.583333333333336,
+      "Basis": "Stale imperial shadow value reconciled to model-specific published specification; canonical metric value already reflected the validated figure.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/defever/41-trawler-1980-95"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "DEFE-43",
+      "Field": "LWL_ft",
+      "Old": 39,
+      "New": 36.583333333333336,
+      "Basis": "Stale imperial shadow value reconciled to model-specific published specification; canonical metric value already reflected the validated figure.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/defever/43-trawler-1978-81"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "DEFE-45",
+      "Field": "LWL_ft",
+      "Old": 41,
+      "New": 40.5,
+      "Basis": "Stale imperial shadow value reconciled to model-specific published specification; canonical metric value already reflected the validated figure.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/defever/45-pilothouse-2002-08"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "DEFE-45",
+      "Field": "Beam_ft",
+      "Old": 14,
+      "New": 15.0,
+      "Basis": "Stale imperial shadow value reconciled to model-specific published specification; canonical metric value already reflected the validated figure.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/defever/45-pilothouse-2002-08"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "DEFE-45",
+      "Field": "Draft_ft",
+      "Old": 4.5,
+      "New": 3.8333333333333335,
+      "Basis": "Stale imperial shadow value reconciled to model-specific published specification; canonical metric value already reflected the validated figure.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/defever/45-pilothouse-2002-08"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "DEFE-45",
+      "Field": "Displacement_lb",
+      "Old": 28000,
+      "New": 38000,
+      "Basis": "Stale imperial shadow value reconciled to model-specific published specification; canonical metric value already reflected the validated figure.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/defever/45-pilothouse-2002-08"
+      ],
+      "Unit": "lb"
+    },
+    {
+      "BoatModelID": "DEFE-47",
+      "Field": "AirDraft_ft",
+      "Old": 17,
+      "New": 15.5,
+      "Basis": "Stale imperial shadow value reconciled to model-specific published specification; canonical metric value already reflected the validated figure.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/defever/47-poc-motor-yacht-1986-92"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "DEFE-49",
+      "Field": "LWL_ft",
+      "Old": 45,
+      "New": 43.5,
+      "Basis": "Stale imperial shadow value reconciled to model-specific published specification; canonical metric value already reflected the validated figure.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/defever/49-cockpit-motor-yacht-1994-2006"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "KDKR-36-MA",
+      "Field": "LWL_ft",
+      "Old": 34.2,
+      "New": 34.0,
+      "Basis": "Legacy LWL corrected to published 34 ft waterline length.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/krogen/36-manatee-1984-92"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "KDKR-36-MA",
+      "Field": "AirDraft_ft",
+      "Old": 14.2,
+      "New": 14.0,
+      "Basis": "Legacy clearance corrected to published 14 ft.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/krogen/36-manatee-1984-92"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "KDKR-36-MA",
+      "Field": "AirDraft",
+      "Old": null,
+      "New": 4.2672,
+      "Basis": "Published 14 ft clearance promoted to canonical metric air draft.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/krogen/36-manatee-1984-92"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "KDKR-39",
+      "Field": "LOA_ft",
+      "Old": 39.5,
+      "New": 43.666666666666664,
+      "Basis": "Legacy model-number length corrected to published LOA 43 ft 8 in.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/krogen/39-trawler-1998-2008"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "KDKR-39",
+      "Field": "Beam_ft",
+      "Old": 14.75,
+      "New": 14.25,
+      "Basis": "Legacy beam corrected to published 14 ft 3 in.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/krogen/39-trawler-1998-2008"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "KDKR-42",
+      "Field": "Displacement_lb",
+      "Old": 39500,
+      "New": 40000,
+      "Basis": "Legacy displacement corrected to published 40,000 lb.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/krogen/42-trawler-1977-98"
+      ],
+      "Unit": "lb"
+    },
+    {
+      "BoatModelID": "KDKR-48-NS",
+      "Field": "LOA_ft",
+      "Old": 48,
+      "New": 53.0,
+      "Basis": "Legacy model-number length corrected to published 53 ft LOA.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/krogen/48-north-sea-1996-2010"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "KDKR-44",
+      "Field": "Beam_ft",
+      "Old": 16.33,
+      "New": 15.5,
+      "Basis": "Legacy beam aligned to period Krogen 44 Trawler specification (15 ft 6 in); kept distinct from later/current 44 AE.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/krogen/44-trawler-2004-17"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "KDKR-44-AE",
+      "Field": "Beam",
+      "Old": 4.7244,
+      "New": 4.9784,
+      "Basis": "Current factory 44 AE beam is 16 ft 4 in; corrected from predecessor 44 Trawler beam.",
+      "EvidenceRefs": [
+        "https://www.kadeykrogen.com/tour/krogen-44-ae/"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "KDKR-44-AE",
+      "Field": "Beam_ft",
+      "Old": 16.33,
+      "New": 16.333333333333332,
+      "Basis": "Current factory 44 AE beam retained explicitly as 16 ft 4 in.",
+      "EvidenceRefs": [
+        "https://www.kadeykrogen.com/tour/krogen-44-ae/"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "KDKR-44-AE",
+      "Field": "AirDraft_ft",
+      "Old": 13.67,
+      "New": 13.666666666666666,
+      "Basis": "Factory mast-down bridge clearance is 13 ft 8 in.",
+      "EvidenceRefs": [
+        "https://www.kadeykrogen.com/tour/krogen-44-ae/"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "KDKR-44-AE",
+      "Field": "AirDraft",
+      "Old": null,
+      "New": 4.1656,
+      "Basis": "Factory mast-down bridge clearance promoted to canonical metric air draft.",
+      "EvidenceRefs": [
+        "https://www.kadeykrogen.com/tour/krogen-44-ae/"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "ALBN-32-PL",
+      "Field": "HullLength_ft",
+      "Old": null,
+      "New": 34.916666666666664,
+      "Basis": "Published 34 ft 11 in dimension is hull length, not waterline length.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/albin/322-command-bridge-1989-2003"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "ALBN-32-PL",
+      "Field": "LWL_ft",
+      "Old": 34.92,
+      "New": null,
+      "Basis": "Removed mislabeled legacy value: source publishes 34 ft 11 in as hull length, not LWL. LWL remains unknown.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/albin/322-command-bridge-1989-2003"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "MNSH-30-PI",
+      "Field": "LOA",
+      "Old": 9.144,
+      "New": 10.083800000000002,
+      "Basis": "Canonical LOA corrected from nominal 30 ft hull length to published 33 ft 1 in length with pulpit; hull length retained separately.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/mainship/30-pilot-1998-2008"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "MNSH-30-PI",
+      "Field": "HullLength_ft",
+      "Old": 30,
+      "New": 30.0,
+      "Basis": "Published 30 ft hull length retained separately from LOA.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/mainship/30-pilot-1998-2008"
+      ],
+      "Unit": "ft"
+    }
+  ],
+  "principles": [
+    "Canonical metric and legacy imperial shadow fields must describe the same published fact.",
+    "Model-number length is not assumed to be LOA or LWL.",
+    "Generation-specific specifications remain separate when evidence shows a design change.",
+    "Unknown rudder attachment/type remains unknown unless the source states the arrangement, even when a keel protects the rudder.",
+    "Manufacturer documentation outranks secondary guides for current production variants."
+  ]
+}

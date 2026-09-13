@@ -24,12 +24,13 @@
     "Variant": "Family Cruiser",
     "Aliases": [
       "ALB-27-FC",
-      "Albin 27",
       "27 Family Cruiser"
     ],
     "Active": false,
     "RedirectTo": null,
-    "Notes": ""
+    "Notes": "",
+    "ModelIdentityFamilyID": "ALBN-27",
+    "IdentityDisposition": "distinct_layout_variants"
   },
   {
     "BoatModelID": "ALBN-27-SP",
@@ -41,12 +42,13 @@
     "Aliases": [
       "ALB-27-SP",
       "Albin 27 Sport",
-      "Albin 27",
       "27 Sport"
     ],
     "Active": false,
     "RedirectTo": null,
-    "Notes": ""
+    "Notes": "",
+    "ModelIdentityFamilyID": "ALBN-27",
+    "IdentityDisposition": "distinct_layout_variants"
   },
   {
     "BoatModelID": "ALBN-28-FL",
@@ -58,12 +60,13 @@
     "Aliases": [
       "ALB-28-FL",
       "Albin 28 Tournament Express — Flush Deck",
-      "Albin 28 Tournament Express",
       "28 Tournament Express Flush Deck"
     ],
     "Active": false,
     "RedirectTo": null,
-    "Notes": ""
+    "Notes": "",
+    "ModelIdentityFamilyID": "ALBN-28-TE",
+    "IdentityDisposition": "distinct_configuration_generations"
   },
   {
     "BoatModelID": "ALBN-28-TE-EB",
@@ -75,12 +78,13 @@
     "Aliases": [
       "ALB-28-TE-EB",
       "Albin 28 Tournament Express — Engine Box",
-      "Albin 28 Tournament Express",
       "28 Tournament Express Engine Box"
     ],
     "Active": false,
     "RedirectTo": null,
-    "Notes": ""
+    "Notes": "",
+    "ModelIdentityFamilyID": "ALBN-28-TE",
+    "IdentityDisposition": "distinct_configuration_generations"
   },
   {
     "BoatModelID": "ALBN-30-FC",
@@ -624,12 +628,13 @@
       "BEN-ANT-9",
       "Beneteau 9",
       "Beneteau Antares 9 Pilothouse Outboard",
-      "Beneteau Antares 9",
       "Antares 9 Pilothouse Outboard"
     ],
     "Active": true,
     "RedirectTo": null,
-    "Notes": ""
+    "Notes": "",
+    "ModelIdentityFamilyID": "BENE-ANT-9",
+    "IdentityDisposition": "distinct_generations"
   },
   {
     "BoatModelID": "BENE-ANT-9-S2",
@@ -638,12 +643,12 @@
     "CanonicalName": "Beneteau Antares 9 Generation 2",
     "Model": "Antares 9",
     "Variant": "Generation 2",
-    "Aliases": [
-      "Beneteau Antares 9"
-    ],
+    "Aliases": [],
     "Active": true,
     "RedirectTo": null,
-    "Notes": ""
+    "Notes": "",
+    "ModelIdentityFamilyID": "BENE-ANT-9",
+    "IdentityDisposition": "distinct_generations"
   },
   {
     "BoatModelID": "BENE-BAR-8",
@@ -894,12 +899,13 @@
       "Camano 28 Gnome",
       "Camano 31 Gnome",
       "Camano Gnome",
-      "Camano 28/31",
       "28/31 Gnome"
     ],
     "Active": false,
     "RedirectTo": null,
-    "Notes": ""
+    "Notes": "",
+    "ModelIdentityFamilyID": "CAMA-28-31",
+    "IdentityDisposition": "same_hull_distinct_variants"
   },
   {
     "BoatModelID": "CAMA-31-TR",
@@ -914,12 +920,13 @@
       "Camano 30 Troll",
       "Camano 31 Troll",
       "Camano Troll",
-      "Camano 28/31",
       "28/31 Troll"
     ],
     "Active": false,
     "RedirectTo": null,
-    "Notes": ""
+    "Notes": "",
+    "ModelIdentityFamilyID": "CAMA-28-31",
+    "IdentityDisposition": "same_hull_distinct_variants"
   },
   {
     "BoatModelID": "CAMA-41",
@@ -1211,12 +1218,13 @@
     "Aliases": [
       "CHB 34 Classic",
       "CHB 34 Trawler",
-      "CHB 34",
       "34 Sedan"
     ],
     "Active": false,
     "RedirectTo": null,
-    "Notes": "Added in v6.31 six-family expansion."
+    "Notes": "Added in v6.31 six-family expansion.",
+    "ModelIdentityFamilyID": "CHBB-34",
+    "IdentityDisposition": "ambiguous_historical_family"
   },
   {
     "BoatModelID": "CHBB-34-TC",
@@ -1227,13 +1235,13 @@
     "Variant": "Tri-Cabin",
     "Aliases": [
       "CHB 34 Classic Trawler",
-      "CHB 34 Double Cabin",
-      "CHB 34",
       "34 Tri-Cabin"
     ],
     "Active": false,
     "RedirectTo": null,
-    "Notes": "Added in v6.31 six-family expansion."
+    "Notes": "Added in v6.31 six-family expansion.",
+    "ModelIdentityFamilyID": "CHBB-34",
+    "IdentityDisposition": "ambiguous_historical_family"
   },
   {
     "BoatModelID": "CHBY-34-SE",
@@ -1244,13 +1252,13 @@
     "Variant": "Double Cabin",
     "Aliases": [
       "CHB 34 Double Cabin Sedan",
-      "CHB 34 Sedan",
-      "CHB-34-SE",
       "34 Double Cabin Double Cabin"
     ],
     "Active": false,
     "RedirectTo": null,
-    "Notes": ""
+    "Notes": "",
+    "ModelIdentityFamilyID": "CHBB-34",
+    "IdentityDisposition": "ambiguous_historical_family"
   },
   {
     "BoatModelID": "CHBY-35",
@@ -1371,12 +1379,13 @@
       "Cape Dory 28 Pilothouse",
       "Cape Dory 28 Power",
       "Cape Dory 28 Power Cruiser",
-      "Cape Dory 28",
       "28 Power Cruiser"
     ],
     "Active": false,
     "RedirectTo": null,
-    "Notes": ""
+    "Notes": "",
+    "ModelIdentityFamilyID": "CPDR-28",
+    "IdentityDisposition": "distinct_factory_variants"
   },
   {
     "BoatModelID": "CPDR-28-FB",
@@ -1390,12 +1399,13 @@
       "Cape Dory 28 Fly Bridge Cruiser",
       "Cape Dory 28 Flybridge",
       "Cape Dory 28 Trawler",
-      "Cape Dory 28",
       "28 Flybridge Cruiser"
     ],
     "Active": false,
     "RedirectTo": null,
-    "Notes": ""
+    "Notes": "",
+    "ModelIdentityFamilyID": "CPDR-28",
+    "IdentityDisposition": "distinct_factory_variants"
   },
   {
     "BoatModelID": "CPDR-28-OF",
@@ -1407,12 +1417,13 @@
     "Aliases": [
       "CAP-28-OF",
       "Cape Dory 28 Open Sportsman",
-      "Cape Dory 28",
       "28 Open Fisherman"
     ],
     "Active": false,
     "RedirectTo": null,
-    "Notes": ""
+    "Notes": "",
+    "ModelIdentityFamilyID": "CPDR-28",
+    "IdentityDisposition": "distinct_factory_variants"
   },
   {
     "BoatModelID": "CPDR-30-FB",
@@ -2192,12 +2203,13 @@
     "Variant": "Classic",
     "Aliases": [
       "GB-36-CL",
-      "Grand Banks 36",
       "36 Classic"
     ],
     "Active": false,
     "RedirectTo": null,
-    "Notes": ""
+    "Notes": "",
+    "ModelIdentityFamilyID": "GRBK-36",
+    "IdentityDisposition": "distinct_layout_variants"
   },
   {
     "BoatModelID": "GRBK-36-EU",
@@ -2208,12 +2220,13 @@
     "Variant": "Europa",
     "Aliases": [
       "GB-36-EU",
-      "Grand Banks 36",
       "36 Europa"
     ],
     "Active": false,
     "RedirectTo": null,
-    "Notes": ""
+    "Notes": "",
+    "ModelIdentityFamilyID": "GRBK-36",
+    "IdentityDisposition": "distinct_layout_variants"
   },
   {
     "BoatModelID": "GRBK-42-CL",
@@ -2932,13 +2945,14 @@
     "Variant": "Flybridge Sedan",
     "Aliases": [
       "MER-341-SE",
-      "Meridian 341 Sedan",
       "Meridian 341",
       "341 Sedan"
     ],
     "Active": false,
     "RedirectTo": null,
-    "Notes": ""
+    "Notes": "",
+    "ModelIdentityFamilyID": "MERI-341",
+    "IdentityDisposition": "distinct_generations"
   },
   {
     "BoatModelID": "MERI-341-SE-03",
@@ -2947,12 +2961,12 @@
     "CanonicalName": "Meridian 341 Sedan Original Generation / Bayliner 3488 lineage",
     "Model": "341 Sedan",
     "Variant": "Original Generation / Bayliner 3488 lineage",
-    "Aliases": [
-      "Meridian 341 Sedan"
-    ],
+    "Aliases": [],
     "Active": false,
     "RedirectTo": null,
-    "Notes": ""
+    "Notes": "",
+    "ModelIdentityFamilyID": "MERI-341",
+    "IdentityDisposition": "distinct_generations"
   },
   {
     "BoatModelID": "MERI-381-SE",
@@ -3000,13 +3014,14 @@
       "MAI-34-TR",
       "Mainship 34 MK I",
       "Mainship 34 Mk I Motor Cruiser",
-      "Mainship 34",
       "34 MK I",
       "Mainship 34 MKI"
     ],
     "Active": true,
     "RedirectTo": null,
-    "Notes": ""
+    "Notes": "",
+    "ModelIdentityFamilyID": "MNSH-34",
+    "IdentityDisposition": "distinct_generations_and_name_reuse"
   },
   {
     "BoatModelID": "MNSH-34-MK2",
@@ -3018,13 +3033,14 @@
     "Aliases": [
       "MAI-34-MK2",
       "Mainship 34 34 II",
-      "Mainship 34",
       "34 34 II",
       "Mainship 34 MKII"
     ],
     "Active": true,
     "RedirectTo": null,
-    "Notes": ""
+    "Notes": "",
+    "ModelIdentityFamilyID": "MNSH-34",
+    "IdentityDisposition": "distinct_generations_and_name_reuse"
   },
   {
     "BoatModelID": "MNSH-34-MK3",
@@ -3038,7 +3054,9 @@
     ],
     "Active": true,
     "RedirectTo": null,
-    "Notes": ""
+    "Notes": "",
+    "ModelIdentityFamilyID": "MNSH-34",
+    "IdentityDisposition": "distinct_generations_and_name_reuse"
   },
   {
     "BoatModelID": "MNSH-34-TR",
@@ -3052,7 +3070,9 @@
     ],
     "Active": true,
     "RedirectTo": null,
-    "Notes": ""
+    "Notes": "",
+    "ModelIdentityFamilyID": "MNSH-34",
+    "IdentityDisposition": "distinct_generations_and_name_reuse"
   },
   {
     "BoatModelID": "MNSH-350-TR",
@@ -3154,7 +3174,9 @@
     ],
     "Active": false,
     "RedirectTo": null,
-    "Notes": ""
+    "Notes": "",
+    "ModelIdentityFamilyID": "MRTR-38",
+    "IdentityDisposition": "distinct_lines_needs_phase_research"
   },
   {
     "BoatModelID": "MRTR-38-SD2",
@@ -3170,7 +3192,9 @@
     ],
     "Active": false,
     "RedirectTo": null,
-    "Notes": ""
+    "Notes": "",
+    "ModelIdentityFamilyID": "MRTR-38",
+    "IdentityDisposition": "distinct_lines_needs_phase_research"
   },
   {
     "BoatModelID": "MRTR-40-DC",
@@ -3214,12 +3238,13 @@
     "Variant": "Europa",
     "Aliases": [
       "Marine Trader 34 Europa Sedan",
-      "Marine Trader 34",
       "34 Europa"
     ],
     "Active": false,
     "RedirectTo": null,
-    "Notes": "Added in v6.31 six-family expansion."
+    "Notes": "Added in v6.31 six-family expansion.",
+    "ModelIdentityFamilyID": "MTRA-34",
+    "IdentityDisposition": "distinct_layout_variants"
   },
   {
     "BoatModelID": "MTRA-34-SE",
@@ -3231,12 +3256,13 @@
     "Aliases": [
       "Marine Trader 34 Classic",
       "Marine Trader 34 Trawler",
-      "Marine Trader 34",
       "34 Sedan"
     ],
     "Active": false,
     "RedirectTo": null,
-    "Notes": "Added in v6.31 six-family expansion."
+    "Notes": "Added in v6.31 six-family expansion.",
+    "ModelIdentityFamilyID": "MTRA-34",
+    "IdentityDisposition": "distinct_layout_variants"
   },
   {
     "BoatModelID": "NDST-31P",
@@ -3588,12 +3614,13 @@
     "Aliases": [
       "RAN-21-CLASSIC",
       "Ranger Tug R-21 Classic",
-      "Ranger Tugs R-21",
       "R-21 Classic diesel"
     ],
     "Active": false,
     "RedirectTo": null,
-    "Notes": ""
+    "Notes": "",
+    "ModelIdentityFamilyID": "RNGR-R21",
+    "IdentityDisposition": "distinct_generations"
   },
   {
     "BoatModelID": "RNGR-21-EC",
@@ -3605,12 +3632,13 @@
     "Aliases": [
       "RAN-21-EC",
       "Ranger Tug R-21 EC",
-      "Ranger Tugs R-21",
       "R-21 EC diesel"
     ],
     "Active": false,
     "RedirectTo": null,
-    "Notes": ""
+    "Notes": "",
+    "ModelIdentityFamilyID": "RNGR-R21",
+    "IdentityDisposition": "distinct_generations"
   },
   {
     "BoatModelID": "RNGR-25-CLASSIC",
@@ -3622,12 +3650,13 @@
     "Aliases": [
       "RAN-25-CLASSIC",
       "Ranger Tug R-25 Classic",
-      "Ranger Tugs R-25",
       "R-25 Classic diesel"
     ],
     "Active": false,
     "RedirectTo": null,
-    "Notes": ""
+    "Notes": "",
+    "ModelIdentityFamilyID": "RNGR-R25",
+    "IdentityDisposition": "distinct_generations_propulsion"
   },
   {
     "BoatModelID": "RNGR-25-SC",
@@ -3639,12 +3668,13 @@
     "Aliases": [
       "RAN-25-SC",
       "Ranger Tug R-25 SC",
-      "Ranger Tugs R-25",
       "R-25 SC diesel"
     ],
     "Active": false,
     "RedirectTo": null,
-    "Notes": ""
+    "Notes": "",
+    "ModelIdentityFamilyID": "RNGR-R25",
+    "IdentityDisposition": "distinct_generations_propulsion"
   },
   {
     "BoatModelID": "RNGR-27-OB",
@@ -3656,12 +3686,13 @@
     "Aliases": [
       "RAN-27-OB",
       "Ranger Tugs R-27 NW/LE",
-      "Ranger Tugs R-27",
       "R-27 Single-outboard NW/LE"
     ],
     "Active": false,
     "RedirectTo": null,
-    "Notes": ""
+    "Notes": "",
+    "ModelIdentityFamilyID": "RNGR-R27",
+    "IdentityDisposition": "distinct_generations_propulsion"
   },
   {
     "BoatModelID": "RNGR-27-RT",
@@ -3673,12 +3704,13 @@
     "Aliases": [
       "RAN-27-RT",
       "Ranger Tug R-27 Classic",
-      "Ranger Tugs R-27",
       "R-27 Classic diesel"
     ],
     "Active": false,
     "RedirectTo": null,
-    "Notes": ""
+    "Notes": "",
+    "ModelIdentityFamilyID": "RNGR-R27",
+    "IdentityDisposition": "distinct_generations_propulsion"
   },
   {
     "BoatModelID": "RNGR-29-CB",
@@ -3794,12 +3826,13 @@
     "Variant": "Current outboard",
     "Aliases": [
       "RAN-R-25",
-      "Ranger Tugs R-25",
       "R-25 Current outboard"
     ],
     "Active": true,
     "RedirectTo": null,
-    "Notes": ""
+    "Notes": "",
+    "ModelIdentityFamilyID": "RNGR-R25",
+    "IdentityDisposition": "distinct_generations_propulsion"
   },
   {
     "BoatModelID": "RNGR-R-27",
@@ -3810,12 +3843,13 @@
     "Variant": "Current twin-outboard",
     "Aliases": [
       "RAN-R-27",
-      "Ranger Tugs R-27",
       "R-27 Current twin-outboard"
     ],
     "Active": true,
     "RedirectTo": null,
-    "Notes": ""
+    "Notes": "",
+    "ModelIdentityFamilyID": "RNGR-R27",
+    "IdentityDisposition": "distinct_generations_propulsion"
   },
   {
     "BoatModelID": "RNGR-R-29",
@@ -3881,12 +3915,13 @@
       "ROS-246-LS",
       "Rosborough RF-246 LS Sedan",
       "Rosborough RF-246 Sedan Cruiser Diesel",
-      "Rosborough RF-246",
       "RF-246 Legacy Sedan Cruiser Diesel"
     ],
     "Active": false,
     "RedirectTo": null,
-    "Notes": ""
+    "Notes": "",
+    "ModelIdentityFamilyID": "ROSB-RF246",
+    "IdentityDisposition": "distinct_factory_configurations"
   },
   {
     "BoatModelID": "ROSB-246-WH",
@@ -3899,12 +3934,13 @@
       "ROS-246-WH",
       "Rosborough 246 Custom Wheelhouse",
       "Rosborough RF-246 Wheelhouse Custom",
-      "Rosborough RF-246",
       "RF-246 Custom Wheelhouse"
     ],
     "Active": true,
     "RedirectTo": null,
-    "Notes": ""
+    "Notes": "",
+    "ModelIdentityFamilyID": "ROSB-RF246",
+    "IdentityDisposition": "distinct_factory_configurations"
   },
   {
     "BoatModelID": "SABR-34-EX",
@@ -4036,13 +4072,14 @@
     "Variant": "Generation 1",
     "Aliases": [
       "SEA-340-SU",
-      "Sea Ray 340 Sundancer",
       "Sea Ray 340",
       "340 Sundancer"
     ],
     "Active": false,
     "RedirectTo": null,
-    "Notes": ""
+    "Notes": "",
+    "ModelIdentityFamilyID": "SEAR-340-SU",
+    "IdentityDisposition": "distinct_generations"
   },
   {
     "BoatModelID": "SEAR-340-SU-03",
@@ -4051,12 +4088,12 @@
     "CanonicalName": "Sea Ray 340 Sundancer Generation 3",
     "Model": "340 Sundancer",
     "Variant": "Generation 3",
-    "Aliases": [
-      "Sea Ray 340 Sundancer"
-    ],
+    "Aliases": [],
     "Active": false,
     "RedirectTo": null,
-    "Notes": ""
+    "Notes": "",
+    "ModelIdentityFamilyID": "SEAR-340-SU",
+    "IdentityDisposition": "distinct_generations"
   },
   {
     "BoatModelID": "SEAR-340-SU-99",
@@ -4065,12 +4102,12 @@
     "CanonicalName": "Sea Ray 340 Sundancer Generation 2",
     "Model": "340 Sundancer",
     "Variant": "Generation 2",
-    "Aliases": [
-      "Sea Ray 340 Sundancer"
-    ],
+    "Aliases": [],
     "Active": false,
     "RedirectTo": null,
-    "Notes": ""
+    "Notes": "",
+    "ModelIdentityFamilyID": "SEAR-340-SU",
+    "IdentityDisposition": "distinct_generations"
   },
   {
     "BoatModelID": "SEAR-390-MO",

@@ -1,0 +1,815 @@
+{
+  "release": "6.58.0",
+  "batch": "specification-completion-12",
+  "manufacturers": [
+    "Atlantic",
+    "Atlantic Boat",
+    "Californian",
+    "Gozzard",
+    "Great Harbour"
+  ],
+  "updateCount": 66,
+  "updates": [
+    {
+      "BoatModelID": "ATLB-37-TR",
+      "Field": "LWL_ft",
+      "Old": 34,
+      "New": null,
+      "Basis": "No reviewed Atlantic/Prairie source publishes a defensible LWL; clear the undocumented 34-ft legacy fallback.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/atlantic/37-double-cabin-1982-92",
+        "https://prairieboatworks.org/prairie-36-coastal-cruiser/"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "ATLB-37-TR",
+      "Field": "AirDraft_ft",
+      "Old": 14.5,
+      "New": 19.75,
+      "Basis": "HMY and Prairie owner archives publish 19 ft 9 in mast-up clearance; align the imperial shadow with the already-correct canonical metric value.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/atlantic/37-double-cabin-1982-92",
+        "https://prairieboatworks.org/prairie-36-coastal-cruiser/"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "ATLB-37-TR",
+      "Field": "Headroom_ft",
+      "Old": null,
+      "New": 6.416666666666667,
+      "Basis": "HMY and Prairie documentation publish interior headroom up to 6 ft 5 in; align imperial display shadow.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/atlantic/37-double-cabin-1982-92",
+        "https://prairieboatworks.org/prairie-36-coastal-cruiser/"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "ATLB-37-TR",
+      "Field": "FuelCapacity",
+      "Old": 250,
+      "New": 946.352946,
+      "Basis": "HMY publishes 250 gal fuel for Atlantic 37; US-market Powerboat Guide capacity normalized to litres.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/atlantic/37-double-cabin-1982-92",
+        "https://prairieboatworks.org/prairie-36-coastal-cruiser/"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "ATLB-37-TR",
+      "Field": "FuelCapacityGal",
+      "Old": null,
+      "New": 250,
+      "Basis": "HMY publishes 250 gal fuel for Atlantic 37; US-market Powerboat Guide capacity normalized to litres.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/atlantic/37-double-cabin-1982-92",
+        "https://prairieboatworks.org/prairie-36-coastal-cruiser/"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "ATLB-37-TR",
+      "Field": "FuelCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "HMY publishes 250 gal fuel for Atlantic 37; US-market Powerboat Guide capacity normalized to litres.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/atlantic/37-double-cabin-1982-92",
+        "https://prairieboatworks.org/prairie-36-coastal-cruiser/"
+      ]
+    },
+    {
+      "BoatModelID": "ATLB-37-TR",
+      "Field": "WaterCapacity",
+      "Old": 200,
+      "New": 757.0823568,
+      "Basis": "HMY publishes 200 gal water for Atlantic 37; US-market Powerboat Guide capacity normalized to litres.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/atlantic/37-double-cabin-1982-92",
+        "https://prairieboatworks.org/prairie-36-coastal-cruiser/"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "ATLB-37-TR",
+      "Field": "WaterCapacityGal",
+      "Old": null,
+      "New": 200,
+      "Basis": "HMY publishes 200 gal water for Atlantic 37; US-market Powerboat Guide capacity normalized to litres.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/atlantic/37-double-cabin-1982-92",
+        "https://prairieboatworks.org/prairie-36-coastal-cruiser/"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "ATLB-37-TR",
+      "Field": "WaterCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "HMY publishes 200 gal water for Atlantic 37; US-market Powerboat Guide capacity normalized to litres.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/atlantic/37-double-cabin-1982-92",
+        "https://prairieboatworks.org/prairie-36-coastal-cruiser/"
+      ]
+    },
+    {
+      "BoatModelID": "ATLB-37-TR",
+      "Field": "HoldingCapacity",
+      "Old": 40,
+      "New": 113.56235352,
+      "Basis": "HMY publishes 30 gal waste for Atlantic 37; replaces unsupported 40 capacity and normalizes to litres.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/atlantic/37-double-cabin-1982-92",
+        "https://prairieboatworks.org/prairie-36-coastal-cruiser/"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "ATLB-37-TR",
+      "Field": "HoldingCapacityGal",
+      "Old": null,
+      "New": 30,
+      "Basis": "HMY publishes 30 gal waste for Atlantic 37; replaces unsupported 40 capacity and normalizes to litres.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/atlantic/37-double-cabin-1982-92",
+        "https://prairieboatworks.org/prairie-36-coastal-cruiser/"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "ATLB-37-TR",
+      "Field": "HoldingCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "HMY publishes 30 gal waste for Atlantic 37; replaces unsupported 40 capacity and normalizes to litres.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/atlantic/37-double-cabin-1982-92",
+        "https://prairieboatworks.org/prairie-36-coastal-cruiser/"
+      ]
+    },
+    {
+      "BoatModelID": "ATLB-26-DU",
+      "Field": "LWL_ft",
+      "Old": 24.5,
+      "New": null,
+      "Basis": "Reviewed Atlantic Boat and exact-hull sources do not publish a model-wide LWL; semi-custom finishes make the inherited 24.5-ft fallback unsafe.",
+      "EvidenceRefs": [
+        "https://maineboats.com/print/issue-178/atlantic-boat-finds-niche-building-launches",
+        "https://www.marinesource.com/boat/duffy-hardtop-cruiser-1996-annapolis-253b61341-for-sale",
+        "https://marinesource.com/boat/duffy-26-2001-jamestown-24fab9b09-for-sale"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "ATLB-26-DU",
+      "Field": "AirDraft_ft",
+      "Old": 8.5,
+      "New": null,
+      "Basis": "Air draft depends on semi-custom hardtop/mast/antenna finish; no factory-wide 8.5-ft value was verified.",
+      "EvidenceRefs": [
+        "https://maineboats.com/print/issue-178/atlantic-boat-finds-niche-building-launches",
+        "https://www.marinesource.com/boat/duffy-hardtop-cruiser-1996-annapolis-253b61341-for-sale",
+        "https://marinesource.com/boat/duffy-26-2001-jamestown-24fab9b09-for-sale"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "ATLB-26-DU",
+      "Field": "Displacement_lb",
+      "Old": 6200,
+      "New": null,
+      "Basis": "Exact Duffy 26 finished boats vary materially; a documented 1996 cruiser is 5,000 lb and the inherited 6,200-lb figure lacks model-wide support.",
+      "EvidenceRefs": [
+        "https://maineboats.com/print/issue-178/atlantic-boat-finds-niche-building-launches",
+        "https://www.marinesource.com/boat/duffy-hardtop-cruiser-1996-annapolis-253b61341-for-sale",
+        "https://marinesource.com/boat/duffy-26-2001-jamestown-24fab9b09-for-sale"
+      ],
+      "Unit": "lb"
+    },
+    {
+      "BoatModelID": "CALF-34-TR",
+      "Field": "LWL_ft",
+      "Old": 31.67,
+      "New": null,
+      "Basis": "HMY does not publish LWL for the Californian 34 LRC; clear the unsupported 31.67-ft legacy fallback.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/californian/34-lrc-1977-85",
+        "https://marinesource.com/boat/californian-34-lrc-1982-st-clair-shores-24c8360c9-for-sale"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "CALF-34-TR",
+      "Field": "AirDraft_ft",
+      "Old": 14,
+      "New": 10.666666666666666,
+      "Basis": "HMY publishes 10 ft 8 in clearance; reconcile stale 14-ft imperial shadow.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/californian/34-lrc-1977-85",
+        "https://marinesource.com/boat/californian-34-lrc-1982-st-clair-shores-24c8360c9-for-sale"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "CALF-34-TR",
+      "Field": "FuelCapacity",
+      "Old": 250,
+      "New": 946.352946,
+      "Basis": "HMY model guide publishes 250 gal fuel; normalized as US gallons to canonical litres.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/californian/34-lrc-1977-85",
+        "https://marinesource.com/boat/californian-34-lrc-1982-st-clair-shores-24c8360c9-for-sale"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "CALF-34-TR",
+      "Field": "FuelCapacityUnitStatus",
+      "Old": "legacy_gallon_basis_unverified",
+      "New": "canonical_litres",
+      "Basis": "HMY model guide publishes 250 gal fuel; normalized as US gallons to canonical litres.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/californian/34-lrc-1977-85",
+        "https://marinesource.com/boat/californian-34-lrc-1982-st-clair-shores-24c8360c9-for-sale"
+      ]
+    },
+    {
+      "BoatModelID": "CALF-34-TR",
+      "Field": "WaterCapacity",
+      "Old": 75,
+      "New": 283.90588379999997,
+      "Basis": "HMY model guide publishes 75 gal water; normalized as US gallons to canonical litres.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/californian/34-lrc-1977-85",
+        "https://marinesource.com/boat/californian-34-lrc-1982-st-clair-shores-24c8360c9-for-sale"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "CALF-34-TR",
+      "Field": "WaterCapacityUnitStatus",
+      "Old": "legacy_gallon_basis_unverified",
+      "New": "canonical_litres",
+      "Basis": "HMY model guide publishes 75 gal water; normalized as US gallons to canonical litres.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/californian/34-lrc-1977-85",
+        "https://marinesource.com/boat/californian-34-lrc-1982-st-clair-shores-24c8360c9-for-sale"
+      ]
+    },
+    {
+      "BoatModelID": "CALF-34-TR",
+      "Field": "HoldingCapacity",
+      "Old": 30,
+      "New": 113.56235352,
+      "Basis": "HMY model guide publishes 30 gal waste; normalized as US gallons to canonical litres.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/californian/34-lrc-1977-85",
+        "https://marinesource.com/boat/californian-34-lrc-1982-st-clair-shores-24c8360c9-for-sale"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "CALF-34-TR",
+      "Field": "HoldingCapacityGal",
+      "Old": null,
+      "New": 30,
+      "Basis": "HMY model guide publishes 30 gal waste; normalized as US gallons to canonical litres.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/californian/34-lrc-1977-85",
+        "https://marinesource.com/boat/californian-34-lrc-1982-st-clair-shores-24c8360c9-for-sale"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "CALF-34-TR",
+      "Field": "HoldingCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "HMY model guide publishes 30 gal waste; normalized as US gallons to canonical litres.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/californian/34-lrc-1977-85",
+        "https://marinesource.com/boat/californian-34-lrc-1982-st-clair-shores-24c8360c9-for-sale"
+      ]
+    },
+    {
+      "BoatModelID": "CALF-38-TR",
+      "Field": "LWL_ft",
+      "Old": 35.42,
+      "New": 36.5,
+      "Basis": "HMY publishes 36 ft 6 in LWL; reconcile stale 35.42-ft imperial shadow with canonical metric value.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/californian/38-lrc-sedan-1978-85"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "CALF-38-TR",
+      "Field": "AirDraft_ft",
+      "Old": 14.5,
+      "New": null,
+      "Basis": "HMY model guide does not publish clearance for the 38 LRC; clear unsupported 14.5-ft fallback.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/californian/38-lrc-sedan-1978-85"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "CALF-38-TR",
+      "Field": "FuelCapacity",
+      "Old": 400,
+      "New": 1514.1647136,
+      "Basis": "HMY publishes 400 gal fuel; normalized as US gallons to canonical litres.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/californian/38-lrc-sedan-1978-85"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "CALF-38-TR",
+      "Field": "FuelCapacityUnitStatus",
+      "Old": "legacy_gallon_basis_unverified",
+      "New": "canonical_litres",
+      "Basis": "HMY publishes 400 gal fuel; normalized as US gallons to canonical litres.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/californian/38-lrc-sedan-1978-85"
+      ]
+    },
+    {
+      "BoatModelID": "CALF-38-TR",
+      "Field": "WaterCapacity",
+      "Old": 100,
+      "New": 378.5411784,
+      "Basis": "HMY publishes 100 gal water; normalized as US gallons to canonical litres.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/californian/38-lrc-sedan-1978-85"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "CALF-38-TR",
+      "Field": "WaterCapacityUnitStatus",
+      "Old": "legacy_gallon_basis_unverified",
+      "New": "canonical_litres",
+      "Basis": "HMY publishes 100 gal water; normalized as US gallons to canonical litres.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/californian/38-lrc-sedan-1978-85"
+      ]
+    },
+    {
+      "BoatModelID": "CALF-38-TR",
+      "Field": "HoldingCapacity",
+      "Old": 25,
+      "New": 94.6352946,
+      "Basis": "HMY publishes 25 gal waste; normalized as US gallons to canonical litres.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/californian/38-lrc-sedan-1978-85"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "CALF-38-TR",
+      "Field": "HoldingCapacityGal",
+      "Old": null,
+      "New": 25,
+      "Basis": "HMY publishes 25 gal waste; normalized as US gallons to canonical litres.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/californian/38-lrc-sedan-1978-85"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "CALF-38-TR",
+      "Field": "HoldingCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "HMY publishes 25 gal waste; normalized as US gallons to canonical litres.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/californian/38-lrc-sedan-1978-85"
+      ]
+    },
+    {
+      "BoatModelID": "GOZZ-40-PI",
+      "Field": "LWL_ft",
+      "Old": 36.5,
+      "New": null,
+      "Basis": "HMY explicitly lists LWL as NA; secondary values conflict, so clear inherited 36.5-ft fallback and preserve Unknown.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/pilgrim/40-1983-89",
+        "https://soundingsonline.com/boats/pilgrim-40/",
+        "https://paperzz.com/doc/6871184/pilgrim-40---gozzard-yachts"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "GOZZ-40-PI",
+      "Field": "AirDraft",
+      "Old": null,
+      "New": 6.7056,
+      "Basis": "HMY publishes 22 ft clearance for the Pilgrim 40.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/pilgrim/40-1983-89",
+        "https://soundingsonline.com/boats/pilgrim-40/",
+        "https://paperzz.com/doc/6871184/pilgrim-40---gozzard-yachts"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "GOZZ-40-PI",
+      "Field": "AirDraft_ft",
+      "Old": 13.5,
+      "New": 22,
+      "Basis": "HMY publishes 22 ft clearance for the Pilgrim 40.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/pilgrim/40-1983-89",
+        "https://soundingsonline.com/boats/pilgrim-40/",
+        "https://paperzz.com/doc/6871184/pilgrim-40---gozzard-yachts"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "GOZZ-40-PI",
+      "Field": "Headroom",
+      "Old": null,
+      "New": 1.9304,
+      "Basis": "HMY publishes 6 ft 4 in headroom.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/pilgrim/40-1983-89",
+        "https://soundingsonline.com/boats/pilgrim-40/",
+        "https://paperzz.com/doc/6871184/pilgrim-40---gozzard-yachts"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "GOZZ-40-PI",
+      "Field": "Headroom_ft",
+      "Old": null,
+      "New": 6.333333333333333,
+      "Basis": "HMY publishes 6 ft 4 in headroom.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/pilgrim/40-1983-89",
+        "https://soundingsonline.com/boats/pilgrim-40/",
+        "https://paperzz.com/doc/6871184/pilgrim-40---gozzard-yachts"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "GOZZ-40-PI",
+      "Field": "FuelCapacityGal",
+      "Old": null,
+      "New": 142,
+      "Basis": "HMY publishes 142 gal fuel; canonical litres already approximated this value and provenance is now explicit.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/pilgrim/40-1983-89",
+        "https://soundingsonline.com/boats/pilgrim-40/",
+        "https://paperzz.com/doc/6871184/pilgrim-40---gozzard-yachts"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "GOZZ-40-PI",
+      "Field": "FuelCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "HMY publishes 142 gal fuel; canonical litres already approximated this value and provenance is now explicit.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/pilgrim/40-1983-89",
+        "https://soundingsonline.com/boats/pilgrim-40/",
+        "https://paperzz.com/doc/6871184/pilgrim-40---gozzard-yachts"
+      ]
+    },
+    {
+      "BoatModelID": "GOZZ-40-PI",
+      "Field": "WaterCapacityGal",
+      "Old": null,
+      "New": 240,
+      "Basis": "HMY publishes 240 gal water; canonical litres already approximated this value and provenance is now explicit.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/pilgrim/40-1983-89",
+        "https://soundingsonline.com/boats/pilgrim-40/",
+        "https://paperzz.com/doc/6871184/pilgrim-40---gozzard-yachts"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "GOZZ-40-PI",
+      "Field": "WaterCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "HMY publishes 240 gal water; canonical litres already approximated this value and provenance is now explicit.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/pilgrim/40-1983-89",
+        "https://soundingsonline.com/boats/pilgrim-40/",
+        "https://paperzz.com/doc/6871184/pilgrim-40---gozzard-yachts"
+      ]
+    },
+    {
+      "BoatModelID": "GOZZ-40-PI",
+      "Field": "HoldingCapacity",
+      "Old": 70,
+      "New": 378.5411784,
+      "Basis": "Gozzard/Pilgrim documentation describes a standard 100-gal waste tank; normalize to canonical litres.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/pilgrim/40-1983-89",
+        "https://soundingsonline.com/boats/pilgrim-40/",
+        "https://paperzz.com/doc/6871184/pilgrim-40---gozzard-yachts"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "GOZZ-40-PI",
+      "Field": "HoldingCapacityGal",
+      "Old": null,
+      "New": 100,
+      "Basis": "Gozzard/Pilgrim documentation describes a standard 100-gal waste tank; normalize to canonical litres.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/pilgrim/40-1983-89",
+        "https://soundingsonline.com/boats/pilgrim-40/",
+        "https://paperzz.com/doc/6871184/pilgrim-40---gozzard-yachts"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "GOZZ-40-PI",
+      "Field": "HoldingCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "Gozzard/Pilgrim documentation describes a standard 100-gal waste tank; normalize to canonical litres.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/pilgrim/40-1983-89",
+        "https://soundingsonline.com/boats/pilgrim-40/",
+        "https://paperzz.com/doc/6871184/pilgrim-40---gozzard-yachts"
+      ]
+    },
+    {
+      "BoatModelID": "GRTH-GH37",
+      "Field": "LWL_ft",
+      "Old": 35.5,
+      "New": 36.083333333333336,
+      "Basis": "Great Harbour documentation uses 36 ft 1 in LWL; reconcile stale 35.5-ft imperial shadow.",
+      "EvidenceRefs": [
+        "https://www.greatharbourtrawlers.com/gh37-specifications-and-layout.html",
+        "https://fyiyachts.com/yacht-listing/2005-great-harbour-gh37-2/",
+        "https://marinesource.com/boat/great-harbour-gh37-2000-geneva-a91654cb-for-sale"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "GRTH-GH37",
+      "Field": "AirDraft_ft",
+      "Old": 13.5,
+      "New": null,
+      "Basis": "Documented lowered configurations range roughly 13 ft 6 in to 15 ft 6 in; clear fixed 13.5-ft fallback and preserve configuration dependence.",
+      "EvidenceRefs": [
+        "https://www.greatharbourtrawlers.com/gh37-specifications-and-layout.html",
+        "https://fyiyachts.com/yacht-listing/2005-great-harbour-gh37-2/",
+        "https://marinesource.com/boat/great-harbour-gh37-2000-geneva-a91654cb-for-sale"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "GRTH-GH37",
+      "Field": "FuelCapacity",
+      "Old": 500,
+      "New": 1892.705892,
+      "Basis": "Factory specifies 500 gal standard fuel with 750 gal optional; store standard capacity in canonical litres and retain US-gallon provenance.",
+      "EvidenceRefs": [
+        "https://www.greatharbourtrawlers.com/gh37-specifications-and-layout.html",
+        "https://fyiyachts.com/yacht-listing/2005-great-harbour-gh37-2/",
+        "https://marinesource.com/boat/great-harbour-gh37-2000-geneva-a91654cb-for-sale"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "GRTH-GH37",
+      "Field": "FuelCapacityGal",
+      "Old": null,
+      "New": 500,
+      "Basis": "Factory specifies 500 gal standard fuel with 750 gal optional; store standard capacity in canonical litres and retain US-gallon provenance.",
+      "EvidenceRefs": [
+        "https://www.greatharbourtrawlers.com/gh37-specifications-and-layout.html",
+        "https://fyiyachts.com/yacht-listing/2005-great-harbour-gh37-2/",
+        "https://marinesource.com/boat/great-harbour-gh37-2000-geneva-a91654cb-for-sale"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "GRTH-GH37",
+      "Field": "FuelCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "Factory specifies 500 gal standard fuel with 750 gal optional; store standard capacity in canonical litres and retain US-gallon provenance.",
+      "EvidenceRefs": [
+        "https://www.greatharbourtrawlers.com/gh37-specifications-and-layout.html",
+        "https://fyiyachts.com/yacht-listing/2005-great-harbour-gh37-2/",
+        "https://marinesource.com/boat/great-harbour-gh37-2000-geneva-a91654cb-for-sale"
+      ]
+    },
+    {
+      "BoatModelID": "GRTH-GH37",
+      "Field": "WaterCapacityGal",
+      "Old": null,
+      "New": 500,
+      "Basis": "Factory specifies two 250-gal water tanks, 500 gal total; normalize to canonical litres.",
+      "EvidenceRefs": [
+        "https://www.greatharbourtrawlers.com/gh37-specifications-and-layout.html",
+        "https://fyiyachts.com/yacht-listing/2005-great-harbour-gh37-2/",
+        "https://marinesource.com/boat/great-harbour-gh37-2000-geneva-a91654cb-for-sale"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "GRTH-GH37",
+      "Field": "WaterCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "Factory specifies two 250-gal water tanks, 500 gal total; normalize to canonical litres.",
+      "EvidenceRefs": [
+        "https://www.greatharbourtrawlers.com/gh37-specifications-and-layout.html",
+        "https://fyiyachts.com/yacht-listing/2005-great-harbour-gh37-2/",
+        "https://marinesource.com/boat/great-harbour-gh37-2000-geneva-a91654cb-for-sale"
+      ]
+    },
+    {
+      "BoatModelID": "GRTH-GH37",
+      "Field": "HoldingCapacity",
+      "Old": 100,
+      "New": 529.95764976,
+      "Basis": "Factory specifies 140-gal holding tank; replaces unsupported 100 value and normalizes to canonical litres.",
+      "EvidenceRefs": [
+        "https://www.greatharbourtrawlers.com/gh37-specifications-and-layout.html",
+        "https://fyiyachts.com/yacht-listing/2005-great-harbour-gh37-2/",
+        "https://marinesource.com/boat/great-harbour-gh37-2000-geneva-a91654cb-for-sale"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "GRTH-GH37",
+      "Field": "HoldingCapacityGal",
+      "Old": null,
+      "New": 140,
+      "Basis": "Factory specifies 140-gal holding tank; replaces unsupported 100 value and normalizes to canonical litres.",
+      "EvidenceRefs": [
+        "https://www.greatharbourtrawlers.com/gh37-specifications-and-layout.html",
+        "https://fyiyachts.com/yacht-listing/2005-great-harbour-gh37-2/",
+        "https://marinesource.com/boat/great-harbour-gh37-2000-geneva-a91654cb-for-sale"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "GRTH-GH37",
+      "Field": "HoldingCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "Factory specifies 140-gal holding tank; replaces unsupported 100 value and normalizes to canonical litres.",
+      "EvidenceRefs": [
+        "https://www.greatharbourtrawlers.com/gh37-specifications-and-layout.html",
+        "https://fyiyachts.com/yacht-listing/2005-great-harbour-gh37-2/",
+        "https://marinesource.com/boat/great-harbour-gh37-2000-geneva-a91654cb-for-sale"
+      ]
+    },
+    {
+      "BoatModelID": "GRTH-N37",
+      "Field": "LWL_ft",
+      "Old": 35.5,
+      "New": 36.083333333333336,
+      "Basis": "Factory brochure publishes 36 ft 1 in LWL; reconcile stale 35.5-ft imperial shadow.",
+      "EvidenceRefs": [
+        "https://www.greatharbourtrawlers.com/n37-specifications-and-layout.html",
+        "https://www.greatharbourtrawlers.com/uploads/4/9/4/8/49488989/n37slick.pdf",
+        "https://marinesource.com/boats-for-sale/listing_print.cfm?listingnmb=100849003"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "GRTH-N37",
+      "Field": "AirDraft_ft",
+      "Old": 14.5,
+      "New": null,
+      "Basis": "N37 lowered air draft varies by flybridge/arch/bimini/antenna configuration (about 13 ft 10 in to 14 ft 8 in in reviewed examples); clear fixed fallback.",
+      "EvidenceRefs": [
+        "https://www.greatharbourtrawlers.com/n37-specifications-and-layout.html",
+        "https://www.greatharbourtrawlers.com/uploads/4/9/4/8/49488989/n37slick.pdf",
+        "https://marinesource.com/boats-for-sale/listing_print.cfm?listingnmb=100849003"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "GRTH-N37",
+      "Field": "Displacement",
+      "Old": 21772.4,
+      "New": 21318.84139,
+      "Basis": "Factory N37 brochure publishes 47,000 lb displacement; align canonical metric value with primary-source figure.",
+      "EvidenceRefs": [
+        "https://www.greatharbourtrawlers.com/n37-specifications-and-layout.html",
+        "https://www.greatharbourtrawlers.com/uploads/4/9/4/8/49488989/n37slick.pdf",
+        "https://marinesource.com/boats-for-sale/listing_print.cfm?listingnmb=100849003"
+      ],
+      "Unit": "kg"
+    },
+    {
+      "BoatModelID": "GRTH-N37",
+      "Field": "FuelCapacity",
+      "Old": 500,
+      "New": 1892.705892,
+      "Basis": "Factory specifies 500-gal integral fuel tank; normalize to canonical litres.",
+      "EvidenceRefs": [
+        "https://www.greatharbourtrawlers.com/n37-specifications-and-layout.html",
+        "https://www.greatharbourtrawlers.com/uploads/4/9/4/8/49488989/n37slick.pdf",
+        "https://marinesource.com/boats-for-sale/listing_print.cfm?listingnmb=100849003"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "GRTH-N37",
+      "Field": "FuelCapacityGal",
+      "Old": null,
+      "New": 500,
+      "Basis": "Factory specifies 500-gal integral fuel tank; normalize to canonical litres.",
+      "EvidenceRefs": [
+        "https://www.greatharbourtrawlers.com/n37-specifications-and-layout.html",
+        "https://www.greatharbourtrawlers.com/uploads/4/9/4/8/49488989/n37slick.pdf",
+        "https://marinesource.com/boats-for-sale/listing_print.cfm?listingnmb=100849003"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "GRTH-N37",
+      "Field": "FuelCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "Factory specifies 500-gal integral fuel tank; normalize to canonical litres.",
+      "EvidenceRefs": [
+        "https://www.greatharbourtrawlers.com/n37-specifications-and-layout.html",
+        "https://www.greatharbourtrawlers.com/uploads/4/9/4/8/49488989/n37slick.pdf",
+        "https://marinesource.com/boats-for-sale/listing_print.cfm?listingnmb=100849003"
+      ]
+    },
+    {
+      "BoatModelID": "GRTH-N37",
+      "Field": "WaterCapacityGal",
+      "Old": null,
+      "New": 300,
+      "Basis": "Factory specifies two 150-gal water tanks, 300 gal total; normalize to canonical litres.",
+      "EvidenceRefs": [
+        "https://www.greatharbourtrawlers.com/n37-specifications-and-layout.html",
+        "https://www.greatharbourtrawlers.com/uploads/4/9/4/8/49488989/n37slick.pdf",
+        "https://marinesource.com/boats-for-sale/listing_print.cfm?listingnmb=100849003"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "GRTH-N37",
+      "Field": "WaterCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "Factory specifies two 150-gal water tanks, 300 gal total; normalize to canonical litres.",
+      "EvidenceRefs": [
+        "https://www.greatharbourtrawlers.com/n37-specifications-and-layout.html",
+        "https://www.greatharbourtrawlers.com/uploads/4/9/4/8/49488989/n37slick.pdf",
+        "https://marinesource.com/boats-for-sale/listing_print.cfm?listingnmb=100849003"
+      ]
+    },
+    {
+      "BoatModelID": "GRTH-N37",
+      "Field": "HoldingCapacity",
+      "Old": 100,
+      "New": 378.5411784,
+      "Basis": "Factory specifies 100-gal holding tank; normalize to canonical litres.",
+      "EvidenceRefs": [
+        "https://www.greatharbourtrawlers.com/n37-specifications-and-layout.html",
+        "https://www.greatharbourtrawlers.com/uploads/4/9/4/8/49488989/n37slick.pdf",
+        "https://marinesource.com/boats-for-sale/listing_print.cfm?listingnmb=100849003"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "GRTH-N37",
+      "Field": "HoldingCapacityGal",
+      "Old": null,
+      "New": 100,
+      "Basis": "Factory specifies 100-gal holding tank; normalize to canonical litres.",
+      "EvidenceRefs": [
+        "https://www.greatharbourtrawlers.com/n37-specifications-and-layout.html",
+        "https://www.greatharbourtrawlers.com/uploads/4/9/4/8/49488989/n37slick.pdf",
+        "https://marinesource.com/boats-for-sale/listing_print.cfm?listingnmb=100849003"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "GRTH-N37",
+      "Field": "HoldingCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "Factory specifies 100-gal holding tank; normalize to canonical litres.",
+      "EvidenceRefs": [
+        "https://www.greatharbourtrawlers.com/n37-specifications-and-layout.html",
+        "https://www.greatharbourtrawlers.com/uploads/4/9/4/8/49488989/n37slick.pdf",
+        "https://marinesource.com/boats-for-sale/listing_print.cfm?listingnmb=100849003"
+      ]
+    }
+  ]
+}

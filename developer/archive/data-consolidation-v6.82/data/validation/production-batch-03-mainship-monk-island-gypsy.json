@@ -1,0 +1,41 @@
+{
+  "batchId": "production-03-mainship-monk-island-gypsy",
+  "release": "6.33.0",
+  "schemaVersion": "1.4",
+  "status": "complete-with-production-phase-and-lineage-handling",
+  "manufacturers": [
+    "Mainship",
+    "Monk",
+    "Island Gypsy"
+  ],
+  "modelCount": 16,
+  "modelIds": [
+    "ISGY-32-EU",
+    "ISGY-32-FI",
+    "ISGY-32-SE",
+    "ISGY-36",
+    "ISGY-36EURO",
+    "ISGY-40",
+    "ISGY-44",
+    "MNSH-30-PI",
+    "MNSH-34-MK2",
+    "MNSH-34-MK1",
+    "MNSH-350-TR",
+    "MNSH-390-TR",
+    "MNSH-400-TR",
+    "MONK-36-TR",
+    "MNSH-34-MK3",
+    "MNSH-34-TR"
+  ],
+  "evidenceAssertionCount": 111,
+  "importantFindings": [
+    "Mainship 30 Pilot received a real 2003 Series II production phase because keel, draft, propulsion and interior changed without a new base model identity.",
+    "Mainship 34 Diesel Cruiser, 34 II and 34 III remain separate named canonical models/variants; they are not collapsed into production phases.",
+    "Mainship 350 and 390 are the same continuing trawler model line under a 1999 rename; B-Atlas keeps both searchable records but explicitly links their continuity.",
+    "Mainship 400 Trawler, 41 Expedition and 414 Trawler are explicit renames of one model line and are represented by naming production phases/aliases.",
+    "Monk 36 remains one canonical model across the Taiwan-to-Nova Scotia builder transition; builder, exterior teak, aft-head layout and power changes are represented as production phases.",
+    "Island Gypsy 32 Fisherman shares the Sedan hull mold but is a distinct named model/variant with different mission, weight and power.",
+    "Island Gypsy 36 Classic is explicitly associated with the 36 Quad Cabin alias and retains single/twin engine ambiguity.",
+    "Island Gypsy 44 Motor Cruiser legacy aft-cabin classification was corrected: published layout places the master amidships."
+  ]
+}

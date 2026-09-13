@@ -1,0 +1,43 @@
+{
+  "batchId": "production-02-grand-banks-marine-trader-chb",
+  "release": "6.31.0",
+  "schemaVersion": "1.3",
+  "status": "complete-with-lineage-and-era-uncertainty",
+  "manufacturers": [
+    "Grand Banks",
+    "Marine Trader",
+    "CHB"
+  ],
+  "modelCount": 18,
+  "modelIds": [
+    "CHBB-34-SE",
+    "CHBB-34-TC",
+    "CHBY-34-SE",
+    "CHBY-35",
+    "CHBY-40",
+    "GRBK-32-CL",
+    "GRBK-36-CL",
+    "GRBK-36-EU",
+    "GRBK-42-CL",
+    "GRBK-46-CL",
+    "GRBK-49-MY",
+    "MTRA-34-EU",
+    "MTRA-34-SE",
+    "MRTR-36-DO",
+    "MRTR-38-SD",
+    "MRTR-38-SD2",
+    "MRTR-40-DC",
+    "MRTR-44-TC"
+  ],
+  "evidenceAssertionCount": 85,
+  "importantFindings": [
+    "Grand Banks 36 Classic and 42 Classic changed hull dimensions during production; one universal LOA/Beam would be misleading.",
+    "Grand Banks 32 and 36 Classic span wood-to-fiberglass construction transitions; material is preserved as era-specific evidence.",
+    "Grand Banks 46 production-year references conflict between HMY and Grand Banks' own heritage/pre-owned material; current public range remains unchanged pending reconciliation.",
+    "Marine Trader 34 Europa has real marketplace usage but weak factory-lineage documentation; it remains a separately tracked but identity-unresolved variant.",
+    "Marine Trader 38 Sundeck appears to mix at least two generations under one model name; dimensions are intentionally not canonicalized until split.",
+    "Marine Trader 40 Double Cabin has a 1985/1986 production-end discrepancy in the same reference.",
+    "CHB 34 / Marine Trader 34 lineage overlap is real; layout/importer records are retained separately pending a dedicated lineage consolidation pass.",
+    "CHB 40 remains insufficiently documented for aggressive canonicalization."
+  ]
+}

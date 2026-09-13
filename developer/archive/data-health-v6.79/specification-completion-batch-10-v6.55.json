@@ -1,0 +1,893 @@
+{
+  "release": "6.55.0",
+  "batch": "specification-completion-10",
+  "manufacturers": [
+    "North Pacific",
+    "Fortier",
+    "BHM",
+    "Seahorse",
+    "Nord Star"
+  ],
+  "updateCount": 79,
+  "updates": [
+    {
+      "BoatModelID": "NPAC-28",
+      "Field": "LWL",
+      "Old": null,
+      "New": 8.077200000000001,
+      "Basis": "Factory-hosted PassageMaker test publishes 26 ft 6 in LWL.",
+      "EvidenceRefs": [
+        "https://northpacificyachts.com/wp-content/uploads/2024/11/NPY-28-Passagemaker-Mar-2010.pdf",
+        "https://northpacificyachts.com/wp-content/uploads/2024/11/NPY-28-Pacific-Yachting-Jan-2010.pdf"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "NPAC-28",
+      "Field": "AirDraft",
+      "Old": null,
+      "New": 3.5814000000000004,
+      "Basis": "Factory-hosted PassageMaker test publishes 11 ft 9 in bridge clearance.",
+      "EvidenceRefs": [
+        "https://northpacificyachts.com/wp-content/uploads/2024/11/NPY-28-Passagemaker-Mar-2010.pdf",
+        "https://northpacificyachts.com/wp-content/uploads/2024/11/NPY-28-Pacific-Yachting-Jan-2010.pdf"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "NPAC-28",
+      "Field": "KeelConfigurationCode",
+      "Old": "keel.protective",
+      "New": "keel.full_long",
+      "Basis": "PassageMaker describes a solid full-length keel protecting the running gear.",
+      "EvidenceRefs": [
+        "https://northpacificyachts.com/wp-content/uploads/2024/11/NPY-28-Passagemaker-Mar-2010.pdf",
+        "https://northpacificyachts.com/wp-content/uploads/2024/11/NPY-28-Pacific-Yachting-Jan-2010.pdf"
+      ]
+    },
+    {
+      "BoatModelID": "NPAC-28",
+      "Field": "FuelCapacity",
+      "Old": 100,
+      "New": 378.54,
+      "Basis": "PassageMaker explicitly labels fuel capacity as 100 U.S. gal; canonical storage is litres.",
+      "EvidenceRefs": [
+        "https://northpacificyachts.com/wp-content/uploads/2024/11/NPY-28-Passagemaker-Mar-2010.pdf",
+        "https://northpacificyachts.com/wp-content/uploads/2024/11/NPY-28-Pacific-Yachting-Jan-2010.pdf"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "NPAC-28",
+      "Field": "FuelCapacityUnitStatus",
+      "Old": "legacy_gallon_basis_unverified",
+      "New": "canonical_litres",
+      "Basis": "Fuel source explicitly uses U.S. gallons and is converted to canonical litres.",
+      "EvidenceRefs": [
+        "https://northpacificyachts.com/wp-content/uploads/2024/11/NPY-28-Passagemaker-Mar-2010.pdf",
+        "https://northpacificyachts.com/wp-content/uploads/2024/11/NPY-28-Pacific-Yachting-Jan-2010.pdf"
+      ]
+    },
+    {
+      "BoatModelID": "NPAC-28",
+      "Field": "WaterCapacity",
+      "Old": 50,
+      "New": 189.27,
+      "Basis": "PassageMaker explicitly labels water capacity as 50 U.S. gal; canonical storage is litres.",
+      "EvidenceRefs": [
+        "https://northpacificyachts.com/wp-content/uploads/2024/11/NPY-28-Passagemaker-Mar-2010.pdf",
+        "https://northpacificyachts.com/wp-content/uploads/2024/11/NPY-28-Pacific-Yachting-Jan-2010.pdf"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "NPAC-28",
+      "Field": "WaterCapacityUnitStatus",
+      "Old": "legacy_gallon_basis_unverified",
+      "New": "canonical_litres",
+      "Basis": "Water source explicitly uses U.S. gallons and is converted to canonical litres.",
+      "EvidenceRefs": [
+        "https://northpacificyachts.com/wp-content/uploads/2024/11/NPY-28-Passagemaker-Mar-2010.pdf",
+        "https://northpacificyachts.com/wp-content/uploads/2024/11/NPY-28-Pacific-Yachting-Jan-2010.pdf"
+      ]
+    },
+    {
+      "BoatModelID": "NPAC-28",
+      "Field": "HoldingCapacity",
+      "Old": 25,
+      "New": null,
+      "Basis": "Two period factory-hosted tests disagree (20 vs 25 gal); model-wide holding capacity is left unresolved.",
+      "EvidenceRefs": [
+        "https://northpacificyachts.com/wp-content/uploads/2024/11/NPY-28-Passagemaker-Mar-2010.pdf",
+        "https://northpacificyachts.com/wp-content/uploads/2024/11/NPY-28-Pacific-Yachting-Jan-2010.pdf"
+      ]
+    },
+    {
+      "BoatModelID": "NPAC-28",
+      "Field": "HoldingCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "unknown",
+      "Basis": "Conflicting period source capacities; no canonical capacity forced.",
+      "EvidenceRefs": [
+        "https://northpacificyachts.com/wp-content/uploads/2024/11/NPY-28-Passagemaker-Mar-2010.pdf",
+        "https://northpacificyachts.com/wp-content/uploads/2024/11/NPY-28-Pacific-Yachting-Jan-2010.pdf"
+      ]
+    },
+    {
+      "BoatModelID": "NPAC-28",
+      "Field": "Draft",
+      "Old": 0.7366,
+      "New": null,
+      "Basis": "Factory-hosted period tests conflict on draft (2 ft versus a 0.6 m / 2 ft 5 in internally inconsistent figure), so Plan-critical draft is left unresolved.",
+      "EvidenceRefs": [
+        "https://northpacificyachts.com/wp-content/uploads/2024/11/NPY-28-Passagemaker-Mar-2010.pdf",
+        "https://northpacificyachts.com/wp-content/uploads/2024/11/NPY-28-Pacific-Yachting-Jan-2010.pdf"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "NPAC-28",
+      "Field": "Draft_ft",
+      "Old": 2.42,
+      "New": null,
+      "Basis": "Legacy draft shadow cleared because period sources conflict.",
+      "EvidenceRefs": [
+        "https://northpacificyachts.com/wp-content/uploads/2024/11/NPY-28-Passagemaker-Mar-2010.pdf",
+        "https://northpacificyachts.com/wp-content/uploads/2024/11/NPY-28-Pacific-Yachting-Jan-2010.pdf"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "NPAC-28",
+      "Field": "ResearchNotes",
+      "Old": "First NP28 hull delivered in 2009. Period North Pacific-hosted tests report approximately 27'10\" hull length and 31' overall including appendages, 8'6\" beam, 2'–2'5\" draft, 8,000–8,400 lb dry, 100 gal fuel, 50 gal water and single 130–150 hp Cummins QSD. B-Atlas uses the 31 ft overall cruising dimension. A reliable production end year was not established and therefore remains unknown.",
+      "New": "First NP28 hull delivered in 2009. Period North Pacific-hosted tests report approximately 27'10\" hull length and 31' overall including appendages, 8'6\" beam, 2'–2'5\" draft, 8,000–8,400 lb dry, 100 gal fuel, 50 gal water and single 130–150 hp Cummins QSD. B-Atlas uses the 31 ft overall cruising dimension. A reliable production end year was not established and therefore remains unknown. Batch 10: published LWL and bridge clearance promoted. Draft is now explicitly unresolved because two factory-hosted period tests conflict. Fuel/water are verified U.S.-gallon values; holding capacity conflicts at 20 versus 25 gal.",
+      "Basis": "Batch 10 research note added.",
+      "EvidenceRefs": []
+    },
+    {
+      "BoatModelID": "NPAC-38",
+      "Field": "LWL_ft",
+      "Old": 35.8,
+      "New": null,
+      "Basis": "Reviewed North Pacific/Canadian Yachting material does not publish an LWL; unsupported legacy fallback cleared.",
+      "EvidenceRefs": [
+        "https://northpacificyachts.com/wp-content/uploads/2024/11/NPY-38-CYW-May-2013.pdf",
+        "https://northpacificyachts.com/news/"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "NPAC-38",
+      "Field": "AirDraft_ft",
+      "Old": 13.5,
+      "New": null,
+      "Basis": "Reviewed North Pacific/Canadian Yachting material does not publish bridge clearance; unsupported legacy fallback cleared.",
+      "EvidenceRefs": [
+        "https://northpacificyachts.com/wp-content/uploads/2024/11/NPY-38-CYW-May-2013.pdf",
+        "https://northpacificyachts.com/news/"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "NPAC-38",
+      "Field": "WaterCapacity",
+      "Old": 200,
+      "New": null,
+      "Basis": "Period factory test lists 200 gal while a documented 2011 hull lists 300 gal; semi-custom tankage varies and no model-wide value is forced.",
+      "EvidenceRefs": [
+        "https://northpacificyachts.com/wp-content/uploads/2024/11/NPY-38-CYW-May-2013.pdf",
+        "https://northpacificyachts.com/news/",
+        "https://yachtr.com/42-north_pacific-2011-2841159/"
+      ]
+    },
+    {
+      "BoatModelID": "NPAC-38",
+      "Field": "WaterCapacityGal",
+      "Old": 200,
+      "New": null,
+      "Basis": "Conflicting model-era water capacity values; imperial shadow cleared.",
+      "EvidenceRefs": [
+        "https://northpacificyachts.com/wp-content/uploads/2024/11/NPY-38-CYW-May-2013.pdf",
+        "https://northpacificyachts.com/news/",
+        "https://yachtr.com/42-north_pacific-2011-2841159/"
+      ],
+      "Unit": "gal"
+    },
+    {
+      "BoatModelID": "NPAC-38",
+      "Field": "WaterCapacityUnitStatus",
+      "Old": "legacy_gallon_basis_unverified",
+      "New": "unknown",
+      "Basis": "Water capacity is configuration/hull-dependent in reviewed evidence.",
+      "EvidenceRefs": [
+        "https://northpacificyachts.com/wp-content/uploads/2024/11/NPY-38-CYW-May-2013.pdf",
+        "https://northpacificyachts.com/news/",
+        "https://yachtr.com/42-north_pacific-2011-2841159/"
+      ]
+    },
+    {
+      "BoatModelID": "NPAC-38",
+      "Field": "ResearchNotes",
+      "Old": "First North American NP38 Sedan delivered in January 2010. Canadian Yachting's 2013 test reports 41'6\" LOA, 12'9\" beam, 4' draft, 24,000 lb, 350 gal fuel, 200 gal water and single Cummins QSB. Later brokerage records sometimes report 42'6\" overall, likely reflecting appendage measurement; B-Atlas retains the contemporary published 41'6\" specification. Production end year remains unforced.",
+      "New": "First North American NP38 Sedan delivered in January 2010. Canadian Yachting's 2013 test reports 41'6\" LOA, 12'9\" beam, 4' draft, 24,000 lb, 350 gal fuel, 200 gal water and single Cummins QSB. Later brokerage records sometimes report 42'6\" overall, likely reflecting appendage measurement; B-Atlas retains the contemporary published 41'6\" specification. Production end year remains unforced. Batch 10: unsupported LWL and air-draft shadows cleared. Water capacity is treated as hull/configuration-dependent because period evidence supports both 200- and 300-gallon installations.",
+      "Basis": "Batch 10 research note added.",
+      "EvidenceRefs": []
+    },
+    {
+      "BoatModelID": "FORT-26",
+      "Field": "FuelCapacity",
+      "Old": 100,
+      "New": 378.54,
+      "Basis": "Fortier factory specifies two 50-gallon fuel tanks; U.S. builder source normalized as U.S. gallons to canonical litres.",
+      "EvidenceRefs": [
+        "https://fortierboats.com/fortier-26/"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "FORT-26",
+      "Field": "FuelCapacityUnitStatus",
+      "Old": "legacy_gallon_basis_unverified",
+      "New": "canonical_litres",
+      "Basis": "Factory U.S. gallon fuel capacity normalized to litres.",
+      "EvidenceRefs": [
+        "https://fortierboats.com/fortier-26/"
+      ]
+    },
+    {
+      "BoatModelID": "FORT-26",
+      "Field": "WaterCapacity",
+      "Old": 40,
+      "New": null,
+      "Basis": "Current factory specification does not publish a standard water capacity; unsupported legacy value cleared.",
+      "EvidenceRefs": [
+        "https://fortierboats.com/fortier-26/"
+      ]
+    },
+    {
+      "BoatModelID": "FORT-26",
+      "Field": "WaterCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "unknown",
+      "Basis": "No factory-standard water capacity verified.",
+      "EvidenceRefs": [
+        "https://fortierboats.com/fortier-26/"
+      ]
+    },
+    {
+      "BoatModelID": "FORT-26",
+      "Field": "HoldingCapacity",
+      "Old": 20,
+      "New": null,
+      "Basis": "Factory confirms a holding tank but does not publish a standard capacity; unsupported legacy value cleared.",
+      "EvidenceRefs": [
+        "https://fortierboats.com/fortier-26/"
+      ]
+    },
+    {
+      "BoatModelID": "FORT-26",
+      "Field": "HoldingCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "unknown",
+      "Basis": "Holding tank exists but model-wide capacity is not published.",
+      "EvidenceRefs": [
+        "https://fortierboats.com/fortier-26/"
+      ]
+    },
+    {
+      "BoatModelID": "FORT-26",
+      "Field": "ResearchNotes",
+      "Old": "Fortier's current factory specification is 26.9' LOA, 10' beam, 30\" draft, 6,500 lb and 100 gal fuel with single Volvo D4 230 diesel. Owner gallery confirms boats from at least 1978 and current production continues. Water capacity varies with customization and is not forced as a universal factory spec.",
+      "New": "Fortier's current factory specification is 26.9' LOA, 10' beam, 30\" draft, 6,500 lb and 100 gal fuel with single Volvo D4 230 diesel. Owner gallery confirms boats from at least 1978 and current production continues. Water capacity varies with customization and is not forced as a universal factory spec. Batch 10: factory fuel capacity normalized to 378.54 L / 100 US gal. Unpublished model-wide water and holding capacities were cleared rather than inferred.",
+      "Basis": "Batch 10 research note added.",
+      "EvidenceRefs": []
+    },
+    {
+      "BoatModelID": "FORT-33",
+      "Field": "FuelCapacityUnitStatus",
+      "Old": "legacy_gallon_basis_unverified",
+      "New": "conflicting_legacy_capacity_values",
+      "Basis": "Fortier factory page conflicts internally between two 110-gal tanks (220 total) and two 100-gal tanks (200 total); no canonical litre conversion forced.",
+      "EvidenceRefs": [
+        "https://fortierboats.com/fortier-33/"
+      ]
+    },
+    {
+      "BoatModelID": "FORT-33",
+      "Field": "WaterCapacity",
+      "Old": 100,
+      "New": null,
+      "Basis": "Current factory specification does not publish a standard water capacity; unsupported legacy value cleared.",
+      "EvidenceRefs": [
+        "https://fortierboats.com/fortier-33/"
+      ]
+    },
+    {
+      "BoatModelID": "FORT-33",
+      "Field": "WaterCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "unknown",
+      "Basis": "No factory-standard water capacity verified.",
+      "EvidenceRefs": [
+        "https://fortierboats.com/fortier-33/"
+      ]
+    },
+    {
+      "BoatModelID": "FORT-33",
+      "Field": "HoldingCapacity",
+      "Old": 40,
+      "New": null,
+      "Basis": "Factory confirms a holding tank but does not publish a standard capacity; unsupported legacy value cleared.",
+      "EvidenceRefs": [
+        "https://fortierboats.com/fortier-33/"
+      ]
+    },
+    {
+      "BoatModelID": "FORT-33",
+      "Field": "HoldingCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "unknown",
+      "Basis": "Holding tank exists but model-wide capacity is not published.",
+      "EvidenceRefs": [
+        "https://fortierboats.com/fortier-33/"
+      ]
+    },
+    {
+      "BoatModelID": "FORT-33",
+      "Field": "ResearchNotes",
+      "Old": "Fortier factory specifications: 33'6\" LOA, 11'8\" beam, 2'8\" draft, 12,000 lb and two 110-gal fuel tanks. Standard current twin Volvo diesels cruise above 23 knots, with IPS available. Factory owner gallery identifies a 1980 33 as hull #1.",
+      "New": "Fortier factory specifications: 33'6\" LOA, 11'8\" beam, 2'8\" draft, 12,000 lb and two 110-gal fuel tanks. Standard current twin Volvo diesels cruise above 23 knots, with IPS available. Factory owner gallery identifies a 1980 33 as hull #1. Batch 10: Fortier’s own page conflicts on fuel tank size (2x110 versus 2x100 gallons), so 220 gal remains a research value rather than a normalized canonical litre value. Unpublished water/holding capacities were cleared.",
+      "Basis": "Batch 10 research note added.",
+      "EvidenceRefs": []
+    },
+    {
+      "BoatModelID": "BHMB-32",
+      "Field": "Beam",
+      "Old": null,
+      "New": 3.5052000000000003,
+      "Basis": "Multiple 1993 Flye Point 32 records support approximately 11 ft 6 in beam; this is a hull dimension and is promoted at moderate confidence.",
+      "EvidenceRefs": [
+        "https://marinesource.com/boat/flye-point-marine-downeast-cruiser-1993-belfast-177ea4525b-for-sale",
+        "https://www.boats.com/power-boats/1993-flye-point-32-10293896/"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "BHMB-32",
+      "Field": "Beam_ft",
+      "Old": 11,
+      "New": 11.5,
+      "Basis": "Imperial beam shadow aligned to 11 ft 6 in representative hull dimension.",
+      "EvidenceRefs": [
+        "https://marinesource.com/boat/flye-point-marine-downeast-cruiser-1993-belfast-177ea4525b-for-sale",
+        "https://www.boats.com/power-boats/1993-flye-point-32-10293896/"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "BHMB-32",
+      "Field": "Draft",
+      "Old": null,
+      "New": 1.0668,
+      "Basis": "Model-specific Flye Point 32 documentation supports approximately 3 ft 6 in draft; promoted at moderate confidence.",
+      "EvidenceRefs": [
+        "https://marinesource.com/boat/flye-point-marine-downeast-cruiser-1993-belfast-177ea4525b-for-sale",
+        "https://www.boats.com/power-boats/1993-flye-point-32-10293896/"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "BHMB-32",
+      "Field": "LWL_ft",
+      "Old": 29,
+      "New": null,
+      "Basis": "No reliable model-wide LWL found for the semi-custom Flye Point/BHM 32; unsupported legacy fallback cleared.",
+      "EvidenceRefs": [
+        "https://marinesource.com/boat/flye-point-marine-downeast-cruiser-1993-belfast-177ea4525b-for-sale",
+        "https://www.boats.com/power-boats/1993-flye-point-32-10293896/"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "BHMB-32",
+      "Field": "AirDraft_ft",
+      "Old": 12.5,
+      "New": null,
+      "Basis": "Bridge clearance is finish/mast-specific; unsupported 12.5 ft model-wide fallback cleared.",
+      "EvidenceRefs": [
+        "https://marinesource.com/boat/flye-point-marine-downeast-cruiser-1993-belfast-177ea4525b-for-sale",
+        "https://www.boats.com/power-boats/1993-flye-point-32-10293896/"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "BHMB-32",
+      "Field": "Displacement_lb",
+      "Old": 14000,
+      "New": null,
+      "Basis": "Finished displacement varies materially among semi-custom BHM/Flye Point 32s; unsupported single fallback cleared.",
+      "EvidenceRefs": [
+        "https://marinesource.com/boat/flye-point-marine-downeast-cruiser-1993-belfast-177ea4525b-for-sale",
+        "https://www.boats.com/power-boats/1993-flye-point-32-10293896/"
+      ],
+      "Unit": "lb"
+    },
+    {
+      "BoatModelID": "BHMB-32",
+      "Field": "FuelCapacity",
+      "Old": 200,
+      "New": null,
+      "Basis": "Tankage is finish-specific on semi-custom BHM/Flye Point 32s; no model-wide capacity forced.",
+      "EvidenceRefs": [
+        "https://marinesource.com/boat/flye-point-marine-downeast-cruiser-1993-belfast-177ea4525b-for-sale",
+        "https://www.boats.com/power-boats/1993-flye-point-32-10293896/"
+      ]
+    },
+    {
+      "BoatModelID": "BHMB-32",
+      "Field": "WaterCapacity",
+      "Old": 80,
+      "New": null,
+      "Basis": "Tankage is finish-specific on semi-custom BHM/Flye Point 32s; no model-wide capacity forced.",
+      "EvidenceRefs": [
+        "https://marinesource.com/boat/flye-point-marine-downeast-cruiser-1993-belfast-177ea4525b-for-sale",
+        "https://www.boats.com/power-boats/1993-flye-point-32-10293896/"
+      ]
+    },
+    {
+      "BoatModelID": "BHMB-32",
+      "Field": "HoldingCapacity",
+      "Old": 30,
+      "New": null,
+      "Basis": "Tankage is finish-specific on semi-custom BHM/Flye Point 32s; no model-wide capacity forced.",
+      "EvidenceRefs": [
+        "https://marinesource.com/boat/flye-point-marine-downeast-cruiser-1993-belfast-177ea4525b-for-sale",
+        "https://www.boats.com/power-boats/1993-flye-point-32-10293896/"
+      ]
+    },
+    {
+      "BoatModelID": "BHMB-32",
+      "Field": "FuelCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "unknown",
+      "Basis": "Semi-custom tankage varies by finisher/hull.",
+      "EvidenceRefs": [
+        "https://marinesource.com/boat/flye-point-marine-downeast-cruiser-1993-belfast-177ea4525b-for-sale",
+        "https://www.boats.com/power-boats/1993-flye-point-32-10293896/"
+      ]
+    },
+    {
+      "BoatModelID": "BHMB-32",
+      "Field": "WaterCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "unknown",
+      "Basis": "Semi-custom tankage varies by finisher/hull.",
+      "EvidenceRefs": [
+        "https://marinesource.com/boat/flye-point-marine-downeast-cruiser-1993-belfast-177ea4525b-for-sale",
+        "https://www.boats.com/power-boats/1993-flye-point-32-10293896/"
+      ]
+    },
+    {
+      "BoatModelID": "BHMB-32",
+      "Field": "HoldingCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "unknown",
+      "Basis": "Semi-custom tankage varies by finisher/hull.",
+      "EvidenceRefs": [
+        "https://marinesource.com/boat/flye-point-marine-downeast-cruiser-1993-belfast-177ea4525b-for-sale",
+        "https://www.boats.com/power-boats/1993-flye-point-32-10293896/"
+      ]
+    },
+    {
+      "BoatModelID": "BHMB-32",
+      "Field": "ResearchNotes",
+      "Old": "Verified examples span at least 1981–1995, including a 1993 Flye Point 32 cruiser and a 1995 Farrin-finished hull. Representative hull dimensions are about 31'9\"–32', 11'6\" beam and 3'6\" draft. Displacement varies markedly with layup and finish; roughly 14,000 lb is a common baseline but heavily finished boats can be substantially heavier.",
+      "New": "Verified examples span at least 1981–1995, including a 1993 Flye Point 32 cruiser and a 1995 Farrin-finished hull. Representative hull dimensions are about 31'9\"–32', 11'6\" beam and 3'6\" draft. Displacement varies markedly with layup and finish; roughly 14,000 lb is a common baseline but heavily finished boats can be substantially heavier. Batch 10: representative hull beam/draft promoted at 11 ft 6 in / 3 ft 6 in. LWL, air draft, displacement and tankage remain hull/finisher-specific and unsupported legacy fallbacks were removed.",
+      "Basis": "Batch 10 research note added.",
+      "EvidenceRefs": []
+    },
+    {
+      "BoatModelID": "SEAH-35-PH",
+      "Field": "Construction",
+      "Old": "Fiberglass",
+      "New": "Steel",
+      "Basis": "Coot 35 is documented as welded steel; stale legacy Fiberglass shadow corrected to match canonical hull material.",
+      "EvidenceRefs": [
+        "https://www.boatsdata.com/2021-seahorse-coot-35-%26-38-37112/specs",
+        "https://www.boattrader.com/boat/2005-seahorse-coot-35-8632224/"
+      ]
+    },
+    {
+      "BoatModelID": "SEAH-35-PH",
+      "Field": "LOA_ft",
+      "Old": 35,
+      "New": 35.66,
+      "Basis": "Imperial LOA shadow aligned to canonical 10.87 m / published 35 ft 8 in.",
+      "EvidenceRefs": [
+        "https://www.boatsdata.com/2021-seahorse-coot-35-%26-38-37112/specs",
+        "https://www.boattrader.com/boat/2005-seahorse-coot-35-8632224/"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "SEAH-35-PH",
+      "Field": "LWL_ft",
+      "Old": 32,
+      "New": 31.66,
+      "Basis": "Imperial LWL shadow aligned to canonical 9.65 m / published 31 ft 8 in.",
+      "EvidenceRefs": [
+        "https://www.boatsdata.com/2021-seahorse-coot-35-%26-38-37112/specs",
+        "https://www.boattrader.com/boat/2005-seahorse-coot-35-8632224/"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "SEAH-35-PH",
+      "Field": "Draft_ft",
+      "Old": 4,
+      "New": 3.9,
+      "Basis": "Imperial draft shadow aligned to canonical 1.19 m / about 3 ft 11 in.",
+      "EvidenceRefs": [
+        "https://www.boatsdata.com/2021-seahorse-coot-35-%26-38-37112/specs",
+        "https://www.boattrader.com/boat/2005-seahorse-coot-35-8632224/"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "SEAH-35-PH",
+      "Field": "AirDraft_ft",
+      "Old": 14,
+      "New": null,
+      "Basis": "No reliable model-wide air draft found; unsupported 14 ft legacy fallback cleared.",
+      "EvidenceRefs": [
+        "https://www.boatsdata.com/2021-seahorse-coot-35-%26-38-37112/specs",
+        "https://www.boattrader.com/boat/2005-seahorse-coot-35-8632224/"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "SEAH-35-PH",
+      "Field": "RudderTypeCode",
+      "Old": null,
+      "New": "rudder.skeg_hung",
+      "Basis": "Shared Coot construction specification identifies a dedicated rudder skeg, supporting skeg-hung classification.",
+      "EvidenceRefs": [
+        "https://www.boatsdata.com/2021-seahorse-coot-35-%26-38-37112/specs",
+        "https://www.boattrader.com/boat/2005-seahorse-coot-35-8632224/"
+      ]
+    },
+    {
+      "BoatModelID": "SEAH-35-PH",
+      "Field": "FuelCapacity",
+      "Old": 400,
+      "New": null,
+      "Basis": "Reviewed Coot 35 sources conflict materially on tank capacities; model-wide tankage is left unresolved.",
+      "EvidenceRefs": [
+        "https://www.boatsdata.com/2021-seahorse-coot-35-%26-38-37112/specs",
+        "https://www.boattrader.com/boat/2005-seahorse-coot-35-8632224/"
+      ]
+    },
+    {
+      "BoatModelID": "SEAH-35-PH",
+      "Field": "WaterCapacity",
+      "Old": 210,
+      "New": null,
+      "Basis": "Reviewed Coot 35 sources conflict materially on tank capacities; model-wide tankage is left unresolved.",
+      "EvidenceRefs": [
+        "https://www.boatsdata.com/2021-seahorse-coot-35-%26-38-37112/specs",
+        "https://www.boattrader.com/boat/2005-seahorse-coot-35-8632224/"
+      ]
+    },
+    {
+      "BoatModelID": "SEAH-35-PH",
+      "Field": "HoldingCapacity",
+      "Old": 30,
+      "New": null,
+      "Basis": "Reviewed Coot 35 sources conflict materially on tank capacities; model-wide tankage is left unresolved.",
+      "EvidenceRefs": [
+        "https://www.boatsdata.com/2021-seahorse-coot-35-%26-38-37112/specs",
+        "https://www.boattrader.com/boat/2005-seahorse-coot-35-8632224/"
+      ]
+    },
+    {
+      "BoatModelID": "SEAH-35-PH",
+      "Field": "FuelCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "unknown",
+      "Basis": "Conflicting Coot 35 source capacities prevent safe model-wide normalization.",
+      "EvidenceRefs": [
+        "https://www.boatsdata.com/2021-seahorse-coot-35-%26-38-37112/specs",
+        "https://www.boattrader.com/boat/2005-seahorse-coot-35-8632224/"
+      ]
+    },
+    {
+      "BoatModelID": "SEAH-35-PH",
+      "Field": "WaterCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "unknown",
+      "Basis": "Conflicting Coot 35 source capacities prevent safe model-wide normalization.",
+      "EvidenceRefs": [
+        "https://www.boatsdata.com/2021-seahorse-coot-35-%26-38-37112/specs",
+        "https://www.boattrader.com/boat/2005-seahorse-coot-35-8632224/"
+      ]
+    },
+    {
+      "BoatModelID": "SEAH-35-PH",
+      "Field": "HoldingCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "unknown",
+      "Basis": "Conflicting Coot 35 source capacities prevent safe model-wide normalization.",
+      "EvidenceRefs": [
+        "https://www.boatsdata.com/2021-seahorse-coot-35-%26-38-37112/specs",
+        "https://www.boattrader.com/boat/2005-seahorse-coot-35-8632224/"
+      ]
+    },
+    {
+      "BoatModelID": "SEAH-35-PH",
+      "Field": "ResearchNotes",
+      "Old": "Batch 32 specialist-tail research. Identity, lineage and specifications normalized from model-specific builder, owner-archive and Powerboat Guide evidence; unsupported details remain unknown.",
+      "New": "Batch 32 specialist-tail research. Identity, lineage and specifications normalized from model-specific builder, owner-archive and Powerboat Guide evidence; unsupported details remain unknown. Batch 10: legacy construction corrected to Steel; dimension shadows reconciled. Rudder classified skeg-hung from the documented rudder skeg. Conflicting tank capacities were cleared rather than generalized.",
+      "Basis": "Batch 10 research note added.",
+      "EvidenceRefs": []
+    },
+    {
+      "BoatModelID": "SEAH-38-CO",
+      "Field": "Construction",
+      "Old": "Fiberglass",
+      "New": "Steel",
+      "Basis": "Coot 38 is documented as welded steel; stale legacy Fiberglass shadow corrected to match canonical hull material.",
+      "EvidenceRefs": [
+        "https://seahorse-marine.ueniweb.com/products/pocket/coot-38-35-50767788",
+        "https://www.youboat.com/boat/2025-seahorse-coot38-522264/"
+      ]
+    },
+    {
+      "BoatModelID": "SEAH-38-CO",
+      "Field": "LWL",
+      "Old": 10.561,
+      "New": null,
+      "Basis": "Current builder-derived Coot 38 specification is internally inconsistent: 10.561 m does not equal the stated 31 ft 8 in. No canonical LWL is forced.",
+      "EvidenceRefs": [
+        "https://seahorse-marine.ueniweb.com/products/pocket/coot-38-35-50767788",
+        "https://www.youboat.com/boat/2025-seahorse-coot38-522264/"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "SEAH-38-CO",
+      "Field": "LWL_ft",
+      "Old": 36,
+      "New": null,
+      "Basis": "Conflicting metric/imperial LWL source values; imperial fallback cleared.",
+      "EvidenceRefs": [
+        "https://seahorse-marine.ueniweb.com/products/pocket/coot-38-35-50767788",
+        "https://www.youboat.com/boat/2025-seahorse-coot38-522264/"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "SEAH-38-CO",
+      "Field": "Draft_ft",
+      "Old": 4,
+      "New": 3.81,
+      "Basis": "Imperial draft shadow aligned to canonical 1.16 m / about 3 ft 10 in.",
+      "EvidenceRefs": [
+        "https://seahorse-marine.ueniweb.com/products/pocket/coot-38-35-50767788",
+        "https://www.youboat.com/boat/2025-seahorse-coot38-522264/"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "SEAH-38-CO",
+      "Field": "AirDraft_ft",
+      "Old": 15,
+      "New": null,
+      "Basis": "No reliable model-wide air draft found; unsupported 15 ft legacy fallback cleared.",
+      "EvidenceRefs": [
+        "https://seahorse-marine.ueniweb.com/products/pocket/coot-38-35-50767788",
+        "https://www.youboat.com/boat/2025-seahorse-coot38-522264/"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "SEAH-38-CO",
+      "Field": "Displacement_lb",
+      "Old": 28000,
+      "New": null,
+      "Basis": "Reviewed Coot 38 sources use materially different displacement/loading bases (about 28,000 vs 37,400 lb); unsupported single fallback cleared.",
+      "EvidenceRefs": [
+        "https://seahorse-marine.ueniweb.com/products/pocket/coot-38-35-50767788",
+        "https://www.youboat.com/boat/2025-seahorse-coot38-522264/"
+      ],
+      "Unit": "lb"
+    },
+    {
+      "BoatModelID": "SEAH-38-CO",
+      "Field": "RudderTypeCode",
+      "Old": null,
+      "New": "rudder.skeg_hung",
+      "Basis": "Coot construction specification identifies a rudder skeg, supporting skeg-hung classification.",
+      "EvidenceRefs": [
+        "https://seahorse-marine.ueniweb.com/products/pocket/coot-38-35-50767788",
+        "https://www.youboat.com/boat/2025-seahorse-coot38-522264/"
+      ]
+    },
+    {
+      "BoatModelID": "SEAH-38-CO",
+      "Field": "FuelCapacity",
+      "Old": 2460.5176596,
+      "New": null,
+      "Basis": "Reviewed Coot 38 sources conflict on tank capacities and/or configuration; no model-wide capacity forced.",
+      "EvidenceRefs": [
+        "https://seahorse-marine.ueniweb.com/products/pocket/coot-38-35-50767788",
+        "https://www.youboat.com/boat/2025-seahorse-coot38-522264/"
+      ]
+    },
+    {
+      "BoatModelID": "SEAH-38-CO",
+      "Field": "WaterCapacity",
+      "Old": 567.8117675999999,
+      "New": null,
+      "Basis": "Reviewed Coot 38 sources conflict on tank capacities and/or configuration; no model-wide capacity forced.",
+      "EvidenceRefs": [
+        "https://seahorse-marine.ueniweb.com/products/pocket/coot-38-35-50767788",
+        "https://www.youboat.com/boat/2025-seahorse-coot38-522264/"
+      ]
+    },
+    {
+      "BoatModelID": "SEAH-38-CO",
+      "Field": "HoldingCapacity",
+      "Old": 40,
+      "New": null,
+      "Basis": "Reviewed Coot 38 sources conflict on tank capacities and/or configuration; no model-wide capacity forced.",
+      "EvidenceRefs": [
+        "https://seahorse-marine.ueniweb.com/products/pocket/coot-38-35-50767788",
+        "https://www.youboat.com/boat/2025-seahorse-coot38-522264/"
+      ]
+    },
+    {
+      "BoatModelID": "SEAH-38-CO",
+      "Field": "FuelCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "unknown",
+      "Basis": "Conflicting Coot 38 source capacities prevent safe model-wide normalization.",
+      "EvidenceRefs": [
+        "https://seahorse-marine.ueniweb.com/products/pocket/coot-38-35-50767788",
+        "https://www.youboat.com/boat/2025-seahorse-coot38-522264/"
+      ]
+    },
+    {
+      "BoatModelID": "SEAH-38-CO",
+      "Field": "WaterCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "unknown",
+      "Basis": "Conflicting Coot 38 source capacities prevent safe model-wide normalization.",
+      "EvidenceRefs": [
+        "https://seahorse-marine.ueniweb.com/products/pocket/coot-38-35-50767788",
+        "https://www.youboat.com/boat/2025-seahorse-coot38-522264/"
+      ]
+    },
+    {
+      "BoatModelID": "SEAH-38-CO",
+      "Field": "HoldingCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "unknown",
+      "Basis": "Conflicting Coot 38 source capacities prevent safe model-wide normalization.",
+      "EvidenceRefs": [
+        "https://seahorse-marine.ueniweb.com/products/pocket/coot-38-35-50767788",
+        "https://www.youboat.com/boat/2025-seahorse-coot38-522264/"
+      ]
+    },
+    {
+      "BoatModelID": "SEAH-38-CO",
+      "Field": "ResearchNotes",
+      "Old": "Batch 32 specialist-tail research. Identity, lineage and specifications normalized from model-specific builder, owner-archive and Powerboat Guide evidence; unsupported details remain unknown.",
+      "New": "Batch 32 specialist-tail research. Identity, lineage and specifications normalized from model-specific builder, owner-archive and Powerboat Guide evidence; unsupported details remain unknown. Batch 10: legacy construction corrected to Steel and rudder classified skeg-hung. Builder-derived LWL is internally inconsistent between metric and imperial values, so LWL is now unresolved. Displacement and tankage also remain unresolved because reviewed sources use different loading bases/configurations.",
+      "Basis": "Batch 10 research note added.",
+      "EvidenceRefs": []
+    },
+    {
+      "BoatModelID": "NDST-31P",
+      "Field": "RudderTypeCode",
+      "Old": null,
+      "New": "rudder.none_external_drive",
+      "Basis": "Nord Star 31+ uses sterndrive propulsion; steering is through the drive and there is no separate rudder.",
+      "EvidenceRefs": [
+        "https://nordstar.fi/nord-star-fleet/pilothouse-31-plus/",
+        "https://nordstar.fi/wp-content/uploads/2023/02/NS_2023.pdf",
+        "https://www.boat24.com/en/powerboats/nord-star/nord-star-31/detail/619597/",
+        "https://au.boats.com/power-boats/2022-nord-star-31-10281733/"
+      ]
+    },
+    {
+      "BoatModelID": "NDST-31P",
+      "Field": "Draft_ft",
+      "Old": 3.28,
+      "New": null,
+      "Basis": "Published 31+ draft varies by drive position/configuration (about 0.7 to 1.1 m); unsupported fixed 3.28 ft fallback cleared.",
+      "EvidenceRefs": [
+        "https://nordstar.fi/nord-star-fleet/pilothouse-31-plus/",
+        "https://nordstar.fi/wp-content/uploads/2023/02/NS_2023.pdf",
+        "https://www.boat24.com/en/powerboats/nord-star/nord-star-31/detail/619597/",
+        "https://au.boats.com/power-boats/2022-nord-star-31-10281733/"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "NDST-31P",
+      "Field": "FuelCapacityGal",
+      "Old": null,
+      "New": 137.37,
+      "Basis": "US-gallon equivalent derived from factory SI capacity for imperial display.",
+      "EvidenceRefs": [
+        "https://nordstar.fi/nord-star-fleet/pilothouse-31-plus/",
+        "https://nordstar.fi/wp-content/uploads/2023/02/NS_2023.pdf",
+        "https://www.boat24.com/en/powerboats/nord-star/nord-star-31/detail/619597/",
+        "https://au.boats.com/power-boats/2022-nord-star-31-10281733/"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "NDST-31P",
+      "Field": "FuelCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "Factory source publishes canonical SI litres.",
+      "EvidenceRefs": [
+        "https://nordstar.fi/nord-star-fleet/pilothouse-31-plus/",
+        "https://nordstar.fi/wp-content/uploads/2023/02/NS_2023.pdf",
+        "https://www.boat24.com/en/powerboats/nord-star/nord-star-31/detail/619597/",
+        "https://au.boats.com/power-boats/2022-nord-star-31-10281733/"
+      ]
+    },
+    {
+      "BoatModelID": "NDST-31P",
+      "Field": "WaterCapacityGal",
+      "Old": null,
+      "New": 30.91,
+      "Basis": "US-gallon equivalent derived from factory SI capacity for imperial display.",
+      "EvidenceRefs": [
+        "https://nordstar.fi/nord-star-fleet/pilothouse-31-plus/",
+        "https://nordstar.fi/wp-content/uploads/2023/02/NS_2023.pdf",
+        "https://www.boat24.com/en/powerboats/nord-star/nord-star-31/detail/619597/",
+        "https://au.boats.com/power-boats/2022-nord-star-31-10281733/"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "NDST-31P",
+      "Field": "WaterCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "Factory source publishes canonical SI litres.",
+      "EvidenceRefs": [
+        "https://nordstar.fi/nord-star-fleet/pilothouse-31-plus/",
+        "https://nordstar.fi/wp-content/uploads/2023/02/NS_2023.pdf",
+        "https://www.boat24.com/en/powerboats/nord-star/nord-star-31/detail/619597/",
+        "https://au.boats.com/power-boats/2022-nord-star-31-10281733/"
+      ]
+    },
+    {
+      "BoatModelID": "NDST-31P",
+      "Field": "HoldingCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "Factory source publishes canonical SI litres.",
+      "EvidenceRefs": [
+        "https://nordstar.fi/nord-star-fleet/pilothouse-31-plus/",
+        "https://nordstar.fi/wp-content/uploads/2023/02/NS_2023.pdf",
+        "https://www.boat24.com/en/powerboats/nord-star/nord-star-31/detail/619597/",
+        "https://au.boats.com/power-boats/2022-nord-star-31-10281733/"
+      ]
+    },
+    {
+      "BoatModelID": "NDST-31P",
+      "Field": "ResearchNotes",
+      "Old": "Current Nord Star factory page confirms 10.05 m / 33'2\" LOA, 3.15 m / 10'4\" beam, ~5,000 kg dry, 18.3-degree transom V, 520 L fuel, 117 L water, max 550 kW and 45-knot maximum speed. Current-production status retained.",
+      "New": "Current Nord Star factory page confirms 10.05 m / 33'2\" LOA, 3.15 m / 10'4\" beam, ~5,000 kg dry, 18.3-degree transom V, 520 L fuel, 117 L water, max 550 kW and 45-knot maximum speed. Current-production status retained. Batch 10: factory SI tankage verified and main-cabin headroom added. Rudder classified as no separate rudder because steering is through the sterndrive. Fixed draft fallback removed because published draft varies with drive position/configuration.",
+      "Basis": "Batch 10 research note added.",
+      "EvidenceRefs": []
+    }
+  ]
+}

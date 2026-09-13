@@ -1,0 +1,1703 @@
+{
+  "Version": "6.62.0",
+  "Purpose": "Plan-critical exception closeout",
+  "Counts": {
+    "LOA": 16,
+    "Beam": 13,
+    "Draft": 23,
+    "AirDraft": 115,
+    "FuelCode": 0,
+    "MechanicalPropulsionCode": 0,
+    "HullBehaviourCode": 0
+  },
+  "ModelsWithNumericPlanExceptions": 123,
+  "Exceptions": [
+    {
+      "BoatModelID": "ALBN-25",
+      "Manufacturer": "Albin",
+      "Model": "25",
+      "Variant": "Motor Cruiser",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": 7
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "ALBN-27-FC",
+      "Manufacturer": "Albin",
+      "Model": "27",
+      "Variant": "Family Cruiser",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": 8.5
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "ALBN-27-SP",
+      "Manufacturer": "Albin",
+      "Model": "27",
+      "Variant": "Sport Cruiser",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": 8.5
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "ALBN-28-TE-EB",
+      "Manufacturer": "Albin",
+      "Model": "28 Tournament Express",
+      "Variant": "Engine Box",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": 7.75
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "ALBN-28-FL",
+      "Manufacturer": "Albin",
+      "Model": "28 Tournament Express",
+      "Variant": "Flush Deck",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": 7.75
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "ALBN-30-FC",
+      "Manufacturer": "Albin",
+      "Model": "30",
+      "Variant": "Family Cruiser",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": null
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "ALBN-32-PL",
+      "Manufacturer": "Albin",
+      "Model": "32+2",
+      "Variant": "Command Bridge",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": 13.5
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "ALBN-40-TR",
+      "Manufacturer": "Albin",
+      "Model": "40",
+      "Variant": "Trawler",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": null
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "AMTG-34",
+      "Manufacturer": "American Tug",
+      "Model": "34",
+      "Variant": null,
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": 14.5
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "AMTG-365",
+      "Manufacturer": "American Tug",
+      "Model": "365",
+      "Variant": null,
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": 14.7
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "AMTG-395",
+      "Manufacturer": "American Tug",
+      "Model": "395",
+      "Variant": null,
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": 15
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "ATLB-26-DU",
+      "Manufacturer": "Atlantic Boat",
+      "Model": "Duffy 26",
+      "Variant": "Semi-Custom Downeast Hull",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": null
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "BKCV-39O",
+      "Manufacturer": "Back Cove",
+      "Model": "39O",
+      "Variant": "Outboard Salon Cruiser",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": 12.42
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "BAYL-3788",
+      "Manufacturer": "Bayliner",
+      "Model": "3788 Motor Yacht",
+      "Variant": "Two-Generation Flybridge Motor Yacht",
+      "ResearchedUnknownFields": [
+        "LOA",
+        "Beam",
+        "Draft"
+      ],
+      "LegacyValues": {
+        "LOA": 39.33,
+        "Beam": 13.58,
+        "Draft": 3.33
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "BHMB-32",
+      "Manufacturer": "BHM",
+      "Model": "32",
+      "Variant": "Flye Point / Semi-Custom Downeast",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": null
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "CDRY-22-CR",
+      "Manufacturer": "C-Dory",
+      "Model": "22 Cruiser",
+      "Variant": "Cruiser",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": 7.17
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "CDRY-25-CR",
+      "Manufacturer": "C-Dory",
+      "Model": "25 Cruiser",
+      "Variant": "Cruiser",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": 7.8
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "CDRY-25-TC",
+      "Manufacturer": "C-Dory",
+      "Model": "TomCat 255",
+      "Variant": "Power Catamaran",
+      "ResearchedUnknownFields": [
+        "Draft",
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "Draft": 1.5,
+        "AirDraft": 9.5
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "CDRY-26-PA",
+      "Manufacturer": "C-Dory",
+      "Model": "26 Pro Angler",
+      "Variant": "Walkaround Fishing",
+      "ResearchedUnknownFields": [
+        "LOA",
+        "Beam",
+        "Draft",
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "LOA": 26,
+        "Beam": 8.5,
+        "Draft": 1.5,
+        "AirDraft": 8.5
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "CDRY-26-V",
+      "Manufacturer": "C-Dory",
+      "Model": "26 Venture",
+      "Variant": "Venture Cruiser",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": 8.5
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "CALF-38-TR",
+      "Manufacturer": "Californian",
+      "Model": "38 LRC Sedan",
+      "Variant": "Long Range Cruiser Sedan",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": null
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "CAMA-28-GN",
+      "Manufacturer": "Camano",
+      "Model": "28/31",
+      "Variant": "Gnome",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": null
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "CAMA-31-TR",
+      "Manufacturer": "Camano",
+      "Model": "28/31",
+      "Variant": "Troll",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": null
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "CAMA-41",
+      "Manufacturer": "Camano",
+      "Model": "41",
+      "Variant": "Trawler",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": null
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "CPDR-28-CR",
+      "Manufacturer": "Cape Dory",
+      "Model": "28",
+      "Variant": "Cruiser",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": 11.17
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "CARV-350-AF",
+      "Manufacturer": "Carver",
+      "Model": "33 / 350 Aft Cabin",
+      "Variant": "Aft Cabin Motor Yacht",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": 14.2
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "CARV-356-AF",
+      "Manufacturer": "Carver",
+      "Model": "355 / 356 Motor Yacht",
+      "Variant": "Aft Cabin Motor Yacht",
+      "ResearchedUnknownFields": [
+        "LOA"
+      ],
+      "LegacyValues": {
+        "LOA": 39.33
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "CARV-40-AC",
+      "Manufacturer": "Carver",
+      "Model": "3807 / 390 Aft Cabin",
+      "Variant": "Aft Cabin Motor Yacht",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": 14.5
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "CHBB-34-SE",
+      "Manufacturer": "CHB",
+      "Model": "34",
+      "Variant": "Sedan",
+      "ResearchedUnknownFields": [
+        "LOA",
+        "Beam",
+        "Draft",
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "LOA": 34,
+        "Beam": 12,
+        "Draft": 3.92,
+        "AirDraft": null
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "CHBB-34-TC",
+      "Manufacturer": "CHB",
+      "Model": "34",
+      "Variant": "Tri-Cabin",
+      "ResearchedUnknownFields": [
+        "LOA",
+        "Beam",
+        "Draft",
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "LOA": 34,
+        "Beam": 12,
+        "Draft": 3.92,
+        "AirDraft": null
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "CHBY-34-SE",
+      "Manufacturer": "CHB",
+      "Model": "34",
+      "Variant": "Double Cabin",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": 13
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "CHBY-35",
+      "Manufacturer": "CHB",
+      "Model": "35",
+      "Variant": "Sundeck",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": 14
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "CHBY-40",
+      "Manufacturer": "CHB",
+      "Model": "40",
+      "Variant": "Double Cabin",
+      "ResearchedUnknownFields": [
+        "LOA",
+        "Beam",
+        "Draft",
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "LOA": 40,
+        "Beam": 13,
+        "Draft": 4,
+        "AirDraft": 15
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "CHLY-28",
+      "Manufacturer": "Cheoy Lee",
+      "Model": "28 Sedan Trawler",
+      "Variant": "Sedan",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": null
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "CHLY-32",
+      "Manufacturer": "Cheoy Lee",
+      "Model": "32 Trawler",
+      "Variant": "Trawler",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": null
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "CHLY-35",
+      "Manufacturer": "Cheoy Lee",
+      "Model": "35 Trawler",
+      "Variant": "Trawler",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": 13
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "CHLY-36-TR",
+      "Manufacturer": "Cheoy Lee",
+      "Model": "36 Trawler",
+      "Variant": "Trawler",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": 14.5
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "CUTW-24",
+      "Manufacturer": "Cutwater",
+      "Model": "C-24 C",
+      "Variant": "Coupe",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": 8.5
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "CUTW-26",
+      "Manufacturer": "Cutwater",
+      "Model": "C-26",
+      "Variant": "Cruiser",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": 9
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "CUTW-30-P",
+      "Manufacturer": "Cutwater",
+      "Model": "C-30 S",
+      "Variant": "Sedan",
+      "ResearchedUnknownFields": [
+        "LOA"
+      ],
+      "LegacyValues": {
+        "LOA": 30
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "DEFE-34-TR",
+      "Manufacturer": "DeFever",
+      "Model": "34 Passagemaker",
+      "Variant": "Passagemaker",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": 13.5
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "DEFE-38-TR",
+      "Manufacturer": "DeFever",
+      "Model": "38 Passagemaker",
+      "Variant": "Wood Passagemaker",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": 14.5
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "DEFE-40-EURO",
+      "Manufacturer": "DeFever",
+      "Model": "40 Offshore Cruiser",
+      "Variant": "Offshore Cruiser",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": 15
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "DEFE-41",
+      "Manufacturer": "DeFever",
+      "Model": "41 Trawler",
+      "Variant": "Trawler",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": 15.5
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "DEFE-43",
+      "Manufacturer": "DeFever",
+      "Model": "43 Trawler",
+      "Variant": "Flush Deck",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": 16
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "DEFE-45",
+      "Manufacturer": "DeFever",
+      "Model": "45 Pilothouse",
+      "Variant": "Pilothouse",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": 16
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "DEFE-49",
+      "Manufacturer": "DeFever",
+      "Model": "49 Cockpit Motor Yacht",
+      "Variant": "Cockpit Motor Yacht",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": 18
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "DUFF-29",
+      "Manufacturer": "Duffy",
+      "Model": "29",
+      "Variant": "Downeast Hull",
+      "ResearchedUnknownFields": [
+        "LOA",
+        "Beam",
+        "Draft",
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "LOA": 29,
+        "Beam": 10,
+        "Draft": 3,
+        "AirDraft": 11
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "DUFF-31",
+      "Manufacturer": "Duffy",
+      "Model": "31",
+      "Variant": "Downeast / Lobsterboat Hull",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": 11.5
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "DUFF-35",
+      "Manufacturer": "Duffy",
+      "Model": "35",
+      "Variant": "Downeast / Lobsterboat Hull",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": 13
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "DUFF-39",
+      "Manufacturer": "Duffy",
+      "Model": "39",
+      "Variant": "Extended Duffy 37 / Custom Downeast",
+      "ResearchedUnknownFields": [
+        "LOA",
+        "Beam",
+        "Draft",
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "LOA": 39,
+        "Beam": 13,
+        "Draft": 4,
+        "AirDraft": 15
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "DUFF-42",
+      "Manufacturer": "Duffy",
+      "Model": "42",
+      "Variant": "Downeast / Lobsterboat Hull",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": 15
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "ENDE-44",
+      "Manufacturer": "Endeavour",
+      "Model": "44 TrawlerCat",
+      "Variant": "Power Catamaran",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": null
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "FJRD-36",
+      "Manufacturer": "Fjord",
+      "Model": "36 Cruiser",
+      "Variant": "Enclosed Cruiser",
+      "ResearchedUnknownFields": [
+        "Draft",
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "Draft": 3,
+        "AirDraft": 12
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "FORT-26",
+      "Manufacturer": "Fortier",
+      "Model": "26",
+      "Variant": "Bass Boat / Downeast Cruiser",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": 9.5
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "FORT-33",
+      "Manufacturer": "Fortier",
+      "Model": "33",
+      "Variant": "Downeast Cruiser",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": 12
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "GRBK-32-CL",
+      "Manufacturer": "Grand Banks",
+      "Model": "32",
+      "Variant": "Sedan",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": 12.2
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "GRBK-36-CL",
+      "Manufacturer": "Grand Banks",
+      "Model": "36",
+      "Variant": "Classic",
+      "ResearchedUnknownFields": [
+        "LOA",
+        "Beam"
+      ],
+      "LegacyValues": {
+        "LOA": 36.83,
+        "Beam": 12.67
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "GRBK-36-EU",
+      "Manufacturer": "Grand Banks",
+      "Model": "36",
+      "Variant": "Europa",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": 13.5
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "GRBK-42-CL",
+      "Manufacturer": "Grand Banks",
+      "Model": "42",
+      "Variant": "Classic",
+      "ResearchedUnknownFields": [
+        "LOA",
+        "Beam"
+      ],
+      "LegacyValues": {
+        "LOA": 42.58,
+        "Beam": 13.58
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "GRBK-49-MY",
+      "Manufacturer": "Grand Banks",
+      "Model": "49",
+      "Variant": "Motor Yacht",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": 16
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "GRTH-GH37",
+      "Manufacturer": "Great Harbour",
+      "Model": "GH37",
+      "Variant": "Raised-Pilothouse Liveaboard Trawler",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": null
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "GRTH-N37",
+      "Manufacturer": "Great Harbour",
+      "Model": "N37",
+      "Variant": "Navigator / Long-Range Trawler",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": null
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "HELM-31-CA",
+      "Manufacturer": "Helmsman",
+      "Model": "31 Sedan",
+      "Variant": "Sedan",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": 11.5
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "HELM-38E-TR",
+      "Manufacturer": "Helmsman",
+      "Model": "38E Pilothouse",
+      "Variant": "Pilothouse",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": null
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "HELM-46-PH",
+      "Manufacturer": "Helmsman",
+      "Model": "46 Pilothouse",
+      "Variant": "Pilothouse",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": null
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "HLMN-38-CO",
+      "Manufacturer": "Holiday Mansion",
+      "Model": "38 Barracuda Coastal",
+      "Variant": "Coastal Houseboat Cruiser",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": null
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "HUNT-36",
+      "Manufacturer": "Hunt Yachts",
+      "Model": "Surfhunter 36",
+      "Variant": "Coupe",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": 12
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "ISGY-32-FI",
+      "Manufacturer": "Island Gypsy",
+      "Model": "32 Fisherman",
+      "Variant": "Fisherman",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": null
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "ISGY-32-SE",
+      "Manufacturer": "Island Gypsy",
+      "Model": "32 Sedan",
+      "Variant": "Sedan",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": 12.33
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "JEAU-635",
+      "Manufacturer": "Jeanneau",
+      "Model": "Merry Fisher 635",
+      "Variant": "Pilothouse",
+      "ResearchedUnknownFields": [
+        "Beam"
+      ],
+      "LegacyValues": {
+        "Beam": null
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "JEAU-795",
+      "Manufacturer": "Jeanneau",
+      "Model": "Merry Fisher 795",
+      "Variant": "Series 1 / Series 2",
+      "ResearchedUnknownFields": [
+        "LOA",
+        "Draft"
+      ],
+      "LegacyValues": {
+        "LOA": 26.75,
+        "Draft": 1.9
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "KDKR-39",
+      "Manufacturer": "Kadey-Krogen",
+      "Model": "39",
+      "Variant": null,
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": null
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "KDKR-42",
+      "Manufacturer": "Kadey-Krogen",
+      "Model": "42",
+      "Variant": null,
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": null
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "KDKR-44",
+      "Manufacturer": "Kadey-Krogen",
+      "Model": "44",
+      "Variant": "Trawler",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": 13.67
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "KDKR-48-NS",
+      "Manufacturer": "Kadey-Krogen",
+      "Model": "48 North Sea",
+      "Variant": "North Sea",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": null
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "MNSH-30-PI",
+      "Manufacturer": "Mainship",
+      "Model": "30",
+      "Variant": "Pilot",
+      "ResearchedUnknownFields": [
+        "Draft",
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "Draft": 2.92,
+        "AirDraft": 8.9
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "MTRA-34-EU",
+      "Manufacturer": "Marine Trader",
+      "Model": "34",
+      "Variant": "Europa",
+      "ResearchedUnknownFields": [
+        "LOA",
+        "Beam",
+        "Draft",
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "LOA": 34,
+        "Beam": 11.75,
+        "Draft": null,
+        "AirDraft": null
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "MRTR-36-DO",
+      "Manufacturer": "Marine Trader",
+      "Model": "36",
+      "Variant": "Double Cabin",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": 13.5
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "MRTR-38-SD",
+      "Manufacturer": "Marine Trader",
+      "Model": "38",
+      "Variant": "Double Cabin",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": 14.83
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "MRTR-38-SD2",
+      "Manufacturer": "Marine Trader",
+      "Model": "38",
+      "Variant": "Sundeck",
+      "ResearchedUnknownFields": [
+        "LOA",
+        "Beam",
+        "Draft",
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "LOA": 38,
+        "Beam": 12.5,
+        "Draft": 4,
+        "AirDraft": 14
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "MRTR-40-DC",
+      "Manufacturer": "Marine Trader",
+      "Model": "40",
+      "Variant": "Double Cabin",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": 15
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "MRTR-44-TC",
+      "Manufacturer": "Marine Trader",
+      "Model": "44",
+      "Variant": "Tri-Cabin",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": 16
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "NMBL-24-NO",
+      "Manufacturer": "Nimble",
+      "Model": "Nomad",
+      "Variant": "Pocket Trawler",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": null
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "NMBL-32-WA",
+      "Manufacturer": "Nimble",
+      "Model": "Wanderer",
+      "Variant": "Power Cruiser / Optional Motorsailer",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": null
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "NMBS-3003",
+      "Manufacturer": "Nimbus",
+      "Model": "3003",
+      "Variant": "Aft-Cabin Coupé",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": 8.04
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "NDST-31P",
+      "Manufacturer": "Nord Star",
+      "Model": "31+",
+      "Variant": "All-Weather Pilothouse",
+      "ResearchedUnknownFields": [
+        "Draft",
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "Draft": null,
+        "AirDraft": null
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "NRDH-40",
+      "Manufacturer": "Nordhavn",
+      "Model": "40",
+      "Variant": "Ocean Passagemaker",
+      "ResearchedUnknownFields": [
+        "Draft",
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "Draft": null,
+        "AirDraft": null
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "NDTG-34",
+      "Manufacturer": "Nordic Tugs",
+      "Model": "34",
+      "Variant": null,
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": 10
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "NDTG-37",
+      "Manufacturer": "Nordic Tugs",
+      "Model": "37",
+      "Variant": null,
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": 13
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "NDTG-39",
+      "Manufacturer": "Nordic Tugs",
+      "Model": "39",
+      "Variant": null,
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": 13.5
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "NDTG-42",
+      "Manufacturer": "Nordic Tugs",
+      "Model": "42",
+      "Variant": null,
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": 14
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "NPAC-28",
+      "Manufacturer": "North Pacific",
+      "Model": "28 Pilothouse",
+      "Variant": "Pilothouse",
+      "ResearchedUnknownFields": [
+        "Draft"
+      ],
+      "LegacyValues": {
+        "Draft": null
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "NPAC-38",
+      "Manufacturer": "North Pacific",
+      "Model": "38 Sedan",
+      "Variant": "Europa Sedan",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": null
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "OCEA-36-SE",
+      "Manufacturer": "Oceania Yachts",
+      "Model": "36 Sedan",
+      "Variant": "Sedan Trawler",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": null
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "OCAL-39-SE",
+      "Manufacturer": "Ocean Alexander",
+      "Model": "39 Sedan",
+      "Variant": "Flybridge Sedan",
+      "ResearchedUnknownFields": [
+        "LOA",
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "LOA": null,
+        "AirDraft": null
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "PRAI-29-TR",
+      "Manufacturer": "Prairie",
+      "Model": "29 Coastal Cruiser",
+      "Variant": "Coastal Cruiser",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": null
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "ROSB-246-WH",
+      "Manufacturer": "Rosborough",
+      "Model": "RF-246",
+      "Variant": "Custom Wheelhouse",
+      "ResearchedUnknownFields": [
+        "Draft",
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "Draft": 1.5,
+        "AirDraft": null
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "ROSB-246-LS",
+      "Manufacturer": "Rosborough",
+      "Model": "RF-246",
+      "Variant": "Legacy Sedan Cruiser Diesel",
+      "ResearchedUnknownFields": [
+        "Draft",
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "Draft": 2,
+        "AirDraft": null
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "ROSB-246",
+      "Manufacturer": "Rosborough",
+      "Model": "246",
+      "Variant": "Yarmouth",
+      "ResearchedUnknownFields": [
+        "Draft",
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "Draft": 1.5,
+        "AirDraft": null
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "SAGA-26-HT",
+      "Manufacturer": "Saga",
+      "Model": "26 HT",
+      "Variant": "Hardtop Cruiser",
+      "ResearchedUnknownFields": [
+        "Draft",
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "Draft": null,
+        "AirDraft": null
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "SEAR-340-SU",
+      "Manufacturer": "Sea Ray",
+      "Model": "340 Sundancer",
+      "Variant": "Generation 1",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": 10.2
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "SEAH-35-PH",
+      "Manufacturer": "Seahorse",
+      "Model": "Coot 35",
+      "Variant": "Steel Pocket Trawler",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": null
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "SEAH-38-CO",
+      "Manufacturer": "Seahorse",
+      "Model": "Coot 38",
+      "Variant": "Steel Pocket Trawler",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": null
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "SEAL-34-TC",
+      "Manufacturer": "Sealord",
+      "Model": "34 Double Cabin Trawler",
+      "Variant": "Tri-Cabin / Double Cabin",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": null
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "SEAP-35",
+      "Manufacturer": "SeaPiper",
+      "Model": "35",
+      "Variant": "Narrow-Beam Long-Range Cruiser",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": null
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "SSPT-24",
+      "Manufacturer": "Sea Sport",
+      "Model": "XL 2400",
+      "Variant": "Long-Cockpit Pilothouse",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": 8.5
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "SSPT-24-EX",
+      "Manufacturer": "Sea Sport",
+      "Model": "Explorer 2400",
+      "Variant": "Long-Cabin Pilothouse",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": 8
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "SSPT-27",
+      "Manufacturer": "Sea Sport",
+      "Model": "27",
+      "Variant": "Seamaster / Navigator / Pilot",
+      "ResearchedUnknownFields": [
+        "Draft",
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "Draft": 2.67,
+        "AirDraft": 9.5
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "SEAW-24-ST",
+      "Manufacturer": "Seaway",
+      "Model": "24",
+      "Variant": "Sport Trawler / Coastal Cruiser",
+      "ResearchedUnknownFields": [
+        "Draft",
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "Draft": 2,
+        "AirDraft": 8.2
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "SEAW-28-CC",
+      "Manufacturer": "Seaway",
+      "Model": "28 Coastal Cruiser",
+      "Variant": "Coastal Cruiser",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": 8.8
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "SHAN-38-SRD",
+      "Manufacturer": "Shannon",
+      "Model": "38 SRD",
+      "Variant": "Schulz Reverse Deadrise",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": null
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "SILV-34-MO",
+      "Manufacturer": "Silverton",
+      "Model": "34 Motor Yacht",
+      "Variant": "Aft Cabin Motor Yacht",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": 11.8
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "SISU-22-CO",
+      "Manufacturer": "Sisu",
+      "Model": "22",
+      "Variant": "Bass Boat / Lobsterboat",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": null
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "SISU-26-BA",
+      "Manufacturer": "Sisu",
+      "Model": "26",
+      "Variant": "Bass Boat / Sedan / Lobsterboat",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": null
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "TPMC-32-EA",
+      "Manufacturer": "Transpacific Marine",
+      "Model": "Eagle 32",
+      "Variant": "Pilothouse",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": null
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "TRUN-34",
+      "Manufacturer": "True North",
+      "Model": "34",
+      "Variant": "Original Diesel / Inboard",
+      "ResearchedUnknownFields": [
+        "LOA",
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "LOA": null,
+        "AirDraft": null
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "UNIV-36-TR",
+      "Manufacturer": "Universal",
+      "Model": "36 Tri-Cabin Trawler",
+      "Variant": "Tri-Cabin",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": null
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "WILL-30-VO",
+      "Manufacturer": "Willard",
+      "Model": "Vega 30 Voyager",
+      "Variant": "Raised Pilothouse",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": null
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "WILL-36-TR",
+      "Manufacturer": "Willard",
+      "Model": "Vega 36 Standard Cruiser",
+      "Variant": "Flybridge Sedan",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": null
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "WILL-40-NO",
+      "Manufacturer": "Willard",
+      "Model": "Vega 40 Nomad",
+      "Variant": "Widebody Flybridge Sedan",
+      "ResearchedUnknownFields": [
+        "Beam",
+        "Draft",
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "Beam": null,
+        "Draft": null,
+        "AirDraft": null
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "SEAR-340-SU-99",
+      "Manufacturer": "Sea Ray",
+      "Model": "340 Sundancer",
+      "Variant": "Generation 2",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": 10.2
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "SEAR-340-SU-03",
+      "Manufacturer": "Sea Ray",
+      "Model": "340 Sundancer",
+      "Variant": "Generation 3",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "LegacyValues": {
+        "AirDraft": 10.2
+      },
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    }
+  ]
+}

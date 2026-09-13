@@ -1,0 +1,1028 @@
+{
+  "release": "6.51.0",
+  "batch": "specification-completion-06",
+  "manufacturers": [
+    "Silverton",
+    "Sea Ray",
+    "Fjord",
+    "Meridian",
+    "American Tug"
+  ],
+  "updateCount": 95,
+  "updates": [
+    {
+      "BoatModelID": "AMTG-34",
+      "Field": "LOA",
+      "Old": null,
+      "New": 10.4902,
+      "Basis": "PowerBoat Guide publishes 34 ft 5 in LOA for the 2001–09 American Tug 34.",
+      "EvidenceRefs": [
+        "https://cdn.denisonyachtsales.com/boat-guide-pdfs/American%20Tug%2034.pdf"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "AMTG-34",
+      "Field": "LWL",
+      "Old": null,
+      "New": 9.9822,
+      "Basis": "PowerBoat Guide publishes 32 ft 9 in LWL.",
+      "EvidenceRefs": [
+        "https://cdn.denisonyachtsales.com/boat-guide-pdfs/American%20Tug%2034.pdf"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "AMTG-34",
+      "Field": "Beam",
+      "Old": null,
+      "New": 4.0386,
+      "Basis": "PowerBoat Guide publishes 13 ft 3 in beam.",
+      "EvidenceRefs": [
+        "https://cdn.denisonyachtsales.com/boat-guide-pdfs/American%20Tug%2034.pdf"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "AMTG-34",
+      "Field": "Draft",
+      "Old": null,
+      "New": 1.0414,
+      "Basis": "PowerBoat Guide publishes 3 ft 5 in draft.",
+      "EvidenceRefs": [
+        "https://cdn.denisonyachtsales.com/boat-guide-pdfs/American%20Tug%2034.pdf"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "AMTG-34",
+      "Field": "Displacement",
+      "Old": null,
+      "New": 9071.8,
+      "Basis": "PowerBoat Guide publishes 20,000 lb displacement.",
+      "EvidenceRefs": [
+        "https://cdn.denisonyachtsales.com/boat-guide-pdfs/American%20Tug%2034.pdf"
+      ],
+      "Unit": "kg"
+    },
+    {
+      "BoatModelID": "AMTG-34",
+      "Field": "KeelConfigurationCode",
+      "Old": "keel.partial_skeg",
+      "New": "keel.full_long",
+      "Basis": "Model guide explicitly describes a full-length keel; replaces the weaker partial-skeg classification.",
+      "EvidenceRefs": [
+        "https://cdn.denisonyachtsales.com/boat-guide-pdfs/American%20Tug%2034.pdf"
+      ]
+    },
+    {
+      "BoatModelID": "AMTG-34",
+      "Field": "RudderTypeCode",
+      "Old": null,
+      "New": "rudder.skeg_hung",
+      "Basis": "Documented skeg supports/protects the rudder, supporting skeg-hung classification.",
+      "EvidenceRefs": [
+        "https://www.denisonyachtsales.com/yachts-for-sale/next-chapter-34-american-tug"
+      ]
+    },
+    {
+      "BoatModelID": "AMTG-365",
+      "Field": "RudderTypeCode",
+      "Old": null,
+      "New": "rudder.skeg_hung",
+      "Basis": "Documented skeg supports/protects the rudder, supporting skeg-hung classification.",
+      "EvidenceRefs": [
+        "https://www.americantug.com/tour/at-365/"
+      ]
+    },
+    {
+      "BoatModelID": "AMTG-395",
+      "Field": "RudderTypeCode",
+      "Old": null,
+      "New": "rudder.skeg_hung",
+      "Basis": "Documented skeg supports/protects the rudder, supporting skeg-hung classification.",
+      "EvidenceRefs": [
+        "https://www.americantug.com/tour/at-395/"
+      ]
+    },
+    {
+      "BoatModelID": "AMTG-34",
+      "Field": "FuelCapacity",
+      "Old": 400,
+      "New": 1514.16,
+      "Basis": "Published US-market tankage normalized to canonical litres.",
+      "EvidenceRefs": [
+        "https://cdn.denisonyachtsales.com/boat-guide-pdfs/American%20Tug%2034.pdf"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "AMTG-34",
+      "Field": "FuelCapacityUnitStatus",
+      "Old": "legacy_gallon_basis_unverified",
+      "New": "canonical_litres",
+      "Basis": "Source gives gallon values with matching litre conversion (factory for current models; US technical guide for 34).",
+      "EvidenceRefs": [
+        "https://cdn.denisonyachtsales.com/boat-guide-pdfs/American%20Tug%2034.pdf"
+      ]
+    },
+    {
+      "BoatModelID": "AMTG-34",
+      "Field": "WaterCapacity",
+      "Old": 150,
+      "New": 567.81,
+      "Basis": "Published US-market tankage normalized to canonical litres.",
+      "EvidenceRefs": [
+        "https://cdn.denisonyachtsales.com/boat-guide-pdfs/American%20Tug%2034.pdf"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "AMTG-34",
+      "Field": "WaterCapacityUnitStatus",
+      "Old": "legacy_gallon_basis_unverified",
+      "New": "canonical_litres",
+      "Basis": "Source gives gallon values with matching litre conversion (factory for current models; US technical guide for 34).",
+      "EvidenceRefs": [
+        "https://cdn.denisonyachtsales.com/boat-guide-pdfs/American%20Tug%2034.pdf"
+      ]
+    },
+    {
+      "BoatModelID": "AMTG-34",
+      "Field": "HoldingCapacity",
+      "Old": 45,
+      "New": 170.34,
+      "Basis": "Published US-market tankage normalized to canonical litres.",
+      "EvidenceRefs": [
+        "https://cdn.denisonyachtsales.com/boat-guide-pdfs/American%20Tug%2034.pdf"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "AMTG-34",
+      "Field": "HoldingCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "Source gives gallon values with matching litre conversion (factory for current models; US technical guide for 34).",
+      "EvidenceRefs": [
+        "https://cdn.denisonyachtsales.com/boat-guide-pdfs/American%20Tug%2034.pdf"
+      ]
+    },
+    {
+      "BoatModelID": "AMTG-365",
+      "Field": "FuelCapacity",
+      "Old": 400,
+      "New": 1514.16,
+      "Basis": "Published US-market tankage normalized to canonical litres.",
+      "EvidenceRefs": [
+        "https://www.americantug.com/tour/at-365/"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "AMTG-365",
+      "Field": "FuelCapacityUnitStatus",
+      "Old": "legacy_gallon_basis_unverified",
+      "New": "canonical_litres",
+      "Basis": "Source gives gallon values with matching litre conversion (factory for current models; US technical guide for 34).",
+      "EvidenceRefs": [
+        "https://www.americantug.com/tour/at-365/"
+      ]
+    },
+    {
+      "BoatModelID": "AMTG-365",
+      "Field": "WaterCapacity",
+      "Old": 120,
+      "New": 454.25,
+      "Basis": "Published US-market tankage normalized to canonical litres.",
+      "EvidenceRefs": [
+        "https://www.americantug.com/tour/at-365/"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "AMTG-365",
+      "Field": "WaterCapacityUnitStatus",
+      "Old": "legacy_gallon_basis_unverified",
+      "New": "canonical_litres",
+      "Basis": "Source gives gallon values with matching litre conversion (factory for current models; US technical guide for 34).",
+      "EvidenceRefs": [
+        "https://www.americantug.com/tour/at-365/"
+      ]
+    },
+    {
+      "BoatModelID": "AMTG-365",
+      "Field": "HoldingCapacity",
+      "Old": 45,
+      "New": 170.34,
+      "Basis": "Published US-market tankage normalized to canonical litres.",
+      "EvidenceRefs": [
+        "https://www.americantug.com/tour/at-365/"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "AMTG-365",
+      "Field": "HoldingCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "Source gives gallon values with matching litre conversion (factory for current models; US technical guide for 34).",
+      "EvidenceRefs": [
+        "https://www.americantug.com/tour/at-365/"
+      ]
+    },
+    {
+      "BoatModelID": "AMTG-395",
+      "Field": "FuelCapacity",
+      "Old": 400,
+      "New": 1514.16,
+      "Basis": "Published US-market tankage normalized to canonical litres.",
+      "EvidenceRefs": [
+        "https://www.americantug.com/tour/at-395/"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "AMTG-395",
+      "Field": "FuelCapacityUnitStatus",
+      "Old": "legacy_gallon_basis_unverified",
+      "New": "canonical_litres",
+      "Basis": "Source gives gallon values with matching litre conversion (factory for current models; US technical guide for 34).",
+      "EvidenceRefs": [
+        "https://www.americantug.com/tour/at-395/"
+      ]
+    },
+    {
+      "BoatModelID": "AMTG-395",
+      "Field": "WaterCapacity",
+      "Old": 120,
+      "New": 454.25,
+      "Basis": "Published US-market tankage normalized to canonical litres.",
+      "EvidenceRefs": [
+        "https://www.americantug.com/tour/at-395/"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "AMTG-395",
+      "Field": "WaterCapacityUnitStatus",
+      "Old": "legacy_gallon_basis_unverified",
+      "New": "canonical_litres",
+      "Basis": "Source gives gallon values with matching litre conversion (factory for current models; US technical guide for 34).",
+      "EvidenceRefs": [
+        "https://www.americantug.com/tour/at-395/"
+      ]
+    },
+    {
+      "BoatModelID": "AMTG-395",
+      "Field": "HoldingCapacity",
+      "Old": 45,
+      "New": 170.34,
+      "Basis": "Published US-market tankage normalized to canonical litres.",
+      "EvidenceRefs": [
+        "https://www.americantug.com/tour/at-395/"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "AMTG-395",
+      "Field": "HoldingCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "Source gives gallon values with matching litre conversion (factory for current models; US technical guide for 34).",
+      "EvidenceRefs": [
+        "https://www.americantug.com/tour/at-395/"
+      ]
+    },
+    {
+      "BoatModelID": "FJRD-36-OPEN",
+      "Field": "RudderTypeCode",
+      "Old": null,
+      "New": "rudder.none_external_drive",
+      "Basis": "Volvo IPS steerable pod propulsion has no separate conventional rudder.",
+      "EvidenceRefs": [
+        "https://www.devalk.nl/en/yachtbrokerage/500777/FJORD-36-OPEN.html"
+      ]
+    },
+    {
+      "BoatModelID": "FJRD-40",
+      "Field": "RudderTypeCode",
+      "Old": null,
+      "New": "rudder.none_external_drive",
+      "Basis": "Volvo IPS steerable pod propulsion has no separate conventional rudder.",
+      "EvidenceRefs": [
+        "https://www.devalk.nl/en/yachtbrokerage/500843/FJORD-40-CRUISER.html"
+      ]
+    },
+    {
+      "BoatModelID": "FJRD-40-OPEN",
+      "Field": "RudderTypeCode",
+      "Old": null,
+      "New": "rudder.none_external_drive",
+      "Basis": "Volvo IPS steerable pod propulsion has no separate conventional rudder.",
+      "EvidenceRefs": [
+        "https://www.devalk.nl/en/yachtbrokerage/501359/FJORD-40-OPEN.html"
+      ]
+    },
+    {
+      "BoatModelID": "FJRD-36-OPEN",
+      "Field": "AirDraft",
+      "Old": null,
+      "New": 2.9,
+      "Basis": "De Valk model-specific specification publishes 2.90 m air draft (2.75 m minimum).",
+      "EvidenceRefs": [
+        "https://www.devalk.nl/en/yachtbrokerage/500777/FJORD-36-OPEN.html"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "FJRD-36-OPEN",
+      "Field": "AirDraft_ft",
+      "Old": 10.17,
+      "New": 9.51,
+      "Basis": "Legacy imperial shadow aligned to 2.90 m published air draft.",
+      "EvidenceRefs": [
+        "https://www.devalk.nl/en/yachtbrokerage/500777/FJORD-36-OPEN.html"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "FJRD-40",
+      "Field": "FuelCapacity",
+      "Old": 264,
+      "New": 1000,
+      "Basis": "Model-specific European specification publishes 1,000 L fuel capacity.",
+      "EvidenceRefs": [
+        "https://www.devalk.nl/en/yachtbrokerage/500843/FJORD-40-CRUISER.html"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "FJRD-40",
+      "Field": "WaterCapacity",
+      "Old": 90,
+      "New": 340,
+      "Basis": "Model-specific European specification publishes 340 L freshwater capacity.",
+      "EvidenceRefs": [
+        "https://www.devalk.nl/en/yachtbrokerage/500843/FJORD-40-CRUISER.html"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "FJRD-40",
+      "Field": "FuelCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "Source publishes litres directly.",
+      "EvidenceRefs": [
+        "https://www.devalk.nl/en/yachtbrokerage/500843/FJORD-40-CRUISER.html"
+      ]
+    },
+    {
+      "BoatModelID": "FJRD-40",
+      "Field": "WaterCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "Source publishes litres directly.",
+      "EvidenceRefs": [
+        "https://www.devalk.nl/en/yachtbrokerage/500843/FJORD-40-CRUISER.html"
+      ]
+    },
+    {
+      "BoatModelID": "MERI-341-SE",
+      "Field": "AirDraft",
+      "Old": null,
+      "New": 4.2926,
+      "Basis": "HMY Powerboat Guide publishes model-specific clearance.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/meridian/341-sedan-2005-14"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "MERI-341-SE",
+      "Field": "AirDraft_ft",
+      "Old": 13.8,
+      "New": 14.08,
+      "Basis": "Imperial shadow aligned to published clearance.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/meridian/341-sedan-2005-14"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "MERI-381-SE",
+      "Field": "AirDraft",
+      "Old": null,
+      "New": 4.2926,
+      "Basis": "HMY Powerboat Guide publishes model-specific clearance.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/meridian/381-sedan-2003-06"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "MERI-381-SE",
+      "Field": "AirDraft_ft",
+      "Old": 14.2,
+      "New": 14.08,
+      "Basis": "Imperial shadow aligned to published clearance.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/meridian/381-sedan-2003-06"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "MERI-341-SE-03",
+      "Field": "AirDraft",
+      "Old": null,
+      "New": 4.1148,
+      "Basis": "HMY Powerboat Guide publishes model-specific clearance.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/meridian/341-sedan-2003-04"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "MERI-341-SE-03",
+      "Field": "AirDraft_ft",
+      "Old": 13.8,
+      "New": 13.5,
+      "Basis": "Imperial shadow aligned to published clearance.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/meridian/341-sedan-2003-04"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "MERI-341-SE-03",
+      "Field": "FuelCapacity",
+      "Old": 250,
+      "New": 847.93,
+      "Basis": "2003–04 Meridian 341 model guide publishes generation-specific tankage; normalized assuming US gallons.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/meridian/341-sedan-2003-04"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "MERI-341-SE-03",
+      "Field": "FuelCapacityGal",
+      "Old": 250,
+      "New": 224,
+      "Basis": "Generation-specific gallon shadow corrected to 2003–04 specification.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/meridian/341-sedan-2003-04"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "MERI-341-SE-03",
+      "Field": "FuelCapacityUnitStatus",
+      "Old": "legacy_gallon_basis_unverified",
+      "New": "canonical_litres_assumed_us_gal",
+      "Basis": "US technical guide gallon value converted to canonical litres; gallon basis retained as assumed US.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/meridian/341-sedan-2003-04"
+      ]
+    },
+    {
+      "BoatModelID": "MERI-341-SE-03",
+      "Field": "WaterCapacity",
+      "Old": 90,
+      "New": 348.26,
+      "Basis": "2003–04 Meridian 341 model guide publishes generation-specific tankage; normalized assuming US gallons.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/meridian/341-sedan-2003-04"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "MERI-341-SE-03",
+      "Field": "WaterCapacityGal",
+      "Old": 90,
+      "New": 92,
+      "Basis": "Generation-specific gallon shadow corrected to 2003–04 specification.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/meridian/341-sedan-2003-04"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "MERI-341-SE-03",
+      "Field": "WaterCapacityUnitStatus",
+      "Old": "legacy_gallon_basis_unverified",
+      "New": "canonical_litres_assumed_us_gal",
+      "Basis": "US technical guide gallon value converted to canonical litres; gallon basis retained as assumed US.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/meridian/341-sedan-2003-04"
+      ]
+    },
+    {
+      "BoatModelID": "MERI-341-SE-03",
+      "Field": "HoldingCapacity",
+      "Old": 35,
+      "New": 113.56,
+      "Basis": "2003–04 Meridian 341 model guide publishes generation-specific tankage; normalized assuming US gallons.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/meridian/341-sedan-2003-04"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "MERI-341-SE-03",
+      "Field": "HoldingCapacityGal",
+      "Old": null,
+      "New": 30,
+      "Basis": "Generation-specific gallon shadow corrected to 2003–04 specification.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/meridian/341-sedan-2003-04"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "MERI-341-SE-03",
+      "Field": "HoldingCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres_assumed_us_gal",
+      "Basis": "US technical guide gallon value converted to canonical litres; gallon basis retained as assumed US.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/meridian/341-sedan-2003-04"
+      ]
+    },
+    {
+      "BoatModelID": "MERI-341-SE-03",
+      "Field": "LOA_ft",
+      "Old": 35.83,
+      "New": 35.25,
+      "Basis": "Imperial shadow aligned to 2003–04 generation specification.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/meridian/341-sedan-2003-04"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "MERI-341-SE-03",
+      "Field": "Beam_ft",
+      "Old": 12.5,
+      "New": 11.67,
+      "Basis": "Imperial shadow aligned to 2003–04 generation specification.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/meridian/341-sedan-2003-04"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "MERI-341-SE-03",
+      "Field": "Draft_ft",
+      "Old": 4,
+      "New": 3.17,
+      "Basis": "Imperial shadow aligned to 2003–04 generation specification.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/meridian/341-sedan-2003-04"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "MERI-341-SE-03",
+      "Field": "Displacement_lb",
+      "Old": 18254,
+      "New": 17000,
+      "Basis": "Imperial shadow aligned to 2003–04 generation specification.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/meridian/341-sedan-2003-04"
+      ],
+      "Unit": "lb"
+    },
+    {
+      "BoatModelID": "SEAR-340-SU-99",
+      "Field": "MechanicalPropulsionCode",
+      "Old": null,
+      "New": "mechanical_propulsion.v_drive",
+      "Basis": "HMY explicitly documents V-drive gas inboards for the 1999–2002 340 Sundancer.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-sundancer-1999-2002"
+      ]
+    },
+    {
+      "BoatModelID": "SEAR-340-SU",
+      "Field": "LOA_ft",
+      "Old": 34,
+      "New": 35.92,
+      "Basis": "Imperial shadow aligned to 1984–89 HMY specification.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-sundancer-1984-89"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "SEAR-340-SU",
+      "Field": "Beam_ft",
+      "Old": 11.42,
+      "New": 11.92,
+      "Basis": "Imperial shadow aligned to 1984–89 HMY specification.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-sundancer-1984-89"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "SEAR-340-SU",
+      "Field": "Draft_ft",
+      "Old": 2.92,
+      "New": 2.42,
+      "Basis": "Imperial shadow aligned to 1984–89 HMY specification.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-sundancer-1984-89"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "SEAR-340-SU",
+      "Field": "Displacement_lb",
+      "Old": 14600,
+      "New": 12500,
+      "Basis": "Imperial shadow aligned to 1984–89 HMY specification.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-sundancer-1984-89"
+      ],
+      "Unit": "lb"
+    },
+    {
+      "BoatModelID": "SEAR-340-SU",
+      "Field": "FuelCapacityGal",
+      "Old": 225,
+      "New": 172,
+      "Basis": "1984–89 HMY specification lists 172 gal fuel; replaces later-generation 225 gal shadow.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-sundancer-1984-89"
+      ],
+      "Unit": "gal"
+    },
+    {
+      "BoatModelID": "SEAR-340-SU",
+      "Field": "WaterCapacityGal",
+      "Old": 45,
+      "New": 52,
+      "Basis": "1984–89 HMY specification lists 52 gal water; replaces later-generation 45 gal shadow.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-sundancer-1984-89"
+      ],
+      "Unit": "gal"
+    },
+    {
+      "BoatModelID": "SEAR-340-SU",
+      "Field": "FuelCapacityUnitStatus",
+      "Old": "conflicting_legacy_capacity_values",
+      "New": "canonical_litres_assumed_us_gal",
+      "Basis": "Canonical litre value matches the generation-specific 172-gal HMY figure.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-sundancer-1984-89"
+      ]
+    },
+    {
+      "BoatModelID": "SEAR-340-SU",
+      "Field": "WaterCapacityUnitStatus",
+      "Old": "conflicting_legacy_capacity_values",
+      "New": "canonical_litres_assumed_us_gal",
+      "Basis": "Canonical litre value matches the generation-specific 52-gal HMY figure.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-sundancer-1984-89"
+      ]
+    },
+    {
+      "BoatModelID": "SEAR-340-SU-99",
+      "Field": "LOA_ft",
+      "Old": 34,
+      "New": 33.5,
+      "Basis": "Imperial shadow aligned to 1999–2002 HMY specification.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-sundancer-1999-2002"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "SEAR-340-SU-99",
+      "Field": "Draft_ft",
+      "Old": 2.92,
+      "New": 2.42,
+      "Basis": "Imperial shadow aligned to 1999–2002 HMY specification.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-sundancer-1999-2002"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "SEAR-340-SU-99",
+      "Field": "Displacement_lb",
+      "Old": 14600,
+      "New": 13000,
+      "Basis": "Imperial shadow aligned to 1999–2002 HMY specification.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-sundancer-1999-2002"
+      ],
+      "Unit": "lb"
+    },
+    {
+      "BoatModelID": "SEAR-340-SU-99",
+      "Field": "WaterCapacityGal",
+      "Old": 45,
+      "New": 40,
+      "Basis": "1999–2002 HMY specification lists 40 gal water.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-sundancer-1999-2002"
+      ],
+      "Unit": "gal"
+    },
+    {
+      "BoatModelID": "SEAR-340-SU-99",
+      "Field": "WaterCapacityUnitStatus",
+      "Old": "conflicting_legacy_capacity_values",
+      "New": "canonical_litres_assumed_us_gal",
+      "Basis": "Canonical litre value matches the generation-specific 40-gal HMY figure.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-sundancer-1999-2002"
+      ]
+    },
+    {
+      "BoatModelID": "SEAR-340-SU-03",
+      "Field": "LOA_ft",
+      "Old": 34,
+      "New": 37.5,
+      "Basis": "Imperial shadow aligned to 2003–08 HMY specification.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-sundancer-2003-08"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "SEAR-340-SU-03",
+      "Field": "Beam_ft",
+      "Old": 11.42,
+      "New": 12,
+      "Basis": "Imperial shadow aligned to 2003–08 HMY specification.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-sundancer-2003-08"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "SEAR-340-SU-03",
+      "Field": "Draft_ft",
+      "Old": 2.92,
+      "New": 3.08,
+      "Basis": "Imperial shadow aligned to 2003–08 HMY specification.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-sundancer-2003-08"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "SEAR-340-SU-03",
+      "Field": "Displacement_lb",
+      "Old": 14600,
+      "New": 15500,
+      "Basis": "Imperial shadow aligned to 2003–08 HMY specification.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-sundancer-2003-08"
+      ],
+      "Unit": "lb"
+    },
+    {
+      "BoatModelID": "SEAR-340-SU-99",
+      "Field": "HoldingCapacityGal",
+      "Old": null,
+      "New": 28,
+      "Basis": "Generation-specific HMY specification lists 28 gal waste.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-sundancer-1999-2002"
+      ],
+      "Unit": "gal"
+    },
+    {
+      "BoatModelID": "SEAR-340-SU-99",
+      "Field": "HoldingCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres_assumed_us_gal",
+      "Basis": "Canonical litre value matches 28-gal published waste capacity.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-sundancer-1999-2002"
+      ]
+    },
+    {
+      "BoatModelID": "SEAR-340-SU-03",
+      "Field": "HoldingCapacityGal",
+      "Old": null,
+      "New": 28,
+      "Basis": "Generation-specific HMY specification lists 28 gal waste.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-sundancer-2003-08"
+      ],
+      "Unit": "gal"
+    },
+    {
+      "BoatModelID": "SEAR-340-SU-03",
+      "Field": "HoldingCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres_assumed_us_gal",
+      "Basis": "Canonical litre value matches 28-gal published waste capacity.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-sundancer-2003-08"
+      ]
+    },
+    {
+      "BoatModelID": "SEAR-390-MO",
+      "Field": "HoldingCapacityGal",
+      "Old": null,
+      "New": 54,
+      "Basis": "HMY model guide publishes 54 gal waste capacity.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/390-motor-yacht-40-motor-yacht-2003-07"
+      ],
+      "Unit": "gal"
+    },
+    {
+      "BoatModelID": "SEAR-390-MO",
+      "Field": "HoldingCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres_assumed_us_gal",
+      "Basis": "Canonical litre value matches 54-gal published waste capacity.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/390-motor-yacht-40-motor-yacht-2003-07"
+      ]
+    },
+    {
+      "BoatModelID": "SILV-352-MO",
+      "Field": "AirDraft",
+      "Old": null,
+      "New": 4.9276,
+      "Basis": "HMY Powerboat Guide publishes model-specific clearance.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/silverton/352-motor-yacht-1997-2002"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "SILV-352-MO",
+      "Field": "AirDraft_ft",
+      "Old": 12.2,
+      "New": 16.17,
+      "Basis": "Imperial shadow aligned to published clearance.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/silverton/352-motor-yacht-1997-2002"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "SILV-372",
+      "Field": "AirDraft",
+      "Old": null,
+      "New": 5.0038,
+      "Basis": "HMY Powerboat Guide publishes model-specific clearance.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/silverton/372-392-motor-yacht-1996-2001"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "SILV-372",
+      "Field": "AirDraft_ft",
+      "Old": 14,
+      "New": 16.42,
+      "Basis": "Imperial shadow aligned to published clearance.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/silverton/372-392-motor-yacht-1996-2001"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "SILV-40-AC",
+      "Field": "AirDraft",
+      "Old": null,
+      "New": 4.1148,
+      "Basis": "HMY Powerboat Guide publishes model-specific clearance.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/silverton/40-aft-cabin-1982-90"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "SILV-40-AC",
+      "Field": "AirDraft_ft",
+      "Old": 14.5,
+      "New": 13.5,
+      "Basis": "Imperial shadow aligned to published clearance.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/silverton/40-aft-cabin-1982-90"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "SILV-34-MO",
+      "Field": "LOA_ft",
+      "Old": 34,
+      "New": 39.83,
+      "Basis": "Imperial shadow aligned to HMY 34 Motor Yacht specification.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/silverton/34-motor-yacht-1993-96"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "SILV-34-MO",
+      "Field": "Draft_ft",
+      "Old": 3.08,
+      "New": 3,
+      "Basis": "Imperial shadow aligned to HMY 34 Motor Yacht specification.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/silverton/34-motor-yacht-1993-96"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "SILV-34-MO",
+      "Field": "Displacement_lb",
+      "Old": 15500,
+      "New": 16368,
+      "Basis": "Imperial shadow aligned to HMY 34 Motor Yacht specification.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/silverton/34-motor-yacht-1993-96"
+      ],
+      "Unit": "lb"
+    },
+    {
+      "BoatModelID": "SILV-34-MO",
+      "Field": "FuelCapacity",
+      "Old": 200,
+      "New": 984.21,
+      "Basis": "HMY model guide resolves conflicting legacy capacity value; normalized assuming US gallons.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/silverton/34-motor-yacht-1993-96"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "SILV-34-MO",
+      "Field": "FuelCapacityUnitStatus",
+      "Old": "conflicting_legacy_capacity_values",
+      "New": "canonical_litres_assumed_us_gal",
+      "Basis": "US technical guide gallon value converted to canonical litres.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/silverton/34-motor-yacht-1993-96"
+      ]
+    },
+    {
+      "BoatModelID": "SILV-34-MO",
+      "Field": "WaterCapacity",
+      "Old": 80,
+      "New": 280.12,
+      "Basis": "HMY model guide resolves conflicting legacy capacity value; normalized assuming US gallons.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/silverton/34-motor-yacht-1993-96"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "SILV-34-MO",
+      "Field": "WaterCapacityUnitStatus",
+      "Old": "conflicting_legacy_capacity_values",
+      "New": "canonical_litres_assumed_us_gal",
+      "Basis": "US technical guide gallon value converted to canonical litres.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/silverton/34-motor-yacht-1993-96"
+      ]
+    },
+    {
+      "BoatModelID": "SILV-34-MO",
+      "Field": "HoldingCapacity",
+      "Old": 30,
+      "New": 170.34,
+      "Basis": "HMY model guide resolves conflicting legacy capacity value; normalized assuming US gallons.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/silverton/34-motor-yacht-1993-96"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "SILV-34-MO",
+      "Field": "HoldingCapacityGal",
+      "Old": null,
+      "New": 45,
+      "Basis": "Gallon shadow aligned to HMY model-specific specification.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/silverton/34-motor-yacht-1993-96"
+      ],
+      "Unit": "gal"
+    },
+    {
+      "BoatModelID": "SILV-34-MO",
+      "Field": "HoldingCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres_assumed_us_gal",
+      "Basis": "US technical guide gallon value converted to canonical litres.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/silverton/34-motor-yacht-1993-96"
+      ]
+    }
+  ]
+}

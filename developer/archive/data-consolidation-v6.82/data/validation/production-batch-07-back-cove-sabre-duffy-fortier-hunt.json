@@ -1,0 +1,49 @@
+{
+  "batchId": "production-07-back-cove-sabre-duffy-fortier-hunt",
+  "release": "6.37.0",
+  "schemaVersion": "1.4",
+  "status": "complete-with-semi-custom-and-propulsion-variability",
+  "manufacturers": [
+    "Back Cove",
+    "Sabre",
+    "Duffy",
+    "Fortier",
+    "Hunt Yachts"
+  ],
+  "modelCount": 21,
+  "modelIds": [
+    "BKCV-26",
+    "BKCV-29",
+    "BKCV-30",
+    "BKCV-32",
+    "BKCV-33",
+    "BKCV-34",
+    "BKCV-37",
+    "BKCV-39O",
+    "BKCV-41",
+    "DUFF-29",
+    "DUFF-31",
+    "DUFF-35",
+    "DUFF-37",
+    "DUFF-39",
+    "DUFF-42",
+    "FORT-26",
+    "FORT-33",
+    "HUNT-29",
+    "HUNT-36",
+    "SABR-34-EX",
+    "SABR-38-SA"
+  ],
+  "evidenceAssertionCount": 94,
+  "importantFindings": [
+    "Back Cove 29 heritage page contains a likely imperial typo: 9 ft 5 in conflicts with its own 3.20 m value and original 10 ft 5 in brochure. Canonical beam is 10 ft 5 in.",
+    "Back Cove 33 was explicitly relaunched as the Back Cove 34 in 2012; records remain searchable but lineage is linked.",
+    "Back Cove 32 canonical LOA corrected to 37 ft overall rather than the legacy 32.5 ft hull-number-based approximation.",
+    "Sabre 38 Salon Express uses production phases because the original pod-drive generation was reintroduced in 2026 with Volvo Penta DPI sterndrives.",
+    "Duffy records are hull-family/semi-custom records, so layouts, machinery and tankage must remain hull-specific where documentation varies.",
+    "Duffy 35 production history corrected toward the 1981 design / 1982 build lineage; Duffy 42 is documented through 2006.",
+    "Fortier 33 supports both conventional twin inboards and optional IPS, so propulsion is not forced model-wide.",
+    "Hunt Surfhunter 29 supports sterndrive, V-drive, waterjet and outboard configurations; propulsion remains configuration-specific.",
+    "Hunt Surfhunter 36 Coupe dimensions are validated and its pod/shaft propulsion variability is preserved."
+  ]
+}

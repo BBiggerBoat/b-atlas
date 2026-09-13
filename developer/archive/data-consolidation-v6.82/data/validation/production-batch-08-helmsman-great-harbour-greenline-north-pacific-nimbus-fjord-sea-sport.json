@@ -1,0 +1,49 @@
+{
+  "batchId": "production-08-helmsman-great-harbour-greenline-north-pacific-nimbus-fjord-sea-sport",
+  "release": "6.38.0",
+  "schemaVersion": "1.4",
+  "status": "complete-with-conservative-historical-records",
+  "manufacturers": [
+    "Helmsman",
+    "Great Harbour",
+    "Greenline",
+    "North Pacific",
+    "Nimbus",
+    "Fjord",
+    "Sea Sport"
+  ],
+  "modelCount": 19,
+  "modelIds": [
+    "FJRD-36",
+    "FJRD-36-OPEN",
+    "FJRD-40",
+    "FJRD-40-OPEN",
+    "GRTH-GH37",
+    "GRTH-N37",
+    "GRNL-33",
+    "GRNL-39",
+    "HELM-31-CA",
+    "HELM-38E-TR",
+    "HELM-43-E",
+    "HELM-46-PH",
+    "NMBS-3003",
+    "NMBS-365-CO",
+    "NPAC-28",
+    "NPAC-38",
+    "SSPT-24",
+    "SSPT-24-EX",
+    "SSPT-27"
+  ],
+  "evidenceAssertionCount": 93,
+  "importantFindings": [
+    "Helmsman 31 is explicitly an updated Camano 31 design; B-Atlas records lineage without merging the distinct brands/models.",
+    "Helmsman 43E and 46 legacy aft-cabin assumptions were incorrect; their accommodation is not a conventional aft-cabin arrangement.",
+    "Great Harbour N-series is explicitly the second generation of Great Harbour full-displacement trawlers.",
+    "Greenline 33 and 39 propulsion/energy source can be diesel, hybrid or electric; B-Atlas avoids forcing one fuel code.",
+    "North Pacific 38 Sedan has strong contemporary published specifications; North Pacific 28 is retained more conservatively because the model-specific factory page is unavailable.",
+    "Nimbus 365 supports single and twin engine alternatives; engine count is therefore configuration-specific.",
+    "FJORD 36/40 Open and Cruiser records are correctly treated as deep-V/planing modern cruisers with IPS/pod lineage where documented.",
+    "Sea Sport 2400 XL and Explorer are outboard deep-V pilothouse boats and support single or twin outboard configurations.",
+    "Sea Sport 27 remains flagged for a dedicated identity split review because Seamaster, Navigator and Pilot are currently combined in one B-Atlas record."
+  ]
+}

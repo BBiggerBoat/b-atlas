@@ -73,7 +73,7 @@ async function publishCommunity(env) {
     const source = row.Payload?.CorrectionField;
     const target = correctionTarget(source);
     if (!target || source === "Other" || !row.ModelID) continue;
-    const value = normalizeCorrectionValue(target, row.Payload?.ProposedValue);
+    const value = normalizeCorrectionValue(target, row.Payload?.ProposedValue, source);
     if (value === undefined) continue;
     modelPatches[row.ModelID] = { ...(modelPatches[row.ModelID] || {}), [target]: value, LastUpdated: now.slice(0, 10), ReviewedBy: "B-Atlas Community Moderation" };
     row.CanonicalPublishedAt = now;
@@ -165,9 +165,9 @@ async function promoteCanonical(env, row, baseline = {}) {
       ManufacturerID: existingMfrModel?.ManufacturerID || code, Manufacturer: manufacturer, Model: model,
       Variant: f.Variant || null, Nickname: [manufacturer, model, f.Variant].filter(Boolean).join(" "), ...permanent,
       ImageURL: "images/boat-placeholder.svg", Active: true, FirstYear: f.YearStart ? Number(f.YearStart) : null,
-      LastYear: f.YearEnd ? Number(f.YearEnd) : null, LOA_ft: f.LengthFt ? Number(f.LengthFt) : null,
-      Beam_ft: f.BeamFt ? Number(f.BeamFt) : null, Draft_ft: f.DraftFt ? Number(f.DraftFt) : null,
-      Displacement_lb: f.DisplacementLb ? Number(f.DisplacementLb) : null, BoatFamily: f.BoatFamily || null,
+      LastYear: f.YearEnd ? Number(f.YearEnd) : null, LOA: f.LengthFt ? Number(f.LengthFt) * 0.3048 : null,
+      Beam: f.BeamFt ? Number(f.BeamFt) * 0.3048 : null, Draft: f.DraftFt ? Number(f.DraftFt) * 0.3048 : null,
+      Displacement: f.DisplacementLb ? Number(f.DisplacementLb) * 0.45359237 : null, BoatFamily: f.BoatFamily || null,
       Fuel: f.Fuel || null, NormalizedFuel: f.Fuel || null, Propulsion: f.Propulsion || null,
       NormalizedPropulsion: f.Propulsion || null, HullBehaviour: f.HullBehaviour || null,
       EngineConfiguration: f.EngineConfiguration || null, Designer: f.Designer || null,

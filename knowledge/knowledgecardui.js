@@ -12,7 +12,7 @@
     const COLLECTION_PATH = 'knowledge/data/knowledgecards.json';
     const RESOURCE_PATH = 'knowledge/data/curatedresources.json';
     const LISTING_PATH = 'knowledge/data/listingsearches.json';
-    const INTELLIGENCE_PATH = 'knowledge/data/boatintelligence.json';
+    const INTELLIGENCE_PATH = 'boatmodels.json';
     let collectionPromise = null;
     let resourcePromise = null;
     let listingPromise = null;
@@ -212,10 +212,38 @@
         `).join('')}</ul>`;
     }
 
-    function renderAvailableKnowledge(card) {
+    function canonicalSpecifications(boat) {
+        if (!boat || typeof boat !== 'object') return [];
+        const c = typeof globalThis !== 'undefined' ? globalThis.BAtlasCanonical : null;
+        const profile = c && typeof c.getUnitProfile === 'function' ? c.getUnitProfile() : 'imperial';
+        const fmt = (value, dimension) => {
+            const n = Number(value);
+            if (!Number.isFinite(n)) return null;
+            return c && typeof c.formatMeasurement === 'function' ? c.formatMeasurement(n, dimension, profile) : String(value);
+        };
+        const years = boat.FirstYear && boat.LastYear ? `${boat.FirstYear}–${boat.LastYear}` : (boat.FirstYear || boat.LastYear || null);
+        const capacity = key => c && typeof c.formatUnverifiedVolume === 'function' ? c.formatUnverifiedVolume(boat, key, `${key}Gal`) : (boat[key] ?? null);
+        const rows = [
+            ['Production years', years],
+            ['LOA', fmt(boat.LOA, 'length')],
+            ['LWL', fmt(boat.LWL, 'length')],
+            ['Beam', fmt(boat.Beam, 'length')],
+            ['Draft', fmt(boat.Draft, 'length')],
+            ['Air draft', fmt(boat.AirDraft, 'length')],
+            ['Displacement', fmt(boat.Displacement, 'mass')],
+            ['Fuel capacity', capacity('FuelCapacity')],
+            ['Water capacity', capacity('WaterCapacity')],
+            ['Holding capacity', capacity('HoldingCapacity')],
+            ['Typical propulsion', boat.NormalizedPropulsion || boat.PropulsionCode || boat.Propulsion],
+            ['Engine configuration', boat.EngineConfiguration],
+            ['Accommodation', [boat.Cabins && `${boat.Cabins} cabin${boat.Cabins===1?'':'s'}`, boat.Berths && `${boat.Berths} berths`, boat.Heads && `${boat.Heads} head${boat.Heads===1?'':'s'}`].filter(Boolean).join(', ')]
+        ];
+        return rows.filter(([, value]) => value !== null && value !== undefined && value !== '' && value !== 'Unknown');
+    }
+
+    function renderAvailableKnowledge(card, boat) {
         const sections = [];
-        const specifications = card && card.specifications && typeof card.specifications === 'object'
-            ? Object.entries(card.specifications) : [];
+        const specifications = canonicalSpecifications(boat);
         if (specifications.length > 0) {
             sections.push(`<div class="knowledge-resource-group"><h5>Specifications</h5><div class="knowledge-specification-grid">${specifications.map(([label, value]) => `<div class="knowledge-available-item"><strong>${escapeHtml(displayFieldName(label))}</strong><span>${escapeHtml(value)}</span></div>`).join('')}</div></div>`);
         }
@@ -259,7 +287,7 @@
         const confidenceClass = String(card.confidence || 'Unknown').toLowerCase();
         const displayName = escapeHtml(identity.displayName || boatName);
         const missingCount = asArray(card.missingInformation).length;
-        return `<div class="knowledge-card-state"><div class="knowledge-status-row"><div><strong>${displayName}</strong><span class="knowledge-meta">Knowledge Card v${escapeHtml(card.schemaVersion || 1)}</span></div><span class="knowledge-confidence knowledge-confidence-${confidenceClass}">Confidence: ${confidence}</span></div><div class="knowledge-subsection"><h4>Available Knowledge</h4>${renderAvailableKnowledge(card)}</div>${renderBoatIntelligence(card.intelligence, card.evidence)}<div class="knowledge-subsection"><h4>Missing Knowledge${missingCount ? ` (${missingCount})` : ''}</h4>${renderMissingInformation(card.missingInformation)}</div><div class="knowledge-subsection"><h4>Sources</h4>${renderSources(card.sources)}</div></div>`;
+        return `<div class="knowledge-card-state"><div class="knowledge-status-row"><div><strong>${displayName}</strong><span class="knowledge-meta">Knowledge Card v${escapeHtml(card.schemaVersion || 1)}</span></div><span class="knowledge-confidence knowledge-confidence-${confidenceClass}">Confidence: ${confidence}</span></div><div class="knowledge-subsection"><h4>Available Knowledge</h4>${renderAvailableKnowledge(card, boat)}</div>${renderBoatIntelligence(card.intelligence, card.evidence)}<div class="knowledge-subsection"><h4>Missing Knowledge${missingCount ? ` (${missingCount})` : ''}</h4>${renderMissingInformation(card.missingInformation)}</div><div class="knowledge-subsection"><h4>Sources</h4>${renderSources(card.sources)}</div></div>`;
     }
 
 

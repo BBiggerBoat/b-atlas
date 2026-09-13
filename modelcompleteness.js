@@ -12,7 +12,7 @@
     },
     {
       id: 'search', label: 'Search-critical', weight: 35,
-      fields: ['LOA_ft', 'Beam_ft', 'Draft_ft', 'AirDraft_ft', 'NormalizedFuel', 'NormalizedPropulsion', 'NormalizedHullForm', 'NormalizedHullConfiguration', 'NormalizedStyle', 'Flybridge', 'AftCabin', 'SideDecks', 'Trailerable']
+      fields: ['LOA', 'Beam', 'Draft', 'AirDraft', 'NormalizedFuel', 'NormalizedPropulsion', 'NormalizedHullForm', 'NormalizedHullConfiguration', 'NormalizedStyle', 'Flybridge', 'AftCabin', 'SideDecks', 'Trailerable']
     },
     {
       id: 'propulsion', label: 'Propulsion & capacity', weight: 15,
@@ -38,7 +38,7 @@
 
   const FIELD_LABELS = {
     BoatModelID: 'Boat model ID', Manufacturer: 'Manufacturer', Model: 'Model', FirstYear: 'First year', LastYear: 'Last year',
-    LOA_ft: 'Length overall', Beam_ft: 'Beam', Draft_ft: 'Draft', AirDraft_ft: 'Air draft',
+    LOA: 'Length overall', Beam: 'Beam', Draft: 'Draft', AirDraft: 'Air draft',
     NormalizedFuel: 'Normalized fuel', NormalizedPropulsion: 'Normalized propulsion', NormalizedHullForm: 'Normalized hull form',
     NormalizedHullConfiguration: 'Normalized hull configuration', NormalizedStyle: 'Normalized style',
     Flybridge: 'Flybridge', AftCabin: 'Aft cabin', SideDecks: 'Side decks', Trailerable: 'Trailerable',

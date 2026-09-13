@@ -1,0 +1,7802 @@
+{
+  "version": "6.45.0",
+  "modelCount": 259,
+  "modelsWithResearchGaps": 259,
+  "fields": [
+    {
+      "field": "VesselCategoryCode",
+      "label": "Vessel category",
+      "missing": 0
+    },
+    {
+      "field": "PrimaryPropulsionModeCode",
+      "label": "Primary propulsion",
+      "missing": 0
+    },
+    {
+      "field": "MechanicalPropulsionCode",
+      "label": "Mechanical propulsion",
+      "missing": 2
+    },
+    {
+      "field": "FuelCode",
+      "label": "Fuel",
+      "missing": 6
+    },
+    {
+      "field": "HullMaterialCode",
+      "label": "Hull material",
+      "missing": 4
+    },
+    {
+      "field": "HullBehaviourCode",
+      "label": "Hull behaviour",
+      "missing": 19
+    },
+    {
+      "field": "KeelConfigurationCode",
+      "label": "Keel configuration",
+      "missing": 97
+    },
+    {
+      "field": "RudderTypeCode",
+      "label": "Rudder type",
+      "missing": 257
+    },
+    {
+      "field": "LOA",
+      "label": "LOA",
+      "missing": 41
+    },
+    {
+      "field": "LWL",
+      "label": "LWL",
+      "missing": 179
+    },
+    {
+      "field": "Beam",
+      "label": "Beam",
+      "missing": 42
+    },
+    {
+      "field": "Draft",
+      "label": "Draft",
+      "missing": 53
+    },
+    {
+      "field": "AirDraft",
+      "label": "Air draft",
+      "missing": 208
+    },
+    {
+      "field": "Headroom",
+      "label": "Headroom",
+      "missing": 229
+    },
+    {
+      "field": "Displacement",
+      "label": "Displacement",
+      "missing": 64
+    }
+  ],
+  "manufacturerQueue": [
+    {
+      "manufacturer": "Ranger Tugs",
+      "models": 16,
+      "gaps": 129,
+      "fields": {
+        "HullBehaviourCode": 14,
+        "KeelConfigurationCode": 13,
+        "RudderTypeCode": 16,
+        "LOA": 9,
+        "LWL": 16,
+        "Beam": 9,
+        "Draft": 9,
+        "AirDraft": 16,
+        "Headroom": 16,
+        "Displacement": 11
+      }
+    },
+    {
+      "manufacturer": "Bayliner",
+      "models": 12,
+      "gaps": 90,
+      "fields": {
+        "KeelConfigurationCode": 10,
+        "RudderTypeCode": 12,
+        "LOA": 8,
+        "LWL": 12,
+        "Beam": 8,
+        "Draft": 8,
+        "AirDraft": 12,
+        "Headroom": 12,
+        "Displacement": 8
+      }
+    },
+    {
+      "manufacturer": "Beneteau",
+      "models": 13,
+      "gaps": 55,
+      "fields": {
+        "KeelConfigurationCode": 7,
+        "RudderTypeCode": 13,
+        "LWL": 13,
+        "Headroom": 13,
+        "Draft": 4,
+        "AirDraft": 4,
+        "Displacement": 1
+      }
+    },
+    {
+      "manufacturer": "Jeanneau",
+      "models": 9,
+      "gaps": 53,
+      "fields": {
+        "KeelConfigurationCode": 9,
+        "RudderTypeCode": 9,
+        "LWL": 9,
+        "Beam": 3,
+        "AirDraft": 9,
+        "Headroom": 9,
+        "Displacement": 2,
+        "Draft": 2,
+        "LOA": 1
+      }
+    },
+    {
+      "manufacturer": "Cruisers Yachts",
+      "models": 10,
+      "gaps": 50,
+      "fields": {
+        "KeelConfigurationCode": 10,
+        "RudderTypeCode": 10,
+        "AirDraft": 10,
+        "Headroom": 10,
+        "LWL": 9,
+        "Displacement": 1
+      }
+    },
+    {
+      "manufacturer": "Cutwater",
+      "models": 6,
+      "gaps": 50,
+      "fields": {
+        "HullBehaviourCode": 5,
+        "KeelConfigurationCode": 1,
+        "RudderTypeCode": 6,
+        "LOA": 5,
+        "LWL": 6,
+        "Beam": 5,
+        "Draft": 5,
+        "AirDraft": 6,
+        "Headroom": 6,
+        "Displacement": 5
+      }
+    },
+    {
+      "manufacturer": "Carver",
+      "models": 9,
+      "gaps": 44,
+      "fields": {
+        "KeelConfigurationCode": 9,
+        "RudderTypeCode": 9,
+        "LWL": 7,
+        "AirDraft": 9,
+        "Headroom": 9,
+        "LOA": 1
+      }
+    },
+    {
+      "manufacturer": "C-Dory",
+      "models": 5,
+      "gaps": 40,
+      "fields": {
+        "KeelConfigurationCode": 5,
+        "RudderTypeCode": 5,
+        "LOA": 4,
+        "LWL": 5,
+        "Beam": 4,
+        "Draft": 4,
+        "AirDraft": 5,
+        "Headroom": 4,
+        "Displacement": 4
+      }
+    },
+    {
+      "manufacturer": "Marine Trader",
+      "models": 7,
+      "gaps": 33,
+      "fields": {
+        "RudderTypeCode": 7,
+        "LOA": 2,
+        "LWL": 3,
+        "Beam": 2,
+        "Draft": 2,
+        "AirDraft": 7,
+        "Headroom": 7,
+        "Displacement": 3
+      }
+    },
+    {
+      "manufacturer": "Duffy",
+      "models": 6,
+      "gaps": 31,
+      "fields": {
+        "RudderTypeCode": 6,
+        "LOA": 2,
+        "LWL": 5,
+        "Beam": 2,
+        "Draft": 2,
+        "AirDraft": 6,
+        "Headroom": 5,
+        "Displacement": 3
+      }
+    },
+    {
+      "manufacturer": "CHB",
+      "models": 5,
+      "gaps": 30,
+      "fields": {
+        "RudderTypeCode": 5,
+        "LOA": 3,
+        "LWL": 3,
+        "Beam": 3,
+        "Draft": 3,
+        "AirDraft": 5,
+        "Headroom": 5,
+        "Displacement": 3
+      }
+    },
+    {
+      "manufacturer": "Albin",
+      "models": 9,
+      "gaps": 28,
+      "fields": {
+        "RudderTypeCode": 8,
+        "AirDraft": 8,
+        "Headroom": 8,
+        "LWL": 3,
+        "HullMaterialCode": 1
+      }
+    },
+    {
+      "manufacturer": "Back Cove",
+      "models": 9,
+      "gaps": 28,
+      "fields": {
+        "RudderTypeCode": 9,
+        "LWL": 9,
+        "Headroom": 4,
+        "Displacement": 4,
+        "KeelConfigurationCode": 1,
+        "AirDraft": 1
+      }
+    },
+    {
+      "manufacturer": "Cape Dory",
+      "models": 7,
+      "gaps": 26,
+      "fields": {
+        "RudderTypeCode": 7,
+        "AirDraft": 6,
+        "Headroom": 6,
+        "Displacement": 2,
+        "LWL": 4,
+        "FuelCode": 1
+      }
+    },
+    {
+      "manufacturer": "Mainship",
+      "models": 8,
+      "gaps": 24,
+      "fields": {
+        "RudderTypeCode": 8,
+        "LWL": 5,
+        "Draft": 1,
+        "AirDraft": 4,
+        "Headroom": 6
+      }
+    },
+    {
+      "manufacturer": "DeFever",
+      "models": 8,
+      "gaps": 22,
+      "fields": {
+        "RudderTypeCode": 8,
+        "AirDraft": 7,
+        "LWL": 2,
+        "Headroom": 5
+      }
+    },
+    {
+      "manufacturer": "Grand Banks",
+      "models": 6,
+      "gaps": 21,
+      "fields": {
+        "HullMaterialCode": 3,
+        "RudderTypeCode": 6,
+        "AirDraft": 3,
+        "Headroom": 5,
+        "LOA": 2,
+        "Beam": 2
+      }
+    },
+    {
+      "manufacturer": "Rosborough",
+      "models": 3,
+      "gaps": 21,
+      "fields": {
+        "KeelConfigurationCode": 3,
+        "RudderTypeCode": 3,
+        "LWL": 3,
+        "Draft": 3,
+        "AirDraft": 3,
+        "Headroom": 3,
+        "Displacement": 3
+      }
+    },
+    {
+      "manufacturer": "Sea Ray",
+      "models": 4,
+      "gaps": 20,
+      "fields": {
+        "KeelConfigurationCode": 4,
+        "RudderTypeCode": 4,
+        "LWL": 4,
+        "AirDraft": 3,
+        "Headroom": 4,
+        "MechanicalPropulsionCode": 1
+      }
+    },
+    {
+      "manufacturer": "Silverton",
+      "models": 4,
+      "gaps": 20,
+      "fields": {
+        "KeelConfigurationCode": 4,
+        "RudderTypeCode": 4,
+        "LWL": 4,
+        "AirDraft": 4,
+        "Headroom": 4
+      }
+    },
+    {
+      "manufacturer": "Cheoy Lee",
+      "models": 4,
+      "gaps": 18,
+      "fields": {
+        "RudderTypeCode": 4,
+        "LWL": 3,
+        "AirDraft": 4,
+        "Headroom": 3,
+        "LOA": 1,
+        "Beam": 1,
+        "Draft": 1,
+        "Displacement": 1
+      }
+    },
+    {
+      "manufacturer": "Fjord",
+      "models": 4,
+      "gaps": 18,
+      "fields": {
+        "KeelConfigurationCode": 4,
+        "RudderTypeCode": 4,
+        "LWL": 3,
+        "Draft": 1,
+        "AirDraft": 2,
+        "Headroom": 4
+      }
+    },
+    {
+      "manufacturer": "Kadey-Krogen",
+      "models": 6,
+      "gaps": 18,
+      "fields": {
+        "RudderTypeCode": 6,
+        "AirDraft": 6,
+        "Headroom": 6
+      }
+    },
+    {
+      "manufacturer": "Nordic Tugs",
+      "models": 6,
+      "gaps": 17,
+      "fields": {
+        "RudderTypeCode": 6,
+        "Headroom": 5,
+        "AirDraft": 4,
+        "LOA": 1,
+        "LWL": 1
+      }
+    },
+    {
+      "manufacturer": "Island Gypsy",
+      "models": 7,
+      "gaps": 16,
+      "fields": {
+        "RudderTypeCode": 7,
+        "AirDraft": 3,
+        "Headroom": 6
+      }
+    },
+    {
+      "manufacturer": "Helmsman",
+      "models": 4,
+      "gaps": 15,
+      "fields": {
+        "RudderTypeCode": 4,
+        "LWL": 3,
+        "AirDraft": 4,
+        "Headroom": 4
+      }
+    },
+    {
+      "manufacturer": "Meridian",
+      "models": 3,
+      "gaps": 15,
+      "fields": {
+        "KeelConfigurationCode": 3,
+        "RudderTypeCode": 3,
+        "LWL": 3,
+        "AirDraft": 3,
+        "Headroom": 3
+      }
+    },
+    {
+      "manufacturer": "Willard",
+      "models": 3,
+      "gaps": 15,
+      "fields": {
+        "RudderTypeCode": 3,
+        "LWL": 3,
+        "AirDraft": 3,
+        "Headroom": 3,
+        "Beam": 1,
+        "Draft": 1,
+        "Displacement": 1
+      }
+    },
+    {
+      "manufacturer": "American Tug",
+      "models": 3,
+      "gaps": 14,
+      "fields": {
+        "RudderTypeCode": 3,
+        "LOA": 1,
+        "LWL": 1,
+        "Beam": 1,
+        "Draft": 1,
+        "AirDraft": 3,
+        "Headroom": 3,
+        "Displacement": 1
+      }
+    },
+    {
+      "manufacturer": "Sea Sport",
+      "models": 3,
+      "gaps": 14,
+      "fields": {
+        "KeelConfigurationCode": 3,
+        "RudderTypeCode": 3,
+        "LWL": 3,
+        "AirDraft": 3,
+        "Draft": 1,
+        "Headroom": 1
+      }
+    },
+    {
+      "manufacturer": "Camano",
+      "models": 3,
+      "gaps": 13,
+      "fields": {
+        "RudderTypeCode": 3,
+        "LWL": 2,
+        "AirDraft": 3,
+        "Headroom": 3,
+        "Displacement": 2
+      }
+    },
+    {
+      "manufacturer": "Seaway",
+      "models": 2,
+      "gaps": 12,
+      "fields": {
+        "MechanicalPropulsionCode": 1,
+        "FuelCode": 1,
+        "RudderTypeCode": 2,
+        "LWL": 2,
+        "Draft": 1,
+        "AirDraft": 2,
+        "Headroom": 2,
+        "Displacement": 1
+      }
+    },
+    {
+      "manufacturer": "Hunt Yachts",
+      "models": 2,
+      "gaps": 10,
+      "fields": {
+        "KeelConfigurationCode": 2,
+        "RudderTypeCode": 2,
+        "LWL": 2,
+        "AirDraft": 2,
+        "Headroom": 2
+      }
+    },
+    {
+      "manufacturer": "Sabre",
+      "models": 2,
+      "gaps": 10,
+      "fields": {
+        "KeelConfigurationCode": 2,
+        "RudderTypeCode": 2,
+        "LWL": 2,
+        "AirDraft": 2,
+        "Headroom": 1,
+        "Displacement": 1
+      }
+    },
+    {
+      "manufacturer": "Nimbus",
+      "models": 2,
+      "gaps": 9,
+      "fields": {
+        "KeelConfigurationCode": 2,
+        "RudderTypeCode": 2,
+        "LWL": 2,
+        "AirDraft": 1,
+        "Headroom": 2
+      }
+    },
+    {
+      "manufacturer": "Sisu",
+      "models": 2,
+      "gaps": 9,
+      "fields": {
+        "RudderTypeCode": 2,
+        "LWL": 2,
+        "AirDraft": 2,
+        "Headroom": 2,
+        "Displacement": 1
+      }
+    },
+    {
+      "manufacturer": "Fortier",
+      "models": 2,
+      "gaps": 8,
+      "fields": {
+        "RudderTypeCode": 2,
+        "LWL": 2,
+        "AirDraft": 2,
+        "Headroom": 2
+      }
+    },
+    {
+      "manufacturer": "North Pacific",
+      "models": 2,
+      "gaps": 8,
+      "fields": {
+        "RudderTypeCode": 2,
+        "LWL": 2,
+        "AirDraft": 2,
+        "Headroom": 2
+      }
+    },
+    {
+      "manufacturer": "Tollycraft",
+      "models": 2,
+      "gaps": 8,
+      "fields": {
+        "FuelCode": 2,
+        "RudderTypeCode": 2,
+        "LWL": 2,
+        "Headroom": 2
+      }
+    },
+    {
+      "manufacturer": "BHM",
+      "models": 1,
+      "gaps": 7,
+      "fields": {
+        "RudderTypeCode": 1,
+        "LWL": 1,
+        "Beam": 1,
+        "Draft": 1,
+        "AirDraft": 1,
+        "Headroom": 1,
+        "Displacement": 1
+      }
+    },
+    {
+      "manufacturer": "Endeavour",
+      "models": 2,
+      "gaps": 7,
+      "fields": {
+        "RudderTypeCode": 2,
+        "AirDraft": 2,
+        "Headroom": 2,
+        "KeelConfigurationCode": 1
+      }
+    },
+    {
+      "manufacturer": "Gulfstar",
+      "models": 4,
+      "gaps": 7,
+      "fields": {
+        "RudderTypeCode": 4,
+        "LWL": 1,
+        "Headroom": 2
+      }
+    },
+    {
+      "manufacturer": "Seahorse",
+      "models": 2,
+      "gaps": 7,
+      "fields": {
+        "RudderTypeCode": 2,
+        "AirDraft": 2,
+        "Headroom": 2,
+        "Displacement": 1
+      }
+    },
+    {
+      "manufacturer": "Universal",
+      "models": 2,
+      "gaps": 7,
+      "fields": {
+        "RudderTypeCode": 2,
+        "AirDraft": 2,
+        "LWL": 1,
+        "Headroom": 1,
+        "Displacement": 1
+      }
+    },
+    {
+      "manufacturer": "Californian",
+      "models": 2,
+      "gaps": 6,
+      "fields": {
+        "RudderTypeCode": 2,
+        "LWL": 1,
+        "Headroom": 2,
+        "AirDraft": 1
+      }
+    },
+    {
+      "manufacturer": "Great Harbour",
+      "models": 2,
+      "gaps": 6,
+      "fields": {
+        "RudderTypeCode": 2,
+        "AirDraft": 2,
+        "Headroom": 2
+      }
+    },
+    {
+      "manufacturer": "Greenline",
+      "models": 2,
+      "gaps": 6,
+      "fields": {
+        "FuelCode": 2,
+        "RudderTypeCode": 2,
+        "Headroom": 2
+      }
+    },
+    {
+      "manufacturer": "Nimble",
+      "models": 2,
+      "gaps": 6,
+      "fields": {
+        "RudderTypeCode": 1,
+        "LWL": 1,
+        "AirDraft": 2,
+        "Headroom": 2
+      }
+    },
+    {
+      "manufacturer": "Ocean Alexander",
+      "models": 1,
+      "gaps": 6,
+      "fields": {
+        "RudderTypeCode": 1,
+        "LOA": 1,
+        "LWL": 1,
+        "AirDraft": 1,
+        "Headroom": 1,
+        "Displacement": 1
+      }
+    },
+    {
+      "manufacturer": "Atlantic Boat",
+      "models": 1,
+      "gaps": 5,
+      "fields": {
+        "RudderTypeCode": 1,
+        "LWL": 1,
+        "AirDraft": 1,
+        "Headroom": 1,
+        "Displacement": 1
+      }
+    },
+    {
+      "manufacturer": "Holiday Mansion",
+      "models": 1,
+      "gaps": 5,
+      "fields": {
+        "KeelConfigurationCode": 1,
+        "RudderTypeCode": 1,
+        "LWL": 1,
+        "AirDraft": 1,
+        "Headroom": 1
+      }
+    },
+    {
+      "manufacturer": "Nord Star",
+      "models": 1,
+      "gaps": 5,
+      "fields": {
+        "KeelConfigurationCode": 1,
+        "RudderTypeCode": 1,
+        "LWL": 1,
+        "Draft": 1,
+        "AirDraft": 1
+      }
+    },
+    {
+      "manufacturer": "Trojan",
+      "models": 1,
+      "gaps": 5,
+      "fields": {
+        "KeelConfigurationCode": 1,
+        "RudderTypeCode": 1,
+        "LWL": 1,
+        "AirDraft": 1,
+        "Headroom": 1
+      }
+    },
+    {
+      "manufacturer": "True North",
+      "models": 1,
+      "gaps": 5,
+      "fields": {
+        "RudderTypeCode": 1,
+        "LWL": 1,
+        "AirDraft": 1,
+        "Headroom": 1,
+        "Displacement": 1
+      }
+    },
+    {
+      "manufacturer": "Windy",
+      "models": 1,
+      "gaps": 5,
+      "fields": {
+        "RudderTypeCode": 1,
+        "LWL": 1,
+        "Draft": 1,
+        "AirDraft": 1,
+        "Headroom": 1
+      }
+    },
+    {
+      "manufacturer": "Gozzard",
+      "models": 1,
+      "gaps": 4,
+      "fields": {
+        "RudderTypeCode": 1,
+        "LWL": 1,
+        "AirDraft": 1,
+        "Headroom": 1
+      }
+    },
+    {
+      "manufacturer": "Nordhavn",
+      "models": 1,
+      "gaps": 4,
+      "fields": {
+        "RudderTypeCode": 1,
+        "Draft": 1,
+        "AirDraft": 1,
+        "Headroom": 1
+      }
+    },
+    {
+      "manufacturer": "Oceania Yachts",
+      "models": 1,
+      "gaps": 4,
+      "fields": {
+        "RudderTypeCode": 1,
+        "LWL": 1,
+        "AirDraft": 1,
+        "Headroom": 1
+      }
+    },
+    {
+      "manufacturer": "Prairie",
+      "models": 2,
+      "gaps": 4,
+      "fields": {
+        "RudderTypeCode": 2,
+        "AirDraft": 1,
+        "LWL": 1
+      }
+    },
+    {
+      "manufacturer": "Saga",
+      "models": 1,
+      "gaps": 4,
+      "fields": {
+        "RudderTypeCode": 1,
+        "LWL": 1,
+        "AirDraft": 1,
+        "Headroom": 1
+      }
+    },
+    {
+      "manufacturer": "Sealord",
+      "models": 1,
+      "gaps": 4,
+      "fields": {
+        "RudderTypeCode": 1,
+        "LWL": 1,
+        "AirDraft": 1,
+        "Headroom": 1
+      }
+    },
+    {
+      "manufacturer": "Uniflite",
+      "models": 1,
+      "gaps": 4,
+      "fields": {
+        "KeelConfigurationCode": 1,
+        "RudderTypeCode": 1,
+        "LWL": 1,
+        "Headroom": 1
+      }
+    },
+    {
+      "manufacturer": "PDQ",
+      "models": 1,
+      "gaps": 3,
+      "fields": {
+        "RudderTypeCode": 1,
+        "AirDraft": 1,
+        "Headroom": 1
+      }
+    },
+    {
+      "manufacturer": "Shannon",
+      "models": 1,
+      "gaps": 3,
+      "fields": {
+        "RudderTypeCode": 1,
+        "AirDraft": 1,
+        "Headroom": 1
+      }
+    },
+    {
+      "manufacturer": "Atlantic",
+      "models": 1,
+      "gaps": 2,
+      "fields": {
+        "RudderTypeCode": 1,
+        "LWL": 1
+      }
+    },
+    {
+      "manufacturer": "Luhrs",
+      "models": 1,
+      "gaps": 2,
+      "fields": {
+        "RudderTypeCode": 1,
+        "AirDraft": 1
+      }
+    },
+    {
+      "manufacturer": "Monk",
+      "models": 1,
+      "gaps": 2,
+      "fields": {
+        "RudderTypeCode": 1,
+        "Headroom": 1
+      }
+    },
+    {
+      "manufacturer": "SeaPiper",
+      "models": 1,
+      "gaps": 2,
+      "fields": {
+        "RudderTypeCode": 1,
+        "Headroom": 1
+      }
+    },
+    {
+      "manufacturer": "Transpacific Marine",
+      "models": 1,
+      "gaps": 2,
+      "fields": {
+        "RudderTypeCode": 1,
+        "AirDraft": 1
+      }
+    }
+  ],
+  "models": [
+    {
+      "BoatModelID": "ALBN-25",
+      "Manufacturer": "Albin",
+      "Model": "25",
+      "Variant": "Motor Cruiser",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "ALBN-27-FC",
+      "Manufacturer": "Albin",
+      "Model": "27",
+      "Variant": "Family Cruiser",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "ALBN-27-SP",
+      "Manufacturer": "Albin",
+      "Model": "27",
+      "Variant": "Sport Cruiser",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "ALBN-28-TE-EB",
+      "Manufacturer": "Albin",
+      "Model": "28 Tournament Express",
+      "Variant": "Engine Box",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "ALBN-28-FL",
+      "Manufacturer": "Albin",
+      "Model": "28 Tournament Express",
+      "Variant": "Flush Deck",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "ALBN-30-FC",
+      "Manufacturer": "Albin",
+      "Model": "30",
+      "Variant": "Family Cruiser",
+      "missing": [
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "ALBN-32-PL",
+      "Manufacturer": "Albin",
+      "Model": "32+2",
+      "Variant": "Command Bridge",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "ALBN-36-CL",
+      "Manufacturer": "Albin",
+      "Model": "36",
+      "Variant": "Trawler",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "ALBN-40-TR",
+      "Manufacturer": "Albin",
+      "Model": "40",
+      "Variant": "Trawler",
+      "missing": [
+        {
+          "field": "HullMaterialCode",
+          "label": "Hull material"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "AMTG-34",
+      "Manufacturer": "American Tug",
+      "Model": "34",
+      "Variant": null,
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LOA",
+          "label": "LOA"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Beam",
+          "label": "Beam"
+        },
+        {
+          "field": "Draft",
+          "label": "Draft"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "AMTG-365",
+      "Manufacturer": "American Tug",
+      "Model": "365",
+      "Variant": null,
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "AMTG-395",
+      "Manufacturer": "American Tug",
+      "Model": "395",
+      "Variant": null,
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "ATLB-37-TR",
+      "Manufacturer": "Atlantic",
+      "Model": "37",
+      "Variant": "Double Cabin",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "ATLB-26-DU",
+      "Manufacturer": "Atlantic Boat",
+      "Model": "Duffy 26",
+      "Variant": "Semi-Custom Downeast Hull",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "BKCV-26",
+      "Manufacturer": "Back Cove",
+      "Model": "26",
+      "Variant": "Downeast Cruiser",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "BKCV-29",
+      "Manufacturer": "Back Cove",
+      "Model": "29",
+      "Variant": "Downeast Cruiser",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "BKCV-30",
+      "Manufacturer": "Back Cove",
+      "Model": "30",
+      "Variant": "Downeast Cruiser",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "BKCV-32",
+      "Manufacturer": "Back Cove",
+      "Model": "32",
+      "Variant": "Downeast Cruiser",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "BKCV-33",
+      "Manufacturer": "Back Cove",
+      "Model": "33",
+      "Variant": "Downeast Cruiser",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "BKCV-34",
+      "Manufacturer": "Back Cove",
+      "Model": "34",
+      "Variant": "Downeast Cruiser",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "BKCV-37",
+      "Manufacturer": "Back Cove",
+      "Model": "37",
+      "Variant": "Downeast Cruiser",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "BKCV-39O",
+      "Manufacturer": "Back Cove",
+      "Model": "39O",
+      "Variant": "Outboard Salon Cruiser",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "BKCV-41",
+      "Manufacturer": "Back Cove",
+      "Model": "41",
+      "Variant": "Flagship Downeast Cruiser",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "BAYL-2452",
+      "Manufacturer": "Bayliner",
+      "Model": "2452 Ciera Express",
+      "Variant": "Hardtop Cruiser",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LOA",
+          "label": "LOA"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Beam",
+          "label": "Beam"
+        },
+        {
+          "field": "Draft",
+          "label": "Draft"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "BAYL-2855",
+      "Manufacturer": "Bayliner",
+      "Model": "2855 Ciera Sunbridge",
+      "Variant": "Multi-Generation Sunbridge",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LOA",
+          "label": "LOA"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Beam",
+          "label": "Beam"
+        },
+        {
+          "field": "Draft",
+          "label": "Draft"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "BAYL-2859",
+      "Manufacturer": "Bayliner",
+      "Model": "2859 Ciera Express",
+      "Variant": "Hardtop Cruiser",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LOA",
+          "label": "LOA"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Beam",
+          "label": "Beam"
+        },
+        {
+          "field": "Draft",
+          "label": "Draft"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "BAYL-3055",
+      "Manufacturer": "Bayliner",
+      "Model": "3055 Ciera Sunbridge / 305 SB",
+      "Variant": "Express Cruiser",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LOA",
+          "label": "LOA"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Beam",
+          "label": "Beam"
+        },
+        {
+          "field": "Draft",
+          "label": "Draft"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "BAYL-3058",
+      "Manufacturer": "Bayliner",
+      "Model": "3058 Command Bridge",
+      "Variant": "Command Bridge Cruiser",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LOA",
+          "label": "LOA"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Beam",
+          "label": "Beam"
+        },
+        {
+          "field": "Draft",
+          "label": "Draft"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "BAYL-3218",
+      "Manufacturer": "Bayliner",
+      "Model": "3218 Motoryacht",
+      "Variant": "Flybridge Motor Yacht",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LOA",
+          "label": "LOA"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Beam",
+          "label": "Beam"
+        },
+        {
+          "field": "Draft",
+          "label": "Draft"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "BAYL-3258",
+      "Manufacturer": "Bayliner",
+      "Model": "3258 Command Bridge",
+      "Variant": "Command Bridge Cruiser",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LOA",
+          "label": "LOA"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Beam",
+          "label": "Beam"
+        },
+        {
+          "field": "Draft",
+          "label": "Draft"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "BAYL-3288-MO",
+      "Manufacturer": "Bayliner",
+      "Model": "3270 / 3288 Motor Yacht",
+      "Variant": "Explorer / Motor Yacht",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "BAYL-3388",
+      "Manufacturer": "Bayliner",
+      "Model": "3388 Motor Yacht",
+      "Variant": "Flybridge Motor Yacht",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "BAYL-3788",
+      "Manufacturer": "Bayliner",
+      "Model": "3788 Motor Yacht",
+      "Variant": "Two-Generation Flybridge Motor Yacht",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LOA",
+          "label": "LOA"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Beam",
+          "label": "Beam"
+        },
+        {
+          "field": "Draft",
+          "label": "Draft"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "BAYL-3888-MO",
+      "Manufacturer": "Bayliner",
+      "Model": "3870 / 3888 Motor Yacht",
+      "Variant": "Mid-Cabin Flybridge Motor Yacht",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "BAYL-4087",
+      "Manufacturer": "Bayliner",
+      "Model": "4087 Cockpit Motor Yacht",
+      "Variant": "Cockpit Motor Yacht",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "BENE-ANT-11",
+      "Manufacturer": "Beneteau",
+      "Model": "Antares 11",
+      "Variant": "Coupé",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "BENE-30-SW",
+      "Manufacturer": "Beneteau",
+      "Model": "Swift Trawler 30",
+      "Variant": "Flybridge",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Draft",
+          "label": "Draft"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "BENE-34-SW",
+      "Manufacturer": "Beneteau",
+      "Model": "Swift Trawler 34",
+      "Variant": "Flybridge or Sedan",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Draft",
+          "label": "Draft"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "BENE-35-SW",
+      "Manufacturer": "Beneteau",
+      "Model": "Swift Trawler 35",
+      "Variant": "Flybridge",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "BENE-47",
+      "Manufacturer": "Beneteau",
+      "Model": "Swift Trawler 47",
+      "Variant": "Flybridge",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "BENE-48",
+      "Manufacturer": "Beneteau",
+      "Model": "Swift Trawler 48",
+      "Variant": "Flybridge",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "BENE-52",
+      "Manufacturer": "Beneteau",
+      "Model": "Swift Trawler 52",
+      "Variant": "Flybridge Flagship",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "BENE-ANT-7",
+      "Manufacturer": "Beneteau",
+      "Model": "Antares 7",
+      "Variant": "Cruising / Fishing",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "BENE-ANT-8",
+      "Manufacturer": "Beneteau",
+      "Model": "Antares 8",
+      "Variant": "Cruising / Fishing",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "BENE-BAR-8",
+      "Manufacturer": "Beneteau",
+      "Model": "Barracuda 8",
+      "Variant": "Sport-Fishing Pilothouse",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Draft",
+          "label": "Draft"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "BENE-ANT-9",
+      "Manufacturer": "Beneteau",
+      "Model": "Antares 9",
+      "Variant": "Generation 1",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "BENE-BAR-9",
+      "Manufacturer": "Beneteau",
+      "Model": "Barracuda 9",
+      "Variant": "Sport-Fishing Pilothouse",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Draft",
+          "label": "Draft"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "BHMB-32",
+      "Manufacturer": "BHM",
+      "Model": "32",
+      "Variant": "Flye Point / Semi-Custom Downeast",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Beam",
+          "label": "Beam"
+        },
+        {
+          "field": "Draft",
+          "label": "Draft"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "CDRY-22-CR",
+      "Manufacturer": "C-Dory",
+      "Model": "22 Cruiser",
+      "Variant": "Cruiser",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LOA",
+          "label": "LOA"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Beam",
+          "label": "Beam"
+        },
+        {
+          "field": "Draft",
+          "label": "Draft"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "CDRY-25-CR",
+      "Manufacturer": "C-Dory",
+      "Model": "25 Cruiser",
+      "Variant": "Cruiser",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LOA",
+          "label": "LOA"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Beam",
+          "label": "Beam"
+        },
+        {
+          "field": "Draft",
+          "label": "Draft"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "CDRY-25-TC",
+      "Manufacturer": "C-Dory",
+      "Model": "TomCat 255",
+      "Variant": "Power Catamaran",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LOA",
+          "label": "LOA"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Beam",
+          "label": "Beam"
+        },
+        {
+          "field": "Draft",
+          "label": "Draft"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "CDRY-26-PA",
+      "Manufacturer": "C-Dory",
+      "Model": "26 Pro Angler",
+      "Variant": "Walkaround Fishing",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LOA",
+          "label": "LOA"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Beam",
+          "label": "Beam"
+        },
+        {
+          "field": "Draft",
+          "label": "Draft"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "CDRY-26-V",
+      "Manufacturer": "C-Dory",
+      "Model": "26 Venture",
+      "Variant": "Venture Cruiser",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "CALF-34-TR",
+      "Manufacturer": "Californian",
+      "Model": "34 LRC",
+      "Variant": "Long Range Cruiser",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "CALF-38-TR",
+      "Manufacturer": "Californian",
+      "Model": "38 LRC Sedan",
+      "Variant": "Long Range Cruiser Sedan",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "CAMA-28-GN",
+      "Manufacturer": "Camano",
+      "Model": "28/31",
+      "Variant": "Gnome",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "CAMA-31-TR",
+      "Manufacturer": "Camano",
+      "Model": "28/31",
+      "Variant": "Troll",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "CAMA-41",
+      "Manufacturer": "Camano",
+      "Model": "41",
+      "Variant": "Trawler",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "CPDR-28-FB",
+      "Manufacturer": "Cape Dory",
+      "Model": "28",
+      "Variant": "Flybridge Cruiser",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "CPDR-28-OF",
+      "Manufacturer": "Cape Dory",
+      "Model": "28",
+      "Variant": "Open Fisherman",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "CPDR-28-CR",
+      "Manufacturer": "Cape Dory",
+      "Model": "28",
+      "Variant": "Cruiser",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "CPDR-30-FB",
+      "Manufacturer": "Cape Dory",
+      "Model": "30",
+      "Variant": "Flybridge",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "CPDR-33-FB",
+      "Manufacturer": "Cape Dory",
+      "Model": "33",
+      "Variant": "Flybridge",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "CPDR-36-TR",
+      "Manufacturer": "Cape Dory",
+      "Model": "36",
+      "Variant": "Flybridge",
+      "missing": [
+        {
+          "field": "FuelCode",
+          "label": "Fuel"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "CPDR-40-TR",
+      "Manufacturer": "Cape Dory",
+      "Model": "40 Explorer",
+      "Variant": "Explorer",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "CARV-28-V",
+      "Manufacturer": "Carver",
+      "Model": "2827 Voyager / 2897 Mariner",
+      "Variant": "Flybridge Cruiser",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "CARV-32-AC",
+      "Manufacturer": "Carver",
+      "Model": "3207 Aft Cabin",
+      "Variant": "Aft Cabin",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "CARV-33-MAR",
+      "Manufacturer": "Carver",
+      "Model": "3297 / 330 Mariner",
+      "Variant": "Mariner",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "CARV-350-AF",
+      "Manufacturer": "Carver",
+      "Model": "33 / 350 Aft Cabin",
+      "Variant": "Aft Cabin Motor Yacht",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "CARV-356-AF",
+      "Manufacturer": "Carver",
+      "Model": "355 / 356 Motor Yacht",
+      "Variant": "Aft Cabin Motor Yacht",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LOA",
+          "label": "LOA"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "CARV-36-AC",
+      "Manufacturer": "Carver",
+      "Model": "3607 Aft Cabin",
+      "Variant": "Aft Cabin",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "CARV-36-MAR",
+      "Manufacturer": "Carver",
+      "Model": "350 / 36 Mariner",
+      "Variant": "Mariner",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "CARV-40-AC",
+      "Manufacturer": "Carver",
+      "Model": "3807 / 390 Aft Cabin",
+      "Variant": "Aft Cabin Motor Yacht",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "CARV-42-AC",
+      "Manufacturer": "Carver",
+      "Model": "4207 Aft Cabin",
+      "Variant": "Aft Cabin Motor Yacht",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "CHBB-34-SE",
+      "Manufacturer": "CHB",
+      "Model": "34",
+      "Variant": "Sedan",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LOA",
+          "label": "LOA"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Beam",
+          "label": "Beam"
+        },
+        {
+          "field": "Draft",
+          "label": "Draft"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "CHBB-34-TC",
+      "Manufacturer": "CHB",
+      "Model": "34",
+      "Variant": "Tri-Cabin",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LOA",
+          "label": "LOA"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Beam",
+          "label": "Beam"
+        },
+        {
+          "field": "Draft",
+          "label": "Draft"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "CHBY-34-SE",
+      "Manufacturer": "CHB",
+      "Model": "34",
+      "Variant": "Double Cabin",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "CHBY-35",
+      "Manufacturer": "CHB",
+      "Model": "35",
+      "Variant": "Sundeck",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "CHBY-40",
+      "Manufacturer": "CHB",
+      "Model": "40",
+      "Variant": "Double Cabin",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LOA",
+          "label": "LOA"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Beam",
+          "label": "Beam"
+        },
+        {
+          "field": "Draft",
+          "label": "Draft"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "CHLY-28",
+      "Manufacturer": "Cheoy Lee",
+      "Model": "28 Sedan Trawler",
+      "Variant": "Sedan",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "CHLY-32",
+      "Manufacturer": "Cheoy Lee",
+      "Model": "32 Trawler",
+      "Variant": "Trawler",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "CHLY-35",
+      "Manufacturer": "Cheoy Lee",
+      "Model": "35 Trawler",
+      "Variant": "Trawler",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "CHLY-36-TR",
+      "Manufacturer": "Cheoy Lee",
+      "Model": "36 Trawler",
+      "Variant": "Trawler",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LOA",
+          "label": "LOA"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Beam",
+          "label": "Beam"
+        },
+        {
+          "field": "Draft",
+          "label": "Draft"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "CRUY-2980",
+      "Manufacturer": "Cruisers Yachts",
+      "Model": "288 / 298 Villa Vee / 2980 Esprit",
+      "Variant": "Flybridge Cruiser",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "CRUY-320-EXP",
+      "Manufacturer": "Cruisers Yachts",
+      "Model": "3275 / 320 Express",
+      "Variant": "Express Cruiser",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "CRUY-3280",
+      "Manufacturer": "Cruisers Yachts",
+      "Model": "3270 Esprit",
+      "Variant": "Mid-Cabin",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "CRUY-3375",
+      "Manufacturer": "Cruisers Yachts",
+      "Model": "3375 Esprit",
+      "Variant": "Express Cruiser",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "CRUY-3470",
+      "Manufacturer": "Cruisers Yachts",
+      "Model": "3470 / 340 Express",
+      "Variant": "Express Cruiser",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "CRUY-3650-AF",
+      "Manufacturer": "Cruisers Yachts",
+      "Model": "3650 / 3750 / 375 Motor Yacht",
+      "Variant": "Aft Cabin Motor Yacht",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "CRUY-3870",
+      "Manufacturer": "Cruisers Yachts",
+      "Model": "3870 Esprit / Express",
+      "Variant": "Express Cruiser",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "CRUY-390-EXP",
+      "Manufacturer": "Cruisers Yachts",
+      "Model": "390 Sports Coupe",
+      "Variant": "Sports Coupe",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "CRUY-4050",
+      "Manufacturer": "Cruisers Yachts",
+      "Model": "4050 / 405 / 415 Express Motor Yacht",
+      "Variant": "Express Motor Yacht",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "CUTW-24",
+      "Manufacturer": "Cutwater",
+      "Model": "C-24 C",
+      "Variant": "Coupe",
+      "missing": [
+        {
+          "field": "HullBehaviourCode",
+          "label": "Hull behaviour"
+        },
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LOA",
+          "label": "LOA"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Beam",
+          "label": "Beam"
+        },
+        {
+          "field": "Draft",
+          "label": "Draft"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "CUTW-26",
+      "Manufacturer": "Cutwater",
+      "Model": "C-26",
+      "Variant": "Cruiser",
+      "missing": [
+        {
+          "field": "HullBehaviourCode",
+          "label": "Hull behaviour"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LOA",
+          "label": "LOA"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Beam",
+          "label": "Beam"
+        },
+        {
+          "field": "Draft",
+          "label": "Draft"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "CUTW-28-P",
+      "Manufacturer": "Cutwater",
+      "Model": "C-28",
+      "Variant": "Cruiser",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "CUTW-30-C",
+      "Manufacturer": "Cutwater",
+      "Model": "C-30 CB",
+      "Variant": "Command Bridge",
+      "missing": [
+        {
+          "field": "HullBehaviourCode",
+          "label": "Hull behaviour"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LOA",
+          "label": "LOA"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Beam",
+          "label": "Beam"
+        },
+        {
+          "field": "Draft",
+          "label": "Draft"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "CUTW-30-P",
+      "Manufacturer": "Cutwater",
+      "Model": "C-30 S",
+      "Variant": "Sedan",
+      "missing": [
+        {
+          "field": "HullBehaviourCode",
+          "label": "Hull behaviour"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LOA",
+          "label": "LOA"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Beam",
+          "label": "Beam"
+        },
+        {
+          "field": "Draft",
+          "label": "Draft"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "CUTW-32",
+      "Manufacturer": "Cutwater",
+      "Model": "C-32 CB",
+      "Variant": "Command Bridge",
+      "missing": [
+        {
+          "field": "HullBehaviourCode",
+          "label": "Hull behaviour"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LOA",
+          "label": "LOA"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Beam",
+          "label": "Beam"
+        },
+        {
+          "field": "Draft",
+          "label": "Draft"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "DEFE-34-TR",
+      "Manufacturer": "DeFever",
+      "Model": "34 Passagemaker",
+      "Variant": "Passagemaker",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "DEFE-38-TR",
+      "Manufacturer": "DeFever",
+      "Model": "38 Passagemaker",
+      "Variant": "Wood Passagemaker",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "DEFE-40-EURO",
+      "Manufacturer": "DeFever",
+      "Model": "40 Offshore Cruiser",
+      "Variant": "Offshore Cruiser",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "DEFE-41",
+      "Manufacturer": "DeFever",
+      "Model": "41 Trawler",
+      "Variant": "Trawler",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "DEFE-43",
+      "Manufacturer": "DeFever",
+      "Model": "43 Trawler",
+      "Variant": "Flush Deck",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "DEFE-45",
+      "Manufacturer": "DeFever",
+      "Model": "45 Pilothouse",
+      "Variant": "Pilothouse",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "DEFE-47",
+      "Manufacturer": "DeFever",
+      "Model": "47 POC Motor Yacht",
+      "Variant": "Performance Offshore Cruiser",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "DEFE-49",
+      "Manufacturer": "DeFever",
+      "Model": "49 Cockpit Motor Yacht",
+      "Variant": "Cockpit Motor Yacht",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "DUFF-29",
+      "Manufacturer": "Duffy",
+      "Model": "29",
+      "Variant": "Downeast Hull",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LOA",
+          "label": "LOA"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Beam",
+          "label": "Beam"
+        },
+        {
+          "field": "Draft",
+          "label": "Draft"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "DUFF-31",
+      "Manufacturer": "Duffy",
+      "Model": "31",
+      "Variant": "Downeast / Lobsterboat Hull",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "DUFF-35",
+      "Manufacturer": "Duffy",
+      "Model": "35",
+      "Variant": "Downeast / Lobsterboat Hull",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "DUFF-37",
+      "Manufacturer": "Duffy",
+      "Model": "37",
+      "Variant": "Downeast / Lobsterboat Hull",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "DUFF-39",
+      "Manufacturer": "Duffy",
+      "Model": "39",
+      "Variant": "Extended Duffy 37 / Custom Downeast",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LOA",
+          "label": "LOA"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Beam",
+          "label": "Beam"
+        },
+        {
+          "field": "Draft",
+          "label": "Draft"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "DUFF-42",
+      "Manufacturer": "Duffy",
+      "Model": "42",
+      "Variant": "Downeast / Lobsterboat Hull",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "ENDE-36-TR",
+      "Manufacturer": "Endeavour",
+      "Model": "TrawlerCat 36",
+      "Variant": "Power Catamaran",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "ENDE-44",
+      "Manufacturer": "Endeavour",
+      "Model": "44 TrawlerCat",
+      "Variant": "Power Catamaran",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "FJRD-36",
+      "Manufacturer": "Fjord",
+      "Model": "36 Cruiser",
+      "Variant": "Enclosed Cruiser",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Draft",
+          "label": "Draft"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "FJRD-36-OPEN",
+      "Manufacturer": "Fjord",
+      "Model": "36 Open",
+      "Variant": "Walkaround Day Cruiser",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "FJRD-40",
+      "Manufacturer": "Fjord",
+      "Model": "40 Cruiser",
+      "Variant": "Enclosed Cruiser",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "FJRD-40-OPEN",
+      "Manufacturer": "Fjord",
+      "Model": "40 Open",
+      "Variant": "Walkaround Day Cruiser",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "FORT-26",
+      "Manufacturer": "Fortier",
+      "Model": "26",
+      "Variant": "Bass Boat / Downeast Cruiser",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "FORT-33",
+      "Manufacturer": "Fortier",
+      "Model": "33",
+      "Variant": "Downeast Cruiser",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "GOZZ-40-PI",
+      "Manufacturer": "Gozzard",
+      "Model": "Pilgrim 40",
+      "Variant": "North Castle / Gozzard Motor Yacht",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "GRBK-32-CL",
+      "Manufacturer": "Grand Banks",
+      "Model": "32",
+      "Variant": "Sedan",
+      "missing": [
+        {
+          "field": "HullMaterialCode",
+          "label": "Hull material"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "GRBK-36-CL",
+      "Manufacturer": "Grand Banks",
+      "Model": "36",
+      "Variant": "Classic",
+      "missing": [
+        {
+          "field": "HullMaterialCode",
+          "label": "Hull material"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LOA",
+          "label": "LOA"
+        },
+        {
+          "field": "Beam",
+          "label": "Beam"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "GRBK-36-EU",
+      "Manufacturer": "Grand Banks",
+      "Model": "36",
+      "Variant": "Europa",
+      "missing": [
+        {
+          "field": "HullMaterialCode",
+          "label": "Hull material"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "GRBK-42-CL",
+      "Manufacturer": "Grand Banks",
+      "Model": "42",
+      "Variant": "Classic",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LOA",
+          "label": "LOA"
+        },
+        {
+          "field": "Beam",
+          "label": "Beam"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "GRBK-46-CL",
+      "Manufacturer": "Grand Banks",
+      "Model": "46",
+      "Variant": "Classic",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "GRBK-49-MY",
+      "Manufacturer": "Grand Banks",
+      "Model": "49",
+      "Variant": "Motor Yacht",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "GRTH-GH37",
+      "Manufacturer": "Great Harbour",
+      "Model": "GH37",
+      "Variant": "Raised-Pilothouse Liveaboard Trawler",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "GRTH-N37",
+      "Manufacturer": "Great Harbour",
+      "Model": "N37",
+      "Variant": "Navigator / Long-Range Trawler",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "GRNL-33",
+      "Manufacturer": "Greenline",
+      "Model": "33",
+      "Variant": "Diesel / Hybrid / Electric Sedan",
+      "missing": [
+        {
+          "field": "FuelCode",
+          "label": "Fuel"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "GRNL-39",
+      "Manufacturer": "Greenline",
+      "Model": "39",
+      "Variant": "Diesel / Hybrid / Electric Sedan",
+      "missing": [
+        {
+          "field": "FuelCode",
+          "label": "Fuel"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "GULF-36-TR",
+      "Manufacturer": "Gulfstar",
+      "Model": "36 Trawler",
+      "Variant": "Trawler",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "GULF-43-TR",
+      "Manufacturer": "Gulfstar",
+      "Model": "43 Trawler",
+      "Variant": "Trawler",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "GULF-44-MC",
+      "Manufacturer": "Gulfstar",
+      "Model": "44 Motor Cruiser",
+      "Variant": "Motor Cruiser",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "GULF-49-MC",
+      "Manufacturer": "Gulfstar",
+      "Model": "49 Motor Yacht",
+      "Variant": "Motor Yacht",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "HELM-31-CA",
+      "Manufacturer": "Helmsman",
+      "Model": "31 Sedan",
+      "Variant": "Sedan",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "HELM-38E-TR",
+      "Manufacturer": "Helmsman",
+      "Model": "38E Pilothouse",
+      "Variant": "Pilothouse",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "HELM-43-E",
+      "Manufacturer": "Helmsman",
+      "Model": "43E Pilothouse",
+      "Variant": "Pilothouse",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "HELM-46-PH",
+      "Manufacturer": "Helmsman",
+      "Model": "46 Pilothouse",
+      "Variant": "Pilothouse",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "HLMN-38-CO",
+      "Manufacturer": "Holiday Mansion",
+      "Model": "38 Barracuda Coastal",
+      "Variant": "Coastal Houseboat Cruiser",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "HUNT-29",
+      "Manufacturer": "Hunt Yachts",
+      "Model": "Surfhunter 29",
+      "Variant": "Deep-V Express Cruiser",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "HUNT-36",
+      "Manufacturer": "Hunt Yachts",
+      "Model": "Surfhunter 36",
+      "Variant": "Coupe",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "ISGY-32-EU",
+      "Manufacturer": "Island Gypsy",
+      "Model": "32 Europa",
+      "Variant": "Europa",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "ISGY-32-FI",
+      "Manufacturer": "Island Gypsy",
+      "Model": "32 Fisherman",
+      "Variant": "Fisherman",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "ISGY-32-SE",
+      "Manufacturer": "Island Gypsy",
+      "Model": "32 Sedan",
+      "Variant": "Sedan",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "ISGY-36",
+      "Manufacturer": "Island Gypsy",
+      "Model": "36 Classic",
+      "Variant": "Classic",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "ISGY-36EURO",
+      "Manufacturer": "Island Gypsy",
+      "Model": "36 Europa",
+      "Variant": "Europa",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "ISGY-40",
+      "Manufacturer": "Island Gypsy",
+      "Model": "40 Classic",
+      "Variant": "Classic",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "ISGY-44",
+      "Manufacturer": "Island Gypsy",
+      "Model": "44 Motor Cruiser",
+      "Variant": "Motor Cruiser",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "JEAU-1095",
+      "Manufacturer": "Jeanneau",
+      "Model": "Merry Fisher 1095 Coupé",
+      "Variant": "Coupé",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Beam",
+          "label": "Beam"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "JEAU-1095-FLY",
+      "Manufacturer": "Jeanneau",
+      "Model": "Merry Fisher 1095 Fly",
+      "Variant": "Flybridge",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "JEAU-605",
+      "Manufacturer": "Jeanneau",
+      "Model": "Merry Fisher 605",
+      "Variant": "Pilothouse Outboard",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "JEAU-635",
+      "Manufacturer": "Jeanneau",
+      "Model": "Merry Fisher 635",
+      "Variant": "Pilothouse",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Beam",
+          "label": "Beam"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "JEAU-695",
+      "Manufacturer": "Jeanneau",
+      "Model": "Merry Fisher 695",
+      "Variant": "Series 1 / Series 2",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Draft",
+          "label": "Draft"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "JEAU-795",
+      "Manufacturer": "Jeanneau",
+      "Model": "Merry Fisher 795",
+      "Variant": "Series 1 / Series 2",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LOA",
+          "label": "LOA"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Draft",
+          "label": "Draft"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "JEAU-855",
+      "Manufacturer": "Jeanneau",
+      "Model": "Merry Fisher 855",
+      "Variant": "Twin-Outboard Weekender",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "JEAU-895",
+      "Manufacturer": "Jeanneau",
+      "Model": "Merry Fisher 895",
+      "Variant": "Series 1 / Series 2",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Beam",
+          "label": "Beam"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "JEAU-895-SP",
+      "Manufacturer": "Jeanneau",
+      "Model": "Merry Fisher 895 Sport",
+      "Variant": "Walkaround Sport Pilothouse",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "KDKR-36-MA",
+      "Manufacturer": "Kadey-Krogen",
+      "Model": "36 Manatee",
+      "Variant": "Manatee",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "KDKR-39",
+      "Manufacturer": "Kadey-Krogen",
+      "Model": "39",
+      "Variant": null,
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "KDKR-42",
+      "Manufacturer": "Kadey-Krogen",
+      "Model": "42",
+      "Variant": null,
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "KDKR-44",
+      "Manufacturer": "Kadey-Krogen",
+      "Model": "44",
+      "Variant": "Trawler",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "KDKR-48-NS",
+      "Manufacturer": "Kadey-Krogen",
+      "Model": "48 North Sea",
+      "Variant": "North Sea",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "LUHR-30",
+      "Manufacturer": "Luhrs",
+      "Model": "30 Alura",
+      "Variant": "Downeast-Profile Fishing Cruiser",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "MNSH-30-PI",
+      "Manufacturer": "Mainship",
+      "Model": "30",
+      "Variant": "Pilot",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Draft",
+          "label": "Draft"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "MNSH-34-MK2",
+      "Manufacturer": "Mainship",
+      "Model": "34",
+      "Variant": "II",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "MNSH-34-MK1",
+      "Manufacturer": "Mainship",
+      "Model": "34",
+      "Variant": "Diesel Cruiser",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "MNSH-350-TR",
+      "Manufacturer": "Mainship",
+      "Model": "350",
+      "Variant": "Trawler",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "MNSH-390-TR",
+      "Manufacturer": "Mainship",
+      "Model": "390",
+      "Variant": "Trawler",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "MNSH-400-TR",
+      "Manufacturer": "Mainship",
+      "Model": "400",
+      "Variant": "Trawler",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "MTRA-34-EU",
+      "Manufacturer": "Marine Trader",
+      "Model": "34",
+      "Variant": "Europa",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LOA",
+          "label": "LOA"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Beam",
+          "label": "Beam"
+        },
+        {
+          "field": "Draft",
+          "label": "Draft"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "MTRA-34-SE",
+      "Manufacturer": "Marine Trader",
+      "Model": "34",
+      "Variant": "Sedan",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "MRTR-36-DO",
+      "Manufacturer": "Marine Trader",
+      "Model": "36",
+      "Variant": "Double Cabin",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "MRTR-38-SD",
+      "Manufacturer": "Marine Trader",
+      "Model": "38",
+      "Variant": "Double Cabin",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "MRTR-38-SD2",
+      "Manufacturer": "Marine Trader",
+      "Model": "38",
+      "Variant": "Sundeck",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LOA",
+          "label": "LOA"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Beam",
+          "label": "Beam"
+        },
+        {
+          "field": "Draft",
+          "label": "Draft"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "MRTR-40-DC",
+      "Manufacturer": "Marine Trader",
+      "Model": "40",
+      "Variant": "Double Cabin",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "MRTR-44-TC",
+      "Manufacturer": "Marine Trader",
+      "Model": "44",
+      "Variant": "Tri-Cabin",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "MERI-341-SE",
+      "Manufacturer": "Meridian",
+      "Model": "341 Sedan",
+      "Variant": "Flybridge Sedan",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "MERI-381-SE",
+      "Manufacturer": "Meridian",
+      "Model": "381 Sedan",
+      "Variant": "Flybridge Sedan",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "MONK-36-TR",
+      "Manufacturer": "Monk",
+      "Model": "36",
+      "Variant": "Trawler",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "NMBL-24-NO",
+      "Manufacturer": "Nimble",
+      "Model": "Nomad",
+      "Variant": "Pocket Trawler",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "NMBL-32-WA",
+      "Manufacturer": "Nimble",
+      "Model": "Wanderer",
+      "Variant": "Power Cruiser / Optional Motorsailer",
+      "missing": [
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "NMBS-3003",
+      "Manufacturer": "Nimbus",
+      "Model": "3003",
+      "Variant": "Aft-Cabin Coupé",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "NMBS-365-CO",
+      "Manufacturer": "Nimbus",
+      "Model": "365 Coupé",
+      "Variant": "Sidewalk Coupé Cruiser",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "NDST-31P",
+      "Manufacturer": "Nord Star",
+      "Model": "31+",
+      "Variant": "All-Weather Pilothouse",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Draft",
+          "label": "Draft"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "NRDH-40",
+      "Manufacturer": "Nordhavn",
+      "Model": "40",
+      "Variant": "Ocean Passagemaker",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "Draft",
+          "label": "Draft"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "NDTG-26",
+      "Manufacturer": "Nordic Tugs",
+      "Model": "26",
+      "Variant": null,
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "NDTG-32",
+      "Manufacturer": "Nordic Tugs",
+      "Model": "32",
+      "Variant": null,
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "NDTG-34",
+      "Manufacturer": "Nordic Tugs",
+      "Model": "34",
+      "Variant": null,
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "NDTG-37",
+      "Manufacturer": "Nordic Tugs",
+      "Model": "37",
+      "Variant": null,
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "NDTG-39",
+      "Manufacturer": "Nordic Tugs",
+      "Model": "39",
+      "Variant": null,
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LOA",
+          "label": "LOA"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "NDTG-42",
+      "Manufacturer": "Nordic Tugs",
+      "Model": "42",
+      "Variant": null,
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "NPAC-28",
+      "Manufacturer": "North Pacific",
+      "Model": "28 Pilothouse",
+      "Variant": "Pilothouse",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "NPAC-38",
+      "Manufacturer": "North Pacific",
+      "Model": "38 Sedan",
+      "Variant": "Europa Sedan",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "OCEA-36-SE",
+      "Manufacturer": "Oceania Yachts",
+      "Model": "36 Sedan",
+      "Variant": "Sedan Trawler",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "OCAL-39-SE",
+      "Manufacturer": "Ocean Alexander",
+      "Model": "39 Sedan",
+      "Variant": "Flybridge Sedan",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LOA",
+          "label": "LOA"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "PDQB-34-PA",
+      "Manufacturer": "PDQ",
+      "Model": "34 PowerCat",
+      "Variant": "Power Catamaran",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "PRAI-29-TR",
+      "Manufacturer": "Prairie",
+      "Model": "29 Coastal Cruiser",
+      "Variant": "Coastal Cruiser",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "PRAI-36-TR",
+      "Manufacturer": "Prairie",
+      "Model": "36 Coastal Cruiser",
+      "Variant": "Double Cabin",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "RNGR-21-CLASSIC",
+      "Manufacturer": "Ranger Tugs",
+      "Model": "R-21",
+      "Variant": "Classic diesel",
+      "missing": [
+        {
+          "field": "HullBehaviourCode",
+          "label": "Hull behaviour"
+        },
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LOA",
+          "label": "LOA"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Beam",
+          "label": "Beam"
+        },
+        {
+          "field": "Draft",
+          "label": "Draft"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "RNGR-21-EC",
+      "Manufacturer": "Ranger Tugs",
+      "Model": "R-21",
+      "Variant": "EC diesel",
+      "missing": [
+        {
+          "field": "HullBehaviourCode",
+          "label": "Hull behaviour"
+        },
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LOA",
+          "label": "LOA"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Beam",
+          "label": "Beam"
+        },
+        {
+          "field": "Draft",
+          "label": "Draft"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "RNGR-R-23",
+      "Manufacturer": "Ranger Tugs",
+      "Model": "R-23",
+      "Variant": "Current outboard",
+      "missing": [
+        {
+          "field": "HullBehaviourCode",
+          "label": "Hull behaviour"
+        },
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "RNGR-25-CLASSIC",
+      "Manufacturer": "Ranger Tugs",
+      "Model": "R-25",
+      "Variant": "Classic diesel",
+      "missing": [
+        {
+          "field": "HullBehaviourCode",
+          "label": "Hull behaviour"
+        },
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LOA",
+          "label": "LOA"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Beam",
+          "label": "Beam"
+        },
+        {
+          "field": "Draft",
+          "label": "Draft"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "RNGR-R-25",
+      "Manufacturer": "Ranger Tugs",
+      "Model": "R-25",
+      "Variant": "Current outboard",
+      "missing": [
+        {
+          "field": "HullBehaviourCode",
+          "label": "Hull behaviour"
+        },
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LOA",
+          "label": "LOA"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Beam",
+          "label": "Beam"
+        },
+        {
+          "field": "Draft",
+          "label": "Draft"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "RNGR-25-SC",
+      "Manufacturer": "Ranger Tugs",
+      "Model": "R-25",
+      "Variant": "SC diesel",
+      "missing": [
+        {
+          "field": "HullBehaviourCode",
+          "label": "Hull behaviour"
+        },
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LOA",
+          "label": "LOA"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Beam",
+          "label": "Beam"
+        },
+        {
+          "field": "Draft",
+          "label": "Draft"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "RNGR-27-RT",
+      "Manufacturer": "Ranger Tugs",
+      "Model": "R-27",
+      "Variant": "Classic diesel",
+      "missing": [
+        {
+          "field": "HullBehaviourCode",
+          "label": "Hull behaviour"
+        },
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LOA",
+          "label": "LOA"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Beam",
+          "label": "Beam"
+        },
+        {
+          "field": "Draft",
+          "label": "Draft"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "RNGR-R-27",
+      "Manufacturer": "Ranger Tugs",
+      "Model": "R-27",
+      "Variant": "Current twin-outboard",
+      "missing": [
+        {
+          "field": "HullBehaviourCode",
+          "label": "Hull behaviour"
+        },
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "RNGR-27-OB",
+      "Manufacturer": "Ranger Tugs",
+      "Model": "R-27",
+      "Variant": "Single-outboard NW/LE",
+      "missing": [
+        {
+          "field": "HullBehaviourCode",
+          "label": "Hull behaviour"
+        },
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LOA",
+          "label": "LOA"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Beam",
+          "label": "Beam"
+        },
+        {
+          "field": "Draft",
+          "label": "Draft"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "RNGR-29-CLASSIC",
+      "Manufacturer": "Ranger Tugs",
+      "Model": "R-29",
+      "Variant": "Classic diesel",
+      "missing": [
+        {
+          "field": "HullBehaviourCode",
+          "label": "Hull behaviour"
+        },
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LOA",
+          "label": "LOA"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Beam",
+          "label": "Beam"
+        },
+        {
+          "field": "Draft",
+          "label": "Draft"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "RNGR-29-CB",
+      "Manufacturer": "Ranger Tugs",
+      "Model": "R-29 CB",
+      "Variant": "Command Bridge",
+      "missing": [
+        {
+          "field": "HullBehaviourCode",
+          "label": "Hull behaviour"
+        },
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LOA",
+          "label": "LOA"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Beam",
+          "label": "Beam"
+        },
+        {
+          "field": "Draft",
+          "label": "Draft"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "RNGR-R-29",
+      "Manufacturer": "Ranger Tugs",
+      "Model": "R-29 S",
+      "Variant": "Sedan",
+      "missing": [
+        {
+          "field": "HullBehaviourCode",
+          "label": "Hull behaviour"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "RNGR-31-CB",
+      "Manufacturer": "Ranger Tugs",
+      "Model": "R-31 CB",
+      "Variant": "Command Bridge",
+      "missing": [
+        {
+          "field": "HullBehaviourCode",
+          "label": "Hull behaviour"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "RNGR-R-31",
+      "Manufacturer": "Ranger Tugs",
+      "Model": "R-31 S",
+      "Variant": "Sedan",
+      "missing": [
+        {
+          "field": "HullBehaviourCode",
+          "label": "Hull behaviour"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "RNGR-43-CB",
+      "Manufacturer": "Ranger Tugs",
+      "Model": "R-43 CB",
+      "Variant": "Command Bridge",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "RNGR-43-S",
+      "Manufacturer": "Ranger Tugs",
+      "Model": "R-43 S",
+      "Variant": "Sedan",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "ROSB-246-WH",
+      "Manufacturer": "Rosborough",
+      "Model": "RF-246",
+      "Variant": "Custom Wheelhouse",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Draft",
+          "label": "Draft"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "ROSB-246-LS",
+      "Manufacturer": "Rosborough",
+      "Model": "RF-246",
+      "Variant": "Legacy Sedan Cruiser Diesel",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Draft",
+          "label": "Draft"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "ROSB-246",
+      "Manufacturer": "Rosborough",
+      "Model": "246",
+      "Variant": "Yarmouth",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Draft",
+          "label": "Draft"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "SABR-34-EX",
+      "Manufacturer": "Sabre",
+      "Model": "34",
+      "Variant": "Hard Top Express",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "SABR-38-SA",
+      "Manufacturer": "Sabre",
+      "Model": "38 Salon Express",
+      "Variant": "Salon Express",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "SAGA-26-HT",
+      "Manufacturer": "Saga",
+      "Model": "26 HT",
+      "Variant": "Hardtop Cruiser",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "SEAR-340-SU",
+      "Manufacturer": "Sea Ray",
+      "Model": "340 Sundancer",
+      "Variant": "Generation 1",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "SEAR-390-MO",
+      "Manufacturer": "Sea Ray",
+      "Model": "390 / 40 Motor Yacht",
+      "Variant": "Flush-Deck Motor Yacht",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "SEAH-35-PH",
+      "Manufacturer": "Seahorse",
+      "Model": "Coot 35",
+      "Variant": "Steel Pocket Trawler",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "SEAH-38-CO",
+      "Manufacturer": "Seahorse",
+      "Model": "Coot 38",
+      "Variant": "Steel Pocket Trawler",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "SEAL-34-TC",
+      "Manufacturer": "Sealord",
+      "Model": "34 Double Cabin Trawler",
+      "Variant": "Tri-Cabin / Double Cabin",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "SEAP-35",
+      "Manufacturer": "SeaPiper",
+      "Model": "35",
+      "Variant": "Narrow-Beam Long-Range Cruiser",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "SSPT-24",
+      "Manufacturer": "Sea Sport",
+      "Model": "XL 2400",
+      "Variant": "Long-Cockpit Pilothouse",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "SSPT-24-EX",
+      "Manufacturer": "Sea Sport",
+      "Model": "Explorer 2400",
+      "Variant": "Long-Cabin Pilothouse",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "SSPT-27",
+      "Manufacturer": "Sea Sport",
+      "Model": "27",
+      "Variant": "Seamaster / Navigator / Pilot",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Draft",
+          "label": "Draft"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "SEAW-24-ST",
+      "Manufacturer": "Seaway",
+      "Model": "24",
+      "Variant": "Sport Trawler / Coastal Cruiser",
+      "missing": [
+        {
+          "field": "MechanicalPropulsionCode",
+          "label": "Mechanical propulsion"
+        },
+        {
+          "field": "FuelCode",
+          "label": "Fuel"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Draft",
+          "label": "Draft"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "SEAW-28-CC",
+      "Manufacturer": "Seaway",
+      "Model": "28 Coastal Cruiser",
+      "Variant": "Coastal Cruiser",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "SHAN-38-SRD",
+      "Manufacturer": "Shannon",
+      "Model": "38 SRD",
+      "Variant": "Schulz Reverse Deadrise",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "SILV-34-MO",
+      "Manufacturer": "Silverton",
+      "Model": "34 Motor Yacht",
+      "Variant": "Aft Cabin Motor Yacht",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "SILV-352-MO",
+      "Manufacturer": "Silverton",
+      "Model": "352 Motor Yacht",
+      "Variant": "SideWalk Motor Yacht",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "SILV-372",
+      "Manufacturer": "Silverton",
+      "Model": "372 / 392 Motor Yacht",
+      "Variant": "SideWalk Motor Yacht",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "SILV-40-AC",
+      "Manufacturer": "Silverton",
+      "Model": "40 Aft Cabin",
+      "Variant": "Double Cabin Motor Yacht",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "SISU-22-CO",
+      "Manufacturer": "Sisu",
+      "Model": "22",
+      "Variant": "Bass Boat / Lobsterboat",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "SISU-26-BA",
+      "Manufacturer": "Sisu",
+      "Model": "26",
+      "Variant": "Bass Boat / Sedan / Lobsterboat",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "TOLL-34-SE",
+      "Manufacturer": "Tollycraft",
+      "Model": "34 Sport Sedan",
+      "Variant": "Sport Sedan",
+      "missing": [
+        {
+          "field": "FuelCode",
+          "label": "Fuel"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "TOLL-37-SE",
+      "Manufacturer": "Tollycraft",
+      "Model": "37 Sedan",
+      "Variant": "Flybridge Sedan",
+      "missing": [
+        {
+          "field": "FuelCode",
+          "label": "Fuel"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "TPMC-32-EA",
+      "Manufacturer": "Transpacific Marine",
+      "Model": "Eagle 32",
+      "Variant": "Pilothouse",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "TROJ-36-TR",
+      "Manufacturer": "Trojan",
+      "Model": "F-36 Tri-Cabin",
+      "Variant": "Tri-Cabin Motor Yacht",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "TRUN-34",
+      "Manufacturer": "True North",
+      "Model": "34",
+      "Variant": "Original Diesel / Inboard",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "UNIF-36-DO",
+      "Manufacturer": "Uniflite",
+      "Model": "36 Double Cabin",
+      "Variant": "Aft Cabin Motor Yacht",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "UNIV-36-TR",
+      "Manufacturer": "Universal",
+      "Model": "36 Tri-Cabin Trawler",
+      "Variant": "Tri-Cabin",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "UNIV-40-TR",
+      "Manufacturer": "Universal",
+      "Model": "40 Europa",
+      "Variant": "Europa / Sedan Trawler",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "WILL-30-VO",
+      "Manufacturer": "Willard",
+      "Model": "Vega 30 Voyager",
+      "Variant": "Raised Pilothouse",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "WILL-36-TR",
+      "Manufacturer": "Willard",
+      "Model": "Vega 36 Standard Cruiser",
+      "Variant": "Flybridge Sedan",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "WILL-40-NO",
+      "Manufacturer": "Willard",
+      "Model": "Vega 40 Nomad",
+      "Variant": "Widebody Flybridge Sedan",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Beam",
+          "label": "Beam"
+        },
+        {
+          "field": "Draft",
+          "label": "Draft"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        },
+        {
+          "field": "Displacement",
+          "label": "Displacement"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "WIND-26-SN",
+      "Manufacturer": "Windy",
+      "Model": "26 Snekke",
+      "Variant": "26 SN / Norwegian Snekke",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Draft",
+          "label": "Draft"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "MNSH-34-MK3",
+      "Manufacturer": "Mainship",
+      "Model": "34",
+      "Variant": "III",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "MNSH-34-TR",
+      "Manufacturer": "Mainship",
+      "Model": "34",
+      "Variant": "Trawler",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "KDKR-44-AE",
+      "Manufacturer": "Kadey-Krogen",
+      "Model": "44 AE",
+      "Variant": "Advanced Ergonomics",
+      "missing": [
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "MERI-341-SE-03",
+      "Manufacturer": "Meridian",
+      "Model": "341 Sedan",
+      "Variant": "Original Generation / Bayliner 3488 lineage",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "BENE-ANT-9-S2",
+      "Manufacturer": "Beneteau",
+      "Model": "Antares 9",
+      "Variant": "Generation 2",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "CRUY-3260",
+      "Manufacturer": "Cruisers Yachts",
+      "Model": "3260 Esprit",
+      "Variant": "Open Interior / No Mid-Cabin",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "SEAR-340-SU-99",
+      "Manufacturer": "Sea Ray",
+      "Model": "340 Sundancer",
+      "Variant": "Generation 2",
+      "missing": [
+        {
+          "field": "MechanicalPropulsionCode",
+          "label": "Mechanical propulsion"
+        },
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    },
+    {
+      "BoatModelID": "SEAR-340-SU-03",
+      "Manufacturer": "Sea Ray",
+      "Model": "340 Sundancer",
+      "Variant": "Generation 3",
+      "missing": [
+        {
+          "field": "KeelConfigurationCode",
+          "label": "Keel configuration"
+        },
+        {
+          "field": "RudderTypeCode",
+          "label": "Rudder type"
+        },
+        {
+          "field": "LWL",
+          "label": "LWL"
+        },
+        {
+          "field": "AirDraft",
+          "label": "Air draft"
+        },
+        {
+          "field": "Headroom",
+          "label": "Headroom"
+        }
+      ]
+    }
+  ]
+}

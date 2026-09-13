@@ -1,0 +1,784 @@
+{
+  "release": "6.47.0",
+  "batch": "specification-completion-02",
+  "manufacturers": [
+    "Cutwater",
+    "C-Dory",
+    "Carver",
+    "Marine Trader",
+    "Duffy"
+  ],
+  "updateCount": 66,
+  "updates": [
+    {
+      "BoatModelID": "CUTW-24",
+      "Field": "LOA",
+      "Old": null,
+      "New": 9.499600000000001,
+      "Basis": "Rigged LOA from period C-24 Coupe technical specification; avoids confusing model number/hull designation with true LOA.",
+      "EvidenceRefs": [
+        "https://cutwaterboats.com/past-models/c-24-c",
+        "https://powerandmotoryacht.com/boats/new-boat-cutwater-c-24-coupe/"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "CUTW-24",
+      "Field": "Beam",
+      "Old": null,
+      "New": 2.5908,
+      "Basis": "Source-backed model specification.",
+      "EvidenceRefs": [
+        "https://cutwaterboats.com/past-models/c-24-c",
+        "https://powerandmotoryacht.com/boats/new-boat-cutwater-c-24-coupe/"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "CUTW-24",
+      "Field": "Draft",
+      "Old": null,
+      "New": 0.762,
+      "Basis": "Source-backed motor-down draft.",
+      "EvidenceRefs": [
+        "https://cutwaterboats.com/past-models/c-24-c",
+        "https://powerandmotoryacht.com/boats/new-boat-cutwater-c-24-coupe/"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "CUTW-24",
+      "Field": "Displacement",
+      "Old": null,
+      "New": 2222.6,
+      "Basis": "Source-backed dry weight promoted as representative displacement/weight field.",
+      "EvidenceRefs": [
+        "https://cutwaterboats.com/past-models/c-24-c",
+        "https://powerandmotoryacht.com/boats/new-boat-cutwater-c-24-coupe/"
+      ],
+      "Unit": "kg"
+    },
+    {
+      "BoatModelID": "CUTW-24",
+      "Field": "HullBehaviourCode",
+      "Old": null,
+      "New": "hull_behaviour.planing",
+      "Basis": "C-24 Coupe is an outboard planing cruiser; period review and validated model record agree.",
+      "EvidenceRefs": [
+        "https://cutwaterboats.com/past-models/c-24-c",
+        "https://powerandmotoryacht.com/boats/new-boat-cutwater-c-24-coupe/"
+      ]
+    },
+    {
+      "BoatModelID": "CUTW-24",
+      "Field": "RudderTypeCode",
+      "Old": null,
+      "New": "rudder.none_external_drive",
+      "Basis": "Outboard steering; no separate conventional rudder.",
+      "EvidenceRefs": [
+        "https://cutwaterboats.com/past-models/c-24-c",
+        "https://powerandmotoryacht.com/boats/new-boat-cutwater-c-24-coupe/"
+      ]
+    },
+    {
+      "BoatModelID": "CUTW-26",
+      "Field": "LOA",
+      "Old": null,
+      "New": 9.2456,
+      "Basis": "Rigged overall length from model-specific C-26 technical review; model designation is not LOA.",
+      "EvidenceRefs": [
+        "https://cutwaterboats.com/past-models/c-26",
+        "https://www.boatdealers.ca/boat-reviews/2015/cutwater/c26"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "CUTW-26",
+      "Field": "Beam",
+      "Old": null,
+      "New": 2.5908,
+      "Basis": "Source-backed model specification.",
+      "EvidenceRefs": [
+        "https://cutwaterboats.com/past-models/c-26",
+        "https://www.boatdealers.ca/boat-reviews/2015/cutwater/c26"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "CUTW-26",
+      "Field": "Draft",
+      "Old": null,
+      "New": 0.7112,
+      "Basis": "Source-backed model draft.",
+      "EvidenceRefs": [
+        "https://cutwaterboats.com/past-models/c-26",
+        "https://www.boatdealers.ca/boat-reviews/2015/cutwater/c26"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "CUTW-26",
+      "Field": "Displacement",
+      "Old": null,
+      "New": 3061.7,
+      "Basis": "Source-backed dry weight.",
+      "EvidenceRefs": [
+        "https://cutwaterboats.com/past-models/c-26",
+        "https://www.boatdealers.ca/boat-reviews/2015/cutwater/c26"
+      ],
+      "Unit": "kg"
+    },
+    {
+      "BoatModelID": "CUTW-26",
+      "Field": "HullBehaviourCode",
+      "Old": null,
+      "New": "hull_behaviour.semi_displacement",
+      "Basis": "Promoted from validated model-specific legacy classification during targeted completion.",
+      "EvidenceRefs": [
+        "https://cutwaterboats.com/past-models/c-26",
+        "https://www.boatdealers.ca/boat-reviews/2015/cutwater/c26"
+      ]
+    },
+    {
+      "BoatModelID": "CUTW-28-P",
+      "Field": "AirDraft",
+      "Old": null,
+      "New": 2.7686,
+      "Basis": "Model-specific reported maximum bridge clearance.",
+      "EvidenceRefs": [
+        "https://cutwaterboats.com/past-models/c-28",
+        "https://ca.boats.com/power-boats/2019-cutwater-c-28-le-10184431/"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "CUTW-30-P",
+      "Field": "Beam",
+      "Old": null,
+      "New": 3.048,
+      "Basis": "Beam is consistent across documented C-30 Sedan years.",
+      "EvidenceRefs": [
+        "https://cutwaterboats.com/past-models/c-30-s",
+        "https://www.boats.com/power-boats/2023-cutwater-c-30-sedan-10290195/",
+        "https://www.boats.com/power-boats/2017-cutwater-c-30-sedan-10107790/"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "CUTW-30-P",
+      "Field": "Draft",
+      "Old": null,
+      "New": 0.7366,
+      "Basis": "Draft is consistent across documented C-30 Sedan years.",
+      "EvidenceRefs": [
+        "https://cutwaterboats.com/past-models/c-30-s",
+        "https://www.boats.com/power-boats/2023-cutwater-c-30-sedan-10290195/",
+        "https://www.boats.com/power-boats/2017-cutwater-c-30-sedan-10107790/"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "CUTW-30-P",
+      "Field": "AirDraft",
+      "Old": null,
+      "New": 2.9718,
+      "Basis": "Bridge clearance is consistent across documented C-30 Sedan years.",
+      "EvidenceRefs": [
+        "https://cutwaterboats.com/past-models/c-30-s",
+        "https://www.boats.com/power-boats/2023-cutwater-c-30-sedan-10290195/",
+        "https://www.boats.com/power-boats/2017-cutwater-c-30-sedan-10107790/"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "CUTW-30-P",
+      "Field": "HullBehaviourCode",
+      "Old": null,
+      "New": "hull_behaviour.planing",
+      "Basis": "Documented Deep-V hull and 20+ knot operating regime support planing classification.",
+      "EvidenceRefs": [
+        "https://cutwaterboats.com/past-models/c-30-s",
+        "https://www.boats.com/power-boats/2023-cutwater-c-30-sedan-10290195/",
+        "https://www.boats.com/power-boats/2017-cutwater-c-30-sedan-10107790/"
+      ]
+    },
+    {
+      "BoatModelID": "CUTW-30-C",
+      "Field": "LOA",
+      "Old": null,
+      "New": 10.8712,
+      "Basis": "Rigged overall length from model-specific C-30 CB specification.",
+      "EvidenceRefs": [
+        "https://cutwaterboats.com/past-models/c-30-cb",
+        "https://sysyachtsales.com/yacht-search/2024/cutwater-c-30-cb/10179202/"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "CUTW-30-C",
+      "Field": "Beam",
+      "Old": null,
+      "New": 3.048,
+      "Basis": "Source-backed model specification.",
+      "EvidenceRefs": [
+        "https://cutwaterboats.com/past-models/c-30-cb",
+        "https://sysyachtsales.com/yacht-search/2024/cutwater-c-30-cb/10179202/"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "CUTW-30-C",
+      "Field": "Draft",
+      "Old": null,
+      "New": 0.7366,
+      "Basis": "Source-backed drive-up/minimum draft for representative configuration.",
+      "EvidenceRefs": [
+        "https://cutwaterboats.com/past-models/c-30-cb",
+        "https://sysyachtsales.com/yacht-search/2024/cutwater-c-30-cb/10179202/"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "CUTW-30-C",
+      "Field": "AirDraft",
+      "Old": null,
+      "New": 2.9718,
+      "Basis": "Source-backed bridge clearance.",
+      "EvidenceRefs": [
+        "https://cutwaterboats.com/past-models/c-30-cb",
+        "https://sysyachtsales.com/yacht-search/2024/cutwater-c-30-cb/10179202/"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "CUTW-30-C",
+      "Field": "Displacement",
+      "Old": null,
+      "New": 4980.4,
+      "Basis": "Source-backed dry weight.",
+      "EvidenceRefs": [
+        "https://cutwaterboats.com/past-models/c-30-cb",
+        "https://sysyachtsales.com/yacht-search/2024/cutwater-c-30-cb/10179202/"
+      ],
+      "Unit": "kg"
+    },
+    {
+      "BoatModelID": "CUTW-30-C",
+      "Field": "HullBehaviourCode",
+      "Old": null,
+      "New": "hull_behaviour.planing",
+      "Basis": "Documented performance hull and cruise regime support planing classification.",
+      "EvidenceRefs": [
+        "https://cutwaterboats.com/past-models/c-30-cb",
+        "https://sysyachtsales.com/yacht-search/2024/cutwater-c-30-cb/10179202/"
+      ]
+    },
+    {
+      "BoatModelID": "CUTW-32",
+      "Field": "FirstYear",
+      "Old": 2018,
+      "New": 2020,
+      "Basis": "Cutwater introduced the C-32 Command Bridge as a new outboard model around the 2020 model year; current marketplace history also begins in 2020.",
+      "EvidenceRefs": [
+        "https://cutwaterboats.com/blog/cw-introducing-the-new-cutwater-c-32-command-bridge",
+        "https://cutwaterboats.com/spec-sheets/c-32-cb",
+        "https://www.boats.com/power-boats/2021-cutwater-c-32-cb-10051098/"
+      ]
+    },
+    {
+      "BoatModelID": "CUTW-32",
+      "Field": "MechanicalPropulsionCode",
+      "Old": "mechanical_propulsion.shaft",
+      "New": "mechanical_propulsion.outboard",
+      "Basis": "Factory C-32 CB uses twin Yamaha outboards; prior diesel/shaft classification was erroneous.",
+      "EvidenceRefs": [
+        "https://cutwaterboats.com/blog/cw-introducing-the-new-cutwater-c-32-command-bridge",
+        "https://cutwaterboats.com/spec-sheets/c-32-cb",
+        "https://www.boats.com/power-boats/2021-cutwater-c-32-cb-10051098/"
+      ]
+    },
+    {
+      "BoatModelID": "CUTW-32",
+      "Field": "FuelCode",
+      "Old": "fuel.diesel",
+      "New": "fuel.gasoline",
+      "Basis": "Factory C-32 CB outboard gasoline propulsion.",
+      "EvidenceRefs": [
+        "https://cutwaterboats.com/blog/cw-introducing-the-new-cutwater-c-32-command-bridge",
+        "https://cutwaterboats.com/spec-sheets/c-32-cb",
+        "https://www.boats.com/power-boats/2021-cutwater-c-32-cb-10051098/"
+      ]
+    },
+    {
+      "BoatModelID": "CUTW-32",
+      "Field": "HullBehaviourCode",
+      "Old": null,
+      "New": "hull_behaviour.planing",
+      "Basis": "Factory describes a double-stepped deep-V performance hull.",
+      "EvidenceRefs": [
+        "https://cutwaterboats.com/blog/cw-introducing-the-new-cutwater-c-32-command-bridge",
+        "https://cutwaterboats.com/spec-sheets/c-32-cb",
+        "https://www.boats.com/power-boats/2021-cutwater-c-32-cb-10051098/"
+      ]
+    },
+    {
+      "BoatModelID": "CUTW-32",
+      "Field": "RudderTypeCode",
+      "Old": null,
+      "New": "rudder.none_external_drive",
+      "Basis": "Twin outboards provide steering; no separate conventional rudder.",
+      "EvidenceRefs": [
+        "https://cutwaterboats.com/blog/cw-introducing-the-new-cutwater-c-32-command-bridge",
+        "https://cutwaterboats.com/spec-sheets/c-32-cb",
+        "https://www.boats.com/power-boats/2021-cutwater-c-32-cb-10051098/"
+      ]
+    },
+    {
+      "BoatModelID": "CUTW-32",
+      "Field": "LOA",
+      "Old": null,
+      "New": 11.4808,
+      "Basis": "Factory LOA with motors down.",
+      "EvidenceRefs": [
+        "https://cutwaterboats.com/blog/cw-introducing-the-new-cutwater-c-32-command-bridge",
+        "https://cutwaterboats.com/spec-sheets/c-32-cb",
+        "https://www.boats.com/power-boats/2021-cutwater-c-32-cb-10051098/"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "CUTW-32",
+      "Field": "Beam",
+      "Old": null,
+      "New": 3.048,
+      "Basis": "Factory specification.",
+      "EvidenceRefs": [
+        "https://cutwaterboats.com/blog/cw-introducing-the-new-cutwater-c-32-command-bridge",
+        "https://cutwaterboats.com/spec-sheets/c-32-cb",
+        "https://www.boats.com/power-boats/2021-cutwater-c-32-cb-10051098/"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "CUTW-32",
+      "Field": "Draft",
+      "Old": null,
+      "New": 0.8382000000000001,
+      "Basis": "Factory draft with motors down.",
+      "EvidenceRefs": [
+        "https://cutwaterboats.com/blog/cw-introducing-the-new-cutwater-c-32-command-bridge",
+        "https://cutwaterboats.com/spec-sheets/c-32-cb",
+        "https://www.boats.com/power-boats/2021-cutwater-c-32-cb-10051098/"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "CUTW-32",
+      "Field": "AirDraft",
+      "Old": null,
+      "New": 2.9718,
+      "Basis": "Factory bridge clearance with mast down; mast-up value remains presentation/variant detail.",
+      "EvidenceRefs": [
+        "https://cutwaterboats.com/blog/cw-introducing-the-new-cutwater-c-32-command-bridge",
+        "https://cutwaterboats.com/spec-sheets/c-32-cb",
+        "https://www.boats.com/power-boats/2021-cutwater-c-32-cb-10051098/"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "CUTW-32",
+      "Field": "Displacement",
+      "Old": null,
+      "New": 5488.5,
+      "Basis": "Factory dry weight for current C-32 CB.",
+      "EvidenceRefs": [
+        "https://cutwaterboats.com/blog/cw-introducing-the-new-cutwater-c-32-command-bridge",
+        "https://cutwaterboats.com/spec-sheets/c-32-cb",
+        "https://www.boats.com/power-boats/2021-cutwater-c-32-cb-10051098/"
+      ],
+      "Unit": "kg"
+    },
+    {
+      "BoatModelID": "CDRY-22-CR",
+      "Field": "LOA",
+      "Old": null,
+      "New": 6.7056000000000004,
+      "Basis": "Factory specification.",
+      "EvidenceRefs": [
+        "https://www.c-dory.com/boat/22-cruiser/"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "CDRY-22-CR",
+      "Field": "Beam",
+      "Old": null,
+      "New": 2.3368,
+      "Basis": "Factory specification.",
+      "EvidenceRefs": [
+        "https://www.c-dory.com/boat/22-cruiser/"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "CDRY-22-CR",
+      "Field": "Draft",
+      "Old": null,
+      "New": 0.1778,
+      "Basis": "Factory draft with fuel, less gear.",
+      "EvidenceRefs": [
+        "https://www.c-dory.com/boat/22-cruiser/"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "CDRY-22-CR",
+      "Field": "Displacement",
+      "Old": null,
+      "New": 873.2,
+      "Basis": "Factory published boat weight.",
+      "EvidenceRefs": [
+        "https://www.c-dory.com/boat/22-cruiser/"
+      ],
+      "Unit": "kg"
+    },
+    {
+      "BoatModelID": "CDRY-22-CR",
+      "Field": "RudderTypeCode",
+      "Old": null,
+      "New": "rudder.none_external_drive",
+      "Basis": "Outboard steering; no separate conventional rudder.",
+      "EvidenceRefs": [
+        "https://www.c-dory.com/boat/22-cruiser/"
+      ]
+    },
+    {
+      "BoatModelID": "CDRY-25-CR",
+      "Field": "LOA",
+      "Old": null,
+      "New": 7.747000000000001,
+      "Basis": "Factory specification.",
+      "EvidenceRefs": [
+        "https://www.c-dory.com/boat/25-cruiser/"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "CDRY-25-CR",
+      "Field": "Beam",
+      "Old": null,
+      "New": 2.5908,
+      "Basis": "Factory specification.",
+      "EvidenceRefs": [
+        "https://www.c-dory.com/boat/25-cruiser/"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "CDRY-25-CR",
+      "Field": "Draft",
+      "Old": null,
+      "New": 0.3048,
+      "Basis": "Factory draft with fuel, less gear.",
+      "EvidenceRefs": [
+        "https://www.c-dory.com/boat/25-cruiser/"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "CDRY-25-CR",
+      "Field": "Displacement",
+      "Old": null,
+      "New": 1791.7,
+      "Basis": "Factory published boat weight.",
+      "EvidenceRefs": [
+        "https://www.c-dory.com/boat/25-cruiser/"
+      ],
+      "Unit": "kg"
+    },
+    {
+      "BoatModelID": "CDRY-25-CR",
+      "Field": "RudderTypeCode",
+      "Old": null,
+      "New": "rudder.none_external_drive",
+      "Basis": "Outboard steering; no separate conventional rudder.",
+      "EvidenceRefs": [
+        "https://www.c-dory.com/boat/25-cruiser/"
+      ]
+    },
+    {
+      "BoatModelID": "CDRY-25-TC",
+      "Field": "LOA",
+      "Old": null,
+      "New": 7.747000000000001,
+      "Basis": "Factory specification.",
+      "EvidenceRefs": [
+        "https://www.c-dory.com/boat/25-tomcat-catamaran/"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "CDRY-25-TC",
+      "Field": "Beam",
+      "Old": null,
+      "New": 2.5908,
+      "Basis": "Factory specification.",
+      "EvidenceRefs": [
+        "https://www.c-dory.com/boat/25-tomcat-catamaran/"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "CDRY-25-TC",
+      "Field": "Displacement",
+      "Old": null,
+      "New": 2449.4,
+      "Basis": "Factory published boat weight without motors.",
+      "EvidenceRefs": [
+        "https://www.c-dory.com/boat/25-tomcat-catamaran/"
+      ],
+      "Unit": "kg"
+    },
+    {
+      "BoatModelID": "CDRY-25-TC",
+      "Field": "KeelConfigurationCode",
+      "Old": null,
+      "New": "keel.twin",
+      "Basis": "Twin-hull catamaran configuration; no single centerline keel.",
+      "EvidenceRefs": [
+        "https://www.c-dory.com/boat/25-tomcat-catamaran/"
+      ]
+    },
+    {
+      "BoatModelID": "CDRY-25-TC",
+      "Field": "RudderTypeCode",
+      "Old": null,
+      "New": "rudder.none_external_drive",
+      "Basis": "Outboard steering; no separate conventional rudder.",
+      "EvidenceRefs": [
+        "https://www.c-dory.com/boat/25-tomcat-catamaran/"
+      ]
+    },
+    {
+      "BoatModelID": "CDRY-26-PA",
+      "Field": "RudderTypeCode",
+      "Old": null,
+      "New": "rudder.none_external_drive",
+      "Basis": "Documented outboard-powered Pro-Angler/Pilothouse family; no separate conventional rudder.",
+      "EvidenceRefs": [
+        "https://www.c-brats.com/media/c-dory-26-pilothouse-pro-angler-specifications-1989-1990-pg-4.77624/"
+      ]
+    },
+    {
+      "BoatModelID": "CDRY-26-V",
+      "Field": "RudderTypeCode",
+      "Old": null,
+      "New": "rudder.none_external_drive",
+      "Basis": "Outboard steering; no separate conventional rudder.",
+      "EvidenceRefs": [
+        "https://www.c-dory.com/boat/26-venture/"
+      ]
+    },
+    {
+      "BoatModelID": "CARV-28-V",
+      "Field": "AirDraft",
+      "Old": null,
+      "New": 3.0226,
+      "Basis": "HMY Powerboat Guide published clearance/arch clearance.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/carver/2827-voyager-2897-mariner-1983-90"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "CARV-32-AC",
+      "Field": "AirDraft",
+      "Old": null,
+      "New": 3.5052000000000003,
+      "Basis": "HMY Powerboat Guide published clearance/arch clearance.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/carver/3207-aft-cabin-1983-90"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "CARV-33-MAR",
+      "Field": "AirDraft",
+      "Old": null,
+      "New": 3.3020000000000005,
+      "Basis": "HMY Powerboat Guide published clearance/arch clearance.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/carver/3297-mariner-330-mariner-1985-96"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "CARV-356-AF",
+      "Field": "AirDraft",
+      "Old": null,
+      "New": 5.3340000000000005,
+      "Basis": "HMY Powerboat Guide published clearance/arch clearance.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/carver/355-356-motor-yacht-1995-2003"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "CARV-36-AC",
+      "Field": "AirDraft",
+      "Old": null,
+      "New": 3.5814000000000004,
+      "Basis": "HMY Powerboat Guide published clearance/arch clearance.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/carver/3607-aft-cabin-1982-89"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "CARV-36-MAR",
+      "Field": "AirDraft",
+      "Old": null,
+      "New": 4.318,
+      "Basis": "HMY Powerboat Guide published clearance/arch clearance.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/carver/350-mariner-36-mariner-1997-2012"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "CARV-42-AC",
+      "Field": "AirDraft",
+      "Old": null,
+      "New": 6.096,
+      "Basis": "HMY Powerboat Guide published clearance/arch clearance.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/carver/4207-aft-cabin-1985-91"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "CARV-42-AC",
+      "Field": "KeelConfigurationCode",
+      "Old": null,
+      "New": "keel.protective",
+      "Basis": "HMY explicitly describes the 4207 as built on a modified-V hull with a shallow keel.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/carver/4207-aft-cabin-1985-91"
+      ]
+    },
+    {
+      "BoatModelID": "MTRA-34-SE",
+      "Field": "AirDraft",
+      "Old": null,
+      "New": 3.6576000000000004,
+      "Basis": "HMY published clearance.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/marine-trader/34-sedan-1973-2001"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "MRTR-44-TC",
+      "Field": "LWL",
+      "Old": null,
+      "New": 11.7856,
+      "Basis": "HMY published waterline length.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/marine-trader/44-tri-cabin-1977-88"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "MRTR-44-TC",
+      "Field": "Displacement",
+      "Old": null,
+      "New": 14968.5,
+      "Basis": "HMY published weight.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/marine-trader/44-tri-cabin-1977-88"
+      ],
+      "Unit": "kg"
+    },
+    {
+      "BoatModelID": "DUFF-31",
+      "Field": "LWL",
+      "Old": null,
+      "New": 8.9154,
+      "Basis": "Soundings model-specific Duffy 31 specification.",
+      "EvidenceRefs": [
+        "https://soundingsonline.com/boats/downeast-with-a-diesel/",
+        "https://kraftpower.com/wp-content/uploads/2025/06/Duffy-31-Application-Page-v1-1.pdf"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "DUFF-31",
+      "Field": "Displacement",
+      "Old": null,
+      "New": 4989.1,
+      "Basis": "Current Duffy 31 application specification.",
+      "EvidenceRefs": [
+        "https://soundingsonline.com/boats/downeast-with-a-diesel/",
+        "https://kraftpower.com/wp-content/uploads/2025/06/Duffy-31-Application-Page-v1-1.pdf"
+      ],
+      "Unit": "kg"
+    },
+    {
+      "BoatModelID": "DUFF-37",
+      "Field": "LWL",
+      "Old": null,
+      "New": 10.6426,
+      "Basis": "Lyman-Morse / model-specific listing waterline length.",
+      "EvidenceRefs": [
+        "https://www.lymanmorse.com/power_yacht/gizmo/",
+        "https://www.boattrader.com/boat/2003-duffy-atlantic-boat-company-duffy-37-9901115/",
+        "https://www.edwardsyachtsales.com/?fcapi=createyachtpdf&lno=53682"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "DUFF-37",
+      "Field": "AirDraft",
+      "Old": null,
+      "New": 4.5466,
+      "Basis": "Model-specific bridge clearance.",
+      "EvidenceRefs": [
+        "https://www.lymanmorse.com/power_yacht/gizmo/",
+        "https://www.boattrader.com/boat/2003-duffy-atlantic-boat-company-duffy-37-9901115/",
+        "https://www.edwardsyachtsales.com/?fcapi=createyachtpdf&lno=53682"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "DUFF-37",
+      "Field": "RudderTypeCode",
+      "Old": null,
+      "New": "rudder.skeg_hung",
+      "Basis": "Model-specific hull/deck description explicitly states full keel with skeg rudder and shoe.",
+      "EvidenceRefs": [
+        "https://www.lymanmorse.com/power_yacht/gizmo/",
+        "https://www.boattrader.com/boat/2003-duffy-atlantic-boat-company-duffy-37-9901115/",
+        "https://www.edwardsyachtsales.com/?fcapi=createyachtpdf&lno=53682"
+      ]
+    },
+    {
+      "BoatModelID": "DUFF-42",
+      "Field": "Draft",
+      "Old": 1.3716,
+      "New": 1.3716000000000002,
+      "Basis": "HMY published model specification.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/duffy/42-flybridge-1985-2006",
+        "https://soundingsonline.com/news/used-boat-duffy-42/"
+      ],
+      "Unit": "m"
+    }
+  ],
+  "principles": [
+    "Manufacturer or model-specific technical sources outrank inherited model-number-based dimensions.",
+    "Unknown values remain unknown where credible sources do not publish them.",
+    "Production-era conflicts are not flattened into one model-wide value.",
+    "Outboard steering is encoded as no separate rudder rather than Unknown.",
+    "Semi-custom Duffy values are promoted only when model/hull evidence is sufficiently specific."
+  ]
+}

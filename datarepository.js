@@ -15,6 +15,7 @@
         manufacturerKnowledge: "knowledge/data/manufacturerknowledge.json",
         manufacturers: "data/registry/manufacturers.json",
         boatRegistry: "data/registry/boat-registry.json",
+        modelFamilies: "data/model-families.json",
         fuelTypes: "data/taxonomy/fuel-types.json",
         propulsionTypes: "data/taxonomy/propulsion-types.json",
         hullForms: "data/taxonomy/hull-forms.json",
@@ -22,7 +23,6 @@
         styleFamilies: "data/taxonomy/style-families.json",
         factAttributes: "knowledge/data/fact-attributes.json",
         evidence: "knowledge/data/evidence.json",
-        facts: "knowledge/data/facts.json",
         contradictions: "knowledge/data/contradictions.json",
         relationships: "knowledge/data/relationships.json",
         knowledgeCoverage: "knowledge/data/knowledge-coverage.json",
@@ -58,9 +58,6 @@
         if (!row || typeof row !== "object") return row;
         const c = global.BAtlasCanonical;
         const out = { ...row };
-        const lengthPairs = [["LOA","LOA_ft"],["LWL","LWL_ft"],["Beam","Beam_ft"],["Draft","Draft_ft"],["AirDraft","AirDraft_ft"],["Headroom","Headroom_ft"]];
-        for (const [canonical, legacy] of lengthPairs) if (Number.isFinite(Number(out[canonical])) && c) out[legacy] = c.fromCanonical(Number(out[canonical]), "ft");
-        if (Number.isFinite(Number(out.Displacement)) && c) out.Displacement_lb = c.fromCanonical(Number(out.Displacement), "lb");
         // Capacity fields predate the SI canonical migration and contain mixed unit semantics.
         // Never synthesize gallon values unless the record explicitly declares its canonical unit state.
         for (const key of ["FuelCapacity","WaterCapacity","HoldingCapacity"]) {

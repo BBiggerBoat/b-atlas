@@ -1,0 +1,874 @@
+{
+  "Version": "6.82.0",
+  "Purpose": "Canonical plan-critical unknown fields only. No alternate or prior specification values are stored in this report.",
+  "Counts": {
+    "ModelsWithPlanCriticalUnknowns": 120,
+    "FieldCounts": {
+      "LOA": 7,
+      "Beam": 7,
+      "Draft": 10,
+      "AirDraft": 115
+    }
+  },
+  "Exceptions": [
+    {
+      "BoatModelID": "ALBN-25",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "ALBN-27-FC",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "ALBN-27-SP",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "ALBN-28-TE-EB",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "ALBN-28-FL",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "ALBN-30-FC",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "ALBN-32-PL",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "ALBN-40-TR",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "AMTG-34",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "AMTG-365",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "AMTG-395",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "ATLB-26-DU",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "BKCV-39O",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "BAYL-3788",
+      "ResearchedUnknownFields": [
+        "LOA",
+        "Beam",
+        "Draft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "BHMB-32",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "CDRY-22-CR",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "CDRY-25-CR",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "CDRY-25-TC",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "CDRY-26-PA",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "CDRY-26-V",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "CALF-38-TR",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "CAMA-28-GN",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "CAMA-31-TR",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "CAMA-41",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "CPDR-28-CR",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "CARV-350-AF",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "CARV-40-AC",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "CHBB-34-SE",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "CHBB-34-TC",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "CHBY-34-SE",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "CHBY-35",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "CHBY-40",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "CHLY-28",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "CHLY-32",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "CHLY-35",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "CHLY-36-TR",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "CUTW-24",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "CUTW-26",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "DEFE-34-TR",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "DEFE-38-TR",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "DEFE-40-EURO",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "DEFE-41",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "DEFE-43",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "DEFE-45",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "DEFE-49",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "DUFF-29",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "DUFF-31",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "DUFF-35",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "DUFF-39",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "DUFF-42",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "ENDE-44",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "FJRD-36",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "FORT-26",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "FORT-33",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "GRBK-32-CL",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "GRBK-36-CL",
+      "ResearchedUnknownFields": [
+        "LOA",
+        "Beam"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "GRBK-36-EU",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "GRBK-42-CL",
+      "ResearchedUnknownFields": [
+        "LOA",
+        "Beam"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "GRBK-49-MY",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "GRTH-GH37",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "GRTH-N37",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "HELM-31-CA",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "HELM-38E-TR",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "HELM-46-PH",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "HLMN-38-CO",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "HUNT-36",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "ISGY-32-FI",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "ISGY-32-SE",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "JEAU-635",
+      "ResearchedUnknownFields": [
+        "Beam"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "JEAU-795",
+      "ResearchedUnknownFields": [
+        "LOA",
+        "Draft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "KDKR-39",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "KDKR-42",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "KDKR-44",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "KDKR-48-NS",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "MNSH-30-PI",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "MTRA-34-EU",
+      "ResearchedUnknownFields": [
+        "LOA",
+        "Beam",
+        "Draft",
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "MRTR-36-DO",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "MRTR-38-SD",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "MRTR-38-SD2",
+      "ResearchedUnknownFields": [
+        "LOA",
+        "Beam",
+        "Draft",
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "MRTR-40-DC",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "MRTR-44-TC",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "NMBL-24-NO",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "NMBL-32-WA",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "NMBS-3003",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "NDST-31P",
+      "ResearchedUnknownFields": [
+        "Draft",
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "NRDH-40",
+      "ResearchedUnknownFields": [
+        "Draft",
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "NDTG-34",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "NDTG-37",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "NDTG-39",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "NDTG-42",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "NPAC-38",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "OCEA-36-SE",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "OCAL-39-SE",
+      "ResearchedUnknownFields": [
+        "LOA",
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "PRAI-29-TR",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "ROSB-246-WH",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "ROSB-246-LS",
+      "ResearchedUnknownFields": [
+        "Draft",
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "ROSB-246",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "SAGA-26-HT",
+      "ResearchedUnknownFields": [
+        "Draft",
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "SEAR-340-SU",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "SEAH-35-PH",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "SEAH-38-CO",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "SEAL-34-TC",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "SEAP-35",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "SSPT-24",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "SSPT-24-EX",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "SSPT-27",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "SEAW-24-ST",
+      "ResearchedUnknownFields": [
+        "Draft",
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "SEAW-28-CC",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "SHAN-38-SRD",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "SILV-34-MO",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "SISU-22-CO",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "SISU-26-BA",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "TPMC-32-EA",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "TRUN-34",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "UNIV-36-TR",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "WILL-30-VO",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "WILL-36-TR",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "WILL-40-NO",
+      "ResearchedUnknownFields": [
+        "Beam",
+        "Draft",
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "SEAR-340-SU-99",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    },
+    {
+      "BoatModelID": "SEAR-340-SU-03",
+      "ResearchedUnknownFields": [
+        "AirDraft"
+      ],
+      "PlanBehavior": "retain_candidate_reduce_confidence"
+    }
+  ]
+}

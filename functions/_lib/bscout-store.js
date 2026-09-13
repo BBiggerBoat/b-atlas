@@ -129,21 +129,24 @@ export function decodeBase64(base64) {
 
 export function correctionTarget(field) {
   return ({
-    YearStart: "FirstYear", YearEnd: "LastYear", LengthFt: "LOA_ft", BeamFt: "Beam_ft",
-    DraftFt: "Draft_ft", DisplacementLb: "Displacement_lb", FuelCapacityGal: "FuelCapacity",
+    YearStart: "FirstYear", YearEnd: "LastYear", LengthFt: "LOA", BeamFt: "Beam",
+    DraftFt: "Draft", DisplacementLb: "Displacement", FuelCapacityGal: "FuelCapacity",
     WaterCapacityGal: "WaterCapacity", NormalizedHullType: "NormalizedHullType",
     NormalizedFuel: "NormalizedFuel", NormalizedPropulsion: "NormalizedPropulsion",
     BoatFamily: "BoatFamily", ModelCharacter: "ModelCharacter"
   })[field] || null;
 }
 
-export function normalizeCorrectionValue(target, raw) {
+export function normalizeCorrectionValue(target, raw, sourceField = "") {
   if (["FirstYear", "LastYear"].includes(target)) {
     const n = parseInt(raw, 10); return Number.isFinite(n) ? n : undefined;
   }
-  if (["LOA_ft", "Beam_ft", "Draft_ft", "Displacement_lb", "FuelCapacity", "WaterCapacity"].includes(target)) {
+  if (["LOA", "Beam", "Draft", "Displacement", "FuelCapacity", "WaterCapacity"].includes(target)) {
     const n = Number(String(raw ?? "").replace(/[^0-9.+-]/g, ""));
-    return Number.isFinite(n) ? n : undefined;
+    if (!Number.isFinite(n)) return undefined;
+    if (["LengthFt", "BeamFt", "DraftFt"].includes(sourceField)) return n * 0.3048;
+    if (sourceField === "DisplacementLb") return n * 0.45359237;
+    return n;
   }
   return raw;
 }

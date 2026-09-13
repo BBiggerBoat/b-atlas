@@ -1,7 +1,7 @@
 {
   "name": "b-atlas-public",
   "private": true,
-  "version": "6.73.0",
+  "version": "6.85.0",
   "description": "B-Atlas boat knowledge, research, search and community contribution platform",
   "scripts": {
     "test:marketplace-signal": "node developer/test-marketplace-signal.js",
@@ -15,7 +15,10 @@
     "generate:search-pages": "python developer/generate-search-landing-pages.py",
     "indexnow": "node developer/submit-indexnow.js",
     "test:cross-database-qc": "node developer/test-cross-database-qc.js",
-    "test:measurements": "node developer/test-measurement-normalization.js"
+    "test:measurements": "node developer/test-measurement-normalization.js",
+    "audit:canonical-completeness": "python developer/audit-canonical-completeness-v685.py",
+    "test:canonical-completeness": "node developer/test-canonical-completeness-v685.js",
+    "normalize:canonical": "python developer/normalize-canonical-v685.py"
   },
   "devDependencies": {
     "playwright": "^1.54.0",

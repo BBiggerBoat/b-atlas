@@ -1,0 +1,1232 @@
+{
+  "release": "6.54.0",
+  "batch": "specification-completion-09",
+  "manufacturers": [
+    "Gulfstar",
+    "Greenline",
+    "Endeavour",
+    "Universal",
+    "Sisu"
+  ],
+  "updateCount": 111,
+  "updates": [
+    {
+      "BoatModelID": "GULF-36-TR",
+      "Field": "LWL_ft",
+      "Old": 33.8,
+      "New": 31.0,
+      "Basis": "HMY publishes 31 ft LWL and 12 ft clearance; legacy imperial shadows were inconsistent with the already-canonical metric values.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/gulfstar/36-trawler-1972-76"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "GULF-36-TR",
+      "Field": "AirDraft_ft",
+      "Old": 14,
+      "New": 12.0,
+      "Basis": "HMY publishes 31 ft LWL and 12 ft clearance; legacy imperial shadows were inconsistent with the already-canonical metric values.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/gulfstar/36-trawler-1972-76"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "GULF-36-TR",
+      "Field": "FuelCapacity",
+      "Old": 250,
+      "New": 946.35,
+      "Basis": "HMY publishes 250 gal for this US-built Gulfstar model; canonical storage is litres while preserving the published US-gallon value.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/gulfstar/36-trawler-1972-76"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "GULF-36-TR",
+      "Field": "FuelCapacityUnitStatus",
+      "Old": "legacy_gallon_basis_unverified",
+      "New": "canonical_litres",
+      "Basis": "HMY publishes 250 gal for this US-built Gulfstar model; canonical storage is litres while preserving the published US-gallon value.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/gulfstar/36-trawler-1972-76"
+      ]
+    },
+    {
+      "BoatModelID": "GULF-36-TR",
+      "Field": "WaterCapacity",
+      "Old": 100,
+      "New": 378.54,
+      "Basis": "HMY publishes 100 gal for this US-built Gulfstar model; canonical storage is litres while preserving the published US-gallon value.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/gulfstar/36-trawler-1972-76"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "GULF-36-TR",
+      "Field": "WaterCapacityUnitStatus",
+      "Old": "legacy_gallon_basis_unverified",
+      "New": "canonical_litres",
+      "Basis": "HMY publishes 100 gal for this US-built Gulfstar model; canonical storage is litres while preserving the published US-gallon value.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/gulfstar/36-trawler-1972-76"
+      ]
+    },
+    {
+      "BoatModelID": "GULF-43-TR",
+      "Field": "LWL_ft",
+      "Old": 39,
+      "New": 39.1667,
+      "Basis": "HMY publishes 39 ft 2 in LWL and 12 ft clearance; stale imperial shadows are aligned to the canonical dimensions.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/gulfstar/43-trawler-1972-77"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "GULF-43-TR",
+      "Field": "AirDraft_ft",
+      "Old": 16,
+      "New": 12.0,
+      "Basis": "HMY publishes 39 ft 2 in LWL and 12 ft clearance; stale imperial shadows are aligned to the canonical dimensions.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/gulfstar/43-trawler-1972-77"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "GULF-43-TR",
+      "Field": "FuelCapacity",
+      "Old": 300,
+      "New": 1135.62,
+      "Basis": "HMY publishes 300 gal for this US-built Gulfstar model; canonical storage is litres with the source US-gallon value retained.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/gulfstar/43-trawler-1972-77"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "GULF-43-TR",
+      "Field": "FuelCapacityUnitStatus",
+      "Old": "legacy_gallon_basis_unverified",
+      "New": "canonical_litres",
+      "Basis": "HMY publishes 300 gal for this US-built Gulfstar model; canonical storage is litres with the source US-gallon value retained.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/gulfstar/43-trawler-1972-77"
+      ]
+    },
+    {
+      "BoatModelID": "GULF-43-TR",
+      "Field": "WaterCapacity",
+      "Old": 130,
+      "New": 492.1,
+      "Basis": "HMY publishes 130 gal for this US-built Gulfstar model; canonical storage is litres with the source US-gallon value retained.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/gulfstar/43-trawler-1972-77"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "GULF-43-TR",
+      "Field": "WaterCapacityUnitStatus",
+      "Old": "legacy_gallon_basis_unverified",
+      "New": "canonical_litres",
+      "Basis": "HMY publishes 130 gal for this US-built Gulfstar model; canonical storage is litres with the source US-gallon value retained.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/gulfstar/43-trawler-1972-77"
+      ]
+    },
+    {
+      "BoatModelID": "GULF-44-MC",
+      "Field": "LWL_ft",
+      "Old": 40,
+      "New": null,
+      "Basis": "No reviewed model-specific source publishes a defensible LWL for the 44 Motor Cruiser; the inherited 40 ft shadow is cleared rather than exposed as fact.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/gulfstar/44-motor-cruiser-1978-80"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "GULF-44-MC",
+      "Field": "FuelCapacity",
+      "Old": 500,
+      "New": 1892.71,
+      "Basis": "HMY publishes 500 gal for the Gulfstar 44 Motor Cruiser; canonical SI storage is litres with the original US-gallon value retained.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/gulfstar/44-motor-cruiser-1978-80"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "GULF-44-MC",
+      "Field": "FuelCapacityUnitStatus",
+      "Old": "legacy_gallon_basis_unverified",
+      "New": "canonical_litres",
+      "Basis": "HMY publishes 500 gal for the Gulfstar 44 Motor Cruiser; canonical SI storage is litres with the original US-gallon value retained.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/gulfstar/44-motor-cruiser-1978-80"
+      ]
+    },
+    {
+      "BoatModelID": "GULF-44-MC",
+      "Field": "WaterCapacity",
+      "Old": 250,
+      "New": 946.35,
+      "Basis": "HMY publishes 250 gal for the Gulfstar 44 Motor Cruiser; canonical SI storage is litres with the original US-gallon value retained.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/gulfstar/44-motor-cruiser-1978-80"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "GULF-44-MC",
+      "Field": "WaterCapacityUnitStatus",
+      "Old": "legacy_gallon_basis_unverified",
+      "New": "canonical_litres",
+      "Basis": "HMY publishes 250 gal for the Gulfstar 44 Motor Cruiser; canonical SI storage is litres with the original US-gallon value retained.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/gulfstar/44-motor-cruiser-1978-80"
+      ]
+    },
+    {
+      "BoatModelID": "GULF-44-MC",
+      "Field": "HoldingCapacity",
+      "Old": 40,
+      "New": 151.42,
+      "Basis": "HMY publishes 40 gal for the Gulfstar 44 Motor Cruiser; canonical SI storage is litres with the original US-gallon value retained.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/gulfstar/44-motor-cruiser-1978-80"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "GULF-44-MC",
+      "Field": "HoldingCapacityGal",
+      "Old": null,
+      "New": 40,
+      "Basis": "HMY publishes 40 gal for the Gulfstar 44 Motor Cruiser; canonical SI storage is litres with the original US-gallon value retained.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/gulfstar/44-motor-cruiser-1978-80"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "GULF-44-MC",
+      "Field": "HoldingCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "HMY publishes 40 gal for the Gulfstar 44 Motor Cruiser; canonical SI storage is litres with the original US-gallon value retained.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/gulfstar/44-motor-cruiser-1978-80"
+      ]
+    },
+    {
+      "BoatModelID": "GULF-49-MC",
+      "Field": "LWL_ft",
+      "Old": 45,
+      "New": 44.3333,
+      "Basis": "HMY publishes 44 ft 4 in LWL and 17 ft clearance; legacy shadows are corrected to the published model specification.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/gulfstar/49-motor-yacht-1984-87"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "GULF-49-MC",
+      "Field": "AirDraft_ft",
+      "Old": 18,
+      "New": 17.0,
+      "Basis": "HMY publishes 44 ft 4 in LWL and 17 ft clearance; legacy shadows are corrected to the published model specification.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/gulfstar/49-motor-yacht-1984-87"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "GULF-49-MC",
+      "Field": "FuelCapacity",
+      "Old": 675,
+      "New": 2555.15,
+      "Basis": "HMY publishes 675 gal for this US-built Gulfstar model; canonical storage is litres with the source US-gallon value retained.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/gulfstar/49-motor-yacht-1984-87"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "GULF-49-MC",
+      "Field": "FuelCapacityUnitStatus",
+      "Old": "legacy_gallon_basis_unverified",
+      "New": "canonical_litres",
+      "Basis": "HMY publishes 675 gal for this US-built Gulfstar model; canonical storage is litres with the source US-gallon value retained.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/gulfstar/49-motor-yacht-1984-87"
+      ]
+    },
+    {
+      "BoatModelID": "GULF-49-MC",
+      "Field": "WaterCapacity",
+      "Old": 370,
+      "New": 1400.6,
+      "Basis": "HMY publishes 370 gal for this US-built Gulfstar model; canonical storage is litres with the source US-gallon value retained.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/gulfstar/49-motor-yacht-1984-87"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "GULF-49-MC",
+      "Field": "WaterCapacityUnitStatus",
+      "Old": "legacy_gallon_basis_unverified",
+      "New": "canonical_litres",
+      "Basis": "HMY publishes 370 gal for this US-built Gulfstar model; canonical storage is litres with the source US-gallon value retained.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/gulfstar/49-motor-yacht-1984-87"
+      ]
+    },
+    {
+      "BoatModelID": "GRNL-33",
+      "Field": "FuelCode",
+      "Old": null,
+      "New": "fuel.diesel",
+      "Basis": "The hybrid system supplements a diesel inboard; Plan fuel should match diesel rather than remain unknown.",
+      "EvidenceRefs": [
+        "https://www.greenline.yachtos.lt/en/33-english/",
+        "https://nova-yachting.nl/sites/default/files/Catalogue%20Greenline%20English_0.pdf"
+      ]
+    },
+    {
+      "BoatModelID": "GRNL-33",
+      "Field": "Fuel",
+      "Old": "Diesel / Electric",
+      "New": "Diesel / Electric Hybrid",
+      "Basis": "Legacy label clarified to describe diesel fuel with electric hybrid assistance.",
+      "EvidenceRefs": [
+        "https://www.greenline.yachtos.lt/en/33-english/",
+        "https://nova-yachting.nl/sites/default/files/Catalogue%20Greenline%20English_0.pdf"
+      ]
+    },
+    {
+      "BoatModelID": "GRNL-33",
+      "Field": "AirDraft",
+      "Old": 2.73,
+      "New": 2.54,
+      "Basis": "Greenline technical specifications publish 2.54 m minimum/standard air draft for the 33.",
+      "EvidenceRefs": [
+        "https://www.greenline.yachtos.lt/en/33-english/",
+        "https://nova-yachting.nl/sites/default/files/Catalogue%20Greenline%20English_0.pdf"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "GRNL-33",
+      "Field": "AirDraft_ft",
+      "Old": 9.68,
+      "New": 8.3333,
+      "Basis": "Imperial shadow aligned to the published 2.54 m air draft.",
+      "EvidenceRefs": [
+        "https://www.greenline.yachtos.lt/en/33-english/",
+        "https://nova-yachting.nl/sites/default/files/Catalogue%20Greenline%20English_0.pdf"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "GRNL-33",
+      "Field": "LWL",
+      "Old": 9.85,
+      "New": null,
+      "Basis": "The reviewed Greenline factory/technical specifications do not publish LWL; the inherited 9.85 m value is not explicitly identified as waterline length.",
+      "EvidenceRefs": [
+        "https://www.greenline.yachtos.lt/en/33-english/",
+        "https://nova-yachting.nl/sites/default/files/Catalogue%20Greenline%20English_0.pdf"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "GRNL-33",
+      "Field": "LWL_ft",
+      "Old": 32.1,
+      "New": null,
+      "Basis": "Unsupported LWL shadow cleared with the canonical field.",
+      "EvidenceRefs": [
+        "https://www.greenline.yachtos.lt/en/33-english/",
+        "https://nova-yachting.nl/sites/default/files/Catalogue%20Greenline%20English_0.pdf"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "GRNL-33",
+      "Field": "FuelCapacity",
+      "Old": 132,
+      "New": 500,
+      "Basis": "Greenline publishes 500 L directly in SI; prior values were rounded US-gallon equivalents stored in the litre field.",
+      "EvidenceRefs": [
+        "https://www.greenline.yachtos.lt/en/33-english/",
+        "https://nova-yachting.nl/sites/default/files/Catalogue%20Greenline%20English_0.pdf"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "GRNL-33",
+      "Field": "FuelCapacityGal",
+      "Old": null,
+      "New": 132.09,
+      "Basis": "Greenline publishes 500 L directly in SI; prior values were rounded US-gallon equivalents stored in the litre field.",
+      "EvidenceRefs": [
+        "https://www.greenline.yachtos.lt/en/33-english/",
+        "https://nova-yachting.nl/sites/default/files/Catalogue%20Greenline%20English_0.pdf"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "GRNL-33",
+      "Field": "FuelCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "Greenline publishes 500 L directly in SI; prior values were rounded US-gallon equivalents stored in the litre field.",
+      "EvidenceRefs": [
+        "https://www.greenline.yachtos.lt/en/33-english/",
+        "https://nova-yachting.nl/sites/default/files/Catalogue%20Greenline%20English_0.pdf"
+      ]
+    },
+    {
+      "BoatModelID": "GRNL-33",
+      "Field": "WaterCapacity",
+      "Old": 80,
+      "New": 300,
+      "Basis": "Greenline publishes 300 L directly in SI; prior values were rounded US-gallon equivalents stored in the litre field.",
+      "EvidenceRefs": [
+        "https://www.greenline.yachtos.lt/en/33-english/",
+        "https://nova-yachting.nl/sites/default/files/Catalogue%20Greenline%20English_0.pdf"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "GRNL-33",
+      "Field": "WaterCapacityGal",
+      "Old": null,
+      "New": 79.25,
+      "Basis": "Greenline publishes 300 L directly in SI; prior values were rounded US-gallon equivalents stored in the litre field.",
+      "EvidenceRefs": [
+        "https://www.greenline.yachtos.lt/en/33-english/",
+        "https://nova-yachting.nl/sites/default/files/Catalogue%20Greenline%20English_0.pdf"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "GRNL-33",
+      "Field": "WaterCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "Greenline publishes 300 L directly in SI; prior values were rounded US-gallon equivalents stored in the litre field.",
+      "EvidenceRefs": [
+        "https://www.greenline.yachtos.lt/en/33-english/",
+        "https://nova-yachting.nl/sites/default/files/Catalogue%20Greenline%20English_0.pdf"
+      ]
+    },
+    {
+      "BoatModelID": "GRNL-33",
+      "Field": "HoldingCapacity",
+      "Old": 17,
+      "New": 63,
+      "Basis": "Greenline publishes 63 L directly in SI; prior values were rounded US-gallon equivalents stored in the litre field.",
+      "EvidenceRefs": [
+        "https://www.greenline.yachtos.lt/en/33-english/",
+        "https://nova-yachting.nl/sites/default/files/Catalogue%20Greenline%20English_0.pdf"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "GRNL-33",
+      "Field": "HoldingCapacityGal",
+      "Old": null,
+      "New": 16.64,
+      "Basis": "Greenline publishes 63 L directly in SI; prior values were rounded US-gallon equivalents stored in the litre field.",
+      "EvidenceRefs": [
+        "https://www.greenline.yachtos.lt/en/33-english/",
+        "https://nova-yachting.nl/sites/default/files/Catalogue%20Greenline%20English_0.pdf"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "GRNL-33",
+      "Field": "HoldingCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "Greenline publishes 63 L directly in SI; prior values were rounded US-gallon equivalents stored in the litre field.",
+      "EvidenceRefs": [
+        "https://www.greenline.yachtos.lt/en/33-english/",
+        "https://nova-yachting.nl/sites/default/files/Catalogue%20Greenline%20English_0.pdf"
+      ]
+    },
+    {
+      "BoatModelID": "GRNL-39",
+      "Field": "FuelCode",
+      "Old": null,
+      "New": "fuel.diesel",
+      "Basis": "Greenline publishes diesel or diesel-hybrid shaft propulsion; the consumable fuel classification is diesel.",
+      "EvidenceRefs": [
+        "https://www.greenlinehybrid.com/dflip/Brochure_Final_2024.pdf",
+        "https://www.yachtsalesinternational.com/models/greenline-39/"
+      ]
+    },
+    {
+      "BoatModelID": "GRNL-39",
+      "Field": "Fuel",
+      "Old": "Diesel / Electric",
+      "New": "Diesel / Electric Hybrid",
+      "Basis": "Legacy label clarified to describe diesel fuel with optional hybrid assistance.",
+      "EvidenceRefs": [
+        "https://www.greenlinehybrid.com/dflip/Brochure_Final_2024.pdf",
+        "https://www.yachtsalesinternational.com/models/greenline-39/"
+      ]
+    },
+    {
+      "BoatModelID": "GRNL-39",
+      "Field": "LWL",
+      "Old": 11.4,
+      "New": null,
+      "Basis": "Reviewed factory literature publishes LOA but not LWL; the inherited 11.4 m value is not explicitly identified as waterline length.",
+      "EvidenceRefs": [
+        "https://www.greenlinehybrid.com/dflip/Brochure_Final_2024.pdf",
+        "https://www.yachtsalesinternational.com/models/greenline-39/"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "GRNL-39",
+      "Field": "LWL_ft",
+      "Old": 37.5,
+      "New": null,
+      "Basis": "Unsupported LWL shadow cleared with the canonical field.",
+      "EvidenceRefs": [
+        "https://www.greenlinehybrid.com/dflip/Brochure_Final_2024.pdf",
+        "https://www.yachtsalesinternational.com/models/greenline-39/"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "GRNL-39",
+      "Field": "FuelCapacity",
+      "Old": 185,
+      "New": 700,
+      "Basis": "Greenline publishes 700 L directly; prior stored value was the rounded gallon equivalent rather than canonical litres.",
+      "EvidenceRefs": [
+        "https://www.greenlinehybrid.com/dflip/Brochure_Final_2024.pdf",
+        "https://www.yachtsalesinternational.com/models/greenline-39/"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "GRNL-39",
+      "Field": "FuelCapacityGal",
+      "Old": null,
+      "New": 184.92,
+      "Basis": "Greenline publishes 700 L directly; prior stored value was the rounded gallon equivalent rather than canonical litres.",
+      "EvidenceRefs": [
+        "https://www.greenlinehybrid.com/dflip/Brochure_Final_2024.pdf",
+        "https://www.yachtsalesinternational.com/models/greenline-39/"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "GRNL-39",
+      "Field": "FuelCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "Greenline publishes 700 L directly; prior stored value was the rounded gallon equivalent rather than canonical litres.",
+      "EvidenceRefs": [
+        "https://www.greenlinehybrid.com/dflip/Brochure_Final_2024.pdf",
+        "https://www.yachtsalesinternational.com/models/greenline-39/"
+      ]
+    },
+    {
+      "BoatModelID": "GRNL-39",
+      "Field": "WaterCapacity",
+      "Old": 105,
+      "New": 400,
+      "Basis": "Greenline publishes 400 L directly; prior stored value was the rounded gallon equivalent rather than canonical litres.",
+      "EvidenceRefs": [
+        "https://www.greenlinehybrid.com/dflip/Brochure_Final_2024.pdf",
+        "https://www.yachtsalesinternational.com/models/greenline-39/"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "GRNL-39",
+      "Field": "WaterCapacityGal",
+      "Old": null,
+      "New": 105.67,
+      "Basis": "Greenline publishes 400 L directly; prior stored value was the rounded gallon equivalent rather than canonical litres.",
+      "EvidenceRefs": [
+        "https://www.greenlinehybrid.com/dflip/Brochure_Final_2024.pdf",
+        "https://www.yachtsalesinternational.com/models/greenline-39/"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "GRNL-39",
+      "Field": "WaterCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "Greenline publishes 400 L directly; prior stored value was the rounded gallon equivalent rather than canonical litres.",
+      "EvidenceRefs": [
+        "https://www.greenlinehybrid.com/dflip/Brochure_Final_2024.pdf",
+        "https://www.yachtsalesinternational.com/models/greenline-39/"
+      ]
+    },
+    {
+      "BoatModelID": "GRNL-39",
+      "Field": "HoldingCapacity",
+      "Old": 21,
+      "New": 80,
+      "Basis": "Greenline publishes 80 L directly; prior stored value was the rounded gallon equivalent rather than canonical litres.",
+      "EvidenceRefs": [
+        "https://www.greenlinehybrid.com/dflip/Brochure_Final_2024.pdf",
+        "https://www.yachtsalesinternational.com/models/greenline-39/"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "GRNL-39",
+      "Field": "HoldingCapacityGal",
+      "Old": null,
+      "New": 21.13,
+      "Basis": "Greenline publishes 80 L directly; prior stored value was the rounded gallon equivalent rather than canonical litres.",
+      "EvidenceRefs": [
+        "https://www.greenlinehybrid.com/dflip/Brochure_Final_2024.pdf",
+        "https://www.yachtsalesinternational.com/models/greenline-39/"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "GRNL-39",
+      "Field": "HoldingCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "Greenline publishes 80 L directly; prior stored value was the rounded gallon equivalent rather than canonical litres.",
+      "EvidenceRefs": [
+        "https://www.greenlinehybrid.com/dflip/Brochure_Final_2024.pdf",
+        "https://www.yachtsalesinternational.com/models/greenline-39/"
+      ]
+    },
+    {
+      "BoatModelID": "ENDE-36-TR",
+      "Field": "AirDraft",
+      "Old": null,
+      "New": 4.2672,
+      "Basis": "HMY publishes 14 ft clearance for the TrawlerCat 36.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/endeavour/trawlercat-36-1998-2005"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "ENDE-36-TR",
+      "Field": "FuelCapacityGal",
+      "Old": null,
+      "New": 300,
+      "Basis": "HMY publishes 300 gal for the US-built Endeavour TrawlerCat 36; canonical storage is litres with US gallons preserved.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/endeavour/trawlercat-36-1998-2005"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "ENDE-36-TR",
+      "Field": "FuelCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "HMY publishes 300 gal for the US-built Endeavour TrawlerCat 36; canonical storage is litres with US gallons preserved.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/endeavour/trawlercat-36-1998-2005"
+      ]
+    },
+    {
+      "BoatModelID": "ENDE-36-TR",
+      "Field": "WaterCapacity",
+      "Old": null,
+      "New": 340.69,
+      "Basis": "HMY publishes 90 gal for the US-built Endeavour TrawlerCat 36; canonical storage is litres with US gallons preserved.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/endeavour/trawlercat-36-1998-2005"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "ENDE-36-TR",
+      "Field": "WaterCapacityGal",
+      "Old": null,
+      "New": 90,
+      "Basis": "HMY publishes 90 gal for the US-built Endeavour TrawlerCat 36; canonical storage is litres with US gallons preserved.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/endeavour/trawlercat-36-1998-2005"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "ENDE-36-TR",
+      "Field": "WaterCapacityUnitStatus",
+      "Old": null,
+      "New": "canonical_litres",
+      "Basis": "HMY publishes 90 gal for the US-built Endeavour TrawlerCat 36; canonical storage is litres with US gallons preserved.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/endeavour/trawlercat-36-1998-2005"
+      ]
+    },
+    {
+      "BoatModelID": "ENDE-36-TR",
+      "Field": "HoldingCapacityGal",
+      "Old": null,
+      "New": 30,
+      "Basis": "HMY publishes 30 gal for the US-built Endeavour TrawlerCat 36; canonical storage is litres with US gallons preserved.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/endeavour/trawlercat-36-1998-2005"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "ENDE-36-TR",
+      "Field": "HoldingCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "HMY publishes 30 gal for the US-built Endeavour TrawlerCat 36; canonical storage is litres with US gallons preserved.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/endeavour/trawlercat-36-1998-2005"
+      ]
+    },
+    {
+      "BoatModelID": "ENDE-44",
+      "Field": "AirDraft_ft",
+      "Old": 14,
+      "New": null,
+      "Basis": "HMY explicitly lists clearance as NA for the Endeavour 44 TrawlerCat; the inherited 14 ft shadow is unsupported and is cleared.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/endeavour/44-trawlercat-2001-06"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "ENDE-44",
+      "Field": "FuelCapacityGal",
+      "Old": null,
+      "New": 500,
+      "Basis": "HMY publishes 500 gal for the US-built Endeavour 44 TrawlerCat; canonical storage is litres with US gallons retained.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/endeavour/44-trawlercat-2001-06"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "ENDE-44",
+      "Field": "FuelCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "HMY publishes 500 gal for the US-built Endeavour 44 TrawlerCat; canonical storage is litres with US gallons retained.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/endeavour/44-trawlercat-2001-06"
+      ]
+    },
+    {
+      "BoatModelID": "ENDE-44",
+      "Field": "WaterCapacityGal",
+      "Old": null,
+      "New": 115,
+      "Basis": "HMY publishes 115 gal for the US-built Endeavour 44 TrawlerCat; canonical storage is litres with US gallons retained.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/endeavour/44-trawlercat-2001-06"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "ENDE-44",
+      "Field": "WaterCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "HMY publishes 115 gal for the US-built Endeavour 44 TrawlerCat; canonical storage is litres with US gallons retained.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/endeavour/44-trawlercat-2001-06"
+      ]
+    },
+    {
+      "BoatModelID": "ENDE-44",
+      "Field": "HoldingCapacityGal",
+      "Old": null,
+      "New": 50,
+      "Basis": "HMY publishes 50 gal for the US-built Endeavour 44 TrawlerCat; canonical storage is litres with US gallons retained.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/endeavour/44-trawlercat-2001-06"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "ENDE-44",
+      "Field": "HoldingCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "HMY publishes 50 gal for the US-built Endeavour 44 TrawlerCat; canonical storage is litres with US gallons retained.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/endeavour/44-trawlercat-2001-06"
+      ]
+    },
+    {
+      "BoatModelID": "UNIV-36-TR",
+      "Field": "AirDraft_ft",
+      "Old": 14,
+      "New": null,
+      "Basis": "Reviewed exact-model Universal 36 records do not establish a model-wide air draft; the inherited 14 ft fallback is cleared.",
+      "EvidenceRefs": [
+        "https://seattle.boatshed.com/universal_36_trawler-boat-337526.html"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "UNIV-36-TR",
+      "Field": "Displacement_lb",
+      "Old": 18000,
+      "New": 24504.2,
+      "Basis": "Exact 1978 Universal 36 documentation publishes approximately 24,504 lb displacement; stale 18,000 lb shadow corrected.",
+      "EvidenceRefs": [
+        "https://seattle.boatshed.com/universal_36_trawler-boat-337526.html"
+      ],
+      "Unit": "lb"
+    },
+    {
+      "BoatModelID": "UNIV-36-TR",
+      "Field": "DisplacementLb",
+      "Old": 19000,
+      "New": 24504.2,
+      "Basis": "Compatibility displacement aligned to the canonical 11,111 kg / 24,504 lb exact-model value.",
+      "EvidenceRefs": [
+        "https://seattle.boatshed.com/universal_36_trawler-boat-337526.html"
+      ],
+      "Unit": "lb"
+    },
+    {
+      "BoatModelID": "UNIV-36-TR",
+      "Field": "FuelCapacity",
+      "Old": 200,
+      "New": 757.08,
+      "Basis": "Exact 1978 Universal 36 documentation publishes 200 US gal; canonical storage is litres.",
+      "EvidenceRefs": [
+        "https://seattle.boatshed.com/universal_36_trawler-boat-337526.html"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "UNIV-36-TR",
+      "Field": "FuelCapacityUnitStatus",
+      "Old": "legacy_gallon_basis_unverified",
+      "New": "canonical_litres",
+      "Basis": "Exact 1978 Universal 36 documentation publishes 200 US gal; canonical storage is litres.",
+      "EvidenceRefs": [
+        "https://seattle.boatshed.com/universal_36_trawler-boat-337526.html"
+      ]
+    },
+    {
+      "BoatModelID": "UNIV-36-TR",
+      "Field": "WaterCapacity",
+      "Old": 150,
+      "New": 567.81,
+      "Basis": "Exact 1978 Universal 36 documentation publishes 150 US gal; canonical storage is litres.",
+      "EvidenceRefs": [
+        "https://seattle.boatshed.com/universal_36_trawler-boat-337526.html"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "UNIV-36-TR",
+      "Field": "WaterCapacityUnitStatus",
+      "Old": "legacy_gallon_basis_unverified",
+      "New": "canonical_litres",
+      "Basis": "Exact 1978 Universal 36 documentation publishes 150 US gal; canonical storage is litres.",
+      "EvidenceRefs": [
+        "https://seattle.boatshed.com/universal_36_trawler-boat-337526.html"
+      ]
+    },
+    {
+      "BoatModelID": "UNIV-40-TR",
+      "Field": "LWL",
+      "Old": null,
+      "New": 10.9728,
+      "Basis": "A model-specific 1977 Universal Europa publishes 36 ft LWL.",
+      "EvidenceRefs": [
+        "https://www.boats.com/power-boats/1977-universal-marine-europa-10104045/"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "UNIV-40-TR",
+      "Field": "AirDraft",
+      "Old": null,
+      "New": 5.1816,
+      "Basis": "A model-specific 1977 Universal Europa publishes 17 ft maximum bridge clearance.",
+      "EvidenceRefs": [
+        "https://www.boats.com/power-boats/1977-universal-marine-europa-10104045/"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "UNIV-40-TR",
+      "Field": "AirDraft_ft",
+      "Old": 15,
+      "New": 17.0,
+      "Basis": "Legacy air-draft shadow corrected to the published 17 ft value.",
+      "EvidenceRefs": [
+        "https://www.boats.com/power-boats/1977-universal-marine-europa-10104045/"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "UNIV-40-TR",
+      "Field": "Displacement",
+      "Old": null,
+      "New": 7711.1,
+      "Basis": "A model-specific 1977 Universal Europa publishes 17,000 lb displacement.",
+      "EvidenceRefs": [
+        "https://www.boats.com/power-boats/1977-universal-marine-europa-10104045/"
+      ],
+      "Unit": "kg"
+    },
+    {
+      "BoatModelID": "UNIV-40-TR",
+      "Field": "Displacement_lb",
+      "Old": 22000,
+      "New": 17000,
+      "Basis": "Legacy displacement shadow aligned to the exact-model 17,000 lb figure.",
+      "EvidenceRefs": [
+        "https://www.boats.com/power-boats/1977-universal-marine-europa-10104045/"
+      ],
+      "Unit": "lb"
+    },
+    {
+      "BoatModelID": "UNIV-40-TR",
+      "Field": "RudderTypeCode",
+      "Old": null,
+      "New": "rudder.skeg_hung",
+      "Basis": "The model-specific 1977 Universal Europa description explicitly states the rudder is skeg hung.",
+      "EvidenceRefs": [
+        "https://www.boats.com/power-boats/1977-universal-marine-europa-10104045/"
+      ]
+    },
+    {
+      "BoatModelID": "UNIV-40-TR",
+      "Field": "FuelCapacity",
+      "Old": 350,
+      "New": 1211.33,
+      "Basis": "Model-specific 1977 Universal Europa documentation publishes 320 US gal; canonical storage is litres.",
+      "EvidenceRefs": [
+        "https://www.boats.com/power-boats/1977-universal-marine-europa-10104045/"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "UNIV-40-TR",
+      "Field": "FuelCapacityUnitStatus",
+      "Old": "conflicting_legacy_capacity_values",
+      "New": "canonical_litres",
+      "Basis": "Model-specific 1977 Universal Europa documentation publishes 320 US gal; canonical storage is litres.",
+      "EvidenceRefs": [
+        "https://www.boats.com/power-boats/1977-universal-marine-europa-10104045/"
+      ]
+    },
+    {
+      "BoatModelID": "UNIV-40-TR",
+      "Field": "WaterCapacity",
+      "Old": 150,
+      "New": 757.08,
+      "Basis": "Model-specific 1977 Universal Europa documentation publishes 200 US gal; canonical storage is litres.",
+      "EvidenceRefs": [
+        "https://www.boats.com/power-boats/1977-universal-marine-europa-10104045/"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "UNIV-40-TR",
+      "Field": "WaterCapacityUnitStatus",
+      "Old": "conflicting_legacy_capacity_values",
+      "New": "canonical_litres",
+      "Basis": "Model-specific 1977 Universal Europa documentation publishes 200 US gal; canonical storage is litres.",
+      "EvidenceRefs": [
+        "https://www.boats.com/power-boats/1977-universal-marine-europa-10104045/"
+      ]
+    },
+    {
+      "BoatModelID": "UNIV-40-TR",
+      "Field": "HoldingCapacity",
+      "Old": 50,
+      "New": 189.27,
+      "Basis": "Model-specific 1977 Universal Europa documentation publishes 50 US gal; canonical storage is litres.",
+      "EvidenceRefs": [
+        "https://www.boats.com/power-boats/1977-universal-marine-europa-10104045/"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "UNIV-40-TR",
+      "Field": "HoldingCapacityGal",
+      "Old": null,
+      "New": 50,
+      "Basis": "Model-specific 1977 Universal Europa documentation publishes 50 US gal; canonical storage is litres.",
+      "EvidenceRefs": [
+        "https://www.boats.com/power-boats/1977-universal-marine-europa-10104045/"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "UNIV-40-TR",
+      "Field": "HoldingCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "Model-specific 1977 Universal Europa documentation publishes 50 US gal; canonical storage is litres.",
+      "EvidenceRefs": [
+        "https://www.boats.com/power-boats/1977-universal-marine-europa-10104045/"
+      ]
+    },
+    {
+      "BoatModelID": "SISU-22-CO",
+      "Field": "LOA_ft",
+      "Old": 22,
+      "New": 21.75,
+      "Basis": "Royal Lowell design-history source lists the former Sisu 22 hull at 21 ft 9 in; imperial LOA shadow aligned to canonical hull length.",
+      "EvidenceRefs": [
+        "https://midcoastyacht.com/history-of-lobster-boat-design/"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "SISU-22-CO",
+      "Field": "Draft",
+      "Old": 0.6858,
+      "New": 0.5334,
+      "Basis": "Royal Lowell design-history source lists the former Sisu 22 hull at approximately 1 ft 9 in draft.",
+      "EvidenceRefs": [
+        "https://midcoastyacht.com/history-of-lobster-boat-design/"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "SISU-22-CO",
+      "Field": "DraftFt",
+      "Old": null,
+      "New": 1.75,
+      "Basis": "Imperial draft shadow added from the documented original hull dimension.",
+      "EvidenceRefs": [
+        "https://midcoastyacht.com/history-of-lobster-boat-design/"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "SISU-22-CO",
+      "Field": "LWL_ft",
+      "Old": 20.4,
+      "New": null,
+      "Basis": "No reviewed source publishes a defensible model-wide LWL for the semi-custom Sisu 22.",
+      "EvidenceRefs": [
+        "https://midcoastyacht.com/history-of-lobster-boat-design/"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "SISU-22-CO",
+      "Field": "AirDraft_ft",
+      "Old": 7.5,
+      "New": null,
+      "Basis": "Air draft depends on individual deckhouse/finish and no model-wide source was found.",
+      "EvidenceRefs": [
+        "https://midcoastyacht.com/history-of-lobster-boat-design/"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "SISU-22-CO",
+      "Field": "Displacement_lb",
+      "Old": 3800,
+      "New": null,
+      "Basis": "No sufficiently authoritative production-wide displacement was found for the semi-custom Sisu 22.",
+      "EvidenceRefs": [
+        "https://midcoastyacht.com/history-of-lobster-boat-design/"
+      ],
+      "Unit": "lb"
+    },
+    {
+      "BoatModelID": "SISU-22-CO",
+      "Field": "FuelCapacity",
+      "Old": 40,
+      "New": null,
+      "Basis": "Tankage varies with individual Sisu 22 finishing; inherited unverified values are cleared rather than presented as factory-wide specifications.",
+      "EvidenceRefs": [
+        "https://midcoastyacht.com/history-of-lobster-boat-design/"
+      ]
+    },
+    {
+      "BoatModelID": "SISU-22-CO",
+      "Field": "FuelCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "unknown",
+      "Basis": "Tankage varies with individual Sisu 22 finishing; inherited unverified values are cleared rather than presented as factory-wide specifications.",
+      "EvidenceRefs": [
+        "https://midcoastyacht.com/history-of-lobster-boat-design/"
+      ]
+    },
+    {
+      "BoatModelID": "SISU-22-CO",
+      "Field": "WaterCapacity",
+      "Old": 15,
+      "New": null,
+      "Basis": "Tankage varies with individual Sisu 22 finishing; inherited unverified values are cleared rather than presented as factory-wide specifications.",
+      "EvidenceRefs": [
+        "https://midcoastyacht.com/history-of-lobster-boat-design/"
+      ]
+    },
+    {
+      "BoatModelID": "SISU-22-CO",
+      "Field": "WaterCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "unknown",
+      "Basis": "Tankage varies with individual Sisu 22 finishing; inherited unverified values are cleared rather than presented as factory-wide specifications.",
+      "EvidenceRefs": [
+        "https://midcoastyacht.com/history-of-lobster-boat-design/"
+      ]
+    },
+    {
+      "BoatModelID": "SISU-22-CO",
+      "Field": "HoldingCapacity",
+      "Old": 10,
+      "New": null,
+      "Basis": "Tankage varies with individual Sisu 22 finishing; inherited unverified values are cleared rather than presented as factory-wide specifications.",
+      "EvidenceRefs": [
+        "https://midcoastyacht.com/history-of-lobster-boat-design/"
+      ]
+    },
+    {
+      "BoatModelID": "SISU-22-CO",
+      "Field": "HoldingCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "unknown",
+      "Basis": "Tankage varies with individual Sisu 22 finishing; inherited unverified values are cleared rather than presented as factory-wide specifications.",
+      "EvidenceRefs": [
+        "https://midcoastyacht.com/history-of-lobster-boat-design/"
+      ]
+    },
+    {
+      "BoatModelID": "SISU-26-BA",
+      "Field": "LOA_ft",
+      "Old": 25.83,
+      "New": 25.92,
+      "Basis": "A model-specific 1983 Sisu 26 publishes 25.92 ft LOA; stale 25.83 ft shadow corrected.",
+      "EvidenceRefs": [
+        "https://www.boattrader.com/boat/1983-sisu-26-10046917/",
+        "https://marinesource.com/boat/sisu-26-1983-kemah-256d7c989-for-sale"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "SISU-26-BA",
+      "Field": "LWL_ft",
+      "Old": 24.2,
+      "New": null,
+      "Basis": "No reviewed model-specific source publishes LWL; inherited 24.2 ft shadow is cleared.",
+      "EvidenceRefs": [
+        "https://www.boattrader.com/boat/1983-sisu-26-10046917/",
+        "https://marinesource.com/boat/sisu-26-1983-kemah-256d7c989-for-sale"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "SISU-26-BA",
+      "Field": "AirDraft_ft",
+      "Old": 8.2,
+      "New": null,
+      "Basis": "No reviewed model-specific source publishes a stable air draft for the semi-custom Sisu 26.",
+      "EvidenceRefs": [
+        "https://www.boattrader.com/boat/1983-sisu-26-10046917/",
+        "https://marinesource.com/boat/sisu-26-1983-kemah-256d7c989-for-sale"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "SISU-26-BA",
+      "Field": "Displacement_lb",
+      "Old": 5500,
+      "New": 7200,
+      "Basis": "Model-specific 1983 documentation publishes 7,200 lb dry weight; stale 5,500 lb shadow corrected.",
+      "EvidenceRefs": [
+        "https://www.boattrader.com/boat/1983-sisu-26-10046917/",
+        "https://marinesource.com/boat/sisu-26-1983-kemah-256d7c989-for-sale"
+      ],
+      "Unit": "lb"
+    },
+    {
+      "BoatModelID": "SISU-26-BA",
+      "Field": "FuelCapacity",
+      "Old": 80,
+      "New": 302.83,
+      "Basis": "Model-specific 1983 documentation publishes 80 US gal; canonical storage is litres for this representative configuration.",
+      "EvidenceRefs": [
+        "https://www.boattrader.com/boat/1983-sisu-26-10046917/",
+        "https://marinesource.com/boat/sisu-26-1983-kemah-256d7c989-for-sale"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "SISU-26-BA",
+      "Field": "FuelCapacityUnitStatus",
+      "Old": "legacy_gallon_basis_unverified",
+      "New": "canonical_litres",
+      "Basis": "Model-specific 1983 documentation publishes 80 US gal; canonical storage is litres for this representative configuration.",
+      "EvidenceRefs": [
+        "https://www.boattrader.com/boat/1983-sisu-26-10046917/",
+        "https://marinesource.com/boat/sisu-26-1983-kemah-256d7c989-for-sale"
+      ]
+    },
+    {
+      "BoatModelID": "SISU-26-BA",
+      "Field": "WaterCapacity",
+      "Old": 30,
+      "New": 37.85,
+      "Basis": "Model-specific 1983 documentation publishes 10 US gal; canonical storage is litres for this representative configuration.",
+      "EvidenceRefs": [
+        "https://www.boattrader.com/boat/1983-sisu-26-10046917/",
+        "https://marinesource.com/boat/sisu-26-1983-kemah-256d7c989-for-sale"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "SISU-26-BA",
+      "Field": "WaterCapacityUnitStatus",
+      "Old": "conflicting_legacy_capacity_values",
+      "New": "canonical_litres",
+      "Basis": "Model-specific 1983 documentation publishes 10 US gal; canonical storage is litres for this representative configuration.",
+      "EvidenceRefs": [
+        "https://www.boattrader.com/boat/1983-sisu-26-10046917/",
+        "https://marinesource.com/boat/sisu-26-1983-kemah-256d7c989-for-sale"
+      ]
+    },
+    {
+      "BoatModelID": "SISU-26-BA",
+      "Field": "HoldingCapacity",
+      "Old": 15,
+      "New": null,
+      "Basis": "Holding tank size varies by individual semi-custom finish; inherited unverified 15 value is cleared.",
+      "EvidenceRefs": [
+        "https://www.boattrader.com/boat/1983-sisu-26-10046917/",
+        "https://marinesource.com/boat/sisu-26-1983-kemah-256d7c989-for-sale"
+      ]
+    },
+    {
+      "BoatModelID": "SISU-26-BA",
+      "Field": "HoldingCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "unknown",
+      "Basis": "Holding tank size varies by individual semi-custom finish.",
+      "EvidenceRefs": [
+        "https://www.boattrader.com/boat/1983-sisu-26-10046917/",
+        "https://marinesource.com/boat/sisu-26-1983-kemah-256d7c989-for-sale"
+      ]
+    }
+  ]
+}

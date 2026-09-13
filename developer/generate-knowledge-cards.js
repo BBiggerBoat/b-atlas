@@ -12,24 +12,9 @@ const resources = index(read('knowledge/data/curatedresources.json'));
 const listings = index(read('knowledge/data/listingsearches.json'));
 const annotations = index(read('knowledge/data/knowledgeannotations.json'));
 const coverage = index(read('knowledge/data/knowledge-coverage.json'));
-function present(v){ return v !== null && v !== undefined && v !== '' && v !== 'Unknown'; }
-
-function capacityText(b,key,legacyKey){
- const status=b[`${key}UnitStatus`], direct=Number(b[key]), legacy=Number(b[legacyKey]);
- if(status==='canonical_litres' && Number.isFinite(direct)) return `${Math.round(direct)} L`;
- if(status==='canonical_litres_assumed_us_gal' && Number.isFinite(direct)) return `${Math.round(direct)} L (US-gal conversion basis pending verification)`;
- if(status==='conflicting_legacy_capacity_values') return 'Conflicting values — verify source units';
- if(Number.isFinite(legacy) && legacy>0) return `${legacy} gal (US/Imperial basis unverified)`;
- if(Number.isFinite(direct)) return `${direct} (unit unverified)`;
- return null;
-}
-function specifications(b){
- const pairs=[['Production years', b.FirstYear && b.LastYear ? `${b.FirstYear}–${b.LastYear}` : b.FirstYear || b.LastYear],['LOA',b.LOA_ft && `${b.LOA_ft} ft`],['LWL',b.LWL_ft && `${b.LWL_ft} ft`],['Beam',b.Beam_ft && `${b.Beam_ft} ft`],['Draft',b.Draft_ft && `${b.Draft_ft} ft`],['Air draft',b.AirDraft_ft && `${b.AirDraft_ft} ft`],['Displacement',b.Displacement_lb && `${b.Displacement_lb} lb`],['Fuel capacity',capacityText(b,'FuelCapacity','FuelCapacityGal')],['Water capacity',capacityText(b,'WaterCapacity','WaterCapacityGal')],['Holding capacity',capacityText(b,'HoldingCapacity','HoldingCapacityGal')],['Typical propulsion',b.Propulsion],['Engine configuration',b.EngineConfiguration],['Accommodation',[b.Cabins&&`${b.Cabins} cabin${b.Cabins===1?'':'s'}`,b.Berths&&`${b.Berths} berths`,b.Heads&&`${b.Heads} head${b.Heads===1?'':'s'}`].filter(Boolean).join(', ')]];
- return Object.fromEntries(pairs.filter(([,v])=>present(v)));
-}
 const cards = boats.map(b=>{
  const id=b.BoatModelID, intel=intelligence.get(id)||{}, res=resources.get(id)||{}, list=listings.get(id)||{}, ann=annotations.get(id)||{}, cov=coverage.get(id)||{};
- const card={schemaVersion:2,generated:true,generatedFrom:['boatmodels.json','curatedresources.json','listingsearches.json','knowledgeannotations.json','knowledge-coverage.json'],identity:{boatModelId:id,manufacturer:b.Manufacturer||'',model:[b.Model,b.Variant].filter(Boolean).join(' '),displayName:b.Nickname||[b.Manufacturer,b.Model,b.Variant].filter(Boolean).join(' ')},specifications:specifications(b),intelligence:intel.intelligence||{},evidence:intel.evidence||[],images:b.ImageURL?[{title:`${b.Nickname||id} image`,url:b.ImageURL,sourceLabel:'B-Atlas image library',resourceType:'Model image',verificationStatus:'Local asset'}]:[],videos:res.videos||[],listings:list.listings||[],documents:res.documents||[],ownerCommunities:res.ownerCommunities||[],knownIssues:ann.knownIssues||[],similarModels:ann.similarModels||[],missingInformation:ann.missingInformation||[],sources:[...(res.sources||[]),...(list.sources||[]),...(ann.sources||[])],confidence:intel.confidence||ann.confidence||b.DataConfidence||'Unknown',coverage:cov,updatedAt:[intel.updatedAt,res.updatedAt,list.updatedAt,ann.updatedAt,b.LastUpdated].filter(Boolean).sort().at(-1)||null};
+ const card={schemaVersion:2,generated:true,generatedFrom:['boatmodels.json','curatedresources.json','listingsearches.json','knowledgeannotations.json','knowledge-coverage.json'],identity:{boatModelId:id,manufacturer:b.Manufacturer||'',model:[b.Model,b.Variant].filter(Boolean).join(' '),displayName:b.Nickname||[b.Manufacturer,b.Model,b.Variant].filter(Boolean).join(' ')},intelligence:intel.intelligence||{},evidence:intel.evidence||[],images:b.ImageURL?[{title:`${b.Nickname||id} image`,url:b.ImageURL,sourceLabel:'B-Atlas image library',resourceType:'Model image',verificationStatus:'Local asset'}]:[],videos:res.videos||[],listings:list.listings||[],documents:res.documents||[],ownerCommunities:res.ownerCommunities||[],knownIssues:ann.knownIssues||[],similarModels:ann.similarModels||[],missingInformation:ann.missingInformation||[],sources:[...(res.sources||[]),...(list.sources||[]),...(ann.sources||[])],confidence:intel.confidence||ann.confidence||b.DataConfidence||'Unknown',coverage:cov,updatedAt:[intel.updatedAt,res.updatedAt,list.updatedAt,ann.updatedAt,b.LastUpdated].filter(Boolean).sort().at(-1)||null};
  return card;
 });
 write('knowledge/data/knowledgecards.json',cards);

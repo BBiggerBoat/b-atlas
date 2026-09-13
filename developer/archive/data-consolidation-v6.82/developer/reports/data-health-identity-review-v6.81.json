@@ -1,0 +1,287 @@
+{
+  "Version": "6.81.0",
+  "GroupCount": 16,
+  "Groups": [
+    {
+      "ModelIdentityFamilyID": "ALBN-27",
+      "Manufacturer": "Albin",
+      "ModelDesignation": "27",
+      "Disposition": "distinct_layout_variants",
+      "AutoMerge": false,
+      "MemberBoatModelIDs": [
+        "ALBN-27-FC",
+        "ALBN-27-SP"
+      ],
+      "SharedAliases": [
+        "Albin 27"
+      ],
+      "Resolution": "Family Cruiser and Sport Cruiser are distinct marketed layouts within the Albin 27 family.",
+      "ReviewedOn": "2026-09-12",
+      "Release": "v6.81.0"
+    },
+    {
+      "ModelIdentityFamilyID": "ALBN-28-TE",
+      "Manufacturer": "Albin",
+      "ModelDesignation": "28 Tournament Express",
+      "Disposition": "distinct_configuration_generations",
+      "AutoMerge": false,
+      "MemberBoatModelIDs": [
+        "ALBN-28-TE-EB",
+        "ALBN-28-FL"
+      ],
+      "SharedAliases": [
+        "Albin 28 Tournament Express"
+      ],
+      "Resolution": "Engine Box and Flush Deck are distinct factory configurations/generations and should remain separately searchable.",
+      "ReviewedOn": "2026-09-12",
+      "Release": "v6.81.0"
+    },
+    {
+      "ModelIdentityFamilyID": "BENE-ANT-9",
+      "Manufacturer": "Beneteau",
+      "ModelDesignation": "Antares 9",
+      "Disposition": "distinct_generations",
+      "AutoMerge": false,
+      "MemberBoatModelIDs": [
+        "BENE-ANT-9",
+        "BENE-ANT-9-S2"
+      ],
+      "SharedAliases": [
+        "Beneteau Antares 9"
+      ],
+      "Resolution": "Generation 2 succeeds Generation 1 under the same marketed name but is a materially revised design.",
+      "ReviewedOn": "2026-09-12",
+      "Release": "v6.81.0"
+    },
+    {
+      "ModelIdentityFamilyID": "CAMA-28-31",
+      "Manufacturer": "Camano",
+      "ModelDesignation": "28/31",
+      "Disposition": "same_hull_distinct_variants",
+      "AutoMerge": false,
+      "MemberBoatModelIDs": [
+        "CAMA-28-GN",
+        "CAMA-31-TR"
+      ],
+      "SharedAliases": [
+        "Camano 28/31"
+      ],
+      "Resolution": "Gnome and Troll share the Camano hull family; Gnome omits the flybridge while Troll/28/31 is the flybridge variant.",
+      "ReviewedOn": "2026-09-12",
+      "Release": "v6.81.0"
+    },
+    {
+      "ModelIdentityFamilyID": "CPDR-28",
+      "Manufacturer": "Cape Dory",
+      "ModelDesignation": "28",
+      "Disposition": "distinct_factory_variants",
+      "AutoMerge": false,
+      "MemberBoatModelIDs": [
+        "CPDR-28-FB",
+        "CPDR-28-OF",
+        "CPDR-28-CR"
+      ],
+      "SharedAliases": [
+        "Cape Dory 28"
+      ],
+      "Resolution": "Cruiser, Flybridge Cruiser and Open Fisherman are distinct factory configurations.",
+      "ReviewedOn": "2026-09-12",
+      "Release": "v6.81.0"
+    },
+    {
+      "ModelIdentityFamilyID": "CHBB-34",
+      "Manufacturer": "CHB",
+      "ModelDesignation": "34",
+      "Disposition": "ambiguous_historical_family",
+      "AutoMerge": false,
+      "MemberBoatModelIDs": [
+        "CHBB-34-SE",
+        "CHBB-34-TC",
+        "CHBY-34-SE"
+      ],
+      "SharedAliases": [
+        "CHB 34"
+      ],
+      "Resolution": "Sedan is distinct from aft-cabin boats. Double Cabin and Tri-Cabin naming overlaps historically, so no destructive merge is justified yet.",
+      "ReviewedOn": "2026-09-12",
+      "Release": "v6.81.0"
+    },
+    {
+      "ModelIdentityFamilyID": "GRBK-36",
+      "Manufacturer": "Grand Banks",
+      "ModelDesignation": "36",
+      "Disposition": "distinct_layout_variants",
+      "AutoMerge": false,
+      "MemberBoatModelIDs": [
+        "GRBK-36-CL",
+        "GRBK-36-EU"
+      ],
+      "SharedAliases": [
+        "Grand Banks 36"
+      ],
+      "Resolution": "Classic and Europa are distinct accommodation/superstructure variants.",
+      "ReviewedOn": "2026-09-12",
+      "Release": "v6.81.0"
+    },
+    {
+      "ModelIdentityFamilyID": "MNSH-34",
+      "Manufacturer": "Mainship",
+      "ModelDesignation": "34",
+      "Disposition": "distinct_generations_and_name_reuse",
+      "AutoMerge": false,
+      "MemberBoatModelIDs": [
+        "MNSH-34-MK2",
+        "MNSH-34-MK1",
+        "MNSH-34-MK3",
+        "MNSH-34-TR"
+      ],
+      "SharedAliases": [
+        "Mainship 34"
+      ],
+      "Resolution": "MK I/II/III are historical generations/configurations; the 2005-09 34 Trawler is a later materially different model reusing the size designation.",
+      "ReviewedOn": "2026-09-12",
+      "Release": "v6.81.0"
+    },
+    {
+      "ModelIdentityFamilyID": "MTRA-34",
+      "Manufacturer": "Marine Trader",
+      "ModelDesignation": "34",
+      "Disposition": "distinct_layout_variants",
+      "AutoMerge": false,
+      "MemberBoatModelIDs": [
+        "MTRA-34-EU",
+        "MTRA-34-SE"
+      ],
+      "SharedAliases": [
+        "Marine Trader 34"
+      ],
+      "Resolution": "Europa and Sedan are distinct superstructure/layout variants.",
+      "ReviewedOn": "2026-09-12",
+      "Release": "v6.81.0"
+    },
+    {
+      "ModelIdentityFamilyID": "MRTR-38",
+      "Manufacturer": "Marine Trader",
+      "ModelDesignation": "38",
+      "Disposition": "distinct_lines_needs_phase_research",
+      "AutoMerge": false,
+      "MemberBoatModelIDs": [
+        "MRTR-38-SD",
+        "MRTR-38-SD2"
+      ],
+      "SharedAliases": [],
+      "Resolution": "Double Cabin and Sundeck remain separate. The Sundeck record contains evidence from different eras and requires phase-level cleanup.",
+      "ReviewedOn": "2026-09-12",
+      "Release": "v6.81.0"
+    },
+    {
+      "ModelIdentityFamilyID": "MERI-341",
+      "Manufacturer": "Meridian",
+      "ModelDesignation": "341 Sedan",
+      "Disposition": "distinct_generations",
+      "AutoMerge": false,
+      "MemberBoatModelIDs": [
+        "MERI-341-SE",
+        "MERI-341-SE-03"
+      ],
+      "SharedAliases": [
+        "Meridian 341 Sedan"
+      ],
+      "Resolution": "The 2003-04 Bayliner-3488-lineage boat and all-new 2005-14 341 are materially different boats despite the shared model name.",
+      "ReviewedOn": "2026-09-12",
+      "Release": "v6.81.0"
+    },
+    {
+      "ModelIdentityFamilyID": "RNGR-R21",
+      "Manufacturer": "Ranger Tugs",
+      "ModelDesignation": "R-21",
+      "Disposition": "distinct_generations",
+      "AutoMerge": false,
+      "MemberBoatModelIDs": [
+        "RNGR-21-CLASSIC",
+        "RNGR-21-EC"
+      ],
+      "SharedAliases": [
+        "Ranger Tugs R-21"
+      ],
+      "Resolution": "Classic and EC are recognized distinct Ranger Tugs model generations.",
+      "ReviewedOn": "2026-09-12",
+      "Release": "v6.81.0"
+    },
+    {
+      "ModelIdentityFamilyID": "RNGR-R25",
+      "Manufacturer": "Ranger Tugs",
+      "ModelDesignation": "R-25",
+      "Disposition": "distinct_generations_propulsion",
+      "AutoMerge": false,
+      "MemberBoatModelIDs": [
+        "RNGR-25-CLASSIC",
+        "RNGR-R-25",
+        "RNGR-25-SC"
+      ],
+      "SharedAliases": [
+        "Ranger Tugs R-25"
+      ],
+      "Resolution": "Classic diesel, SC diesel and current outboard R-25 are materially different generations/configurations.",
+      "ReviewedOn": "2026-09-12",
+      "Release": "v6.81.0"
+    },
+    {
+      "ModelIdentityFamilyID": "RNGR-R27",
+      "Manufacturer": "Ranger Tugs",
+      "ModelDesignation": "R-27",
+      "Disposition": "distinct_generations_propulsion",
+      "AutoMerge": false,
+      "MemberBoatModelIDs": [
+        "RNGR-27-RT",
+        "RNGR-R-27",
+        "RNGR-27-OB"
+      ],
+      "SharedAliases": [
+        "Ranger Tugs R-27"
+      ],
+      "Resolution": "Classic diesel, single-outboard and current twin-outboard versions are materially different generations.",
+      "ReviewedOn": "2026-09-12",
+      "Release": "v6.81.0"
+    },
+    {
+      "ModelIdentityFamilyID": "ROSB-RF246",
+      "Manufacturer": "Rosborough",
+      "ModelDesignation": "RF-246",
+      "Disposition": "distinct_factory_configurations",
+      "AutoMerge": false,
+      "MemberBoatModelIDs": [
+        "ROSB-246-WH",
+        "ROSB-246-LS"
+      ],
+      "SharedAliases": [
+        "Rosborough RF-246"
+      ],
+      "Resolution": "Custom Wheelhouse and legacy Sedan Cruiser Diesel represent materially different configurations; preserve separately.",
+      "ReviewedOn": "2026-09-12",
+      "Release": "v6.81.0"
+    },
+    {
+      "ModelIdentityFamilyID": "SEAR-340-SU",
+      "Manufacturer": "Sea Ray",
+      "ModelDesignation": "340 Sundancer",
+      "Disposition": "distinct_generations",
+      "AutoMerge": false,
+      "MemberBoatModelIDs": [
+        "SEAR-340-SU",
+        "SEAR-340-SU-99",
+        "SEAR-340-SU-03"
+      ],
+      "SharedAliases": [
+        "Sea Ray 340 Sundancer"
+      ],
+      "Resolution": "The three 340 Sundancer records represent separated design generations and should remain distinct.",
+      "ReviewedOn": "2026-09-12",
+      "Release": "v6.81.0"
+    }
+  ],
+  "OpenManualIdentityGroups": [
+    "CHBB-34",
+    "MRTR-38"
+  ]
+}

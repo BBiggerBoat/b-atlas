@@ -805,7 +805,10 @@
     {
       "fieldId": "MastHeight",
       "groupId": "dimensions",
-      "applicability": null,
+      "applicability": [
+        "vessel.sail",
+        "vessel.motorsailer"
+      ],
       "labelKey": "field.MastHeight",
       "dataClass": "objective",
       "type": "measurement",
@@ -829,7 +832,10 @@
     {
       "fieldId": "SailArea",
       "groupId": "dimensions",
-      "applicability": null,
+      "applicability": [
+        "vessel.sail",
+        "vessel.motorsailer"
+      ],
       "labelKey": "field.SailArea",
       "dataClass": "objective",
       "type": "measurement",
@@ -851,7 +857,10 @@
     {
       "fieldId": "Ballast",
       "groupId": "dimensions",
-      "applicability": null,
+      "applicability": [
+        "vessel.sail",
+        "vessel.motorsailer"
+      ],
       "labelKey": "field.Ballast",
       "dataClass": "objective",
       "type": "measurement",

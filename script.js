@@ -80,7 +80,6 @@ function initializeBScoutApplication(data) {
 
     if (window.BScoutKnowledgeLayerRepository && typeof window.BScoutKnowledgeLayerRepository.createKnowledgeIndex === "function") {
         knowledgeLayer = window.BScoutKnowledgeLayerRepository.createKnowledgeIndex({
-            facts: payload.facts,
             evidence: payload.evidence,
             contradictions: payload.contradictions,
             relationships: payload.relationships,
@@ -88,7 +87,6 @@ function initializeBScoutApplication(data) {
         });
         window.BScoutKnowledgeLayer = knowledgeLayer;
         const knowledgeValidation = window.BScoutKnowledgeLayerRepository.validateKnowledgeData({
-            facts: payload.facts,
             evidence: payload.evidence,
             contradictions: payload.contradictions,
             relationships: payload.relationships,
@@ -143,8 +141,7 @@ function initializeBScoutApplication(data) {
         registeredBoatIdentityCount: boatRegistry ? boatRegistry.listBoats().length : 0,
         manufacturerRegistryCount: boatRegistry ? boatRegistry.listManufacturers().length : 0,
         taxonomyReady: Boolean(taxonomyRegistry),
-        knowledgeLayerReady: Boolean(knowledgeLayer),
-        knowledgeFactCount: Array.isArray(payload.facts) ? payload.facts.length : 0
+        knowledgeLayerReady: Boolean(knowledgeLayer)
     };
 }
 
@@ -223,19 +220,19 @@ function initMissionTemplates() { /* Retained startup hook; preset templates wer
 function evaluateMissionHardConstraint(boat, mission) {
 
     let result = { passed: true, confidence: 100, issues: [] };
-    const canonicalFeet = (field, legacyField) => {
-        if (window.BAtlasCanonical) return window.BAtlasCanonical.feet(boat, field, [{ key: legacyField, unit: "ft" }]);
-        const value = boat?.[legacyField];
-        return value === undefined || value === null || value === "" ? null : Number(value);
+    const canonicalFeet = (field) => {
+        if (window.BAtlasCanonical) return window.BAtlasCanonical.feet(boat, field, []);
+        const value = Number(boat?.[field]);
+        return Number.isFinite(value) ? value / 0.3048 : null;
     };
     const checks = [
-        ["LOA", "LOA_ft", "MissionMaxLengthFt", "Length exceeds mission limit"],
-        ["Beam", "Beam_ft", "MissionMaxBeamFt", "Beam exceeds mission limit"],
-        ["Draft", "Draft_ft", "MissionMaxDraftFt", "Draft exceeds mission limit"],
-        ["AirDraft", "AirDraft_ft", "MissionMaxAirDraftFt", "Air draft exceeds mission limit"]
+        ["LOA", "MissionMaxLengthFt", "Length exceeds mission limit"],
+        ["Beam", "MissionMaxBeamFt", "Beam exceeds mission limit"],
+        ["Draft", "MissionMaxDraftFt", "Draft exceeds mission limit"],
+        ["AirDraft", "MissionMaxAirDraftFt", "Air draft exceeds mission limit"]
     ];
-    for (const [canonicalField, legacyField, missionField, message] of checks) {
-        const actual = canonicalFeet(canonicalField, legacyField);
+    for (const [canonicalField, missionField, message] of checks) {
+        const actual = canonicalFeet(canonicalField);
         const limit = mission?.[missionField];
         if (limit === undefined || limit === null || limit === "") continue;
         if (actual === null || !Number.isFinite(Number(actual))) { result.confidence -= 10; continue; }
@@ -711,10 +708,10 @@ ${window.BScoutIntelligenceLayer ? window.BScoutIntelligenceLayer.renderModelKno
 <hr>
 <strong>Specifications</strong>
 <p>
-Length: ${formatCardMeasurement(boat, "LOA", [{key:"LOA_ft",unit:"ft"},{key:"LengthFt",unit:"ft"}])}<br>
-Beam: ${formatCardMeasurement(boat, "Beam", [{key:"Beam_ft",unit:"ft"},{key:"BeamFt",unit:"ft"}])}<br>
-Draft: ${formatCardMeasurement(boat, "Draft", [{key:"Draft_ft",unit:"ft"},{key:"DraftFt",unit:"ft"}])}<br>
-Air Draft: ${formatCardMeasurement(boat, "AirDraft", [{key:"AirDraft_ft",unit:"ft"}])}
+Length: ${formatCardMeasurement(boat, "LOA", [])}<br>
+Beam: ${formatCardMeasurement(boat, "Beam", [])}<br>
+Draft: ${formatCardMeasurement(boat, "Draft", [])}<br>
+Air Draft: ${formatCardMeasurement(boat, "AirDraft", [])}
 </p>
 
 
@@ -975,27 +972,27 @@ function showBoatDetails(boat) {
         `
 
         Length:
-        ${boat.LOA_ft || "Unknown"} ft
+        ${window.BAtlasCanonical?.formatBoatMeasurement?.(boat,"LOA","length",[],"both") || "Unknown"}
 
         <br>
 
 
         Beam:
-        ${boat.Beam_ft || "Unknown"} ft
+        ${window.BAtlasCanonical?.formatBoatMeasurement?.(boat,"Beam","length",[],"both") || "Unknown"}
 
 
         <br>
 
 
         Draft:
-        ${boat.Draft_ft || "Unknown"} ft
+        ${window.BAtlasCanonical?.formatBoatMeasurement?.(boat,"Draft","length",[],"both") || "Unknown"}
 
 
         <br>
 
 
         Displacement:
-        ${boat.Displacement_lb || "Unknown"} lb
+        ${window.BAtlasCanonical?.formatBoatMeasurement?.(boat,"Displacement","mass",[],"both") || "Unknown"}
 
 
         `;
@@ -2437,7 +2434,6 @@ function showWorkspaceStatus(status) {
 
     if (window.BScoutKnowledgeLayerRepository && typeof window.BScoutKnowledgeLayerRepository.createKnowledgeIndex === "function") {
         knowledgeLayer = window.BScoutKnowledgeLayerRepository.createKnowledgeIndex({
-            facts: payload.facts,
             evidence: payload.evidence,
             contradictions: payload.contradictions,
             relationships: payload.relationships,
@@ -2445,7 +2441,6 @@ function showWorkspaceStatus(status) {
         });
         window.BScoutKnowledgeLayer = knowledgeLayer;
         const knowledgeValidation = window.BScoutKnowledgeLayerRepository.validateKnowledgeData({
-            facts: payload.facts,
             evidence: payload.evidence,
             contradictions: payload.contradictions,
             relationships: payload.relationships,
@@ -3190,7 +3185,7 @@ function buildBAtlasLocalBackup() {
     return {
         schema: BATLAS_BACKUP_SCHEMA,
         version: BATLAS_BACKUP_VERSION,
-        appVersion: "6.78.0",
+        appVersion: "6.80.0",
         exportedAt: new Date().toISOString(),
         storage
     };
@@ -3579,12 +3574,12 @@ function renderComparisonTable() {
         { label: "Search Fit Score", key: "search_fit_score" },
         { label: "Status", key: "status" },
         { label: "My Rating", key: "research_rating" },
-        { label: "LOA", key: "LOA", dimension: "length", legacy: [{key:"LOA_ft",unit:"ft"}] },
-        { label: "LWL", key: "LWL", dimension: "length", legacy: [{key:"LWL_ft",unit:"ft"}] },
-        { label: "Beam", key: "Beam", dimension: "length", legacy: [{key:"Beam_ft",unit:"ft"}] },
-        { label: "Draft", key: "Draft", dimension: "length", legacy: [{key:"Draft_ft",unit:"ft"}] },
-        { label: "Air Draft", key: "AirDraft", dimension: "length", legacy: [{key:"AirDraft_ft",unit:"ft"}] },
-        { label: "Displacement", key: "Displacement", dimension: "mass", legacy: [{key:"Displacement_lb",unit:"lb"}] },
+        { label: "LOA", key: "LOA", dimension: "length", legacy: [] },
+        { label: "LWL", key: "LWL", dimension: "length", legacy: [] },
+        { label: "Beam", key: "Beam", dimension: "length", legacy: [] },
+        { label: "Draft", key: "Draft", dimension: "length", legacy: [] },
+        { label: "Air Draft", key: "AirDraft", dimension: "length", legacy: [] },
+        { label: "Displacement", key: "Displacement", dimension: "mass", legacy: [] },
         { label: "Hull Type", key: "HullType" },
         { label: "Boat Style", key: "Style" },
         { label: "Fuel Type", key: "Fuel" },

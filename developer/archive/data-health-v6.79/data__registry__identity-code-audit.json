@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "reviewStatus": "Complete",
+  "summary": {
+    "manufacturerCount": 79,
+    "boatIdentityCount": 315,
+    "approvedManufacturerCodes": 79,
+    "approvedBoatIdMappings": 315,
+    "manufacturerCodeCollisions": 0,
+    "proposedBoatIdCollisions": 0
+  },
+  "codeCorrections": [
+    {
+      "PreviousCode": "JEAN",
+      "ApprovedCode": "JEAU",
+      "Reason": "More recognizable Jeanneau abbreviation and matches the approved JEAU-795 identity direction."
+    },
+    {
+      "PreviousCode": "KKRO",
+      "ApprovedCode": "KDKR",
+      "Reason": "More recognizable Kadey-Krogen abbreviation; avoids an opaque doubled initial."
+    },
+    {
+      "PreviousCode": "HOMA",
+      "ApprovedCode": "HLMN",
+      "Reason": "More recognizable Holiday Mansion abbreviation."
+    },
+    {
+      "PreviousCode": "NIMB",
+      "ApprovedCode": "NMBL",
+      "Reason": "Clearly distinguishes Nimble from Nimbus."
+    },
+    {
+      "PreviousCode": "NIMU",
+      "ApprovedCode": "NMBS",
+      "Reason": "Clearly distinguishes Nimbus from Nimble."
+    },
+    {
+      "PreviousCode": "SERA",
+      "ApprovedCode": "SEAR",
+      "Reason": "Direct, recognizable Sea Ray abbreviation."
+    },
+    {
+      "PreviousCode": "SEAS",
+      "ApprovedCode": "SSPT",
+      "Reason": "Recognizable SeaSport abbreviation and avoids confusion with generic sea-related names."
+    }
+  ],
+  "advisories": [
+    {
+      "Type": "TaxonomyReview",
+      "ManufacturerCode": "STTR",
+      "CanonicalName": "Steel Trawler",
+      "Note": "Retained for compatibility, but this appears to be a descriptive category rather than a conventional manufacturer and should be reviewed during taxonomy normalization."
+    }
+  ],
+  "collisions": [],
+  "releaseGate": {
+    "approved": true,
+    "message": "Manufacturer codes and proposed v7 BoatModelIDs are approved for controlled migration."
+  }
+}

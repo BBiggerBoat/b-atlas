@@ -1,7 +1,7 @@
 {
-  "schemaVersion": 17,
-  "release": "v6.28.1-canonical-schema-multilingual-unit-ready",
-  "purpose": "Document authoritative runtime data and completed normalization through Batch 7 sail-derived motorsailers and crossover cruisers.",
+  "schemaVersion": 19,
+  "release": "v6.85.0",
+  "purpose": "Document authoritative runtime data, canonical normalization status, and field-by-field missing-data classification after v6.85 normalization.",
   "principles": [
     "Known undesirable information may eliminate a candidate.",
     "Unknown information remains eligible and reduces confidence rather than causing elimination.",
@@ -13,7 +13,7 @@
   "managed": [
     {
       "path": "boatmodels.json",
-      "role": "Canonical boat model identity, specifications and\u2014after controlled migration\u2014all model-specific interpretive knowledge."
+      "role": "Canonical boat model identity, specifications and—after controlled migration—all model-specific interpretive knowledge."
     },
     {
       "path": "data/model-schema.json",
@@ -46,6 +46,10 @@
     {
       "path": "data/registry/boat-registry.json",
       "role": "Canonical model identity registry, aliases and relationships."
+    },
+    {
+      "path": "data/model-families.json",
+      "role": "Explicit identity-family relationships for variants, generations, renamed hulls and historically ambiguous model designations."
     },
     {
       "path": "data/taxonomy/fuel-types.json",
@@ -86,10 +90,6 @@
     {
       "path": "knowledge/data/fact-attributes.json",
       "role": "Controlled fact attribute definitions."
-    },
-    {
-      "path": "knowledge/data/facts.json",
-      "role": "Structured model facts and their confidence."
     },
     {
       "path": "knowledge/data/listingsearches.json",
@@ -141,6 +141,18 @@
     {
       "path": "knowledge/data/canonical-fact.schema.json",
       "role": "Canonical fact/provenance contract preserving source value and source unit."
+    },
+    {
+      "path": "data/canonical-completeness-audit-v6.85.json",
+      "role": "Generated field-by-field canonical completeness audit after normalization. Stores classifications only, not specification values."
+    },
+    {
+      "path": "data/canonical-missing-data-queue-v6.85.json",
+      "role": "Generated prioritized research and remaining normalization queue after v6.85 normalization."
+    },
+    {
+      "path": "data/canonical-normalization-report-v6.85.json",
+      "role": "Generated change log of canonical code fields normalized from existing values in boatmodels.json; no external research values."
     }
   ],
   "generated": [
@@ -149,12 +161,8 @@
       "role": "Generated image asset registry."
     },
     {
-      "path": "knowledge/data/knowledge-coverage.json",
-      "role": "Generated model knowledge coverage summary."
-    },
-    {
       "path": "knowledge/data/knowledgecards.json",
-      "role": "Generated presentation view composed from authoritative knowledge sources."
+      "role": "Generated presentation metadata and resource view. Model-wide specifications are read directly from boatmodels.json and are not duplicated here."
     },
     {
       "path": "developer/reports/phase4-model-audit.json",
@@ -170,6 +178,14 @@
       "path": "developer/reports/PHASE_4_MODEL_AUDIT.md",
       "role": "Human-readable Phase 4 audit summary and samples.",
       "generatedBy": "developer/audit-model-schema.js"
+    },
+    {
+      "path": "developer/reports/single-source-model-data-v6.82.json",
+      "role": "Generated guard report confirming current model-wide specifications have one active JSON source."
+    },
+    {
+      "path": "developer/reports/plan-critical-unknowns-v6.82.json",
+      "role": "Generated list of canonical unknown plan-critical fields only; contains no prior or alternate specification values."
     }
   ],
   "developerReports": [
@@ -198,53 +214,91 @@
     {
       "path": "missions.json",
       "replacement": "routes.json and data/missionTemplates.json",
-      "reason": "Duplicated route records using inconsistent string types and contained an empty record."
+      "reason": "Duplicated route records using inconsistent string types and contained an empty record.",
+      "archivedIn": "developer/archive/data-health-v6.79/"
     },
     {
       "path": "data/registry/boat-registry-validation.json",
       "replacement": "developer/data/boat-registry-validation.json",
-      "reason": "Exact duplicate generated report."
+      "reason": "Exact duplicate generated report.",
+      "archivedIn": "developer/archive/data-health-v6.79/"
     },
     {
       "path": "data/registry/identity-code-audit.json",
       "replacement": "developer/data/identity-code-audit.json",
-      "reason": "Exact duplicate generated report."
+      "reason": "Exact duplicate generated report.",
+      "archivedIn": "developer/archive/data-health-v6.79/"
     },
     {
       "path": "data/taxonomy/taxonomy-validation.json",
       "replacement": "developer/data/taxonomy-validation.json",
-      "reason": "Exact duplicate generated report."
+      "reason": "Exact duplicate generated report.",
+      "archivedIn": "developer/archive/data-health-v6.79/"
     },
     {
       "path": "knowledge/data/knowledge-layer-summary.json",
       "replacement": "developer/data/knowledge-layer-summary.json",
-      "reason": "Exact duplicate generated report."
+      "reason": "Exact duplicate generated report.",
+      "archivedIn": "developer/archive/data-health-v6.79/"
     },
     {
       "path": "data/registry/legacy-id-map.json",
       "replacement": "data/registry/boat-registry.json aliases",
-      "reason": "All current IDs are migrated; legacy identifiers are resolved directly through canonical registry aliases."
+      "reason": "All current IDs are migrated; legacy identifiers are resolved directly through canonical registry aliases.",
+      "archivedIn": "developer/archive/data-health-v6.79/"
     },
     {
       "path": "knowledge/data/boatintelligence.json",
-      "reason": "All 34 records were migrated verbatim into the matching boatmodels.json records under SupplementalIntelligence and related provenance fields; runtime consumers now read boatmodels.json."
+      "reason": "All 34 records were migrated verbatim into the matching boatmodels.json records under SupplementalIntelligence and related provenance fields; runtime consumers now read boatmodels.json.",
+      "archivedIn": "developer/archive/data-health-v6.79/"
+    },
+    {
+      "path": "knowledge/data/facts.json",
+      "replacement": "boatmodels.json plus evidence/provenance metadata",
+      "reason": "Contained 8,671 parallel model-value records duplicating current specifications and classifications. Retired from runtime in v6.82.0.",
+      "archivedIn": "developer/archive/data-consolidation-v6.82/"
+    },
+    {
+      "path": "data/validation/*, data/headroom-completion-pass-v6.61.json, data/specification-promotion-v6.45.json",
+      "replacement": "boatmodels.json and developer/archive/data-consolidation-v6.82/",
+      "reason": "Historical research/migration artifacts contained prior model-level values and no longer belong on the active data surface.",
+      "archivedIn": "developer/archive/data-consolidation-v6.82/"
+    },
+    {
+      "path": "data/plan-critical-exceptions-v6.81.json",
+      "replacement": "developer/reports/plan-critical-unknowns-v6.82.json",
+      "reason": "The old exception report carried archived legacy values beside canonical unknowns. The replacement lists unknown fields only.",
+      "archivedIn": "developer/archive/data-consolidation-v6.82/"
     }
   ],
   "knowledgeOwnership": {
-    "boatmodels.json": "Authoritative destination for model identity, specifications and all model-specific knowledge.",
+    "boatmodels.json": "Sole active JSON source for current model-wide specifications, classifications, configuration, accommodation and model-specific interpretive knowledge.",
     "data/model-schema.json": "Authoritative model field contract and evidence policy.",
-    "knowledge/data/boatintelligence.json": "Legacy migration source only; no new unique model knowledge.",
+    "knowledge/data/boatintelligence.json": "Retired and archived in v6.80.0; runtime intelligence is read from SupplementalIntelligence in boatmodels.json.",
     "knowledge/data/curatedresources.json": "Canonical source/resource registry referenced by model evidence.",
     "knowledge/data/listingsearches.json": "Canonical marketplace discovery links.",
     "knowledge/data/knowledgeannotations.json": "Legacy annotations awaiting review and migration where model-specific.",
-    "knowledge/data/knowledgecards.json": "Generated presentation view; do not edit manually.",
+    "knowledge/data/knowledgecards.json": "Generated presentation/resource metadata only; contains no current model-wide specification values.",
     "knowledge/data/manufacturerknowledge.json": "Manufacturer-level knowledge, separate from model-specific records.",
-    "data/marketplace-sources.json": "Canonical marketplace and brokerage source registry."
+    "data/marketplace-sources.json": "Canonical marketplace and brokerage source registry.",
+    "knowledge/data/evidence.json": "Source registry and provenance metadata; does not define current canonical model values."
   },
   "archives": [
     {
       "path": "developer/archive/identity-migration-archive.json",
       "role": "Historical legacy-ID map and registry migration/audit metadata; not loaded at runtime."
+    },
+    {
+      "path": "developer/archive/data-health-v6.79/",
+      "role": "Historical specification workflow snapshots and retired duplicate data sources; not loaded at runtime."
+    },
+    {
+      "path": "developer/archive/data-health-v6.80/",
+      "role": "Superseded v6.79 reconciliation reports, exception file, and release-specific test; not active runtime data."
+    },
+    {
+      "path": "developer/archive/data-consolidation-v6.82/",
+      "role": "Historical duplicate-value datasets and superseded reconciliation artifacts; excluded from runtime and single-source validation."
     }
   ],
   "modelSchemaVersion": 8,
@@ -259,12 +313,12 @@
       "developer/reports/PHASE_4_MODEL_AUDIT.md"
     ]
   },
-  "phase": "Phase 8C-11 complete",
-  "notes": "Cheoy Lee, Californian, Gulfstar, Ocean Alexander, Tollycraft, Uniflite, Universal, Transpacific Marine, Mariner, Seahorse and Sealord normalized. Cheoy Lee CHLY-33 corrected to CHLY-32 and CHLY-36-SE corrected to CHLY-36-TR with permanent redirects. Low-evidence records remain Initial rather than being falsely marked Reviewed.",
-  "lastUpdated": "2026-08-09",
-  "Release": "v6.11-phase8c11-classic-taiwanese-older-motoryachts-normalized",
-  "LastUpdated": "2026-08-09",
-  "modelCount": 253,
+  "phase": "Canonical normalization pass",
+  "notes": "v6.85.0 normalizes existing descriptive values into canonical code fields without external research. boatmodels.json remains the sole active model-wide specification source; unresolved ambiguous mappings remain unknown or queued.",
+  "lastUpdated": "2026-09-13",
+  "Release": "v6.85.0",
+  "LastUpdated": "2026-09-13",
+  "modelCount": 259,
   "communityContributions": {
     "phase": 9,
     "status": "Conflict, uncertainty and applicability handling complete",

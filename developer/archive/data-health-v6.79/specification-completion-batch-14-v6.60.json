@@ -1,0 +1,633 @@
+{
+  "release": "6.60.0",
+  "batch": 14,
+  "manufacturers": [
+    "SeaPiper",
+    "Sealord",
+    "Shannon",
+    "Transpacific Marine"
+  ],
+  "updateCount": 51,
+  "updates": [
+    {
+      "BoatModelID": "SEAP-35",
+      "Field": "LOA_ft",
+      "Old": 35.92,
+      "New": 35.916666666666664,
+      "Basis": "Factory 2020 specification gives 35 ft 11 in hull length.",
+      "EvidenceRefs": [
+        "https://www.seapiper.com/wp-content/uploads/2020/07/SeaPiper-35-SPECIFICATION-9-2.pdf",
+        "https://www.seapiper.com/wp-content/uploads/2021/09/SeaPiper-35-SPECIFICATION-9-5.pdf"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "SEAP-35",
+      "Field": "LWL_ft",
+      "Old": 33.4,
+      "New": 33.416666666666664,
+      "Basis": "Factory 2020 specification gives 33 ft 5 in waterline length.",
+      "EvidenceRefs": [
+        "https://www.seapiper.com/wp-content/uploads/2020/07/SeaPiper-35-SPECIFICATION-9-2.pdf",
+        "https://www.seapiper.com/wp-content/uploads/2021/09/SeaPiper-35-SPECIFICATION-9-5.pdf"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "SEAP-35",
+      "Field": "Draft_ft",
+      "Old": 2.92,
+      "New": 2.9166666666666665,
+      "Basis": "Factory 2020 specification gives 2 ft 11 in design draft.",
+      "EvidenceRefs": [
+        "https://www.seapiper.com/wp-content/uploads/2020/07/SeaPiper-35-SPECIFICATION-9-2.pdf",
+        "https://www.seapiper.com/wp-content/uploads/2021/09/SeaPiper-35-SPECIFICATION-9-5.pdf"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "SEAP-35",
+      "Field": "Headroom",
+      "Old": null,
+      "New": 2.0,
+      "Basis": "Factory profile drawing gives 2.00 m / 6 ft 6 in centerline headroom in main interior areas.",
+      "EvidenceRefs": [
+        "https://www.seapiper.com/wp-content/uploads/2020/07/SeaPiper-35-SPECIFICATION-9-2.pdf",
+        "https://www.seapiper.com/wp-content/uploads/2021/09/SeaPiper-35-SPECIFICATION-9-5.pdf"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "SEAP-35",
+      "Field": "Headroom_ft",
+      "Old": null,
+      "New": 6.5,
+      "Basis": "Factory profile drawing gives 6 ft 6 in centerline headroom in main interior areas.",
+      "EvidenceRefs": [
+        "https://www.seapiper.com/wp-content/uploads/2020/07/SeaPiper-35-SPECIFICATION-9-2.pdf",
+        "https://www.seapiper.com/wp-content/uploads/2021/09/SeaPiper-35-SPECIFICATION-9-5.pdf"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "SEAP-35",
+      "Field": "RudderTypeCode",
+      "Old": null,
+      "New": "rudder.skeg_hung",
+      "Basis": "Factory specification describes a rudder with heel bearing, pintle/gudgeon and stainless skeg bar attached to the keel.",
+      "EvidenceRefs": [
+        "https://www.seapiper.com/wp-content/uploads/2020/07/SeaPiper-35-SPECIFICATION-9-2.pdf",
+        "https://www.seapiper.com/wp-content/uploads/2021/09/SeaPiper-35-SPECIFICATION-9-5.pdf"
+      ]
+    },
+    {
+      "BoatModelID": "SEAP-35",
+      "Field": "AirDraft",
+      "Old": 4.2672,
+      "New": null,
+      "Basis": "Factory specifications document different mast-up values by revision and a lower mast-down clearance; one model-wide air draft is unsafe.",
+      "EvidenceRefs": [
+        "https://www.seapiper.com/wp-content/uploads/2020/07/SeaPiper-35-SPECIFICATION-9-2.pdf",
+        "https://www.seapiper.com/wp-content/uploads/2021/09/SeaPiper-35-SPECIFICATION-9-5.pdf"
+      ]
+    },
+    {
+      "BoatModelID": "SEAP-35",
+      "Field": "AirDraft_ft",
+      "Old": 9.2,
+      "New": null,
+      "Basis": "Factory specifications distinguish mast-up and mast-down bridge clearance; fixed legacy shadow removed.",
+      "EvidenceRefs": [
+        "https://www.seapiper.com/wp-content/uploads/2020/07/SeaPiper-35-SPECIFICATION-9-2.pdf",
+        "https://www.seapiper.com/wp-content/uploads/2021/09/SeaPiper-35-SPECIFICATION-9-5.pdf"
+      ]
+    },
+    {
+      "BoatModelID": "SEAP-35",
+      "Field": "FuelCapacityGal",
+      "Old": null,
+      "New": 200,
+      "Basis": "Factory 2020 specification explicitly states US-gallon tank capacity.",
+      "EvidenceRefs": [
+        "https://www.seapiper.com/wp-content/uploads/2020/07/SeaPiper-35-SPECIFICATION-9-2.pdf",
+        "https://www.seapiper.com/wp-content/uploads/2021/09/SeaPiper-35-SPECIFICATION-9-5.pdf"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "SEAP-35",
+      "Field": "WaterCapacityGal",
+      "Old": null,
+      "New": 80,
+      "Basis": "Factory 2020 specification explicitly states US-gallon tank capacity.",
+      "EvidenceRefs": [
+        "https://www.seapiper.com/wp-content/uploads/2020/07/SeaPiper-35-SPECIFICATION-9-2.pdf",
+        "https://www.seapiper.com/wp-content/uploads/2021/09/SeaPiper-35-SPECIFICATION-9-5.pdf"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "SEAP-35",
+      "Field": "HoldingCapacityGal",
+      "Old": null,
+      "New": 22,
+      "Basis": "Factory 2020 specification explicitly states US-gallon tank capacity.",
+      "EvidenceRefs": [
+        "https://www.seapiper.com/wp-content/uploads/2020/07/SeaPiper-35-SPECIFICATION-9-2.pdf",
+        "https://www.seapiper.com/wp-content/uploads/2021/09/SeaPiper-35-SPECIFICATION-9-5.pdf"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "SEAP-35",
+      "Field": "FuelCapacity",
+      "Old": 760,
+      "New": 757.0823568,
+      "Basis": "Canonical litres converted from factory 2020 US-gallon specification.",
+      "EvidenceRefs": [
+        "https://www.seapiper.com/wp-content/uploads/2020/07/SeaPiper-35-SPECIFICATION-9-2.pdf",
+        "https://www.seapiper.com/wp-content/uploads/2021/09/SeaPiper-35-SPECIFICATION-9-5.pdf"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "SEAP-35",
+      "Field": "WaterCapacity",
+      "Old": 304,
+      "New": 302.83294272,
+      "Basis": "Canonical litres converted from factory 2020 US-gallon specification.",
+      "EvidenceRefs": [
+        "https://www.seapiper.com/wp-content/uploads/2020/07/SeaPiper-35-SPECIFICATION-9-2.pdf",
+        "https://www.seapiper.com/wp-content/uploads/2021/09/SeaPiper-35-SPECIFICATION-9-5.pdf"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "SEAP-35",
+      "Field": "HoldingCapacity",
+      "Old": 82,
+      "New": 83.279059248,
+      "Basis": "Canonical litres converted from factory 2020 US-gallon specification.",
+      "EvidenceRefs": [
+        "https://www.seapiper.com/wp-content/uploads/2020/07/SeaPiper-35-SPECIFICATION-9-2.pdf",
+        "https://www.seapiper.com/wp-content/uploads/2021/09/SeaPiper-35-SPECIFICATION-9-5.pdf"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "SEAP-35",
+      "Field": "FuelCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "Factory 2020 specification explicitly identifies US gallons; canonical value stored in litres.",
+      "EvidenceRefs": [
+        "https://www.seapiper.com/wp-content/uploads/2020/07/SeaPiper-35-SPECIFICATION-9-2.pdf",
+        "https://www.seapiper.com/wp-content/uploads/2021/09/SeaPiper-35-SPECIFICATION-9-5.pdf"
+      ]
+    },
+    {
+      "BoatModelID": "SEAP-35",
+      "Field": "WaterCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "Factory 2020 specification explicitly identifies US gallons; canonical value stored in litres.",
+      "EvidenceRefs": [
+        "https://www.seapiper.com/wp-content/uploads/2020/07/SeaPiper-35-SPECIFICATION-9-2.pdf",
+        "https://www.seapiper.com/wp-content/uploads/2021/09/SeaPiper-35-SPECIFICATION-9-5.pdf"
+      ]
+    },
+    {
+      "BoatModelID": "SEAP-35",
+      "Field": "HoldingCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "Factory 2020 specification explicitly identifies US gallons; canonical value stored in litres.",
+      "EvidenceRefs": [
+        "https://www.seapiper.com/wp-content/uploads/2020/07/SeaPiper-35-SPECIFICATION-9-2.pdf",
+        "https://www.seapiper.com/wp-content/uploads/2021/09/SeaPiper-35-SPECIFICATION-9-5.pdf"
+      ]
+    },
+    {
+      "BoatModelID": "SEAP-35",
+      "Field": "ResearchNotes",
+      "Old": "Batch 32 specialist-tail research. Identity, lineage and specifications normalized from model-specific builder, owner-archive and Powerboat Guide evidence; unsupported details remain unknown.",
+      "New": "Batch 32 specialist-tail research. Identity, lineage and specifications normalized from model-specific builder, owner-archive and Powerboat Guide evidence; unsupported details remain unknown. Batch 14 final-tail review: factory 2020/2021 specification confirms principal dimensions, 6 ft 6 in main centerline headroom, skeg-supported rudder geometry and 200/80/22 US gal tankage. Fixed air draft cleared because factory revisions/configurations publish materially different mast-up/down clearances.",
+      "Basis": "Append Batch 14 provenance summary.",
+      "EvidenceRefs": [
+        "https://www.seapiper.com/wp-content/uploads/2020/07/SeaPiper-35-SPECIFICATION-9-2.pdf",
+        "https://www.seapiper.com/wp-content/uploads/2021/09/SeaPiper-35-SPECIFICATION-9-5.pdf"
+      ]
+    },
+    {
+      "BoatModelID": "SEAL-34-TC",
+      "Field": "HoldingCapacityGal",
+      "Old": null,
+      "New": 25,
+      "Basis": "Exact 1986 Sea Lord 34 listing reports 94 L holding capacity, equivalent to approximately 25 US gal.",
+      "EvidenceRefs": [
+        "https://dailyboats.com/boat/309289-buy-sea-lord-34-double-cabin-trawler-for-sale",
+        "https://www.boatdealers.ca/boats-for-sale/542099/sealord-tricabin-hamilton-ontario"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "SEAL-34-TC",
+      "Field": "FuelCapacity",
+      "Old": null,
+      "New": 757.0823568,
+      "Basis": "Exact 1986 model listing reports litre capacities matching 200/100/25 US-gallon values.",
+      "EvidenceRefs": [
+        "https://dailyboats.com/boat/309289-buy-sea-lord-34-double-cabin-trawler-for-sale",
+        "https://www.boatdealers.ca/boats-for-sale/542099/sealord-tricabin-hamilton-ontario"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "SEAL-34-TC",
+      "Field": "WaterCapacity",
+      "Old": null,
+      "New": 378.5411784,
+      "Basis": "Exact 1986 model listing reports litre capacities matching 200/100/25 US-gallon values.",
+      "EvidenceRefs": [
+        "https://dailyboats.com/boat/309289-buy-sea-lord-34-double-cabin-trawler-for-sale",
+        "https://www.boatdealers.ca/boats-for-sale/542099/sealord-tricabin-hamilton-ontario"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "SEAL-34-TC",
+      "Field": "HoldingCapacity",
+      "Old": null,
+      "New": 94.6352946,
+      "Basis": "Exact 1986 model listing reports litre capacities matching 200/100/25 US-gallon values.",
+      "EvidenceRefs": [
+        "https://dailyboats.com/boat/309289-buy-sea-lord-34-double-cabin-trawler-for-sale",
+        "https://www.boatdealers.ca/boats-for-sale/542099/sealord-tricabin-hamilton-ontario"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "SEAL-34-TC",
+      "Field": "FuelCapacityUnitStatus",
+      "Old": "conflicting_legacy_capacity_values",
+      "New": "canonical_litres",
+      "Basis": "Exact 1986 model listing gives metric capacities matching 200/100/25 US gal; canonical values stored in litres.",
+      "EvidenceRefs": [
+        "https://dailyboats.com/boat/309289-buy-sea-lord-34-double-cabin-trawler-for-sale",
+        "https://www.boatdealers.ca/boats-for-sale/542099/sealord-tricabin-hamilton-ontario"
+      ]
+    },
+    {
+      "BoatModelID": "SEAL-34-TC",
+      "Field": "WaterCapacityUnitStatus",
+      "Old": "conflicting_legacy_capacity_values",
+      "New": "canonical_litres",
+      "Basis": "Exact 1986 model listing gives metric capacities matching 200/100/25 US gal; canonical values stored in litres.",
+      "EvidenceRefs": [
+        "https://dailyboats.com/boat/309289-buy-sea-lord-34-double-cabin-trawler-for-sale",
+        "https://www.boatdealers.ca/boats-for-sale/542099/sealord-tricabin-hamilton-ontario"
+      ]
+    },
+    {
+      "BoatModelID": "SEAL-34-TC",
+      "Field": "HoldingCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "Exact 1986 model listing gives metric capacities matching 200/100/25 US gal; canonical values stored in litres.",
+      "EvidenceRefs": [
+        "https://dailyboats.com/boat/309289-buy-sea-lord-34-double-cabin-trawler-for-sale",
+        "https://www.boatdealers.ca/boats-for-sale/542099/sealord-tricabin-hamilton-ontario"
+      ]
+    },
+    {
+      "BoatModelID": "SEAL-34-TC",
+      "Field": "ResearchNotes",
+      "Old": "Canonical name refined from Sealord 34 Tri-Cabin to Sealord 34 Double Cabin Trawler, with Tri-Cabin retained as an alias. A verified 1987 Ontario listing identifies the boat as a Sealord (Chien Hwa) Trawler at 34', 12' beam, 3'6\" draft, 18,000 lb and twin Volvo MD31A 63-hp diesels. A 1986 Sea Lord listing reports 34', 11'9\" beam, ~16,000 lb, twin Volvo MD30A 65-hp diesels, 200 gal fuel and 100 gal water. B-Atlas uses the directly documented 1987 dimensions and representative 200/100 gal tankage; exact builder/model equivalence with CHB remains unresolved.\n\nBatch 33 confidence audit: exact-model identity and source quality rechecked. Confidence is intentionally retained where factory/importer documentation is incomplete; missing evidence does not trigger deletion or inferred consolidation.",
+      "New": "Canonical name refined from Sealord 34 Tri-Cabin to Sealord 34 Double Cabin Trawler, with Tri-Cabin retained as an alias. A verified 1987 Ontario listing identifies the boat as a Sealord (Chien Hwa) Trawler at 34', 12' beam, 3'6\" draft, 18,000 lb and twin Volvo MD31A 63-hp diesels. A 1986 Sea Lord listing reports 34', 11'9\" beam, ~16,000 lb, twin Volvo MD30A 65-hp diesels, 200 gal fuel and 100 gal water. B-Atlas uses the directly documented 1987 dimensions and representative 200/100 gal tankage; exact builder/model equivalence with CHB remains unresolved.\n\nBatch 33 confidence audit: exact-model identity and source quality rechecked. Confidence is intentionally retained where factory/importer documentation is incomplete; missing evidence does not trigger deletion or inferred consolidation. Batch 14 final-tail review: exact 1986/1987 surviving examples continue to support 34 ft class dimensions and twin Volvo diesels. Exact 1986 listing gives 757/378/94 L capacities, consistent with approximately 200/100/25 US gal. LWL, air draft and rudder subtype remain unverified.",
+      "Basis": "Append Batch 14 provenance summary.",
+      "EvidenceRefs": [
+        "https://dailyboats.com/boat/309289-buy-sea-lord-34-double-cabin-trawler-for-sale",
+        "https://www.boatdealers.ca/boats-for-sale/542099/sealord-tricabin-hamilton-ontario"
+      ]
+    },
+    {
+      "BoatModelID": "SHAN-38-SRD",
+      "Field": "LOA_ft",
+      "Old": 38,
+      "New": 40.5,
+      "Basis": "Shannon factory Defiance 38 specification gives 40 ft 6 in LOA.",
+      "EvidenceRefs": [
+        "https://shannonyachts.com/shannon_defiance38_specs.html",
+        "https://powerandmotoryacht.com/boats/boat-tests/shannon-38-srd-0/",
+        "https://passagemaker.com/cruiser-reviews/shannon-srd/"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "SHAN-38-SRD",
+      "Field": "LWL_ft",
+      "Old": 24.5,
+      "New": 37.583333333333336,
+      "Basis": "Shannon factory specification gives 37 ft 7 in LWL.",
+      "EvidenceRefs": [
+        "https://shannonyachts.com/shannon_defiance38_specs.html",
+        "https://powerandmotoryacht.com/boats/boat-tests/shannon-38-srd-0/",
+        "https://passagemaker.com/cruiser-reviews/shannon-srd/"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "SHAN-38-SRD",
+      "Field": "Displacement_lb",
+      "Old": 14000,
+      "New": 13500,
+      "Basis": "Shannon factory specification gives 13,500 lb displacement.",
+      "EvidenceRefs": [
+        "https://shannonyachts.com/shannon_defiance38_specs.html",
+        "https://powerandmotoryacht.com/boats/boat-tests/shannon-38-srd-0/",
+        "https://passagemaker.com/cruiser-reviews/shannon-srd/"
+      ],
+      "Unit": "lb"
+    },
+    {
+      "BoatModelID": "SHAN-38-SRD",
+      "Field": "MechanicalPropulsionCode",
+      "Old": "mechanical_propulsion.shaft",
+      "New": "mechanical_propulsion.mixed",
+      "Basis": "Factory and period testing document conventional inboard shaft drives plus an available single surface-piercing drive configuration.",
+      "EvidenceRefs": [
+        "https://shannonyachts.com/shannon_defiance38_specs.html",
+        "https://powerandmotoryacht.com/boats/boat-tests/shannon-38-srd-0/",
+        "https://passagemaker.com/cruiser-reviews/shannon-srd/"
+      ]
+    },
+    {
+      "BoatModelID": "SHAN-38-SRD",
+      "Field": "Propulsion",
+      "Old": "Shaft",
+      "New": "Mixed: conventional shaft inboards or surface-piercing drive",
+      "Basis": "Factory and period sources document both conventional shaft and surface-drive configurations.",
+      "EvidenceRefs": [
+        "https://shannonyachts.com/shannon_defiance38_specs.html",
+        "https://powerandmotoryacht.com/boats/boat-tests/shannon-38-srd-0/",
+        "https://passagemaker.com/cruiser-reviews/shannon-srd/"
+      ]
+    },
+    {
+      "BoatModelID": "SHAN-38-SRD",
+      "Field": "AirDraft_ft",
+      "Old": 8.2,
+      "New": null,
+      "Basis": "No defensible factory model-wide bridge-clearance value was found for the 38 SRD; legacy 8.2-ft shadow removed.",
+      "EvidenceRefs": [
+        "https://shannonyachts.com/shannon_defiance38_specs.html",
+        "https://powerandmotoryacht.com/boats/boat-tests/shannon-38-srd-0/",
+        "https://passagemaker.com/cruiser-reviews/shannon-srd/"
+      ]
+    },
+    {
+      "BoatModelID": "SHAN-38-SRD",
+      "Field": "FuelCapacityGal",
+      "Old": null,
+      "New": 290,
+      "Basis": "Shannon factory specification explicitly publishes gallon tankage.",
+      "EvidenceRefs": [
+        "https://shannonyachts.com/shannon_defiance38_specs.html",
+        "https://powerandmotoryacht.com/boats/boat-tests/shannon-38-srd-0/",
+        "https://passagemaker.com/cruiser-reviews/shannon-srd/"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "SHAN-38-SRD",
+      "Field": "WaterCapacityGal",
+      "Old": null,
+      "New": 80,
+      "Basis": "Shannon factory specification explicitly publishes gallon tankage.",
+      "EvidenceRefs": [
+        "https://shannonyachts.com/shannon_defiance38_specs.html",
+        "https://powerandmotoryacht.com/boats/boat-tests/shannon-38-srd-0/",
+        "https://passagemaker.com/cruiser-reviews/shannon-srd/"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "SHAN-38-SRD",
+      "Field": "FuelCapacity",
+      "Old": 1097.77,
+      "New": 1097.76941736,
+      "Basis": "Canonical litres converted from Shannon factory gallon specification.",
+      "EvidenceRefs": [
+        "https://shannonyachts.com/shannon_defiance38_specs.html",
+        "https://powerandmotoryacht.com/boats/boat-tests/shannon-38-srd-0/",
+        "https://passagemaker.com/cruiser-reviews/shannon-srd/"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "SHAN-38-SRD",
+      "Field": "WaterCapacity",
+      "Old": 302.83,
+      "New": 302.83294272,
+      "Basis": "Canonical litres converted from Shannon factory gallon specification.",
+      "EvidenceRefs": [
+        "https://shannonyachts.com/shannon_defiance38_specs.html",
+        "https://powerandmotoryacht.com/boats/boat-tests/shannon-38-srd-0/",
+        "https://passagemaker.com/cruiser-reviews/shannon-srd/"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "SHAN-38-SRD",
+      "Field": "FuelCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "Factory specification provides gallon capacity; canonical value stored in litres.",
+      "EvidenceRefs": [
+        "https://shannonyachts.com/shannon_defiance38_specs.html",
+        "https://powerandmotoryacht.com/boats/boat-tests/shannon-38-srd-0/",
+        "https://passagemaker.com/cruiser-reviews/shannon-srd/"
+      ]
+    },
+    {
+      "BoatModelID": "SHAN-38-SRD",
+      "Field": "WaterCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "Factory specification provides gallon capacity; canonical value stored in litres.",
+      "EvidenceRefs": [
+        "https://shannonyachts.com/shannon_defiance38_specs.html",
+        "https://powerandmotoryacht.com/boats/boat-tests/shannon-38-srd-0/",
+        "https://passagemaker.com/cruiser-reviews/shannon-srd/"
+      ]
+    },
+    {
+      "BoatModelID": "SHAN-38-SRD",
+      "Field": "HoldingCapacity",
+      "Old": 20,
+      "New": null,
+      "Basis": "Factory specification confirms a holding tank but does not publish capacity; unsupported fixed value removed.",
+      "EvidenceRefs": [
+        "https://shannonyachts.com/shannon_defiance38_specs.html",
+        "https://powerandmotoryacht.com/boats/boat-tests/shannon-38-srd-0/",
+        "https://passagemaker.com/cruiser-reviews/shannon-srd/"
+      ]
+    },
+    {
+      "BoatModelID": "SHAN-38-SRD",
+      "Field": "HoldingCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "unknown",
+      "Basis": "Holding tank exists but factory capacity was not established.",
+      "EvidenceRefs": [
+        "https://shannonyachts.com/shannon_defiance38_specs.html",
+        "https://powerandmotoryacht.com/boats/boat-tests/shannon-38-srd-0/",
+        "https://passagemaker.com/cruiser-reviews/shannon-srd/"
+      ]
+    },
+    {
+      "BoatModelID": "SHAN-38-SRD",
+      "Field": "ResearchNotes",
+      "Old": "Batch 32 specialist-tail research. Identity, lineage and specifications normalized from model-specific builder, owner-archive and Powerboat Guide evidence; unsupported details remain unknown.",
+      "New": "Batch 32 specialist-tail research. Identity, lineage and specifications normalized from model-specific builder, owner-archive and Powerboat Guide evidence; unsupported details remain unknown. Batch 14 final-tail review: Shannon factory specification resolves 40 ft 6 in LOA, 37 ft 7 in LWL, 13,500 lb displacement, and 290/80 gal fuel/water. Mechanical propulsion is configuration-dependent: conventional shafts and a surface-piercing-drive version were both documented. Unsupported air-draft and holding-capacity values were removed.",
+      "Basis": "Append Batch 14 provenance summary.",
+      "EvidenceRefs": [
+        "https://shannonyachts.com/shannon_defiance38_specs.html",
+        "https://powerandmotoryacht.com/boats/boat-tests/shannon-38-srd-0/",
+        "https://passagemaker.com/cruiser-reviews/shannon-srd/"
+      ]
+    },
+    {
+      "BoatModelID": "TPMC-32-EA",
+      "Field": "RudderTypeCode",
+      "Old": null,
+      "New": "rudder.full_keel_attached",
+      "Basis": "Exact 1989 Eagle 32 specification describes a full keel with inboard keel-shoe-hung rudder.",
+      "EvidenceRefs": [
+        "https://www.crusaderyachts.com/listings/1989-eagle-32-32-trawler-kindred-spirit/2788685/",
+        "https://seattle.boatshed.com/eagle_32-boat-142700.html",
+        "https://ca.boats.com/power-boats/1987-transpacific-marine-eagle-32-trawler-10144328/",
+        "https://bronteshore.ca/current_listings/1986-eagle-marine-trawler/"
+      ]
+    },
+    {
+      "BoatModelID": "TPMC-32-EA",
+      "Field": "Headroom",
+      "Old": 1.9304,
+      "New": 1.905,
+      "Basis": "Exact 1985 and 1992 Eagle 32 examples report 6 ft 3 in cabin headroom.",
+      "EvidenceRefs": [
+        "https://www.crusaderyachts.com/listings/1989-eagle-32-32-trawler-kindred-spirit/2788685/",
+        "https://seattle.boatshed.com/eagle_32-boat-142700.html",
+        "https://ca.boats.com/power-boats/1987-transpacific-marine-eagle-32-trawler-10144328/",
+        "https://bronteshore.ca/current_listings/1986-eagle-marine-trawler/"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "TPMC-32-EA",
+      "Field": "Headroom_ft",
+      "Old": null,
+      "New": 6.25,
+      "Basis": "Exact 1985 and 1992 Eagle 32 examples report 6 ft 3 in cabin headroom.",
+      "EvidenceRefs": [
+        "https://www.crusaderyachts.com/listings/1989-eagle-32-32-trawler-kindred-spirit/2788685/",
+        "https://seattle.boatshed.com/eagle_32-boat-142700.html",
+        "https://ca.boats.com/power-boats/1987-transpacific-marine-eagle-32-trawler-10144328/",
+        "https://bronteshore.ca/current_listings/1986-eagle-marine-trawler/"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "TPMC-32-EA",
+      "Field": "FuelCapacity",
+      "Old": 168,
+      "New": null,
+      "Basis": "Exact Eagle 32 examples show materially different tankage across years/refits (e.g. 150-180 gal fuel, 75-180 gal water, 20-25 gal holding); no safe model-wide standard.",
+      "EvidenceRefs": [
+        "https://www.crusaderyachts.com/listings/1989-eagle-32-32-trawler-kindred-spirit/2788685/",
+        "https://seattle.boatshed.com/eagle_32-boat-142700.html",
+        "https://ca.boats.com/power-boats/1987-transpacific-marine-eagle-32-trawler-10144328/",
+        "https://bronteshore.ca/current_listings/1986-eagle-marine-trawler/"
+      ]
+    },
+    {
+      "BoatModelID": "TPMC-32-EA",
+      "Field": "WaterCapacity",
+      "Old": 125,
+      "New": null,
+      "Basis": "Exact Eagle 32 examples show materially different tankage across years/refits (e.g. 150-180 gal fuel, 75-180 gal water, 20-25 gal holding); no safe model-wide standard.",
+      "EvidenceRefs": [
+        "https://www.crusaderyachts.com/listings/1989-eagle-32-32-trawler-kindred-spirit/2788685/",
+        "https://seattle.boatshed.com/eagle_32-boat-142700.html",
+        "https://ca.boats.com/power-boats/1987-transpacific-marine-eagle-32-trawler-10144328/",
+        "https://bronteshore.ca/current_listings/1986-eagle-marine-trawler/"
+      ]
+    },
+    {
+      "BoatModelID": "TPMC-32-EA",
+      "Field": "HoldingCapacity",
+      "Old": 25,
+      "New": null,
+      "Basis": "Exact Eagle 32 examples show materially different tankage across years/refits (e.g. 150-180 gal fuel, 75-180 gal water, 20-25 gal holding); no safe model-wide standard.",
+      "EvidenceRefs": [
+        "https://www.crusaderyachts.com/listings/1989-eagle-32-32-trawler-kindred-spirit/2788685/",
+        "https://seattle.boatshed.com/eagle_32-boat-142700.html",
+        "https://ca.boats.com/power-boats/1987-transpacific-marine-eagle-32-trawler-10144328/",
+        "https://bronteshore.ca/current_listings/1986-eagle-marine-trawler/"
+      ]
+    },
+    {
+      "BoatModelID": "TPMC-32-EA",
+      "Field": "FuelCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "unknown",
+      "Basis": "Tank capacity is configuration/year/refit dependent across exact surviving Eagle 32 examples.",
+      "EvidenceRefs": [
+        "https://www.crusaderyachts.com/listings/1989-eagle-32-32-trawler-kindred-spirit/2788685/",
+        "https://seattle.boatshed.com/eagle_32-boat-142700.html",
+        "https://ca.boats.com/power-boats/1987-transpacific-marine-eagle-32-trawler-10144328/",
+        "https://bronteshore.ca/current_listings/1986-eagle-marine-trawler/"
+      ]
+    },
+    {
+      "BoatModelID": "TPMC-32-EA",
+      "Field": "WaterCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "unknown",
+      "Basis": "Tank capacity is configuration/year/refit dependent across exact surviving Eagle 32 examples.",
+      "EvidenceRefs": [
+        "https://www.crusaderyachts.com/listings/1989-eagle-32-32-trawler-kindred-spirit/2788685/",
+        "https://seattle.boatshed.com/eagle_32-boat-142700.html",
+        "https://ca.boats.com/power-boats/1987-transpacific-marine-eagle-32-trawler-10144328/",
+        "https://bronteshore.ca/current_listings/1986-eagle-marine-trawler/"
+      ]
+    },
+    {
+      "BoatModelID": "TPMC-32-EA",
+      "Field": "HoldingCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "unknown",
+      "Basis": "Tank capacity is configuration/year/refit dependent across exact surviving Eagle 32 examples.",
+      "EvidenceRefs": [
+        "https://www.crusaderyachts.com/listings/1989-eagle-32-32-trawler-kindred-spirit/2788685/",
+        "https://seattle.boatshed.com/eagle_32-boat-142700.html",
+        "https://ca.boats.com/power-boats/1987-transpacific-marine-eagle-32-trawler-10144328/",
+        "https://bronteshore.ca/current_listings/1986-eagle-marine-trawler/"
+      ]
+    },
+    {
+      "BoatModelID": "TPMC-32-EA",
+      "Field": "ResearchNotes",
+      "Old": "Batch 32 specialist-tail research. Identity, lineage and specifications normalized from model-specific builder, owner-archive and Powerboat Guide evidence; unsupported details remain unknown.",
+      "New": "Batch 32 specialist-tail research. Identity, lineage and specifications normalized from model-specific builder, owner-archive and Powerboat Guide evidence; unsupported details remain unknown. Batch 14 final-tail review: exact 1989 documentation establishes a full keel with keel-shoe-hung rudder; multiple exact examples support 6 ft 3 in headroom. Tankage varies materially across surviving boats/refits and is therefore cleared from model-wide canonical capacity fields. Published displacement also varies by example/loading and should be treated as representative, not invariant.",
+      "Basis": "Append Batch 14 provenance summary.",
+      "EvidenceRefs": [
+        "https://www.crusaderyachts.com/listings/1989-eagle-32-32-trawler-kindred-spirit/2788685/",
+        "https://seattle.boatshed.com/eagle_32-boat-142700.html",
+        "https://ca.boats.com/power-boats/1987-transpacific-marine-eagle-32-trawler-10144328/",
+        "https://bronteshore.ca/current_listings/1986-eagle-marine-trawler/"
+      ]
+    }
+  ]
+}

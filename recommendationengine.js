@@ -510,10 +510,10 @@ function evaluateDimensions(boat, userProfile) {
     const getWeight = typeof getImportanceWeight === 'function' ? getImportanceWeight : window.getImportanceWeight;
 
     const dimensions = [
-        { feature: "LOA", boatField: "LOA_ft", label: "Length" },
-        { feature: "Beam", boatField: "Beam_ft", label: "Beam" },
-        { feature: "Draft", boatField: "Draft_ft", label: "Draft" },
-        { feature: "AirDraft", boatField: "AirDraft_ft", label: "Air Draft" }
+        { feature: "LOA", canonicalField: "LOA", label: "Length" },
+        { feature: "Beam", canonicalField: "Beam", label: "Beam" },
+        { feature: "Draft", canonicalField: "Draft", label: "Draft" },
+        { feature: "AirDraft", canonicalField: "AirDraft", label: "Air Draft" }
     ];
 
     const results = [];
@@ -567,8 +567,8 @@ function evaluateDimensions(boat, userProfile) {
         }
 
         // RULE 2: If boat dimension value is unknown or missing
-        const boatVal = boat ? boat[dim.boatField] : null;
-        let actualNum = boatVal;
+        const canonical = boat ? Number(boat[dim.canonicalField]) : NaN;
+        let actualNum = Number.isFinite(canonical) && canonical > 0 ? canonical / 0.3048 : null;
         if (typeof actualNum === "string") {
             actualNum = actualNum.trim();
             if (actualNum !== "" && !isNaN(Number(actualNum))) {
@@ -699,37 +699,22 @@ function evaluateBoatForProfile(
             if (matchedRoute) {
                 const routeName = matchedRoute.Name || matchedRoute.RouteID || matchedRoute.id || "Route";
                 
-                // Draft check
-                const maxDraft = matchedRoute.MaxDraftFt || matchedRoute.RouteMaxDraftFt;
-                if (maxDraft !== undefined && maxDraft !== null && boat.Draft_ft !== undefined && boat.Draft_ft !== null) {
-                    if (Number(boat.Draft_ft) > Number(maxDraft)) {
-                        routeWarnings.push(`Draft (${boat.Draft_ft} ft) exceeds ${routeName} limit of ${maxDraft} ft.`);
+                const feetValue = field => {
+                    const canonical = Number(boat?.[field]);
+                    return Number.isFinite(canonical) && canonical > 0 ? canonical / 0.3048 : null;
+                };
+                const routeChecks = [
+                    ["Draft", matchedRoute.MaxDraftFt || matchedRoute.RouteMaxDraftFt, "Draft"],
+                    ["AirDraft", matchedRoute.MaxAirDraftFt || matchedRoute.RouteMaxAirDraftFt, "Air Draft"],
+                    ["Beam", matchedRoute.MaxBeamFt || matchedRoute.RouteMaxBeamFt, "Beam"],
+                    ["LOA", matchedRoute.MaxLengthFt || matchedRoute.RouteMaxLengthFt, "LOA"]
+                ];
+                routeChecks.forEach(([field, limit, label]) => {
+                    const value = feetValue(field);
+                    if (limit !== undefined && limit !== null && value !== null && value > Number(limit)) {
+                        routeWarnings.push(`${label} (${value.toFixed(1).replace(/\.0$/, "")} ft) exceeds ${routeName} limit of ${limit} ft.`);
                     }
-                }
-
-                // Air Draft check
-                const maxAirDraft = matchedRoute.MaxAirDraftFt || matchedRoute.RouteMaxAirDraftFt;
-                if (maxAirDraft !== undefined && maxAirDraft !== null && boat.AirDraft_ft !== undefined && boat.AirDraft_ft !== null) {
-                    if (Number(boat.AirDraft_ft) > Number(maxAirDraft)) {
-                        routeWarnings.push(`Air Draft (${boat.AirDraft_ft} ft) exceeds ${routeName} limit of ${maxAirDraft} ft.`);
-                    }
-                }
-
-                // Beam check
-                const maxBeam = matchedRoute.MaxBeamFt || matchedRoute.RouteMaxBeamFt;
-                if (maxBeam !== undefined && maxBeam !== null && boat.Beam_ft !== undefined && boat.Beam_ft !== null) {
-                    if (Number(boat.Beam_ft) > Number(maxBeam)) {
-                        routeWarnings.push(`Beam (${boat.Beam_ft} ft) exceeds ${routeName} limit of ${maxBeam} ft.`);
-                    }
-                }
-
-                // Length check
-                const maxLength = matchedRoute.MaxLengthFt || matchedRoute.RouteMaxLengthFt;
-                if (maxLength !== undefined && maxLength !== null && boat.LOA_ft !== undefined && boat.LOA_ft !== null) {
-                    if (Number(boat.LOA_ft) > Number(maxLength)) {
-                        routeWarnings.push(`LOA (${boat.LOA_ft} ft) exceeds ${routeName} limit of ${maxLength} ft.`);
-                    }
-                }
+                });
             }
         });
     }

@@ -1,0 +1,657 @@
+{
+  "release": "6.50.0",
+  "batch": "specification-completion-05",
+  "manufacturers": [
+    "Cheoy Lee",
+    "Willard",
+    "Helmsman",
+    "Island Gypsy",
+    "Sea Sport"
+  ],
+  "updateCount": 60,
+  "updates": [
+    {
+      "BoatModelID": "CHLY-35",
+      "Field": "LWL",
+      "Old": null,
+      "New": 9.906,
+      "Basis": "HMY Powerboat Guide publishes 32 ft 6 in LWL for the 35 Trawler.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/cheoy-lee/35-trawler-1979-86"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "CHLY-35",
+      "Field": "LWL_ft",
+      "Old": 32,
+      "New": 32.5,
+      "Basis": "Legacy imperial LWL aligned to published 32 ft 6 in model specification.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/cheoy-lee/35-trawler-1979-86"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "CHLY-35",
+      "Field": "Displacement_lb",
+      "Old": 21000,
+      "New": 23500,
+      "Basis": "Original Cheoy Lee brochure reproduced by the owners association publishes 23,500 lb displacement; reconcile stale imperial shadow.",
+      "EvidenceRefs": [
+        "https://www.cheoyleeassociation.com/Power/Powertrawler3.htm"
+      ],
+      "Unit": "lb"
+    },
+    {
+      "BoatModelID": "CHLY-35",
+      "Field": "DisplacementLb",
+      "Old": 21000,
+      "New": 23500,
+      "Basis": "Original Cheoy Lee brochure reproduced by the owners association publishes 23,500 lb displacement; reconcile stale imperial shadow.",
+      "EvidenceRefs": [
+        "https://www.cheoyleeassociation.com/Power/Powertrawler3.htm"
+      ],
+      "Unit": "lb"
+    },
+    {
+      "BoatModelID": "CHLY-36-TR",
+      "Field": "LOA",
+      "Old": null,
+      "New": 11.1252,
+      "Basis": "Original Cheoy Lee brochure reproduced by the owners association publishes 36 ft 6 in LOA for Trawler 36 MkII.",
+      "EvidenceRefs": [
+        "https://www.cheoyleeassociation.com/Power/Powertrawler3.htm"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "CHLY-36-TR",
+      "Field": "Beam",
+      "Old": null,
+      "New": 3.9624,
+      "Basis": "Original Cheoy Lee brochure reproduced by the owners association publishes 13 ft beam for Trawler 36 MkII.",
+      "EvidenceRefs": [
+        "https://www.cheoyleeassociation.com/Power/Powertrawler3.htm"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "CHLY-36-TR",
+      "Field": "Draft",
+      "Old": null,
+      "New": 1.0668,
+      "Basis": "Original Cheoy Lee brochure reproduced by the owners association publishes 3 ft 6 in draft for Trawler 36 MkII.",
+      "EvidenceRefs": [
+        "https://www.cheoyleeassociation.com/Power/Powertrawler3.htm"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "WILL-30-VO",
+      "Field": "LWL",
+      "Old": null,
+      "New": 8.382,
+      "Basis": "Model-specific Willard Vega 30 documentation reports 27 ft 6 in LWL; Willard owners association confirms Voyager shares the Vega 30 hull.",
+      "EvidenceRefs": [
+        "https://serenitysys.com/photogallery/boats/willard30/index.htm",
+        "https://willardboats.org/boats/vega30"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "HELM-43-E",
+      "Field": "AirDraft",
+      "Old": null,
+      "New": 4.1148,
+      "Basis": "BoatTEST measured/reported 13 ft 6 in bridge clearance with antenna arch lowered.",
+      "EvidenceRefs": [
+        "https://boattest.com/boats/helmsman-trawlers/43e-pilothouse-2022"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "HELM-43-E",
+      "Field": "AirDraft_ft",
+      "Old": null,
+      "New": 13.5,
+      "Basis": "Imperial shadow aligned to documented 13 ft 6 in lowered-arch clearance.",
+      "EvidenceRefs": [
+        "https://boattest.com/boats/helmsman-trawlers/43e-pilothouse-2022"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "HELM-38E-TR",
+      "Field": "FuelCapacity",
+      "Old": 400,
+      "New": 1514.16,
+      "Basis": "Published specification identifies 400 US gal; normalized to canonical litres.",
+      "EvidenceRefs": [
+        "https://helmsmantrawlers.com/38e-pilothouse/"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "HELM-38E-TR",
+      "Field": "FuelCapacityGal",
+      "Old": null,
+      "New": 400,
+      "Basis": "Retain published source value of 400 US gal for provenance/display compatibility.",
+      "EvidenceRefs": [
+        "https://helmsmantrawlers.com/38e-pilothouse/"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "HELM-38E-TR",
+      "Field": "FuelCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "Source unit verified as US gallons and canonical value normalized to litres.",
+      "EvidenceRefs": [
+        "https://helmsmantrawlers.com/38e-pilothouse/"
+      ]
+    },
+    {
+      "BoatModelID": "HELM-38E-TR",
+      "Field": "WaterCapacity",
+      "Old": 145,
+      "New": 548.88,
+      "Basis": "Published specification identifies 145 US gal; normalized to canonical litres.",
+      "EvidenceRefs": [
+        "https://helmsmantrawlers.com/38e-pilothouse/"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "HELM-38E-TR",
+      "Field": "WaterCapacityGal",
+      "Old": null,
+      "New": 145,
+      "Basis": "Retain published source value of 145 US gal for provenance/display compatibility.",
+      "EvidenceRefs": [
+        "https://helmsmantrawlers.com/38e-pilothouse/"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "HELM-38E-TR",
+      "Field": "WaterCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "Source unit verified as US gallons and canonical value normalized to litres.",
+      "EvidenceRefs": [
+        "https://helmsmantrawlers.com/38e-pilothouse/"
+      ]
+    },
+    {
+      "BoatModelID": "HELM-38E-TR",
+      "Field": "HoldingCapacity",
+      "Old": 45,
+      "New": 170.34,
+      "Basis": "Published specification identifies 45 US gal; normalized to canonical litres.",
+      "EvidenceRefs": [
+        "https://helmsmantrawlers.com/38e-pilothouse/"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "HELM-38E-TR",
+      "Field": "HoldingCapacityGal",
+      "Old": null,
+      "New": 45,
+      "Basis": "Retain published source value of 45 US gal for provenance/display compatibility.",
+      "EvidenceRefs": [
+        "https://helmsmantrawlers.com/38e-pilothouse/"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "HELM-38E-TR",
+      "Field": "HoldingCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "Source unit verified as US gallons and canonical value normalized to litres.",
+      "EvidenceRefs": [
+        "https://helmsmantrawlers.com/38e-pilothouse/"
+      ]
+    },
+    {
+      "BoatModelID": "HELM-43-E",
+      "Field": "FuelCapacity",
+      "Old": 600,
+      "New": 2271.25,
+      "Basis": "Published specification identifies 600 US gal; normalized to canonical litres.",
+      "EvidenceRefs": [
+        "https://www.boats.com/power-boats/2026-helmsman-trawlers-43e-pilot-house-9705159/"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "HELM-43-E",
+      "Field": "FuelCapacityGal",
+      "Old": null,
+      "New": 600,
+      "Basis": "Retain published source value of 600 US gal for provenance/display compatibility.",
+      "EvidenceRefs": [
+        "https://www.boats.com/power-boats/2026-helmsman-trawlers-43e-pilot-house-9705159/"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "HELM-43-E",
+      "Field": "FuelCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "Source unit verified as US gallons and canonical value normalized to litres.",
+      "EvidenceRefs": [
+        "https://www.boats.com/power-boats/2026-helmsman-trawlers-43e-pilot-house-9705159/"
+      ]
+    },
+    {
+      "BoatModelID": "HELM-43-E",
+      "Field": "WaterCapacity",
+      "Old": 200,
+      "New": 757.08,
+      "Basis": "Published specification identifies 200 US gal; normalized to canonical litres.",
+      "EvidenceRefs": [
+        "https://www.boats.com/power-boats/2026-helmsman-trawlers-43e-pilot-house-9705159/"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "HELM-43-E",
+      "Field": "WaterCapacityGal",
+      "Old": null,
+      "New": 200,
+      "Basis": "Retain published source value of 200 US gal for provenance/display compatibility.",
+      "EvidenceRefs": [
+        "https://www.boats.com/power-boats/2026-helmsman-trawlers-43e-pilot-house-9705159/"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "HELM-43-E",
+      "Field": "WaterCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "Source unit verified as US gallons and canonical value normalized to litres.",
+      "EvidenceRefs": [
+        "https://www.boats.com/power-boats/2026-helmsman-trawlers-43e-pilot-house-9705159/"
+      ]
+    },
+    {
+      "BoatModelID": "HELM-43-E",
+      "Field": "HoldingCapacity",
+      "Old": 60,
+      "New": 227.12,
+      "Basis": "Published specification identifies 60 US gal; normalized to canonical litres.",
+      "EvidenceRefs": [
+        "https://www.boats.com/power-boats/2026-helmsman-trawlers-43e-pilot-house-9705159/"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "HELM-43-E",
+      "Field": "HoldingCapacityGal",
+      "Old": null,
+      "New": 60,
+      "Basis": "Retain published source value of 60 US gal for provenance/display compatibility.",
+      "EvidenceRefs": [
+        "https://www.boats.com/power-boats/2026-helmsman-trawlers-43e-pilot-house-9705159/"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "HELM-43-E",
+      "Field": "HoldingCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "Source unit verified as US gallons and canonical value normalized to litres.",
+      "EvidenceRefs": [
+        "https://www.boats.com/power-boats/2026-helmsman-trawlers-43e-pilot-house-9705159/"
+      ]
+    },
+    {
+      "BoatModelID": "HELM-46-PH",
+      "Field": "FuelCapacity",
+      "Old": 800,
+      "New": 3028.33,
+      "Basis": "Published specification identifies 800 US gal; normalized to canonical litres.",
+      "EvidenceRefs": [
+        "https://helmsmantrawlers.com/helmsman-trawlers/46-pilothouse/"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "HELM-46-PH",
+      "Field": "FuelCapacityGal",
+      "Old": null,
+      "New": 800,
+      "Basis": "Retain published source value of 800 US gal for provenance/display compatibility.",
+      "EvidenceRefs": [
+        "https://helmsmantrawlers.com/helmsman-trawlers/46-pilothouse/"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "HELM-46-PH",
+      "Field": "FuelCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "Source unit verified as US gallons and canonical value normalized to litres.",
+      "EvidenceRefs": [
+        "https://helmsmantrawlers.com/helmsman-trawlers/46-pilothouse/"
+      ]
+    },
+    {
+      "BoatModelID": "HELM-46-PH",
+      "Field": "WaterCapacity",
+      "Old": 300,
+      "New": 1135.62,
+      "Basis": "Published specification identifies 300 US gal; normalized to canonical litres.",
+      "EvidenceRefs": [
+        "https://helmsmantrawlers.com/helmsman-trawlers/46-pilothouse/"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "HELM-46-PH",
+      "Field": "WaterCapacityGal",
+      "Old": null,
+      "New": 300,
+      "Basis": "Retain published source value of 300 US gal for provenance/display compatibility.",
+      "EvidenceRefs": [
+        "https://helmsmantrawlers.com/helmsman-trawlers/46-pilothouse/"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "HELM-46-PH",
+      "Field": "WaterCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "Source unit verified as US gallons and canonical value normalized to litres.",
+      "EvidenceRefs": [
+        "https://helmsmantrawlers.com/helmsman-trawlers/46-pilothouse/"
+      ]
+    },
+    {
+      "BoatModelID": "HELM-46-PH",
+      "Field": "HoldingCapacity",
+      "Old": 100,
+      "New": 378.54,
+      "Basis": "Published specification identifies 100 US gal; normalized to canonical litres.",
+      "EvidenceRefs": [
+        "https://helmsmantrawlers.com/helmsman-trawlers/46-pilothouse/"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "HELM-46-PH",
+      "Field": "HoldingCapacityGal",
+      "Old": null,
+      "New": 100,
+      "Basis": "Retain published source value of 100 US gal for provenance/display compatibility.",
+      "EvidenceRefs": [
+        "https://helmsmantrawlers.com/helmsman-trawlers/46-pilothouse/"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "HELM-46-PH",
+      "Field": "HoldingCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "Source unit verified as US gallons and canonical value normalized to litres.",
+      "EvidenceRefs": [
+        "https://helmsmantrawlers.com/helmsman-trawlers/46-pilothouse/"
+      ]
+    },
+    {
+      "BoatModelID": "ISGY-32-EU",
+      "Field": "AirDraft",
+      "Old": null,
+      "New": 3.7592,
+      "Basis": "HMY publishes 12 ft 4 in clearance for the 32 Europa.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/island-gypsy/32-europa-1989-2003"
+      ],
+      "Unit": "m"
+    },
+    {
+      "BoatModelID": "ISGY-32-EU",
+      "Field": "AirDraft_ft",
+      "Old": null,
+      "New": 12.3333,
+      "Basis": "Imperial shadow aligned to HMY 12 ft 4 in clearance.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/island-gypsy/32-europa-1989-2003"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "ISGY-32-SE",
+      "Field": "RudderTypeCode",
+      "Old": null,
+      "New": "rudder.skeg_hung",
+      "Basis": "HMY explicitly describes the 32 Sedan as having a skeg-mounted rudder.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/island-gypsy/32-sedan-1981-2000"
+      ]
+    },
+    {
+      "BoatModelID": "ISGY-36",
+      "Field": "AirDraft_ft",
+      "Old": 13.5,
+      "New": 12.5,
+      "Basis": "Correct stale imperial clearance to HMY 12 ft 6 in.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/island-gypsy/36-classic-1978-2001"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "ISGY-36",
+      "Field": "LWL_ft",
+      "Old": 33.5,
+      "New": 32.8333,
+      "Basis": "Correct stale imperial LWL shadow to HMY 32 ft 10 in.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/island-gypsy/36-classic-1978-2001"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "ISGY-36EURO",
+      "Field": "AirDraft_ft",
+      "Old": 13.5,
+      "New": 16,
+      "Basis": "Correct stale imperial clearance to HMY 16 ft 0 in.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/island-gypsy/36-europa-1980-98"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "ISGY-36EURO",
+      "Field": "LWL_ft",
+      "Old": 33,
+      "New": 32.8333,
+      "Basis": "Correct stale imperial LWL shadow to HMY 32 ft 10 in.",
+      "EvidenceRefs": [
+        "https://www.hmy.com/yachting/powerboat-guide/island-gypsy/36-europa-1980-98"
+      ],
+      "Unit": "ft"
+    },
+    {
+      "BoatModelID": "SSPT-24",
+      "Field": "RudderTypeCode",
+      "Old": null,
+      "New": "rudder.none_external_drive",
+      "Basis": "Current factory configuration uses steerable outboard propulsion; no separate conventional rudder.",
+      "EvidenceRefs": [
+        "https://seasportboats.com/boat/xl-2400/"
+      ]
+    },
+    {
+      "BoatModelID": "SSPT-24",
+      "Field": "FuelCapacity",
+      "Old": 149,
+      "New": 564.03,
+      "Basis": "Factory specification explicitly publishes 149 US gal; normalized to canonical litres.",
+      "EvidenceRefs": [
+        "https://seasportboats.com/boat/xl-2400/"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "SSPT-24",
+      "Field": "FuelCapacityUnitStatus",
+      "Old": "legacy_gallon_basis_unverified",
+      "New": "canonical_litres",
+      "Basis": "Factory source explicitly identifies US gallons; canonical value stored in litres.",
+      "EvidenceRefs": [
+        "https://seasportboats.com/boat/xl-2400/"
+      ]
+    },
+    {
+      "BoatModelID": "SSPT-24",
+      "Field": "WaterCapacity",
+      "Old": 25,
+      "New": 94.64,
+      "Basis": "Factory specification explicitly publishes 25 US gal; normalized to canonical litres.",
+      "EvidenceRefs": [
+        "https://seasportboats.com/boat/xl-2400/"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "SSPT-24",
+      "Field": "WaterCapacityUnitStatus",
+      "Old": "legacy_gallon_basis_unverified",
+      "New": "canonical_litres",
+      "Basis": "Factory source explicitly identifies US gallons; canonical value stored in litres.",
+      "EvidenceRefs": [
+        "https://seasportboats.com/boat/xl-2400/"
+      ]
+    },
+    {
+      "BoatModelID": "SSPT-24",
+      "Field": "HoldingCapacity",
+      "Old": 8,
+      "New": 30.28,
+      "Basis": "Factory specification explicitly publishes 8 US gal; normalized to canonical litres.",
+      "EvidenceRefs": [
+        "https://seasportboats.com/boat/xl-2400/"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "SSPT-24",
+      "Field": "HoldingCapacityGal",
+      "Old": null,
+      "New": 8,
+      "Basis": "Retain factory-published 8 US gal source value.",
+      "EvidenceRefs": [
+        "https://seasportboats.com/boat/xl-2400/"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "SSPT-24",
+      "Field": "HoldingCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "Factory source explicitly identifies US gallons; canonical value stored in litres.",
+      "EvidenceRefs": [
+        "https://seasportboats.com/boat/xl-2400/"
+      ]
+    },
+    {
+      "BoatModelID": "SSPT-24-EX",
+      "Field": "RudderTypeCode",
+      "Old": null,
+      "New": "rudder.none_external_drive",
+      "Basis": "Current factory configuration uses steerable outboard propulsion; no separate conventional rudder.",
+      "EvidenceRefs": [
+        "https://seasportboats.com/boat/explorer-2400/"
+      ]
+    },
+    {
+      "BoatModelID": "SSPT-24-EX",
+      "Field": "FuelCapacity",
+      "Old": 129,
+      "New": 488.32,
+      "Basis": "Factory specification explicitly publishes 129 US gal; normalized to canonical litres.",
+      "EvidenceRefs": [
+        "https://seasportboats.com/boat/explorer-2400/"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "SSPT-24-EX",
+      "Field": "FuelCapacityUnitStatus",
+      "Old": "legacy_gallon_basis_unverified",
+      "New": "canonical_litres",
+      "Basis": "Factory source explicitly identifies US gallons; canonical value stored in litres.",
+      "EvidenceRefs": [
+        "https://seasportboats.com/boat/explorer-2400/"
+      ]
+    },
+    {
+      "BoatModelID": "SSPT-24-EX",
+      "Field": "WaterCapacity",
+      "Old": 25,
+      "New": 94.64,
+      "Basis": "Factory specification explicitly publishes 25 US gal; normalized to canonical litres.",
+      "EvidenceRefs": [
+        "https://seasportboats.com/boat/explorer-2400/"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "SSPT-24-EX",
+      "Field": "WaterCapacityUnitStatus",
+      "Old": "legacy_gallon_basis_unverified",
+      "New": "canonical_litres",
+      "Basis": "Factory source explicitly identifies US gallons; canonical value stored in litres.",
+      "EvidenceRefs": [
+        "https://seasportboats.com/boat/explorer-2400/"
+      ]
+    },
+    {
+      "BoatModelID": "SSPT-24-EX",
+      "Field": "HoldingCapacity",
+      "Old": 8,
+      "New": 30.28,
+      "Basis": "Factory specification explicitly publishes 8 US gal; normalized to canonical litres.",
+      "EvidenceRefs": [
+        "https://seasportboats.com/boat/explorer-2400/"
+      ],
+      "Unit": "L"
+    },
+    {
+      "BoatModelID": "SSPT-24-EX",
+      "Field": "HoldingCapacityGal",
+      "Old": null,
+      "New": 8,
+      "Basis": "Retain factory-published 8 US gal source value.",
+      "EvidenceRefs": [
+        "https://seasportboats.com/boat/explorer-2400/"
+      ],
+      "Unit": "US gal"
+    },
+    {
+      "BoatModelID": "SSPT-24-EX",
+      "Field": "HoldingCapacityUnitStatus",
+      "Old": "unit_unverified",
+      "New": "canonical_litres",
+      "Basis": "Factory source explicitly identifies US gallons; canonical value stored in litres.",
+      "EvidenceRefs": [
+        "https://seasportboats.com/boat/explorer-2400/"
+      ]
+    }
+  ]
+}

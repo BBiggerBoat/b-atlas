@@ -236,7 +236,7 @@
                 <p>${esc(boat.TypicalMission || "Mission fit has not been documented.")}</p>
             </section>
             <section class="workspace-card"><h3>Quick Specifications</h3><div class="workspace-fact-grid">
-                ${field("LOA", measure(boat,"LOA","length",[{key:"LOA_ft",unit:"ft"},{key:"LengthFt",unit:"ft"}]), "", "LOA")}${field("LWL", measure(boat,"LWL","length",[{key:"LWL_ft",unit:"ft"}]), "", "LWL")}${field("Beam", measure(boat,"Beam","length",[{key:"Beam_ft",unit:"ft"},{key:"BeamFt",unit:"ft"}]), "", "Beam")}${field("Draft", measure(boat,"Draft","length",[{key:"Draft_ft",unit:"ft"},{key:"DraftFt",unit:"ft"}]), "", "Draft")}${field("Air Draft", measure(boat,"AirDraft","length",[{key:"AirDraft_ft",unit:"ft"}]), "", "AirDraft")}
+                ${field("LOA", measure(boat,"LOA","length",[]), "", "LOA")}${field("LWL", measure(boat,"LWL","length",[]), "", "LWL")}${field("Beam", measure(boat,"Beam","length",[]), "", "Beam")}${field("Draft", measure(boat,"Draft","length",[]), "", "Draft")}${field("Air Draft", measure(boat,"AirDraft","length",[]), "", "AirDraft")}
                 ${field("Fuel", boat.Fuel)}${field("Propulsion", boat.Propulsion)}${boat.RarityScore != null ? field("Rarity", `${boat.RarityScore}/5${boat.RarityLabel ? ` — ${boat.RarityLabel}` : ""}`) : ""}${boat.PriceLevel != null ? field("Price Level", `${boat.PriceLevel}/5${boat.PriceLevelLabel ? ` — ${boat.PriceLevelLabel}` : ""}`) : ""}
             </div></section>
             <section class="workspace-card"><h3>Why it remains a candidate</h3>${textList(positives, "No confirmed strengths have been recorded.")}</section>
@@ -399,12 +399,12 @@
 
     function renderEvidence() {
         const knowledge = getKnowledge();
-        const facts = arr(knowledge?.Facts);
         const evidence = arr(knowledge?.Evidence);
         const conflicts = arr(knowledge?.Contradictions);
+        const statements = arr(currentBoat?.EvidenceSummary?.Statements);
         return `<div class="workspace-section-stack">
             <section class="workspace-card"><h3>Source Registry</h3>${evidence.length ? `<ul class="workspace-resource-list">${evidence.map(src=>`<li><div><strong>${esc(src.Title||src.SourceID)}</strong><span>${esc(src.SourceType)} · ${esc(src.VerificationStatus)}${src.PublishedDate?` · ${esc(src.PublishedDate)}`:""}</span><p>${esc(src.Citation||src.Notes||"")}</p></div></li>`).join("")}</ul>` : `<p class="workspace-empty">No evidence sources are attached.</p>`}</section>
-            <section class="workspace-card"><h3>Fact Provenance</h3><p>${facts.length} structured facts are recorded for this model. ${facts.filter(f=>f.VerificationStatus==="Verified").length} are verified.</p><div class="workspace-fact-table"><div class="workspace-fact-table-head"><span>Attribute</span><span>Value</span><span>Confidence</span></div>${facts.slice(0,80).map(f=>`<div><span>${esc(f.AttributeID)}</span><span>${esc(f.Value)}${f.Unit?` ${esc(f.Unit)}`:""}</span><span>${esc(f.Confidence||f.VerificationStatus||"Unknown")}</span></div>`).join("")}</div></section>
+            <section class="workspace-card"><h3>Canonical Data Provenance</h3>${statements.length ? `<ul class="workspace-resource-list">${statements.map(item=>`<li><div><strong>${esc(item.Scope||"Model evidence")}</strong><span>${esc(item.Confidence||currentBoat?.DataConfidence||"Unknown")} confidence</span><p>${esc(item.Notes||"")}</p></div></li>`).join("")}</ul>` : `<p class="workspace-empty">No field-level provenance statement is recorded. Current model specifications are stored only in the canonical model record.</p>`}<p class="workspace-note">Current model-wide specification values are read directly from boatmodels.json; evidence and provenance records do not maintain a second copy.</p></section>
             <section class="workspace-card"><h3>Contradictions</h3>${conflicts.length ? textList(conflicts.map(c=>`${c.AttributeID}: ${c.Status||"Needs review"}`)) : `<p class="workspace-empty">No machine-detected contradictions are recorded. This does not imply independent verification.</p>`}</section>
         </div>`;
     }
@@ -415,7 +415,7 @@
         if (!scoreData) return `<section class="workspace-card"><h3>Model Knowledge Score</h3><p class="workspace-empty">Knowledge scoring has not been calculated.</p></section>`;
         return `<div class="workspace-section-stack">${renderKnowledgeScoreCard({limit:6})}
         <section class="workspace-card"><h3>Knowledge by category</h3><div class="workspace-coverage-grid">${scoreData.groups.map(data=>`<div><div><strong>${esc(data.label)}</strong><span>${esc(data.score)}%</span></div><div class="workspace-progress-line"><span style="width:${Number(data.score||0)}%"></span></div><small>${esc(data.known)} of ${esc(data.total)} scored facts known</small></div>`).join("")}</div></section>
-        <section class="workspace-card"><h3>Evidence status</h3><div class="workspace-fact-grid">${field("Verified Sources", coverage.VerifiedSourceCount || 0)}${field("Contradictions", coverage.ContradictionCount || 0)}${field("Relationships", coverage.RelationshipCount || 0)}${field("Structured Facts", coverage.FactCount || 0)}</div><p class="workspace-note">The Model Knowledge Score measures useful recorded knowledge. Evidence strength and contradictions are tracked separately so completeness never masquerades as certainty.</p></section></div>`;
+        <section class="workspace-card"><h3>Evidence status</h3><div class="workspace-fact-grid">${field("Verified Sources", coverage.VerifiedSourceCount || 0)}${field("Contradictions", coverage.ContradictionCount || 0)}${field("Relationships", coverage.RelationshipCount || 0)}${field("Scored Fields", coverage.ScoredFieldCount || 0)}</div><p class="workspace-note">The Model Knowledge Score measures useful recorded knowledge. Evidence strength and contradictions are tracked separately so completeness never masquerades as certainty.</p></section></div>`;
     }
 
 
@@ -504,7 +504,7 @@
             <div class="workspace-section-stack">
               <section class="workspace-card"><h3>Why people consider it</h3><p>${esc(intelligence.characterNarrative || boat.ModelCharacter || intelligence.signature || "Model character has not yet been researched.")}</p>${textList(highlights, "No confirmed strengths have been recorded.")}</section>
               <section class="workspace-card"><h3>At a glance</h3><div class="workspace-fact-grid">
-                ${field("Length", boat.LOA_ft, " ft")}${field("Beam", boat.Beam_ft, " ft")}${field("Style", boat.Style || boat.NormalizedStyle)}${field("Hull", boat.HullType || boat.NormalizedHullForm)}
+                ${field("Length", measure(boat,"LOA","length",[]))}${field("Beam", measure(boat,"Beam","length",[]))}${field("Style", boat.Style || boat.NormalizedStyle)}${field("Hull", boat.HullType || boat.NormalizedHullForm)}
                 ${field("Fuel", boat.Fuel)}${field("Propulsion", boat.Propulsion)}${boat.RarityScore != null ? field("Rarity", `${boat.RarityScore}/5${boat.RarityLabel ? ` — ${boat.RarityLabel}` : ""}`) : ""}${boat.PriceLevel != null ? field("Price Level", `${boat.PriceLevel}/5${boat.PriceLevelLabel ? ` — ${boat.PriceLevelLabel}` : ""}`) : ""}
               </div></section>
               <section class="workspace-card"><h3>Walkthroughs & Visual Resources</h3>${mediaHtml}</section>
@@ -665,9 +665,9 @@
     function guideShareTitle() { return currentBoat ? `${boatName(currentBoat)} | B-Atlas` : "B-Atlas"; }
     function guideSummary() {
         if (!currentBoat) return "";
-        const length = root.BAtlasCanonical?.formatBoatMeasurement?.(currentBoat,"LOA","length",[{key:"LOA_ft",unit:"ft"},{key:"LengthFt",unit:"ft"}],"both") || "Unknown";
-        const beam = root.BAtlasCanonical?.formatBoatMeasurement?.(currentBoat,"Beam","length",[{key:"Beam_ft",unit:"ft"},{key:"BeamFt",unit:"ft"}],"both") || "Unknown";
-        const draft = root.BAtlasCanonical?.formatBoatMeasurement?.(currentBoat,"Draft","length",[{key:"Draft_ft",unit:"ft"},{key:"DraftFt",unit:"ft"}],"both") || "Unknown";
+        const length = root.BAtlasCanonical?.formatBoatMeasurement?.(currentBoat,"LOA","length",[],"both") || "Unknown";
+        const beam = root.BAtlasCanonical?.formatBoatMeasurement?.(currentBoat,"Beam","length",[],"both") || "Unknown";
+        const draft = root.BAtlasCanonical?.formatBoatMeasurement?.(currentBoat,"Draft","length",[],"both") || "Unknown";
         const fuel = currentBoat.NormalizedFuel || currentBoat.Fuel || "Fuel unknown";
         const propulsion = currentBoat.NormalizedPropulsion || currentBoat.Propulsion || "Propulsion unknown";
         const score = root.BAtlasModelKnowledgeScore?.scoreModel?.(currentBoat)?.score;

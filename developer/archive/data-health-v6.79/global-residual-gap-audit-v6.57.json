@@ -1,0 +1,3798 @@
+{
+  "release": "v6.57.0",
+  "audit": "Global Residual-Gap Audit",
+  "baseline": "v6.56.0",
+  "canonicalModelCount": 259,
+  "manufacturerCount": 69,
+  "completionPassManufacturers": 55,
+  "unreviewedManufacturers": 14,
+  "unreviewedManufacturerNames": [
+    "Atlantic",
+    "Atlantic Boat",
+    "Californian",
+    "Gozzard",
+    "Great Harbour",
+    "Luhrs",
+    "Nordhavn",
+    "Oceania Yachts",
+    "PDQ",
+    "Saga",
+    "SeaPiper",
+    "Sealord",
+    "Shannon",
+    "Transpacific Marine"
+  ],
+  "unreviewedModelCount": 16,
+  "coreMissingCounts": {
+    "LOA": 16,
+    "LWL": 118,
+    "Beam": 13,
+    "Draft": 22,
+    "AirDraft": 117,
+    "Displacement": 27,
+    "FuelCode": 2,
+    "MechanicalPropulsionCode": 1,
+    "HullBehaviourCode": 0,
+    "KeelConfigurationCode": 91,
+    "RudderTypeCode": 197
+  },
+  "coreMissingTotal": 604,
+  "headroomMissingCount": 229,
+  "headroomKnownCount": 30,
+  "capacityUnitAudit": [
+    {
+      "field": "FuelCapacity",
+      "missingValueCount": 10,
+      "unitStatusCounts": {
+        "legacy_gallon_basis_unverified": 94,
+        "canonical_litres": 31,
+        "unit_unverified": 100,
+        "None": 1,
+        "unknown": 4,
+        "conflicting_legacy_capacity_values": 22,
+        "canonical_litres_assumed_us_gal": 7
+      }
+    },
+    {
+      "field": "WaterCapacity",
+      "missingValueCount": 15,
+      "unitStatusCounts": {
+        "conflicting_legacy_capacity_values": 23,
+        "legacy_gallon_basis_unverified": 87,
+        "canonical_litres": 31,
+        "unit_unverified": 103,
+        "None": 1,
+        "unknown": 7,
+        "canonical_litres_assumed_us_gal": 7
+      }
+    },
+    {
+      "field": "HoldingCapacity",
+      "missingValueCount": 34,
+      "unitStatusCounts": {
+        "unit_unverified": 223,
+        "canonical_litres": 22,
+        "None": 1,
+        "unknown": 8,
+        "canonical_litres_assumed_us_gal": 5
+      }
+    }
+  ],
+  "manufacturerResiduals": [
+    {
+      "Manufacturer": "Albin",
+      "ModelCount": 9,
+      "CompletionPassStatus": "completed",
+      "MissingCoreFields": {
+        "AirDraft": 8,
+        "RudderTypeCode": 8,
+        "LWL": 3
+      },
+      "MissingCoreTotal": 19
+    },
+    {
+      "Manufacturer": "American Tug",
+      "ModelCount": 3,
+      "CompletionPassStatus": "completed",
+      "MissingCoreFields": {
+        "AirDraft": 3
+      },
+      "MissingCoreTotal": 3
+    },
+    {
+      "Manufacturer": "Atlantic",
+      "ModelCount": 1,
+      "CompletionPassStatus": "not_completed",
+      "MissingCoreFields": {
+        "LWL": 1,
+        "RudderTypeCode": 1
+      },
+      "MissingCoreTotal": 2
+    },
+    {
+      "Manufacturer": "Atlantic Boat",
+      "ModelCount": 1,
+      "CompletionPassStatus": "not_completed",
+      "MissingCoreFields": {
+        "LWL": 1,
+        "AirDraft": 1,
+        "Displacement": 1,
+        "RudderTypeCode": 1
+      },
+      "MissingCoreTotal": 4
+    },
+    {
+      "Manufacturer": "BHM",
+      "ModelCount": 1,
+      "CompletionPassStatus": "completed",
+      "MissingCoreFields": {
+        "LWL": 1,
+        "AirDraft": 1,
+        "Displacement": 1,
+        "RudderTypeCode": 1
+      },
+      "MissingCoreTotal": 4
+    },
+    {
+      "Manufacturer": "Back Cove",
+      "ModelCount": 9,
+      "CompletionPassStatus": "completed",
+      "MissingCoreFields": {
+        "LWL": 9,
+        "RudderTypeCode": 8,
+        "Displacement": 2,
+        "AirDraft": 1,
+        "KeelConfigurationCode": 1
+      },
+      "MissingCoreTotal": 21
+    },
+    {
+      "Manufacturer": "Bayliner",
+      "ModelCount": 12,
+      "CompletionPassStatus": "completed",
+      "MissingCoreFields": {
+        "KeelConfigurationCode": 10,
+        "RudderTypeCode": 6,
+        "LOA": 1,
+        "Beam": 1,
+        "Draft": 1,
+        "Displacement": 1
+      },
+      "MissingCoreTotal": 20
+    },
+    {
+      "Manufacturer": "Beneteau",
+      "ModelCount": 13,
+      "CompletionPassStatus": "completed",
+      "MissingCoreFields": {
+        "KeelConfigurationCode": 7,
+        "RudderTypeCode": 6
+      },
+      "MissingCoreTotal": 13
+    },
+    {
+      "Manufacturer": "C-Dory",
+      "ModelCount": 5,
+      "CompletionPassStatus": "completed",
+      "MissingCoreFields": {
+        "LWL": 5,
+        "AirDraft": 5,
+        "KeelConfigurationCode": 4,
+        "Draft": 2,
+        "LOA": 1,
+        "Beam": 1,
+        "Displacement": 1
+      },
+      "MissingCoreTotal": 19
+    },
+    {
+      "Manufacturer": "CHB",
+      "ModelCount": 5,
+      "CompletionPassStatus": "completed",
+      "MissingCoreFields": {
+        "LOA": 3,
+        "LWL": 3,
+        "Beam": 3,
+        "Draft": 3,
+        "AirDraft": 5,
+        "Displacement": 3,
+        "RudderTypeCode": 5
+      },
+      "MissingCoreTotal": 25
+    },
+    {
+      "Manufacturer": "Californian",
+      "ModelCount": 2,
+      "CompletionPassStatus": "not_completed",
+      "MissingCoreFields": {
+        "LWL": 1,
+        "RudderTypeCode": 2,
+        "AirDraft": 1
+      },
+      "MissingCoreTotal": 4
+    },
+    {
+      "Manufacturer": "Camano",
+      "ModelCount": 3,
+      "CompletionPassStatus": "completed",
+      "MissingCoreFields": {
+        "AirDraft": 3,
+        "Displacement": 1,
+        "RudderTypeCode": 3
+      },
+      "MissingCoreTotal": 7
+    },
+    {
+      "Manufacturer": "Cape Dory",
+      "ModelCount": 7,
+      "CompletionPassStatus": "completed",
+      "MissingCoreFields": {
+        "Displacement": 2,
+        "RudderTypeCode": 7,
+        "AirDraft": 1,
+        "LWL": 4
+      },
+      "MissingCoreTotal": 14
+    },
+    {
+      "Manufacturer": "Carver",
+      "ModelCount": 9,
+      "CompletionPassStatus": "completed",
+      "MissingCoreFields": {
+        "LWL": 7,
+        "KeelConfigurationCode": 8,
+        "RudderTypeCode": 9,
+        "AirDraft": 2,
+        "LOA": 1
+      },
+      "MissingCoreTotal": 27
+    },
+    {
+      "Manufacturer": "Cheoy Lee",
+      "ModelCount": 4,
+      "CompletionPassStatus": "completed",
+      "MissingCoreFields": {
+        "LWL": 2,
+        "AirDraft": 4,
+        "RudderTypeCode": 4,
+        "Displacement": 1
+      },
+      "MissingCoreTotal": 11
+    },
+    {
+      "Manufacturer": "Cruisers Yachts",
+      "ModelCount": 10,
+      "CompletionPassStatus": "completed",
+      "MissingCoreFields": {
+        "KeelConfigurationCode": 10,
+        "RudderTypeCode": 6
+      },
+      "MissingCoreTotal": 16
+    },
+    {
+      "Manufacturer": "Cutwater",
+      "ModelCount": 6,
+      "CompletionPassStatus": "completed",
+      "MissingCoreFields": {
+        "LWL": 6,
+        "AirDraft": 2,
+        "KeelConfigurationCode": 1,
+        "RudderTypeCode": 4,
+        "LOA": 1,
+        "Displacement": 1
+      },
+      "MissingCoreTotal": 15
+    },
+    {
+      "Manufacturer": "DeFever",
+      "ModelCount": 8,
+      "CompletionPassStatus": "completed",
+      "MissingCoreFields": {
+        "AirDraft": 7,
+        "RudderTypeCode": 8,
+        "LWL": 2
+      },
+      "MissingCoreTotal": 17
+    },
+    {
+      "Manufacturer": "Duffy",
+      "ModelCount": 6,
+      "CompletionPassStatus": "completed",
+      "MissingCoreFields": {
+        "LOA": 2,
+        "LWL": 3,
+        "Beam": 2,
+        "Draft": 2,
+        "AirDraft": 5,
+        "Displacement": 2,
+        "RudderTypeCode": 5
+      },
+      "MissingCoreTotal": 21
+    },
+    {
+      "Manufacturer": "Endeavour",
+      "ModelCount": 2,
+      "CompletionPassStatus": "completed",
+      "MissingCoreFields": {
+        "RudderTypeCode": 2,
+        "AirDraft": 1,
+        "KeelConfigurationCode": 1
+      },
+      "MissingCoreTotal": 4
+    },
+    {
+      "Manufacturer": "Fjord",
+      "ModelCount": 4,
+      "CompletionPassStatus": "completed",
+      "MissingCoreFields": {
+        "LWL": 3,
+        "Draft": 1,
+        "AirDraft": 1,
+        "KeelConfigurationCode": 4,
+        "RudderTypeCode": 1
+      },
+      "MissingCoreTotal": 10
+    },
+    {
+      "Manufacturer": "Fortier",
+      "ModelCount": 2,
+      "CompletionPassStatus": "completed",
+      "MissingCoreFields": {
+        "LWL": 2,
+        "AirDraft": 2,
+        "RudderTypeCode": 2
+      },
+      "MissingCoreTotal": 6
+    },
+    {
+      "Manufacturer": "Gozzard",
+      "ModelCount": 1,
+      "CompletionPassStatus": "not_completed",
+      "MissingCoreFields": {
+        "LWL": 1,
+        "AirDraft": 1,
+        "RudderTypeCode": 1
+      },
+      "MissingCoreTotal": 3
+    },
+    {
+      "Manufacturer": "Grand Banks",
+      "ModelCount": 6,
+      "CompletionPassStatus": "completed",
+      "MissingCoreFields": {
+        "AirDraft": 3,
+        "RudderTypeCode": 6,
+        "LOA": 2,
+        "Beam": 2
+      },
+      "MissingCoreTotal": 13
+    },
+    {
+      "Manufacturer": "Great Harbour",
+      "ModelCount": 2,
+      "CompletionPassStatus": "not_completed",
+      "MissingCoreFields": {
+        "AirDraft": 2,
+        "RudderTypeCode": 2
+      },
+      "MissingCoreTotal": 4
+    },
+    {
+      "Manufacturer": "Greenline",
+      "ModelCount": 2,
+      "CompletionPassStatus": "completed",
+      "MissingCoreFields": {
+        "LWL": 2,
+        "RudderTypeCode": 2
+      },
+      "MissingCoreTotal": 4
+    },
+    {
+      "Manufacturer": "Gulfstar",
+      "ModelCount": 4,
+      "CompletionPassStatus": "completed",
+      "MissingCoreFields": {
+        "RudderTypeCode": 4,
+        "LWL": 1
+      },
+      "MissingCoreTotal": 5
+    },
+    {
+      "Manufacturer": "Helmsman",
+      "ModelCount": 4,
+      "CompletionPassStatus": "completed",
+      "MissingCoreFields": {
+        "LWL": 3,
+        "AirDraft": 3,
+        "RudderTypeCode": 4
+      },
+      "MissingCoreTotal": 10
+    },
+    {
+      "Manufacturer": "Holiday Mansion",
+      "ModelCount": 1,
+      "CompletionPassStatus": "completed",
+      "MissingCoreFields": {
+        "LWL": 1,
+        "AirDraft": 1,
+        "KeelConfigurationCode": 1,
+        "RudderTypeCode": 1
+      },
+      "MissingCoreTotal": 4
+    },
+    {
+      "Manufacturer": "Hunt Yachts",
+      "ModelCount": 2,
+      "CompletionPassStatus": "completed",
+      "MissingCoreFields": {
+        "LWL": 2,
+        "KeelConfigurationCode": 2,
+        "AirDraft": 1,
+        "RudderTypeCode": 1
+      },
+      "MissingCoreTotal": 6
+    },
+    {
+      "Manufacturer": "Island Gypsy",
+      "ModelCount": 7,
+      "CompletionPassStatus": "completed",
+      "MissingCoreFields": {
+        "RudderTypeCode": 6,
+        "AirDraft": 2
+      },
+      "MissingCoreTotal": 8
+    },
+    {
+      "Manufacturer": "Jeanneau",
+      "ModelCount": 9,
+      "CompletionPassStatus": "completed",
+      "MissingCoreFields": {
+        "KeelConfigurationCode": 9,
+        "Beam": 1,
+        "LOA": 1,
+        "Draft": 1,
+        "Displacement": 1
+      },
+      "MissingCoreTotal": 13
+    },
+    {
+      "Manufacturer": "Kadey-Krogen",
+      "ModelCount": 6,
+      "CompletionPassStatus": "completed",
+      "MissingCoreFields": {
+        "RudderTypeCode": 6,
+        "AirDraft": 4
+      },
+      "MissingCoreTotal": 10
+    },
+    {
+      "Manufacturer": "Luhrs",
+      "ModelCount": 1,
+      "CompletionPassStatus": "not_completed",
+      "MissingCoreFields": {
+        "AirDraft": 1,
+        "RudderTypeCode": 1
+      },
+      "MissingCoreTotal": 2
+    },
+    {
+      "Manufacturer": "Mainship",
+      "ModelCount": 8,
+      "CompletionPassStatus": "completed",
+      "MissingCoreFields": {
+        "LWL": 5,
+        "Draft": 1,
+        "AirDraft": 1,
+        "RudderTypeCode": 8
+      },
+      "MissingCoreTotal": 15
+    },
+    {
+      "Manufacturer": "Marine Trader",
+      "ModelCount": 7,
+      "CompletionPassStatus": "completed",
+      "MissingCoreFields": {
+        "LOA": 2,
+        "LWL": 2,
+        "Beam": 2,
+        "Draft": 2,
+        "AirDraft": 6,
+        "Displacement": 2,
+        "RudderTypeCode": 7
+      },
+      "MissingCoreTotal": 23
+    },
+    {
+      "Manufacturer": "Meridian",
+      "ModelCount": 3,
+      "CompletionPassStatus": "completed",
+      "MissingCoreFields": {
+        "LWL": 3,
+        "KeelConfigurationCode": 3,
+        "RudderTypeCode": 3
+      },
+      "MissingCoreTotal": 9
+    },
+    {
+      "Manufacturer": "Monk",
+      "ModelCount": 1,
+      "CompletionPassStatus": "completed",
+      "MissingCoreFields": {
+        "RudderTypeCode": 1
+      },
+      "MissingCoreTotal": 1
+    },
+    {
+      "Manufacturer": "Nimble",
+      "ModelCount": 2,
+      "CompletionPassStatus": "completed",
+      "MissingCoreFields": {
+        "AirDraft": 2
+      },
+      "MissingCoreTotal": 2
+    },
+    {
+      "Manufacturer": "Nimbus",
+      "ModelCount": 2,
+      "CompletionPassStatus": "completed",
+      "MissingCoreFields": {
+        "LWL": 2,
+        "AirDraft": 1,
+        "KeelConfigurationCode": 2,
+        "RudderTypeCode": 2
+      },
+      "MissingCoreTotal": 7
+    },
+    {
+      "Manufacturer": "Nord Star",
+      "ModelCount": 1,
+      "CompletionPassStatus": "completed",
+      "MissingCoreFields": {
+        "LWL": 1,
+        "Draft": 1,
+        "AirDraft": 1,
+        "KeelConfigurationCode": 1
+      },
+      "MissingCoreTotal": 4
+    },
+    {
+      "Manufacturer": "Nordhavn",
+      "ModelCount": 1,
+      "CompletionPassStatus": "not_completed",
+      "MissingCoreFields": {
+        "Draft": 1,
+        "AirDraft": 1,
+        "RudderTypeCode": 1
+      },
+      "MissingCoreTotal": 3
+    },
+    {
+      "Manufacturer": "Nordic Tugs",
+      "ModelCount": 6,
+      "CompletionPassStatus": "completed",
+      "MissingCoreFields": {
+        "RudderTypeCode": 6,
+        "AirDraft": 4
+      },
+      "MissingCoreTotal": 10
+    },
+    {
+      "Manufacturer": "North Pacific",
+      "ModelCount": 2,
+      "CompletionPassStatus": "completed",
+      "MissingCoreFields": {
+        "Draft": 1,
+        "RudderTypeCode": 2,
+        "LWL": 1,
+        "AirDraft": 1
+      },
+      "MissingCoreTotal": 5
+    },
+    {
+      "Manufacturer": "Ocean Alexander",
+      "ModelCount": 1,
+      "CompletionPassStatus": "completed",
+      "MissingCoreFields": {
+        "LOA": 1,
+        "LWL": 1,
+        "AirDraft": 1,
+        "Displacement": 1,
+        "RudderTypeCode": 1
+      },
+      "MissingCoreTotal": 5
+    },
+    {
+      "Manufacturer": "Oceania Yachts",
+      "ModelCount": 1,
+      "CompletionPassStatus": "not_completed",
+      "MissingCoreFields": {
+        "LWL": 1,
+        "AirDraft": 1,
+        "RudderTypeCode": 1
+      },
+      "MissingCoreTotal": 3
+    },
+    {
+      "Manufacturer": "PDQ",
+      "ModelCount": 1,
+      "CompletionPassStatus": "not_completed",
+      "MissingCoreFields": {
+        "AirDraft": 1,
+        "RudderTypeCode": 1
+      },
+      "MissingCoreTotal": 2
+    },
+    {
+      "Manufacturer": "Prairie",
+      "ModelCount": 2,
+      "CompletionPassStatus": "completed",
+      "MissingCoreFields": {
+        "AirDraft": 1,
+        "RudderTypeCode": 2,
+        "LWL": 1
+      },
+      "MissingCoreTotal": 4
+    },
+    {
+      "Manufacturer": "Ranger Tugs",
+      "ModelCount": 16,
+      "CompletionPassStatus": "completed",
+      "MissingCoreFields": {
+        "LWL": 14,
+        "KeelConfigurationCode": 12,
+        "RudderTypeCode": 10
+      },
+      "MissingCoreTotal": 36
+    },
+    {
+      "Manufacturer": "Rosborough",
+      "ModelCount": 3,
+      "CompletionPassStatus": "completed",
+      "MissingCoreFields": {
+        "Draft": 3,
+        "AirDraft": 3,
+        "Displacement": 3
+      },
+      "MissingCoreTotal": 9
+    },
+    {
+      "Manufacturer": "Sabre",
+      "ModelCount": 2,
+      "CompletionPassStatus": "completed",
+      "MissingCoreFields": {
+        "LWL": 1,
+        "KeelConfigurationCode": 2,
+        "RudderTypeCode": 1
+      },
+      "MissingCoreTotal": 4
+    },
+    {
+      "Manufacturer": "Saga",
+      "ModelCount": 1,
+      "CompletionPassStatus": "not_completed",
+      "MissingCoreFields": {
+        "LWL": 1,
+        "AirDraft": 1,
+        "RudderTypeCode": 1
+      },
+      "MissingCoreTotal": 3
+    },
+    {
+      "Manufacturer": "Sea Ray",
+      "ModelCount": 4,
+      "CompletionPassStatus": "completed",
+      "MissingCoreFields": {
+        "LWL": 4,
+        "AirDraft": 3,
+        "KeelConfigurationCode": 4,
+        "RudderTypeCode": 4
+      },
+      "MissingCoreTotal": 15
+    },
+    {
+      "Manufacturer": "Sea Sport",
+      "ModelCount": 3,
+      "CompletionPassStatus": "completed",
+      "MissingCoreFields": {
+        "LWL": 3,
+        "AirDraft": 3,
+        "KeelConfigurationCode": 3,
+        "Draft": 1,
+        "RudderTypeCode": 1
+      },
+      "MissingCoreTotal": 11
+    },
+    {
+      "Manufacturer": "SeaPiper",
+      "ModelCount": 1,
+      "CompletionPassStatus": "not_completed",
+      "MissingCoreFields": {
+        "RudderTypeCode": 1
+      },
+      "MissingCoreTotal": 1
+    },
+    {
+      "Manufacturer": "Seahorse",
+      "ModelCount": 2,
+      "CompletionPassStatus": "completed",
+      "MissingCoreFields": {
+        "AirDraft": 2,
+        "LWL": 1,
+        "Displacement": 1
+      },
+      "MissingCoreTotal": 4
+    },
+    {
+      "Manufacturer": "Sealord",
+      "ModelCount": 1,
+      "CompletionPassStatus": "not_completed",
+      "MissingCoreFields": {
+        "LWL": 1,
+        "AirDraft": 1,
+        "RudderTypeCode": 1
+      },
+      "MissingCoreTotal": 3
+    },
+    {
+      "Manufacturer": "Seaway",
+      "ModelCount": 2,
+      "CompletionPassStatus": "completed",
+      "MissingCoreFields": {
+        "LWL": 2,
+        "Draft": 1,
+        "AirDraft": 2,
+        "Displacement": 1,
+        "FuelCode": 1,
+        "MechanicalPropulsionCode": 1,
+        "RudderTypeCode": 2
+      },
+      "MissingCoreTotal": 10
+    },
+    {
+      "Manufacturer": "Shannon",
+      "ModelCount": 1,
+      "CompletionPassStatus": "not_completed",
+      "MissingCoreFields": {
+        "AirDraft": 1,
+        "RudderTypeCode": 1
+      },
+      "MissingCoreTotal": 2
+    },
+    {
+      "Manufacturer": "Silverton",
+      "ModelCount": 4,
+      "CompletionPassStatus": "completed",
+      "MissingCoreFields": {
+        "LWL": 4,
+        "AirDraft": 1,
+        "KeelConfigurationCode": 4,
+        "RudderTypeCode": 4
+      },
+      "MissingCoreTotal": 13
+    },
+    {
+      "Manufacturer": "Sisu",
+      "ModelCount": 2,
+      "CompletionPassStatus": "completed",
+      "MissingCoreFields": {
+        "LWL": 2,
+        "AirDraft": 2,
+        "Displacement": 1,
+        "RudderTypeCode": 2
+      },
+      "MissingCoreTotal": 7
+    },
+    {
+      "Manufacturer": "Tollycraft",
+      "ModelCount": 2,
+      "CompletionPassStatus": "completed",
+      "MissingCoreFields": {
+        "RudderTypeCode": 2,
+        "LWL": 1,
+        "FuelCode": 1
+      },
+      "MissingCoreTotal": 4
+    },
+    {
+      "Manufacturer": "Transpacific Marine",
+      "ModelCount": 1,
+      "CompletionPassStatus": "not_completed",
+      "MissingCoreFields": {
+        "AirDraft": 1,
+        "RudderTypeCode": 1
+      },
+      "MissingCoreTotal": 2
+    },
+    {
+      "Manufacturer": "Trojan",
+      "ModelCount": 1,
+      "CompletionPassStatus": "completed",
+      "MissingCoreFields": {
+        "LWL": 1,
+        "KeelConfigurationCode": 1,
+        "RudderTypeCode": 1
+      },
+      "MissingCoreTotal": 3
+    },
+    {
+      "Manufacturer": "True North",
+      "ModelCount": 1,
+      "CompletionPassStatus": "completed",
+      "MissingCoreFields": {
+        "LOA": 1,
+        "AirDraft": 1,
+        "RudderTypeCode": 1
+      },
+      "MissingCoreTotal": 3
+    },
+    {
+      "Manufacturer": "Uniflite",
+      "ModelCount": 1,
+      "CompletionPassStatus": "completed",
+      "MissingCoreFields": {
+        "KeelConfigurationCode": 1,
+        "RudderTypeCode": 1
+      },
+      "MissingCoreTotal": 2
+    },
+    {
+      "Manufacturer": "Universal",
+      "ModelCount": 2,
+      "CompletionPassStatus": "completed",
+      "MissingCoreFields": {
+        "AirDraft": 1,
+        "RudderTypeCode": 1
+      },
+      "MissingCoreTotal": 2
+    },
+    {
+      "Manufacturer": "Willard",
+      "ModelCount": 3,
+      "CompletionPassStatus": "completed",
+      "MissingCoreFields": {
+        "AirDraft": 3,
+        "RudderTypeCode": 3,
+        "LWL": 2,
+        "Beam": 1,
+        "Draft": 1,
+        "Displacement": 1
+      },
+      "MissingCoreTotal": 11
+    },
+    {
+      "Manufacturer": "Windy",
+      "ModelCount": 1,
+      "CompletionPassStatus": "completed",
+      "MissingCoreFields": {
+        "LWL": 1,
+        "RudderTypeCode": 1
+      },
+      "MissingCoreTotal": 2
+    }
+  ],
+  "residualRecords": [
+    {
+      "BoatModelID": "ALBN-25",
+      "Manufacturer": "Albin",
+      "Model": "25",
+      "Variant": "Motor Cruiser",
+      "MissingFields": [
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "ALBN-27-FC",
+      "Manufacturer": "Albin",
+      "Model": "27",
+      "Variant": "Family Cruiser",
+      "MissingFields": [
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "ALBN-27-SP",
+      "Manufacturer": "Albin",
+      "Model": "27",
+      "Variant": "Sport Cruiser",
+      "MissingFields": [
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "ALBN-28-TE-EB",
+      "Manufacturer": "Albin",
+      "Model": "28 Tournament Express",
+      "Variant": "Engine Box",
+      "MissingFields": [
+        "LWL",
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "ALBN-28-FL",
+      "Manufacturer": "Albin",
+      "Model": "28 Tournament Express",
+      "Variant": "Flush Deck",
+      "MissingFields": [
+        "LWL",
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "ALBN-30-FC",
+      "Manufacturer": "Albin",
+      "Model": "30",
+      "Variant": "Family Cruiser",
+      "MissingFields": [
+        "AirDraft"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "ALBN-32-PL",
+      "Manufacturer": "Albin",
+      "Model": "32+2",
+      "Variant": "Command Bridge",
+      "MissingFields": [
+        "LWL",
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "ALBN-36-CL",
+      "Manufacturer": "Albin",
+      "Model": "36",
+      "Variant": "Trawler",
+      "MissingFields": [
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "ALBN-40-TR",
+      "Manufacturer": "Albin",
+      "Model": "40",
+      "Variant": "Trawler",
+      "MissingFields": [
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "AMTG-34",
+      "Manufacturer": "American Tug",
+      "Model": "34",
+      "Variant": null,
+      "MissingFields": [
+        "AirDraft"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "AMTG-365",
+      "Manufacturer": "American Tug",
+      "Model": "365",
+      "Variant": null,
+      "MissingFields": [
+        "AirDraft"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "AMTG-395",
+      "Manufacturer": "American Tug",
+      "Model": "395",
+      "Variant": null,
+      "MissingFields": [
+        "AirDraft"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "ATLB-37-TR",
+      "Manufacturer": "Atlantic",
+      "Model": "37",
+      "Variant": "Double Cabin",
+      "MissingFields": [
+        "LWL",
+        "RudderTypeCode"
+      ],
+      "Category": "manufacturer_completion_pass_not_yet_run"
+    },
+    {
+      "BoatModelID": "ATLB-26-DU",
+      "Manufacturer": "Atlantic Boat",
+      "Model": "Duffy 26",
+      "Variant": "Semi-Custom Downeast Hull",
+      "MissingFields": [
+        "LWL",
+        "AirDraft",
+        "Displacement",
+        "RudderTypeCode"
+      ],
+      "Category": "manufacturer_completion_pass_not_yet_run"
+    },
+    {
+      "BoatModelID": "BKCV-26",
+      "Manufacturer": "Back Cove",
+      "Model": "26",
+      "Variant": "Downeast Cruiser",
+      "MissingFields": [
+        "LWL",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "BKCV-29",
+      "Manufacturer": "Back Cove",
+      "Model": "29",
+      "Variant": "Downeast Cruiser",
+      "MissingFields": [
+        "LWL",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "BKCV-30",
+      "Manufacturer": "Back Cove",
+      "Model": "30",
+      "Variant": "Downeast Cruiser",
+      "MissingFields": [
+        "LWL",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "BKCV-32",
+      "Manufacturer": "Back Cove",
+      "Model": "32",
+      "Variant": "Downeast Cruiser",
+      "MissingFields": [
+        "LWL",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "BKCV-33",
+      "Manufacturer": "Back Cove",
+      "Model": "33",
+      "Variant": "Downeast Cruiser",
+      "MissingFields": [
+        "LWL",
+        "Displacement",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "BKCV-34",
+      "Manufacturer": "Back Cove",
+      "Model": "34",
+      "Variant": "Downeast Cruiser",
+      "MissingFields": [
+        "LWL",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "BKCV-37",
+      "Manufacturer": "Back Cove",
+      "Model": "37",
+      "Variant": "Downeast Cruiser",
+      "MissingFields": [
+        "LWL",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "BKCV-39O",
+      "Manufacturer": "Back Cove",
+      "Model": "39O",
+      "Variant": "Outboard Salon Cruiser",
+      "MissingFields": [
+        "LWL",
+        "AirDraft",
+        "Displacement",
+        "KeelConfigurationCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "BKCV-41",
+      "Manufacturer": "Back Cove",
+      "Model": "41",
+      "Variant": "Flagship Downeast Cruiser",
+      "MissingFields": [
+        "LWL",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "BAYL-2452",
+      "Manufacturer": "Bayliner",
+      "Model": "2452 Ciera Express",
+      "Variant": "Hardtop Cruiser",
+      "MissingFields": [
+        "KeelConfigurationCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "BAYL-2855",
+      "Manufacturer": "Bayliner",
+      "Model": "2855 Ciera Sunbridge",
+      "Variant": "Multi-Generation Sunbridge",
+      "MissingFields": [
+        "KeelConfigurationCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "BAYL-2859",
+      "Manufacturer": "Bayliner",
+      "Model": "2859 Ciera Express",
+      "Variant": "Hardtop Cruiser",
+      "MissingFields": [
+        "KeelConfigurationCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "BAYL-3055",
+      "Manufacturer": "Bayliner",
+      "Model": "3055 Ciera Sunbridge / 305 SB",
+      "Variant": "Express Cruiser",
+      "MissingFields": [
+        "KeelConfigurationCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "BAYL-3058",
+      "Manufacturer": "Bayliner",
+      "Model": "3058 Command Bridge",
+      "Variant": "Command Bridge Cruiser",
+      "MissingFields": [
+        "KeelConfigurationCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "BAYL-3218",
+      "Manufacturer": "Bayliner",
+      "Model": "3218 Motoryacht",
+      "Variant": "Flybridge Motor Yacht",
+      "MissingFields": [
+        "KeelConfigurationCode",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "BAYL-3258",
+      "Manufacturer": "Bayliner",
+      "Model": "3258 Command Bridge",
+      "Variant": "Command Bridge Cruiser",
+      "MissingFields": [
+        "KeelConfigurationCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "BAYL-3288-MO",
+      "Manufacturer": "Bayliner",
+      "Model": "3270 / 3288 Motor Yacht",
+      "Variant": "Explorer / Motor Yacht",
+      "MissingFields": [
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "BAYL-3388",
+      "Manufacturer": "Bayliner",
+      "Model": "3388 Motor Yacht",
+      "Variant": "Flybridge Motor Yacht",
+      "MissingFields": [
+        "KeelConfigurationCode",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "BAYL-3788",
+      "Manufacturer": "Bayliner",
+      "Model": "3788 Motor Yacht",
+      "Variant": "Two-Generation Flybridge Motor Yacht",
+      "MissingFields": [
+        "LOA",
+        "Beam",
+        "Draft",
+        "Displacement",
+        "KeelConfigurationCode",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "BAYL-3888-MO",
+      "Manufacturer": "Bayliner",
+      "Model": "3870 / 3888 Motor Yacht",
+      "Variant": "Mid-Cabin Flybridge Motor Yacht",
+      "MissingFields": [
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "BAYL-4087",
+      "Manufacturer": "Bayliner",
+      "Model": "4087 Cockpit Motor Yacht",
+      "Variant": "Cockpit Motor Yacht",
+      "MissingFields": [
+        "KeelConfigurationCode",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "BENE-ANT-11",
+      "Manufacturer": "Beneteau",
+      "Model": "Antares 11",
+      "Variant": "Coupé",
+      "MissingFields": [
+        "KeelConfigurationCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "BENE-30-SW",
+      "Manufacturer": "Beneteau",
+      "Model": "Swift Trawler 30",
+      "Variant": "Flybridge",
+      "MissingFields": [
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "BENE-34-SW",
+      "Manufacturer": "Beneteau",
+      "Model": "Swift Trawler 34",
+      "Variant": "Flybridge or Sedan",
+      "MissingFields": [
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "BENE-35-SW",
+      "Manufacturer": "Beneteau",
+      "Model": "Swift Trawler 35",
+      "Variant": "Flybridge",
+      "MissingFields": [
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "BENE-47",
+      "Manufacturer": "Beneteau",
+      "Model": "Swift Trawler 47",
+      "Variant": "Flybridge",
+      "MissingFields": [
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "BENE-48",
+      "Manufacturer": "Beneteau",
+      "Model": "Swift Trawler 48",
+      "Variant": "Flybridge",
+      "MissingFields": [
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "BENE-52",
+      "Manufacturer": "Beneteau",
+      "Model": "Swift Trawler 52",
+      "Variant": "Flybridge Flagship",
+      "MissingFields": [
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "BENE-ANT-7",
+      "Manufacturer": "Beneteau",
+      "Model": "Antares 7",
+      "Variant": "Cruising / Fishing",
+      "MissingFields": [
+        "KeelConfigurationCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "BENE-ANT-8",
+      "Manufacturer": "Beneteau",
+      "Model": "Antares 8",
+      "Variant": "Cruising / Fishing",
+      "MissingFields": [
+        "KeelConfigurationCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "BENE-BAR-8",
+      "Manufacturer": "Beneteau",
+      "Model": "Barracuda 8",
+      "Variant": "Sport-Fishing Pilothouse",
+      "MissingFields": [
+        "KeelConfigurationCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "BENE-ANT-9",
+      "Manufacturer": "Beneteau",
+      "Model": "Antares 9",
+      "Variant": "Generation 1",
+      "MissingFields": [
+        "KeelConfigurationCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "BENE-BAR-9",
+      "Manufacturer": "Beneteau",
+      "Model": "Barracuda 9",
+      "Variant": "Sport-Fishing Pilothouse",
+      "MissingFields": [
+        "KeelConfigurationCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "BHMB-32",
+      "Manufacturer": "BHM",
+      "Model": "32",
+      "Variant": "Flye Point / Semi-Custom Downeast",
+      "MissingFields": [
+        "LWL",
+        "AirDraft",
+        "Displacement",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "CDRY-22-CR",
+      "Manufacturer": "C-Dory",
+      "Model": "22 Cruiser",
+      "Variant": "Cruiser",
+      "MissingFields": [
+        "LWL",
+        "AirDraft",
+        "KeelConfigurationCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "CDRY-25-CR",
+      "Manufacturer": "C-Dory",
+      "Model": "25 Cruiser",
+      "Variant": "Cruiser",
+      "MissingFields": [
+        "LWL",
+        "AirDraft",
+        "KeelConfigurationCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "CDRY-25-TC",
+      "Manufacturer": "C-Dory",
+      "Model": "TomCat 255",
+      "Variant": "Power Catamaran",
+      "MissingFields": [
+        "LWL",
+        "Draft",
+        "AirDraft"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "CDRY-26-PA",
+      "Manufacturer": "C-Dory",
+      "Model": "26 Pro Angler",
+      "Variant": "Walkaround Fishing",
+      "MissingFields": [
+        "LOA",
+        "LWL",
+        "Beam",
+        "Draft",
+        "AirDraft",
+        "Displacement",
+        "KeelConfigurationCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "CDRY-26-V",
+      "Manufacturer": "C-Dory",
+      "Model": "26 Venture",
+      "Variant": "Venture Cruiser",
+      "MissingFields": [
+        "LWL",
+        "AirDraft",
+        "KeelConfigurationCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "CALF-34-TR",
+      "Manufacturer": "Californian",
+      "Model": "34 LRC",
+      "Variant": "Long Range Cruiser",
+      "MissingFields": [
+        "LWL",
+        "RudderTypeCode"
+      ],
+      "Category": "manufacturer_completion_pass_not_yet_run"
+    },
+    {
+      "BoatModelID": "CALF-38-TR",
+      "Manufacturer": "Californian",
+      "Model": "38 LRC Sedan",
+      "Variant": "Long Range Cruiser Sedan",
+      "MissingFields": [
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "manufacturer_completion_pass_not_yet_run"
+    },
+    {
+      "BoatModelID": "CAMA-28-GN",
+      "Manufacturer": "Camano",
+      "Model": "28/31",
+      "Variant": "Gnome",
+      "MissingFields": [
+        "AirDraft",
+        "Displacement",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "CAMA-31-TR",
+      "Manufacturer": "Camano",
+      "Model": "28/31",
+      "Variant": "Troll",
+      "MissingFields": [
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "CAMA-41",
+      "Manufacturer": "Camano",
+      "Model": "41",
+      "Variant": "Trawler",
+      "MissingFields": [
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "CPDR-28-FB",
+      "Manufacturer": "Cape Dory",
+      "Model": "28",
+      "Variant": "Flybridge Cruiser",
+      "MissingFields": [
+        "Displacement",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "CPDR-28-OF",
+      "Manufacturer": "Cape Dory",
+      "Model": "28",
+      "Variant": "Open Fisherman",
+      "MissingFields": [
+        "Displacement",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "CPDR-28-CR",
+      "Manufacturer": "Cape Dory",
+      "Model": "28",
+      "Variant": "Cruiser",
+      "MissingFields": [
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "CPDR-30-FB",
+      "Manufacturer": "Cape Dory",
+      "Model": "30",
+      "Variant": "Flybridge",
+      "MissingFields": [
+        "LWL",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "CPDR-33-FB",
+      "Manufacturer": "Cape Dory",
+      "Model": "33",
+      "Variant": "Flybridge",
+      "MissingFields": [
+        "LWL",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "CPDR-36-TR",
+      "Manufacturer": "Cape Dory",
+      "Model": "36",
+      "Variant": "Flybridge",
+      "MissingFields": [
+        "LWL",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "CPDR-40-TR",
+      "Manufacturer": "Cape Dory",
+      "Model": "40 Explorer",
+      "Variant": "Explorer",
+      "MissingFields": [
+        "LWL",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "CARV-28-V",
+      "Manufacturer": "Carver",
+      "Model": "2827 Voyager / 2897 Mariner",
+      "Variant": "Flybridge Cruiser",
+      "MissingFields": [
+        "LWL",
+        "KeelConfigurationCode",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "CARV-32-AC",
+      "Manufacturer": "Carver",
+      "Model": "3207 Aft Cabin",
+      "Variant": "Aft Cabin",
+      "MissingFields": [
+        "KeelConfigurationCode",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "CARV-33-MAR",
+      "Manufacturer": "Carver",
+      "Model": "3297 / 330 Mariner",
+      "Variant": "Mariner",
+      "MissingFields": [
+        "LWL",
+        "KeelConfigurationCode",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "CARV-350-AF",
+      "Manufacturer": "Carver",
+      "Model": "33 / 350 Aft Cabin",
+      "Variant": "Aft Cabin Motor Yacht",
+      "MissingFields": [
+        "LWL",
+        "AirDraft",
+        "KeelConfigurationCode",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "CARV-356-AF",
+      "Manufacturer": "Carver",
+      "Model": "355 / 356 Motor Yacht",
+      "Variant": "Aft Cabin Motor Yacht",
+      "MissingFields": [
+        "LOA",
+        "LWL",
+        "KeelConfigurationCode",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "CARV-36-AC",
+      "Manufacturer": "Carver",
+      "Model": "3607 Aft Cabin",
+      "Variant": "Aft Cabin",
+      "MissingFields": [
+        "KeelConfigurationCode",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "CARV-36-MAR",
+      "Manufacturer": "Carver",
+      "Model": "350 / 36 Mariner",
+      "Variant": "Mariner",
+      "MissingFields": [
+        "LWL",
+        "KeelConfigurationCode",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "CARV-40-AC",
+      "Manufacturer": "Carver",
+      "Model": "3807 / 390 Aft Cabin",
+      "Variant": "Aft Cabin Motor Yacht",
+      "MissingFields": [
+        "LWL",
+        "AirDraft",
+        "KeelConfigurationCode",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "CARV-42-AC",
+      "Manufacturer": "Carver",
+      "Model": "4207 Aft Cabin",
+      "Variant": "Aft Cabin Motor Yacht",
+      "MissingFields": [
+        "LWL",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "CHBB-34-SE",
+      "Manufacturer": "CHB",
+      "Model": "34",
+      "Variant": "Sedan",
+      "MissingFields": [
+        "LOA",
+        "LWL",
+        "Beam",
+        "Draft",
+        "AirDraft",
+        "Displacement",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "CHBB-34-TC",
+      "Manufacturer": "CHB",
+      "Model": "34",
+      "Variant": "Tri-Cabin",
+      "MissingFields": [
+        "LOA",
+        "LWL",
+        "Beam",
+        "Draft",
+        "AirDraft",
+        "Displacement",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "CHBY-34-SE",
+      "Manufacturer": "CHB",
+      "Model": "34",
+      "Variant": "Double Cabin",
+      "MissingFields": [
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_unresolved_no_reliable_published_value_promoted"
+    },
+    {
+      "BoatModelID": "CHBY-35",
+      "Manufacturer": "CHB",
+      "Model": "35",
+      "Variant": "Sundeck",
+      "MissingFields": [
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_unresolved_no_reliable_published_value_promoted"
+    },
+    {
+      "BoatModelID": "CHBY-40",
+      "Manufacturer": "CHB",
+      "Model": "40",
+      "Variant": "Double Cabin",
+      "MissingFields": [
+        "LOA",
+        "LWL",
+        "Beam",
+        "Draft",
+        "AirDraft",
+        "Displacement",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "CHLY-28",
+      "Manufacturer": "Cheoy Lee",
+      "Model": "28 Sedan Trawler",
+      "Variant": "Sedan",
+      "MissingFields": [
+        "LWL",
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "CHLY-32",
+      "Manufacturer": "Cheoy Lee",
+      "Model": "32 Trawler",
+      "Variant": "Trawler",
+      "MissingFields": [
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "CHLY-35",
+      "Manufacturer": "Cheoy Lee",
+      "Model": "35 Trawler",
+      "Variant": "Trawler",
+      "MissingFields": [
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "CHLY-36-TR",
+      "Manufacturer": "Cheoy Lee",
+      "Model": "36 Trawler",
+      "Variant": "Trawler",
+      "MissingFields": [
+        "LWL",
+        "AirDraft",
+        "Displacement",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "CRUY-2980",
+      "Manufacturer": "Cruisers Yachts",
+      "Model": "288 / 298 Villa Vee / 2980 Esprit",
+      "Variant": "Flybridge Cruiser",
+      "MissingFields": [
+        "KeelConfigurationCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "CRUY-320-EXP",
+      "Manufacturer": "Cruisers Yachts",
+      "Model": "3275 / 320 Express",
+      "Variant": "Express Cruiser",
+      "MissingFields": [
+        "KeelConfigurationCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "CRUY-3280",
+      "Manufacturer": "Cruisers Yachts",
+      "Model": "3270 Esprit",
+      "Variant": "Mid-Cabin",
+      "MissingFields": [
+        "KeelConfigurationCode",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "CRUY-3375",
+      "Manufacturer": "Cruisers Yachts",
+      "Model": "3375 Esprit",
+      "Variant": "Express Cruiser",
+      "MissingFields": [
+        "KeelConfigurationCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "CRUY-3470",
+      "Manufacturer": "Cruisers Yachts",
+      "Model": "3470 / 340 Express",
+      "Variant": "Express Cruiser",
+      "MissingFields": [
+        "KeelConfigurationCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "CRUY-3650-AF",
+      "Manufacturer": "Cruisers Yachts",
+      "Model": "3650 / 3750 / 375 Motor Yacht",
+      "Variant": "Aft Cabin Motor Yacht",
+      "MissingFields": [
+        "KeelConfigurationCode",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "CRUY-3870",
+      "Manufacturer": "Cruisers Yachts",
+      "Model": "3870 Esprit / Express",
+      "Variant": "Express Cruiser",
+      "MissingFields": [
+        "KeelConfigurationCode",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "CRUY-390-EXP",
+      "Manufacturer": "Cruisers Yachts",
+      "Model": "390 Sports Coupe",
+      "Variant": "Sports Coupe",
+      "MissingFields": [
+        "KeelConfigurationCode",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "CRUY-4050",
+      "Manufacturer": "Cruisers Yachts",
+      "Model": "4050 / 405 / 415 Express Motor Yacht",
+      "Variant": "Express Motor Yacht",
+      "MissingFields": [
+        "KeelConfigurationCode",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "CUTW-24",
+      "Manufacturer": "Cutwater",
+      "Model": "C-24 C",
+      "Variant": "Coupe",
+      "MissingFields": [
+        "LWL",
+        "AirDraft",
+        "KeelConfigurationCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "CUTW-26",
+      "Manufacturer": "Cutwater",
+      "Model": "C-26",
+      "Variant": "Cruiser",
+      "MissingFields": [
+        "LWL",
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "CUTW-28-P",
+      "Manufacturer": "Cutwater",
+      "Model": "C-28",
+      "Variant": "Cruiser",
+      "MissingFields": [
+        "LWL",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "CUTW-30-C",
+      "Manufacturer": "Cutwater",
+      "Model": "C-30 CB",
+      "Variant": "Command Bridge",
+      "MissingFields": [
+        "LWL",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "CUTW-30-P",
+      "Manufacturer": "Cutwater",
+      "Model": "C-30 S",
+      "Variant": "Sedan",
+      "MissingFields": [
+        "LOA",
+        "LWL",
+        "Displacement",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "CUTW-32",
+      "Manufacturer": "Cutwater",
+      "Model": "C-32 CB",
+      "Variant": "Command Bridge",
+      "MissingFields": [
+        "LWL"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "DEFE-34-TR",
+      "Manufacturer": "DeFever",
+      "Model": "34 Passagemaker",
+      "Variant": "Passagemaker",
+      "MissingFields": [
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "DEFE-38-TR",
+      "Manufacturer": "DeFever",
+      "Model": "38 Passagemaker",
+      "Variant": "Wood Passagemaker",
+      "MissingFields": [
+        "LWL",
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "DEFE-40-EURO",
+      "Manufacturer": "DeFever",
+      "Model": "40 Offshore Cruiser",
+      "Variant": "Offshore Cruiser",
+      "MissingFields": [
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "DEFE-41",
+      "Manufacturer": "DeFever",
+      "Model": "41 Trawler",
+      "Variant": "Trawler",
+      "MissingFields": [
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "DEFE-43",
+      "Manufacturer": "DeFever",
+      "Model": "43 Trawler",
+      "Variant": "Flush Deck",
+      "MissingFields": [
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "DEFE-45",
+      "Manufacturer": "DeFever",
+      "Model": "45 Pilothouse",
+      "Variant": "Pilothouse",
+      "MissingFields": [
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "DEFE-47",
+      "Manufacturer": "DeFever",
+      "Model": "47 POC Motor Yacht",
+      "Variant": "Performance Offshore Cruiser",
+      "MissingFields": [
+        "LWL",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "DEFE-49",
+      "Manufacturer": "DeFever",
+      "Model": "49 Cockpit Motor Yacht",
+      "Variant": "Cockpit Motor Yacht",
+      "MissingFields": [
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "DUFF-29",
+      "Manufacturer": "Duffy",
+      "Model": "29",
+      "Variant": "Downeast Hull",
+      "MissingFields": [
+        "LOA",
+        "LWL",
+        "Beam",
+        "Draft",
+        "AirDraft",
+        "Displacement",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "DUFF-31",
+      "Manufacturer": "Duffy",
+      "Model": "31",
+      "Variant": "Downeast / Lobsterboat Hull",
+      "MissingFields": [
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "DUFF-35",
+      "Manufacturer": "Duffy",
+      "Model": "35",
+      "Variant": "Downeast / Lobsterboat Hull",
+      "MissingFields": [
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "DUFF-39",
+      "Manufacturer": "Duffy",
+      "Model": "39",
+      "Variant": "Extended Duffy 37 / Custom Downeast",
+      "MissingFields": [
+        "LOA",
+        "LWL",
+        "Beam",
+        "Draft",
+        "AirDraft",
+        "Displacement",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "DUFF-42",
+      "Manufacturer": "Duffy",
+      "Model": "42",
+      "Variant": "Downeast / Lobsterboat Hull",
+      "MissingFields": [
+        "LWL",
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "ENDE-36-TR",
+      "Manufacturer": "Endeavour",
+      "Model": "TrawlerCat 36",
+      "Variant": "Power Catamaran",
+      "MissingFields": [
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "ENDE-44",
+      "Manufacturer": "Endeavour",
+      "Model": "44 TrawlerCat",
+      "Variant": "Power Catamaran",
+      "MissingFields": [
+        "AirDraft",
+        "KeelConfigurationCode",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "FJRD-36",
+      "Manufacturer": "Fjord",
+      "Model": "36 Cruiser",
+      "Variant": "Enclosed Cruiser",
+      "MissingFields": [
+        "LWL",
+        "Draft",
+        "AirDraft",
+        "KeelConfigurationCode",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "FJRD-36-OPEN",
+      "Manufacturer": "Fjord",
+      "Model": "36 Open",
+      "Variant": "Walkaround Day Cruiser",
+      "MissingFields": [
+        "LWL",
+        "KeelConfigurationCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "FJRD-40",
+      "Manufacturer": "Fjord",
+      "Model": "40 Cruiser",
+      "Variant": "Enclosed Cruiser",
+      "MissingFields": [
+        "LWL",
+        "KeelConfigurationCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "FJRD-40-OPEN",
+      "Manufacturer": "Fjord",
+      "Model": "40 Open",
+      "Variant": "Walkaround Day Cruiser",
+      "MissingFields": [
+        "KeelConfigurationCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "FORT-26",
+      "Manufacturer": "Fortier",
+      "Model": "26",
+      "Variant": "Bass Boat / Downeast Cruiser",
+      "MissingFields": [
+        "LWL",
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "FORT-33",
+      "Manufacturer": "Fortier",
+      "Model": "33",
+      "Variant": "Downeast Cruiser",
+      "MissingFields": [
+        "LWL",
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "GOZZ-40-PI",
+      "Manufacturer": "Gozzard",
+      "Model": "Pilgrim 40",
+      "Variant": "North Castle / Gozzard Motor Yacht",
+      "MissingFields": [
+        "LWL",
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "manufacturer_completion_pass_not_yet_run"
+    },
+    {
+      "BoatModelID": "GRBK-32-CL",
+      "Manufacturer": "Grand Banks",
+      "Model": "32",
+      "Variant": "Sedan",
+      "MissingFields": [
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "GRBK-36-CL",
+      "Manufacturer": "Grand Banks",
+      "Model": "36",
+      "Variant": "Classic",
+      "MissingFields": [
+        "LOA",
+        "Beam",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "GRBK-36-EU",
+      "Manufacturer": "Grand Banks",
+      "Model": "36",
+      "Variant": "Europa",
+      "MissingFields": [
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "GRBK-42-CL",
+      "Manufacturer": "Grand Banks",
+      "Model": "42",
+      "Variant": "Classic",
+      "MissingFields": [
+        "LOA",
+        "Beam",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "GRBK-46-CL",
+      "Manufacturer": "Grand Banks",
+      "Model": "46",
+      "Variant": "Classic",
+      "MissingFields": [
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "GRBK-49-MY",
+      "Manufacturer": "Grand Banks",
+      "Model": "49",
+      "Variant": "Motor Yacht",
+      "MissingFields": [
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "GRTH-GH37",
+      "Manufacturer": "Great Harbour",
+      "Model": "GH37",
+      "Variant": "Raised-Pilothouse Liveaboard Trawler",
+      "MissingFields": [
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "manufacturer_completion_pass_not_yet_run"
+    },
+    {
+      "BoatModelID": "GRTH-N37",
+      "Manufacturer": "Great Harbour",
+      "Model": "N37",
+      "Variant": "Navigator / Long-Range Trawler",
+      "MissingFields": [
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "manufacturer_completion_pass_not_yet_run"
+    },
+    {
+      "BoatModelID": "GRNL-33",
+      "Manufacturer": "Greenline",
+      "Model": "33",
+      "Variant": "Diesel / Hybrid / Electric Sedan",
+      "MissingFields": [
+        "LWL",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "GRNL-39",
+      "Manufacturer": "Greenline",
+      "Model": "39",
+      "Variant": "Diesel / Hybrid / Electric Sedan",
+      "MissingFields": [
+        "LWL",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "GULF-36-TR",
+      "Manufacturer": "Gulfstar",
+      "Model": "36 Trawler",
+      "Variant": "Trawler",
+      "MissingFields": [
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "GULF-43-TR",
+      "Manufacturer": "Gulfstar",
+      "Model": "43 Trawler",
+      "Variant": "Trawler",
+      "MissingFields": [
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "GULF-44-MC",
+      "Manufacturer": "Gulfstar",
+      "Model": "44 Motor Cruiser",
+      "Variant": "Motor Cruiser",
+      "MissingFields": [
+        "LWL",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "GULF-49-MC",
+      "Manufacturer": "Gulfstar",
+      "Model": "49 Motor Yacht",
+      "Variant": "Motor Yacht",
+      "MissingFields": [
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "HELM-31-CA",
+      "Manufacturer": "Helmsman",
+      "Model": "31 Sedan",
+      "Variant": "Sedan",
+      "MissingFields": [
+        "LWL",
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "HELM-38E-TR",
+      "Manufacturer": "Helmsman",
+      "Model": "38E Pilothouse",
+      "Variant": "Pilothouse",
+      "MissingFields": [
+        "LWL",
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "HELM-43-E",
+      "Manufacturer": "Helmsman",
+      "Model": "43E Pilothouse",
+      "Variant": "Pilothouse",
+      "MissingFields": [
+        "LWL",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "HELM-46-PH",
+      "Manufacturer": "Helmsman",
+      "Model": "46 Pilothouse",
+      "Variant": "Pilothouse",
+      "MissingFields": [
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "HLMN-38-CO",
+      "Manufacturer": "Holiday Mansion",
+      "Model": "38 Barracuda Coastal",
+      "Variant": "Coastal Houseboat Cruiser",
+      "MissingFields": [
+        "LWL",
+        "AirDraft",
+        "KeelConfigurationCode",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "HUNT-29",
+      "Manufacturer": "Hunt Yachts",
+      "Model": "Surfhunter 29",
+      "Variant": "Deep-V Express Cruiser",
+      "MissingFields": [
+        "LWL",
+        "KeelConfigurationCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "HUNT-36",
+      "Manufacturer": "Hunt Yachts",
+      "Model": "Surfhunter 36",
+      "Variant": "Coupe",
+      "MissingFields": [
+        "LWL",
+        "AirDraft",
+        "KeelConfigurationCode",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "ISGY-32-EU",
+      "Manufacturer": "Island Gypsy",
+      "Model": "32 Europa",
+      "Variant": "Europa",
+      "MissingFields": [
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "ISGY-32-FI",
+      "Manufacturer": "Island Gypsy",
+      "Model": "32 Fisherman",
+      "Variant": "Fisherman",
+      "MissingFields": [
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "ISGY-32-SE",
+      "Manufacturer": "Island Gypsy",
+      "Model": "32 Sedan",
+      "Variant": "Sedan",
+      "MissingFields": [
+        "AirDraft"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "ISGY-36",
+      "Manufacturer": "Island Gypsy",
+      "Model": "36 Classic",
+      "Variant": "Classic",
+      "MissingFields": [
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "ISGY-36EURO",
+      "Manufacturer": "Island Gypsy",
+      "Model": "36 Europa",
+      "Variant": "Europa",
+      "MissingFields": [
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "ISGY-40",
+      "Manufacturer": "Island Gypsy",
+      "Model": "40 Classic",
+      "Variant": "Classic",
+      "MissingFields": [
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "ISGY-44",
+      "Manufacturer": "Island Gypsy",
+      "Model": "44 Motor Cruiser",
+      "Variant": "Motor Cruiser",
+      "MissingFields": [
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "JEAU-1095",
+      "Manufacturer": "Jeanneau",
+      "Model": "Merry Fisher 1095 Coupé",
+      "Variant": "Coupé",
+      "MissingFields": [
+        "KeelConfigurationCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "JEAU-1095-FLY",
+      "Manufacturer": "Jeanneau",
+      "Model": "Merry Fisher 1095 Fly",
+      "Variant": "Flybridge",
+      "MissingFields": [
+        "KeelConfigurationCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "JEAU-605",
+      "Manufacturer": "Jeanneau",
+      "Model": "Merry Fisher 605",
+      "Variant": "Pilothouse Outboard",
+      "MissingFields": [
+        "KeelConfigurationCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "JEAU-635",
+      "Manufacturer": "Jeanneau",
+      "Model": "Merry Fisher 635",
+      "Variant": "Pilothouse",
+      "MissingFields": [
+        "Beam",
+        "KeelConfigurationCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "JEAU-695",
+      "Manufacturer": "Jeanneau",
+      "Model": "Merry Fisher 695",
+      "Variant": "Series 1 / Series 2",
+      "MissingFields": [
+        "KeelConfigurationCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "JEAU-795",
+      "Manufacturer": "Jeanneau",
+      "Model": "Merry Fisher 795",
+      "Variant": "Series 1 / Series 2",
+      "MissingFields": [
+        "LOA",
+        "Draft",
+        "Displacement",
+        "KeelConfigurationCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "JEAU-855",
+      "Manufacturer": "Jeanneau",
+      "Model": "Merry Fisher 855",
+      "Variant": "Twin-Outboard Weekender",
+      "MissingFields": [
+        "KeelConfigurationCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "JEAU-895",
+      "Manufacturer": "Jeanneau",
+      "Model": "Merry Fisher 895",
+      "Variant": "Series 1 / Series 2",
+      "MissingFields": [
+        "KeelConfigurationCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "JEAU-895-SP",
+      "Manufacturer": "Jeanneau",
+      "Model": "Merry Fisher 895 Sport",
+      "Variant": "Walkaround Sport Pilothouse",
+      "MissingFields": [
+        "KeelConfigurationCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "KDKR-36-MA",
+      "Manufacturer": "Kadey-Krogen",
+      "Model": "36 Manatee",
+      "Variant": "Manatee",
+      "MissingFields": [
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "KDKR-39",
+      "Manufacturer": "Kadey-Krogen",
+      "Model": "39",
+      "Variant": null,
+      "MissingFields": [
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "KDKR-42",
+      "Manufacturer": "Kadey-Krogen",
+      "Model": "42",
+      "Variant": null,
+      "MissingFields": [
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "KDKR-44",
+      "Manufacturer": "Kadey-Krogen",
+      "Model": "44",
+      "Variant": "Trawler",
+      "MissingFields": [
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "KDKR-48-NS",
+      "Manufacturer": "Kadey-Krogen",
+      "Model": "48 North Sea",
+      "Variant": "North Sea",
+      "MissingFields": [
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "LUHR-30",
+      "Manufacturer": "Luhrs",
+      "Model": "30 Alura",
+      "Variant": "Downeast-Profile Fishing Cruiser",
+      "MissingFields": [
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "manufacturer_completion_pass_not_yet_run"
+    },
+    {
+      "BoatModelID": "MNSH-30-PI",
+      "Manufacturer": "Mainship",
+      "Model": "30",
+      "Variant": "Pilot",
+      "MissingFields": [
+        "LWL",
+        "Draft",
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "MNSH-34-MK2",
+      "Manufacturer": "Mainship",
+      "Model": "34",
+      "Variant": "II",
+      "MissingFields": [
+        "LWL",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "MNSH-34-MK1",
+      "Manufacturer": "Mainship",
+      "Model": "34",
+      "Variant": "Diesel Cruiser",
+      "MissingFields": [
+        "LWL",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "MNSH-350-TR",
+      "Manufacturer": "Mainship",
+      "Model": "350",
+      "Variant": "Trawler",
+      "MissingFields": [
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "MNSH-390-TR",
+      "Manufacturer": "Mainship",
+      "Model": "390",
+      "Variant": "Trawler",
+      "MissingFields": [
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "MNSH-400-TR",
+      "Manufacturer": "Mainship",
+      "Model": "400",
+      "Variant": "Trawler",
+      "MissingFields": [
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "MTRA-34-EU",
+      "Manufacturer": "Marine Trader",
+      "Model": "34",
+      "Variant": "Europa",
+      "MissingFields": [
+        "LOA",
+        "LWL",
+        "Beam",
+        "Draft",
+        "AirDraft",
+        "Displacement",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "MTRA-34-SE",
+      "Manufacturer": "Marine Trader",
+      "Model": "34",
+      "Variant": "Sedan",
+      "MissingFields": [
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "MRTR-36-DO",
+      "Manufacturer": "Marine Trader",
+      "Model": "36",
+      "Variant": "Double Cabin",
+      "MissingFields": [
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "MRTR-38-SD",
+      "Manufacturer": "Marine Trader",
+      "Model": "38",
+      "Variant": "Double Cabin",
+      "MissingFields": [
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_unresolved_no_reliable_published_value_promoted"
+    },
+    {
+      "BoatModelID": "MRTR-38-SD2",
+      "Manufacturer": "Marine Trader",
+      "Model": "38",
+      "Variant": "Sundeck",
+      "MissingFields": [
+        "LOA",
+        "LWL",
+        "Beam",
+        "Draft",
+        "AirDraft",
+        "Displacement",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_unresolved_no_reliable_published_value_promoted"
+    },
+    {
+      "BoatModelID": "MRTR-40-DC",
+      "Manufacturer": "Marine Trader",
+      "Model": "40",
+      "Variant": "Double Cabin",
+      "MissingFields": [
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_unresolved_no_reliable_published_value_promoted"
+    },
+    {
+      "BoatModelID": "MRTR-44-TC",
+      "Manufacturer": "Marine Trader",
+      "Model": "44",
+      "Variant": "Tri-Cabin",
+      "MissingFields": [
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_unresolved_no_reliable_published_value_promoted"
+    },
+    {
+      "BoatModelID": "MERI-341-SE",
+      "Manufacturer": "Meridian",
+      "Model": "341 Sedan",
+      "Variant": "Flybridge Sedan",
+      "MissingFields": [
+        "LWL",
+        "KeelConfigurationCode",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "MERI-381-SE",
+      "Manufacturer": "Meridian",
+      "Model": "381 Sedan",
+      "Variant": "Flybridge Sedan",
+      "MissingFields": [
+        "LWL",
+        "KeelConfigurationCode",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "MONK-36-TR",
+      "Manufacturer": "Monk",
+      "Model": "36",
+      "Variant": "Trawler",
+      "MissingFields": [
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "NMBL-24-NO",
+      "Manufacturer": "Nimble",
+      "Model": "Nomad",
+      "Variant": "Pocket Trawler",
+      "MissingFields": [
+        "AirDraft"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "NMBL-32-WA",
+      "Manufacturer": "Nimble",
+      "Model": "Wanderer",
+      "Variant": "Power Cruiser / Optional Motorsailer",
+      "MissingFields": [
+        "AirDraft"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "NMBS-3003",
+      "Manufacturer": "Nimbus",
+      "Model": "3003",
+      "Variant": "Aft-Cabin Coupé",
+      "MissingFields": [
+        "LWL",
+        "AirDraft",
+        "KeelConfigurationCode",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "NMBS-365-CO",
+      "Manufacturer": "Nimbus",
+      "Model": "365 Coupé",
+      "Variant": "Sidewalk Coupé Cruiser",
+      "MissingFields": [
+        "LWL",
+        "KeelConfigurationCode",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "NDST-31P",
+      "Manufacturer": "Nord Star",
+      "Model": "31+",
+      "Variant": "All-Weather Pilothouse",
+      "MissingFields": [
+        "LWL",
+        "Draft",
+        "AirDraft",
+        "KeelConfigurationCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "NRDH-40",
+      "Manufacturer": "Nordhavn",
+      "Model": "40",
+      "Variant": "Ocean Passagemaker",
+      "MissingFields": [
+        "Draft",
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "manufacturer_completion_pass_not_yet_run"
+    },
+    {
+      "BoatModelID": "NDTG-26",
+      "Manufacturer": "Nordic Tugs",
+      "Model": "26",
+      "Variant": null,
+      "MissingFields": [
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "NDTG-32",
+      "Manufacturer": "Nordic Tugs",
+      "Model": "32",
+      "Variant": null,
+      "MissingFields": [
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "NDTG-34",
+      "Manufacturer": "Nordic Tugs",
+      "Model": "34",
+      "Variant": null,
+      "MissingFields": [
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "NDTG-37",
+      "Manufacturer": "Nordic Tugs",
+      "Model": "37",
+      "Variant": null,
+      "MissingFields": [
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "NDTG-39",
+      "Manufacturer": "Nordic Tugs",
+      "Model": "39",
+      "Variant": null,
+      "MissingFields": [
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "NDTG-42",
+      "Manufacturer": "Nordic Tugs",
+      "Model": "42",
+      "Variant": null,
+      "MissingFields": [
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "NPAC-28",
+      "Manufacturer": "North Pacific",
+      "Model": "28 Pilothouse",
+      "Variant": "Pilothouse",
+      "MissingFields": [
+        "Draft",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "NPAC-38",
+      "Manufacturer": "North Pacific",
+      "Model": "38 Sedan",
+      "Variant": "Europa Sedan",
+      "MissingFields": [
+        "LWL",
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "OCEA-36-SE",
+      "Manufacturer": "Oceania Yachts",
+      "Model": "36 Sedan",
+      "Variant": "Sedan Trawler",
+      "MissingFields": [
+        "LWL",
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "manufacturer_completion_pass_not_yet_run"
+    },
+    {
+      "BoatModelID": "OCAL-39-SE",
+      "Manufacturer": "Ocean Alexander",
+      "Model": "39 Sedan",
+      "Variant": "Flybridge Sedan",
+      "MissingFields": [
+        "LOA",
+        "LWL",
+        "AirDraft",
+        "Displacement",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "PDQB-34-PA",
+      "Manufacturer": "PDQ",
+      "Model": "34 PowerCat",
+      "Variant": "Power Catamaran",
+      "MissingFields": [
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "manufacturer_completion_pass_not_yet_run"
+    },
+    {
+      "BoatModelID": "PRAI-29-TR",
+      "Manufacturer": "Prairie",
+      "Model": "29 Coastal Cruiser",
+      "Variant": "Coastal Cruiser",
+      "MissingFields": [
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "PRAI-36-TR",
+      "Manufacturer": "Prairie",
+      "Model": "36 Coastal Cruiser",
+      "Variant": "Double Cabin",
+      "MissingFields": [
+        "LWL",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "RNGR-21-CLASSIC",
+      "Manufacturer": "Ranger Tugs",
+      "Model": "R-21",
+      "Variant": "Classic diesel",
+      "MissingFields": [
+        "LWL",
+        "KeelConfigurationCode",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "RNGR-21-EC",
+      "Manufacturer": "Ranger Tugs",
+      "Model": "R-21",
+      "Variant": "EC diesel",
+      "MissingFields": [
+        "LWL",
+        "KeelConfigurationCode",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "RNGR-R-23",
+      "Manufacturer": "Ranger Tugs",
+      "Model": "R-23",
+      "Variant": "Current outboard",
+      "MissingFields": [
+        "LWL",
+        "KeelConfigurationCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "RNGR-25-CLASSIC",
+      "Manufacturer": "Ranger Tugs",
+      "Model": "R-25",
+      "Variant": "Classic diesel",
+      "MissingFields": [
+        "LWL",
+        "KeelConfigurationCode",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "RNGR-R-25",
+      "Manufacturer": "Ranger Tugs",
+      "Model": "R-25",
+      "Variant": "Current outboard",
+      "MissingFields": [
+        "LWL",
+        "KeelConfigurationCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "RNGR-25-SC",
+      "Manufacturer": "Ranger Tugs",
+      "Model": "R-25",
+      "Variant": "SC diesel",
+      "MissingFields": [
+        "LWL",
+        "KeelConfigurationCode",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "RNGR-27-RT",
+      "Manufacturer": "Ranger Tugs",
+      "Model": "R-27",
+      "Variant": "Classic diesel",
+      "MissingFields": [
+        "LWL",
+        "KeelConfigurationCode",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "RNGR-R-27",
+      "Manufacturer": "Ranger Tugs",
+      "Model": "R-27",
+      "Variant": "Current twin-outboard",
+      "MissingFields": [
+        "LWL",
+        "KeelConfigurationCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "RNGR-27-OB",
+      "Manufacturer": "Ranger Tugs",
+      "Model": "R-27",
+      "Variant": "Single-outboard NW/LE",
+      "MissingFields": [
+        "LWL",
+        "KeelConfigurationCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "RNGR-29-CLASSIC",
+      "Manufacturer": "Ranger Tugs",
+      "Model": "R-29",
+      "Variant": "Classic diesel",
+      "MissingFields": [
+        "LWL",
+        "KeelConfigurationCode",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "RNGR-29-CB",
+      "Manufacturer": "Ranger Tugs",
+      "Model": "R-29 CB",
+      "Variant": "Command Bridge",
+      "MissingFields": [
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "RNGR-R-29",
+      "Manufacturer": "Ranger Tugs",
+      "Model": "R-29 S",
+      "Variant": "Sedan",
+      "MissingFields": [
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "RNGR-31-CB",
+      "Manufacturer": "Ranger Tugs",
+      "Model": "R-31 CB",
+      "Variant": "Command Bridge",
+      "MissingFields": [
+        "LWL",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "RNGR-R-31",
+      "Manufacturer": "Ranger Tugs",
+      "Model": "R-31 S",
+      "Variant": "Sedan",
+      "MissingFields": [
+        "LWL",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "RNGR-43-CB",
+      "Manufacturer": "Ranger Tugs",
+      "Model": "R-43 CB",
+      "Variant": "Command Bridge",
+      "MissingFields": [
+        "LWL",
+        "KeelConfigurationCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "RNGR-43-S",
+      "Manufacturer": "Ranger Tugs",
+      "Model": "R-43 S",
+      "Variant": "Sedan",
+      "MissingFields": [
+        "LWL",
+        "KeelConfigurationCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "ROSB-246-WH",
+      "Manufacturer": "Rosborough",
+      "Model": "RF-246",
+      "Variant": "Custom Wheelhouse",
+      "MissingFields": [
+        "Draft",
+        "AirDraft",
+        "Displacement"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "ROSB-246-LS",
+      "Manufacturer": "Rosborough",
+      "Model": "RF-246",
+      "Variant": "Legacy Sedan Cruiser Diesel",
+      "MissingFields": [
+        "Draft",
+        "AirDraft",
+        "Displacement"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "ROSB-246",
+      "Manufacturer": "Rosborough",
+      "Model": "246",
+      "Variant": "Yarmouth",
+      "MissingFields": [
+        "Draft",
+        "AirDraft",
+        "Displacement"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "SABR-34-EX",
+      "Manufacturer": "Sabre",
+      "Model": "34",
+      "Variant": "Hard Top Express",
+      "MissingFields": [
+        "LWL",
+        "KeelConfigurationCode",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "SABR-38-SA",
+      "Manufacturer": "Sabre",
+      "Model": "38 Salon Express",
+      "Variant": "Salon Express",
+      "MissingFields": [
+        "KeelConfigurationCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "SAGA-26-HT",
+      "Manufacturer": "Saga",
+      "Model": "26 HT",
+      "Variant": "Hardtop Cruiser",
+      "MissingFields": [
+        "LWL",
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "manufacturer_completion_pass_not_yet_run"
+    },
+    {
+      "BoatModelID": "SEAR-340-SU",
+      "Manufacturer": "Sea Ray",
+      "Model": "340 Sundancer",
+      "Variant": "Generation 1",
+      "MissingFields": [
+        "LWL",
+        "AirDraft",
+        "KeelConfigurationCode",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "SEAR-390-MO",
+      "Manufacturer": "Sea Ray",
+      "Model": "390 / 40 Motor Yacht",
+      "Variant": "Flush-Deck Motor Yacht",
+      "MissingFields": [
+        "LWL",
+        "KeelConfigurationCode",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "SEAH-35-PH",
+      "Manufacturer": "Seahorse",
+      "Model": "Coot 35",
+      "Variant": "Steel Pocket Trawler",
+      "MissingFields": [
+        "AirDraft"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "SEAH-38-CO",
+      "Manufacturer": "Seahorse",
+      "Model": "Coot 38",
+      "Variant": "Steel Pocket Trawler",
+      "MissingFields": [
+        "LWL",
+        "AirDraft",
+        "Displacement"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "SEAL-34-TC",
+      "Manufacturer": "Sealord",
+      "Model": "34 Double Cabin Trawler",
+      "Variant": "Tri-Cabin / Double Cabin",
+      "MissingFields": [
+        "LWL",
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "manufacturer_completion_pass_not_yet_run"
+    },
+    {
+      "BoatModelID": "SEAP-35",
+      "Manufacturer": "SeaPiper",
+      "Model": "35",
+      "Variant": "Narrow-Beam Long-Range Cruiser",
+      "MissingFields": [
+        "RudderTypeCode"
+      ],
+      "Category": "manufacturer_completion_pass_not_yet_run"
+    },
+    {
+      "BoatModelID": "SSPT-24",
+      "Manufacturer": "Sea Sport",
+      "Model": "XL 2400",
+      "Variant": "Long-Cockpit Pilothouse",
+      "MissingFields": [
+        "LWL",
+        "AirDraft",
+        "KeelConfigurationCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "SSPT-24-EX",
+      "Manufacturer": "Sea Sport",
+      "Model": "Explorer 2400",
+      "Variant": "Long-Cabin Pilothouse",
+      "MissingFields": [
+        "LWL",
+        "AirDraft",
+        "KeelConfigurationCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "SSPT-27",
+      "Manufacturer": "Sea Sport",
+      "Model": "27",
+      "Variant": "Seamaster / Navigator / Pilot",
+      "MissingFields": [
+        "LWL",
+        "Draft",
+        "AirDraft",
+        "KeelConfigurationCode",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "SEAW-24-ST",
+      "Manufacturer": "Seaway",
+      "Model": "24",
+      "Variant": "Sport Trawler / Coastal Cruiser",
+      "MissingFields": [
+        "LWL",
+        "Draft",
+        "AirDraft",
+        "Displacement",
+        "FuelCode",
+        "MechanicalPropulsionCode",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "SEAW-28-CC",
+      "Manufacturer": "Seaway",
+      "Model": "28 Coastal Cruiser",
+      "Variant": "Coastal Cruiser",
+      "MissingFields": [
+        "LWL",
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "SHAN-38-SRD",
+      "Manufacturer": "Shannon",
+      "Model": "38 SRD",
+      "Variant": "Schulz Reverse Deadrise",
+      "MissingFields": [
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "manufacturer_completion_pass_not_yet_run"
+    },
+    {
+      "BoatModelID": "SILV-34-MO",
+      "Manufacturer": "Silverton",
+      "Model": "34 Motor Yacht",
+      "Variant": "Aft Cabin Motor Yacht",
+      "MissingFields": [
+        "LWL",
+        "AirDraft",
+        "KeelConfigurationCode",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "SILV-352-MO",
+      "Manufacturer": "Silverton",
+      "Model": "352 Motor Yacht",
+      "Variant": "SideWalk Motor Yacht",
+      "MissingFields": [
+        "LWL",
+        "KeelConfigurationCode",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "SILV-372",
+      "Manufacturer": "Silverton",
+      "Model": "372 / 392 Motor Yacht",
+      "Variant": "SideWalk Motor Yacht",
+      "MissingFields": [
+        "LWL",
+        "KeelConfigurationCode",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "SILV-40-AC",
+      "Manufacturer": "Silverton",
+      "Model": "40 Aft Cabin",
+      "Variant": "Double Cabin Motor Yacht",
+      "MissingFields": [
+        "LWL",
+        "KeelConfigurationCode",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "SISU-22-CO",
+      "Manufacturer": "Sisu",
+      "Model": "22",
+      "Variant": "Bass Boat / Lobsterboat",
+      "MissingFields": [
+        "LWL",
+        "AirDraft",
+        "Displacement",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "SISU-26-BA",
+      "Manufacturer": "Sisu",
+      "Model": "26",
+      "Variant": "Bass Boat / Sedan / Lobsterboat",
+      "MissingFields": [
+        "LWL",
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "TOLL-34-SE",
+      "Manufacturer": "Tollycraft",
+      "Model": "34 Sport Sedan",
+      "Variant": "Sport Sedan",
+      "MissingFields": [
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "TOLL-37-SE",
+      "Manufacturer": "Tollycraft",
+      "Model": "37 Sedan",
+      "Variant": "Flybridge Sedan",
+      "MissingFields": [
+        "LWL",
+        "FuelCode",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "TPMC-32-EA",
+      "Manufacturer": "Transpacific Marine",
+      "Model": "Eagle 32",
+      "Variant": "Pilothouse",
+      "MissingFields": [
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "manufacturer_completion_pass_not_yet_run"
+    },
+    {
+      "BoatModelID": "TROJ-36-TR",
+      "Manufacturer": "Trojan",
+      "Model": "F-36 Tri-Cabin",
+      "Variant": "Tri-Cabin Motor Yacht",
+      "MissingFields": [
+        "LWL",
+        "KeelConfigurationCode",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "TRUN-34",
+      "Manufacturer": "True North",
+      "Model": "34",
+      "Variant": "Original Diesel / Inboard",
+      "MissingFields": [
+        "LOA",
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "UNIF-36-DO",
+      "Manufacturer": "Uniflite",
+      "Model": "36 Double Cabin",
+      "Variant": "Aft Cabin Motor Yacht",
+      "MissingFields": [
+        "KeelConfigurationCode",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "UNIV-36-TR",
+      "Manufacturer": "Universal",
+      "Model": "36 Tri-Cabin Trawler",
+      "Variant": "Tri-Cabin",
+      "MissingFields": [
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "WILL-30-VO",
+      "Manufacturer": "Willard",
+      "Model": "Vega 30 Voyager",
+      "Variant": "Raised Pilothouse",
+      "MissingFields": [
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "WILL-36-TR",
+      "Manufacturer": "Willard",
+      "Model": "Vega 36 Standard Cruiser",
+      "Variant": "Flybridge Sedan",
+      "MissingFields": [
+        "LWL",
+        "AirDraft",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "WILL-40-NO",
+      "Manufacturer": "Willard",
+      "Model": "Vega 40 Nomad",
+      "Variant": "Widebody Flybridge Sedan",
+      "MissingFields": [
+        "LWL",
+        "Beam",
+        "Draft",
+        "AirDraft",
+        "Displacement",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "WIND-26-SN",
+      "Manufacturer": "Windy",
+      "Model": "26 Snekke",
+      "Variant": "26 SN / Norwegian Snekke",
+      "MissingFields": [
+        "LWL",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "MNSH-34-MK3",
+      "Manufacturer": "Mainship",
+      "Model": "34",
+      "Variant": "III",
+      "MissingFields": [
+        "LWL",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "MNSH-34-TR",
+      "Manufacturer": "Mainship",
+      "Model": "34",
+      "Variant": "Trawler",
+      "MissingFields": [
+        "LWL",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "KDKR-44-AE",
+      "Manufacturer": "Kadey-Krogen",
+      "Model": "44 AE",
+      "Variant": "Advanced Ergonomics",
+      "MissingFields": [
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "MERI-341-SE-03",
+      "Manufacturer": "Meridian",
+      "Model": "341 Sedan",
+      "Variant": "Original Generation / Bayliner 3488 lineage",
+      "MissingFields": [
+        "LWL",
+        "KeelConfigurationCode",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "BENE-ANT-9-S2",
+      "Manufacturer": "Beneteau",
+      "Model": "Antares 9",
+      "Variant": "Generation 2",
+      "MissingFields": [
+        "KeelConfigurationCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "CRUY-3260",
+      "Manufacturer": "Cruisers Yachts",
+      "Model": "3260 Esprit",
+      "Variant": "Open Interior / No Mid-Cabin",
+      "MissingFields": [
+        "KeelConfigurationCode",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "SEAR-340-SU-99",
+      "Manufacturer": "Sea Ray",
+      "Model": "340 Sundancer",
+      "Variant": "Generation 2",
+      "MissingFields": [
+        "LWL",
+        "AirDraft",
+        "KeelConfigurationCode",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    },
+    {
+      "BoatModelID": "SEAR-340-SU-03",
+      "Manufacturer": "Sea Ray",
+      "Model": "340 Sundancer",
+      "Variant": "Generation 3",
+      "MissingFields": [
+        "LWL",
+        "AirDraft",
+        "KeelConfigurationCode",
+        "RudderTypeCode"
+      ],
+      "Category": "reviewed_controlled_uncertainty_or_configuration_dependent"
+    }
+  ],
+  "recommendedSequence": [
+    "Complete the 14 unreviewed manufacturers in three tail batches (5 + 5 + 4 manufacturers).",
+    "Run a dedicated Headroom Completion Pass because Headroom was omitted from the formal v6.45-v6.56 research queue.",
+    "Run a Plan-critical exception pass for remaining LOA, Beam, Draft, FuelCode and MechanicalPropulsionCode gaps/conflicts.",
+    "Treat LWL, keel and rudder as selective evidence-driven fields rather than completeness-at-any-cost targets; mark researched-but-not-published states explicitly."
+  ]
+}
