@@ -319,9 +319,9 @@
       "You need high-speed cruising"
     ],
     "DateCreated": "2026-07-13",
-    "LastUpdated": "2026-08-07",
+    "LastUpdated": "2026-09-13",
     "ReviewedBy": "B-Atlas Albin Family Research",
-    "Revision": 3,
+    "Revision": 4,
     "BoatModelID": "ALBN-27-FC",
     "BoatFamily": "Trawler",
     "Configuration": "Classic Trawler",
@@ -335,7 +335,7 @@
     "NormalizedHullConfiguration": "Monohull",
     "NormalizedStyle": "Trawler",
     "ResearchStatus": "Reviewed",
-    "ResearchNotes": "Joe Puccia designed the model for Albin Marine USA as a larger American-market successor to the Swedish Albin 25. Approximately 500 Albin 27s were built across Family Cruiser and Sport configurations from 1983 into the mid-1990s; do not assign that total to either variant alone.\n\n[Phase 8A legacy structured context]\n{\n  \"marketAvailability\": \"Limited; supported by active specialist owner communities.\",\n  \"partsAvailability\": \"Good for replacement marine systems; original model-specific components may require adaptation.\",\n  \"commonUpgrades\": [\n    \"Modern diesel repower\",\n    \"Pilothouse window and ventilation improvements\",\n    \"Electrical and anchoring modernization\"\n  ],\n  \"comparableModels\": [\n    \"Nimble Wanderer 32\",\n    \"Nordic Tug 26\",\n    \"Rosborough RF-246\"\n  ],\n  \"ownershipEase\": \"High\",\n  \"maintenanceEase\": \"Moderate\"\n}",
+    "ResearchNotes": "Joe Puccia designed the model for Albin Marine USA as a larger American-market successor to the Swedish Albin 25. Approximately 500 Albin 27s were built across Family Cruiser and Sport configurations from 1983 into the mid-1990s; do not assign that total to either variant alone.\n\n[Phase 8A legacy structured context]\n{\n  \"marketAvailability\": \"Limited; supported by active specialist owner communities.\",\n  \"partsAvailability\": \"Good for replacement marine systems; original model-specific components may require adaptation.\",\n  \"commonUpgrades\": [\n    \"Modern diesel repower\",\n    \"Pilothouse window and ventilation improvements\",\n    \"Electrical and anchoring modernization\"\n  ],\n  \"comparableModels\": [\n    \"Nimble Wanderer 32\",\n    \"Nordic Tug 26\",\n    \"Rosborough RF-246\"\n  ],\n  \"ownershipEase\": \"High\",\n  \"maintenanceEase\": \"Moderate\"\n}\n\nHigh-impact missing-data research Wave 2 v6.87 (2026-09-13): Wave 2: Albin 27 Owners Club FAQ reports at least 6 ft standing headroom in the cockpit, helm, forward cabin and head compartment; aft cabin is lower. Sources: https://albin27.com/albin-27-history/albin-27-faq/",
     "DataConfidence": "Moderate",
     "Overview": "The Albin 27 Family Cruiser is a U.S.-built semi-displacement pocket cruiser descended from the Swedish Albin 25 concept. Its center-cockpit layout separates a forward cabin from an aft sleeping cabin, while a single diesel, shallow draft and full-length keel support economical inland and coastal cruising. Accommodation is unusually dense for the size but remains compact.",
     "Suitability": {
@@ -486,6 +486,28 @@
           ],
           "Confidence": "Moderate",
           "Notes": "Inspection guidance combines model-specific configuration with family/age-related risk areas; applicability must be verified on the individual boat."
+        },
+        {
+          "Scope": "Wave2CanonicalData",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "ALBN-27-FC"
+            ],
+            "Years": {
+              "From": 1983,
+              "To": 1995
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://albin27.com/albin-27-history/albin-27-faq/"
+          ],
+          "EvidenceTypes": [
+            "Manufacturer/manual, technical review, or model-specific listing evidence"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Wave 2: Albin 27 Owners Club FAQ reports at least 6 ft standing headroom in the cockpit, helm, forward cabin and head compartment; aft cabin is lower."
         }
       ],
       "UnresolvedInformation": [
@@ -542,7 +564,8 @@
     "StyleCode": "Trawler",
     "CoolingCode": "cooling.fresh_water",
     "FlybridgeCode": "availability.no",
-    "SideDecksCode": "side_decks.moderate"
+    "SideDecksCode": "side_decks.moderate",
+    "Headroom": 1.8288
   },
   {
     "ManufacturerID": "ALBIN",
@@ -14724,9 +14747,9 @@
       "You require sustained high-speed cruising or large cockpit space"
     ],
     "DateCreated": "2026-07-10",
-    "LastUpdated": "2026-08-07",
+    "LastUpdated": "2026-09-13",
     "ReviewedBy": "B-Atlas Camano Family Research",
-    "Revision": 3,
+    "Revision": 4,
     "BoatModelID": "CAMA-31-TR",
     "HullBehaviour": "Semi-Displacement",
     "Features": [
@@ -14738,7 +14761,7 @@
     "NormalizedHullConfiguration": "Monohull",
     "NormalizedStyle": "Trawler",
     "ResearchStatus": "Reviewed",
-    "ResearchNotes": "Camano family normalized 2026-08-07. Naming convention uses 28/31 for both Troll and Gnome because the shared hull is 28 ft on deck and about 31 ft overall; marketplace listings may use either number.\n\nSame 28-foot hull was marketed as Camano 28, later 30 and then 31; HMY reports the 31 name from 1997. Fuel capacity increased from 100 to 133 gallons on later production around 2003, so listing-year verification is required. Approximately 270 boats were built across several British Columbia builders before tooling later moved to Helmsman.\n\n[Phase 8A legacy structured context]\n{\n  \"marketAvailability\": \"Common in established trawler markets; regionally variable.\",\n  \"partsAvailability\": \"Generally good for common diesel and marine systems; model-specific components require verification.\",\n  \"commonUpgrades\": [\n    \"Modern navigation electronics\",\n    \"Improved anchoring equipment\",\n    \"Electrical and charging-system modernization\"\n  ],\n  \"comparableModels\": [\n    \"Grand Banks 32 Classic\",\n    \"Nordic Tug 26\",\n    \"Rosborough RF-28\"\n  ],\n  \"ownershipEase\": \"High\",\n  \"maintenanceEase\": \"Moderate\"\n}",
+    "ResearchNotes": "Camano family normalized 2026-08-07. Naming convention uses 28/31 for both Troll and Gnome because the shared hull is 28 ft on deck and about 31 ft overall; marketplace listings may use either number.\n\nSame 28-foot hull was marketed as Camano 28, later 30 and then 31; HMY reports the 31 name from 1997. Fuel capacity increased from 100 to 133 gallons on later production around 2003, so listing-year verification is required. Approximately 270 boats were built across several British Columbia builders before tooling later moved to Helmsman.\n\n[Phase 8A legacy structured context]\n{\n  \"marketAvailability\": \"Common in established trawler markets; regionally variable.\",\n  \"partsAvailability\": \"Generally good for common diesel and marine systems; model-specific components require verification.\",\n  \"commonUpgrades\": [\n    \"Modern navigation electronics\",\n    \"Improved anchoring equipment\",\n    \"Electrical and charging-system modernization\"\n  ],\n  \"comparableModels\": [\n    \"Grand Banks 32 Classic\",\n    \"Nordic Tug 26\",\n    \"Rosborough RF-28\"\n  ],\n  \"ownershipEase\": \"High\",\n  \"maintenanceEase\": \"Moderate\"\n}\n\nHigh-impact missing-data research Wave 2 v6.87 (2026-09-13): Wave 2: Camano 31 sources consistently report about 6 ft 2 in general interior headroom. Technical review describes the full/protective keel extending aft as a shoe supporting the large barn-door rudder and protecting the propeller. Sources: https://helmsmantrawlers.com/wp-content/uploads/2011/10/PY_FEB16_HLT_31_Camano.pdf ; https://www.camanotrawlers.com/camano_31_trawler-boat-310067.html",
     "DataConfidence": "Moderate",
     "Overview": "The Camano 28/31 Troll is a compact British Columbia-designed flybridge cruiser built around Bob Warman’s distinctive Keelform semi-displacement hull. The hull measures 28 feet on deck and roughly 31 feet overall, which explains the model’s changing 28, 30 and 31 marketing designations. A single diesel sits low in the keel and drives a protected shaft, while lower and upper helms, a bright deckhouse and one-cabin interior make the boat primarily a couple-oriented inland and coastal cruiser.",
     "Suitability": {
@@ -14974,6 +14997,29 @@
           ],
           "Confidence": "Moderate",
           "Notes": "Location-specific interior dimensions are retained separately; they should not be generalized to all interior spaces."
+        },
+        {
+          "Scope": "Wave2CanonicalData",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CAMA-31-TR"
+            ],
+            "Years": {
+              "From": 1990,
+              "To": 2011
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://helmsmantrawlers.com/wp-content/uploads/2011/10/PY_FEB16_HLT_31_Camano.pdf",
+            "https://www.camanotrawlers.com/camano_31_trawler-boat-310067.html"
+          ],
+          "EvidenceTypes": [
+            "Manufacturer/manual, technical review, or model-specific listing evidence"
+          ],
+          "Confidence": "High",
+          "Notes": "Wave 2: Camano 31 sources consistently report about 6 ft 2 in general interior headroom. Technical review describes the full/protective keel extending aft as a shoe supporting the large barn-door rudder and protecting the propeller."
         }
       ],
       "UnresolvedInformation": [
@@ -15036,7 +15082,9 @@
     "ModelIdentityFamilyID": "CAMA-28-31",
     "StyleCode": "Trawler",
     "CoolingCode": "cooling.fresh_water",
-    "SideDecksCode": "side_decks.moderate"
+    "SideDecksCode": "side_decks.moderate",
+    "Headroom": 1.8796,
+    "RudderTypeCode": "rudder.full_keel_attached"
   },
   {
     "ManufacturerID": "CAMANO",
@@ -32413,9 +32461,9 @@
       "You are unwilling to maintain exterior teak and older systems"
     ],
     "DateCreated": "2026-07-13",
-    "LastUpdated": "2026-08-07",
+    "LastUpdated": "2026-09-13",
     "ReviewedBy": "B-Atlas Grand Banks Family Research",
-    "Revision": 4,
+    "Revision": 5,
     "BoatModelID": "GRBK-36-CL",
     "BoatFamily": "Trawler",
     "Configuration": "Aft Cabin Cruiser",
@@ -32431,7 +32479,7 @@
     "NormalizedHullConfiguration": "Monohull",
     "NormalizedStyle": "Trawler",
     "ResearchStatus": "Reviewed",
-    "ResearchNotes": "The 36 Classic changed materially over its long production run. Wood construction continued through mid-1973; later boats are fiberglass. In 1987/1988 the hull grew approximately six inches in length and four to six inches in beam. Single and twin diesel installations both exist.",
+    "ResearchNotes": "The 36 Classic changed materially over its long production run. Wood construction continued through mid-1973; later boats are fiberglass. In 1987/1988 the hull grew approximately six inches in length and four to six inches in beam. Single and twin diesel installations both exist.\n\nHigh-impact missing-data research Wave 2 v6.87 (2026-09-13): Wave 2: Grand Banks 36 Classic spans major wood/fiberglass and dimensional revisions; documented headroom varies across examples (about 1.83-2.00 m), and both single- and twin-engine factory configurations are well established. These are explicitly variable rather than forced to one model-wide value. Sources: https://www.hmy.com/yachting/powerboat-guide/grand-banks/36-classic-1965-2004 ; https://www.devalk.nl/en/yachtbrokerage/809567/GRAND-BANKS-36-CLASSIC.html",
     "DataConfidence": "Moderate",
     "Overview": "The Grand Banks 36 Classic is a traditional tri-cabin flybridge cruiser with a semi-displacement hull, an aft owner cabin and a forward guest cabin. It was offered with single or twin diesel shaft propulsion and became one of the defining models of the Grand Banks range. Its layout provides substantially more privacy and cruising capacity than the 32 while retaining walkaround decks and lower and upper helm positions.",
     "Suitability": {
@@ -32614,6 +32662,29 @@
           ],
           "Confidence": "Moderate",
           "Notes": "Inspection priorities reflect construction era, equipment and family-wide ownership risks; they are not represented as confirmed defects on every hull."
+        },
+        {
+          "Scope": "Wave2CanonicalData",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "GRBK-36-CL"
+            ],
+            "Years": {
+              "From": 1964,
+              "To": 2004
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/grand-banks/36-classic-1965-2004",
+            "https://www.devalk.nl/en/yachtbrokerage/809567/GRAND-BANKS-36-CLASSIC.html"
+          ],
+          "EvidenceTypes": [
+            "Manufacturer/manual, technical review, or model-specific listing evidence"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Wave 2: Grand Banks 36 Classic spans major wood/fiberglass and dimensional revisions; documented headroom varies across examples (about 1.83-2.00 m), and both single- and twin-engine factory configurations are well established. These are explicitly variable rather than forced to one model-wide value."
         }
       ],
       "UnresolvedInformation": [
@@ -32658,7 +32729,9 @@
     "LOA": null,
     "PlanCriticalStatus": {
       "LOA": "researched_unknown",
-      "Beam": "researched_unknown"
+      "Beam": "researched_unknown",
+      "Headroom": "configuration_or_production_mixed",
+      "EngineCount": "configuration_or_production_mixed"
     },
     "Beam": null,
     "CanonicalSlug": "grand-banks-36-classic",
@@ -37058,9 +37131,9 @@
       "You cannot accommodate model-specific beam or air draft"
     ],
     "DateCreated": "2026-07-13",
-    "LastUpdated": "2026-08-07",
+    "LastUpdated": "2026-09-13",
     "ReviewedBy": "B-Atlas Phase 8C-15 Production Motoryacht/Cruiser Research",
-    "Revision": 2,
+    "Revision": 3,
     "BoatModelID": "HLMN-38-CO",
     "HullBehaviour": "Planing",
     "Features": [
@@ -37142,7 +37215,10 @@
             },
             "Variations": []
           },
-          "EvidenceRefs": [],
+          "EvidenceRefs": [
+            "https://www.powerboatlistings.com/view/25067",
+            "https://bluewateryachtsales.com/yachts-for-sale/stanford/1987-holiday-mansion-38-costal-barracuda/"
+          ],
           "EvidenceTypes": [
             "Unverified"
           ],
@@ -37194,7 +37270,7 @@
         "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
       ]
     },
-    "ResearchNotes": "Batch 32 specialist-tail research. Identity, lineage and specifications normalized from model-specific builder, owner-archive and Powerboat Guide evidence; unsupported details remain unknown.",
+    "ResearchNotes": "Batch 32 specialist-tail research. Identity, lineage and specifications normalized from model-specific builder, owner-archive and Powerboat Guide evidence; unsupported details remain unknown.\n\nHigh-impact missing-data research pass v6.86 (2026-09-13): evidence-backed canonical fields added; configuration-dependent values remain explicitly variable rather than guessed.",
     "ModelCharacter": "A 38-foot fiberglass Holiday Mansion Barracuda Coastal—essentially a mobile waterfront cottage with unusually shallow draft and sterndrive propulsion rather than a conventional trawler or motor yacht. Its enormous interior volume is achieved through houseboat proportions and modest sea-going ambitions.",
     "DesignLineage": [
       "Period valuation/model records consistently list a 38-foot Barracuda Coastal in the Holiday Mansion range.",
@@ -37229,7 +37305,11 @@
     "AirDraft": null,
     "PlanCriticalStatus": {
       "AirDraft": "researched_unknown",
-      "MechanicalPropulsionCode": "configuration_or_production_mixed"
+      "MechanicalPropulsionCode": "configuration_or_production_mixed",
+      "KeelConfigurationCode": "configuration_or_production_mixed",
+      "RudderTypeCode": "configuration_or_production_mixed",
+      "RunningGearProtectionCode": "configuration_or_production_mixed",
+      "EnginePowerPerEngine": "configuration_or_production_mixed"
     },
     "CanonicalSlug": "holiday-mansion-38-barracuda-coastal-coastal-houseboat-cruiser",
     "CanonicalPath": "/models/holiday-mansion-38-barracuda-coastal-coastal-houseboat-cruiser/",
@@ -37237,7 +37317,8 @@
     "StyleCode": "Houseboat",
     "CoolingCode": "cooling.fresh_water",
     "FlybridgeCode": "availability.yes",
-    "SideDecksCode": "side_decks.wide"
+    "SideDecksCode": "side_decks.wide",
+    "EngineCount": 2
   },
   {
     "ManufacturerID": "HUNT",
@@ -37533,9 +37614,9 @@
       "You prioritize very shallow draft over rough-water performance"
     ],
     "DateCreated": "2026-07-18",
-    "LastUpdated": "2026-08-07",
+    "LastUpdated": "2026-09-13",
     "ReviewedBy": "B-Atlas Phase 8C-12 Downeast / Lobster-Style Research",
-    "Revision": 2,
+    "Revision": 3,
     "BoatModelID": "HUNT-36",
     "BoatFamily": "Downeast",
     "HullBehaviour": "Planing",
@@ -37619,7 +37700,8 @@
           },
           "EvidenceRefs": [
             "https://huntyachts.com/wp-content/uploads/2015/11/2016-Surfhunter-29-standard-equipment-11-3-15.pdf",
-            "https://www.yachtingmagazine.com/new-coupe-hunt/"
+            "https://www.yachtingmagazine.com/new-coupe-hunt/",
+            "https://www.usharbors.com/2012/03/hunt-presents-new-surfhunter-new-options/"
           ],
           "EvidenceTypes": [
             "Factory documented",
@@ -37680,7 +37762,7 @@
         "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
       ]
     },
-    "ResearchNotes": "Canonical identity corrected from conflicting 'Hunt Harrier 36' nickname / 'Surfhunter 36 Coupe' model to Hunt Surfhunter 36 Coupe. Yachting's 2012 introduction gives 36'6\" LOA, 11'4\" beam, 3'3\" draft, 14,000 lb, 150 gal fuel, 50 gal water and standard single 480 hp Cummins/ZF pod with optional conventional inboards. Harrier 36 remains separate predecessor/shared-hull lineage.",
+    "ResearchNotes": "Canonical identity corrected from conflicting 'Hunt Harrier 36' nickname / 'Surfhunter 36 Coupe' model to Hunt Surfhunter 36 Coupe. Yachting's 2012 introduction gives 36'6\" LOA, 11'4\" beam, 3'3\" draft, 14,000 lb, 150 gal fuel, 50 gal water and standard single 480 hp Cummins/ZF pod with optional conventional inboards. Harrier 36 remains separate predecessor/shared-hull lineage.\n\nHigh-impact missing-data research pass v6.86 (2026-09-13): evidence-backed canonical fields added; configuration-dependent values remain explicitly variable rather than guessed.",
     "ModelCharacter": "The all-weather cruising coupe built on Hunt's formidable Harrier 36 deep-V hull, adding a hardtop salon, continuous single-level helm-to-cockpit deck and more developed overnight accommodations while retaining 28-knot cruise capability with single diesel pod or conventional inboard propulsion.",
     "DesignLineage": [
       "The Hunt Harrier 36 was introduced earlier and 18 Harrier hulls were built from 2002–2015.",
@@ -37719,7 +37801,11 @@
     "AirDraft": null,
     "PlanCriticalStatus": {
       "AirDraft": "researched_unknown",
-      "MechanicalPropulsionCode": "configuration_or_production_mixed"
+      "MechanicalPropulsionCode": "configuration_or_production_mixed",
+      "KeelConfigurationCode": "configuration_or_production_mixed",
+      "RudderTypeCode": "configuration_or_production_mixed",
+      "RunningGearProtectionCode": "configuration_or_production_mixed",
+      "EnginePowerPerEngine": "configuration_or_production_mixed"
     },
     "CanonicalSlug": "hunt-yachts-surfhunter-36-coupe-coupe",
     "CanonicalPath": "/models/hunt-yachts-surfhunter-36-coupe-coupe/",
@@ -37727,7 +37813,9 @@
     "StyleCode": "Downeast Cruiser",
     "CoolingCode": "cooling.raw_water",
     "FlybridgeCode": "availability.no",
-    "SideDecksCode": "side_decks.wide"
+    "SideDecksCode": "side_decks.wide",
+    "EngineCount": 1,
+    "Configuration": "Surfhunter 36 Coupe; three interior layout choices"
   },
   {
     "ManufacturerID": "ISLANDGYPSY",
@@ -45047,9 +45135,9 @@
       "You require a fully verified factory variant identity before research"
     ],
     "DateCreated": "2026-07-27",
-    "LastUpdated": "2026-08-07",
+    "LastUpdated": "2026-09-13",
     "ReviewedBy": "OpenAI_Research",
-    "Revision": 1,
+    "Revision": 2,
     "BoatModelID": "MTRA-34-EU",
     "BoatFamily": null,
     "Configuration": null,
@@ -45061,7 +45149,7 @@
     "NormalizedHullConfiguration": "Monohull",
     "NormalizedStyle": "Cruiser",
     "ResearchStatus": "Reviewed",
-    "ResearchNotes": "Real Marine Trader 34 Europa examples are documented, but the designation is not consistently listed as a distinct Marine Trader model in reference catalogs. Retained as a searchable market identity.\n\nBatch 33 confidence audit: exact-model identity and source quality rechecked. Confidence is intentionally retained where factory/importer documentation is incomplete; missing evidence does not trigger deletion or inferred consolidation.",
+    "ResearchNotes": "Real Marine Trader 34 Europa examples are documented, but the designation is not consistently listed as a distinct Marine Trader model in reference catalogs. Retained as a searchable market identity.\n\nBatch 33 confidence audit: exact-model identity and source quality rechecked. Confidence is intentionally retained where factory/importer documentation is incomplete; missing evidence does not trigger deletion or inferred consolidation.\n\nHigh-impact missing-data research Wave 2 v6.87 (2026-09-13): Wave 2: documented 1982 Marine Trader Europa example reports 6.25 ft (6 ft 3 in) cabin headroom. Sources: https://marinesource.com/boat/marine-trader-europa-1982-washington-2543b6429-for-sale",
     "DataConfidence": "Low",
     "Overview": "The Marine Trader 34 is an europa sedan and semi-displacement. Typical examples use single inboard, diesel, and shaft. The recorded configuration includes a flybridge, 1 cabin, 4 berths, and 1 head.",
     "Suitability": {},
@@ -45168,6 +45256,28 @@
           ],
           "Confidence": "Moderate",
           "Notes": "Questions derived from supported family inspection priorities."
+        },
+        {
+          "Scope": "Wave2CanonicalData",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "MTRA-34-EU"
+            ],
+            "Years": {
+              "From": null,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://marinesource.com/boat/marine-trader-europa-1982-washington-2543b6429-for-sale"
+          ],
+          "EvidenceTypes": [
+            "Manufacturer/manual, technical review, or model-specific listing evidence"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Wave 2: documented 1982 Marine Trader Europa example reports 6.25 ft (6 ft 3 in) cabin headroom."
         }
       ],
       "UnresolvedInformation": [
@@ -45228,7 +45338,8 @@
     "CanonicalURL": "https://b-atlas.org/models/marine-trader-34-europa/",
     "ModelIdentityFamilyID": "MTRA-34",
     "StyleCode": "Cruiser",
-    "CoolingCode": "cooling.fresh_water"
+    "CoolingCode": "cooling.fresh_water",
+    "Headroom": 1.905
   },
   {
     "ManufacturerID": "MARINETRADER",
@@ -45276,9 +45387,9 @@
       "You need consistently high construction quality or cannot manage moisture and tank repairs"
     ],
     "DateCreated": "2026-07-27",
-    "LastUpdated": "2026-08-07",
+    "LastUpdated": "2026-09-13",
     "ReviewedBy": "OpenAI_Research",
-    "Revision": 2,
+    "Revision": 3,
     "BoatModelID": "MTRA-34-SE",
     "BoatFamily": null,
     "Configuration": null,
@@ -45290,7 +45401,7 @@
     "NormalizedHullConfiguration": "Monohull",
     "NormalizedStyle": "Cruiser",
     "ResearchStatus": "Initial",
-    "ResearchNotes": "PowerBoat Guide documents the long 1973–2001 production run and major 1991/1995 updates.",
+    "ResearchNotes": "PowerBoat Guide documents the long 1973–2001 production run and major 1991/1995 updates.\n\nHigh-impact missing-data research Wave 2 v6.87 (2026-09-13): Wave 2: PowerBoat Guide/HMY specification gives 30 ft 3 in LWL for the Marine Trader 34 Sedan. Sources: https://www.hmy.com/yachting/powerboat-guide/marine-trader/34-sedan-1973-2001",
     "DataConfidence": "Low",
     "Overview": "The Marine Trader 34 is a sedan trawler and semi-displacement produced from 1973 to 2001. Typical examples use single inboard, diesel, and shaft. The recorded configuration includes a flybridge, 1 cabin, 4 berths, and 1 head.",
     "Suitability": {},
@@ -45419,6 +45530,28 @@
           ],
           "Confidence": "High",
           "Notes": "Targeted source-backed specification completion v6.47.0."
+        },
+        {
+          "Scope": "Wave2CanonicalData",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "MTRA-34-SE"
+            ],
+            "Years": {
+              "From": 1973,
+              "To": 2001
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/marine-trader/34-sedan-1973-2001"
+          ],
+          "EvidenceTypes": [
+            "Manufacturer/manual, technical review, or model-specific listing evidence"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Wave 2: PowerBoat Guide/HMY specification gives 30 ft 3 in LWL for the Marine Trader 34 Sedan."
         }
       ],
       "UnresolvedInformation": [
@@ -47251,9 +47384,9 @@
       "You cannot accommodate model-specific beam or air draft"
     ],
     "DateCreated": "2026-07-13",
-    "LastUpdated": "2026-08-07",
+    "LastUpdated": "2026-09-13",
     "ReviewedBy": "B-Atlas Phase 8C-15 Production Motoryacht/Cruiser Research",
-    "Revision": 2,
+    "Revision": 3,
     "BoatModelID": "MERI-381-SE",
     "HullBehaviour": "Planing",
     "Features": [
@@ -47387,6 +47520,29 @@
           ],
           "Confidence": "Moderate",
           "Notes": "Inspection guidance is age/configuration based and is not a claim of a model-wide defect."
+        },
+        {
+          "Scope": "Wave2CanonicalData",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "MERI-381-SE"
+            ],
+            "Years": {
+              "From": 2003,
+              "To": 2006
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://alexandermarineusa.com/app/uploads/2018/05/Specs-Meridian-381-Sedan.pdf",
+            "https://www.boatdealers.ca/boats-for-sale/571862/meridian-381-sedan-hamilton-ontario"
+          ],
+          "EvidenceTypes": [
+            "Manufacturer/manual, technical review, or model-specific listing evidence"
+          ],
+          "Confidence": "High",
+          "Notes": "Wave 2: Meridian 381 specification sheets and Canadian listing both report 6 ft 4 in cabin headroom."
         }
       ],
       "UnresolvedInformation": [
@@ -47394,7 +47550,7 @@
       ]
     },
     "EngineCount": 2,
-    "ResearchNotes": "HMY directly documents 2003–06 production and the Bayliner 3788 lineage. Verified specs: 38'6\" LOA, 13'7\" beam, 3'4\" draft, 22,275 lb, 300 gal fuel and 125 gal water.",
+    "ResearchNotes": "HMY directly documents 2003–06 production and the Bayliner 3788 lineage. Verified specs: 38'6\" LOA, 13'7\" beam, 3'4\" draft, 22,275 lb, 300 gal fuel and 125 gal water.\n\nHigh-impact missing-data research Wave 2 v6.87 (2026-09-13): Wave 2: Meridian 381 specification sheets and Canadian listing both report 6 ft 4 in cabin headroom. Sources: https://alexandermarineusa.com/app/uploads/2018/05/Specs-Meridian-381-Sedan.pdf ; https://www.boatdealers.ca/boats-for-sale/571862/meridian-381-sedan-hamilton-ontario",
     "ModelCharacter": "A roomy two-stateroom bridge cruiser created by carrying the Bayliner 3788 Motor Yacht into the new Meridian brand. Its wide-beam low-deadrise hull, galley-up salon and extended flybridge prioritize interior volume and value over narrow-beam efficiency or walkaround side-deck access.",
     "DesignLineage": [
       "The Bayliner 3788 Motor Yacht was introduced in 2001.",
@@ -47439,7 +47595,8 @@
     "StyleCode": "Cruiser",
     "CoolingCode": "cooling.fresh_water",
     "FlybridgeCode": "availability.yes",
-    "SideDecksCode": "side_decks.wide"
+    "SideDecksCode": "side_decks.wide",
+    "Headroom": 1.9304
   },
   {
     "ManufacturerID": "MONK",
@@ -48301,9 +48458,9 @@
       "You want full-displacement economy at 6–8 knots",
       "You need contemporary systems without age-related refit exposure"
     ],
-    "LastUpdated": "2026-08-07",
+    "LastUpdated": "2026-09-13",
     "ResearchStatus": "Reviewed",
-    "ResearchNotes": "Existing 1985–92 production window retained. Representative 3003 examples consistently verify approx. 9.2 m x 3.2 m, single Volvo diesel shaft drive and separate aft cabin. Published draft varies around 0.85–1.05 m and remains listing-specific.",
+    "ResearchNotes": "Existing 1985–92 production window retained. Representative 3003 examples consistently verify approx. 9.2 m x 3.2 m, single Volvo diesel shaft drive and separate aft cabin. Published draft varies around 0.85–1.05 m and remains listing-specific.\n\nHigh-impact missing-data research Wave 2 v6.87 (2026-09-13): Wave 2: independent Nimbus 3003 listings report approximately 1.87-1.90 m headroom; Boatshed reports 8.87 m LWL. Canonical general headroom uses 1.90 m representative documented value. Sources: https://www.devalk.nl/en/yachtbrokerage/52892/NIMBUS-3003.html ; https://dartmouth.boatshed.com/nimbus_3003-boat-114071.html",
     "ImageURL": "images/nmbs-3003.jpg",
     "DataConfidence": "High",
     "Overview": "The Nimbus 3003 is a Swedish aft-cabin coupe cruiser from the late 1980s and early 1990s. It combines a compact deep-V/planing hull, protected cockpit helm, single diesel shaft drive and unusually useful two-cabin accommodation for its length.",
@@ -48441,6 +48598,29 @@
           ],
           "Confidence": "Moderate",
           "Notes": "Inspection guidance addresses configuration and age risks and is not a claim of universal model defects."
+        },
+        {
+          "Scope": "Wave2CanonicalData",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "NMBS-3003"
+            ],
+            "Years": {
+              "From": 1985,
+              "To": 1992
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.devalk.nl/en/yachtbrokerage/52892/NIMBUS-3003.html",
+            "https://dartmouth.boatshed.com/nimbus_3003-boat-114071.html"
+          ],
+          "EvidenceTypes": [
+            "Manufacturer/manual, technical review, or model-specific listing evidence"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Wave 2: independent Nimbus 3003 listings report approximately 1.87-1.90 m headroom; Boatshed reports 8.87 m LWL. Canonical general headroom uses 1.90 m representative documented value."
         }
       ],
       "UnresolvedInformation": [
@@ -48451,7 +48631,7 @@
     "Nickname": "Nimbus 3003",
     "HoldingCapacity": 13,
     "ReviewedBy": "B-Atlas Phase 8C-13 Scandinavian Research",
-    "Revision": 2,
+    "Revision": 3,
     "ModelCharacter": "A classic Swedish aft-cabin cruiser that packs three distinct living zones into only 30 feet: forward cabin, protected central cockpit/helm and a completely separate aft sleeping cabin. Single diesel shaft drive and sensible Scandinavian proportions make it more cruiser than performance boat despite its planing hull.",
     "DesignLineage": [
       "The Nimbus 3003 belongs to Nimbus's late-1980s/early-1990s aft-cabin coupé generation.",
@@ -48492,7 +48672,9 @@
     "StyleCode": "Cruiser",
     "CoolingCode": "cooling.fresh_water",
     "FlybridgeCode": "availability.no",
-    "SideDecksCode": "side_decks.moderate"
+    "SideDecksCode": "side_decks.moderate",
+    "Headroom": 1.9,
+    "LWL": 8.87
   },
   {
     "ManufacturerID": "NIMBUS",
@@ -48544,9 +48726,9 @@
       "You primarily want 6–7-knot displacement economy"
     ],
     "DateCreated": "2026-07-13",
-    "LastUpdated": "2026-08-07",
+    "LastUpdated": "2026-09-13",
     "ReviewedBy": "B-Atlas Phase 8C-13 Scandinavian Research",
-    "Revision": 2,
+    "Revision": 3,
     "BoatModelID": "NMBS-365-CO",
     "BoatFamily": "Cruiser",
     "HullBehaviour": "Semi-Displacement",
@@ -48636,7 +48818,9 @@
             "Variations": []
           },
           "EvidenceRefs": [
-            "https://nimbus.se/boats/365-coupe/"
+            "https://nimbus.se/boats/365-coupe/",
+            "https://www.devalk.nl/en/yachtbrokerage/811773/NIMBUS-365-COUPE.html",
+            "https://nimbusboats.com/boats/365-coupe/"
           ],
           "EvidenceTypes": [
             "Factory documented",
@@ -48696,7 +48880,7 @@
       ]
     },
     "Configuration": "Coupé Cruiser",
-    "ResearchNotes": "Major chronology correction: production start moved from 2009 to 2011. Contemporary 2011 testing and model-year 2012 dealer literature establish launch timing; Canadian Boating states the model was introduced in 2012 and won European Powerboat of the Year that year. Current Nimbus page confirms ongoing production and single-D6/twin-D4 alternatives.",
+    "ResearchNotes": "Major chronology correction: production start moved from 2009 to 2011. Contemporary 2011 testing and model-year 2012 dealer literature establish launch timing; Canadian Boating states the model was introduced in 2012 and won European Powerboat of the Year that year. Current Nimbus page confirms ongoing production and single-D6/twin-D4 alternatives.\n\nHigh-impact missing-data research pass v6.86 (2026-09-13): evidence-backed canonical fields added; configuration-dependent values remain explicitly variable rather than guessed.",
     "ModelCharacter": "Nimbus's award-winning all-weather family cruiser built around its asymmetric 'sidewalk' deck concept: a wide starboard side deck and helm door make docking easy while the enclosed salon, two cabins and shaft-drive diesel support genuine long-distance cruising.",
     "DesignLineage": [
       "The Nimbus 365 Coupé was introduced for the 2011/2012 model period and won European Powerboat of the Year 2012.",
@@ -48737,7 +48921,13 @@
     "StyleCode": "Cruiser",
     "CoolingCode": "cooling.fresh_water",
     "FlybridgeCode": "availability.no",
-    "SideDecksCode": "side_decks.moderate"
+    "SideDecksCode": "side_decks.moderate",
+    "Headroom": 1.94,
+    "ShowerTypeCode": "shower.separate_stall",
+    "PlanCriticalStatus": {
+      "EngineCount": "configuration_or_production_mixed",
+      "EnginePowerPerEngine": "configuration_or_production_mixed"
+    }
   },
   {
     "ManufacturerID": "NORD_STAR",
@@ -49305,9 +49495,9 @@
       "You expect automobile-like trailerability or high cruising speeds"
     ],
     "DateCreated": "2026-07-13",
-    "LastUpdated": "2026-08-07",
+    "LastUpdated": "2026-09-13",
     "ReviewedBy": "B-Atlas Nordic Tug Family Research",
-    "Revision": 4,
+    "Revision": 5,
     "BoatModelID": "NDTG-26",
     "BoatFamily": "Tug",
     "HullBehaviour": "Semi-Displacement",
@@ -49320,7 +49510,7 @@
     "NormalizedHullConfiguration": "Monohull",
     "NormalizedStyle": "Tug Cruiser",
     "ResearchStatus": "Reviewed",
-    "ResearchNotes": "Nordic Tug family normalized 2026-08-07 using builder history and model-specific technical references.\n\nOriginal 26 launched in 1980; retired in 1997 and reintroduced in 2009 as limited production. Early cruiser and Cricket work/fishing configurations vary. Use hull-year evidence for capacities and appendage-inclusive LOA.",
+    "ResearchNotes": "Nordic Tug family normalized 2026-08-07 using builder history and model-specific technical references.\n\nOriginal 26 launched in 1980; retired in 1997 and reintroduced in 2009 as limited production. Early cruiser and Cricket work/fishing configurations vary. Use hull-year evidence for capacities and appendage-inclusive LOA.\n\nHigh-impact missing-data research Wave 2 v6.87 (2026-09-13): Wave 2: Nordic Tug 26 documentation gives 6 ft 4 in salon headroom and 6 ft 2 in pilothouse headroom. The full-length keel continues to a metal/steel rudder shoe supporting the traditional barn-door rudder and protecting the propeller. Sources: https://boattest.com/boats/nordic-tugs/nordic-tug-26-2014 ; https://www.annapolisyachtbroker.com/listings/1997-nordic-tug-26-26-9263362",
     "DataConfidence": "Moderate",
     "Overview": "The Nordic Tug 26 is the original compact Nordic Tugs cruiser, built around a pilothouse, semi-displacement fiberglass hull and single diesel shaft drive. Its narrow beam and one-cabin layout favor economical couple cruising, inland waterways and compact marina footprints rather than large-boat accommodation. Production was interrupted after 1997 and later revived in limited production, so displacement, engines and equipment vary materially by generation.",
     "Suitability": {
@@ -49524,6 +49714,29 @@
           ],
           "Confidence": "Moderate",
           "Notes": "Location-specific interior dimensions are retained separately; they should not be generalized to all interior spaces."
+        },
+        {
+          "Scope": "Wave2CanonicalData",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "NDTG-26"
+            ],
+            "Years": {
+              "From": 1980,
+              "To": 2026
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://boattest.com/boats/nordic-tugs/nordic-tug-26-2014",
+            "https://www.annapolisyachtbroker.com/listings/1997-nordic-tug-26-26-9263362"
+          ],
+          "EvidenceTypes": [
+            "Manufacturer/manual, technical review, or model-specific listing evidence"
+          ],
+          "Confidence": "High",
+          "Notes": "Wave 2: Nordic Tug 26 documentation gives 6 ft 4 in salon headroom and 6 ft 2 in pilothouse headroom. The full-length keel continues to a metal/steel rudder shoe supporting the traditional barn-door rudder and protecting the propeller."
         }
       ],
       "UnresolvedInformation": [
@@ -49576,7 +49789,9 @@
     "CanonicalURL": "https://b-atlas.org/models/nordic-tugs-26/",
     "StyleCode": "Tug Cruiser",
     "CoolingCode": "cooling.fresh_water",
-    "SideDecksCode": "side_decks.moderate"
+    "SideDecksCode": "side_decks.moderate",
+    "Headroom": 1.9304,
+    "RudderTypeCode": "rudder.full_keel_attached"
   },
   {
     "ManufacturerID": "NORDIC",
@@ -52841,9 +53056,9 @@
       "You prefer only traditional displacement-speed shaft-drive propulsion"
     ],
     "DateCreated": "2026-07-25",
-    "LastUpdated": "2026-08-07",
+    "LastUpdated": "2026-09-13",
     "ReviewedBy": "B-Atlas Phase 8C-9 Family Research",
-    "Revision": 2,
+    "Revision": 3,
     "BoatModelID": "RNGR-21-CLASSIC",
     "BoatFamily": "Tug Cruiser",
     "Configuration": "Classic Pocket Tug",
@@ -52942,7 +53157,9 @@
           },
           "EvidenceRefs": [
             "https://www.rangertugs.com/models",
-            "https://www.rangertugs.com/past-models"
+            "https://www.rangertugs.com/past-models",
+            "https://marinesource.com/boat/ranger-tug-r-21-2003-chattanooga-177a8e2ddb-for-sale",
+            "https://marinesource.com/boat/ranger-tug-r-21-2001-everett-24631b7b1-for-sale"
           ],
           "EvidenceTypes": [
             "Factory documented",
@@ -53005,8 +53222,8 @@
         "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold"
       ]
     },
-    "ResearchNotes": "Phase 8C-9 normalized 2026-08-07 using manufacturer/model-specific sources. Unsupported defects remain unknown.\n\n[Phase 8A legacy structured context]\n{\n  \"marketAvailability\": \"Used-market availability varies by generation, propulsion and region.\",\n  \"partsAvailability\": \"Factory support and owner community are strengths; model-specific legacy components still require verification.\",\n  \"commonUpgrades\": [\n    \"Battery monitoring\",\n    \"Modern electronics where dated\",\n    \"Canvas or cockpit weather protection\"\n  ],\n  \"comparableModels\": [\n    \"Ranger Tug R-21 EC\",\n    \"Nordic Tug 21\"\n  ],\n  \"knowledgeRelationships\": {\n    \"comparableTo\": [\n      \"Ranger Tug R-21 EC\",\n      \"Nordic Tug 21\"\n    ],\n    \"alternativeIf\": [\n      \"A different Ranger generation better matches propulsion, budget or space priorities\"\n    ],\n    \"stepUpFrom\": []\n  },\n  \"bScoutNotes\": [\n    \"Identify the exact R-21 generation before applying specifications.\",\n    \"Factory packages and owner modifications can materially change equipment and weight.\"\n  ],\n  \"refitPriority\": {\n    \"essential\": [\n      \"Hull and deck moisture\",\n      \"Diesel installation and exhaust\"\n    ],\n    \"recommended\": [\n      \"Battery monitoring\",\n      \"Cooling-system service\"\n    ],\n    \"optional\": [\n      \"Canvas or cockpit weather protection\"\n    ]\n  },\n  \"ownershipScores\": {\n    \"mechanicalSimplicity\": 3,\n    \"maintenanceEase\": 3,\n    \"partsAvailability\": 4,\n    \"diyFriendliness\": 3,\n    \"operatingAffordability\": 3\n  },\n  \"ownershipEase\": \"Moderate\",\n  \"maintenanceEase\": \"Moderate\"\n}",
-    "EngineCount": null,
+    "ResearchNotes": "Phase 8C-9 normalized 2026-08-07 using manufacturer/model-specific sources. Unsupported defects remain unknown.\n\n[Phase 8A legacy structured context]\n{\n  \"marketAvailability\": \"Used-market availability varies by generation, propulsion and region.\",\n  \"partsAvailability\": \"Factory support and owner community are strengths; model-specific legacy components still require verification.\",\n  \"commonUpgrades\": [\n    \"Battery monitoring\",\n    \"Modern electronics where dated\",\n    \"Canvas or cockpit weather protection\"\n  ],\n  \"comparableModels\": [\n    \"Ranger Tug R-21 EC\",\n    \"Nordic Tug 21\"\n  ],\n  \"knowledgeRelationships\": {\n    \"comparableTo\": [\n      \"Ranger Tug R-21 EC\",\n      \"Nordic Tug 21\"\n    ],\n    \"alternativeIf\": [\n      \"A different Ranger generation better matches propulsion, budget or space priorities\"\n    ],\n    \"stepUpFrom\": []\n  },\n  \"bScoutNotes\": [\n    \"Identify the exact R-21 generation before applying specifications.\",\n    \"Factory packages and owner modifications can materially change equipment and weight.\"\n  ],\n  \"refitPriority\": {\n    \"essential\": [\n      \"Hull and deck moisture\",\n      \"Diesel installation and exhaust\"\n    ],\n    \"recommended\": [\n      \"Battery monitoring\",\n      \"Cooling-system service\"\n    ],\n    \"optional\": [\n      \"Canvas or cockpit weather protection\"\n    ]\n  },\n  \"ownershipScores\": {\n    \"mechanicalSimplicity\": 3,\n    \"maintenanceEase\": 3,\n    \"partsAvailability\": 4,\n    \"diyFriendliness\": 3,\n    \"operatingAffordability\": 3\n  },\n  \"ownershipEase\": \"Moderate\",\n  \"maintenanceEase\": \"Moderate\"\n}\n\nHigh-impact missing-data research pass v6.86 (2026-09-13): evidence-backed canonical fields added; configuration-dependent values remain explicitly variable rather than guessed.",
+    "EngineCount": 1,
     "ModelCharacter": "The original tiny diesel Ranger Tug: a narrow, displacement-speed pocket cruiser with a traditional tug profile, simple shaft drive and just enough cabin for a couple to camp aboard.",
     "DesignLineage": [
       "The R-21 Classic belongs to Ranger Tugs' earliest diesel pocket-tug generation.",
@@ -53045,7 +53262,12 @@
     "StyleCode": "Tug Cruiser",
     "CoolingCode": "cooling.fresh_water",
     "FlybridgeCode": "availability.no",
-    "SideDecksCode": "side_decks.asymmetric"
+    "SideDecksCode": "side_decks.asymmetric",
+    "KeelConfigurationCode": "keel.protective",
+    "RunningGearProtectionCode": "running_gear.keel_protected",
+    "PlanCriticalStatus": {
+      "EnginePowerPerEngine": "configuration_or_production_mixed"
+    }
   },
   {
     "ManufacturerID": "RANGER_TUGS",
@@ -53097,12 +53319,12 @@
       "You prefer only traditional displacement-speed shaft-drive propulsion"
     ],
     "DateCreated": "2026-07-25",
-    "LastUpdated": "2026-08-07",
+    "LastUpdated": "2026-09-13",
     "ReviewedBy": "B-Atlas Phase 8C-9 Family Research",
-    "Revision": 2,
+    "Revision": 3,
     "BoatModelID": "RNGR-21-EC",
     "BoatFamily": "Tug Cruiser",
-    "Configuration": "Extended Cabin Pocket Tug",
+    "Configuration": "Extended Cabin pocket tug",
     "HullBehaviour": "Planing",
     "Features": [
       "Walkthrough Transom",
@@ -53199,7 +53421,9 @@
           },
           "EvidenceRefs": [
             "https://www.rangertugs.com/models",
-            "https://www.rangertugs.com/past-models"
+            "https://www.rangertugs.com/past-models",
+            "https://ca.boats.com/power-boats/2009-ranger-tugs-r-21-ec-10005540/",
+            "https://www.rangertugs.com/media/2234/r-21-ec-spec-sheet-2016.pdf"
           ],
           "EvidenceTypes": [
             "Factory documented",
@@ -53262,8 +53486,8 @@
         "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold"
       ]
     },
-    "ResearchNotes": "Phase 8C-9 normalized 2026-08-07 using manufacturer/model-specific sources. Unsupported defects remain unknown.\n\n[Phase 8A legacy structured context]\n{\n  \"marketAvailability\": \"Used-market availability varies by generation, propulsion and region.\",\n  \"partsAvailability\": \"Factory support and owner community are strengths; model-specific legacy components still require verification.\",\n  \"commonUpgrades\": [\n    \"Battery monitoring\",\n    \"Modern electronics where dated\",\n    \"Canvas or cockpit weather protection\"\n  ],\n  \"comparableModels\": [\n    \"Ranger Tug R-21 Classic\",\n    \"Rosborough RF-18\"\n  ],\n  \"knowledgeRelationships\": {\n    \"comparableTo\": [\n      \"Ranger Tug R-21 Classic\",\n      \"Rosborough RF-18\"\n    ],\n    \"alternativeIf\": [\n      \"A different Ranger generation better matches propulsion, budget or space priorities\"\n    ],\n    \"stepUpFrom\": []\n  },\n  \"bScoutNotes\": [\n    \"Identify the exact R-21 generation before applying specifications.\",\n    \"Factory packages and owner modifications can materially change equipment and weight.\"\n  ],\n  \"refitPriority\": {\n    \"essential\": [\n      \"Engine and cooling service\",\n      \"Cockpit drains\"\n    ],\n    \"recommended\": [\n      \"Battery monitoring\",\n      \"Cooling-system service\"\n    ],\n    \"optional\": [\n      \"Canvas or cockpit weather protection\"\n    ]\n  },\n  \"ownershipScores\": {\n    \"mechanicalSimplicity\": 3,\n    \"maintenanceEase\": 3,\n    \"partsAvailability\": 4,\n    \"diyFriendliness\": 3,\n    \"operatingAffordability\": 3\n  },\n  \"ownershipEase\": \"Moderate\",\n  \"maintenanceEase\": \"Moderate\"\n}",
-    "EngineCount": null,
+    "ResearchNotes": "Phase 8C-9 normalized 2026-08-07 using manufacturer/model-specific sources. Unsupported defects remain unknown.\n\n[Phase 8A legacy structured context]\n{\n  \"marketAvailability\": \"Used-market availability varies by generation, propulsion and region.\",\n  \"partsAvailability\": \"Factory support and owner community are strengths; model-specific legacy components still require verification.\",\n  \"commonUpgrades\": [\n    \"Battery monitoring\",\n    \"Modern electronics where dated\",\n    \"Canvas or cockpit weather protection\"\n  ],\n  \"comparableModels\": [\n    \"Ranger Tug R-21 Classic\",\n    \"Rosborough RF-18\"\n  ],\n  \"knowledgeRelationships\": {\n    \"comparableTo\": [\n      \"Ranger Tug R-21 Classic\",\n      \"Rosborough RF-18\"\n    ],\n    \"alternativeIf\": [\n      \"A different Ranger generation better matches propulsion, budget or space priorities\"\n    ],\n    \"stepUpFrom\": []\n  },\n  \"bScoutNotes\": [\n    \"Identify the exact R-21 generation before applying specifications.\",\n    \"Factory packages and owner modifications can materially change equipment and weight.\"\n  ],\n  \"refitPriority\": {\n    \"essential\": [\n      \"Engine and cooling service\",\n      \"Cockpit drains\"\n    ],\n    \"recommended\": [\n      \"Battery monitoring\",\n      \"Cooling-system service\"\n    ],\n    \"optional\": [\n      \"Canvas or cockpit weather protection\"\n    ]\n  },\n  \"ownershipScores\": {\n    \"mechanicalSimplicity\": 3,\n    \"maintenanceEase\": 3,\n    \"partsAvailability\": 4,\n    \"diyFriendliness\": 3,\n    \"operatingAffordability\": 3\n  },\n  \"ownershipEase\": \"Moderate\",\n  \"maintenanceEase\": \"Moderate\"\n}\n\nHigh-impact missing-data research pass v6.86 (2026-09-13): evidence-backed canonical fields added; configuration-dependent values remain explicitly variable rather than guessed.",
+    "EngineCount": 1,
     "ModelCharacter": "A more usable evolution of the tiny R-21 Classic, adding an extended cabin and greater cruising comfort while preserving the same charming single-diesel, narrow-beam pocket-tug mission.",
     "DesignLineage": [
       "The R-21 EC evolved from the earlier R-21 Classic.",
@@ -53302,7 +53526,10 @@
     "StyleCode": "Tug Cruiser",
     "CoolingCode": "cooling.fresh_water",
     "FlybridgeCode": "availability.no",
-    "SideDecksCode": "side_decks.asymmetric"
+    "SideDecksCode": "side_decks.asymmetric",
+    "LWL": 6.4,
+    "Headroom": 1.88,
+    "EnginePowerPerEngine": 22.37
   },
   {
     "ManufacturerID": "RANGER_TUGS",
@@ -53624,9 +53851,9 @@
       "You prefer only traditional displacement-speed shaft-drive propulsion"
     ],
     "DateCreated": "2026-07-25",
-    "LastUpdated": "2026-08-07",
+    "LastUpdated": "2026-09-13",
     "ReviewedBy": "B-Atlas Phase 8C-9 Family Research",
-    "Revision": 2,
+    "Revision": 3,
     "BoatModelID": "RNGR-25-CLASSIC",
     "BoatFamily": "Tug Cruiser",
     "Configuration": "Classic Diesel Tug Cruiser",
@@ -53730,7 +53957,12 @@
           },
           "EvidenceRefs": [
             "https://www.rangertugs.com/models",
-            "https://www.rangertugs.com/past-models"
+            "https://www.rangertugs.com/past-models",
+            "https://www.boats.com/power-boats/2009-ranger-tugs-r-25-9989981/",
+            "https://marinesource.com/boat/ranger-tug-r-25-classic-2010-pensacola-242863411-for-sale",
+            "https://altothetug.com/",
+            "https://www.boattrader.com/boat/2007-ranger-tugs-r-25-10104877/",
+            "https://www.tugnuts.com/threads/choosing-the-right-tug.2933/"
           ],
           "EvidenceTypes": [
             "Factory documented",
@@ -53793,8 +54025,8 @@
         "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold"
       ]
     },
-    "ResearchNotes": "Phase 8C-9 normalized 2026-08-07 using manufacturer/model-specific sources. Unsupported defects remain unknown.\n\n[Phase 8A legacy structured context]\n{\n  \"marketAvailability\": \"Used-market availability varies by generation, propulsion and region.\",\n  \"partsAvailability\": \"Factory support and owner community are strengths; model-specific legacy components still require verification.\",\n  \"commonUpgrades\": [\n    \"Battery monitoring\",\n    \"Modern electronics where dated\",\n    \"Canvas or cockpit weather protection\"\n  ],\n  \"comparableModels\": [\n    \"Ranger Tug R-25 SC\",\n    \"Ranger Tug R-27 Classic\"\n  ],\n  \"knowledgeRelationships\": {\n    \"comparableTo\": [\n      \"Ranger Tug R-25 SC\",\n      \"Ranger Tug R-27 Classic\"\n    ],\n    \"alternativeIf\": [\n      \"A different Ranger generation better matches propulsion, budget or space priorities\"\n    ],\n    \"stepUpFrom\": []\n  },\n  \"bScoutNotes\": [\n    \"Identify the exact R-25 generation before applying specifications.\",\n    \"Factory packages and owner modifications can materially change equipment and weight.\"\n  ],\n  \"refitPriority\": {\n    \"essential\": [\n      \"Diesel and cooling service\",\n      \"Fuel tank and exhaust\"\n    ],\n    \"recommended\": [\n      \"Battery monitoring\",\n      \"Cooling-system service\"\n    ],\n    \"optional\": [\n      \"Canvas or cockpit weather protection\"\n    ]\n  },\n  \"ownershipScores\": {\n    \"mechanicalSimplicity\": 3,\n    \"maintenanceEase\": 3,\n    \"partsAvailability\": 4,\n    \"diyFriendliness\": 3,\n    \"operatingAffordability\": 3\n  },\n  \"ownershipEase\": \"Moderate\",\n  \"maintenanceEase\": \"Moderate\"\n}",
-    "EngineCount": null,
+    "ResearchNotes": "Phase 8C-9 normalized 2026-08-07 using manufacturer/model-specific sources. Unsupported defects remain unknown.\n\n[Phase 8A legacy structured context]\n{\n  \"marketAvailability\": \"Used-market availability varies by generation, propulsion and region.\",\n  \"partsAvailability\": \"Factory support and owner community are strengths; model-specific legacy components still require verification.\",\n  \"commonUpgrades\": [\n    \"Battery monitoring\",\n    \"Modern electronics where dated\",\n    \"Canvas or cockpit weather protection\"\n  ],\n  \"comparableModels\": [\n    \"Ranger Tug R-25 SC\",\n    \"Ranger Tug R-27 Classic\"\n  ],\n  \"knowledgeRelationships\": {\n    \"comparableTo\": [\n      \"Ranger Tug R-25 SC\",\n      \"Ranger Tug R-27 Classic\"\n    ],\n    \"alternativeIf\": [\n      \"A different Ranger generation better matches propulsion, budget or space priorities\"\n    ],\n    \"stepUpFrom\": []\n  },\n  \"bScoutNotes\": [\n    \"Identify the exact R-25 generation before applying specifications.\",\n    \"Factory packages and owner modifications can materially change equipment and weight.\"\n  ],\n  \"refitPriority\": {\n    \"essential\": [\n      \"Diesel and cooling service\",\n      \"Fuel tank and exhaust\"\n    ],\n    \"recommended\": [\n      \"Battery monitoring\",\n      \"Cooling-system service\"\n    ],\n    \"optional\": [\n      \"Canvas or cockpit weather protection\"\n    ]\n  },\n  \"ownershipScores\": {\n    \"mechanicalSimplicity\": 3,\n    \"maintenanceEase\": 3,\n    \"partsAvailability\": 4,\n    \"diyFriendliness\": 3,\n    \"operatingAffordability\": 3\n  },\n  \"ownershipEase\": \"Moderate\",\n  \"maintenanceEase\": \"Moderate\"\n}\n\nHigh-impact missing-data research pass v6.86 (2026-09-13): evidence-backed canonical fields added; configuration-dependent values remain explicitly variable rather than guessed.",
+    "EngineCount": 1,
     "ModelCharacter": "The early R-25 diesel pocket trawler: a narrow trailerable cruiser that stretched the R-21 idea into a genuinely self-contained cruising boat with enclosed head, galley and inboard shaft drive.",
     "DesignLineage": [
       "The R-25 Classic belongs to Ranger's original diesel inboard generation.",
@@ -53833,7 +54065,14 @@
     "StyleCode": "Tug Cruiser",
     "CoolingCode": "cooling.fresh_water",
     "FlybridgeCode": "availability.no",
-    "SideDecksCode": "side_decks.asymmetric"
+    "SideDecksCode": "side_decks.asymmetric",
+    "KeelConfigurationCode": "keel.full_long",
+    "RunningGearProtectionCode": "running_gear.keel_protected",
+    "ShowerTypeCode": "shower.wet_head",
+    "PlanCriticalStatus": {
+      "Headroom": "configuration_or_production_mixed",
+      "EnginePowerPerEngine": "configuration_or_production_mixed"
+    }
   },
   {
     "ManufacturerID": "RANGER_TUGS",
@@ -54156,9 +54395,9 @@
       "You prefer only traditional displacement-speed shaft-drive propulsion"
     ],
     "DateCreated": "2026-07-25",
-    "LastUpdated": "2026-09-12",
+    "LastUpdated": "2026-09-13",
     "ReviewedBy": "B-Atlas Phase 8C-9 Family Research",
-    "Revision": 2,
+    "Revision": 3,
     "BoatModelID": "RNGR-25-SC",
     "BoatFamily": "Tug Cruiser",
     "Configuration": "Sport Cockpit Diesel Tug Cruiser",
@@ -54318,6 +54557,29 @@
           ],
           "Confidence": "Moderate",
           "Notes": "Inspection guidance combines documented systems with age- and configuration-related checks; it does not assert that every hull has a defect."
+        },
+        {
+          "Scope": "Wave2CanonicalData",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "RNGR-25-SC"
+            ],
+            "Years": {
+              "From": 2010,
+              "To": 2017
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.boattrader.com/boat/2015-ranger-tugs-r-25-sc-10266635/",
+            "https://www.yachtworld.com/yacht/2014-ranger-tugs-r-25-sc-10192802/"
+          ],
+          "EvidenceTypes": [
+            "Manufacturer/manual, technical review, or model-specific listing evidence"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Wave 2: R-25 SC listings document 6 ft 4 in interior headroom and an enclosed head with stand-up shower integrated into the head compartment."
         }
       ],
       "UnresolvedInformation": [
@@ -54325,7 +54587,7 @@
         "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold"
       ]
     },
-    "ResearchNotes": "Phase 8C-9 normalized 2026-08-07 using manufacturer/model-specific sources. Unsupported defects remain unknown.\n\n[Phase 8A legacy structured context]\n{\n  \"marketAvailability\": \"Used-market availability varies by generation, propulsion and region.\",\n  \"partsAvailability\": \"Factory support and owner community are strengths; model-specific legacy components still require verification.\",\n  \"commonUpgrades\": [\n    \"Battery monitoring\",\n    \"Modern electronics where dated\",\n    \"Canvas or cockpit weather protection\"\n  ],\n  \"comparableModels\": [\n    \"Ranger Tug R-25 Classic\",\n    \"Ranger Tug R-27 Classic\"\n  ],\n  \"knowledgeRelationships\": {\n    \"comparableTo\": [\n      \"Ranger Tug R-25 Classic\",\n      \"Ranger Tug R-27 Classic\"\n    ],\n    \"alternativeIf\": [\n      \"A different Ranger generation better matches propulsion, budget or space priorities\"\n    ],\n    \"stepUpFrom\": []\n  },\n  \"bScoutNotes\": [\n    \"Identify the exact R-25 generation before applying specifications.\",\n    \"Factory packages and owner modifications can materially change equipment and weight.\"\n  ],\n  \"refitPriority\": {\n    \"essential\": [\n      \"Diesel cooling and exhaust\",\n      \"Thruster and batteries\"\n    ],\n    \"recommended\": [\n      \"Battery monitoring\",\n      \"Cooling-system service\"\n    ],\n    \"optional\": [\n      \"Canvas or cockpit weather protection\"\n    ]\n  },\n  \"ownershipScores\": {\n    \"mechanicalSimplicity\": 3,\n    \"maintenanceEase\": 3,\n    \"partsAvailability\": 4,\n    \"diyFriendliness\": 3,\n    \"operatingAffordability\": 3\n  },\n  \"ownershipEase\": \"Moderate\",\n  \"maintenanceEase\": \"Moderate\"\n}",
+    "ResearchNotes": "Phase 8C-9 normalized 2026-08-07 using manufacturer/model-specific sources. Unsupported defects remain unknown.\n\n[Phase 8A legacy structured context]\n{\n  \"marketAvailability\": \"Used-market availability varies by generation, propulsion and region.\",\n  \"partsAvailability\": \"Factory support and owner community are strengths; model-specific legacy components still require verification.\",\n  \"commonUpgrades\": [\n    \"Battery monitoring\",\n    \"Modern electronics where dated\",\n    \"Canvas or cockpit weather protection\"\n  ],\n  \"comparableModels\": [\n    \"Ranger Tug R-25 Classic\",\n    \"Ranger Tug R-27 Classic\"\n  ],\n  \"knowledgeRelationships\": {\n    \"comparableTo\": [\n      \"Ranger Tug R-25 Classic\",\n      \"Ranger Tug R-27 Classic\"\n    ],\n    \"alternativeIf\": [\n      \"A different Ranger generation better matches propulsion, budget or space priorities\"\n    ],\n    \"stepUpFrom\": []\n  },\n  \"bScoutNotes\": [\n    \"Identify the exact R-25 generation before applying specifications.\",\n    \"Factory packages and owner modifications can materially change equipment and weight.\"\n  ],\n  \"refitPriority\": {\n    \"essential\": [\n      \"Diesel cooling and exhaust\",\n      \"Thruster and batteries\"\n    ],\n    \"recommended\": [\n      \"Battery monitoring\",\n      \"Cooling-system service\"\n    ],\n    \"optional\": [\n      \"Canvas or cockpit weather protection\"\n    ]\n  },\n  \"ownershipScores\": {\n    \"mechanicalSimplicity\": 3,\n    \"maintenanceEase\": 3,\n    \"partsAvailability\": 4,\n    \"diyFriendliness\": 3,\n    \"operatingAffordability\": 3\n  },\n  \"ownershipEase\": \"Moderate\",\n  \"maintenanceEase\": \"Moderate\"\n}\n\nHigh-impact missing-data research Wave 2 v6.87 (2026-09-13): Wave 2: R-25 SC listings document 6 ft 4 in interior headroom and an enclosed head with stand-up shower integrated into the head compartment. Sources: https://www.boattrader.com/boat/2015-ranger-tugs-r-25-sc-10266635/ ; https://www.yachtworld.com/yacht/2014-ranger-tugs-r-25-sc-10192802/",
     "EngineCount": 1,
     "ModelCharacter": "A cockpit-focused evolution of the diesel R-25, with roughly 25% more aft-deck area while keeping the 8'6\" beam, single Volvo diesel and compact mini-yacht accommodations.",
     "DesignLineage": [
@@ -54368,7 +54630,9 @@
     "StyleCode": "Tug Cruiser",
     "CoolingCode": "cooling.fresh_water",
     "FlybridgeCode": "availability.no",
-    "SideDecksCode": "side_decks.asymmetric"
+    "SideDecksCode": "side_decks.asymmetric",
+    "Headroom": 1.9304,
+    "ShowerTypeCode": "shower.wet_head"
   },
   {
     "ManufacturerID": "RANGER_TUGS",
@@ -55219,9 +55483,9 @@
       "You prefer only traditional displacement-speed shaft-drive propulsion"
     ],
     "DateCreated": "2026-07-25",
-    "LastUpdated": "2026-09-12",
+    "LastUpdated": "2026-09-13",
     "ReviewedBy": "B-Atlas Phase 8C-9 Family Research",
-    "Revision": 2,
+    "Revision": 3,
     "BoatModelID": "RNGR-29-CLASSIC",
     "BoatFamily": "Tug Cruiser",
     "Configuration": "Classic Diesel Tug Cruiser",
@@ -55246,7 +55510,7 @@
     "NormalizedHullConfiguration": "Monohull",
     "NormalizedStyle": "Tug Cruiser",
     "ResearchStatus": "Reviewed",
-    "ResearchNotes": "Phase 8C-9 normalized 2026-08-07 using manufacturer/model-specific sources. Unsupported defects remain unknown.\n\nThe R-29 Classic is the original diesel-inboard generation and must remain separate from current R-29 Sedan and Command Bridge models. The 2009 factory equipment sheet confirms a 260 hp Yanmar 6BY2, enclosed shower, full galley, midship double berth, convertible dinette and standard bow/stern thrusters. Tankage and dimensions can vary across later Classic model years.\n\n[Phase 8A legacy structured context]\n{\n  \"marketAvailability\": \"Used-market availability varies by generation, propulsion and region.\",\n  \"partsAvailability\": \"Factory support and owner community are strengths; model-specific legacy components still require verification.\",\n  \"commonUpgrades\": [\n    \"Battery monitoring\",\n    \"Modern electronics where dated\",\n    \"Canvas or cockpit weather protection\"\n  ],\n  \"comparableModels\": [\n    \"Ranger Tugs R-29 Sedan\",\n    \"Camano Troll 31\"\n  ],\n  \"knowledgeRelationships\": {\n    \"comparableTo\": [\n      \"Ranger Tugs R-29 Sedan\",\n      \"Camano Troll 31\"\n    ],\n    \"alternativeIf\": [\n      \"A different Ranger generation better matches propulsion, budget or space priorities\"\n    ],\n    \"stepUpFrom\": []\n  },\n  \"bScoutNotes\": [\n    \"Identify the exact R-29 generation before applying specifications.\",\n    \"Factory packages and owner modifications can materially change equipment and weight.\"\n  ],\n  \"refitPriority\": {\n    \"essential\": [\n      \"Diesel and cooling system\",\n      \"Thrusters and electrical integration\"\n    ],\n    \"recommended\": [\n      \"Battery monitoring\",\n      \"Cooling-system service\"\n    ],\n    \"optional\": [\n      \"Canvas or cockpit weather protection\"\n    ]\n  },\n  \"ownershipScores\": {\n    \"mechanicalSimplicity\": 3,\n    \"maintenanceEase\": 3,\n    \"partsAvailability\": 4,\n    \"diyFriendliness\": 3,\n    \"operatingAffordability\": 3\n  },\n  \"ownershipEase\": \"Moderate\",\n  \"maintenanceEase\": \"Moderate\"\n}",
+    "ResearchNotes": "Phase 8C-9 normalized 2026-08-07 using manufacturer/model-specific sources. Unsupported defects remain unknown.\n\nThe R-29 Classic is the original diesel-inboard generation and must remain separate from current R-29 Sedan and Command Bridge models. The 2009 factory equipment sheet confirms a 260 hp Yanmar 6BY2, enclosed shower, full galley, midship double berth, convertible dinette and standard bow/stern thrusters. Tankage and dimensions can vary across later Classic model years.\n\n[Phase 8A legacy structured context]\n{\n  \"marketAvailability\": \"Used-market availability varies by generation, propulsion and region.\",\n  \"partsAvailability\": \"Factory support and owner community are strengths; model-specific legacy components still require verification.\",\n  \"commonUpgrades\": [\n    \"Battery monitoring\",\n    \"Modern electronics where dated\",\n    \"Canvas or cockpit weather protection\"\n  ],\n  \"comparableModels\": [\n    \"Ranger Tugs R-29 Sedan\",\n    \"Camano Troll 31\"\n  ],\n  \"knowledgeRelationships\": {\n    \"comparableTo\": [\n      \"Ranger Tugs R-29 Sedan\",\n      \"Camano Troll 31\"\n    ],\n    \"alternativeIf\": [\n      \"A different Ranger generation better matches propulsion, budget or space priorities\"\n    ],\n    \"stepUpFrom\": []\n  },\n  \"bScoutNotes\": [\n    \"Identify the exact R-29 generation before applying specifications.\",\n    \"Factory packages and owner modifications can materially change equipment and weight.\"\n  ],\n  \"refitPriority\": {\n    \"essential\": [\n      \"Diesel and cooling system\",\n      \"Thrusters and electrical integration\"\n    ],\n    \"recommended\": [\n      \"Battery monitoring\",\n      \"Cooling-system service\"\n    ],\n    \"optional\": [\n      \"Canvas or cockpit weather protection\"\n    ]\n  },\n  \"ownershipScores\": {\n    \"mechanicalSimplicity\": 3,\n    \"maintenanceEase\": 3,\n    \"partsAvailability\": 4,\n    \"diyFriendliness\": 3,\n    \"operatingAffordability\": 3\n  },\n  \"ownershipEase\": \"Moderate\",\n  \"maintenanceEase\": \"Moderate\"\n}\n\nHigh-impact missing-data research Wave 2 v6.87 (2026-09-13): Wave 2: 2011 R-29 Classic walkthrough documents 6 ft 6 in salon headroom and 6 ft 2 in master stateroom and head/shower; the head/shower is a combined compartment. Sources: https://marinesource.com/boat/ranger-tug-r-29-2011-grafton-a84bf04b-for-sale",
     "DataConfidence": "Moderate",
     "Overview": "The Ranger Tugs R-29 Classic diesel is a compact pilothouse cruising boat in Ranger Tugs’ trailerable-to-coastal range. This version is single-diesel and combines an enclosed helm, cruising accommodations and a workboat-inspired profile with systems intended for short-handed recreational cruising.",
     "Suitability": {
@@ -55382,6 +55646,28 @@
           ],
           "Confidence": "Moderate",
           "Notes": "Inspection guidance combines documented systems with age- and configuration-related checks; it does not assert that every hull has a defect."
+        },
+        {
+          "Scope": "Wave2CanonicalData",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "RNGR-29-CLASSIC"
+            ],
+            "Years": {
+              "From": 2009,
+              "To": 2019
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://marinesource.com/boat/ranger-tug-r-29-2011-grafton-a84bf04b-for-sale"
+          ],
+          "EvidenceTypes": [
+            "Manufacturer/manual, technical review, or model-specific listing evidence"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Wave 2: 2011 R-29 Classic walkthrough documents 6 ft 6 in salon headroom and 6 ft 2 in master stateroom and head/shower; the head/shower is a combined compartment."
         }
       ],
       "UnresolvedInformation": [
@@ -55431,7 +55717,12 @@
     "StyleCode": "Tug Cruiser",
     "CoolingCode": "cooling.fresh_water",
     "FlybridgeCode": "availability.no",
-    "SideDecksCode": "side_decks.asymmetric"
+    "SideDecksCode": "side_decks.asymmetric",
+    "Headroom": 1.9812,
+    "HeadroomSalon": 1.9812,
+    "HeadroomHead": 1.8796,
+    "HeadroomForwardCabin": 1.8796,
+    "ShowerTypeCode": "shower.wet_head"
   },
   {
     "ManufacturerID": "RANGER_TUGS",
@@ -60679,9 +60970,9 @@
       "You prefer slow displacement cruising"
     ],
     "DateCreated": "2026-07-18",
-    "LastUpdated": "2026-09-12",
+    "LastUpdated": "2026-09-13",
     "ReviewedBy": "B-Atlas Phase 8C-17 Specialist / Isolated Models Research",
-    "Revision": 2,
+    "Revision": 3,
     "BoatModelID": "SSPT-27",
     "BoatFamily": "Cruiser",
     "HullBehaviour": "Planing",
@@ -60845,7 +61136,7 @@
         "The final production year for the original 27-foot family was not established in this pass."
       ]
     },
-    "ResearchNotes": "Boats.com period review documents 1985 introduction, 26'6\" length, 8'6\" beam, 2'8\" drive-down draft, 6,350 lb, 160 gal fuel and 45 gal water. The same review directly defines Seamaster, Navigator and Pilot as three deck plans on the 27 family.",
+    "ResearchNotes": "Boats.com period review documents 1985 introduction, 26'6\" length, 8'6\" beam, 2'8\" drive-down draft, 6,350 lb, 160 gal fuel and 45 gal water. The same review directly defines Seamaster, Navigator and Pilot as three deck plans on the 27 family.\n\nHigh-impact missing-data research pass v6.86 (2026-09-13): evidence-backed canonical fields added; configuration-dependent values remain explicitly variable rather than guessed.",
     "ModelCharacter": "Sea Sport's long-running 8'6\"-beam flagship family introduced in 1985, built on one rugged 27-foot hull but offered as Seamaster, Navigator and raised-pilothouse Pilot deck plans. All prioritize fishing-capable cockpit space and rough-water Pacific Northwest utility, with the Pilot and Navigator adding substantially more cruising accommodation.",
     "DesignLineage": [
       "The Sea Sport 27 was introduced in 1985 as an expansion of the company's 22- and 24-foot ranges.",
@@ -60882,7 +61173,9 @@
     "Draft": 0.8138,
     "PlanCriticalStatus": {
       "Draft": "researched_unknown",
-      "AirDraft": "researched_unknown"
+      "AirDraft": "researched_unknown",
+      "EnginePowerPerEngine": "configuration_or_production_mixed",
+      "ShowerTypeCode": "configuration_or_production_mixed"
     },
     "AirDraft": null,
     "CanonicalSlug": "sea-sport-27-seamaster-navigator-pilot",
@@ -60891,7 +61184,11 @@
     "StyleCode": "Pilothouse Cruiser",
     "CoolingCode": "cooling.raw_water",
     "FlybridgeCode": "availability.optional",
-    "SideDecksCode": "side_decks.moderate"
+    "SideDecksCode": "side_decks.moderate",
+    "EngineCount": 1,
+    "Configuration": "Seamaster / Navigator / Pilot deck plans",
+    "RudderTypeCode": "rudder.none_external_drive",
+    "RunningGearProtectionCode": "running_gear.exposed"
   },
   {
     "ManufacturerID": "SEAWAY",
@@ -65091,9 +65388,9 @@
       "You cannot accommodate model-specific restoration or customization"
     ],
     "DateCreated": "2026-07-18",
-    "LastUpdated": "2026-09-02",
+    "LastUpdated": "2026-09-13",
     "ReviewedBy": "B-Atlas Phase 8C-10 Traditional Trawler Family Research",
-    "Revision": 6,
+    "Revision": 7,
     "BoatModelID": "WILL-30-VO",
     "BoatFamily": "Trawler",
     "Configuration": "Raised Pilothouse Trawler",
@@ -65106,7 +65403,7 @@
     "NormalizedStyle": "Trawler",
     "DataConfidence": "Moderate",
     "ResearchStatus": "Reviewed",
-    "ResearchNotes": "Factory 1974 Vega 30 manual supports Perkins 4-107 single diesel, 100 gal fuel and 100 gal water for the Voyager. Owners-registry history identifies 29 Voyagers within the 110-hull Vega 30 family. Production references vary between 1972–75 and 1973–75; B-Atlas uses the broader documented 1972–75 family span.",
+    "ResearchNotes": "Factory 1974 Vega 30 manual supports Perkins 4-107 single diesel, 100 gal fuel and 100 gal water for the Voyager. Owners-registry history identifies 29 Voyagers within the 110-hull Vega 30 family. Production references vary between 1972–75 and 1973–75; B-Atlas uses the broader documented 1972–75 family span.\n\nHigh-impact missing-data research Wave 2 v6.87 (2026-09-13): Wave 2: Willard Vega 30 Voyager listing reports 6 ft cabin headroom. Original owners manual states that the rudder foots in a bearing in a bronze skeg attached to the keel and that the skeg provides bottom protection to the propeller. Sources: https://willardboats.org/files/vega30ownersmanual.pdf ; https://marinesource.com/boat/willard-vega-30-voyager-1973-honolulu-a98bf9fb-for-sale",
     "Overview": "The Willard 30 Vega Voyager belongs to Willard Marine’s early production-fiberglass cruising lineage. These heavy, economical boats use displacement hulls and simple diesel propulsion, with the Vega families offered in materially different sedan, pilothouse and motorsailer configurations.",
     "Suitability": {
       "CoupleCruising": {
@@ -65250,6 +65547,29 @@
           ],
           "Confidence": "Moderate",
           "Notes": "Inspection guidance identifies systems and age/configuration risks to inspect; it is not an assertion that every hull has a defect."
+        },
+        {
+          "Scope": "Wave2CanonicalData",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "WILL-30-VO"
+            ],
+            "Years": {
+              "From": 1973,
+              "To": 1975
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://willardboats.org/files/vega30ownersmanual.pdf",
+            "https://marinesource.com/boat/willard-vega-30-voyager-1973-honolulu-a98bf9fb-for-sale"
+          ],
+          "EvidenceTypes": [
+            "Manufacturer/manual, technical review, or model-specific listing evidence"
+          ],
+          "Confidence": "High",
+          "Notes": "Wave 2: Willard Vega 30 Voyager listing reports 6 ft cabin headroom. Original owners manual states that the rudder foots in a bearing in a bronze skeg attached to the keel and that the skeg provides bottom protection to the propeller."
         }
       ],
       "UnresolvedInformation": [
@@ -65285,7 +65605,7 @@
     "HullBehaviourCode": "hull_behaviour.displacement",
     "BoatFamilyCode": "boat_family.trawler",
     "KeelConfigurationCode": "keel.full_long",
-    "RunningGearProtectionCode": "running_gear.keel_protected",
+    "RunningGearProtectionCode": "running_gear.skeg_protected",
     "LOA": 9.144,
     "Beam": 3.2004,
     "Draft": 1.0668,
@@ -65304,7 +65624,9 @@
     "StyleCode": "Trawler",
     "CoolingCode": "cooling.fresh_water",
     "FlybridgeCode": "availability.no",
-    "SideDecksCode": "side_decks.narrow"
+    "SideDecksCode": "side_decks.narrow",
+    "Headroom": 1.8288,
+    "RudderTypeCode": "rudder.skeg_hung"
   },
   {
     "ManufacturerID": "WILLARD",

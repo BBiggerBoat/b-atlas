@@ -1,7 +1,7 @@
 {
   "schemaVersion": 19,
-  "release": "v6.85.0",
-  "purpose": "Document authoritative runtime data, canonical normalization status, and field-by-field missing-data classification after v6.85 normalization.",
+  "release": "v6.87.0",
+  "purpose": "Document authoritative runtime data and field-by-field missing-data classification after v6.87 high-impact research wave 2.",
   "principles": [
     "Known undesirable information may eliminate a candidate.",
     "Unknown information remains eligible and reduces confidence rather than causing elimination.",
@@ -13,7 +13,7 @@
   "managed": [
     {
       "path": "boatmodels.json",
-      "role": "Canonical boat model identity, specifications and—after controlled migration—all model-specific interpretive knowledge."
+      "role": "Canonical boat model identity, specifications and\u2014after controlled migration\u2014all model-specific interpretive knowledge."
     },
     {
       "path": "data/model-schema.json",
@@ -143,16 +143,16 @@
       "role": "Canonical fact/provenance contract preserving source value and source unit."
     },
     {
-      "path": "data/canonical-completeness-audit-v6.85.json",
-      "role": "Generated field-by-field canonical completeness audit after normalization. Stores classifications only, not specification values."
+      "path": "data/canonical-completeness-audit-v6.87.json",
+      "role": "Generated canonical completeness classification after v6.87 research wave 2. Stores classifications only, not specification values."
     },
     {
-      "path": "data/canonical-missing-data-queue-v6.85.json",
-      "role": "Generated prioritized research and remaining normalization queue after v6.85 normalization."
+      "path": "data/canonical-missing-data-queue-v6.87.json",
+      "role": "Generated prioritized research queue after v6.87 research wave 2."
     },
     {
-      "path": "data/canonical-normalization-report-v6.85.json",
-      "role": "Generated change log of canonical code fields normalized from existing values in boatmodels.json; no external research values."
+      "path": "developer/archive/v6.85-canonical-normalization-report.json",
+      "role": "Archived v6.85 normalization report; not runtime data."
     }
   ],
   "generated": [
@@ -314,9 +314,9 @@
     ]
   },
   "phase": "Canonical normalization pass",
-  "notes": "v6.85.0 normalizes existing descriptive values into canonical code fields without external research. boatmodels.json remains the sole active model-wide specification source; unresolved ambiguous mappings remain unknown or queued.",
+  "notes": "v6.87.0 applies a second supported high-impact research wave focused on headroom, rudder arrangement and running-gear protection while preserving ambiguous values as unknown/variable. boatmodels.json remains the sole active model-wide specification source.",
   "lastUpdated": "2026-09-13",
-  "Release": "v6.85.0",
+  "Release": "v6.87.0",
   "LastUpdated": "2026-09-13",
   "modelCount": 259,
   "communityContributions": {

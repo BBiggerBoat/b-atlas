@@ -450,6 +450,28 @@
         ],
         "Confidence": "Moderate",
         "Notes": "Inspection guidance combines model-specific configuration with family/age-related risk areas; applicability must be verified on the individual boat."
+      },
+      {
+        "Scope": "Wave2CanonicalData",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "ALBN-27-FC"
+          ],
+          "Years": {
+            "From": 1983,
+            "To": 1995
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://albin27.com/albin-27-history/albin-27-faq/"
+        ],
+        "EvidenceTypes": [
+          "Manufacturer/manual, technical review, or model-specific listing evidence"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Wave 2: Albin 27 Owners Club FAQ reports at least 6 ft standing headroom in the cockpit, helm, forward cabin and head compartment; aft cabin is lower."
       }
     ],
     "images": [
@@ -572,7 +594,7 @@
       "GeneratedAt": "2026-07-26",
       "ScoredFieldCount": 34
     },
-    "updatedAt": "2026-08-07"
+    "updatedAt": "2026-09-13"
   },
   {
     "schemaVersion": 2,
@@ -15183,6 +15205,29 @@
         ],
         "Confidence": "Moderate",
         "Notes": "Location-specific interior dimensions are retained separately; they should not be generalized to all interior spaces."
+      },
+      {
+        "Scope": "Wave2CanonicalData",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "CAMA-31-TR"
+          ],
+          "Years": {
+            "From": 1990,
+            "To": 2011
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://helmsmantrawlers.com/wp-content/uploads/2011/10/PY_FEB16_HLT_31_Camano.pdf",
+          "https://www.camanotrawlers.com/camano_31_trawler-boat-310067.html"
+        ],
+        "EvidenceTypes": [
+          "Manufacturer/manual, technical review, or model-specific listing evidence"
+        ],
+        "Confidence": "High",
+        "Notes": "Wave 2: Camano 31 sources consistently report about 6 ft 2 in general interior headroom. Technical review describes the full/protective keel extending aft as a shoe supporting the large barn-door rudder and protecting the propeller."
       }
     ],
     "images": [
@@ -15404,7 +15449,7 @@
       "GeneratedAt": "2026-07-26",
       "ScoredFieldCount": 34
     },
-    "updatedAt": "2026-08-07"
+    "updatedAt": "2026-09-13"
   },
   {
     "schemaVersion": 2,
@@ -33088,6 +33133,29 @@
         ],
         "Confidence": "Moderate",
         "Notes": "Inspection priorities reflect construction era, equipment and family-wide ownership risks; they are not represented as confirmed defects on every hull."
+      },
+      {
+        "Scope": "Wave2CanonicalData",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "GRBK-36-CL"
+          ],
+          "Years": {
+            "From": 1964,
+            "To": 2004
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/grand-banks/36-classic-1965-2004",
+          "https://www.devalk.nl/en/yachtbrokerage/809567/GRAND-BANKS-36-CLASSIC.html"
+        ],
+        "EvidenceTypes": [
+          "Manufacturer/manual, technical review, or model-specific listing evidence"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Wave 2: Grand Banks 36 Classic spans major wood/fiberglass and dimensional revisions; documented headroom varies across examples (about 1.83-2.00 m), and both single- and twin-engine factory configurations are well established. These are explicitly variable rather than forced to one model-wide value."
       }
     ],
     "images": [
@@ -33231,7 +33299,7 @@
       "GeneratedAt": "2026-07-26",
       "ScoredFieldCount": 34
     },
-    "updatedAt": "2026-08-07"
+    "updatedAt": "2026-09-13"
   },
   {
     "schemaVersion": 2,
@@ -37818,7 +37886,10 @@
           },
           "Variations": []
         },
-        "EvidenceRefs": [],
+        "EvidenceRefs": [
+          "https://www.powerboatlistings.com/view/25067",
+          "https://bluewateryachtsales.com/yachts-for-sale/stanford/1987-holiday-mansion-38-costal-barracuda/"
+        ],
         "EvidenceTypes": [
           "Unverified"
         ],
@@ -37959,7 +38030,7 @@
       "GeneratedAt": "2026-07-26",
       "ScoredFieldCount": 34
     },
-    "updatedAt": "2026-08-07"
+    "updatedAt": "2026-09-13"
   },
   {
     "schemaVersion": 2,
@@ -38291,7 +38362,8 @@
         },
         "EvidenceRefs": [
           "https://huntyachts.com/wp-content/uploads/2015/11/2016-Surfhunter-29-standard-equipment-11-3-15.pdf",
-          "https://www.yachtingmagazine.com/new-coupe-hunt/"
+          "https://www.yachtingmagazine.com/new-coupe-hunt/",
+          "https://www.usharbors.com/2012/03/hunt-presents-new-surfhunter-new-options/"
         ],
         "EvidenceTypes": [
           "Factory documented",
@@ -38441,7 +38513,7 @@
       "GeneratedAt": "2026-07-26",
       "ScoredFieldCount": 34
     },
-    "updatedAt": "2026-08-07"
+    "updatedAt": "2026-09-13"
   },
   {
     "schemaVersion": 2,
@@ -46342,6 +46414,28 @@
         ],
         "Confidence": "Moderate",
         "Notes": "Questions derived from supported family inspection priorities."
+      },
+      {
+        "Scope": "Wave2CanonicalData",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "MTRA-34-EU"
+          ],
+          "Years": {
+            "From": null,
+            "To": null
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://marinesource.com/boat/marine-trader-europa-1982-washington-2543b6429-for-sale"
+        ],
+        "EvidenceTypes": [
+          "Manufacturer/manual, technical review, or model-specific listing evidence"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Wave 2: documented 1982 Marine Trader Europa example reports 6.25 ft (6 ft 3 in) cabin headroom."
       }
     ],
     "images": [
@@ -46416,7 +46510,7 @@
       "GeneratedAt": "2026-07-26",
       "ScoredFieldCount": 25
     },
-    "updatedAt": "2026-08-07"
+    "updatedAt": "2026-09-13"
   },
   {
     "schemaVersion": 2,
@@ -46566,6 +46660,28 @@
         ],
         "Confidence": "High",
         "Notes": "Targeted source-backed specification completion v6.47.0."
+      },
+      {
+        "Scope": "Wave2CanonicalData",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "MTRA-34-SE"
+          ],
+          "Years": {
+            "From": 1973,
+            "To": 2001
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/marine-trader/34-sedan-1973-2001"
+        ],
+        "EvidenceTypes": [
+          "Manufacturer/manual, technical review, or model-specific listing evidence"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Wave 2: PowerBoat Guide/HMY specification gives 30 ft 3 in LWL for the Marine Trader 34 Sedan."
       }
     ],
     "images": [
@@ -46651,7 +46767,7 @@
       "GeneratedAt": "2026-07-26",
       "ScoredFieldCount": 34
     },
-    "updatedAt": "2026-08-07"
+    "updatedAt": "2026-09-13"
   },
   {
     "schemaVersion": 2,
@@ -48456,6 +48572,29 @@
         ],
         "Confidence": "Moderate",
         "Notes": "Inspection guidance is age/configuration based and is not a claim of a model-wide defect."
+      },
+      {
+        "Scope": "Wave2CanonicalData",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "MERI-381-SE"
+          ],
+          "Years": {
+            "From": 2003,
+            "To": 2006
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://alexandermarineusa.com/app/uploads/2018/05/Specs-Meridian-381-Sedan.pdf",
+          "https://www.boatdealers.ca/boats-for-sale/571862/meridian-381-sedan-hamilton-ontario"
+        ],
+        "EvidenceTypes": [
+          "Manufacturer/manual, technical review, or model-specific listing evidence"
+        ],
+        "Confidence": "High",
+        "Notes": "Wave 2: Meridian 381 specification sheets and Canadian listing both report 6 ft 4 in cabin headroom."
       }
     ],
     "images": [
@@ -48541,7 +48680,7 @@
       "GeneratedAt": "2026-07-26",
       "ScoredFieldCount": 34
     },
-    "updatedAt": "2026-08-07"
+    "updatedAt": "2026-09-13"
   },
   {
     "schemaVersion": 2,
@@ -49653,6 +49792,29 @@
         ],
         "Confidence": "Moderate",
         "Notes": "Inspection guidance addresses configuration and age risks and is not a claim of universal model defects."
+      },
+      {
+        "Scope": "Wave2CanonicalData",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "NMBS-3003"
+          ],
+          "Years": {
+            "From": 1985,
+            "To": 1992
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.devalk.nl/en/yachtbrokerage/52892/NIMBUS-3003.html",
+          "https://dartmouth.boatshed.com/nimbus_3003-boat-114071.html"
+        ],
+        "EvidenceTypes": [
+          "Manufacturer/manual, technical review, or model-specific listing evidence"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Wave 2: independent Nimbus 3003 listings report approximately 1.87-1.90 m headroom; Boatshed reports 8.87 m LWL. Canonical general headroom uses 1.90 m representative documented value."
       }
     ],
     "images": [
@@ -49816,7 +49978,7 @@
       "GeneratedAt": "2026-07-26",
       "ScoredFieldCount": 31
     },
-    "updatedAt": "2026-08-07"
+    "updatedAt": "2026-09-13"
   },
   {
     "schemaVersion": 2,
@@ -49921,7 +50083,9 @@
           "Variations": []
         },
         "EvidenceRefs": [
-          "https://nimbus.se/boats/365-coupe/"
+          "https://nimbus.se/boats/365-coupe/",
+          "https://www.devalk.nl/en/yachtbrokerage/811773/NIMBUS-365-COUPE.html",
+          "https://nimbusboats.com/boats/365-coupe/"
         ],
         "EvidenceTypes": [
           "Factory documented",
@@ -50069,7 +50233,7 @@
       "GeneratedAt": "2026-07-26",
       "ScoredFieldCount": 34
     },
-    "updatedAt": "2026-08-07"
+    "updatedAt": "2026-09-13"
   },
   {
     "schemaVersion": 2,
@@ -50854,6 +51018,29 @@
         ],
         "Confidence": "Moderate",
         "Notes": "Location-specific interior dimensions are retained separately; they should not be generalized to all interior spaces."
+      },
+      {
+        "Scope": "Wave2CanonicalData",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "NDTG-26"
+          ],
+          "Years": {
+            "From": 1980,
+            "To": 2026
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://boattest.com/boats/nordic-tugs/nordic-tug-26-2014",
+          "https://www.annapolisyachtbroker.com/listings/1997-nordic-tug-26-26-9263362"
+        ],
+        "EvidenceTypes": [
+          "Manufacturer/manual, technical review, or model-specific listing evidence"
+        ],
+        "Confidence": "High",
+        "Notes": "Wave 2: Nordic Tug 26 documentation gives 6 ft 4 in salon headroom and 6 ft 2 in pilothouse headroom. The full-length keel continues to a metal/steel rudder shoe supporting the traditional barn-door rudder and protecting the propeller."
       }
     ],
     "images": [
@@ -50976,7 +51163,7 @@
       "GeneratedAt": "2026-07-26",
       "ScoredFieldCount": 33
     },
-    "updatedAt": "2026-08-07"
+    "updatedAt": "2026-09-13"
   },
   {
     "schemaVersion": 2,
@@ -54417,7 +54604,9 @@
         },
         "EvidenceRefs": [
           "https://www.rangertugs.com/models",
-          "https://www.rangertugs.com/past-models"
+          "https://www.rangertugs.com/past-models",
+          "https://marinesource.com/boat/ranger-tug-r-21-2003-chattanooga-177a8e2ddb-for-sale",
+          "https://marinesource.com/boat/ranger-tug-r-21-2001-everett-24631b7b1-for-sale"
         ],
         "EvidenceTypes": [
           "Factory documented",
@@ -54632,7 +54821,7 @@
       "GeneratedAt": "2026-07-26",
       "ScoredFieldCount": 33
     },
-    "updatedAt": "2026-08-07"
+    "updatedAt": "2026-09-13"
   },
   {
     "schemaVersion": 2,
@@ -54737,7 +54926,9 @@
         },
         "EvidenceRefs": [
           "https://www.rangertugs.com/models",
-          "https://www.rangertugs.com/past-models"
+          "https://www.rangertugs.com/past-models",
+          "https://ca.boats.com/power-boats/2009-ranger-tugs-r-21-ec-10005540/",
+          "https://www.rangertugs.com/media/2234/r-21-ec-spec-sheet-2016.pdf"
         ],
         "EvidenceTypes": [
           "Factory documented",
@@ -54952,7 +55143,7 @@
       "GeneratedAt": "2026-07-26",
       "ScoredFieldCount": 33
     },
-    "updatedAt": "2026-08-07"
+    "updatedAt": "2026-09-13"
   },
   {
     "schemaVersion": 2,
@@ -55380,7 +55571,12 @@
         },
         "EvidenceRefs": [
           "https://www.rangertugs.com/models",
-          "https://www.rangertugs.com/past-models"
+          "https://www.rangertugs.com/past-models",
+          "https://www.boats.com/power-boats/2009-ranger-tugs-r-25-9989981/",
+          "https://marinesource.com/boat/ranger-tug-r-25-classic-2010-pensacola-242863411-for-sale",
+          "https://altothetug.com/",
+          "https://www.boattrader.com/boat/2007-ranger-tugs-r-25-10104877/",
+          "https://www.tugnuts.com/threads/choosing-the-right-tug.2933/"
         ],
         "EvidenceTypes": [
           "Factory documented",
@@ -55595,7 +55791,7 @@
       "GeneratedAt": "2026-07-26",
       "ScoredFieldCount": 33
     },
-    "updatedAt": "2026-08-07"
+    "updatedAt": "2026-09-13"
   },
   {
     "schemaVersion": 2,
@@ -56079,6 +56275,29 @@
         ],
         "Confidence": "Moderate",
         "Notes": "Inspection guidance combines documented systems with age- and configuration-related checks; it does not assert that every hull has a defect."
+      },
+      {
+        "Scope": "Wave2CanonicalData",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "RNGR-25-SC"
+          ],
+          "Years": {
+            "From": 2010,
+            "To": 2017
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.boattrader.com/boat/2015-ranger-tugs-r-25-sc-10266635/",
+          "https://www.yachtworld.com/yacht/2014-ranger-tugs-r-25-sc-10192802/"
+        ],
+        "EvidenceTypes": [
+          "Manufacturer/manual, technical review, or model-specific listing evidence"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Wave 2: R-25 SC listings document 6 ft 4 in interior headroom and an enclosed head with stand-up shower integrated into the head compartment."
       }
     ],
     "images": [
@@ -56238,7 +56457,7 @@
       "GeneratedAt": "2026-07-26",
       "ScoredFieldCount": 33
     },
-    "updatedAt": "2026-09-12"
+    "updatedAt": "2026-09-13"
   },
   {
     "schemaVersion": 2,
@@ -57398,6 +57617,28 @@
         ],
         "Confidence": "Moderate",
         "Notes": "Inspection guidance combines documented systems with age- and configuration-related checks; it does not assert that every hull has a defect."
+      },
+      {
+        "Scope": "Wave2CanonicalData",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "RNGR-29-CLASSIC"
+          ],
+          "Years": {
+            "From": 2009,
+            "To": 2019
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://marinesource.com/boat/ranger-tug-r-29-2011-grafton-a84bf04b-for-sale"
+        ],
+        "EvidenceTypes": [
+          "Manufacturer/manual, technical review, or model-specific listing evidence"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Wave 2: 2011 R-29 Classic walkthrough documents 6 ft 6 in salon headroom and 6 ft 2 in master stateroom and head/shower; the head/shower is a combined compartment."
       }
     ],
     "images": [
@@ -57593,7 +57834,7 @@
       "GeneratedAt": "2026-07-26",
       "ScoredFieldCount": 33
     },
-    "updatedAt": "2026-09-12"
+    "updatedAt": "2026-09-13"
   },
   {
     "schemaVersion": 2,
@@ -63472,7 +63713,7 @@
       "GeneratedAt": "2026-07-26",
       "ScoredFieldCount": 33
     },
-    "updatedAt": "2026-09-12"
+    "updatedAt": "2026-09-13"
   },
   {
     "schemaVersion": 2,
@@ -67619,6 +67860,29 @@
         ],
         "Confidence": "Moderate",
         "Notes": "Inspection guidance identifies systems and age/configuration risks to inspect; it is not an assertion that every hull has a defect."
+      },
+      {
+        "Scope": "Wave2CanonicalData",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "WILL-30-VO"
+          ],
+          "Years": {
+            "From": 1973,
+            "To": 1975
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://willardboats.org/files/vega30ownersmanual.pdf",
+          "https://marinesource.com/boat/willard-vega-30-voyager-1973-honolulu-a98bf9fb-for-sale"
+        ],
+        "EvidenceTypes": [
+          "Manufacturer/manual, technical review, or model-specific listing evidence"
+        ],
+        "Confidence": "High",
+        "Notes": "Wave 2: Willard Vega 30 Voyager listing reports 6 ft cabin headroom. Original owners manual states that the rudder foots in a bearing in a bronze skeg attached to the keel and that the skeg provides bottom protection to the propeller."
       }
     ],
     "images": [
@@ -67725,7 +67989,7 @@
       "GeneratedAt": "2026-07-26",
       "ScoredFieldCount": 31
     },
-    "updatedAt": "2026-09-02"
+    "updatedAt": "2026-09-13"
   },
   {
     "schemaVersion": 2,
