@@ -1,10 +1,13 @@
 User-agent: *
 Allow: /
+Disallow: /developer/
 
 User-agent: OAI-SearchBot
 Allow: /
+Disallow: /developer/
 
 User-agent: ChatGPT-User
 Allow: /
+Disallow: /developer/
 
 Sitemap: https://b-atlas.org/sitemap.xml
