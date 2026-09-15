@@ -1,0 +1,33 @@
+B-Atlas v7.06.1 — Missing Image Recovery List
+Date: 2026-09-15
+
+Two v7.06.0 placeholder records were recovered from orphaned image files still present in the current package:
+- MERI-381-SE — Meridian 381 Sedan — restored as images/meri-381-se.jpg
+- PDQB-34-PA — PDQ 34 PowerCat / Passagemaker — restored as images/pdqb-34-pa.jpg
+
+The following 19 model images remain absent from the current v7.06.0 package and should be recovered from an earlier primary-site archive. Expected/historical requested filenames are shown where known:
+
+1. FJRD-36-OPEN — Fjord 36 Open — images/fjrd-36-open.jpg
+2. FJRD-40 — Fjord 40 Cruiser — images/fjrd-40.jpg
+3. FJRD-40-OPEN — Fjord 40 Open — images/fjrd-40-open.jpg
+4. JEAU-1095 — Jeanneau Merry Fisher 1095 Coupé / NC 1095 — images/jeau-1095.jpg
+5. JEAU-1095-FLY — Jeanneau Merry Fisher 1095 Fly / NC 1095 Fly — images/jeau-1095-fly.jpg
+6. JEAU-605 — Jeanneau Merry Fisher 605 — images/jeau-605.jpg
+7. JEAU-635 — Jeanneau Merry Fisher 635 — images/jeau-635.jpg
+8. JEAU-695 — Jeanneau Merry Fisher 695 — images/jeau-695.jpg
+9. JEAU-795 — Jeanneau Merry Fisher 795 / NC 795 — images/jeau-795.jpg
+10. JEAU-855 — Jeanneau Merry Fisher 855 — images/jeau-855.jpg
+11. JEAU-895 — Jeanneau Merry Fisher 895 / NC 895 — images/jeau-895.jpg
+12. JEAU-895-SP — Jeanneau Merry Fisher 895 Sport — images/jeau-895-sp.jpg
+13. MERI-341-SE — Meridian 341 Sedan — images/meri-341-se.jpg
+14. NMBS-365-CO — Nimbus 365 Coupé — images/nmbs-365-co.jpg
+15. OCEA-36-SE — Oceania Yachts 36 Sedan — historical registry requested images/ocal-36-se.jpg
+16. OCAL-39-SE — Ocean Alexander 39 Sedan — images/ocal-39-se.jpg
+17. SHAN-38-SRD — Shannon 38 SRD — historical registry requested images/shan-26-sr.jpg
+18. MNSH-34-TR — Mainship 34T — no surviving requested filename in v7.06.0
+19. MERI-341-SE-03 — Meridian 341 Sedan, original generation / Bayliner 3488 lineage — no surviving requested filename in v7.06.0
+
+Notes:
+- B-Atlas Library metadata shows earlier complete primary-site archives including v6.94.0, v6.93.0, v6.92.0, etc. The v6.94.0 archive is the newest earlier full-site package found.
+- This session can see those archive records but the Library does not expose their raw ZIP bytes to the working container, so the 19 image files cannot safely be copied from them in this repair without the earlier archive being attached as a conversation file.
+- Do not substitute unrelated web images. Restore the exact earlier B-Atlas assets where possible.

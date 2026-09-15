@@ -54,13 +54,19 @@
     }
 
     function resolveBoatImage(boatOrId) {
-        // BoatModelID is the only runtime image identity. Registry and legacy ImageURL
-        // values may describe provenance, but they cannot override the canonical path.
-        const canonicalPath = canonicalImagePath(boatOrId);
-        if (canonicalPath) return canonicalPath;
-
+        // Prefer a verified registry asset, then the model's explicit image reference.
+        // Fall back to the BoatModelID-derived path only when neither is usable.
+        // This preserves legacy approved filenames while still supporting canonical IDs.
         const asset = getBoatImageAsset(boatOrId);
-        return asset.path || PLACEHOLDER_PATH;
+        if (asset && asset.status === "available" && asset.path && asset.path !== PLACEHOLDER_PATH) {
+            return asset.path;
+        }
+
+        const legacyPath = typeof boatOrId === "object" ? normalizeLegacyPath(boatOrId.ImageURL) : "";
+        if (legacyPath && legacyPath !== PLACEHOLDER_PATH) return legacyPath;
+
+        const canonicalPath = canonicalImagePath(boatOrId);
+        return canonicalPath || PLACEHOLDER_PATH;
     }
 
     function applyImageFallback(imageElement) {

@@ -99,6 +99,20 @@ def fmt_length_dual(m, canonical_key, *legacy_ft_keys):
     metric=f"{metres:.2f}".rstrip('0').rstrip('.')+' m'
     return f"{imp} / {metric}"
 
+
+def fmt_cruise(m, speed_key, burn_key):
+    speed=num(m,speed_key); burn=num(m,burn_key)
+    if speed is None and burn is None: return 'Unknown'
+    parts=[]
+    if speed is not None: parts.append(f"{speed:.1f}".rstrip('0').rstrip('.')+' kn')
+    if burn is not None:
+        usg=burn/3.785411784
+        parts.append(f"{usg:.2f} US gal/h / {burn:.2f} L/h")
+    if speed is not None and burn is not None and speed>0 and burn>0:
+        nm_usg=speed/(burn/3.785411784); l_nm=burn/speed
+        parts.append(f"{nm_usg:.2f} nm/US gal / {l_nm:.2f} L/nm")
+    return ' · '.join(parts)
+
 def bool_yes(v): return v is True or str(v).strip().lower() in ('yes','true','1')
 def diesel(m): return 'diesel' in text(m,'NormalizedFuel','Fuel').lower()
 def shaft(m): return 'shaft' in text(m,'NormalizedPropulsion','Propulsion').lower()
@@ -149,7 +163,7 @@ def head(title, desc, url, about=None, image=None):
 def shell_open(crumb=''):
     return f'<header><a class="brand" href="../../">B-Atlas</a><nav><a href="../../">Home</a> · <a href="../../#find-your-boat">Find Your Boat</a> · <a href="../../models/">Boat Models</a> · <a href="../../#saved-models">Saved Models</a> · <a href="../../#help-build-b-atlas">Help Build B-Atlas</a> · <a href="../../#about">About</a></nav></header><main>{crumb}'
 def shell_close():
-    return '</main><footer><a href="../../">B-Atlas — Boat knowledge for better decisions</a><br><span>Known undesirable information eliminates. Missing information stays and reduces confidence.</span></footer></body></html>'
+    return '</main><footer><a href="../../">B-Atlas — Boat knowledge for better decisions</a></footer></body></html>'
 
 def model_link(m, prefix='../../models/'):
     return f'{prefix}{id_to_slug[m.get("BoatModelID")]}/'
@@ -305,7 +319,7 @@ for m in models:
     desc=trunc(f'{nm}: specs, dimensions, hull and propulsion data, buyer trade-offs, inspection focus and model-specific concerns where evidence exists.')
     url=f'{BASE}models/{slug}/'
     specs=[]
-    for lab,v in [('LOA',fmt_length_dual(m,'LOA','LOA_ft','LengthFt')),('LWL',fmt_length_dual(m,'LWL','LWL_ft')),('Beam',fmt_length_dual(m,'Beam','Beam_ft','BeamFt')),('Draft',fmt_length_dual(m,'Draft','Draft_ft','DraftFt')),('Hull behaviour',text(m,'HullBehaviour','NormalizedHullType','HullType') or 'Unknown'),('Fuel',text(m,'NormalizedFuel','Fuel') or 'Unknown'),('Propulsion',text(m,'NormalizedPropulsion','Propulsion') or 'Unknown'),('Engine configuration',text(m,'EngineConfiguration') or 'Unknown'),('Boat family',text(m,'BoatFamily','NormalizedStyle','Style') or 'Unknown'),('Construction',text(m,'Construction') or 'Unknown')]:
+    for lab,v in [('LOA',fmt_length_dual(m,'LOA','LOA_ft','LengthFt')),('LWL',fmt_length_dual(m,'LWL','LWL_ft')),('Beam',fmt_length_dual(m,'Beam','Beam_ft','BeamFt')),('Draft',fmt_length_dual(m,'Draft','Draft_ft','DraftFt')),('Hull behaviour',text(m,'HullBehaviour','NormalizedHullType','HullType') or 'Unknown'),('Fuel',text(m,'NormalizedFuel','Fuel') or 'Unknown'),('Propulsion',text(m,'NormalizedPropulsion','Propulsion') or 'Unknown'),('Engine configuration',text(m,'EngineConfiguration') or 'Unknown'),('Displacement cruise',fmt_cruise(m,'DisplacementCruiseSpeed','DisplacementCruiseFuelBurn')),('Faster / planing cruise','Not applicable' if text(m,'HullBehaviour','NormalizedHullType','HullType').lower()=='displacement' else fmt_cruise(m,'PlaningCruiseSpeed','PlaningCruiseFuelBurn')),('Boat family',text(m,'BoatFamily','NormalizedStyle','Style') or 'Unknown'),('Construction',text(m,'Construction') or 'Unknown')]:
         specs.append(f'<div><dt>{esc(lab)}</dt><dd>{esc(v)}</dd></div>')
     img=m.get('ImageURL')
     img_html=f'<img class="hero-img" src="../../{esc(img)}" alt="{esc(nm)}" loading="eager">' if img else ''
