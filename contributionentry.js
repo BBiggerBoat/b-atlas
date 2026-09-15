@@ -140,7 +140,7 @@
         if (!field || field.id === "Other") return `<input id="correctionProposedValue" name="ProposedValue" required maxlength="300">`;
         if (field.type === "measurement") {
             const units = (field.allowedInputUnits || [field.canonicalUnit]).map(unit => {
-                const labels = {m:"metres",ft:"feet",in:"inches",kg:"kilograms",lb:"pounds",L:"litres",us_gal:"US gallons",imp_gal:"Imperial gallons",kW:"kW",hp:"hp",kn:"knots",nm:"nautical miles"};
+                const labels = {m:"metres",ft:"feet",in:"inches",kg:"kilograms",lb:"pounds",L:"litres",us_gal:"US gallons",imp_gal:"Imperial gallons",kW:"kW",hp:"hp",kn:"knots",nm:"nautical miles",L_h:"litres/hour",us_gal_h:"US gallons/hour",imp_gal_h:"Imperial gallons/hour"};
                 return `<option value="${escapeHtml(unit)}">${escapeHtml(labels[unit] || unit)}</option>`;
             }).join("");
             return `<div class="contribution-measurement-input"><input id="correctionProposedValue" name="ProposedValue" type="number" step="any" inputmode="decimal" required><select id="correctionProposedUnit" name="ProposedUnit" required><option value="">Choose unit</option>${units}</select></div>`;
@@ -311,7 +311,11 @@
             HeadroomGalley: "Measure at the primary cooking/preparation standing position, from finished sole to the lowest fixed overhead.",
             HeadroomHead: "Measure inside the head compartment at the normal standing area near the toilet/sink. Note if the shower has different clearance.",
             HeadroomForwardCabin: "Measure at the normal standing/dressing area in the forward cabin, not above the berth mattress unless that is the only standing area.",
-            VBerthLength: "Measure usable sleeping length on the mattress/cushion surface. If the berth is tapered, measure the longest practical sleeping axis and describe where you measured it."
+            VBerthLength: "Measure usable sleeping length on the mattress/cushion surface. If the berth is tapered, measure the longest practical sleeping axis and describe where you measured it.",
+            DisplacementCruiseSpeed: "Use the steady low-speed cruising point below planing/transition speed. Add source, engine and RPM context in the explanation when available.",
+            DisplacementCruiseFuelBurn: "Fuel burn must correspond to the displacement cruising speed for the same engine/configuration and test point.",
+            PlaningCruiseSpeed: "Use a normal sustained on-plane cruise, not maximum speed. Add engine and RPM context when available.",
+            PlaningCruiseFuelBurn: "Fuel burn must correspond to the planing cruising speed for the same engine/configuration and test point."
         };
         return notes[fieldId] || "";
     }

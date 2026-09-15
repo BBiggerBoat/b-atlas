@@ -1,26 +1,15 @@
 {
   "name": "b-atlas-public",
   "private": true,
-  "version": "6.87.0",
-  "description": "B-Atlas boat knowledge, research, search and community contribution platform",
+  "version": "7.06.0",
+  "description": "B-Atlas clean primary site runtime and moderation package",
   "scripts": {
-    "test:marketplace-signal": "node developer/test-marketplace-signal.js",
-    "validate:marketplaces": "node developer/validate-marketplace-signals.js",
-    "generate": "node developer/generate-all.js",
-    "test:broker-signal": "node developer/test-broker-adapters.js",
-    "generate:search-aliases": "node developer/generate-model-search-aliases.js",
     "start": "node server.js",
     "cf:dev": "wrangler pages dev .",
     "cf:d1:local": "wrangler d1 execute BSCOUT_DB --local --file=cloudflare/schema.sql",
-    "generate:search-pages": "python developer/generate-search-landing-pages.py",
-    "indexnow": "node developer/submit-indexnow.js",
-    "test:cross-database-qc": "node developer/test-cross-database-qc.js",
-    "test:measurements": "node developer/test-measurement-normalization.js",
-    "audit:canonical-completeness": "python developer/audit-canonical-completeness-v687.py",
-    "test:canonical-completeness": "node developer/test-canonical-completeness-v687.js"
+    "generate:search-pages": "python developer/generate-search-landing-pages.py"
   },
   "devDependencies": {
-    "playwright": "^1.54.0",
     "wrangler": "^4.0.0"
   }
 }

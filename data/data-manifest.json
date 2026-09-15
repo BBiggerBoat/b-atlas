@@ -1,386 +1,81 @@
 {
-  "schemaVersion": 19,
-  "release": "v6.87.0",
-  "purpose": "Document authoritative runtime data and field-by-field missing-data classification after v6.87 high-impact research wave 2.",
-  "principles": [
-    "Known undesirable information may eliminate a candidate.",
-    "Unknown information remains eligible and reduces confidence rather than causing elimination.",
-    "Each fact should have one authoritative managed source; summaries and validation reports should be generated.",
-    "Canonical controlled values are language-neutral codes; interface language is supplied by locale catalogs.",
-    "Canonical measurements use metres, kilograms, litres and kilowatts; knots and nautical miles remain marine-standard.",
-    "Original source measurements are preserved in provenance records, including explicit distinction between US and Imperial gallons."
-  ],
-  "managed": [
-    {
-      "path": "boatmodels.json",
-      "role": "Canonical boat model identity, specifications and\u2014after controlled migration\u2014all model-specific interpretive knowledge."
-    },
-    {
-      "path": "data/model-schema.json",
-      "role": "Authoritative boat-model field definitions, formats, evidence rules, unknown-state behaviour, ownership and migration rules."
-    },
-    {
-      "path": "routes.json",
-      "role": "Canonical physical route constraints used by filtering and route compatibility."
-    },
-    {
-      "path": "data/missionTemplates.json",
-      "role": "Reusable user mission and search configurations; not route data."
-    },
-    {
-      "path": "data/priority-fleet.json",
-      "role": "Curated development and research priority fleet."
-    },
-    {
-      "path": "data/search-profiles.json",
-      "role": "Built-in search profiles."
-    },
-    {
-      "path": "data/marketplace-sources.json",
-      "role": "Canonical marketplace and brokerage source registry."
-    },
-    {
-      "path": "data/registry/manufacturers.json",
-      "role": "Canonical manufacturer identities."
-    },
-    {
-      "path": "data/registry/boat-registry.json",
-      "role": "Canonical model identity registry, aliases and relationships."
-    },
-    {
-      "path": "data/model-families.json",
-      "role": "Explicit identity-family relationships for variants, generations, renamed hulls and historically ambiguous model designations."
-    },
-    {
-      "path": "data/taxonomy/fuel-types.json",
-      "role": "Controlled fuel taxonomy."
-    },
-    {
-      "path": "data/taxonomy/propulsion-types.json",
-      "role": "Controlled propulsion taxonomy."
-    },
-    {
-      "path": "data/taxonomy/hull-forms.json",
-      "role": "Controlled hull-form taxonomy."
-    },
-    {
-      "path": "data/taxonomy/hull-configurations.json",
-      "role": "Controlled hull-configuration taxonomy."
-    },
-    {
-      "path": "data/taxonomy/style-families.json",
-      "role": "Controlled style-family taxonomy."
-    },
-    {
-      "path": "knowledge/data/confidence-levels.json",
-      "role": "Controlled confidence definitions."
-    },
-    {
-      "path": "knowledge/data/contradictions.json",
-      "role": "Known conflicts between evidence or claims."
-    },
-    {
-      "path": "knowledge/data/curatedresources.json",
-      "role": "Curated manuals, videos, owner groups and research links."
-    },
-    {
-      "path": "knowledge/data/evidence.json",
-      "role": "Evidence records supporting structured facts."
-    },
-    {
-      "path": "knowledge/data/fact-attributes.json",
-      "role": "Controlled fact attribute definitions."
-    },
-    {
-      "path": "knowledge/data/listingsearches.json",
-      "role": "Marketplace search resources by model."
-    },
-    {
-      "path": "knowledge/data/manufacturerknowledge.json",
-      "role": "Manufacturer-level research awaiting fuller runtime integration."
-    },
-    {
-      "path": "knowledge/data/relationship-types.json",
-      "role": "Controlled relationship definitions."
-    },
-    {
-      "path": "knowledge/data/relationships.json",
-      "role": "Relationships between boat models."
-    },
-    {
-      "path": "knowledge/data/source-types.json",
-      "role": "Controlled source-type definitions."
-    },
-    "knowledge/data/knowledgeannotations.json",
-    "data/model-search-aliases.json",
-    "data/marketplace-source-validation.json",
-    {
-      "path": "data/contribution-types.json",
-      "role": "Authoritative community contribution taxonomy and scope definitions."
-    },
-    {
-      "path": "data/moderation-statuses.json",
-      "role": "Authoritative community contribution moderation states and publication safeguards."
-    },
-    {
-      "path": "data/community-contribution.schema.json",
-      "role": "Base data contract for account-free community contribution records."
-    },
-    {
-      "path": "data/locale-config.json",
-      "role": "Supported locale and fallback configuration; does not duplicate canonical boat data."
-    },
-    {
-      "path": "data/i18n/en.json",
-      "role": "English UI/schema labels for language-neutral canonical keys."
-    },
-    {
-      "path": "data/unit-registry.json",
-      "role": "Canonical unit and conversion registry for Imperial, Metric and Both display support."
-    },
-    {
-      "path": "knowledge/data/canonical-fact.schema.json",
-      "role": "Canonical fact/provenance contract preserving source value and source unit."
-    },
-    {
-      "path": "data/canonical-completeness-audit-v6.87.json",
-      "role": "Generated canonical completeness classification after v6.87 research wave 2. Stores classifications only, not specification values."
-    },
-    {
-      "path": "data/canonical-missing-data-queue-v6.87.json",
-      "role": "Generated prioritized research queue after v6.87 research wave 2."
-    },
-    {
-      "path": "developer/archive/v6.85-canonical-normalization-report.json",
-      "role": "Archived v6.85 normalization report; not runtime data."
-    }
-  ],
-  "generated": [
-    {
-      "path": "data/imageassets.json",
-      "role": "Generated image asset registry."
-    },
-    {
-      "path": "knowledge/data/knowledgecards.json",
-      "role": "Generated presentation metadata and resource view. Model-wide specifications are read directly from boatmodels.json and are not duplicated here."
-    },
-    {
-      "path": "developer/reports/phase4-model-audit.json",
-      "role": "Machine-readable Phase 4 model audit findings.",
-      "generatedBy": "developer/audit-model-schema.js"
-    },
-    {
-      "path": "developer/reports/phase4-model-audit.csv",
-      "role": "Flat review queue generated from the Phase 4 model audit.",
-      "generatedBy": "developer/audit-model-schema.js"
-    },
-    {
-      "path": "developer/reports/PHASE_4_MODEL_AUDIT.md",
-      "role": "Human-readable Phase 4 audit summary and samples.",
-      "generatedBy": "developer/audit-model-schema.js"
-    },
-    {
-      "path": "developer/reports/single-source-model-data-v6.82.json",
-      "role": "Generated guard report confirming current model-wide specifications have one active JSON source."
-    },
-    {
-      "path": "developer/reports/plan-critical-unknowns-v6.82.json",
-      "role": "Generated list of canonical unknown plan-critical fields only; contains no prior or alternate specification values."
-    }
-  ],
-  "developerReports": [
-    {
-      "path": "developer/data/boat-registry-validation.json",
-      "role": "Generated current registry integrity report."
-    },
-    {
-      "path": "developer/data/identity-code-audit.json",
-      "role": "Generated current identity-code audit."
-    },
-    {
-      "path": "developer/data/taxonomy-validation.json",
-      "role": "Generated current taxonomy validation report."
-    },
-    {
-      "path": "developer/data/knowledge-layer-summary.json",
-      "role": "Generated current knowledge-layer summary."
-    },
-    {
-      "path": "data/community-contribution.example.json",
-      "role": "Reference example of a pending community contribution record; not production submission data."
-    }
-  ],
-  "retired": [
-    {
-      "path": "missions.json",
-      "replacement": "routes.json and data/missionTemplates.json",
-      "reason": "Duplicated route records using inconsistent string types and contained an empty record.",
-      "archivedIn": "developer/archive/data-health-v6.79/"
-    },
-    {
-      "path": "data/registry/boat-registry-validation.json",
-      "replacement": "developer/data/boat-registry-validation.json",
-      "reason": "Exact duplicate generated report.",
-      "archivedIn": "developer/archive/data-health-v6.79/"
-    },
-    {
-      "path": "data/registry/identity-code-audit.json",
-      "replacement": "developer/data/identity-code-audit.json",
-      "reason": "Exact duplicate generated report.",
-      "archivedIn": "developer/archive/data-health-v6.79/"
-    },
-    {
-      "path": "data/taxonomy/taxonomy-validation.json",
-      "replacement": "developer/data/taxonomy-validation.json",
-      "reason": "Exact duplicate generated report.",
-      "archivedIn": "developer/archive/data-health-v6.79/"
-    },
-    {
-      "path": "knowledge/data/knowledge-layer-summary.json",
-      "replacement": "developer/data/knowledge-layer-summary.json",
-      "reason": "Exact duplicate generated report.",
-      "archivedIn": "developer/archive/data-health-v6.79/"
-    },
-    {
-      "path": "data/registry/legacy-id-map.json",
-      "replacement": "data/registry/boat-registry.json aliases",
-      "reason": "All current IDs are migrated; legacy identifiers are resolved directly through canonical registry aliases.",
-      "archivedIn": "developer/archive/data-health-v6.79/"
-    },
-    {
-      "path": "knowledge/data/boatintelligence.json",
-      "reason": "All 34 records were migrated verbatim into the matching boatmodels.json records under SupplementalIntelligence and related provenance fields; runtime consumers now read boatmodels.json.",
-      "archivedIn": "developer/archive/data-health-v6.79/"
-    },
-    {
-      "path": "knowledge/data/facts.json",
-      "replacement": "boatmodels.json plus evidence/provenance metadata",
-      "reason": "Contained 8,671 parallel model-value records duplicating current specifications and classifications. Retired from runtime in v6.82.0.",
-      "archivedIn": "developer/archive/data-consolidation-v6.82/"
-    },
-    {
-      "path": "data/validation/*, data/headroom-completion-pass-v6.61.json, data/specification-promotion-v6.45.json",
-      "replacement": "boatmodels.json and developer/archive/data-consolidation-v6.82/",
-      "reason": "Historical research/migration artifacts contained prior model-level values and no longer belong on the active data surface.",
-      "archivedIn": "developer/archive/data-consolidation-v6.82/"
-    },
-    {
-      "path": "data/plan-critical-exceptions-v6.81.json",
-      "replacement": "developer/reports/plan-critical-unknowns-v6.82.json",
-      "reason": "The old exception report carried archived legacy values beside canonical unknowns. The replacement lists unknown fields only.",
-      "archivedIn": "developer/archive/data-consolidation-v6.82/"
-    }
-  ],
-  "knowledgeOwnership": {
-    "boatmodels.json": "Sole active JSON source for current model-wide specifications, classifications, configuration, accommodation and model-specific interpretive knowledge.",
-    "data/model-schema.json": "Authoritative model field contract and evidence policy.",
-    "knowledge/data/boatintelligence.json": "Retired and archived in v6.80.0; runtime intelligence is read from SupplementalIntelligence in boatmodels.json.",
-    "knowledge/data/curatedresources.json": "Canonical source/resource registry referenced by model evidence.",
-    "knowledge/data/listingsearches.json": "Canonical marketplace discovery links.",
-    "knowledge/data/knowledgeannotations.json": "Legacy annotations awaiting review and migration where model-specific.",
-    "knowledge/data/knowledgecards.json": "Generated presentation/resource metadata only; contains no current model-wide specification values.",
-    "knowledge/data/manufacturerknowledge.json": "Manufacturer-level knowledge, separate from model-specific records.",
-    "data/marketplace-sources.json": "Canonical marketplace and brokerage source registry.",
-    "knowledge/data/evidence.json": "Source registry and provenance metadata; does not define current canonical model values."
-  },
-  "archives": [
-    {
-      "path": "developer/archive/identity-migration-archive.json",
-      "role": "Historical legacy-ID map and registry migration/audit metadata; not loaded at runtime."
-    },
-    {
-      "path": "developer/archive/data-health-v6.79/",
-      "role": "Historical specification workflow snapshots and retired duplicate data sources; not loaded at runtime."
-    },
-    {
-      "path": "developer/archive/data-health-v6.80/",
-      "role": "Superseded v6.79 reconciliation reports, exception file, and release-specific test; not active runtime data."
-    },
-    {
-      "path": "developer/archive/data-consolidation-v6.82/",
-      "role": "Historical duplicate-value datasets and superseded reconciliation artifacts; excluded from runtime and single-source validation."
-    }
-  ],
-  "modelSchemaVersion": 8,
+  "schemaVersion": 21,
+  "release": "v7.06.0",
+  "lastUpdated": "2026-09-14",
+  "purpose": "Lean runtime manifest for the B-Atlas primary site after repository hygiene consolidation.",
   "authoritativeModelRecord": "boatmodels.json",
-  "phase3": "New model knowledge fields initialized across all model records; legacy migration fields retained.",
-  "phase4Audit": {
-    "policy": "Reports only; no model meaning or values rewritten.",
-    "script": "developer/audit-model-schema.js",
-    "reports": [
-      "developer/reports/phase4-model-audit.json",
-      "developer/reports/phase4-model-audit.csv",
-      "developer/reports/PHASE_4_MODEL_AUDIT.md"
-    ]
-  },
-  "phase": "Canonical normalization pass",
-  "notes": "v6.87.0 applies a second supported high-impact research wave focused on headroom, rudder arrangement and running-gear protection while preserving ambiguous values as unknown/variable. boatmodels.json remains the sole active model-wide specification source.",
-  "lastUpdated": "2026-09-13",
-  "Release": "v6.87.0",
-  "LastUpdated": "2026-09-13",
   "modelCount": 259,
-  "communityContributions": {
-    "phase": 9,
-    "status": "Conflict, uncertainty and applicability handling complete",
-    "principle": "Owner contributions should make B-Atlas smarter, not noisier.",
-    "accountRequired": false,
-    "implementedTypes": [
-      "ownership_experience",
-      "problem_weakness",
-      "buyer_inspection_advice",
-      "correction",
-      "other",
-      "photo",
-      "manual_document",
-      "resource",
-      "new_model",
-      "new_manufacturer"
-    ],
-    "deferredTypes": {},
-    "prototypeStorage": "Contribution records, normalized knowledge items and evidence relationships remain browser-local pending a shared moderation backend.",
-    "canonicalOverwriteAllowed": false,
-    "coverageExpansionPolicy": "A proposed manufacturer requires only a manufacturer name. A proposed model requires only manufacturer and model name. All other details remain optional; exact canonical duplicates are blocked and redirected toward correction/contribution.",
-    "documentPolicy": "External document links may be submitted directly for review. Uploaded PDFs require a rights declaration; uncertain rights are accepted for evidence/review but do not imply republication permission.",
-    "resourcePolicy": "Useful resources are URL-based and attach to an existing canonical model for later Guide Owner Resources integration.",
-    "conflictPolicy": "Evidence relationships are supports, contradicts, or qualifies. Contradictions remain visible and force a conflicting-information state rather than being flattened into consensus.",
-    "knowledgeStates": [
-      "confirmed",
-      "community_supported",
-      "limited_evidence",
-      "conflicting_information",
-      "applicability_uncertain"
-    ],
-    "applicabilityConfidence": [
-      "known",
-      "probable",
-      "uncertain",
-      "conflicting"
-    ],
-    "privacyPolicy": "Collect only contribution content plus optional attribution/contact; no account required.",
-    "antiAbusePolicy": "Static prototype uses browser-local rate limiting, honeypot and minimum dwell time; server-side challenge/rate enforcement is required when shared submission transport is added.",
-    "uploadSafety": "Photos are privacy-cleaned by browser re-encoding where decodable. PDFs are size/type restricted but require server malware scanning before shared ingestion."
-  },
-  "communityContributionFiles": [
-    "developer/COMMUNITY_CONTRIBUTIONS_PHASE7.md",
-    "developer/contribution-review.html",
-    "developer/contribution-review.js",
-    "developer/contribution-review.css",
-    "data/community-knowledge-item.schema.json",
-    "data/community-knowledge-evidence.schema.json",
+  "principles": [
+    "boatmodels.json is the sole active source of current model-wide specifications.",
+    "Secondary data may contain identities, taxonomies, production-phase overrides, evidence, provenance, resources, or community proposals, but not a competing current model specification database.",
+    "Production-phase values are scoped overrides, not duplicate model-wide values.",
+    "Evidence assertions document provenance and may quote sourced facts without becoming authoritative current specifications.",
+    "Fields at or above 95% operational coverage do not require active cleanup; remaining blanks are community contribution opportunities.",
+    "Low-confidence estimates are visibly marked and do not hard-eliminate a candidate."
+  ],
+  "runtimeData": [
+    "boatmodels.json",
+    "routes.json",
+    "data/model-schema.json",
+    "data/field-registry.json",
+    "data/unit-registry.json",
+    "data/derived-characteristics.json",
+    "data/production-phases.json",
+    "data/model-families.json",
+    "data/model-search-aliases.json",
+    "data/model-id-redirects.json",
+    "data/model-permalinks.json",
+    "data/preference-map.json",
+    "data/search-profiles.json",
+    "data/missionTemplates.json",
+    "data/marketplace-sources.json",
+    "data/marketplace-source-validation.json",
+    "data/registry/boat-registry.json",
+    "data/registry/manufacturers.json",
+    "data/taxonomy/fuel-types.json",
+    "data/taxonomy/propulsion-types.json",
+    "data/taxonomy/hull-forms.json",
+    "data/taxonomy/hull-configurations.json",
+    "data/taxonomy/style-families.json",
+    "data/i18n/en.json",
+    "data/locale-config.json",
+    "data/imageassets.json"
+  ],
+  "knowledgeLayer": [
+    "knowledge/data/knowledgecards.json",
+    "knowledge/data/curatedresources.json",
+    "knowledge/data/listingsearches.json",
+    "knowledge/data/knowledgeannotations.json",
+    "knowledge/data/knowledge-coverage.json",
+    "knowledge/data/manufacturerknowledge.json",
+    "knowledge/data/evidence.json",
+    "knowledge/data/contradictions.json",
+    "knowledge/data/relationships.json",
+    "knowledge/data/confidence-levels.json",
+    "knowledge/data/source-types.json",
+    "knowledge/data/relationship-types.json",
+    "knowledge/data/fact-attributes.json"
+  ],
+  "communityLayer": [
     "data/community-knowledge-items.json",
     "data/community-knowledge-evidence.json",
-    "developer/COMMUNITY_CONTRIBUTIONS_PHASE9.md",
-    "data/community-privacy-policy.json",
-    "developer/COMMUNITY_CONTRIBUTIONS_PHASE11.md",
-    "community-feedback-policy.json",
-    "moderatoraccess.js",
-    "developer/COMMUNITY_MODERATOR_TEST_ACCESS.md"
+    "data/community-reviewed-contributions.json",
+    "data/contribution-types.json",
+    "developer/contribution-review.html",
+    "developer/contribution-review.js",
+    "developer/contribution-review.css"
   ],
-  "communitySharedBackend": {
-    "version": "1.0",
-    "introducedIn": "6.22.0",
-    "server": "server.js",
-    "publishedReviewedContributions": "data/community-reviewed-contributions.json",
-    "documentation": "developer/COMMUNITY_SHARED_BACKEND.md"
+  "deployment": [
+    "functions/api/[[path]].js",
+    "functions/_lib/bscout-store.js",
+    "_routes.json",
+    "cloudflare/schema.sql",
+    "server.js"
+  ],
+  "externalArchive": "B-Atlas_v7.06.0_Development_Archive.zip",
+  "operationalCompletenessPolicy": {
+    "threshold": 0.95,
+    "rule": "A field at or above 95% resolved/usable coverage leaves active cleanup priority.",
+    "communityRole": "Remaining blanks stay visible as contribution opportunities."
   }
 }

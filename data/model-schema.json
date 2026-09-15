@@ -1840,6 +1840,10 @@
               "labelKey": "enum.shower.wet_head"
             },
             {
+              "code": "shower.present_unspecified",
+              "labelKey": "enum.shower.present_unspecified"
+            },
+            {
               "code": "shower.none",
               "labelKey": "enum.shower.none"
             },
@@ -1962,6 +1966,100 @@
           "correctable": true,
           "matchInput": false,
           "unknownAllowed": true
+        }
+      ]
+    },
+    {
+      "id": "performance",
+      "labelKey": "group.performance",
+      "fields": [
+        {
+          "id": "DisplacementCruiseSpeed",
+          "labelKey": "field.DisplacementCruiseSpeed",
+          "type": "measurement",
+          "correctable": true,
+          "dimension": "speed",
+          "canonicalUnit": "kn",
+          "legacyMeasurements": [],
+          "allowedInputUnits": [
+            "kn"
+          ],
+          "dataClass": "objective",
+          "unknownAllowed": true,
+          "matchInput": false,
+          "applicability": "powered vessels",
+          "storage": {
+            "value": "number",
+            "canonicalUnit": "kn",
+            "sourceMeasurementPreservedInEvidence": true
+          }
+        },
+        {
+          "id": "DisplacementCruiseFuelBurn",
+          "labelKey": "field.DisplacementCruiseFuelBurn",
+          "type": "measurement",
+          "correctable": true,
+          "dimension": "fuel_flow",
+          "canonicalUnit": "L_h",
+          "legacyMeasurements": [],
+          "allowedInputUnits": [
+            "L_h",
+            "us_gal_h",
+            "imp_gal_h"
+          ],
+          "dataClass": "objective",
+          "unknownAllowed": true,
+          "matchInput": false,
+          "applicability": "powered vessels",
+          "storage": {
+            "value": "number",
+            "canonicalUnit": "L_h",
+            "sourceMeasurementPreservedInEvidence": true
+          }
+        },
+        {
+          "id": "PlaningCruiseSpeed",
+          "labelKey": "field.PlaningCruiseSpeed",
+          "type": "measurement",
+          "correctable": true,
+          "dimension": "speed",
+          "canonicalUnit": "kn",
+          "legacyMeasurements": [],
+          "allowedInputUnits": [
+            "kn"
+          ],
+          "dataClass": "objective",
+          "unknownAllowed": true,
+          "matchInput": false,
+          "applicability": "hull_behaviour.planing or hull_behaviour.semi_displacement when a planing cruise regime is meaningful",
+          "storage": {
+            "value": "number",
+            "canonicalUnit": "kn",
+            "sourceMeasurementPreservedInEvidence": true
+          }
+        },
+        {
+          "id": "PlaningCruiseFuelBurn",
+          "labelKey": "field.PlaningCruiseFuelBurn",
+          "type": "measurement",
+          "correctable": true,
+          "dimension": "fuel_flow",
+          "canonicalUnit": "L_h",
+          "legacyMeasurements": [],
+          "allowedInputUnits": [
+            "L_h",
+            "us_gal_h",
+            "imp_gal_h"
+          ],
+          "dataClass": "objective",
+          "unknownAllowed": true,
+          "matchInput": false,
+          "applicability": "hull_behaviour.planing or hull_behaviour.semi_displacement when a planing cruise regime is meaningful",
+          "storage": {
+            "value": "number",
+            "canonicalUnit": "L_h",
+            "sourceMeasurementPreservedInEvidence": true
+          }
         }
       ]
     }

@@ -133,19 +133,25 @@ export function correctionTarget(field) {
     DraftFt: "Draft", DisplacementLb: "Displacement", FuelCapacityGal: "FuelCapacity",
     WaterCapacityGal: "WaterCapacity", NormalizedHullType: "NormalizedHullType",
     NormalizedFuel: "NormalizedFuel", NormalizedPropulsion: "NormalizedPropulsion",
-    BoatFamily: "BoatFamily", ModelCharacter: "ModelCharacter"
+    BoatFamily: "BoatFamily", ModelCharacter: "ModelCharacter",
+    DisplacementCruiseSpeed: "DisplacementCruiseSpeed", DisplacementCruiseFuelBurn: "DisplacementCruiseFuelBurn",
+    PlaningCruiseSpeed: "PlaningCruiseSpeed", PlaningCruiseFuelBurn: "PlaningCruiseFuelBurn"
   })[field] || null;
 }
 
-export function normalizeCorrectionValue(target, raw, sourceField = "") {
+export function normalizeCorrectionValue(target, raw, sourceField = "", proposedUnit = "") {
   if (["FirstYear", "LastYear"].includes(target)) {
     const n = parseInt(raw, 10); return Number.isFinite(n) ? n : undefined;
   }
-  if (["LOA", "Beam", "Draft", "Displacement", "FuelCapacity", "WaterCapacity"].includes(target)) {
+  if (["LOA", "Beam", "Draft", "Displacement", "FuelCapacity", "WaterCapacity", "DisplacementCruiseSpeed", "DisplacementCruiseFuelBurn", "PlaningCruiseSpeed", "PlaningCruiseFuelBurn"].includes(target)) {
     const n = Number(String(raw ?? "").replace(/[^0-9.+-]/g, ""));
     if (!Number.isFinite(n)) return undefined;
     if (["LengthFt", "BeamFt", "DraftFt"].includes(sourceField)) return n * 0.3048;
     if (sourceField === "DisplacementLb") return n * 0.45359237;
+    if (["DisplacementCruiseFuelBurn", "PlaningCruiseFuelBurn"].includes(target)) {
+      if (proposedUnit === "us_gal_h") return n * 3.785411784;
+      if (proposedUnit === "imp_gal_h") return n * 4.54609;
+    }
     return n;
   }
   return raw;

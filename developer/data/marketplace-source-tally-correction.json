@@ -1,9 +1,0 @@
-{
-  "version": "6.6-marketplace-source-tally-correction",
-  "changes": [
-    "The likely-listing tally now includes all validated sources, including brokerages such as United City Yachts.",
-    "BoatDealers.ca remains part of the automated marketplace validator configuration; it is not manually marked positive before the validator runs.",
-    "The pending summary wording now refers to an automated source check rather than marketplace-only checks."
-  ],
-  "dataIntegrityRule": "No listing status or count was populated from user feedback. Pending remains pending until automated validation produces evidence."
-}

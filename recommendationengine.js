@@ -566,9 +566,14 @@ function evaluateDimensions(boat, userProfile) {
             }
         }
 
-        // RULE 2: If boat dimension value is unknown or missing
+        // RULE 2: Resolve model-wide value or known production-phase range.
         const canonical = boat ? Number(boat[dim.canonicalField]) : NaN;
+        const phaseRange = typeof BAtlasCanonical !== "undefined" && BAtlasCanonical?.canonicalRange
+            ? BAtlasCanonical.canonicalRange(boat, dim.canonicalField) : null;
         let actualNum = Number.isFinite(canonical) && canonical > 0 ? canonical / 0.3048 : null;
+        const actualRangeFt = phaseRange ? { min: phaseRange.min / 0.3048, max: phaseRange.max / 0.3048 } : null;
+        if (phaseRange?.variable) actualNum=null;
+        if (actualNum === null && actualRangeFt && Math.abs(actualRangeFt.max-actualRangeFt.min) < 1e-6) actualNum = actualRangeFt.min;
         if (typeof actualNum === "string") {
             actualNum = actualNum.trim();
             if (actualNum !== "" && !isNaN(Number(actualNum))) {
@@ -576,6 +581,22 @@ function evaluateDimensions(boat, userProfile) {
             }
         }
 
+        if ((actualNum === undefined || actualNum === null || actualNum === "" || isNaN(actualNum)) && actualRangeFt && actualRangeFt.max > actualRangeFt.min) {
+            const emin = (typeof expected === "object" && expected?.min !== undefined) ? Number(expected.min) : null;
+            const emax = (typeof expected === "object" && expected?.max !== undefined) ? Number(expected.max) : null;
+            const entirelyBelowMin = Number.isFinite(emin) && actualRangeFt.max < emin;
+            const entirelyAboveMax = Number.isFinite(emax) && actualRangeFt.min > emax;
+            const entirelyInside = (!Number.isFinite(emin) || actualRangeFt.min >= emin) && (!Number.isFinite(emax) || actualRangeFt.max <= emax);
+            if (entirelyBelowMin || entirelyAboveMax) {
+                results.push(buildResult(featureKey,importance,"Conflict",0,`${dim.label} varies by production phase (${actualRangeFt.min.toFixed(2)}–${actualRangeFt.max.toFixed(2)} ft), and all known phases fall outside the constraint (${expectedStr}).`,{preferredValue:expected,actualValue:actualRangeFt},canonicalReq));
+            } else if (entirelyInside) {
+                const weight = typeof getWeight === 'function' ? getWeight(importance) : 0.4;
+                results.push(buildResult(featureKey,importance,"Match",Math.round(100*Math.max(0.1,weight)),`${dim.label} varies by production phase (${actualRangeFt.min.toFixed(2)}–${actualRangeFt.max.toFixed(2)} ft), and all known phases satisfy the constraint (${expectedStr}).`,{preferredValue:expected,actualValue:actualRangeFt},canonicalReq));
+            } else {
+                results.push(buildResult(featureKey,importance,"Unknown",0,`${dim.label} varies by production phase (${actualRangeFt.min.toFixed(2)}–${actualRangeFt.max.toFixed(2)} ft). Some known phases may satisfy the constraint; verify the boat year/hull.`,{preferredValue:expected,actualValue:actualRangeFt},canonicalReq));
+            }
+            continue;
+        }
         if (actualNum === undefined || actualNum === null || actualNum === "" || isNaN(actualNum)) {
             results.push(buildResult(
                 featureKey,
@@ -584,6 +605,22 @@ function evaluateDimensions(boat, userProfile) {
                 0,
                 `${dim.label} information is unavailable. This does not eliminate the boat.`,
                 { preferredValue: expected, actualValue: "Unknown" },
+                canonicalReq
+            ));
+            continue;
+        }
+
+        // Low-confidence estimates inform ranking/display but are not treated as known conflicts.
+        const specMeta = (typeof BAtlasCanonical !== "undefined" && BAtlasCanonical?.specificationConfidence)
+            ? BAtlasCanonical.specificationConfidence(boat, dim.canonicalField) : null;
+        if (specMeta?.status === "estimated" && specMeta?.level === "Low") {
+            results.push(buildResult(
+                featureKey,
+                importance,
+                "Unknown",
+                0,
+                `${dim.label} is a low-confidence working estimate (${actualNum} ft). Keep the boat eligible and verify the actual vessel before applying this constraint.`,
+                { preferredValue: expected, actualValue: actualNum, confidence: "Low", estimated: true },
                 canonicalReq
             ));
             continue;

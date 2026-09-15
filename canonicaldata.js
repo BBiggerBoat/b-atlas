@@ -1,7 +1,7 @@
 (function(global){
 "use strict";
-const FACTORS={m:1,cm:.01,ft:.3048,in:.0254,kg:1,lb:.45359237,L:1,us_gal:3.785411784,imp_gal:4.54609,kW:1,hp:.745699872,kn:1,nm:1};
-const CANON={length:"m",mass:"kg",volume:"L",power:"kW",speed:"kn",distance:"nm"};
+const FACTORS={m:1,cm:.01,ft:.3048,in:.0254,kg:1,lb:.45359237,L:1,us_gal:3.785411784,imp_gal:4.54609,kW:1,hp:.745699872,kn:1,nm:1,L_h:1,us_gal_h:3.785411784,imp_gal_h:4.54609};
+const CANON={length:"m",mass:"kg",volume:"L",power:"kW",speed:"kn",distance:"nm",fuel_flow:"L_h"};
 const UNIT_PROFILE_KEY="batlas.unitProfile";
 const VALID_PROFILES=new Set(["imperial","metric","both"]);
 function n(v){if(v===undefined||v===null||v==="")return null;const x=Number(v);return Number.isFinite(x)?x:null;}
@@ -24,6 +24,7 @@ function formatSingle(value,dimension,profile){
  const x=n(value); if(x===null)return null;
  if(dimension==="speed")return `${x.toFixed(1).replace(/\.0$/,'')} kn`;
  if(dimension==="distance")return `${x.toFixed(0)} nm`;
+ if(dimension==="fuel_flow"){ if(profile==="metric")return `${x.toFixed(1).replace(/\.0$/,'')} L/h`; return `${fromCanonical(x,"us_gal_h").toFixed(2).replace(/0+$/,'').replace(/\.$/,'')} US gal/h`; }
  if(profile==="metric"){
   if(dimension==="length")return `${x.toFixed(2).replace(/0+$/,'').replace(/\.$/,'')} m`;
   if(dimension==="mass")return `${Math.round(x).toLocaleString()} kg`;
@@ -38,6 +39,7 @@ function formatSingle(value,dimension,profile){
 }
 function formatMeasurement(value,dimension,profile=getUnitProfile()){
  const x=n(value); if(x===null)return null;
+ if(dimension==="fuel_flow" && profile==="both"){const i=formatSingle(x,dimension,"imperial"),m=formatSingle(x,dimension,"metric");return `${i} / ${m}`;}
  if(profile==="both" && !["speed","distance"].includes(dimension)){
   const imperial=formatSingle(x,dimension,"imperial"), metric=formatSingle(x,dimension,"metric");
   return imperial&&metric?`${imperial} / ${metric}`:(imperial||metric);
@@ -49,9 +51,35 @@ function safeCanonicalMeasurement(row,key,dimension,legacy=[]){
  if(direct!==null)return direct;
  return canonicalMeasurement(row,key,legacy);
 }
+function productionPhaseValues(row,fieldId){
+ const vals=[];
+ for(const phase of (Array.isArray(row?.ProductionPhases)?row.ProductionPhases:[])){
+  const v=n(phaseOverride(phase,fieldId));
+  if(v!==null&&!vals.some(x=>Math.abs(x-v)<1e-9)) vals.push(v);
+ }
+ return vals.sort((a,b)=>a-b);
+}
+function canonicalRange(row,fieldId){
+ const direct=n(row?.[fieldId]);
+ const values=productionPhaseValues(row,fieldId);
+ if(values.length>1)return {min:values[0],max:values[values.length-1],values,source:direct!==null?"model_and_production_phase":"production_phase",variable:true,representative:direct};
+ if(values.length===1)return {min:values[0],max:values[0],values,source:direct!==null?"model_and_production_phase":"production_phase",variable:false,representative:direct};
+ if(direct!==null)return {min:direct,max:direct,values:[direct],source:"model",variable:false,representative:direct};
+ return null;
+}
+function specificationConfidence(row,key){
+ const meta=row?.SpecificationConfidence?.[key];
+ if(!meta||typeof meta!=="object")return null;
+ return {level:String(meta.Level||""),status:String(meta.Status||""),note:String(meta.Note||""),evidenceRefs:Array.isArray(meta.EvidenceRefs)?meta.EvidenceRefs:[]};
+}
 function formatBoatMeasurement(row,key,dimension,legacy=[],profile=getUnitProfile()){
+ const range=canonicalRange(row,key);
+ if(range?.variable)return `${formatMeasurement(range.min,dimension,profile)}–${formatMeasurement(range.max,dimension,profile)}`;
  const value=safeCanonicalMeasurement(row,key,dimension,legacy);
- return value===null?null:formatMeasurement(value,dimension,profile);
+ if(value===null)return range?formatMeasurement(range.min,dimension,profile):null;
+ const text=formatMeasurement(value,dimension,profile);
+ const meta=specificationConfidence(row,key);
+ return meta?.status==="estimated"?`~${text}`:text;
 }
 function formatUnverifiedVolume(row,key,legacyKey){
  const canonical=n(row?.[key]);
@@ -101,5 +129,18 @@ function effectiveCanonicalValue(row,fieldId,context={}){
  return {value:null,source:result.status==="ambiguous"?"production_phase_ambiguous":"model",phase:null,status:result.status==="ambiguous"?"ambiguous":"unknown"};
 }
 
-global.BAtlasCanonical={FACTORS,CANON,toCanonical,fromCanonical,canonicalMeasurement,feet,inches,enumCode,formatMeasurement,formatBoatMeasurement,formatUnverifiedVolume,getUnitProfile,setUnitProfile,phaseMatchesContext,resolveProductionPhase,phaseOverride,effectiveCanonicalValue};
+function formatFuelEconomy(speedKn,fuelBurnLh){
+ const s=n(speedKn),b=n(fuelBurnLh); if(s===null||b===null||s<=0||b<=0)return null;
+ const nmPerUsGal=s/(b/3.785411784), litresPerNm=b/s;
+ return `${nmPerUsGal.toFixed(2)} nm/US gal / ${litresPerNm.toFixed(2)} L/nm`;
+}
+function formatCruisePerformance(row,speedKey,burnKey,profile=getUnitProfile()){
+ const speed=n(row?.[speedKey]),burn=n(row?.[burnKey]);
+ if(speed===null&&burn===null)return null;
+ const parts=[]; if(speed!==null)parts.push(formatMeasurement(speed,"speed",profile)); if(burn!==null)parts.push(formatMeasurement(burn,"fuel_flow",profile));
+ const econ=formatFuelEconomy(speed,burn); if(econ)parts.push(econ);
+ return parts.join(" · ");
+}
+
+global.BAtlasCanonical={FACTORS,CANON,toCanonical,fromCanonical,canonicalMeasurement,feet,inches,enumCode,formatMeasurement,formatBoatMeasurement,formatUnverifiedVolume,getUnitProfile,setUnitProfile,phaseMatchesContext,resolveProductionPhase,phaseOverride,effectiveCanonicalValue,productionPhaseValues,canonicalRange,specificationConfidence,formatFuelEconomy,formatCruisePerformance};
 })(typeof window!=="undefined"?window:globalThis);

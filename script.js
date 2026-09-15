@@ -221,7 +221,13 @@ function evaluateMissionHardConstraint(boat, mission) {
 
     let result = { passed: true, confidence: 100, issues: [] };
     const canonicalFeet = (field) => {
-        if (window.BAtlasCanonical) return window.BAtlasCanonical.feet(boat, field, []);
+        if (window.BAtlasCanonical) {
+            const direct=window.BAtlasCanonical.feet(boat, field, []);
+            if(direct!==null&&direct!==undefined)return direct;
+            const range=window.BAtlasCanonical.canonicalRange?.(boat,field);
+            // Hard maximum constraints eliminate only if every known production phase is too large.
+            return range ? range.min / 0.3048 : null;
+        }
         const value = Number(boat?.[field]);
         return Number.isFinite(value) ? value / 0.3048 : null;
     };
@@ -3590,6 +3596,8 @@ function renderComparisonTable() {
         { label: "Fuel Capacity", key: "FuelCapacity", volumeLegacy: "FuelCapacityGal" },
         { label: "Water Capacity", key: "WaterCapacity", volumeLegacy: "WaterCapacityGal" },
         { label: "Holding Capacity", key: "HoldingCapacity", volumeLegacy: "HoldingCapacityGal" },
+        { label: "Displacement Cruise / Fuel Economy", key: "displacement_cruise_performance" },
+        { label: "Planing Cruise / Fuel Economy", key: "planing_cruise_performance" },
         { label: "Berths", key: "Berths" },
         { label: "Cabins", key: "Cabins" },
         { label: "Heads", key: "Heads" },
@@ -3633,6 +3641,10 @@ function renderComparisonTable() {
                 } else {
                     val = "Unrated";
                 }
+            } else if (row.key === "displacement_cruise_performance") {
+                val = escapeHtml(window.BAtlasCanonical?.formatCruisePerformance?.(boat,"DisplacementCruiseSpeed","DisplacementCruiseFuelBurn","both") || "Unknown");
+            } else if (row.key === "planing_cruise_performance") {
+                val = boat.HullBehaviourCode === "hull_behaviour.displacement" ? "Not applicable" : escapeHtml(window.BAtlasCanonical?.formatCruisePerformance?.(boat,"PlaningCruiseSpeed","PlaningCruiseFuelBurn","both") || "Unknown");
             } else if (["best_for", "avoid_if", "inspection_focus"].includes(row.key)) {
                 const summary = window.BScoutIntelligenceLayer
                     ? window.BScoutIntelligenceLayer.buildModelKnowledgeSummary(boat)

@@ -34,15 +34,23 @@ function passesRouteCompatibility(boat, userProfile, routes) {
         }
 
         for (const check of routeChecks) {
-            const boatValue = (typeof BAtlasCanonical !== "undefined" && BAtlasCanonical)
+            let boatValue = (typeof BAtlasCanonical !== "undefined" && BAtlasCanonical)
                 ? BAtlasCanonical.feet(boat, check.canonicalField, [])
                 : (Number.isFinite(Number(boat?.[check.canonicalField])) ? Number(boat[check.canonicalField]) / 0.3048 : null);
+            // For phase-variable dimensions, exclude only when even the smallest known phase exceeds the route maximum.
+            let lowEstimate=false;
+            if (typeof BAtlasCanonical !== "undefined" && BAtlasCanonical?.canonicalRange) {
+                const range=BAtlasCanonical.canonicalRange(boat,check.canonicalField);
+                if(range) boatValue=range.min/0.3048;
+                const meta=BAtlasCanonical.specificationConfidence?.(boat,check.canonicalField);
+                lowEstimate=meta?.status==="estimated" && meta?.level==="Low";
+            }
             let routeLimit = matchedRoute[check.routeField];
             if (routeLimit === undefined) {
                 routeLimit = matchedRoute["Route" + check.routeField];
             }
 
-            if (failsLimit(boatValue, routeLimit)) {
+            if (!lowEstimate && failsLimit(boatValue, routeLimit)) {
                 return false;
             }
         }

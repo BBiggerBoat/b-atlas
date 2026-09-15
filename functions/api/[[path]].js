@@ -73,7 +73,7 @@ async function publishCommunity(env) {
     const source = row.Payload?.CorrectionField;
     const target = correctionTarget(source);
     if (!target || source === "Other" || !row.ModelID) continue;
-    const value = normalizeCorrectionValue(target, row.Payload?.ProposedValue, source);
+    const value = normalizeCorrectionValue(target, row.Payload?.ProposedValue, source, row.Payload?.ProposedUnit);
     if (value === undefined) continue;
     modelPatches[row.ModelID] = { ...(modelPatches[row.ModelID] || {}), [target]: value, LastUpdated: now.slice(0, 10), ReviewedBy: "B-Atlas Community Moderation" };
     row.CanonicalPublishedAt = now;

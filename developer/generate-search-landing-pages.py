@@ -374,13 +374,12 @@ for u in urls: xml += ['  <url>',f'    <loc>{html.escape(u)}</loc>',f'    <lastm
 xml.append('</urlset>')
 (ROOT/'sitemap.xml').write_text('\n'.join(xml)+'\n',encoding='utf-8')
 
-# Maintainability notes.
+# Report generation summary to stdout only. Historical/maintainability reports live in the separate Development Archive.
 report={
  'version':json.loads((ROOT/'package.json').read_text(encoding='utf-8')).get('version',''), 'generated':TODAY, 'model_pages':len(models), 'manufacturer_pages':len(manufacturer_slugs),
  'constraint_pages':len(criteria_defs), 'comparison_pages':len(pairs), 'sitemap_urls':len(urls),
  'principle':'Generate stable, useful pages from canonical model data. Do not generate every possible filter or model pair.'
 }
-(ROOT/'SEO_ORGANIC_SEARCH.md').write_text('''# B-Atlas Organic Search Foundations — v6.27.0\n\nGenerated search surfaces:\n\n- `/models/` — permanent crawlable model guides\n- `/manufacturers/` — manufacturer model directories (2+ models in current B-Atlas data)\n- `/boats/` — curated buyer-constraint pages, not arbitrary faceted URLs\n- `/compare/` — deliberately limited model comparisons\n\n## Core rule\n\nDo not generate every possible combination of filters. Search landing pages should exist only where the page is a useful buyer destination with a stable URL and a clear purpose.\n\n## Data semantics\n\nConstraint pages list **known matches only**. A model with missing data is not declared unsuitable; it simply cannot be asserted to match that specific public landing page.\n\n## Regeneration\n\nRun `python developer/generate-search-landing-pages.py` after material changes to `boatmodels.json`. Review generated pages before deployment.\n\n## Current generated counts\n\n```json\n'''+json.dumps(report,indent=2)+'''\n```\n''',encoding='utf-8')
 
 # Package scripts are maintained in package.json; this generator does not rewrite the release version.
 

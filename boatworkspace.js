@@ -45,6 +45,7 @@
             "rudder.twin":"Twin rudders",
             "shower.separate_stall":"Separate shower stall",
             "shower.wet_head":"Wet head",
+            "shower.present_unspecified":"Shower present — arrangement unspecified",
             "shower.none":"No interior shower",
             "shower.varies":"Varies by boat",
             "mechanical_propulsion.shaft":"Shaft",
@@ -90,19 +91,30 @@
     function arr(value) { return Array.isArray(value) ? value : []; }
     function known(value) { return value !== undefined && value !== null && value !== ""; }
     function boatName(boat) { return [boat?.Manufacturer, boat?.Model, boat?.Variant].filter(Boolean).join(" ") || "Unknown model"; }
-    function field(label, value, suffix, contributionFieldId) {
+    function field(label, value, suffix, contributionFieldId, options={}) {
         const hasValue = known(value);
-        const missingAction = !hasValue && contributionFieldId
-            ? `<button type="button" class="workspace-missing-contribution" data-contribute-field="${esc(contributionFieldId)}">Know this? Add it</button>`
+        const action = contributionFieldId && (!hasValue || options.verify)
+            ? `<button type="button" class="workspace-missing-contribution" data-contribute-field="${esc(contributionFieldId)}">${hasValue ? "Verify / correct" : "Know this? Add it"}</button>`
             : "";
-        return `<div class="workspace-fact${!hasValue ? " is-unknown" : ""}"><strong>${esc(label)}</strong><span>${hasValue ? `${esc(value)}${suffix || ""}` : "Unknown"}${missingAction}</span></div>`;
+        const confidence = hasValue && options.confidence ? `<small class="workspace-fact-confidence">${esc(options.confidence)}</small>` : "";
+        const note = hasValue && options.note ? `<small class="workspace-fact-note">${esc(options.note)}</small>` : "";
+        return `<div class="workspace-fact${!hasValue ? " is-unknown" : ""}${options.verify ? " is-estimated" : ""}"><strong>${esc(label)}</strong><span>${hasValue ? `${esc(value)}${suffix || ""}` : "Unknown"}${confidence}${note}${action}</span></div>`;
+    }
+    function dimensionField(boat,label,key){
+        const value=measure(boat,key,"length",[]);
+        const meta=root.BAtlasCanonical?.specificationConfidence?.(boat,key);
+        const range=root.BAtlasCanonical?.canonicalRange?.(boat,key);
+        const verify=!!meta && (meta.status==="estimated" || ["Low","Medium"].includes(meta.level));
+        const variable=!!range?.variable;
+        const confidence=variable ? `Varies by production year · ${meta?.level||"High"} confidence` : meta ? `${meta.level||"Unrated"} confidence${meta.status==="estimated"?" estimate":""}` : "";
+        return field(label,value,"",key,{verify:verify||variable,confidence,note:meta?.note||""});
     }
     function knowledgeScore() {
         return root.BAtlasModelKnowledgeScore?.scoreModel?.(currentBoat) || null;
     }
     function contributionPrompt(fieldId) {
         if (/^Headroom|VBerthLength$/.test(fieldId)) return "Measure yours";
-        if (["LOA","LWL","Beam","Draft","AirDraft","Displacement","FuelCapacity","WaterCapacity","HoldingCapacity"].includes(fieldId)) return "Add a measurement";
+        if (["LOA","LWL","Beam","Draft","AirDraft","Displacement","FuelCapacity","WaterCapacity","HoldingCapacity","DisplacementCruiseSpeed","DisplacementCruiseFuelBurn","PlaningCruiseSpeed","PlaningCruiseFuelBurn"].includes(fieldId)) return "Add a measurement";
         return "Add what you know";
     }
     function renderKnowledgeScoreCard(options = {}) {
@@ -236,7 +248,7 @@
                 <p>${esc(boat.TypicalMission || "Mission fit has not been documented.")}</p>
             </section>
             <section class="workspace-card"><h3>Quick Specifications</h3><div class="workspace-fact-grid">
-                ${field("LOA", measure(boat,"LOA","length",[]), "", "LOA")}${field("LWL", measure(boat,"LWL","length",[]), "", "LWL")}${field("Beam", measure(boat,"Beam","length",[]), "", "Beam")}${field("Draft", measure(boat,"Draft","length",[]), "", "Draft")}${field("Air Draft", measure(boat,"AirDraft","length",[]), "", "AirDraft")}
+                ${dimensionField(boat,"LOA","LOA")}${field("LWL", measure(boat,"LWL","length",[]), "", "LWL")}${dimensionField(boat,"Beam","Beam")}${dimensionField(boat,"Draft","Draft")}${dimensionField(boat,"Air Draft","AirDraft")}
                 ${field("Fuel", boat.Fuel)}${field("Propulsion", boat.Propulsion)}${boat.RarityScore != null ? field("Rarity", `${boat.RarityScore}/5${boat.RarityLabel ? ` — ${boat.RarityLabel}` : ""}`) : ""}${boat.PriceLevel != null ? field("Price Level", `${boat.PriceLevel}/5${boat.PriceLevelLabel ? ` — ${boat.PriceLevelLabel}` : ""}`) : ""}
             </div></section>
             <section class="workspace-card"><h3>Why it remains a candidate</h3>${textList(positives, "No confirmed strengths have been recorded.")}</section>
@@ -323,6 +335,14 @@
                     <div class="workspace-fact-grid">
                         ${field("Fuel capacity", volume(boat,"FuelCapacity","FuelCapacityGal"), "", "FuelCapacity")}${field("Water capacity", volume(boat,"WaterCapacity","WaterCapacityGal"), "", "WaterCapacity")}${field("Holding capacity", volume(boat,"HoldingCapacity","HoldingCapacityGal"), "", "HoldingCapacity")}
                     </div>
+                </div>
+                <div class="workspace-fact-group">
+                    <h4 class="workspace-fact-group-title">Cruising Performance</h4>
+                    <div class="workspace-fact-grid">
+                        ${field("Displacement cruise / fuel economy", root.BAtlasCanonical?.formatCruisePerformance?.(boat,"DisplacementCruiseSpeed","DisplacementCruiseFuelBurn","both"), "", "DisplacementCruiseSpeed")}
+                        ${boat.HullBehaviourCode === "hull_behaviour.displacement" ? field("Planing cruise / fuel economy", "Not applicable") : field("Planing cruise / fuel economy", root.BAtlasCanonical?.formatCruisePerformance?.(boat,"PlaningCruiseSpeed","PlaningCruiseFuelBurn","both"), "", "PlaningCruiseSpeed")}
+                    </div>
+                    <small class="workspace-fact-note">Fuel economy is calculated from the paired cruising speed and fuel burn; actual performance varies with load, engine, propeller, hull condition and sea state.</small>
                 </div>
                 <div class="workspace-fact-group">
                     <h4 class="workspace-fact-group-title">Headroom / Interior Fit</h4>

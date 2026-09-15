@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "1.2",
+  "schemaVersion": "1.3",
   "canonicalUnits": {
     "length": "m",
     "mass": "kg",
@@ -7,7 +7,8 @@
     "power": "kW",
     "speed": "kn",
     "distance": "nm",
-    "area": "m2"
+    "area": "m2",
+    "fuel_flow": "L_h"
   },
   "units": {
     "m": {
@@ -69,6 +70,18 @@
     "ft2": {
       "dimension": "area",
       "toCanonicalFactor": 0.09290304
+    },
+    "L_h": {
+      "dimension": "fuel_flow",
+      "toCanonicalFactor": 1
+    },
+    "us_gal_h": {
+      "dimension": "fuel_flow",
+      "toCanonicalFactor": 3.785411784
+    },
+    "imp_gal_h": {
+      "dimension": "fuel_flow",
+      "toCanonicalFactor": 4.54609
     }
   },
   "sourceParsing": {
@@ -92,7 +105,8 @@
       "powerUnit": "hp",
       "speedUnit": "kn",
       "distanceUnit": "nm",
-      "areaUnit": "ft2"
+      "areaUnit": "ft2",
+      "fuelFlowUnit": "us_gal_h"
     },
     "metric": {
       "lengthUnit": "m",
@@ -101,11 +115,13 @@
       "powerUnit": "kW",
       "speedUnit": "kn",
       "distanceUnit": "nm",
-      "areaUnit": "m2"
+      "areaUnit": "m2",
+      "fuelFlowUnit": "L_h"
     },
     "both": {
       "primary": "imperial",
-      "secondary": "metric"
+      "secondary": "metric",
+      "fuelFlowUnit": "us_gal_h"
     }
   },
   "policy": [
@@ -113,7 +129,8 @@
     "Knots and nautical miles remain canonical marine units.",
     "Original source value, source unit and source text belong in provenance/evidence records and are not discarded after normalization.",
     "US gallons and Imperial gallons are distinct unit codes.",
-    "Area measurements use square metres canonically and preserve original source units."
+    "Area measurements use square metres canonically and preserve original source units.",
+    "Cruising fuel burn is stored canonically in litres per hour; nautical-mile fuel economy is derived from paired speed and fuel-burn values rather than stored independently."
   ],
   "userPreference": {
     "storageKey": "batlas.unitProfile",

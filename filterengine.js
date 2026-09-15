@@ -242,16 +242,22 @@
         // Routes, Dimensions, and Characteristics are hard filters.
         // Missing registry data is retained; a known conflict eliminates the model.
         if (typeof routeEvaluator === "function" && !routeEvaluator(boat, profile, routes || [])) reasons.push("route-compatibility");
-        const loaFt = global.BAtlasCanonical ? global.BAtlasCanonical.feet(boat, "LOA", []) : (Number.isFinite(Number(boat?.LOA)) ? Number(boat.LOA) / 0.3048 : null);
-        const beamFt = global.BAtlasCanonical ? global.BAtlasCanonical.feet(boat, "Beam", []) : (Number.isFinite(Number(boat?.Beam)) ? Number(boat.Beam) / 0.3048 : null);
-        const draftFt = global.BAtlasCanonical ? global.BAtlasCanonical.feet(boat, "Draft", []) : (Number.isFinite(Number(boat?.Draft)) ? Number(boat.Draft) / 0.3048 : null);
-        const airDraftFt = global.BAtlasCanonical ? global.BAtlasCanonical.feet(boat, "AirDraft", []) : (Number.isFinite(Number(boat?.AirDraft)) ? Number(boat.AirDraft) / 0.3048 : null);
-        if (belowMinimum(loaFt, profile.minLength)) reasons.push("min-length");
-        if (exceedsMaximum(loaFt, profile.maxLength)) reasons.push("max-length");
-        if (belowMinimum(beamFt, profile.minBeam)) reasons.push("min-beam");
-        if (exceedsMaximum(beamFt, profile.maxBeam)) reasons.push("max-beam");
-        if (exceedsMaximum(draftFt, profile.maxDraft)) reasons.push("max-draft");
-        if (exceedsMaximum(airDraftFt, profile.maxAirDraft)) reasons.push("max-air-draft");
+        const dimensionRangeFt = key => {
+            const meta=global.BAtlasCanonical?.specificationConfidence?.(boat,key);
+            const lowEstimate=meta?.status==="estimated" && meta?.level==="Low";
+            const range=global.BAtlasCanonical?.canonicalRange?.(boat,key);
+            if(range)return {min:range.min/0.3048,max:range.max/0.3048,variable:!!range.variable,lowEstimate};
+            const value=global.BAtlasCanonical ? global.BAtlasCanonical.feet(boat,key,[]) : (Number.isFinite(Number(boat?.[key])) ? Number(boat[key])/0.3048 : null);
+            return value===null||value===undefined?null:{min:value,max:value,variable:false,lowEstimate};
+        };
+        const loaRange=dimensionRangeFt("LOA"), beamRange=dimensionRangeFt("Beam"), draftRange=dimensionRangeFt("Draft"), airRange=dimensionRangeFt("AirDraft");
+        // Preserve a model when a known production range straddles the buyer limit; eliminate only when every known version conflicts.
+        if (loaRange && !loaRange.lowEstimate && belowMinimum(loaRange.max, profile.minLength)) reasons.push("min-length");
+        if (loaRange && !loaRange.lowEstimate && exceedsMaximum(loaRange.min, profile.maxLength)) reasons.push("max-length");
+        if (beamRange && !beamRange.lowEstimate && belowMinimum(beamRange.max, profile.minBeam)) reasons.push("min-beam");
+        if (beamRange && !beamRange.lowEstimate && exceedsMaximum(beamRange.min, profile.maxBeam)) reasons.push("max-beam");
+        if (draftRange && !draftRange.lowEstimate && exceedsMaximum(draftRange.min, profile.maxDraft)) reasons.push("max-draft");
+        if (airRange && !airRange.lowEstimate && exceedsMaximum(airRange.min, profile.maxAirDraft)) reasons.push("max-air-draft");
         if (profile.styles?.length) {
             const actualStyle = boat.NormalizedStyle || boat.Style;
             if (known(actualStyle) && !selectedIncludes("boatStyle", profile.styles, actualStyle)) reasons.push("style");
