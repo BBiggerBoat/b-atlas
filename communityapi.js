@@ -17,6 +17,7 @@ async function submit(record,attachments=[]){return request("/api/contributions"
 async function adminSnapshot(){return request("/api/admin/snapshot",{admin:true})}
 async function saveAdminSnapshot(snapshot){return request("/api/admin/snapshot",{method:"PUT",admin:true,body:JSON.stringify(snapshot)})}
 async function publish(){return request("/api/admin/publish",{method:"POST",admin:true,body:"{}"})}
+async function backup(){return request("/api/admin/backup",{admin:true})}
 async function publicOverlays(){try{return await request("/api/public/overlays")}catch{return {modelPatches:{},addedModels:[],addedManufacturers:[],reviewedContributions:[],knowledgeItems:[],knowledgeEvidence:[],resourceAdditions:[]}}}
 async function promote(contribution){
   let baseline={models:[],manufacturers:[]};
@@ -32,5 +33,5 @@ async function promote(contribution){
 function setAdminToken(token){if(token)sessionStorage.setItem(TOKEN_KEY,token);else sessionStorage.removeItem(TOKEN_KEY)}
 function hasAdminToken(){return !!sessionStorage.getItem(TOKEN_KEY)}
 async function fetchAttachment(id){const token=sessionStorage.getItem(TOKEN_KEY)||"";const res=await fetch(apiUrl(`/api/admin/attachments/${encodeURIComponent(id)}`),{headers:{Authorization:`Bearer ${token}`}});if(!res.ok)throw new Error("Attachment could not be loaded");return res.blob()}
-root.BScoutCommunityAPI={status,submit,adminSnapshot,saveAdminSnapshot,publish,promote,publicOverlays,setAdminToken,hasAdminToken,fetchAttachment};
+root.BScoutCommunityAPI={status,submit,adminSnapshot,saveAdminSnapshot,publish,backup,promote,publicOverlays,setAdminToken,hasAdminToken,fetchAttachment};
 })(window);

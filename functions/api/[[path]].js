@@ -35,6 +35,22 @@ async function storeAttachments(env, contributionId, attachments) {
   }
 }
 
+async function attachmentManifest(env) {
+  const rows = [];
+  let cursor;
+  do {
+    const page = await env.BSCOUT_FILES.list({ prefix: "attachment:", limit: 1000, ...(cursor ? { cursor } : {}) });
+    for (const key of page.keys || []) rows.push({
+      attachmentRef: String(key.name || "").replace(/^attachment:/, ""),
+      key: key.name,
+      metadata: key.metadata || null,
+      expiration: key.expiration || null
+    });
+    cursor = page.list_complete ? null : page.cursor;
+  } while (cursor);
+  return rows;
+}
+
 async function publicOverlays(env) {
   const published = await getPublished(env.BSCOUT_DB);
   return jsonResponse(published, 200, { "Cache-Control": "public, max-age=30, stale-while-revalidate=60" });
@@ -244,7 +260,18 @@ export async function onRequest(context) {
         return jsonResponse({ ok: true, ...(await promoteCanonical(env, payload.contribution, payload.baseline || {})) });
       }
       if (route === "admin/backup" && request.method === "GET") {
-        return jsonResponse({ exportedAt: new Date().toISOString(), snapshot: await getSnapshot(env.BSCOUT_DB), published: await getPublished(env.BSCOUT_DB) });
+        const [snapshot, published, attachments] = await Promise.all([
+          getSnapshot(env.BSCOUT_DB), getPublished(env.BSCOUT_DB), attachmentManifest(env)
+        ]);
+        return jsonResponse({
+          schema: "batlas-backup-v1",
+          baselineVersion: "7.06.2",
+          exportedAt: new Date().toISOString(),
+          snapshot,
+          published,
+          attachments: { count: attachments.length, manifest: attachments, blobsIncluded: false },
+          recoveryNote: "GitHub preserves the versioned static baseline. This export preserves D1 community state and a KV attachment inventory; attachment binary recovery is tested separately in Phase 1N."
+        });
       }
       if (route.startsWith("admin/attachments/") && request.method === "GET") return serveAttachment(env, decodeURIComponent(route.slice("admin/attachments/".length)), true);
     }
