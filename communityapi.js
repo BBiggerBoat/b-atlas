@@ -20,10 +20,10 @@ async function publish(){return request("/api/admin/publish",{method:"POST",admi
 async function backup(){return request("/api/admin/backup",{admin:true})}
 async function reconciliation(){
   const [baselineMeta,models,manufacturers,published]=await Promise.all([
-    fetch("baseline-version.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw new Error("Baseline version manifest unavailable");return r.json()}),
-    fetch("boatmodels.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw new Error("Baseline boat models unavailable");return r.json()}),
-    fetch("data/registry/manufacturers.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw new Error("Baseline manufacturer registry unavailable");return r.json()}),
-    publicOverlays()
+    fetch("/baseline-version.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw new Error("Baseline version manifest unavailable");return r.json()}),
+    fetch("/boatmodels.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw new Error("Baseline boat models unavailable");return r.json()}),
+    fetch("/data/registry/manufacturers.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw new Error("Baseline manufacturer registry unavailable");return r.json()}),
+    request("/api/public/overlays")
   ]);
   const modelRows=Array.isArray(models)?models:[], manufacturerRows=Array.isArray(manufacturers)?manufacturers:[];
   const byModel=new Map(modelRows.map(x=>[String(x.BoatModelID||""),x]));
