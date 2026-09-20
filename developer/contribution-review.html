@@ -81,10 +81,10 @@
         <button type="button" id="connectSharedBtn">Connect moderator</button>
         <button type="button" id="refreshSharedBtn">Refresh shared queue</button>
         <button type="button" id="publishSharedBtn">Publish reviewed knowledge</button>
-        <button type="button" id="backupSharedBtn">Download full backup</button>
+        <button type="button" id="backupSharedBtn">Download full backup</button>\n        <button type="button" id="reconciliationSharedBtn">Check baseline ↔ D1</button>
       </div>
       <p id="sharedBackendMessage" class="utility-message" hidden></p>
-      <p class="muted">Full backup includes the D1 moderation/community state, published overlay and a manifest of stored attachments. GitHub retains the static baseline. Attachment file bytes are not included in this JSON backup.</p>
+      <p class="muted">Full backup includes the D1 moderation/community state, published overlay and a manifest of stored attachments. GitHub retains the static baseline. Attachment file bytes are not included in this JSON backup.</p>\n      <p class="muted">Baseline ↔ D1 check compares the deployed static baseline with the published production overlay and flags structural drift; it does not modify either source.</p>
     </section>
 
     <details class="queue-utilities">
