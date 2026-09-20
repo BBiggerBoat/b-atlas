@@ -76,5 +76,5 @@ async function promote(contribution){
 function setAdminToken(token){if(token)sessionStorage.setItem(TOKEN_KEY,token);else sessionStorage.removeItem(TOKEN_KEY)}
 function hasAdminToken(){return !!sessionStorage.getItem(TOKEN_KEY)}
 async function fetchAttachment(id){const token=sessionStorage.getItem(TOKEN_KEY)||"";const res=await fetch(apiUrl(`/api/admin/attachments/${encodeURIComponent(id)}`),{headers:{Authorization:`Bearer ${token}`}});if(!res.ok)throw new Error("Attachment could not be loaded");return res.blob()}
-root.BScoutCommunityAPI={status,submit,adminSnapshot,saveAdminSnapshot,publish,backup,promote,publicOverlays,setAdminToken,hasAdminToken,fetchAttachment};
+root.BScoutCommunityAPI={status,submit,adminSnapshot,saveAdminSnapshot,publish,backup,reconciliation,promote,publicOverlays,setAdminToken,hasAdminToken,fetchAttachment};
 })(window);
