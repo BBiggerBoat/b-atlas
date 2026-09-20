@@ -81,6 +81,36 @@ function appendCanonicalHistory(published, change) {
   return change;
 }
 
+async function ensureCanonicalHistory(env, published) {
+  if ((published.canonicalChangeHistory || []).length) return published.canonicalChangeHistory;
+  const seeded = [];
+  for (const [modelId, patch] of Object.entries(published.modelPatches || {})) {
+    seeded.push(canonicalChangeRecord({
+      type: "legacy_overlay_import", targetType: "model_patch", targetId: modelId,
+      fields: Object.keys(patch || {}).filter(k => !["LastUpdated","ReviewedBy"].includes(k)),
+      before: null, after: patch,
+      reason: "Existing published D1 overlay captured when Phase 1F change history was initialized"
+    }));
+  }
+  for (const rec of published.addedModels || []) {
+    seeded.push(canonicalChangeRecord({
+      type: "legacy_overlay_import", targetType: "added_model", targetId: rec.BoatModelID,
+      fields: Object.keys(rec), before: null, after: rec,
+      reason: "Existing D1-added model captured when Phase 1F change history was initialized"
+    }));
+  }
+  for (const rec of published.addedManufacturers || []) {
+    seeded.push(canonicalChangeRecord({
+      type: "legacy_overlay_import", targetType: "added_manufacturer", targetId: rec.ManufacturerCode,
+      fields: Object.keys(rec), before: null, after: rec,
+      reason: "Existing D1-added manufacturer captured when Phase 1F change history was initialized"
+    }));
+  }
+  published.canonicalChangeHistory = seeded;
+  await savePublished(env.BSCOUT_DB, published);
+  return seeded;
+}
+
 async function revertCanonicalChange(env, changeId) {
   const published = await getPublished(env.BSCOUT_DB);
   const history = [...(published.canonicalChangeHistory || [])];
@@ -335,7 +365,8 @@ export async function onRequest(context) {
       }
       if (route === "admin/canonical-history" && request.method === "GET") {
         const published = await getPublished(env.BSCOUT_DB);
-        return jsonResponse({ schema: "batlas-canonical-history-v1", changes: published.canonicalChangeHistory || [] });
+        const changes = await ensureCanonicalHistory(env, published);
+        return jsonResponse({ schema: "batlas-canonical-history-v1", changes });
       }
       if (route.startsWith("admin/canonical-history/") && route.endsWith("/revert") && request.method === "POST") {
         const changeId = decodeURIComponent(route.slice("admin/canonical-history/".length, -"/revert".length));
