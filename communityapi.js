@@ -18,6 +18,8 @@ async function adminSnapshot(){return request("/api/admin/snapshot",{admin:true}
 async function saveAdminSnapshot(snapshot){return request("/api/admin/snapshot",{method:"PUT",admin:true,body:JSON.stringify(snapshot)})}
 async function publish(){return request("/api/admin/publish",{method:"POST",admin:true,body:"{}"})}
 async function backup(){return request("/api/admin/backup",{admin:true})}
+async function canonicalHistory(){return request("/api/admin/canonical-history",{admin:true})}
+async function revertCanonicalChange(changeId){return request(`/api/admin/canonical-history/${encodeURIComponent(changeId)}/revert`,{method:"POST",admin:true,body:"{}"})}
 async function reconciliation(){
   const [baselineMeta,models,manufacturers,published]=await Promise.all([
     fetch("/baseline-version.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw new Error("Baseline version manifest unavailable");return r.json()}),
@@ -76,5 +78,5 @@ async function promote(contribution){
 function setAdminToken(token){if(token)sessionStorage.setItem(TOKEN_KEY,token);else sessionStorage.removeItem(TOKEN_KEY)}
 function hasAdminToken(){return !!sessionStorage.getItem(TOKEN_KEY)}
 async function fetchAttachment(id){const token=sessionStorage.getItem(TOKEN_KEY)||"";const res=await fetch(apiUrl(`/api/admin/attachments/${encodeURIComponent(id)}`),{headers:{Authorization:`Bearer ${token}`}});if(!res.ok)throw new Error("Attachment could not be loaded");return res.blob()}
-root.BScoutCommunityAPI={status,submit,adminSnapshot,saveAdminSnapshot,publish,backup,reconciliation,promote,publicOverlays,setAdminToken,hasAdminToken,fetchAttachment};
+root.BScoutCommunityAPI={status,submit,adminSnapshot,saveAdminSnapshot,publish,backup,canonicalHistory,revertCanonicalChange,reconciliation,promote,publicOverlays,setAdminToken,hasAdminToken,fetchAttachment};
 })(window);

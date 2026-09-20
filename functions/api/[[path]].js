@@ -53,7 +53,105 @@ async function attachmentManifest(env) {
 
 async function publicOverlays(env) {
   const published = await getPublished(env.BSCOUT_DB);
-  return jsonResponse(published, 200, { "Cache-Control": "public, max-age=30, stale-while-revalidate=60" });
+  const { canonicalChangeHistory, ...publicPublished } = published;
+  return jsonResponse(publicPublished, 200, { "Cache-Control": "public, max-age=30, stale-while-revalidate=60" });
+}
+
+function canonicalChangeRecord({ type, targetType, targetId, fields = [], before = null, after = null, row = null, reason = null }) {
+  const now = new Date().toISOString();
+  return {
+    ChangeID: `chg-${now.replace(/[^0-9]/g, "").slice(0, 17)}-${crypto.randomUUID().slice(0, 8)}`,
+    ChangedAt: now,
+    Type: type,
+    TargetType: targetType,
+    TargetID: targetId,
+    Fields: fields,
+    Before: before,
+    After: after,
+    SourceContributionID: row?.ContributionID || null,
+    Reason: reason || row?.ModeratorNotes || row?.CanonicalDraft?.ResearchNotes || row?.Payload?.Notes || "Reviewed canonical change",
+    ChangedBy: "B-Atlas Community Moderation",
+    RevertedAt: null,
+    RevertedByChangeID: null
+  };
+}
+
+function appendCanonicalHistory(published, change) {
+  published.canonicalChangeHistory = [...(published.canonicalChangeHistory || []), change];
+  return change;
+}
+
+async function ensureCanonicalHistory(env, published) {
+  if ((published.canonicalChangeHistory || []).length) return published.canonicalChangeHistory;
+  const seeded = [];
+  for (const [modelId, patch] of Object.entries(published.modelPatches || {})) {
+    seeded.push(canonicalChangeRecord({
+      type: "legacy_overlay_import", targetType: "model_patch", targetId: modelId,
+      fields: Object.keys(patch || {}).filter(k => !["LastUpdated","ReviewedBy"].includes(k)),
+      before: null, after: patch,
+      reason: "Existing published D1 overlay captured when Phase 1F change history was initialized"
+    }));
+  }
+  for (const rec of published.addedModels || []) {
+    seeded.push(canonicalChangeRecord({
+      type: "legacy_overlay_import", targetType: "added_model", targetId: rec.BoatModelID,
+      fields: Object.keys(rec), before: null, after: rec,
+      reason: "Existing D1-added model captured when Phase 1F change history was initialized"
+    }));
+  }
+  for (const rec of published.addedManufacturers || []) {
+    seeded.push(canonicalChangeRecord({
+      type: "legacy_overlay_import", targetType: "added_manufacturer", targetId: rec.ManufacturerCode,
+      fields: Object.keys(rec), before: null, after: rec,
+      reason: "Existing D1-added manufacturer captured when Phase 1F change history was initialized"
+    }));
+  }
+  published.canonicalChangeHistory = seeded;
+  await savePublished(env.BSCOUT_DB, published);
+  return seeded;
+}
+
+async function revertCanonicalChange(env, changeId) {
+  const published = await getPublished(env.BSCOUT_DB);
+  const history = [...(published.canonicalChangeHistory || [])];
+  const index = history.findIndex(x => x.ChangeID === changeId);
+  if (index < 0) throw new Error("Canonical change not found");
+  const original = history[index];
+  if (original.RevertedAt) throw new Error("Canonical change already reverted");
+  const laterActiveChange = history.slice(index + 1).some(x =>
+    x.TargetType === original.TargetType &&
+    x.TargetID === original.TargetID &&
+    !x.RevertedAt &&
+    x.Type !== "revert"
+  );
+  if (laterActiveChange) throw new Error("A newer canonical change exists for this record. Revert the newest change first.");
+
+  if (original.TargetType === "model_patch") {
+    const patches = { ...(published.modelPatches || {}) };
+    if (original.Before && Object.keys(original.Before).length) patches[original.TargetID] = original.Before;
+    else delete patches[original.TargetID];
+    published.modelPatches = patches;
+  } else if (original.TargetType === "added_model") {
+    published.addedModels = (published.addedModels || []).filter(x => x.BoatModelID !== original.TargetID);
+  } else if (original.TargetType === "added_manufacturer") {
+    published.addedManufacturers = (published.addedManufacturers || []).filter(x => x.ManufacturerCode !== original.TargetID);
+  } else {
+    throw new Error("Canonical change type cannot be reverted");
+  }
+
+  const reversal = canonicalChangeRecord({
+    type: "revert",
+    targetType: original.TargetType,
+    targetId: original.TargetID,
+    fields: original.Fields || [],
+    before: original.After,
+    after: original.Before,
+    reason: `Reverted canonical change ${original.ChangeID}`
+  });
+  history[index] = { ...original, RevertedAt: reversal.ChangedAt, RevertedByChangeID: reversal.ChangeID };
+  published.canonicalChangeHistory = [...history, reversal];
+  await savePublished(env.BSCOUT_DB, published);
+  return { reverted: original.ChangeID, reversal };
 }
 
 function publicReviewedRow(row) {
@@ -79,6 +177,7 @@ function resourceReviewPublicRow(row) {
 async function publishCommunity(env) {
   const snapshot = await getSnapshot(env.BSCOUT_DB);
   const published = await getPublished(env.BSCOUT_DB);
+  await ensureCanonicalHistory(env, published);
   const now = new Date().toISOString();
   const reviewed = snapshot.reviewed || [];
   const modelPatches = { ...(published.modelPatches || {}) };
@@ -91,7 +190,17 @@ async function publishCommunity(env) {
     if (!target || source === "Other" || !row.ModelID) continue;
     const value = normalizeCorrectionValue(target, row.Payload?.ProposedValue, source, row.Payload?.ProposedUnit);
     if (value === undefined) continue;
+    const beforePatch = modelPatches[row.ModelID] ? { ...modelPatches[row.ModelID] } : null;
     modelPatches[row.ModelID] = { ...(modelPatches[row.ModelID] || {}), [target]: value, LastUpdated: now.slice(0, 10), ReviewedBy: "B-Atlas Community Moderation" };
+    appendCanonicalHistory(published, canonicalChangeRecord({
+      type: "correction",
+      targetType: "model_patch",
+      targetId: row.ModelID,
+      fields: [target],
+      before: beforePatch,
+      after: { ...modelPatches[row.ModelID] },
+      row
+    }));
     row.CanonicalPublishedAt = now;
     row.CanonicalActionRef = `cloudflare:model-patch:${row.ModelID}:${target}`;
     canonicalCorrections++;
@@ -111,7 +220,8 @@ async function publishCommunity(env) {
     reviewedContributions: reviewed.filter(r => r.ModerationStatus === "approved").map(publicReviewedRow),
     knowledgeItems: snapshot.knowledgeItems || [],
     knowledgeEvidence: snapshot.knowledgeEvidence || [],
-    resourceAdditions
+    resourceAdditions,
+    canonicalChangeHistory: published.canonicalChangeHistory || []
   };
   await savePublished(env.BSCOUT_DB, next);
   return {
@@ -140,6 +250,7 @@ async function promoteCanonical(env, row, baseline = {}) {
   const f = row.CanonicalDraft.Fields || {};
   const extra = Object.fromEntries((row.CanonicalDraft.AdditionalFields || []).filter(x => x.Key).map(x => [x.Key, x.Value]));
   const published = await getPublished(env.BSCOUT_DB);
+  await ensureCanonicalHistory(env, published);
   const baselineModels = Array.isArray(baseline.models) ? baseline.models : [];
   const baselineManufacturers = Array.isArray(baseline.manufacturers) ? baseline.manufacturers : [];
 
@@ -159,6 +270,7 @@ async function promoteCanonical(env, row, baseline = {}) {
       ResearchNotes: row.CanonicalDraft.ResearchNotes || null, ...extra
     };
     published.addedManufacturers = [...(published.addedManufacturers || []), rec].sort((a,b) => String(a.CanonicalName).localeCompare(String(b.CanonicalName)));
+    appendCanonicalHistory(published, canonicalChangeRecord({ type: "add", targetType: "added_manufacturer", targetId: code, fields: Object.keys(rec), before: null, after: rec, row }));
     await savePublished(env.BSCOUT_DB, published);
     return { type: "manufacturer", id: code, record: rec };
   }
@@ -192,6 +304,7 @@ async function promoteCanonical(env, row, baseline = {}) {
       CommunitySourceURL: f.SourceURL || null, ResearchNotes: row.CanonicalDraft.ResearchNotes || null, ...extra
     };
     published.addedModels = [...(published.addedModels || []), rec];
+    appendCanonicalHistory(published, canonicalChangeRecord({ type: "add", targetType: "added_model", targetId: id, fields: Object.keys(rec), before: null, after: rec, row }));
     await savePublished(env.BSCOUT_DB, published);
     return { type: "model", id, record: rec };
   }
@@ -258,6 +371,15 @@ export async function onRequest(context) {
       if (route === "admin/promote" && request.method === "POST") {
         const payload = await readBody(request, 6 * 1024 * 1024);
         return jsonResponse({ ok: true, ...(await promoteCanonical(env, payload.contribution, payload.baseline || {})) });
+      }
+      if (route === "admin/canonical-history" && request.method === "GET") {
+        const published = await getPublished(env.BSCOUT_DB);
+        const changes = await ensureCanonicalHistory(env, published);
+        return jsonResponse({ schema: "batlas-canonical-history-v1", changes });
+      }
+      if (route.startsWith("admin/canonical-history/") && route.endsWith("/revert") && request.method === "POST") {
+        const changeId = decodeURIComponent(route.slice("admin/canonical-history/".length, -"/revert".length));
+        return jsonResponse({ ok: true, ...(await revertCanonicalChange(env, changeId)) });
       }
       if (route === "admin/backup" && request.method === "GET") {
         const [snapshot, published, attachments] = await Promise.all([
