@@ -118,6 +118,13 @@ async function revertCanonicalChange(env, changeId) {
   if (index < 0) throw new Error("Canonical change not found");
   const original = history[index];
   if (original.RevertedAt) throw new Error("Canonical change already reverted");
+  const laterActiveChange = history.slice(index + 1).some(x =>
+    x.TargetType === original.TargetType &&
+    x.TargetID === original.TargetID &&
+    !x.RevertedAt &&
+    x.Type !== "revert"
+  );
+  if (laterActiveChange) throw new Error("A newer canonical change exists for this record. Revert the newest change first.");
 
   if (original.TargetType === "model_patch") {
     const patches = { ...(published.modelPatches || {}) };
@@ -170,6 +177,7 @@ function resourceReviewPublicRow(row) {
 async function publishCommunity(env) {
   const snapshot = await getSnapshot(env.BSCOUT_DB);
   const published = await getPublished(env.BSCOUT_DB);
+  await ensureCanonicalHistory(env, published);
   const now = new Date().toISOString();
   const reviewed = snapshot.reviewed || [];
   const modelPatches = { ...(published.modelPatches || {}) };
@@ -242,6 +250,7 @@ async function promoteCanonical(env, row, baseline = {}) {
   const f = row.CanonicalDraft.Fields || {};
   const extra = Object.fromEntries((row.CanonicalDraft.AdditionalFields || []).filter(x => x.Key).map(x => [x.Key, x.Value]));
   const published = await getPublished(env.BSCOUT_DB);
+  await ensureCanonicalHistory(env, published);
   const baselineModels = Array.isArray(baseline.models) ? baseline.models : [];
   const baselineManufacturers = Array.isArray(baseline.manufacturers) ? baseline.manufacturers : [];
 
