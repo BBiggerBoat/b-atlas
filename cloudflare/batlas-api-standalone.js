@@ -570,13 +570,41 @@ async function onRequest(context) {
 }
 
 
+const CORS_ORIGINS = new Set(["https://b-atlas.org", "https://www.b-atlas.org"]);
+
+function corsHeaders(request) {
+  const origin = request.headers.get("Origin") || "";
+  if (!CORS_ORIGINS.has(origin)) return {};
+  return {
+    "Access-Control-Allow-Origin": origin,
+    "Access-Control-Allow-Headers": "Authorization, Content-Type",
+    "Access-Control-Allow-Methods": "GET, POST, PUT, OPTIONS",
+    "Access-Control-Max-Age": "86400",
+    "Vary": "Origin"
+  };
+}
+
+function withCors(request, response) {
+  const headers = new Headers(response.headers);
+  for (const [key, value] of Object.entries(corsHeaders(request))) headers.set(key, value);
+  return new Response(response.body, {
+    status: response.status,
+    statusText: response.statusText,
+    headers
+  });
+}
+
 export default {
   async fetch(request, env, ctx) {
-    return onRequest({
+    if (request.method === "OPTIONS") {
+      return new Response(null, { status: 204, headers: corsHeaders(request) });
+    }
+    const response = await onRequest({
       request,
       env,
       waitUntil: ctx.waitUntil.bind(ctx),
       passThroughOnException() {}
     });
+    return withCors(request, response);
   }
 };
