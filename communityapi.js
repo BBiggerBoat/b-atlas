@@ -4,10 +4,13 @@ const TOKEN_KEY="bscoutAdminTokenV1";
 const API_BASE="https://api.b-atlas.org";
 const apiUrl=path=>`${API_BASE}${path}`;
 async function request(path,options={}){
-  const headers={"Content-Type":"application/json",...(options.headers||{})};
+  const isAdminPath=String(path||"").startsWith("/api/admin/");
+  if(options.admin&&!isAdminPath) throw new Error("Admin request must use an /api/admin/ route");
+  if(!options.admin&&isAdminPath) throw new Error("Admin API route requires an explicit admin request");
+  const headers={"Accept":"application/json","Content-Type":"application/json",...(options.headers||{})};
   const token=sessionStorage.getItem(TOKEN_KEY);
   if(options.admin&&token) headers.Authorization=`Bearer ${token}`;
-  const res=await fetch(apiUrl(path),{...options,headers});
+  const res=await fetch(apiUrl(path),{...options,headers,credentials:"omit"});
   let body=null;try{body=await res.json()}catch{}
   if(!res.ok) throw new Error(body?.error||`${res.status} ${res.statusText}`);
   return body;
