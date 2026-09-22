@@ -8,7 +8,8 @@
     "cf:dev": "wrangler pages dev .",
     "cf:d1:local": "wrangler d1 execute BSCOUT_DB --local --file=cloudflare/schema.sql",
     "generate:search-pages": "python developer/generate-search-landing-pages.py",
-    "guard:baseline": "node developer/check-baseline-version.js"
+    "guard:baseline": "node developer/check-baseline-version.js",
+    "build:public": "node developer/build-public-site.js"
   },
   "devDependencies": {
     "wrangler": "^4.0.0"
