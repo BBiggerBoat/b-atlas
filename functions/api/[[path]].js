@@ -5,31 +5,134 @@ import {
 } from "../_lib/bscout-store.js";
 
 const ALLOWED_RIGHTS = new Set(["creator_or_owner", "permission_granted", "public_distribution"]);
-const MAX_ATTACHMENT_BYTES = 25 * 1024 * 1024;
+const ACCEPTED_UPLOAD_RIGHTS = new Set(["creator_or_owner", "permission_granted", "public_distribution", "uncertain"]);
+const ALLOWED_CONTRIBUTION_TYPES = new Set([
+  "ownership_experience","problem_weakness","buyer_inspection_advice","correction","other",
+  "photo","manual_document","resource","new_model","new_manufacturer"
+]);
+const ALLOWED_IMAGE_MIME = new Set(["image/jpeg","image/png","image/webp"]);
+const ALLOWED_DOCUMENT_MIME = new Set(["application/pdf"]);
+const MAX_PHOTO_BYTES = 12 * 1024 * 1024;
+const MAX_PHOTO_FILES = 8;
+const MAX_PHOTO_TOTAL_BYTES = 30 * 1024 * 1024;
+const MAX_DOCUMENT_BYTES = 25 * 1024 * 1024;
+const MAX_REQUEST_BYTES = 45 * 1024 * 1024;
 
 function requireBindings(env) {
   if (!env.BSCOUT_DB) throw new Error("BSCOUT_DB D1 binding is not configured");
   if (!env.BSCOUT_FILES) throw new Error("BSCOUT_FILES KV binding is not configured");
 }
 
-async function readBody(request, limit = 60 * 1024 * 1024) {
+async function readBody(request, limit = MAX_REQUEST_BYTES) {
+  const type = String(request.headers.get("Content-Type") || "").toLowerCase();
+  if (!type.startsWith("application/json")) throw new Error("Content-Type must be application/json");
   const length = Number(request.headers.get("Content-Length") || 0);
   if (length && length > limit) throw new Error("Request too large");
-  return request.json();
+  const text = await request.text();
+  if (new TextEncoder().encode(text).byteLength > limit) throw new Error("Request too large");
+  try { return JSON.parse(text); }
+  catch { throw new Error("Invalid JSON request"); }
 }
 
 function attachmentKey(id) { return `attachment:${cleanFilename(id)}`; }
 
-async function storeAttachments(env, contributionId, attachments) {
-  for (const a of attachments || []) {
-    if (!a?.attachmentRef || !a?.dataBase64) continue;
-    const bytes = decodeBase64(a.dataBase64);
-    if (bytes.byteLength > MAX_ATTACHMENT_BYTES) throw new Error("Attachment too large");
-    await env.BSCOUT_FILES.put(attachmentKey(a.attachmentRef), bytes, {
+function detectedMime(bytes) {
+  if (bytes.length >= 3 && bytes[0] === 0xff && bytes[1] === 0xd8 && bytes[2] === 0xff) return "image/jpeg";
+  if (bytes.length >= 8 && bytes[0] === 0x89 && bytes[1] === 0x50 && bytes[2] === 0x4e && bytes[3] === 0x47 && bytes[4] === 0x0d && bytes[5] === 0x0a && bytes[6] === 0x1a && bytes[7] === 0x0a) return "image/png";
+  if (bytes.length >= 12 && String.fromCharCode(...bytes.slice(0,4)) === "RIFF" && String.fromCharCode(...bytes.slice(8,12)) === "WEBP") return "image/webp";
+  if (bytes.length >= 5 && String.fromCharCode(...bytes.slice(0,5)) === "%PDF-") return "application/pdf";
+  return null;
+}
+
+function validateContributionRecord(record) {
+  if (!record || typeof record !== "object" || Array.isArray(record)) throw new Error("Invalid contribution record");
+  const id = String(record.ContributionID || "");
+  if (!/^CONTRIB-[A-Za-z0-9-]{8,120}$/.test(id)) throw new Error("Invalid contribution ID");
+  if (!ALLOWED_CONTRIBUTION_TYPES.has(String(record.ContributionType || ""))) throw new Error("Invalid contribution type");
+  if (!Array.isArray(record.AttachmentRefs)) throw new Error("Invalid attachment references");
+  if (record.AttachmentRefs.length > MAX_PHOTO_FILES) throw new Error("Too many attachments");
+  if (new Set(record.AttachmentRefs).size !== record.AttachmentRefs.length) throw new Error("Duplicate attachment reference");
+}
+
+function validateAttachmentRef(contributionId, ref, index, isDocument) {
+  const suffix = String(contributionId).replace(/^CONTRIB-/, "");
+  const expected = isDocument
+    ? `ATT-DOC-${suffix}`
+    : `ATT-${suffix}-${String(index + 1).padStart(2, "0")}`;
+  if (String(ref || "") !== expected) throw new Error("Attachment reference does not match contribution");
+}
+
+function validatedAttachments(record, attachments) {
+  const rows = Array.isArray(attachments) ? attachments : [];
+  const refs = record.AttachmentRefs || [];
+  if (rows.length !== refs.length) throw new Error("Attachment payload does not match contribution references");
+
+  const type = String(record.ContributionType || "");
+  if (!["photo","manual_document","new_model"].includes(type) && rows.length) throw new Error("Attachments are not allowed for this contribution type");
+
+  if (rows.length && !ACCEPTED_UPLOAD_RIGHTS.has(String(record.RightsStatus || ""))) throw new Error("Attachment rights declaration is required");
+
+  if (type === "manual_document") {
+    if (String(record.Payload?.DocumentDelivery || "") !== "upload") {
+      if (rows.length) throw new Error("Document attachment not expected");
+      return [];
+    }
+    if (rows.length !== 1) throw new Error("Exactly one PDF document is required");
+  }
+
+  if (type === "new_model" && rows.length > 1) throw new Error("Only one new-model photo may be uploaded");
+  if (type === "photo" && (rows.length < 1 || rows.length > MAX_PHOTO_FILES)) throw new Error("Photo contribution must contain 1 to 8 photos");
+
+  let totalBytes = 0;
+  const validated = rows.map((a,index) => {
+    if (!a || typeof a !== "object" || !a.dataBase64) throw new Error("Attachment data is missing");
+    const isDocument = type === "manual_document";
+    validateAttachmentRef(record.ContributionID, a.attachmentRef, index, isDocument);
+    if (String(a.attachmentRef) !== String(refs[index])) throw new Error("Attachment order/reference mismatch");
+
+    let bytes;
+    try { bytes = decodeBase64(a.dataBase64); }
+    catch { throw new Error("Attachment data is not valid base64"); }
+
+    const actualMime = detectedMime(bytes);
+    const declaredMime = String(a.mime || a.type || "").toLowerCase().trim();
+    if (!actualMime) throw new Error("Unsupported attachment file type");
+    if (declaredMime && declaredMime !== actualMime) throw new Error("Attachment type does not match file contents");
+
+    if (isDocument) {
+      if (!ALLOWED_DOCUMENT_MIME.has(actualMime)) throw new Error("Only PDF documents are accepted");
+      if (bytes.byteLength > MAX_DOCUMENT_BYTES) throw new Error("Document must be 25 MB or smaller");
+    } else {
+      if (!ALLOWED_IMAGE_MIME.has(actualMime)) throw new Error("Only JPEG, PNG or WebP images are accepted");
+      if (bytes.byteLength > MAX_PHOTO_BYTES) throw new Error("Photo must be 12 MB or smaller");
+      totalBytes += bytes.byteLength;
+      if (totalBytes > MAX_PHOTO_TOTAL_BYTES) throw new Error("Combined photos must be 30 MB or smaller");
+    }
+
+    const filename = cleanFilename(a.filename || a.attachmentRef);
+    const lower = filename.toLowerCase();
+    const extOk = actualMime === "image/jpeg" ? /\.jpe?g$/.test(lower)
+      : actualMime === "image/png" ? /\.png$/.test(lower)
+      : actualMime === "image/webp" ? /\.webp$/.test(lower)
+      : actualMime === "application/pdf" ? /\.pdf$/.test(lower)
+      : false;
+    if (!extOk) throw new Error("Attachment filename extension does not match file contents");
+
+    return { attachmentRef:a.attachmentRef, filename, contentType:actualMime, bytes };
+  });
+
+  return validated;
+}
+
+async function storeAttachments(env, record, attachments) {
+  const validated = validatedAttachments(record, attachments);
+  for (const a of validated) {
+    await env.BSCOUT_FILES.put(attachmentKey(a.attachmentRef), a.bytes, {
       metadata: {
-        filename: cleanFilename(a.filename || a.attachmentRef),
-        contentType: String(a.type || "application/octet-stream").slice(0, 120),
-        contributionId: String(contributionId || "").slice(0, 160)
+        filename: a.filename,
+        contentType: a.contentType,
+        contributionId: String(record.ContributionID || "").slice(0, 160),
+        validatedAt: new Date().toISOString()
       }
     });
   }
@@ -324,7 +427,10 @@ async function serveAttachment(env, id, admin) {
   const headers = {
     "Content-Type": meta.contentType || "application/octet-stream",
     "Content-Disposition": `inline; filename="${String(meta.filename || id).replace(/\"/g, "")}"`,
-    "Cache-Control": admin ? "no-store" : "public, max-age=300"
+    "Cache-Control": admin ? "no-store" : "public, max-age=300",
+    "X-Content-Type-Options": "nosniff",
+    "Content-Security-Policy": "sandbox",
+    "Cross-Origin-Resource-Policy": "same-site"
   };
   return new Response(result.value, { status: 200, headers });
 }
@@ -375,10 +481,10 @@ export async function onRequest(context) {
       }
       const payload = await readBody(request);
       const record = payload?.record;
-      if (!record?.ContributionID || !record?.ContributionType) return jsonResponse({ error: "Invalid contribution record" }, 400);
+      validateContributionRecord(record);
       const snapshot = await getSnapshot(env.BSCOUT_DB);
       if ([...snapshot.pending, ...snapshot.reviewed].some(x => x.ContributionID === record.ContributionID)) return jsonResponse({ ok: true, id: record.ContributionID, duplicate: true });
-      await storeAttachments(env, record.ContributionID, payload.attachments || []);
+      await storeAttachments(env, record, payload.attachments || []);
       snapshot.pending.push({ ...record, ModerationStatus: "pending", SharedReceivedAt: new Date().toISOString() });
       await saveSnapshot(env.BSCOUT_DB, snapshot);
       return jsonResponse({ ok: true, id: record.ContributionID, pending: snapshot.pending.length }, 201);
