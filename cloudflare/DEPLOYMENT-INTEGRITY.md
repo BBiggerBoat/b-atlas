@@ -59,4 +59,4 @@ Production secrets must remain only in Cloudflare secret storage. In particular:
 - The Worker health endpoint exposes a non-secret build marker so the live manual deployment can be matched to GitHub source.
 - GitHub Pages and the Cloudflare Worker remain separate deployment surfaces. A Worker code change is not production-complete until the live health endpoint reports the expected build marker.
 
-Current Phase 1L build marker: `2026-10-01-phase1l`.
+Current production security build marker after Phase 1N: `2026-10-01-phase1n`.
