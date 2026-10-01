@@ -70,7 +70,7 @@ jobs:
           grep -q 'enforceLimit("admin-authenticated", 240' functions/api/\[\[path\]\].js
           grep -q 'Contribution origin not allowed' functions/api/\[\[path\]\].js
           grep -q 'Disallow: /boatmodels.json' robots.txt
-          grep -q 'Phase 1J extraction / rate-limit protection' cloudflare/batlas-api-standalone.js
+          grep -q 'GENERATED FILE — do not hand edit' cloudflare/batlas-api-standalone.js
       - name: Verify Phase 1K upload security
         shell: bash
         run: |
