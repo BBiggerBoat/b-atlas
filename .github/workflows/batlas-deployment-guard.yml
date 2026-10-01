@@ -64,3 +64,15 @@ jobs:
           grep -q 'Contribution origin not allowed' functions/api/\[\[path\]\].js
           grep -q 'Disallow: /boatmodels.json' robots.txt
           grep -q 'Phase 1J extraction / rate-limit protection' cloudflare/batlas-api-standalone.js
+      - name: Verify Phase 1K upload security
+        shell: bash
+        run: |
+          grep -q 'MAX_PHOTO_FILES = 8' functions/api/\[\[path\]\].js
+          grep -q 'MAX_PHOTO_TOTAL_BYTES = 30' functions/api/\[\[path\]\].js
+          grep -q 'MAX_DOCUMENT_BYTES = 25' functions/api/\[\[path\]\].js
+          grep -q 'detectedMime' functions/api/\[\[path\]\].js
+          grep -q 'Attachment type does not match file contents' functions/api/\[\[path\]\].js
+          grep -q 'Attachment reference does not match contribution' functions/api/\[\[path\]\].js
+          grep -q 'X-Content-Type-Options' functions/api/\[\[path\]\].js
+          grep -q 'Content-Security-Policy' functions/api/\[\[path\]\].js
+          grep -q 'Phase 1K contribution / upload security' cloudflare/batlas-api-standalone.js
