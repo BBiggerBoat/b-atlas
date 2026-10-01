@@ -393,6 +393,12 @@ export async function onRequest(context) {
           retryAllowed ? 401 : 429
         );
       }
+      const adminLimit = await enforceLimit("admin-authenticated", 240, 10 * 60 * 1000);
+      if (adminLimit) return adminLimit;
+      if (request.method !== "GET") {
+        const mutationLimit = await enforceLimit("admin-mutation", 60, 10 * 60 * 1000);
+        if (mutationLimit) return mutationLimit;
+      }
       if (route === "admin/snapshot" && request.method === "GET") return jsonResponse(await getSnapshot(env.BSCOUT_DB));
       if (route === "admin/snapshot" && request.method === "PUT") {
         const payload = await readBody(request, 8 * 1024 * 1024);
