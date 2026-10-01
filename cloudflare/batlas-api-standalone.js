@@ -590,7 +590,7 @@ async function onRequest(context) {
     requireBindings(env);
 
     const publicOrigin = String(request.headers.get("Origin") || "");
-    const allowedPublicOrigin = !publicOrigin || publicOrigin === "https://b-atlas.org" || publicOrigin === "https://www.b-atlas.org";
+    const allowedPublicOrigin = publicOrigin === "https://b-atlas.org" || publicOrigin === "https://www.b-atlas.org";
 
     async function enforceLimit(namespace, limit, windowMs) {
       const result = await rateLimit(env.BSCOUT_DB, request, env.BSCOUT_ADMIN_TOKEN, { namespace, limit, windowMs });
