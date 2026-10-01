@@ -4,18 +4,19 @@ set -euo pipefail
 SITE="https://b-atlas.org"
 API="https://api.b-atlas.org"
 BUILD="2026-10-01-phase1l"
+BROWSER_UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36"
 FAIL=0
 
 pass(){ printf 'PASS  %s\n' "$1"; }
 fail(){ printf 'FAIL  %s\n' "$1"; FAIL=1; }
 
 status(){
-  curl -sS --max-time 20 -o /tmp/batlas-body "$@" -w '%{http_code}'
+  curl -sS --max-time 20 -A "$BROWSER_UA" -o /tmp/batlas-body "$@" -w '%{http_code}'
 }
 
 header_value(){
   local name="$1"; shift
-  curl -sS --max-time 20 -D - -o /dev/null "$@" | awk -v IGNORECASE=1 -v key="$name:" '$1==key {sub(/^[^:]+:[[:space:]]*/,""); gsub(/\r/,""); print; exit}'
+  curl -sS --max-time 20 -A "$BROWSER_UA" -D - -o /dev/null "$@" | awk -v IGNORECASE=1 -v key="$name:" '$1==key {sub(/^[^:]+:[[:space:]]*/,""); gsub(/\r/,""); print; exit}'
 }
 
 printf 'B-Atlas external production security test\n'
@@ -71,6 +72,10 @@ if [[ "$code" == "301" || "$code" == "302" || "$code" == "303" || "$code" == "30
   pass "Moderator UI is gated before page delivery (HTTP $code)"
 else
   fail "Moderator UI should be gated, got HTTP $code"
+  echo "Moderator response headers:"
+  curl -sS --max-time 20 -A "$BROWSER_UA" -I "$SITE/developer/contribution-review.html" || true
+  echo "DNS:"
+  getent ahosts b-atlas.org || true
 fi
 
 # 9. The GitHub Pages hostname must not provide a direct unprotected moderator bypass.
@@ -81,7 +86,15 @@ else
   fail "Potential GitHub Pages moderator bypass: HTTP $code"
 fi
 
-# 10. Crawler instructions discourage raw-data extraction.
+# 10. Non-browser automation should be challenged by Bot Fight Mode on the API edge.
+bot_code=$(curl -sS --max-time 20 -o /tmp/batlas-bot-body -w '%{http_code}' "$API/api/health" || true)
+if [[ "$bot_code" == "403" ]] && grep -qi 'Just a moment' /tmp/batlas-bot-body; then
+  pass "Bot Fight Mode challenges obvious automated API client"
+else
+  echo "INFO  Bot Fight Mode automation probe returned HTTP $bot_code"
+fi
+
+# 11. Crawler instructions discourage raw-data extraction.
 code=$(status "$SITE/robots.txt")
 if [[ "$code" == "200" ]] && grep -q 'Disallow: /boatmodels.json' /tmp/batlas-body && grep -q 'Disallow: /data/' /tmp/batlas-body; then
   pass "robots.txt discourages raw-data crawling"
