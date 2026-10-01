@@ -18,7 +18,7 @@ const MAX_PHOTO_TOTAL_BYTES = 30 * 1024 * 1024;
 const MAX_DOCUMENT_BYTES = 25 * 1024 * 1024;
 const MAX_REQUEST_BYTES = 45 * 1024 * 1024;
 const MAX_RECORD_BYTES = 64 * 1024;
-const API_BUILD = "2026-10-01-contribution-email";
+const API_BUILD = "2026-10-01-contribution-email-v2";
 
 function httpError(status, message) {
   const error = new Error(message);
@@ -155,6 +155,7 @@ async function sha256Hex(value) {
 
 async function sendContributionNotification(env, record) {
   if (!env.CONTRIBUTION_EMAIL?.send) return { sent:false, reason:"binding_not_configured" };
+  if (!env.CONTRIBUTION_NOTIFY_TO) return { sent:false, reason:"destination_not_configured" };
 
   const type = String(record?.ContributionType || "contribution").replace(/_/g, " ");
   const modelParts = [record?.ManufacturerName, record?.ModelName, record?.Variant].filter(Boolean);
@@ -177,6 +178,7 @@ async function sendContributionNotification(env, record) {
 
   await env.CONTRIBUTION_EMAIL.send({
     from: "notifications@b-atlas.org",
+    to: env.CONTRIBUTION_NOTIFY_TO,
     subject,
     text
   });
