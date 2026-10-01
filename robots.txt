@@ -1,13 +1,25 @@
 User-agent: *
 Allow: /
 Disallow: /developer/
+Disallow: /boatmodels.json
+Disallow: /routes.json
+Disallow: /baseline-version.json
+Disallow: /data/
 
 User-agent: OAI-SearchBot
 Allow: /
 Disallow: /developer/
+Disallow: /boatmodels.json
+Disallow: /routes.json
+Disallow: /baseline-version.json
+Disallow: /data/
 
 User-agent: ChatGPT-User
 Allow: /
 Disallow: /developer/
+Disallow: /boatmodels.json
+Disallow: /routes.json
+Disallow: /baseline-version.json
+Disallow: /data/
 
 Sitemap: https://b-atlas.org/sitemap.xml
