@@ -1,4 +1,4 @@
--- B-Scout Cloudflare persistence schema
+-- B-Atlas Cloudflare persistence schema
 -- State remains JSON-shaped to mirror the local .bscout-data/community-state.json workflow.
 CREATE TABLE IF NOT EXISTS bscout_state (
   key TEXT PRIMARY KEY,
