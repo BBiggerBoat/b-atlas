@@ -91,7 +91,7 @@ jobs:
           grep -q '^\.env$' .gitignore
           grep -q '^\.dev\.vars$' .gitignore
           grep -q 'GENERATED FILE — do not hand edit' cloudflare/batlas-api-standalone.js
-          grep -q '2026-10-01-phase1n' functions/api/\[\[path\]\].js
+          grep -q '2026-10-01-contribution-email' functions/api/\[\[path\]\].js
           grep -q 'main": "cloudflare/worker.js"' wrangler.jsonc
           ! grep -q 'BSCOUT_ADMIN_TOKEN.*[=:].*[A-Za-z0-9._-]\{20,\}' wrangler.jsonc
 
@@ -106,3 +106,12 @@ jobs:
           grep -q 'integrity' functions/api/\[\[path\]\].js
           grep -q 'backup-to-d1-sql' package.json
           grep -q 'validate-backup' package.json
+
+      - name: Verify contribution email notification wiring
+        shell: bash
+        run: |
+          grep -q 'sendContributionNotification' functions/api/\[\[path\]\].js
+          grep -q 'CONTRIBUTION_EMAIL' functions/api/\[\[path\]\].js
+          grep -q 'notifications@b-atlas.org' functions/api/\[\[path\]\].js
+          grep -q 'context.waitUntil' functions/api/\[\[path\]\].js
+          test -e cloudflare/CONTRIBUTION-NOTIFICATIONS.md
