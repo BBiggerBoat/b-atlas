@@ -17,6 +17,13 @@ const MAX_PHOTO_FILES = 8;
 const MAX_PHOTO_TOTAL_BYTES = 30 * 1024 * 1024;
 const MAX_DOCUMENT_BYTES = 25 * 1024 * 1024;
 const MAX_REQUEST_BYTES = 45 * 1024 * 1024;
+const MAX_RECORD_BYTES = 64 * 1024;
+
+function httpError(status, message) {
+  const error = new Error(message);
+  error.status = status;
+  return error;
+}
 
 function requireBindings(env) {
   if (!env.BSCOUT_DB) throw new Error("BSCOUT_DB D1 binding is not configured");
@@ -25,13 +32,13 @@ function requireBindings(env) {
 
 async function readBody(request, limit = MAX_REQUEST_BYTES) {
   const type = String(request.headers.get("Content-Type") || "").toLowerCase();
-  if (!type.startsWith("application/json")) throw new Error("Content-Type must be application/json");
+  if (!type.startsWith("application/json")) throw httpError(415, "Content-Type must be application/json");
   const length = Number(request.headers.get("Content-Length") || 0);
-  if (length && length > limit) throw new Error("Request too large");
+  if (length && length > limit) throw httpError(413, "Request too large");
   const text = await request.text();
-  if (new TextEncoder().encode(text).byteLength > limit) throw new Error("Request too large");
+  if (new TextEncoder().encode(text).byteLength > limit) throw httpError(413, "Request too large");
   try { return JSON.parse(text); }
-  catch { throw new Error("Invalid JSON request"); }
+  catch { throw httpError(400, "Invalid JSON request"); }
 }
 
 function attachmentKey(id) { return `attachment:${cleanFilename(id)}`; }
@@ -45,13 +52,14 @@ function detectedMime(bytes) {
 }
 
 function validateContributionRecord(record) {
-  if (!record || typeof record !== "object" || Array.isArray(record)) throw new Error("Invalid contribution record");
+  if (!record || typeof record !== "object" || Array.isArray(record)) throw httpError(400, "Invalid contribution record");
+  if (new TextEncoder().encode(JSON.stringify(record)).byteLength > MAX_RECORD_BYTES) throw httpError(413, "Contribution record is too large");
   const id = String(record.ContributionID || "");
-  if (!/^CONTRIB-[A-Za-z0-9-]{8,120}$/.test(id)) throw new Error("Invalid contribution ID");
-  if (!ALLOWED_CONTRIBUTION_TYPES.has(String(record.ContributionType || ""))) throw new Error("Invalid contribution type");
-  if (!Array.isArray(record.AttachmentRefs)) throw new Error("Invalid attachment references");
-  if (record.AttachmentRefs.length > MAX_PHOTO_FILES) throw new Error("Too many attachments");
-  if (new Set(record.AttachmentRefs).size !== record.AttachmentRefs.length) throw new Error("Duplicate attachment reference");
+  if (!/^CONTRIB-[A-Za-z0-9-]{8,120}$/.test(id)) throw httpError(400, "Invalid contribution ID");
+  if (!ALLOWED_CONTRIBUTION_TYPES.has(String(record.ContributionType || ""))) throw httpError(400, "Invalid contribution type");
+  if (!Array.isArray(record.AttachmentRefs)) throw httpError(400, "Invalid attachment references");
+  if (record.AttachmentRefs.length > MAX_PHOTO_FILES) throw httpError(400, "Too many attachments");
+  if (new Set(record.AttachmentRefs).size !== record.AttachmentRefs.length) throw httpError(400, "Duplicate attachment reference");
 }
 
 function validateAttachmentRef(contributionId, ref, index, isDocument) {
@@ -59,54 +67,54 @@ function validateAttachmentRef(contributionId, ref, index, isDocument) {
   const expected = isDocument
     ? `ATT-DOC-${suffix}`
     : `ATT-${suffix}-${String(index + 1).padStart(2, "0")}`;
-  if (String(ref || "") !== expected) throw new Error("Attachment reference does not match contribution");
+  if (String(ref || "") !== expected) throw httpError(400, "Attachment reference does not match contribution");
 }
 
 function validatedAttachments(record, attachments) {
   const rows = Array.isArray(attachments) ? attachments : [];
   const refs = record.AttachmentRefs || [];
-  if (rows.length !== refs.length) throw new Error("Attachment payload does not match contribution references");
+  if (rows.length !== refs.length) throw httpError(400, "Attachment payload does not match contribution references");
 
   const type = String(record.ContributionType || "");
-  if (!["photo","manual_document","new_model"].includes(type) && rows.length) throw new Error("Attachments are not allowed for this contribution type");
+  if (!["photo","manual_document","new_model"].includes(type) && rows.length) throw httpError(400, "Attachments are not allowed for this contribution type");
 
-  if (rows.length && !ACCEPTED_UPLOAD_RIGHTS.has(String(record.RightsStatus || ""))) throw new Error("Attachment rights declaration is required");
+  if (rows.length && !ACCEPTED_UPLOAD_RIGHTS.has(String(record.RightsStatus || ""))) throw httpError(400, "Attachment rights declaration is required");
 
   if (type === "manual_document") {
     if (String(record.Payload?.DocumentDelivery || "") !== "upload") {
-      if (rows.length) throw new Error("Document attachment not expected");
+      if (rows.length) throw httpError(400, "Document attachment not expected");
       return [];
     }
-    if (rows.length !== 1) throw new Error("Exactly one PDF document is required");
+    if (rows.length !== 1) throw httpError(400, "Exactly one PDF document is required");
   }
 
-  if (type === "new_model" && rows.length > 1) throw new Error("Only one new-model photo may be uploaded");
-  if (type === "photo" && (rows.length < 1 || rows.length > MAX_PHOTO_FILES)) throw new Error("Photo contribution must contain 1 to 8 photos");
+  if (type === "new_model" && rows.length > 1) throw httpError(400, "Only one new-model photo may be uploaded");
+  if (type === "photo" && (rows.length < 1 || rows.length > MAX_PHOTO_FILES)) throw httpError(400, "Photo contribution must contain 1 to 8 photos");
 
   let totalBytes = 0;
   const validated = rows.map((a,index) => {
-    if (!a || typeof a !== "object" || !a.dataBase64) throw new Error("Attachment data is missing");
+    if (!a || typeof a !== "object" || !a.dataBase64) throw httpError(400, "Attachment data is missing");
     const isDocument = type === "manual_document";
     validateAttachmentRef(record.ContributionID, a.attachmentRef, index, isDocument);
-    if (String(a.attachmentRef) !== String(refs[index])) throw new Error("Attachment order/reference mismatch");
+    if (String(a.attachmentRef) !== String(refs[index])) throw httpError(400, "Attachment order/reference mismatch");
 
     let bytes;
     try { bytes = decodeBase64(a.dataBase64); }
-    catch { throw new Error("Attachment data is not valid base64"); }
+    catch { throw httpError(400, "Attachment data is not valid base64"); }
 
     const actualMime = detectedMime(bytes);
     const declaredMime = String(a.mime || a.type || "").toLowerCase().trim();
-    if (!actualMime) throw new Error("Unsupported attachment file type");
-    if (declaredMime && declaredMime !== actualMime) throw new Error("Attachment type does not match file contents");
+    if (!actualMime) throw httpError(415, "Unsupported attachment file type");
+    if (declaredMime && declaredMime !== actualMime) throw httpError(415, "Attachment type does not match file contents");
 
     if (isDocument) {
-      if (!ALLOWED_DOCUMENT_MIME.has(actualMime)) throw new Error("Only PDF documents are accepted");
-      if (bytes.byteLength > MAX_DOCUMENT_BYTES) throw new Error("Document must be 25 MB or smaller");
+      if (!ALLOWED_DOCUMENT_MIME.has(actualMime)) throw httpError(415, "Only PDF documents are accepted");
+      if (bytes.byteLength > MAX_DOCUMENT_BYTES) throw httpError(413, "Document must be 25 MB or smaller");
     } else {
-      if (!ALLOWED_IMAGE_MIME.has(actualMime)) throw new Error("Only JPEG, PNG or WebP images are accepted");
-      if (bytes.byteLength > MAX_PHOTO_BYTES) throw new Error("Photo must be 12 MB or smaller");
+      if (!ALLOWED_IMAGE_MIME.has(actualMime)) throw httpError(415, "Only JPEG, PNG or WebP images are accepted");
+      if (bytes.byteLength > MAX_PHOTO_BYTES) throw httpError(413, "Photo must be 12 MB or smaller");
       totalBytes += bytes.byteLength;
-      if (totalBytes > MAX_PHOTO_TOTAL_BYTES) throw new Error("Combined photos must be 30 MB or smaller");
+      if (totalBytes > MAX_PHOTO_TOTAL_BYTES) throw httpError(413, "Combined photos must be 30 MB or smaller");
     }
 
     const filename = cleanFilename(a.filename || a.attachmentRef);
@@ -116,7 +124,7 @@ function validatedAttachments(record, attachments) {
       : actualMime === "image/webp" ? /\.webp$/.test(lower)
       : actualMime === "application/pdf" ? /\.pdf$/.test(lower)
       : false;
-    if (!extOk) throw new Error("Attachment filename extension does not match file contents");
+    if (!extOk) throw httpError(415, "Attachment filename extension does not match file contents");
 
     return { attachmentRef:a.attachmentRef, filename, contentType:actualMime, bytes };
   });
@@ -426,7 +434,7 @@ async function serveAttachment(env, id, admin) {
   const meta = result.metadata || {};
   const headers = {
     "Content-Type": meta.contentType || "application/octet-stream",
-    "Content-Disposition": `inline; filename="${String(meta.filename || id).replace(/\"/g, "")}"`,
+    "Content-Disposition": `${meta.contentType === "application/pdf" ? "attachment" : "inline"}; filename="${String(meta.filename || id).replace(/\"/g, "")}"`,
     "Cache-Control": admin ? "no-store" : "public, max-age=300",
     "X-Content-Type-Options": "nosniff",
     "Content-Security-Policy": "sandbox",
@@ -547,6 +555,7 @@ export async function onRequest(context) {
     return jsonResponse({ error: "API route not found" }, 404);
   } catch (error) {
     console.error("B-Atlas API error", error);
-    return jsonResponse({ error: error?.message || "Server error" }, 500);
+    const status = Number(error?.status);
+    return jsonResponse({ error: error?.message || "Server error" }, Number.isInteger(status) && status >= 400 && status < 600 ? status : 500);
   }
 }
