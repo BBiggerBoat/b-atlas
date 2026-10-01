@@ -3,7 +3,7 @@ set -euo pipefail
 
 SITE="https://b-atlas.org"
 API="https://api.b-atlas.org"
-BUILD="2026-10-01-phase1n"
+BUILD="2026-10-01-contribution-email"
 BROWSER_UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36"
 FAIL=0
 
