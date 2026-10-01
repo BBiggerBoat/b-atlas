@@ -1,48 +1,91 @@
-# B-Atlas v6.23.1 — zero-cost Cloudflare deployment
+# B-Atlas production deployment
 
-The code is ready for a Cloudflare Pages project whose project/root directory is this `public` folder.
+## Current production architecture
 
-## Cloudflare resources to create
+B-Atlas uses two production deployment surfaces:
 
-Use the Cloudflare dashboard (no paid plan required):
+1. **Public site** — GitHub Pages built from the allowlisted `dist/` artifact by `.github/workflows/deploy-pages.yml`.
+2. **API** — Cloudflare Worker `batlas-api` on `api.b-atlas.org`, backed by D1 and Workers KV.
 
-1. Create a D1 database, for example `bscout-community`.
-2. Run `cloudflare/schema.sql` against that D1 database.
-3. Create a Workers KV namespace, for example `bscout-files`.
-4. Create/import the Pages project from the B-Atlas GitHub repository.
-5. Set the Pages project root directory to the repository's `public` folder if `public` is not itself the repository root.
-6. Use no build command. The output directory is `.` when the Pages root is `public`.
-7. Add the D1 binding with variable name `BSCOUT_DB`.
-8. Add the KV binding with variable name `BSCOUT_FILES`.
-9. Add encrypted secret/environment variable `BSCOUT_ADMIN_TOKEN` with a long random value.
-10. Redeploy after adding bindings/secrets.
+The public site is proxied through Cloudflare so Access, WAF/rate limiting, and bot protections can operate at the edge.
 
-## First checks after deployment
+## Cloudflare resources
 
-- `/` loads B-Atlas normally.
-- `/api/health` returns `shared: true`, `adminConfigured: true`, and `persistence: D1+KV`.
-- Submit one harmless test contribution.
-- Open moderator mode, connect using `BSCOUT_ADMIN_TOKEN`, and confirm the test appears in the shared queue.
-- Approve/publish the test and confirm the published result is visible from another browser/private window.
-- Test one image or PDF attachment and confirm it is inaccessible publicly before approval but accessible after approval when the rights status permits publication.
+Current production resources:
 
-## Local workflow remains unchanged
+- Worker: `batlas-api`
+- D1 database binding: `BSCOUT_DB` → `batlas`
+- KV binding: `BSCOUT_FILES` → `batlas-files`
+- Secret: `BSCOUT_ADMIN_TOKEN`
+- Worker custom domain: `api.b-atlas.org`
 
-Continue using:
+The secret value must exist only in Cloudflare secret storage. Never commit it to GitHub.
 
-`npm start`
+## Worker deployment
 
-This still runs `server.js` and uses `.bscout-data/`. Cloudflare files do not replace or interfere with the local Node server.
+The canonical Worker source is split across:
 
-## Persistence model
+- `functions/_lib/bscout-store.js`
+- `functions/api/[[path]].js`
+- `cloudflare/worker.js`
 
-- D1: moderation queue, reviewed records, knowledge state, canonical model corrections, promoted models/manufacturers.
-- Workers KV: uploaded image/PDF binary files and minimal file metadata.
-- GitHub/static JSON: canonical baseline dataset shipped with each deploy.
-- Browser runtime: merges Cloudflare's approved published overlay onto the static baseline.
+Generate the standalone deployment artifact with:
 
-## Backups
+`npm run build:worker`
 
-D1 Free provides point-in-time recovery. The authenticated `/api/admin/backup` endpoint also returns the full moderation state and published overlay as JSON for an off-platform backup.
+This produces:
 
-KV attachments are not included in that JSON export. If B-Atlas develops meaningful traffic/contributions, attachment backup and/or migration to R2 should be the first storage upgrade.
+`cloudflare/batlas-api-standalone.js`
+
+The generated file is the artifact used for the current manual Cloudflare Worker deployment. Do not hand-edit it.
+
+After deploying, verify:
+
+`https://api.b-atlas.org/api/health`
+
+The response must report:
+
+- `shared: true`
+- `adminConfigured: true`
+- `persistence: "D1+KV"`
+- the expected current build marker
+
+## Public-site deployment
+
+GitHub Actions builds an allowlisted `dist/` directory and deploys that artifact to GitHub Pages.
+
+The root and `www` DNS records must remain **Proxied** through Cloudflare. The GitHub Pages origin A records are:
+
+- `185.199.108.153`
+- `185.199.109.153`
+- `185.199.110.153`
+- `185.199.111.153`
+
+`www.b-atlas.org` points to `bbiggerboat.github.io`.
+
+## Security configuration
+
+Production also depends on these Cloudflare settings:
+
+- Access application protecting `b-atlas.org/developer/*`
+- moderator allow policy
+- raw-data rate-limit rule covering `/boatmodels.json` and `/data/*`
+- Bot Fight Mode enabled
+- root and `www` DNS records proxied
+
+## Production verification
+
+A deployment is not complete until:
+
+1. B-Atlas Deployment Guard passes.
+2. B-Atlas External Security Test passes.
+3. Public site loads through `https://b-atlas.org`.
+4. Worker health reports the expected build.
+5. Contribution Review is gated by Cloudflare Access.
+6. Moderator connection succeeds.
+7. **Check baseline ↔ D1** reports no structural conflicts.
+8. A current full backup can be downloaded and validated.
+
+## Recovery
+
+See `cloudflare/DISASTER-RECOVERY.md` for D1, KV, Worker, GitHub Pages, DNS, and Access recovery procedures.
