@@ -271,7 +271,7 @@ const MAX_PHOTO_TOTAL_BYTES = 30 * 1024 * 1024;
 const MAX_DOCUMENT_BYTES = 25 * 1024 * 1024;
 const MAX_REQUEST_BYTES = 45 * 1024 * 1024;
 const MAX_RECORD_BYTES = 64 * 1024;
-const API_BUILD = "2026-10-01-phase1l";
+const API_BUILD = "2026-10-01-phase1n";
 
 function httpError(status, message) {
   const error = new Error(message);
