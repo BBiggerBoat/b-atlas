@@ -147,6 +147,12 @@ async function storeAttachments(env, record, attachments) {
   }
 }
 
+async function sha256Hex(value) {
+  const bytes = new TextEncoder().encode(typeof value === "string" ? value : JSON.stringify(value));
+  const digest = await crypto.subtle.digest("SHA-256", bytes);
+  return [...new Uint8Array(digest)].map(x => x.toString(16).padStart(2, "0")).join("");
+}
+
 async function attachmentManifest(env) {
   const rows = [];
   let cursor;
@@ -541,14 +547,28 @@ export async function onRequest(context) {
         const [snapshot, published, attachments] = await Promise.all([
           getSnapshot(env.BSCOUT_DB), getPublished(env.BSCOUT_DB), attachmentManifest(env)
         ]);
-        return jsonResponse({
+        const exportedAt = new Date().toISOString();
+        const backupCore = {
           schema: "batlas-backup-v1",
           baselineVersion: "7.06.2",
-          exportedAt: new Date().toISOString(),
+          exportedAt,
           snapshot,
           published,
-          attachments: { count: attachments.length, manifest: attachments, blobsIncluded: false },
-          recoveryNote: "GitHub preserves the versioned static baseline. This export preserves D1 community state and a KV attachment inventory; attachment binary recovery is tested separately in Phase 1N."
+          attachments: { count: attachments.length, manifest: attachments, blobsIncluded: false }
+        };
+        const integrity = {
+          algorithm: "SHA-256",
+          scope: "snapshot+published+attachments.manifest",
+          digest: await sha256Hex({
+            snapshot: backupCore.snapshot,
+            published: backupCore.published,
+            attachmentManifest: backupCore.attachments.manifest
+          })
+        };
+        return jsonResponse({
+          ...backupCore,
+          integrity,
+          recoveryNote: "GitHub preserves the versioned static baseline. This export preserves D1 community state and a KV attachment inventory. KV attachment binaries must be recovered separately from the admin attachment endpoint or Cloudflare storage."
         });
       }
       if (route.startsWith("admin/attachments/") && request.method === "GET") return serveAttachment(env, decodeURIComponent(route.slice("admin/attachments/".length)), true);
