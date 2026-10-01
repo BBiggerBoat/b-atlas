@@ -83,3 +83,14 @@ jobs:
           grep -q 'X-Content-Type-Options' functions/api/\[\[path\]\].js
           grep -q 'Content-Security-Policy' functions/api/\[\[path\]\].js
           grep -q 'GENERATED FILE — do not hand edit' cloudflare/batlas-api-standalone.js
+
+      - name: Verify Phase 1L deployment security
+        shell: bash
+        run: |
+          test -e .gitignore
+          grep -q '^\.env$' .gitignore
+          grep -q '^\.dev\.vars$' .gitignore
+          grep -q 'GENERATED FILE — do not hand edit' cloudflare/batlas-api-standalone.js
+          grep -q '2026-10-01-phase1l' functions/api/\[\[path\]\].js
+          grep -q 'main": "cloudflare/worker.js"' wrangler.jsonc
+          ! grep -q 'BSCOUT_ADMIN_TOKEN.*[=:].*[A-Za-z0-9._-]\{20,\}' wrangler.jsonc
