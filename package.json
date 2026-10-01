@@ -10,7 +10,9 @@
     "generate:search-pages": "python developer/generate-search-landing-pages.py",
     "guard:baseline": "node developer/check-baseline-version.js",
     "build:public": "node developer/build-public-site.js",
-    "build:worker": "node developer/build-worker-standalone.js"
+    "build:worker": "node developer/build-worker-standalone.js",
+    "validate:backup": "node developer/validate-backup.js",
+    "restore:sql": "node developer/backup-to-d1-sql.js"
   },
   "devDependencies": {
     "wrangler": "^4.0.0"
