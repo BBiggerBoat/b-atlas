@@ -1,6 +1,6 @@
 // B-Atlas standalone Cloudflare Worker bundle.
 // Generated from functions/_lib/bscout-store.js and functions/api/[[path]].js.
-// Phase 1G recovery deployment.
+// Phase 1I authentication/authorization hardening.
 
 const STATE_KEYS = ["pending", "reviewed", "knowledgeItems", "knowledgeEvidence", "resourceReview", "published"];
 
@@ -92,15 +92,34 @@ async function savePublished(db, value) {
 
 async function constantTimeTokenMatches(request, expected) {
   if (!expected) return false;
-  const url = new URL(request.url);
-  const bearer = String(request.headers.get("Authorization") || "").replace(/^Bearer\s+/i, "");
-  const supplied = bearer || url.searchParams.get("token") || "";
+  const auth = String(request.headers.get("Authorization") || "");
+  const match = auth.match(/^Bearer\s+(.+)$/i);
+  const supplied = match ? match[1].trim() : "";
   const a = new TextEncoder().encode(String(supplied));
   const b = new TextEncoder().encode(String(expected));
   const len = Math.max(a.length, b.length);
   let diff = a.length ^ b.length;
   for (let i = 0; i < len; i++) diff |= (a[i] || 0) ^ (b[i] || 0);
   return diff === 0;
+}
+
+function adminOriginAllowed(request) {
+  const origin = String(request.headers.get("Origin") || "");
+  return origin === "https://b-atlas.org" || origin === "https://www.b-atlas.org";
+}
+
+async function recordAdminAuthFailure(db, request, secret, limit = 8, windowMs = 10 * 60 * 1000) {
+  const now = Date.now();
+  const windowStart = now - windowMs;
+  const hash = `admin:${await anonymousIpHash(request, secret)}`;
+  const row = await db.prepare("SELECT COUNT(*) AS n FROM bscout_rate_events WHERE ip_hash = ?1 AND created_at >= ?2")
+    .bind(hash, windowStart).first();
+  if (Number(row?.n || 0) >= limit) return false;
+  await db.batch([
+    db.prepare("INSERT INTO bscout_rate_events (ip_hash, created_at) VALUES (?1, ?2)").bind(hash, now),
+    db.prepare("DELETE FROM bscout_rate_events WHERE created_at < ?1").bind(now - 24 * 60 * 60 * 1000)
+  ]);
+  return true;
 }
 
 async function anonymousIpHash(request, secret) {
@@ -522,7 +541,14 @@ async function onRequest(context) {
     }
 
     if (route.startsWith("admin/")) {
-      if (!(await constantTimeTokenMatches(request, env.BSCOUT_ADMIN_TOKEN))) return jsonResponse({ error: "Moderator authentication required" }, 401);
+      if (!adminOriginAllowed(request)) return jsonResponse({ error: "Administrative requests must originate from B-Atlas" }, 403);
+      if (!(await constantTimeTokenMatches(request, env.BSCOUT_ADMIN_TOKEN))) {
+        const retryAllowed = await recordAdminAuthFailure(env.BSCOUT_DB, request, env.BSCOUT_ADMIN_TOKEN);
+        return jsonResponse(
+          { error: retryAllowed ? "Moderator authentication required" : "Too many failed moderator authentication attempts. Try again later." },
+          retryAllowed ? 401 : 429
+        );
+      }
       if (route === "admin/snapshot" && request.method === "GET") return jsonResponse(await getSnapshot(env.BSCOUT_DB));
       if (route === "admin/snapshot" && request.method === "PUT") {
         const payload = await readBody(request, 8 * 1024 * 1024);
@@ -570,6 +596,7 @@ async function onRequest(context) {
 }
 
 
+
 const CORS_ORIGINS = new Set(["https://b-atlas.org", "https://www.b-atlas.org"]);
 
 function corsHeaders(request) {
@@ -597,7 +624,9 @@ function withCors(request, response) {
 export default {
   async fetch(request, env, ctx) {
     if (request.method === "OPTIONS") {
-      return new Response(null, { status: 204, headers: corsHeaders(request) });
+      const headers = corsHeaders(request);
+      if (!headers["Access-Control-Allow-Origin"]) return new Response(null, { status: 403 });
+      return new Response(null, { status: 204, headers });
     }
     const response = await onRequest({
       request,
