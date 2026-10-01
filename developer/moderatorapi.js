@@ -19,6 +19,7 @@ async function adminRequest(path,options={}){
   };
   const res=await fetch(apiUrl(normalized),{...options,headers,credentials:"omit"});
   let body=null;try{body=await res.json()}catch{}
+  if(res.status===401||res.status===403) sessionStorage.removeItem(TOKEN_KEY);
   if(!res.ok) throw new Error(body?.error||`${res.status} ${res.statusText}`);
   return body;
 }
@@ -94,7 +95,8 @@ async function promote(contribution){
 }
 
 function setAdminToken(token){
-  if(token) sessionStorage.setItem(TOKEN_KEY,token);
+  const value=String(token||"").trim();
+  if(value) sessionStorage.setItem(TOKEN_KEY,value);
   else sessionStorage.removeItem(TOKEN_KEY);
 }
 function hasAdminToken(){return !!sessionStorage.getItem(TOKEN_KEY)}
