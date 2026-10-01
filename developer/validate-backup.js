@@ -1,5 +1,6 @@
 const fs=require("fs");
 const path=require("path");
+const crypto=require("crypto");
 
 const file=process.argv[2];
 if(!file){
@@ -29,6 +30,16 @@ for(const key of ["modelPatches","addedModels","addedManufacturers","reviewedCon
 }
 if(!Array.isArray(backup?.attachments?.manifest)) problems.push("attachments.manifest must be an array");
 
+if(backup?.integrity){
+  if(backup.integrity.algorithm!=="SHA-256") problems.push("integrity.algorithm must be SHA-256");
+  const expected=crypto.createHash("sha256").update(JSON.stringify({
+    snapshot:backup.snapshot,
+    published:backup.published,
+    attachmentManifest:backup.attachments?.manifest||[]
+  })).digest("hex");
+  if(String(backup.integrity.digest||"").toLowerCase()!==expected) problems.push("integrity digest mismatch");
+}
+
 if(problems.length){
   console.error("B-Atlas backup validation FAILED:");
   for(const p of problems) console.error(" - "+p);
@@ -45,3 +56,4 @@ console.log(`Published patches: ${patchCount} model(s) / ${patchFields} field(s)
 console.log(`Added models: ${backup.published.addedModels.length}`);
 console.log(`Added manufacturers: ${backup.published.addedManufacturers.length}`);
 console.log(`Attachment references: ${backup.attachments.manifest.length}`);
+console.log(`Integrity: ${backup.integrity?.digest ? "SHA-256 verified" : "legacy backup without digest"}`);
