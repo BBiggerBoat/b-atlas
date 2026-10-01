@@ -53,3 +53,14 @@ jobs:
           grep -q "adminOriginAllowed" cloudflare/batlas-api-standalone.js
           grep -q "recordAdminAuthFailure" cloudflare/batlas-api-standalone.js
           grep -q "sessionStorage.removeItem(TOKEN_KEY)" dist/developer/moderatorapi.js
+      - name: Verify Phase 1J extraction protection
+        shell: bash
+        run: |
+          grep -q 'namespace:"contribution", limit:5' functions/_lib/bscout-store.js
+          grep -q 'namespace:"contribution-day", limit:20' functions/_lib/bscout-store.js
+          grep -q 'enforceLimit("overlays", 60' functions/api/\[\[path\]\].js
+          grep -q 'enforceLimit("public-attachment", 30' functions/api/\[\[path\]\].js
+          grep -q 'enforceLimit("admin-authenticated", 240' functions/api/\[\[path\]\].js
+          grep -q 'Contribution origin not allowed' functions/api/\[\[path\]\].js
+          grep -q 'Disallow: /boatmodels.json' robots.txt
+          grep -q 'Phase 1J extraction / rate-limit protection' cloudflare/batlas-api-standalone.js
