@@ -45,3 +45,11 @@ jobs:
           ! grep -q "moderatorapi.js" dist/index.html
           grep -q "moderatorapi.js" dist/developer/contribution-review.html
           grep -q "/api/admin/" dist/developer/moderatorapi.js
+      - name: Verify authentication hardening
+        shell: bash
+        run: |
+          ! grep -q 'searchParams.get("token")' functions/_lib/bscout-store.js
+          ! grep -q 'searchParams.get("token")' cloudflare/batlas-api-standalone.js
+          grep -q "adminOriginAllowed" cloudflare/batlas-api-standalone.js
+          grep -q "recordAdminAuthFailure" cloudflare/batlas-api-standalone.js
+          grep -q "sessionStorage.removeItem(TOKEN_KEY)" dist/developer/moderatorapi.js
