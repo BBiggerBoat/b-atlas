@@ -125,18 +125,41 @@ export async function anonymousIpHash(request, secret) {
   return [...new Uint8Array(digest)].map(x => x.toString(16).padStart(2, "0")).join("");
 }
 
-export async function rateAllowed(db, request, secret) {
+export async function rateLimit(db, request, secret, {
+  namespace = "public",
+  limit = 60,
+  windowMs = 10 * 60 * 1000,
+  record = true
+} = {}) {
   const now = Date.now();
-  const windowStart = now - 10 * 60 * 1000;
-  const hash = await anonymousIpHash(request, secret);
+  const windowStart = now - windowMs;
+  const hash = `${namespace}:${await anonymousIpHash(request, secret)}`;
   const row = await db.prepare("SELECT COUNT(*) AS n FROM bscout_rate_events WHERE ip_hash = ?1 AND created_at >= ?2")
     .bind(hash, windowStart).first();
-  if (Number(row?.n || 0) >= 12) return false;
-  await db.batch([
-    db.prepare("INSERT INTO bscout_rate_events (ip_hash, created_at) VALUES (?1, ?2)").bind(hash, now),
-    db.prepare("DELETE FROM bscout_rate_events WHERE created_at < ?1").bind(now - 24 * 60 * 60 * 1000)
-  ]);
-  return true;
+  const used = Number(row?.n || 0);
+  const allowed = used < limit;
+  if (allowed && record) {
+    await db.batch([
+      db.prepare("INSERT INTO bscout_rate_events (ip_hash, created_at) VALUES (?1, ?2)").bind(hash, now),
+      db.prepare("DELETE FROM bscout_rate_events WHERE created_at < ?1").bind(now - 24 * 60 * 60 * 1000)
+    ]);
+  }
+  return {
+    allowed,
+    limit,
+    remaining: Math.max(0, limit - used - (allowed && record ? 1 : 0)),
+    retryAfter: allowed ? 0 : Math.max(1, Math.ceil(windowMs / 1000))
+  };
+}
+
+export async function rateAllowed(db, request, secret) {
+  const result = await rateLimit(db, request, secret, { namespace:"contribution", limit:5, windowMs:10 * 60 * 1000 });
+  return result.allowed;
+}
+
+export async function contributionDailyAllowed(db, request, secret) {
+  const result = await rateLimit(db, request, secret, { namespace:"contribution-day", limit:20, windowMs:24 * 60 * 60 * 1000 });
+  return result;
 }
 
 export function decodeBase64(base64) {
