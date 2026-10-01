@@ -82,4 +82,4 @@ jobs:
           grep -q 'Attachment reference does not match contribution' functions/api/\[\[path\]\].js
           grep -q 'X-Content-Type-Options' functions/api/\[\[path\]\].js
           grep -q 'Content-Security-Policy' functions/api/\[\[path\]\].js
-          grep -q 'Phase 1K contribution / upload security' cloudflare/batlas-api-standalone.js
+          grep -q 'GENERATED FILE — do not hand edit' cloudflare/batlas-api-standalone.js
