@@ -8,7 +8,11 @@ Configure a Cloudflare Worker email binding named:
 
 `CONTRIBUTION_EMAIL`
 
-Restrict the binding to one verified destination address in the Cloudflare dashboard.
+Configure the verified recipient separately as a Worker secret named:
+
+`CONTRIBUTION_NOTIFY_TO`
+
+The recipient address is intentionally not stored in the public GitHub repository.
 
 The Worker sends from:
 
@@ -36,8 +40,10 @@ If email delivery fails, the contribution remains in the moderation queue. The W
 2. Add and verify the moderator destination email under Email Routing → Destination Addresses.
 3. In Worker `batlas-api`, add a Send Email binding:
    - variable name: `CONTRIBUTION_EMAIL`
-   - destination: the verified moderator email
-4. Deploy the current generated Worker.
-5. Submit a harmless test contribution and confirm the email arrives.
+4. Add a Worker secret:
+   - name: `CONTRIBUTION_NOTIFY_TO`
+   - value: the verified moderator destination email
+5. Deploy the current generated Worker.
+6. Submit a harmless test contribution and confirm the email arrives.
 
 No email address or credential is stored in GitHub.
