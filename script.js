@@ -120,8 +120,10 @@ function initializeBScoutApplication(data) {
                 window.setTimeout(async () => {
                     if (window.BScoutBoatWorkspace?.open) {
                         await window.BScoutBoatWorkspace.open(requestedBoat, "overview", { history:false });
-                        const path = window.BAtlasModelURLs?.pathForBoat?.(requestedBoat);
-                        if (path && window.history?.replaceState) window.history.replaceState({bscoutView:"guide",boatModelId:requestedBoat.BoatModelID,tab:"overview"}, "", path);
+                        if (window.history?.replaceState) {
+                            const interactivePath = `/?model=${encodeURIComponent(requestedBoat.BoatModelID || "")}`;
+                            window.history.replaceState({bscoutView:"guide",boatModelId:requestedBoat.BoatModelID,tab:"overview"}, "", interactivePath);
+                        }
                     } else showBoatDetails(requestedBoat);
                 }, 0);
             }
