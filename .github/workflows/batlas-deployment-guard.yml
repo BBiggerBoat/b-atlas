@@ -36,3 +36,12 @@ jobs:
           test -e dist/index.html
           test -e dist/boatmodels.json
           test -e dist/developer/contribution-review.html
+          test -e dist/developer/moderatorapi.js
+      - name: Verify public/admin API separation
+        shell: bash
+        run: |
+          ! grep -q "/api/admin/" dist/communityapi.js
+          ! grep -q "setAdminToken" dist/communityapi.js
+          ! grep -q "moderatorapi.js" dist/index.html
+          grep -q "moderatorapi.js" dist/developer/contribution-review.html
+          grep -q "/api/admin/" dist/developer/moderatorapi.js
