@@ -45,3 +45,18 @@ As of Phase 1D, the public static site is deployed from GitHub, while `api.b-atl
 Until they are unified, a backend Worker change is not considered complete merely because GitHub `main` changed. The Cloudflare Worker must be deployed and its live endpoint verified separately.
 
 The Worker should report the same baseline version in authenticated backups. Phase 1D records and guards this requirement; future deployment work can automate the Worker deployment.
+
+
+## Phase 1L — secrets and deployment security
+
+Production secrets must remain only in Cloudflare secret storage. In particular:
+
+- `BSCOUT_ADMIN_TOKEN` must never be committed to GitHub, written to `wrangler.jsonc`, or stored in a public build artifact.
+- Local `.env*`, `.dev.vars*`, Wrangler state, private keys, and local B-Atlas runtime data are ignored by Git.
+- GitHub Actions runs `developer/check-secrets.js` and fails on obvious committed secret material.
+- `cloudflare/batlas-api-standalone.js` is generated from canonical source files. It must not be hand-edited.
+- `npm run build:worker` regenerates the standalone Worker. CI fails if the committed artifact differs from the generated result.
+- The Worker health endpoint exposes a non-secret build marker so the live manual deployment can be matched to GitHub source.
+- GitHub Pages and the Cloudflare Worker remain separate deployment surfaces. A Worker code change is not production-complete until the live health endpoint reports the expected build marker.
+
+Current Phase 1L build marker: `2026-10-01-phase1l`.
