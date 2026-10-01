@@ -147,32 +147,78 @@ export function decodeBase64(base64) {
 }
 
 export function correctionTarget(field) {
-  return ({
+  const legacy = {
     YearStart: "FirstYear", YearEnd: "LastYear", LengthFt: "LOA", BeamFt: "Beam",
     DraftFt: "Draft", DisplacementLb: "Displacement", FuelCapacityGal: "FuelCapacity",
-    WaterCapacityGal: "WaterCapacity", NormalizedHullType: "NormalizedHullType",
-    NormalizedFuel: "NormalizedFuel", NormalizedPropulsion: "NormalizedPropulsion",
-    BoatFamily: "BoatFamily", ModelCharacter: "ModelCharacter",
-    DisplacementCruiseSpeed: "DisplacementCruiseSpeed", DisplacementCruiseFuelBurn: "DisplacementCruiseFuelBurn",
-    PlaningCruiseSpeed: "PlaningCruiseSpeed", PlaningCruiseFuelBurn: "PlaningCruiseFuelBurn"
-  })[field] || null;
+    WaterCapacityGal: "WaterCapacity", NormalizedHullType: "HullConfigurationCode",
+    NormalizedFuel: "FuelCode", NormalizedPropulsion: "MechanicalPropulsionCode",
+    BoatFamily: "BoatFamilyCode", ModelCharacter: "StyleCode"
+  };
+  if (legacy[field]) return legacy[field];
+
+  const canonical = new Set([
+    "Manufacturer","Brand","Builder","Model","Variant","Nickname","FirstYear","LastYear","Designer","TotalBuilt",
+    "BuilderCountryCode","DesignCountryCode","ModelAliases","VesselCategoryCode","PrimaryPropulsionModeCode",
+    "LOA","LWL","Beam","Draft","AirDraft","Headroom","HeadroomSalon","HeadroomHelm","HeadroomGalley","HeadroomHead",
+    "HeadroomForwardCabin","Displacement","FuelCapacity","WaterCapacity","HoldingCapacity","CruiseSpeed","MaxSpeed",
+    "Range","MastHeight","SailArea","Ballast","HullMaterialCode","HullBehaviourCode","HullConfigurationCode",
+    "KeelConfigurationCode","RudderTypeCode","RunningGearProtectionCode","Construction","FuelCode",
+    "MechanicalPropulsionCode","EngineCount","EngineConfiguration","TypicalEngineID","EnginePowerPerEngine",
+    "TotalInstalledPower","CoolingCode","SteeringTypeCode","PropellerCount","AuxiliaryEnginePresent","RigTypeCode",
+    "MastCount","MastMaterialCode","MastSteppingCode","MastLoweringCode","StandingRiggingCode","MainsailTypeCode",
+    "HeadsailConfigurationCode","BoatFamilyCode","StyleCode","Configuration","Cabins","Berths","Heads","FlybridgeCode",
+    "AftCabin","SideDecksCode","GalleyUpWithHelm","ShowerTypeCode","WalkthroughTransom","SideHelmDoor",
+    "RemovableFlybridge","Trailerable","VBerthLength","CECategoryCode","CertificationNotes",
+    "DisplacementCruiseSpeed","DisplacementCruiseFuelBurn","PlaningCruiseSpeed","PlaningCruiseFuelBurn"
+  ]);
+  return canonical.has(field) ? field : null;
 }
 
 export function normalizeCorrectionValue(target, raw, sourceField = "", proposedUnit = "") {
-  if (["FirstYear", "LastYear"].includes(target)) {
-    const n = parseInt(raw, 10); return Number.isFinite(n) ? n : undefined;
+  const integerTargets = new Set(["FirstYear","LastYear","TotalBuilt","EngineCount","PropellerCount","MastCount","Cabins","Berths","Heads"]);
+  if (integerTargets.has(target)) {
+    const n = parseInt(raw, 10);
+    return Number.isFinite(n) ? n : undefined;
   }
-  if (["LOA", "Beam", "Draft", "Displacement", "FuelCapacity", "WaterCapacity", "DisplacementCruiseSpeed", "DisplacementCruiseFuelBurn", "PlaningCruiseSpeed", "PlaningCruiseFuelBurn"].includes(target)) {
+
+  const booleanTargets = new Set(["AuxiliaryEnginePresent","AftCabin","GalleyUpWithHelm","WalkthroughTransom","SideHelmDoor","RemovableFlybridge","Trailerable"]);
+  if (booleanTargets.has(target)) {
+    if (raw === true || String(raw).toLowerCase() === "true") return true;
+    if (raw === false || String(raw).toLowerCase() === "false") return false;
+    if (String(raw).toLowerCase() === "unknown") return null;
+    return undefined;
+  }
+
+  const measurementTargets = new Set([
+    "LOA","LWL","Beam","Draft","AirDraft","Headroom","HeadroomSalon","HeadroomHelm","HeadroomGalley","HeadroomHead",
+    "HeadroomForwardCabin","Displacement","FuelCapacity","WaterCapacity","HoldingCapacity","CruiseSpeed","MaxSpeed",
+    "Range","MastHeight","SailArea","Ballast","EnginePowerPerEngine","TotalInstalledPower","VBerthLength",
+    "DisplacementCruiseSpeed","DisplacementCruiseFuelBurn","PlaningCruiseSpeed","PlaningCruiseFuelBurn"
+  ]);
+  if (measurementTargets.has(target)) {
     const n = Number(String(raw ?? "").replace(/[^0-9.+-]/g, ""));
     if (!Number.isFinite(n)) return undefined;
-    if (["LengthFt", "BeamFt", "DraftFt"].includes(sourceField)) return n * 0.3048;
+
+    const unit = String(proposedUnit || "").trim();
+    if (unit === "ft") return n * 0.3048;
+    if (unit === "in") return n * 0.0254;
+    if (unit === "lb") return n * 0.45359237;
+    if (unit === "us_gal") return n * 3.785411784;
+    if (unit === "imp_gal") return n * 4.54609;
+    if (unit === "hp") return n * 0.745699872;
+    if (unit === "us_gal_h") return n * 3.785411784;
+    if (unit === "imp_gal_h") return n * 4.54609;
+
+    if (["LengthFt","BeamFt","DraftFt"].includes(sourceField)) return n * 0.3048;
     if (sourceField === "DisplacementLb") return n * 0.45359237;
-    if (["DisplacementCruiseFuelBurn", "PlaningCruiseFuelBurn"].includes(target)) {
-      if (proposedUnit === "us_gal_h") return n * 3.785411784;
-      if (proposedUnit === "imp_gal_h") return n * 4.54609;
-    }
     return n;
   }
+
+  if (target === "ModelAliases") {
+    if (Array.isArray(raw)) return raw;
+    return String(raw || "").split(",").map(x => x.trim()).filter(Boolean);
+  }
+
   return raw;
 }
 
