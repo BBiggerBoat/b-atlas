@@ -18,6 +18,7 @@ const MAX_PHOTO_TOTAL_BYTES = 30 * 1024 * 1024;
 const MAX_DOCUMENT_BYTES = 25 * 1024 * 1024;
 const MAX_REQUEST_BYTES = 45 * 1024 * 1024;
 const MAX_RECORD_BYTES = 64 * 1024;
+const API_BUILD = "2026-10-01-phase1l";
 
 function httpError(status, message) {
   const error = new Error(message);
@@ -466,7 +467,7 @@ export async function onRequest(context) {
     if (route === "health" && request.method === "GET") {
       const limited = await enforceLimit("health", 120, 10 * 60 * 1000);
       if (limited) return limited;
-      return jsonResponse({ shared: true, version: "2.0-cloudflare", adminConfigured: !!env.BSCOUT_ADMIN_TOKEN, persistence: "D1+KV" });
+      return jsonResponse({ shared: true, version: "2.0-cloudflare", build: API_BUILD, adminConfigured: !!env.BSCOUT_ADMIN_TOKEN, persistence: "D1+KV" });
     }
     if (route === "public/overlays" && request.method === "GET") {
       const limited = await enforceLimit("overlays", 60, 10 * 60 * 1000);
