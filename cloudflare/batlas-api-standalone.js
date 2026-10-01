@@ -1,6 +1,7 @@
 // B-Atlas standalone Cloudflare Worker bundle.
-// Generated from functions/_lib/bscout-store.js and functions/api/[[path]].js.
-// Phase 1K contribution / upload security.
+// GENERATED FILE — do not hand edit.
+// Sources: functions/_lib/bscout-store.js, functions/api/[[path]].js, cloudflare/worker.js.
+// Regenerate with: npm run build:worker
 
 const STATE_KEYS = ["pending", "reviewed", "knowledgeItems", "knowledgeEvidence", "resourceReview", "published"];
 
@@ -255,7 +256,6 @@ function uniqueCode(name, existing) {
   while (existing.has(code)) { code = base.slice(0, 3) + String(n % 10); n++; }
   return code;
 }
-
 
 const ALLOWED_RIGHTS = new Set(["creator_or_owner", "permission_granted", "public_distribution"]);
 const ACCEPTED_UPLOAD_RIGHTS = new Set(["creator_or_owner", "permission_granted", "public_distribution", "uncertain"]);
@@ -812,8 +812,6 @@ async function onRequest(context) {
     return jsonResponse({ error: error?.message || "Server error" }, Number.isInteger(status) && status >= 400 && status < 600 ? status : 500);
   }
 }
-
-
 
 const CORS_ORIGINS = new Set(["https://b-atlas.org", "https://www.b-atlas.org"]);
 
