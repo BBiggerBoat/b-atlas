@@ -271,7 +271,7 @@ const MAX_PHOTO_TOTAL_BYTES = 30 * 1024 * 1024;
 const MAX_DOCUMENT_BYTES = 25 * 1024 * 1024;
 const MAX_REQUEST_BYTES = 45 * 1024 * 1024;
 const MAX_RECORD_BYTES = 64 * 1024;
-const API_BUILD = "2026-10-01-phase1n";
+const API_BUILD = "2026-10-01-contribution-email";
 
 function httpError(status, message) {
   const error = new Error(message);
@@ -404,6 +404,36 @@ async function sha256Hex(value) {
   const bytes = new TextEncoder().encode(typeof value === "string" ? value : JSON.stringify(value));
   const digest = await crypto.subtle.digest("SHA-256", bytes);
   return [...new Uint8Array(digest)].map(x => x.toString(16).padStart(2, "0")).join("");
+}
+
+async function sendContributionNotification(env, record) {
+  if (!env.CONTRIBUTION_EMAIL?.send) return { sent:false, reason:"binding_not_configured" };
+
+  const type = String(record?.ContributionType || "contribution").replace(/_/g, " ");
+  const modelParts = [record?.ManufacturerName, record?.ModelName, record?.Variant].filter(Boolean);
+  const model = modelParts.join(" ").trim() || "General / no model";
+  const submitted = record?.DateSubmitted || new Date().toISOString();
+  const id = record?.ContributionID || "unknown";
+
+  const subject = `New B-Atlas contribution — ${model}`;
+  const text = [
+    "A new contribution is waiting for review.",
+    "",
+    `Type: ${type}`,
+    `Model: ${model}`,
+    `Submitted: ${submitted}`,
+    `Contribution ID: ${id}`,
+    "",
+    "Review:",
+    "https://b-atlas.org/developer/contribution-review.html"
+  ].join("\n");
+
+  await env.CONTRIBUTION_EMAIL.send({
+    from: "notifications@b-atlas.org",
+    subject,
+    text
+  });
+  return { sent:true };
 }
 
 async function attachmentManifest(env) {
@@ -755,6 +785,18 @@ async function onRequest(context) {
       await storeAttachments(env, record, payload.attachments || []);
       snapshot.pending.push({ ...record, ModerationStatus: "pending", SharedReceivedAt: new Date().toISOString() });
       await saveSnapshot(env.BSCOUT_DB, snapshot);
+
+      const notify = async () => {
+        try {
+          const result = await sendContributionNotification(env, record);
+          if (!result.sent && result.reason !== "binding_not_configured") console.warn("B-Atlas contribution notification not sent", result.reason);
+        } catch (error) {
+          console.error("B-Atlas contribution notification failed", error);
+        }
+      };
+      if (typeof context.waitUntil === "function") context.waitUntil(notify());
+      else await notify();
+
       return jsonResponse({ ok: true, id: record.ContributionID, pending: snapshot.pending.length }, 201);
     }
 
