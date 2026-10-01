@@ -1,6 +1,6 @@
 import {
   jsonResponse, cleanFilename, getSnapshot, saveSnapshot, getPublished, savePublished,
-  constantTimeTokenMatches, adminOriginAllowed, recordAdminAuthFailure, rateAllowed, decodeBase64, correctionTarget,
+  constantTimeTokenMatches, adminOriginAllowed, recordAdminAuthFailure, rateLimit, rateAllowed, contributionDailyAllowed, decodeBase64, correctionTarget,
   normalizeCorrectionValue, uniqueCode
 } from "../_lib/bscout-store.js";
 
@@ -336,15 +336,43 @@ export async function onRequest(context) {
   try {
     requireBindings(env);
 
+    const publicOrigin = String(request.headers.get("Origin") || "");
+    const allowedPublicOrigin = !publicOrigin || publicOrigin === "https://b-atlas.org" || publicOrigin === "https://www.b-atlas.org";
+
+    async function enforceLimit(namespace, limit, windowMs) {
+      const result = await rateLimit(env.BSCOUT_DB, request, env.BSCOUT_ADMIN_TOKEN, { namespace, limit, windowMs });
+      if (result.allowed) return null;
+      return jsonResponse(
+        { error: "Too many requests. Try again later." },
+        429,
+        { "Retry-After": String(result.retryAfter), "X-RateLimit-Limit": String(result.limit), "X-RateLimit-Remaining": "0" }
+      );
+    }
+
     if (route === "health" && request.method === "GET") {
+      const limited = await enforceLimit("health", 120, 10 * 60 * 1000);
+      if (limited) return limited;
       return jsonResponse({ shared: true, version: "2.0-cloudflare", adminConfigured: !!env.BSCOUT_ADMIN_TOKEN, persistence: "D1+KV" });
     }
-    if (route === "public/overlays" && request.method === "GET") return publicOverlays(env);
+    if (route === "public/overlays" && request.method === "GET") {
+      const limited = await enforceLimit("overlays", 60, 10 * 60 * 1000);
+      if (limited) return limited;
+      return publicOverlays(env);
+    }
     if (route.startsWith("public/attachments/") && request.method === "GET") {
+      const limited = await enforceLimit("public-attachment", 30, 10 * 60 * 1000);
+      if (limited) return limited;
       return serveAttachment(env, decodeURIComponent(route.slice("public/attachments/".length)), false);
     }
     if (route === "contributions" && request.method === "POST") {
-      if (!(await rateAllowed(env.BSCOUT_DB, request, env.BSCOUT_ADMIN_TOKEN))) return jsonResponse({ error: "Too many submissions. Try again later." }, 429);
+      if (!allowedPublicOrigin) return jsonResponse({ error: "Contribution origin not allowed" }, 403);
+      if (!(await rateAllowed(env.BSCOUT_DB, request, env.BSCOUT_ADMIN_TOKEN))) {
+        return jsonResponse({ error: "Too many submissions. Try again later." }, 429, { "Retry-After": "600" });
+      }
+      const daily = await contributionDailyAllowed(env.BSCOUT_DB, request, env.BSCOUT_ADMIN_TOKEN);
+      if (!daily.allowed) {
+        return jsonResponse({ error: "Daily submission limit reached. Try again later." }, 429, { "Retry-After": String(daily.retryAfter) });
+      }
       const payload = await readBody(request);
       const record = payload?.record;
       if (!record?.ContributionID || !record?.ContributionType) return jsonResponse({ error: "Invalid contribution record" }, 400);
