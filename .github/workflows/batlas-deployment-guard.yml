@@ -94,3 +94,15 @@ jobs:
           grep -q '2026-10-01-phase1l' functions/api/\[\[path\]\].js
           grep -q 'main": "cloudflare/worker.js"' wrangler.jsonc
           ! grep -q 'BSCOUT_ADMIN_TOKEN.*[=:].*[A-Za-z0-9._-]\{20,\}' wrangler.jsonc
+
+      - name: Verify Phase 1N disaster recovery
+        shell: bash
+        run: |
+          test -e cloudflare/DISASTER-RECOVERY.md
+          test -e developer/validate-backup.js
+          test -e developer/backup-to-d1-sql.js
+          grep -q 'batlas-backup-v1' developer/validate-backup.js
+          grep -q 'SHA-256' developer/validate-backup.js
+          grep -q 'integrity' functions/api/\[\[path\]\].js
+          grep -q 'backup-to-d1-sql' package.json
+          grep -q 'validate-backup' package.json
