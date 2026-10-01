@@ -21,6 +21,13 @@ jobs:
           node-version: "20"
       - name: Verify baseline version
         run: npm run guard:baseline
+      - name: Verify repository contains no committed secrets
+        run: node developer/check-secrets.js
+      - name: Verify generated Worker is current
+        shell: bash
+        run: |
+          npm run build:worker
+          git diff --exit-code -- cloudflare/batlas-api-standalone.js
       - name: Build allowlisted public site
         run: npm run build:public
       - name: Verify internal files are excluded
