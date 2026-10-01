@@ -714,9 +714,9 @@
     async function open(boat, tab, options = {}) {
         currentBoat = boat;
         if (options.history !== false) {
-            const canonicalPath = root.BAtlasModelURLs?.pathForBoat?.(boat) || "";
-            if (root.BScoutNavigation) root.BScoutNavigation.push("guide", { boatModelId: boat.BoatModelID, tab: tab || "", url: canonicalPath });
-            else if (root.history?.pushState && canonicalPath) root.history.pushState({bscoutView:"guide",boatModelId:boat.BoatModelID,tab:tab||""}, "", canonicalPath);
+            const interactivePath = `/?model=${encodeURIComponent(boat.BoatModelID || "")}`;
+            if (root.BScoutNavigation) root.BScoutNavigation.push("guide", { boatModelId: boat.BoatModelID, tab: tab || "", url: interactivePath });
+            else if (root.history?.pushState) root.history.pushState({bscoutView:"guide",boatModelId:boat.BoatModelID,tab:tab||""}, "", interactivePath);
         }
         currentCard = null;
         const guide = document.getElementById("boatGuideView"); if (!guide) return;
