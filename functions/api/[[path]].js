@@ -1,6 +1,6 @@
 import {
   jsonResponse, cleanFilename, getSnapshot, saveSnapshot, getPublished, savePublished,
-  constantTimeTokenMatches, rateAllowed, decodeBase64, correctionTarget,
+  constantTimeTokenMatches, adminOriginAllowed, recordAdminAuthFailure, rateAllowed, decodeBase64, correctionTarget,
   normalizeCorrectionValue, uniqueCode
 } from "../_lib/bscout-store.js";
 
@@ -357,7 +357,14 @@ export async function onRequest(context) {
     }
 
     if (route.startsWith("admin/")) {
-      if (!(await constantTimeTokenMatches(request, env.BSCOUT_ADMIN_TOKEN))) return jsonResponse({ error: "Moderator authentication required" }, 401);
+      if (!adminOriginAllowed(request)) return jsonResponse({ error: "Administrative requests must originate from B-Atlas" }, 403);
+      if (!(await constantTimeTokenMatches(request, env.BSCOUT_ADMIN_TOKEN))) {
+        const retryAllowed = await recordAdminAuthFailure(env.BSCOUT_DB, request, env.BSCOUT_ADMIN_TOKEN);
+        return jsonResponse(
+          { error: retryAllowed ? "Moderator authentication required" : "Too many failed moderator authentication attempts. Try again later." },
+          retryAllowed ? 401 : 429
+        );
+      }
       if (route === "admin/snapshot" && request.method === "GET") return jsonResponse(await getSnapshot(env.BSCOUT_DB));
       if (route === "admin/snapshot" && request.method === "PUT") {
         const payload = await readBody(request, 8 * 1024 * 1024);
