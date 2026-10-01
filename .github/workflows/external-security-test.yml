@@ -1,0 +1,22 @@
+name: B-Atlas External Security Test
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "developer/external-security-test.sh"
+      - ".github/workflows/external-security-test.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  external-security-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Run external production security test
+        shell: bash
+        run: bash developer/external-security-test.sh
