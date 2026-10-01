@@ -1,6 +1,6 @@
 // B-Atlas standalone Cloudflare Worker bundle.
 // Generated from functions/_lib/bscout-store.js and functions/api/[[path]].js.
-// Phase 1I authentication/authorization hardening.
+// Phase 1J extraction / rate-limit protection.
 
 const STATE_KEYS = ["pending", "reviewed", "knowledgeItems", "knowledgeEvidence", "resourceReview", "published"];
 
@@ -129,18 +129,41 @@ async function anonymousIpHash(request, secret) {
   return [...new Uint8Array(digest)].map(x => x.toString(16).padStart(2, "0")).join("");
 }
 
-async function rateAllowed(db, request, secret) {
+async function rateLimit(db, request, secret, {
+  namespace = "public",
+  limit = 60,
+  windowMs = 10 * 60 * 1000,
+  record = true
+} = {}) {
   const now = Date.now();
-  const windowStart = now - 10 * 60 * 1000;
-  const hash = await anonymousIpHash(request, secret);
+  const windowStart = now - windowMs;
+  const hash = `${namespace}:${await anonymousIpHash(request, secret)}`;
   const row = await db.prepare("SELECT COUNT(*) AS n FROM bscout_rate_events WHERE ip_hash = ?1 AND created_at >= ?2")
     .bind(hash, windowStart).first();
-  if (Number(row?.n || 0) >= 12) return false;
-  await db.batch([
-    db.prepare("INSERT INTO bscout_rate_events (ip_hash, created_at) VALUES (?1, ?2)").bind(hash, now),
-    db.prepare("DELETE FROM bscout_rate_events WHERE created_at < ?1").bind(now - 24 * 60 * 60 * 1000)
-  ]);
-  return true;
+  const used = Number(row?.n || 0);
+  const allowed = used < limit;
+  if (allowed && record) {
+    await db.batch([
+      db.prepare("INSERT INTO bscout_rate_events (ip_hash, created_at) VALUES (?1, ?2)").bind(hash, now),
+      db.prepare("DELETE FROM bscout_rate_events WHERE created_at < ?1").bind(now - 24 * 60 * 60 * 1000)
+    ]);
+  }
+  return {
+    allowed,
+    limit,
+    remaining: Math.max(0, limit - used - (allowed && record ? 1 : 0)),
+    retryAfter: allowed ? 0 : Math.max(1, Math.ceil(windowMs / 1000))
+  };
+}
+
+async function rateAllowed(db, request, secret) {
+  const result = await rateLimit(db, request, secret, { namespace:"contribution", limit:5, windowMs:10 * 60 * 1000 });
+  return result.allowed;
+}
+
+async function contributionDailyAllowed(db, request, secret) {
+  const result = await rateLimit(db, request, secret, { namespace:"contribution-day", limit:20, windowMs:24 * 60 * 60 * 1000 });
+  return result;
 }
 
 function decodeBase64(base64) {
@@ -566,15 +589,43 @@ async function onRequest(context) {
   try {
     requireBindings(env);
 
+    const publicOrigin = String(request.headers.get("Origin") || "");
+    const allowedPublicOrigin = !publicOrigin || publicOrigin === "https://b-atlas.org" || publicOrigin === "https://www.b-atlas.org";
+
+    async function enforceLimit(namespace, limit, windowMs) {
+      const result = await rateLimit(env.BSCOUT_DB, request, env.BSCOUT_ADMIN_TOKEN, { namespace, limit, windowMs });
+      if (result.allowed) return null;
+      return jsonResponse(
+        { error: "Too many requests. Try again later." },
+        429,
+        { "Retry-After": String(result.retryAfter), "X-RateLimit-Limit": String(result.limit), "X-RateLimit-Remaining": "0" }
+      );
+    }
+
     if (route === "health" && request.method === "GET") {
+      const limited = await enforceLimit("health", 120, 10 * 60 * 1000);
+      if (limited) return limited;
       return jsonResponse({ shared: true, version: "2.0-cloudflare", adminConfigured: !!env.BSCOUT_ADMIN_TOKEN, persistence: "D1+KV" });
     }
-    if (route === "public/overlays" && request.method === "GET") return publicOverlays(env);
+    if (route === "public/overlays" && request.method === "GET") {
+      const limited = await enforceLimit("overlays", 60, 10 * 60 * 1000);
+      if (limited) return limited;
+      return publicOverlays(env);
+    }
     if (route.startsWith("public/attachments/") && request.method === "GET") {
+      const limited = await enforceLimit("public-attachment", 30, 10 * 60 * 1000);
+      if (limited) return limited;
       return serveAttachment(env, decodeURIComponent(route.slice("public/attachments/".length)), false);
     }
     if (route === "contributions" && request.method === "POST") {
-      if (!(await rateAllowed(env.BSCOUT_DB, request, env.BSCOUT_ADMIN_TOKEN))) return jsonResponse({ error: "Too many submissions. Try again later." }, 429);
+      if (!allowedPublicOrigin) return jsonResponse({ error: "Contribution origin not allowed" }, 403);
+      if (!(await rateAllowed(env.BSCOUT_DB, request, env.BSCOUT_ADMIN_TOKEN))) {
+        return jsonResponse({ error: "Too many submissions. Try again later." }, 429, { "Retry-After": "600" });
+      }
+      const daily = await contributionDailyAllowed(env.BSCOUT_DB, request, env.BSCOUT_ADMIN_TOKEN);
+      if (!daily.allowed) {
+        return jsonResponse({ error: "Daily submission limit reached. Try again later." }, 429, { "Retry-After": String(daily.retryAfter) });
+      }
       const payload = await readBody(request);
       const record = payload?.record;
       if (!record?.ContributionID || !record?.ContributionType) return jsonResponse({ error: "Invalid contribution record" }, 400);
@@ -594,6 +645,12 @@ async function onRequest(context) {
           { error: retryAllowed ? "Moderator authentication required" : "Too many failed moderator authentication attempts. Try again later." },
           retryAllowed ? 401 : 429
         );
+      }
+      const adminLimit = await enforceLimit("admin-authenticated", 240, 10 * 60 * 1000);
+      if (adminLimit) return adminLimit;
+      if (request.method !== "GET") {
+        const mutationLimit = await enforceLimit("admin-mutation", 60, 10 * 60 * 1000);
+        if (mutationLimit) return mutationLimit;
       }
       if (route === "admin/snapshot" && request.method === "GET") return jsonResponse(await getSnapshot(env.BSCOUT_DB));
       if (route === "admin/snapshot" && request.method === "PUT") {
