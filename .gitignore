@@ -1,0 +1,26 @@
+# B-Atlas local-only and secret material
+.env
+.env.*
+!.env.example
+.dev.vars
+.dev.vars.*
+!.dev.vars.example
+.wrangler/
+.bscout-data/
+dist/
+node_modules/
+
+# Credentials / private keys
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+credentials.json
+secrets.json
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
