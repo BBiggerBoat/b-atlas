@@ -1,0 +1,273 @@
+{
+  "batchId": "phase2-batch-21-viking-33-40",
+  "status": "researched_complete_live",
+  "researchedAt": "2026-10-02",
+  "workflowNote": "Standalone Phase 2A batch, published through data/phase2-live-models.json and live aliases. Phase 2 size cap is 50 feet maximum.",
+  "models": [
+    {
+      "BoatModelID": "VIKI-33-CV",
+      "Manufacturer": "Viking",
+      "Model": "33 Convertible",
+      "FirstYear": 1972,
+      "LastYear": 1974,
+      "LOAFt": 33,
+      "BeamFt": 12.75,
+      "DraftFt": 2.5833,
+      "DisplacementLb": 15300,
+      "AirDraftFt": 11.3333,
+      "FuelCapacityGal": 200,
+      "WaterCapacityGal": 50,
+      "HoldingCapacityGal": null,
+      "HullType": "Deep-V",
+      "DeadriseAftDeg": 21,
+      "Fuel": "Gasoline or Diesel depending configuration",
+      "Propulsion": "V-drive",
+      "EngineConfiguration": "Twin inboards",
+      "TypicalEngine": "454-cid gasoline engines documented; diesel configurations also exist",
+      "PlaningCruiseSpeedKt": 17.5,
+      "Configuration": "Convertible",
+      "Style": "Sportfisher",
+      "AftCabin": false,
+      "aliases": [
+        "Viking 33 Convertible",
+        "Viking 33C"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/viking/33-convertible-1972-74",
+      "identityNote": "HMY notes introduction in 1971 while the model page labels the run 1972–74; B-Atlas follows the documented page range and leaves the 1971 boundary unresolved."
+    },
+    {
+      "BoatModelID": "VIKI-35-CV-G1",
+      "Manufacturer": "Viking",
+      "Model": "35 Convertible Generation 1",
+      "FirstYear": 1974,
+      "LastYear": 1985,
+      "LOAFt": 35,
+      "BeamFt": 13.0833,
+      "DraftFt": 2.4167,
+      "DisplacementLb": 20000,
+      "AirDraftFt": 11.3333,
+      "FuelCapacityGal": 275,
+      "WaterCapacityGal": 90,
+      "HoldingCapacityGal": 20,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 15.5,
+      "Fuel": "Gasoline or Diesel depending configuration",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin inboards",
+      "TypicalEngine": "350 hp Crusader gasoline standard; diesel options available",
+      "PlaningCruiseSpeedKt": 18,
+      "Configuration": "Convertible",
+      "Style": "Sportfisher",
+      "AftCabin": false,
+      "productionPhases": [
+        {
+          "startYear": 1974,
+          "endYear": 1980,
+          "layout": "Mica interior trim"
+        },
+        {
+          "startYear": 1981,
+          "endYear": 1985,
+          "layout": "Teak interior joinery"
+        }
+      ],
+      "aliases": [
+        "Viking 35 Convertible 1974-85",
+        "Viking 35 Convertible Gen 1"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/viking/35-convertible-1974-85"
+    },
+    {
+      "BoatModelID": "VIKI-35-CV-G2",
+      "Manufacturer": "Viking",
+      "Model": "35 Convertible Generation 2",
+      "FirstYear": 1985,
+      "LastYear": 1992,
+      "LOAFt": 35,
+      "BeamFt": 13.0833,
+      "DraftFt": 4.0833,
+      "DisplacementLb": 20000,
+      "AirDraftFt": null,
+      "FuelCapacityGal": 300,
+      "WaterCapacityGal": 75,
+      "HoldingCapacityGal": 20,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 15.5,
+      "Fuel": "Gasoline or Diesel depending configuration",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin inboards",
+      "TypicalEngine": "350 hp gasoline engines; optional Caterpillar 375 hp diesels",
+      "PlaningCruiseSpeedKt": 24.5,
+      "Configuration": "Convertible",
+      "Style": "Sportfisher",
+      "AftCabin": false,
+      "aliases": [
+        "Viking 35 Convertible 1985-92",
+        "Viking 35 Convertible Gen 2"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/viking/35-convertible-1985-92",
+      "identityNote": "Redesigned successor to the original 35 Convertible with revised flybridge, window treatment and interiors."
+    },
+    {
+      "BoatModelID": "VIKI-35-SF",
+      "Manufacturer": "Viking",
+      "Model": "35 Sportfisherman",
+      "FirstYear": 1984,
+      "LastYear": 1985,
+      "LOAFt": 35,
+      "BeamFt": 13.0833,
+      "DraftFt": 2.4167,
+      "DisplacementLb": 19000,
+      "AirDraftFt": 8.5,
+      "FuelCapacityGal": 325,
+      "WaterCapacityGal": 70,
+      "HoldingCapacityGal": null,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 15.5,
+      "Fuel": "Gasoline or Diesel depending configuration",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin inboards",
+      "TypicalEngine": "Gasoline standard; optional Caterpillar 355 hp diesels",
+      "PlaningCruiseSpeedKt": 27,
+      "Configuration": "Open Sportfisherman",
+      "Style": "Express Sportfisher",
+      "AftCabin": false,
+      "aliases": [
+        "Viking 35 Sportfisherman",
+        "Viking 35 Sport Fisherman"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/viking/35-sportfisherman-1984-85",
+      "identityNote": "Distinct open express fishing layout on the 35 Convertible hull; 32 built."
+    },
+    {
+      "BoatModelID": "VIKI-38-CV",
+      "Manufacturer": "Viking",
+      "Model": "38 Convertible",
+      "FirstYear": 1990,
+      "LastYear": 1995,
+      "LOAFt": 39.3333,
+      "BeamFt": 14.1667,
+      "DraftFt": 4.0833,
+      "DisplacementLb": 32890,
+      "AirDraftFt": 11.8333,
+      "FuelCapacityGal": 430,
+      "WaterCapacityGal": 110,
+      "HoldingCapacityGal": 40,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 15.5,
+      "Fuel": "Gasoline or Diesel depending year/configuration",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin inboards",
+      "TypicalEngine": "Big-block Crusader gasoline through 1991; Detroit 6-71 485 hp diesels from 1992",
+      "PlaningCruiseSpeedKt": 22,
+      "Configuration": "Convertible",
+      "Style": "Sportfisher",
+      "AftCabin": false,
+      "productionPhases": [
+        {
+          "startYear": 1990,
+          "endYear": 1991,
+          "Fuel": "Gasoline standard"
+        },
+        {
+          "startYear": 1992,
+          "endYear": 1995,
+          "Fuel": "Diesel standard",
+          "TypicalEngine": "Detroit 6-71 485 hp"
+        }
+      ],
+      "aliases": [
+        "Viking 38 Convertible"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/viking/38-convertible-1990-95"
+    },
+    {
+      "BoatModelID": "VIKI-40-CV",
+      "Manufacturer": "Viking",
+      "Model": "40 Convertible",
+      "FirstYear": 1973,
+      "LastYear": 1982,
+      "LOAFt": 40.3333,
+      "BeamFt": 14.5,
+      "DraftFt": 3.5,
+      "DisplacementLb": 30000,
+      "AirDraftFt": 11.75,
+      "FuelCapacityGal": null,
+      "WaterCapacityGal": 90,
+      "HoldingCapacityGal": null,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 18,
+      "Fuel": "Gasoline or Diesel depending configuration",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin inboards",
+      "TypicalEngine": "Gasoline standard; common diesel options include J&T 6-71N, Caterpillar 300 hp and Detroit 6-71TI",
+      "PlaningCruiseSpeedKt": 20,
+      "Configuration": "Convertible",
+      "Style": "Sportfisher",
+      "AftCabin": false,
+      "productionPhases": [
+        {
+          "startYear": 1973,
+          "endYear": 1979,
+          "layout": "Original generator location under cockpit"
+        },
+        {
+          "startYear": 1980,
+          "endYear": 1981,
+          "changes": [
+            "Generator moved to engine room"
+          ]
+        },
+        {
+          "startYear": 1982,
+          "endYear": 1982,
+          "layout": "Teak interior introduced"
+        }
+      ],
+      "aliases": [
+        "Viking 40 Convertible",
+        "Viking 40 Sedan"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/viking/40-convertible-1973-82",
+      "identityNote": "Source lists fuel capacity as 300/350 gallons depending configuration; canonical single-value fuel capacity remains null. Over 400 were sold."
+    }
+  ],
+  "identityDecisions": [
+    {
+      "scope": "35 Convertible",
+      "decision": "two linked generations",
+      "models": [
+        "VIKI-35-CV-G1",
+        "VIKI-35-CV-G2"
+      ],
+      "rationale": "The 1985–92 boat is documented as a redesigned successor with different draft, tankage, flybridge/window treatment and interiors; preserve separate generations despite the shared model name and boundary year."
+    },
+    {
+      "scope": "35 Convertible / Sportfisherman",
+      "decision": "retain distinct layout identities",
+      "models": [
+        "VIKI-35-CV-G1",
+        "VIKI-35-SF"
+      ],
+      "rationale": "The Sportfisherman uses the proven 35 hull but is an open express fishing model with materially different deck plan and clearance."
+    },
+    {
+      "scope": "38 Convertible propulsion change",
+      "decision": "production phase not new generation",
+      "models": [
+        "VIKI-38-CV"
+      ],
+      "rationale": "The switch from gasoline standard power to Detroit diesel standard power in 1992 does not change the marketed model identity or core hull."
+    },
+    {
+      "scope": "40 Convertible 1980–82 changes",
+      "decision": "production phases not new generation",
+      "models": [
+        "VIKI-40-CV"
+      ],
+      "rationale": "Generator relocation and teak-interior changes are documented updates within one continuous model run."
+    }
+  ],
+  "unknownPolicy": "Missing or ambiguous specifications remain null and do not eliminate the model.",
+  "sizePolicy": "No Phase 2 model over 50 feet is to be added unless the user later changes the cap."
+}
