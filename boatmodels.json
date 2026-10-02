@@ -306,7 +306,7 @@
         "Note": "Factory Albin 25 handbook: economical speed about 7 knots at about 2000 rpm, fuel consumption 2.2 L/h with the original AD-21 diesel."
       }
     },
-    "DisplacementCruiseSpeed": 7.0,
+    "DisplacementCruiseSpeed": 7,
     "DisplacementCruiseFuelBurn": 2.2,
     "PlaningCruiseSpeed": null,
     "PlaningCruiseFuelBurn": null,
@@ -934,7 +934,7 @@
         "Note": "Owner-club report for an Albin 27 Sport Cruiser with Yanmar 64 hp: steady 8 knots at about three-quarter throttle while burning less than 1 US gal/h. B-Atlas uses 0.9 US gal/h as a representative working point, tied to that repower/configuration."
       }
     },
-    "DisplacementCruiseSpeed": 8.0,
+    "DisplacementCruiseSpeed": 8,
     "DisplacementCruiseFuelBurn": 3.4068706056,
     "PlaningCruiseSpeed": null,
     "PlaningCruiseFuelBurn": null
@@ -3113,7 +3113,7 @@
         "Note": "American Tug 34 commonly used Cummins 330 hp with a 370-hp upgrade option; a single model-wide power value would be misleading."
       }
     },
-    "DisplacementCruiseSpeed": 9.0,
+    "DisplacementCruiseSpeed": 9,
     "DisplacementCruiseFuelBurn": 14.763,
     "PlaningCruiseSpeed": null,
     "PlaningCruiseFuelBurn": null,
@@ -6058,8 +6058,8 @@
     "SideDecksCode": "side_decks.moderate",
     "DisplacementCruiseSpeed": 8.1,
     "DisplacementCruiseFuelBurn": 10.2,
-    "PlaningCruiseSpeed": 22.0,
-    "PlaningCruiseFuelBurn": 56.0,
+    "PlaningCruiseSpeed": 22,
+    "PlaningCruiseFuelBurn": 56,
     "LWL": 9.7536,
     "SpecificationConfidence": {
       "LWL": {
@@ -6375,7 +6375,7 @@
     "CoolingCode": "cooling.fresh_water",
     "FlybridgeCode": "availability.no",
     "SideDecksCode": "side_decks.moderate",
-    "DisplacementCruiseSpeed": 8.0,
+    "DisplacementCruiseSpeed": 8,
     "DisplacementCruiseFuelBurn": 6.057,
     "PlaningCruiseSpeed": 23.5,
     "PlaningCruiseFuelBurn": 76.087,
@@ -7015,7 +7015,7 @@
     "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
     "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
     "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
-    "Displacement": 13381.0,
+    "Displacement": 13381,
     "CanonicalSlug": "back-cove-41-flagship-downeast-cruiser",
     "CanonicalPath": "/models/back-cove-41-flagship-downeast-cruiser/",
     "CanonicalURL": "https://b-atlas.org/models/back-cove-41-flagship-downeast-cruiser/",
@@ -7932,7 +7932,7 @@
     "SideDecksCode": "side_decks.moderate",
     "DisplacementCruiseSpeed": null,
     "DisplacementCruiseFuelBurn": null,
-    "PlaningCruiseSpeed": 24.0,
+    "PlaningCruiseSpeed": 24,
     "PlaningCruiseFuelBurn": 71.923,
     "ShowerTypeCode": "shower.none",
     "SpecificationConfidence": {
@@ -8520,7 +8520,7 @@
     "Beam": 3.301,
     "Draft": 0.9144,
     "AirDraft": 3.3528,
-    "Displacement": 4173.0,
+    "Displacement": 4173,
     "RudderTypeCode": "rudder.none_external_drive",
     "CanonicalSlug": "bayliner-3058-command-bridge-command-bridge-cruiser",
     "CanonicalPath": "/models/bayliner-3058-command-bridge-command-bridge-cruiser/",
@@ -8833,7 +8833,7 @@
     "SideDecksCode": "side_decks.wide",
     "DisplacementCruiseSpeed": null,
     "DisplacementCruiseFuelBurn": null,
-    "PlaningCruiseSpeed": 13.0,
+    "PlaningCruiseSpeed": 13,
     "PlaningCruiseFuelBurn": 26.498,
     "SpecificationConfidence": {
       "PlaningCruiseSpeed": {
@@ -10873,7 +10873,7 @@
     "SideDecksCode": "side_decks.wide",
     "DisplacementCruiseSpeed": null,
     "DisplacementCruiseFuelBurn": null,
-    "PlaningCruiseSpeed": 26.0,
+    "PlaningCruiseSpeed": 26,
     "PlaningCruiseFuelBurn": 98.421,
     "ShowerTypeCode": "shower.present_unspecified",
     "SpecificationConfidence": {
@@ -10941,7 +10941,7 @@
     "AftCabin": false,
     "SideDecks": "Moderate",
     "TypicalEngineID": "Volvo D6 370",
-    "FuelCapacity": 700.0,
+    "FuelCapacity": 700,
     "WaterCapacity": 151.4165,
     "HoldingCapacity": 87.0645,
     "Berths": 6,
@@ -11229,8 +11229,8 @@
     "AftCabin": false,
     "SideDecks": "Moderate",
     "TypicalEngineID": "Cummins QSB 425",
-    "FuelCapacity": 800.0,
-    "WaterCapacity": 320.0,
+    "FuelCapacity": 800,
+    "WaterCapacity": 320,
     "HoldingCapacity": 90.8499,
     "Berths": 6,
     "Cabins": 2,
@@ -11511,7 +11511,7 @@
         "Note": "BoatTEST test: 6.7 kn at 1.9 US gal/h (1200 rpm) and best planing cruise 14.7 kn at 11.4 US gal/h."
       }
     },
-    "Headroom": 2.0,
+    "Headroom": 2,
     "RunningGearProtectionCode": "running_gear.keel_protected"
   },
   {
@@ -11538,8 +11538,8 @@
     "AftCabin": false,
     "SideDecks": "Moderate",
     "TypicalEngineID": "Cummins QSB 6.7",
-    "FuelCapacity": 800.0,
-    "WaterCapacity": 300.0,
+    "FuelCapacity": 800,
+    "WaterCapacity": 300,
     "HoldingCapacity": 87.0645,
     "Berths": 6,
     "Cabins": 2,
@@ -11754,7 +11754,7 @@
     "DisplacementCruiseSpeed": null,
     "DisplacementCruiseFuelBurn": null,
     "PlaningCruiseSpeed": 12.2,
-    "PlaningCruiseFuelBurn": 50.0,
+    "PlaningCruiseFuelBurn": 50,
     "SpecificationConfidence": {
       "PlaningCruiseSpeed": {
         "Level": "High",
@@ -11805,8 +11805,8 @@
     "AftCabin": false,
     "SideDecks": "Wide",
     "TypicalEngineID": "Volvo D6",
-    "FuelCapacity": 1930.0,
-    "WaterCapacity": 640.0,
+    "FuelCapacity": 1930,
+    "WaterCapacity": 640,
     "HoldingCapacity": 170,
     "Berths": 6,
     "Cabins": 3,
@@ -12020,7 +12020,7 @@
     "CanonicalURL": "https://b-atlas.org/models/beneteau-swift-trawler-47-flybridge/",
     "StyleCode": "Trawler",
     "CoolingCode": "cooling.fresh_water",
-    "DisplacementCruiseSpeed": 9.0,
+    "DisplacementCruiseSpeed": 9,
     "DisplacementCruiseFuelBurn": 15.638,
     "PlaningCruiseSpeed": 17.5,
     "PlaningCruiseFuelBurn": 80.44,
@@ -12098,9 +12098,9 @@
     "AftCabin": false,
     "SideDecks": "Wide",
     "TypicalEngineID": "Volvo D8",
-    "FuelCapacity": 1930.0,
-    "WaterCapacity": 640.0,
-    "HoldingCapacity": 170.0,
+    "FuelCapacity": 1930,
+    "WaterCapacity": 640,
+    "HoldingCapacity": 170,
     "Berths": 6,
     "Cabins": 3,
     "Heads": 2,
@@ -12312,9 +12312,9 @@
     "CanonicalURL": "https://b-atlas.org/models/beneteau-swift-trawler-48-flybridge/",
     "StyleCode": "Trawler",
     "CoolingCode": "cooling.fresh_water",
-    "DisplacementCruiseSpeed": 9.0,
+    "DisplacementCruiseSpeed": 9,
     "DisplacementCruiseFuelBurn": 26.055,
-    "PlaningCruiseSpeed": 18.0,
+    "PlaningCruiseSpeed": 18,
     "PlaningCruiseFuelBurn": 111.664,
     "SpecificationConfidence": {
       "HoldingCapacity": {
@@ -12390,9 +12390,9 @@
     "AftCabin": false,
     "SideDecks": "Wide",
     "TypicalEngineID": "Volvo D11",
-    "FuelCapacity": 4000.0,
-    "WaterCapacity": 800.0,
-    "HoldingCapacity": 150.0,
+    "FuelCapacity": 4000,
+    "WaterCapacity": 800,
+    "HoldingCapacity": 150,
     "Berths": 6,
     "Cabins": 3,
     "Heads": 2,
@@ -12606,7 +12606,7 @@
     "CanonicalURL": "https://b-atlas.org/models/beneteau-swift-trawler-52-flybridge-flagship/",
     "StyleCode": "Trawler",
     "CoolingCode": "cooling.fresh_water",
-    "DisplacementCruiseSpeed": 10.0,
+    "DisplacementCruiseSpeed": 10,
     "DisplacementCruiseFuelBurn": 45.461,
     "PlaningCruiseSpeed": 18.5,
     "PlaningCruiseFuelBurn": 86.376,
@@ -13208,8 +13208,8 @@
     "FlybridgeCode": "availability.no",
     "SideDecksCode": "side_decks.moderate",
     "DisplacementCruiseSpeed": 6.8,
-    "DisplacementCruiseFuelBurn": 10.0,
-    "PlaningCruiseSpeed": 20.0,
+    "DisplacementCruiseFuelBurn": 10,
+    "PlaningCruiseSpeed": 20,
     "PlaningCruiseFuelBurn": 43.2,
     "KeelConfigurationCode": "keel.no_keel",
     "SpecificationConfidence": {
@@ -17570,9 +17570,9 @@
         "Note": "Representative Camano 31 Troll performance repeated across multiple listings: about 7 kn at 1.5 US gal/h and 14 kn at 6 US gal/h. Actual burn varies with engine, load and condition."
       }
     },
-    "DisplacementCruiseSpeed": 7.0,
+    "DisplacementCruiseSpeed": 7,
     "DisplacementCruiseFuelBurn": 5.678,
-    "PlaningCruiseSpeed": 14.0,
+    "PlaningCruiseSpeed": 14,
     "PlaningCruiseFuelBurn": 22.712
   },
   {
@@ -23084,7 +23084,7 @@
         "Note": "Normalized from existing Shower description in the canonical model record."
       }
     },
-    "DisplacementCruiseSpeed": 7.0,
+    "DisplacementCruiseSpeed": 7,
     "DisplacementCruiseFuelBurn": 7.571,
     "PlaningCruiseSpeed": null,
     "PlaningCruiseFuelBurn": null,
@@ -23411,7 +23411,7 @@
     },
     "Displacement": 7937.8665,
     "EnginePowerPerEngine": 89.484,
-    "DisplacementCruiseSpeed": 8.0,
+    "DisplacementCruiseSpeed": 8,
     "DisplacementCruiseFuelBurn": 13.6,
     "PlaningCruiseSpeed": null,
     "PlaningCruiseFuelBurn": null,
@@ -24593,7 +24593,7 @@
     "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
     "WaterCapacityUnitStatus": "canonical_litres",
     "HoldingCapacityUnitStatus": "unit_unverified",
-    "AirDraft": 3.0,
+    "AirDraft": 3,
     "CanonicalSlug": "cheoy-lee-28-sedan-trawler-sedan",
     "CanonicalPath": "/models/cheoy-lee-28-sedan-trawler-sedan/",
     "CanonicalURL": "https://b-atlas.org/models/cheoy-lee-28-sedan-trawler-sedan/",
@@ -25462,7 +25462,7 @@
     "CoolingCode": "cooling.fresh_water",
     "FlybridgeCode": "availability.yes",
     "SideDecksCode": "side_decks.wide",
-    "Headroom": 2.0,
+    "Headroom": 2,
     "EnginePowerPerEngine": 88.2,
     "ShowerTypeCode": "shower.wet_head",
     "SpecificationConfidence": {
@@ -36693,7 +36693,7 @@
         "Note": "Documented Grand Banks 32 single Ford Lehman example reports 7-knot cruise at 2 US gal/h. Representative of that single-engine configuration, not all production variants."
       }
     },
-    "DisplacementCruiseSpeed": 7.0,
+    "DisplacementCruiseSpeed": 7,
     "DisplacementCruiseFuelBurn": 7.570823568,
     "PlaningCruiseSpeed": null,
     "PlaningCruiseFuelBurn": null,
@@ -37073,7 +37073,7 @@
         "Note": "1973 Grand Banks 36 single Caterpillar example reports 7.0–7.2 knots at 1600 rpm and 2.7 US gal/h from the owner’s Caterpillar spec sheet. Stored as a configuration-specific representative point."
       }
     },
-    "DisplacementCruiseSpeed": 7.0,
+    "DisplacementCruiseSpeed": 7,
     "DisplacementCruiseFuelBurn": 10.2206118168,
     "PlaningCruiseSpeed": null,
     "PlaningCruiseFuelBurn": null,
@@ -37766,7 +37766,7 @@
         "Note": "Normalized from existing Shower description in the canonical model record."
       }
     },
-    "DisplacementCruiseSpeed": 8.0,
+    "DisplacementCruiseSpeed": 8,
     "DisplacementCruiseFuelBurn": 17.034,
     "PlaningCruiseSpeed": null,
     "PlaningCruiseFuelBurn": null
@@ -46795,7 +46795,7 @@
     "SideDecksCode": "side_decks.moderate",
     "DisplacementCruiseSpeed": 7.2,
     "DisplacementCruiseFuelBurn": 16.9,
-    "PlaningCruiseSpeed": 25.0,
+    "PlaningCruiseSpeed": 25,
     "PlaningCruiseFuelBurn": 79.9,
     "ShowerTypeCode": "shower.present_unspecified",
     "SpecificationConfidence": {
@@ -47101,7 +47101,7 @@
     "CoolingCode": "cooling.raw_water",
     "FlybridgeCode": "availability.no",
     "SideDecksCode": "side_decks.moderate",
-    "DisplacementCruiseSpeed": 7.0,
+    "DisplacementCruiseSpeed": 7,
     "DisplacementCruiseFuelBurn": 15.5,
     "PlaningCruiseSpeed": 22.4,
     "PlaningCruiseFuelBurn": 66.7,
@@ -48021,7 +48021,7 @@
         "Note": "Kadey-Krogen 42 listing documents 7–7.5 knots at 1800 rpm burning 1.7 US gal/h with a Ford Lehman 120; representative of that engine configuration."
       }
     },
-    "DisplacementCruiseSpeed": 7.0,
+    "DisplacementCruiseSpeed": 7,
     "DisplacementCruiseFuelBurn": 6.4352000328,
     "PlaningCruiseSpeed": null,
     "PlaningCruiseFuelBurn": null,
@@ -48648,7 +48648,7 @@
     "PlanCriticalStatus": {
       "EnginePowerPerEngine": "configuration_or_production_mixed"
     },
-    "DisplacementCruiseSpeed": 7.0,
+    "DisplacementCruiseSpeed": 7,
     "DisplacementCruiseFuelBurn": 11.356,
     "PlaningCruiseSpeed": null,
     "PlaningCruiseFuelBurn": null,
@@ -48972,7 +48972,7 @@
     "NormalizedHullForm": "Semi-Displacement",
     "NormalizedHullConfiguration": "Monohull",
     "NormalizedStyle": "Downeast",
-    "HullLength_ft": 30.0,
+    "HullLength_ft": 30,
     "ResearchStatus": "Reviewed",
     "ResearchNotes": "Produced 1998–2008. Original hulls use a full skeg and published draft of about 2 ft 11 in. The 2003 Series II introduced a shortened keel, propeller tunnel, five-blade propeller, revised cherry interior and higher-power engine packages; published Series II draft is about 2 ft 3 in.\n\n[Phase 8A legacy structured context]\n{\n  \"marketAvailability\": \"Common in eastern North American used markets.\",\n  \"partsAvailability\": \"Generally good for production hardware and common diesel packages; exact support depends on year and engine.\",\n  \"commonUpgrades\": [\n    \"Updated electronics\",\n    \"Improved helm seating and canvas\",\n    \"Electrical and charging upgrades\"\n  ],\n  \"comparableModels\": [\n    \"Albin 28 Tournament Express\",\n    \"Camano Troll 31\",\n    \"Rosborough RF-28\"\n  ],\n  \"ownershipEase\": \"Moderate\",\n  \"maintenanceEase\": \"Moderate\"\n}\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
     "DataConfidence": "Moderate",
@@ -49498,9 +49498,9 @@
     "ModelIdentityFamilyID": "MNSH-34",
     "StyleCode": "Trawler",
     "CoolingCode": "cooling.fresh_water",
-    "DisplacementCruiseSpeed": 7.0,
+    "DisplacementCruiseSpeed": 7,
     "DisplacementCruiseFuelBurn": 7.570823568,
-    "PlaningCruiseSpeed": 10.0,
+    "PlaningCruiseSpeed": 10,
     "PlaningCruiseFuelBurn": 15.141647136,
     "LWL": 9.2285,
     "SpecificationConfidence": {
@@ -49860,9 +49860,9 @@
     "ModelIdentityFamilyID": "MNSH-34",
     "StyleCode": "Trawler",
     "CoolingCode": "cooling.fresh_water",
-    "DisplacementCruiseSpeed": 7.0,
+    "DisplacementCruiseSpeed": 7,
     "DisplacementCruiseFuelBurn": 7.570823568,
-    "PlaningCruiseSpeed": 10.0,
+    "PlaningCruiseSpeed": 10,
     "PlaningCruiseFuelBurn": 15.141647136,
     "LWL": 9.2285,
     "SpecificationConfidence": {
@@ -50198,7 +50198,7 @@
     },
     "EnginePowerPerEngine": null,
     "RudderTypeCode": null,
-    "DisplacementCruiseSpeed": 8.0,
+    "DisplacementCruiseSpeed": 8,
     "DisplacementCruiseFuelBurn": 18.92705892,
     "PlaningCruiseSpeed": null,
     "PlaningCruiseFuelBurn": null,
@@ -50511,7 +50511,7 @@
     },
     "EnginePowerPerEngine": null,
     "RudderTypeCode": null,
-    "DisplacementCruiseSpeed": 8.0,
+    "DisplacementCruiseSpeed": 8,
     "DisplacementCruiseFuelBurn": 8.517,
     "PlaningCruiseSpeed": null,
     "PlaningCruiseFuelBurn": null,
@@ -54822,7 +54822,7 @@
     "TypicalEngineID": "Volvo Penta D6",
     "FuelCapacity": 700,
     "WaterCapacity": 270,
-    "HoldingCapacity": 120.0,
+    "HoldingCapacity": 120,
     "Berths": 6,
     "Cabins": 2,
     "Heads": 1,
@@ -55726,7 +55726,7 @@
         "Note": "Normalized from existing Shower description in the canonical model record."
       }
     },
-    "DisplacementCruiseSpeed": 7.0,
+    "DisplacementCruiseSpeed": 7,
     "DisplacementCruiseFuelBurn": 9.842,
     "PlaningCruiseSpeed": null,
     "PlaningCruiseFuelBurn": null,
@@ -56386,7 +56386,7 @@
     "SideDecksCode": "side_decks.moderate",
     "DisplacementCruiseSpeed": 7.5,
     "DisplacementCruiseFuelBurn": 3.785411784,
-    "PlaningCruiseSpeed": 11.0,
+    "PlaningCruiseSpeed": 11,
     "PlaningCruiseFuelBurn": 30.844096017777773,
     "ShowerTypeCode": "shower.present_unspecified",
     "SpecificationConfidence": {
@@ -56717,7 +56717,7 @@
     "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
     "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
     "HeadroomSalon": 1.98,
-    "HeadroomHelm": 2.0,
+    "HeadroomHelm": 2,
     "HeadroomForwardCabin": 1.9,
     "AirDraft": 3.0500000000000003,
     "CanonicalSlug": "nordic-tugs-34",
@@ -56784,7 +56784,7 @@
     "PlaningCruiseSpeed": 12.1,
     "PlaningCruiseFuelBurn": 38.611,
     "ShowerTypeCode": "shower.present_unspecified",
-    "Headroom": 2.0
+    "Headroom": 2
   },
   {
     "ManufacturerID": "NORDIC",
@@ -57113,7 +57113,7 @@
         "Note": "Same owner notes report about 9.5 knots at 1800 rpm burning 4.5 US gal/h; stored as the faster semi-displacement cruise point."
       }
     },
-    "DisplacementCruiseSpeed": 8.0,
+    "DisplacementCruiseSpeed": 8,
     "DisplacementCruiseFuelBurn": 6.0566588544,
     "PlaningCruiseSpeed": 9.5,
     "PlaningCruiseFuelBurn": 17.034353027999998,
@@ -57469,7 +57469,7 @@
     },
     "DisplacementCruiseSpeed": 7.4,
     "DisplacementCruiseFuelBurn": 5.678,
-    "PlaningCruiseSpeed": 15.0,
+    "PlaningCruiseSpeed": 15,
     "PlaningCruiseFuelBurn": 54.51,
     "ShowerTypeCode": "shower.none",
     "EnginePowerPerEngine": 283.366,
@@ -57810,7 +57810,7 @@
         "Note": "Recovered opportunistically from the same model-specific performance/test source used for v7.01 cruising-performance research."
       }
     },
-    "DisplacementCruiseSpeed": 8.0,
+    "DisplacementCruiseSpeed": 8,
     "DisplacementCruiseFuelBurn": 9.614,
     "PlaningCruiseSpeed": null,
     "PlaningCruiseFuelBurn": null,
@@ -61810,7 +61810,7 @@
     "CoolingCode": "cooling.fresh_water",
     "FlybridgeCode": "availability.no",
     "SideDecksCode": "side_decks.asymmetric",
-    "DisplacementCruiseSpeed": 7.0,
+    "DisplacementCruiseSpeed": 7,
     "DisplacementCruiseFuelBurn": 9.085,
     "PlaningCruiseSpeed": 12.8,
     "PlaningCruiseFuelBurn": 26.498,
@@ -62795,7 +62795,7 @@
     "HeadroomHead": 1.8796,
     "HeadroomForwardCabin": 1.8796,
     "ShowerTypeCode": "shower.wet_head",
-    "DisplacementCruiseSpeed": 8.0,
+    "DisplacementCruiseSpeed": 8,
     "DisplacementCruiseFuelBurn": 7.571,
     "PlaningCruiseSpeed": null,
     "PlaningCruiseFuelBurn": null,
@@ -66152,7 +66152,7 @@
     "SideDecksCode": "side_decks.moderate",
     "DisplacementCruiseSpeed": null,
     "DisplacementCruiseFuelBurn": null,
-    "PlaningCruiseSpeed": 25.0,
+    "PlaningCruiseSpeed": 25,
     "PlaningCruiseFuelBurn": 85.172,
     "ShowerTypeCode": "shower.none",
     "SpecificationConfidence": {
@@ -66231,8 +66231,8 @@
     "SideDecks": "Moderate",
     "TypicalEngineID": "Yanmar 3JH",
     "FuelCapacity": 200,
-    "WaterCapacity": 95.0,
-    "HoldingCapacity": 55.0,
+    "WaterCapacity": 95,
+    "HoldingCapacity": 55,
     "Berths": 4,
     "Cabins": 2,
     "Heads": 1,
@@ -68185,7 +68185,7 @@
     "FuelCapacityUnitStatus": "canonical_litres",
     "WaterCapacityUnitStatus": "canonical_litres",
     "HoldingCapacityUnitStatus": "canonical_litres",
-    "Headroom": 2.0,
+    "Headroom": 2,
     "RudderTypeCode": "rudder.skeg_hung",
     "FuelCapacityGal": 200,
     "WaterCapacityGal": 80,
@@ -75378,9 +75378,9 @@
     "ModelIdentityFamilyID": "MNSH-34",
     "StyleCode": "Cruiser",
     "CoolingCode": "cooling.fresh_water",
-    "DisplacementCruiseSpeed": 7.0,
+    "DisplacementCruiseSpeed": 7,
     "DisplacementCruiseFuelBurn": 7.570823568,
-    "PlaningCruiseSpeed": 10.0,
+    "PlaningCruiseSpeed": 10,
     "PlaningCruiseFuelBurn": 15.141647136,
     "SpecificationConfidence": {
       "FuelCapacity": {
@@ -75755,7 +75755,7 @@
     "ModelIdentityFamilyID": "MNSH-34",
     "StyleCode": "Trawler",
     "CoolingCode": "cooling.fresh_water",
-    "DisplacementCruiseSpeed": 7.0,
+    "DisplacementCruiseSpeed": 7,
     "DisplacementCruiseFuelBurn": 6.4,
     "PlaningCruiseSpeed": null,
     "PlaningCruiseFuelBurn": null,
@@ -77582,5 +77582,275 @@
     "ShowerTypeCode": "shower.none",
     "KeelConfigurationCode": "keel.no_keel",
     "RunningGearProtectionCode": "running_gear.exposed"
+  },
+  {
+    "ManufacturerID": "TOLLYCRAFT",
+    "Manufacturer": "Tollycraft",
+    "Model": "26 Sedan",
+    "Variant": "Flybridge Sedan",
+    "Nickname": "Tollycraft 26 Sedan",
+    "ImageURL": null,
+    "Active": false,
+    "FirstYear": 1973,
+    "LastYear": 1987,
+    "TotalBuilt": 887,
+    "Designer": null,
+    "HullType": "Modified-V",
+    "Style": "Flybridge Sedan",
+    "Construction": "Fiberglass",
+    "KeelType": null,
+    "Fuel": "Gasoline common; verify individual boat",
+    "Cooling": null,
+    "EngineConfiguration": "Single V-drive inboard common; verify individual boat",
+    "Propulsion": "Shaft",
+    "Flybridge": "Yes",
+    "AftCabin": false,
+    "SideDecks": "Wide",
+    "TypicalEngineID": null,
+    "FuelCapacity": 529.9576,
+    "WaterCapacity": 124.9186,
+    "HoldingCapacity": 37.8541,
+    "Berths": 4,
+    "Cabins": null,
+    "Heads": 1,
+    "Shower": null,
+    "Galley": null,
+    "CoastalRating": null,
+    "OffshoreRating": null,
+    "GreatLoopSuitable": null,
+    "Trailerable": null,
+    "Strengths": [
+      "Compact flybridge sedan layout with lower helm",
+      "Large cabin windows and practical cockpit",
+      "Heavy displacement for its length"
+    ],
+    "Weaknesses": [],
+    "CommonProblems": [],
+    "TypicalMission": "Compact coastal and inland cruising",
+    "AvoidIf": [],
+    "DateCreated": "2026-10-02",
+    "LastUpdated": "2026-10-02",
+    "ReviewedBy": "B-Atlas Phase 2 Data Expansion",
+    "Revision": 1,
+    "BoatModelID": "TOLL-26-SE",
+    "HullBehaviour": "Planing",
+    "Features": [
+      "Flybridge",
+      "Lower Helm",
+      "Wide Side Decks"
+    ],
+    "NormalizedFuel": null,
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Modified-V",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Cruiser",
+    "DataConfidence": "High",
+    "ResearchStatus": "Reviewed",
+    "Overview": "The Tollycraft 26 Sedan is a compact Pacific Northwest fiberglass flybridge cruiser produced from 1973 through 1987. Its unusually substantial 9,000-pound displacement, lower helm, large windows and practical cockpit made it one of Tollycraft's most successful models.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented cruising layout is practical for a couple; guest capacity and privacy vary by model."
+      },
+      "SoloHandling": {
+        "Assessment": "Mixed",
+        "Summary": "Lower-helm access and protected decks can help short-handed operation, but windage, engine count and docking equipment remain hull-specific."
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "Route fit depends on actual beam, draft and air draft; verify bridge and marina limits for the individual boat."
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "Condition, loading and actual hull configuration are decisive; this assessment reflects documented design intent rather than an offshore guarantee."
+      }
+    },
+    "TradeOffs": [
+      "Most examples use gasoline power, so operating economy differs from small diesel cruisers",
+      "A flybridge adds windage and weight high on a compact hull",
+      "Surviving boats span more than a decade of production and may differ substantially after refits"
+    ],
+    "BestFor": [
+      "Compact coastal cruising",
+      "Great Lakes and Pacific Northwest cruising",
+      "Buyers wanting both lower and upper helm stations in a small boat"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Confirm exact engine, V-drive and fuel-system configuration",
+      "Inspect window frames and surrounding structure for leakage",
+      "Inspect deck, flybridge and cockpit penetrations for moisture",
+      "Inspect shaft, rudder, steering and underwater gear",
+      "Verify tank condition and actual capacities"
+    ],
+    "BuyerQuestions": [
+      "What is the current engine and V-drive configuration?",
+      "Have the cabin windows or frames been resealed or replaced?",
+      "What fuel, water and waste tank work has been completed?",
+      "What deck or flybridge moisture repairs have been performed?"
+    ],
+    "OwnerActions": [
+      "Keep window and deck penetrations sealed",
+      "Maintain fuel, exhaust, cooling, steering and shaft systems",
+      "Document structural and machinery upgrades for future buyers"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "Window-frame update",
+        "Description": "Extruded aluminum window frames were upgraded to anodized frames in 1977.",
+        "AffectedYears": "1977 onward",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/tollycraft/26-sedan-1973-87"
+        ],
+        "Confidence": "High"
+      },
+      {
+        "Name": "Interior update",
+        "Description": "Interior decor changed from wood-grain mica to teak in 1982.",
+        "AffectedYears": "1982 onward",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/tollycraft/26-sedan-1973-87"
+        ],
+        "Confidence": "High"
+      },
+      {
+        "Name": "Powertrain configuration",
+        "Description": "Most boats were equipped with a single gasoline V-drive inboard; surviving boats must be verified individually for original or repowered machinery.",
+        "AffectedYears": "Production run",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/tollycraft/26-sedan-1973-87"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "High",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "TOLL-26-SE"
+            ],
+            "Years": {
+              "From": 1973,
+              "To": 1987
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://tollycruisers.ca/tollylife/how-many-tollycrafts/",
+            "https://www.hmy.com/yachting/powerboat-guide/tollycraft/26-sedan-1973-87"
+          ],
+          "EvidenceTypes": [
+            "Owner-club historical record",
+            "Technical reference"
+          ],
+          "Confidence": "High",
+          "Notes": "Production span and total built are supported by Canadian Tollycruisers; principal dimensions and capacities by the Powerboat Guide."
+        },
+        {
+          "Scope": "Configuration",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "TOLL-26-SE"
+            ],
+            "Years": {
+              "From": 1973,
+              "To": 1987
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/tollycraft/26-sedan-1973-87"
+          ],
+          "EvidenceTypes": [
+            "Technical reference"
+          ],
+          "Confidence": "High",
+          "Notes": "The common single gasoline V-drive configuration is not promoted to a universal model-wide fuel rule; individual boats must be verified."
+        }
+      ],
+      "UnresolvedInformation": [
+        "No universal model-wide fuel code is assigned because the source describes the gasoline V-drive as the most common configuration rather than the only configuration.",
+        "Designer attribution is not yet sourced to B-Atlas evidence standards."
+      ]
+    },
+    "EngineCount": null,
+    "ResearchNotes": "Canadian Tollycruisers reports 887 Tollycraft 26 Sedans built from 1973-1987. HMY/Powerboat Guide reports 26'8\" LOA, 10'0\" beam, 2'10\" draft, 9,000 lb displacement, 10'0\" clearance, 140 US gal fuel, 33 US gal water and 10 US gal waste. Window frames were upgraded in 1977 and the interior changed to teak in 1982. Most boats used a single 255 hp gasoline V-drive; B-Atlas therefore leaves plan-critical fuel classification unresolved for individual-boat verification.",
+    "ModelCharacter": "A compact, heavy-for-length Pacific Northwest flybridge sedan with a lower helm, broad cabin glazing and practical cruising accommodations.",
+    "DesignLineage": [
+      "Produced from 1973 through 1987.",
+      "887 examples are reported by Canadian Tollycruisers.",
+      "The 1977 window-frame and 1982 interior changes are production updates, not separate model identities."
+    ],
+    "OwnershipCharacter": "Simple conventional inboard machinery and compact dimensions can keep systems understandable, but age-related windows, tanks, wiring, deck penetrations and machinery condition should dominate purchase evaluation.",
+    "CharacterConfidence": "High",
+    "DisplacementLb": 9000,
+    "FuelCapacityGal": 140,
+    "WaterCapacityGal": 33,
+    "NormalizedHullType": "Modified-V",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "RarityConfidence": "Not rated",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "PriceConfidence": "Not rated",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "BoatFamilyCode": "boat_family.flybridge_cruiser",
+    "HullBehaviourCode": "hull_behaviour.planing",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "LOA": 8.128,
+    "Beam": 3.048,
+    "Draft": 0.8636,
+    "Displacement": 4082.3,
+    "AirDraft": 3.048,
+    "FlybridgeCode": "availability.yes",
+    "KeelConfigurationCode": null,
+    "FuelCapacityUnitStatus": "canonical_litres",
+    "WaterCapacityUnitStatus": "canonical_litres",
+    "HoldingCapacityUnitStatus": "canonical_litres",
+    "LWL": 9.5504,
+    "FuelCode": null,
+    "PlanCriticalStatus": {
+      "FuelCode": "unknown_or_configuration_dependent",
+      "EngineCount": "configuration_dependent"
+    },
+    "CanonicalSlug": "tollycraft-26-sedan",
+    "CanonicalPath": "/models/tollycraft-26-sedan/",
+    "CanonicalURL": "https://b-atlas.org/models/tollycraft-26-sedan/",
+    "StyleCode": "Cruiser",
+    "CoolingCode": null,
+    "SideDecksCode": "side_decks.wide",
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "SpecificationConfidence": {
+      "FuelCode": {
+        "Level": "High",
+        "Status": "intentionally_unknown",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/tollycraft/26-sedan-1973-87"
+        ],
+        "Note": "The source says most boats had a gasoline V-drive, not that all did. Unknown preserves non-gasoline or repowered examples."
+      },
+      "EngineCount": {
+        "Level": "High",
+        "Status": "configuration_dependent",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/tollycraft/26-sedan-1973-87"
+        ],
+        "Note": "Single inboard is the common documented arrangement but is not promoted as universal."
+      }
+    },
+    "ShowerTypeCode": null,
+    "RunningGearProtectionCode": null
   }
 ]
