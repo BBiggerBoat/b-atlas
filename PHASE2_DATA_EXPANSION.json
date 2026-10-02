@@ -396,5 +396,28 @@
       "Decide B-Atlas policy for discontinuous same-name generations using Hatteras 36 Convertible as the test case.",
       "Silverton 34 Convertible generation policy resolved and promoted as four linked canonical generation identities; Generation 1 carries two production phases."
     ]
+  },
+  "workflow": {
+    "stage": "Phase 2A — Data Expansion",
+    "effective": "2026-10-02",
+    "objective": "Expand canonical model coverage and model-specific structured data before public-page/media enrichment.",
+    "include": [
+      "boatmodels.json canonical records",
+      "model-family/generation relationships where needed",
+      "production-phase data where needed",
+      "evidence/provenance JSON",
+      "search aliases where needed for model recognition",
+      "runtime counts required by the application"
+    ],
+    "deferToLaterPhase": [
+      "static model HTML pages",
+      "manufacturer landing-page updates",
+      "sitemap additions",
+      "SEO metadata/schema work",
+      "images and media",
+      "manuals, owner-club and resource-link enrichment",
+      "social/OpenGraph enrichment"
+    ],
+    "rule": "Research quality is unchanged; only downstream publishing/enrichment work is deferred."
   }
 }
