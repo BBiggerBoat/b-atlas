@@ -1,0 +1,702 @@
+{
+  "batchId": "phase2-batch-25-sea-ray-35-39",
+  "status": "researched_complete_live",
+  "researchedAt": "2026-10-02",
+  "workflowNote": "Sea Ray nominal 35–39-foot batch. Model identity and model-specific evidence prioritized; unverified specifications remain null. Hard maximum remains 50'0\" actual published length.",
+  "models": [
+    {
+      "id": "SRAY-350-EB",
+      "model": "350 Express Bridge",
+      "fy": 1992,
+      "ly": 1994,
+      "loa": 35.3333,
+      "beam": 11.4167,
+      "draft": 3.0833,
+      "disp": 11500,
+      "air": null,
+      "fuel": 200,
+      "water": 60,
+      "hold": null,
+      "hull": "Modified-V",
+      "dead": 18,
+      "config": "Express Bridge",
+      "style": "Motor Yacht",
+      "source": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/350-express-bridge-1992-94",
+      "aliases": [
+        "Sea Ray 350 Express Bridge"
+      ]
+    },
+    {
+      "id": "SRAY-350-SLX-G1",
+      "model": "350 SLX Generation 1",
+      "fy": 2014,
+      "ly": 2020,
+      "loa": 34.5,
+      "beam": 10.5,
+      "draft": 3,
+      "disp": 11787,
+      "air": null,
+      "fuel": 160,
+      "water": 30,
+      "hold": 28,
+      "hull": "Deep-V",
+      "dead": 21,
+      "config": "SLX",
+      "style": "Bowrider",
+      "source": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/350-slx-2014-20",
+      "aliases": [
+        "Sea Ray 350 SLX Generation 1"
+      ]
+    },
+    {
+      "id": "SRAY-350-SLX-G2",
+      "model": "350 SLX Generation 2",
+      "fy": 2021,
+      "ly": null,
+      "loa": 34.5833,
+      "beam": 10.5,
+      "draft": 2.0833,
+      "disp": 13890,
+      "air": null,
+      "fuel": 177,
+      "water": 30,
+      "hold": 28,
+      "hull": "Deep-V",
+      "dead": 21,
+      "config": "SLX",
+      "style": "Bowrider",
+      "source": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/350-slx-2021-current",
+      "aliases": [
+        "Sea Ray 350 SLX Generation 2"
+      ]
+    },
+    {
+      "id": "SRAY-350-SD",
+      "model": "350 Sundancer",
+      "fy": 2013,
+      "ly": 2020,
+      "loa": 35,
+      "beam": 11.3333,
+      "draft": 3.3333,
+      "disp": 15780,
+      "air": null,
+      "fuel": 230,
+      "water": 40,
+      "hold": 28,
+      "hull": "Deep-V",
+      "dead": 20,
+      "config": "Sundancer",
+      "style": "Express Cruiser",
+      "source": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/350-sundancer-2013-20",
+      "aliases": [
+        "Sea Ray 350 Sundancer"
+      ]
+    },
+    {
+      "id": "SRAY-350-SD-CP",
+      "model": "350 Sundancer Coupe",
+      "fy": 2017,
+      "ly": 2021,
+      "loa": 35,
+      "beam": 11.3333,
+      "draft": 3.3333,
+      "disp": 18792,
+      "air": null,
+      "fuel": 214,
+      "water": 40,
+      "hold": 28,
+      "hull": "Deep-V",
+      "dead": 20,
+      "config": "Sundancer Coupe",
+      "style": "Express Cruiser",
+      "source": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/350-sundancer-coupe-2017-21",
+      "aliases": [
+        "Sea Ray 350 Sundancer Coupe"
+      ]
+    },
+    {
+      "id": "SRAY-350-370-EC",
+      "model": "350 / 370 Express Cruiser",
+      "fy": 1990,
+      "ly": 1995,
+      "loa": 39.4167,
+      "beam": 12.3333,
+      "draft": 2.4167,
+      "disp": 13100,
+      "air": null,
+      "fuel": 250,
+      "water": 70,
+      "hold": 20,
+      "hull": "Deep-V",
+      "dead": 21,
+      "config": "Express Cruiser",
+      "style": "Express Cruiser",
+      "source": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/350-370-express-cruiser-1990-95",
+      "note": "Marketed as 350 Express Cruiser in 1990–92 and 370 Express Cruiser in 1993–95; retained as one rename-chain identity.",
+      "aliases": [
+        "Sea Ray 350 / 370 Express Cruiser"
+      ]
+    },
+    {
+      "id": "SRAY-350-370-SD-G1",
+      "model": "350 / 370 Sundancer Generation 1",
+      "fy": 1990,
+      "ly": 1994,
+      "loa": 39.4167,
+      "beam": 12.3333,
+      "draft": 2.4167,
+      "disp": 13500,
+      "air": null,
+      "fuel": 250,
+      "water": 70,
+      "hold": 20,
+      "hull": "Deep-V",
+      "dead": 21,
+      "config": "Sundancer",
+      "style": "Express Cruiser",
+      "source": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/350-370-sundancer-1990-94",
+      "note": "Called 350 Sundancer in 1990–91 and 370 Sundancer in 1992–94.",
+      "aliases": [
+        "Sea Ray 350 / 370 Sundancer Generation 1"
+      ]
+    },
+    {
+      "id": "SRAY-350-370-SD-G2",
+      "model": "350 / 370 Sundancer Generation 2",
+      "fy": 2008,
+      "ly": 2016,
+      "loa": 37.5,
+      "beam": 12,
+      "draft": 3.25,
+      "disp": 18064,
+      "air": null,
+      "fuel": 225,
+      "water": 50,
+      "hold": 28,
+      "hull": "Deep-V",
+      "dead": 21,
+      "config": "Sundancer",
+      "style": "Express Cruiser",
+      "source": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/350-370-sundancer-2008-16",
+      "note": "Introduced as 350 Sundancer in 2008–09 and renamed 370 Sundancer thereafter.",
+      "aliases": [
+        "Sea Ray 350 / 370 Sundancer Generation 2"
+      ]
+    },
+    {
+      "id": "SRAY-355T-SE",
+      "model": "355T Sedan",
+      "fy": 1982,
+      "ly": 1983,
+      "loa": 36.25,
+      "beam": 12.5,
+      "draft": 2.9167,
+      "disp": 13000,
+      "air": 10.25,
+      "fuel": 270,
+      "water": 120,
+      "hold": 25,
+      "hull": "Modified-V",
+      "dead": 9,
+      "config": "Sedan",
+      "style": "Motor Yacht",
+      "source": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/355t-sedan-1982-83",
+      "aliases": [
+        "Sea Ray 355T Sedan"
+      ]
+    },
+    {
+      "id": "SRAY-36-SB",
+      "model": "36 Sedan Bridge",
+      "fy": 2007,
+      "ly": 2009,
+      "loa": 38.3333,
+      "beam": 13,
+      "draft": 3.3333,
+      "disp": 22000,
+      "air": 18,
+      "fuel": 300,
+      "water": 75,
+      "hold": 35,
+      "hull": "Modified-V",
+      "dead": 17,
+      "config": "Sedan Bridge",
+      "style": "Motor Yacht",
+      "source": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/36-sedan-bridge-2007-09",
+      "aliases": [
+        "Sea Ray 36 Sedan Bridge"
+      ]
+    },
+    {
+      "id": "SRAY-360-AC",
+      "model": "360 Aft Cabin",
+      "fy": 1983,
+      "ly": 1987,
+      "loa": 36.25,
+      "beam": 12.5,
+      "draft": 2.9167,
+      "disp": 15100,
+      "air": null,
+      "fuel": 270,
+      "water": 120,
+      "hold": 40,
+      "hull": "Modified-V",
+      "dead": 9,
+      "config": "Aft Cabin",
+      "style": "Motor Yacht",
+      "source": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/360-aft-cabin-1983-87",
+      "aliases": [
+        "Sea Ray 360 Aft Cabin"
+      ]
+    },
+    {
+      "id": "SRAY-360-SD",
+      "model": "360 Sundancer",
+      "fy": 2002,
+      "ly": 2006,
+      "loa": 39,
+      "beam": 12.5,
+      "draft": 3.0833,
+      "disp": 18500,
+      "air": 11.3333,
+      "fuel": 250,
+      "water": 55,
+      "hold": 35,
+      "hull": "Deep-V",
+      "dead": 21,
+      "config": "Sundancer",
+      "style": "Express Cruiser",
+      "source": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/360-sundancer-2002-06",
+      "aliases": [
+        "Sea Ray 360 Sundancer"
+      ]
+    },
+    {
+      "id": "SRAY-SRV360-EC",
+      "model": "SRV360 Express Cruiser",
+      "fy": 1979,
+      "ly": 1983,
+      "loa": null,
+      "beam": null,
+      "draft": null,
+      "disp": null,
+      "air": null,
+      "fuel": null,
+      "water": null,
+      "hold": null,
+      "hull": null,
+      "dead": null,
+      "config": "Express Cruiser",
+      "style": "Express Cruiser",
+      "source": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/srv360-express-cruiser-1979-83",
+      "aliases": [
+        "Sea Ray SRV360 Express Cruiser"
+      ]
+    },
+    {
+      "id": "SRAY-SRV360-SSF",
+      "model": "SRV360 Sedan Sportfish",
+      "fy": 1980,
+      "ly": 1981,
+      "loa": 38.1667,
+      "beam": 13.9167,
+      "draft": 2.5833,
+      "disp": 18400,
+      "air": null,
+      "fuel": 400,
+      "water": 100,
+      "hold": 30,
+      "hull": "Deep-V",
+      "dead": 19,
+      "config": "Sedan Sportfish",
+      "style": "Sportfisher",
+      "source": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/srv360-sedan-sportfish-1980-81",
+      "aliases": [
+        "Sea Ray SRV360 Sedan Sportfish"
+      ]
+    },
+    {
+      "id": "SRAY-370-EC",
+      "model": "370 Express Cruiser",
+      "fy": 1997,
+      "ly": 2000,
+      "loa": null,
+      "beam": null,
+      "draft": null,
+      "disp": null,
+      "air": null,
+      "fuel": null,
+      "water": null,
+      "hold": null,
+      "hull": null,
+      "dead": null,
+      "config": "Express Cruiser",
+      "style": "Express Cruiser",
+      "source": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/370-express-cruiser-1997-2000",
+      "aliases": [
+        "Sea Ray 370 Express Cruiser"
+      ]
+    },
+    {
+      "id": "SRAY-370-SB",
+      "model": "370 Sedan Bridge",
+      "fy": 1991,
+      "ly": 1997,
+      "loa": null,
+      "beam": null,
+      "draft": null,
+      "disp": null,
+      "air": null,
+      "fuel": null,
+      "water": null,
+      "hold": null,
+      "hull": "Deep-V",
+      "dead": null,
+      "config": "Sedan Bridge",
+      "style": "Motor Yacht",
+      "source": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/370-sedan-bridge-1991-97",
+      "aliases": [
+        "Sea Ray 370 Sedan Bridge"
+      ]
+    },
+    {
+      "id": "SRAY-370-SD-G1",
+      "model": "370 Sundancer Generation 1",
+      "fy": 1995,
+      "ly": 1999,
+      "loa": null,
+      "beam": null,
+      "draft": null,
+      "disp": null,
+      "air": null,
+      "fuel": null,
+      "water": null,
+      "hold": null,
+      "hull": null,
+      "dead": null,
+      "config": "Sundancer",
+      "style": "Express Cruiser",
+      "source": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/370-sundancer-1995-99",
+      "aliases": [
+        "Sea Ray 370 Sundancer Generation 1"
+      ]
+    },
+    {
+      "id": "SRAY-370-SD-G2",
+      "model": "370 Sundancer Generation 2",
+      "fy": 2022,
+      "ly": null,
+      "loa": 37.6667,
+      "beam": 12,
+      "draft": 2.5833,
+      "disp": 20800,
+      "air": 10.6667,
+      "fuel": 250,
+      "water": 46,
+      "hold": 30,
+      "hull": "Deep-V",
+      "dead": 20,
+      "config": "Sundancer",
+      "style": "Express Cruiser",
+      "source": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/370-sundancer-2022-current",
+      "aliases": [
+        "Sea Ray 370 Sundancer Generation 2"
+      ]
+    },
+    {
+      "id": "SRAY-370-SD-OB",
+      "model": "370 Sundancer Outboard",
+      "fy": 2022,
+      "ly": null,
+      "loa": null,
+      "beam": null,
+      "draft": null,
+      "disp": null,
+      "air": null,
+      "fuel": null,
+      "water": null,
+      "hold": null,
+      "hull": null,
+      "dead": null,
+      "config": "Sundancer Outboard",
+      "style": "Express Cruiser",
+      "source": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/370-sundancer-outboard-2022-current",
+      "aliases": [
+        "Sea Ray 370 Sundancer Outboard"
+      ]
+    },
+    {
+      "id": "SRAY-370-VEN",
+      "model": "370 Venture",
+      "fy": 2013,
+      "ly": 2015,
+      "loa": null,
+      "beam": null,
+      "draft": null,
+      "disp": null,
+      "air": null,
+      "fuel": null,
+      "water": null,
+      "hold": null,
+      "hull": null,
+      "dead": null,
+      "config": "Venture",
+      "style": "Express Cruiser",
+      "source": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/370-venture-2013-15",
+      "aliases": [
+        "Sea Ray 370 Venture"
+      ]
+    },
+    {
+      "id": "SRAY-370-380-AC",
+      "model": "370 / 380 Aft Cabin",
+      "fy": 1997,
+      "ly": 2001,
+      "loa": 38.1667,
+      "beam": 14.25,
+      "draft": 3.0833,
+      "disp": 23800,
+      "air": 16.3333,
+      "fuel": 300,
+      "water": 100,
+      "hold": 55,
+      "hull": "Deep-V",
+      "dead": 19.5,
+      "config": "Aft Cabin",
+      "style": "Motor Yacht",
+      "source": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/370-380-aft-cabin-1997-2001",
+      "note": "Called 370 Aft Cabin initially and 380 Aft Cabin in 2000–01.",
+      "aliases": [
+        "Sea Ray 370 / 380 Aft Cabin"
+      ]
+    },
+    {
+      "id": "SRAY-38-390-SD",
+      "model": "38 / 390 Sundancer",
+      "fy": 2006,
+      "ly": 2011,
+      "loa": null,
+      "beam": null,
+      "draft": null,
+      "disp": null,
+      "air": null,
+      "fuel": null,
+      "water": null,
+      "hold": null,
+      "hull": null,
+      "dead": null,
+      "config": "Sundancer",
+      "style": "Express Cruiser",
+      "source": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/38-390-sundancer-2006-11",
+      "aliases": [
+        "Sea Ray 38 / 390 Sundancer"
+      ]
+    },
+    {
+      "id": "SRAY-380-AC",
+      "model": "380 Aft Cabin",
+      "fy": 1989,
+      "ly": 1991,
+      "loa": null,
+      "beam": null,
+      "draft": null,
+      "disp": null,
+      "air": null,
+      "fuel": null,
+      "water": null,
+      "hold": null,
+      "hull": null,
+      "dead": null,
+      "config": "Aft Cabin",
+      "style": "Motor Yacht",
+      "source": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/380-aft-cabin-1989-91",
+      "aliases": [
+        "Sea Ray 380 Aft Cabin"
+      ]
+    },
+    {
+      "id": "SRAY-380-SD",
+      "model": "380 Sundancer",
+      "fy": 1999,
+      "ly": 2003,
+      "loa": 40.0833,
+      "beam": 13,
+      "draft": 3.3333,
+      "disp": 18300,
+      "air": null,
+      "fuel": 275,
+      "water": 70,
+      "hold": 42,
+      "hull": "Deep-V",
+      "dead": 19.5,
+      "config": "Sundancer",
+      "style": "Express Cruiser",
+      "source": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/380-sundancer-1999-2003",
+      "aliases": [
+        "Sea Ray 380 Sundancer"
+      ]
+    },
+    {
+      "id": "SRAY-390-EC",
+      "model": "390 Express Cruiser",
+      "fy": 1984,
+      "ly": 1991,
+      "loa": null,
+      "beam": null,
+      "draft": null,
+      "disp": null,
+      "air": null,
+      "fuel": null,
+      "water": null,
+      "hold": null,
+      "hull": null,
+      "dead": null,
+      "config": "Express Cruiser",
+      "style": "Express Cruiser",
+      "source": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/390-express-cruiser-1984-91",
+      "aliases": [
+        "Sea Ray 390 Express Cruiser"
+      ]
+    },
+    {
+      "id": "SRAY-390-40-MY",
+      "model": "390 / 40 Motor Yacht",
+      "fy": 2003,
+      "ly": 2007,
+      "loa": null,
+      "beam": null,
+      "draft": null,
+      "disp": null,
+      "air": null,
+      "fuel": null,
+      "water": null,
+      "hold": null,
+      "hull": null,
+      "dead": null,
+      "config": "Motor Yacht",
+      "style": "Motor Yacht",
+      "source": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/390-motor-yacht-40-motor-yacht-2003-07",
+      "note": "Continuous rename-chain identity from 390 Motor Yacht to 40 Motor Yacht.",
+      "aliases": [
+        "Sea Ray 390 / 40 Motor Yacht"
+      ]
+    },
+    {
+      "id": "SRAY-390-SB",
+      "model": "390 Sedan Bridge",
+      "fy": 2010,
+      "ly": 2010,
+      "loa": null,
+      "beam": null,
+      "draft": null,
+      "disp": null,
+      "air": null,
+      "fuel": null,
+      "water": null,
+      "hold": null,
+      "hull": null,
+      "dead": null,
+      "config": "Sedan Bridge",
+      "style": "Motor Yacht",
+      "source": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/390-sedan-bridge-2010-only",
+      "aliases": [
+        "Sea Ray 390 Sedan Bridge"
+      ]
+    },
+    {
+      "id": "SRAY-390-SSF",
+      "model": "390 Sedan Sportfish",
+      "fy": 1983,
+      "ly": 1986,
+      "loa": null,
+      "beam": null,
+      "draft": null,
+      "disp": null,
+      "air": null,
+      "fuel": null,
+      "water": null,
+      "hold": null,
+      "hull": null,
+      "dead": null,
+      "config": "Sedan Sportfish",
+      "style": "Sportfisher",
+      "source": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/390-sedan-sportfish-1983-86",
+      "aliases": [
+        "Sea Ray 390 Sedan Sportfish"
+      ]
+    },
+    {
+      "id": "SRAY-390-40-SD",
+      "model": "390 / 40 Sundancer",
+      "fy": 2004,
+      "ly": 2009,
+      "loa": null,
+      "beam": null,
+      "draft": null,
+      "disp": null,
+      "air": null,
+      "fuel": null,
+      "water": null,
+      "hold": null,
+      "hull": null,
+      "dead": null,
+      "config": "Sundancer",
+      "style": "Express Cruiser",
+      "source": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/390-sundancer-40-sundancer-2004-09",
+      "note": "Continuous rename-chain identity from 390 Sundancer to 40 Sundancer.",
+      "aliases": [
+        "Sea Ray 390 / 40 Sundancer"
+      ]
+    }
+  ],
+  "identityDecisions": [
+    {
+      "scope": "350 SLX",
+      "decision": "two linked generations",
+      "models": [
+        "SRAY-350-SLX-G1",
+        "SRAY-350-SLX-G2"
+      ],
+      "rationale": "HMY catalogs 2014–20 and 2021–current separately, with changes in dimensions, weight and tankage."
+    },
+    {
+      "scope": "350/370 rename chains",
+      "decision": "preserve continuous renamed identities",
+      "models": [
+        "SRAY-350-370-EC",
+        "SRAY-350-370-SD-G1",
+        "SRAY-350-370-SD-G2"
+      ],
+      "rationale": "HMY explicitly documents name changes within continuous production runs."
+    },
+    {
+      "scope": "370 Sundancer",
+      "decision": "separate historical and current generations plus outboard variant",
+      "models": [
+        "SRAY-370-SD-G1",
+        "SRAY-370-SD-G2",
+        "SRAY-370-SD-OB"
+      ],
+      "rationale": "The 1995–99 and 2022-current boats are discontinuous generations; the outboard is separately marketed."
+    },
+    {
+      "scope": "370/380 Aft Cabin",
+      "decision": "one rename-chain identity",
+      "models": [
+        "SRAY-370-380-AC"
+      ],
+      "rationale": "HMY documents the same model as 370 Aft Cabin before being renamed 380 Aft Cabin in 2000–01."
+    },
+    {
+      "scope": "390/40 families",
+      "decision": "preserve rename chains",
+      "models": [
+        "SRAY-390-40-MY",
+        "SRAY-390-40-SD"
+      ],
+      "rationale": "Continuous models renamed from 390 to 40 are retained as one canonical identity rather than duplicated."
+    }
+  ],
+  "unknownPolicy": "Missing specifications remain null and do not eliminate the model.",
+  "sizePolicy": "Hard maximum actual published length remains 50.0 ft."
+}
