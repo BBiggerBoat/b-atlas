@@ -4,7 +4,7 @@
   "lastUpdated": "2026-10-02",
   "purpose": "Lean runtime manifest for the B-Atlas primary site after repository hygiene consolidation.",
   "authoritativeModelRecord": "boatmodels.json",
-  "modelCount": 299,
+  "modelCount": 360,
   "principles": [
     "boatmodels.json is the sole active source of current model-wide specifications.",
     "Secondary data may contain identities, taxonomies, production-phase overrides, evidence, provenance, resources, or community proposals, but not a competing current model specification database.",
@@ -39,7 +39,9 @@
     "data/taxonomy/style-families.json",
     "data/i18n/en.json",
     "data/locale-config.json",
-    "data/imageassets.json"
+    "data/imageassets.json",
+    "data/phase2-live-models.json",
+    "data/phase2-live-aliases.json"
   ],
   "knowledgeLayer": [
     "knowledge/data/knowledgecards.json",
