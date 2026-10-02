@@ -181,7 +181,7 @@
       "AssertionState": "supports",
       "SourceValue": 22000,
       "SourceUnit": "lb",
-      "NormalizedCandidateValue": 9979.0,
+      "NormalizedCandidateValue": 9979,
       "CanonicalUnit": "kg",
       "Confidence": "high",
       "Applicability": {
@@ -419,7 +419,7 @@
       "AssertionState": "supports",
       "SourceValue": 22000,
       "SourceUnit": "lb",
-      "NormalizedCandidateValue": 9979.0,
+      "NormalizedCandidateValue": 9979,
       "CanonicalUnit": "kg",
       "Confidence": "moderate",
       "Applicability": {
@@ -1215,6 +1215,261 @@
       },
       "Notes": null,
       "CapturedAt": "2026-09-02"
+    },
+    {
+      "EvidenceAssertionID": "TOLL-26-first",
+      "BoatModelID": "TOLL-26-SE",
+      "FieldID": "FirstYear",
+      "SourceRef": "https://tollycruisers.ca/tollylife/how-many-tollycrafts/",
+      "AssertionState": "supports",
+      "SourceValue": "1973",
+      "SourceUnit": null,
+      "NormalizedCandidateValue": 1973,
+      "CanonicalUnit": null,
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model"
+      },
+      "Notes": null,
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "TOLL-26-last",
+      "BoatModelID": "TOLL-26-SE",
+      "FieldID": "LastYear",
+      "SourceRef": "https://tollycruisers.ca/tollylife/how-many-tollycrafts/",
+      "AssertionState": "supports",
+      "SourceValue": "1987",
+      "SourceUnit": null,
+      "NormalizedCandidateValue": 1987,
+      "CanonicalUnit": null,
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model"
+      },
+      "Notes": null,
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "TOLL-26-built",
+      "BoatModelID": "TOLL-26-SE",
+      "FieldID": "TotalBuilt",
+      "SourceRef": "https://tollycruisers.ca/tollylife/how-many-tollycrafts/",
+      "AssertionState": "supports",
+      "SourceValue": 887,
+      "SourceUnit": null,
+      "NormalizedCandidateValue": 887,
+      "CanonicalUnit": null,
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model"
+      },
+      "Notes": null,
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "TOLL-26-loa",
+      "BoatModelID": "TOLL-26-SE",
+      "FieldID": "LOA",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/26-sedan-1973-87",
+      "AssertionState": "supports",
+      "SourceValue": "26 ft 8 in",
+      "SourceUnit": "ft_in",
+      "NormalizedCandidateValue": 8.128,
+      "CanonicalUnit": "m",
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model"
+      },
+      "Notes": null,
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "TOLL-26-beam",
+      "BoatModelID": "TOLL-26-SE",
+      "FieldID": "Beam",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/26-sedan-1973-87",
+      "AssertionState": "supports",
+      "SourceValue": "10 ft 0 in",
+      "SourceUnit": "ft_in",
+      "NormalizedCandidateValue": 3.048,
+      "CanonicalUnit": "m",
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model"
+      },
+      "Notes": null,
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "TOLL-26-draft",
+      "BoatModelID": "TOLL-26-SE",
+      "FieldID": "Draft",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/26-sedan-1973-87",
+      "AssertionState": "supports",
+      "SourceValue": "2 ft 10 in",
+      "SourceUnit": "ft_in",
+      "NormalizedCandidateValue": 0.8636,
+      "CanonicalUnit": "m",
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model"
+      },
+      "Notes": null,
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "TOLL-26-disp",
+      "BoatModelID": "TOLL-26-SE",
+      "FieldID": "Displacement",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/26-sedan-1973-87",
+      "AssertionState": "supports",
+      "SourceValue": 9000,
+      "SourceUnit": "lb",
+      "NormalizedCandidateValue": 4082.3,
+      "CanonicalUnit": "kg",
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model"
+      },
+      "Notes": null,
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "TOLL-26-air",
+      "BoatModelID": "TOLL-26-SE",
+      "FieldID": "AirDraft",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/26-sedan-1973-87",
+      "AssertionState": "supports",
+      "SourceValue": "10 ft 0 in",
+      "SourceUnit": "ft_in",
+      "NormalizedCandidateValue": 3.048,
+      "CanonicalUnit": "m",
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model"
+      },
+      "Notes": null,
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "TOLL-26-water",
+      "BoatModelID": "TOLL-26-SE",
+      "FieldID": "WaterCapacity",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/26-sedan-1973-87",
+      "AssertionState": "supports",
+      "SourceValue": 33,
+      "SourceUnit": "us_gal",
+      "NormalizedCandidateValue": 124.9186,
+      "CanonicalUnit": "L",
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model"
+      },
+      "Notes": null,
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "TOLL-26-fuelcap",
+      "BoatModelID": "TOLL-26-SE",
+      "FieldID": "FuelCapacity",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/26-sedan-1973-87",
+      "AssertionState": "supports",
+      "SourceValue": 140,
+      "SourceUnit": "us_gal",
+      "NormalizedCandidateValue": 529.9576,
+      "CanonicalUnit": "L",
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model"
+      },
+      "Notes": null,
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "TOLL-26-waste",
+      "BoatModelID": "TOLL-26-SE",
+      "FieldID": "HoldingCapacity",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/26-sedan-1973-87",
+      "AssertionState": "supports",
+      "SourceValue": 10,
+      "SourceUnit": "us_gal",
+      "NormalizedCandidateValue": 37.8541,
+      "CanonicalUnit": "L",
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model"
+      },
+      "Notes": null,
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "TOLL-26-hull",
+      "BoatModelID": "TOLL-26-SE",
+      "FieldID": "HullBehaviourCode",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/26-sedan-1973-87",
+      "AssertionState": "supports",
+      "SourceValue": "Modified-V, 4° aft deadrise",
+      "SourceUnit": null,
+      "NormalizedCandidateValue": "hull_behaviour.planing",
+      "CanonicalUnit": null,
+      "Confidence": "medium",
+      "Applicability": {
+        "scope": "model"
+      },
+      "Notes": null,
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "TOLL-26-drive",
+      "BoatModelID": "TOLL-26-SE",
+      "FieldID": "MechanicalPropulsionCode",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/26-sedan-1973-87",
+      "AssertionState": "supports",
+      "SourceValue": "single V-drive inboard common",
+      "SourceUnit": null,
+      "NormalizedCandidateValue": "mechanical_propulsion.shaft",
+      "CanonicalUnit": null,
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model"
+      },
+      "Notes": null,
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "TOLL-26-window",
+      "BoatModelID": "TOLL-26-SE",
+      "FieldID": "ModelVariation",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/26-sedan-1973-87",
+      "AssertionState": "context_only",
+      "SourceValue": "anodized window frames from 1977",
+      "SourceUnit": null,
+      "NormalizedCandidateValue": null,
+      "CanonicalUnit": null,
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model"
+      },
+      "Notes": null,
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "TOLL-26-interior",
+      "BoatModelID": "TOLL-26-SE",
+      "FieldID": "ModelVariation",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/26-sedan-1973-87",
+      "AssertionState": "context_only",
+      "SourceValue": "teak interior from 1982",
+      "SourceUnit": null,
+      "NormalizedCandidateValue": null,
+      "CanonicalUnit": null,
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model"
+      },
+      "Notes": null,
+      "CapturedAt": "2026-10-02"
     }
   ]
 }
