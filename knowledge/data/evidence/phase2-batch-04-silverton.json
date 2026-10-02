@@ -1,0 +1,115 @@
+{
+  "batchId": "phase2-batch-04-silverton",
+  "schemaVersion": "1.4",
+  "validatedAt": "2026-10-02",
+  "assertions": [
+    {
+      "EvidenceAssertionID": "SILV-34-G1-P1",
+      "BoatModelID": "SILV-34-CV-G1",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/silverton/34-convertible-1978-82",
+      "AssertionState": "supports",
+      "SourceValue": "1978–82; 34 ft 0 in LOA; 12 ft 6 in beam; 3 ft 1 in draft; 12,500 lb; 220 gal fuel; 40 gal water; 20 gal waste; 11 ft 6 in clearance; 15° aft deadrise",
+      "SourceUnit": null,
+      "NormalizedCandidateValue": null,
+      "CanonicalUnit": null,
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "production_phase",
+        "startYear": 1978,
+        "endYear": 1982
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "SILV-34-G1-P2",
+      "BoatModelID": "SILV-34-CV-G1",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/silverton/34-convertible-1983-88",
+      "AssertionState": "supports",
+      "SourceValue": "1983–88 update uses the same solid-fiberglass hull as its predecessor; 34 ft 0 in LOA; 12 ft 6 in beam; 3 ft 1 in draft; 12,500 lb; 250 gal fuel; 40 gal water; 20 gal waste; 13 ft 3 in clearance; 15° aft deadrise",
+      "SourceUnit": null,
+      "NormalizedCandidateValue": null,
+      "CanonicalUnit": null,
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "production_phase",
+        "startYear": 1983,
+        "endYear": 1988
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "SILV-34-G1-1983-CONFLICT",
+      "BoatModelID": "SILV-34-CV-G1",
+      "FieldID": "ProductionPhaseBoundary",
+      "SourceRef": "https://cdn.denisonyachtsales.com/boat-guide-pdfs/Silverton%2034%20Convertible%20%281978-83%29.pdf",
+      "AssertionState": "conflicts",
+      "SourceValue": "2016 PowerBoat Guide labels the original Silverton 34 Convertible 1978–83, conflicting with the current archive split of 1978–82 and 1983–88",
+      "SourceUnit": null,
+      "NormalizedCandidateValue": null,
+      "CanonicalUnit": null,
+      "Confidence": "medium",
+      "Applicability": {
+        "scope": "boundary_year",
+        "startYear": 1983,
+        "endYear": 1983
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "SILV-34-G2",
+      "BoatModelID": "SILV-34-CV-G2",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/silverton/34-convertible-1989-90",
+      "AssertionState": "supports",
+      "SourceValue": "1989–90; 34 ft 6 in LOA; 12 ft 7 in beam; 3 ft 2 in draft; 13,500 lb; 300 gal fuel; 40 gal water; 28 gal waste; 13 ft 5 in clearance; 17° aft deadrise",
+      "SourceUnit": null,
+      "NormalizedCandidateValue": null,
+      "CanonicalUnit": null,
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1989,
+        "endYear": 1990
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "SILV-34-G3",
+      "BoatModelID": "SILV-34-CV-G3",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/silverton/34-convertible-1991-95",
+      "AssertionState": "supports",
+      "SourceValue": "1991–95; 34 ft 6 in LOA; 12 ft 11 in beam; 2 ft 11 in draft; 18,000 lb; 300 gal fuel; 84 gal water; 28 gal waste; 14 ft 11 in clearance; 17° aft deadrise; optional two-stateroom floorplan",
+      "SourceUnit": null,
+      "NormalizedCandidateValue": null,
+      "CanonicalUnit": null,
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1991,
+        "endYear": 1995
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "SILV-34-G4",
+      "BoatModelID": "SILV-34-CV-G4",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/silverton/34-convertible-2004-06",
+      "AssertionState": "supports",
+      "SourceValue": "2004–06; 37 ft 7 in LOA; 13 ft 10 in beam; 3 ft 3 in draft; 18,550 lb; 286 gal fuel; 94 gal water; 37 gal waste; 12 ft 7 in clearance; 12° aft deadrise; two-stateroom layout",
+      "SourceUnit": null,
+      "NormalizedCandidateValue": null,
+      "CanonicalUnit": null,
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 2004,
+        "endYear": 2006
+      },
+      "CapturedAt": "2026-10-02"
+    }
+  ]
+}
