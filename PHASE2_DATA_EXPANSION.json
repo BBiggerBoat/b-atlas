@@ -1,0 +1,137 @@
+{
+  "schema": "batlas-phase2-expansion-queue-v1",
+  "created": "2026-10-02",
+  "purpose": "Prioritized manufacturer/model-family research queue for Phase 2 data expansion. Candidates are not canonical models until researched and promoted.",
+  "rules": [
+    "Known undesirable information may eliminate a listing; missing information must not.",
+    "Do not split model-year changes into separate canonical models when production phases can represent the change.",
+    "Create distinct canonical identities only for materially distinct marketed models, layouts, hulls, or configurations.",
+    "Source identity and production years before researching advanced specifications.",
+    "Prefer manufacturer/owner-club archives and original brochures over secondary summaries."
+  ],
+  "wave1": [
+    {
+      "manufacturer": "Chris-Craft",
+      "manufacturerCode": "CHCR",
+      "currentCanonicalModels": 0,
+      "priority": "high",
+      "candidateFamilies": [
+        "31 Commander",
+        "35 Commander",
+        "36 Commander / Sports Cruiser",
+        "38 Commander",
+        "41 Commander",
+        "42 Commander",
+        "47 Commander",
+        "350 Catalina",
+        "381 Catalina",
+        "410 Commander"
+      ],
+      "notes": "Commander coverage gives the largest historical-recognition gain first; Catalina/late Commander families follow.",
+      "sources": [
+        "https://www.commanderclub.com/",
+        "https://www.hmy.com/yachting/powerboat-guide/chris-craft"
+      ]
+    },
+    {
+      "manufacturer": "Hatteras",
+      "manufacturerCode": "HATT",
+      "currentCanonicalModels": 0,
+      "priority": "high",
+      "candidateFamilies": [
+        "32 Flybridge Fisherman",
+        "32 Sport Fisherman",
+        "36 Convertible",
+        "37 Convertible",
+        "38 Convertible",
+        "40 Double Cabin / Motor Yacht",
+        "41 Convertible",
+        "42 LRC",
+        "42 Convertible",
+        "43 Double Cabin",
+        "43 Motor Yacht"
+      ],
+      "notes": "Series I/II changes are research candidates for production phases unless identity evidence requires separation.",
+      "sources": [
+        "https://www.samsmarine.com/brochures/",
+        "https://www.hmy.com/yachting/powerboat-guide/hatteras"
+      ]
+    },
+    {
+      "manufacturer": "Silverton",
+      "manufacturerCode": "SILV",
+      "currentCanonicalModels": 4,
+      "priority": "high",
+      "candidateFamilies": [
+        "31 Convertible",
+        "310 Express",
+        "312 Sedan",
+        "34 Convertible",
+        "34 Express",
+        "34 Sedan",
+        "35 / 351 Sedan",
+        "36 / 362 Sedan Cruiser",
+        "37 Convertible",
+        "38 Express",
+        "38 Convertible",
+        "40 Convertible",
+        "41 Convertible",
+        "41 Aft Cabin",
+        "42 Convertible",
+        "43 Motor Yacht",
+        "43 Sport Bridge"
+      ],
+      "notes": "Multiple year ranges under the same model name should be evaluated as production phases before creating duplicate identities.",
+      "sources": [
+        "https://www.hmy.com/yachting/powerboat-guide/silverton"
+      ]
+    },
+    {
+      "manufacturer": "Tollycraft",
+      "manufacturerCode": "TOLL",
+      "currentCanonicalModels": 2,
+      "priority": "high",
+      "candidateFamilies": [
+        "24 Royal Express",
+        "26 Sedan",
+        "30 Sport Sedan",
+        "34 Sundeck",
+        "40 Sundeck",
+        "43 Motor Yacht",
+        "44 Cockpit Motor Yacht",
+        "44 Sundeck",
+        "48 Cockpit Motor Yacht",
+        "53 Pilothouse"
+      ],
+      "notes": "34 Sport Sedan and 37 Sedan already exist; fill the high-recognition cruising families around them.",
+      "sources": [
+        "https://rabbetboats.com/guides/trawlers/tollycraft"
+      ]
+    },
+    {
+      "manufacturer": "Trojan",
+      "manufacturerCode": "TROJ",
+      "currentCanonicalModels": 1,
+      "priority": "high",
+      "candidateFamilies": [
+        "F-26 Express",
+        "28 Sedan",
+        "F-30 Express",
+        "F-30 Sport Cruiser",
+        "F-32 Sedan",
+        "F-36 Convertible",
+        "10 Meter Express",
+        "10 Meter Sedan",
+        "11 Meter Express",
+        "11 Meter Sedan",
+        "12 Meter Convertible",
+        "12 Meter Motor Yacht"
+      ],
+      "notes": "F-36 Tri-Cabin already exists. F-32 is high priority because of its long production run and high production volume.",
+      "sources": [
+        "https://www.trojanboat.com/history-part-ii.html",
+        "https://www.hmy.com/yachting/powerboat-guide/trojan"
+      ]
+    }
+  ]
+}
