@@ -1,0 +1,101 @@
+{
+  "batchId": "phase2-batch-52-chaparral-35-39",
+  "schemaVersion": "1.4",
+  "validatedAt": "2026-10-02",
+  "assertions": [
+    {
+      "EvidenceAssertionID": "CHAP-350-SIG-0109",
+      "BoatModelID": "CHAP-350-SIG-0109",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/chaparral/350-signature-2001-09",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 2001,
+        "LastYear": 2009,
+        "LOAFt": 37,
+        "BeamFt": 11.8333,
+        "DraftFt": 2.75,
+        "DisplacementLb": 15000,
+        "AirDraftFt": null,
+        "FuelCapacityGal": 240,
+        "WaterCapacityGal": 40,
+        "HoldingCapacityGal": 28,
+        "HullType": "Modified-V",
+        "DeadriseAftDeg": 18
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 2001,
+        "endYear": 2009
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "CHAP-350-SIG-1013",
+      "BoatModelID": "CHAP-350-SIG-1013",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.boatingworld.com/boats/chaparral-boats/2013-chaparral-350-signature-axius",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 2010,
+        "LastYear": 2013,
+        "LOAFt": 35,
+        "BeamFt": 11.25,
+        "DraftFt": 2.75,
+        "DisplacementLb": 13400,
+        "AirDraftFt": 11.1667,
+        "FuelCapacityGal": 159,
+        "WaterCapacityGal": 45,
+        "HoldingCapacityGal": 28,
+        "HullType": "Modified-V",
+        "DeadriseAftDeg": 20
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 2010,
+        "endYear": 2013
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "CHAP-370-SIG",
+      "BoatModelID": "CHAP-370-SIG",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.boatingworld.com/boats/chaparral-boats/2012-chaparral-370-signature-axius",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 2010,
+        "LastYear": 2015,
+        "LOAFt": 37,
+        "BeamFt": 11.8333,
+        "DraftFt": null,
+        "DisplacementLb": 16500,
+        "AirDraftFt": 11.1667,
+        "FuelCapacityGal": 240,
+        "WaterCapacityGal": 40,
+        "HoldingCapacityGal": 28,
+        "HullType": "Modified-V",
+        "DeadriseAftDeg": null
+      },
+      "Confidence": "medium",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 2010,
+        "endYear": 2015
+      },
+      "CapturedAt": "2026-10-02"
+    }
+  ],
+  "sourceNotes": [
+    {
+      "BoatModelID": "CHAP-350-SIG-1013",
+      "note": "Working 2010–13 range. 2013 Chaparral owner manual confirms 350 Signature remained in the Signature line alongside 370; 2013 published specs provide 35'0\" LOA, 11'3\" beam, 13,400 lb, 159/45/28 gal capacities and 20° deadrise."
+    },
+    {
+      "BoatModelID": "CHAP-370-SIG",
+      "note": "Working 2010–15 range supported by 2010–14 Boating World records and a documented 2015 example. Draft/deadrise left null pending primary-spec confirmation."
+    }
+  ]
+}
