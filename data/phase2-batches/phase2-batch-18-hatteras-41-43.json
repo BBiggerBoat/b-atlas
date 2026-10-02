@@ -1,0 +1,439 @@
+{
+  "batchId": "phase2-batch-18-hatteras-41-43",
+  "status": "researched_complete_live",
+  "researchedAt": "2026-10-02",
+  "workflowNote": "Standalone Phase 2A batch, published through data/phase2-live-models.json and live aliases.",
+  "models": [
+    {
+      "BoatModelID": "HATT-41-CV-G1",
+      "Manufacturer": "Hatteras",
+      "Model": "41 Convertible Generation 1",
+      "FirstYear": 1964,
+      "LastYear": 1970,
+      "LOAFt": 40.75,
+      "BeamFt": 14,
+      "DraftFt": 2.9167,
+      "DisplacementLb": 23000,
+      "AirDraftFt": 13.5,
+      "FuelCapacityGal": 400,
+      "WaterCapacityGal": 150,
+      "HoldingCapacityGal": null,
+      "HullType": "Modified-V",
+      "Fuel": "Gasoline or Diesel depending configuration",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin inboards",
+      "TypicalEngine": "300 hp gasoline standard; GM 8V53N 283 hp diesels common",
+      "PlaningCruiseSpeedKt": 15.5,
+      "Configuration": "Convertible",
+      "Style": "Sportfisher",
+      "AftCabin": false,
+      "aliases": [
+        "Hatteras 41 Convertible 1964-70",
+        "Hatteras 41 Convertible Gen 1"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/hatteras/41-convertible-1964-70",
+      "identityNote": "Source notes an earlier 1960–63 41 Convertible predecessor, but lacks separate model-specific specifications; predecessor remains unresolved rather than inferred."
+    },
+    {
+      "BoatModelID": "HATT-41-CV-G2",
+      "Manufacturer": "Hatteras",
+      "Model": "41 Convertible Generation 2",
+      "FirstYear": 1986,
+      "LastYear": 1991,
+      "LOAFt": 41.75,
+      "BeamFt": 14.25,
+      "DraftFt": 4.3333,
+      "DisplacementLb": 35400,
+      "AirDraftFt": 13.75,
+      "FuelCapacityGal": 500,
+      "WaterCapacityGal": 150,
+      "HoldingCapacityGal": 50,
+      "HullType": "Modified-V",
+      "Fuel": "Diesel",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin diesel inboards",
+      "TypicalEngine": "Detroit 6-71 465 hp or 6V92 535 hp diesels",
+      "PlaningCruiseSpeedKt": 22.5,
+      "Configuration": "Convertible",
+      "Style": "Sportfisher",
+      "AftCabin": false,
+      "productionPhases": [
+        {
+          "startYear": 1986,
+          "endYear": 1986,
+          "FuelCapacityGal": 400
+        },
+        {
+          "startYear": 1987,
+          "endYear": 1991,
+          "FuelCapacityGal": 500
+        },
+        {
+          "startYear": 1986,
+          "endYear": 1988,
+          "layout": "Original two-stateroom / optional single-stateroom arrangements"
+        },
+        {
+          "startYear": 1989,
+          "endYear": 1991,
+          "layout": "Revised two-stateroom plan with galley moved to starboard"
+        }
+      ],
+      "aliases": [
+        "Hatteras 41 Convertible 1986-91",
+        "Hatteras 41 Convertible Gen 2"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/hatteras/41-convertible-1986-91"
+    },
+    {
+      "BoatModelID": "HATT-42-CMY",
+      "Manufacturer": "Hatteras",
+      "Model": "42 Cockpit Motor Yacht",
+      "FirstYear": 1993,
+      "LastYear": 1997,
+      "LOAFt": 42.8333,
+      "BeamFt": 13.5833,
+      "DraftFt": 4.75,
+      "DisplacementLb": 41000,
+      "AirDraftFt": 15.75,
+      "FuelCapacityGal": 375,
+      "WaterCapacityGal": 115,
+      "HoldingCapacityGal": 60,
+      "HullType": "Modified-V",
+      "Fuel": "Diesel",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin diesel inboards",
+      "TypicalEngine": "Caterpillar 375 hp diesels",
+      "PlaningCruiseSpeedKt": 17.5,
+      "Configuration": "Cockpit Motor Yacht",
+      "Style": "Motor Yacht",
+      "AftCabin": true,
+      "aliases": [
+        "Hatteras 42 Cockpit Motor Yacht",
+        "Hatteras 42 Cockpit MY"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/hatteras/42-cockpit-motor-yacht-1993-97"
+    },
+    {
+      "BoatModelID": "HATT-42-CV",
+      "Manufacturer": "Hatteras",
+      "Model": "42 Convertible",
+      "FirstYear": 1971,
+      "LastYear": 1978,
+      "LOAFt": 42.6667,
+      "BeamFt": 13.8333,
+      "DraftFt": 3.4167,
+      "DisplacementLb": 31000,
+      "AirDraftFt": 13.25,
+      "FuelCapacityGal": 400,
+      "WaterCapacityGal": 150,
+      "HoldingCapacityGal": null,
+      "HullType": "Modified-V",
+      "Fuel": "Diesel",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin diesel inboards",
+      "TypicalEngine": "GM 6-71TI or Cummins VT903 diesels",
+      "PlaningCruiseSpeedKt": 18.5,
+      "Configuration": "Convertible",
+      "Style": "Sportfisher",
+      "AftCabin": false,
+      "productionPhases": [
+        {
+          "startYear": 1971,
+          "endYear": 1976,
+          "layout": "Original flybridge and galley arrangement"
+        },
+        {
+          "startYear": 1977,
+          "endYear": 1978,
+          "changes": [
+            "Restyled flybridge",
+            "Rearranged galley with refrigerator moved forward"
+          ]
+        }
+      ],
+      "aliases": [
+        "Hatteras 42 Convertible"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/hatteras/42-convertible-1971-78"
+    },
+    {
+      "BoatModelID": "HATT-42-LRC-MK1",
+      "Manufacturer": "Hatteras",
+      "Model": "42 LRC MK I",
+      "FirstYear": 1976,
+      "LastYear": 1979,
+      "LOAFt": 42.5,
+      "LWLFt": 38,
+      "BeamFt": 14.5,
+      "DraftFt": 3.8333,
+      "DisplacementLb": 35000,
+      "AirDraftFt": 13.5,
+      "FuelCapacityGal": 700,
+      "WaterCapacityGal": 220,
+      "HoldingCapacityGal": 50,
+      "HullType": "Displacement",
+      "Fuel": "Diesel",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin diesel inboards",
+      "TypicalEngine": "Twin GM 4-53 112 hp diesels",
+      "DisplacementCruiseSpeedKt": 7.5,
+      "Configuration": "Long Range Cruiser",
+      "Style": "Trawler / LRC",
+      "AftCabin": true,
+      "aliases": [
+        "Hatteras 42 LRC MK I",
+        "Hatteras 42 LRC Mark I",
+        "Hatteras 42 Long Range Cruiser MK I"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/hatteras/42-lrc-mk-i-1976-79"
+    },
+    {
+      "BoatModelID": "HATT-42-LRC-MK2",
+      "Manufacturer": "Hatteras",
+      "Model": "42 LRC MK II",
+      "FirstYear": 1980,
+      "LastYear": 1985,
+      "LOAFt": 42.5,
+      "LWLFt": 38,
+      "BeamFt": 14.5,
+      "DraftFt": 3.8333,
+      "DisplacementLb": 35000,
+      "AirDraftFt": 13.5,
+      "FuelCapacityGal": 755,
+      "WaterCapacityGal": 220,
+      "HoldingCapacityGal": 80,
+      "HullType": "Displacement",
+      "Fuel": "Diesel",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin diesel inboards",
+      "TypicalEngine": "Twin GM 4-53 112 hp diesels",
+      "DisplacementCruiseSpeedKt": 7.5,
+      "Configuration": "Long Range Cruiser",
+      "Style": "Trawler / LRC",
+      "AftCabin": true,
+      "TotalBuilt": 29,
+      "aliases": [
+        "Hatteras 42 LRC MK II",
+        "Hatteras 42 LRC Mark II",
+        "Hatteras 42 Long Range Cruiser MK II"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/hatteras/42-lrc-mk-ii-1980-85",
+      "identityNote": "Widebody successor to MK I with full-width aft deck, extended salon, larger flybridge and queen master berth."
+    },
+    {
+      "BoatModelID": "HATT-43-CV-G1",
+      "Manufacturer": "Hatteras",
+      "Model": "43 Convertible Generation 1",
+      "FirstYear": 1979,
+      "LastYear": 1984,
+      "LOAFt": 43.6667,
+      "BeamFt": 14.5,
+      "DraftFt": 4.1667,
+      "DisplacementLb": 41000,
+      "AirDraftFt": 14.25,
+      "FuelCapacityGal": 470,
+      "WaterCapacityGal": 165,
+      "HoldingCapacityGal": 30,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 11,
+      "Fuel": "Diesel",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin diesel inboards",
+      "TypicalEngine": "Detroit 6V92 450–500 hp diesels",
+      "PlaningCruiseSpeedKt": 19,
+      "Configuration": "Convertible",
+      "Style": "Sportfisher",
+      "AftCabin": false,
+      "aliases": [
+        "Hatteras 43 Convertible 1979-84",
+        "Hatteras 43 Convertible Gen 1"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/hatteras/43-convertible-1979-84"
+    },
+    {
+      "BoatModelID": "HATT-43-CV-G2",
+      "Manufacturer": "Hatteras",
+      "Model": "43 Convertible Generation 2",
+      "FirstYear": 1991,
+      "LastYear": 1998,
+      "LOAFt": 43.1667,
+      "BeamFt": 14.25,
+      "DraftFt": 4.6667,
+      "DisplacementLb": 40000,
+      "AirDraftFt": 12.3333,
+      "FuelCapacityGal": 500,
+      "WaterCapacityGal": 154,
+      "HoldingCapacityGal": 50,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 10,
+      "Fuel": "Diesel",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin diesel inboards",
+      "TypicalEngine": "Detroit 6V92 535 hp diesels",
+      "PlaningCruiseSpeedKt": 23,
+      "Configuration": "Convertible",
+      "Style": "Sportfisher",
+      "AftCabin": false,
+      "aliases": [
+        "Hatteras 43 Convertible 1991-98",
+        "Hatteras 43 Convertible Gen 2"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/hatteras/43-convertible-1991-98"
+    },
+    {
+      "BoatModelID": "HATT-43-DC",
+      "Manufacturer": "Hatteras",
+      "Model": "43 Double Cabin",
+      "FirstYear": 1971,
+      "LastYear": 1984,
+      "LOAFt": 43.0833,
+      "BeamFt": 14,
+      "DraftFt": 3.4167,
+      "DisplacementLb": 34000,
+      "AirDraftFt": 17.8333,
+      "FuelCapacityGal": 375,
+      "WaterCapacityGal": 130,
+      "HoldingCapacityGal": null,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 8,
+      "Fuel": "Diesel",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin diesel inboards",
+      "TypicalEngine": "GM 6-71N 285 hp; turbo 390 hp variants",
+      "PlaningCruiseSpeedKt": 14,
+      "Configuration": "Double Cabin Motor Yacht",
+      "Style": "Motor Yacht",
+      "AftCabin": true,
+      "productionPhases": [
+        {
+          "startYear": 1971,
+          "endYear": 1978,
+          "layout": "Original twin-berth aft cabin, galley down"
+        },
+        {
+          "startYear": 1979,
+          "endYear": 1980,
+          "layout": "Double aft berth and salon dinette"
+        },
+        {
+          "startYear": 1981,
+          "endYear": 1984,
+          "layout": "Three-stateroom option available"
+        }
+      ],
+      "aliases": [
+        "Hatteras 43 Double Cabin",
+        "Hatteras 43 DC"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/hatteras/43-double-cabin-1971-84"
+    },
+    {
+      "BoatModelID": "HATT-43-MY",
+      "Manufacturer": "Hatteras",
+      "Model": "43 Motor Yacht",
+      "FirstYear": 1985,
+      "LastYear": 1987,
+      "LOAFt": 43.0833,
+      "BeamFt": 14,
+      "DraftFt": 3.4167,
+      "DisplacementLb": 34500,
+      "AirDraftFt": 16.5833,
+      "FuelCapacityGal": 375,
+      "WaterCapacityGal": 130,
+      "HoldingCapacityGal": 90,
+      "HullType": "Modified-V",
+      "Fuel": "Diesel",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin diesel inboards",
+      "TypicalEngine": "Caterpillar 375 hp; optional Detroit 6-71 465 hp",
+      "PlaningCruiseSpeedKt": 16.5,
+      "Configuration": "Motor Yacht",
+      "Style": "Motor Yacht",
+      "AftCabin": true,
+      "aliases": [
+        "Hatteras 43 Motor Yacht",
+        "Hatteras 43 MY"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/hatteras/43-motor-yacht-1985-87"
+    },
+    {
+      "BoatModelID": "HATT-43-SE",
+      "Manufacturer": "Hatteras",
+      "Model": "43 Sport Express",
+      "FirstYear": 1996,
+      "LastYear": 1998,
+      "LOAFt": 43.1667,
+      "BeamFt": 14.25,
+      "DraftFt": 4.4167,
+      "DisplacementLb": 38000,
+      "AirDraftFt": 9.6667,
+      "FuelCapacityGal": 530,
+      "WaterCapacityGal": 154,
+      "HoldingCapacityGal": null,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 9,
+      "Fuel": "Diesel",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin diesel inboards",
+      "TypicalEngine": "Detroit 6V92 535 hp diesels",
+      "PlaningCruiseSpeedKt": 26.5,
+      "Configuration": "Sport Express",
+      "Style": "Express Sportfisher",
+      "AftCabin": false,
+      "aliases": [
+        "Hatteras 43 Sport Express"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/hatteras/43-sport-express-1996-98",
+      "identityNote": "Same basic hull as 1991–98 43 Convertible, but open express arrangement remains a distinct marketed model."
+    }
+  ],
+  "identityDecisions": [
+    {
+      "scope": "41 Convertible",
+      "decision": "two documented generations plus unresolved predecessor",
+      "models": [
+        "HATT-41-CV-G1",
+        "HATT-41-CV-G2"
+      ],
+      "rationale": "1964–70 and 1986–91 are separated by 15 years and differ materially in dimensions, displacement, construction and performance. A 1960–63 predecessor is noted but not promoted without separate specifications."
+    },
+    {
+      "scope": "42 LRC",
+      "decision": "two linked generations",
+      "models": [
+        "HATT-42-LRC-MK1",
+        "HATT-42-LRC-MK2"
+      ],
+      "rationale": "MK II is explicitly a widebody redesign with full-width aft deck, extended salon, larger flybridge, increased tankage and revised master accommodation."
+    },
+    {
+      "scope": "43 Convertible",
+      "decision": "two linked generations",
+      "models": [
+        "HATT-43-CV-G1",
+        "HATT-43-CV-G2"
+      ],
+      "rationale": "1979–84 and 1991–98 runs are separated by a production gap and materially different beam, draft, clearance and hull-era specifications."
+    },
+    {
+      "scope": "43 Convertible/Sport Express",
+      "decision": "retain_distinct_layout_identities",
+      "models": [
+        "HATT-43-CV-G2",
+        "HATT-43-SE"
+      ],
+      "rationale": "Sport Express shares the same basic hull but has an open express deck plan and different clearance/performance."
+    },
+    {
+      "scope": "43 Double Cabin to Motor Yacht",
+      "decision": "distinct_successor_identity",
+      "models": [
+        "HATT-43-DC",
+        "HATT-43-MY"
+      ],
+      "rationale": "Motor Yacht follows the Double Cabin chronologically with updated accommodation and equipment; retain separately because Hatteras marketed it as a distinct model run."
+    }
+  ],
+  "unknownPolicy": "Missing specifications remain null and do not eliminate the model."
+}
