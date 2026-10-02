@@ -1,0 +1,96 @@
+{
+  "batchId": "phase2-batch-50-regal-45-50",
+  "status": "researched_complete_staged",
+  "researchedAt": "2026-10-02",
+  "models": [
+    {
+      "BoatModelID": "REGL-44-46-SC",
+      "Manufacturer": "Regal",
+      "Model": "44 / 46 Sport Coupe",
+      "FirstYear": 2010,
+      "LastYear": 2018,
+      "LOAFt": 46,
+      "BeamFt": 14,
+      "DraftFt": 3.5,
+      "DisplacementLb": 25350,
+      "AirDraftFt": 12.1667,
+      "FuelCapacityGal": 328,
+      "WaterCapacityGal": 101,
+      "HoldingCapacityGal": 48,
+      "HullType": "Deep-V",
+      "DeadriseAftDeg": 20,
+      "Style": "Sport Coupe",
+      "aliases": [
+        "Regal 44 Sport Coupe",
+        "Regal 46 Sport Coupe"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/regal/46-sport-coupe-2010-18"
+    },
+    {
+      "BoatModelID": "REGL-50-SAV",
+      "Manufacturer": "Regal",
+      "Model": "50 SAV",
+      "FirstYear": 2025,
+      "LastYear": 2026,
+      "LOAFt": 50,
+      "BeamFt": 14.5833,
+      "DraftFt": null,
+      "DisplacementLb": null,
+      "AirDraftFt": null,
+      "FuelCapacityGal": null,
+      "WaterCapacityGal": null,
+      "HoldingCapacityGal": null,
+      "HullType": "OceanTrac2",
+      "DeadriseAftDeg": null,
+      "Style": "Sport Activity Vessel",
+      "aliases": [
+        "Regal 50 SAV"
+      ],
+      "source": "https://www.regalboats.com/model/50-sav/"
+    }
+  ],
+  "identityDecisions": [
+    {
+      "scope": "44 / 46 Sport Coupe",
+      "decision": "one_rename_chain_identity",
+      "models": [
+        "REGL-44-46-SC"
+      ],
+      "rationale": "HMY states the 46 Sport Coupe was called the 44 Sport Coupe in 2010; retain one continuous identity."
+    },
+    {
+      "scope": "50 SAV",
+      "decision": "distinct_current_flagship_identity",
+      "models": [
+        "REGL-50-SAV"
+      ],
+      "rationale": "Regal currently markets the 50 SAV as a distinct 50'0\" flagship SAV; it sits exactly at the project cap and qualifies."
+    }
+  ],
+  "exclusions": [
+    {
+      "Model": "52 Sport Coupe",
+      "FirstYear": 2008,
+      "LastYear": 2013,
+      "publishedOverallLengthFt": 53,
+      "reason": "Published overall length 53'0\" exceeds the current hard 50'0\" cap.",
+      "source": "https://www.hmy.com/yachting/powerboat-guide/regal/52-sport-coupe-2008-13"
+    },
+    {
+      "Model": "53 Sport Coupe",
+      "FirstYear": 2014,
+      "LastYear": 2019,
+      "publishedOverallLengthFt": 53,
+      "reason": "Published overall length exceeds the current hard 50'0\" cap.",
+      "source": "https://www.hmy.com/yachting/powerboat-guide/regal/53-sport-coupe-2014-19"
+    }
+  ],
+  "sourceNotes": [
+    {
+      "BoatModelID": "REGL-50-SAV",
+      "note": "Current Regal manufacturer page confirms exact 50'0\" LOA and 14'7\" beam. Remaining detailed capacities/weight are left null until manufacturer-spec fields are directly verified."
+    }
+  ],
+  "sizePolicy": "Hard maximum published overall length remains 50.0 ft.",
+  "manufacturerCompletionNote": "No additional Regal model family between the 46 Sport Coupe and the over-cap 52 Sport Coupe was identified; current 50 SAV is included from Regal's manufacturer catalog."
+}
