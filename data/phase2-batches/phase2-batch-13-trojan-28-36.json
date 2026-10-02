@@ -1,0 +1,365 @@
+{
+  "batchId": "phase2-batch-13-trojan-28-36",
+  "status": "researched_complete_staged",
+  "researchedAt": "2026-10-02",
+  "workflowNote": "Standalone Phase 2A structured data batch. Existing canonical F-26 Express, F-32 Sedan and F-36 Tri-Cabin are preserved; this batch adds missing distinct Trojan identities around them.",
+  "models": [
+    {
+      "BoatModelID": "TROJ-28-SE",
+      "Manufacturer": "Trojan",
+      "Model": "28 Sedan",
+      "FirstYear": 1976,
+      "LastYear": 1979,
+      "LOAFt": 28.1667,
+      "BeamFt": 12.25,
+      "DraftFt": 2.5,
+      "DisplacementLb": 7700,
+      "AirDraftFt": 11.5,
+      "FuelCapacityGal": 100,
+      "WaterCapacityGal": 60,
+      "HoldingCapacityGal": null,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 12,
+      "Fuel": "Gasoline",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin gasoline V-drive inboards",
+      "TypicalEngine": "Twin Chrysler 225 hp gasoline",
+      "PlaningCruiseSpeedKt": 20,
+      "Configuration": "Sedan Cruiser",
+      "Style": "Flybridge Sedan",
+      "AftCabin": false,
+      "aliases": [
+        "Trojan 28",
+        "Trojan 28 Sedan",
+        "Trojan 28 Sedan Cruiser"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/trojan/28-sedan-1976-79"
+    },
+    {
+      "BoatModelID": "TROJ-30-EX",
+      "Manufacturer": "Trojan",
+      "Model": "F-30 Express",
+      "FirstYear": 1975,
+      "LastYear": 1979,
+      "LOAFt": 30,
+      "BeamFt": 11,
+      "DraftFt": 2.0833,
+      "DisplacementLb": 8100,
+      "AirDraftFt": 11.75,
+      "FuelCapacityGal": 160,
+      "WaterCapacityGal": 33,
+      "HoldingCapacityGal": null,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 12,
+      "Fuel": "Gasoline",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Single or twin gasoline inboards",
+      "TypicalEngine": "Twin Chrysler 225 hp gasoline common",
+      "PlaningCruiseSpeedKt": 20,
+      "Configuration": "Express Cruiser",
+      "Style": "Express Cruiser",
+      "AftCabin": false,
+      "productionPhases": [
+        {
+          "startYear": 1975,
+          "endYear": 1977,
+          "FuelCapacityGal": 100
+        },
+        {
+          "startYear": 1978,
+          "endYear": 1979,
+          "FuelCapacityGal": 160,
+          "changes": [
+            "Foredeck seating removed in favor of front windows",
+            "Head relocated and enlarged",
+            "Built-in galley stove added"
+          ]
+        }
+      ],
+      "aliases": [
+        "Trojan F-30 Express",
+        "Trojan 30 Express"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/trojan/f-30-express-1975-79"
+    },
+    {
+      "BoatModelID": "TROJ-30-SC",
+      "Manufacturer": "Trojan",
+      "Model": "F-30 Sport Cruiser",
+      "FirstYear": 1973,
+      "LastYear": 1979,
+      "LOAFt": 30.1667,
+      "BeamFt": 11.0833,
+      "DraftFt": 2.1667,
+      "DisplacementLb": 8100,
+      "AirDraftFt": 9.4167,
+      "FuelCapacityGal": 160,
+      "WaterCapacityGal": 33,
+      "HoldingCapacityGal": null,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 12,
+      "Fuel": "Gasoline",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin gasoline inboards",
+      "TypicalEngine": "Twin Chrysler 225 hp gasoline",
+      "PlaningCruiseSpeedKt": 20,
+      "Configuration": "Sport Cruiser",
+      "Style": "Flybridge Sport Cruiser",
+      "AftCabin": false,
+      "productionPhases": [
+        {
+          "startYear": 1973,
+          "endYear": null,
+          "FuelCapacityGal": 100,
+          "note": "Early examples"
+        },
+        {
+          "startYear": null,
+          "endYear": 1979,
+          "FuelCapacityGal": 160,
+          "note": "Later production"
+        }
+      ],
+      "aliases": [
+        "Trojan F-30 Sport Cruiser",
+        "Trojan 30 Sport Cruiser"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/trojan/f-30-sport-cruiser-1973-79"
+    },
+    {
+      "BoatModelID": "TROJ-86-MC",
+      "Manufacturer": "Trojan",
+      "Model": "8.6 Meter Mid-Cabin",
+      "FirstYear": 1987,
+      "LastYear": 1990,
+      "LOAFt": 28.6667,
+      "BeamFt": 10.5,
+      "DraftFt": 2.1667,
+      "DisplacementLb": 9500,
+      "AirDraftFt": 8.5833,
+      "FuelCapacityGal": 140,
+      "WaterCapacityGal": 40,
+      "HoldingCapacityGal": null,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 14,
+      "Fuel": "Gasoline",
+      "Propulsion": "Sterndrive",
+      "EngineConfiguration": "Twin gasoline sterndrives",
+      "TypicalEngine": "Twin 260 hp gasoline sterndrives",
+      "PlaningCruiseSpeedKt": 25,
+      "Configuration": "Mid-Cabin Express",
+      "Style": "Express Cruiser",
+      "AftCabin": false,
+      "aliases": [
+        "Trojan 8.6 Meter",
+        "Trojan 8.6 Meter Mid-Cabin",
+        "Trojan 8.6 Mid Cabin"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/trojan/86-meter-mid-cabin-1987-90"
+    },
+    {
+      "BoatModelID": "TROJ-10M-EX",
+      "Manufacturer": "Trojan",
+      "Model": "10 Meter Express",
+      "FirstYear": 1981,
+      "LastYear": 1989,
+      "LOAFt": 33,
+      "BeamFt": 13,
+      "DraftFt": 2,
+      "DisplacementLb": 11250,
+      "AirDraftFt": 9.3333,
+      "FuelCapacityGal": 242,
+      "WaterCapacityGal": 40,
+      "HoldingCapacityGal": 40,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 9,
+      "Fuel": "Gasoline",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin gasoline inboards",
+      "TypicalEngine": "Twin 350 hp gasoline",
+      "PlaningCruiseSpeedKt": 19.5,
+      "Configuration": "Express Cruiser",
+      "Style": "Express Cruiser",
+      "AftCabin": false,
+      "aliases": [
+        "Trojan 10 Meter Express",
+        "Trojan 10M Express"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/trojan/10-meter-express-1981-89"
+    },
+    {
+      "BoatModelID": "TROJ-10M-MC",
+      "Manufacturer": "Trojan",
+      "Model": "10 Meter Mid-Cabin",
+      "FirstYear": 1986,
+      "LastYear": 1992,
+      "LOAFt": 33,
+      "BeamFt": 13,
+      "DraftFt": 2,
+      "DisplacementLb": 12500,
+      "AirDraftFt": 9.3333,
+      "FuelCapacityGal": 250,
+      "WaterCapacityGal": 55,
+      "HoldingCapacityGal": 40,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 9,
+      "Fuel": "Gasoline",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin gasoline inboards",
+      "TypicalEngine": "Twin 350 hp gasoline",
+      "PlaningCruiseSpeedKt": 17.5,
+      "Configuration": "Mid-Cabin Express",
+      "Style": "Express Cruiser",
+      "AftCabin": false,
+      "productionPhases": [
+        {
+          "startYear": 1986,
+          "endYear": 1988,
+          "status": "Original configuration"
+        },
+        {
+          "startYear": 1989,
+          "endYear": 1992,
+          "changes": [
+            "Bolt-on swim platform",
+            "White powder-coated deck rails"
+          ]
+        }
+      ],
+      "aliases": [
+        "Trojan 10 Meter Mid-Cabin",
+        "Trojan 10 Meter Mid Cabin",
+        "Trojan 10M Mid-Cabin"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/trojan/10-meter-mid-cabin-1986-92"
+    },
+    {
+      "BoatModelID": "TROJ-10M-SE",
+      "Manufacturer": "Trojan",
+      "Model": "10 Meter Sedan",
+      "FirstYear": 1982,
+      "LastYear": 1989,
+      "LOAFt": 33,
+      "BeamFt": 13,
+      "DraftFt": 2,
+      "DisplacementLb": 14250,
+      "AirDraftFt": 12.1667,
+      "FuelCapacityGal": 242,
+      "WaterCapacityGal": 55,
+      "HoldingCapacityGal": null,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 9,
+      "Fuel": "Gasoline",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin gasoline inboards",
+      "TypicalEngine": "Twin Crusader 350 hp gasoline",
+      "PlaningCruiseSpeedKt": 18,
+      "Configuration": "Sedan Cruiser",
+      "Style": "Flybridge Sedan",
+      "AftCabin": false,
+      "productionPhases": [
+        {
+          "startYear": 1982,
+          "endYear": 1983,
+          "layout": "Original offset-companionway floorplan",
+          "WaterCapacityGal": 40
+        },
+        {
+          "startYear": 1984,
+          "endYear": 1989,
+          "layout": "Revised open floorplan with island berth",
+          "WaterCapacityGal": 55
+        },
+        {
+          "startYear": 1982,
+          "endYear": 1986,
+          "lowerHelm": "Standard"
+        },
+        {
+          "startYear": 1987,
+          "endYear": 1989,
+          "lowerHelm": "No longer standard"
+        }
+      ],
+      "aliases": [
+        "Trojan 10 Meter Sedan",
+        "Trojan 10M Sedan"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/trojan/10-meter-sedan-1982-89"
+    },
+    {
+      "BoatModelID": "TROJ-36-CV",
+      "Manufacturer": "Trojan",
+      "Model": "36 Convertible",
+      "FirstYear": 1972,
+      "LastYear": 1989,
+      "LOAFt": 36,
+      "BeamFt": 13,
+      "DraftFt": 2.9167,
+      "DisplacementLb": 16000,
+      "AirDraftFt": 13,
+      "FuelCapacityGal": 350,
+      "WaterCapacityGal": 80,
+      "HoldingCapacityGal": null,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 9,
+      "Fuel": "Gasoline or Diesel depending configuration",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin inboards",
+      "TypicalEngine": "Twin Crusader 350 hp gasoline common; diesel options available",
+      "PlaningCruiseSpeedKt": 19,
+      "Configuration": "Convertible",
+      "Style": "Flybridge Sedan",
+      "AftCabin": false,
+      "productionPhases": [
+        {
+          "startYear": 1972,
+          "endYear": 1976,
+          "deckNote": "Teak cockpit sole standard; inspect carefully"
+        },
+        {
+          "startYear": 1977,
+          "endYear": 1989,
+          "deckNote": "Later cockpit construction"
+        }
+      ],
+      "aliases": [
+        "Trojan 36 Convertible",
+        "Trojan F-36 Convertible"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/trojan/36-convertible-1972-89"
+    }
+  ],
+  "identityDecisions": [
+    {
+      "scope": "Trojan 30-foot family",
+      "decision": "retain_distinct_marketed_models",
+      "models": [
+        "TROJ-30-EX",
+        "TROJ-30-SC"
+      ],
+      "rationale": "F-30 Express and F-30 Sport Cruiser have distinct deck/cockpit arrangements, dimensions and market identities despite overlapping years."
+    },
+    {
+      "scope": "Trojan 10 Meter family",
+      "decision": "retain_distinct_layout_identities",
+      "models": [
+        "TROJ-10M-EX",
+        "TROJ-10M-MC",
+        "TROJ-10M-SE"
+      ],
+      "rationale": "Express, Mid-Cabin and Sedan are distinct marketed layouts sharing the International-series design language, not production phases of one flat record."
+    },
+    {
+      "scope": "TROJ-36-CV vs existing TROJ-36-TR",
+      "decision": "retain_distinct_models",
+      "rationale": "36 Convertible and 36 Tri-Cabin use the same nominal length but have materially different deckhouse, accommodation and mission profiles."
+    },
+    {
+      "scope": "TROJ-86-MC",
+      "decision": "single_canonical_model_with_sterndrive_propulsion",
+      "rationale": "This model is materially different from shaft-drive Trojan International models and must retain sterndrive propulsion."
+    }
+  ],
+  "unknownPolicy": "Missing tankage or exact transition years remain null/approximate and do not eliminate the model."
+}
