@@ -1,0 +1,91 @@
+{
+  "batchId": "phase2-batch-39-four-winns-40-50",
+  "schemaVersion": "1.4",
+  "validatedAt": "2026-10-02",
+  "assertions": [
+    {
+      "EvidenceAssertionID": "FWIN-V408",
+      "BoatModelID": "FWIN-V408",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://boattest.com/view-news/3368_four-winns-new-v408-redefines-and-raises-the-bar",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 2009,
+        "LastYear": 2009,
+        "LOAFt": 43.5,
+        "BeamFt": 13.3333,
+        "DraftFt": 3.6667,
+        "DisplacementLb": 28000,
+        "AirDraftFt": 12.6667,
+        "FuelCapacityGal": 300,
+        "WaterCapacityGal": 85,
+        "HoldingCapacityGal": 45,
+        "HullType": "Modified-V",
+        "DeadriseAftDeg": 19
+      },
+      "Confidence": "medium",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 2009,
+        "endYear": 2009
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "FWIN-V435",
+      "BoatModelID": "FWIN-V435",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.fourwinns.com/uploads/2017/2/FourWinnsPIGsinside2016V6.pdf",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 2010,
+        "LastYear": 2016,
+        "LOAFt": 43.5,
+        "BeamFt": 13.3333,
+        "DraftFt": 3.6667,
+        "DisplacementLb": 27000,
+        "AirDraftFt": 12.6667,
+        "FuelCapacityGal": 300,
+        "WaterCapacityGal": 85,
+        "HoldingCapacityGal": 53,
+        "HullType": "Modified-V",
+        "DeadriseAftDeg": 19
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 2010,
+        "endYear": 2016
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "FWIN-V458-V475",
+      "BoatModelID": "FWIN-V458-V475",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/four-winns/v458-v475-2008-2012",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 2008,
+        "LastYear": 2012,
+        "LOAFt": 49.3333,
+        "BeamFt": 14,
+        "DraftFt": 3.5833,
+        "DisplacementLb": 30000,
+        "AirDraftFt": 12,
+        "FuelCapacityGal": 380,
+        "WaterCapacityGal": 101,
+        "HoldingCapacityGal": 57,
+        "HullType": "Modified Deep-V",
+        "DeadriseAftDeg": 19
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 2008,
+        "endYear": 2012
+      },
+      "CapturedAt": "2026-10-02"
+    }
+  ]
+}
