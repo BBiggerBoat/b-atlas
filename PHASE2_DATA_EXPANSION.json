@@ -848,7 +848,7 @@
       "Merge staged Tollycraft batch 10 into boatmodels.json when the large-file GitHub write path is available.",
       "Reconcile existing TOLL-37-SE against staged TOLL-37-CV before canonical merge.",
       "Consolidate staged Tollycraft batches 10–12 after resolving TOLL-37-SE versus TOLL-37-CV.",
-      "Continue Trojan with 10.8 Meter, 11 Meter and 350/360/370/390/400 Express families."
+      "Continue Trojan with 12 Meter Convertible/Express/Motor Yacht, 40 Motor Yacht, 13 Meter Express, 44 Convertible/Motor Yacht/440 Express, and 14 Meter Convertible."
     ]
   },
   "workflow": {
@@ -875,14 +875,15 @@
     "rule": "Research quality is unchanged; only downstream publishing/enrichment work is deferred.",
     "lastCompletedBatch": "phase2-batch-09-silverton-44-52",
     "lastCompletedAt": "2026-10-02",
-    "lastResearchedBatch": "phase2-batch-13-trojan-28-36",
+    "lastResearchedBatch": "phase2-batch-14-trojan-108-400",
     "lastResearchedAt": "2026-10-02",
     "pendingCanonicalMerge": [
       "phase2-batch-10-tollycraft-30-40",
       "phase2-batch-11-tollycraft-37-48",
       "phase2-batch-12-tollycraft-53-65",
-      "phase2-batch-13-trojan-28-36"
+      "phase2-batch-13-trojan-28-36",
+      "phase2-batch-14-trojan-108-400"
     ],
-    "note": "Trojan expansion is now staged as standalone JSON plus evidence. Canonical boatmodels.json consolidation remains deferred."
+    "note": "Trojan expansion batches are being staged as standalone JSON plus evidence; canonical boatmodels.json consolidation remains deferred."
   }
 }
