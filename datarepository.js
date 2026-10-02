@@ -29,6 +29,8 @@
         phase2AliasesCruisersYachts3034: "data/phase2-live-aliases-cruisers-yachts-30-34.json",
         phase2ModelsCruisersYachts3539: "data/phase2-live-models-cruisers-yachts-35-39.json",
         phase2AliasesCruisersYachts3539: "data/phase2-live-aliases-cruisers-yachts-35-39.json",
+        phase2ModelsCruisersYachts4044: "data/phase2-live-models-cruisers-yachts-40-44.json",
+        phase2AliasesCruisersYachts4044: "data/phase2-live-aliases-cruisers-yachts-40-44.json",
         productionPhases: "data/production-phases.json",
         routes: "routes.json",
         missionTemplates: "data/missionTemplates.json",
@@ -254,6 +256,19 @@
             if (Array.isArray(data.phase2Aliases) && Array.isArray(data.phase2AliasesCruisersYachts3539)) {
                 const ids = new Set(data.phase2Aliases.map(row => row?.BoatModelID).filter(Boolean));
                 for (const row of data.phase2AliasesCruisersYachts3539) {
+                    if (row?.BoatModelID && !ids.has(row.BoatModelID)) { data.phase2Aliases.push(row); ids.add(row.BoatModelID); }
+                }
+            }
+
+            if (Array.isArray(data.phase2Models) && Array.isArray(data.phase2ModelsCruisersYachts4044)) {
+                const ids = new Set(data.phase2Models.map(row => row?.BoatModelID).filter(Boolean));
+                for (const row of data.phase2ModelsCruisersYachts4044) {
+                    if (row?.BoatModelID && !ids.has(row.BoatModelID)) { data.phase2Models.push(row); ids.add(row.BoatModelID); }
+                }
+            }
+            if (Array.isArray(data.phase2Aliases) && Array.isArray(data.phase2AliasesCruisersYachts4044)) {
+                const ids = new Set(data.phase2Aliases.map(row => row?.BoatModelID).filter(Boolean));
+                for (const row of data.phase2AliasesCruisersYachts4044) {
                     if (row?.BoatModelID && !ids.has(row.BoatModelID)) { data.phase2Aliases.push(row); ids.add(row.BoatModelID); }
                 }
             }
