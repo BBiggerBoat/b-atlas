@@ -1,0 +1,43 @@
+{
+  "batchId": "phase2-batch-05-silverton-37",
+  "schemaVersion": "1.4",
+  "validatedAt": "2026-10-02",
+  "assertions": [
+    {
+      "EvidenceAssertionID": "SILV-37-G1",
+      "BoatModelID": "SILV-37-CV-G1",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/silverton/37-convertible-1980-89",
+      "AssertionState": "supports",
+      "SourceValue": "1980–89; 37 ft LOA; 14 ft beam; 3 ft 7 in draft; 20,000 lb; 300 gal fuel; 100 gal water; 12 ft 6 in clearance; 14° aft deadrise; V-drive changed to straight-drive inboards in 1981",
+      "SourceUnit": null,
+      "NormalizedCandidateValue": null,
+      "CanonicalUnit": null,
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1980,
+        "endYear": 1989
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "SILV-37-G2",
+      "BoatModelID": "SILV-37-CV-G2",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/silverton/37-convertible-1990-2000",
+      "AssertionState": "supports",
+      "SourceValue": "1990–2000; 41 ft 3 in with pulpit; 37 ft 4 in hull length; 13 ft 11 in beam; 3 ft 7 in draft; 21,852 lb; 375 gal fuel; 100 gal water; 40 gal waste; 17° aft deadrise; prop pockets; floorplans updated in 1993",
+      "SourceUnit": null,
+      "NormalizedCandidateValue": null,
+      "CanonicalUnit": null,
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1990,
+        "endYear": 2000
+      },
+      "CapturedAt": "2026-10-02"
+    }
+  ]
+}
