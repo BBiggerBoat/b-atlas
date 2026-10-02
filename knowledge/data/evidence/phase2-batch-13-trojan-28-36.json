@@ -1,0 +1,247 @@
+{
+  "batchId": "phase2-batch-13-trojan-28-36",
+  "schemaVersion": "1.4",
+  "validatedAt": "2026-10-02",
+  "assertions": [
+    {
+      "EvidenceAssertionID": "TROJ-28-SE",
+      "BoatModelID": "TROJ-28-SE",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/trojan/28-sedan-1976-79",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 1976,
+        "LastYear": 1979,
+        "LOAFt": 28.1667,
+        "BeamFt": 12.25,
+        "DraftFt": 2.5,
+        "DisplacementLb": 7700,
+        "AirDraftFt": 11.5,
+        "FuelCapacityGal": 100,
+        "WaterCapacityGal": 60,
+        "HoldingCapacityGal": null,
+        "HullType": "Modified-V",
+        "DeadriseAftDeg": 12,
+        "Fuel": "Gasoline",
+        "Propulsion": "Shaft"
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1976,
+        "endYear": 1979
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "TROJ-30-EX",
+      "BoatModelID": "TROJ-30-EX",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/trojan/f-30-express-1975-79",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 1975,
+        "LastYear": 1979,
+        "LOAFt": 30,
+        "BeamFt": 11,
+        "DraftFt": 2.0833,
+        "DisplacementLb": 8100,
+        "AirDraftFt": 11.75,
+        "FuelCapacityGal": 160,
+        "WaterCapacityGal": 33,
+        "HoldingCapacityGal": null,
+        "HullType": "Modified-V",
+        "DeadriseAftDeg": 12,
+        "Fuel": "Gasoline",
+        "Propulsion": "Shaft"
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1975,
+        "endYear": 1979
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "TROJ-30-SC",
+      "BoatModelID": "TROJ-30-SC",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/trojan/f-30-sport-cruiser-1973-79",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 1973,
+        "LastYear": 1979,
+        "LOAFt": 30.1667,
+        "BeamFt": 11.0833,
+        "DraftFt": 2.1667,
+        "DisplacementLb": 8100,
+        "AirDraftFt": 9.4167,
+        "FuelCapacityGal": 160,
+        "WaterCapacityGal": 33,
+        "HoldingCapacityGal": null,
+        "HullType": "Modified-V",
+        "DeadriseAftDeg": 12,
+        "Fuel": "Gasoline",
+        "Propulsion": "Shaft"
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1973,
+        "endYear": 1979
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "TROJ-86-MC",
+      "BoatModelID": "TROJ-86-MC",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/trojan/86-meter-mid-cabin-1987-90",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 1987,
+        "LastYear": 1990,
+        "LOAFt": 28.6667,
+        "BeamFt": 10.5,
+        "DraftFt": 2.1667,
+        "DisplacementLb": 9500,
+        "AirDraftFt": 8.5833,
+        "FuelCapacityGal": 140,
+        "WaterCapacityGal": 40,
+        "HoldingCapacityGal": null,
+        "HullType": "Modified-V",
+        "DeadriseAftDeg": 14,
+        "Fuel": "Gasoline",
+        "Propulsion": "Sterndrive"
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1987,
+        "endYear": 1990
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "TROJ-10M-EX",
+      "BoatModelID": "TROJ-10M-EX",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/trojan/10-meter-express-1981-89",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 1981,
+        "LastYear": 1989,
+        "LOAFt": 33,
+        "BeamFt": 13,
+        "DraftFt": 2,
+        "DisplacementLb": 11250,
+        "AirDraftFt": 9.3333,
+        "FuelCapacityGal": 242,
+        "WaterCapacityGal": 40,
+        "HoldingCapacityGal": 40,
+        "HullType": "Modified-V",
+        "DeadriseAftDeg": 9,
+        "Fuel": "Gasoline",
+        "Propulsion": "Shaft"
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1981,
+        "endYear": 1989
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "TROJ-10M-MC",
+      "BoatModelID": "TROJ-10M-MC",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/trojan/10-meter-mid-cabin-1986-92",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 1986,
+        "LastYear": 1992,
+        "LOAFt": 33,
+        "BeamFt": 13,
+        "DraftFt": 2,
+        "DisplacementLb": 12500,
+        "AirDraftFt": 9.3333,
+        "FuelCapacityGal": 250,
+        "WaterCapacityGal": 55,
+        "HoldingCapacityGal": 40,
+        "HullType": "Modified-V",
+        "DeadriseAftDeg": 9,
+        "Fuel": "Gasoline",
+        "Propulsion": "Shaft"
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1986,
+        "endYear": 1992
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "TROJ-10M-SE",
+      "BoatModelID": "TROJ-10M-SE",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/trojan/10-meter-sedan-1982-89",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 1982,
+        "LastYear": 1989,
+        "LOAFt": 33,
+        "BeamFt": 13,
+        "DraftFt": 2,
+        "DisplacementLb": 14250,
+        "AirDraftFt": 12.1667,
+        "FuelCapacityGal": 242,
+        "WaterCapacityGal": 55,
+        "HoldingCapacityGal": null,
+        "HullType": "Modified-V",
+        "DeadriseAftDeg": 9,
+        "Fuel": "Gasoline",
+        "Propulsion": "Shaft"
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1982,
+        "endYear": 1989
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "TROJ-36-CV",
+      "BoatModelID": "TROJ-36-CV",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/trojan/36-convertible-1972-89",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 1972,
+        "LastYear": 1989,
+        "LOAFt": 36,
+        "BeamFt": 13,
+        "DraftFt": 2.9167,
+        "DisplacementLb": 16000,
+        "AirDraftFt": 13,
+        "FuelCapacityGal": 350,
+        "WaterCapacityGal": 80,
+        "HoldingCapacityGal": null,
+        "HullType": "Modified-V",
+        "DeadriseAftDeg": 9,
+        "Fuel": "Gasoline or Diesel depending configuration",
+        "Propulsion": "Shaft"
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1972,
+        "endYear": 1989
+      },
+      "CapturedAt": "2026-10-02"
+    }
+  ]
+}
