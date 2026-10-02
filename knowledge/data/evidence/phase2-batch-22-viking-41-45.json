@@ -1,0 +1,391 @@
+{
+  "batchId": "phase2-batch-22-viking-41-45",
+  "schemaVersion": "1.4",
+  "validatedAt": "2026-10-02",
+  "assertions": [
+    {
+      "EvidenceAssertionID": "VIKI-41-CV",
+      "BoatModelID": "VIKI-41-CV",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/viking/41-convertible-1983-90",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 1983,
+        "LastYear": 1990,
+        "LOAFt": 41.1667,
+        "LWLFt": null,
+        "BeamFt": 14.8333,
+        "DraftFt": 4.25,
+        "DisplacementLb": 32000,
+        "AirDraftFt": 12,
+        "FuelCapacityGal": null,
+        "WaterCapacityGal": 125,
+        "HoldingCapacityGal": 40,
+        "HullType": "Modified-V",
+        "DeadriseAftDeg": 15.5,
+        "Fuel": "Diesel",
+        "Propulsion": "Shaft",
+        "TotalBuilt": null
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1983,
+        "endYear": 1990
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "VIKI-42-CV",
+      "BoatModelID": "VIKI-42-CV",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/viking/42-convertible-2011-16",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 2011,
+        "LastYear": 2016,
+        "LOAFt": 42.5833,
+        "LWLFt": null,
+        "BeamFt": 15.8333,
+        "DraftFt": 3.5833,
+        "DisplacementLb": 36000,
+        "AirDraftFt": 16.5833,
+        "FuelCapacityGal": 525,
+        "WaterCapacityGal": 120,
+        "HoldingCapacityGal": 39,
+        "HullType": "Modified-V",
+        "DeadriseAftDeg": 16.7,
+        "Fuel": "Diesel",
+        "Propulsion": "Pod",
+        "TotalBuilt": null
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 2011,
+        "endYear": 2016
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "VIKI-42-OPEN",
+      "BoatModelID": "VIKI-42-OPEN",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/viking/42-open-2011-16",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 2011,
+        "LastYear": 2016,
+        "LOAFt": 42.5833,
+        "LWLFt": null,
+        "BeamFt": 15.8333,
+        "DraftFt": 3.4167,
+        "DisplacementLb": 32700,
+        "AirDraftFt": 16.5833,
+        "FuelCapacityGal": 525,
+        "WaterCapacityGal": 120,
+        "HoldingCapacityGal": 39,
+        "HullType": "Modified-V",
+        "DeadriseAftDeg": 17,
+        "Fuel": "Diesel",
+        "Propulsion": "Pod",
+        "TotalBuilt": null
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 2011,
+        "endYear": 2016
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "VIKI-43-CV",
+      "BoatModelID": "VIKI-43-CV",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/viking/43-convertible-1990-2002",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 1990,
+        "LastYear": 2002,
+        "LOAFt": 43,
+        "LWLFt": null,
+        "BeamFt": 15.25,
+        "DraftFt": 4.25,
+        "DisplacementLb": 38595,
+        "AirDraftFt": 15.8333,
+        "FuelCapacityGal": null,
+        "WaterCapacityGal": 115,
+        "HoldingCapacityGal": 40,
+        "HullType": "Modified-V",
+        "DeadriseAftDeg": 15.5,
+        "Fuel": "Diesel",
+        "Propulsion": "Shaft",
+        "TotalBuilt": null
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1990,
+        "endYear": 2002
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "VIKI-43-DC",
+      "BoatModelID": "VIKI-43-DC",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/viking/43-double-cabin-1975-82",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 1975,
+        "LastYear": 1982,
+        "LOAFt": 42.6667,
+        "LWLFt": null,
+        "BeamFt": 14.75,
+        "DraftFt": 3.75,
+        "DisplacementLb": 34000,
+        "AirDraftFt": 12,
+        "FuelCapacityGal": 350,
+        "WaterCapacityGal": 100,
+        "HoldingCapacityGal": 50,
+        "HullType": "Modified-V",
+        "DeadriseAftDeg": 17,
+        "Fuel": "Gasoline or Diesel depending configuration",
+        "Propulsion": "Shaft",
+        "TotalBuilt": null
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1975,
+        "endYear": 1982
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "VIKI-43-OPEN",
+      "BoatModelID": "VIKI-43-OPEN",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/viking/43-open-1994-2002",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 1994,
+        "LastYear": 2002,
+        "LOAFt": 43,
+        "LWLFt": null,
+        "BeamFt": 15.25,
+        "DraftFt": 4.25,
+        "DisplacementLb": 34500,
+        "AirDraftFt": 9.9167,
+        "FuelCapacityGal": 600,
+        "WaterCapacityGal": 115,
+        "HoldingCapacityGal": 40,
+        "HullType": "Modified-V",
+        "DeadriseAftDeg": 15.5,
+        "Fuel": "Diesel",
+        "Propulsion": "Shaft",
+        "TotalBuilt": null
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1994,
+        "endYear": 2002
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "VIKI-44-CV",
+      "BoatModelID": "VIKI-44-CV",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/viking/44-convertible-2019-current",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 2019,
+        "LastYear": null,
+        "LOAFt": 45.0833,
+        "LWLFt": null,
+        "BeamFt": 16.3333,
+        "DraftFt": 4,
+        "DisplacementLb": 50132,
+        "AirDraftFt": null,
+        "FuelCapacityGal": 825,
+        "WaterCapacityGal": 120,
+        "HoldingCapacityGal": 46,
+        "HullType": "Modified-V",
+        "DeadriseAftDeg": null,
+        "Fuel": "Diesel",
+        "Propulsion": "Shaft",
+        "TotalBuilt": null
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 2019,
+        "endYear": null
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "VIKI-44-MY",
+      "BoatModelID": "VIKI-44-MY",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/viking/44-motor-yacht-1982-90",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 1982,
+        "LastYear": 1990,
+        "LOAFt": 44,
+        "LWLFt": null,
+        "BeamFt": 15,
+        "DraftFt": 4,
+        "DisplacementLb": 40000,
+        "AirDraftFt": 14.5,
+        "FuelCapacityGal": 460,
+        "WaterCapacityGal": 180,
+        "HoldingCapacityGal": 50,
+        "HullType": "Modified-V",
+        "DeadriseAftDeg": 15.5,
+        "Fuel": "Gasoline or Diesel depending configuration",
+        "Propulsion": "Shaft",
+        "TotalBuilt": null
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1982,
+        "endYear": 1990
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "VIKI-44-OPEN",
+      "BoatModelID": "VIKI-44-OPEN",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/viking/44-open-2019-current",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 2019,
+        "LastYear": null,
+        "LOAFt": 45.0833,
+        "LWLFt": null,
+        "BeamFt": 16.3333,
+        "DraftFt": 3.8333,
+        "DisplacementLb": 49500,
+        "AirDraftFt": null,
+        "FuelCapacityGal": 845,
+        "WaterCapacityGal": 120,
+        "HoldingCapacityGal": 46,
+        "HullType": "Modified-V",
+        "DeadriseAftDeg": 14,
+        "Fuel": "Diesel",
+        "Propulsion": "Shaft",
+        "TotalBuilt": null
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 2019,
+        "endYear": null
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "VIKI-45-CV-G1",
+      "BoatModelID": "VIKI-45-CV-G1",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/viking/45-convertible-1987-93",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 1987,
+        "LastYear": 1993,
+        "LOAFt": 45.4167,
+        "LWLFt": null,
+        "BeamFt": 15,
+        "DraftFt": 4,
+        "DisplacementLb": 44400,
+        "AirDraftFt": 12.4167,
+        "FuelCapacityGal": 600,
+        "WaterCapacityGal": 160,
+        "HoldingCapacityGal": 50,
+        "HullType": "Modified-V",
+        "DeadriseAftDeg": 15.5,
+        "Fuel": "Diesel",
+        "Propulsion": "Shaft",
+        "TotalBuilt": null
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1987,
+        "endYear": 1993
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "VIKI-45-CV-G2",
+      "BoatModelID": "VIKI-45-CV-G2",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/viking/45-convertible-2003-08",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 2003,
+        "LastYear": 2008,
+        "LOAFt": 45.8333,
+        "LWLFt": null,
+        "BeamFt": 16.3333,
+        "DraftFt": 4.5,
+        "DisplacementLb": 50550,
+        "AirDraftFt": 16.3333,
+        "FuelCapacityGal": 848,
+        "WaterCapacityGal": 150,
+        "HoldingCapacityGal": 50,
+        "HullType": "Modified-V",
+        "DeadriseAftDeg": 15.5,
+        "Fuel": "Diesel",
+        "Propulsion": "Shaft",
+        "TotalBuilt": null
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 2003,
+        "endYear": 2008
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "VIKI-45-OPEN",
+      "BoatModelID": "VIKI-45-OPEN",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/viking/45-open-2003-09",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 2003,
+        "LastYear": 2009,
+        "LOAFt": 45.8333,
+        "LWLFt": null,
+        "BeamFt": 16.3333,
+        "DraftFt": 4.5,
+        "DisplacementLb": 49760,
+        "AirDraftFt": null,
+        "FuelCapacityGal": 848,
+        "WaterCapacityGal": 150,
+        "HoldingCapacityGal": 50,
+        "HullType": "Modified-V",
+        "DeadriseAftDeg": 15.5,
+        "Fuel": "Diesel",
+        "Propulsion": "Shaft",
+        "TotalBuilt": null
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 2003,
+        "endYear": 2009
+      },
+      "CapturedAt": "2026-10-02"
+    }
+  ]
+}
