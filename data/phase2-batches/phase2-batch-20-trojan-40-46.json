@@ -1,0 +1,364 @@
+{
+  "batchId": "phase2-batch-20-trojan-40-46",
+  "status": "researched_complete_live",
+  "researchedAt": "2026-10-02",
+  "workflowNote": "Standalone Phase 2A batch, published through data/phase2-live-models.json and live aliases.",
+  "models": [
+    {
+      "BoatModelID": "TROJ-12M-CV",
+      "Manufacturer": "Trojan",
+      "Model": "12 Meter Convertible",
+      "FirstYear": 1986,
+      "LastYear": 1992,
+      "LOAFt": 39.75,
+      "BeamFt": 14.25,
+      "DraftFt": 3.5,
+      "DisplacementLb": 19000,
+      "AirDraftFt": 12.5,
+      "FuelCapacityGal": 400,
+      "WaterCapacityGal": 100,
+      "HoldingCapacityGal": null,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 12,
+      "Fuel": "Gasoline or Diesel depending configuration",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin inboards",
+      "TypicalEngine": "350 hp gasoline standard; optional Caterpillar 375 hp or Detroit 6-71 485 hp diesels",
+      "PlaningCruiseSpeedKt": 22,
+      "Configuration": "Convertible",
+      "Style": "Sportfisher",
+      "AftCabin": false,
+      "productionPhases": [
+        {
+          "startYear": 1986,
+          "endYear": 1989,
+          "layout": "Original two-stateroom layout"
+        },
+        {
+          "startYear": 1990,
+          "endYear": 1992,
+          "layout": "Salon updated with convertible dinette"
+        }
+      ],
+      "aliases": [
+        "Trojan 12 Meter Convertible",
+        "Trojan 12M Convertible"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/trojan/12-meter-convertible-1986-92"
+    },
+    {
+      "BoatModelID": "TROJ-12M-EX",
+      "Manufacturer": "Trojan",
+      "Model": "12 Meter Express",
+      "FirstYear": 1989,
+      "LastYear": 1992,
+      "LOAFt": 39.75,
+      "BeamFt": 14.25,
+      "DraftFt": 3.6667,
+      "DisplacementLb": 18000,
+      "AirDraftFt": null,
+      "FuelCapacityGal": 325,
+      "WaterCapacityGal": 95,
+      "HoldingCapacityGal": null,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 12,
+      "Fuel": "Gasoline or Diesel depending configuration",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin inboards",
+      "TypicalEngine": "Optional Detroit 6-71 485 hp diesels documented",
+      "PlaningCruiseSpeedKt": 26.5,
+      "Configuration": "Express",
+      "Style": "Express Cruiser",
+      "AftCabin": false,
+      "aliases": [
+        "Trojan 12 Meter Express",
+        "Trojan 12M Express"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/trojan/12-meter-express-1989-92"
+    },
+    {
+      "BoatModelID": "TROJ-12M-MY",
+      "Manufacturer": "Trojan",
+      "Model": "12 Meter Motor Yacht",
+      "FirstYear": 1987,
+      "LastYear": 1992,
+      "LOAFt": 39.75,
+      "BeamFt": 14.25,
+      "DraftFt": 3.6667,
+      "DisplacementLb": 19000,
+      "AirDraftFt": null,
+      "FuelCapacityGal": 400,
+      "WaterCapacityGal": 150,
+      "HoldingCapacityGal": 55,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 12,
+      "Fuel": "Gasoline or Diesel depending configuration",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin inboards",
+      "TypicalEngine": "Optional Caterpillar 375 hp or Detroit 6-71 450 hp diesels documented",
+      "PlaningCruiseSpeedKt": 20,
+      "Configuration": "Motor Yacht",
+      "Style": "Motor Yacht",
+      "AftCabin": true,
+      "aliases": [
+        "Trojan 12 Meter Motor Yacht",
+        "Trojan 12M Motor Yacht",
+        "Trojan 12 Meter MY"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/trojan/12-meter-motor-yacht-1987-92"
+    },
+    {
+      "BoatModelID": "TROJ-40-MY",
+      "Manufacturer": "Trojan",
+      "Model": "40 Motor Yacht",
+      "FirstYear": 1979,
+      "LastYear": 1984,
+      "LOAFt": 40.25,
+      "BeamFt": 14.25,
+      "DraftFt": 3.8333,
+      "DisplacementLb": 29000,
+      "AirDraftFt": 15.5,
+      "FuelCapacityGal": 445,
+      "WaterCapacityGal": 125,
+      "HoldingCapacityGal": null,
+      "HullType": "Semi-Displacement",
+      "Fuel": "Gasoline or Diesel depending configuration",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin inboards",
+      "TypicalEngine": "Detroit 6-71N 310 hp diesels among available options",
+      "PlaningCruiseSpeedKt": 14.5,
+      "Configuration": "Motor Yacht",
+      "Style": "Motor Yacht",
+      "AftCabin": true,
+      "aliases": [
+        "Trojan 40 Motor Yacht",
+        "Trojan 40 MY"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/trojan/40-motor-yacht-1979-84",
+      "identityNote": "Trojan 47 Yacht Fisherman is documented as this model with a cockpit extension and remains outside the current size cutoff."
+    },
+    {
+      "BoatModelID": "TROJ-13M-EX",
+      "Manufacturer": "Trojan",
+      "Model": "13 Meter Express",
+      "FirstYear": 1984,
+      "LastYear": 1990,
+      "LOAFt": 43,
+      "BeamFt": 16.25,
+      "DraftFt": 3.1667,
+      "DisplacementLb": 24000,
+      "AirDraftFt": 10.0833,
+      "FuelCapacityGal": 510,
+      "WaterCapacityGal": 175,
+      "HoldingCapacityGal": 75,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 12,
+      "Fuel": "Gasoline or Diesel depending configuration",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin inboards",
+      "TypicalEngine": "Detroit 8V92 735 hp diesels documented",
+      "PlaningCruiseSpeedKt": 30,
+      "Configuration": "Express",
+      "Style": "Express Cruiser",
+      "AftCabin": false,
+      "aliases": [
+        "Trojan 13 Meter Express",
+        "Trojan 13M Express"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/trojan/13-meter-express-1984-90"
+    },
+    {
+      "BoatModelID": "TROJ-44-CV",
+      "Manufacturer": "Trojan",
+      "Model": "44 Convertible",
+      "FirstYear": 1974,
+      "LastYear": 1978,
+      "LOAFt": 43.25,
+      "BeamFt": 14.9167,
+      "DraftFt": 3.75,
+      "DisplacementLb": 33750,
+      "AirDraftFt": 12.5,
+      "FuelCapacityGal": 400,
+      "WaterCapacityGal": null,
+      "HoldingCapacityGal": 45,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 10,
+      "Fuel": "Diesel",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin inboards",
+      "TypicalEngine": "Cummins VT-903-M 400 hp diesels documented among several options",
+      "PlaningCruiseSpeedKt": 18.5,
+      "Configuration": "Convertible",
+      "Style": "Sportfisher",
+      "AftCabin": false,
+      "aliases": [
+        "Trojan 44 Convertible"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/trojan/44-convertible-1974-78"
+    },
+    {
+      "BoatModelID": "TROJ-44-MY",
+      "Manufacturer": "Trojan",
+      "Model": "44 Motor Yacht",
+      "FirstYear": 1974,
+      "LastYear": 1984,
+      "LOAFt": 44.25,
+      "BeamFt": 14.9167,
+      "DraftFt": 4,
+      "DisplacementLb": 32000,
+      "AirDraftFt": 17.1667,
+      "FuelCapacityGal": null,
+      "WaterCapacityGal": 120,
+      "HoldingCapacityGal": null,
+      "HullType": "Modified-V",
+      "Fuel": "Gasoline or Diesel depending configuration",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin inboards",
+      "TypicalEngine": "Detroit 6-71N 310 hp diesels documented among several options",
+      "PlaningCruiseSpeedKt": 15,
+      "Configuration": "Motor Yacht",
+      "Style": "Motor Yacht",
+      "AftCabin": true,
+      "productionPhases": [
+        {
+          "startYear": 1974,
+          "endYear": 1977,
+          "layout": "Original superstructure and flybridge"
+        },
+        {
+          "startYear": 1978,
+          "endYear": 1984,
+          "changes": [
+            "All-new superstructure",
+            "Aft-deck wing doors",
+            "New flybridge"
+          ]
+        }
+      ],
+      "aliases": [
+        "Trojan 44 Motor Yacht",
+        "Trojan 44 MY"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/trojan/44-motor-yacht-1974-84",
+      "identityNote": "Source lists fuel capacity as 420/520 gallons depending configuration; canonical single-value fuel capacity remains null rather than choosing one."
+    },
+    {
+      "BoatModelID": "TROJ-440-EX",
+      "Manufacturer": "Trojan",
+      "Model": "440 Express",
+      "FirstYear": 1995,
+      "LastYear": 2002,
+      "LOAFt": 44.5833,
+      "BeamFt": 15,
+      "DraftFt": 4,
+      "DisplacementLb": 30000,
+      "AirDraftFt": 10.9167,
+      "FuelCapacityGal": 432,
+      "WaterCapacityGal": 104,
+      "HoldingCapacityGal": 88,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 16.5,
+      "Fuel": "Diesel",
+      "Propulsion": "V-drive",
+      "EngineConfiguration": "Twin inboards",
+      "TypicalEngine": "Cummins 450 hp V-drive diesels documented",
+      "PlaningCruiseSpeedKt": 22,
+      "Configuration": "Express",
+      "Style": "Express Cruiser",
+      "AftCabin": false,
+      "productionPhases": [
+        {
+          "startYear": 1995,
+          "endYear": 1997,
+          "layout": "Original two-stateroom arrangement"
+        },
+        {
+          "startYear": 1998,
+          "endYear": 2002,
+          "layout": "Salon sofa shortened to create a small third stateroom"
+        }
+      ],
+      "aliases": [
+        "Trojan 440 Express"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/trojan/440-express-1995-2002"
+    },
+    {
+      "BoatModelID": "TROJ-14M-CV",
+      "Manufacturer": "Trojan",
+      "Model": "14 Meter Convertible",
+      "FirstYear": 1988,
+      "LastYear": 1992,
+      "LOAFt": 46.25,
+      "BeamFt": 16.25,
+      "DraftFt": 3.5,
+      "DisplacementLb": 34000,
+      "AirDraftFt": 13.5833,
+      "FuelCapacityGal": 710,
+      "WaterCapacityGal": 175,
+      "HoldingCapacityGal": null,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 12,
+      "Fuel": "Gasoline or Diesel depending configuration",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin inboards",
+      "TypicalEngine": "Optional Detroit 8V92 750 hp diesels documented",
+      "PlaningCruiseSpeedKt": 25,
+      "Configuration": "Convertible",
+      "Style": "Sportfisher",
+      "AftCabin": false,
+      "aliases": [
+        "Trojan 14 Meter Convertible",
+        "Trojan 14M Convertible"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/trojan/14-meter-convertible-1988-92",
+      "identityNote": "Revised version of the 13 Meter Sedan with a much larger cockpit; retained as a distinct marketed model."
+    }
+  ],
+  "identityDecisions": [
+    {
+      "scope": "12 Meter family",
+      "decision": "retain three marketed identities",
+      "models": [
+        "TROJ-12M-CV",
+        "TROJ-12M-EX",
+        "TROJ-12M-MY"
+      ],
+      "rationale": "Convertible, Express and Motor Yacht share dimensions and hull lineage but differ materially in deck arrangement, accommodations, clearance and intended use."
+    },
+    {
+      "scope": "44-foot family",
+      "decision": "retain Convertible and Motor Yacht separately",
+      "models": [
+        "TROJ-44-CV",
+        "TROJ-44-MY"
+      ],
+      "rationale": "The two models share hull lineage but are distinct marketed configurations with different dimensions, accommodations and mission."
+    },
+    {
+      "scope": "44 Motor Yacht 1978 redesign",
+      "decision": "production phase not new generation",
+      "models": [
+        "TROJ-44-MY"
+      ],
+      "rationale": "The 1978 changes are documented as an extensive redesign of the continuing 44 Motor Yacht rather than a new model identity."
+    },
+    {
+      "scope": "440 Express 1998 interior change",
+      "decision": "production phase not new generation",
+      "models": [
+        "TROJ-440-EX"
+      ],
+      "rationale": "The 1998 third-stateroom revision changes the interior layout but not the hull or marketed model identity."
+    },
+    {
+      "scope": "14 Meter Convertible",
+      "decision": "distinct successor identity",
+      "models": [
+        "TROJ-14M-CV"
+      ],
+      "rationale": "Although derived from the 13 Meter Sedan, the 14 Meter Convertible has a substantially larger cockpit and was marketed separately."
+    }
+  ],
+  "unknownPolicy": "Missing specifications remain null and do not eliminate the model."
+}
