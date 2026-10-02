@@ -294,5 +294,41 @@
     "Resolution": "Express, Sports Express/Sports Cruiser and Sedan share the 31-foot Commander hull but were separately marketed with materially different deck/interior arrangements.",
     "ReviewedOn": "2026-10-02",
     "Release": "Phase2"
+  },
+  {
+    "ModelIdentityFamilyID": "CHCR-38-CO",
+    "Manufacturer": "Chris-Craft",
+    "ModelDesignation": "38 Commander",
+    "Disposition": "distinct_layout_variants",
+    "AutoMerge": false,
+    "MemberBoatModelIDs": [
+      "CHCR-38-CO-EX",
+      "CHCR-38-CO-SE",
+      "CHCR-38-CO-SF"
+    ],
+    "SharedAliases": [
+      "Chris-Craft 38 Commander",
+      "Chris Craft 38 Commander"
+    ],
+    "Resolution": "Express, Sedan and Sport Fisherman share the 38-foot Commander hull but have materially different cockpit, bridge and interior arrangements.",
+    "ReviewedOn": "2026-10-02",
+    "Release": "Phase2"
+  },
+  {
+    "ModelIdentityFamilyID": "HATT-36-CV",
+    "Manufacturer": "Hatteras",
+    "ModelDesignation": "36 Convertible",
+    "Disposition": "distinct_generations",
+    "AutoMerge": false,
+    "MemberBoatModelIDs": [
+      "HATT-36-CV-G1",
+      "HATT-36-CV-G2"
+    ],
+    "SharedAliases": [
+      "Hatteras 36 Convertible"
+    ],
+    "Resolution": "The 1969–77 and 1983–87 36 Convertibles are separated by a production gap and materially different hull dimensions, displacement and tankage.",
+    "ReviewedOn": "2026-10-02",
+    "Release": "Phase2"
   }
 ]
