@@ -17,7 +17,7 @@
     "Preference matching consumes canonical facts and derived characteristics; preference questions do not automatically create new factual fields.",
     "Every structured canonical field that may be corrected is individually correctable.",
     "Canonical model values and source/evidence assertions are stored separately.",
-    "Production phases/generations are separate scoped records under one canonical model. Construction or dimensional changes do not create duplicate models unless builder/market identity changed or continuity would materially mislead."
+    "Production phases are scoped records within one canonical model when market identity remains continuous. If the same marketed name reappears after a production gap or material redesign and one flat record would mislead buyers, create distinct generation identities linked by ModelIdentityFamilyID; layout variants that are separately marketed or materially different also remain distinct identities."
   ],
   "groups": [
     {
