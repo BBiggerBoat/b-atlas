@@ -1,0 +1,471 @@
+{
+  "batchId": "phase2-batch-22-viking-41-45",
+  "status": "researched_complete_live",
+  "researchedAt": "2026-10-02",
+  "workflowNote": "Standalone Phase 2A batch, published through data/phase2-live-models.json and live aliases. User-directed Phase 2 maximum LOA is 50 feet.",
+  "models": [
+    {
+      "BoatModelID": "VIKI-41-CV",
+      "Manufacturer": "Viking",
+      "Model": "41 Convertible",
+      "FirstYear": 1983,
+      "LastYear": 1990,
+      "LOAFt": 41.1667,
+      "BeamFt": 14.8333,
+      "DraftFt": 4.25,
+      "DisplacementLb": 32000,
+      "AirDraftFt": 12,
+      "FuelCapacityGal": null,
+      "WaterCapacityGal": 125,
+      "HoldingCapacityGal": 40,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 15.5,
+      "Fuel": "Diesel",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin inboards",
+      "TypicalEngine": "Detroit 6-71 485 hp diesels",
+      "PlaningCruiseSpeedKt": 26,
+      "Configuration": "Convertible",
+      "Style": "Sportfisher",
+      "AftCabin": false,
+      "aliases": [
+        "Viking 41 Convertible"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/viking/41-convertible-1983-90",
+      "identityNote": "Source lists fuel capacity as 380/430 gallons depending configuration; canonical single-value fuel capacity remains null."
+    },
+    {
+      "BoatModelID": "VIKI-42-CV",
+      "Manufacturer": "Viking",
+      "Model": "42 Convertible",
+      "FirstYear": 2011,
+      "LastYear": 2016,
+      "LOAFt": 42.5833,
+      "BeamFt": 15.8333,
+      "DraftFt": 3.5833,
+      "DisplacementLb": 36000,
+      "AirDraftFt": 16.5833,
+      "FuelCapacityGal": 525,
+      "WaterCapacityGal": 120,
+      "HoldingCapacityGal": 39,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 16.7,
+      "Fuel": "Diesel",
+      "Propulsion": "Pod",
+      "EngineConfiguration": "Twin inboards",
+      "TypicalEngine": "Cummins QSC-600 diesels with Zeus pod drives",
+      "PlaningCruiseSpeedKt": 30,
+      "Configuration": "Convertible",
+      "Style": "Sportfisher",
+      "AftCabin": false,
+      "aliases": [
+        "Viking 42 Convertible"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/viking/42-convertible-2011-16"
+    },
+    {
+      "BoatModelID": "VIKI-42-OPEN",
+      "Manufacturer": "Viking",
+      "Model": "42 Open",
+      "FirstYear": 2011,
+      "LastYear": 2016,
+      "LOAFt": 42.5833,
+      "BeamFt": 15.8333,
+      "DraftFt": 3.4167,
+      "DisplacementLb": 32700,
+      "AirDraftFt": 16.5833,
+      "FuelCapacityGal": 525,
+      "WaterCapacityGal": 120,
+      "HoldingCapacityGal": 39,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 17,
+      "Fuel": "Diesel",
+      "Propulsion": "Pod",
+      "EngineConfiguration": "Twin inboards",
+      "TypicalEngine": "Cummins QSC-600 diesels with Zeus pod drives",
+      "PlaningCruiseSpeedKt": 25.5,
+      "Configuration": "Open",
+      "Style": "Express Sportfisher",
+      "AftCabin": false,
+      "aliases": [
+        "Viking 42 Open"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/viking/42-open-2011-16"
+    },
+    {
+      "BoatModelID": "VIKI-43-CV",
+      "Manufacturer": "Viking",
+      "Model": "43 Convertible",
+      "FirstYear": 1990,
+      "LastYear": 2002,
+      "LOAFt": 43,
+      "BeamFt": 15.25,
+      "DraftFt": 4.25,
+      "DisplacementLb": 38595,
+      "AirDraftFt": 15.8333,
+      "FuelCapacityGal": null,
+      "WaterCapacityGal": 115,
+      "HoldingCapacityGal": 40,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 15.5,
+      "Fuel": "Diesel",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin inboards",
+      "TypicalEngine": "Detroit 6-71 485 hp; 6V92 625 hp; later MAN 680 hp diesels",
+      "PlaningCruiseSpeedKt": 23,
+      "Configuration": "Convertible",
+      "Style": "Sportfisher",
+      "AftCabin": false,
+      "productionPhases": [
+        {
+          "startYear": 1995,
+          "endYear": 2002,
+          "changes": [
+            "Direct cockpit engine-room access"
+          ]
+        },
+        {
+          "startYear": 1997,
+          "endYear": 2002,
+          "changes": [
+            "Extended flybridge"
+          ]
+        },
+        {
+          "startYear": 1999,
+          "endYear": 2002,
+          "TypicalEngine": "MAN 680 hp diesels standard"
+        }
+      ],
+      "aliases": [
+        "Viking 43 Convertible"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/viking/43-convertible-1990-2002",
+      "identityNote": "Source lists fuel capacity as 525/600 gallons depending year/configuration; canonical single-value fuel capacity remains null."
+    },
+    {
+      "BoatModelID": "VIKI-43-DC",
+      "Manufacturer": "Viking",
+      "Model": "43 Double Cabin",
+      "FirstYear": 1975,
+      "LastYear": 1982,
+      "LOAFt": 42.6667,
+      "BeamFt": 14.75,
+      "DraftFt": 3.75,
+      "DisplacementLb": 34000,
+      "AirDraftFt": 12,
+      "FuelCapacityGal": 350,
+      "WaterCapacityGal": 100,
+      "HoldingCapacityGal": 50,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 17,
+      "Fuel": "Gasoline or Diesel depending configuration",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin inboards",
+      "TypicalEngine": "Gasoline standard; GM 6-71N 310 hp and 6-71 410 hp diesels common",
+      "PlaningCruiseSpeedKt": 18.5,
+      "Configuration": "Double Cabin",
+      "Style": "Motor Yacht",
+      "AftCabin": true,
+      "productionPhases": [
+        {
+          "startYear": 1982,
+          "endYear": 1982,
+          "layout": "Teak interior replaced wood-grain mica"
+        }
+      ],
+      "aliases": [
+        "Viking 43 Double Cabin",
+        "Viking 43 DC"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/viking/43-double-cabin-1975-82",
+      "identityNote": "Over 250 built."
+    },
+    {
+      "BoatModelID": "VIKI-43-OPEN",
+      "Manufacturer": "Viking",
+      "Model": "43 Open",
+      "FirstYear": 1994,
+      "LastYear": 2002,
+      "LOAFt": 43,
+      "BeamFt": 15.25,
+      "DraftFt": 4.25,
+      "DisplacementLb": 34500,
+      "AirDraftFt": 9.9167,
+      "FuelCapacityGal": 600,
+      "WaterCapacityGal": 115,
+      "HoldingCapacityGal": 40,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 15.5,
+      "Fuel": "Diesel",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin inboards",
+      "TypicalEngine": "Detroit 6V92 DDEC 550 hp; later MAN 680/820 hp diesels",
+      "PlaningCruiseSpeedKt": 26,
+      "Configuration": "Open",
+      "Style": "Express Sportfisher",
+      "AftCabin": false,
+      "aliases": [
+        "Viking 43 Open"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/viking/43-open-1994-2002",
+      "identityNote": "Over 70 built."
+    },
+    {
+      "BoatModelID": "VIKI-44-CV",
+      "Manufacturer": "Viking",
+      "Model": "44 Convertible",
+      "FirstYear": 2019,
+      "LastYear": null,
+      "LOAFt": 45.0833,
+      "BeamFt": 16.3333,
+      "DraftFt": 4,
+      "DisplacementLb": 50132,
+      "AirDraftFt": null,
+      "FuelCapacityGal": 825,
+      "WaterCapacityGal": 120,
+      "HoldingCapacityGal": 46,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": null,
+      "Fuel": "Diesel",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin inboards",
+      "TypicalEngine": "Volvo D13 1,000 hp diesels",
+      "PlaningCruiseSpeedKt": 30,
+      "Configuration": "Convertible",
+      "Style": "Sportfisher",
+      "AftCabin": false,
+      "aliases": [
+        "Viking 44 Convertible",
+        "Viking 44C"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/viking/44-convertible-2019-current"
+    },
+    {
+      "BoatModelID": "VIKI-44-MY",
+      "Manufacturer": "Viking",
+      "Model": "44 Motor Yacht",
+      "FirstYear": 1982,
+      "LastYear": 1990,
+      "LOAFt": 44,
+      "BeamFt": 15,
+      "DraftFt": 4,
+      "DisplacementLb": 40000,
+      "AirDraftFt": 14.5,
+      "FuelCapacityGal": 460,
+      "WaterCapacityGal": 180,
+      "HoldingCapacityGal": 50,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 15.5,
+      "Fuel": "Gasoline or Diesel depending configuration",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin inboards",
+      "TypicalEngine": "Optional Detroit 6-71 485 hp diesels",
+      "PlaningCruiseSpeedKt": 23,
+      "Configuration": "Motor Yacht",
+      "Style": "Motor Yacht",
+      "AftCabin": true,
+      "productionPhases": [
+        {
+          "startYear": 1989,
+          "endYear": 1990,
+          "changes": [
+            "Updated bridge profile"
+          ]
+        }
+      ],
+      "aliases": [
+        "Viking 44 Motor Yacht",
+        "Viking 44 MY"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/viking/44-motor-yacht-1982-90"
+    },
+    {
+      "BoatModelID": "VIKI-44-OPEN",
+      "Manufacturer": "Viking",
+      "Model": "44 Open",
+      "FirstYear": 2019,
+      "LastYear": null,
+      "LOAFt": 45.0833,
+      "BeamFt": 16.3333,
+      "DraftFt": 3.8333,
+      "DisplacementLb": 49500,
+      "AirDraftFt": null,
+      "FuelCapacityGal": 845,
+      "WaterCapacityGal": 120,
+      "HoldingCapacityGal": 46,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 14,
+      "Fuel": "Diesel",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin inboards",
+      "TypicalEngine": "MAN 800 hp inboard diesels",
+      "PlaningCruiseSpeedKt": 30,
+      "Configuration": "Open",
+      "Style": "Express Sportfisher",
+      "AftCabin": false,
+      "aliases": [
+        "Viking 44 Open"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/viking/44-open-2019-current"
+    },
+    {
+      "BoatModelID": "VIKI-45-CV-G1",
+      "Manufacturer": "Viking",
+      "Model": "45 Convertible Generation 1",
+      "FirstYear": 1987,
+      "LastYear": 1993,
+      "LOAFt": 45.4167,
+      "BeamFt": 15,
+      "DraftFt": 4,
+      "DisplacementLb": 44400,
+      "AirDraftFt": 12.4167,
+      "FuelCapacityGal": 600,
+      "WaterCapacityGal": 160,
+      "HoldingCapacityGal": 50,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 15.5,
+      "Fuel": "Diesel",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin inboards",
+      "TypicalEngine": "Detroit 6-71 485 hp; 6V92 550 hp from 1990",
+      "PlaningCruiseSpeedKt": 24,
+      "Configuration": "Convertible",
+      "Style": "Sportfisher",
+      "AftCabin": false,
+      "productionPhases": [
+        {
+          "startYear": 1990,
+          "endYear": 1993,
+          "TypicalEngine": "Detroit 6V92 550 hp diesels",
+          "PlaningCruiseSpeedKt": 27
+        }
+      ],
+      "aliases": [
+        "Viking 45 Convertible 1987-93",
+        "Viking 45 Convertible Gen 1"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/viking/45-convertible-1987-93",
+      "identityNote": "About 250 built."
+    },
+    {
+      "BoatModelID": "VIKI-45-CV-G2",
+      "Manufacturer": "Viking",
+      "Model": "45 Convertible Generation 2",
+      "FirstYear": 2003,
+      "LastYear": 2008,
+      "LOAFt": 45.8333,
+      "BeamFt": 16.3333,
+      "DraftFt": 4.5,
+      "DisplacementLb": 50550,
+      "AirDraftFt": 16.3333,
+      "FuelCapacityGal": 848,
+      "WaterCapacityGal": 150,
+      "HoldingCapacityGal": 50,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 15.5,
+      "Fuel": "Diesel",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin inboards",
+      "TypicalEngine": "MAN 900 hp common-rail diesels",
+      "PlaningCruiseSpeedKt": 29,
+      "Configuration": "Convertible",
+      "Style": "Sportfisher",
+      "AftCabin": false,
+      "productionPhases": [
+        {
+          "startYear": 2007,
+          "endYear": 2008,
+          "changes": [
+            "Serving counter added in galley",
+            "Amidships master suite"
+          ]
+        }
+      ],
+      "aliases": [
+        "Viking 45 Convertible 2003-08",
+        "Viking 45 Convertible Gen 2"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/viking/45-convertible-2003-08"
+    },
+    {
+      "BoatModelID": "VIKI-45-OPEN",
+      "Manufacturer": "Viking",
+      "Model": "45 Open",
+      "FirstYear": 2003,
+      "LastYear": 2009,
+      "LOAFt": 45.8333,
+      "BeamFt": 16.3333,
+      "DraftFt": 4.5,
+      "DisplacementLb": 49760,
+      "AirDraftFt": null,
+      "FuelCapacityGal": 848,
+      "WaterCapacityGal": 150,
+      "HoldingCapacityGal": 50,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 15.5,
+      "Fuel": "Diesel",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin inboards",
+      "TypicalEngine": "MAN V10 860 hp; optional 1,100 hp MAN diesels",
+      "PlaningCruiseSpeedKt": 29,
+      "Configuration": "Open",
+      "Style": "Express Sportfisher",
+      "AftCabin": false,
+      "aliases": [
+        "Viking 45 Open"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/viking/45-open-2003-09"
+    }
+  ],
+  "identityDecisions": [
+    {
+      "scope": "42 Convertible/Open",
+      "decision": "retain distinct layout identities",
+      "models": [
+        "VIKI-42-CV",
+        "VIKI-42-OPEN"
+      ],
+      "rationale": "They share Zeus pod-drive hull architecture but are distinct marketed flybridge and open arrangements."
+    },
+    {
+      "scope": "43 family",
+      "decision": "retain three distinct marketed identities",
+      "models": [
+        "VIKI-43-CV",
+        "VIKI-43-DC",
+        "VIKI-43-OPEN"
+      ],
+      "rationale": "Convertible, Double Cabin and Open have different hull eras, accommodations and missions; they are not production phases of one model."
+    },
+    {
+      "scope": "44 Convertible/Open",
+      "decision": "retain distinct layout identities",
+      "models": [
+        "VIKI-44-CV",
+        "VIKI-44-OPEN"
+      ],
+      "rationale": "Current-generation flybridge Convertible and Open share broad dimensions but have materially different deck/helm arrangements."
+    },
+    {
+      "scope": "45 Convertible",
+      "decision": "two linked generations",
+      "models": [
+        "VIKI-45-CV-G1",
+        "VIKI-45-CV-G2"
+      ],
+      "rationale": "1987–93 and 2003–08 are separated by a decade and materially different dimensions, displacement, tankage and construction era."
+    },
+    {
+      "scope": "45 Convertible/Open",
+      "decision": "retain distinct layout identities",
+      "models": [
+        "VIKI-45-CV-G2",
+        "VIKI-45-OPEN"
+      ],
+      "rationale": "The Open is a distinct express configuration despite close dimensions and shared era."
+    }
+  ],
+  "unknownPolicy": "Missing or ambiguous specifications remain null and do not eliminate the model.",
+  "sizePolicy": "Hard Phase 2 maximum LOA is 50 feet unless the user explicitly changes it."
+}
