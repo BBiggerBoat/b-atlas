@@ -849,7 +849,7 @@
       "Reconcile existing TOLL-37-SE against staged TOLL-37-CV before canonical merge.",
       "Consolidate staged Tollycraft batches 10–12 after resolving TOLL-37-SE versus TOLL-37-CV.",
       "Hatteras Phase 2 expansion intentionally paused at 48 feet; larger 50/52/53-foot families deferred.",
-      "Continue Sea Ray with nominal 40–44-foot families, preserving documented rename chains and distinct generations; maintain the 50-foot actual-length cap."
+      "Continue Sea Ray with nominal 45–50-foot families, enforcing the 50'0\" published-overall-length cap before publication."
     ]
   },
   "workflow": {
@@ -876,7 +876,7 @@
     "rule": "Research quality is unchanged; only downstream publishing/enrichment work is deferred.",
     "lastCompletedBatch": "phase2-batch-09-silverton-44-52",
     "lastCompletedAt": "2026-10-02",
-    "lastResearchedBatch": "phase2-batch-25-sea-ray-35-39",
+    "lastResearchedBatch": "phase2-batch-26-sea-ray-40-44",
     "lastResearchedAt": "2026-10-02",
     "pendingCanonicalMerge": [
       "phase2-batch-10-tollycraft-30-40",
@@ -894,10 +894,11 @@
       "phase2-batch-22-viking-41-45",
       "phase2-batch-23-viking-46-50",
       "phase2-batch-24-sea-ray-30-34",
-      "phase2-batch-25-sea-ray-35-39"
+      "phase2-batch-25-sea-ray-35-39",
+      "phase2-batch-26-sea-ray-40-44"
     ],
     "note": "Phase 2 staged batches are published through the live runtime overlay immediately; canonical boatmodels.json consolidation remains deferred.",
-    "lastPublishedBatch": "phase2-batch-25-sea-ray-35-39",
+    "lastPublishedBatch": "phase2-batch-26-sea-ray-40-44",
     "lastPublishedAt": "2026-10-02",
     "maxModelLOAFt": 50,
     "maxModelLOANote": "Hard user-directed cap effective 2026-10-02. Apply to published overall length; nominal 50-foot models over 50'0\" and boats with overall appendage-inclusive length over 50'0\" are deferred."
