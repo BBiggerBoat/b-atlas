@@ -1,0 +1,146 @@
+{
+  "batchId": "phase2-batch-02-trojan-chris-craft",
+  "schemaVersion": "1.4",
+  "validatedAt": "2026-10-02",
+  "assertions": [
+    {
+      "EvidenceAssertionID": "TROJ-F32-years",
+      "BoatModelID": "TROJ-F32-SE",
+      "FieldID": "ProductionYears",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/trojan/32-sedan-1973-91",
+      "AssertionState": "supports",
+      "SourceValue": "1973–91",
+      "SourceUnit": null,
+      "NormalizedCandidateValue": null,
+      "CanonicalUnit": null,
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1973,
+        "endYear": 1991
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "TROJ-F32-dims",
+      "BoatModelID": "TROJ-F32-SE",
+      "FieldID": "Dimensions",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/trojan/32-sedan-1973-91",
+      "AssertionState": "supports",
+      "SourceValue": "32 ft LOA; 13 ft beam; 2 ft 6 in draft; 12,000 lb; 12 ft 6 in clearance",
+      "SourceUnit": null,
+      "NormalizedCandidateValue": null,
+      "CanonicalUnit": null,
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model"
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "TROJ-F32-history",
+      "BoatModelID": "TROJ-F32-SE",
+      "FieldID": "ModelHistory",
+      "SourceRef": "https://www.trojanboat.com/history-part-ii.html",
+      "AssertionState": "supports",
+      "SourceValue": "about 2,200 twin-inboard 32-foot sedans built over roughly twenty years from about 1972 to 1992",
+      "SourceUnit": null,
+      "NormalizedCandidateValue": null,
+      "CanonicalUnit": null,
+      "Confidence": "medium",
+      "Applicability": {
+        "scope": "model"
+      },
+      "CapturedAt": "2026-10-02",
+      "Notes": "Used as historical corroboration; B-Atlas production years follow the model-specific HMY range."
+    },
+    {
+      "EvidenceAssertionID": "TROJ-F26-years",
+      "BoatModelID": "TROJ-F26-EX",
+      "FieldID": "ProductionYears",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/trojan/26-express-1975-83",
+      "AssertionState": "supports",
+      "SourceValue": "1975–83",
+      "SourceUnit": null,
+      "NormalizedCandidateValue": null,
+      "CanonicalUnit": null,
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1975,
+        "endYear": 1983
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "TROJ-F26-dims",
+      "BoatModelID": "TROJ-F26-EX",
+      "FieldID": "Dimensions",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/trojan/26-express-1975-83",
+      "AssertionState": "supports",
+      "SourceValue": "26 ft 4 in LOA; 10 ft 2 in beam; 2 ft 3 in draft; 6,000 lb; 9 ft clearance",
+      "SourceUnit": null,
+      "NormalizedCandidateValue": null,
+      "CanonicalUnit": null,
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model"
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "CHCR-31-EX",
+      "BoatModelID": "CHCR-31-CO-EX",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.commanderclub.com/models-by-id/6f1007da-8b4e-41dd-94cc-02a855164dc1",
+      "AssertionState": "supports",
+      "SourceValue": "31 Express; 1966–1972; 542 built; 31 ft x 11 ft 3 in; 28 in draft; 100 gal fuel; 25 gal water",
+      "SourceUnit": null,
+      "NormalizedCandidateValue": null,
+      "CanonicalUnit": null,
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1966,
+        "endYear": 1972
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "CHCR-31-SC",
+      "BoatModelID": "CHCR-31-CO-SC",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.commanderclub.com/models-by-id/52e9ec45-f84e-4592-a5da-66dfd01f9645",
+      "AssertionState": "supports",
+      "SourceValue": "31 Sports Express / Sports Cruiser; 1967–1974; 410 built; 31 ft x 11 ft 3 in; 28 in draft; 150 gal fuel; 25 gal water",
+      "SourceUnit": null,
+      "NormalizedCandidateValue": null,
+      "CanonicalUnit": null,
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1967,
+        "endYear": 1974
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "CHCR-31-SE",
+      "BoatModelID": "CHCR-31-CO-SE",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.commanderclub.com/models-by-id/bf7792b3-a726-4af7-ba50-f9d53022934d",
+      "AssertionState": "supports",
+      "SourceValue": "31 Sedan; 1969–1972; 158 built; 31 ft x 11 ft 3 in; 28 in draft; 100 gal fuel; 25 gal water",
+      "SourceUnit": null,
+      "NormalizedCandidateValue": null,
+      "CanonicalUnit": null,
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1969,
+        "endYear": 1972
+      },
+      "CapturedAt": "2026-10-02"
+    }
+  ]
+}
