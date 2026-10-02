@@ -60,7 +60,7 @@
     {
       "manufacturer": "Silverton",
       "manufacturerCode": "SILV",
-      "currentCanonicalModels": 20,
+      "currentCanonicalModels": 27,
       "priority": "high",
       "candidateFamilies": [
         "31 Convertible",
@@ -95,7 +95,14 @@
         "310 Express",
         "312 Sedan",
         "34 Sedan",
-        "34 Express"
+        "34 Express",
+        "35 / 351 Sedan",
+        "362 Sedan Cruiser",
+        "41 Convertible",
+        "41 Aft Cabin",
+        "42 Convertible",
+        "43 Motor Yacht",
+        "43 Sport Bridge"
       ]
     },
     {
@@ -543,6 +550,111 @@
         "sourceRefs": [
           "https://www.hmy.com/yachting/powerboat-guide/silverton/34-express-1987-89",
           "https://www.hmy.com/yachting/powerboat-guide/silverton/34-express-1990-94"
+        ]
+      },
+      {
+        "manufacturer": "Silverton",
+        "canonicalProposal": "Silverton 351 Sedan / 35 Convertible",
+        "proposedBoatModelID": "SILV-351-SE",
+        "identityDecision": "single_canonical_model_with_name_change",
+        "productionYears": {
+          "start": 1997,
+          "end": 2003,
+          "confidence": "high"
+        },
+        "rationale": "The same SideWalk design was marketed first as 351 Sedan and then as 35 Convertible in 2001–03; model-name change does not justify a generation split.",
+        "sourceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/silverton/351-sedan-35-convertible-1997-2003"
+        ]
+      },
+      {
+        "manufacturer": "Silverton",
+        "canonicalProposal": "Silverton 362 Sedan Cruiser",
+        "proposedBoatModelID": "SILV-362-SC",
+        "identityDecision": "single_canonical_model",
+        "productionYears": {
+          "start": 1994,
+          "end": 1997,
+          "confidence": "high"
+        },
+        "rationale": "Single documented production run.",
+        "sourceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/silverton/362-sedan-cruiser-1994-97"
+        ]
+      },
+      {
+        "manufacturer": "Silverton",
+        "canonicalProposal": "Silverton 41 Convertible",
+        "proposedBoatModelID": "SILV-41-CV",
+        "identityDecision": "single_canonical_model",
+        "productionYears": {
+          "start": 1991,
+          "end": 1999,
+          "confidence": "high"
+        },
+        "rationale": "Single documented production run; gasoline/diesel engine choice is configuration-level.",
+        "sourceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/silverton/41-convertible-1991-99"
+        ]
+      },
+      {
+        "manufacturer": "Silverton",
+        "canonicalProposal": "Silverton 41 Aft Cabin Motor Yacht",
+        "proposedBoatModelID": "SILV-41-AC",
+        "identityDecision": "single_canonical_model",
+        "productionYears": {
+          "start": 1991,
+          "end": 1995,
+          "confidence": "high"
+        },
+        "rationale": "Single documented production run; gasoline/diesel engine choice is configuration-level.",
+        "sourceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/silverton/41-aft-cabin-motor-yacht-1991-95"
+        ]
+      },
+      {
+        "manufacturer": "Silverton",
+        "canonicalProposal": "Silverton 42 Convertible",
+        "proposedBoatModelID": "SILV-42-CV",
+        "identityDecision": "single_canonical_model_distinct_from_41",
+        "productionYears": {
+          "start": 2000,
+          "end": 2012,
+          "confidence": "high"
+        },
+        "rationale": "Built on the earlier 41 Convertible hull but marketed as a distinct model with different overall length and production identity.",
+        "sourceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/silverton/42-convertible-2000-12"
+        ]
+      },
+      {
+        "manufacturer": "Silverton",
+        "canonicalProposal": "Silverton 43 Motor Yacht",
+        "proposedBoatModelID": "SILV-43-MY",
+        "identityDecision": "single_canonical_model",
+        "productionYears": {
+          "start": 2001,
+          "end": 2007,
+          "confidence": "high"
+        },
+        "rationale": "Single documented SideWalk motor-yacht production run.",
+        "sourceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/silverton/43-motor-yacht-2001-07"
+        ]
+      },
+      {
+        "manufacturer": "Silverton",
+        "canonicalProposal": "Silverton 43 Sport Bridge",
+        "proposedBoatModelID": "SILV-43-SB",
+        "identityDecision": "single_canonical_model_with_propulsion_phases",
+        "productionYears": {
+          "start": 2006,
+          "end": 2012,
+          "confidence": "high"
+        },
+        "rationale": "Gasoline, conventional diesel and later IPS propulsion are configuration/production changes within one continuous model identity; IPS became standard after 2007.",
+        "sourceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/silverton/43-sport-bridge-2006-12"
         ]
       }
     ],
