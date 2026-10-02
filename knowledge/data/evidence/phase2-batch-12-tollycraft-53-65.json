@@ -1,0 +1,131 @@
+{
+  "batchId": "phase2-batch-12-tollycraft-53-65",
+  "schemaVersion": "1.4",
+  "validatedAt": "2026-10-02",
+  "assertions": [
+    {
+      "EvidenceAssertionID": "TOLL-53-MY",
+      "BoatModelID": "TOLL-53-MY",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/53-motor-yacht-1988-94",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 1988,
+        "LastYear": 1994,
+        "LOAFt": 59.5,
+        "HullLengthFt": 52.9167,
+        "BeamFt": 16.9167,
+        "DraftFt": 3.5,
+        "DisplacementLb": 52000,
+        "FuelCapacityGal": 800,
+        "WaterCapacityGal": 280,
+        "HoldingCapacityGal": 80,
+        "HullType": "Modified-V",
+        "DeadriseAftDeg": 11,
+        "Fuel": "Diesel",
+        "Propulsion": "Shaft",
+        "TotalBuilt": null
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1988,
+        "endYear": 1994
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "TOLL-57-CMY",
+      "BoatModelID": "TOLL-57-CMY",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/57-cockpit-motor-yacht-1989-96",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 1989,
+        "LastYear": 1996,
+        "LOAFt": 63.5833,
+        "HullLengthFt": 57,
+        "BeamFt": 17.25,
+        "DraftFt": 3.5,
+        "DisplacementLb": 58000,
+        "FuelCapacityGal": 1200,
+        "WaterCapacityGal": 280,
+        "HoldingCapacityGal": 120,
+        "HullType": "Modified-V",
+        "DeadriseAftDeg": 11,
+        "Fuel": "Diesel",
+        "Propulsion": "Shaft",
+        "TotalBuilt": null
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1989,
+        "endYear": 1996
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "TOLL-61-PH",
+      "BoatModelID": "TOLL-61-PH",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/61-pilothouse-1983-93",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 1983,
+        "LastYear": 1993,
+        "LOAFt": 67.6667,
+        "HullLengthFt": 61.1667,
+        "BeamFt": 17.6667,
+        "DraftFt": 4,
+        "DisplacementLb": 65000,
+        "FuelCapacityGal": 1160,
+        "WaterCapacityGal": 400,
+        "HoldingCapacityGal": 50,
+        "HullType": "Modified-V",
+        "DeadriseAftDeg": null,
+        "Fuel": "Diesel",
+        "Propulsion": "Shaft",
+        "TotalBuilt": null
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1983,
+        "endYear": 1993
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "TOLL-65-PHCMY",
+      "BoatModelID": "TOLL-65-PHCMY",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/65-pilothouse-cockpit-my-1993-98",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 1993,
+        "LastYear": 1998,
+        "LOAFt": 67.8333,
+        "HullLengthFt": 65.1667,
+        "BeamFt": 17.9167,
+        "DraftFt": 4.75,
+        "DisplacementLb": 68000,
+        "FuelCapacityGal": 1160,
+        "WaterCapacityGal": 400,
+        "HoldingCapacityGal": 120,
+        "HullType": "Modified-V",
+        "DeadriseAftDeg": 10,
+        "Fuel": "Diesel",
+        "Propulsion": "Shaft",
+        "TotalBuilt": 13
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1993,
+        "endYear": 1998
+      },
+      "CapturedAt": "2026-10-02"
+    }
+  ]
+}
