@@ -1,0 +1,819 @@
+{
+  "batchId": "phase2-batch-25-sea-ray-35-39",
+  "schemaVersion": "1.4",
+  "validatedAt": "2026-10-02",
+  "assertions": [
+    {
+      "EvidenceAssertionID": "SRAY-350-EB",
+      "BoatModelID": "SRAY-350-EB",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/350-express-bridge-1992-94",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 1992,
+        "LastYear": 1994,
+        "LOAFt": 35.3333,
+        "BeamFt": 11.4167,
+        "DraftFt": 3.0833,
+        "DisplacementLb": 11500,
+        "AirDraftFt": null,
+        "FuelCapacityGal": 200,
+        "WaterCapacityGal": 60,
+        "HoldingCapacityGal": null,
+        "HullType": "Modified-V",
+        "DeadriseAftDeg": 18
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1992,
+        "endYear": 1994
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "SRAY-350-SLX-G1",
+      "BoatModelID": "SRAY-350-SLX-G1",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/350-slx-2014-20",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 2014,
+        "LastYear": 2020,
+        "LOAFt": 34.5,
+        "BeamFt": 10.5,
+        "DraftFt": 3,
+        "DisplacementLb": 11787,
+        "AirDraftFt": null,
+        "FuelCapacityGal": 160,
+        "WaterCapacityGal": 30,
+        "HoldingCapacityGal": 28,
+        "HullType": "Deep-V",
+        "DeadriseAftDeg": 21
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 2014,
+        "endYear": 2020
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "SRAY-350-SLX-G2",
+      "BoatModelID": "SRAY-350-SLX-G2",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/350-slx-2021-current",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 2021,
+        "LastYear": null,
+        "LOAFt": 34.5833,
+        "BeamFt": 10.5,
+        "DraftFt": 2.0833,
+        "DisplacementLb": 13890,
+        "AirDraftFt": null,
+        "FuelCapacityGal": 177,
+        "WaterCapacityGal": 30,
+        "HoldingCapacityGal": 28,
+        "HullType": "Deep-V",
+        "DeadriseAftDeg": 21
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 2021,
+        "endYear": null
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "SRAY-350-SD",
+      "BoatModelID": "SRAY-350-SD",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/350-sundancer-2013-20",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 2013,
+        "LastYear": 2020,
+        "LOAFt": 35,
+        "BeamFt": 11.3333,
+        "DraftFt": 3.3333,
+        "DisplacementLb": 15780,
+        "AirDraftFt": null,
+        "FuelCapacityGal": 230,
+        "WaterCapacityGal": 40,
+        "HoldingCapacityGal": 28,
+        "HullType": "Deep-V",
+        "DeadriseAftDeg": 20
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 2013,
+        "endYear": 2020
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "SRAY-350-SD-CP",
+      "BoatModelID": "SRAY-350-SD-CP",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/350-sundancer-coupe-2017-21",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 2017,
+        "LastYear": 2021,
+        "LOAFt": 35,
+        "BeamFt": 11.3333,
+        "DraftFt": 3.3333,
+        "DisplacementLb": 18792,
+        "AirDraftFt": null,
+        "FuelCapacityGal": 214,
+        "WaterCapacityGal": 40,
+        "HoldingCapacityGal": 28,
+        "HullType": "Deep-V",
+        "DeadriseAftDeg": 20
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 2017,
+        "endYear": 2021
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "SRAY-350-370-EC",
+      "BoatModelID": "SRAY-350-370-EC",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/350-370-express-cruiser-1990-95",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 1990,
+        "LastYear": 1995,
+        "LOAFt": 39.4167,
+        "BeamFt": 12.3333,
+        "DraftFt": 2.4167,
+        "DisplacementLb": 13100,
+        "AirDraftFt": null,
+        "FuelCapacityGal": 250,
+        "WaterCapacityGal": 70,
+        "HoldingCapacityGal": 20,
+        "HullType": "Deep-V",
+        "DeadriseAftDeg": 21
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1990,
+        "endYear": 1995
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "SRAY-350-370-SD-G1",
+      "BoatModelID": "SRAY-350-370-SD-G1",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/350-370-sundancer-1990-94",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 1990,
+        "LastYear": 1994,
+        "LOAFt": 39.4167,
+        "BeamFt": 12.3333,
+        "DraftFt": 2.4167,
+        "DisplacementLb": 13500,
+        "AirDraftFt": null,
+        "FuelCapacityGal": 250,
+        "WaterCapacityGal": 70,
+        "HoldingCapacityGal": 20,
+        "HullType": "Deep-V",
+        "DeadriseAftDeg": 21
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1990,
+        "endYear": 1994
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "SRAY-350-370-SD-G2",
+      "BoatModelID": "SRAY-350-370-SD-G2",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/350-370-sundancer-2008-16",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 2008,
+        "LastYear": 2016,
+        "LOAFt": 37.5,
+        "BeamFt": 12,
+        "DraftFt": 3.25,
+        "DisplacementLb": 18064,
+        "AirDraftFt": null,
+        "FuelCapacityGal": 225,
+        "WaterCapacityGal": 50,
+        "HoldingCapacityGal": 28,
+        "HullType": "Deep-V",
+        "DeadriseAftDeg": 21
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 2008,
+        "endYear": 2016
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "SRAY-355T-SE",
+      "BoatModelID": "SRAY-355T-SE",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/355t-sedan-1982-83",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 1982,
+        "LastYear": 1983,
+        "LOAFt": 36.25,
+        "BeamFt": 12.5,
+        "DraftFt": 2.9167,
+        "DisplacementLb": 13000,
+        "AirDraftFt": 10.25,
+        "FuelCapacityGal": 270,
+        "WaterCapacityGal": 120,
+        "HoldingCapacityGal": 25,
+        "HullType": "Modified-V",
+        "DeadriseAftDeg": 9
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1982,
+        "endYear": 1983
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "SRAY-36-SB",
+      "BoatModelID": "SRAY-36-SB",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/36-sedan-bridge-2007-09",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 2007,
+        "LastYear": 2009,
+        "LOAFt": 38.3333,
+        "BeamFt": 13,
+        "DraftFt": 3.3333,
+        "DisplacementLb": 22000,
+        "AirDraftFt": 18,
+        "FuelCapacityGal": 300,
+        "WaterCapacityGal": 75,
+        "HoldingCapacityGal": 35,
+        "HullType": "Modified-V",
+        "DeadriseAftDeg": 17
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 2007,
+        "endYear": 2009
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "SRAY-360-AC",
+      "BoatModelID": "SRAY-360-AC",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/360-aft-cabin-1983-87",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 1983,
+        "LastYear": 1987,
+        "LOAFt": 36.25,
+        "BeamFt": 12.5,
+        "DraftFt": 2.9167,
+        "DisplacementLb": 15100,
+        "AirDraftFt": null,
+        "FuelCapacityGal": 270,
+        "WaterCapacityGal": 120,
+        "HoldingCapacityGal": 40,
+        "HullType": "Modified-V",
+        "DeadriseAftDeg": 9
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1983,
+        "endYear": 1987
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "SRAY-360-SD",
+      "BoatModelID": "SRAY-360-SD",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/360-sundancer-2002-06",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 2002,
+        "LastYear": 2006,
+        "LOAFt": 39,
+        "BeamFt": 12.5,
+        "DraftFt": 3.0833,
+        "DisplacementLb": 18500,
+        "AirDraftFt": 11.3333,
+        "FuelCapacityGal": 250,
+        "WaterCapacityGal": 55,
+        "HoldingCapacityGal": 35,
+        "HullType": "Deep-V",
+        "DeadriseAftDeg": 21
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 2002,
+        "endYear": 2006
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "SRAY-SRV360-EC",
+      "BoatModelID": "SRAY-SRV360-EC",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/srv360-express-cruiser-1979-83",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 1979,
+        "LastYear": 1983,
+        "LOAFt": null,
+        "BeamFt": null,
+        "DraftFt": null,
+        "DisplacementLb": null,
+        "AirDraftFt": null,
+        "FuelCapacityGal": null,
+        "WaterCapacityGal": null,
+        "HoldingCapacityGal": null,
+        "HullType": null,
+        "DeadriseAftDeg": null
+      },
+      "Confidence": "medium",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1979,
+        "endYear": 1983
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "SRAY-SRV360-SSF",
+      "BoatModelID": "SRAY-SRV360-SSF",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/srv360-sedan-sportfish-1980-81",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 1980,
+        "LastYear": 1981,
+        "LOAFt": 38.1667,
+        "BeamFt": 13.9167,
+        "DraftFt": 2.5833,
+        "DisplacementLb": 18400,
+        "AirDraftFt": null,
+        "FuelCapacityGal": 400,
+        "WaterCapacityGal": 100,
+        "HoldingCapacityGal": 30,
+        "HullType": "Deep-V",
+        "DeadriseAftDeg": 19
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1980,
+        "endYear": 1981
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "SRAY-370-EC",
+      "BoatModelID": "SRAY-370-EC",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/370-express-cruiser-1997-2000",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 1997,
+        "LastYear": 2000,
+        "LOAFt": null,
+        "BeamFt": null,
+        "DraftFt": null,
+        "DisplacementLb": null,
+        "AirDraftFt": null,
+        "FuelCapacityGal": null,
+        "WaterCapacityGal": null,
+        "HoldingCapacityGal": null,
+        "HullType": null,
+        "DeadriseAftDeg": null
+      },
+      "Confidence": "medium",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1997,
+        "endYear": 2000
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "SRAY-370-SB",
+      "BoatModelID": "SRAY-370-SB",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/370-sedan-bridge-1991-97",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 1991,
+        "LastYear": 1997,
+        "LOAFt": null,
+        "BeamFt": null,
+        "DraftFt": null,
+        "DisplacementLb": null,
+        "AirDraftFt": null,
+        "FuelCapacityGal": null,
+        "WaterCapacityGal": null,
+        "HoldingCapacityGal": null,
+        "HullType": "Deep-V",
+        "DeadriseAftDeg": null
+      },
+      "Confidence": "medium",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1991,
+        "endYear": 1997
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "SRAY-370-SD-G1",
+      "BoatModelID": "SRAY-370-SD-G1",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/370-sundancer-1995-99",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 1995,
+        "LastYear": 1999,
+        "LOAFt": null,
+        "BeamFt": null,
+        "DraftFt": null,
+        "DisplacementLb": null,
+        "AirDraftFt": null,
+        "FuelCapacityGal": null,
+        "WaterCapacityGal": null,
+        "HoldingCapacityGal": null,
+        "HullType": null,
+        "DeadriseAftDeg": null
+      },
+      "Confidence": "medium",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1995,
+        "endYear": 1999
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "SRAY-370-SD-G2",
+      "BoatModelID": "SRAY-370-SD-G2",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/370-sundancer-2022-current",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 2022,
+        "LastYear": null,
+        "LOAFt": 37.6667,
+        "BeamFt": 12,
+        "DraftFt": 2.5833,
+        "DisplacementLb": 20800,
+        "AirDraftFt": 10.6667,
+        "FuelCapacityGal": 250,
+        "WaterCapacityGal": 46,
+        "HoldingCapacityGal": 30,
+        "HullType": "Deep-V",
+        "DeadriseAftDeg": 20
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 2022,
+        "endYear": null
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "SRAY-370-SD-OB",
+      "BoatModelID": "SRAY-370-SD-OB",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/370-sundancer-outboard-2022-current",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 2022,
+        "LastYear": null,
+        "LOAFt": null,
+        "BeamFt": null,
+        "DraftFt": null,
+        "DisplacementLb": null,
+        "AirDraftFt": null,
+        "FuelCapacityGal": null,
+        "WaterCapacityGal": null,
+        "HoldingCapacityGal": null,
+        "HullType": null,
+        "DeadriseAftDeg": null
+      },
+      "Confidence": "medium",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 2022,
+        "endYear": null
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "SRAY-370-VEN",
+      "BoatModelID": "SRAY-370-VEN",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/370-venture-2013-15",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 2013,
+        "LastYear": 2015,
+        "LOAFt": null,
+        "BeamFt": null,
+        "DraftFt": null,
+        "DisplacementLb": null,
+        "AirDraftFt": null,
+        "FuelCapacityGal": null,
+        "WaterCapacityGal": null,
+        "HoldingCapacityGal": null,
+        "HullType": null,
+        "DeadriseAftDeg": null
+      },
+      "Confidence": "medium",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 2013,
+        "endYear": 2015
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "SRAY-370-380-AC",
+      "BoatModelID": "SRAY-370-380-AC",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/370-380-aft-cabin-1997-2001",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 1997,
+        "LastYear": 2001,
+        "LOAFt": 38.1667,
+        "BeamFt": 14.25,
+        "DraftFt": 3.0833,
+        "DisplacementLb": 23800,
+        "AirDraftFt": 16.3333,
+        "FuelCapacityGal": 300,
+        "WaterCapacityGal": 100,
+        "HoldingCapacityGal": 55,
+        "HullType": "Deep-V",
+        "DeadriseAftDeg": 19.5
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1997,
+        "endYear": 2001
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "SRAY-38-390-SD",
+      "BoatModelID": "SRAY-38-390-SD",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/38-390-sundancer-2006-11",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 2006,
+        "LastYear": 2011,
+        "LOAFt": null,
+        "BeamFt": null,
+        "DraftFt": null,
+        "DisplacementLb": null,
+        "AirDraftFt": null,
+        "FuelCapacityGal": null,
+        "WaterCapacityGal": null,
+        "HoldingCapacityGal": null,
+        "HullType": null,
+        "DeadriseAftDeg": null
+      },
+      "Confidence": "medium",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 2006,
+        "endYear": 2011
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "SRAY-380-AC",
+      "BoatModelID": "SRAY-380-AC",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/380-aft-cabin-1989-91",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 1989,
+        "LastYear": 1991,
+        "LOAFt": null,
+        "BeamFt": null,
+        "DraftFt": null,
+        "DisplacementLb": null,
+        "AirDraftFt": null,
+        "FuelCapacityGal": null,
+        "WaterCapacityGal": null,
+        "HoldingCapacityGal": null,
+        "HullType": null,
+        "DeadriseAftDeg": null
+      },
+      "Confidence": "medium",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1989,
+        "endYear": 1991
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "SRAY-380-SD",
+      "BoatModelID": "SRAY-380-SD",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/380-sundancer-1999-2003",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 1999,
+        "LastYear": 2003,
+        "LOAFt": 40.0833,
+        "BeamFt": 13,
+        "DraftFt": 3.3333,
+        "DisplacementLb": 18300,
+        "AirDraftFt": null,
+        "FuelCapacityGal": 275,
+        "WaterCapacityGal": 70,
+        "HoldingCapacityGal": 42,
+        "HullType": "Deep-V",
+        "DeadriseAftDeg": 19.5
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1999,
+        "endYear": 2003
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "SRAY-390-EC",
+      "BoatModelID": "SRAY-390-EC",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/390-express-cruiser-1984-91",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 1984,
+        "LastYear": 1991,
+        "LOAFt": null,
+        "BeamFt": null,
+        "DraftFt": null,
+        "DisplacementLb": null,
+        "AirDraftFt": null,
+        "FuelCapacityGal": null,
+        "WaterCapacityGal": null,
+        "HoldingCapacityGal": null,
+        "HullType": null,
+        "DeadriseAftDeg": null
+      },
+      "Confidence": "medium",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1984,
+        "endYear": 1991
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "SRAY-390-40-MY",
+      "BoatModelID": "SRAY-390-40-MY",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/390-motor-yacht-40-motor-yacht-2003-07",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 2003,
+        "LastYear": 2007,
+        "LOAFt": null,
+        "BeamFt": null,
+        "DraftFt": null,
+        "DisplacementLb": null,
+        "AirDraftFt": null,
+        "FuelCapacityGal": null,
+        "WaterCapacityGal": null,
+        "HoldingCapacityGal": null,
+        "HullType": null,
+        "DeadriseAftDeg": null
+      },
+      "Confidence": "medium",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 2003,
+        "endYear": 2007
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "SRAY-390-SB",
+      "BoatModelID": "SRAY-390-SB",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/390-sedan-bridge-2010-only",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 2010,
+        "LastYear": 2010,
+        "LOAFt": null,
+        "BeamFt": null,
+        "DraftFt": null,
+        "DisplacementLb": null,
+        "AirDraftFt": null,
+        "FuelCapacityGal": null,
+        "WaterCapacityGal": null,
+        "HoldingCapacityGal": null,
+        "HullType": null,
+        "DeadriseAftDeg": null
+      },
+      "Confidence": "medium",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 2010,
+        "endYear": 2010
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "SRAY-390-SSF",
+      "BoatModelID": "SRAY-390-SSF",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/390-sedan-sportfish-1983-86",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 1983,
+        "LastYear": 1986,
+        "LOAFt": null,
+        "BeamFt": null,
+        "DraftFt": null,
+        "DisplacementLb": null,
+        "AirDraftFt": null,
+        "FuelCapacityGal": null,
+        "WaterCapacityGal": null,
+        "HoldingCapacityGal": null,
+        "HullType": null,
+        "DeadriseAftDeg": null
+      },
+      "Confidence": "medium",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1983,
+        "endYear": 1986
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "SRAY-390-40-SD",
+      "BoatModelID": "SRAY-390-40-SD",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/390-sundancer-40-sundancer-2004-09",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 2004,
+        "LastYear": 2009,
+        "LOAFt": null,
+        "BeamFt": null,
+        "DraftFt": null,
+        "DisplacementLb": null,
+        "AirDraftFt": null,
+        "FuelCapacityGal": null,
+        "WaterCapacityGal": null,
+        "HoldingCapacityGal": null,
+        "HullType": null,
+        "DeadriseAftDeg": null
+      },
+      "Confidence": "medium",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 2004,
+        "endYear": 2009
+      },
+      "CapturedAt": "2026-10-02"
+    }
+  ]
+}
