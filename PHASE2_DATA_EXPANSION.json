@@ -133,5 +133,218 @@
         "https://www.hmy.com/yachting/powerboat-guide/trojan"
       ]
     }
-  ]
+  ],
+  "identityResearch": {
+    "batch": "wave1-test-01",
+    "researched": "2026-10-02",
+    "candidates": [
+      {
+        "manufacturer": "Tollycraft",
+        "canonicalProposal": "Tollycraft 26 Sedan",
+        "proposedBoatModelID": "TOLL-26-SE",
+        "identityDecision": "single_canonical_model",
+        "productionYears": {
+          "start": 1973,
+          "end": 1987,
+          "confidence": "high"
+        },
+        "rationale": "Long-running single marketed model; documented interior/window updates are phase-level changes rather than separate identities.",
+        "phaseCandidates": [
+          {
+            "label": "early",
+            "startYear": 1973,
+            "endYear": 1976,
+            "reason": "pre-anodized-window-frame period"
+          },
+          {
+            "label": "mid",
+            "startYear": 1977,
+            "endYear": 1981,
+            "reason": "anodized window frames"
+          },
+          {
+            "label": "late",
+            "startYear": 1982,
+            "endYear": 1987,
+            "reason": "teak interior update"
+          }
+        ],
+        "sourceRefs": [
+          "https://tollycruisers.ca/tollylife/how-many-tollycrafts/",
+          "https://www.hmy.com/yachting/powerboat-guide/tollycraft/26-sedan-1973-87"
+        ]
+      },
+      {
+        "manufacturer": "Trojan",
+        "canonicalProposal": "Trojan F-26",
+        "proposedBoatModelID": "TROJ-F26",
+        "identityDecision": "single_family_pending_layout_review",
+        "productionYears": {
+          "start": null,
+          "end": null,
+          "confidence": "low"
+        },
+        "rationale": "F-26 identity is well established, but current source set is insufficient to lock full production years and determine whether Express/Hardtop labels require separate identities.",
+        "sourceRefs": [
+          "https://www.trojanboatsforum.net/wforum/viewtopic.php?t=151"
+        ]
+      },
+      {
+        "manufacturer": "Trojan",
+        "canonicalProposal": "Trojan F-32 Sedan",
+        "proposedBoatModelID": "TROJ-F32-SE",
+        "identityDecision": "single_canonical_model",
+        "productionYears": {
+          "start": null,
+          "end": null,
+          "confidence": "medium"
+        },
+        "rationale": "The Sedan's basic design remained largely unchanged through a long production run. Other F-32 configurations should remain separate identities if added.",
+        "notes": "Current evidence confirms examples through 1990 and reports over 2,700 Trojan 32s across configurations; exact start/end years still require primary-source confirmation.",
+        "sourceRefs": [
+          "https://marinesource.com/boat/trojan-f-32-sedan-1990-st.-clair-shores-1774d42cfb-for-sale"
+        ]
+      },
+      {
+        "manufacturer": "Chris-Craft",
+        "canonicalProposal": "Chris-Craft 31 Commander Express",
+        "proposedBoatModelID": "CHCR-31-CO-EX",
+        "identityDecision": "distinct_layout_identity",
+        "productionYears": {
+          "start": 1966,
+          "end": 1972,
+          "confidence": "high"
+        },
+        "rationale": "Commander Club documents 31 Express, Sports Express/Sports Cruiser, and Sedan as distinct marketed layouts on the same hull. Do not collapse them.",
+        "siblingIdentities": [
+          {
+            "name": "Chris-Craft 31 Commander Sports Express / Sports Cruiser",
+            "years": "1967-1974"
+          },
+          {
+            "name": "Chris-Craft 31 Commander Sedan",
+            "years": "1969-1972"
+          }
+        ],
+        "sourceRefs": [
+          "https://www.commanderclub.com/models-by-id/6f1007da-8b4e-41dd-94cc-02a855164dc1",
+          "https://www.commanderclub.com/models-by-id/52e9ec45-f84e-4592-a5da-66dfd01f9645",
+          "https://www.commanderclub.com/models-by-id/bf7792b3-a726-4af7-ba50-f9d53022934d"
+        ]
+      },
+      {
+        "manufacturer": "Chris-Craft",
+        "canonicalProposal": "Chris-Craft 38 Commander",
+        "proposedBoatModelID": "CHCR-38-CO",
+        "identityDecision": "family_requires_distinct_layout_identities",
+        "productionYears": {
+          "start": 1964,
+          "end": 1972,
+          "confidence": "high"
+        },
+        "rationale": "Commander Club documents Commander/Express, Sedan, and Sport Fisherman as distinct arrangements sharing the hull. Canonicalization should preserve those marketed identities.",
+        "siblingIdentities": [
+          {
+            "name": "Chris-Craft 38 Commander / Express",
+            "years": "1964-1972"
+          },
+          {
+            "name": "Chris-Craft 38 Commander Sedan",
+            "years": "1965-1972"
+          },
+          {
+            "name": "Chris-Craft 38 Commander Sport Fisherman",
+            "years": "1965-1968"
+          }
+        ],
+        "sourceRefs": [
+          "https://www.commanderclub.com/models-by-id/551d015a-f930-42c8-991e-124ca1b8711f",
+          "https://www.commanderclub.com/models-by-id/81eb1b7f-35bf-4728-ae86-55d7714124f6",
+          "https://www.commanderclub.com/models-by-id/3225a1ea-5c8d-4d8d-8e71-5c1bd9e00c2a"
+        ]
+      },
+      {
+        "manufacturer": "Hatteras",
+        "canonicalProposal": "Hatteras 36 Convertible",
+        "proposedBoatModelID": "HATT-36-CV",
+        "identityDecision": "one_name_two_distinct_generations",
+        "productionYears": {
+          "start": 1969,
+          "end": 1987,
+          "confidence": "high",
+          "gap": "1978-1982"
+        },
+        "rationale": "The same marketed model name was used for two separated generations with materially different dimensions. Treat as one model family only if B-Atlas production-phase logic can represent the discontinuous run; otherwise use two generation identities linked by a family.",
+        "generationCandidates": [
+          {
+            "label": "Gen 1",
+            "startYear": 1969,
+            "endYear": 1977
+          },
+          {
+            "label": "Gen 2",
+            "startYear": 1983,
+            "endYear": 1987
+          }
+        ],
+        "sourceRefs": [
+          "https://www.yachtbuyer.com/en-us/hatteras/for-sale/hatteras-36-convertible",
+          "https://www.poweryachtblog.com/search/label/Hatteras"
+        ]
+      },
+      {
+        "manufacturer": "Silverton",
+        "canonicalProposal": "Silverton 34 Convertible",
+        "proposedBoatModelID": "SILV-34-CV",
+        "identityDecision": "family_requires_generation_resolution",
+        "productionYears": {
+          "start": 1978,
+          "end": 2006,
+          "confidence": "high",
+          "gaps": [
+            "1996-2003"
+          ]
+        },
+        "rationale": "At least five separately described 34 Convertible generations exist. Early 1978-88 boats share a hull lineage, but later versions differ materially; a single flat canonical record would be misleading.",
+        "generationCandidates": [
+          {
+            "startYear": 1978,
+            "endYear": 1982
+          },
+          {
+            "startYear": 1983,
+            "endYear": 1988
+          },
+          {
+            "startYear": 1989,
+            "endYear": 1990
+          },
+          {
+            "startYear": 1991,
+            "endYear": 1995
+          },
+          {
+            "startYear": 2004,
+            "endYear": 2006
+          }
+        ],
+        "sourceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/silverton",
+          "https://www.hmy.com/yachting/powerboat-guide/silverton/34-convertible-1978-82",
+          "https://www.hmy.com/yachting/powerboat-guide/silverton/34-convertible-1983-88",
+          "https://www.hmy.com/yachting/powerboat-guide/silverton/34-convertible-1989-90",
+          "https://www.hmy.com/yachting/powerboat-guide/silverton/34-convertible-2004-06"
+        ]
+      }
+    ],
+    "nextActions": [
+      "Promote Tollycraft 26 Sedan after minimum specification research.",
+      "Resolve Trojan F-26 production years and layout naming from stronger historical source.",
+      "Resolve Trojan F-32 exact production span.",
+      "Create separate Chris-Craft 31 Commander layout identities rather than one generic 31 Commander record.",
+      "Create separate Chris-Craft 38 Commander layout identities or explicit linked variants.",
+      "Decide B-Atlas policy for discontinuous same-name generations using Hatteras 36 Convertible as the test case.",
+      "Decide generation splitting threshold using Silverton 34 Convertible as the test case."
+    ]
+  }
 }
