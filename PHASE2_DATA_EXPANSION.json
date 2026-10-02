@@ -60,7 +60,7 @@
     {
       "manufacturer": "Silverton",
       "manufacturerCode": "SILV",
-      "currentCanonicalModels": 13,
+      "currentCanonicalModels": 20,
       "priority": "high",
       "candidateFamilies": [
         "31 Convertible",
@@ -90,7 +90,12 @@
         "37 Convertible",
         "38 Express",
         "38 Convertible",
-        "40 Convertible"
+        "40 Convertible",
+        "31 Convertible",
+        "310 Express",
+        "312 Sedan",
+        "34 Sedan",
+        "34 Express"
       ]
     },
     {
@@ -436,6 +441,108 @@
         "rationale": "1989 interior redesign changes layout but not hull/model identity, so it remains one canonical model with a production-phase note.",
         "sourceRefs": [
           "https://www.hmy.com/yachting/powerboat-guide/silverton/40-convertible-1985-90"
+        ]
+      },
+      {
+        "manufacturer": "Silverton",
+        "canonicalProposal": "Silverton 31 Convertible",
+        "proposedBoatModelID": "SILV-31-CV",
+        "identityDecision": "two_distinct_generations",
+        "productionYears": {
+          "start": 1983,
+          "end": 1995,
+          "confidence": "high",
+          "gap": "1988-1990"
+        },
+        "rationale": "The 1983–87 and 1991–95 boats are separated by a production gap and differ materially in dimensions, tankage and accommodation.",
+        "generationCandidates": [
+          {
+            "label": "Generation 1",
+            "startYear": 1983,
+            "endYear": 1987
+          },
+          {
+            "label": "Generation 2",
+            "startYear": 1991,
+            "endYear": 1995
+          }
+        ],
+        "sourceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/silverton/31-convertible-1983-87",
+          "https://www.hmy.com/yachting/powerboat-guide/silverton/31-convertible-1991-95"
+        ]
+      },
+      {
+        "manufacturer": "Silverton",
+        "canonicalProposal": "Silverton 310 Express",
+        "proposedBoatModelID": "SILV-310-EX",
+        "identityDecision": "single_canonical_model",
+        "productionYears": {
+          "start": 1994,
+          "end": 2000,
+          "confidence": "high"
+        },
+        "rationale": "Single documented model run.",
+        "sourceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/silverton/310-express-1994-2000"
+        ]
+      },
+      {
+        "manufacturer": "Silverton",
+        "canonicalProposal": "Silverton 312 Sedan Cruiser",
+        "proposedBoatModelID": "SILV-312-SC",
+        "identityDecision": "single_canonical_model_with_propulsion_phases",
+        "productionYears": {
+          "start": 1993,
+          "end": 1999,
+          "confidence": "high"
+        },
+        "rationale": "Early sterndrive and later V-drive propulsion remain configuration phases within a continuous hull/model identity; transition year remains unresolved.",
+        "sourceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/silverton/312-sedan-cruiser-1993-99"
+        ]
+      },
+      {
+        "manufacturer": "Silverton",
+        "canonicalProposal": "Silverton 34 Sedan",
+        "proposedBoatModelID": "SILV-34-SE",
+        "identityDecision": "single_canonical_model",
+        "productionYears": {
+          "start": 1977,
+          "end": 1981,
+          "confidence": "high"
+        },
+        "rationale": "Single documented model run.",
+        "sourceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/silverton/34-sedan-1977-81"
+        ]
+      },
+      {
+        "manufacturer": "Silverton",
+        "canonicalProposal": "Silverton 34 Express",
+        "proposedBoatModelID": "SILV-34-EX",
+        "identityDecision": "two_distinct_generations",
+        "productionYears": {
+          "start": 1987,
+          "end": 1994,
+          "confidence": "high"
+        },
+        "rationale": "The 1990–94 boat is explicitly an updated version of the 1987–89 model, but integrated platform, reworked interior, different dimensions and materially different published displacement make a single flat record misleading.",
+        "generationCandidates": [
+          {
+            "label": "Generation 1",
+            "startYear": 1987,
+            "endYear": 1989
+          },
+          {
+            "label": "Generation 2",
+            "startYear": 1990,
+            "endYear": 1994
+          }
+        ],
+        "sourceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/silverton/34-express-1987-89",
+          "https://www.hmy.com/yachting/powerboat-guide/silverton/34-express-1990-94"
         ]
       }
     ],
