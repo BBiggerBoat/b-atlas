@@ -7,7 +7,8 @@
     "Do not split model-year changes into separate canonical models when production phases can represent the change.",
     "Create distinct canonical identities only for materially distinct marketed models, layouts, hulls, or configurations.",
     "Source identity and production years before researching advanced specifications.",
-    "Prefer manufacturer/owner-club archives and original brochures over secondary summaries."
+    "Prefer manufacturer/owner-club archives and original brochures over secondary summaries.",
+    "Phase 2 model expansion is capped at 50 feet LOA; do not add models over 50 feet unless the user explicitly changes the cap."
   ],
   "wave1": [
     {
@@ -847,7 +848,7 @@
       "Reconcile existing TOLL-37-SE against staged TOLL-37-CV before canonical merge.",
       "Consolidate staged Tollycraft batches 10–12 after resolving TOLL-37-SE versus TOLL-37-CV.",
       "Hatteras Phase 2 expansion intentionally paused at 48 feet; larger 50/52/53-foot families deferred.",
-      "Continue Viking with 41–45-foot families, maintaining the 50-foot maximum."
+      "Continue Viking with 46–50-foot families only; do not include any model over 50 feet."
     ]
   },
   "workflow": {
@@ -874,7 +875,7 @@
     "rule": "Research quality is unchanged; only downstream publishing/enrichment work is deferred.",
     "lastCompletedBatch": "phase2-batch-09-silverton-44-52",
     "lastCompletedAt": "2026-10-02",
-    "lastResearchedBatch": "phase2-batch-21-viking-33-40",
+    "lastResearchedBatch": "phase2-batch-22-viking-41-45",
     "lastResearchedAt": "2026-10-02",
     "pendingCanonicalMerge": [
       "phase2-batch-10-tollycraft-30-40",
@@ -888,10 +889,13 @@
       "phase2-batch-18-hatteras-41-43",
       "phase2-batch-19-hatteras-45-48",
       "phase2-batch-20-trojan-40-46",
-      "phase2-batch-21-viking-33-40"
+      "phase2-batch-21-viking-33-40",
+      "phase2-batch-22-viking-41-45"
     ],
     "note": "Phase 2 staged batches are published through the live runtime overlay immediately; canonical boatmodels.json consolidation remains deferred.",
-    "lastPublishedBatch": "phase2-batch-21-viking-33-40",
-    "lastPublishedAt": "2026-10-02"
+    "lastPublishedBatch": "phase2-batch-22-viking-41-45",
+    "lastPublishedAt": "2026-10-02",
+    "maxModelLOAFt": 50,
+    "maxModelLOANote": "Hard user-directed cap effective 2026-10-02; models over 50 feet are deferred."
   }
 }
