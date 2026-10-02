@@ -850,6 +850,20 @@
       "Consolidate staged Tollycraft batches 10–12 after resolving TOLL-37-SE versus TOLL-37-CV.",
       "Hatteras Phase 2 expansion intentionally paused at 48 feet; larger 50/52/53-foot families deferred.",
       "Continue Chris-Craft with nominal 40–44-foot non-Commander families; maintain the 50'0\" actual-length cap."
+    ],
+    "sizeExclusions": [
+      {
+        "BoatModelID": "CHCR-55-CO",
+        "Manufacturer": "Chris-Craft",
+        "reason": "Legacy live record exceeds current 50'0\" Phase 2 cap; removed from live overlay, evidence retained.",
+        "effective": "2026-10-02"
+      },
+      {
+        "BoatModelID": "CHCR-60-CO",
+        "Manufacturer": "Chris-Craft",
+        "reason": "Legacy live record exceeds current 50'0\" Phase 2 cap; removed from live overlay, evidence retained.",
+        "effective": "2026-10-02"
+      }
     ]
   },
   "workflow": {
