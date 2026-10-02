@@ -1,0 +1,45 @@
+{
+  "schema": "batlas-model-identity-policy-v1",
+  "effective": "2026-10-02",
+  "purpose": "Determine when production changes stay inside one canonical model and when separate generation or layout identities are required.",
+  "rules": [
+    {
+      "id": "continuous-phase",
+      "decision": "production_phase",
+      "when": "Market identity remains continuous and changes are construction, dimensions, equipment, interior, propulsion or refresh changes that can be accurately scoped by year without misleading buyers."
+    },
+    {
+      "id": "discontinuous-generation",
+      "decision": "distinct_generation_identities_linked_by_family",
+      "when": "The same marketed model name reappears after a production gap or material redesign and one flat record would create ambiguous or misleading specifications."
+    },
+    {
+      "id": "distinct-layout",
+      "decision": "distinct_layout_identities_linked_by_family",
+      "when": "The builder marketed materially different layouts or configurations as distinct versions and buyers need them separately searchable."
+    },
+    {
+      "id": "unknown-boundary",
+      "decision": "preserve_uncertainty",
+      "when": "Evidence cannot establish whether a change crosses the identity threshold; keep the candidate unresolved rather than forcing a merge or split."
+    }
+  ],
+  "examples": [
+    {
+      "family": "Sea Ray 340 Sundancer",
+      "decision": "distinct_generations"
+    },
+    {
+      "family": "Hatteras 36 Convertible",
+      "decision": "distinct_generation_identities_linked_by_family"
+    },
+    {
+      "family": "Silverton 34 Convertible",
+      "decision": "distinct_generation_identities_linked_by_family"
+    },
+    {
+      "family": "Tollycraft 26 Sedan",
+      "decision": "single_canonical_model_with_updates"
+    }
+  ]
+}
