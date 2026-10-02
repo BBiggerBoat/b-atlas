@@ -11,6 +11,8 @@
         phase2AliasesCarver3539: "data/phase2-live-aliases-carver-35-39.json",
         phase2ModelsCarver4044: "data/phase2-live-models-carver-40-44.json",
         phase2AliasesCarver4044: "data/phase2-live-aliases-carver-40-44.json",
+        phase2ModelsCarver4550: "data/phase2-live-models-carver-45-50.json",
+        phase2AliasesCarver4550: "data/phase2-live-aliases-carver-45-50.json",
         productionPhases: "data/production-phases.json",
         routes: "routes.json",
         missionTemplates: "data/missionTemplates.json",
@@ -119,6 +121,19 @@
             if (Array.isArray(data.phase2Aliases) && Array.isArray(data.phase2AliasesCarver4044)) {
                 const ids = new Set(data.phase2Aliases.map(row => row?.BoatModelID).filter(Boolean));
                 for (const row of data.phase2AliasesCarver4044) {
+                    if (row?.BoatModelID && !ids.has(row.BoatModelID)) { data.phase2Aliases.push(row); ids.add(row.BoatModelID); }
+                }
+            }
+
+            if (Array.isArray(data.phase2Models) && Array.isArray(data.phase2ModelsCarver4550)) {
+                const ids = new Set(data.phase2Models.map(row => row?.BoatModelID).filter(Boolean));
+                for (const row of data.phase2ModelsCarver4550) {
+                    if (row?.BoatModelID && !ids.has(row.BoatModelID)) { data.phase2Models.push(row); ids.add(row.BoatModelID); }
+                }
+            }
+            if (Array.isArray(data.phase2Aliases) && Array.isArray(data.phase2AliasesCarver4550)) {
+                const ids = new Set(data.phase2Aliases.map(row => row?.BoatModelID).filter(Boolean));
+                for (const row of data.phase2AliasesCarver4550) {
                     if (row?.BoatModelID && !ids.has(row.BoatModelID)) { data.phase2Aliases.push(row); ids.add(row.BoatModelID); }
                 }
             }
