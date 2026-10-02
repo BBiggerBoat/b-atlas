@@ -847,7 +847,9 @@
       "Decide B-Atlas policy for discontinuous same-name generations using Hatteras 36 Convertible as the test case.",
       "Silverton 34 Convertible generation policy resolved and promoted as four linked canonical generation identities; Generation 1 carries two production phases.",
       "Silverton 44–52 batch promoted: six canonical identities added; 48/50 Convertible retained as one model with a documented name-change phase.",
-      "Merge staged Tollycraft batch 10 into boatmodels.json when the large-file GitHub write path is available."
+      "Merge staged Tollycraft batch 10 into boatmodels.json when the large-file GitHub write path is available.",
+      "Reconcile existing TOLL-37-SE against staged TOLL-37-CV before canonical merge.",
+      "Resolve final Tollycraft 53/57/61/65 group, then consolidate staged Tollycraft batches."
     ]
   },
   "workflow": {
@@ -874,11 +876,12 @@
     "rule": "Research quality is unchanged; only downstream publishing/enrichment work is deferred.",
     "lastCompletedBatch": "phase2-batch-09-silverton-44-52",
     "lastCompletedAt": "2026-10-02",
-    "lastResearchedBatch": "phase2-batch-10-tollycraft-30-40",
+    "lastResearchedBatch": "phase2-batch-11-tollycraft-37-48",
     "lastResearchedAt": "2026-10-02",
     "pendingCanonicalMerge": [
-      "phase2-batch-10-tollycraft-30-40"
+      "phase2-batch-10-tollycraft-30-40",
+      "phase2-batch-11-tollycraft-37-48"
     ],
-    "note": "Batch 10 research is complete and stored in data/phase2-batches plus evidence JSON. Canonical boatmodels.json merge is pending because the GitHub connector fails on replacement of the 3.8 MB monolithic file."
+    "note": "Phase 2A research batches are being staged as standalone JSON plus evidence. Canonical boatmodels.json consolidation is deferred to avoid repeated large-file replacement failures."
   }
 }
