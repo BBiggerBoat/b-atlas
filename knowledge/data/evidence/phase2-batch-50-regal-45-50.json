@@ -1,0 +1,87 @@
+{
+  "batchId": "phase2-batch-50-regal-45-50",
+  "schemaVersion": "1.4",
+  "validatedAt": "2026-10-02",
+  "assertions": [
+    {
+      "EvidenceAssertionID": "REGL-44-46-SC",
+      "BoatModelID": "REGL-44-46-SC",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/regal/46-sport-coupe-2010-18",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 2010,
+        "LastYear": 2018,
+        "LOAFt": 46,
+        "BeamFt": 14,
+        "DraftFt": 3.5,
+        "DisplacementLb": 25350,
+        "AirDraftFt": 12.1667,
+        "FuelCapacityGal": 328,
+        "WaterCapacityGal": 101,
+        "HoldingCapacityGal": 48,
+        "HullType": "Deep-V",
+        "DeadriseAftDeg": 20
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 2010,
+        "endYear": 2018
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "REGL-50-SAV",
+      "BoatModelID": "REGL-50-SAV",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.regalboats.com/model/50-sav/",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 2025,
+        "LastYear": 2026,
+        "LOAFt": 50,
+        "BeamFt": 14.5833,
+        "DraftFt": null,
+        "DisplacementLb": null,
+        "AirDraftFt": null,
+        "FuelCapacityGal": null,
+        "WaterCapacityGal": null,
+        "HoldingCapacityGal": null,
+        "HullType": "OceanTrac2",
+        "DeadriseAftDeg": null
+      },
+      "Confidence": "medium",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 2025,
+        "endYear": 2026
+      },
+      "CapturedAt": "2026-10-02"
+    }
+  ],
+  "exclusions": [
+    {
+      "Model": "52 Sport Coupe",
+      "FirstYear": 2008,
+      "LastYear": 2013,
+      "publishedOverallLengthFt": 53,
+      "reason": "Published overall length 53'0\" exceeds the current hard 50'0\" cap.",
+      "source": "https://www.hmy.com/yachting/powerboat-guide/regal/52-sport-coupe-2008-13"
+    },
+    {
+      "Model": "53 Sport Coupe",
+      "FirstYear": 2014,
+      "LastYear": 2019,
+      "publishedOverallLengthFt": 53,
+      "reason": "Published overall length exceeds the current hard 50'0\" cap.",
+      "source": "https://www.hmy.com/yachting/powerboat-guide/regal/53-sport-coupe-2014-19"
+    }
+  ],
+  "sourceNotes": [
+    {
+      "BoatModelID": "REGL-50-SAV",
+      "note": "Current Regal manufacturer page confirms exact 50'0\" LOA and 14'7\" beam. Remaining detailed capacities/weight are left null until manufacturer-spec fields are directly verified."
+    }
+  ]
+}
