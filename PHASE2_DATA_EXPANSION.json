@@ -60,7 +60,7 @@
     {
       "manufacturer": "Silverton",
       "manufacturerCode": "SILV",
-      "currentCanonicalModels": 8,
+      "currentCanonicalModels": 10,
       "priority": "high",
       "candidateFamilies": [
         "31 Convertible",
@@ -347,6 +347,43 @@
           "https://www.hmy.com/yachting/powerboat-guide/silverton/34-convertible-1983-88",
           "https://www.hmy.com/yachting/powerboat-guide/silverton/34-convertible-1989-90",
           "https://www.hmy.com/yachting/powerboat-guide/silverton/34-convertible-2004-06"
+        ]
+      },
+      {
+        "manufacturer": "Silverton",
+        "canonicalProposal": "Silverton 37 Convertible",
+        "proposedBoatModelID": "SILV-37-CV",
+        "identityDecision": "two_distinct_generations_with_scoped_production_changes",
+        "productionYears": {
+          "start": 1980,
+          "end": 2000,
+          "confidence": "high"
+        },
+        "rationale": "The 1980–89 and 1990–2000 boats are separate generations because published hull dimensions, displacement, fuel capacity, aft deadrise and hull geometry change materially. The 1981 V-drive-to-straight-drive change and 1993 floorplan update remain production/configuration changes within their respective generations.",
+        "generationCandidates": [
+          {
+            "label": "Generation 1",
+            "startYear": 1980,
+            "endYear": 1989,
+            "phaseNotes": [
+              "1980 V-drive installation",
+              "1981 onward straight-drive inboards",
+              "pre-1985 teak / later light oak interior"
+            ]
+          },
+          {
+            "label": "Generation 2",
+            "startYear": 1990,
+            "endYear": 2000,
+            "phaseNotes": [
+              "convertible and mid-cabin layouts",
+              "floorplans updated in 1993"
+            ]
+          }
+        ],
+        "sourceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/silverton/37-convertible-1980-89",
+          "https://www.hmy.com/yachting/powerboat-guide/silverton/37-convertible-1990-2000"
         ]
       }
     ],
