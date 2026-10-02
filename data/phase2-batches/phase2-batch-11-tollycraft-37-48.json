@@ -1,0 +1,365 @@
+{
+  "batchId": "phase2-batch-11-tollycraft-37-48",
+  "status": "researched_complete_staged",
+  "researchedAt": "2026-10-02",
+  "workflowNote": "Standalone Phase 2A model-specific data batch. Canonical monolithic merge deferred.",
+  "models": [
+    {
+      "BoatModelID": "TOLL-37-CV",
+      "Manufacturer": "Tollycraft",
+      "Model": "37 Convertible",
+      "FirstYear": 1974,
+      "LastYear": 1985,
+      "LOAFt": 37.3333,
+      "BeamFt": 13.1667,
+      "DraftFt": 3,
+      "DisplacementLb": 22000,
+      "AirDraftFt": 12.5,
+      "FuelCapacityGal": 300,
+      "WaterCapacityGal": 140,
+      "HoldingCapacityGal": null,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 8,
+      "Fuel": "Gasoline or Diesel depending configuration",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin inboards",
+      "TypicalEngine": "Twin 350 hp gasoline; optional Caterpillar 210 hp diesels",
+      "PlaningCruiseSpeedKt": null,
+      "Configuration": "Convertible",
+      "Style": "Flybridge Sedan",
+      "AftCabin": false,
+      "aliases": [
+        "Tollycraft 37 Convertible",
+        "Tollycraft 37"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/37-convertible-1974-85",
+      "identityNote": "Potential overlap with existing TOLL-37-SE (37 Sedan, 1974–80); preserve both until consolidation review."
+    },
+    {
+      "BoatModelID": "TOLL-37-LRC",
+      "Manufacturer": "Tollycraft",
+      "Model": "37 Long Range Cruiser",
+      "FirstYear": 1977,
+      "LastYear": 1978,
+      "LOAFt": 37.3333,
+      "LWLFt": 33,
+      "BeamFt": 13.1667,
+      "DraftFt": 4,
+      "DisplacementLb": 28750,
+      "AirDraftFt": 13.5,
+      "FuelCapacityGal": 600,
+      "WaterCapacityGal": 188,
+      "HoldingCapacityGal": null,
+      "HullType": "Modified-V",
+      "Fuel": "Diesel",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin diesel inboards",
+      "TypicalEngine": "Twin GM 4-53 140 hp diesels",
+      "DisplacementCruiseSpeedKt": 8.5,
+      "Configuration": "Pilothouse Long Range Cruiser",
+      "Style": "Pilothouse",
+      "AftCabin": false,
+      "aliases": [
+        "Tollycraft 37 LRC",
+        "Tollycraft 37 Long Range Cruiser"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/37-long-range-cruiser-1977-78"
+    },
+    {
+      "BoatModelID": "TOLL-39-SY",
+      "Manufacturer": "Tollycraft",
+      "Model": "39 Sport Yacht",
+      "FirstYear": 1990,
+      "LastYear": 1991,
+      "LOAFt": 38.9167,
+      "BeamFt": 14.6667,
+      "DraftFt": 3,
+      "DisplacementLb": 25500,
+      "AirDraftFt": 14.5833,
+      "FuelCapacityGal": 400,
+      "WaterCapacityGal": 140,
+      "HoldingCapacityGal": null,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 10,
+      "Fuel": "Gasoline or Diesel depending configuration",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin V-drive inboards",
+      "TypicalEngine": "Twin 454 cid gasoline; optional Detroit 8.2 250 hp diesels",
+      "PlaningCruiseSpeedKt": 17.5,
+      "Configuration": "Sport Yacht",
+      "Style": "Motor Yacht",
+      "AftCabin": true,
+      "aliases": [
+        "Tollycraft 39",
+        "Tollycraft 39 Sport Yacht"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/39-sport-yacht-1990-91"
+    },
+    {
+      "BoatModelID": "TOLL-40-SU",
+      "Manufacturer": "Tollycraft",
+      "Model": "40 Sundeck",
+      "FirstYear": 1985,
+      "LastYear": 1994,
+      "LOAFt": 40.1667,
+      "BeamFt": 14.6667,
+      "DraftFt": 3,
+      "DisplacementLb": 26000,
+      "AirDraftFt": 12,
+      "FuelCapacityGal": 398,
+      "WaterCapacityGal": 140,
+      "HoldingCapacityGal": 40,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 10,
+      "Fuel": "Gasoline or Diesel depending configuration",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin inboards",
+      "TypicalEngine": "Twin 350 hp gasoline; optional Caterpillar 375 hp or Detroit 6V53 diesels",
+      "PlaningCruiseSpeedKt": null,
+      "Configuration": "Sundeck Motor Yacht",
+      "Style": "Motor Yacht",
+      "AftCabin": true,
+      "productionPhases": [
+        {
+          "startYear": 1985,
+          "endYear": 1990,
+          "FuelCapacityGal": 300
+        },
+        {
+          "startYear": 1991,
+          "endYear": 1994,
+          "FuelCapacityGal": 398
+        },
+        {
+          "startYear": 1985,
+          "endYear": 1992,
+          "layout": "Original two-stateroom floorplan"
+        },
+        {
+          "startYear": 1992,
+          "endYear": 1994,
+          "layout": "Updated enlarged forward stateroom and salon"
+        }
+      ],
+      "aliases": [
+        "Tollycraft 40 Sundeck"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/40-sundeck-1985-94"
+    },
+    {
+      "BoatModelID": "TOLL-40-TC",
+      "Manufacturer": "Tollycraft",
+      "Model": "40 Tri-Cabin Motor Yacht",
+      "FirstYear": 1970,
+      "LastYear": 1979,
+      "LOAFt": 40.1667,
+      "BeamFt": 13.3333,
+      "DraftFt": 3.1667,
+      "DisplacementLb": 30000,
+      "AirDraftFt": null,
+      "FuelCapacityGal": 440,
+      "WaterCapacityGal": 150,
+      "HoldingCapacityGal": null,
+      "HullType": "Modified-V",
+      "Fuel": "Gasoline or Diesel depending configuration",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin inboards",
+      "TypicalEngine": "Twin 350 hp gasoline; optional Caterpillar 210 hp diesels",
+      "PlaningCruiseSpeedKt": null,
+      "Configuration": "Tri-Cabin Motor Yacht",
+      "Style": "Motor Yacht",
+      "AftCabin": true,
+      "aliases": [
+        "Tollycraft 40 Tri-Cabin",
+        "Tollycraft 40 Tri Cabin",
+        "Tollycraft 40 Tri-Cabin MY"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/40-tri-cabin-my-1970-79"
+    },
+    {
+      "BoatModelID": "TOLL-43-MY",
+      "Manufacturer": "Tollycraft",
+      "Model": "43 Motor Yacht",
+      "FirstYear": 1980,
+      "LastYear": 1985,
+      "LOAFt": 43.3333,
+      "LWLFt": 39.4167,
+      "BeamFt": 14.1667,
+      "DraftFt": 3.4167,
+      "DisplacementLb": 30000,
+      "AirDraftFt": 13.75,
+      "FuelCapacityGal": 400,
+      "WaterCapacityGal": 140,
+      "HoldingCapacityGal": 80,
+      "HullType": "Semi-Displacement",
+      "Fuel": "Diesel",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin diesel inboards",
+      "TypicalEngine": "Twin Caterpillar 210 hp diesels",
+      "DisplacementCruiseSpeedKt": 15,
+      "Configuration": "Motor Yacht",
+      "Style": "Trawler / Motor Yacht",
+      "AftCabin": true,
+      "aliases": [
+        "Tollycraft 43",
+        "Tollycraft 43 Motor Yacht"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/43-motor-yacht-1980-85"
+    },
+    {
+      "BoatModelID": "TOLL-44-45-CMY",
+      "Manufacturer": "Tollycraft",
+      "Model": "44 / 45 Cockpit Motor Yacht",
+      "FirstYear": 1986,
+      "LastYear": 1996,
+      "LOAFt": 45.25,
+      "BeamFt": 14.6667,
+      "DraftFt": 3,
+      "DisplacementLb": 28000,
+      "AirDraftFt": 14.75,
+      "FuelCapacityGal": 398,
+      "WaterCapacityGal": 140,
+      "HoldingCapacityGal": null,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 10,
+      "Fuel": "Gasoline or Diesel depending configuration",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin inboards",
+      "TypicalEngine": "Twin 350 hp gasoline; optional Caterpillar 375 hp or Detroit 6V53 diesels",
+      "PlaningCruiseSpeedKt": null,
+      "Configuration": "Cockpit Motor Yacht",
+      "Style": "Motor Yacht",
+      "AftCabin": true,
+      "productionPhases": [
+        {
+          "startYear": 1986,
+          "endYear": 1993,
+          "marketingName": "44 Cockpit Motor Yacht",
+          "LOAFt": 44.1667
+        },
+        {
+          "startYear": 1994,
+          "endYear": 1996,
+          "marketingName": "45 Cockpit Motor Yacht",
+          "LOAFt": 45.25,
+          "change": "Reverse-transom redesign"
+        },
+        {
+          "startYear": 1986,
+          "endYear": 1990,
+          "FuelCapacityGal": 300
+        },
+        {
+          "startYear": 1991,
+          "endYear": 1996,
+          "FuelCapacityGal": 398
+        }
+      ],
+      "aliases": [
+        "Tollycraft 44 Cockpit Motor Yacht",
+        "Tollycraft 44 Cockpit MY",
+        "Tollycraft 45 Cockpit Motor Yacht",
+        "Tollycraft 45 Cockpit MY"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/44-45-cockpit-my-1986-96",
+      "identityNote": "One linked canonical family with documented 44-to-45 production phase/name change unless consolidation policy requires generation split."
+    },
+    {
+      "BoatModelID": "TOLL-48-CV",
+      "Manufacturer": "Tollycraft",
+      "Model": "48 Convertible",
+      "FirstYear": 1982,
+      "LastYear": 1985,
+      "LOAFt": 48.1667,
+      "BeamFt": 15.1667,
+      "DraftFt": 3.6667,
+      "DisplacementLb": 40000,
+      "AirDraftFt": 14.25,
+      "FuelCapacityGal": 600,
+      "WaterCapacityGal": 200,
+      "HoldingCapacityGal": null,
+      "HullType": "Semi-Displacement",
+      "DeadriseAftDeg": 10,
+      "Fuel": "Diesel",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin diesel inboards",
+      "TypicalEngine": "Multiple diesel options",
+      "PlaningCruiseSpeedKt": 16,
+      "Configuration": "Convertible",
+      "Style": "Sportfisher / Cruiser",
+      "AftCabin": false,
+      "aliases": [
+        "Tollycraft 48 Convertible"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/48-convertible-1982-85"
+    },
+    {
+      "BoatModelID": "TOLL-48-MY",
+      "Manufacturer": "Tollycraft",
+      "Model": "48 Motor Yacht",
+      "FirstYear": 1976,
+      "LastYear": 1998,
+      "ProductionGap": "1987–1990",
+      "LOAFt": 52.8333,
+      "HullLengthFt": 48.1667,
+      "BeamFt": 15.1667,
+      "DraftFt": 3.6667,
+      "DisplacementLb": 42000,
+      "AirDraftFt": 17,
+      "FuelCapacityGal": 600,
+      "WaterCapacityGal": 188,
+      "HoldingCapacityGal": 98,
+      "HullType": "Semi-Displacement",
+      "Fuel": "Diesel",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin diesel inboards",
+      "TypicalEngine": "Caterpillar 210 hp early; Cummins 300 hp or Caterpillar 375 hp later",
+      "DisplacementCruiseSpeedKt": null,
+      "Configuration": "Cockpit Motor Yacht",
+      "Style": "Trawler / Motor Yacht",
+      "AftCabin": true,
+      "productionPhases": [
+        {
+          "startYear": 1976,
+          "endYear": 1986,
+          "status": "original production run"
+        },
+        {
+          "startYear": 1987,
+          "endYear": 1990,
+          "status": "production gap"
+        },
+        {
+          "startYear": 1991,
+          "endYear": 1998,
+          "status": "resumed production run"
+        }
+      ],
+      "aliases": [
+        "Tollycraft 48 Motor Yacht",
+        "Tollycraft 48 Cockpit Motor Yacht",
+        "Tollycraft 48 Cockpit MY"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/48-motor-yacht-1976-86-91-98",
+      "identityNote": "Discontinuous same-name production; retain one staged family with explicit gap pending consolidation policy."
+    }
+  ],
+  "identityDecisions": [
+    {
+      "scope": "TOLL-37-CV vs existing TOLL-37-SE",
+      "decision": "flag_for_reconciliation",
+      "rationale": "HMY documents a 37 Convertible from 1974–85; existing B-Atlas 37 Sedan overlaps 1974–80. Do not delete or merge until source lineage is checked."
+    },
+    {
+      "scope": "TOLL-44-45-CMY",
+      "decision": "single_family_with_production_phases",
+      "rationale": "44 Cockpit MY became 45 Cockpit MY after a 1994 reverse-transom redesign; preserve name/dimension phase explicitly."
+    },
+    {
+      "scope": "TOLL-48-MY",
+      "decision": "single_family_with_discontinuous_runs_pending_policy",
+      "rationale": "Same documented 48 Motor Yacht identity ran 1976–86 and resumed 1991–98 after a four-year production gap."
+    }
+  ],
+  "unknownPolicy": "Missing information remains null and does not eliminate the model."
+}
