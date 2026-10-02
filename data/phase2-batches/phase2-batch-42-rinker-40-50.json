@@ -1,0 +1,49 @@
+{
+  "batchId": "phase2-batch-42-rinker-40-50",
+  "status": "researched_complete_staged",
+  "researchedAt": "2026-10-02",
+  "workflowNote": "Rinker 40–50-foot Phase 2 batch. HMY's Rinker catalog contains no larger model family beyond the 400 Express Cruiser. Actual published overall length governs the hard 50'0\" cap.",
+  "models": [
+    {
+      "BoatModelID": "RINK-390-400-EC",
+      "Manufacturer": "Rinker",
+      "Model": "390 / 400 Express Cruiser",
+      "FirstYear": 2006,
+      "LastYear": 2010,
+      "LOAFt": 41.5,
+      "BeamFt": 13,
+      "DraftFt": 3.1667,
+      "DisplacementLb": 19680,
+      "AirDraftFt": null,
+      "FuelCapacityGal": 300,
+      "WaterCapacityGal": 69,
+      "HoldingCapacityGal": 45,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 18,
+      "Configuration": "Express Cruiser",
+      "Style": "Express Cruiser",
+      "AftCabin": false,
+      "aliases": [
+        "Rinker 390 Express Cruiser",
+        "Rinker 400 Express Cruiser",
+        "Rinker 390 EC",
+        "Rinker 400 EC"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/rinker/400-express-cruiser-2006-10",
+      "identityNote": "Introduced in 2006 as the 390 Express Cruiser; subsequently marketed as the 400 Express Cruiser."
+    }
+  ],
+  "identityDecisions": [
+    {
+      "scope": "390 / 400 Express Cruiser",
+      "decision": "one_rename_chain_identity",
+      "models": [
+        "RINK-390-400-EC"
+      ],
+      "rationale": "HMY states the 400 Express Cruiser was called the 390 Express Cruiser when introduced in 2006."
+    }
+  ],
+  "unknownPolicy": "Missing specifications remain null rather than guessed.",
+  "sizePolicy": "Hard maximum published overall length remains 50.0 ft.",
+  "manufacturerCompletionNote": "HMY Powerboat Guide catalogs 44 Rinker models total and lists the 400 Express Cruiser as the largest Rinker model family; no additional 40–50-foot Rinker families were identified."
+}
