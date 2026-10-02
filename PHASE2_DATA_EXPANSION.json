@@ -60,7 +60,7 @@
     {
       "manufacturer": "Silverton",
       "manufacturerCode": "SILV",
-      "currentCanonicalModels": 10,
+      "currentCanonicalModels": 13,
       "priority": "high",
       "candidateFamilies": [
         "31 Convertible",
@@ -84,6 +84,13 @@
       "notes": "Multiple year ranges under the same model name should be evaluated as production phases before creating duplicate identities.",
       "sources": [
         "https://www.hmy.com/yachting/powerboat-guide/silverton"
+      ],
+      "completedFamilies": [
+        "34 Convertible",
+        "37 Convertible",
+        "38 Express",
+        "38 Convertible",
+        "40 Convertible"
       ]
     },
     {
@@ -384,6 +391,51 @@
         "sourceRefs": [
           "https://www.hmy.com/yachting/powerboat-guide/silverton/37-convertible-1980-89",
           "https://www.hmy.com/yachting/powerboat-guide/silverton/37-convertible-1990-2000"
+        ]
+      },
+      {
+        "manufacturer": "Silverton",
+        "canonicalProposal": "Silverton 38 Express",
+        "proposedBoatModelID": "SILV-38-EX",
+        "identityDecision": "single_canonical_model",
+        "productionYears": {
+          "start": 1990,
+          "end": 1994,
+          "confidence": "high"
+        },
+        "rationale": "Single documented production run and identity; diesel option is configuration-level, not a generation split.",
+        "sourceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/silverton/38-express-1990-94"
+        ]
+      },
+      {
+        "manufacturer": "Silverton",
+        "canonicalProposal": "Silverton 38 Convertible",
+        "proposedBoatModelID": "SILV-38-CV",
+        "identityDecision": "single_canonical_model",
+        "productionYears": {
+          "start": 2003,
+          "end": 2008,
+          "confidence": "high"
+        },
+        "rationale": "Single documented production run with consistent model identity.",
+        "sourceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/silverton/38-convertible-2003-08"
+        ]
+      },
+      {
+        "manufacturer": "Silverton",
+        "canonicalProposal": "Silverton 40 Convertible",
+        "proposedBoatModelID": "SILV-40-CV",
+        "identityDecision": "single_canonical_model_with_production_update",
+        "productionYears": {
+          "start": 1985,
+          "end": 1990,
+          "confidence": "high"
+        },
+        "rationale": "1989 interior redesign changes layout but not hull/model identity, so it remains one canonical model with a production-phase note.",
+        "sourceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/silverton/40-convertible-1985-90"
         ]
       }
     ],
