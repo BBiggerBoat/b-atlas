@@ -7,6 +7,8 @@
         boats: "boatmodels.json",
         phase2Models: "data/phase2-live-models.json",
         phase2Aliases: "data/phase2-live-aliases.json",
+        phase2ModelsCarver3539: "data/phase2-live-models-carver-35-39.json",
+        phase2AliasesCarver3539: "data/phase2-live-aliases-carver-35-39.json",
         productionPhases: "data/production-phases.json",
         routes: "routes.json",
         missionTemplates: "data/missionTemplates.json",
@@ -83,6 +85,28 @@
             fetchJson(url, fetchImpl).then(value => [name, ensureArray(value, name)])
         )).then(async results => {
             const data = Object.fromEntries(results);
+
+            // Supplemental Phase 2 overlays: use small batch files when the primary
+            // live overlay has reached the connector write/read guard. Merge them first
+            // so the normal Phase 2 overlay path remains the single application behavior.
+            if (Array.isArray(data.phase2Models) && Array.isArray(data.phase2ModelsCarver3539)) {
+                const ids = new Set(data.phase2Models.map(row => row?.BoatModelID).filter(Boolean));
+                for (const row of data.phase2ModelsCarver3539) {
+                    if (row?.BoatModelID && !ids.has(row.BoatModelID)) {
+                        data.phase2Models.push(row);
+                        ids.add(row.BoatModelID);
+                    }
+                }
+            }
+            if (Array.isArray(data.phase2Aliases) && Array.isArray(data.phase2AliasesCarver3539)) {
+                const ids = new Set(data.phase2Aliases.map(row => row?.BoatModelID).filter(Boolean));
+                for (const row of data.phase2AliasesCarver3539) {
+                    if (row?.BoatModelID && !ids.has(row.BoatModelID)) {
+                        data.phase2Aliases.push(row);
+                        ids.add(row.BoatModelID);
+                    }
+                }
+            }
 
             // Phase 2 live overlay: keep the large canonical boatmodels.json stable while
             // publishing newly researched models immediately. Canonical records win on
