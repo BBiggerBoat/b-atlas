@@ -1,0 +1,300 @@
+{
+  "batchId": "phase2-batch-14-trojan-108-400",
+  "status": "researched_complete_staged",
+  "researchedAt": "2026-10-02",
+  "workflowNote": "Standalone Phase 2A structured data batch. Canonical monolithic merge deferred.",
+  "models": [
+    {
+      "BoatModelID": "TROJ-108-EX",
+      "Manufacturer": "Trojan",
+      "Model": "10.8 Meter Express",
+      "FirstYear": 1991,
+      "LastYear": 1992,
+      "LOAFt": 39.3333,
+      "HullLengthFt": 35.4167,
+      "BeamFt": 13.1667,
+      "DraftFt": 3.5833,
+      "DisplacementLb": 19572,
+      "AirDraftFt": null,
+      "FuelCapacityGal": 280,
+      "WaterCapacityGal": 70,
+      "HoldingCapacityGal": 40,
+      "HullType": "Deep-V",
+      "DeadriseAftDeg": 20,
+      "Fuel": "Gasoline common; verify individual boat",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin V-drive inboards",
+      "TypicalEngine": "Big-block gasoline inboards",
+      "PlaningCruiseSpeedKt": 18,
+      "Configuration": "Mid-Cabin Express",
+      "Style": "Express Cruiser",
+      "AftCabin": false,
+      "aliases": [
+        "Trojan 10.8 Meter Express",
+        "Trojan 10.8 Express"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/trojan/108-meter-express-1991-92",
+      "identityNote": "Reintroduced in 1993 under successor ownership as Trojan 370 Express; preserve linkage rather than collapsing records."
+    },
+    {
+      "BoatModelID": "TROJ-108-SE",
+      "Manufacturer": "Trojan",
+      "Model": "10.8 Meter Sedan",
+      "FirstYear": 1986,
+      "LastYear": 1992,
+      "LOAFt": 35.3333,
+      "BeamFt": 13,
+      "DraftFt": 2.3333,
+      "DisplacementLb": 15000,
+      "AirDraftFt": 12.1667,
+      "FuelCapacityGal": 325,
+      "WaterCapacityGal": 55,
+      "HoldingCapacityGal": null,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 9,
+      "Fuel": "Gasoline",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin gasoline inboards",
+      "TypicalEngine": "Twin 350 hp gasoline",
+      "PlaningCruiseSpeedKt": 17.5,
+      "Configuration": "Sedan Cruiser",
+      "Style": "Flybridge Sedan",
+      "AftCabin": false,
+      "productionPhases": [
+        {
+          "startYear": 1986,
+          "endYear": 1988,
+          "layout": "Original single-stateroom floorplan"
+        },
+        {
+          "startYear": 1989,
+          "endYear": 1992,
+          "changes": [
+            "Stall shower added",
+            "Two-stateroom floorplan became available"
+          ]
+        }
+      ],
+      "aliases": [
+        "Trojan 10.8 Meter Sedan",
+        "Trojan 10.8 Sedan"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/trojan/108-meter-sedan-1986-92"
+    },
+    {
+      "BoatModelID": "TROJ-11M-EX-G1",
+      "Manufacturer": "Trojan",
+      "Model": "11 Meter Express Generation 1",
+      "FirstYear": 1983,
+      "LastYear": 1989,
+      "LOAFt": 37.5,
+      "BeamFt": 14,
+      "DraftFt": 3.25,
+      "DisplacementLb": 16800,
+      "AirDraftFt": 9.3333,
+      "FuelCapacityGal": 350,
+      "WaterCapacityGal": 100,
+      "HoldingCapacityGal": null,
+      "HullType": "Modified-V DeltaConic",
+      "DeadriseAftDeg": 14,
+      "Fuel": "Gasoline or Diesel depending configuration",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin inboards",
+      "TypicalEngine": "Twin 350 hp gasoline; optional Caterpillar 375 hp or Detroit 6-71 485 hp diesels",
+      "PlaningCruiseSpeedKt": 18,
+      "Configuration": "Express Cruiser",
+      "Style": "Express Cruiser",
+      "AftCabin": false,
+      "aliases": [
+        "Trojan 11 Meter Express 1983-89",
+        "Trojan 11 Meter Express Gen 1"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/trojan/11-meter-express-1983-89"
+    },
+    {
+      "BoatModelID": "TROJ-11M-EX-G2",
+      "Manufacturer": "Trojan",
+      "Model": "11 Meter Express Generation 2",
+      "FirstYear": 1990,
+      "LastYear": 1992,
+      "LOAFt": 39,
+      "HullLengthFt": 37.5,
+      "BeamFt": 14,
+      "DraftFt": 3.25,
+      "DisplacementLb": 16800,
+      "AirDraftFt": 9.3333,
+      "FuelCapacityGal": 350,
+      "WaterCapacityGal": 100,
+      "HoldingCapacityGal": null,
+      "HullType": "Modified-V DeltaConic",
+      "DeadriseAftDeg": 14,
+      "Fuel": "Gasoline or Diesel depending configuration",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin inboards",
+      "TypicalEngine": "Twin 360 hp gasoline; optional Caterpillar 425 hp or Detroit 6-71 485 hp diesels",
+      "PlaningCruiseSpeedKt": 18,
+      "Configuration": "Express Cruiser",
+      "Style": "Express Cruiser",
+      "AftCabin": false,
+      "aliases": [
+        "Trojan 11 Meter Express 1990-92",
+        "Trojan 11 Meter Express Gen 2"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/trojan/11-meter-express-1990-92",
+      "identityNote": "Same DeltaConic hull lineage as Gen 1, but integral swim platform/deck updates and completely new floorplan justify a linked generation identity."
+    },
+    {
+      "BoatModelID": "TROJ-11M-SE",
+      "Manufacturer": "Trojan",
+      "Model": "11 Meter Sedan",
+      "FirstYear": 1985,
+      "LastYear": 1988,
+      "LOAFt": 37.5,
+      "BeamFt": 14,
+      "DraftFt": 3.4167,
+      "DisplacementLb": 18000,
+      "AirDraftFt": 12.5,
+      "FuelCapacityGal": 350,
+      "WaterCapacityGal": 100,
+      "HoldingCapacityGal": null,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 14,
+      "Fuel": "Gasoline or Diesel depending configuration",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin inboards",
+      "TypicalEngine": "Twin Crusader 350 hp gasoline; optional Caterpillar 375 hp diesels",
+      "PlaningCruiseSpeedKt": 18,
+      "Configuration": "Sedan Cruiser",
+      "Style": "Flybridge Sedan",
+      "AftCabin": false,
+      "aliases": [
+        "Trojan 11 Meter Sedan"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/trojan/11-meter-sedan-1985-88"
+    },
+    {
+      "BoatModelID": "TROJ-350-360-EX",
+      "Manufacturer": "Trojan",
+      "Model": "350 / 360 Express",
+      "FirstYear": 1995,
+      "LastYear": 2001,
+      "LOAFt": 37.6667,
+      "BeamFt": 12,
+      "DraftFt": 2.8333,
+      "DisplacementLb": 16500,
+      "AirDraftFt": 9.6667,
+      "FuelCapacityGal": 220,
+      "WaterCapacityGal": 60,
+      "HoldingCapacityGal": 30,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 16.5,
+      "Fuel": "Gasoline",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin V-drive gasoline inboards",
+      "TypicalEngine": "Twin 320 hp gasoline",
+      "PlaningCruiseSpeedKt": 15.5,
+      "Configuration": "Mid-Cabin Express",
+      "Style": "Express Cruiser",
+      "AftCabin": false,
+      "productionPhases": [
+        {
+          "startYear": 1995,
+          "endYear": 1998,
+          "marketingName": "350 Express",
+          "layout": "Original U-shaped dinette"
+        },
+        {
+          "startYear": 1999,
+          "endYear": 2001,
+          "marketingName": "360 Express",
+          "layout": "L-shaped settee replaced original U-shaped dinette"
+        }
+      ],
+      "aliases": [
+        "Trojan 350 Express",
+        "Trojan 360 Express",
+        "Trojan 350-360 Express"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/trojan/350-360-express-1995-2001"
+    },
+    {
+      "BoatModelID": "TROJ-370-390-400-EX",
+      "Manufacturer": "Trojan",
+      "Model": "370 / 390 / 400 Express",
+      "FirstYear": 1993,
+      "LastYear": 2002,
+      "LOAFt": 41.1667,
+      "HullLengthFt": 35.4167,
+      "BeamFt": 13.5,
+      "DraftFt": 3.5833,
+      "DisplacementLb": 19500,
+      "AirDraftFt": null,
+      "FuelCapacityGal": 280,
+      "WaterCapacityGal": 91,
+      "HoldingCapacityGal": 52,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 17,
+      "Fuel": "Gasoline or Diesel depending configuration",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin V-drive inboards",
+      "TypicalEngine": "Twin 320 hp gasoline; optional Cummins 330 hp diesels",
+      "PlaningCruiseSpeedKt": 18,
+      "Configuration": "Mid-Cabin Express",
+      "Style": "Express Cruiser",
+      "AftCabin": false,
+      "productionPhases": [
+        {
+          "startYear": 1993,
+          "endYear": 1994,
+          "marketingName": "370 Express"
+        },
+        {
+          "startYear": 1995,
+          "endYear": 1997,
+          "marketingName": "390 Express",
+          "change": "Extended swim platform increased overall length"
+        },
+        {
+          "startYear": 1998,
+          "endYear": 2002,
+          "marketingName": "400 Express"
+        }
+      ],
+      "aliases": [
+        "Trojan 370 Express",
+        "Trojan 390 Express",
+        "Trojan 400 Express",
+        "Trojan 370-390-400 Express"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/trojan/370-390-400-express-1993-2002",
+      "identityNote": "Cockpit and interior remained basically unchanged through marketing-name changes; retain as one canonical model family with name phases."
+    }
+  ],
+  "identityDecisions": [
+    {
+      "scope": "Trojan 11 Meter Express",
+      "decision": "two_linked_generations",
+      "models": [
+        "TROJ-11M-EX-G1",
+        "TROJ-11M-EX-G2"
+      ],
+      "rationale": "1990–92 retains the DeltaConic hull lineage but adds integral platform/deck changes and a completely new interior floorplan; a flat single record would hide material buyer-relevant differences."
+    },
+    {
+      "scope": "Trojan 350/360 Express",
+      "decision": "single_canonical_model_with_name_and_layout_phase",
+      "rationale": "350 became 360 in 1999–2001 while cockpit and basic floorplan remained substantially continuous; 1999 seating change is a production-phase update."
+    },
+    {
+      "scope": "Trojan 370/390/400 Express",
+      "decision": "single_canonical_model_with_marketing_name_phases",
+      "rationale": "HMY documents continuous basic cockpit/interior identity through 370, 390 and 400 names; 1995 platform change affects overall length but not core model identity."
+    },
+    {
+      "scope": "10.8 Meter Express to 370 Express lineage",
+      "decision": "linked_successor_identity",
+      "rationale": "HMY states the 1991–92 10.8 Meter Express was reintroduced in 1993 as the 370 Express; retain separate production identities linked by lineage because ownership era, model naming and published hull specifications differ."
+    }
+  ],
+  "unknownPolicy": "Missing holding capacity or clearance remains null and does not eliminate the model."
+}
