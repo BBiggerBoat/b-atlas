@@ -1,0 +1,119 @@
+{
+  "batchId": "phase2-batch-41-rinker-35-39",
+  "schemaVersion": "1.4",
+  "validatedAt": "2026-10-02",
+  "assertions": [
+    {
+      "EvidenceAssertionID": "RINK-350-360-EC",
+      "BoatModelID": "RINK-350-360-EC",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/rinker/360-express-cruiser-2008-15",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 2008,
+        "LastYear": 2015,
+        "LOAFt": 37.9167,
+        "BeamFt": 12,
+        "DraftFt": 3,
+        "DisplacementLb": 15550,
+        "AirDraftFt": null,
+        "FuelCapacityGal": 235,
+        "WaterCapacityGal": 51,
+        "HoldingCapacityGal": 45,
+        "HullType": "Modified-V",
+        "DeadriseAftDeg": 18
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 2008,
+        "endYear": 2015
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "RINK-360-370-380-EC",
+      "BoatModelID": "RINK-360-370-380-EC",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/rinker/360-370-380-express-cruiser-2005-08",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 2005,
+        "LastYear": 2009,
+        "LOAFt": 39.3333,
+        "BeamFt": 12.25,
+        "DraftFt": 3,
+        "DisplacementLb": 18400,
+        "AirDraftFt": null,
+        "FuelCapacityGal": 235,
+        "WaterCapacityGal": 51,
+        "HoldingCapacityGal": 45,
+        "HullType": "Modified-V",
+        "DeadriseAftDeg": 18
+      },
+      "Confidence": "medium",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 2005,
+        "endYear": 2009
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "RINK-370-EX",
+      "BoatModelID": "RINK-370-EX",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/rinker/370-ex-2017-20",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 2017,
+        "LastYear": 2020,
+        "LOAFt": 37.9167,
+        "BeamFt": 12,
+        "DraftFt": 3,
+        "DisplacementLb": 15550,
+        "AirDraftFt": null,
+        "FuelCapacityGal": 235,
+        "WaterCapacityGal": 51,
+        "HoldingCapacityGal": 47,
+        "HullType": "Modified-V",
+        "DeadriseAftDeg": 18
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 2017,
+        "endYear": 2020
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "RINK-390-410-420-EC",
+      "BoatModelID": "RINK-390-410-420-EC",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/rinker/390-410-420-express-cruiser-2004-07",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 2004,
+        "LastYear": 2007,
+        "LOAFt": 43.5,
+        "BeamFt": 13.8333,
+        "DraftFt": 3.1667,
+        "DisplacementLb": 24500,
+        "AirDraftFt": 12.8333,
+        "FuelCapacityGal": 300,
+        "WaterCapacityGal": 100,
+        "HoldingCapacityGal": 88,
+        "HullType": "Modified-V",
+        "DeadriseAftDeg": 18
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 2004,
+        "endYear": 2007
+      },
+      "CapturedAt": "2026-10-02"
+    }
+  ]
+}
