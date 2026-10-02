@@ -5,6 +5,8 @@
 
     const DEFAULT_MANIFEST = Object.freeze({
         boats: "boatmodels.json",
+        phase2Models: "data/phase2-live-models.json",
+        phase2Aliases: "data/phase2-live-aliases.json",
         productionPhases: "data/production-phases.json",
         routes: "routes.json",
         missionTemplates: "data/missionTemplates.json",
@@ -81,6 +83,29 @@
             fetchJson(url, fetchImpl).then(value => [name, ensureArray(value, name)])
         )).then(async results => {
             const data = Object.fromEntries(results);
+
+            // Phase 2 live overlay: keep the large canonical boatmodels.json stable while
+            // publishing newly researched models immediately. Canonical records win on
+            // duplicate IDs; staged records only fill identities not yet in boatmodels.json.
+            if (Array.isArray(data.boats) && Array.isArray(data.phase2Models)) {
+                const ids = new Set(data.boats.map(row => row?.BoatModelID).filter(Boolean));
+                for (const row of data.phase2Models) {
+                    if (row?.BoatModelID && !ids.has(row.BoatModelID)) {
+                        data.boats.push(row);
+                        ids.add(row.BoatModelID);
+                    }
+                }
+            }
+            if (Array.isArray(data.modelSearchAliases) && Array.isArray(data.phase2Aliases)) {
+                const ids = new Set(data.modelSearchAliases.map(row => row?.BoatModelID).filter(Boolean));
+                for (const row of data.phase2Aliases) {
+                    if (row?.BoatModelID && !ids.has(row.BoatModelID)) {
+                        data.modelSearchAliases.push(row);
+                        ids.add(row.BoatModelID);
+                    }
+                }
+            }
+
             if (Array.isArray(data.boats)) {
                 const phaseIndex = new Map();
                 for (const phase of (Array.isArray(data.productionPhases) ? data.productionPhases : [])) {
