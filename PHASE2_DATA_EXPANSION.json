@@ -849,7 +849,7 @@
       "Reconcile existing TOLL-37-SE against staged TOLL-37-CV before canonical merge.",
       "Consolidate staged Tollycraft batches 10–12 after resolving TOLL-37-SE versus TOLL-37-CV.",
       "Hatteras Phase 2 expansion intentionally paused at 48 feet; larger 50/52/53-foot families deferred.",
-      "Continue Cruisers Yachts with nominal 40–44-foot families under the 50'0\" published-overall-length cap."
+      "Continue Cruisers Yachts with nominal 45–50-foot families under the 50'0\" published-overall-length cap."
     ],
     "sizeExclusions": [
       {
@@ -896,7 +896,7 @@
     "rule": "Research quality is unchanged; only downstream publishing/enrichment work is deferred.",
     "lastCompletedBatch": "phase2-batch-09-silverton-44-52",
     "lastCompletedAt": "2026-10-02",
-    "lastResearchedBatch": "phase2-batch-44-cruisers-yachts-35-39",
+    "lastResearchedBatch": "phase2-batch-45-cruisers-yachts-40-44",
     "lastResearchedAt": "2026-10-02",
     "pendingCanonicalMerge": [
       "phase2-batch-10-tollycraft-30-40",
@@ -933,10 +933,11 @@
       "phase2-batch-41-rinker-35-39",
       "phase2-batch-42-rinker-40-50",
       "phase2-batch-43-cruisers-yachts-30-34",
-      "phase2-batch-44-cruisers-yachts-35-39"
+      "phase2-batch-44-cruisers-yachts-35-39",
+      "phase2-batch-45-cruisers-yachts-40-44"
     ],
     "note": "Phase 2 staged batches are published through the live runtime overlay immediately; canonical boatmodels.json consolidation remains deferred.",
-    "lastPublishedBatch": "phase2-batch-44-cruisers-yachts-35-39",
+    "lastPublishedBatch": "phase2-batch-45-cruisers-yachts-40-44",
     "lastPublishedAt": "2026-10-02",
     "maxModelLOAFt": 50,
     "maxModelLOANote": "Hard user-directed cap effective 2026-10-02. Apply to published overall length; nominal 50-foot models over 50'0\" and boats with overall appendage-inclusive length over 50'0\" are deferred."
