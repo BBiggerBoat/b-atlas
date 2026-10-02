@@ -849,7 +849,7 @@
       "Reconcile existing TOLL-37-SE against staged TOLL-37-CV before canonical merge.",
       "Consolidate staged Tollycraft batches 10–12 after resolving TOLL-37-SE versus TOLL-37-CV.",
       "Hatteras Phase 2 expansion intentionally paused at 48 feet; larger 50/52/53-foot families deferred.",
-      "Continue Chris-Craft with nominal 35–39-foot non-Commander families; maintain the 50'0\" actual-length cap."
+      "Continue Chris-Craft with nominal 40–44-foot non-Commander families; maintain the 50'0\" actual-length cap."
     ]
   },
   "workflow": {
@@ -876,7 +876,7 @@
     "rule": "Research quality is unchanged; only downstream publishing/enrichment work is deferred.",
     "lastCompletedBatch": "phase2-batch-09-silverton-44-52",
     "lastCompletedAt": "2026-10-02",
-    "lastResearchedBatch": "phase2-batch-31-chris-craft-30-34",
+    "lastResearchedBatch": "phase2-batch-32-chris-craft-35-39",
     "lastResearchedAt": "2026-10-02",
     "pendingCanonicalMerge": [
       "phase2-batch-10-tollycraft-30-40",
@@ -900,10 +900,11 @@
       "phase2-batch-28-bayliner-30-34",
       "phase2-batch-29-bayliner-35-39",
       "phase2-batch-30-bayliner-40-47",
-      "phase2-batch-31-chris-craft-30-34"
+      "phase2-batch-31-chris-craft-30-34",
+      "phase2-batch-32-chris-craft-35-39"
     ],
     "note": "Phase 2 staged batches are published through the live runtime overlay immediately; canonical boatmodels.json consolidation remains deferred.",
-    "lastPublishedBatch": "phase2-batch-31-chris-craft-30-34",
+    "lastPublishedBatch": "phase2-batch-32-chris-craft-35-39",
     "lastPublishedAt": "2026-10-02",
     "maxModelLOAFt": 50,
     "maxModelLOANote": "Hard user-directed cap effective 2026-10-02. Apply to published overall length; nominal 50-foot models over 50'0\" and boats with overall appendage-inclusive length over 50'0\" are deferred."
