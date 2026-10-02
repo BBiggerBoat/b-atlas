@@ -1,0 +1,410 @@
+{
+  "batchId": "phase2-batch-23-viking-46-50",
+  "status": "researched_complete_live",
+  "researchedAt": "2026-10-02",
+  "workflowNote": "Standalone Phase 2A batch. User-directed hard maximum is 50'0\" actual published overall length; model-number labels do not override LOA.",
+  "models": [
+    {
+      "BoatModelID": "VIKI-46-BF",
+      "Manufacturer": "Viking",
+      "Model": "46 Billfish",
+      "FirstYear": 2019,
+      "LastYear": null,
+      "LOAFt": 45.5,
+      "BeamFt": 15.3333,
+      "DraftFt": 4.0833,
+      "DisplacementLb": 43134,
+      "AirDraftFt": null,
+      "FuelCapacityGal": 709,
+      "WaterCapacityGal": 99,
+      "HoldingCapacityGal": null,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": null,
+      "Fuel": "Diesel",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin inboards",
+      "TypicalEngine": "Cummins QSM11 715 hp standard; MAN I6-800 optional",
+      "PlaningCruiseSpeedKt": null,
+      "Configuration": "Billfish",
+      "Style": "Sportfisher",
+      "AftCabin": false,
+      "aliases": [
+        "Viking 46 Billfish",
+        "Viking 46 BF"
+      ],
+      "source": "https://www.hmy.com/viking-yachts/viking-billfish-series-46-bf",
+      "identityNote": "HMY current model page lists 709 gal fuel; an earlier HMY launch article listed 632 gal. Current published specification retained."
+    },
+    {
+      "BoatModelID": "VIKI-46-CV-G1",
+      "Manufacturer": "Viking",
+      "Model": "46 Convertible Generation 1",
+      "FirstYear": 1981,
+      "LastYear": 1985,
+      "LOAFt": 46.5,
+      "BeamFt": 16,
+      "DraftFt": 4,
+      "DisplacementLb": 44000,
+      "AirDraftFt": null,
+      "FuelCapacityGal": null,
+      "WaterCapacityGal": 200,
+      "HoldingCapacityGal": null,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 15.5,
+      "Fuel": "Diesel",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin inboards",
+      "TypicalEngine": "Detroit 6V92 500 hp; optional 8V92 675 hp from 1983",
+      "PlaningCruiseSpeedKt": 24,
+      "Configuration": "Convertible",
+      "Style": "Sportfisher",
+      "AftCabin": false,
+      "productionPhases": [
+        {
+          "startYear": 1982,
+          "endYear": 1985,
+          "layout": "Optional three-stateroom interior introduced"
+        },
+        {
+          "startYear": 1983,
+          "endYear": 1985,
+          "TypicalEngine": "Optional Detroit 8V92 675 hp diesels",
+          "PlaningCruiseSpeedKt": 27.5
+        }
+      ],
+      "aliases": [
+        "Viking 46 Convertible 1981-85",
+        "Viking 46 Convertible Gen 1"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/viking/46-convertible-1981-85",
+      "identityNote": "Source lists fuel capacity as 620/750 gallons depending configuration; canonical single-value fuel capacity remains null."
+    },
+    {
+      "BoatModelID": "VIKI-46-CV-G2",
+      "Manufacturer": "Viking",
+      "Model": "46 Convertible Generation 2",
+      "FirstYear": 2010,
+      "LastYear": 2016,
+      "LOAFt": 46.9167,
+      "BeamFt": 16.5,
+      "DraftFt": 4.4167,
+      "DisplacementLb": 54120,
+      "AirDraftFt": null,
+      "FuelCapacityGal": 870,
+      "WaterCapacityGal": 150,
+      "HoldingCapacityGal": 50,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 12,
+      "Fuel": "Diesel",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin inboards",
+      "TypicalEngine": "MAN 1,100 hp diesels",
+      "PlaningCruiseSpeedKt": 33.5,
+      "Configuration": "Convertible",
+      "Style": "Sportfisher",
+      "AftCabin": false,
+      "aliases": [
+        "Viking 46 Convertible 2010-16",
+        "Viking 46 Convertible Gen 2"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/viking/46-convertible-2010-16",
+      "identityNote": "New-generation Viking hull form with propeller pockets and 12° transom deadrise."
+    },
+    {
+      "BoatModelID": "VIKI-47-CV",
+      "Manufacturer": "Viking",
+      "Model": "47 Convertible",
+      "FirstYear": 1994,
+      "LastYear": 2001,
+      "LOAFt": 47.1667,
+      "BeamFt": 15.5,
+      "DraftFt": 4.4167,
+      "DisplacementLb": 46300,
+      "AirDraftFt": 16.8333,
+      "FuelCapacityGal": 700,
+      "WaterCapacityGal": 160,
+      "HoldingCapacityGal": 60,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 15.5,
+      "Fuel": "Diesel",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin inboards",
+      "TypicalEngine": "MAN 680 hp; later MAN 800 hp diesels",
+      "PlaningCruiseSpeedKt": 25,
+      "Configuration": "Convertible",
+      "Style": "Sportfisher",
+      "AftCabin": false,
+      "aliases": [
+        "Viking 47 Convertible"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/viking/47-convertible-1994-2001",
+      "identityNote": "Successor to the 45 Convertible; deeper forefoot and single-level salon/galley/dinette layout."
+    },
+    {
+      "BoatModelID": "VIKI-48-CV-G1",
+      "Manufacturer": "Viking",
+      "Model": "48 Convertible Generation 1",
+      "FirstYear": 1985,
+      "LastYear": 1990,
+      "LOAFt": 48.5833,
+      "BeamFt": 16,
+      "DraftFt": 4.5833,
+      "DisplacementLb": 45500,
+      "AirDraftFt": 12.4167,
+      "FuelCapacityGal": 680,
+      "WaterCapacityGal": 200,
+      "HoldingCapacityGal": 60,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 15.5,
+      "Fuel": "Diesel",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin inboards",
+      "TypicalEngine": "Detroit 6V92 550 hp; later 8V92 735 hp",
+      "PlaningCruiseSpeedKt": 24,
+      "Configuration": "Convertible",
+      "Style": "Sportfisher",
+      "AftCabin": false,
+      "productionPhases": [
+        {
+          "startYear": 1989,
+          "endYear": 1990,
+          "layout": "Plan C moved galley and dinette to deckhouse level"
+        }
+      ],
+      "aliases": [
+        "Viking 48 Convertible 1985-90",
+        "Viking 48 Convertible Gen 1"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/viking/48-convertible-1985-90"
+    },
+    {
+      "BoatModelID": "VIKI-48-CV-G2",
+      "Manufacturer": "Viking",
+      "Model": "48 Convertible Generation 2",
+      "FirstYear": 2002,
+      "LastYear": 2009,
+      "LOAFt": 48.8333,
+      "BeamFt": 16.5,
+      "DraftFt": 4.75,
+      "DisplacementLb": 56450,
+      "AirDraftFt": null,
+      "FuelCapacityGal": 1012,
+      "WaterCapacityGal": 175,
+      "HoldingCapacityGal": 50,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 15,
+      "Fuel": "Diesel",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin inboards",
+      "TypicalEngine": "Caterpillar C18 1,015 hp or MAN V10 1,100 hp diesels",
+      "PlaningCruiseSpeedKt": 30,
+      "Configuration": "Convertible",
+      "Style": "Sportfisher",
+      "AftCabin": false,
+      "productionPhases": [
+        {
+          "startYear": 2007,
+          "endYear": 2009,
+          "changes": [
+            "Factory-installed mezzanine seating common"
+          ]
+        }
+      ],
+      "aliases": [
+        "Viking 48 Convertible 2002-09",
+        "Viking 48 Convertible Gen 2"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/viking/48-convertible-2002-09"
+    },
+    {
+      "BoatModelID": "VIKI-48-CV-G3",
+      "Manufacturer": "Viking",
+      "Model": "48 Convertible Generation 3",
+      "FirstYear": 2017,
+      "LastYear": null,
+      "LOAFt": 49.0833,
+      "BeamFt": 17,
+      "DraftFt": 4.6667,
+      "DisplacementLb": 66342,
+      "AirDraftFt": null,
+      "FuelCapacityGal": 1190,
+      "WaterCapacityGal": 178,
+      "HoldingCapacityGal": 52,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 11.8,
+      "Fuel": "Diesel",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin inboards",
+      "TypicalEngine": "MAN 1,200 hp diesels",
+      "PlaningCruiseSpeedKt": 30,
+      "Configuration": "Convertible",
+      "Style": "Sportfisher",
+      "AftCabin": false,
+      "aliases": [
+        "Viking 48 Convertible 2017-current",
+        "Viking 48 Convertible Gen 3"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/viking/48-convertible-2017-current",
+      "identityNote": "HMY page renders fuel units incorrectly as pounds; the 1,190 figure is retained as gallons based on Viking 48 series specifications and consistent companion-model documentation."
+    },
+    {
+      "BoatModelID": "VIKI-48-OPEN",
+      "Manufacturer": "Viking",
+      "Model": "48 Open",
+      "FirstYear": 2017,
+      "LastYear": null,
+      "LOAFt": 49.0833,
+      "BeamFt": 17,
+      "DraftFt": 4.5833,
+      "DisplacementLb": 63895,
+      "AirDraftFt": null,
+      "FuelCapacityGal": 1190,
+      "WaterCapacityGal": 178,
+      "HoldingCapacityGal": 52,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 15,
+      "Fuel": "Diesel",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin inboards",
+      "TypicalEngine": "MAN diesels",
+      "PlaningCruiseSpeedKt": 30,
+      "Configuration": "Open",
+      "Style": "Express Sportfisher",
+      "AftCabin": false,
+      "aliases": [
+        "Viking 48 Open",
+        "Viking 480 Open"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/viking/48-open-2017-current"
+    },
+    {
+      "BoatModelID": "VIKI-48-ST",
+      "Manufacturer": "Viking",
+      "Model": "48 Sport Tower",
+      "FirstYear": 2017,
+      "LastYear": null,
+      "LOAFt": 49.0833,
+      "BeamFt": 17,
+      "DraftFt": 4.6667,
+      "DisplacementLb": 66342,
+      "AirDraftFt": null,
+      "FuelCapacityGal": 1216,
+      "WaterCapacityGal": 178,
+      "HoldingCapacityGal": null,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 12,
+      "Fuel": "Diesel",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin inboards",
+      "TypicalEngine": "MAN common-rail diesels",
+      "PlaningCruiseSpeedKt": 30,
+      "Configuration": "Sport Tower",
+      "Style": "Express Sportfisher",
+      "AftCabin": false,
+      "aliases": [
+        "Viking 48 Sport Tower",
+        "Viking 48 ST"
+      ],
+      "source": "https://www.hmy.com/yachting/news/the-viking-48-sport-tower",
+      "identityNote": "HMY states the Open, Sport Coupe and Sport Tower were introduced as distinct open-model versions on the 48 Convertible hull. 2017 examples are documented; production end remains unconfirmed, so LastYear stays null."
+    }
+  ],
+  "excludedBySizeCap": [
+    {
+      "id": "VIKI-48-MY",
+      "model": "48 Motor Yacht",
+      "catalogYears": "1986–88",
+      "publishedOverallFt": 52.5833,
+      "hullLengthFt": 48.5833,
+      "reason": "Published length with pulpit is 52'7\", exceeding the 50'0\" Phase 2 cap.",
+      "source": "https://www.hmy.com/yachting/powerboat-guide/viking/48-motor-yacht-1986-88"
+    },
+    {
+      "id": "VIKI-50-CMY",
+      "model": "50 Cockpit Motor Yacht",
+      "catalogYears": "1983–89",
+      "publishedOverallFt": 54.1667,
+      "hullLengthFt": 50,
+      "reason": "Published length with pulpit is 54'2\", exceeding the cap despite a 50'0\" hull length.",
+      "source": "https://www.hmy.com/yachting/powerboat-guide/viking/50-cockpit-motor-yacht-1983-89"
+    },
+    {
+      "id": "VIKI-50-CV-G1",
+      "model": "50 Convertible Generation 1",
+      "catalogYears": "1991–2001",
+      "publishedOverallFt": 50.5833,
+      "reason": "Published length is 50'7\", exceeding the 50'0\" cap.",
+      "source": "https://www.hmy.com/yachting/powerboat-guide/viking/50-convertible-1991-2001"
+    },
+    {
+      "id": "VIKI-50-CV-G2",
+      "model": "50 Convertible Generation 2",
+      "catalogYears": "2009–13",
+      "publishedOverallFt": 50.5,
+      "reason": "Published length is 50'6\", exceeding the 50'0\" cap.",
+      "source": "https://www.hmy.com/yachting/powerboat-guide/viking/50-convertible-2009-13"
+    },
+    {
+      "id": "VIKI-50-MY",
+      "model": "50 Motor Yacht",
+      "catalogYears": "1990–92",
+      "publishedOverallFt": 50.5,
+      "reason": "Published length is 50'6\", exceeding the 50'0\" cap.",
+      "source": "https://www.hmy.com/yachting/powerboat-guide/viking/50-motor-yacht-1990-92"
+    },
+    {
+      "id": "VIKI-50-OPEN",
+      "model": "50 Open",
+      "catalogYears": "1999–2004",
+      "publishedOverallFt": 50.5833,
+      "reason": "Published length is 50'7\", exceeding the 50'0\" cap.",
+      "source": "https://www.hmy.com/yachting/powerboat-guide/viking/50-open-1999-2004"
+    }
+  ],
+  "identityDecisions": [
+    {
+      "scope": "46 Convertible",
+      "decision": "two linked generations",
+      "models": [
+        "VIKI-46-CV-G1",
+        "VIKI-46-CV-G2"
+      ],
+      "rationale": "The 1981–85 and 2010–16 boats are separated by 25 years and use materially different hull forms, dimensions, displacement and systems."
+    },
+    {
+      "scope": "48 Convertible",
+      "decision": "three linked generations",
+      "models": [
+        "VIKI-48-CV-G1",
+        "VIKI-48-CV-G2",
+        "VIKI-48-CV-G3"
+      ],
+      "rationale": "Each run is discontinuous and materially different in beam, displacement, tankage, hull details and construction era."
+    },
+    {
+      "scope": "48 current-family layouts",
+      "decision": "retain Convertible, Open and Sport Tower separately",
+      "models": [
+        "VIKI-48-CV-G3",
+        "VIKI-48-OPEN",
+        "VIKI-48-ST"
+      ],
+      "rationale": "Viking/HMY describe these as distinct model versions with different helm/deckhouse configurations despite a shared hull."
+    },
+    {
+      "scope": "50-foot cap",
+      "decision": "apply to published overall length, not nominal model number or bare hull length",
+      "models": [
+        "VIKI-48-MY",
+        "VIKI-50-CMY",
+        "VIKI-50-CV-G1",
+        "VIKI-50-CV-G2",
+        "VIKI-50-MY",
+        "VIKI-50-OPEN"
+      ],
+      "rationale": "The user set a hard maximum of 50 feet. Models whose published overall length exceeds 50'0\" remain deferred even when marketed as a 48 or 50."
+    }
+  ],
+  "unknownPolicy": "Missing or ambiguous specifications remain null and do not eliminate the model.",
+  "sizePolicy": "Hard maximum published overall length is 50.0 ft."
+}
