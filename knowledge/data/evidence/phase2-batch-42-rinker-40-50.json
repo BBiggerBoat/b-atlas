@@ -1,0 +1,36 @@
+{
+  "batchId": "phase2-batch-42-rinker-40-50",
+  "schemaVersion": "1.4",
+  "validatedAt": "2026-10-02",
+  "assertions": [
+    {
+      "EvidenceAssertionID": "RINK-390-400-EC",
+      "BoatModelID": "RINK-390-400-EC",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/rinker/400-express-cruiser-2006-10",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 2006,
+        "LastYear": 2010,
+        "LOAFt": 41.5,
+        "BeamFt": 13,
+        "DraftFt": 3.1667,
+        "DisplacementLb": 19680,
+        "AirDraftFt": null,
+        "FuelCapacityGal": 300,
+        "WaterCapacityGal": 69,
+        "HoldingCapacityGal": 45,
+        "HullType": "Modified-V",
+        "DeadriseAftDeg": 18
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 2006,
+        "endYear": 2010
+      },
+      "CapturedAt": "2026-10-02"
+    }
+  ],
+  "manufacturerScopeSource": "https://www.hmy.com/yachting/powerboat-guide/rinker"
+}
