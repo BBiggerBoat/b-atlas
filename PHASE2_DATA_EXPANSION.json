@@ -60,7 +60,7 @@
     {
       "manufacturer": "Silverton",
       "manufacturerCode": "SILV",
-      "currentCanonicalModels": 4,
+      "currentCanonicalModels": 8,
       "priority": "high",
       "candidateFamilies": [
         "31 Convertible",
@@ -296,7 +296,7 @@
         "manufacturer": "Silverton",
         "canonicalProposal": "Silverton 34 Convertible",
         "proposedBoatModelID": "SILV-34-CV",
-        "identityDecision": "family_requires_generation_resolution",
+        "identityDecision": "four_generations_first_contains_two_production_phases",
         "productionYears": {
           "start": 1978,
           "end": 2006,
@@ -305,25 +305,38 @@
             "1996-2003"
           ]
         },
-        "rationale": "At least five separately described 34 Convertible generations exist. Early 1978-88 boats share a hull lineage, but later versions differ materially; a single flat canonical record would be misleading.",
+        "rationale": "Resolved under the generation policy: 1978–82 and 1983–88 remain one generation because the later update is documented as using the same hull; production-phase overrides preserve fuel/clearance/interior changes and the disputed 1983 boundary. The 1989–90, 1991–95 and 2004–06 boats are separate generations because dimensions, displacement, tankage, accommodation and/or production continuity change materially.",
         "generationCandidates": [
           {
+            "label": "Generation 1",
             "startYear": 1978,
-            "endYear": 1982
+            "endYear": 1988,
+            "phaseCandidates": [
+              {
+                "label": "original",
+                "startYear": 1978,
+                "endYear": 1982
+              },
+              {
+                "label": "updated",
+                "startYear": 1983,
+                "endYear": 1988
+              }
+            ],
+            "boundaryNote": "A 2016 PowerBoat Guide edition labels the original run 1978–83; verify 1983 boats individually."
           },
           {
-            "startYear": 1983,
-            "endYear": 1988
-          },
-          {
+            "label": "Generation 2",
             "startYear": 1989,
             "endYear": 1990
           },
           {
+            "label": "Generation 3",
             "startYear": 1991,
             "endYear": 1995
           },
           {
+            "label": "Generation 4",
             "startYear": 2004,
             "endYear": 2006
           }
@@ -344,7 +357,7 @@
       "Create separate Chris-Craft 31 Commander layout identities rather than one generic 31 Commander record.",
       "Create separate Chris-Craft 38 Commander layout identities or explicit linked variants.",
       "Decide B-Atlas policy for discontinuous same-name generations using Hatteras 36 Convertible as the test case.",
-      "Decide generation splitting threshold using Silverton 34 Convertible as the test case."
+      "Silverton 34 Convertible generation policy resolved and promoted as four linked canonical generation identities; Generation 1 carries two production phases."
     ]
   }
 }
