@@ -1,0 +1,500 @@
+{
+  "batchId": "phase2-batch-19-hatteras-45-48",
+  "status": "researched_complete_live",
+  "researchedAt": "2026-10-02",
+  "workflowNote": "Standalone Phase 2A batch, published through data/phase2-live-models.json and live aliases.",
+  "models": [
+    {
+      "BoatModelID": "HATT-45-CV-G1",
+      "Manufacturer": "Hatteras",
+      "Model": "45 Convertible Generation 1",
+      "FirstYear": 1968,
+      "LastYear": 1973,
+      "LOAFt": 45.1667,
+      "BeamFt": 14.5833,
+      "DraftFt": 3.5,
+      "DisplacementLb": 37000,
+      "AirDraftFt": 13.8333,
+      "FuelCapacityGal": 650,
+      "WaterCapacityGal": 180,
+      "HoldingCapacityGal": null,
+      "HullType": "Modified-V",
+      "Fuel": "Diesel",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin diesel inboards",
+      "TypicalEngine": "GM 8V71N or 8V71TI diesels",
+      "PlaningCruiseSpeedKt": 19,
+      "Configuration": "Convertible",
+      "Style": "Sportfisher",
+      "AftCabin": false,
+      "productionPhases": [
+        {
+          "startYear": 1968,
+          "endYear": 1969,
+          "changes": [
+            "Original centerline-pedestal flybridge"
+          ]
+        },
+        {
+          "startYear": 1970,
+          "endYear": 1973,
+          "changes": [
+            "Tournament-style flybridge layout"
+          ]
+        }
+      ],
+      "aliases": [
+        "Hatteras 45 Convertible 1968-73",
+        "Hatteras 45 Convertible Gen 1"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/hatteras/45-convertible-1968-73",
+      "identityNote": "1970 flybridge redesign is treated as a production-phase update, not a new generation."
+    },
+    {
+      "BoatModelID": "HATT-45-CV-G2",
+      "Manufacturer": "Hatteras",
+      "Model": "45 Convertible Generation 2",
+      "FirstYear": 1984,
+      "LastYear": 1988,
+      "LOAFt": 45.6667,
+      "BeamFt": 14.5,
+      "DraftFt": 4.5,
+      "DisplacementLb": 45000,
+      "AirDraftFt": 14.25,
+      "FuelCapacityGal": 590,
+      "WaterCapacityGal": 165,
+      "HoldingCapacityGal": 120,
+      "HullType": "Modified-V",
+      "Fuel": "Diesel",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin diesel inboards",
+      "TypicalEngine": "Detroit 6V92 535 hp diesels",
+      "PlaningCruiseSpeedKt": 21,
+      "Configuration": "Convertible",
+      "Style": "Sportfisher",
+      "AftCabin": false,
+      "productionPhases": [
+        {
+          "startYear": 1987,
+          "endYear": 1987,
+          "layout": "Palm Beach two-stateroom/two-head version with glassed-in front windshield"
+        }
+      ],
+      "aliases": [
+        "Hatteras 45 Convertible 1984-88",
+        "Hatteras 45 Convertible Gen 2"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/hatteras/45-convertible-1984-88",
+      "identityNote": "1987 Palm Beach version is a one-year layout variant, retained within this generation."
+    },
+    {
+      "BoatModelID": "HATT-45-CV-G3",
+      "Manufacturer": "Hatteras",
+      "Model": "45 Convertible Generation 3",
+      "FirstYear": 1989,
+      "LastYear": 1992,
+      "LOAFt": 45.6667,
+      "BeamFt": 14.5,
+      "DraftFt": 4.5833,
+      "DisplacementLb": 43800,
+      "AirDraftFt": 14.25,
+      "FuelCapacityGal": 590,
+      "WaterCapacityGal": 165,
+      "HoldingCapacityGal": 120,
+      "HullType": "Modified-V",
+      "Fuel": "Diesel",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin diesel inboards",
+      "TypicalEngine": "Detroit 6V92 535 hp diesels",
+      "PlaningCruiseSpeedKt": 21,
+      "Configuration": "Convertible",
+      "Style": "Sportfisher",
+      "AftCabin": false,
+      "aliases": [
+        "Hatteras 45 Convertible 1989-92",
+        "Hatteras 45 Convertible Gen 3"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/hatteras/45-convertible-1989-92",
+      "identityNote": "Updated successor to the 1984–88 model with fresh window styling, revised cockpit/flybridge console and new interior."
+    },
+    {
+      "BoatModelID": "HATT-46-CV-G1",
+      "Manufacturer": "Hatteras",
+      "Model": "46 Convertible Generation 1",
+      "FirstYear": 1974,
+      "LastYear": 1981,
+      "LOAFt": 46.1667,
+      "BeamFt": 14.75,
+      "DraftFt": 4.1667,
+      "DisplacementLb": 41000,
+      "AirDraftFt": 13.6667,
+      "FuelCapacityGal": 650,
+      "WaterCapacityGal": 180,
+      "HoldingCapacityGal": 120,
+      "HullType": "Modified-V",
+      "Fuel": "Diesel",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin diesel inboards",
+      "TypicalEngine": "Detroit 8V71 425 hp diesels",
+      "PlaningCruiseSpeedKt": 19.5,
+      "Configuration": "Convertible",
+      "Style": "Sportfisher",
+      "AftCabin": false,
+      "aliases": [
+        "Hatteras 46 Convertible 1974-81",
+        "Hatteras 46 Convertible Gen 1"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/hatteras/46-convertible-1974-81"
+    },
+    {
+      "BoatModelID": "HATT-46-CV-G2",
+      "Manufacturer": "Hatteras",
+      "Model": "46 Convertible Generation 2",
+      "FirstYear": 1982,
+      "LastYear": 1984,
+      "LOAFt": 46.1667,
+      "BeamFt": 14.75,
+      "DraftFt": 4.1667,
+      "DisplacementLb": 41000,
+      "AirDraftFt": 13.6667,
+      "FuelCapacityGal": 710,
+      "WaterCapacityGal": 180,
+      "HoldingCapacityGal": 120,
+      "HullType": "Modified-V",
+      "Fuel": "Diesel",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin diesel inboards",
+      "TypicalEngine": "Detroit 8V92 650 hp diesels",
+      "PlaningCruiseSpeedKt": 25,
+      "Configuration": "Convertible",
+      "Style": "Sportfisher",
+      "AftCabin": false,
+      "aliases": [
+        "Hatteras 46 Convertible 1982-84",
+        "Hatteras 46 Convertible Series II",
+        "Hatteras 46 Convertible Gen 2"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/hatteras/46-convertible-1982-84",
+      "identityNote": "Explicit Series II update with revised hull structure, shorter keel, sliding salon door, increased fuel and revised interiors."
+    },
+    {
+      "BoatModelID": "HATT-46-CV-G3",
+      "Manufacturer": "Hatteras",
+      "Model": "46 Convertible Generation 3",
+      "FirstYear": 1992,
+      "LastYear": 1994,
+      "LOAFt": 46.8333,
+      "BeamFt": 15.5833,
+      "DraftFt": 4.5,
+      "DisplacementLb": 52000,
+      "AirDraftFt": 13.75,
+      "FuelCapacityGal": 775,
+      "WaterCapacityGal": 188,
+      "HoldingCapacityGal": 60,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 7,
+      "Fuel": "Diesel",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin diesel inboards",
+      "TypicalEngine": "Detroit 8V92 735 hp diesels",
+      "PlaningCruiseSpeedKt": 24.5,
+      "Configuration": "Convertible",
+      "Style": "Sportfisher",
+      "AftCabin": false,
+      "aliases": [
+        "Hatteras 46 Convertible 1992-94",
+        "Hatteras 46 Convertible Gen 3"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/hatteras/46-convertible-1992-94",
+      "identityNote": "A source notes an updated 46 introduced in 1986, but the current source set does not provide sufficient model-specific specifications to promote a separate 1986–91 identity."
+    },
+    {
+      "BoatModelID": "HATT-48-CMY-G1",
+      "Manufacturer": "Hatteras",
+      "Model": "48 Cockpit Motor Yacht Generation 1",
+      "FirstYear": 1981,
+      "LastYear": 1984,
+      "LOAFt": 48.6667,
+      "BeamFt": 15,
+      "DraftFt": 3.9167,
+      "DisplacementLb": 47000,
+      "AirDraftFt": 17.1667,
+      "FuelCapacityGal": 590,
+      "WaterCapacityGal": 190,
+      "HoldingCapacityGal": 60,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 7,
+      "Fuel": "Diesel",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin diesel inboards",
+      "TypicalEngine": "Detroit 6-71N 285 hp; optional 6V92TA 425 hp diesels",
+      "DisplacementCruiseSpeedKt": 8,
+      "PlaningCruiseSpeedKt": 15,
+      "Configuration": "Cockpit Motor Yacht",
+      "Style": "Motor Yacht",
+      "AftCabin": true,
+      "aliases": [
+        "Hatteras 48 Cockpit Motor Yacht 1981-84",
+        "Hatteras 48 Cockpit MY 1981-84",
+        "Hatteras 48 Cockpit Gen 1"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/hatteras/48-cockpit-motor-yacht-1981-84",
+      "identityNote": "Early dual-mode-hull cockpit motor yacht; distinct from the wider 1993–96 model."
+    },
+    {
+      "BoatModelID": "HATT-48-CMY-G2",
+      "Manufacturer": "Hatteras",
+      "Model": "48 Cockpit Motor Yacht Generation 2",
+      "FirstYear": 1993,
+      "LastYear": 1996,
+      "LOAFt": 48.9167,
+      "BeamFt": 16,
+      "DraftFt": 5.5,
+      "DisplacementLb": 59000,
+      "AirDraftFt": 16.75,
+      "FuelCapacityGal": 667,
+      "WaterCapacityGal": 170,
+      "HoldingCapacityGal": 100,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 16,
+      "Fuel": "Diesel",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin diesel inboards",
+      "TypicalEngine": "Detroit 6V92 535 hp diesels",
+      "PlaningCruiseSpeedKt": 17,
+      "Configuration": "Cockpit Motor Yacht",
+      "Style": "Motor Yacht",
+      "AftCabin": true,
+      "aliases": [
+        "Hatteras 48 Cockpit Motor Yacht 1993-96",
+        "Hatteras 48 Cockpit MY 1993-96",
+        "Hatteras 48 Cockpit Gen 2"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/hatteras/48-cockpit-motor-yacht-1993-96",
+      "identityNote": "Later 16-foot-beam model with materially different hull geometry and accommodations."
+    },
+    {
+      "BoatModelID": "HATT-48-CV",
+      "Manufacturer": "Hatteras",
+      "Model": "48 Convertible",
+      "FirstYear": 1987,
+      "LastYear": 1990,
+      "LOAFt": 48.6667,
+      "BeamFt": 16,
+      "DraftFt": 5.4167,
+      "DisplacementLb": 51500,
+      "AirDraftFt": 14,
+      "FuelCapacityGal": 812,
+      "WaterCapacityGal": 184,
+      "HoldingCapacityGal": null,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 8,
+      "Fuel": "Diesel",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin diesel inboards",
+      "TypicalEngine": "Detroit 8V92 720 hp diesels",
+      "PlaningCruiseSpeedKt": 22.5,
+      "Configuration": "Convertible",
+      "Style": "Sportfisher",
+      "AftCabin": false,
+      "aliases": [
+        "Hatteras 48 Convertible",
+        "Hatteras 48 Convertible 1987-90"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/hatteras/48-convertible-1987-90"
+    },
+    {
+      "BoatModelID": "HATT-48-LRC",
+      "Manufacturer": "Hatteras",
+      "Model": "48 LRC",
+      "FirstYear": 1976,
+      "LastYear": 1981,
+      "LOAFt": 48.8333,
+      "LWLFt": 43.3333,
+      "BeamFt": 16.5,
+      "DraftFt": 4.5,
+      "DisplacementLb": 54000,
+      "AirDraftFt": 16.9167,
+      "FuelCapacityGal": 1390,
+      "WaterCapacityGal": 430,
+      "HoldingCapacityGal": 80,
+      "HullType": "Displacement",
+      "Fuel": "Diesel",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin diesel inboards",
+      "TypicalEngine": "Twin GM 4-53N 112 hp diesels",
+      "DisplacementCruiseSpeedKt": 8.5,
+      "Configuration": "Long Range Cruiser",
+      "Style": "Trawler / LRC",
+      "AftCabin": false,
+      "aliases": [
+        "Hatteras 48 LRC",
+        "Hatteras 48 Long Range Cruiser"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/hatteras/48-lrc-1976-81",
+      "identityNote": "Source reports over 40 built; exact production count remains unresolved."
+    },
+    {
+      "BoatModelID": "HATT-48-MY-G1",
+      "Manufacturer": "Hatteras",
+      "Model": "48 Motor Yacht Generation 1",
+      "FirstYear": 1981,
+      "LastYear": 1984,
+      "LOAFt": 48.6667,
+      "BeamFt": 15,
+      "DraftFt": 3.9167,
+      "DisplacementLb": 45000,
+      "AirDraftFt": 17.1667,
+      "FuelCapacityGal": 590,
+      "WaterCapacityGal": 190,
+      "HoldingCapacityGal": 90,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 7,
+      "Fuel": "Diesel",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin diesel inboards",
+      "TypicalEngine": "Detroit 6-71N 285 hp; optional 6V92 425 hp diesels",
+      "DisplacementCruiseSpeedKt": 8,
+      "PlaningCruiseSpeedKt": 14.5,
+      "Configuration": "Motor Yacht",
+      "Style": "Motor Yacht",
+      "AftCabin": true,
+      "aliases": [
+        "Hatteras 48 Motor Yacht 1981-84",
+        "Hatteras 48 MY 1981-84",
+        "Hatteras 48 Motor Yacht Gen 1"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/hatteras/48-motor-yacht-1981-84",
+      "identityNote": "Original dual-mode-hull 48 Motor Yacht."
+    },
+    {
+      "BoatModelID": "HATT-48-MY-G2",
+      "Manufacturer": "Hatteras",
+      "Model": "48 Motor Yacht Generation 2",
+      "FirstYear": 1990,
+      "LastYear": 1995,
+      "LOAFt": 48.75,
+      "BeamFt": 16,
+      "DraftFt": 5.25,
+      "DisplacementLb": 63000,
+      "AirDraftFt": 16.6667,
+      "FuelCapacityGal": 764,
+      "WaterCapacityGal": 170,
+      "HoldingCapacityGal": 90,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 14,
+      "Fuel": "Diesel",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin diesel inboards",
+      "TypicalEngine": "Detroit 6V92 535 hp diesels",
+      "PlaningCruiseSpeedKt": 15.5,
+      "Configuration": "Motor Yacht",
+      "Style": "Motor Yacht",
+      "AftCabin": true,
+      "productionPhases": [
+        {
+          "startYear": 1990,
+          "endYear": 1993,
+          "layout": "Original three-stateroom arrangement"
+        },
+        {
+          "startYear": 1994,
+          "endYear": 1995,
+          "layout": "Guest staterooms moved forward of salon, enlarging master stateroom"
+        }
+      ],
+      "aliases": [
+        "Hatteras 48 Motor Yacht 1990-95",
+        "Hatteras 48 MY 1990-95",
+        "Hatteras 48 Motor Yacht Gen 2"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/hatteras/48-motor-yacht-1990-95",
+      "identityNote": "1994 floorplan revision remains within the generation because hull identity and marketed model continuity remain intact."
+    },
+    {
+      "BoatModelID": "HATT-48-YF",
+      "Manufacturer": "Hatteras",
+      "Model": "48 Yacht Fisherman",
+      "FirstYear": 1972,
+      "LastYear": 1975,
+      "LOAFt": 48.75,
+      "BeamFt": 14.5833,
+      "DraftFt": 3.5833,
+      "DisplacementLb": 43500,
+      "AirDraftFt": 16,
+      "FuelCapacityGal": 650,
+      "WaterCapacityGal": 250,
+      "HoldingCapacityGal": null,
+      "HullType": "Modified-V",
+      "Fuel": "Diesel",
+      "Propulsion": "Shaft",
+      "EngineConfiguration": "Twin diesel inboards",
+      "TypicalEngine": "GM 8V71TI 425 hp diesels",
+      "PlaningCruiseSpeedKt": 17,
+      "Configuration": "Yacht Fisherman",
+      "Style": "Motor Yacht",
+      "AftCabin": true,
+      "aliases": [
+        "Hatteras 48 Yacht Fisherman",
+        "Hatteras 48 YF"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/hatteras/48-yacht-fisherman-1972-75",
+      "identityNote": "Stretched 44 Motor Yacht hull combining aft-cabin accommodations with a fishing cockpit."
+    }
+  ],
+  "identityDecisions": [
+    {
+      "scope": "45 Convertible",
+      "decision": "three linked generations",
+      "models": [
+        "HATT-45-CV-G1",
+        "HATT-45-CV-G2",
+        "HATT-45-CV-G3"
+      ],
+      "rationale": "The 1968–73 run is separated from the 1980s boats by a long production gap; the 1989–92 model is explicitly an updated successor with restyled windows, cockpit/flybridge and interior. Preserve all three generation identities."
+    },
+    {
+      "scope": "46 Convertible",
+      "decision": "three documented generations; unresolved 1986 update",
+      "models": [
+        "HATT-46-CV-G1",
+        "HATT-46-CV-G2",
+        "HATT-46-CV-G3"
+      ],
+      "rationale": "1974–81 and 1982–84 are separated because Series II includes structural, keel, fuel and interior changes. The 1992–94 boat has materially different geometry. A source references an updated 46 introduced in 1986, but current evidence is insufficient to create a separate fully specified record."
+    },
+    {
+      "scope": "48 Cockpit Motor Yacht",
+      "decision": "two linked generations",
+      "models": [
+        "HATT-48-CMY-G1",
+        "HATT-48-CMY-G2"
+      ],
+      "rationale": "The 1981–84 and 1993–96 runs are separated by a long production gap and major changes in beam, draft, displacement, hull deadrise and tankage."
+    },
+    {
+      "scope": "48 Motor Yacht",
+      "decision": "two linked generations",
+      "models": [
+        "HATT-48-MY-G1",
+        "HATT-48-MY-G2"
+      ],
+      "rationale": "The 1981–84 and 1990–95 runs are separated by a production gap and materially different hull geometry, displacement and accommodations."
+    },
+    {
+      "scope": "48 family layouts",
+      "decision": "retain distinct marketed identities",
+      "models": [
+        "HATT-48-CMY-G1",
+        "HATT-48-CMY-G2",
+        "HATT-48-CV",
+        "HATT-48-LRC",
+        "HATT-48-MY-G1",
+        "HATT-48-MY-G2",
+        "HATT-48-YF"
+      ],
+      "rationale": "Convertible, LRC, Motor Yacht, Cockpit Motor Yacht and Yacht Fisherman are distinct marketed configurations even where hull lineage overlaps."
+    }
+  ],
+  "unknownPolicy": "Missing specifications remain null and do not eliminate the model."
+}
