@@ -1,0 +1,247 @@
+{
+  "batchId": "phase2-batch-15-chris-craft-commander-27-42",
+  "schemaVersion": "1.4",
+  "validatedAt": "2026-10-02",
+  "assertions": [
+    {
+      "EvidenceAssertionID": "CHCR-27-CO",
+      "BoatModelID": "CHCR-27-CO",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.commanderclub.com/models-by-id/8cedf5d4-224d-47b3-b7ca-3401dcb1e8f0",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 1965,
+        "LastYear": 1970,
+        "LOAFt": 27,
+        "BeamFt": 10.25,
+        "DraftFt": 2.0833,
+        "DisplacementLb": 7470,
+        "DisplacementLbMax": null,
+        "AirDraftFt": null,
+        "FuelCapacityGal": 48,
+        "WaterCapacityGal": 19,
+        "HoldingCapacityGal": null,
+        "Fuel": "Gasoline",
+        "Propulsion": "Shaft",
+        "TotalBuilt": 535
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1965,
+        "endYear": 1970
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "CHCR-27-CO-SE",
+      "BoatModelID": "CHCR-27-CO-SE",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.commanderclub.com/models-by-id/83e19404-c78f-45cf-bd10-f1ee93642ce9",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 1966,
+        "LastYear": 1969,
+        "LOAFt": 27,
+        "BeamFt": 10.25,
+        "DraftFt": 2.0833,
+        "DisplacementLb": 5530,
+        "DisplacementLbMax": 6700,
+        "AirDraftFt": 11.25,
+        "FuelCapacityGal": 80,
+        "WaterCapacityGal": 15,
+        "HoldingCapacityGal": null,
+        "Fuel": "Gasoline",
+        "Propulsion": "Shaft",
+        "TotalBuilt": 195
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1966,
+        "endYear": 1969
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "CHCR-35-CO-EX",
+      "BoatModelID": "CHCR-35-CO-EX",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.commanderclub.com/models-by-id/9e21d7dc-a2d2-4f09-a781-769d6a1c7c3b",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 1968,
+        "LastYear": 1972,
+        "LOAFt": 35,
+        "BeamFt": 13,
+        "DraftFt": 3,
+        "DisplacementLb": 13478,
+        "DisplacementLbMax": 13994,
+        "AirDraftFt": 14.4167,
+        "FuelCapacityGal": 175,
+        "WaterCapacityGal": 50,
+        "HoldingCapacityGal": null,
+        "Fuel": "Gasoline",
+        "Propulsion": "Shaft",
+        "TotalBuilt": 222
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1968,
+        "endYear": 1972
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "CHCR-35-CO-SC",
+      "BoatModelID": "CHCR-35-CO-SC",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.commanderclub.com/models-by-id/5fa9e276-23b0-4af1-855b-58f43a720e41",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 1969,
+        "LastYear": 1972,
+        "LOAFt": 35,
+        "BeamFt": 13,
+        "DraftFt": 3,
+        "DisplacementLb": 13271,
+        "DisplacementLbMax": 17364,
+        "AirDraftFt": 15.5,
+        "FuelCapacityGal": 250,
+        "WaterCapacityGal": null,
+        "HoldingCapacityGal": null,
+        "Fuel": "Gasoline or Diesel depending configuration",
+        "Propulsion": "Shaft",
+        "TotalBuilt": 164
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1969,
+        "endYear": 1972
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "CHCR-36-CO-SC",
+      "BoatModelID": "CHCR-36-CO-SC",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.commanderclub.com/models-by-id/c63125e0-49cb-46ba-8054-9c1477a69f39",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 1973,
+        "LastYear": 1977,
+        "LOAFt": 36,
+        "BeamFt": 13,
+        "DraftFt": 3,
+        "DisplacementLb": 22600,
+        "DisplacementLbMax": 25300,
+        "AirDraftFt": 15,
+        "FuelCapacityGal": 300,
+        "WaterCapacityGal": 75,
+        "HoldingCapacityGal": null,
+        "Fuel": "Gasoline or Diesel depending configuration",
+        "Propulsion": "Shaft",
+        "TotalBuilt": 131
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1973,
+        "endYear": 1977
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "CHCR-36-CO-TF",
+      "BoatModelID": "CHCR-36-CO-TF",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.commanderclub.com/models-by-id/c63125e0-49cb-46ba-8054-9c1477a69f39",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 1973,
+        "LastYear": 1973,
+        "LOAFt": 36,
+        "BeamFt": 13,
+        "DraftFt": 3.1667,
+        "DisplacementLb": 18077,
+        "DisplacementLbMax": 20131,
+        "AirDraftFt": 15.1667,
+        "FuelCapacityGal": 300,
+        "WaterCapacityGal": 75,
+        "HoldingCapacityGal": null,
+        "Fuel": "Gasoline",
+        "Propulsion": "Shaft",
+        "TotalBuilt": 2
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1973,
+        "endYear": 1973
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "CHCR-41-CO",
+      "BoatModelID": "CHCR-41-CO",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.commanderclub.com/models-by-id/b5da9fd5-f072-48c7-a20d-7669486701f0",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 1972,
+        "LastYear": 1977,
+        "LOAFt": 41,
+        "BeamFt": 14,
+        "DraftFt": 3.3333,
+        "DisplacementLb": 21740,
+        "DisplacementLbMax": null,
+        "AirDraftFt": 16.8333,
+        "FuelCapacityGal": 300,
+        "WaterCapacityGal": 100,
+        "HoldingCapacityGal": null,
+        "Fuel": "Gasoline",
+        "Propulsion": "Shaft",
+        "TotalBuilt": 151
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1972,
+        "endYear": 1977
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "CHCR-42-CO",
+      "BoatModelID": "CHCR-42-CO",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.commanderclub.com/models-by-id/8a3f86fd-e34e-4384-90f7-ef9360a72414",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 1967,
+        "LastYear": 1972,
+        "LOAFt": 42,
+        "BeamFt": 13,
+        "DraftFt": 3.1667,
+        "DisplacementLb": 22443,
+        "DisplacementLbMax": 25621,
+        "AirDraftFt": 16.4167,
+        "FuelCapacityGal": 250,
+        "WaterCapacityGal": 70,
+        "HoldingCapacityGal": null,
+        "Fuel": "Gasoline or Diesel depending configuration",
+        "Propulsion": "Shaft",
+        "TotalBuilt": 191
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1967,
+        "endYear": 1972
+      },
+      "CapturedAt": "2026-10-02"
+    }
+  ]
+}
