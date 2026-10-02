@@ -1,0 +1,97 @@
+{
+  "batchId": "phase2-batch-03-chris-craft-hatteras",
+  "schemaVersion": "1.4",
+  "validatedAt": "2026-10-02",
+  "assertions": [
+    {
+      "EvidenceAssertionID": "CHCR-38-EX",
+      "BoatModelID": "CHCR-38-CO-EX",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.commanderclub.com/models-by-id/551d015a-f930-42c8-991e-124ca1b8711f",
+      "AssertionState": "supports",
+      "SourceValue": "38 Express; 1964–1972; 284 built; 38 ft x 13 ft; 36 in draft; 200 gal fuel; 75 gal water",
+      "SourceUnit": null,
+      "NormalizedCandidateValue": null,
+      "CanonicalUnit": null,
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1964,
+        "endYear": 1972
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "CHCR-38-SE",
+      "BoatModelID": "CHCR-38-CO-SE",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.commanderclub.com/models-by-id/81eb1b7f-35bf-4728-ae86-55d7714124f6",
+      "AssertionState": "supports",
+      "SourceValue": "38 Sedan; 1965–1972; 238 built; same hull as 38 Commander; enclosed cockpit and larger flybridge",
+      "SourceUnit": null,
+      "NormalizedCandidateValue": null,
+      "CanonicalUnit": null,
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1965,
+        "endYear": 1972
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "CHCR-38-SF",
+      "BoatModelID": "CHCR-38-CO-SF",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.commanderclub.com/models-by-id/3225a1ea-5c8d-4d8d-8e71-5c1bd9e00c2a",
+      "AssertionState": "supports",
+      "SourceValue": "38 Sport Fisherman; 1965–1968; 70 built; different cockpit layout and smaller flybridge",
+      "SourceUnit": null,
+      "NormalizedCandidateValue": null,
+      "CanonicalUnit": null,
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1965,
+        "endYear": 1968
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "HATT-36-G1",
+      "BoatModelID": "HATT-36-CV-G1",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/hatteras/36-convertible-1969-77",
+      "AssertionState": "supports",
+      "SourceValue": "1969–77; 36 ft 1 in LOA; 12 ft 9 in beam; 3 ft draft; 19,000 lb; 240/300 gal fuel; 70 gal water",
+      "SourceUnit": null,
+      "NormalizedCandidateValue": null,
+      "CanonicalUnit": null,
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1969,
+        "endYear": 1977
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "HATT-36-G2",
+      "BoatModelID": "HATT-36-CV-G2",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/hatteras/36-convertible-1983-87",
+      "AssertionState": "supports",
+      "SourceValue": "1983–87; 36 ft 6 in LOA; 13 ft 7 in beam; 3 ft 9 in draft; 26,500 lb; 355 gal fuel; 115 gal water; 40 gal waste",
+      "SourceUnit": null,
+      "NormalizedCandidateValue": null,
+      "CanonicalUnit": null,
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1983,
+        "endYear": 1987
+      },
+      "CapturedAt": "2026-10-02"
+    }
+  ]
+}
