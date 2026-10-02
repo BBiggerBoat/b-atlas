@@ -1,0 +1,23 @@
+{
+  "batchId": "phase2-batch-53-chaparral-40-50",
+  "schemaVersion": "1.4",
+  "validatedAt": "2026-10-02",
+  "coverageAssertions": [
+    {
+      "FieldID": "ManufacturerRangeCoverage",
+      "AssertionState": "supports",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/chaparral",
+      "SourceValue": "HMY catalogs 80 Chaparral models and lists no model family above the 350 Signature in its model index.",
+      "Confidence": "high",
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "FieldID": "CurrentManufacturerRange",
+      "AssertionState": "supports",
+      "SourceRef": "https://www.chaparralboats.com/",
+      "SourceValue": "Current Chaparral manufacturer range reviewed; no 40–50-foot model family identified.",
+      "Confidence": "medium",
+      "CapturedAt": "2026-10-02"
+    }
+  ]
+}
