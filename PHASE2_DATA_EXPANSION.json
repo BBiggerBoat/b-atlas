@@ -746,17 +746,108 @@
         "sourceRefs": [
           "https://www.hmy.com/yachting/powerboat-guide/silverton/52-ovation-2009"
         ]
+      },
+      {
+        "manufacturer": "Tollycraft",
+        "canonicalProposal": "Tollycraft 30 Sedan",
+        "proposedBoatModelID": "TOLL-30-SE",
+        "identityDecision": "single_canonical_model",
+        "productionYears": {
+          "start": 1977,
+          "end": 1984,
+          "confidence": "high"
+        },
+        "rationale": "Distinct documented marketed Tollycraft model; retain separately from other same-length layouts.",
+        "sourceRefs": []
+      },
+      {
+        "manufacturer": "Tollycraft",
+        "canonicalProposal": "Tollycraft 30 Sport Cruiser",
+        "proposedBoatModelID": "TOLL-30-SC",
+        "identityDecision": "single_canonical_model",
+        "productionYears": {
+          "start": 1985,
+          "end": 1992,
+          "confidence": "high"
+        },
+        "rationale": "Distinct documented marketed Tollycraft model; retain separately from other same-length layouts.",
+        "sourceRefs": []
+      },
+      {
+        "manufacturer": "Tollycraft",
+        "canonicalProposal": "Tollycraft 34 Convertible Sedan",
+        "proposedBoatModelID": "TOLL-34-CS",
+        "identityDecision": "single_canonical_model",
+        "productionYears": {
+          "start": 1981,
+          "end": 1986,
+          "confidence": "high"
+        },
+        "rationale": "Distinct documented marketed Tollycraft model; retain separately from other same-length layouts.",
+        "sourceRefs": []
+      },
+      {
+        "manufacturer": "Tollycraft",
+        "canonicalProposal": "Tollycraft 34 Sedan",
+        "proposedBoatModelID": "TOLL-34-SD",
+        "identityDecision": "single_canonical_model",
+        "productionYears": {
+          "start": 1972,
+          "end": 1980,
+          "confidence": "high"
+        },
+        "rationale": "Distinct documented marketed Tollycraft model; retain separately from other same-length layouts.",
+        "sourceRefs": []
+      },
+      {
+        "manufacturer": "Tollycraft",
+        "canonicalProposal": "Tollycraft 34 Sundeck",
+        "proposedBoatModelID": "TOLL-34-SU",
+        "identityDecision": "single_canonical_model",
+        "productionYears": {
+          "start": 1986,
+          "end": 1988,
+          "confidence": "high"
+        },
+        "rationale": "Distinct documented marketed Tollycraft model; retain separately from other same-length layouts.",
+        "sourceRefs": []
+      },
+      {
+        "manufacturer": "Tollycraft",
+        "canonicalProposal": "Tollycraft 34 Tri-Cabin",
+        "proposedBoatModelID": "TOLL-34-TC",
+        "identityDecision": "single_canonical_model",
+        "productionYears": {
+          "start": 1975,
+          "end": 1985,
+          "confidence": "high"
+        },
+        "rationale": "Distinct documented marketed Tollycraft model; retain separately from other same-length layouts.",
+        "sourceRefs": []
+      },
+      {
+        "manufacturer": "Tollycraft",
+        "canonicalProposal": "Tollycraft 40 Sport Sedan",
+        "proposedBoatModelID": "TOLL-40-SS",
+        "identityDecision": "single_canonical_model",
+        "productionYears": {
+          "start": 1987,
+          "end": 1995,
+          "confidence": "high"
+        },
+        "rationale": "Distinct documented marketed Tollycraft model; retain separately from other same-length layouts.",
+        "sourceRefs": []
       }
     ],
     "nextActions": [
-      "Promote Tollycraft 26 Sedan after minimum specification research.",
       "Resolve Trojan F-26 production years and layout naming from stronger historical source.",
       "Resolve Trojan F-32 exact production span.",
       "Create separate Chris-Craft 31 Commander layout identities rather than one generic 31 Commander record.",
       "Create separate Chris-Craft 38 Commander layout identities or explicit linked variants.",
       "Decide B-Atlas policy for discontinuous same-name generations using Hatteras 36 Convertible as the test case.",
       "Silverton 34 Convertible generation policy resolved and promoted as four linked canonical generation identities; Generation 1 carries two production phases.",
-      "Silverton 44–52 batch promoted: six canonical identities added; 48/50 Convertible retained as one model with a documented name-change phase."
+      "Silverton 44–52 batch promoted: six canonical identities added; 48/50 Convertible retained as one model with a documented name-change phase.",
+      "Merge staged Tollycraft batch 10 into boatmodels.json when the large-file GitHub write path is available."
     ]
   },
   "workflow": {
@@ -782,6 +873,12 @@
     ],
     "rule": "Research quality is unchanged; only downstream publishing/enrichment work is deferred.",
     "lastCompletedBatch": "phase2-batch-09-silverton-44-52",
-    "lastCompletedAt": "2026-10-02"
+    "lastCompletedAt": "2026-10-02",
+    "lastResearchedBatch": "phase2-batch-10-tollycraft-30-40",
+    "lastResearchedAt": "2026-10-02",
+    "pendingCanonicalMerge": [
+      "phase2-batch-10-tollycraft-30-40"
+    ],
+    "note": "Batch 10 research is complete and stored in data/phase2-batches plus evidence JSON. Canonical boatmodels.json merge is pending because the GitHub connector fails on replacement of the 3.8 MB monolithic file."
   }
 }
