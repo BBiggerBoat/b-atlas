@@ -1,0 +1,61 @@
+{
+  "batchId": "phase2-batch-06-silverton-38-40",
+  "schemaVersion": "1.4",
+  "validatedAt": "2026-10-02",
+  "assertions": [
+    {
+      "EvidenceAssertionID": "SILV-38-EX",
+      "BoatModelID": "SILV-38-EX",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/silverton/38-express-1990-94",
+      "AssertionState": "supports",
+      "SourceValue": "1990–94; 37 ft 7 in LOA; 13 ft 11 in beam; 3 ft 7 in draft; 21,000 lb; 9 ft 9 in clearance; 300 gal fuel; 110 gal water; 17° aft deadrise; twin 355 hp Crusader gas V-drives, 425 hp Cats optional",
+      "SourceUnit": null,
+      "NormalizedCandidateValue": null,
+      "CanonicalUnit": null,
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1990,
+        "endYear": 1994
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "SILV-38-CV",
+      "BoatModelID": "SILV-38-CV",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/silverton/38-convertible-2003-08",
+      "AssertionState": "supports",
+      "SourceValue": "2003–08; 41 ft 1 in with pulpit; 14 ft 3 in beam; 3 ft 7 in draft; 26,450 lb; 16 ft 8 in clearance; 360 gal fuel; 100 gal water; 40 gal waste; 17° aft deadrise; twin 385 hp gas inboards",
+      "SourceUnit": null,
+      "NormalizedCandidateValue": null,
+      "CanonicalUnit": null,
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 2003,
+        "endYear": 2008
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "SILV-40-CV",
+      "BoatModelID": "SILV-40-CV",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/silverton/40-convertible-1985-90",
+      "AssertionState": "supports",
+      "SourceValue": "1985–90; 40 ft LOA; 14 ft beam; 3 ft draft; 23,000 lb; 13 ft 6 in clearance; 300 gal fuel; 100 gal water; 50 gal waste; 14° aft deadrise; 1989 interior redesign; standard Crusader gas, Cat diesels optional",
+      "SourceUnit": null,
+      "NormalizedCandidateValue": null,
+      "CanonicalUnit": null,
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1985,
+        "endYear": 1990
+      },
+      "CapturedAt": "2026-10-02"
+    }
+  ]
+}
