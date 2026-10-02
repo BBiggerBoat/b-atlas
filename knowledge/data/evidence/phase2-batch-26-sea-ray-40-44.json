@@ -1,0 +1,455 @@
+{
+  "batchId": "phase2-batch-26-sea-ray-40-44",
+  "schemaVersion": "1.4",
+  "validatedAt": "2026-10-02",
+  "assertions": [
+    {
+      "EvidenceAssertionID": "SRAY-400-EC",
+      "BoatModelID": "SRAY-400-EC",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/400-express-cruiser-1992-99",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 1992,
+        "LastYear": 1999,
+        "LOAFt": 45.5833,
+        "BeamFt": 13,
+        "DraftFt": 3.25,
+        "DisplacementLb": 18000,
+        "AirDraftFt": null,
+        "FuelCapacityGal": 300,
+        "WaterCapacityGal": 100,
+        "HoldingCapacityGal": 30,
+        "HullType": "Deep-V",
+        "DeadriseAftDeg": 19
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1992,
+        "endYear": 1999
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "SRAY-400-FLY",
+      "BoatModelID": "SRAY-400-FLY",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/400-fly-2016-18",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 2016,
+        "LastYear": 2018,
+        "LOAFt": 40,
+        "BeamFt": 13.5,
+        "DraftFt": 3.5833,
+        "DisplacementLb": 33693,
+        "AirDraftFt": null,
+        "FuelCapacityGal": 344,
+        "WaterCapacityGal": 100,
+        "HoldingCapacityGal": 42,
+        "HullType": "Modified-V",
+        "DeadriseAftDeg": 17
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 2016,
+        "endYear": 2018
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "SRAY-400-SB",
+      "BoatModelID": "SRAY-400-SB",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/400-sedan-bridge-1996-2003",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 1996,
+        "LastYear": 2003,
+        "LOAFt": null,
+        "BeamFt": null,
+        "DraftFt": null,
+        "DisplacementLb": null,
+        "AirDraftFt": null,
+        "FuelCapacityGal": null,
+        "WaterCapacityGal": null,
+        "HoldingCapacityGal": null,
+        "HullType": null,
+        "DeadriseAftDeg": null
+      },
+      "Confidence": "medium",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1996,
+        "endYear": 2003
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "SRAY-400-SLX-OB",
+      "BoatModelID": "SRAY-400-SLX-OB",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/400-slx-outboard-2017-current",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 2017,
+        "LastYear": null,
+        "LOAFt": 39.5,
+        "BeamFt": 12.0833,
+        "DraftFt": 3.75,
+        "DisplacementLb": 18537,
+        "AirDraftFt": null,
+        "FuelCapacityGal": 375,
+        "WaterCapacityGal": 50,
+        "HoldingCapacityGal": 28,
+        "HullType": "Deep-V",
+        "DeadriseAftDeg": 21
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 2017,
+        "endYear": null
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "SRAY-400-SD",
+      "BoatModelID": "SRAY-400-SD",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/400-sundancer-2016-19",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 2016,
+        "LastYear": 2019,
+        "LOAFt": 40,
+        "BeamFt": 13.5,
+        "DraftFt": 3.3333,
+        "DisplacementLb": 31391,
+        "AirDraftFt": null,
+        "FuelCapacityGal": 320,
+        "WaterCapacityGal": 100,
+        "HoldingCapacityGal": 42,
+        "HullType": "Modified-V",
+        "DeadriseAftDeg": 17
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 2016,
+        "endYear": 2019
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "SRAY-400-410-SD",
+      "BoatModelID": "SRAY-400-410-SD",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/400-410-sundancer-1997-2003",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 1997,
+        "LastYear": 2003,
+        "LOAFt": null,
+        "BeamFt": null,
+        "DraftFt": null,
+        "DisplacementLb": null,
+        "AirDraftFt": null,
+        "FuelCapacityGal": null,
+        "WaterCapacityGal": null,
+        "HoldingCapacityGal": null,
+        "HullType": "Deep-V",
+        "DeadriseAftDeg": null
+      },
+      "Confidence": "medium",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1997,
+        "endYear": 2003
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "SRAY-410-EC",
+      "BoatModelID": "SRAY-410-EC",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/410-express-cruiser-2000-03",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 2000,
+        "LastYear": 2003,
+        "LOAFt": 45.5,
+        "BeamFt": 13.8333,
+        "DraftFt": 3.3333,
+        "DisplacementLb": 21000,
+        "AirDraftFt": null,
+        "FuelCapacityGal": 335,
+        "WaterCapacityGal": 100,
+        "HoldingCapacityGal": 42,
+        "HullType": "Deep-V",
+        "DeadriseAftDeg": 19
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 2000,
+        "endYear": 2003
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "SRAY-410-SD",
+      "BoatModelID": "SRAY-410-SD",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/410-sundancer-2012-15",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 2012,
+        "LastYear": 2015,
+        "LOAFt": 41.5,
+        "BeamFt": 13,
+        "DraftFt": 4.1667,
+        "DisplacementLb": 25875,
+        "AirDraftFt": null,
+        "FuelCapacityGal": 254,
+        "WaterCapacityGal": 60,
+        "HoldingCapacityGal": 42,
+        "HullType": "Deep-V",
+        "DeadriseAftDeg": 21
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 2012,
+        "endYear": 2015
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "SRAY-410-415-440-AC",
+      "BoatModelID": "SRAY-410-415-440-AC",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/410-415-440-aft-cabin-1986-91",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 1986,
+        "LastYear": 1991,
+        "LOAFt": 45.9167,
+        "BeamFt": 13.9167,
+        "DraftFt": 3.1667,
+        "DisplacementLb": 23000,
+        "AirDraftFt": null,
+        "FuelCapacityGal": 400,
+        "WaterCapacityGal": 130,
+        "HoldingCapacityGal": 40,
+        "HullType": "Modified-V",
+        "DeadriseAftDeg": 17
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1986,
+        "endYear": 1991
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "SRAY-420-AC",
+      "BoatModelID": "SRAY-420-AC",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/420-aft-cabin-1996-2002",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 1996,
+        "LastYear": 2002,
+        "LOAFt": 45.4167,
+        "BeamFt": 14.25,
+        "DraftFt": 3.0833,
+        "DisplacementLb": 27000,
+        "AirDraftFt": 15.5,
+        "FuelCapacityGal": 350,
+        "WaterCapacityGal": 120,
+        "HoldingCapacityGal": 55,
+        "HullType": "Modified-V",
+        "DeadriseAftDeg": 18.5
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1996,
+        "endYear": 2002
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "SRAY-420-44-SB",
+      "BoatModelID": "SRAY-420-44-SB",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/420-sedan-bridge-44-sedan-bridge-2004-09",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 2004,
+        "LastYear": 2009,
+        "LOAFt": 45.4167,
+        "BeamFt": 14.25,
+        "DraftFt": 3.5,
+        "DisplacementLb": 28500,
+        "AirDraftFt": null,
+        "FuelCapacityGal": 350,
+        "WaterCapacityGal": 120,
+        "HoldingCapacityGal": 42,
+        "HullType": "Modified-V",
+        "DeadriseAftDeg": 18
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 2004,
+        "endYear": 2009
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "SRAY-420-44-SD",
+      "BoatModelID": "SRAY-420-44-SD",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/420-sundancer-44-sundancer-2003-08",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 2003,
+        "LastYear": 2008,
+        "LOAFt": null,
+        "BeamFt": null,
+        "DraftFt": null,
+        "DisplacementLb": null,
+        "AirDraftFt": null,
+        "FuelCapacityGal": null,
+        "WaterCapacityGal": null,
+        "HoldingCapacityGal": null,
+        "HullType": "Deep-V",
+        "DeadriseAftDeg": null
+      },
+      "Confidence": "medium",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 2003,
+        "endYear": 2008
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "SRAY-420-440-SD",
+      "BoatModelID": "SRAY-420-440-SD",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/420-440-sundancer-1990-95",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 1990,
+        "LastYear": 1995,
+        "LOAFt": 47.0833,
+        "BeamFt": 13.9167,
+        "DraftFt": 3.25,
+        "DisplacementLb": 20000,
+        "AirDraftFt": null,
+        "FuelCapacityGal": 400,
+        "WaterCapacityGal": 100,
+        "HoldingCapacityGal": 28,
+        "HullType": "Deep-V",
+        "DeadriseAftDeg": 19
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1990,
+        "endYear": 1995
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "SRAY-43-470-SD",
+      "BoatModelID": "SRAY-43-470-SD",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/43-sundancer-470-sundancer-2009-14",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 2009,
+        "LastYear": 2014,
+        "LOAFt": 47.25,
+        "BeamFt": 14,
+        "DraftFt": 4,
+        "DisplacementLb": 28500,
+        "AirDraftFt": null,
+        "FuelCapacityGal": 350,
+        "WaterCapacityGal": 100,
+        "HoldingCapacityGal": 42,
+        "HullType": "Deep-V",
+        "DeadriseAftDeg": 19
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 2009,
+        "endYear": 2014
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "SRAY-430-440-CV",
+      "BoatModelID": "SRAY-430-440-CV",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/430-440-convertible-1988-91",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 1988,
+        "LastYear": 1991,
+        "LOAFt": 49.0833,
+        "BeamFt": 13.9167,
+        "DraftFt": 2.6667,
+        "DisplacementLb": 23000,
+        "AirDraftFt": 10.75,
+        "FuelCapacityGal": 500,
+        "WaterCapacityGal": 132,
+        "HoldingCapacityGal": null,
+        "HullType": "Modified-V",
+        "DeadriseAftDeg": 17
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1988,
+        "endYear": 1991
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "SRAY-440-EB",
+      "BoatModelID": "SRAY-440-EB",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/440-express-bridge-1993-98",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 1993,
+        "LastYear": 1998,
+        "LOAFt": 47.0833,
+        "BeamFt": 13.9167,
+        "DraftFt": 3.25,
+        "DisplacementLb": 28000,
+        "AirDraftFt": null,
+        "FuelCapacityGal": 400,
+        "WaterCapacityGal": 100,
+        "HoldingCapacityGal": 60,
+        "HullType": "Deep-V",
+        "DeadriseAftDeg": 19
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1993,
+        "endYear": 1998
+      },
+      "CapturedAt": "2026-10-02"
+    }
+  ]
+}
