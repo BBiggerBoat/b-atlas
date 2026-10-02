@@ -1,0 +1,155 @@
+{
+  "batchId": "phase2-batch-41-rinker-35-39",
+  "status": "researched_complete_staged",
+  "researchedAt": "2026-10-02",
+  "workflowNote": "Rinker nominal 35–39-foot Phase 2 batch. Actual published overall length governs the 50'0\" cap.",
+  "models": [
+    {
+      "BoatModelID": "RINK-350-360-EC",
+      "Manufacturer": "Rinker",
+      "Model": "350 / 360 Express Cruiser",
+      "FirstYear": 2008,
+      "LastYear": 2015,
+      "LOAFt": 37.9167,
+      "BeamFt": 12,
+      "DraftFt": 3,
+      "DisplacementLb": 15550,
+      "AirDraftFt": null,
+      "FuelCapacityGal": 235,
+      "WaterCapacityGal": 51,
+      "HoldingCapacityGal": 45,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 18,
+      "Configuration": "Express Cruiser",
+      "Style": "Express Cruiser",
+      "AftCabin": false,
+      "aliases": [
+        "Rinker 350 Express Cruiser",
+        "Rinker 360 Express Cruiser",
+        "Rinker 350 EC",
+        "Rinker 360 EC"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/rinker/360-express-cruiser-2008-15",
+      "identityNote": "Called 350 EC in 2008, then 360 Express Cruiser."
+    },
+    {
+      "BoatModelID": "RINK-360-370-380-EC",
+      "Manufacturer": "Rinker",
+      "Model": "360 / 370 / 380 Express Cruiser",
+      "FirstYear": 2005,
+      "LastYear": 2009,
+      "LOAFt": 39.3333,
+      "BeamFt": 12.25,
+      "DraftFt": 3,
+      "DisplacementLb": 18400,
+      "AirDraftFt": null,
+      "FuelCapacityGal": 235,
+      "WaterCapacityGal": 51,
+      "HoldingCapacityGal": 45,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 18,
+      "Configuration": "Express Cruiser",
+      "Style": "Express Cruiser",
+      "AftCabin": false,
+      "aliases": [
+        "Rinker 360 Fiesta Vee",
+        "Rinker 360 Express Cruiser 2005",
+        "Rinker 370 Express Cruiser",
+        "Rinker 380 Express Cruiser"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/rinker/360-370-380-express-cruiser-2005-08",
+      "ResearchNotes": "HMY title gives 2005–08 but text states model was called 380 Express in 2009; working range extends through 2009 pending primary catalog reconciliation."
+    },
+    {
+      "BoatModelID": "RINK-370-EX",
+      "Manufacturer": "Rinker",
+      "Model": "370 EX",
+      "FirstYear": 2017,
+      "LastYear": 2020,
+      "LOAFt": 37.9167,
+      "BeamFt": 12,
+      "DraftFt": 3,
+      "DisplacementLb": 15550,
+      "AirDraftFt": null,
+      "FuelCapacityGal": 235,
+      "WaterCapacityGal": 51,
+      "HoldingCapacityGal": 47,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 18,
+      "Configuration": "EX",
+      "Style": "Express Cruiser",
+      "AftCabin": false,
+      "aliases": [
+        "Rinker 370 EX",
+        "Rinker EX 370"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/rinker/370-ex-2017-20"
+    },
+    {
+      "BoatModelID": "RINK-390-410-420-EC",
+      "Manufacturer": "Rinker",
+      "Model": "390 Fiesta Vee / 410 / 420 Express Cruiser",
+      "FirstYear": 2004,
+      "LastYear": 2007,
+      "LOAFt": 43.5,
+      "BeamFt": 13.8333,
+      "DraftFt": 3.1667,
+      "DisplacementLb": 24500,
+      "AirDraftFt": 12.8333,
+      "FuelCapacityGal": 300,
+      "WaterCapacityGal": 100,
+      "HoldingCapacityGal": 88,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 18,
+      "Configuration": "Fiesta Vee / Express Cruiser",
+      "Style": "Express Cruiser",
+      "AftCabin": false,
+      "aliases": [
+        "Rinker 390 Fiesta Vee",
+        "Rinker 410 Express Cruiser",
+        "Rinker 420 Express Cruiser",
+        "Rinker 410 Express",
+        "Rinker 420 Express"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/rinker/390-410-420-express-cruiser-2004-07",
+      "identityNote": "390 Fiesta Vee in 2004, 410 Express in 2005–06, 420 Express in 2007."
+    }
+  ],
+  "identityDecisions": [
+    {
+      "scope": "350 / 360 Express Cruiser 2008–15",
+      "decision": "one_rename_chain_identity",
+      "models": [
+        "RINK-350-360-EC"
+      ],
+      "rationale": "HMY documents the model as 350 EC in 2008 and 360 Express Cruiser thereafter."
+    },
+    {
+      "scope": "360 / 370 / 380 Express Cruiser 2005–09",
+      "decision": "one_rename_chain_identity",
+      "models": [
+        "RINK-360-370-380-EC"
+      ],
+      "rationale": "Continuous 39'4\" hull lineage renamed across 360, 370, and 380 designations."
+    },
+    {
+      "scope": "Two overlapping 360 families",
+      "decision": "keep_separate_generations",
+      "models": [
+        "RINK-350-360-EC",
+        "RINK-360-370-380-EC"
+      ],
+      "rationale": "The 2008–15 model is 37'11\" x 12'0\" and 15,550 lb; the older lineage is 39'4\" x 12'3\" and 18,400 lb. They are materially different hulls despite overlapping 360 naming."
+    },
+    {
+      "scope": "390 / 410 / 420 Express Cruiser",
+      "decision": "one_rename_chain_identity",
+      "models": [
+        "RINK-390-410-420-EC"
+      ],
+      "rationale": "HMY explicitly documents the 390 Fiesta Vee → 410 Express → 420 Express naming sequence on the same 43'6\" platform."
+    }
+  ],
+  "unknownPolicy": "Conflicting title/body year ranges are annotated rather than silently normalized.",
+  "sizePolicy": "Hard maximum published overall length remains 50.0 ft."
+}
