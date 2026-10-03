@@ -732,7 +732,27 @@
             contributeButton.dataset.guideName = boatName(boat);
         }
         const image = document.getElementById("modalImage");
-        if (image && root.ImageAssetManager) { image.src = root.ImageAssetManager.resolveBoatImage(boat); image.alt = boatName(boat); image.style.display = "block"; root.ImageAssetManager.applyImageFallback(image); }
+        const imageSource = document.getElementById("modalImageSource");
+        const imageSourceLink = document.getElementById("modalImageSourceLink");
+        if (image && root.ImageAssetManager) {
+            image.src = root.ImageAssetManager.resolveBoatImage(boat);
+            image.alt = boatName(boat);
+            image.style.display = "block";
+            root.ImageAssetManager.applyImageFallback(image);
+            const sourceInfo = root.ImageAssetManager.getImageSourceInfo?.(boat);
+            if (imageSource) imageSource.hidden = !sourceInfo;
+            if (imageSourceLink) {
+                if (sourceInfo?.sourcePageURL) {
+                    imageSourceLink.href = sourceInfo.sourcePageURL;
+                    imageSourceLink.textContent = sourceInfo.sourceDomain ? `View source · ${sourceInfo.sourceDomain}` : "View source";
+                    imageSourceLink.hidden = false;
+                } else {
+                    imageSourceLink.removeAttribute("href");
+                    imageSourceLink.textContent = "Source unavailable";
+                    imageSourceLink.hidden = true;
+                }
+            }
+        }
         root.BScoutOwnership?.hideOwnedView();
         document.getElementById("lifecycleHome")?.setAttribute("hidden", "");
         document.getElementById("discoverView")?.setAttribute("hidden", "");
