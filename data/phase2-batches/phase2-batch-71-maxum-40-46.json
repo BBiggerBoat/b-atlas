@@ -1,0 +1,125 @@
+{
+  "batchId": "phase2-batch-71-maxum-40-46",
+  "status": "researched_complete_live",
+  "researchedAt": "2026-10-03",
+  "models": [
+    {
+      "BoatModelID": "MAXU-4100-SCA",
+      "Manufacturer": "Maxum",
+      "Model": "4100 SCA",
+      "FirstYear": 1997,
+      "LastYear": 2001,
+      "LOAFt": 41.6667,
+      "BeamFt": 13.8333,
+      "DraftFt": 3.75,
+      "DisplacementLb": 30000,
+      "AirDraftFt": 18.1667,
+      "FuelCapacityGal": 300,
+      "WaterCapacityGal": 90,
+      "HoldingCapacityGal": 76,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 10,
+      "Style": "Aft Cabin Motor Yacht",
+      "aliases": [
+        "Maxum 4100 SCA"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/maxum/4100-sca-1997-2001"
+    },
+    {
+      "BoatModelID": "MAXU-4100-SCB",
+      "Manufacturer": "Maxum",
+      "Model": "4100 SCB",
+      "FirstYear": 1997,
+      "LastYear": 2002,
+      "LOAFt": 42.1667,
+      "BeamFt": 13.9167,
+      "DraftFt": 3.75,
+      "DisplacementLb": 28770,
+      "AirDraftFt": 18,
+      "FuelCapacityGal": 380,
+      "WaterCapacityGal": 100,
+      "HoldingCapacityGal": 75,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 13,
+      "Style": "Sedan Bridge",
+      "aliases": [
+        "Maxum 4100 SCB"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/maxum/4100-scb-1997-2002"
+    },
+    {
+      "BoatModelID": "MAXU-4200-SCR-SY",
+      "Manufacturer": "Maxum",
+      "Model": "4200 SCR / 4200 SY",
+      "FirstYear": 2002,
+      "LastYear": 2008,
+      "LOAFt": 42.75,
+      "BeamFt": 13.8333,
+      "DraftFt": 3.6667,
+      "DisplacementLb": 35700,
+      "AirDraftFt": 12,
+      "FuelCapacityGal": 480,
+      "WaterCapacityGal": 130,
+      "HoldingCapacityGal": 70,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 18,
+      "Style": "Sport Yacht",
+      "aliases": [
+        "Maxum 4200 SCR",
+        "Maxum 4200 SY",
+        "Maxum 4200 Sport Yacht"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/maxum/4200-sy-2002-08"
+    },
+    {
+      "BoatModelID": "MAXU-4600-SCB",
+      "Manufacturer": "Maxum",
+      "Model": "4600 SCB",
+      "FirstYear": 1997,
+      "LastYear": 2001,
+      "LOAFt": 45.9167,
+      "BeamFt": 14.3333,
+      "DraftFt": 4,
+      "DisplacementLb": 30400,
+      "AirDraftFt": 14.1667,
+      "FuelCapacityGal": 418,
+      "WaterCapacityGal": 100,
+      "HoldingCapacityGal": 75,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 9,
+      "Style": "Sedan Bridge",
+      "aliases": [
+        "Maxum 4600 SCB"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/maxum/4600-scb-1997-2001"
+    }
+  ],
+  "identityDecisions": [
+    {
+      "scope": "4100 SCA versus 4100 SCB",
+      "decision": "distinct_layout_identities",
+      "models": [
+        "MAXU-4100-SCA",
+        "MAXU-4100-SCB"
+      ],
+      "rationale": "Aft-cabin motor-yacht and sedan-bridge layouts are materially different marketed products and remain separate identities."
+    },
+    {
+      "scope": "4200 SCR / 4200 SY",
+      "decision": "one_rename_chain_identity",
+      "models": [
+        "MAXU-4200-SCR-SY"
+      ],
+      "rationale": "HMY states the 2002 model was called 4200 SCR; the same continuing model was marketed as 4200 SY / Sport Yacht thereafter."
+    },
+    {
+      "scope": "4600 SCB",
+      "decision": "single_canonical_model",
+      "models": [
+        "MAXU-4600-SCB"
+      ],
+      "rationale": "Single documented 1997–2001 sedan-bridge production run."
+    }
+  ],
+  "sizePolicy": "Hard maximum published overall length remains 50.0 ft."
+}
