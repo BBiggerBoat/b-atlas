@@ -1,0 +1,145 @@
+{
+  "batchId": "phase2-batch-55-monterey-35-39",
+  "status": "researched_complete_staged",
+  "researchedAt": "2026-10-02",
+  "models": [
+    {
+      "BoatModelID": "MONY-350-360-SY",
+      "Manufacturer": "Monterey",
+      "Model": "350 / 360 Sport Yacht",
+      "FirstYear": 2005,
+      "LastYear": 2011,
+      "LOAFt": 37,
+      "BeamFt": 11.5,
+      "DraftFt": 3.5,
+      "DisplacementLb": 16500,
+      "AirDraftFt": null,
+      "FuelCapacityGal": 230,
+      "WaterCapacityGal": 48,
+      "HoldingCapacityGal": 38,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 17,
+      "Style": "Sport Yacht",
+      "aliases": [
+        "Monterey 350 Sport Yacht",
+        "Monterey 360 Sport Yacht",
+        "Monterey 350 SY",
+        "Monterey 360 SY"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/monterey/350-360-sport-yacht-2005-11"
+    },
+    {
+      "BoatModelID": "MONY-360-SC",
+      "Manufacturer": "Monterey",
+      "Model": "360 Sport Coupe",
+      "FirstYear": 2015,
+      "LastYear": 2018,
+      "LOAFt": 37.8333,
+      "BeamFt": 11.9167,
+      "DraftFt": 3.5,
+      "DisplacementLb": 17000,
+      "AirDraftFt": 10,
+      "FuelCapacityGal": 250,
+      "WaterCapacityGal": 49,
+      "HoldingCapacityGal": 28,
+      "HullType": "Deep-V",
+      "DeadriseAftDeg": 17,
+      "Style": "Sport Coupe",
+      "aliases": [
+        "Monterey 360 Sport Coupe",
+        "Monterey 360 SC"
+      ],
+      "source": "https://www.montereyboats.com/news/view/monterey-boats-debuts-the-360sc/"
+    },
+    {
+      "BoatModelID": "MONY-378-SE-SS",
+      "Manufacturer": "Monterey",
+      "Model": "378 SE / 378 SS",
+      "FirstYear": 2017,
+      "LastYear": 2023,
+      "LOAFt": 37,
+      "BeamFt": 11,
+      "DraftFt": 3.1667,
+      "DisplacementLb": 16000,
+      "AirDraftFt": 10.25,
+      "FuelCapacityGal": 200,
+      "WaterCapacityGal": 49,
+      "HoldingCapacityGal": 28,
+      "HullType": "Deep-V",
+      "DeadriseAftDeg": 21,
+      "Style": "Super Express / Super Sport",
+      "aliases": [
+        "Monterey 378SE",
+        "Monterey 378 SE",
+        "Monterey 378SS",
+        "Monterey 378 SS",
+        "Monterey 378 Super Express",
+        "Monterey 378 Super Sport"
+      ],
+      "source": "https://www.montereyboats.com/378SS-2023-10-1121317.html"
+    },
+    {
+      "BoatModelID": "MONY-385-SE-SS",
+      "Manufacturer": "Monterey",
+      "Model": "385 SE / 385 SS",
+      "FirstYear": 2018,
+      "LastYear": 2026,
+      "LOAFt": 37,
+      "BeamFt": 11,
+      "DraftFt": 3.0833,
+      "DisplacementLb": 16000,
+      "AirDraftFt": 10.25,
+      "FuelCapacityGal": 250,
+      "WaterCapacityGal": 49,
+      "HoldingCapacityGal": 28,
+      "HullType": "Deep-V",
+      "DeadriseAftDeg": 21,
+      "Style": "Outboard Super Express / Super Sport",
+      "aliases": [
+        "Monterey 385SE",
+        "Monterey 385 SE",
+        "Monterey 385SS",
+        "Monterey 385 SS",
+        "Monterey 385 Super Express",
+        "Monterey 385 Super Sport"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/monterey/385-se-385-ss-2018-current"
+    }
+  ],
+  "identityDecisions": [
+    {
+      "scope": "350 / 360 Sport Yacht",
+      "decision": "one_rename_chain_identity",
+      "models": [
+        "MONY-350-360-SY"
+      ],
+      "rationale": "HMY states the 350 Sport Yacht was called the 360 SY in 2009–11."
+    },
+    {
+      "scope": "378 SE / 378 SS",
+      "decision": "one_continuous_sterndrive_identity",
+      "models": [
+        "MONY-378-SE-SS"
+      ],
+      "rationale": "Same 37' x 11' stern-drive platform, same tankage and 21° hull; later model-year material uses 378SS naming while earlier examples use 378SE."
+    },
+    {
+      "scope": "385 SE / 385 SS",
+      "decision": "one_rename_chain_identity",
+      "models": [
+        "MONY-385-SE-SS"
+      ],
+      "rationale": "HMY explicitly states the 385 SE became the 385 SS in 2023; outboard platform remains continuous."
+    },
+    {
+      "scope": "378 versus 385",
+      "decision": "two_distinct_propulsion_identities",
+      "models": [
+        "MONY-378-SE-SS",
+        "MONY-385-SE-SS"
+      ],
+      "rationale": "378 is stern-drive with 200-gallon fuel; 385 is outboard with 250-gallon fuel and different transom/propulsion architecture."
+    }
+  ],
+  "sizePolicy": "Hard maximum published overall length remains 50.0 ft."
+}
