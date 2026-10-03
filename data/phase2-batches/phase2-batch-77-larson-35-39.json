@@ -1,0 +1,70 @@
+{
+  "batchId": "phase2-batch-77-larson-35-39",
+  "status": "researched_complete_live",
+  "researchedAt": "2026-10-03",
+  "models": [
+    {
+      "BoatModelID": "LARS-350-CAB",
+      "Manufacturer": "Larson",
+      "Model": "350 Cabrio",
+      "FirstYear": 2006,
+      "LastYear": 2009,
+      "LOAFt": 36.3333,
+      "BeamFt": 12,
+      "DraftFt": 3.0833,
+      "DisplacementLb": 14000,
+      "AirDraftFt": null,
+      "FuelCapacityGal": 230,
+      "WaterCapacityGal": 46,
+      "HoldingCapacityGal": 37,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 18,
+      "Style": "Express Cruiser",
+      "aliases": [
+        "Larson 350 Cabrio"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/larson/350-cabrio-2006-09"
+    },
+    {
+      "BoatModelID": "LARS-370-CAB",
+      "Manufacturer": "Larson",
+      "Model": "370 Cabrio",
+      "FirstYear": 2004,
+      "LastYear": 2009,
+      "LOAFt": 36.9167,
+      "BeamFt": 13,
+      "DraftFt": 3.3333,
+      "DisplacementLb": 16800,
+      "AirDraftFt": null,
+      "FuelCapacityGal": 266,
+      "WaterCapacityGal": 35,
+      "HoldingCapacityGal": 35,
+      "HullType": "Deep-V",
+      "DeadriseAftDeg": 22,
+      "Style": "Express Cruiser",
+      "aliases": [
+        "Larson 370 Cabrio"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/larson/370-cabrio-2004-09"
+    }
+  ],
+  "identityDecisions": [
+    {
+      "scope": "350 Cabrio",
+      "decision": "single_canonical_model",
+      "models": [
+        "LARS-350-CAB"
+      ],
+      "rationale": "Single documented 2006–09 production run."
+    },
+    {
+      "scope": "370 Cabrio",
+      "decision": "single_canonical_model",
+      "models": [
+        "LARS-370-CAB"
+      ],
+      "rationale": "Single documented 2004–09 production run; retained separately from 350 Cabrio due larger beam, weight and hull geometry."
+    }
+  ],
+  "sizePolicy": "Hard maximum published overall length remains 50.0 ft."
+}
