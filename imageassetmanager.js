@@ -11,13 +11,25 @@
         if (typeof request !== "function") {
             return Promise.reject(new Error("Image Asset Registry requires fetch."));
         }
-        registryPromise = request("data/imageassets.json")
-            .then(response => {
+        registryPromise = Promise.all([
+            request("data/imageassets.json").then(response => {
                 if (!response.ok) throw new Error(`Image registry failed to load (${response.status}).`);
                 return response.json();
-            })
-            .then(registry => {
+            }),
+            request("data/imageassets-external-pilot.json")
+                .then(response => response.ok ? response.json() : { assets: [] })
+                .catch(() => ({ assets: [] }))
+        ])
+            .then(([registry, externalPilot]) => {
                 assetByBoatModelId = new Map((registry.assets || []).map(asset => [asset.boatModelId, asset]));
+                for (const asset of (externalPilot.assets || [])) {
+                    const existing = assetByBoatModelId.get(asset.boatModelId);
+                    const existingIsUsableLocal = existing &&
+                        existing.status === "available" &&
+                        existing.path &&
+                        existing.path !== PLACEHOLDER_PATH;
+                    if (!existingIsUsableLocal) assetByBoatModelId.set(asset.boatModelId, asset);
+                }
                 return registry;
             })
             .catch(error => {
