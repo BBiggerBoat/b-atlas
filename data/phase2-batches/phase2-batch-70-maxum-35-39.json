@@ -1,0 +1,127 @@
+{
+  "batchId": "phase2-batch-70-maxum-35-39",
+  "status": "researched_complete_live",
+  "researchedAt": "2026-10-03",
+  "models": [
+    {
+      "BoatModelID": "MAXU-3500-SCR-SY",
+      "Manufacturer": "Maxum",
+      "Model": "3500 SCR / 3500 SY",
+      "FirstYear": 2001,
+      "LastYear": 2008,
+      "LOAFt": 34.9167,
+      "BeamFt": 12.1667,
+      "DraftFt": 3.0833,
+      "DisplacementLb": 15510,
+      "AirDraftFt": null,
+      "FuelCapacityGal": 240,
+      "WaterCapacityGal": 40,
+      "HoldingCapacityGal": 40,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 15,
+      "Style": "Express Cruiser",
+      "aliases": [
+        "Maxum 3500 SCR",
+        "Maxum 3500 SY",
+        "Maxum 3500 Sport Yacht"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/maxum/3500-scr-3500-sy-2001-08"
+    },
+    {
+      "BoatModelID": "MAXU-3700-SCR",
+      "Manufacturer": "Maxum",
+      "Model": "3700 SCR",
+      "FirstYear": 1998,
+      "LastYear": 2001,
+      "LOAFt": 39.25,
+      "BeamFt": 13,
+      "DraftFt": 3.5833,
+      "DisplacementLb": 20700,
+      "AirDraftFt": 12.9167,
+      "FuelCapacityGal": 244,
+      "WaterCapacityGal": 65,
+      "HoldingCapacityGal": 50,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 15,
+      "Style": "Express Cruiser",
+      "aliases": [
+        "Maxum 3700 SCR"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/maxum/3700-scr-1998-2001"
+    },
+    {
+      "BoatModelID": "MAXU-3700-SY",
+      "Manufacturer": "Maxum",
+      "Model": "3700 SY",
+      "FirstYear": 2003,
+      "LastYear": 2009,
+      "LOAFt": 37.1667,
+      "BeamFt": 13,
+      "DraftFt": 3.5,
+      "DisplacementLb": 17800,
+      "AirDraftFt": null,
+      "FuelCapacityGal": 300,
+      "WaterCapacityGal": 80,
+      "HoldingCapacityGal": 45,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 15,
+      "Style": "Express Cruiser",
+      "aliases": [
+        "Maxum 3700 SY",
+        "Maxum 3700 Sport Yacht"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/maxum/3700-sy-2003-09"
+    },
+    {
+      "BoatModelID": "MAXU-3900-4100-SCR",
+      "Manufacturer": "Maxum",
+      "Model": "3900 SCR / 4100 SCR",
+      "FirstYear": 1996,
+      "LastYear": 1999,
+      "LOAFt": 43.5833,
+      "BeamFt": 13.5,
+      "DraftFt": 3.1667,
+      "DisplacementLb": 18800,
+      "AirDraftFt": 13.3333,
+      "FuelCapacityGal": 330,
+      "WaterCapacityGal": 77,
+      "HoldingCapacityGal": 45,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 16,
+      "Style": "Express Cruiser",
+      "aliases": [
+        "Maxum 3900 SCR",
+        "Maxum 4100 SCR"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/maxum/3900-4100-scr-1996-99"
+    }
+  ],
+  "identityDecisions": [
+    {
+      "scope": "3500 SCR / 3500 SY",
+      "decision": "one_rename_chain_identity",
+      "models": [
+        "MAXU-3500-SCR-SY"
+      ],
+      "rationale": "HMY documents one continuous 2001–08 model; 3500 SCR was renamed 3500 Sport Yacht for 2003–08."
+    },
+    {
+      "scope": "3700 SCR versus 3700 SY",
+      "decision": "distinct_model_identities",
+      "models": [
+        "MAXU-3700-SCR",
+        "MAXU-3700-SY"
+      ],
+      "rationale": "Separated by a production gap and materially different published length, displacement and tankage; retain as separate identities."
+    },
+    {
+      "scope": "3900 SCR / 4100 SCR",
+      "decision": "one_rename_chain_identity",
+      "models": [
+        "MAXU-3900-4100-SCR"
+      ],
+      "rationale": "HMY states the 4100 SCR was called the 3900 SCR in 1996; one continuous 1996–99 identity."
+    }
+  ],
+  "sizePolicy": "Hard maximum published overall length remains 50.0 ft."
+}
