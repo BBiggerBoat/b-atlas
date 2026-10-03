@@ -1,0 +1,76 @@
+{
+  "batchId": "phase2-batch-63-cobalt-40-44",
+  "schemaVersion": "1.4",
+  "validatedAt": "2026-10-02",
+  "assertions": [
+    {
+      "EvidenceAssertionID": "COBA-A40",
+      "BoatModelID": "COBA-A40",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.cobaltboats.com/art/brochures/Cobalt_2015_PRG-A40.pdf",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 2014,
+        "LastYear": 2018,
+        "LOAFt": 39.5,
+        "BeamFt": 12,
+        "DraftFt": 4,
+        "DisplacementLb": 19926,
+        "AirDraftFt": 9.25,
+        "FuelCapacityGal": 225,
+        "WaterCapacityGal": 50,
+        "HoldingCapacityGal": 28,
+        "HullType": "Deep-V",
+        "DeadriseAftDeg": 20
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 2014,
+        "endYear": 2018
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "COBA-A40-COUPE",
+      "BoatModelID": "COBA-A40-COUPE",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/cobalt/a40-coupe-2015-18",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 2015,
+        "LastYear": 2020,
+        "LOAFt": 39.5,
+        "BeamFt": 12,
+        "DraftFt": 4,
+        "DisplacementLb": 19926,
+        "AirDraftFt": 13.75,
+        "FuelCapacityGal": 225,
+        "WaterCapacityGal": 50,
+        "HoldingCapacityGal": 28,
+        "HullType": "Deep-V",
+        "DeadriseAftDeg": 20
+      },
+      "Confidence": "medium",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 2015,
+        "endYear": 2020
+      },
+      "CapturedAt": "2026-10-02"
+    }
+  ],
+  "additionalSources": [
+    "https://www.cobaltboats.com/owners"
+  ],
+  "sourceNotes": [
+    {
+      "BoatModelID": "COBA-A40",
+      "note": "Cobalt brochure publishes 39'6\" overall with swim platform, 12'0\" beam, 20° deadrise and 225-gallon gasoline / 248-gallon diesel fuel options. Runtime uses gasoline tankage as representative base value."
+    },
+    {
+      "BoatModelID": "COBA-A40-COUPE",
+      "note": "HMY catalogs 2015–18; Cobalt's owner archive separately lists A40 Coupe manuals for 2019–20, so staged production range extends through 2020 with medium confidence."
+    }
+  ]
+}
