@@ -38,7 +38,7 @@
 
     function searchableText(boat) {
         return [boat.Manufacturer, boat.Model, boat.Variant, boat.Nickname, boat.TypicalEngineID,
-            boat.Designer, boat.Style, boat.BoatFamily, boat.Configuration, boat.HullType, boat.Construction, (boat.Features || []).join(" "), boat.TypicalMission, boat.Strengths, boat.Weaknesses,
+            boat.Designer, boat.Style, boat.BoatFamily, boat.Configuration, boat.HullType, boat.Construction, (boat.ModelAliases || []).join(" "), (boat.Features || []).join(" "), boat.TypicalMission, boat.Strengths, boat.Weaknesses,
             boat.CommonProblems, boat.AvoidIf].filter(Boolean).map(normalizeText).join(" ");
     }
 
@@ -238,6 +238,13 @@
             const minimumNumber = numericValue(minimum);
             return actualNumber !== null && minimumNumber !== null && actualNumber < minimumNumber;
         };
+
+        // Text search is an explicit catalogue filter. If the user enters a
+        // manufacturer/model/alias term, only matching records should remain.
+        // This is separate from preference scoring used to rank matches.
+        if (normalizeText(profile.textSearch) && relevanceScore(boat, profile.textSearch) <= 0) {
+            reasons.push("text-search");
+        }
 
         // Routes, Dimensions, and Characteristics are hard filters.
         // Missing registry data is retained; a known conflict eliminates the model.
