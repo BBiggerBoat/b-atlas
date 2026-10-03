@@ -657,7 +657,7 @@ function displayBoats(boats) {
 
         card.innerHTML = `
 
-<img src="${ImageAssetManager.resolveBoatImage(boat)}" class="boat-image" alt="${title}" onerror="ImageAssetManager.applyImageFallback(this)">
+<img src="${ImageAssetManager.resolveBoatImage(boat)}" class="boat-image" alt="${title}" referrerpolicy="no-referrer" onerror="ImageAssetManager.applyImageFallback(this)">
 
 
 <h2>
