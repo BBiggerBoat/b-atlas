@@ -1,0 +1,95 @@
+{
+  "batchId": "phase2-batch-76-larson-30-34",
+  "status": "researched_complete_live",
+  "researchedAt": "2026-10-03",
+  "models": [
+    {
+      "BoatModelID": "LARS-300-310-CAB",
+      "Manufacturer": "Larson",
+      "Model": "300 Cabrio / 310 Cabrio",
+      "FirstYear": 1991,
+      "LastYear": 1998,
+      "LOAFt": 32.5,
+      "BeamFt": 10.5,
+      "DraftFt": 2.8333,
+      "DisplacementLb": 9500,
+      "AirDraftFt": 7.3333,
+      "FuelCapacityGal": 170,
+      "WaterCapacityGal": 30,
+      "HoldingCapacityGal": null,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 14,
+      "Style": "Express Cruiser",
+      "aliases": [
+        "Larson 300 Cabrio",
+        "Larson 310 Cabrio"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/larson/300-310-cabrio-1991-98"
+    },
+    {
+      "BoatModelID": "LARS-310-CAB-0308",
+      "Manufacturer": "Larson",
+      "Model": "310 Cabrio",
+      "FirstYear": 2003,
+      "LastYear": 2008,
+      "LOAFt": 31,
+      "BeamFt": 10.5,
+      "DraftFt": 2.8333,
+      "DisplacementLb": 10400,
+      "AirDraftFt": null,
+      "FuelCapacityGal": 160,
+      "WaterCapacityGal": 46,
+      "HoldingCapacityGal": 37,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 14,
+      "Style": "Express Cruiser",
+      "aliases": [
+        "Larson 310 Cabrio 2003",
+        "Larson 310 Cabrio 2008"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/larson/310-cabrio-2003-08"
+    },
+    {
+      "BoatModelID": "LARS-330-CAB",
+      "Manufacturer": "Larson",
+      "Model": "330 Cabrio",
+      "FirstYear": 1999,
+      "LastYear": 2009,
+      "LOAFt": 32,
+      "BeamFt": 11.5,
+      "DraftFt": 2.8333,
+      "DisplacementLb": 12500,
+      "AirDraftFt": null,
+      "FuelCapacityGal": 240,
+      "WaterCapacityGal": 46,
+      "HoldingCapacityGal": 37,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 14,
+      "Style": "Express Cruiser",
+      "aliases": [
+        "Larson 330 Cabrio"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/larson/330-cabrio-1999-2009"
+    }
+  ],
+  "identityDecisions": [
+    {
+      "scope": "300 Cabrio / 310 Cabrio 1991–98",
+      "decision": "one_rename_chain_identity",
+      "models": [
+        "LARS-300-310-CAB"
+      ],
+      "rationale": "HMY states the 300 Cabrio was called 310 Cabrio in 1995–98; retain as one continuous identity."
+    },
+    {
+      "scope": "310 Cabrio generations",
+      "decision": "distinct_generations",
+      "models": [
+        "LARS-300-310-CAB",
+        "LARS-310-CAB-0308"
+      ],
+      "rationale": "The 2003–08 310 Cabrio follows a production gap and has materially different published length, weight, tankage and arrangement."
+    }
+  ],
+  "sizePolicy": "Hard maximum published overall length remains 50.0 ft."
+}
