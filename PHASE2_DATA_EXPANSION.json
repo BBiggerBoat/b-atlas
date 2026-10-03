@@ -849,7 +849,7 @@
       "Reconcile existing TOLL-37-SE against staged TOLL-37-CV before canonical merge.",
       "Consolidate staged Tollycraft batches 10–12 after resolving TOLL-37-SE versus TOLL-37-CV.",
       "Hatteras Phase 2 expansion intentionally paused at 48 feet; larger 50/52/53-foot families deferred.",
-      "Tiara Yachts 40–44 nominal-size batch researched and published; 4400/4700 Sovran excluded at 50'4\" LOA. Next batch: Tiara 45–50 ft."
+      "Tiara Yachts Phase 2 expansion complete under the hard published LOA ≤50'0\" rule; select the next manufacturer."
     ],
     "sizeExclusions": [
       {
@@ -911,6 +911,36 @@
         "Model": "4400 / 4700 Sovran",
         "reason": "Published overall length 50'4\" exceeds the current hard 50'0\" cap.",
         "effective": "2026-10-03"
+      },
+      {
+        "Manufacturer": "Tiara Yachts",
+        "Model": "4800 Convertible",
+        "reason": "Published overall length 51'5\" exceeds the current hard 50'0\" cap.",
+        "effective": "2026-10-03"
+      },
+      {
+        "Manufacturer": "Tiara Yachts",
+        "Model": "50 / 53 Coupe",
+        "reason": "Published overall length 54'6\" exceeds the current hard 50'0\" cap.",
+        "effective": "2026-10-03"
+      },
+      {
+        "Manufacturer": "Tiara Yachts",
+        "Model": "50 / 53 Flybridge",
+        "reason": "Published overall length 54'6\" exceeds the current hard 50'0\" cap.",
+        "effective": "2026-10-03"
+      },
+      {
+        "Manufacturer": "Tiara Yachts",
+        "Model": "5000 Express",
+        "reason": "Published overall length 55'0\" exceeds the current hard 50'0\" cap.",
+        "effective": "2026-10-03"
+      },
+      {
+        "Manufacturer": "Tiara Yachts",
+        "Model": "5000 Open",
+        "reason": "Published overall length 53'0\" exceeds the current hard 50'0\" cap.",
+        "effective": "2026-10-03"
       }
     ]
   },
@@ -938,7 +968,7 @@
     "rule": "Research quality is unchanged; only downstream publishing/enrichment work is deferred.",
     "lastCompletedBatch": "phase2-batch-09-silverton-44-52",
     "lastCompletedAt": "2026-10-02",
-    "lastResearchedBatch": "phase2-batch-74-tiara-40-44",
+    "lastResearchedBatch": "phase2-batch-75-tiara-45-50",
     "lastResearchedAt": "2026-10-03",
     "pendingCanonicalMerge": [
       "phase2-batch-10-tollycraft-30-40",
@@ -1005,10 +1035,11 @@
       "phase2-batch-71-maxum-40-46",
       "phase2-batch-72-tiara-30-34",
       "phase2-batch-73-tiara-35-39",
-      "phase2-batch-74-tiara-40-44"
+      "phase2-batch-74-tiara-40-44",
+      "phase2-batch-75-tiara-45-50"
     ],
     "note": "Phase 2 staged batches are published through the live runtime overlay immediately; canonical boatmodels.json consolidation remains deferred.",
-    "lastPublishedBatch": "phase2-batch-74-tiara-40-44",
+    "lastPublishedBatch": "phase2-batch-75-tiara-45-50",
     "lastPublishedAt": "2026-10-03",
     "maxModelLOAFt": 50,
     "maxModelLOANote": "Hard user-directed cap effective 2026-10-02. Apply to published overall length; nominal 50-foot models over 50'0\" and boats with overall appendage-inclusive length over 50'0\" are deferred."
