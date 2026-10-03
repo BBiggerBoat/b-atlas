@@ -1,0 +1,173 @@
+{
+  "batchId": "phase2-batch-59-formula-40-44",
+  "status": "researched_complete_staged",
+  "researchedAt": "2026-10-02",
+  "models": [
+    {
+      "BoatModelID": "FORM-40-PC",
+      "Manufacturer": "Formula",
+      "Model": "40 PC",
+      "FirstYear": 2001,
+      "LastYear": 2021,
+      "LOAFt": 42.5833,
+      "BeamFt": 12.6667,
+      "DraftFt": 2.9167,
+      "DisplacementLb": 22750,
+      "AirDraftFt": 16.6667,
+      "FuelCapacityGal": 250,
+      "WaterCapacityGal": 57,
+      "HoldingCapacityGal": 55,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 18,
+      "Style": "Performance Cruiser",
+      "aliases": [
+        "Formula 40 PC"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/formula/40-pc-2001-21"
+    },
+    {
+      "BoatModelID": "FORM-400-SS",
+      "Manufacturer": "Formula",
+      "Model": "400 Super Sport",
+      "FirstYear": 1999,
+      "LastYear": 2019,
+      "LOAFt": 41.5,
+      "BeamFt": 11,
+      "DraftFt": 3,
+      "DisplacementLb": 16100,
+      "AirDraftFt": null,
+      "FuelCapacityGal": 250,
+      "WaterCapacityGal": 50,
+      "HoldingCapacityGal": 50,
+      "HullType": "Deep-V",
+      "DeadriseAftDeg": 22,
+      "Style": "Super Sport",
+      "aliases": [
+        "Formula 400 Super Sport",
+        "Formula 400 SS"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/formula/400-super-sport-1999-2019"
+    },
+    {
+      "BoatModelID": "FORM-400-SSC",
+      "Manufacturer": "Formula",
+      "Model": "400 Super Sport Crossover",
+      "FirstYear": 2019,
+      "LastYear": 2026,
+      "LOAFt": 40,
+      "BeamFt": 12,
+      "DraftFt": 3.3333,
+      "DisplacementLb": 23700,
+      "AirDraftFt": 13.25,
+      "FuelCapacityGal": 400,
+      "WaterCapacityGal": 56,
+      "HoldingCapacityGal": 43,
+      "HullType": "Deep-V",
+      "DeadriseAftDeg": 21,
+      "Style": "Super Sport Crossover",
+      "aliases": [
+        "Formula 400 Super Sport Crossover",
+        "Formula 400 SSC"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/formula/400-super-sport-crossover-2019-current"
+    },
+    {
+      "BoatModelID": "FORM-41-PC",
+      "Manufacturer": "Formula",
+      "Model": "41 PC",
+      "FirstYear": 1996,
+      "LastYear": 2004,
+      "LOAFt": 43.0833,
+      "BeamFt": 13.5,
+      "DraftFt": 2.75,
+      "DisplacementLb": 18520,
+      "AirDraftFt": null,
+      "FuelCapacityGal": 300,
+      "WaterCapacityGal": 81,
+      "HoldingCapacityGal": null,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 18,
+      "Style": "Performance Cruiser",
+      "aliases": [
+        "Formula 41 PC"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/formula/41-pc-1996-2004"
+    },
+    {
+      "BoatModelID": "FORM-430-ASC",
+      "Manufacturer": "Formula",
+      "Model": "430 All Sport Crossover",
+      "FirstYear": 2017,
+      "LastYear": 2026,
+      "LOAFt": 43,
+      "BeamFt": 12,
+      "DraftFt": 3.5833,
+      "DisplacementLb": 28000,
+      "AirDraftFt": 13.5,
+      "FuelCapacityGal": 500,
+      "WaterCapacityGal": 56,
+      "HoldingCapacityGal": null,
+      "HullType": "Deep-V",
+      "DeadriseAftDeg": 21,
+      "Style": "All Sport Crossover",
+      "aliases": [
+        "Formula 430 All Sport Crossover",
+        "Formula 430 ASC"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/formula/430-all-sport-crossover-2017-current"
+    },
+    {
+      "BoatModelID": "FORM-430-SSC",
+      "Manufacturer": "Formula",
+      "Model": "430 Super Sport Crossover",
+      "FirstYear": 2017,
+      "LastYear": 2026,
+      "LOAFt": 43,
+      "BeamFt": 12,
+      "DraftFt": 3.5833,
+      "DisplacementLb": 25720,
+      "AirDraftFt": 13.5,
+      "FuelCapacityGal": 500,
+      "WaterCapacityGal": 56,
+      "HoldingCapacityGal": null,
+      "HullType": "Deep-V",
+      "DeadriseAftDeg": 21,
+      "Style": "Super Sport Crossover",
+      "aliases": [
+        "Formula 430 Super Sport Crossover",
+        "Formula 430 SSC"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/formula/430-super-sport-crossover-2017-current"
+    }
+  ],
+  "identityDecisions": [
+    {
+      "scope": "40 PC versus 41 PC",
+      "decision": "distinct_generations_and_platforms",
+      "models": [
+        "FORM-40-PC",
+        "FORM-41-PC"
+      ],
+      "rationale": "Different production eras, hull dimensions and propulsion architecture; not a rename chain."
+    },
+    {
+      "scope": "400 Super Sport versus 400 SSC",
+      "decision": "distinct_generation_and_mission_identities",
+      "models": [
+        "FORM-400-SS",
+        "FORM-400-SSC"
+      ],
+      "rationale": "Older narrow-beam stern-drive Super Sport and later wide-beam outboard Super Sport Crossover are materially different platforms."
+    },
+    {
+      "scope": "430 ASC versus 430 SSC",
+      "decision": "distinct_use_case_identities",
+      "models": [
+        "FORM-430-ASC",
+        "FORM-430-SSC"
+      ],
+      "rationale": "Formula markets ASC and SSC separately; ASC adds fishing/diving/sport utility equipment and has different published displacement."
+    }
+  ],
+  "sizePolicy": "Hard maximum published overall length remains 50.0 ft."
+}
