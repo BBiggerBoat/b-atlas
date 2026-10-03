@@ -1,0 +1,76 @@
+{
+  "batchId": "phase2-batch-63-cobalt-40-44",
+  "status": "researched_complete_staged",
+  "researchedAt": "2026-10-02",
+  "models": [
+    {
+      "BoatModelID": "COBA-A40",
+      "Manufacturer": "Cobalt",
+      "Model": "A40",
+      "FirstYear": 2014,
+      "LastYear": 2018,
+      "LOAFt": 39.5,
+      "BeamFt": 12,
+      "DraftFt": 4,
+      "DisplacementLb": 19926,
+      "AirDraftFt": 9.25,
+      "FuelCapacityGal": 225,
+      "WaterCapacityGal": 50,
+      "HoldingCapacityGal": 28,
+      "HullType": "Deep-V",
+      "DeadriseAftDeg": 20,
+      "Style": "Luxury Sport Yacht",
+      "aliases": [
+        "Cobalt A40",
+        "Cobalt A40 Hard Top",
+        "Cobalt A40 Hard-Top"
+      ],
+      "source": "https://www.cobaltboats.com/art/brochures/Cobalt_2015_PRG-A40.pdf"
+    },
+    {
+      "BoatModelID": "COBA-A40-COUPE",
+      "Manufacturer": "Cobalt",
+      "Model": "A40 Coupe",
+      "FirstYear": 2015,
+      "LastYear": 2020,
+      "LOAFt": 39.5,
+      "BeamFt": 12,
+      "DraftFt": 4,
+      "DisplacementLb": 19926,
+      "AirDraftFt": 13.75,
+      "FuelCapacityGal": 225,
+      "WaterCapacityGal": 50,
+      "HoldingCapacityGal": 28,
+      "HullType": "Deep-V",
+      "DeadriseAftDeg": 20,
+      "Style": "Luxury Sport Yacht Coupe",
+      "aliases": [
+        "Cobalt A40 Coupe"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/cobalt/a40-coupe-2015-18"
+    }
+  ],
+  "identityDecisions": [
+    {
+      "scope": "A40 versus A40 Coupe",
+      "decision": "distinct_market_model_identities",
+      "models": [
+        "COBA-A40",
+        "COBA-A40-COUPE"
+      ],
+      "rationale": "Cobalt introduced the Coupe as a separate sister model to the A40 hard-top/open-air version, with an integrated windshield and coupe top; marketed concurrently rather than as a simple rename."
+    }
+  ],
+  "sourceNotes": [
+    {
+      "BoatModelID": "COBA-A40",
+      "note": "Cobalt brochure publishes 39'6\" overall with swim platform, 12'0\" beam, 20° deadrise and 225-gallon gasoline / 248-gallon diesel fuel options. Runtime uses gasoline tankage as representative base value."
+    },
+    {
+      "BoatModelID": "COBA-A40-COUPE",
+      "note": "HMY catalogs 2015–18; Cobalt's owner archive separately lists A40 Coupe manuals for 2019–20, so staged production range extends through 2020 with medium confidence."
+    }
+  ],
+  "coverageConclusion": "No additional Cobalt 40–44-foot family identified beyond the A40 hard-top and A40 Coupe variants.",
+  "sizePolicy": "Hard maximum published overall length remains 50.0 ft."
+}
