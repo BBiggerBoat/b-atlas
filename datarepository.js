@@ -65,6 +65,8 @@
         phase2AliasesCobalt3539: "data/phase2-live-aliases-cobalt-35-39.json",
         phase2ModelsCobalt4044: "data/phase2-live-models-cobalt-40-44.json",
         phase2AliasesCobalt4044: "data/phase2-live-aliases-cobalt-40-44.json",
+        phase2ModelsWellcraft3034: "data/phase2-live-models-wellcraft-30-34.json",
+        phase2AliasesWellcraft3034: "data/phase2-live-aliases-wellcraft-30-34.json",
         productionPhases: "data/production-phases.json",
         routes: "routes.json",
         missionTemplates: "data/missionTemplates.json",
@@ -490,6 +492,15 @@
             if (Array.isArray(data.phase2Aliases) && Array.isArray(data.phase2AliasesCobalt4044)) {
                 const ids = new Set(data.phase2Aliases.map(row => row?.BoatModelID).filter(Boolean));
                 for (const row of data.phase2AliasesCobalt4044) { if (row?.BoatModelID && !ids.has(row.BoatModelID)) { data.phase2Aliases.push(row); ids.add(row.BoatModelID); } }
+            }
+
+            if (Array.isArray(data.phase2Models) && Array.isArray(data.phase2ModelsWellcraft3034)) {
+                const ids = new Set(data.phase2Models.map(row => row?.BoatModelID).filter(Boolean));
+                for (const row of data.phase2ModelsWellcraft3034) { if (row?.BoatModelID && !ids.has(row.BoatModelID)) { data.phase2Models.push(row); ids.add(row.BoatModelID); } }
+            }
+            if (Array.isArray(data.phase2Aliases) && Array.isArray(data.phase2AliasesWellcraft3034)) {
+                const ids = new Set(data.phase2Aliases.map(row => row?.BoatModelID).filter(Boolean));
+                for (const row of data.phase2AliasesWellcraft3034) { if (row?.BoatModelID && !ids.has(row.BoatModelID)) { data.phase2Aliases.push(row); ids.add(row.BoatModelID); } }
             }
 
             // Phase 2 live overlay: keep the large canonical boatmodels.json stable while
