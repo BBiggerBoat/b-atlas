@@ -1,0 +1,101 @@
+{
+  "batchId": "phase2-batch-68-wellcraft-45-50",
+  "status": "researched_complete_staged",
+  "researchedAt": "2026-10-02",
+  "models": [
+    {
+      "BoatModelID": "WELL-45-EXCAL",
+      "Manufacturer": "Wellcraft",
+      "Model": "45 Excalibur",
+      "FirstYear": 1995,
+      "LastYear": 2001,
+      "LOAFt": 44.5,
+      "BeamFt": 11.6667,
+      "DraftFt": 3.25,
+      "DisplacementLb": 15000,
+      "AirDraftFt": 8.5,
+      "FuelCapacityGal": 274,
+      "WaterCapacityGal": 70,
+      "HoldingCapacityGal": null,
+      "HullType": "Deep-V",
+      "DeadriseAftDeg": 21,
+      "Style": "Performance Express Cruiser",
+      "aliases": [
+        "Wellcraft 45 Excalibur"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/wellcraft/45-excalibur-1995-2001"
+    },
+    {
+      "BoatModelID": "WELL-46-CPMY",
+      "Manufacturer": "Wellcraft",
+      "Model": "46 Cockpit Motor Yacht",
+      "FirstYear": 1990,
+      "LastYear": 1995,
+      "LOAFt": 46.25,
+      "BeamFt": 14.5,
+      "DraftFt": 3.1667,
+      "DisplacementLb": 27000,
+      "AirDraftFt": 14,
+      "FuelCapacityGal": 400,
+      "WaterCapacityGal": 120,
+      "HoldingCapacityGal": null,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 14,
+      "Style": "Cockpit Motor Yacht",
+      "aliases": [
+        "Wellcraft 46 Cockpit Motor Yacht",
+        "Wellcraft 46 Cockpit MY"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/wellcraft/46-cockpit-motor-yacht-1990-95"
+    },
+    {
+      "BoatModelID": "WELL-47-EXCAL",
+      "Manufacturer": "Wellcraft",
+      "Model": "47 Excalibur",
+      "FirstYear": 1996,
+      "LastYear": 2004,
+      "LOAFt": 49.0833,
+      "BeamFt": 12.3333,
+      "DraftFt": 3.25,
+      "DisplacementLb": 17637,
+      "AirDraftFt": 11.4167,
+      "FuelCapacityGal": 292,
+      "WaterCapacityGal": 81,
+      "HoldingCapacityGal": null,
+      "HullType": "Deep-V",
+      "DeadriseAftDeg": 21,
+      "Style": "Performance Express Cruiser",
+      "aliases": [
+        "Wellcraft 47 Excalibur"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/wellcraft/47-excalibur-1996-2004"
+    }
+  ],
+  "identityDecisions": [
+    {
+      "scope": "43 San Remo to 46 Cockpit Motor Yacht",
+      "decision": "distinct_derivative_identity",
+      "models": [
+        "WELL-46-CPMY"
+      ],
+      "rationale": "HMY states the 46 Cockpit Motor Yacht was created by adding a cockpit to the 43 San Remo. Because hull length, boarding arrangement and marketed model changed materially, retain a separate canonical identity with derivative lineage rather than merging."
+    },
+    {
+      "scope": "45 versus 47 Excalibur",
+      "decision": "distinct_models",
+      "models": [
+        "WELL-45-EXCAL",
+        "WELL-47-EXCAL"
+      ],
+      "rationale": "Different beam, weight, production years and published overall dimensions; not a rename chain."
+    }
+  ],
+  "sourceNotes": [
+    {
+      "BoatModelID": "WELL-47-EXCAL",
+      "note": "Published hull length is 47'0\" and length with pulpit is 49'1\"; project stores the larger published overall dimension for cap compliance."
+    }
+  ],
+  "sizePolicy": "Hard maximum published overall length remains 50.0 ft.",
+  "manufacturerCompletionNote": "Wellcraft Phase 2 expansion complete through the current 50'0\" cap after this batch."
+}
