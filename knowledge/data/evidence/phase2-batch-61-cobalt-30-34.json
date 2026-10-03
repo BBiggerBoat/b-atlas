@@ -1,0 +1,277 @@
+{
+  "batchId": "phase2-batch-61-cobalt-30-34",
+  "schemaVersion": "1.4",
+  "validatedAt": "2026-10-02",
+  "assertions": [
+    {
+      "EvidenceAssertionID": "COBA-296",
+      "BoatModelID": "COBA-296",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/cobalt/296-2009-15",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 2009,
+        "LastYear": 2015,
+        "LOAFt": 30.1667,
+        "BeamFt": 9.4167,
+        "DraftFt": 2.0833,
+        "DisplacementLb": 7350,
+        "AirDraftFt": null,
+        "FuelCapacityGal": 123,
+        "WaterCapacityGal": 18,
+        "HoldingCapacityGal": 18,
+        "HullType": "Deep-V",
+        "DeadriseAftDeg": 21
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 2009,
+        "endYear": 2015
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "COBA-302",
+      "BoatModelID": "COBA-302",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/cobalt/302-2007-15",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 2007,
+        "LastYear": 2015,
+        "LOAFt": 29.75,
+        "BeamFt": 9.9167,
+        "DraftFt": 2.1667,
+        "DisplacementLb": 9880,
+        "AirDraftFt": null,
+        "FuelCapacityGal": 150,
+        "WaterCapacityGal": 30,
+        "HoldingCapacityGal": null,
+        "HullType": "Deep-V",
+        "DeadriseAftDeg": 22
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 2007,
+        "endYear": 2015
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "COBA-30SC",
+      "BoatModelID": "COBA-30SC",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.cobaltboats.com/art/press/30SC_Press_Releasw-v3.pdf",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 2018,
+        "LastYear": 2026,
+        "LOAFt": 29.6667,
+        "BeamFt": 9.75,
+        "DraftFt": null,
+        "DisplacementLb": null,
+        "AirDraftFt": 5,
+        "FuelCapacityGal": 130,
+        "WaterCapacityGal": 18,
+        "HoldingCapacityGal": 9,
+        "HullType": "Deep-V",
+        "DeadriseAftDeg": 21
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 2018,
+        "endYear": 2026
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "COBA-R30",
+      "BoatModelID": "COBA-R30",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://cobaltboats.com/art/brochures/2022_Cobalt_R30.pdf",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 2017,
+        "LastYear": 2026,
+        "LOAFt": 30.6667,
+        "BeamFt": 9.5,
+        "DraftFt": 3.25,
+        "DisplacementLb": 8800,
+        "AirDraftFt": 5,
+        "FuelCapacityGal": 116,
+        "WaterCapacityGal": 18,
+        "HoldingCapacityGal": 9,
+        "HullType": "Deep-V",
+        "DeadriseAftDeg": 21
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 2017,
+        "endYear": 2026
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "COBA-R31",
+      "BoatModelID": "COBA-R31",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.cobaltboats.com/models/r-series/r31",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 2026,
+        "LastYear": 2026,
+        "LOAFt": 31.4167,
+        "BeamFt": 9.8333,
+        "DraftFt": 3.6667,
+        "DisplacementLb": 9500,
+        "AirDraftFt": 5.3333,
+        "FuelCapacityGal": 160,
+        "WaterCapacityGal": 18,
+        "HoldingCapacityGal": null,
+        "HullType": "Deep-V",
+        "DeadriseAftDeg": 21
+      },
+      "Confidence": "medium",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 2026,
+        "endYear": 2026
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "COBA-323",
+      "BoatModelID": "COBA-323",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/cobalt/323-2006-13",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 2006,
+        "LastYear": 2013,
+        "LOAFt": 34.75,
+        "BeamFt": 10.5,
+        "DraftFt": 2.9167,
+        "DisplacementLb": 12300,
+        "AirDraftFt": null,
+        "FuelCapacityGal": 154,
+        "WaterCapacityGal": 18,
+        "HoldingCapacityGal": 28,
+        "HullType": "Deep-V",
+        "DeadriseAftDeg": 22
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 2006,
+        "endYear": 2013
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "COBA-R33",
+      "BoatModelID": "COBA-R33",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.cobaltboats.com/models/r-series/r33",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 2026,
+        "LastYear": 2026,
+        "LOAFt": 33.3333,
+        "BeamFt": 10.5,
+        "DraftFt": 2.75,
+        "DisplacementLb": 11193,
+        "AirDraftFt": 6.5833,
+        "FuelCapacityGal": 150,
+        "WaterCapacityGal": 25,
+        "HoldingCapacityGal": null,
+        "HullType": "Deep-V",
+        "DeadriseAftDeg": 21
+      },
+      "Confidence": "medium",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 2026,
+        "endYear": 2026
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "COBA-336-R35",
+      "BoatModelID": "COBA-336-R35",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/cobalt/336-r35-2014-21",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 2014,
+        "LastYear": 2021,
+        "LOAFt": 32.8333,
+        "BeamFt": 10.5833,
+        "DraftFt": 2.9167,
+        "DisplacementLb": 12300,
+        "AirDraftFt": null,
+        "FuelCapacityGal": 174,
+        "WaterCapacityGal": 27,
+        "HoldingCapacityGal": 28,
+        "HullType": "Deep-V",
+        "DeadriseAftDeg": 22
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 2014,
+        "endYear": 2021
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "COBA-343",
+      "BoatModelID": "COBA-343",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/cobalt/343-2004-07",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 2004,
+        "LastYear": 2007,
+        "LOAFt": 37.1667,
+        "BeamFt": 9.6667,
+        "DraftFt": 3.0833,
+        "DisplacementLb": 11750,
+        "AirDraftFt": 8.1667,
+        "FuelCapacityGal": 200,
+        "WaterCapacityGal": 10,
+        "HoldingCapacityGal": null,
+        "HullType": "Deep-V",
+        "DeadriseAftDeg": 24.5
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 2004,
+        "endYear": 2007
+      },
+      "CapturedAt": "2026-10-02"
+    }
+  ],
+  "sourceNotes": [
+    {
+      "BoatModelID": "COBA-R31",
+      "note": "Current manufacturer source verified in 2026. Start year conservatively set to 2026 pending archived brochure confirmation."
+    },
+    {
+      "BoatModelID": "COBA-R33",
+      "note": "Current manufacturer source verified in 2026. Start year conservatively set to 2026 pending archived brochure confirmation."
+    },
+    {
+      "BoatModelID": "COBA-30SC",
+      "note": "Manufacturer launch material gives 29'8\" LOA without engines; outboard-specific overall length with engines is configuration-dependent."
+    },
+    {
+      "BoatModelID": "COBA-R30",
+      "note": "Runtime displacement uses twin-engine dry weight (8,800 lb) from Cobalt brochure."
+    }
+  ]
+}
