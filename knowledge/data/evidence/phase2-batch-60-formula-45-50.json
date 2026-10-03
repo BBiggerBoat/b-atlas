@@ -1,0 +1,59 @@
+{
+  "batchId": "phase2-batch-60-formula-45-50",
+  "schemaVersion": "1.4",
+  "validatedAt": "2026-10-02",
+  "assertions": [
+    {
+      "EvidenceAssertionID": "FORM-45-YACHT",
+      "BoatModelID": "FORM-45-YACHT",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/formula/45-yacht-2007-20",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 2007,
+        "LastYear": 2020,
+        "LOAFt": 48.1667,
+        "BeamFt": 13.9167,
+        "DraftFt": 3.4167,
+        "DisplacementLb": 32500,
+        "AirDraftFt": 15.4167,
+        "FuelCapacityGal": 350,
+        "WaterCapacityGal": 100,
+        "HoldingCapacityGal": 75,
+        "HullType": "Modified-V",
+        "DeadriseAftDeg": 18
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 2007,
+        "endYear": 2020
+      },
+      "CapturedAt": "2026-10-02"
+    }
+  ],
+  "exclusions": [
+    {
+      "Model": "47 / 48 Yacht",
+      "FirstYear": 2003,
+      "LastYear": 2007,
+      "publishedOverallLengthFt": 51,
+      "reason": "HMY states the 48 Yacht was called the 47 Yacht in 2003–05; published overall length is 51'0\", exceeding the current hard 50'0\" cap.",
+      "source": "https://www.hmy.com/yachting/powerboat-guide/formula/48-yacht-2004-07"
+    },
+    {
+      "Model": "500 Super Sport Crossover",
+      "FirstYear": 2021,
+      "LastYear": 2026,
+      "publishedOverallLengthFt": 53.3333,
+      "reason": "Published overall length is 53'4\", exceeding the current hard 50'0\" cap.",
+      "source": "https://www.hmy.com/yachting/powerboat-guide/formula/500-super-sport-crossover-2021-current"
+    }
+  ],
+  "sourceNotes": [
+    {
+      "BoatModelID": "FORM-45-YACHT",
+      "note": "Formula brochure gives 48'2\" LOA including bow platform and 45'0\" less bow platform. Project cap uses published overall length, so 48'2\" governs eligibility."
+    }
+  ]
+}
