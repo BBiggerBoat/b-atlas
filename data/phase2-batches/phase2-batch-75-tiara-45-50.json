@@ -1,0 +1,156 @@
+{
+  "batchId": "phase2-batch-75-tiara-45-50",
+  "status": "researched_complete_live",
+  "researchedAt": "2026-10-03",
+  "models": [
+    {
+      "BoatModelID": "TIAR-4500-SOVRAN",
+      "Manufacturer": "Tiara Yachts",
+      "Model": "4500 Sovran",
+      "FirstYear": 2011,
+      "LastYear": 2015,
+      "LOAFt": 46.8333,
+      "BeamFt": 14.75,
+      "DraftFt": 3.5833,
+      "DisplacementLb": 26700,
+      "AirDraftFt": 11.1667,
+      "FuelCapacityGal": 350,
+      "WaterCapacityGal": 120,
+      "HoldingCapacityGal": 50,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 17,
+      "Style": "Sport Yacht",
+      "aliases": [
+        "Tiara 4500 Sovran",
+        "Tiara 45 Sovran"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/tiara/4500-sovran-2011-15"
+    },
+    {
+      "BoatModelID": "TIAR-46-LS",
+      "Manufacturer": "Tiara Yachts",
+      "Model": "46 LS",
+      "FirstYear": 2026,
+      "LastYear": 2026,
+      "LOAFt": 46.5,
+      "BeamFt": 13.75,
+      "DraftFt": 4.25,
+      "DisplacementLb": 27500,
+      "AirDraftFt": 9.8333,
+      "FuelCapacityGal": 660,
+      "WaterCapacityGal": 60,
+      "HoldingCapacityGal": 50,
+      "HullType": "Deep-V",
+      "DeadriseAftDeg": 21,
+      "Style": "Luxury Sport / Day Boat",
+      "aliases": [
+        "Tiara 46 LS"
+      ],
+      "source": "https://www.tiarayachts.com/series/ls/models/46ls"
+    },
+    {
+      "BoatModelID": "TIAR-48-LS",
+      "Manufacturer": "Tiara Yachts",
+      "Model": "48 LS",
+      "FirstYear": 2021,
+      "LastYear": 2026,
+      "LOAFt": 48.3333,
+      "BeamFt": 14.1667,
+      "DraftFt": 2.5,
+      "DisplacementLb": 25000,
+      "AirDraftFt": null,
+      "FuelCapacityGal": 660,
+      "WaterCapacityGal": 100,
+      "HoldingCapacityGal": 50,
+      "HullType": "Deep-V",
+      "DeadriseAftDeg": 21,
+      "Style": "Luxury Sport / Day Boat",
+      "aliases": [
+        "Tiara 48 LS"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/tiara/48-ls-2021-current"
+    },
+    {
+      "BoatModelID": "TIAR-48-LE",
+      "Manufacturer": "Tiara Yachts",
+      "Model": "48 LE",
+      "FirstYear": 2024,
+      "LastYear": 2026,
+      "LOAFt": 48.3333,
+      "BeamFt": 14.1667,
+      "DraftFt": 3.8333,
+      "DisplacementLb": 32500,
+      "AirDraftFt": 10.8333,
+      "FuelCapacityGal": 660,
+      "WaterCapacityGal": 100,
+      "HoldingCapacityGal": 50,
+      "HullType": "Deep-V",
+      "DeadriseAftDeg": 21,
+      "Style": "Luxury Express",
+      "aliases": [
+        "Tiara 48 LE"
+      ],
+      "source": "https://www.tiarayachts.com/series/le/models/48le"
+    }
+  ],
+  "identityDecisions": [
+    {
+      "scope": "48 LS versus 48 LE",
+      "decision": "distinct_layout_identities",
+      "models": [
+        "TIAR-48-LS",
+        "TIAR-48-LE"
+      ],
+      "rationale": "Shared principal length and propulsion concept, but LS and LE are separately marketed series with materially different enclosed-galley/cockpit arrangements and accommodations."
+    },
+    {
+      "scope": "46 LS",
+      "decision": "single_canonical_model",
+      "models": [
+        "TIAR-46-LS"
+      ],
+      "rationale": "Distinct 2026 Luxury Sport model; do not merge with prior 48 LS despite shared triple-outboard concept."
+    },
+    {
+      "scope": "4500 Sovran",
+      "decision": "single_canonical_model",
+      "models": [
+        "TIAR-4500-SOVRAN"
+      ],
+      "rationale": "Single documented 2011–15 IPS sport-yacht production run."
+    }
+  ],
+  "sizeExclusions": [
+    {
+      "Manufacturer": "Tiara Yachts",
+      "Model": "4800 Convertible",
+      "reason": "Published overall length 51'5\" exceeds current hard 50'0\" Phase 2 cap.",
+      "source": "https://www.hmy.com/yachting/powerboat-guide/tiara/4800-convertible-2010-16"
+    },
+    {
+      "Manufacturer": "Tiara Yachts",
+      "Model": "50 / 53 Coupe",
+      "reason": "Published overall length 54'6\" exceeds current hard 50'0\" Phase 2 cap.",
+      "source": "https://www.hmy.com/yachting/powerboat-guide/tiara/50-53-coupe-2014-21"
+    },
+    {
+      "Manufacturer": "Tiara Yachts",
+      "Model": "50 / 53 Flybridge",
+      "reason": "Published overall length 54'6\" exceeds current hard 50'0\" Phase 2 cap.",
+      "source": "https://www.hmy.com/yachting/powerboat-guide/tiara/50-53-flybridge-2015-21"
+    },
+    {
+      "Manufacturer": "Tiara Yachts",
+      "Model": "5000 Express",
+      "reason": "Published overall length 55'0\" exceeds current hard 50'0\" Phase 2 cap.",
+      "source": "https://www.hmy.com/yachting/powerboat-guide/tiara/5000-express-1999-2003"
+    },
+    {
+      "Manufacturer": "Tiara Yachts",
+      "Model": "5000 Open",
+      "reason": "Published overall length 53'0\" exceeds current hard 50'0\" Phase 2 cap.",
+      "source": "https://www.hmy.com/yachting/powerboat-guide/tiara/5000-open-2002-03"
+    }
+  ],
+  "sizePolicy": "Hard maximum published overall length remains 50.0 ft."
+}
