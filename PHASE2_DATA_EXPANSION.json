@@ -8,8 +8,8 @@
     "Create distinct canonical identities only for materially distinct marketed models, layouts, hulls, or configurations.",
     "Source identity and production years before researching advanced specifications.",
     "Prefer manufacturer/owner-club archives and original brochures over secondary summaries.",
-    "Phase 2 model expansion is capped at 50 feet LOA; do not add models over 50 feet unless the user explicitly changes the cap.",
-    "Phase 2 size eligibility uses published overall length (LOA), not nominal model number or bare hull length."
+    "Do not suppress a researched canonical model because of length; if a usable model record exists, publish it.",
+    "Length is descriptive data only and is not a Phase 2 publication gate."
   ],
   "wave1": [
     {
@@ -1057,7 +1057,7 @@
     "note": "Phase 2 staged batches are published through the live runtime overlay immediately; canonical boatmodels.json consolidation remains deferred.",
     "lastPublishedBatch": "phase2-batch-85-riviera-45-50",
     "lastPublishedAt": "2026-10-03",
-    "maxModelLOAFt": 50,
-    "maxModelLOANote": "Hard user-directed cap effective 2026-10-02. Apply to published overall length; nominal 50-foot models over 50'0\" and boats with overall appendage-inclusive length over 50'0\" are deferred."
+    "maxModelLOAFt": null,
+    "maxModelLOANote": "Length cap removed 2026-10-03. Publish every researched usable model record regardless of overall length."
   }
 }
