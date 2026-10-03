@@ -1,0 +1,119 @@
+{
+  "batchId": "phase2-batch-55-monterey-35-39",
+  "schemaVersion": "1.4",
+  "validatedAt": "2026-10-02",
+  "assertions": [
+    {
+      "EvidenceAssertionID": "MONY-350-360-SY",
+      "BoatModelID": "MONY-350-360-SY",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/monterey/350-360-sport-yacht-2005-11",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 2005,
+        "LastYear": 2011,
+        "LOAFt": 37,
+        "BeamFt": 11.5,
+        "DraftFt": 3.5,
+        "DisplacementLb": 16500,
+        "AirDraftFt": null,
+        "FuelCapacityGal": 230,
+        "WaterCapacityGal": 48,
+        "HoldingCapacityGal": 38,
+        "HullType": "Modified-V",
+        "DeadriseAftDeg": 17
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 2005,
+        "endYear": 2011
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "MONY-360-SC",
+      "BoatModelID": "MONY-360-SC",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.montereyboats.com/news/view/monterey-boats-debuts-the-360sc/",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 2015,
+        "LastYear": 2018,
+        "LOAFt": 37.8333,
+        "BeamFt": 11.9167,
+        "DraftFt": 3.5,
+        "DisplacementLb": 17000,
+        "AirDraftFt": 10,
+        "FuelCapacityGal": 250,
+        "WaterCapacityGal": 49,
+        "HoldingCapacityGal": 28,
+        "HullType": "Deep-V",
+        "DeadriseAftDeg": 17
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 2015,
+        "endYear": 2018
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "MONY-378-SE-SS",
+      "BoatModelID": "MONY-378-SE-SS",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.montereyboats.com/378SS-2023-10-1121317.html",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 2017,
+        "LastYear": 2023,
+        "LOAFt": 37,
+        "BeamFt": 11,
+        "DraftFt": 3.1667,
+        "DisplacementLb": 16000,
+        "AirDraftFt": 10.25,
+        "FuelCapacityGal": 200,
+        "WaterCapacityGal": 49,
+        "HoldingCapacityGal": 28,
+        "HullType": "Deep-V",
+        "DeadriseAftDeg": 21
+      },
+      "Confidence": "medium",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 2017,
+        "endYear": 2023
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "MONY-385-SE-SS",
+      "BoatModelID": "MONY-385-SE-SS",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/monterey/385-se-385-ss-2018-current",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 2018,
+        "LastYear": 2026,
+        "LOAFt": 37,
+        "BeamFt": 11,
+        "DraftFt": 3.0833,
+        "DisplacementLb": 16000,
+        "AirDraftFt": 10.25,
+        "FuelCapacityGal": 250,
+        "WaterCapacityGal": 49,
+        "HoldingCapacityGal": 28,
+        "HullType": "Deep-V",
+        "DeadriseAftDeg": 21
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 2018,
+        "endYear": 2026
+      },
+      "CapturedAt": "2026-10-02"
+    }
+  ]
+}
