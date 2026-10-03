@@ -1,0 +1,161 @@
+{
+  "batchId": "phase2-batch-67-wellcraft-40-44",
+  "schemaVersion": "1.4",
+  "validatedAt": "2026-10-02",
+  "assertions": [
+    {
+      "EvidenceAssertionID": "WELL-400-COASTAL",
+      "BoatModelID": "WELL-400-COASTAL",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/wellcraft/400-coastal-1999-2003",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 1999,
+        "LastYear": 2003,
+        "LOAFt": 44.5833,
+        "BeamFt": 14.3333,
+        "DraftFt": 4.0833,
+        "DisplacementLb": 23400,
+        "AirDraftFt": null,
+        "FuelCapacityGal": 469,
+        "WaterCapacityGal": 121,
+        "HoldingCapacityGal": null,
+        "HullType": "Modified-V",
+        "DeadriseAftDeg": 15
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1999,
+        "endYear": 2003
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "WELL-402-FISH",
+      "BoatModelID": "WELL-402-FISH",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.jdpower.com/boats/2021/wellcraft-marine-corp/fisherman-402__/32116300/specs",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 2020,
+        "LastYear": 2021,
+        "LOAFt": 40.3333,
+        "BeamFt": 12.5,
+        "DraftFt": null,
+        "DisplacementLb": 19500,
+        "AirDraftFt": 9.5,
+        "FuelCapacityGal": 486,
+        "WaterCapacityGal": null,
+        "HoldingCapacityGal": null,
+        "HullType": "Deep-V",
+        "DeadriseAftDeg": null
+      },
+      "Confidence": "medium",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 2020,
+        "endYear": 2021
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "WELL-43-PORT",
+      "BoatModelID": "WELL-43-PORT",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/wellcraft/43-portofino-1987-97",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 1987,
+        "LastYear": 1997,
+        "LOAFt": 45.5833,
+        "BeamFt": 14.5,
+        "DraftFt": 3,
+        "DisplacementLb": 20000,
+        "AirDraftFt": null,
+        "FuelCapacityGal": 436,
+        "WaterCapacityGal": 100,
+        "HoldingCapacityGal": 20,
+        "HullType": "Modified-V",
+        "DeadriseAftDeg": 14
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1987,
+        "endYear": 1997
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "WELL-43-SANREMO",
+      "BoatModelID": "WELL-43-SANREMO",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/wellcraft/43-san-remo-1988-90",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 1988,
+        "LastYear": 1990,
+        "LOAFt": 42.8333,
+        "BeamFt": 14.5,
+        "DraftFt": 3.1667,
+        "DisplacementLb": 26100,
+        "AirDraftFt": 12.5,
+        "FuelCapacityGal": 300,
+        "WaterCapacityGal": 100,
+        "HoldingCapacityGal": null,
+        "HullType": "Modified-V",
+        "DeadriseAftDeg": 14
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1988,
+        "endYear": 1990
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "WELL-44-EXPLORER",
+      "BoatModelID": "WELL-44-EXPLORER",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.wellcraft.com/en-us/explorer/wellcraft-44-explorer/specs-features",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 2025,
+        "LastYear": 2026,
+        "LOAFt": 43.9167,
+        "BeamFt": 12.5,
+        "DraftFt": 3.9167,
+        "DisplacementLb": 23128,
+        "AirDraftFt": 17.9167,
+        "FuelCapacityGal": 340,
+        "WaterCapacityGal": 66,
+        "HoldingCapacityGal": null,
+        "HullType": "Deep-V",
+        "DeadriseAftDeg": 19.5
+      },
+      "Confidence": "medium",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 2025,
+        "endYear": 2026
+      },
+      "CapturedAt": "2026-10-02"
+    }
+  ],
+  "sourceNotes": [
+    {
+      "BoatModelID": "WELL-400-COASTAL",
+      "note": "Published hull length is 39'1\" and length with pulpit is 44'7\"; project stores the larger published overall dimension."
+    },
+    {
+      "BoatModelID": "WELL-402-FISH",
+      "note": "2021 J.D. Power gives 40'4\" length, 12'6\" beam, 19,500 lb, 486-gallon fuel, and 9'6\" bridge clearance. Start year staged as 2020 based on contemporary test coverage; end year 2021 based on surviving model-year listings."
+    },
+    {
+      "BoatModelID": "WELL-44-EXPLORER",
+      "note": "Current Wellcraft manufacturer specs give 43'11\" overall, 12'6\" beam, 17'11\" air draft, 3'11\" draft engine down, 23,128 lb, 340-gallon fuel and 66-gallon water."
+    }
+  ]
+}
