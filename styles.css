@@ -3365,3 +3365,26 @@ body{padding-top:82px!important;}
   color: inherit;
   text-decoration: underline;
 }
+
+
+.mobile-filter-results-action { display:none; }
+@media (max-width:680px) {
+  .mobile-filter-results-action {
+    display:block;
+    position:sticky;
+    bottom:0;
+    z-index:20;
+    padding:10px 0 2px;
+    background:linear-gradient(to bottom, rgba(255,255,255,0), #fff 28%);
+  }
+  .mobile-filter-results-action button {
+    width:100%;
+    min-height:44px;
+    border:1px solid #176fa8;
+    border-radius:6px;
+    background:#176fa8;
+    color:#fff;
+    font-weight:700;
+    font-size:15px;
+  }
+}
