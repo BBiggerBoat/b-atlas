@@ -1,0 +1,156 @@
+{
+  "batchId": "phase2-batch-80-luhrs-40-50",
+  "status": "researched_complete_live",
+  "researchedAt": "2026-10-03",
+  "models": [
+    {
+      "BoatModelID": "LUHR-TOUR-400",
+      "Manufacturer": "Luhrs Yachts",
+      "Model": "Tournament 400",
+      "FirstYear": 1987,
+      "LastYear": 1990,
+      "LOAFt": 40,
+      "BeamFt": 14,
+      "DraftFt": 3.1667,
+      "DisplacementLb": 25500,
+      "AirDraftFt": 14,
+      "FuelCapacityGal": 400,
+      "WaterCapacityGal": 100,
+      "HoldingCapacityGal": 30,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 14,
+      "Style": "Convertible / Flybridge",
+      "aliases": [
+        "Luhrs Tournament 400",
+        "Luhrs 400 Convertible"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/luhrs/tournament-400-1987-90"
+    },
+    {
+      "BoatModelID": "LUHR-41-CVT",
+      "Manufacturer": "Luhrs Yachts",
+      "Model": "41 Convertible",
+      "FirstYear": 2004,
+      "LastYear": 2009,
+      "LOAFt": 44.5,
+      "BeamFt": 15.75,
+      "DraftFt": 3.5,
+      "DisplacementLb": 33000,
+      "AirDraftFt": null,
+      "FuelCapacityGal": 600,
+      "WaterCapacityGal": 130,
+      "HoldingCapacityGal": 40,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 18,
+      "Style": "Convertible / Flybridge",
+      "aliases": [
+        "Luhrs 41 Convertible"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/luhrs/41-convertible-2004-09"
+    },
+    {
+      "BoatModelID": "LUHR-41-HT",
+      "Manufacturer": "Luhrs Yachts",
+      "Model": "41 Hardtop",
+      "FirstYear": 2007,
+      "LastYear": 2008,
+      "LOAFt": 44.5,
+      "BeamFt": 15.75,
+      "DraftFt": 3.5,
+      "DisplacementLb": 32000,
+      "AirDraftFt": null,
+      "FuelCapacityGal": 600,
+      "WaterCapacityGal": 130,
+      "HoldingCapacityGal": 40,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 18,
+      "Style": "Hardtop Express Sportfisher",
+      "aliases": [
+        "Luhrs 41 Hardtop",
+        "Luhrs 41 Hardtop Express"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/luhrs/41-hardtop-2007-08"
+    },
+    {
+      "BoatModelID": "LUHR-41-OPEN",
+      "Manufacturer": "Luhrs Yachts",
+      "Model": "41 Open",
+      "FirstYear": 2006,
+      "LastYear": 2009,
+      "LOAFt": 44.5,
+      "BeamFt": 15.75,
+      "DraftFt": 3.5,
+      "DisplacementLb": 33000,
+      "AirDraftFt": 22,
+      "FuelCapacityGal": 600,
+      "WaterCapacityGal": 130,
+      "HoldingCapacityGal": null,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 18,
+      "Style": "Open Sportfisher",
+      "aliases": [
+        "Luhrs 41 Open"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/luhrs/41-open-2006-09"
+    },
+    {
+      "BoatModelID": "LUHR-44-CVT",
+      "Manufacturer": "Luhrs Yachts",
+      "Model": "44 Convertible",
+      "FirstYear": 2003,
+      "LastYear": 2005,
+      "LOAFt": 46.3333,
+      "BeamFt": 16,
+      "DraftFt": 4.5,
+      "DisplacementLb": 33500,
+      "AirDraftFt": 18.3333,
+      "FuelCapacityGal": 700,
+      "WaterCapacityGal": 125,
+      "HoldingCapacityGal": null,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 12,
+      "Style": "Convertible / Flybridge",
+      "aliases": [
+        "Luhrs 44 Convertible"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/luhrs/44-convertible-2003-05"
+    }
+  ],
+  "identityDecisions": [
+    {
+      "scope": "41 Convertible / 41 Open / 41 Hardtop",
+      "decision": "distinct_layout_identities",
+      "models": [
+        "LUHR-41-CVT",
+        "LUHR-41-OPEN",
+        "LUHR-41-HT"
+      ],
+      "rationale": "Shared hull lineage does not override materially different flybridge, open and hardtop bridge-deck arrangements; each was separately marketed."
+    },
+    {
+      "scope": "Tournament 400",
+      "decision": "single_canonical_model",
+      "models": [
+        "LUHR-TOUR-400"
+      ],
+      "rationale": "Single documented 1987–90 production run."
+    },
+    {
+      "scope": "44 Convertible",
+      "decision": "single_canonical_model",
+      "models": [
+        "LUHR-44-CVT"
+      ],
+      "rationale": "Single documented 2003–05 production run."
+    }
+  ],
+  "sizeExclusions": [
+    {
+      "Manufacturer": "Luhrs Yachts",
+      "Model": "50 Convertible",
+      "reason": "Published overall length 50'10\" exceeds current hard 50'0\" Phase 2 cap.",
+      "source": "https://www.hmy.com/yachting/powerboat-guide/luhrs/50-convertible-1999-2003"
+    }
+  ],
+  "sizePolicy": "Hard maximum published overall length remains 50.0 ft."
+}
