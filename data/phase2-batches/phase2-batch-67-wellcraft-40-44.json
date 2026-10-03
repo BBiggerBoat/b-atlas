@@ -1,0 +1,160 @@
+{
+  "batchId": "phase2-batch-67-wellcraft-40-44",
+  "status": "researched_complete_staged",
+  "researchedAt": "2026-10-02",
+  "models": [
+    {
+      "BoatModelID": "WELL-400-COASTAL",
+      "Manufacturer": "Wellcraft",
+      "Model": "400 Coastal",
+      "FirstYear": 1999,
+      "LastYear": 2003,
+      "LOAFt": 44.5833,
+      "BeamFt": 14.3333,
+      "DraftFt": 4.0833,
+      "DisplacementLb": 23400,
+      "AirDraftFt": null,
+      "FuelCapacityGal": 469,
+      "WaterCapacityGal": 121,
+      "HoldingCapacityGal": null,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 15,
+      "Style": "Convertible Sportfisher",
+      "aliases": [
+        "Wellcraft 400 Coastal"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/wellcraft/400-coastal-1999-2003"
+    },
+    {
+      "BoatModelID": "WELL-402-FISH",
+      "Manufacturer": "Wellcraft",
+      "Model": "402 Fisherman",
+      "FirstYear": 2020,
+      "LastYear": 2021,
+      "LOAFt": 40.3333,
+      "BeamFt": 12.5,
+      "DraftFt": null,
+      "DisplacementLb": 19500,
+      "AirDraftFt": 9.5,
+      "FuelCapacityGal": 486,
+      "WaterCapacityGal": null,
+      "HoldingCapacityGal": null,
+      "HullType": "Deep-V",
+      "DeadriseAftDeg": null,
+      "Style": "Center Console",
+      "aliases": [
+        "Wellcraft 402 Fisherman"
+      ],
+      "source": "https://www.jdpower.com/boats/2021/wellcraft-marine-corp/fisherman-402__/32116300/specs"
+    },
+    {
+      "BoatModelID": "WELL-43-PORT",
+      "Manufacturer": "Wellcraft",
+      "Model": "43 Portofino",
+      "FirstYear": 1987,
+      "LastYear": 1997,
+      "LOAFt": 45.5833,
+      "BeamFt": 14.5,
+      "DraftFt": 3,
+      "DisplacementLb": 20000,
+      "AirDraftFt": null,
+      "FuelCapacityGal": 436,
+      "WaterCapacityGal": 100,
+      "HoldingCapacityGal": 20,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 14,
+      "Style": "Express Cruiser",
+      "aliases": [
+        "Wellcraft 43 Portofino"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/wellcraft/43-portofino-1987-97"
+    },
+    {
+      "BoatModelID": "WELL-43-SANREMO",
+      "Manufacturer": "Wellcraft",
+      "Model": "43 San Remo",
+      "FirstYear": 1988,
+      "LastYear": 1990,
+      "LOAFt": 42.8333,
+      "BeamFt": 14.5,
+      "DraftFt": 3.1667,
+      "DisplacementLb": 26100,
+      "AirDraftFt": 12.5,
+      "FuelCapacityGal": 300,
+      "WaterCapacityGal": 100,
+      "HoldingCapacityGal": null,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 14,
+      "Style": "Motor Yacht",
+      "aliases": [
+        "Wellcraft 43 San Remo"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/wellcraft/43-san-remo-1988-90"
+    },
+    {
+      "BoatModelID": "WELL-44-EXPLORER",
+      "Manufacturer": "Wellcraft",
+      "Model": "44 Explorer",
+      "FirstYear": 2025,
+      "LastYear": 2026,
+      "LOAFt": 43.9167,
+      "BeamFt": 12.5,
+      "DraftFt": 3.9167,
+      "DisplacementLb": 23128,
+      "AirDraftFt": 17.9167,
+      "FuelCapacityGal": 340,
+      "WaterCapacityGal": 66,
+      "HoldingCapacityGal": null,
+      "HullType": "Deep-V",
+      "DeadriseAftDeg": 19.5,
+      "Style": "Explorer / Fast Cruiser",
+      "aliases": [
+        "Wellcraft 44 Explorer"
+      ],
+      "source": "https://www.wellcraft.com/en-us/explorer/wellcraft-44-explorer/specs-features"
+    }
+  ],
+  "identityDecisions": [
+    {
+      "scope": "400 Coastal versus 402 Fisherman",
+      "decision": "distinct_platform_identities",
+      "models": [
+        "WELL-400-COASTAL",
+        "WELL-402-FISH"
+      ],
+      "rationale": "400 Coastal is a diesel convertible/flybridge sportfisher; 402 Fisherman is a later outboard center-console flagship. No rename continuity."
+    },
+    {
+      "scope": "43 Portofino versus 43 San Remo",
+      "decision": "distinct_layout_identities",
+      "models": [
+        "WELL-43-PORT",
+        "WELL-43-SANREMO"
+      ],
+      "rationale": "Portofino is an express cruiser; San Remo is a motor yacht/flybridge design with aft stateroom and different displacement/clearance."
+    },
+    {
+      "scope": "44 Explorer",
+      "decision": "distinct_current_flagship_identity",
+      "models": [
+        "WELL-44-EXPLORER"
+      ],
+      "rationale": "Current Wellcraft Explorer-series flagship with a modern outboard wheelhouse platform, not a continuation of historical 43/44-foot models."
+    }
+  ],
+  "sourceNotes": [
+    {
+      "BoatModelID": "WELL-400-COASTAL",
+      "note": "Published hull length is 39'1\" and length with pulpit is 44'7\"; project stores the larger published overall dimension."
+    },
+    {
+      "BoatModelID": "WELL-402-FISH",
+      "note": "2021 J.D. Power gives 40'4\" length, 12'6\" beam, 19,500 lb, 486-gallon fuel, and 9'6\" bridge clearance. Start year staged as 2020 based on contemporary test coverage; end year 2021 based on surviving model-year listings."
+    },
+    {
+      "BoatModelID": "WELL-44-EXPLORER",
+      "note": "Current Wellcraft manufacturer specs give 43'11\" overall, 12'6\" beam, 17'11\" air draft, 3'11\" draft engine down, 23,128 lb, 340-gallon fuel and 66-gallon water."
+    }
+  ],
+  "sizePolicy": "Hard maximum published overall length remains 50.0 ft."
+}
