@@ -609,6 +609,8 @@ function displayBoats(boats) {
     if (currentCountElem) {
         currentCountElem.textContent = normalBoats.length;
     }
+    const mobileCountElem = document.getElementById("mobileViewResultsCount");
+    if (mobileCountElem) mobileCountElem.textContent = normalBoats.length;
 
     // Update the Buyer Workspace counts
     updateBuyerWorkspaceCounts();
@@ -1251,7 +1253,20 @@ function runCurrentSearch() {
 window.runCurrentSearch = runCurrentSearch;
 
 if (searchButton) {
-    searchButton.addEventListener("click", runCurrentSearch);
+    searchButton.addEventListener("click", function() {
+        runCurrentSearch();
+        if (window.matchMedia?.("(max-width: 680px)").matches) {
+            document.getElementById("home")?.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+    });
+}
+
+const mobileViewResultsBtn = document.getElementById("mobileViewResultsBtn");
+if (mobileViewResultsBtn) {
+    mobileViewResultsBtn.addEventListener("click", function() {
+        runCurrentSearch();
+        document.getElementById("home")?.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
 }
 
 // =====================================================
