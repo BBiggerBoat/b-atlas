@@ -1,0 +1,97 @@
+{
+  "batchId": "phase2-batch-68-wellcraft-45-50",
+  "schemaVersion": "1.4",
+  "validatedAt": "2026-10-02",
+  "assertions": [
+    {
+      "EvidenceAssertionID": "WELL-45-EXCAL",
+      "BoatModelID": "WELL-45-EXCAL",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/wellcraft/45-excalibur-1995-2001",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 1995,
+        "LastYear": 2001,
+        "LOAFt": 44.5,
+        "BeamFt": 11.6667,
+        "DraftFt": 3.25,
+        "DisplacementLb": 15000,
+        "AirDraftFt": 8.5,
+        "FuelCapacityGal": 274,
+        "WaterCapacityGal": 70,
+        "HoldingCapacityGal": null,
+        "HullType": "Deep-V",
+        "DeadriseAftDeg": 21
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1995,
+        "endYear": 2001
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "WELL-46-CPMY",
+      "BoatModelID": "WELL-46-CPMY",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/wellcraft/46-cockpit-motor-yacht-1990-95",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 1990,
+        "LastYear": 1995,
+        "LOAFt": 46.25,
+        "BeamFt": 14.5,
+        "DraftFt": 3.1667,
+        "DisplacementLb": 27000,
+        "AirDraftFt": 14,
+        "FuelCapacityGal": 400,
+        "WaterCapacityGal": 120,
+        "HoldingCapacityGal": null,
+        "HullType": "Modified-V",
+        "DeadriseAftDeg": 14
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1990,
+        "endYear": 1995
+      },
+      "CapturedAt": "2026-10-02"
+    },
+    {
+      "EvidenceAssertionID": "WELL-47-EXCAL",
+      "BoatModelID": "WELL-47-EXCAL",
+      "FieldID": "IdentityAndSpecifications",
+      "SourceRef": "https://www.hmy.com/yachting/powerboat-guide/wellcraft/47-excalibur-1996-2004",
+      "AssertionState": "supports",
+      "SourceValue": {
+        "FirstYear": 1996,
+        "LastYear": 2004,
+        "LOAFt": 49.0833,
+        "BeamFt": 12.3333,
+        "DraftFt": 3.25,
+        "DisplacementLb": 17637,
+        "AirDraftFt": 11.4167,
+        "FuelCapacityGal": 292,
+        "WaterCapacityGal": 81,
+        "HoldingCapacityGal": null,
+        "HullType": "Deep-V",
+        "DeadriseAftDeg": 21
+      },
+      "Confidence": "high",
+      "Applicability": {
+        "scope": "model",
+        "startYear": 1996,
+        "endYear": 2004
+      },
+      "CapturedAt": "2026-10-02"
+    }
+  ],
+  "sourceNotes": [
+    {
+      "BoatModelID": "WELL-47-EXCAL",
+      "note": "Published hull length is 47'0\" and length with pulpit is 49'1\"; project stores the larger published overall dimension for cap compliance."
+    }
+  ]
+}
