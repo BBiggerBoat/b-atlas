@@ -1311,6 +1311,36 @@ if (clearTextSearch) {
 const textSearchInput =
     document.getElementById("textSearch");
 
+// Mobile search UX: filters sit below the primary Search button, so requiring
+// a scroll back to the top makes selected filters appear non-functional.
+// On compact screens, apply filter/control changes immediately. Desktop keeps
+// the explicit Search-button workflow.
+(function bindMobileLiveFiltering() {
+    const panel = document.querySelector(".search-panel");
+    if (!panel || panel.dataset.mobileLiveFilteringBound === "true") return;
+    panel.dataset.mobileLiveFilteringBound = "true";
+
+    const isCompact = () => window.matchMedia && window.matchMedia("(max-width: 680px)").matches;
+    const shouldIgnore = element => !element ||
+        element.id === "searchProfileSelect" ||
+        ["newProfileBtn", "saveProfileBtn", "duplicateProfileBtn"].includes(element.id);
+
+    panel.addEventListener("change", event => {
+        if (!isCompact() || shouldIgnore(event.target)) return;
+        if (event.target.matches("input, select")) runCurrentSearch();
+    });
+
+    let mobileTextSearchTimer = null;
+    const mobileTextInput = document.getElementById("textSearch");
+    if (mobileTextInput) {
+        mobileTextInput.addEventListener("input", () => {
+            if (!isCompact()) return;
+            clearTimeout(mobileTextSearchTimer);
+            mobileTextSearchTimer = setTimeout(runCurrentSearch, 250);
+        });
+    }
+})();
+
 if (textSearchInput) {
 
 
