@@ -1,0 +1,116 @@
+{
+  "batchId": "phase2-batch-69-maxum-30-34",
+  "status": "researched_complete_live",
+  "researchedAt": "2026-10-03",
+  "models": [
+    {
+      "BoatModelID": "MAXU-3000-SCR",
+      "Manufacturer": "Maxum",
+      "Model": "3000 SCR",
+      "FirstYear": 1997,
+      "LastYear": 2001,
+      "LOAFt": 32.75,
+      "BeamFt": 9.9167,
+      "DraftFt": 3.5833,
+      "DisplacementLb": 11500,
+      "AirDraftFt": null,
+      "FuelCapacityGal": 150,
+      "WaterCapacityGal": 40,
+      "HoldingCapacityGal": 30,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 18,
+      "Style": "Express Cruiser",
+      "aliases": [
+        "Maxum 3000 SCR"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/maxum/3000-scr-1997-2001"
+    },
+    {
+      "BoatModelID": "MAXU-3100-SCR-SE",
+      "Manufacturer": "Maxum",
+      "Model": "3100 SCR / 3100 SE",
+      "FirstYear": 2002,
+      "LastYear": 2008,
+      "LOAFt": 30.75,
+      "BeamFt": 10.5,
+      "DraftFt": 3.4167,
+      "DisplacementLb": 11000,
+      "AirDraftFt": null,
+      "FuelCapacityGal": 150,
+      "WaterCapacityGal": 35,
+      "HoldingCapacityGal": 30,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 18,
+      "Style": "Express Cruiser",
+      "aliases": [
+        "Maxum 3100 SCR",
+        "Maxum 3100 SE"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/maxum/3100-se-2002-08"
+    },
+    {
+      "BoatModelID": "MAXU-3200-SCR",
+      "Manufacturer": "Maxum",
+      "Model": "3200 SCR",
+      "FirstYear": 1994,
+      "LastYear": 1998,
+      "LOAFt": 34.75,
+      "BeamFt": 11,
+      "DraftFt": 3.6667,
+      "DisplacementLb": 10800,
+      "AirDraftFt": null,
+      "FuelCapacityGal": 186,
+      "WaterCapacityGal": 36,
+      "HoldingCapacityGal": 30,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 17,
+      "Style": "Express Cruiser",
+      "aliases": [
+        "Maxum 3200 SCR"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/maxum/3200-scr-1994-98"
+    },
+    {
+      "BoatModelID": "MAXU-3300-SCR-SE",
+      "Manufacturer": "Maxum",
+      "Model": "3300 SCR / 3300 SE",
+      "FirstYear": 1999,
+      "LastYear": 2007,
+      "LOAFt": 35.5833,
+      "BeamFt": 11.4167,
+      "DraftFt": 3.5,
+      "DisplacementLb": 11300,
+      "AirDraftFt": 10.5,
+      "FuelCapacityGal": 179,
+      "WaterCapacityGal": 36,
+      "HoldingCapacityGal": 30,
+      "HullType": "Modified-V",
+      "DeadriseAftDeg": 17,
+      "Style": "Express Cruiser",
+      "aliases": [
+        "Maxum 3300 SCR",
+        "Maxum 3300 SE"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/maxum/3300-scr-3300-se-1999-2007"
+    }
+  ],
+  "identityDecisions": [
+    {
+      "scope": "3100 SCR / 3100 SE",
+      "decision": "one_rename_chain_identity",
+      "models": [
+        "MAXU-3100-SCR-SE"
+      ],
+      "rationale": "Same continuing model; 3100 SCR name used in 2002 and 3100 SE thereafter."
+    },
+    {
+      "scope": "3300 SCR / 3300 SE",
+      "decision": "one_rename_chain_identity",
+      "models": [
+        "MAXU-3300-SCR-SE"
+      ],
+      "rationale": "Same continuing model; 3300 SCR name used through 2002 and 3300 SE in 2003–07."
+    }
+  ],
+  "sizePolicy": "Hard maximum published overall length remains 50.0 ft."
+}
