@@ -73,6 +73,12 @@
         phase2AliasesWellcraft4044: "data/phase2-live-aliases-wellcraft-40-44.json",
         phase2ModelsWellcraft4550: "data/phase2-live-models-wellcraft-45-50.json",
         phase2AliasesWellcraft4550: "data/phase2-live-aliases-wellcraft-45-50.json",
+        phase2ModelsRiviera3039: "data/phase2-live-models-riviera-30-39.json",
+        phase2AliasesRiviera3039: "data/phase2-live-aliases-riviera-30-39.json",
+        phase2ModelsRiviera4044: "data/phase2-live-models-riviera-40-44.json",
+        phase2AliasesRiviera4044: "data/phase2-live-aliases-riviera-40-44.json",
+        phase2ModelsRiviera4550: "data/phase2-live-models-riviera-45-50.json",
+        phase2AliasesRiviera4550: "data/phase2-live-aliases-riviera-45-50.json",
         productionPhases: "data/production-phases.json",
         routes: "routes.json",
         missionTemplates: "data/missionTemplates.json",
@@ -534,6 +540,30 @@
             if (Array.isArray(data.phase2Aliases) && Array.isArray(data.phase2AliasesWellcraft4550)) {
                 const ids = new Set(data.phase2Aliases.map(row => row?.BoatModelID).filter(Boolean));
                 for (const row of data.phase2AliasesWellcraft4550) { if (row?.BoatModelID && !ids.has(row.BoatModelID)) { data.phase2Aliases.push(row); ids.add(row.BoatModelID); } }
+            }
+
+            // Riviera Phase 2 supplemental overlays.
+            for (const suffix of ["Riviera3039", "Riviera4044", "Riviera4550"]) {
+                const modelKey = "phase2Models" + suffix;
+                const aliasKey = "phase2Aliases" + suffix;
+                if (Array.isArray(data.phase2Models) && Array.isArray(data[modelKey])) {
+                    const ids = new Set(data.phase2Models.map(row => row?.BoatModelID).filter(Boolean));
+                    for (const row of data[modelKey]) {
+                        if (row?.BoatModelID && !ids.has(row.BoatModelID)) {
+                            data.phase2Models.push(row);
+                            ids.add(row.BoatModelID);
+                        }
+                    }
+                }
+                if (Array.isArray(data.phase2Aliases) && Array.isArray(data[aliasKey])) {
+                    const ids = new Set(data.phase2Aliases.map(row => row?.BoatModelID).filter(Boolean));
+                    for (const row of data[aliasKey]) {
+                        if (row?.BoatModelID && !ids.has(row.BoatModelID)) {
+                            data.phase2Aliases.push(row);
+                            ids.add(row.BoatModelID);
+                        }
+                    }
+                }
             }
 
             // Phase 2 live overlay: keep the large canonical boatmodels.json stable while
