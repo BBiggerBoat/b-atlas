@@ -1,0 +1,195 @@
+{
+  "batchId": "phase2-batch-62-cobalt-35-39",
+  "status": "researched_complete_staged",
+  "researchedAt": "2026-10-02",
+  "models": [
+    {
+      "BoatModelID": "COBA-360",
+      "Manufacturer": "Cobalt",
+      "Model": "360",
+      "FirstYear": 2002,
+      "LastYear": 2005,
+      "LOAFt": 36,
+      "BeamFt": 10.5,
+      "DraftFt": 3.5,
+      "DisplacementLb": 13710,
+      "AirDraftFt": null,
+      "FuelCapacityGal": 174,
+      "WaterCapacityGal": 35,
+      "HoldingCapacityGal": 28,
+      "HullType": "Deep-V",
+      "DeadriseAftDeg": 22,
+      "Style": "Sport Cruiser",
+      "aliases": [
+        "Cobalt 360"
+      ],
+      "source": "https://www.hmy.com/yachting/powerboat-guide/cobalt/360-2002-05"
+    },
+    {
+      "BoatModelID": "COBA-373",
+      "Manufacturer": "Cobalt",
+      "Model": "373",
+      "FirstYear": 2010,
+      "LastYear": 2014,
+      "LOAFt": 37.5,
+      "BeamFt": 12,
+      "DraftFt": 3.5,
+      "DisplacementLb": 21160,
+      "AirDraftFt": 12.9167,
+      "FuelCapacityGal": 230,
+      "WaterCapacityGal": 50,
+      "HoldingCapacityGal": 42,
+      "HullType": "Deep-V",
+      "DeadriseAftDeg": 18,
+      "Style": "Sport Cruiser",
+      "aliases": [
+        "Cobalt 373"
+      ],
+      "source": "https://www.yachtbuyer.com/en-us/cobalt/new/cobalt-373"
+    },
+    {
+      "BoatModelID": "COBA-A36",
+      "Manufacturer": "Cobalt",
+      "Model": "A36",
+      "FirstYear": 2017,
+      "LastYear": 2023,
+      "LOAFt": 35.9167,
+      "BeamFt": 11.1667,
+      "DraftFt": 3.5,
+      "DisplacementLb": 16000,
+      "AirDraftFt": 9.0833,
+      "FuelCapacityGal": 189,
+      "WaterCapacityGal": 27,
+      "HoldingCapacityGal": 10,
+      "HullType": "Deep-V",
+      "DeadriseAftDeg": 22,
+      "Style": "Luxury Crossover",
+      "aliases": [
+        "Cobalt A36"
+      ],
+      "source": "https://cobaltboats.com/art/brochures/2021_Cobalt_A36.pdf"
+    },
+    {
+      "BoatModelID": "COBA-A36BR",
+      "Manufacturer": "Cobalt",
+      "Model": "A36 BR",
+      "FirstYear": 2019,
+      "LastYear": 2023,
+      "LOAFt": 35.9167,
+      "BeamFt": 11.1667,
+      "DraftFt": 3.5,
+      "DisplacementLb": 16000,
+      "AirDraftFt": 9.0833,
+      "FuelCapacityGal": 189,
+      "WaterCapacityGal": 27,
+      "HoldingCapacityGal": 10,
+      "HullType": "Deep-V",
+      "DeadriseAftDeg": 22,
+      "Style": "Luxury Bowrider",
+      "aliases": [
+        "Cobalt A36 BR",
+        "Cobalt A36BR"
+      ],
+      "source": "https://cobaltboats.com/art/brochures/2021_Cobalt_A36BR.pdf"
+    },
+    {
+      "BoatModelID": "COBA-R35-24",
+      "Manufacturer": "Cobalt",
+      "Model": "R35",
+      "FirstYear": 2024,
+      "LastYear": 2026,
+      "LOAFt": 35.3333,
+      "BeamFt": 10.8333,
+      "DraftFt": 3.1667,
+      "DisplacementLb": 13400,
+      "AirDraftFt": 9.5833,
+      "FuelCapacityGal": 165,
+      "WaterCapacityGal": 25,
+      "HoldingCapacityGal": 10,
+      "HullType": "Deep-V",
+      "DeadriseAftDeg": 21,
+      "Style": "Bowrider",
+      "aliases": [
+        "Cobalt R35 2024",
+        "Cobalt R35 2025",
+        "Cobalt R35 2026"
+      ],
+      "source": "https://www.cobaltboats.com/models/r-series/r35"
+    },
+    {
+      "BoatModelID": "COBA-R35-COASTAL",
+      "Manufacturer": "Cobalt",
+      "Model": "R35 Coastal",
+      "FirstYear": 2024,
+      "LastYear": 2026,
+      "LOAFt": 35.3333,
+      "BeamFt": 10.8333,
+      "DraftFt": 3.1667,
+      "DisplacementLb": 13400,
+      "AirDraftFt": 9.5833,
+      "FuelCapacityGal": 250,
+      "WaterCapacityGal": 25,
+      "HoldingCapacityGal": 10,
+      "HullType": "Deep-V",
+      "DeadriseAftDeg": 21,
+      "Style": "Outboard Bowrider",
+      "aliases": [
+        "Cobalt R35 Coastal",
+        "Cobalt R35 Outboard"
+      ],
+      "source": "https://www.cobaltboats.com/models/outboard-class/r35-coastal"
+    }
+  ],
+  "identityDecisions": [
+    {
+      "scope": "A36 versus A36 BR",
+      "decision": "distinct_layout_identities",
+      "models": [
+        "COBA-A36",
+        "COBA-A36BR"
+      ],
+      "rationale": "Cobalt marketed the A36 and A36 BR as separate products; A36 BR introduced a materially different bowrider/deck arrangement while retaining the underlying A36 platform."
+    },
+    {
+      "scope": "R35 2014–21 versus R35 2024–current",
+      "decision": "distinct_generations",
+      "models": [
+        "COBA-R35-24"
+      ],
+      "rationale": "Current R35 has materially different published dimensions, 165-gallon fuel capacity and new current-generation features; Cobalt's owner archive separates 2019–22 R35 documentation from 2024-on R35 manuals."
+    },
+    {
+      "scope": "R35 versus R35 Coastal",
+      "decision": "distinct_propulsion_identities",
+      "models": [
+        "COBA-R35-24",
+        "COBA-R35-COASTAL"
+      ],
+      "rationale": "Current R35 is sterndrive with 165 gallons fuel; R35 Coastal is outboard with 250 gallons fuel and materially different transom/propulsion architecture."
+    },
+    {
+      "scope": "360 versus 373",
+      "decision": "distinct_historical_platforms",
+      "models": [
+        "COBA-360",
+        "COBA-373"
+      ],
+      "rationale": "Separate hull dimensions, displacement, tankage and production eras; no rename continuity."
+    }
+  ],
+  "sourceNotes": [
+    {
+      "BoatModelID": "COBA-R35-24",
+      "note": "Current-generation start set to 2024 because Cobalt's owner-resource archive separately lists 2024 R35 manuals after the 2019–22 R35 archive group."
+    },
+    {
+      "BoatModelID": "COBA-R35-COASTAL",
+      "note": "Current outboard R35 Coastal uses same 35'4\" x 10'10\" dimensional envelope but 250-gallon fuel system and outboard propulsion; canonical split retained."
+    },
+    {
+      "BoatModelID": "COBA-A36",
+      "note": "2021 Cobalt brochure publishes 35'11\" LOA, 11'2\" beam, 16,000 lb dry weight, 189/27/10-gallon capacities and 22° deadrise."
+    }
+  ],
+  "sizePolicy": "Hard maximum published overall length remains 50.0 ft."
+}
