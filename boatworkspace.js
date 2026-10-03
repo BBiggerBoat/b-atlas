@@ -735,6 +735,7 @@
         const imageSource = document.getElementById("modalImageSource");
         const imageSourceLink = document.getElementById("modalImageSourceLink");
         if (image && root.ImageAssetManager) {
+            image.referrerPolicy = "no-referrer";
             image.src = root.ImageAssetManager.resolveBoatImage(boat);
             image.alt = boatName(boat);
             image.style.display = "block";
