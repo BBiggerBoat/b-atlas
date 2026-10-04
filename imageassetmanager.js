@@ -17,10 +17,10 @@
                 if (!response.ok) throw new Error(`Image registry failed to load (${response.status}).`);
                 return response.json();
             }),
-            request("data/imageassets-external.json")
+            request("data/imageassets-external.json?v=20261003-searay1")
                 .then(response => response.ok ? response.json() : { assets: [] })
                 .catch(() => ({ assets: [] })),
-            request("data/image-candidates.json")
+            request("data/image-candidates.json?v=20261003-searay1")
                 .then(response => response.ok ? response.json() : { models: [] })
                 .catch(() => ({ models: [] }))
         ])
