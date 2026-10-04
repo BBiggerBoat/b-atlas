@@ -12,7 +12,9 @@
     "build:public": "node developer/build-public-site.js",
     "build:worker": "node developer/build-worker-standalone.js",
     "validate:backup": "node developer/validate-backup.js",
-    "restore:sql": "node developer/backup-to-d1-sql.js"
+    "restore:sql": "node developer/backup-to-d1-sql.js",
+    "check:image-health": "node developer/check-image-health.js",
+    "update:image-health": "node developer/check-image-health.js --write"
   },
   "devDependencies": {
     "wrangler": "^4.0.0"
