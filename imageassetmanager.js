@@ -17,7 +17,7 @@
                 if (!response.ok) throw new Error(`Image registry failed to load (${response.status}).`);
                 return response.json();
             }),
-            request("data/imageassets-external-pilot.json")
+            request("data/imageassets-external.json")
                 .then(response => response.ok ? response.json() : { assets: [] })
                 .catch(() => ({ assets: [] })),
             request("data/image-candidates.json")
