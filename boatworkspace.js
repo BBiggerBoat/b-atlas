@@ -736,10 +736,11 @@
         const imageSourceLink = document.getElementById("modalImageSourceLink");
         if (image && root.ImageAssetManager) {
             image.referrerPolicy = "no-referrer";
+            image.dataset.boatModelId = boat.BoatModelID || "";
             image.src = root.ImageAssetManager.resolveBoatImage(boat);
             image.alt = boatName(boat);
             image.style.display = "block";
-            root.ImageAssetManager.applyImageFallback(image);
+            root.ImageAssetManager.applyImageFallback(image, boat);
             const sourceInfo = root.ImageAssetManager.getImageSourceInfo?.(boat);
             if (imageSource) imageSource.hidden = !sourceInfo;
             if (imageSourceLink) {
