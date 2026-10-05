@@ -1,0 +1,2046 @@
+{
+  "generatedAt": "2026-10-05T17:33:38.367Z",
+  "models": 995,
+  "priority": [
+    "Beam",
+    "LOA",
+    "FuelType",
+    "Propulsion",
+    "HullForm",
+    "Draft",
+    "AirDraft",
+    "Style",
+    "EngineConfig",
+    "Displacement",
+    "FuelCapacity",
+    "WaterCapacity"
+  ],
+  "coverage": {
+    "LOA": {
+      "known": 973,
+      "missing": 22,
+      "pct": 97.8
+    },
+    "Beam": {
+      "known": 899,
+      "missing": 96,
+      "pct": 90.4
+    },
+    "Draft": {
+      "known": 881,
+      "missing": 114,
+      "pct": 88.5
+    },
+    "AirDraft": {
+      "known": 622,
+      "missing": 373,
+      "pct": 62.5
+    },
+    "FuelType": {
+      "known": 700,
+      "missing": 295,
+      "pct": 70.4
+    },
+    "Propulsion": {
+      "known": 629,
+      "missing": 366,
+      "pct": 63.2
+    },
+    "HullForm": {
+      "known": 945,
+      "missing": 50,
+      "pct": 95
+    },
+    "Style": {
+      "known": 995,
+      "missing": 0,
+      "pct": 100
+    },
+    "EngineConfig": {
+      "known": 577,
+      "missing": 418,
+      "pct": 58
+    },
+    "Displacement": {
+      "known": 874,
+      "missing": 121,
+      "pct": 87.8
+    },
+    "FuelCapacity": {
+      "known": 875,
+      "missing": 120,
+      "pct": 87.9
+    },
+    "WaterCapacity": {
+      "known": 878,
+      "missing": 117,
+      "pct": 88.2
+    }
+  },
+  "missingByManufacturer": {
+    "LOA": [
+      {
+        "manufacturer": "Sea Ray",
+        "missing": 16
+      },
+      {
+        "manufacturer": "Pursuit",
+        "missing": 4
+      },
+      {
+        "manufacturer": "Four Winns",
+        "missing": 1
+      },
+      {
+        "manufacturer": "Riviera",
+        "missing": 1
+      }
+    ],
+    "Beam": [
+      {
+        "manufacturer": "Riviera",
+        "missing": 39
+      },
+      {
+        "manufacturer": "Chris-Craft",
+        "missing": 20
+      },
+      {
+        "manufacturer": "Sea Ray",
+        "missing": 16
+      },
+      {
+        "manufacturer": "Carver",
+        "missing": 16
+      },
+      {
+        "manufacturer": "Pursuit",
+        "missing": 4
+      },
+      {
+        "manufacturer": "Tiara Yachts",
+        "missing": 1
+      }
+    ],
+    "Draft": [
+      {
+        "manufacturer": "Riviera",
+        "missing": 44
+      },
+      {
+        "manufacturer": "Chris-Craft",
+        "missing": 20
+      },
+      {
+        "manufacturer": "Sea Ray",
+        "missing": 16
+      },
+      {
+        "manufacturer": "Carver",
+        "missing": 16
+      },
+      {
+        "manufacturer": "Pursuit",
+        "missing": 6
+      },
+      {
+        "manufacturer": "Tiara Yachts",
+        "missing": 5
+      },
+      {
+        "manufacturer": "Chaparral",
+        "missing": 1
+      },
+      {
+        "manufacturer": "Cobalt",
+        "missing": 1
+      },
+      {
+        "manufacturer": "Cruisers Yachts",
+        "missing": 1
+      },
+      {
+        "manufacturer": "Four Winns",
+        "missing": 1
+      },
+      {
+        "manufacturer": "Regal",
+        "missing": 1
+      },
+      {
+        "manufacturer": "Rinker",
+        "missing": 1
+      },
+      {
+        "manufacturer": "Wellcraft",
+        "missing": 1
+      }
+    ],
+    "AirDraft": [
+      {
+        "manufacturer": "Sea Ray",
+        "missing": 75
+      },
+      {
+        "manufacturer": "Riviera",
+        "missing": 44
+      },
+      {
+        "manufacturer": "Carver",
+        "missing": 26
+      },
+      {
+        "manufacturer": "Tiara Yachts",
+        "missing": 26
+      },
+      {
+        "manufacturer": "Chris-Craft",
+        "missing": 25
+      },
+      {
+        "manufacturer": "Regal",
+        "missing": 20
+      },
+      {
+        "manufacturer": "Wellcraft",
+        "missing": 20
+      },
+      {
+        "manufacturer": "Cruisers Yachts",
+        "missing": 18
+      },
+      {
+        "manufacturer": "Luhrs Yachts",
+        "missing": 16
+      },
+      {
+        "manufacturer": "Bayliner",
+        "missing": 14
+      },
+      {
+        "manufacturer": "Viking",
+        "missing": 11
+      },
+      {
+        "manufacturer": "Pursuit",
+        "missing": 9
+      },
+      {
+        "manufacturer": "Chaparral",
+        "missing": 8
+      },
+      {
+        "manufacturer": "Formula",
+        "missing": 8
+      },
+      {
+        "manufacturer": "Rinker",
+        "missing": 8
+      },
+      {
+        "manufacturer": "Silverton",
+        "missing": 7
+      },
+      {
+        "manufacturer": "Monterey",
+        "missing": 7
+      },
+      {
+        "manufacturer": "Four Winns",
+        "missing": 6
+      },
+      {
+        "manufacturer": "Tollycraft",
+        "missing": 6
+      },
+      {
+        "manufacturer": "Cobalt",
+        "missing": 5
+      },
+      {
+        "manufacturer": "Maxum",
+        "missing": 5
+      },
+      {
+        "manufacturer": "Larson",
+        "missing": 4
+      },
+      {
+        "manufacturer": "Trojan",
+        "missing": 4
+      },
+      {
+        "manufacturer": "Hatteras",
+        "missing": 1
+      }
+    ],
+    "FuelType": [
+      {
+        "manufacturer": "Sea Ray",
+        "missing": 88
+      },
+      {
+        "manufacturer": "Carver",
+        "missing": 55
+      },
+      {
+        "manufacturer": "Cruisers Yachts",
+        "missing": 38
+      },
+      {
+        "manufacturer": "Chris-Craft",
+        "missing": 32
+      },
+      {
+        "manufacturer": "Bayliner",
+        "missing": 30
+      },
+      {
+        "manufacturer": "Wellcraft",
+        "missing": 18
+      },
+      {
+        "manufacturer": "Four Winns",
+        "missing": 15
+      },
+      {
+        "manufacturer": "Rinker",
+        "missing": 11
+      },
+      {
+        "manufacturer": "Regal",
+        "missing": 5
+      },
+      {
+        "manufacturer": "Formula",
+        "missing": 3
+      }
+    ],
+    "Propulsion": [
+      {
+        "manufacturer": "Sea Ray",
+        "missing": 88
+      },
+      {
+        "manufacturer": "Carver",
+        "missing": 55
+      },
+      {
+        "manufacturer": "Cruisers Yachts",
+        "missing": 38
+      },
+      {
+        "manufacturer": "Chris-Craft",
+        "missing": 32
+      },
+      {
+        "manufacturer": "Bayliner",
+        "missing": 30
+      },
+      {
+        "manufacturer": "Regal",
+        "missing": 28
+      },
+      {
+        "manufacturer": "Wellcraft",
+        "missing": 28
+      },
+      {
+        "manufacturer": "Formula",
+        "missing": 20
+      },
+      {
+        "manufacturer": "Chaparral",
+        "missing": 15
+      },
+      {
+        "manufacturer": "Four Winns",
+        "missing": 15
+      },
+      {
+        "manufacturer": "Rinker",
+        "missing": 11
+      },
+      {
+        "manufacturer": "Monterey",
+        "missing": 6
+      }
+    ],
+    "HullForm": [
+      {
+        "manufacturer": "Chris-Craft",
+        "missing": 20
+      },
+      {
+        "manufacturer": "Carver",
+        "missing": 16
+      },
+      {
+        "manufacturer": "Sea Ray",
+        "missing": 13
+      },
+      {
+        "manufacturer": "Bayliner",
+        "missing": 1
+      }
+    ],
+    "Style": [],
+    "EngineConfig": [
+      {
+        "manufacturer": "Sea Ray",
+        "missing": 88
+      },
+      {
+        "manufacturer": "Carver",
+        "missing": 55
+      },
+      {
+        "manufacturer": "Wellcraft",
+        "missing": 42
+      },
+      {
+        "manufacturer": "Cruisers Yachts",
+        "missing": 38
+      },
+      {
+        "manufacturer": "Regal",
+        "missing": 37
+      },
+      {
+        "manufacturer": "Chris-Craft",
+        "missing": 32
+      },
+      {
+        "manufacturer": "Bayliner",
+        "missing": 30
+      },
+      {
+        "manufacturer": "Formula",
+        "missing": 23
+      },
+      {
+        "manufacturer": "Chaparral",
+        "missing": 16
+      },
+      {
+        "manufacturer": "Cobalt",
+        "missing": 15
+      },
+      {
+        "manufacturer": "Four Winns",
+        "missing": 15
+      },
+      {
+        "manufacturer": "Monterey",
+        "missing": 12
+      },
+      {
+        "manufacturer": "Rinker",
+        "missing": 11
+      },
+      {
+        "manufacturer": "Maxum",
+        "missing": 4
+      }
+    ],
+    "Displacement": [
+      {
+        "manufacturer": "Riviera",
+        "missing": 44
+      },
+      {
+        "manufacturer": "Chris-Craft",
+        "missing": 20
+      },
+      {
+        "manufacturer": "Sea Ray",
+        "missing": 17
+      },
+      {
+        "manufacturer": "Carver",
+        "missing": 16
+      },
+      {
+        "manufacturer": "Pursuit",
+        "missing": 8
+      },
+      {
+        "manufacturer": "Tiara Yachts",
+        "missing": 5
+      },
+      {
+        "manufacturer": "Cruisers Yachts",
+        "missing": 3
+      },
+      {
+        "manufacturer": "Atlantic Boat",
+        "missing": 1
+      },
+      {
+        "manufacturer": "CHB",
+        "missing": 1
+      },
+      {
+        "manufacturer": "Ocean Alexander",
+        "missing": 1
+      },
+      {
+        "manufacturer": "Willard",
+        "missing": 1
+      },
+      {
+        "manufacturer": "Cobalt",
+        "missing": 1
+      },
+      {
+        "manufacturer": "Four Winns",
+        "missing": 1
+      },
+      {
+        "manufacturer": "Regal",
+        "missing": 1
+      },
+      {
+        "manufacturer": "Bayliner",
+        "missing": 1
+      }
+    ],
+    "FuelCapacity": [
+      {
+        "manufacturer": "Riviera",
+        "missing": 44
+      },
+      {
+        "manufacturer": "Chris-Craft",
+        "missing": 21
+      },
+      {
+        "manufacturer": "Sea Ray",
+        "missing": 18
+      },
+      {
+        "manufacturer": "Carver",
+        "missing": 17
+      },
+      {
+        "manufacturer": "Pursuit",
+        "missing": 5
+      },
+      {
+        "manufacturer": "Tiara Yachts",
+        "missing": 5
+      },
+      {
+        "manufacturer": "Viking",
+        "missing": 4
+      },
+      {
+        "manufacturer": "Silverton",
+        "missing": 1
+      },
+      {
+        "manufacturer": "Cruisers Yachts",
+        "missing": 1
+      },
+      {
+        "manufacturer": "Regal",
+        "missing": 1
+      },
+      {
+        "manufacturer": "Rinker",
+        "missing": 1
+      },
+      {
+        "manufacturer": "Hatteras",
+        "missing": 1
+      },
+      {
+        "manufacturer": "Trojan",
+        "missing": 1
+      }
+    ],
+    "WaterCapacity": [
+      {
+        "manufacturer": "Riviera",
+        "missing": 44
+      },
+      {
+        "manufacturer": "Chris-Craft",
+        "missing": 22
+      },
+      {
+        "manufacturer": "Carver",
+        "missing": 17
+      },
+      {
+        "manufacturer": "Sea Ray",
+        "missing": 16
+      },
+      {
+        "manufacturer": "Pursuit",
+        "missing": 7
+      },
+      {
+        "manufacturer": "Tiara Yachts",
+        "missing": 5
+      },
+      {
+        "manufacturer": "Wellcraft",
+        "missing": 2
+      },
+      {
+        "manufacturer": "Regal",
+        "missing": 1
+      },
+      {
+        "manufacturer": "Hatteras",
+        "missing": 1
+      },
+      {
+        "manufacturer": "Trojan",
+        "missing": 1
+      },
+      {
+        "manufacturer": "Bayliner",
+        "missing": 1
+      }
+    ]
+  },
+  "highestGapModels": [
+    {
+      "BoatModelID": "SRAY-370-EC",
+      "Manufacturer": "Sea Ray",
+      "Nickname": "Sea Ray 370 Express Cruiser",
+      "missing": 9,
+      "gaps": [
+        "Beam",
+        "LOA",
+        "FuelType",
+        "Propulsion",
+        "HullForm",
+        "Draft",
+        "AirDraft",
+        "EngineConfig",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-370-SD-G1",
+      "Manufacturer": "Sea Ray",
+      "Nickname": "Sea Ray 370 Sundancer Generation 1",
+      "missing": 9,
+      "gaps": [
+        "Beam",
+        "LOA",
+        "FuelType",
+        "Propulsion",
+        "HullForm",
+        "Draft",
+        "AirDraft",
+        "EngineConfig",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-370-SD-OB",
+      "Manufacturer": "Sea Ray",
+      "Nickname": "Sea Ray 370 Sundancer Outboard",
+      "missing": 9,
+      "gaps": [
+        "Beam",
+        "LOA",
+        "FuelType",
+        "Propulsion",
+        "HullForm",
+        "Draft",
+        "AirDraft",
+        "EngineConfig",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-370-VEN",
+      "Manufacturer": "Sea Ray",
+      "Nickname": "Sea Ray 370 Venture",
+      "missing": 9,
+      "gaps": [
+        "Beam",
+        "LOA",
+        "FuelType",
+        "Propulsion",
+        "HullForm",
+        "Draft",
+        "AirDraft",
+        "EngineConfig",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-38-390-SD",
+      "Manufacturer": "Sea Ray",
+      "Nickname": "Sea Ray 38 / 390 Sundancer",
+      "missing": 9,
+      "gaps": [
+        "Beam",
+        "LOA",
+        "FuelType",
+        "Propulsion",
+        "HullForm",
+        "Draft",
+        "AirDraft",
+        "EngineConfig",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-380-AC",
+      "Manufacturer": "Sea Ray",
+      "Nickname": "Sea Ray 380 Aft Cabin",
+      "missing": 9,
+      "gaps": [
+        "Beam",
+        "LOA",
+        "FuelType",
+        "Propulsion",
+        "HullForm",
+        "Draft",
+        "AirDraft",
+        "EngineConfig",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-390-40-MY",
+      "Manufacturer": "Sea Ray",
+      "Nickname": "Sea Ray 390 / 40 Motor Yacht",
+      "missing": 9,
+      "gaps": [
+        "Beam",
+        "LOA",
+        "FuelType",
+        "Propulsion",
+        "HullForm",
+        "Draft",
+        "AirDraft",
+        "EngineConfig",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-390-40-SD",
+      "Manufacturer": "Sea Ray",
+      "Nickname": "Sea Ray 390 / 40 Sundancer",
+      "missing": 9,
+      "gaps": [
+        "Beam",
+        "LOA",
+        "FuelType",
+        "Propulsion",
+        "HullForm",
+        "Draft",
+        "AirDraft",
+        "EngineConfig",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-390-EC",
+      "Manufacturer": "Sea Ray",
+      "Nickname": "Sea Ray 390 Express Cruiser",
+      "missing": 9,
+      "gaps": [
+        "Beam",
+        "LOA",
+        "FuelType",
+        "Propulsion",
+        "HullForm",
+        "Draft",
+        "AirDraft",
+        "EngineConfig",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-390-SB",
+      "Manufacturer": "Sea Ray",
+      "Nickname": "Sea Ray 390 Sedan Bridge",
+      "missing": 9,
+      "gaps": [
+        "Beam",
+        "LOA",
+        "FuelType",
+        "Propulsion",
+        "HullForm",
+        "Draft",
+        "AirDraft",
+        "EngineConfig",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-390-SSF",
+      "Manufacturer": "Sea Ray",
+      "Nickname": "Sea Ray 390 Sedan Sportfish",
+      "missing": 9,
+      "gaps": [
+        "Beam",
+        "LOA",
+        "FuelType",
+        "Propulsion",
+        "HullForm",
+        "Draft",
+        "AirDraft",
+        "EngineConfig",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-400-SB",
+      "Manufacturer": "Sea Ray",
+      "Nickname": "Sea Ray 400 Sedan Bridge",
+      "missing": 9,
+      "gaps": [
+        "Beam",
+        "LOA",
+        "FuelType",
+        "Propulsion",
+        "HullForm",
+        "Draft",
+        "AirDraft",
+        "EngineConfig",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-SRV360-EC",
+      "Manufacturer": "Sea Ray",
+      "Nickname": "Sea Ray SRV360 Express Cruiser",
+      "missing": 9,
+      "gaps": [
+        "Beam",
+        "LOA",
+        "FuelType",
+        "Propulsion",
+        "HullForm",
+        "Draft",
+        "AirDraft",
+        "EngineConfig",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "CARV-3007-AC",
+      "Manufacturer": "Carver",
+      "Nickname": "Carver 3007 Aft Cabin",
+      "missing": 8,
+      "gaps": [
+        "Beam",
+        "FuelType",
+        "Propulsion",
+        "HullForm",
+        "Draft",
+        "AirDraft",
+        "EngineConfig",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "CARV-3067-634-340-SAN",
+      "Manufacturer": "Carver",
+      "Nickname": "Carver 3067 / 634 / 340 Santego",
+      "missing": 8,
+      "gaps": [
+        "Beam",
+        "FuelType",
+        "Propulsion",
+        "HullForm",
+        "Draft",
+        "AirDraft",
+        "EngineConfig",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "CARV-3087-ALL",
+      "Manufacturer": "Carver",
+      "Nickname": "Carver 3087 Allegra",
+      "missing": 8,
+      "gaps": [
+        "Beam",
+        "FuelType",
+        "Propulsion",
+        "HullForm",
+        "Draft",
+        "AirDraft",
+        "EngineConfig",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "CARV-310-EX",
+      "Manufacturer": "Carver",
+      "Nickname": "Carver 310 Express",
+      "missing": 8,
+      "gaps": [
+        "Beam",
+        "FuelType",
+        "Propulsion",
+        "HullForm",
+        "Draft",
+        "AirDraft",
+        "EngineConfig",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "CARV-310-SAN",
+      "Manufacturer": "Carver",
+      "Nickname": "Carver 310 Santego",
+      "missing": 8,
+      "gaps": [
+        "Beam",
+        "FuelType",
+        "Propulsion",
+        "HullForm",
+        "Draft",
+        "AirDraft",
+        "EngineConfig",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "CARV-320-VOY",
+      "Manufacturer": "Carver",
+      "Nickname": "Carver 320 Voyager",
+      "missing": 8,
+      "gaps": [
+        "Beam",
+        "FuelType",
+        "Propulsion",
+        "HullForm",
+        "Draft",
+        "AirDraft",
+        "EngineConfig",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "CARV-3207-AC",
+      "Manufacturer": "Carver",
+      "Nickname": "Carver 3207 Aft Cabin",
+      "missing": 8,
+      "gaps": [
+        "Beam",
+        "FuelType",
+        "Propulsion",
+        "HullForm",
+        "Draft",
+        "AirDraft",
+        "EngineConfig",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "CARV-325-326-AC",
+      "Manufacturer": "Carver",
+      "Nickname": "Carver 325 / 326 Aft Cabin",
+      "missing": 8,
+      "gaps": [
+        "Beam",
+        "FuelType",
+        "Propulsion",
+        "HullForm",
+        "Draft",
+        "AirDraft",
+        "EngineConfig",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "CARV-3257-MON",
+      "Manufacturer": "Carver",
+      "Nickname": "Carver 3257 Montego",
+      "missing": 8,
+      "gaps": [
+        "Beam",
+        "FuelType",
+        "Propulsion",
+        "HullForm",
+        "Draft",
+        "AirDraft",
+        "EngineConfig",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "CARV-3297-330-MAR",
+      "Manufacturer": "Carver",
+      "Nickname": "Carver 3297 / 330 Mariner",
+      "missing": 8,
+      "gaps": [
+        "Beam",
+        "FuelType",
+        "Propulsion",
+        "HullForm",
+        "Draft",
+        "AirDraft",
+        "EngineConfig",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "CARV-33-35-SS",
+      "Manufacturer": "Carver",
+      "Nickname": "Carver 33 / 35 Super Sport",
+      "missing": 8,
+      "gaps": [
+        "Beam",
+        "FuelType",
+        "Propulsion",
+        "HullForm",
+        "Draft",
+        "AirDraft",
+        "EngineConfig",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "CARV-33-350-AC",
+      "Manufacturer": "Carver",
+      "Nickname": "Carver 33 / 350 Aft Cabin",
+      "missing": 8,
+      "gaps": [
+        "Beam",
+        "FuelType",
+        "Propulsion",
+        "HullForm",
+        "Draft",
+        "AirDraft",
+        "EngineConfig",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "CARV-3326-VOY",
+      "Manufacturer": "Carver",
+      "Nickname": "Carver 3326 Voyager",
+      "missing": 8,
+      "gaps": [
+        "Beam",
+        "FuelType",
+        "Propulsion",
+        "HullForm",
+        "Draft",
+        "AirDraft",
+        "EngineConfig",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "CARV-3396-MAR",
+      "Manufacturer": "Carver",
+      "Nickname": "Carver 3396 Mariner",
+      "missing": 8,
+      "gaps": [
+        "Beam",
+        "FuelType",
+        "Propulsion",
+        "HullForm",
+        "Draft",
+        "AirDraft",
+        "EngineConfig",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "CARV-C34-CB",
+      "Manufacturer": "Carver",
+      "Nickname": "Carver C34 Command Bridge",
+      "missing": 8,
+      "gaps": [
+        "Beam",
+        "FuelType",
+        "Propulsion",
+        "HullForm",
+        "Draft",
+        "AirDraft",
+        "EngineConfig",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "CARV-C34-CP",
+      "Manufacturer": "Carver",
+      "Nickname": "Carver C34 Coupe",
+      "missing": 8,
+      "gaps": [
+        "Beam",
+        "FuelType",
+        "Propulsion",
+        "HullForm",
+        "Draft",
+        "AirDraft",
+        "EngineConfig",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "CHCR-30-TSF",
+      "Manufacturer": "Chris-Craft",
+      "Nickname": "Chris-Craft 30 Tournament SF",
+      "missing": 8,
+      "gaps": [
+        "Beam",
+        "FuelType",
+        "Propulsion",
+        "HullForm",
+        "Draft",
+        "AirDraft",
+        "EngineConfig",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "CHCR-300-308-EC",
+      "Manufacturer": "Chris-Craft",
+      "Nickname": "Chris-Craft 300 / 308 Express Cruiser",
+      "missing": 8,
+      "gaps": [
+        "Beam",
+        "FuelType",
+        "Propulsion",
+        "HullForm",
+        "Draft",
+        "AirDraft",
+        "EngineConfig",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "CHCR-302-322-340-CR",
+      "Manufacturer": "Chris-Craft",
+      "Nickname": "Chris-Craft 302 / 322 / 340 Crowne",
+      "missing": 8,
+      "gaps": [
+        "Beam",
+        "FuelType",
+        "Propulsion",
+        "HullForm",
+        "Draft",
+        "AirDraft",
+        "EngineConfig",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "CHCR-31-GT-LAUNCH",
+      "Manufacturer": "Chris-Craft",
+      "Nickname": "Chris-Craft 31 GT Launch",
+      "missing": 8,
+      "gaps": [
+        "Beam",
+        "FuelType",
+        "Propulsion",
+        "HullForm",
+        "Draft",
+        "AirDraft",
+        "EngineConfig",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "CHCR-310-CAT",
+      "Manufacturer": "Chris-Craft",
+      "Nickname": "Chris-Craft 310 Catalina",
+      "missing": 8,
+      "gaps": [
+        "Beam",
+        "FuelType",
+        "Propulsion",
+        "HullForm",
+        "Draft",
+        "AirDraft",
+        "EngineConfig",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "CHCR-315-CO",
+      "Manufacturer": "Chris-Craft",
+      "Nickname": "Chris-Craft 315 Commander",
+      "missing": 8,
+      "gaps": [
+        "Beam",
+        "FuelType",
+        "Propulsion",
+        "HullForm",
+        "Draft",
+        "AirDraft",
+        "EngineConfig",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "CHCR-32-LAUNCH",
+      "Manufacturer": "Chris-Craft",
+      "Nickname": "Chris-Craft 32 Launch",
+      "missing": 8,
+      "gaps": [
+        "Beam",
+        "FuelType",
+        "Propulsion",
+        "HullForm",
+        "Draft",
+        "AirDraft",
+        "EngineConfig",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "CHCR-320-322-AE",
+      "Manufacturer": "Chris-Craft",
+      "Nickname": "Chris-Craft 320 / 322 Amerosport Express",
+      "missing": 8,
+      "gaps": [
+        "Beam",
+        "FuelType",
+        "Propulsion",
+        "HullForm",
+        "Draft",
+        "AirDraft",
+        "EngineConfig",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "CHCR-320-328-EC",
+      "Manufacturer": "Chris-Craft",
+      "Nickname": "Chris-Craft 320 / 328 Express Cruiser",
+      "missing": 8,
+      "gaps": [
+        "Beam",
+        "FuelType",
+        "Propulsion",
+        "HullForm",
+        "Draft",
+        "AirDraft",
+        "EngineConfig",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "CHCR-320-AS",
+      "Manufacturer": "Chris-Craft",
+      "Nickname": "Chris-Craft 320 Amerosport Sedan",
+      "missing": 8,
+      "gaps": [
+        "Beam",
+        "FuelType",
+        "Propulsion",
+        "HullForm",
+        "Draft",
+        "AirDraft",
+        "EngineConfig",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "CHCR-33-CAT",
+      "Manufacturer": "Chris-Craft",
+      "Nickname": "Chris-Craft 33 Catalina",
+      "missing": 8,
+      "gaps": [
+        "Beam",
+        "FuelType",
+        "Propulsion",
+        "HullForm",
+        "Draft",
+        "AirDraft",
+        "EngineConfig",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "CHCR-332-EX",
+      "Manufacturer": "Chris-Craft",
+      "Nickname": "Chris-Craft 332 Express",
+      "missing": 8,
+      "gaps": [
+        "Beam",
+        "FuelType",
+        "Propulsion",
+        "HullForm",
+        "Draft",
+        "AirDraft",
+        "EngineConfig",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "CHCR-333-SE",
+      "Manufacturer": "Chris-Craft",
+      "Nickname": "Chris-Craft 333 Sedan",
+      "missing": 8,
+      "gaps": [
+        "Beam",
+        "FuelType",
+        "Propulsion",
+        "HullForm",
+        "Draft",
+        "AirDraft",
+        "EngineConfig",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "CHCR-336-MCE",
+      "Manufacturer": "Chris-Craft",
+      "Nickname": "Chris-Craft 336 Mid Cabin Express",
+      "missing": 8,
+      "gaps": [
+        "Beam",
+        "FuelType",
+        "Propulsion",
+        "HullForm",
+        "Draft",
+        "AirDraft",
+        "EngineConfig",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "CHCR-CALYPSO-30",
+      "Manufacturer": "Chris-Craft",
+      "Nickname": "Chris-Craft Calypso 30",
+      "missing": 8,
+      "gaps": [
+        "Beam",
+        "FuelType",
+        "Propulsion",
+        "HullForm",
+        "Draft",
+        "AirDraft",
+        "EngineConfig",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "CHCR-CALYPSO-35",
+      "Manufacturer": "Chris-Craft",
+      "Nickname": "Chris-Craft Calypso 35",
+      "missing": 8,
+      "gaps": [
+        "Beam",
+        "FuelType",
+        "Propulsion",
+        "HullForm",
+        "Draft",
+        "AirDraft",
+        "EngineConfig",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "CHCR-CATALINA-34",
+      "Manufacturer": "Chris-Craft",
+      "Nickname": "Chris-Craft Catalina 34",
+      "missing": 8,
+      "gaps": [
+        "Beam",
+        "FuelType",
+        "Propulsion",
+        "HullForm",
+        "Draft",
+        "AirDraft",
+        "EngineConfig",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "CHCR-CORSAIR-34",
+      "Manufacturer": "Chris-Craft",
+      "Nickname": "Chris-Craft Corsair 34",
+      "missing": 8,
+      "gaps": [
+        "Beam",
+        "FuelType",
+        "Propulsion",
+        "HullForm",
+        "Draft",
+        "AirDraft",
+        "EngineConfig",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "CHCR-LAUNCH-35-GT",
+      "Manufacturer": "Chris-Craft",
+      "Nickname": "Chris-Craft Launch 35 GT",
+      "missing": 8,
+      "gaps": [
+        "Beam",
+        "FuelType",
+        "Propulsion",
+        "HullForm",
+        "Draft",
+        "AirDraft",
+        "EngineConfig",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "CHCR-LAUNCH-36-38",
+      "Manufacturer": "Chris-Craft",
+      "Nickname": "Chris-Craft Launch 36 / 38",
+      "missing": 8,
+      "gaps": [
+        "Beam",
+        "FuelType",
+        "Propulsion",
+        "HullForm",
+        "Draft",
+        "AirDraft",
+        "EngineConfig",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-370-SB",
+      "Manufacturer": "Sea Ray",
+      "Nickname": "Sea Ray 370 Sedan Bridge",
+      "missing": 8,
+      "gaps": [
+        "Beam",
+        "LOA",
+        "FuelType",
+        "Propulsion",
+        "Draft",
+        "AirDraft",
+        "EngineConfig",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-400-410-SD",
+      "Manufacturer": "Sea Ray",
+      "Nickname": "Sea Ray 400 / 410 Sundancer",
+      "missing": 8,
+      "gaps": [
+        "Beam",
+        "LOA",
+        "FuelType",
+        "Propulsion",
+        "Draft",
+        "AirDraft",
+        "EngineConfig",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-420-44-SD",
+      "Manufacturer": "Sea Ray",
+      "Nickname": "Sea Ray 420 / 44 Sundancer",
+      "missing": 8,
+      "gaps": [
+        "Beam",
+        "LOA",
+        "FuelType",
+        "Propulsion",
+        "Draft",
+        "AirDraft",
+        "EngineConfig",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "FWIN-325-EX",
+      "Manufacturer": "Four Winns",
+      "Nickname": "Four Winns 325 Express",
+      "missing": 7,
+      "gaps": [
+        "LOA",
+        "FuelType",
+        "Propulsion",
+        "Draft",
+        "AirDraft",
+        "EngineConfig",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "BAYL-3550-BR",
+      "Manufacturer": "Bayliner",
+      "Nickname": "Bayliner 3550 Bristol",
+      "missing": 6,
+      "gaps": [
+        "FuelType",
+        "Propulsion",
+        "HullForm",
+        "AirDraft",
+        "EngineConfig",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "CRUY-360-380-EX",
+      "Manufacturer": "Cruisers Yachts",
+      "Nickname": "Cruisers Yachts 360 / 380 Express",
+      "missing": 5,
+      "gaps": [
+        "FuelType",
+        "Propulsion",
+        "Draft",
+        "EngineConfig",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "CRUY-3670-3675-3775-ESP",
+      "Manufacturer": "Cruisers Yachts",
+      "Nickname": "Cruisers Yachts 3670 / 3675 / 3775 Esprit",
+      "missing": 5,
+      "gaps": [
+        "FuelType",
+        "Propulsion",
+        "AirDraft",
+        "EngineConfig",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "PURS-C300",
+      "Manufacturer": "Pursuit",
+      "Nickname": "Pursuit C 300",
+      "missing": 5,
+      "gaps": [
+        "Beam",
+        "LOA",
+        "Draft",
+        "AirDraft",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "PURS-OS345",
+      "Manufacturer": "Pursuit",
+      "Nickname": "Pursuit OS 345 Offshore",
+      "missing": 5,
+      "gaps": [
+        "Beam",
+        "LOA",
+        "Draft",
+        "AirDraft",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "PURS-OS375",
+      "Manufacturer": "Pursuit",
+      "Nickname": "Pursuit OS 375 Offshore",
+      "missing": 5,
+      "gaps": [
+        "Beam",
+        "LOA",
+        "Draft",
+        "AirDraft",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "PURS-S378",
+      "Manufacturer": "Pursuit",
+      "Nickname": "Pursuit S 378",
+      "missing": 5,
+      "gaps": [
+        "Beam",
+        "LOA",
+        "Draft",
+        "AirDraft",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "REGL-50-SAV",
+      "Manufacturer": "Regal",
+      "Nickname": "Regal 50 SAV",
+      "missing": 5,
+      "gaps": [
+        "Propulsion",
+        "Draft",
+        "AirDraft",
+        "EngineConfig",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "RIVI-50-EFB",
+      "Manufacturer": "Riviera",
+      "Nickname": "Riviera 50 Enclosed Flybridge",
+      "missing": 5,
+      "gaps": [
+        "Beam",
+        "LOA",
+        "Draft",
+        "AirDraft",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-320-SD-G2",
+      "Manufacturer": "Sea Ray",
+      "Nickname": "Sea Ray 320 Sundancer Generation 2",
+      "missing": 5,
+      "gaps": [
+        "FuelType",
+        "Propulsion",
+        "AirDraft",
+        "EngineConfig",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "BAYL-300-315-SB",
+      "Manufacturer": "Bayliner",
+      "Nickname": "Bayliner 300 / 315 SB Cruiser",
+      "missing": 4,
+      "gaps": [
+        "FuelType",
+        "Propulsion",
+        "AirDraft",
+        "EngineConfig"
+      ]
+    },
+    {
+      "BoatModelID": "BAYL-305-SB",
+      "Manufacturer": "Bayliner",
+      "Nickname": "Bayliner 305 SB Cruiser",
+      "missing": 4,
+      "gaps": [
+        "FuelType",
+        "Propulsion",
+        "AirDraft",
+        "EngineConfig"
+      ]
+    },
+    {
+      "BoatModelID": "BAYL-320-335-SB",
+      "Manufacturer": "Bayliner",
+      "Nickname": "Bayliner 320 / 335 SB Cruiser",
+      "missing": 4,
+      "gaps": [
+        "FuelType",
+        "Propulsion",
+        "AirDraft",
+        "EngineConfig"
+      ]
+    },
+    {
+      "BoatModelID": "BAYL-325-340-SB",
+      "Manufacturer": "Bayliner",
+      "Nickname": "Bayliner 325 / 340 SB Cruiser",
+      "missing": 4,
+      "gaps": [
+        "FuelType",
+        "Propulsion",
+        "AirDraft",
+        "EngineConfig"
+      ]
+    },
+    {
+      "BoatModelID": "BAYL-3250-3255-3555-SB",
+      "Manufacturer": "Bayliner",
+      "Nickname": "Bayliner 3250 / 3255 / 3555 Sunbridge",
+      "missing": 4,
+      "gaps": [
+        "FuelType",
+        "Propulsion",
+        "AirDraft",
+        "EngineConfig"
+      ]
+    },
+    {
+      "BoatModelID": "BAYL-3255-AV",
+      "Manufacturer": "Bayliner",
+      "Nickname": "Bayliner 3255 Avanti Sunbridge",
+      "missing": 4,
+      "gaps": [
+        "FuelType",
+        "Propulsion",
+        "AirDraft",
+        "EngineConfig"
+      ]
+    },
+    {
+      "BoatModelID": "BAYL-3258-CB",
+      "Manufacturer": "Bayliner",
+      "Nickname": "Bayliner 3258 Command Bridge",
+      "missing": 4,
+      "gaps": [
+        "FuelType",
+        "Propulsion",
+        "AirDraft",
+        "EngineConfig"
+      ]
+    },
+    {
+      "BoatModelID": "BAYL-3488-AV-CB",
+      "Manufacturer": "Bayliner",
+      "Nickname": "Bayliner 3488 Avanti Command Bridge",
+      "missing": 4,
+      "gaps": [
+        "FuelType",
+        "Propulsion",
+        "AirDraft",
+        "EngineConfig"
+      ]
+    },
+    {
+      "BoatModelID": "BAYL-3587-MY",
+      "Manufacturer": "Bayliner",
+      "Nickname": "Bayliner 3587 Motor Yacht",
+      "missing": 4,
+      "gaps": [
+        "FuelType",
+        "Propulsion",
+        "AirDraft",
+        "EngineConfig"
+      ]
+    },
+    {
+      "BoatModelID": "BAYL-3788-MY-G1",
+      "Manufacturer": "Bayliner",
+      "Nickname": "Bayliner 3788 Motor Yacht Generation 1",
+      "missing": 4,
+      "gaps": [
+        "FuelType",
+        "Propulsion",
+        "AirDraft",
+        "EngineConfig"
+      ]
+    },
+    {
+      "BoatModelID": "BAYL-3788-MY-G2",
+      "Manufacturer": "Bayliner",
+      "Nickname": "Bayliner 3788 Motor Yacht Generation 2",
+      "missing": 4,
+      "gaps": [
+        "FuelType",
+        "Propulsion",
+        "AirDraft",
+        "EngineConfig"
+      ]
+    },
+    {
+      "BoatModelID": "BAYL-3988-MY",
+      "Manufacturer": "Bayliner",
+      "Nickname": "Bayliner 3988 Motor Yacht",
+      "missing": 4,
+      "gaps": [
+        "FuelType",
+        "Propulsion",
+        "AirDraft",
+        "EngineConfig"
+      ]
+    },
+    {
+      "BoatModelID": "BAYL-4050-BOD",
+      "Manufacturer": "Bayliner",
+      "Nickname": "Bayliner 4050 Bodega",
+      "missing": 4,
+      "gaps": [
+        "FuelType",
+        "Propulsion",
+        "AirDraft",
+        "EngineConfig"
+      ]
+    },
+    {
+      "BoatModelID": "CARV-350-VOY",
+      "Manufacturer": "Carver",
+      "Nickname": "Carver 350 Voyager",
+      "missing": 4,
+      "gaps": [
+        "FuelType",
+        "Propulsion",
+        "AirDraft",
+        "EngineConfig"
+      ]
+    },
+    {
+      "BoatModelID": "CARV-366-MY",
+      "Manufacturer": "Carver",
+      "Nickname": "Carver 366 Motor Yacht",
+      "missing": 4,
+      "gaps": [
+        "FuelType",
+        "Propulsion",
+        "AirDraft",
+        "EngineConfig"
+      ]
+    },
+    {
+      "BoatModelID": "CARV-370-374-VOY",
+      "Manufacturer": "Carver",
+      "Nickname": "Carver 370 / 374 Voyager",
+      "missing": 4,
+      "gaps": [
+        "FuelType",
+        "Propulsion",
+        "AirDraft",
+        "EngineConfig"
+      ]
+    },
+    {
+      "BoatModelID": "CARV-3807-390-AC",
+      "Manufacturer": "Carver",
+      "Nickname": "Carver 3807 Aft Cabin / 390 Aft Cabin",
+      "missing": 4,
+      "gaps": [
+        "FuelType",
+        "Propulsion",
+        "AirDraft",
+        "EngineConfig"
+      ]
+    },
+    {
+      "BoatModelID": "CARV-3867-SAN",
+      "Manufacturer": "Carver",
+      "Nickname": "Carver 3867 Santego",
+      "missing": 4,
+      "gaps": [
+        "FuelType",
+        "Propulsion",
+        "AirDraft",
+        "EngineConfig"
+      ]
+    },
+    {
+      "BoatModelID": "CARV-390-400-404-CMY",
+      "Manufacturer": "Carver",
+      "Nickname": "Carver 390 / 400 / 404 Cockpit Motor Yacht",
+      "missing": 4,
+      "gaps": [
+        "FuelType",
+        "Propulsion",
+        "AirDraft",
+        "EngineConfig"
+      ]
+    },
+    {
+      "BoatModelID": "CARV-43-47-MY",
+      "Manufacturer": "Carver",
+      "Nickname": "Carver 43 / 47 Motor Yacht",
+      "missing": 4,
+      "gaps": [
+        "FuelType",
+        "Propulsion",
+        "AirDraft",
+        "EngineConfig"
+      ]
+    },
+    {
+      "BoatModelID": "CARV-44-SOJ",
+      "Manufacturer": "Carver",
+      "Nickname": "Carver 44 Sojourn",
+      "missing": 4,
+      "gaps": [
+        "FuelType",
+        "Propulsion",
+        "AirDraft",
+        "EngineConfig"
+      ]
+    },
+    {
+      "BoatModelID": "CARV-445-AC",
+      "Manufacturer": "Carver",
+      "Nickname": "Carver 445 Aft Cabin",
+      "missing": 4,
+      "gaps": [
+        "FuelType",
+        "Propulsion",
+        "AirDraft",
+        "EngineConfig"
+      ]
+    },
+    {
+      "BoatModelID": "CARV-638-380-SAN",
+      "Manufacturer": "Carver",
+      "Nickname": "Carver 638 Santego / 380 Santego",
+      "missing": 4,
+      "gaps": [
+        "FuelType",
+        "Propulsion",
+        "AirDraft",
+        "EngineConfig"
+      ]
+    },
+    {
+      "BoatModelID": "CHCR-33-CORSAIR",
+      "Manufacturer": "Chris-Craft",
+      "Nickname": "Chris-Craft 33 Corsair",
+      "missing": 4,
+      "gaps": [
+        "FuelType",
+        "Propulsion",
+        "AirDraft",
+        "EngineConfig"
+      ]
+    },
+    {
+      "BoatModelID": "CHCR-370A-360E",
+      "Manufacturer": "Chris-Craft",
+      "Nickname": "Chris-Craft 370 Amerosport / 360 Express",
+      "missing": 4,
+      "gaps": [
+        "FuelType",
+        "Propulsion",
+        "AirDraft",
+        "EngineConfig"
+      ]
+    },
+    {
+      "BoatModelID": "CHCR-372-CAT",
+      "Manufacturer": "Chris-Craft",
+      "Nickname": "Chris-Craft 372 Catalina",
+      "missing": 4,
+      "gaps": [
+        "FuelType",
+        "Propulsion",
+        "AirDraft",
+        "EngineConfig"
+      ]
+    },
+    {
+      "BoatModelID": "CHCR-380-CONT",
+      "Manufacturer": "Chris-Craft",
+      "Nickname": "Chris-Craft 380 Continental",
+      "missing": 4,
+      "gaps": [
+        "FuelType",
+        "Propulsion",
+        "AirDraft",
+        "EngineConfig"
+      ]
+    },
+    {
+      "BoatModelID": "CRUY-300-310-EX-0507",
+      "Manufacturer": "Cruisers Yachts",
+      "Nickname": "Cruisers Yachts 300 / 310 Express",
+      "missing": 4,
+      "gaps": [
+        "FuelType",
+        "Propulsion",
+        "AirDraft",
+        "EngineConfig"
+      ]
+    },
+    {
+      "BoatModelID": "CRUY-300-CXI-310-EX",
+      "Manufacturer": "Cruisers Yachts",
+      "Nickname": "Cruisers Yachts 300 CXi / 300 / 310 Express",
+      "missing": 4,
+      "gaps": [
+        "FuelType",
+        "Propulsion",
+        "AirDraft",
+        "EngineConfig"
+      ]
+    },
+    {
+      "BoatModelID": "CRUY-3020-3120-ARIA",
+      "Manufacturer": "Cruisers Yachts",
+      "Nickname": "Cruisers Yachts 3020 / 3120 Aria",
+      "missing": 4,
+      "gaps": [
+        "FuelType",
+        "Propulsion",
+        "AirDraft",
+        "EngineConfig"
+      ]
+    },
+    {
+      "BoatModelID": "CRUY-3070-ROGUE",
+      "Manufacturer": "Cruisers Yachts",
+      "Nickname": "Cruisers Yachts 3070 Rogue",
+      "missing": 4,
+      "gaps": [
+        "FuelType",
+        "Propulsion",
+        "AirDraft",
+        "EngineConfig"
+      ]
+    },
+    {
+      "BoatModelID": "CRUY-3075-EX",
+      "Manufacturer": "Cruisers Yachts",
+      "Nickname": "Cruisers Yachts 3075 Express",
+      "missing": 4,
+      "gaps": [
+        "FuelType",
+        "Propulsion",
+        "AirDraft",
+        "EngineConfig"
+      ]
+    },
+    {
+      "BoatModelID": "CRUY-3175-ROGUE",
+      "Manufacturer": "Cruisers Yachts",
+      "Nickname": "Cruisers Yachts 3175 Rogue",
+      "missing": 4,
+      "gaps": [
+        "FuelType",
+        "Propulsion",
+        "AirDraft",
+        "EngineConfig"
+      ]
+    },
+    {
+      "BoatModelID": "CRUY-330-350-35-EX",
+      "Manufacturer": "Cruisers Yachts",
+      "Nickname": "Cruisers Yachts 330 / 350 / 35 Express",
+      "missing": 4,
+      "gaps": [
+        "FuelType",
+        "Propulsion",
+        "EngineConfig",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "CRUY-3580-3585-FB",
+      "Manufacturer": "Cruisers Yachts",
+      "Nickname": "Cruisers Yachts 3580 / 3585 Flybridge",
+      "missing": 4,
+      "gaps": [
+        "FuelType",
+        "Propulsion",
+        "AirDraft",
+        "EngineConfig"
+      ]
+    },
+    {
+      "BoatModelID": "CRUY-3672-3772-370-EX",
+      "Manufacturer": "Cruisers Yachts",
+      "Nickname": "Cruisers Yachts 3672 / 3772 / 370 Express",
+      "missing": 4,
+      "gaps": [
+        "FuelType",
+        "Propulsion",
+        "AirDraft",
+        "EngineConfig"
+      ]
+    },
+    {
+      "BoatModelID": "CRUY-385-395-MY",
+      "Manufacturer": "Cruisers Yachts",
+      "Nickname": "Cruisers Yachts 385 / 395 Motor Yacht",
+      "missing": 4,
+      "gaps": [
+        "FuelType",
+        "Propulsion",
+        "AirDraft",
+        "EngineConfig"
+      ]
+    }
+  ]
+}
