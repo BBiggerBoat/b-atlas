@@ -1,0 +1,166 @@
+{
+  "date": "2026-10-05",
+  "phase": "Phase 1 enrichment",
+  "manufacturer": "Rinker",
+  "batch": 1,
+  "requestedBatchSize": 40,
+  "researchedRecords": 11,
+  "status": "source-linked conservative enrichment staging; closes currently identified Rinker priority set",
+  "policy": "Maximum 40 models per batch. Populate only generation-level invariant facts; preserve configuration-dependent unknowns and existing canonical values. Source pages are attached for subsequent verified field extraction.",
+  "records": [
+    {
+      "BoatModelID": "RINK-300-FV",
+      "fields": {},
+      "intentionallyUnresolved": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount",
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/rinker/300-fiesta-vee-1990-97"
+      ]
+    },
+    {
+      "BoatModelID": "RINK-290-300-EC",
+      "fields": {},
+      "intentionallyUnresolved": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount",
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/rinker/290-fiesta-vee-300-express-cruiser-2003-09"
+      ]
+    },
+    {
+      "BoatModelID": "RINK-310-312-320",
+      "fields": {},
+      "intentionallyUnresolved": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount",
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/rinker/310-312-fiesta-vee-320-express-2000-09"
+      ]
+    },
+    {
+      "BoatModelID": "RINK-310-EC",
+      "fields": {},
+      "intentionallyUnresolved": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount",
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/rinker/310-express-cruiser-2010-16"
+      ]
+    },
+    {
+      "BoatModelID": "RINK-330-340-342-FV",
+      "fields": {},
+      "intentionallyUnresolved": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount",
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/rinker/330-340-342-fiesta-vee-1998-2007"
+      ]
+    },
+    {
+      "BoatModelID": "RINK-330-340-EC",
+      "fields": {},
+      "intentionallyUnresolved": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount",
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/rinker/330-340-express-cruiser-2008-13"
+      ]
+    },
+    {
+      "BoatModelID": "RINK-350-360-EC",
+      "fields": {},
+      "intentionallyUnresolved": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount",
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/rinker/360-express-cruiser-2008-15"
+      ]
+    },
+    {
+      "BoatModelID": "RINK-360-370-380-EC",
+      "fields": {},
+      "intentionallyUnresolved": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount",
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/rinker/360-370-380-express-cruiser-2005-08"
+      ]
+    },
+    {
+      "BoatModelID": "RINK-370-EX",
+      "fields": {},
+      "intentionallyUnresolved": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount",
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/rinker/370-ex-2017-20"
+      ]
+    },
+    {
+      "BoatModelID": "RINK-390-410-420-EC",
+      "fields": {},
+      "intentionallyUnresolved": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount",
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/rinker/390-410-420-express-cruiser-2004-07"
+      ]
+    },
+    {
+      "BoatModelID": "RINK-390-400-EC",
+      "fields": {},
+      "intentionallyUnresolved": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount",
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/rinker/400-express-cruiser-2006-10"
+      ]
+    }
+  ]
+}
