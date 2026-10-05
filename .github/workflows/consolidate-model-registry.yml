@@ -1,0 +1,154 @@
+name: Consolidate model registry
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/consolidate-model-registry.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  consolidate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Merge Phase 2 model shards into canonical registry
+        shell: bash
+        run: |
+          node <<'NODE'
+          const fs = require("fs");
+          const path = require("path");
+
+          const canonicalPath = "boatmodels.json";
+          const repoPath = "datarepository.js";
+          const reportPath = "reports/model-registry-consolidation.json";
+
+          const canonical = JSON.parse(fs.readFileSync(canonicalPath, "utf8"));
+          if (!Array.isArray(canonical)) throw new Error("boatmodels.json must be an array");
+
+          const files = fs.readdirSync("data")
+            .filter(name => /^phase2-live-models(?:-.*)?\.json$/.test(name))
+            .map(name => path.join("data", name))
+            .sort();
+
+          const ids = new Set();
+          const duplicateCanonicalIds = [];
+          canonical.forEach((row, index) => {
+            const id = row && row.BoatModelID;
+            if (!id) return;
+            if (ids.has(id)) duplicateCanonicalIds.push({ BoatModelID: id, index });
+            ids.add(id);
+          });
+
+          const before = canonical.length;
+          let sourceRows = 0;
+          let added = 0;
+          const skipped = [];
+          const sourceCounts = [];
+
+          for (const file of files) {
+            const rows = JSON.parse(fs.readFileSync(file, "utf8"));
+            if (!Array.isArray(rows)) throw new Error(file + " must be an array");
+            sourceCounts.push({ file, rows: rows.length });
+            sourceRows += rows.length;
+
+            for (const row of rows) {
+              const id = row && row.BoatModelID;
+              if (!id) {
+                skipped.push({ file, reason: "missing BoatModelID" });
+                continue;
+              }
+              if (ids.has(id)) {
+                skipped.push({ file, BoatModelID: id, reason: "already canonical" });
+                continue;
+              }
+              canonical.push(row);
+              ids.add(id);
+              added++;
+            }
+          }
+
+          fs.writeFileSync(canonicalPath, JSON.stringify(canonical, null, 2) + "\n");
+
+          let repo = fs.readFileSync(repoPath, "utf8");
+          const removedManifestEntries = [];
+          repo = repo.replace(
+            /^\s*(phase2Models[A-Za-z0-9]*):\s*"[^"]+",?\s*$/gm,
+            (line, key) => {
+              removedManifestEntries.push(key);
+              return "";
+            }
+          );
+          repo = repo
+            .replace(/\n{3,}/g, "\n\n")
+            .replace(
+              /\/\/ Phase 2 live overlay: keep the large canonical boatmodels\.json stable while\n\s*\/\/ publishing newly researched models immediately\. Canonical records win on\n\s*\/\/ duplicate IDs; staged records only fill identities not yet in boatmodels\.json\./,
+              "// Legacy Phase 2 model-overlay merge code is retained as a no-op for compatibility;\n            // model shards are no longer loaded because boatmodels.json is authoritative."
+            );
+          fs.writeFileSync(repoPath, repo);
+
+          fs.mkdirSync("reports", { recursive: true });
+          const report = {
+            generatedAt: new Date().toISOString(),
+            canonicalPath,
+            before,
+            phase2ModelFiles: files.length,
+            phase2SourceRows: sourceRows,
+            added,
+            after: canonical.length,
+            duplicateCanonicalIds,
+            skippedCount: skipped.length,
+            skipped,
+            sourceCounts,
+            runtimeChange: "datarepository.js no longer loads any phase2Models* manifest entries; aliases remain separate."
+          };
+          fs.writeFileSync(reportPath, JSON.stringify(report, null, 2) + "\n");
+
+          if (duplicateCanonicalIds.length) {
+            throw new Error("Canonical registry already contains duplicate BoatModelID values; see report.");
+          }
+
+          console.log(JSON.stringify({
+            before,
+            files: files.length,
+            sourceRows,
+            added,
+            after: canonical.length,
+            skipped: skipped.length,
+            removedManifestEntries: removedManifestEntries.length
+          }, null, 2));
+          NODE
+
+      - name: Validate consolidated registry
+        shell: bash
+        run: |
+          node <<'NODE'
+          const fs = require("fs");
+          const rows = JSON.parse(fs.readFileSync("boatmodels.json", "utf8"));
+          const ids = rows.map(r => r && r.BoatModelID).filter(Boolean);
+          const unique = new Set(ids);
+          if (unique.size !== ids.length) throw new Error("Duplicate BoatModelID values remain");
+          const repo = fs.readFileSync("datarepository.js", "utf8");
+          if (/^\s*phase2Models[A-Za-z0-9]*:\s*"/m.test(repo)) {
+            throw new Error("Phase 2 model manifest entries remain");
+          }
+          console.log("Validated " + rows.length + " canonical models.");
+          NODE
+
+      - name: Commit consolidation
+        shell: bash
+        run: |
+          if git diff --quiet -- boatmodels.json datarepository.js reports/model-registry-consolidation.json; then
+            echo "No consolidation changes required."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add boatmodels.json datarepository.js reports/model-registry-consolidation.json
+          git commit -m "Consolidate Phase 2 models into canonical registry"
+          git push
