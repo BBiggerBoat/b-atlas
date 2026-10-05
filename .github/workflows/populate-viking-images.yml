@@ -21,6 +21,7 @@ jobs:
         run: |
           node <<'NODE'
           const fs=require("fs");
+          (async()=>{
 
           const INDEX="https://www.hmy.com/yachting/powerboat-guide/viking";
           const BASE="https://www.hmy.com";
@@ -188,6 +189,7 @@ jobs:
             unresolved:unresolved.length,
             unresolvedModels:unresolved.map(x=>({id:x.BoatModelID,name:x.Nickname,best:x.bestScore,title:x.title,url:x.sourcePageURL,image:!!x.image}))
           },null,2));
+          })().catch(e=>{ console.error(e); process.exit(1); });
           NODE
 
       - name: Commit Viking image coverage
