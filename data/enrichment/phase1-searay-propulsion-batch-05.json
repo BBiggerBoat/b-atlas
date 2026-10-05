@@ -1,0 +1,301 @@
+{
+  "date": "2026-10-05",
+  "phase": "Phase 1 enrichment",
+  "manufacturer": "Sea Ray",
+  "batch": 5,
+  "requestedBatchSize": 20,
+  "researchedRecords": 20,
+  "status": "source-verified enrichment staging",
+  "policy": "Populate only generation-level invariant facts. Preserve mixed or configuration-dependent values as unresolved.",
+  "records": [
+    {
+      "BoatModelID": "SRAY-345-340-SB",
+      "fields": {
+        "Fuel": "Gasoline",
+        "NormalizedFuel": "Gasoline",
+        "FuelCode": "fuel.gasoline",
+        "Propulsion": "Shaft",
+        "NormalizedPropulsion": "Shaft",
+        "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+        "EngineConfiguration": "Twin Inboard",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/345-340-sedan-bridge-1988-89"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-350-EB",
+      "fields": {},
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "note": "Existing fuel/propulsion/engine fields already capture the documented mixed V-drive/sterndrive configuration; no forced refinement."
+    },
+    {
+      "BoatModelID": "SRAY-350-SLX-G1",
+      "fields": {},
+      "intentionallyUnresolved": [
+        "EngineCount",
+        "AirDraft"
+      ],
+      "note": "Existing record correctly preserves sterndrive/outboard variability."
+    },
+    {
+      "BoatModelID": "SRAY-350-SLX-G2",
+      "fields": {},
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "note": "Existing twin gasoline sterndrive configuration retained."
+    },
+    {
+      "BoatModelID": "SRAY-350-SD",
+      "fields": {},
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "note": "Existing record correctly preserves V-drive/sterndrive variability."
+    },
+    {
+      "BoatModelID": "SRAY-350-SD-CP",
+      "fields": {},
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "note": "Existing record correctly preserves V-drive/sterndrive variability."
+    },
+    {
+      "BoatModelID": "SRAY-350-370-EC",
+      "fields": {
+        "Fuel": "Gasoline",
+        "NormalizedFuel": "Gasoline",
+        "FuelCode": "fuel.gasoline",
+        "Propulsion": "Shaft",
+        "NormalizedPropulsion": "Shaft",
+        "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+        "EngineConfiguration": "Twin Inboard",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/350-370-express-cruiser-1990-95"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-350-370-SD-G1",
+      "fields": {
+        "Fuel": "Gasoline",
+        "NormalizedFuel": "Gasoline",
+        "FuelCode": "fuel.gasoline",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "Propulsion",
+        "NormalizedPropulsion",
+        "MechanicalPropulsionCode",
+        "EngineConfiguration",
+        "AirDraft"
+      ],
+      "note": "Generation-level engine configuration varies by package; preserve propulsion uncertainty.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/350-370-sundancer-1990-94"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-350-370-SD-G2",
+      "fields": {
+        "Fuel": "Gasoline",
+        "NormalizedFuel": "Gasoline",
+        "FuelCode": "fuel.gasoline",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "Propulsion",
+        "NormalizedPropulsion",
+        "MechanicalPropulsionCode",
+        "EngineConfiguration",
+        "AirDraft"
+      ],
+      "note": "Both gas I/O and V-drive inboard configurations are explicitly documented.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/350-370-sundancer-2008-16"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-355T-SE",
+      "fields": {
+        "Fuel": "Mixed Diesel/Gasoline",
+        "NormalizedFuel": "Mixed",
+        "EngineConfiguration": "Twin Inboard",
+        "EngineCount": 2,
+        "Propulsion": "Shaft",
+        "NormalizedPropulsion": "Shaft",
+        "MechanicalPropulsionCode": "mechanical_propulsion.shaft"
+      },
+      "note": "Existing AirDraft/clearance 3.1242 m equals documented 10 ft 3 in and is retained.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/355t-sedan-1982-83"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-36-SB",
+      "fields": {},
+      "note": "Existing AirDraft retained; propulsion fields remain unresolved in this batch pending stronger generation-specific engine-package evidence."
+    },
+    {
+      "BoatModelID": "SRAY-360-AC",
+      "fields": {
+        "NormalizedFuel": "Mixed",
+        "FuelCode": "fuel.mixed",
+        "NormalizedPropulsion": "Shaft",
+        "MechanicalPropulsionCode": "mechanical_propulsion.shaft"
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "note": "Existing record already identifies twin shaft inboards with gasoline or optional diesel."
+    },
+    {
+      "BoatModelID": "SRAY-360-SD",
+      "fields": {
+        "Propulsion": "Shaft/V-Drive",
+        "NormalizedPropulsion": "Shaft",
+        "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+        "EngineConfiguration": "Twin V-Drive Inboard",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "Fuel",
+        "NormalizedFuel",
+        "FuelCode"
+      ],
+      "note": "Hydraulic engine access exposes motors and V-drives; existing AirDraft retained.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/360-sundancer-2002-06"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-SRV360-SSF",
+      "fields": {
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "Fuel",
+        "NormalizedFuel",
+        "FuelCode",
+        "Propulsion",
+        "NormalizedPropulsion",
+        "MechanicalPropulsionCode",
+        "EngineConfiguration",
+        "AirDraft"
+      ],
+      "note": "Twin-engine propulsion is supported; exact generation-wide fuel/drive configuration is not forced.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/srv360-sedan-sportfish-1980-81"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-370-EC",
+      "fields": {
+        "NormalizedFuel": "Mixed",
+        "FuelCode": "fuel.mixed",
+        "NormalizedPropulsion": "Shaft",
+        "MechanicalPropulsionCode": "mechanical_propulsion.shaft"
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "note": "Existing twin inboard record retained; source documents gas inboards and optional Caterpillar diesels.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/370-express-cruiser-1997-2000"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-370-SB",
+      "fields": {
+        "NormalizedFuel": "Mixed",
+        "FuelCode": "fuel.mixed",
+        "NormalizedPropulsion": "Shaft",
+        "MechanicalPropulsionCode": "mechanical_propulsion.shaft"
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "note": "Existing mixed-fuel twin inboard record retained.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/370-sedan-bridge-1991-97"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-370-SD-G1",
+      "fields": {
+        "NormalizedFuel": "Mixed",
+        "FuelCode": "fuel.mixed",
+        "NormalizedPropulsion": "Shaft",
+        "MechanicalPropulsionCode": "mechanical_propulsion.shaft"
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "note": "Existing twin V-drive record retained; generation had gasoline and diesel packages.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/370-sundancer-1995-99"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-370-SD-G2",
+      "fields": {
+        "Fuel": "Gasoline",
+        "NormalizedFuel": "Gasoline",
+        "FuelCode": "fuel.gasoline",
+        "Propulsion": "Sterndrive",
+        "NormalizedPropulsion": "Sterndrive",
+        "MechanicalPropulsionCode": "mechanical_propulsion.sterndrive",
+        "EngineConfiguration": "Twin Sterndrive",
+        "EngineCount": 2
+      },
+      "note": "Existing AirDraft 3.25121016 m corresponds to documented 10 ft 8 in clearance and is retained.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/370-sundancer-2022-current"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-370-SD-OB",
+      "fields": {
+        "NormalizedFuel": "Gasoline",
+        "FuelCode": "fuel.gasoline",
+        "NormalizedPropulsion": "Outboard",
+        "MechanicalPropulsionCode": "mechanical_propulsion.outboard"
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "note": "Existing triple-outboard record retained.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/370-sundancer-outboard-2022-current"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-370-VEN",
+      "fields": {
+        "NormalizedFuel": "Gasoline",
+        "FuelCode": "fuel.gasoline",
+        "NormalizedPropulsion": "Outboard",
+        "MechanicalPropulsionCode": "mechanical_propulsion.outboard"
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "note": "Existing twin-outboard record retained.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/370-venture-2013-15"
+      ]
+    }
+  ]
+}
