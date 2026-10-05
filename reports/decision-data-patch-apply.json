@@ -1,11 +1,13 @@
 {
-  "generatedAt": "2026-10-05T18:46:26.661Z",
-  "patchSet": "phase1-decision-data-riviera-01",
+  "generatedAt": "2026-10-05T18:47:19.016Z",
+  "patchSet": "phase1-decision-data-riviera-02",
   "appliedCount": 5,
   "applied": [
     {
-      "BoatModelID": "RIVI-30-OFB",
+      "BoatModelID": "RIVI-38-OFB-MK1",
       "fields": [
+        "LOA",
+        "LOA_ft",
         "Beam",
         "Beam_ft",
         "Draft",
@@ -15,22 +17,7 @@
       ]
     },
     {
-      "BoatModelID": "RIVI-32-OFB",
-      "fields": [
-        "Beam",
-        "Beam_ft",
-        "Draft",
-        "Draft_ft",
-        "Displacement",
-        "DisplacementLb",
-        "FuelCapacity",
-        "FuelCapacityGal",
-        "WaterCapacity",
-        "WaterCapacityGal"
-      ]
-    },
-    {
-      "BoatModelID": "RIVI-34-OFB-G1",
+      "BoatModelID": "RIVI-38-OFB-MK2",
       "fields": [
         "LOA",
         "LOA_ft",
@@ -38,6 +25,8 @@
         "Beam_ft",
         "Draft",
         "Draft_ft",
+        "AirDraft",
+        "AirDraft_ft",
         "Displacement",
         "DisplacementLb",
         "FuelCapacity",
@@ -47,8 +36,10 @@
       ]
     },
     {
-      "BoatModelID": "RIVI-35-OFB",
+      "BoatModelID": "RIVI-39-OFB-G1",
       "fields": [
+        "LOA",
+        "LOA_ft",
         "Beam",
         "Beam_ft",
         "Draft",
@@ -66,7 +57,7 @@
       ]
     },
     {
-      "BoatModelID": "RIVI-3300-OFB",
+      "BoatModelID": "RIVI-3000-OFF",
       "fields": [
         "LOA",
         "LOA_ft",
@@ -79,7 +70,28 @@
         "FuelCapacity",
         "FuelCapacityGal",
         "WaterCapacity",
-        "WaterCapacityGal"
+        "WaterCapacityGal",
+        "EngineCount",
+        "EngineConfiguration"
+      ]
+    },
+    {
+      "BoatModelID": "RIVI-36-SC",
+      "fields": [
+        "LOA",
+        "LOA_ft",
+        "Beam",
+        "Beam_ft",
+        "Draft",
+        "Draft_ft",
+        "Displacement",
+        "DisplacementLb",
+        "FuelCapacity",
+        "FuelCapacityGal",
+        "WaterCapacity",
+        "WaterCapacityGal",
+        "EngineCount",
+        "EngineConfiguration"
       ]
     }
   ]
