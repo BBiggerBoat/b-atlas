@@ -1,64 +1,11 @@
 {
-  "generatedAt": "2026-10-05T18:50:02.791Z",
-  "patchSet": "phase1-decision-data-riviera-05",
+  "generatedAt": "2026-10-05T19:06:17.321Z",
+  "patchSet": "phase1-decision-data-powertrain-airdraft-01",
   "appliedCount": 5,
   "applied": [
     {
-      "BoatModelID": "RIVI-42-OFB-G2",
+      "BoatModelID": "SRAY-400-FLY",
       "fields": [
-        "LOA",
-        "LOA_ft",
-        "Beam",
-        "Beam_ft",
-        "Draft",
-        "Draft_ft",
-        "Displacement",
-        "DisplacementLb",
-        "FuelCapacity",
-        "FuelCapacityGal",
-        "WaterCapacity",
-        "WaterCapacityGal",
-        "Fuel",
-        "NormalizedFuel",
-        "EngineCount",
-        "EngineConfiguration"
-      ]
-    },
-    {
-      "BoatModelID": "RIVI-43-OFB",
-      "fields": [
-        "LOA",
-        "LOA_ft",
-        "Beam",
-        "Draft",
-        "Draft_ft",
-        "Displacement",
-        "DisplacementLb",
-        "FuelCapacity",
-        "FuelCapacityGal",
-        "WaterCapacity",
-        "WaterCapacityGal",
-        "Fuel",
-        "NormalizedFuel",
-        "EngineCount",
-        "EngineConfiguration"
-      ]
-    },
-    {
-      "BoatModelID": "RIVI-DIAVOLO-44",
-      "fields": [
-        "LOA",
-        "LOA_ft",
-        "Beam",
-        "Beam_ft",
-        "Draft",
-        "Draft_ft",
-        "Displacement",
-        "DisplacementLb",
-        "FuelCapacity",
-        "FuelCapacityGal",
-        "WaterCapacity",
-        "WaterCapacityGal",
         "Fuel",
         "NormalizedFuel",
         "Propulsion",
@@ -68,49 +15,48 @@
       ]
     },
     {
-      "BoatModelID": "RIVI-44-OFB",
+      "BoatModelID": "SRAY-400-SD",
       "fields": [
-        "LOA",
-        "LOA_ft",
-        "Beam",
-        "Beam_ft",
-        "Draft",
-        "Draft_ft",
-        "Displacement",
-        "DisplacementLb",
-        "FuelCapacity",
-        "FuelCapacityGal",
-        "WaterCapacity",
-        "WaterCapacityGal",
-        "Fuel",
-        "NormalizedFuel",
-        "EngineCount",
-        "EngineConfiguration"
-      ]
-    },
-    {
-      "BoatModelID": "RIVI-4400-SY",
-      "fields": [
-        "LOA",
-        "LOA_ft",
-        "Beam",
-        "Beam_ft",
-        "Draft",
-        "Draft_ft",
-        "Displacement",
-        "DisplacementLb",
-        "FuelCapacity",
-        "FuelCapacityGal",
-        "WaterCapacity",
-        "WaterCapacityGal",
-        "HoldingCapacity",
-        "HoldingCapacityGal",
         "Fuel",
         "NormalizedFuel",
         "Propulsion",
         "NormalizedPropulsion",
         "EngineCount",
         "EngineConfiguration"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-400-SLX-OB",
+      "fields": [
+        "Fuel",
+        "NormalizedFuel",
+        "Propulsion",
+        "NormalizedPropulsion",
+        "EngineCount",
+        "EngineConfiguration"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-410-SD",
+      "fields": [
+        "Fuel",
+        "NormalizedFuel",
+        "Propulsion",
+        "EngineCount",
+        "EngineConfiguration"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-420-AC",
+      "fields": [
+        "Fuel",
+        "NormalizedFuel",
+        "Propulsion",
+        "NormalizedPropulsion",
+        "EngineCount",
+        "EngineConfiguration",
+        "AirDraft",
+        "AirDraft_ft"
       ]
     }
   ]
