@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T19:07:56.978Z",
+  "generatedAt": "2026-10-05T19:09:28.906Z",
   "models": 995,
   "priority": [
     "Beam",
@@ -37,14 +37,14 @@
       "pct": 63.1
     },
     "FuelType": {
-      "known": 725,
-      "missing": 270,
-      "pct": 72.9
+      "known": 730,
+      "missing": 265,
+      "pct": 73.4
     },
     "Propulsion": {
-      "known": 655,
-      "missing": 340,
-      "pct": 65.8
+      "known": 660,
+      "missing": 335,
+      "pct": 66.3
     },
     "HullForm": {
       "known": 958,
@@ -57,9 +57,9 @@
       "pct": 100
     },
     "EngineConfig": {
-      "known": 604,
-      "missing": 391,
-      "pct": 60.7
+      "known": 609,
+      "missing": 386,
+      "pct": 61.2
     },
     "Displacement": {
       "known": 917,
@@ -269,7 +269,7 @@
       },
       {
         "manufacturer": "Carver",
-        "missing": 50
+        "missing": 45
       },
       {
         "manufacturer": "Cruisers Yachts",
@@ -311,7 +311,7 @@
       },
       {
         "manufacturer": "Carver",
-        "missing": 50
+        "missing": 45
       },
       {
         "manufacturer": "Cruisers Yachts",
@@ -376,7 +376,7 @@
       },
       {
         "manufacturer": "Carver",
-        "missing": 50
+        "missing": 45
       },
       {
         "manufacturer": "Wellcraft",
@@ -1478,18 +1478,6 @@
       ]
     },
     {
-      "BoatModelID": "CARV-366-MY",
-      "Manufacturer": "Carver",
-      "Nickname": "Carver 366 Motor Yacht",
-      "missing": 4,
-      "gaps": [
-        "FuelType",
-        "Propulsion",
-        "AirDraft",
-        "EngineConfig"
-      ]
-    },
-    {
       "BoatModelID": "CARV-370-374-VOY",
       "Manufacturer": "Carver",
       "Nickname": "Carver 370 / 374 Voyager",
@@ -1937,6 +1925,18 @@
       "BoatModelID": "REGL-4160-4260-4460",
       "Manufacturer": "Regal",
       "Nickname": "Regal 4160 / 4260 / 4460 Commodore",
+      "missing": 4,
+      "gaps": [
+        "FuelType",
+        "Propulsion",
+        "AirDraft",
+        "EngineConfig"
+      ]
+    },
+    {
+      "BoatModelID": "REGL-42-FLY",
+      "Manufacturer": "Regal",
+      "Nickname": "Regal 42 FLY",
       "missing": 4,
       "gaps": [
         "FuelType",
