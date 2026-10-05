@@ -1,0 +1,82 @@
+name: Decision data coverage audit
+
+on:
+  push:
+    paths:
+      - ".github/workflows/decision-data-audit.yml"
+      - "boatmodels.json"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Audit decision-driving canonical fields
+        shell: bash
+        run: |
+          node <<'NODE'
+          const fs=require("fs");
+          const rows=JSON.parse(fs.readFileSync("boatmodels.json","utf8"));
+          const has=v=>v!==null && v!==undefined && !(typeof v==="string" && !v.trim());
+          const checks={
+            LOA:r=>has(r.LOA)||has(r.LOA_ft)||has(r.LengthFt),
+            Beam:r=>has(r.Beam)||has(r.Beam_ft)||has(r.BeamFt),
+            Draft:r=>has(r.Draft)||has(r.Draft_ft)||has(r.DraftFt),
+            AirDraft:r=>has(r.AirDraft)||has(r.AirDraft_ft),
+            FuelType:r=>has(r.FuelCode)||has(r.NormalizedFuel)||has(r.Fuel),
+            Propulsion:r=>has(r.MechanicalPropulsionCode)||has(r.NormalizedPropulsion)||has(r.Propulsion),
+            HullForm:r=>has(r.HullBehaviourCode)||has(r.NormalizedHullForm)||has(r.NormalizedHullType)||has(r.HullType),
+            Style:r=>has(r.BoatFamilyCode)||has(r.StyleCode)||has(r.NormalizedStyle)||has(r.Style),
+            EngineConfig:r=>has(r.EngineConfiguration)||has(r.EngineCount)||has(r.TypicalEngineID),
+            Displacement:r=>has(r.Displacement)||has(r.DisplacementLb)||has(r.Displacement_lb),
+            FuelCapacity:r=>has(r.FuelCapacity)||has(r.FuelCapacityGal),
+            WaterCapacity:r=>has(r.WaterCapacity)||has(r.WaterCapacityGal)
+          };
+          const priority=["Beam","LOA","FuelType","Propulsion","HullForm","Draft","AirDraft","Style","EngineConfig","Displacement","FuelCapacity","WaterCapacity"];
+          const coverage={};
+          const missingByManufacturer={};
+          for(const [field,fn] of Object.entries(checks)){
+            const missing=rows.filter(r=>!fn(r));
+            coverage[field]={known:rows.length-missing.length,missing:missing.length,pct:Number((((rows.length-missing.length)/rows.length)*100).toFixed(1))};
+            const by={};
+            for(const r of missing){
+              const m=r.Manufacturer||"Unknown";
+              by[m]=(by[m]||0)+1;
+            }
+            missingByManufacturer[field]=Object.entries(by).sort((a,b)=>b[1]-a[1]).slice(0,25).map(([manufacturer,missing])=>({manufacturer,missing}));
+          }
+          const core=priority.slice(0,10);
+          const scored=rows.map(r=>{
+            const gaps=core.filter(f=>!checks[f](r));
+            return {BoatModelID:r.BoatModelID,Manufacturer:r.Manufacturer,Nickname:r.Nickname||[r.Manufacturer,r.Model].filter(Boolean).join(" "),missing:gaps.length,gaps};
+          }).sort((a,b)=>b.missing-a.missing || String(a.Manufacturer).localeCompare(String(b.Manufacturer)) || String(a.Nickname).localeCompare(String(b.Nickname)));
+          const report={generatedAt:new Date().toISOString(),models:rows.length,priority,coverage,missingByManufacturer,highestGapModels:scored.slice(0,100)};
+          fs.mkdirSync("reports",{recursive:true});
+          fs.writeFileSync("reports/decision-data-coverage.json",JSON.stringify(report,null,2)+"\n");
+          let md="# B-Atlas Decision Data Coverage Audit\n\n";
+          md+=`Generated: ${report.generatedAt}\n\nCanonical models: **${rows.length}**\n\n`;
+          md+="## Coverage by decision field\n\n| Priority | Field | Known | Missing | Coverage |\n|---:|---|---:|---:|---:|\n";
+          priority.forEach((f,i)=>{const c=coverage[f];md+=`| ${i+1} | ${f} | ${c.known} | ${c.missing} | ${c.pct}% |\n`;});
+          md+="\n## Largest manufacturer gaps in top-priority fields\n";
+          for(const f of priority.slice(0,8)){
+            md+=`\n### ${f}\n\n| Manufacturer | Missing |\n|---|---:|\n`;
+            for(const x of missingByManufacturer[f].slice(0,12)) md+=`| ${x.manufacturer} | ${x.missing} |\n`;
+          }
+          md+="\n## Highest-gap models\n\n| Model | Manufacturer | Missing core fields | Gaps |\n|---|---|---:|---|\n";
+          for(const x of scored.slice(0,50)) md+=`| ${x.Nickname||x.BoatModelID} | ${x.Manufacturer||""} | ${x.missing} | ${x.gaps.join(", ")} |\n`;
+          fs.writeFileSync("reports/decision-data-coverage.md",md);
+          console.log(JSON.stringify({models:rows.length,coverage,top:scored.slice(0,10)},null,2));
+          NODE
+      - name: Commit audit report
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reports/decision-data-coverage.json reports/decision-data-coverage.md
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Audit decision-driving model data coverage"
+          git push
