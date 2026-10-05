@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-05T17:39:26.065Z",
-  "patchSet": "phase1-decision-data-sea-ray-03",
-  "appliedCount": 16,
+  "generatedAt": "2026-10-05T17:40:21.288Z",
+  "patchSet": "phase1-decision-data-sea-ray-04",
+  "appliedCount": 17,
   "applied": [
     {
       "BoatModelID": "SRAY-370-EC",
@@ -470,6 +470,39 @@
     },
     {
       "BoatModelID": "SRAY-420-44-SD",
+      "fields": [
+        "LOA",
+        "LOA_ft",
+        "Beam",
+        "Beam_ft",
+        "Draft",
+        "Draft_ft",
+        "AirDraft",
+        "AirDraft_ft",
+        "Displacement",
+        "DisplacementLb",
+        "FuelCapacity",
+        "FuelCapacityGal",
+        "WaterCapacity",
+        "WaterCapacityGal",
+        "HoldingCapacity",
+        "HoldingCapacityGal",
+        "FuelCapacityUnitStatus",
+        "WaterCapacityUnitStatus",
+        "HoldingCapacityUnitStatus",
+        "HullType",
+        "NormalizedHullType",
+        "NormalizedHullForm",
+        "Fuel",
+        "NormalizedFuel",
+        "Propulsion",
+        "NormalizedPropulsion",
+        "EngineCount",
+        "EngineConfiguration"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-SRV360-EC",
       "fields": [
         "LOA",
         "LOA_ft",

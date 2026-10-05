@@ -1,6 +1,6 @@
 # B-Atlas Decision Data Coverage Audit
 
-Generated: 2026-10-05T17:39:26.184Z
+Generated: 2026-10-05T17:40:21.744Z
 
 Canonical models: **995**
 
@@ -8,15 +8,15 @@ Canonical models: **995**
 
 | Priority | Field | Known | Missing | Coverage |
 |---:|---|---:|---:|---:|
-| 1 | Beam | 914 | 81 | 91.9% |
-| 2 | LOA | 988 | 7 | 99.3% |
-| 3 | FuelType | 714 | 281 | 71.8% |
-| 4 | Propulsion | 644 | 351 | 64.7% |
-| 5 | HullForm | 957 | 38 | 96.2% |
-| 6 | Draft | 896 | 99 | 90.1% |
-| 7 | AirDraft | 626 | 369 | 62.9% |
+| 1 | Beam | 915 | 80 | 92% |
+| 2 | LOA | 989 | 6 | 99.4% |
+| 3 | FuelType | 715 | 280 | 71.9% |
+| 4 | Propulsion | 645 | 350 | 64.8% |
+| 5 | HullForm | 958 | 37 | 96.3% |
+| 6 | Draft | 897 | 98 | 90.2% |
+| 7 | AirDraft | 627 | 368 | 63% |
 | 8 | Style | 995 | 0 | 100% |
-| 9 | EngineConfig | 593 | 402 | 59.6% |
-| 10 | Displacement | 889 | 106 | 89.3% |
-| 11 | FuelCapacity | 890 | 105 | 89.4% |
-| 12 | WaterCapacity | 893 | 102 | 89.7% |
+| 9 | EngineConfig | 594 | 401 | 59.7% |
+| 10 | Displacement | 890 | 105 | 89.4% |
+| 11 | FuelCapacity | 891 | 104 | 89.5% |
+| 12 | WaterCapacity | 894 | 101 | 89.8% |

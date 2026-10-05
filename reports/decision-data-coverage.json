@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T17:39:26.184Z",
+  "generatedAt": "2026-10-05T17:40:21.744Z",
   "models": 995,
   "priority": [
     "Beam",
@@ -17,39 +17,39 @@
   ],
   "coverage": {
     "LOA": {
-      "known": 988,
-      "missing": 7,
-      "pct": 99.3
+      "known": 989,
+      "missing": 6,
+      "pct": 99.4
     },
     "Beam": {
-      "known": 914,
-      "missing": 81,
-      "pct": 91.9
+      "known": 915,
+      "missing": 80,
+      "pct": 92
     },
     "Draft": {
-      "known": 896,
-      "missing": 99,
-      "pct": 90.1
+      "known": 897,
+      "missing": 98,
+      "pct": 90.2
     },
     "AirDraft": {
-      "known": 626,
-      "missing": 369,
-      "pct": 62.9
+      "known": 627,
+      "missing": 368,
+      "pct": 63
     },
     "FuelType": {
-      "known": 714,
-      "missing": 281,
-      "pct": 71.8
+      "known": 715,
+      "missing": 280,
+      "pct": 71.9
     },
     "Propulsion": {
-      "known": 644,
-      "missing": 351,
-      "pct": 64.7
+      "known": 645,
+      "missing": 350,
+      "pct": 64.8
     },
     "HullForm": {
-      "known": 957,
-      "missing": 38,
-      "pct": 96.2
+      "known": 958,
+      "missing": 37,
+      "pct": 96.3
     },
     "Style": {
       "known": 995,
@@ -57,24 +57,24 @@
       "pct": 100
     },
     "EngineConfig": {
-      "known": 593,
-      "missing": 402,
-      "pct": 59.6
+      "known": 594,
+      "missing": 401,
+      "pct": 59.7
     },
     "Displacement": {
-      "known": 889,
-      "missing": 106,
-      "pct": 89.3
-    },
-    "FuelCapacity": {
       "known": 890,
       "missing": 105,
       "pct": 89.4
     },
+    "FuelCapacity": {
+      "known": 891,
+      "missing": 104,
+      "pct": 89.5
+    },
     "WaterCapacity": {
-      "known": 893,
-      "missing": 102,
-      "pct": 89.7
+      "known": 894,
+      "missing": 101,
+      "pct": 89.8
     }
   },
   "missingByManufacturer": {
@@ -89,10 +89,6 @@
       },
       {
         "manufacturer": "Riviera",
-        "missing": 1
-      },
-      {
-        "manufacturer": "Sea Ray",
         "missing": 1
       }
     ],
@@ -115,10 +111,6 @@
       },
       {
         "manufacturer": "Tiara Yachts",
-        "missing": 1
-      },
-      {
-        "manufacturer": "Sea Ray",
         "missing": 1
       }
     ],
@@ -170,16 +162,12 @@
       {
         "manufacturer": "Wellcraft",
         "missing": 1
-      },
-      {
-        "manufacturer": "Sea Ray",
-        "missing": 1
       }
     ],
     "AirDraft": [
       {
         "manufacturer": "Sea Ray",
-        "missing": 71
+        "missing": 70
       },
       {
         "manufacturer": "Riviera",
@@ -277,7 +265,7 @@
     "FuelType": [
       {
         "manufacturer": "Sea Ray",
-        "missing": 74
+        "missing": 73
       },
       {
         "manufacturer": "Carver",
@@ -319,7 +307,7 @@
     "Propulsion": [
       {
         "manufacturer": "Sea Ray",
-        "missing": 73
+        "missing": 72
       },
       {
         "manufacturer": "Carver",
@@ -376,10 +364,6 @@
         "missing": 16
       },
       {
-        "manufacturer": "Sea Ray",
-        "missing": 1
-      },
-      {
         "manufacturer": "Bayliner",
         "missing": 1
       }
@@ -388,7 +372,7 @@
     "EngineConfig": [
       {
         "manufacturer": "Sea Ray",
-        "missing": 72
+        "missing": 71
       },
       {
         "manufacturer": "Carver",
@@ -469,10 +453,6 @@
         "missing": 3
       },
       {
-        "manufacturer": "Sea Ray",
-        "missing": 2
-      },
-      {
         "manufacturer": "Atlantic Boat",
         "missing": 1
       },
@@ -498,6 +478,10 @@
       },
       {
         "manufacturer": "Regal",
+        "missing": 1
+      },
+      {
+        "manufacturer": "Sea Ray",
         "missing": 1
       },
       {
@@ -532,7 +516,7 @@
       },
       {
         "manufacturer": "Sea Ray",
-        "missing": 3
+        "missing": 2
       },
       {
         "manufacturer": "Silverton",
@@ -597,33 +581,12 @@
         "missing": 1
       },
       {
-        "manufacturer": "Sea Ray",
-        "missing": 1
-      },
-      {
         "manufacturer": "Bayliner",
         "missing": 1
       }
     ]
   },
   "highestGapModels": [
-    {
-      "BoatModelID": "SRAY-SRV360-EC",
-      "Manufacturer": "Sea Ray",
-      "Nickname": "Sea Ray SRV360 Express Cruiser",
-      "missing": 9,
-      "gaps": [
-        "Beam",
-        "LOA",
-        "FuelType",
-        "Propulsion",
-        "HullForm",
-        "Draft",
-        "AirDraft",
-        "EngineConfig",
-        "Displacement"
-      ]
-    },
     {
       "BoatModelID": "CARV-3007-AC",
       "Manufacturer": "Carver",
@@ -1962,6 +1925,18 @@
       "BoatModelID": "FWIN-H350-OB",
       "Manufacturer": "Four Winns",
       "Nickname": "Four Winns Horizon 350 OB",
+      "missing": 4,
+      "gaps": [
+        "FuelType",
+        "Propulsion",
+        "AirDraft",
+        "EngineConfig"
+      ]
+    },
+    {
+      "BoatModelID": "REGL-4160-4260-4460",
+      "Manufacturer": "Regal",
+      "Nickname": "Regal 4160 / 4260 / 4460 Commodore",
       "missing": 4,
       "gaps": [
         "FuelType",
