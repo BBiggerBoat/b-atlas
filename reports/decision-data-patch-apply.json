@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-05T18:49:13.038Z",
-  "patchSet": "phase1-decision-data-riviera-04",
+  "generatedAt": "2026-10-05T18:50:02.791Z",
+  "patchSet": "phase1-decision-data-riviera-05",
   "appliedCount": 5,
   "applied": [
     {
-      "BoatModelID": "RIVI-40-AC",
+      "BoatModelID": "RIVI-42-OFB-G2",
       "fields": [
         "LOA",
         "LOA_ft",
@@ -25,7 +25,27 @@
       ]
     },
     {
-      "BoatModelID": "RIVI-4000-OFF",
+      "BoatModelID": "RIVI-43-OFB",
+      "fields": [
+        "LOA",
+        "LOA_ft",
+        "Beam",
+        "Draft",
+        "Draft_ft",
+        "Displacement",
+        "DisplacementLb",
+        "FuelCapacity",
+        "FuelCapacityGal",
+        "WaterCapacity",
+        "WaterCapacityGal",
+        "Fuel",
+        "NormalizedFuel",
+        "EngineCount",
+        "EngineConfiguration"
+      ]
+    },
+    {
+      "BoatModelID": "RIVI-DIAVOLO-44",
       "fields": [
         "LOA",
         "LOA_ft",
@@ -48,7 +68,7 @@
       ]
     },
     {
-      "BoatModelID": "RIVI-40-OFB",
+      "BoatModelID": "RIVI-44-OFB",
       "fields": [
         "LOA",
         "LOA_ft",
@@ -69,7 +89,7 @@
       ]
     },
     {
-      "BoatModelID": "RIVI-M400",
+      "BoatModelID": "RIVI-4400-SY",
       "fields": [
         "LOA",
         "LOA_ft",
@@ -83,27 +103,12 @@
         "FuelCapacityGal",
         "WaterCapacity",
         "WaterCapacityGal",
-        "EngineCount",
-        "EngineConfiguration"
-      ]
-    },
-    {
-      "BoatModelID": "RIVI-41-OFB",
-      "fields": [
-        "LOA",
-        "LOA_ft",
-        "Beam",
-        "Beam_ft",
-        "Draft",
-        "Draft_ft",
-        "Displacement",
-        "DisplacementLb",
-        "FuelCapacity",
-        "FuelCapacityGal",
-        "WaterCapacity",
-        "WaterCapacityGal",
+        "HoldingCapacity",
+        "HoldingCapacityGal",
         "Fuel",
         "NormalizedFuel",
+        "Propulsion",
+        "NormalizedPropulsion",
         "EngineCount",
         "EngineConfiguration"
       ]
