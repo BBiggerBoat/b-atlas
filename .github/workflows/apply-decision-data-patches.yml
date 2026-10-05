@@ -10,6 +10,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: decision-data-patches-main
+  cancel-in-progress: false
+
 jobs:
   apply:
     runs-on: ubuntu-latest
