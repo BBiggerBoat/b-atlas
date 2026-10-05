@@ -1,6 +1,6 @@
 # B-Atlas Decision Data Coverage Audit
 
-Generated: 2026-10-05T19:06:17.765Z
+Generated: 2026-10-05T19:07:56.978Z
 
 Canonical models: **995**
 
@@ -10,13 +10,13 @@ Canonical models: **995**
 |---:|---|---:|---:|---:|
 | 1 | Beam | 938 | 57 | 94.3% |
 | 2 | LOA | 989 | 6 | 99.4% |
-| 3 | FuelType | 720 | 275 | 72.4% |
-| 4 | Propulsion | 650 | 345 | 65.3% |
+| 3 | FuelType | 725 | 270 | 72.9% |
+| 4 | Propulsion | 655 | 340 | 65.8% |
 | 5 | HullForm | 958 | 37 | 96.3% |
 | 6 | Draft | 924 | 71 | 92.9% |
 | 7 | AirDraft | 628 | 367 | 63.1% |
 | 8 | Style | 995 | 0 | 100% |
-| 9 | EngineConfig | 599 | 396 | 60.2% |
+| 9 | EngineConfig | 604 | 391 | 60.7% |
 | 10 | Displacement | 917 | 78 | 92.2% |
 | 11 | FuelCapacity | 915 | 80 | 92% |
 | 12 | WaterCapacity | 919 | 76 | 92.4% |
