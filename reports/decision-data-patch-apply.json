@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-05T19:11:01.726Z",
-  "patchSet": "phase1-decision-data-powertrain-airdraft-04",
-  "appliedCount": 5,
+  "generatedAt": "2026-10-05T19:14:16.982Z",
+  "patchSet": "phase1-decision-data-sea-ray-powertrain-01",
+  "appliedCount": 7,
   "applied": [
     {
       "BoatModelID": "SRAY-350-EB",
@@ -9,6 +9,25 @@
         "Fuel",
         "NormalizedFuel",
         "Propulsion",
+        "EngineConfiguration"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-350-SLX-G1",
+      "fields": [
+        "Fuel",
+        "NormalizedFuel",
+        "Propulsion",
+        "EngineConfiguration"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-350-SLX-G2",
+      "fields": [
+        "Fuel",
+        "NormalizedFuel",
+        "Propulsion",
+        "NormalizedPropulsion",
         "EngineCount",
         "EngineConfiguration"
       ]
@@ -24,7 +43,17 @@
       ]
     },
     {
-      "BoatModelID": "SRAY-360-AC",
+      "BoatModelID": "SRAY-350-SD-CP",
+      "fields": [
+        "Fuel",
+        "NormalizedFuel",
+        "Propulsion",
+        "EngineCount",
+        "EngineConfiguration"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-400-FLY",
       "fields": [
         "Fuel",
         "NormalizedFuel",
@@ -35,18 +64,7 @@
       ]
     },
     {
-      "BoatModelID": "SRAY-380-SD",
-      "fields": [
-        "Fuel",
-        "NormalizedFuel",
-        "Propulsion",
-        "NormalizedPropulsion",
-        "EngineCount",
-        "EngineConfiguration"
-      ]
-    },
-    {
-      "BoatModelID": "SRAY-400-EC",
+      "BoatModelID": "SRAY-400-SLX-OB",
       "fields": [
         "Fuel",
         "NormalizedFuel",
