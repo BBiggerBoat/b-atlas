@@ -1,0 +1,86 @@
+name: CHB 34 canonical consolidation
+
+on:
+  push:
+    paths:
+      - ".github/workflows/chb-34-consolidation.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  consolidate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Consolidate CHB 34 Tri-Cabin into Double Cabin
+        shell: bash
+        run: |
+          node <<'NODE'
+          const fs=require("fs");
+          const p="boatmodels.json";
+          const rows=JSON.parse(fs.readFileSync(p,"utf8"));
+          const tcIndex=rows.findIndex(r=>r?.BoatModelID==="CHBB-34-TC");
+          const dcIndex=rows.findIndex(r=>r?.BoatModelID==="CHBY-34-SE");
+          if(dcIndex<0) throw new Error("CHBY-34-SE not found");
+          const dc={...rows[dcIndex]};
+          const tc=tcIndex>=0?rows[tcIndex]:null;
+
+          dc.ManufacturerID="CHB";
+          dc.Manufacturer="CHB";
+          dc.Model="34";
+          dc.Variant="Double Cabin";
+          dc.Nickname="CHB 34 Double Cabin";
+          dc.Style="Aft Cabin Trawler";
+          dc.AftCabin=true;
+          dc.Cabins=2;
+          dc.Heads=2;
+          dc.EngineConfiguration=dc.EngineConfiguration||"Single or Twin Inboard";
+          dc.ImageURL=dc.ImageURL||"images/chby-34-se.jpg";
+          dc.CanonicalSlug="chb-34-double-cabin";
+          dc.CanonicalPath="/models/chb-34-double-cabin/";
+          dc.CanonicalURL="https://b-atlas.org/models/chb-34-double-cabin/";
+          dc.ModelIdentityFamilyID="CHBB-34";
+          dc.ModelCharacter="The canonical CHB 34 aft-cabin trawler. “Double Cabin” and “Tri-Cabin” are overlapping market names for the same basic two-stateroom arrangement: a forward cabin, central saloon and aft cabin. Exterior details vary by year, yard and importer, but B-Atlas does not treat Tri-Cabin as a separate exterior model.";
+          dc.ResearchNotes=[
+            "Canonicalized CHB 34 aft-cabin identity. “Double Cabin” and “Tri-Cabin” are treated as aliases for the same basic CHB-built 34-foot aft-cabin/two-stateroom trawler platform rather than separate exterior models.",
+            "Marine Trader 34 Double Cabin, La Paz 34 and Eagle 34 Double Cabin may represent CHB-built/distributor-branded variants; verify HIN, builder and importer by hull.",
+            "Exterior details, deckhouse construction, flybridge and windows changed over the production life, so year-specific photos may differ."
+          ].join("\n\n");
+          dc.ModelVariations=Array.from(new Set([
+            ...(Array.isArray(dc.ModelVariations)?dc.ModelVariations:[]),
+            "Tri-Cabin (alternate market/listing name for the aft-cabin/two-stateroom arrangement)"
+          ]));
+          dc.Overview="The CHB 34 Double Cabin is a classic Taiwan-built aft-cabin trawler. Listings also commonly use “Tri-Cabin” for the same basic layout: forward stateroom, central saloon and aft stateroom. Typical examples use diesel shaft drive with a flybridge and full walkaround side decks.";
+          dc.LastUpdated="2026-10-05";
+          dc.Revision=Number(dc.Revision||0)+1;
+
+          rows[dcIndex]=dc;
+          if(tcIndex>=0){
+            const idx=rows.findIndex(r=>r?.BoatModelID==="CHBB-34-TC");
+            if(idx>=0) rows.splice(idx,1);
+          }
+
+          const ids=rows.map(r=>r?.BoatModelID).filter(Boolean);
+          if(new Set(ids).size!==ids.length) throw new Error("Duplicate BoatModelID after consolidation");
+          if(rows.some(r=>r?.BoatModelID==="CHBB-34-TC")) throw new Error("Tri-Cabin duplicate remains");
+
+          fs.writeFileSync(p,JSON.stringify(rows,null,2)+"\n");
+          console.log(JSON.stringify({removedTriCabin:!!tc,canonicalDoubleCabin:"CHBY-34-SE",count:rows.length},null,2));
+          NODE
+
+      - name: Commit CHB cleanup
+        shell: bash
+        run: |
+          if git diff --quiet -- boatmodels.json; then
+            echo "No changes required."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add boatmodels.json
+          git commit -m "Consolidate CHB 34 Tri-Cabin into Double Cabin"
+          git push
