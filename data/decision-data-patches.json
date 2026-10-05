@@ -1,97 +1,18 @@
 {
-  "patchSet": "phase1-decision-data-sea-ray-powertrain-01",
+  "patchSet": "phase1-decision-data-sea-ray-powertrain-02",
   "createdAt": "2026-10-05",
-  "purpose": "Fill source-backed fuel, propulsion, and engine configuration for Sea Ray models while preserving legitimate configuration variation.",
+  "purpose": "Continue Sea Ray fuel, propulsion, engine configuration and air-draft completion from model-specific HMY sources.",
   "patches": [
     {
-      "BoatModelID": "SRAY-350-EB",
-      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/350-express-bridge-1992-94",
-      "fields": {
-        "Fuel": "Gasoline",
-        "NormalizedFuel": "Gasoline",
-        "Propulsion": "Varies: V-drive inboard or sterndrive",
-        "EngineConfiguration": "Twin gasoline engines; V-drive inboard or sterndrive depending configuration"
-      },
-      "confidence": {
-        "Fuel": "High",
-        "Propulsion": "High",
-        "EngineConfiguration": "High"
-      }
-    },
-    {
-      "BoatModelID": "SRAY-350-SLX-G1",
-      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/350-slx-2014-20",
-      "fields": {
-        "Fuel": "Gasoline",
-        "NormalizedFuel": "Gasoline",
-        "Propulsion": "Varies: sterndrive or outboard",
-        "EngineConfiguration": "Gasoline; sterndrive or outboard configurations"
-      },
-      "confidence": {
-        "Fuel": "High",
-        "Propulsion": "High",
-        "EngineConfiguration": "High"
-      }
-    },
-    {
-      "BoatModelID": "SRAY-350-SLX-G2",
-      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/350-slx-2021-current",
-      "fields": {
-        "Fuel": "Gasoline",
-        "NormalizedFuel": "Gasoline",
-        "Propulsion": "Sterndrive",
-        "NormalizedPropulsion": "Sterndrive",
-        "EngineCount": 2,
-        "EngineConfiguration": "Twin Mercury MerCruiser gasoline sterndrives"
-      },
-      "confidence": {
-        "Fuel": "High",
-        "Propulsion": "High",
-        "EngineConfiguration": "High"
-      }
-    },
-    {
-      "BoatModelID": "SRAY-350-SD",
-      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/350-sundancer-2013-20",
-      "fields": {
-        "Fuel": "Gasoline",
-        "NormalizedFuel": "Gasoline",
-        "Propulsion": "Varies: sterndrive or V-drive inboard",
-        "EngineCount": 2,
-        "EngineConfiguration": "Twin gasoline engines; sterndrive or V-drive inboard"
-      },
-      "confidence": {
-        "Fuel": "High",
-        "Propulsion": "High",
-        "EngineConfiguration": "High"
-      }
-    },
-    {
-      "BoatModelID": "SRAY-350-SD-CP",
-      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/350-sundancer-coupe-2017-21",
-      "fields": {
-        "Fuel": "Gasoline",
-        "NormalizedFuel": "Gasoline",
-        "Propulsion": "Varies: sterndrive or V-drive inboard",
-        "EngineCount": 2,
-        "EngineConfiguration": "Twin gasoline engines; sterndrive or V-drive inboard"
-      },
-      "confidence": {
-        "Fuel": "High",
-        "Propulsion": "High",
-        "EngineConfiguration": "High"
-      }
-    },
-    {
-      "BoatModelID": "SRAY-400-FLY",
-      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/400-fly-2016-18",
+      "BoatModelID": "SRAY-400-SD",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/400-sundancer-2016-19",
       "fields": {
         "Fuel": "Diesel",
         "NormalizedFuel": "Diesel",
         "Propulsion": "Shaft/V-Drive",
         "NormalizedPropulsion": "Shaft/V-Drive",
         "EngineCount": 2,
-        "EngineConfiguration": "Twin Cummins diesel V-drive inboards"
+        "EngineConfiguration": "Twin Cummins QSB diesel V-drive inboards"
       },
       "confidence": {
         "Fuel": "High",
@@ -100,15 +21,85 @@
       }
     },
     {
-      "BoatModelID": "SRAY-400-SLX-OB",
-      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/400-slx-outboard-2017-current",
+      "BoatModelID": "SRAY-400-410-SD",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/400-410-sundancer-1997-2003",
       "fields": {
-        "Fuel": "Gasoline",
-        "NormalizedFuel": "Gasoline",
-        "Propulsion": "Outboard",
-        "NormalizedPropulsion": "Outboard",
-        "EngineCount": 3,
-        "EngineConfiguration": "Triple gasoline outboards"
+        "Fuel": "Mixed Diesel/Gasoline",
+        "NormalizedFuel": "Mixed Diesel/Gasoline",
+        "Propulsion": "Shaft/V-Drive",
+        "NormalizedPropulsion": "Shaft/V-Drive",
+        "EngineCount": 2,
+        "EngineConfiguration": "Twin V-drive inboards; gasoline or diesel depending configuration"
+      },
+      "confidence": {
+        "Fuel": "High",
+        "Propulsion": "High",
+        "EngineConfiguration": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-410-SD",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/410-sundancer-2012-15",
+      "fields": {
+        "Fuel": "Diesel",
+        "NormalizedFuel": "Diesel",
+        "Propulsion": "Varies: V-drive or Zeus pod",
+        "EngineCount": 2,
+        "EngineConfiguration": "Twin Cummins diesels; V-drive or Zeus pod depending configuration"
+      },
+      "confidence": {
+        "Fuel": "High",
+        "Propulsion": "High",
+        "EngineConfiguration": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-420-AC",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/420-aft-cabin-1996-2002",
+      "fields": {
+        "Fuel": "Diesel",
+        "NormalizedFuel": "Diesel",
+        "Propulsion": "Shaft",
+        "NormalizedPropulsion": "Shaft",
+        "EngineCount": 2,
+        "EngineConfiguration": "Twin diesel inboards",
+        "AirDraft": 4.7244,
+        "AirDraft_ft": 15.5
+      },
+      "confidence": {
+        "Fuel": "High",
+        "Propulsion": "High",
+        "EngineConfiguration": "High",
+        "AirDraft": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-420-44-SB",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/420-sedan-bridge-44-sedan-bridge-2004-09",
+      "fields": {
+        "Fuel": "Diesel",
+        "NormalizedFuel": "Diesel",
+        "Propulsion": "Shaft",
+        "NormalizedPropulsion": "Shaft",
+        "EngineCount": 2,
+        "EngineConfiguration": "Twin Cummins diesel inboards"
+      },
+      "confidence": {
+        "Fuel": "High",
+        "Propulsion": "High",
+        "EngineConfiguration": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-43-470-SD",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/43-sundancer-470-sundancer-2009-14",
+      "fields": {
+        "Fuel": "Diesel",
+        "NormalizedFuel": "Diesel",
+        "Propulsion": "Pod",
+        "NormalizedPropulsion": "Pod",
+        "EngineCount": 2,
+        "EngineConfiguration": "Twin Cummins diesels with Zeus pod drives"
       },
       "confidence": {
         "Fuel": "High",
