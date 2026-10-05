@@ -3,10 +3,10 @@
   "phase": "Phase 1 enrichment",
   "manufacturer": "Carver",
   "batch": 1,
-  "requestedBatchSize": 20,
-  "researchedRecords": 20,
+  "requestedBatchSize": 15,
+  "researchedRecords": 15,
   "status": "source-verified enrichment staging",
-  "policy": "Populate only generation-level invariant facts; preserve configuration-dependent unknowns and existing air-draft values.",
+  "policy": "Maximum 15 models per batch. Populate only generation-level invariant facts; preserve configuration-dependent unknowns and existing air-draft values.",
   "records": [
     {
       "BoatModelID": "CARV-350-VOY",
@@ -285,96 +285,6 @@
       "evidence": [
         "https://www.hmy.com/yachting/powerboat-guide/carver/420-mariner-2004-06"
       ]
-    },
-    {
-      "BoatModelID": "CARV-4207-AC",
-      "fields": {
-        "EngineCount": 2
-      },
-      "intentionallyUnresolved": [
-        "Fuel",
-        "NormalizedFuel",
-        "FuelCode",
-        "Propulsion",
-        "NormalizedPropulsion",
-        "MechanicalPropulsionCode",
-        "EngineConfiguration"
-      ],
-      "note": "Twin-engine arrangement supported; existing AirDraft retained.",
-      "evidence": [
-        "https://www.hmy.com/yachting/powerboat-guide/carver/4207-aft-cabin-1985-91"
-      ]
-    },
-    {
-      "BoatModelID": "CARV-4227-CMY",
-      "fields": {
-        "EngineCount": 2
-      },
-      "intentionallyUnresolved": [
-        "Fuel",
-        "NormalizedFuel",
-        "FuelCode",
-        "Propulsion",
-        "NormalizedPropulsion",
-        "MechanicalPropulsionCode",
-        "EngineConfiguration"
-      ],
-      "note": "Twin-engine arrangement supported; existing AirDraft retained.",
-      "evidence": [
-        "https://www.hmy.com/yachting/powerboat-guide/carver/4227-cockpit-motor-yacht-1986-88"
-      ]
-    },
-    {
-      "BoatModelID": "CARV-43-47-MY",
-      "fields": {
-        "Fuel": "Diesel",
-        "NormalizedFuel": "Diesel",
-        "FuelCode": "fuel.diesel",
-        "EngineCount": 2
-      },
-      "intentionallyUnresolved": [
-        "Propulsion",
-        "NormalizedPropulsion",
-        "MechanicalPropulsionCode",
-        "EngineConfiguration",
-        "AirDraft"
-      ],
-      "note": "Twin diesel configuration established."
-    },
-    {
-      "BoatModelID": "CARV-430-CMY",
-      "fields": {
-        "EngineCount": 2
-      },
-      "intentionallyUnresolved": [
-        "Fuel",
-        "NormalizedFuel",
-        "FuelCode",
-        "Propulsion",
-        "NormalizedPropulsion",
-        "MechanicalPropulsionCode",
-        "EngineConfiguration"
-      ],
-      "note": "Twin-engine arrangement supported; existing AirDraft retained.",
-      "evidence": [
-        "https://www.hmy.com/yachting/powerboat-guide/carver/430-cockpit-motor-yacht-1991-97"
-      ]
-    },
-    {
-      "BoatModelID": "CARV-C43-CP",
-      "fields": {
-        "Fuel": "Diesel",
-        "NormalizedFuel": "Diesel",
-        "FuelCode": "fuel.diesel",
-        "EngineCount": 2
-      },
-      "intentionallyUnresolved": [
-        "Propulsion",
-        "NormalizedPropulsion",
-        "MechanicalPropulsionCode",
-        "EngineConfiguration"
-      ],
-      "note": "Twin diesel power established; existing AirDraft retained."
     }
   ]
 }
