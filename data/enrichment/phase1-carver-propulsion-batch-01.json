@@ -1,0 +1,380 @@
+{
+  "date": "2026-10-05",
+  "phase": "Phase 1 enrichment",
+  "manufacturer": "Carver",
+  "batch": 1,
+  "requestedBatchSize": 20,
+  "researchedRecords": 20,
+  "status": "source-verified enrichment staging",
+  "policy": "Populate only generation-level invariant facts; preserve configuration-dependent unknowns and existing air-draft values.",
+  "records": [
+    {
+      "BoatModelID": "CARV-350-VOY",
+      "fields": {
+        "Fuel": "Gasoline",
+        "NormalizedFuel": "Gasoline",
+        "FuelCode": "fuel.gasoline",
+        "Propulsion": "Shaft",
+        "NormalizedPropulsion": "Shaft",
+        "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+        "EngineConfiguration": "Twin Inboard",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/carver/350-voyager-1993-94"
+      ]
+    },
+    {
+      "BoatModelID": "CARV-3557-538-380-EX",
+      "fields": {
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "Fuel",
+        "NormalizedFuel",
+        "FuelCode",
+        "Propulsion",
+        "NormalizedPropulsion",
+        "MechanicalPropulsionCode",
+        "EngineConfiguration"
+      ],
+      "note": "Twin-engine configuration supported; exact generation-wide drive/fuel package varies. Existing AirDraft retained.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/carver/3557-montego-538-montego-380-express-1990-94"
+      ]
+    },
+    {
+      "BoatModelID": "CARV-36-370-AC",
+      "fields": {
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "Fuel",
+        "NormalizedFuel",
+        "FuelCode",
+        "Propulsion",
+        "NormalizedPropulsion",
+        "MechanicalPropulsionCode",
+        "EngineConfiguration"
+      ],
+      "note": "Twin-engine configuration supported; existing AirDraft retained.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/carver/36-aft-cabin-370-aft-cabin-1990-96"
+      ]
+    },
+    {
+      "BoatModelID": "CARV-360-SS",
+      "fields": {
+        "Fuel": "Mixed Diesel/Gasoline",
+        "NormalizedFuel": "Mixed",
+        "FuelCode": "fuel.mixed",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "Propulsion",
+        "NormalizedPropulsion",
+        "MechanicalPropulsionCode",
+        "EngineConfiguration"
+      ],
+      "note": "Gasoline and diesel twin-engine packages documented; existing AirDraft retained.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/carver/360-sport-sedan-2003-06"
+      ]
+    },
+    {
+      "BoatModelID": "CARV-366-MY",
+      "fields": {
+        "NormalizedFuel": "Mixed",
+        "FuelCode": "fuel.mixed",
+        "NormalizedPropulsion": "Shaft",
+        "MechanicalPropulsionCode": "mechanical_propulsion.shaft"
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "note": "Existing mixed-fuel twin shaft-inboard record retained.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/carver/366-motor-yacht-2002-06"
+      ]
+    },
+    {
+      "BoatModelID": "CARV-3697-MAR",
+      "fields": {
+        "Fuel": "Gasoline",
+        "NormalizedFuel": "Gasoline",
+        "FuelCode": "fuel.gasoline",
+        "Propulsion": "Shaft",
+        "NormalizedPropulsion": "Shaft",
+        "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+        "EngineConfiguration": "Twin Inboard",
+        "EngineCount": 2
+      },
+      "note": "Existing AirDraft retained.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/carver/3697-mariner-1984-88"
+      ]
+    },
+    {
+      "BoatModelID": "CARV-C36-CB",
+      "fields": {
+        "Fuel": "Diesel",
+        "NormalizedFuel": "Diesel",
+        "FuelCode": "fuel.diesel",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "Propulsion",
+        "NormalizedPropulsion",
+        "MechanicalPropulsionCode",
+        "EngineConfiguration"
+      ],
+      "note": "Twin diesel power is established; exact drive normalization left unresolved. Existing AirDraft retained."
+    },
+    {
+      "BoatModelID": "CARV-370-374-VOY",
+      "fields": {
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "Fuel",
+        "NormalizedFuel",
+        "FuelCode",
+        "Propulsion",
+        "NormalizedPropulsion",
+        "MechanicalPropulsionCode",
+        "EngineConfiguration",
+        "AirDraft"
+      ],
+      "note": "Twin-engine configuration supported; package specifics vary by year.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/carver/370-374-voyager-1993-2002"
+      ]
+    },
+    {
+      "BoatModelID": "CARV-38-SS",
+      "fields": {
+        "Fuel": "Mixed Diesel/Gasoline",
+        "NormalizedFuel": "Mixed",
+        "FuelCode": "fuel.mixed",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "Propulsion",
+        "NormalizedPropulsion",
+        "MechanicalPropulsionCode",
+        "EngineConfiguration"
+      ],
+      "note": "Twin gas/diesel packages documented; existing AirDraft retained.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/carver/38-super-sport-2005-09"
+      ]
+    },
+    {
+      "BoatModelID": "CARV-3807-390-AC",
+      "fields": {
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "Fuel",
+        "NormalizedFuel",
+        "FuelCode",
+        "Propulsion",
+        "NormalizedPropulsion",
+        "MechanicalPropulsionCode",
+        "EngineConfiguration",
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/carver/3807-aft-cabin-390-aft-cabin-1987-95"
+      ]
+    },
+    {
+      "BoatModelID": "CARV-3867-SAN",
+      "fields": {
+        "Fuel": "Gasoline",
+        "NormalizedFuel": "Gasoline",
+        "FuelCode": "fuel.gasoline",
+        "Propulsion": "Shaft",
+        "NormalizedPropulsion": "Shaft",
+        "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+        "EngineConfiguration": "Twin Inboard",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/carver/3867-santego-1988-90"
+      ]
+    },
+    {
+      "BoatModelID": "CARV-638-380-SAN",
+      "fields": {
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "Fuel",
+        "NormalizedFuel",
+        "FuelCode",
+        "Propulsion",
+        "NormalizedPropulsion",
+        "MechanicalPropulsionCode",
+        "EngineConfiguration",
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/carver/638-santego-380-santego-1989-2002"
+      ]
+    },
+    {
+      "BoatModelID": "CARV-390-400-404-CMY",
+      "fields": {
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "Fuel",
+        "NormalizedFuel",
+        "FuelCode",
+        "Propulsion",
+        "NormalizedPropulsion",
+        "MechanicalPropulsionCode",
+        "EngineConfiguration",
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/carver/390-400-404-cockpit-motor-yacht-1993-2003"
+      ]
+    },
+    {
+      "BoatModelID": "CARV-396-39-40-MY",
+      "fields": {
+        "Fuel": "Mixed Diesel/Gasoline",
+        "NormalizedFuel": "Mixed",
+        "FuelCode": "fuel.mixed",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "Propulsion",
+        "NormalizedPropulsion",
+        "MechanicalPropulsionCode",
+        "EngineConfiguration"
+      ],
+      "note": "Twin gasoline/diesel packages documented; existing AirDraft retained.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/carver/396-39-40-motor-yacht-2000-07"
+      ]
+    },
+    {
+      "BoatModelID": "CARV-420-MAR",
+      "fields": {
+        "Fuel": "Gasoline",
+        "NormalizedFuel": "Gasoline",
+        "FuelCode": "fuel.gasoline",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "Propulsion",
+        "NormalizedPropulsion",
+        "MechanicalPropulsionCode",
+        "EngineConfiguration"
+      ],
+      "note": "Twin gasoline power documented; existing AirDraft retained.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/carver/420-mariner-2004-06"
+      ]
+    },
+    {
+      "BoatModelID": "CARV-4207-AC",
+      "fields": {
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "Fuel",
+        "NormalizedFuel",
+        "FuelCode",
+        "Propulsion",
+        "NormalizedPropulsion",
+        "MechanicalPropulsionCode",
+        "EngineConfiguration"
+      ],
+      "note": "Twin-engine arrangement supported; existing AirDraft retained.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/carver/4207-aft-cabin-1985-91"
+      ]
+    },
+    {
+      "BoatModelID": "CARV-4227-CMY",
+      "fields": {
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "Fuel",
+        "NormalizedFuel",
+        "FuelCode",
+        "Propulsion",
+        "NormalizedPropulsion",
+        "MechanicalPropulsionCode",
+        "EngineConfiguration"
+      ],
+      "note": "Twin-engine arrangement supported; existing AirDraft retained.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/carver/4227-cockpit-motor-yacht-1986-88"
+      ]
+    },
+    {
+      "BoatModelID": "CARV-43-47-MY",
+      "fields": {
+        "Fuel": "Diesel",
+        "NormalizedFuel": "Diesel",
+        "FuelCode": "fuel.diesel",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "Propulsion",
+        "NormalizedPropulsion",
+        "MechanicalPropulsionCode",
+        "EngineConfiguration",
+        "AirDraft"
+      ],
+      "note": "Twin diesel configuration established."
+    },
+    {
+      "BoatModelID": "CARV-430-CMY",
+      "fields": {
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "Fuel",
+        "NormalizedFuel",
+        "FuelCode",
+        "Propulsion",
+        "NormalizedPropulsion",
+        "MechanicalPropulsionCode",
+        "EngineConfiguration"
+      ],
+      "note": "Twin-engine arrangement supported; existing AirDraft retained.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/carver/430-cockpit-motor-yacht-1991-97"
+      ]
+    },
+    {
+      "BoatModelID": "CARV-C43-CP",
+      "fields": {
+        "Fuel": "Diesel",
+        "NormalizedFuel": "Diesel",
+        "FuelCode": "fuel.diesel",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "Propulsion",
+        "NormalizedPropulsion",
+        "MechanicalPropulsionCode",
+        "EngineConfiguration"
+      ],
+      "note": "Twin diesel power established; existing AirDraft retained."
+    }
+  ]
+}
