@@ -1,174 +1,93 @@
 {
-  "patchSet": "phase1-decision-data-riviera-05",
+  "patchSet": "phase1-decision-data-powertrain-airdraft-01",
   "createdAt": "2026-10-05",
-  "purpose": "Continue Riviera 42-44 ft structural decision-data completion from official Riviera model archives.",
+  "purpose": "Fill high-value Sea Ray fuel, propulsion, engine configuration, and air-draft fields from exact-model HMY Powerboat Guide pages.",
   "patches": [
     {
-      "BoatModelID": "RIVI-42-OFB-G2",
-      "sourceURL": "https://www.rivieraaustralia.com/classic-models/riviera-42-open-flybridge-2/",
+      "BoatModelID": "SRAY-400-FLY",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/400-fly-2016-18",
       "fields": {
-        "LOA": 15.5,
-        "LOA_ft": 50.8333,
-        "Beam": 4.54,
-        "Beam_ft": 14.9167,
-        "Draft": 1.27,
-        "Draft_ft": 4.1667,
-        "Displacement": 14000,
-        "DisplacementLb": 30900,
-        "FuelCapacity": 1800,
-        "FuelCapacityGal": 476,
-        "WaterCapacity": 460,
-        "WaterCapacityGal": 122,
         "Fuel": "Diesel",
         "NormalizedFuel": "Diesel",
+        "Propulsion": "Shaft/V-Drive",
+        "NormalizedPropulsion": "Shaft/V-Drive",
         "EngineCount": 2,
-        "EngineConfiguration": "Twin turbo diesel"
+        "EngineConfiguration": "Twin Cummins 480 hp V-drive diesel"
       },
       "confidence": {
-        "LOA": "High",
-        "Beam": "High",
-        "Draft": "High",
-        "Displacement": "High",
-        "FuelCapacity": "High",
-        "WaterCapacity": "High",
         "Fuel": "High",
+        "Propulsion": "High",
         "EngineConfiguration": "High"
       }
     },
     {
-      "BoatModelID": "RIVI-43-OFB",
-      "sourceURL": "https://www.rivieraaustralia.com/classic-models/riviera-43-open-flybridge/",
+      "BoatModelID": "SRAY-400-SD",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/400-sundancer-2016-19",
       "fields": {
-        "LOA": 13.3,
-        "LOA_ft": 43.5833,
-        "Beam": 4.7,
-        "Draft": 1,
-        "Draft_ft": 3.25,
-        "Displacement": 16500,
-        "DisplacementLb": 36376,
-        "FuelCapacity": 2200,
-        "FuelCapacityGal": 581,
-        "WaterCapacity": 588,
-        "WaterCapacityGal": 155,
         "Fuel": "Diesel",
         "NormalizedFuel": "Diesel",
+        "Propulsion": "Shaft/V-Drive",
+        "NormalizedPropulsion": "Shaft/V-Drive",
         "EngineCount": 2,
-        "EngineConfiguration": "Twin diesel"
+        "EngineConfiguration": "Twin Cummins QSB 480 hp V-drive diesel"
       },
       "confidence": {
-        "LOA": "High",
-        "Beam": "High",
-        "Draft": "High",
-        "Displacement": "High",
-        "FuelCapacity": "High",
-        "WaterCapacity": "High",
         "Fuel": "High",
+        "Propulsion": "High",
         "EngineConfiguration": "High"
       }
     },
     {
-      "BoatModelID": "RIVI-DIAVOLO-44",
-      "sourceURL": "https://www.rivieraaustralia.com/classic-models/riviera-diavolo-44/",
+      "BoatModelID": "SRAY-400-SLX-OB",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/400-slx-outboard-2017-current",
       "fields": {
-        "LOA": 13.43,
-        "LOA_ft": 44,
-        "Beam": 3.4,
-        "Beam_ft": 11.1667,
-        "Draft": 0.6,
-        "Draft_ft": 2,
-        "Displacement": 7300,
-        "DisplacementLb": 16093,
-        "FuelCapacity": 1045,
-        "FuelCapacityGal": 276,
-        "WaterCapacity": 270,
-        "WaterCapacityGal": 71,
         "Fuel": "Gasoline",
         "NormalizedFuel": "Gasoline",
-        "Propulsion": "Sterndrive",
-        "NormalizedPropulsion": "Sterndrive",
-        "EngineCount": 2,
-        "EngineConfiguration": "Twin gasoline sterndrive"
+        "Propulsion": "Outboard",
+        "NormalizedPropulsion": "Outboard",
+        "EngineCount": 3,
+        "EngineConfiguration": "Triple gasoline outboard"
       },
       "confidence": {
-        "LOA": "High",
-        "Beam": "High",
-        "Draft": "High",
-        "Displacement": "High",
-        "FuelCapacity": "High",
-        "WaterCapacity": "High",
         "Fuel": "High",
         "Propulsion": "High",
         "EngineConfiguration": "High"
       }
     },
     {
-      "BoatModelID": "RIVI-44-OFB",
-      "sourceURL": "https://www.rivieraaustralia.com/classic-models/riviera-44-open-flybridge/",
+      "BoatModelID": "SRAY-410-SD",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/410-sundancer-2012-15",
       "fields": {
-        "LOA": 13.41,
-        "LOA_ft": 44,
-        "Beam": 4.64,
-        "Beam_ft": 15.25,
-        "Draft": 1.06,
-        "Draft_ft": 3.5,
-        "Displacement": 12920,
-        "DisplacementLb": 28484,
-        "FuelCapacity": 772,
-        "FuelCapacityGal": 204,
-        "WaterCapacity": 675,
-        "WaterCapacityGal": 178,
         "Fuel": "Diesel",
         "NormalizedFuel": "Diesel",
+        "Propulsion": "V-drive or Zeus pod",
         "EngineCount": 2,
-        "EngineConfiguration": "Twin diesel"
+        "EngineConfiguration": "Twin Cummins diesel; V-drive or Zeus pod"
       },
       "confidence": {
-        "LOA": "High",
-        "Beam": "High",
-        "Draft": "High",
-        "Displacement": "High",
-        "FuelCapacity": "High",
-        "WaterCapacity": "High",
         "Fuel": "High",
+        "Propulsion": "High",
         "EngineConfiguration": "High"
       }
     },
     {
-      "BoatModelID": "RIVI-4400-SY",
-      "sourceURL": "https://www.rivieraaustralia.com/classic-models/riviera-4400-sport-yacht/",
+      "BoatModelID": "SRAY-420-AC",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/420-aft-cabin-1996-2002",
       "fields": {
-        "LOA": 15.12,
-        "LOA_ft": 49.5,
-        "Beam": 4.58,
-        "Beam_ft": 15.1667,
-        "Draft": 1.2,
-        "Draft_ft": 3.75,
-        "Displacement": 12500,
-        "DisplacementLb": 27557,
-        "FuelCapacity": 1500,
-        "FuelCapacityGal": 396,
-        "WaterCapacity": 460,
-        "WaterCapacityGal": 121,
-        "HoldingCapacity": 151,
-        "HoldingCapacityGal": 40,
         "Fuel": "Diesel",
         "NormalizedFuel": "Diesel",
-        "Propulsion": "Pod",
-        "NormalizedPropulsion": "Pod",
+        "Propulsion": "Shaft",
+        "NormalizedPropulsion": "Shaft",
         "EngineCount": 2,
-        "EngineConfiguration": "Twin Volvo Penta IPS"
+        "EngineConfiguration": "Twin diesel inboard",
+        "AirDraft": 4.7244,
+        "AirDraft_ft": 15.5
       },
       "confidence": {
-        "LOA": "High",
-        "Beam": "High",
-        "Draft": "High",
-        "Displacement": "High",
-        "FuelCapacity": "High",
-        "WaterCapacity": "High",
-        "HoldingCapacity": "High",
         "Fuel": "High",
         "Propulsion": "High",
-        "EngineConfiguration": "High"
+        "EngineConfiguration": "High",
+        "AirDraft": "High"
       }
     }
   ]
