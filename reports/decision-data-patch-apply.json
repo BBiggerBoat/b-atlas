@@ -1,42 +1,10 @@
 {
-  "generatedAt": "2026-10-05T18:47:19.016Z",
-  "patchSet": "phase1-decision-data-riviera-02",
-  "appliedCount": 5,
+  "generatedAt": "2026-10-05T18:48:08.898Z",
+  "patchSet": "phase1-decision-data-riviera-03",
+  "appliedCount": 7,
   "applied": [
     {
-      "BoatModelID": "RIVI-38-OFB-MK1",
-      "fields": [
-        "LOA",
-        "LOA_ft",
-        "Beam",
-        "Beam_ft",
-        "Draft",
-        "Draft_ft",
-        "Displacement",
-        "DisplacementLb"
-      ]
-    },
-    {
-      "BoatModelID": "RIVI-38-OFB-MK2",
-      "fields": [
-        "LOA",
-        "LOA_ft",
-        "Beam",
-        "Beam_ft",
-        "Draft",
-        "Draft_ft",
-        "AirDraft",
-        "AirDraft_ft",
-        "Displacement",
-        "DisplacementLb",
-        "FuelCapacity",
-        "FuelCapacityGal",
-        "WaterCapacity",
-        "WaterCapacityGal"
-      ]
-    },
-    {
-      "BoatModelID": "RIVI-39-OFB-G1",
+      "BoatModelID": "RIVI-34-OFB-G2",
       "fields": [
         "LOA",
         "LOA_ft",
@@ -50,6 +18,67 @@
         "FuelCapacityGal",
         "WaterCapacity",
         "WaterCapacityGal",
+        "EngineCount",
+        "EngineConfiguration"
+      ]
+    },
+    {
+      "BoatModelID": "RIVI-3350-33-OFB",
+      "fields": [
+        "LOA",
+        "LOA_ft",
+        "Beam",
+        "Beam_ft",
+        "Draft",
+        "Draft_ft",
+        "Displacement",
+        "DisplacementLb",
+        "FuelCapacity",
+        "FuelCapacityGal",
+        "WaterCapacity",
+        "WaterCapacityGal",
+        "EngineCount",
+        "EngineConfiguration"
+      ]
+    },
+    {
+      "BoatModelID": "RIVI-37-OFB",
+      "fields": [
+        "LOA",
+        "LOA_ft",
+        "Beam",
+        "Beam_ft",
+        "Draft",
+        "Draft_ft",
+        "Displacement",
+        "DisplacementLb",
+        "FuelCapacity",
+        "FuelCapacityGal",
+        "WaterCapacity",
+        "WaterCapacityGal",
+        "EngineCount",
+        "EngineConfiguration"
+      ]
+    },
+    {
+      "BoatModelID": "RIVI-M360",
+      "fields": [
+        "LOA",
+        "LOA_ft",
+        "Beam",
+        "Beam_ft",
+        "Draft",
+        "Draft_ft",
+        "Displacement",
+        "DisplacementLb",
+        "FuelCapacity",
+        "FuelCapacityGal",
+        "WaterCapacity",
+        "WaterCapacityGal",
+        "HoldingCapacity",
+        "HoldingCapacityGal",
+        "Fuel",
+        "NormalizedFuel",
         "Propulsion",
         "NormalizedPropulsion",
         "EngineCount",
@@ -57,7 +86,7 @@
       ]
     },
     {
-      "BoatModelID": "RIVI-3000-OFF",
+      "BoatModelID": "RIVI-3600-SY",
       "fields": [
         "LOA",
         "LOA_ft",
@@ -71,12 +100,16 @@
         "FuelCapacityGal",
         "WaterCapacity",
         "WaterCapacityGal",
+        "HoldingCapacity",
+        "HoldingCapacityGal",
+        "Fuel",
+        "NormalizedFuel",
         "EngineCount",
         "EngineConfiguration"
       ]
     },
     {
-      "BoatModelID": "RIVI-36-SC",
+      "BoatModelID": "RIVI-38-OFB-G3",
       "fields": [
         "LOA",
         "LOA_ft",
@@ -90,6 +123,24 @@
         "FuelCapacityGal",
         "WaterCapacity",
         "WaterCapacityGal",
+        "Fuel",
+        "NormalizedFuel",
+        "EngineCount",
+        "EngineConfiguration"
+      ]
+    },
+    {
+      "BoatModelID": "RIVI-39-OFB-G2",
+      "fields": [
+        "LOA",
+        "Beam",
+        "Draft",
+        "Displacement",
+        "WaterCapacity",
+        "Fuel",
+        "NormalizedFuel",
+        "Propulsion",
+        "NormalizedPropulsion",
         "EngineCount",
         "EngineConfiguration"
       ]
