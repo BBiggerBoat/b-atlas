@@ -1,0 +1,201 @@
+name: Populate Viking image references
+
+on:
+  push:
+    paths:
+      - ".github/workflows/populate-viking-images.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  populate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Discover exact Viking guide pages and populate external image registry
+        shell: bash
+        run: |
+          node <<'NODE'
+          const fs=require("fs");
+
+          const INDEX="https://www.hmy.com/yachting/powerboat-guide/viking";
+          const BASE="https://www.hmy.com";
+          const boats=JSON.parse(fs.readFileSync("boatmodels.json","utf8"));
+          const vikings=boats.filter(r=>String(r.Manufacturer||"").toLowerCase()==="viking");
+          const extPath="data/imageassets-external.json";
+          const candPath="data/image-candidates.json";
+          const ext=JSON.parse(fs.readFileSync(extPath,"utf8"));
+          const cand=JSON.parse(fs.readFileSync(candPath,"utf8"));
+          ext.assets=Array.isArray(ext.assets)?ext.assets:[];
+          cand.models=Array.isArray(cand.models)?cand.models:[];
+
+          const decode=s=>String(s||"")
+            .replace(/&amp;/g,"&").replace(/&#39;/g,"'").replace(/&quot;/g,'"')
+            .replace(/<[^>]+>/g," ").replace(/\s+/g," ").trim();
+
+          const norm=s=>decode(s).toLowerCase()
+            .replace(/generation\s*\d+/g,"")
+            .replace(/gen\s*\d+/g,"")
+            .replace(/[^a-z0-9]+/g," ")
+            .trim();
+
+          const modelKey=r=>norm(String(r.Model||"")
+            .replace(/generation\s*1/i,"")
+            .replace(/generation\s*2/i,"")
+            .replace(/generation\s*3/i,""));
+
+          async function get(url){
+            const res=await fetch(url,{headers:{"user-agent":"Mozilla/5.0 B-Atlas image reference audit"}});
+            if(!res.ok) throw new Error(res.status+" "+url);
+            return await res.text();
+          }
+
+          const indexHtml=await get(INDEX);
+          const hrefs=[...indexHtml.matchAll(/href=["']([^"']*\/yachting\/powerboat-guide\/viking\/[^"'?#]+)["']/gi)]
+            .map(m=>m[1])
+            .map(h=>h.startsWith("http")?h:BASE+h);
+          const pages=[...new Set(hrefs)];
+
+          const pageMeta=[];
+          for(const url of pages){
+            try{
+              const html=await get(url);
+              const title=decode((html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i)||[])[1]||
+                                 (html.match(/<title[^>]*>([\s\S]*?)<\/title>/i)||[])[1]||"");
+              const fullText=decode(html.slice(0,120000));
+              const yearText=(fullText.match(/(?:19|20)\d{2}\s*[–-]\s*(?:(?:19|20)\d{2}|Current|\?)/i)||[])[0]||"";
+              const og=(html.match(/<meta[^>]+property=["']og:image["'][^>]+content=["']([^"']+)["']/i)||
+                        html.match(/<meta[^>]+content=["']([^"']+)["'][^>]+property=["']og:image["']/i)||
+                        html.match(/<meta[^>]+name=["']twitter:image["'][^>]+content=["']([^"']+)["']/i)||
+                        html.match(/<meta[^>]+content=["']([^"']+)["'][^>]+name=["']twitter:image["']/i)||[])[1]||"";
+              pageMeta.push({url,title,slug:url.split("/").pop(),yearText,image:og});
+            }catch(e){
+              console.log("PAGE_FETCH_FAIL",url,String(e));
+            }
+          }
+
+          function parseYears(text){
+            const m=String(text||"").match(/((?:19|20)\d{2})\s*[–-]\s*((?:19|20)\d{2}|Current|\?)/i);
+            if(!m) return null;
+            return {first:Number(m[1]),last:/^\d{4}$/.test(m[2])?Number(m[2]):null};
+          }
+
+          function score(r,p){
+            const mk=modelKey(r).split(" ").filter(Boolean);
+            const hay=norm(p.title+" "+p.slug);
+            let s=0;
+            for(const t of mk) if(hay.includes(t)) s+=3;
+            if(hay.includes(String(r.Model||"").match(/\d+/)?.[0]||"")) s+=3;
+            const py=parseYears(p.yearText+" "+p.title+" "+p.slug);
+            if(py){
+              if(Number(r.FirstYear)===py.first) s+=12;
+              if(r.LastYear && py.last && Number(r.LastYear)===py.last) s+=12;
+              if(!r.LastYear && py.last===null) s+=8;
+              if(r.FirstYear && py.first && Math.abs(Number(r.FirstYear)-py.first)<=1) s+=2;
+            }
+            const variant=norm(r.Variant||"");
+            for(const t of variant.split(" ").filter(Boolean)) if(hay.includes(t)) s+=1;
+            return s;
+          }
+
+          const results=[];
+          for(const r of vikings){
+            const ranked=pageMeta.map(p=>({p,score:score(r,p)})).sort((a,b)=>b.score-a.score);
+            const best=ranked[0];
+            const second=ranked[1];
+            const accepted=best && best.score>=12 && (!second || best.score-second.score>=2);
+            results.push({
+              BoatModelID:r.BoatModelID,
+              Nickname:r.Nickname,
+              accepted,
+              bestScore:best?.score||0,
+              secondScore:second?.score||0,
+              sourcePageURL:best?.p.url||null,
+              title:best?.p.title||null,
+              yearText:best?.p.yearText||null,
+              image:best?.p.image||null
+            });
+          }
+
+          let added=0,updated=0;
+          const unresolved=[];
+          for(const x of results){
+            if(!x.accepted || !x.image){
+              unresolved.push(x);
+              continue;
+            }
+            const record={
+              boatModelId:x.BoatModelID,
+              role:"representative",
+              status:"external_reference",
+              path:null,
+              externalThumbnailURL:x.image,
+              sourcePageURL:x.sourcePageURL,
+              sourceDomain:"hmy.com",
+              matchConfidence:"High",
+              provenance:{
+                status:"external_reference",
+                sourceType:"Web",
+                sourceName:"HMY Yachts Powerboat Guide",
+                sourceURL:x.sourcePageURL,
+                creatorOrOwner:"",
+                permissionBasis:"External reference; not stored by B-Atlas",
+                dateAcquired:"2026-10-05"
+              },
+              publicUseEligible:false
+            };
+            const i=ext.assets.findIndex(a=>a?.boatModelId===x.BoatModelID);
+            if(i>=0){ ext.assets[i]=record; updated++; } else { ext.assets.push(record); added++; }
+
+            const candidate={
+              externalThumbnailURL:x.image,
+              sourcePageURL:x.sourcePageURL,
+              sourceDomain:"hmy.com",
+              matchConfidence:"High",
+              health:{status:"unknown",lastChecked:null,lastSuccessful:null,failureCount:0}
+            };
+            const ci=cand.models.findIndex(a=>a?.boatModelId===x.BoatModelID);
+            if(ci>=0){
+              const existing=Array.isArray(cand.models[ci].candidates)?cand.models[ci].candidates:[];
+              const merged=[candidate,...existing.filter(c=>c?.externalThumbnailURL!==candidate.externalThumbnailURL)];
+              cand.models[ci]={...cand.models[ci],selectedCandidate:0,candidates:merged};
+            }else{
+              cand.models.push({boatModelId:x.BoatModelID,selectedCandidate:0,candidates:[candidate]});
+            }
+          }
+
+          fs.writeFileSync(extPath,JSON.stringify(ext,null,2)+"\n");
+          fs.writeFileSync(candPath,JSON.stringify(cand,null,2)+"\n");
+          fs.mkdirSync("reports",{recursive:true});
+          fs.writeFileSync("reports/viking-image-population.json",JSON.stringify({
+            generatedAt:new Date().toISOString(),
+            canonicalVikingModels:vikings.length,
+            discoveredGuidePages:pageMeta.length,
+            added,updated,
+            resolved:results.filter(x=>x.accepted&&x.image),
+            unresolved
+          },null,2)+"\n");
+
+          console.log(JSON.stringify({
+            canonicalVikingModels:vikings.length,
+            discoveredGuidePages:pageMeta.length,
+            added,updated,
+            resolved:results.filter(x=>x.accepted&&x.image).length,
+            unresolved:unresolved.length,
+            unresolvedModels:unresolved.map(x=>({id:x.BoatModelID,name:x.Nickname,best:x.bestScore,title:x.title,url:x.sourcePageURL,image:!!x.image}))
+          },null,2));
+          NODE
+
+      - name: Commit Viking image coverage
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/imageassets-external.json data/image-candidates.json reports/viking-image-population.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Populate Viking external image references"
+          git push
