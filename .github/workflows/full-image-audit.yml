@@ -1,0 +1,213 @@
+name: Full image coverage audit
+
+on:
+  push:
+    paths:
+      - ".github/workflows/full-image-audit.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Audit canonical image coverage
+        shell: bash
+        run: |
+          node <<'NODE'
+          const fs=require("fs");
+          const path=require("path");
+
+          const boats=JSON.parse(fs.readFileSync("boatmodels.json","utf8"));
+          const localRegistry=JSON.parse(fs.readFileSync("data/imageassets.json","utf8"));
+          const externalRegistry=JSON.parse(fs.readFileSync("data/imageassets-external.json","utf8"));
+          const candidatesRegistry=fs.existsSync("data/image-candidates.json")
+            ? JSON.parse(fs.readFileSync("data/image-candidates.json","utf8"))
+            : {models:[]};
+
+          const canonicalIds=new Set(boats.map(b=>b?.BoatModelID).filter(Boolean));
+          const localAssets=Array.isArray(localRegistry.assets)?localRegistry.assets:[];
+          const externalAssets=Array.isArray(externalRegistry.assets)?externalRegistry.assets:[];
+          const candidateModels=Array.isArray(candidatesRegistry.models)?candidatesRegistry.models:[];
+
+          const localsById=new Map();
+          for(const a of localAssets){
+            if(!a?.boatModelId) continue;
+            if(!localsById.has(a.boatModelId)) localsById.set(a.boatModelId,[]);
+            localsById.get(a.boatModelId).push(a);
+          }
+          const externalsById=new Map();
+          for(const a of externalAssets){
+            if(!a?.boatModelId) continue;
+            if(!externalsById.has(a.boatModelId)) externalsById.set(a.boatModelId,[]);
+            externalsById.get(a.boatModelId).push(a);
+          }
+          const candidatesById=new Map(candidateModels.filter(x=>x?.boatModelId).map(x=>[x.boatModelId,x]));
+
+          const placeholderNames=new Set([
+            "images/boat-placeholder.svg",
+            "boat-placeholder.svg",
+            "",
+            null
+          ]);
+
+          const normalizePath=p=>String(p||"").replace(/^\/+/, "");
+          const localPathExists=p=>{
+            if(!p || /^https?:/i.test(p)) return false;
+            const rel=normalizePath(p);
+            return fs.existsSync(rel) || fs.existsSync(path.join("public",rel));
+          };
+          const isPlaceholder=p=>!p || placeholderNames.has(String(p)) || /placeholder/i.test(String(p));
+
+          const rows=[];
+          for(const boat of boats){
+            const id=boat.BoatModelID;
+            const registryLocal=(localsById.get(id)||[]).filter(a=>a?.status==="available" && a?.path && !isPlaceholder(a.path));
+            const modelImage=!isPlaceholder(boat.ImageURL) && !/^https?:/i.test(String(boat.ImageURL||"")) ? boat.ImageURL : null;
+            const localPaths=[...new Set([...registryLocal.map(a=>a.path), ...(modelImage?[modelImage]:[])])];
+            const existingLocalPaths=localPaths.filter(localPathExists);
+            const missingLocalPaths=localPaths.filter(p=>!localPathExists(p));
+
+            const ext=(externalsById.get(id)||[]).filter(a=>a?.status==="external_reference" && a?.externalThumbnailURL);
+            const extUrls=[...new Set(ext.map(a=>a.externalThumbnailURL))];
+            const candidate=candidatesById.get(id);
+            const candidateCount=Array.isArray(candidate?.candidates)?candidate.candidates.length:0;
+
+            const hasLocal=existingLocalPaths.length>0;
+            const hasExternal=extUrls.length>0;
+            let classification="missing";
+            if(hasLocal && hasExternal) classification="both";
+            else if(hasLocal) classification="local";
+            else if(hasExternal) classification="external";
+
+            rows.push({
+              BoatModelID:id,
+              Manufacturer:boat.Manufacturer||"",
+              Model:boat.Model||"",
+              Variant:boat.Variant||"",
+              Nickname:boat.Nickname||"",
+              classification,
+              localPaths:existingLocalPaths,
+              missingLocalPaths,
+              externalURLs:extUrls,
+              externalConfidence:[...new Set(ext.map(a=>a.matchConfidence).filter(Boolean))],
+              candidateCount
+            });
+          }
+
+          const pathToIds=new Map();
+          for(const r of rows){
+            for(const p of r.localPaths){
+              if(!pathToIds.has(p)) pathToIds.set(p,[]);
+              pathToIds.get(p).push(r.BoatModelID);
+            }
+          }
+          const urlToIds=new Map();
+          for(const r of rows){
+            for(const u of r.externalURLs){
+              if(!urlToIds.has(u)) urlToIds.set(u,[]);
+              urlToIds.get(u).push(r.BoatModelID);
+            }
+          }
+
+          const duplicateLocal=[...pathToIds.entries()]
+            .filter(([,ids])=>new Set(ids).size>1)
+            .map(([image,ids])=>({image,boatModelIds:[...new Set(ids)]}));
+          const duplicateExternal=[...urlToIds.entries()]
+            .filter(([,ids])=>new Set(ids).size>1)
+            .map(([image,ids])=>({image,boatModelIds:[...new Set(ids)]}));
+
+          const orphanLocal=localAssets.filter(a=>a?.boatModelId && !canonicalIds.has(a.boatModelId));
+          const orphanExternal=externalAssets.filter(a=>a?.boatModelId && !canonicalIds.has(a.boatModelId));
+          const orphanCandidates=candidateModels.filter(a=>a?.boatModelId && !canonicalIds.has(a.boatModelId));
+
+          const lowConfidenceExternal=rows.filter(r=>
+            r.classification!=="local" &&
+            r.externalURLs.length &&
+            r.externalConfidence.some(c=>!/^high$/i.test(String(c)))
+          );
+
+          const brokenLocal=rows.filter(r=>r.missingLocalPaths.length);
+
+          const counts={local:0,external:0,both:0,missing:0};
+          for(const r of rows) counts[r.classification]++;
+
+          const byManufacturer={};
+          for(const r of rows){
+            const m=r.Manufacturer||"(unknown)";
+            if(!byManufacturer[m]) byManufacturer[m]={total:0,local:0,external:0,both:0,missing:0};
+            byManufacturer[m].total++;
+            byManufacturer[m][r.classification]++;
+          }
+
+          const report={
+            generatedAt:new Date().toISOString(),
+            canonicalModels:boats.length,
+            counts,
+            covered:boats.length-counts.missing,
+            coveragePercent:Number((((boats.length-counts.missing)/boats.length)*100).toFixed(1)),
+            missingCount:counts.missing,
+            brokenLocalReferenceCount:brokenLocal.length,
+            duplicateLocalImageCount:duplicateLocal.length,
+            duplicateExternalImageCount:duplicateExternal.length,
+            orphanLocalAssetCount:orphanLocal.length,
+            orphanExternalAssetCount:orphanExternal.length,
+            orphanCandidateCount:orphanCandidates.length,
+            lowConfidenceExternalCount:lowConfidenceExternal.length,
+            byManufacturer,
+            missing:rows.filter(r=>r.classification==="missing"),
+            brokenLocal,
+            duplicateLocal,
+            duplicateExternal,
+            orphanLocal,
+            orphanExternal,
+            orphanCandidates,
+            lowConfidenceExternal,
+            models:rows
+          };
+
+          fs.mkdirSync("reports",{recursive:true});
+          fs.writeFileSync("reports/image-coverage-audit.json",JSON.stringify(report,null,2)+"\n");
+
+          const manu=Object.entries(byManufacturer)
+            .sort((a,b)=>b[1].missing-a[1].missing || a[0].localeCompare(b[0]));
+          let md="# B-Atlas Full Image Coverage Audit\n\n";
+          md+=`Generated: ${report.generatedAt}\n\n`;
+          md+=`Canonical models: **${report.canonicalModels}**  \nCoverage: **${report.covered}/${report.canonicalModels} (${report.coveragePercent}%)**  \n`;
+          md+=`Local only: **${counts.local}**  \nExternal only: **${counts.external}**  \nBoth: **${counts.both}**  \nMissing: **${counts.missing}**\n\n`;
+          md+="## Integrity flags\n\n";
+          md+=`- Broken local references: ${report.brokenLocalReferenceCount}\n- Shared local image paths across models: ${report.duplicateLocalImageCount}\n- Shared external image URLs across models: ${report.duplicateExternalImageCount}\n- Orphan local asset records: ${report.orphanLocalAssetCount}\n- Orphan external asset records: ${report.orphanExternalAssetCount}\n- Orphan candidate records: ${report.orphanCandidateCount}\n- Non-high-confidence external coverage: ${report.lowConfidenceExternalCount}\n\n`;
+          md+="## Missing by manufacturer\n\n| Manufacturer | Missing | Total |\n|---|---:|---:|\n";
+          for(const [name,v] of manu.filter(([,v])=>v.missing>0)) md+=`| ${name.replace(/\|/g,"\\|")} | ${v.missing} | ${v.total} |\n`;
+          md+="\n## Missing models\n\n";
+          for(const r of report.missing) md+=`- ${r.BoatModelID} — ${r.Nickname||[r.Manufacturer,r.Model,r.Variant].filter(Boolean).join(" ")}\n`;
+          fs.writeFileSync("reports/image-coverage-audit.md",md);
+
+          console.log(JSON.stringify({
+            canonicalModels:report.canonicalModels,
+            counts,
+            coveragePercent:report.coveragePercent,
+            duplicateLocalImageCount:report.duplicateLocalImageCount,
+            duplicateExternalImageCount:report.duplicateExternalImageCount,
+            orphanLocalAssetCount:report.orphanLocalAssetCount,
+            orphanExternalAssetCount:report.orphanExternalAssetCount,
+            orphanCandidateCount:report.orphanCandidateCount,
+            brokenLocalReferenceCount:report.brokenLocalReferenceCount,
+            lowConfidenceExternalCount:report.lowConfidenceExternalCount
+          },null,2));
+          NODE
+
+      - name: Commit audit reports
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reports/image-coverage-audit.json reports/image-coverage-audit.md
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Audit image coverage across canonical model registry"
+          git push
