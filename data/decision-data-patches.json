@@ -1,5 +1,5 @@
 {
-  "patchSet": "phase1-decision-data-sea-ray-03",
+  "patchSet": "phase1-decision-data-sea-ray-04",
   "createdAt": "2026-10-05",
   "purpose": "Fill high-value exclusion and confidence fields for the highest-gap Sea Ray models using model-specific HMY Powerboat Guide sources.",
   "patches": [
@@ -710,6 +710,54 @@
         "NormalizedPropulsion": "Shaft/V-Drive",
         "EngineCount": 2,
         "EngineConfiguration": "Twin V-drive"
+      },
+      "confidence": {
+        "LOA": "High",
+        "Beam": "High",
+        "Draft": "High",
+        "AirDraft": "High",
+        "Displacement": "High",
+        "FuelCapacity": "High",
+        "WaterCapacity": "High",
+        "HoldingCapacity": "High",
+        "HullType": "High",
+        "Fuel": "High",
+        "Propulsion": "High",
+        "EngineConfiguration": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-SRV360-EC",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/srv360-express-cruiser-1979-83",
+      "fields": {
+        "LOA": 11.1252,
+        "LOA_ft": 36.5,
+        "Beam": 4.2418,
+        "Beam_ft": 13.9167,
+        "Draft": 0.7874,
+        "Draft_ft": 2.5833,
+        "AirDraft": 2.921,
+        "AirDraft_ft": 9.5833,
+        "Displacement": 8119.3,
+        "DisplacementLb": 17900,
+        "FuelCapacity": 1135.6,
+        "FuelCapacityGal": 300,
+        "WaterCapacity": 378.5,
+        "WaterCapacityGal": 100,
+        "HoldingCapacity": 113.6,
+        "HoldingCapacityGal": 30,
+        "FuelCapacityUnitStatus": "source_us_gal",
+        "WaterCapacityUnitStatus": "source_us_gal",
+        "HoldingCapacityUnitStatus": "source_us_gal",
+        "HullType": "Deep-V",
+        "NormalizedHullType": "Deep-V",
+        "NormalizedHullForm": "Deep-V",
+        "Fuel": "Gasoline",
+        "NormalizedFuel": "Gasoline",
+        "Propulsion": "Shaft",
+        "NormalizedPropulsion": "Shaft",
+        "EngineCount": 2,
+        "EngineConfiguration": "Twin inboard"
       },
       "confidence": {
         "LOA": "High",
