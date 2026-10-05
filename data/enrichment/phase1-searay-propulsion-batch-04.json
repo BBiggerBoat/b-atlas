@@ -1,0 +1,398 @@
+{
+  "date": "2026-10-05",
+  "phase": "Phase 1 enrichment",
+  "manufacturer": "Sea Ray",
+  "batch": 4,
+  "requestedBatchSize": 20,
+  "status": "source-verified enrichment staging",
+  "policy": "Known variant-level conflicts remain unresolved; only model-generation facts supported by sources are populated.",
+  "records": [
+    {
+      "BoatModelID": "SRAY-300-WE-G1",
+      "fields": {
+        "Fuel": "Gasoline",
+        "NormalizedFuel": "Gasoline",
+        "FuelCode": "fuel.gasoline",
+        "Propulsion": "Shaft",
+        "NormalizedPropulsion": "Shaft",
+        "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+        "EngineConfiguration": "Twin Inboard",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/300-weekender-1975-81"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-305-300-SB",
+      "fields": {
+        "Fuel": "Gasoline",
+        "NormalizedFuel": "Gasoline",
+        "FuelCode": "fuel.gasoline",
+        "Propulsion": "Shaft",
+        "NormalizedPropulsion": "Shaft",
+        "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+        "EngineConfiguration": "Twin V-Drive Inboard",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/305-300-sedan-bridge-1988-89"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-310-SLX",
+      "fields": {
+        "Fuel": "Gasoline",
+        "NormalizedFuel": "Gasoline",
+        "FuelCode": "fuel.gasoline",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "Propulsion",
+        "NormalizedPropulsion",
+        "MechanicalPropulsionCode",
+        "EngineConfiguration",
+        "AirDraft"
+      ],
+      "note": "Generation offered both sterndrive and outboard power; twin-engine count is common to the documented configurations.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/310-slx-2016-current"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-310-330-EC",
+      "fields": {
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "Fuel",
+        "NormalizedFuel",
+        "FuelCode",
+        "Propulsion",
+        "NormalizedPropulsion",
+        "MechanicalPropulsionCode",
+        "EngineConfiguration",
+        "AirDraft"
+      ],
+      "note": "Source documents twin inboard and twin I/O configurations, so propulsion is not invariant.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/310-330-express-cruiser-1990-95"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-310-330-SD-G1",
+      "fields": {
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "Fuel",
+        "NormalizedFuel",
+        "FuelCode",
+        "Propulsion",
+        "NormalizedPropulsion",
+        "MechanicalPropulsionCode",
+        "EngineConfiguration",
+        "AirDraft"
+      ],
+      "note": "Source documents twin V-drive inboards and twin sterndrives.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/310-330-sundancer-1990-94"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-310-330-SD-G2",
+      "fields": {
+        "Fuel": "Gasoline",
+        "NormalizedFuel": "Gasoline",
+        "FuelCode": "fuel.gasoline",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "Propulsion",
+        "NormalizedPropulsion",
+        "MechanicalPropulsionCode",
+        "EngineConfiguration",
+        "AirDraft"
+      ],
+      "note": "Twin gasoline V-drive inboard and I/O configurations are documented.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/310-330-sundancer-2007-16"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-SRV310-SD",
+      "fields": {
+        "Fuel": "Gasoline",
+        "NormalizedFuel": "Gasoline",
+        "FuelCode": "fuel.gasoline",
+        "Propulsion": "Shaft",
+        "NormalizedPropulsion": "Shaft",
+        "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+        "EngineConfiguration": "Twin Inboard",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/srv310-sundancer-1981-83"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-320-SD-G1",
+      "fields": {
+        "Fuel": "Gasoline",
+        "NormalizedFuel": "Gasoline",
+        "FuelCode": "fuel.gasoline",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "Propulsion",
+        "NormalizedPropulsion",
+        "MechanicalPropulsionCode",
+        "EngineConfiguration"
+      ],
+      "note": "Generation offered V-drive inboard and sterndrive power. Existing AirDraft retained.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/320-sundancer-2003-07"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-320-SD-G2",
+      "fields": {
+        "Fuel": "Gasoline",
+        "NormalizedFuel": "Gasoline",
+        "FuelCode": "fuel.gasoline",
+        "Propulsion": "Sterndrive",
+        "NormalizedPropulsion": "Sterndrive",
+        "MechanicalPropulsionCode": "mechanical_propulsion.sterndrive",
+        "EngineConfiguration": "Twin Sterndrive",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/320-sundancer-2019-current"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-320-SD-OB",
+      "fields": {
+        "Fuel": "Gasoline",
+        "NormalizedFuel": "Gasoline",
+        "FuelCode": "fuel.gasoline",
+        "Propulsion": "Outboard",
+        "NormalizedPropulsion": "Outboard",
+        "MechanicalPropulsionCode": "mechanical_propulsion.outboard",
+        "EngineConfiguration": "Triple Outboard",
+        "EngineCount": 3
+      },
+      "note": "Existing AirDraft retained.",
+      "evidence": [
+        "https://ca.boats.com/power-boats/2020-sea-ray-sundancer-320-outboard-9971429/",
+        "https://www.boatingworld.com/boats/sea-ray-boats/2020-sea-ray-320-sundancer"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-330-EC",
+      "fields": {
+        "Propulsion": "Shaft",
+        "NormalizedPropulsion": "Shaft",
+        "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+        "EngineConfiguration": "Twin Inboard",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "Fuel",
+        "NormalizedFuel",
+        "FuelCode",
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/330-express-cruiser-1997-2000"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-330-SD",
+      "fields": {
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "Fuel",
+        "NormalizedFuel",
+        "FuelCode",
+        "Propulsion",
+        "NormalizedPropulsion",
+        "MechanicalPropulsionCode",
+        "EngineConfiguration",
+        "AirDraft"
+      ],
+      "note": "Both sterndrive and V-drive inboard power are documented; gasoline and diesel packages existed.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/330-sundancer-1995-99",
+        "https://boatreviewbank.com/1995-1999-sea-ray-sundancer-330-review/"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-330-350-SD",
+      "fields": {
+        "Fuel": "Gasoline",
+        "NormalizedFuel": "Gasoline",
+        "FuelCode": "fuel.gasoline",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "Propulsion",
+        "NormalizedPropulsion",
+        "MechanicalPropulsionCode",
+        "EngineConfiguration",
+        "AirDraft"
+      ],
+      "note": "Generation offered twin gasoline V-drive inboard or sterndrive power.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/330-350-sundancer-2008-12"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-340-AJ",
+      "fields": {
+        "Propulsion": "Shaft",
+        "NormalizedPropulsion": "Shaft",
+        "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+        "EngineConfiguration": "Twin Inboard",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "Fuel",
+        "NormalizedFuel",
+        "FuelCode",
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-amberjack-2001-03"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-340-EC",
+      "fields": {
+        "Propulsion": "Shaft",
+        "NormalizedPropulsion": "Shaft",
+        "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+        "EngineConfiguration": "Twin Inboard",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "Fuel",
+        "NormalizedFuel",
+        "FuelCode",
+        "AirDraft"
+      ],
+      "note": "Straight-drive gasoline inboards were standard; generation-level fuel is left unresolved because the source notes multiple engine options.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-express-cruiser-1984-89"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-340-SB",
+      "fields": {
+        "Propulsion": "Shaft",
+        "NormalizedPropulsion": "Shaft",
+        "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+        "EngineConfiguration": "Twin V-Drive Inboard",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "Fuel",
+        "NormalizedFuel",
+        "FuelCode",
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-sedan-bridge-1983-87"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-340-SF",
+      "fields": {
+        "Propulsion": "Shaft",
+        "NormalizedPropulsion": "Shaft",
+        "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+        "EngineConfiguration": "Twin Inboard",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "Fuel",
+        "NormalizedFuel",
+        "FuelCode",
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-sport-fisherman-1984-87"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-340-SD-G1",
+      "fields": {
+        "Propulsion": "Shaft",
+        "NormalizedPropulsion": "Shaft",
+        "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+        "EngineConfiguration": "Twin V-Drive Inboard",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "Fuel",
+        "NormalizedFuel",
+        "FuelCode",
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-sundancer-1984-89"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-340-SD-G2",
+      "fields": {
+        "Fuel": "Gasoline",
+        "NormalizedFuel": "Gasoline",
+        "FuelCode": "fuel.gasoline",
+        "Propulsion": "Shaft",
+        "NormalizedPropulsion": "Shaft",
+        "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+        "EngineConfiguration": "Twin V-Drive Inboard",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-sundancer-1999-2002"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-340-SD-G3",
+      "fields": {
+        "Fuel": "Gasoline",
+        "NormalizedFuel": "Gasoline",
+        "FuelCode": "fuel.gasoline",
+        "Propulsion": "Shaft",
+        "NormalizedPropulsion": "Shaft",
+        "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+        "EngineConfiguration": "Twin V-Drive Inboard",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-sundancer-2003-08"
+      ]
+    }
+  ]
+}
