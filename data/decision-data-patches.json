@@ -1,18 +1,18 @@
 {
-  "patchSet": "phase1-decision-data-carver-powertrain-01",
+  "patchSet": "phase1-decision-data-carver-powertrain-02",
   "createdAt": "2026-10-05",
-  "purpose": "Fill source-backed Carver fuel, propulsion, engine configuration and air-draft fields.",
+  "purpose": "Continue Carver fuel, propulsion, engine configuration and air-draft completion.",
   "patches": [
     {
-      "BoatModelID": "CARV-350-36-MAR",
-      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/carver/350-mariner-36-mariner-1997-2012",
+      "BoatModelID": "CARV-350-VOY",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/carver/350-voyager-1993-94",
       "fields": {
-        "Fuel": "Gasoline",
-        "NormalizedFuel": "Gasoline",
-        "Propulsion": "Shaft/V-Drive",
-        "NormalizedPropulsion": "Shaft/V-Drive",
+        "Fuel": "Diesel",
+        "NormalizedFuel": "Diesel",
+        "Propulsion": "Shaft",
+        "NormalizedPropulsion": "Shaft",
         "EngineCount": 2,
-        "EngineConfiguration": "Twin MerCruiser gasoline V-drive inboards"
+        "EngineConfiguration": "Twin Volvo diesel inboards"
       },
       "confidence": {
         "Fuel": "High",
@@ -21,37 +21,34 @@
       }
     },
     {
-      "BoatModelID": "CARV-355-356-MY",
-      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/carver/355-356-motor-yacht-1995-2003",
+      "BoatModelID": "CARV-366-MY",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/carver/366-motor-yacht-2002-06",
       "fields": {
         "Fuel": "Mixed Diesel/Gasoline",
         "NormalizedFuel": "Mixed Diesel/Gasoline",
         "Propulsion": "Shaft",
         "NormalizedPropulsion": "Shaft",
         "EngineCount": 2,
-        "EngineConfiguration": "Twin inboards; gasoline or diesel depending configuration",
-        "AirDraft": 5.334,
-        "AirDraft_ft": 17.5
+        "EngineConfiguration": "Twin inboards; gasoline standard, diesel optional"
       },
       "confidence": {
         "Fuel": "High",
         "Propulsion": "High",
-        "EngineConfiguration": "High",
-        "AirDraft": "High"
+        "EngineConfiguration": "High"
       }
     },
     {
-      "BoatModelID": "CARV-360-SS",
-      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/carver/360-sport-sedan-2003-06",
+      "BoatModelID": "CARV-3697-MAR",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/carver/3697-mariner-1984-88",
       "fields": {
         "Fuel": "Gasoline",
         "NormalizedFuel": "Gasoline",
-        "Propulsion": "Shaft",
-        "NormalizedPropulsion": "Shaft",
+        "Propulsion": "Shaft/V-Drive",
+        "NormalizedPropulsion": "Shaft/V-Drive",
         "EngineCount": 2,
-        "EngineConfiguration": "Twin Volvo gasoline inboards",
-        "AirDraft": 4.4196,
-        "AirDraft_ft": 14.5
+        "EngineConfiguration": "Twin Crusader gasoline V-drive inboards",
+        "AirDraft": 4.1148,
+        "AirDraft_ft": 13.5
       },
       "confidence": {
         "Fuel": "High",
@@ -61,8 +58,45 @@
       }
     },
     {
-      "BoatModelID": "CARV-3607-AC",
-      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/carver/3607-aft-cabin-1982-89",
+      "BoatModelID": "CARV-C36-CB",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/carver/c36-command-bridge-2019-21",
+      "fields": {
+        "Fuel": "Mixed Diesel/Gasoline",
+        "NormalizedFuel": "Mixed Diesel/Gasoline",
+        "Propulsion": "Shaft",
+        "NormalizedPropulsion": "Shaft",
+        "EngineCount": 2,
+        "EngineConfiguration": "Twin inboards; MerCruiser gasoline standard, Yanmar or Volvo diesels optional",
+        "AirDraft": 3.8354,
+        "AirDraft_ft": 12.5833
+      },
+      "confidence": {
+        "Fuel": "High",
+        "Propulsion": "High",
+        "EngineConfiguration": "High",
+        "AirDraft": "High"
+      }
+    },
+    {
+      "BoatModelID": "CARV-370-374-VOY",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/carver/370-374-voyager-1993-2002",
+      "fields": {
+        "Fuel": "Mixed Diesel/Gasoline",
+        "NormalizedFuel": "Mixed Diesel/Gasoline",
+        "Propulsion": "Shaft",
+        "NormalizedPropulsion": "Shaft",
+        "EngineCount": 2,
+        "EngineConfiguration": "Twin inboards; gasoline or optional diesel"
+      },
+      "confidence": {
+        "Fuel": "High",
+        "Propulsion": "High",
+        "EngineConfiguration": "High"
+      }
+    },
+    {
+      "BoatModelID": "CARV-38-SS",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/carver/38-super-sport-2005-09",
       "fields": {
         "Fuel": "Gasoline",
         "NormalizedFuel": "Gasoline",
@@ -70,46 +104,8 @@
         "NormalizedPropulsion": "Shaft",
         "EngineCount": 2,
         "EngineConfiguration": "Twin gasoline inboards",
-        "AirDraft": 3.5814,
-        "AirDraft_ft": 11.75
-      },
-      "confidence": {
-        "Fuel": "High",
-        "Propulsion": "High",
-        "EngineConfiguration": "High",
-        "AirDraft": "High"
-      }
-    },
-    {
-      "BoatModelID": "CARV-C37-CP",
-      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/carver/c37-coupe-2014-21",
-      "fields": {
-        "Fuel": "Mixed Diesel/Gasoline",
-        "NormalizedFuel": "Mixed Diesel/Gasoline",
-        "Propulsion": "Varies: sterndrive or shaft inboard",
-        "EngineCount": 2,
-        "EngineConfiguration": "Twin engines; gasoline sterndrive or diesel shaft configurations",
-        "AirDraft": 3.7592,
-        "AirDraft_ft": 12.3333
-      },
-      "confidence": {
-        "Fuel": "High",
-        "Propulsion": "High",
-        "EngineConfiguration": "High",
-        "AirDraft": "High"
-      }
-    },
-    {
-      "BoatModelID": "CARV-C34-CP",
-      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/carver/c34-coupe-2018-21",
-      "fields": {
-        "Fuel": "Gasoline",
-        "NormalizedFuel": "Gasoline",
-        "Propulsion": "Varies: sterndrive or V-drive inboard",
-        "EngineCount": 2,
-        "EngineConfiguration": "Twin MerCruiser gasoline engines; sterndrive standard, V-drive optional",
-        "AirDraft": 3.048,
-        "AirDraft_ft": 10
+        "AirDraft": 4.2926,
+        "AirDraft_ft": 14.0833
       },
       "confidence": {
         "Fuel": "High",
