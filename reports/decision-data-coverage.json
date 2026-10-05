@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T17:38:10.950Z",
+  "generatedAt": "2026-10-05T17:39:26.184Z",
   "models": 995,
   "priority": [
     "Beam",
@@ -17,39 +17,39 @@
   ],
   "coverage": {
     "LOA": {
-      "known": 983,
-      "missing": 12,
-      "pct": 98.8
+      "known": 988,
+      "missing": 7,
+      "pct": 99.3
     },
     "Beam": {
-      "known": 909,
-      "missing": 86,
-      "pct": 91.4
+      "known": 914,
+      "missing": 81,
+      "pct": 91.9
     },
     "Draft": {
-      "known": 891,
-      "missing": 104,
-      "pct": 89.5
+      "known": 896,
+      "missing": 99,
+      "pct": 90.1
     },
     "AirDraft": {
-      "known": 625,
-      "missing": 370,
-      "pct": 62.8
+      "known": 626,
+      "missing": 369,
+      "pct": 62.9
     },
     "FuelType": {
-      "known": 708,
-      "missing": 287,
-      "pct": 71.2
+      "known": 714,
+      "missing": 281,
+      "pct": 71.8
     },
     "Propulsion": {
-      "known": 638,
-      "missing": 357,
-      "pct": 64.1
+      "known": 644,
+      "missing": 351,
+      "pct": 64.7
     },
     "HullForm": {
-      "known": 955,
-      "missing": 40,
-      "pct": 96
+      "known": 957,
+      "missing": 38,
+      "pct": 96.2
     },
     "Style": {
       "known": 995,
@@ -57,32 +57,28 @@
       "pct": 100
     },
     "EngineConfig": {
-      "known": 587,
-      "missing": 408,
-      "pct": 59
+      "known": 593,
+      "missing": 402,
+      "pct": 59.6
     },
     "Displacement": {
-      "known": 884,
-      "missing": 111,
-      "pct": 88.8
+      "known": 889,
+      "missing": 106,
+      "pct": 89.3
     },
     "FuelCapacity": {
-      "known": 885,
-      "missing": 110,
-      "pct": 88.9
+      "known": 890,
+      "missing": 105,
+      "pct": 89.4
     },
     "WaterCapacity": {
-      "known": 888,
-      "missing": 107,
-      "pct": 89.2
+      "known": 893,
+      "missing": 102,
+      "pct": 89.7
     }
   },
   "missingByManufacturer": {
     "LOA": [
-      {
-        "manufacturer": "Sea Ray",
-        "missing": 6
-      },
       {
         "manufacturer": "Pursuit",
         "missing": 4
@@ -93,6 +89,10 @@
       },
       {
         "manufacturer": "Riviera",
+        "missing": 1
+      },
+      {
+        "manufacturer": "Sea Ray",
         "missing": 1
       }
     ],
@@ -110,15 +110,15 @@
         "missing": 16
       },
       {
-        "manufacturer": "Sea Ray",
-        "missing": 6
-      },
-      {
         "manufacturer": "Pursuit",
         "missing": 4
       },
       {
         "manufacturer": "Tiara Yachts",
+        "missing": 1
+      },
+      {
+        "manufacturer": "Sea Ray",
         "missing": 1
       }
     ],
@@ -137,10 +137,6 @@
       },
       {
         "manufacturer": "Pursuit",
-        "missing": 6
-      },
-      {
-        "manufacturer": "Sea Ray",
         "missing": 6
       },
       {
@@ -174,12 +170,16 @@
       {
         "manufacturer": "Wellcraft",
         "missing": 1
+      },
+      {
+        "manufacturer": "Sea Ray",
+        "missing": 1
       }
     ],
     "AirDraft": [
       {
         "manufacturer": "Sea Ray",
-        "missing": 72
+        "missing": 71
       },
       {
         "manufacturer": "Riviera",
@@ -277,7 +277,7 @@
     "FuelType": [
       {
         "manufacturer": "Sea Ray",
-        "missing": 80
+        "missing": 74
       },
       {
         "manufacturer": "Carver",
@@ -319,7 +319,7 @@
     "Propulsion": [
       {
         "manufacturer": "Sea Ray",
-        "missing": 79
+        "missing": 73
       },
       {
         "manufacturer": "Carver",
@@ -377,7 +377,7 @@
       },
       {
         "manufacturer": "Sea Ray",
-        "missing": 3
+        "missing": 1
       },
       {
         "manufacturer": "Bayliner",
@@ -388,7 +388,7 @@
     "EngineConfig": [
       {
         "manufacturer": "Sea Ray",
-        "missing": 78
+        "missing": 72
       },
       {
         "manufacturer": "Carver",
@@ -461,16 +461,16 @@
         "missing": 8
       },
       {
-        "manufacturer": "Sea Ray",
-        "missing": 7
-      },
-      {
         "manufacturer": "Tiara Yachts",
         "missing": 5
       },
       {
         "manufacturer": "Cruisers Yachts",
         "missing": 3
+      },
+      {
+        "manufacturer": "Sea Ray",
+        "missing": 2
       },
       {
         "manufacturer": "Atlantic Boat",
@@ -519,10 +519,6 @@
         "missing": 17
       },
       {
-        "manufacturer": "Sea Ray",
-        "missing": 8
-      },
-      {
         "manufacturer": "Pursuit",
         "missing": 5
       },
@@ -533,6 +529,10 @@
       {
         "manufacturer": "Viking",
         "missing": 4
+      },
+      {
+        "manufacturer": "Sea Ray",
+        "missing": 3
       },
       {
         "manufacturer": "Silverton",
@@ -577,10 +577,6 @@
         "missing": 7
       },
       {
-        "manufacturer": "Sea Ray",
-        "missing": 6
-      },
-      {
         "manufacturer": "Tiara Yachts",
         "missing": 5
       },
@@ -601,46 +597,16 @@
         "missing": 1
       },
       {
+        "manufacturer": "Sea Ray",
+        "missing": 1
+      },
+      {
         "manufacturer": "Bayliner",
         "missing": 1
       }
     ]
   },
   "highestGapModels": [
-    {
-      "BoatModelID": "SRAY-370-SD-OB",
-      "Manufacturer": "Sea Ray",
-      "Nickname": "Sea Ray 370 Sundancer Outboard",
-      "missing": 9,
-      "gaps": [
-        "Beam",
-        "LOA",
-        "FuelType",
-        "Propulsion",
-        "HullForm",
-        "Draft",
-        "AirDraft",
-        "EngineConfig",
-        "Displacement"
-      ]
-    },
-    {
-      "BoatModelID": "SRAY-400-SB",
-      "Manufacturer": "Sea Ray",
-      "Nickname": "Sea Ray 400 Sedan Bridge",
-      "missing": 9,
-      "gaps": [
-        "Beam",
-        "LOA",
-        "FuelType",
-        "Propulsion",
-        "HullForm",
-        "Draft",
-        "AirDraft",
-        "EngineConfig",
-        "Displacement"
-      ]
-    },
     {
       "BoatModelID": "SRAY-SRV360-EC",
       "Manufacturer": "Sea Ray",
@@ -1228,54 +1194,6 @@
         "FuelType",
         "Propulsion",
         "HullForm",
-        "Draft",
-        "AirDraft",
-        "EngineConfig",
-        "Displacement"
-      ]
-    },
-    {
-      "BoatModelID": "SRAY-370-SB",
-      "Manufacturer": "Sea Ray",
-      "Nickname": "Sea Ray 370 Sedan Bridge",
-      "missing": 8,
-      "gaps": [
-        "Beam",
-        "LOA",
-        "FuelType",
-        "Propulsion",
-        "Draft",
-        "AirDraft",
-        "EngineConfig",
-        "Displacement"
-      ]
-    },
-    {
-      "BoatModelID": "SRAY-400-410-SD",
-      "Manufacturer": "Sea Ray",
-      "Nickname": "Sea Ray 400 / 410 Sundancer",
-      "missing": 8,
-      "gaps": [
-        "Beam",
-        "LOA",
-        "FuelType",
-        "Propulsion",
-        "Draft",
-        "AirDraft",
-        "EngineConfig",
-        "Displacement"
-      ]
-    },
-    {
-      "BoatModelID": "SRAY-420-44-SD",
-      "Manufacturer": "Sea Ray",
-      "Nickname": "Sea Ray 420 / 44 Sundancer",
-      "missing": 8,
-      "gaps": [
-        "Beam",
-        "LOA",
-        "FuelType",
-        "Propulsion",
         "Draft",
         "AirDraft",
         "EngineConfig",
@@ -1984,6 +1902,66 @@
       "BoatModelID": "FORM-41-PC",
       "Manufacturer": "Formula",
       "Nickname": "Formula 41 PC",
+      "missing": 4,
+      "gaps": [
+        "FuelType",
+        "Propulsion",
+        "AirDraft",
+        "EngineConfig"
+      ]
+    },
+    {
+      "BoatModelID": "FWIN-310-HOR",
+      "Manufacturer": "Four Winns",
+      "Nickname": "Four Winns 310 Horizon",
+      "missing": 4,
+      "gaps": [
+        "FuelType",
+        "Propulsion",
+        "AirDraft",
+        "EngineConfig"
+      ]
+    },
+    {
+      "BoatModelID": "FWIN-328-VIS",
+      "Manufacturer": "Four Winns",
+      "Nickname": "Four Winns 328 Vista",
+      "missing": 4,
+      "gaps": [
+        "FuelType",
+        "Propulsion",
+        "AirDraft",
+        "EngineConfig"
+      ]
+    },
+    {
+      "BoatModelID": "FWIN-338-V355-VIS",
+      "Manufacturer": "Four Winns",
+      "Nickname": "Four Winns 338 Vista / V355",
+      "missing": 4,
+      "gaps": [
+        "FuelType",
+        "Propulsion",
+        "AirDraft",
+        "EngineConfig"
+      ]
+    },
+    {
+      "BoatModelID": "FWIN-378-VIS",
+      "Manufacturer": "Four Winns",
+      "Nickname": "Four Winns 378 Vista",
+      "missing": 4,
+      "gaps": [
+        "FuelType",
+        "Propulsion",
+        "AirDraft",
+        "EngineConfig"
+      ]
+    },
+    {
+      "BoatModelID": "FWIN-H350-OB",
+      "Manufacturer": "Four Winns",
+      "Nickname": "Four Winns Horizon 350 OB",
       "missing": 4,
       "gaps": [
         "FuelType",
