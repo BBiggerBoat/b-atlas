@@ -1,0 +1,343 @@
+{
+  "date": "2026-10-05",
+  "phase": "Phase 1 enrichment",
+  "manufacturer": "Sea Ray",
+  "batch": 6,
+  "requestedBatchSize": 20,
+  "researchedRecords": 20,
+  "status": "source-verified enrichment staging",
+  "policy": "Populate only generation-level invariant facts; preserve mixed factory configurations and unknown clearances.",
+  "records": [
+    {
+      "BoatModelID": "SRAY-370-380-AC",
+      "fields": {
+        "Fuel": "Mixed Diesel/Gasoline",
+        "NormalizedFuel": "Mixed",
+        "FuelCode": "fuel.mixed",
+        "Propulsion": "Shaft",
+        "NormalizedPropulsion": "Shaft",
+        "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+        "EngineConfiguration": "Twin Inboard",
+        "EngineCount": 2
+      },
+      "note": "Existing AirDraft 4.97838984 m is retained; source specifies 16 ft 4 in arch clearance.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/370-380-aft-cabin-1997-2001"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-38-390-SD",
+      "fields": {
+        "NormalizedFuel": "Mixed",
+        "FuelCode": "fuel.mixed",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "Propulsion",
+        "NormalizedPropulsion",
+        "MechanicalPropulsionCode"
+      ],
+      "note": "Existing engine description correctly preserves V-drive gasoline versus Zeus-pod diesel variability; existing AirDraft retained.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/38-390-sundancer-2006-11"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-380-AC",
+      "fields": {
+        "NormalizedFuel": "Mixed",
+        "FuelCode": "fuel.mixed",
+        "NormalizedPropulsion": "Shaft",
+        "MechanicalPropulsionCode": "mechanical_propulsion.shaft"
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "note": "Existing twin inboard/shaft and mixed-fuel fields retained.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/380-aft-cabin-1989-91"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-380-SD",
+      "fields": {
+        "NormalizedFuel": "Mixed",
+        "FuelCode": "fuel.mixed",
+        "NormalizedPropulsion": "Shaft",
+        "MechanicalPropulsionCode": "mechanical_propulsion.shaft"
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "note": "Existing twin V-drive inboard configuration retained.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/380-sundancer-1999-2003"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-390-EC",
+      "fields": {
+        "NormalizedFuel": "Mixed",
+        "FuelCode": "fuel.mixed",
+        "NormalizedPropulsion": "Shaft",
+        "MechanicalPropulsionCode": "mechanical_propulsion.shaft"
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/390-express-cruiser-1984-91"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-390-SB",
+      "fields": {
+        "Fuel": "Diesel",
+        "NormalizedFuel": "Diesel",
+        "FuelCode": "fuel.diesel",
+        "NormalizedPropulsion": "Shaft",
+        "MechanicalPropulsionCode": "mechanical_propulsion.shaft"
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "note": "2010-only 390 Sedan Bridge uses twin Cummins diesel inboards.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/390-sedan-bridge-2010-only"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-390-SSF",
+      "fields": {
+        "NormalizedFuel": "Mixed",
+        "FuelCode": "fuel.mixed",
+        "NormalizedPropulsion": "Shaft",
+        "MechanicalPropulsionCode": "mechanical_propulsion.shaft"
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/390-sedan-sportfish-1983-86"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-390-40-SD",
+      "fields": {
+        "Fuel": "Mixed Diesel/Gasoline",
+        "NormalizedFuel": "Mixed",
+        "FuelCode": "fuel.mixed",
+        "NormalizedPropulsion": "Shaft",
+        "MechanicalPropulsionCode": "mechanical_propulsion.shaft"
+      },
+      "note": "Twin V-drive configuration retained; existing AirDraft retained.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/390-sundancer-40-sundancer-2004-09"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-400-EC",
+      "fields": {
+        "NormalizedFuel": "Mixed",
+        "FuelCode": "fuel.mixed",
+        "NormalizedPropulsion": "Shaft",
+        "MechanicalPropulsionCode": "mechanical_propulsion.shaft"
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/400-express-cruiser-1992-99"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-400-FLY",
+      "fields": {
+        "NormalizedFuel": "Diesel",
+        "FuelCode": "fuel.diesel",
+        "NormalizedPropulsion": "Shaft",
+        "MechanicalPropulsionCode": "mechanical_propulsion.shaft"
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "note": "Existing twin Cummins V-drive diesel configuration retained.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/400-fly-2016-18"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-400-SB",
+      "fields": {
+        "NormalizedFuel": "Mixed",
+        "FuelCode": "fuel.mixed",
+        "NormalizedPropulsion": "Shaft",
+        "MechanicalPropulsionCode": "mechanical_propulsion.shaft"
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/400-sedan-bridge-1996-2003"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-400-SLX-OB",
+      "fields": {
+        "NormalizedFuel": "Gasoline",
+        "FuelCode": "fuel.gasoline",
+        "NormalizedPropulsion": "Outboard",
+        "MechanicalPropulsionCode": "mechanical_propulsion.outboard"
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "note": "Existing triple-outboard configuration retained.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/400-slx-outboard-2017-current"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-400-SD",
+      "fields": {
+        "NormalizedFuel": "Diesel",
+        "FuelCode": "fuel.diesel",
+        "NormalizedPropulsion": "Shaft",
+        "MechanicalPropulsionCode": "mechanical_propulsion.shaft"
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "note": "Existing twin Cummins V-drive diesel configuration retained.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/400-sundancer-2016-19"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-400-410-SD",
+      "fields": {
+        "NormalizedFuel": "Mixed",
+        "FuelCode": "fuel.mixed",
+        "NormalizedPropulsion": "Shaft",
+        "MechanicalPropulsionCode": "mechanical_propulsion.shaft"
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "note": "Existing twin V-drive mixed-fuel configuration retained.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/400-410-sundancer-1997-2003"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-410-EC",
+      "fields": {
+        "Fuel": "Diesel",
+        "NormalizedFuel": "Diesel",
+        "FuelCode": "fuel.diesel",
+        "Propulsion": "Shaft",
+        "NormalizedPropulsion": "Shaft",
+        "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+        "EngineConfiguration": "Twin Inboard",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "note": "Model guide and surviving 2003 examples document twin diesel inboards.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/410-express-cruiser-2000-03",
+        "https://www.hmy.com/yachts-for-sale/sea-ray-410-express-cruiser-2003-vashumio-10034687"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-410-SD",
+      "fields": {
+        "NormalizedFuel": "Diesel",
+        "FuelCode": "fuel.diesel",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "Propulsion",
+        "NormalizedPropulsion",
+        "MechanicalPropulsionCode"
+      ],
+      "note": "Existing V-drive/Zeus-pod variability is retained.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/410-sundancer-2012-15"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-410-415-440-AC",
+      "fields": {
+        "Fuel": "Mixed Diesel/Gasoline",
+        "NormalizedFuel": "Mixed",
+        "FuelCode": "fuel.mixed",
+        "Propulsion": "Shaft",
+        "NormalizedPropulsion": "Shaft",
+        "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+        "EngineConfiguration": "Twin Inboard",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "note": "Source documents standard twin gasoline inboards and optional Caterpillar diesels.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/410-415-440-aft-cabin-1986-91"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-420-44-SB",
+      "fields": {
+        "NormalizedFuel": "Diesel",
+        "FuelCode": "fuel.diesel",
+        "NormalizedPropulsion": "Shaft",
+        "MechanicalPropulsionCode": "mechanical_propulsion.shaft"
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "note": "Existing twin Cummins diesel inboard configuration retained.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/420-sedan-bridge-44-sedan-bridge-2004-09"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-420-440-SD",
+      "fields": {
+        "Fuel": "Mixed Diesel/Gasoline",
+        "NormalizedFuel": "Mixed",
+        "FuelCode": "fuel.mixed",
+        "Propulsion": "Shaft/V-Drive",
+        "NormalizedPropulsion": "Shaft",
+        "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+        "EngineConfiguration": "Twin V-Drive Inboard",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "note": "Source documents twin MerCruiser gasoline V-drives and optional Caterpillar/Cummins diesels.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/420-440-sundancer-1990-95"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-43-470-SD",
+      "fields": {
+        "NormalizedFuel": "Diesel",
+        "FuelCode": "fuel.diesel",
+        "NormalizedPropulsion": "Pod",
+        "MechanicalPropulsionCode": "mechanical_propulsion.pod"
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "note": "Existing twin Cummins diesel with Zeus pod configuration retained.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/43-sundancer-470-sundancer-2009-14"
+      ]
+    }
+  ]
+}
