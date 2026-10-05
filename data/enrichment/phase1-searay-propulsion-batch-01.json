@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-05",
+  "phase": "Phase 1 enrichment",
+  "manufacturer": "Sea Ray",
+  "status": "source-verified; pending canonical merge due large-file transport limit",
+  "records": [
+    {
+      "BoatModelID": "SRAY-300-SB",
+      "fields": {
+        "Fuel": "Gasoline",
+        "NormalizedFuel": "Gasoline",
+        "FuelCode": "fuel.gasoline",
+        "Propulsion": "Shaft",
+        "NormalizedPropulsion": "Shaft",
+        "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+        "EngineConfiguration": "Twin Inboard",
+        "EngineCount": 2
+      },
+      "evidence": [
+        "https://www.boatingworld.com/boats/sea-ray-boats/1985-sea-ray-300-sedan-bridge",
+        "https://dailyboats.com/ca/boat/103054-buy-sea-ray-300-sedan-bridge-for-sale"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-300-SD-G1",
+      "fields": {
+        "Fuel": "Gasoline",
+        "NormalizedFuel": "Gasoline",
+        "FuelCode": "fuel.gasoline",
+        "Propulsion": "Sterndrive",
+        "NormalizedPropulsion": "Sterndrive",
+        "MechanicalPropulsionCode": "mechanical_propulsion.sterndrive",
+        "EngineConfiguration": "Twin Sterndrive",
+        "EngineCount": 2
+      },
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/300-sundancer-1985-89",
+        "https://www.jdpower.com/boats/1985/sea-ray-boats/300-sundancer/10156991/specs"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-300-SD-G4",
+      "fields": {
+        "Propulsion": "Sterndrive",
+        "NormalizedPropulsion": "Sterndrive",
+        "MechanicalPropulsionCode": "mechanical_propulsion.sterndrive",
+        "EngineConfiguration": "Twin Sterndrive",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "Fuel",
+        "NormalizedFuel",
+        "FuelCode",
+        "AirDraft"
+      ],
+      "note": "2002 references document twin sterndrives. Gasoline and diesel sterndrive packages were both available, so generation-level fuel remains unresolved.",
+      "evidence": [
+        "https://ca.boats.com/power-boats/2002-sea-ray-300-sundancer-10309885/",
+        "https://www.denisonyachtsales.com/yachts-for-sale/33-sea-ray-LXXX"
+      ]
+    }
+  ]
+}
