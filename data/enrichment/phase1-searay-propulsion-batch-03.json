@@ -1,0 +1,93 @@
+{
+  "date": "2026-10-05",
+  "phase": "Phase 1 enrichment",
+  "manufacturer": "Sea Ray",
+  "batch": 3,
+  "status": "source-verified enrichment staging",
+  "records": [
+    {
+      "BoatModelID": "SRAY-310-SPB",
+      "fields": {
+        "Propulsion": "Shaft",
+        "NormalizedPropulsion": "Shaft",
+        "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+        "EngineConfiguration": "Twin Inboard",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "Fuel",
+        "NormalizedFuel",
+        "FuelCode"
+      ],
+      "note": "1992–93 310 Sport Bridge used twin inboard propulsion. Model guide documents both MerCruiser gasoline and optional Cummins diesel packages, so fuel is intentionally unresolved. Existing AirDraft is retained.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/310-sport-bridge-1992-93",
+        "https://ca.boats.com/power-boats/1992-sea-ray-310-sport-bridge-9945092/"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-310-SS",
+      "fields": {
+        "Propulsion": "Sterndrive",
+        "NormalizedPropulsion": "Sterndrive",
+        "MechanicalPropulsionCode": "mechanical_propulsion.sterndrive",
+        "EngineConfiguration": "Twin Sterndrive",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "Fuel",
+        "NormalizedFuel",
+        "FuelCode",
+        "AirDraft"
+      ],
+      "note": "1991–95 310 Sun Sport references support twin sterndrive propulsion. Gasoline and diesel examples exist, so fuel remains unknown at the generation level.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/310-sun-sport-1991-95",
+        "https://www.boatingworld.com/boats/sea-ray-boats/1991-sea-ray-310-sun-sport"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-310-SD-G1",
+      "fields": {
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "Fuel",
+        "NormalizedFuel",
+        "FuelCode",
+        "Propulsion",
+        "NormalizedPropulsion",
+        "MechanicalPropulsionCode",
+        "EngineConfiguration",
+        "AirDraft"
+      ],
+      "note": "1998–2002 generation was offered with twin V-drive inboards or twin sterndrives. Engine count is invariant; propulsion configuration is not.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/310-sundancer-1998-2002",
+        "https://rnr-marine.com/images/Sea-Ray_310-Sundancer_1998_Spec-Sheet.PDF"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-310-SD-G2",
+      "fields": {
+        "Propulsion": "Sterndrive",
+        "NormalizedPropulsion": "Sterndrive",
+        "MechanicalPropulsionCode": "mechanical_propulsion.sterndrive",
+        "EngineConfiguration": "Twin Sterndrive",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "Fuel",
+        "NormalizedFuel",
+        "FuelCode",
+        "AirDraft"
+      ],
+      "note": "2010–17 generation uses twin Bravo III/Axius sterndrive packages. Sources show both diesel and gasoline configurations across model years, so fuel remains unresolved at generation level.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/310-sundancer-2010-17",
+        "https://www.boatingworld.com/boats/sea-ray-boats/2010-sea-ray-310-sundancer",
+        "https://www.boatingworld.com/boats/sea-ray-boats/2017-sea-ray-310-sundancer"
+      ]
+    }
+  ]
+}
