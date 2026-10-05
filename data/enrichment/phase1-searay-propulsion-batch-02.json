@@ -1,0 +1,152 @@
+{
+  "date": "2026-10-05",
+  "phase": "Phase 1 enrichment",
+  "manufacturer": "Sea Ray",
+  "batch": 2,
+  "status": "source-verified enrichment staging",
+  "records": [
+    {
+      "BoatModelID": "SRAY-300-SLX",
+      "fields": {
+        "Fuel": "Gasoline",
+        "NormalizedFuel": "Gasoline",
+        "FuelCode": "fuel.gasoline",
+        "Propulsion": "Sterndrive",
+        "NormalizedPropulsion": "Sterndrive",
+        "MechanicalPropulsionCode": "mechanical_propulsion.sterndrive"
+      },
+      "intentionallyUnresolved": [
+        "EngineConfiguration",
+        "EngineCount",
+        "AirDraft"
+      ],
+      "note": "300 SLX was offered with single and twin gasoline sterndrive packages during this generation. Do not force a single engine count/configuration.",
+      "evidence": [
+        "https://www.boatingworld.com/boats/sea-ray-boats/2008-sea-ray-300-slx",
+        "https://www.boatdealers.ca/boats-for-sale/626849/sea-ray-300-slx-turkey-point-ontario",
+        "https://www.boats.com/power-boats/2013-sea-ray-300-slx-10281845/"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-300-SPB",
+      "fields": {
+        "Fuel": "Gasoline",
+        "NormalizedFuel": "Gasoline",
+        "FuelCode": "fuel.gasoline"
+      },
+      "intentionallyUnresolved": [
+        "Propulsion",
+        "NormalizedPropulsion",
+        "MechanicalPropulsionCode",
+        "EngineConfiguration",
+        "EngineCount",
+        "AirDraft"
+      ],
+      "note": "Period model guide documents both inboard and sterndrive power. Examples are twin gasoline packages, but propulsion is not invariant across the generation.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/300-sport-bridge-1975-79"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-300-SD-G2",
+      "fields": {
+        "Fuel": "Gasoline",
+        "NormalizedFuel": "Gasoline",
+        "FuelCode": "fuel.gasoline",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "Propulsion",
+        "NormalizedPropulsion",
+        "MechanicalPropulsionCode",
+        "EngineConfiguration"
+      ],
+      "note": "1992–93 generation offered twin gasoline MerCruiser packages as either V-drive inboards or sterndrives. Existing AirDraft value is retained unchanged.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/300-sundancer-1992-93"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-300-SD-G3",
+      "fields": {
+        "Fuel": "Gasoline",
+        "NormalizedFuel": "Gasoline",
+        "FuelCode": "fuel.gasoline",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "Propulsion",
+        "NormalizedPropulsion",
+        "MechanicalPropulsionCode",
+        "EngineConfiguration",
+        "AirDraft"
+      ],
+      "note": "1994–97 generation offered twin gasoline engines with either V-drive inboard or sterndrive propulsion, so the generation-level propulsion field remains unknown.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/300-sundancer-1994-97"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-300-WE-G2",
+      "fields": {
+        "Fuel": "Gasoline",
+        "NormalizedFuel": "Gasoline",
+        "FuelCode": "fuel.gasoline",
+        "Propulsion": "Shaft",
+        "NormalizedPropulsion": "Shaft",
+        "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+        "EngineConfiguration": "Twin Inboard",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "note": "1985–89 model guide identifies twin 260 hp gasoline inboards. Shaft is the canonical mechanical propulsion normalization for this direct inboard arrangement.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/300-weekender-1985-89"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-SRV300-EC",
+      "fields": {
+        "Fuel": "Gasoline",
+        "NormalizedFuel": "Gasoline",
+        "FuelCode": "fuel.gasoline",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "Propulsion",
+        "NormalizedPropulsion",
+        "MechanicalPropulsionCode",
+        "EngineConfiguration",
+        "AirDraft"
+      ],
+      "note": "Period guide documents twin gasoline inboards among several engine options. Fuel and twin-engine configuration are well supported; exact generation-wide propulsion is not forced without confirming every offered package.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/srv-300-express-cruiser-1978-81"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-310-AJ",
+      "fields": {
+        "Propulsion": "Shaft",
+        "NormalizedPropulsion": "Shaft",
+        "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+        "EngineConfiguration": "Twin Inboard",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "Fuel",
+        "NormalizedFuel",
+        "FuelCode",
+        "AirDraft"
+      ],
+      "note": "310 Amberjack sources support twin direct-drive inboards. Both gasoline and diesel examples exist for 1992, so fuel remains unknown at model-generation level.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/310-amberjack-1992-94",
+        "https://ca.boats.com/power-boats/1992-sea-ray-310-amberjack-9865069/",
+        "https://www.boatingworld.com/boats/sea-ray-boats/1992-sea-ray-310-amberjack"
+      ]
+    }
+  ]
+}
