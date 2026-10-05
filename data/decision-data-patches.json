@@ -1,94 +1,80 @@
 {
-  "patchSet": "phase1-decision-data-riviera-01",
+  "patchSet": "phase1-decision-data-riviera-02",
   "createdAt": "2026-10-05",
-  "purpose": "Fill Riviera beam/draft and related structural fields from Riviera official classic-model specifications.",
+  "purpose": "Continue Riviera structural-spec completion from official Riviera classic-model pages.",
   "patches": [
     {
-      "BoatModelID": "RIVI-30-OFB",
-      "sourceURL": "https://www.rivieraaustralia.com/classic-models/riviera-30-open-flybridge/",
+      "BoatModelID": "RIVI-38-OFB-MK1",
+      "sourceURL": "https://www.rivieraaustralia.com/classic-models/riviera-38-open-flybridge-mk-i/",
       "fields": {
-        "Beam": 3.28,
-        "Beam_ft": 10.75,
-        "Draft": 0.71,
-        "Draft_ft": 2.3333,
-        "Displacement": 4309,
-        "DisplacementLb": 9500
+        "LOA": 11.65,
+        "LOA_ft": 38.1667,
+        "Beam": 4.19,
+        "Beam_ft": 13.75,
+        "Draft": 0.9,
+        "Draft_ft": 2.9167,
+        "Displacement": 11136,
+        "DisplacementLb": 24551
       },
       "confidence": {
+        "LOA": "High",
         "Beam": "High",
         "Draft": "High",
         "Displacement": "High"
       }
     },
     {
-      "BoatModelID": "RIVI-32-OFB",
-      "sourceURL": "https://www.rivieraaustralia.com/classic-models/riviera-32-open-flybridge/",
+      "BoatModelID": "RIVI-38-OFB-MK2",
+      "sourceURL": "https://www.rivieraaustralia.com/classic-models/riviera-38-mark-ii/",
       "fields": {
-        "Beam": 3.58,
-        "Beam_ft": 11.75,
-        "Draft": 0.76,
-        "Draft_ft": 2.5,
-        "Displacement": 6130,
-        "DisplacementLb": 13500,
-        "FuelCapacity": 570,
-        "FuelCapacityGal": 151,
-        "WaterCapacity": 250,
-        "WaterCapacityGal": 66
-      },
-      "confidence": {
-        "Beam": "High",
-        "Draft": "High",
-        "Displacement": "High",
-        "FuelCapacity": "High",
-        "WaterCapacity": "High"
-      }
-    },
-    {
-      "BoatModelID": "RIVI-34-OFB-G1",
-      "sourceURL": "https://www.rivieraaustralia.com/classic-models/riviera-34-open-flybridge-mk-ii/",
-      "fields": {
-        "LOA": 10.29,
-        "LOA_ft": 33.75,
-        "Beam": 3.58,
-        "Beam_ft": 11.75,
-        "Draft": 0.76,
-        "Draft_ft": 2.5,
-        "Displacement": 6800,
-        "DisplacementLb": 14985,
-        "FuelCapacity": 573,
-        "FuelCapacityGal": 126,
-        "WaterCapacity": 250,
-        "WaterCapacityGal": 55
+        "LOA": 11.58,
+        "LOA_ft": 38,
+        "Beam": 4.11,
+        "Beam_ft": 13.5,
+        "Draft": 1.05,
+        "Draft_ft": 3.4167,
+        "AirDraft": 3.66,
+        "AirDraft_ft": 12,
+        "Displacement": 9526,
+        "DisplacementLb": 21000,
+        "FuelCapacity": 541,
+        "FuelCapacityGal": 143,
+        "WaterCapacity": 363,
+        "WaterCapacityGal": 96
       },
       "confidence": {
         "LOA": "High",
         "Beam": "High",
         "Draft": "High",
+        "AirDraft": "High",
         "Displacement": "High",
         "FuelCapacity": "High",
         "WaterCapacity": "High"
       }
     },
     {
-      "BoatModelID": "RIVI-35-OFB",
-      "sourceURL": "https://www.rivieraaustralia.com/classic-models/riviera-35-open-flybridge/",
+      "BoatModelID": "RIVI-39-OFB-G1",
+      "sourceURL": "https://www.rivieraaustralia.com/classic-models/riviera-39-open-flybridge/",
       "fields": {
-        "Beam": 3.96,
-        "Beam_ft": 13,
-        "Draft": 1.04,
-        "Draft_ft": 3.4167,
-        "Displacement": 8645,
-        "DisplacementLb": 19020,
-        "FuelCapacity": 1090,
-        "FuelCapacityGal": 288,
-        "WaterCapacity": 377,
-        "WaterCapacityGal": 100,
+        "LOA": 12.15,
+        "LOA_ft": 39.3333,
+        "Beam": 4.46,
+        "Beam_ft": 14.5,
+        "Draft": 1.1,
+        "Draft_ft": 3.5833,
+        "Displacement": 10750,
+        "DisplacementLb": 23700,
+        "FuelCapacity": 1440,
+        "FuelCapacityGal": 320,
+        "WaterCapacity": 360,
+        "WaterCapacityGal": 80,
         "Propulsion": "Shaft",
         "NormalizedPropulsion": "Shaft",
         "EngineCount": 2,
         "EngineConfiguration": "Twin shaft-drive diesel"
       },
       "confidence": {
+        "LOA": "High",
         "Beam": "High",
         "Draft": "High",
         "Displacement": "High",
@@ -99,21 +85,23 @@
       }
     },
     {
-      "BoatModelID": "RIVI-3300-OFB",
-      "sourceURL": "https://www.rivieraaustralia.com/classic-models/riviera-3300-open-flybridge/",
+      "BoatModelID": "RIVI-3000-OFF",
+      "sourceURL": "https://www.rivieraaustralia.com/classic-models/riviera-3000-offshore/",
       "fields": {
-        "LOA": 10.04,
-        "LOA_ft": 32.9167,
-        "Beam": 3.9,
-        "Beam_ft": 12.75,
-        "Draft": 0.95,
-        "Draft_ft": 3.0833,
-        "Displacement": 7802,
-        "DisplacementLb": 17200,
-        "FuelCapacity": 1090,
-        "FuelCapacityGal": 238,
-        "WaterCapacity": 318,
-        "WaterCapacityGal": 70
+        "LOA": 9.42,
+        "LOA_ft": 30.9167,
+        "Beam": 3.49,
+        "Beam_ft": 11.4167,
+        "Draft": 0.88,
+        "Draft_ft": 2.9167,
+        "Displacement": 5500,
+        "DisplacementLb": 12125,
+        "FuelCapacity": 620,
+        "FuelCapacityGal": 164,
+        "WaterCapacity": 260,
+        "WaterCapacityGal": 69,
+        "EngineCount": 2,
+        "EngineConfiguration": "Twin diesel"
       },
       "confidence": {
         "LOA": "High",
@@ -121,7 +109,37 @@
         "Draft": "High",
         "Displacement": "High",
         "FuelCapacity": "High",
-        "WaterCapacity": "High"
+        "WaterCapacity": "High",
+        "EngineConfiguration": "High"
+      }
+    },
+    {
+      "BoatModelID": "RIVI-36-SC",
+      "sourceURL": "https://www.rivieraaustralia.com/classic-models/riviera-36-single-cabin/",
+      "fields": {
+        "LOA": 11.06,
+        "LOA_ft": 36.25,
+        "Beam": 4.07,
+        "Beam_ft": 13.3333,
+        "Draft": 0.88,
+        "Draft_ft": 3,
+        "Displacement": 9500,
+        "DisplacementLb": 20944,
+        "FuelCapacity": 1278,
+        "FuelCapacityGal": 338,
+        "WaterCapacity": 370,
+        "WaterCapacityGal": 98,
+        "EngineCount": 2,
+        "EngineConfiguration": "Twin diesel"
+      },
+      "confidence": {
+        "LOA": "High",
+        "Beam": "High",
+        "Draft": "High",
+        "Displacement": "High",
+        "FuelCapacity": "High",
+        "WaterCapacity": "High",
+        "EngineConfiguration": "High"
       }
     }
   ]
