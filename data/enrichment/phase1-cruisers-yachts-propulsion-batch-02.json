@@ -1,0 +1,124 @@
+{
+  "date": "2026-10-05",
+  "phase": "Phase 1 enrichment",
+  "manufacturer": "Cruisers Yachts",
+  "batch": 2,
+  "requestedBatchSize": 30,
+  "researchedRecords": 8,
+  "status": "source-linked conservative enrichment staging; closes currently identified at-or-below-50-foot Cruisers Yachts priority set",
+  "policy": "Maximum 30 models per batch. Populate only generation-level invariant facts; preserve configuration-dependent unknowns and existing canonical values. Source pages are attached for subsequent verified field extraction.",
+  "records": [
+    {
+      "BoatModelID": "CRUY-45-CAN",
+      "fields": {},
+      "intentionallyUnresolved": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount",
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/cruisers/45-cantius-2013-18"
+      ]
+    },
+    {
+      "BoatModelID": "CRUY-455-EMY",
+      "fields": {},
+      "intentionallyUnresolved": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount",
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/cruisers/455-express-motor-yacht-2004-12"
+      ]
+    },
+    {
+      "BoatModelID": "CRUY-46-CAN",
+      "fields": {},
+      "intentionallyUnresolved": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount",
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/cruisers/46-cantius-2020-23"
+      ]
+    },
+    {
+      "BoatModelID": "CRUY-48-CAN",
+      "fields": {},
+      "intentionallyUnresolved": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount",
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/cruisers/48-cantius-2011-16"
+      ]
+    },
+    {
+      "BoatModelID": "CRUY-5000-SS",
+      "fields": {},
+      "intentionallyUnresolved": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount",
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/cruisers/5000-sedan-sport-1998-2003"
+      ]
+    },
+    {
+      "BoatModelID": "CRUY-390-EC",
+      "fields": {},
+      "intentionallyUnresolved": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount",
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.boats.com/power-boats/2015-cruisers-yachts-390-express-coupe-9841715/"
+      ]
+    },
+    {
+      "BoatModelID": "CRUY-42-CAN",
+      "fields": {},
+      "intentionallyUnresolved": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount",
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.boats.com/power-boats/2020-cruisers-yachts-42-cantius-9811754/"
+      ]
+    },
+    {
+      "BoatModelID": "CRUY-50-CAN",
+      "fields": {},
+      "intentionallyUnresolved": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount",
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.boats.com/power-boats/2022-cruisers-yachts-50-cantius-9520263/"
+      ]
+    }
+  ]
+}
