@@ -1,20 +1,40 @@
 {
-  "patchSet": "phase1-decision-data-powertrain-airdraft-02",
+  "patchSet": "phase1-decision-data-powertrain-airdraft-03",
   "createdAt": "2026-10-05",
-  "purpose": "Fill Carver fuel, propulsion, engine configuration, and selected air-draft fields from exact-model HMY Powerboat Guide pages.",
+  "purpose": "Continue Carver powertrain and air-draft completion using exact-model HMY Powerboat Guide sources.",
   "patches": [
     {
-      "BoatModelID": "CARV-350-36-MAR",
-      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/carver/350-mariner-36-mariner-1997-2012",
+      "BoatModelID": "CARV-405-406-AC",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/carver/405-406-aft-cabin-1997-2002",
       "fields": {
-        "Fuel": "Gasoline",
-        "NormalizedFuel": "Gasoline",
+        "Fuel": "Mixed Diesel/Gasoline",
+        "NormalizedFuel": "Mixed Diesel/Gasoline",
+        "Propulsion": "Shaft",
+        "NormalizedPropulsion": "Shaft",
+        "EngineCount": 2,
+        "EngineConfiguration": "Twin inboard; MerCruiser gasoline or Cummins diesel",
+        "AirDraft": 5.2324,
+        "AirDraft_ft": 17.1667
+      },
+      "confidence": {
+        "Fuel": "High",
+        "Propulsion": "High",
+        "EngineConfiguration": "High",
+        "AirDraft": "High"
+      }
+    },
+    {
+      "BoatModelID": "CARV-C40-CB",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/carver/c40-command-bridge-2014-21",
+      "fields": {
+        "Fuel": "Diesel",
+        "NormalizedFuel": "Diesel",
         "Propulsion": "Shaft/V-Drive",
         "NormalizedPropulsion": "Shaft/V-Drive",
         "EngineCount": 2,
-        "EngineConfiguration": "Twin MerCruiser 300 hp V-drive gasoline",
-        "AirDraft": 4.318,
-        "AirDraft_ft": 14.1667
+        "EngineConfiguration": "Twin Cummins 380 hp V-drive diesel",
+        "AirDraft": 3.8354,
+        "AirDraft_ft": 12.5833
       },
       "confidence": {
         "Fuel": "High",
@@ -24,17 +44,37 @@
       }
     },
     {
-      "BoatModelID": "CARV-355-356-MY",
-      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/carver/355-356-motor-yacht-1995-2003",
+      "BoatModelID": "CARV-41-CMY",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/carver/41-cockpit-motor-yacht-2005-13",
+      "fields": {
+        "Fuel": "Diesel",
+        "NormalizedFuel": "Diesel",
+        "Propulsion": "Shaft",
+        "NormalizedPropulsion": "Shaft",
+        "EngineCount": 2,
+        "EngineConfiguration": "Twin Volvo 370 hp diesel inboard",
+        "AirDraft": 4.5974,
+        "AirDraft_ft": 15.0833
+      },
+      "confidence": {
+        "Fuel": "High",
+        "Propulsion": "High",
+        "EngineConfiguration": "High",
+        "AirDraft": "High"
+      }
+    },
+    {
+      "BoatModelID": "CARV-410-SS",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/carver/410-sport-sedan-2002-03",
       "fields": {
         "Fuel": "Mixed Diesel/Gasoline",
         "NormalizedFuel": "Mixed Diesel/Gasoline",
         "Propulsion": "Shaft",
         "NormalizedPropulsion": "Shaft",
         "EngineCount": 2,
-        "EngineConfiguration": "Twin inboard; Volvo gasoline or Cummins diesel",
-        "AirDraft": 5.334,
-        "AirDraft_ft": 17.5
+        "EngineConfiguration": "Twin inboard; Volvo gasoline or Volvo diesel",
+        "AirDraft": 5.842,
+        "AirDraft_ft": 19.1667
       },
       "confidence": {
         "Fuel": "High",
@@ -44,54 +84,17 @@
       }
     },
     {
-      "BoatModelID": "CARV-3607-AC",
-      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/carver/3607-aft-cabin-1982-89",
+      "BoatModelID": "CARV-42-43-SS",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/carver/42-43-super-sport-2006-12",
       "fields": {
-        "Fuel": "Gasoline",
-        "NormalizedFuel": "Gasoline",
-        "Propulsion": "Shaft",
-        "NormalizedPropulsion": "Shaft",
+        "Fuel": "Diesel",
+        "NormalizedFuel": "Diesel",
+        "Propulsion": "Pod",
+        "NormalizedPropulsion": "Pod",
         "EngineCount": 2,
-        "EngineConfiguration": "Twin Crusader 350 hp gasoline inboard",
-        "AirDraft": 3.5814,
-        "AirDraft_ft": 11.75
-      },
-      "confidence": {
-        "Fuel": "High",
-        "Propulsion": "High",
-        "EngineConfiguration": "High",
-        "AirDraft": "High"
-      }
-    },
-    {
-      "BoatModelID": "CARV-366-MY",
-      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/carver/366-motor-yacht-2002-06",
-      "fields": {
-        "Fuel": "Mixed Diesel/Gasoline",
-        "NormalizedFuel": "Mixed Diesel/Gasoline",
-        "Propulsion": "Shaft",
-        "NormalizedPropulsion": "Shaft",
-        "EngineCount": 2,
-        "EngineConfiguration": "Twin inboard; MerCruiser gasoline or Volvo diesel"
-      },
-      "confidence": {
-        "Fuel": "High",
-        "Propulsion": "High",
-        "EngineConfiguration": "High"
-      }
-    },
-    {
-      "BoatModelID": "CARV-C37-CP",
-      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/carver/c37-coupe-2014-21",
-      "fields": {
-        "Fuel": "Gasoline",
-        "NormalizedFuel": "Gasoline",
-        "Propulsion": "Sterndrive",
-        "NormalizedPropulsion": "Sterndrive",
-        "EngineCount": 2,
-        "EngineConfiguration": "Twin MerCruiser 320 hp gasoline sterndrive",
-        "AirDraft": 3.7592,
-        "AirDraft_ft": 12.3333
+        "EngineConfiguration": "Twin Volvo 370 hp IPS diesel",
+        "AirDraft": 5.969,
+        "AirDraft_ft": 19.5833
       },
       "confidence": {
         "Fuel": "High",
