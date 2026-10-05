@@ -1,0 +1,220 @@
+{
+  "date": "2026-10-05",
+  "phase": "Phase 1 enrichment",
+  "manufacturer": "Carver",
+  "batch": 3,
+  "requestedBatchSize": 15,
+  "researchedRecords": 10,
+  "status": "source-verified enrichment staging; closes current at-or-below-50-foot Carver focus",
+  "policy": "Maximum 15 models per batch. Populate only generation-level invariant facts; preserve configuration-dependent unknowns and existing canonical values. Models above the current 50-foot focus remain in the registry for later passes.",
+  "records": [
+    {
+      "BoatModelID": "CARV-C43-CP",
+      "fields": {
+        "AirDraft": 3.302,
+        "AirDraft_ft": 10.8333
+      },
+      "intentionallyUnresolved": [
+        "Fuel",
+        "NormalizedFuel",
+        "FuelCode",
+        "Propulsion",
+        "NormalizedPropulsion",
+        "MechanicalPropulsionCode",
+        "EngineConfiguration",
+        "EngineCount"
+      ],
+      "note": "Clearance is model-level invariant. HMY documents optional Cummins V-drive diesels, so powertrain fields remain unresolved rather than treating an option as universal.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/carver/c43-coupe-2016-20"
+      ]
+    },
+    {
+      "BoatModelID": "CARV-44-SOJ",
+      "fields": {
+        "Fuel": "Diesel",
+        "NormalizedFuel": "Diesel",
+        "FuelCode": "fuel.diesel",
+        "Propulsion": "Pod",
+        "NormalizedPropulsion": "Pod",
+        "MechanicalPropulsionCode": "mechanical_propulsion.pod",
+        "EngineConfiguration": "Twin Volvo IPS diesel pod drives",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "note": "HMY documents Volvo IPS 500 diesel power; published clearance is NA.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/carver/44-sojourn-2009-12"
+      ]
+    },
+    {
+      "BoatModelID": "CARV-440-AC",
+      "fields": {
+        "Fuel": "Diesel",
+        "NormalizedFuel": "Diesel",
+        "FuelCode": "fuel.diesel",
+        "EngineCount": 2,
+        "AirDraft": 5.715,
+        "AirDraft_ft": 18.75
+      },
+      "intentionallyUnresolved": [
+        "Propulsion",
+        "NormalizedPropulsion",
+        "MechanicalPropulsionCode",
+        "EngineConfiguration"
+      ],
+      "note": "Twin Cummins diesel power and arch clearance are documented; exact drive normalization is left unresolved.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/carver/440-aft-cabin-1993-95"
+      ]
+    },
+    {
+      "BoatModelID": "CARV-444-CMY",
+      "fields": {
+        "Fuel": "Diesel",
+        "NormalizedFuel": "Diesel",
+        "FuelCode": "fuel.diesel",
+        "EngineCount": 2,
+        "AirDraft": 5.4864,
+        "AirDraft_ft": 18
+      },
+      "intentionallyUnresolved": [
+        "Propulsion",
+        "NormalizedPropulsion",
+        "MechanicalPropulsionCode",
+        "EngineConfiguration"
+      ],
+      "note": "Twin Volvo diesel power and arch clearance are documented; exact drive normalization is left unresolved.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/carver/444-cockpit-motor-yacht-2001-06"
+      ]
+    },
+    {
+      "BoatModelID": "CARV-445-AC",
+      "fields": {
+        "Fuel": "Diesel",
+        "NormalizedFuel": "Diesel",
+        "FuelCode": "fuel.diesel",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "Propulsion",
+        "NormalizedPropulsion",
+        "MechanicalPropulsionCode",
+        "EngineConfiguration",
+        "AirDraft"
+      ],
+      "note": "Twin Cummins/Caterpillar diesel power is documented; published clearance is NA and drive normalization is not explicit enough to stage.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/carver/445-aft-cabin-1996-99"
+      ]
+    },
+    {
+      "BoatModelID": "CARV-450-VOY",
+      "fields": {
+        "Fuel": "Diesel",
+        "NormalizedFuel": "Diesel",
+        "FuelCode": "fuel.diesel",
+        "EngineCount": 2,
+        "AirDraft": 5.08,
+        "AirDraft_ft": 16.6667
+      },
+      "intentionallyUnresolved": [
+        "Propulsion",
+        "NormalizedPropulsion",
+        "MechanicalPropulsionCode",
+        "EngineConfiguration"
+      ],
+      "note": "Twin Cummins diesel power and clearance are documented; exact drive normalization is left unresolved.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/carver/450-voyager-1999-2006"
+      ]
+    },
+    {
+      "BoatModelID": "CARV-455-456-AC",
+      "fields": {
+        "Fuel": "Diesel",
+        "NormalizedFuel": "Diesel",
+        "FuelCode": "fuel.diesel",
+        "EngineCount": 2,
+        "AirDraft": 5.715,
+        "AirDraft_ft": 18.75
+      },
+      "intentionallyUnresolved": [
+        "Propulsion",
+        "NormalizedPropulsion",
+        "MechanicalPropulsionCode",
+        "EngineConfiguration"
+      ],
+      "note": "Twin Cummins diesel power and clearance are documented; exact drive normalization is left unresolved.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/carver/455-456-aft-cabin-motor-yacht-1996-2000"
+      ]
+    },
+    {
+      "BoatModelID": "CARV-46-VOY",
+      "fields": {
+        "Fuel": "Diesel",
+        "NormalizedFuel": "Diesel",
+        "FuelCode": "fuel.diesel",
+        "EngineCount": 2,
+        "AirDraft": 5.08,
+        "AirDraft_ft": 16.6667
+      },
+      "intentionallyUnresolved": [
+        "Propulsion",
+        "NormalizedPropulsion",
+        "MechanicalPropulsionCode",
+        "EngineConfiguration"
+      ],
+      "note": "Twin Cummins diesel power and clearance are documented; exact drive normalization is left unresolved.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/carver/46-voyager-2004-11"
+      ]
+    },
+    {
+      "BoatModelID": "CARV-466-MY",
+      "fields": {
+        "Fuel": "Diesel",
+        "NormalizedFuel": "Diesel",
+        "FuelCode": "fuel.diesel",
+        "EngineCount": 2,
+        "AirDraft": 5.9182,
+        "AirDraft_ft": 19.4167
+      },
+      "intentionallyUnresolved": [
+        "Propulsion",
+        "NormalizedPropulsion",
+        "MechanicalPropulsionCode",
+        "EngineConfiguration"
+      ],
+      "note": "Twin Volvo diesel power and clearance are documented; exact drive normalization is left unresolved.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/carver/466-motor-yacht-2001-07"
+      ]
+    },
+    {
+      "BoatModelID": "CARV-500-504-CMY",
+      "fields": {
+        "Fuel": "Diesel",
+        "NormalizedFuel": "Diesel",
+        "FuelCode": "fuel.diesel",
+        "EngineCount": 2,
+        "AirDraft": 5.715,
+        "AirDraft_ft": 18.75
+      },
+      "intentionallyUnresolved": [
+        "Propulsion",
+        "NormalizedPropulsion",
+        "MechanicalPropulsionCode",
+        "EngineConfiguration"
+      ],
+      "note": "Twin Cummins diesel power and arch clearance are documented; exact drive normalization is left unresolved.",
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/carver/500-504-cockpit-motor-yacht-1996-2000"
+      ]
+    }
+  ]
+}
