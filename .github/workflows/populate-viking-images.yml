@@ -51,7 +51,7 @@ jobs:
 
           async function get(url){
             const proxy="https://r.jina.ai/"+url;
-            const res=await fetch(proxy,{headers:{"user-agent":"B-Atlas image reference audit"}});
+            const res=await fetch(proxy,{headers:{"user-agent":"B-Atlas image reference audit"},signal:AbortSignal.timeout(15000)});
             if(!res.ok) throw new Error(res.status+" "+proxy);
             return await res.text();
           }
@@ -63,8 +63,7 @@ jobs:
           ];
           const pages=[...new Set(hrefs)];
 
-          const pageMeta=[];
-          for(const url of pages){
+          const pageMeta=(await Promise.all(pages.map(async url=>{
             try{
               const text=await get(url);
               const title=decode((text.match(/^#\s+(.+)$/m)||[])[1]||
@@ -74,11 +73,12 @@ jobs:
               const preferred=imageMatches.find(u=>/viking/i.test(u) && !/floor|logo|icon|avatar/i.test(u))
                            || imageMatches.find(u=>!/floor|logo|icon|avatar/i.test(u))
                            || "";
-              pageMeta.push({url,title,slug:url.split("/").pop(),yearText,image:preferred});
+              return {url,title,slug:url.split("/").pop(),yearText,image:preferred};
             }catch(e){
               console.log("PAGE_FETCH_FAIL",url,String(e));
+              return null;
             }
-          }
+          }))).filter(Boolean);
 
           function parseYears(text){
             const m=String(text||"").match(/((?:19|20)\d{2})\s*[–-]\s*((?:19|20)\d{2}|Current|\?)/i);
