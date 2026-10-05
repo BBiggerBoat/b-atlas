@@ -5,81 +5,81 @@
 
     const DEFAULT_MANIFEST = Object.freeze({
         boats: "boatmodels.json",
-        phase2Models: "data/phase2-live-models.json",
+
         phase2Aliases: "data/phase2-live-aliases.json",
-        phase2ModelsCarver3539: "data/phase2-live-models-carver-35-39.json",
+
         phase2AliasesCarver3539: "data/phase2-live-aliases-carver-35-39.json",
-        phase2ModelsCarver4044: "data/phase2-live-models-carver-40-44.json",
+
         phase2AliasesCarver4044: "data/phase2-live-aliases-carver-40-44.json",
-        phase2ModelsCarver4550: "data/phase2-live-models-carver-45-50.json",
+
         phase2AliasesCarver4550: "data/phase2-live-aliases-carver-45-50.json",
-        phase2ModelsFourWinns3034: "data/phase2-live-models-four-winns-30-34.json",
+
         phase2AliasesFourWinns3034: "data/phase2-live-aliases-four-winns-30-34.json",
-        phase2ModelsFourWinns3539: "data/phase2-live-models-four-winns-35-39.json",
+
         phase2AliasesFourWinns3539: "data/phase2-live-aliases-four-winns-35-39.json",
-        phase2ModelsFourWinns4050: "data/phase2-live-models-four-winns-40-50.json",
+
         phase2AliasesFourWinns4050: "data/phase2-live-aliases-four-winns-40-50.json",
-        phase2ModelsRinker3034: "data/phase2-live-models-rinker-30-34.json",
+
         phase2AliasesRinker3034: "data/phase2-live-aliases-rinker-30-34.json",
-        phase2ModelsRinker3539: "data/phase2-live-models-rinker-35-39.json",
+
         phase2AliasesRinker3539: "data/phase2-live-aliases-rinker-35-39.json",
-        phase2ModelsRinker4050: "data/phase2-live-models-rinker-40-50.json",
+
         phase2AliasesRinker4050: "data/phase2-live-aliases-rinker-40-50.json",
-        phase2ModelsCruisersYachts3034: "data/phase2-live-models-cruisers-yachts-30-34.json",
+
         phase2AliasesCruisersYachts3034: "data/phase2-live-aliases-cruisers-yachts-30-34.json",
-        phase2ModelsCruisersYachts3539: "data/phase2-live-models-cruisers-yachts-35-39.json",
+
         phase2AliasesCruisersYachts3539: "data/phase2-live-aliases-cruisers-yachts-35-39.json",
-        phase2ModelsCruisersYachts4044: "data/phase2-live-models-cruisers-yachts-40-44.json",
+
         phase2AliasesCruisersYachts4044: "data/phase2-live-aliases-cruisers-yachts-40-44.json",
-        phase2ModelsCruisersYachts4550: "data/phase2-live-models-cruisers-yachts-45-50.json",
+
         phase2AliasesCruisersYachts4550: "data/phase2-live-aliases-cruisers-yachts-45-50.json",
-        phase2ModelsRegal3034: "data/phase2-live-models-regal-30-34.json",
+
         phase2AliasesRegal3034: "data/phase2-live-aliases-regal-30-34.json",
-        phase2ModelsRegal3539: "data/phase2-live-models-regal-35-39.json",
+
         phase2AliasesRegal3539: "data/phase2-live-aliases-regal-35-39.json",
-        phase2ModelsRegal4044: "data/phase2-live-models-regal-40-44.json",
+
         phase2AliasesRegal4044: "data/phase2-live-aliases-regal-40-44.json",
-        phase2ModelsRegal4550: "data/phase2-live-models-regal-45-50.json",
+
         phase2AliasesRegal4550: "data/phase2-live-aliases-regal-45-50.json",
-        phase2ModelsChaparral3034: "data/phase2-live-models-chaparral-30-34.json",
+
         phase2AliasesChaparral3034: "data/phase2-live-aliases-chaparral-30-34.json",
-        phase2ModelsChaparral3539: "data/phase2-live-models-chaparral-35-39.json",
+
         phase2AliasesChaparral3539: "data/phase2-live-aliases-chaparral-35-39.json",
-        phase2ModelsMonterey3034: "data/phase2-live-models-monterey-30-34.json",
+
         phase2AliasesMonterey3034: "data/phase2-live-aliases-monterey-30-34.json",
-        phase2ModelsMonterey3539: "data/phase2-live-models-monterey-35-39.json",
+
         phase2AliasesMonterey3539: "data/phase2-live-aliases-monterey-35-39.json",
-        phase2ModelsMonterey4050: "data/phase2-live-models-monterey-40-50.json",
+
         phase2AliasesMonterey4050: "data/phase2-live-aliases-monterey-40-50.json",
-        phase2ModelsFormula3034: "data/phase2-live-models-formula-30-34.json",
+
         phase2AliasesFormula3034: "data/phase2-live-aliases-formula-30-34.json",
-        phase2ModelsFormula3539: "data/phase2-live-models-formula-35-39.json",
+
         phase2AliasesFormula3539: "data/phase2-live-aliases-formula-35-39.json",
-        phase2ModelsFormula4044: "data/phase2-live-models-formula-40-44.json",
+
         phase2AliasesFormula4044: "data/phase2-live-aliases-formula-40-44.json",
-        phase2ModelsFormula4550: "data/phase2-live-models-formula-45-50.json",
+
         phase2AliasesFormula4550: "data/phase2-live-aliases-formula-45-50.json",
-        phase2ModelsCobalt3034: "data/phase2-live-models-cobalt-30-34.json",
+
         phase2AliasesCobalt3034: "data/phase2-live-aliases-cobalt-30-34.json",
-        phase2ModelsCobalt3539: "data/phase2-live-models-cobalt-35-39.json",
+
         phase2AliasesCobalt3539: "data/phase2-live-aliases-cobalt-35-39.json",
-        phase2ModelsCobalt4044: "data/phase2-live-models-cobalt-40-44.json",
+
         phase2AliasesCobalt4044: "data/phase2-live-aliases-cobalt-40-44.json",
-        phase2ModelsWellcraft3034: "data/phase2-live-models-wellcraft-30-34.json",
+
         phase2AliasesWellcraft3034: "data/phase2-live-aliases-wellcraft-30-34.json",
-        phase2ModelsWellcraft3539: "data/phase2-live-models-wellcraft-35-39.json",
+
         phase2AliasesWellcraft3539: "data/phase2-live-aliases-wellcraft-35-39.json",
-        phase2ModelsWellcraft4044: "data/phase2-live-models-wellcraft-40-44.json",
+
         phase2AliasesWellcraft4044: "data/phase2-live-aliases-wellcraft-40-44.json",
-        phase2ModelsWellcraft4550: "data/phase2-live-models-wellcraft-45-50.json",
+
         phase2AliasesWellcraft4550: "data/phase2-live-aliases-wellcraft-45-50.json",
-        phase2ModelsTiara4550: "data/phase2-live-models-tiara-45-50.json",
+
         phase2AliasesTiara4550: "data/phase2-live-aliases-tiara-45-50.json",
-        phase2ModelsRiviera3039: "data/phase2-live-models-riviera-30-39.json",
+
         phase2AliasesRiviera3039: "data/phase2-live-aliases-riviera-30-39.json",
-        phase2ModelsRiviera4044: "data/phase2-live-models-riviera-40-44.json",
+
         phase2AliasesRiviera4044: "data/phase2-live-aliases-riviera-40-44.json",
-        phase2ModelsRiviera4550: "data/phase2-live-models-riviera-45-50.json",
+
         phase2AliasesRiviera4550: "data/phase2-live-aliases-riviera-45-50.json",
         productionPhases: "data/production-phases.json",
         routes: "routes.json",
@@ -128,7 +128,6 @@
             return response.json();
         });
     }
-
 
     function applyCanonicalCompatibility(row) {
         if (!row || typeof row !== "object") return row;
@@ -568,9 +567,8 @@
                 }
             }
 
-            // Phase 2 live overlay: keep the large canonical boatmodels.json stable while
-            // publishing newly researched models immediately. Canonical records win on
-            // duplicate IDs; staged records only fill identities not yet in boatmodels.json.
+            // Legacy Phase 2 model-overlay merge code is retained as a no-op for compatibility;
+            // model shards are no longer loaded because boatmodels.json is authoritative.
             if (Array.isArray(data.boats) && Array.isArray(data.phase2Models)) {
                 const ids = new Set(data.boats.map(row => row?.BoatModelID).filter(Boolean));
                 for (const row of data.phase2Models) {

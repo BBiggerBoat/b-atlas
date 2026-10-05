@@ -1,0 +1,765 @@
+{
+  "generatedAt": "2026-10-05T11:41:54.899Z",
+  "canonicalPath": "boatmodels.json",
+  "before": 299,
+  "phase2ModelFiles": 51,
+  "phase2SourceRows": 806,
+  "added": 697,
+  "after": 996,
+  "duplicateCanonicalIds": [],
+  "skippedCount": 109,
+  "skipped": [
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "MAXU-3000-SCR",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "MAXU-3100-SCR-SE",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "MAXU-3200-SCR",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "MAXU-3300-SCR-SE",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "MAXU-3500-SCR-SY",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "MAXU-3700-SCR",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "MAXU-3700-SY",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "MAXU-3900-4100-SCR",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "MAXU-4100-SCA",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "MAXU-4100-SCB",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "MAXU-4200-SCR-SY",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "MAXU-4600-SCB",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "TIAR-3000-OPEN",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "TIAR-3100-CONV",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "TIAR-3100-OPEN-7991",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "TIAR-3100-OPEN-9204",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "TIAR-3100-OPEN-1116",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "TIAR-3100-CORONET",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "TIAR-3200-OPEN",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "TIAR-3300-FB",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "TIAR-3300-OPEN",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "TIAR-34-LS",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "TIAR-34-LX",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "TIAR-3500-EXP",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "TIAR-3500-OPEN",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "TIAR-3500-SOVRAN",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "TIAR-3600-CVT",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "TIAR-3600-CORONET",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "TIAR-3600-OPEN-8596",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "TIAR-3600-OPEN-0514",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "TIAR-3600-SOVRAN",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "TIAR-3700-OPEN",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "TIAR-3800-OPEN",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "TIAR-38-LS",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "TIAR-39-COUPE",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "TIAR-3900-CVT",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "TIAR-3900-CORONET",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "TIAR-3900-OPEN",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "TIAR-3900-SOVRAN",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "TIAR-4000-EXP",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "TIAR-4100-OPEN",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "TIAR-4200-OPEN",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "TIAR-43-LE",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "TIAR-43-LS",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "TIAR-4300-CVT",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "TIAR-4300-OPEN-9102",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "TIAR-4300-OPEN-1020",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "TIAR-4300-SOVRAN",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "TIAR-44-COUPE",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "TIAR-44-FB",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "TIAR-4500-SOVRAN",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "TIAR-46-LS",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "TIAR-48-LS",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "TIAR-48-LE",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "LARS-300-310-CAB",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "LARS-310-CAB-0308",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "LARS-330-CAB",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "LARS-350-CAB",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "LARS-370-CAB",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "LUHR-30-ALURA",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "LUHR-300-TOUR",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "LUHR-30-31-OPEN",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "LUHR-320-CVT-8899",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "LUHR-32-CVT-0102",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "LUHR-320-FB",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "LUHR-320-OPEN",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "LUHR-34-CVT",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "LUHR-340-SF",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "LUHR-3400-MY",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "LUHR-342-TOUR",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "LUHR-3420-MY",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "LUHR-35-ALURA",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "LUHR-350-CVT",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "LUHR-35-CVT",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "LUHR-36-CVT",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "LUHR-36-SX-OPEN",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "LUHR-37-OPEN-IPS",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "LUHR-380-40-38-CVT",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "LUHR-380-40-38-OPEN",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "LUHR-TOUR-400",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "LUHR-41-CVT",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "LUHR-41-HT",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "LUHR-41-OPEN",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "LUHR-44-CVT",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "PURS-3000-EXP",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "PURS-3000-OFF",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "PURS-3070-CC",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "PURS-OS305",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "PURS-3100-OFF",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "PURS-C300",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "PURS-C310",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "PURS-ST310",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "PURS-OS315",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "PURS-DC325",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "PURS-OS325",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "PURS-S328",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "PURS-OS335",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "PURS-3480-C340",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "PURS-3400-OFF",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "PURS-3800-OFF",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "PURS-OS345",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "PURS-OS355",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "PURS-OS375",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "PURS-OS385",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "PURS-S358",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "PURS-S368",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "PURS-S378",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "PURS-SC365I",
+      "reason": "already canonical"
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "BoatModelID": "PURS-DC365",
+      "reason": "already canonical"
+    }
+  ],
+  "sourceCounts": [
+    {
+      "file": "data/phase2-live-models-carver-35-39.json",
+      "rows": 18
+    },
+    {
+      "file": "data/phase2-live-models-carver-40-44.json",
+      "rows": 14
+    },
+    {
+      "file": "data/phase2-live-models-carver-45-50.json",
+      "rows": 6
+    },
+    {
+      "file": "data/phase2-live-models-chaparral-30-34.json",
+      "rows": 13
+    },
+    {
+      "file": "data/phase2-live-models-chaparral-35-39.json",
+      "rows": 3
+    },
+    {
+      "file": "data/phase2-live-models-cobalt-30-34.json",
+      "rows": 9
+    },
+    {
+      "file": "data/phase2-live-models-cobalt-35-39.json",
+      "rows": 6
+    },
+    {
+      "file": "data/phase2-live-models-cobalt-40-44.json",
+      "rows": 2
+    },
+    {
+      "file": "data/phase2-live-models-cruisers-yachts-30-34.json",
+      "rows": 12
+    },
+    {
+      "file": "data/phase2-live-models-cruisers-yachts-35-39.json",
+      "rows": 9
+    },
+    {
+      "file": "data/phase2-live-models-cruisers-yachts-40-44.json",
+      "rows": 11
+    },
+    {
+      "file": "data/phase2-live-models-cruisers-yachts-45-50.json",
+      "rows": 6
+    },
+    {
+      "file": "data/phase2-live-models-formula-30-34.json",
+      "rows": 9
+    },
+    {
+      "file": "data/phase2-live-models-formula-35-39.json",
+      "rows": 8
+    },
+    {
+      "file": "data/phase2-live-models-formula-40-44.json",
+      "rows": 6
+    },
+    {
+      "file": "data/phase2-live-models-formula-45-50.json",
+      "rows": 1
+    },
+    {
+      "file": "data/phase2-live-models-four-winns-30-34.json",
+      "rows": 8
+    },
+    {
+      "file": "data/phase2-live-models-four-winns-35-39.json",
+      "rows": 7
+    },
+    {
+      "file": "data/phase2-live-models-four-winns-40-50.json",
+      "rows": 3
+    },
+    {
+      "file": "data/phase2-live-models-larson-30-34.json",
+      "rows": 3
+    },
+    {
+      "file": "data/phase2-live-models-larson-35-39.json",
+      "rows": 2
+    },
+    {
+      "file": "data/phase2-live-models-luhrs-30-34.json",
+      "rows": 12
+    },
+    {
+      "file": "data/phase2-live-models-luhrs-35-39.json",
+      "rows": 8
+    },
+    {
+      "file": "data/phase2-live-models-luhrs-40-50.json",
+      "rows": 5
+    },
+    {
+      "file": "data/phase2-live-models-maxum-30-34.json",
+      "rows": 4
+    },
+    {
+      "file": "data/phase2-live-models-maxum-35-39.json",
+      "rows": 4
+    },
+    {
+      "file": "data/phase2-live-models-maxum-40-46.json",
+      "rows": 4
+    },
+    {
+      "file": "data/phase2-live-models-monterey-30-34.json",
+      "rows": 7
+    },
+    {
+      "file": "data/phase2-live-models-monterey-35-39.json",
+      "rows": 4
+    },
+    {
+      "file": "data/phase2-live-models-monterey-40-50.json",
+      "rows": 1
+    },
+    {
+      "file": "data/phase2-live-models-pursuit-30-34.json",
+      "rows": 15
+    },
+    {
+      "file": "data/phase2-live-models-pursuit-35-39.json",
+      "rows": 10
+    },
+    {
+      "file": "data/phase2-live-models-regal-30-34.json",
+      "rows": 12
+    },
+    {
+      "file": "data/phase2-live-models-regal-35-39.json",
+      "rows": 15
+    },
+    {
+      "file": "data/phase2-live-models-regal-40-44.json",
+      "rows": 8
+    },
+    {
+      "file": "data/phase2-live-models-regal-45-50.json",
+      "rows": 2
+    },
+    {
+      "file": "data/phase2-live-models-rinker-30-34.json",
+      "rows": 6
+    },
+    {
+      "file": "data/phase2-live-models-rinker-35-39.json",
+      "rows": 4
+    },
+    {
+      "file": "data/phase2-live-models-rinker-40-50.json",
+      "rows": 1
+    },
+    {
+      "file": "data/phase2-live-models-riviera-30-39.json",
+      "rows": 19
+    },
+    {
+      "file": "data/phase2-live-models-riviera-40-44.json",
+      "rows": 12
+    },
+    {
+      "file": "data/phase2-live-models-riviera-45-50.json",
+      "rows": 13
+    },
+    {
+      "file": "data/phase2-live-models-tiara-30-34.json",
+      "rows": 11
+    },
+    {
+      "file": "data/phase2-live-models-tiara-35-39.json",
+      "rows": 16
+    },
+    {
+      "file": "data/phase2-live-models-tiara-40-44.json",
+      "rows": 11
+    },
+    {
+      "file": "data/phase2-live-models-tiara-45-50.json",
+      "rows": 9
+    },
+    {
+      "file": "data/phase2-live-models-wellcraft-30-34.json",
+      "rows": 22
+    },
+    {
+      "file": "data/phase2-live-models-wellcraft-35-39.json",
+      "rows": 12
+    },
+    {
+      "file": "data/phase2-live-models-wellcraft-40-44.json",
+      "rows": 5
+    },
+    {
+      "file": "data/phase2-live-models-wellcraft-45-50.json",
+      "rows": 3
+    },
+    {
+      "file": "data/phase2-live-models.json",
+      "rows": 395
+    }
+  ],
+  "runtimeChange": "datarepository.js no longer loads any phase2Models* manifest entries; aliases remain separate."
+}
