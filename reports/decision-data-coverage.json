@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T17:33:38.367Z",
+  "generatedAt": "2026-10-05T17:38:10.950Z",
   "models": 995,
   "priority": [
     "Beam",
@@ -17,39 +17,39 @@
   ],
   "coverage": {
     "LOA": {
-      "known": 973,
-      "missing": 22,
-      "pct": 97.8
+      "known": 983,
+      "missing": 12,
+      "pct": 98.8
     },
     "Beam": {
-      "known": 899,
-      "missing": 96,
-      "pct": 90.4
+      "known": 909,
+      "missing": 86,
+      "pct": 91.4
     },
     "Draft": {
-      "known": 881,
-      "missing": 114,
-      "pct": 88.5
+      "known": 891,
+      "missing": 104,
+      "pct": 89.5
     },
     "AirDraft": {
-      "known": 622,
-      "missing": 373,
-      "pct": 62.5
+      "known": 625,
+      "missing": 370,
+      "pct": 62.8
     },
     "FuelType": {
-      "known": 700,
-      "missing": 295,
-      "pct": 70.4
+      "known": 708,
+      "missing": 287,
+      "pct": 71.2
     },
     "Propulsion": {
-      "known": 629,
-      "missing": 366,
-      "pct": 63.2
+      "known": 638,
+      "missing": 357,
+      "pct": 64.1
     },
     "HullForm": {
-      "known": 945,
-      "missing": 50,
-      "pct": 95
+      "known": 955,
+      "missing": 40,
+      "pct": 96
     },
     "Style": {
       "known": 995,
@@ -57,31 +57,31 @@
       "pct": 100
     },
     "EngineConfig": {
-      "known": 577,
-      "missing": 418,
-      "pct": 58
+      "known": 587,
+      "missing": 408,
+      "pct": 59
     },
     "Displacement": {
-      "known": 874,
-      "missing": 121,
-      "pct": 87.8
+      "known": 884,
+      "missing": 111,
+      "pct": 88.8
     },
     "FuelCapacity": {
-      "known": 875,
-      "missing": 120,
-      "pct": 87.9
+      "known": 885,
+      "missing": 110,
+      "pct": 88.9
     },
     "WaterCapacity": {
-      "known": 878,
-      "missing": 117,
-      "pct": 88.2
+      "known": 888,
+      "missing": 107,
+      "pct": 89.2
     }
   },
   "missingByManufacturer": {
     "LOA": [
       {
         "manufacturer": "Sea Ray",
-        "missing": 16
+        "missing": 6
       },
       {
         "manufacturer": "Pursuit",
@@ -106,12 +106,12 @@
         "missing": 20
       },
       {
-        "manufacturer": "Sea Ray",
+        "manufacturer": "Carver",
         "missing": 16
       },
       {
-        "manufacturer": "Carver",
-        "missing": 16
+        "manufacturer": "Sea Ray",
+        "missing": 6
       },
       {
         "manufacturer": "Pursuit",
@@ -132,15 +132,15 @@
         "missing": 20
       },
       {
-        "manufacturer": "Sea Ray",
-        "missing": 16
-      },
-      {
         "manufacturer": "Carver",
         "missing": 16
       },
       {
         "manufacturer": "Pursuit",
+        "missing": 6
+      },
+      {
+        "manufacturer": "Sea Ray",
         "missing": 6
       },
       {
@@ -179,7 +179,7 @@
     "AirDraft": [
       {
         "manufacturer": "Sea Ray",
-        "missing": 75
+        "missing": 72
       },
       {
         "manufacturer": "Riviera",
@@ -277,7 +277,7 @@
     "FuelType": [
       {
         "manufacturer": "Sea Ray",
-        "missing": 88
+        "missing": 80
       },
       {
         "manufacturer": "Carver",
@@ -319,7 +319,7 @@
     "Propulsion": [
       {
         "manufacturer": "Sea Ray",
-        "missing": 88
+        "missing": 79
       },
       {
         "manufacturer": "Carver",
@@ -377,7 +377,7 @@
       },
       {
         "manufacturer": "Sea Ray",
-        "missing": 13
+        "missing": 3
       },
       {
         "manufacturer": "Bayliner",
@@ -388,7 +388,7 @@
     "EngineConfig": [
       {
         "manufacturer": "Sea Ray",
-        "missing": 88
+        "missing": 78
       },
       {
         "manufacturer": "Carver",
@@ -453,16 +453,16 @@
         "missing": 20
       },
       {
-        "manufacturer": "Sea Ray",
-        "missing": 17
-      },
-      {
         "manufacturer": "Carver",
         "missing": 16
       },
       {
         "manufacturer": "Pursuit",
         "missing": 8
+      },
+      {
+        "manufacturer": "Sea Ray",
+        "missing": 7
       },
       {
         "manufacturer": "Tiara Yachts",
@@ -515,12 +515,12 @@
         "missing": 21
       },
       {
-        "manufacturer": "Sea Ray",
-        "missing": 18
-      },
-      {
         "manufacturer": "Carver",
         "missing": 17
+      },
+      {
+        "manufacturer": "Sea Ray",
+        "missing": 8
       },
       {
         "manufacturer": "Pursuit",
@@ -573,12 +573,12 @@
         "missing": 17
       },
       {
-        "manufacturer": "Sea Ray",
-        "missing": 16
-      },
-      {
         "manufacturer": "Pursuit",
         "missing": 7
+      },
+      {
+        "manufacturer": "Sea Ray",
+        "missing": 6
       },
       {
         "manufacturer": "Tiara Yachts",
@@ -608,179 +608,9 @@
   },
   "highestGapModels": [
     {
-      "BoatModelID": "SRAY-370-EC",
-      "Manufacturer": "Sea Ray",
-      "Nickname": "Sea Ray 370 Express Cruiser",
-      "missing": 9,
-      "gaps": [
-        "Beam",
-        "LOA",
-        "FuelType",
-        "Propulsion",
-        "HullForm",
-        "Draft",
-        "AirDraft",
-        "EngineConfig",
-        "Displacement"
-      ]
-    },
-    {
-      "BoatModelID": "SRAY-370-SD-G1",
-      "Manufacturer": "Sea Ray",
-      "Nickname": "Sea Ray 370 Sundancer Generation 1",
-      "missing": 9,
-      "gaps": [
-        "Beam",
-        "LOA",
-        "FuelType",
-        "Propulsion",
-        "HullForm",
-        "Draft",
-        "AirDraft",
-        "EngineConfig",
-        "Displacement"
-      ]
-    },
-    {
       "BoatModelID": "SRAY-370-SD-OB",
       "Manufacturer": "Sea Ray",
       "Nickname": "Sea Ray 370 Sundancer Outboard",
-      "missing": 9,
-      "gaps": [
-        "Beam",
-        "LOA",
-        "FuelType",
-        "Propulsion",
-        "HullForm",
-        "Draft",
-        "AirDraft",
-        "EngineConfig",
-        "Displacement"
-      ]
-    },
-    {
-      "BoatModelID": "SRAY-370-VEN",
-      "Manufacturer": "Sea Ray",
-      "Nickname": "Sea Ray 370 Venture",
-      "missing": 9,
-      "gaps": [
-        "Beam",
-        "LOA",
-        "FuelType",
-        "Propulsion",
-        "HullForm",
-        "Draft",
-        "AirDraft",
-        "EngineConfig",
-        "Displacement"
-      ]
-    },
-    {
-      "BoatModelID": "SRAY-38-390-SD",
-      "Manufacturer": "Sea Ray",
-      "Nickname": "Sea Ray 38 / 390 Sundancer",
-      "missing": 9,
-      "gaps": [
-        "Beam",
-        "LOA",
-        "FuelType",
-        "Propulsion",
-        "HullForm",
-        "Draft",
-        "AirDraft",
-        "EngineConfig",
-        "Displacement"
-      ]
-    },
-    {
-      "BoatModelID": "SRAY-380-AC",
-      "Manufacturer": "Sea Ray",
-      "Nickname": "Sea Ray 380 Aft Cabin",
-      "missing": 9,
-      "gaps": [
-        "Beam",
-        "LOA",
-        "FuelType",
-        "Propulsion",
-        "HullForm",
-        "Draft",
-        "AirDraft",
-        "EngineConfig",
-        "Displacement"
-      ]
-    },
-    {
-      "BoatModelID": "SRAY-390-40-MY",
-      "Manufacturer": "Sea Ray",
-      "Nickname": "Sea Ray 390 / 40 Motor Yacht",
-      "missing": 9,
-      "gaps": [
-        "Beam",
-        "LOA",
-        "FuelType",
-        "Propulsion",
-        "HullForm",
-        "Draft",
-        "AirDraft",
-        "EngineConfig",
-        "Displacement"
-      ]
-    },
-    {
-      "BoatModelID": "SRAY-390-40-SD",
-      "Manufacturer": "Sea Ray",
-      "Nickname": "Sea Ray 390 / 40 Sundancer",
-      "missing": 9,
-      "gaps": [
-        "Beam",
-        "LOA",
-        "FuelType",
-        "Propulsion",
-        "HullForm",
-        "Draft",
-        "AirDraft",
-        "EngineConfig",
-        "Displacement"
-      ]
-    },
-    {
-      "BoatModelID": "SRAY-390-EC",
-      "Manufacturer": "Sea Ray",
-      "Nickname": "Sea Ray 390 Express Cruiser",
-      "missing": 9,
-      "gaps": [
-        "Beam",
-        "LOA",
-        "FuelType",
-        "Propulsion",
-        "HullForm",
-        "Draft",
-        "AirDraft",
-        "EngineConfig",
-        "Displacement"
-      ]
-    },
-    {
-      "BoatModelID": "SRAY-390-SB",
-      "Manufacturer": "Sea Ray",
-      "Nickname": "Sea Ray 390 Sedan Bridge",
-      "missing": 9,
-      "gaps": [
-        "Beam",
-        "LOA",
-        "FuelType",
-        "Propulsion",
-        "HullForm",
-        "Draft",
-        "AirDraft",
-        "EngineConfig",
-        "Displacement"
-      ]
-    },
-    {
-      "BoatModelID": "SRAY-390-SSF",
-      "Manufacturer": "Sea Ray",
-      "Nickname": "Sea Ray 390 Sedan Sportfish",
       "missing": 9,
       "gaps": [
         "Beam",
@@ -2034,6 +1864,126 @@
       "BoatModelID": "CRUY-385-395-MY",
       "Manufacturer": "Cruisers Yachts",
       "Nickname": "Cruisers Yachts 385 / 395 Motor Yacht",
+      "missing": 4,
+      "gaps": [
+        "FuelType",
+        "Propulsion",
+        "AirDraft",
+        "EngineConfig"
+      ]
+    },
+    {
+      "BoatModelID": "CRUY-3850-3950-AC",
+      "Manufacturer": "Cruisers Yachts",
+      "Nickname": "Cruisers Yachts 3850 / 3950 Aft Cabin",
+      "missing": 4,
+      "gaps": [
+        "FuelType",
+        "Propulsion",
+        "AirDraft",
+        "EngineConfig"
+      ]
+    },
+    {
+      "BoatModelID": "CRUY-390-EC",
+      "Manufacturer": "Cruisers Yachts",
+      "Nickname": "Cruisers Yachts 390 Express Coupe",
+      "missing": 4,
+      "gaps": [
+        "FuelType",
+        "Propulsion",
+        "AirDraft",
+        "EngineConfig"
+      ]
+    },
+    {
+      "BoatModelID": "CRUY-3970-400-420-EX",
+      "Manufacturer": "Cruisers Yachts",
+      "Nickname": "Cruisers Yachts 3970 / 400 / 420 Express",
+      "missing": 4,
+      "gaps": [
+        "FuelType",
+        "Propulsion",
+        "AirDraft",
+        "EngineConfig"
+      ]
+    },
+    {
+      "BoatModelID": "CRUY-420-430-SC",
+      "Manufacturer": "Cruisers Yachts",
+      "Nickname": "Cruisers Yachts 420 / 430 Sports Coupe",
+      "missing": 4,
+      "gaps": [
+        "FuelType",
+        "Propulsion",
+        "AirDraft",
+        "EngineConfig"
+      ]
+    },
+    {
+      "BoatModelID": "CRUY-4270-EX",
+      "Manufacturer": "Cruisers Yachts",
+      "Nickname": "Cruisers Yachts 4270 Express",
+      "missing": 4,
+      "gaps": [
+        "FuelType",
+        "Propulsion",
+        "AirDraft",
+        "EngineConfig"
+      ]
+    },
+    {
+      "BoatModelID": "CRUY-4280-EB",
+      "Manufacturer": "Cruisers Yachts",
+      "Nickname": "Cruisers Yachts 4280 Express Bridge",
+      "missing": 4,
+      "gaps": [
+        "FuelType",
+        "Propulsion",
+        "AirDraft",
+        "EngineConfig"
+      ]
+    },
+    {
+      "BoatModelID": "CRUY-4285-EB",
+      "Manufacturer": "Cruisers Yachts",
+      "Nickname": "Cruisers Yachts 4285 Express Bridge",
+      "missing": 4,
+      "gaps": [
+        "FuelType",
+        "Propulsion",
+        "AirDraft",
+        "EngineConfig"
+      ]
+    },
+    {
+      "BoatModelID": "CRUY-4370-440-EX",
+      "Manufacturer": "Cruisers Yachts",
+      "Nickname": "Cruisers Yachts 4370 / 440 Express",
+      "missing": 4,
+      "gaps": [
+        "FuelType",
+        "Propulsion",
+        "AirDraft",
+        "EngineConfig"
+      ]
+    },
+    {
+      "BoatModelID": "FORM-400-SS",
+      "Manufacturer": "Formula",
+      "Nickname": "Formula 400 Super Sport",
+      "missing": 4,
+      "gaps": [
+        "FuelType",
+        "Propulsion",
+        "AirDraft",
+        "EngineConfig"
+      ]
+    },
+    {
+      "BoatModelID": "FORM-41-PC",
+      "Manufacturer": "Formula",
+      "Nickname": "Formula 41 PC",
       "missing": 4,
       "gaps": [
         "FuelType",
