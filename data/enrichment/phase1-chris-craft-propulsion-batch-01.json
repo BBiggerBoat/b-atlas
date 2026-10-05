@@ -1,0 +1,297 @@
+{
+  "date": "2026-10-05",
+  "phase": "Phase 1 enrichment",
+  "manufacturer": "Chris-Craft",
+  "batch": 1,
+  "requestedBatchSize": 15,
+  "researchedRecords": 15,
+  "status": "source-verified enrichment staging",
+  "policy": "Maximum 15 models per batch. Populate only generation-level invariant facts; preserve configuration-dependent unknowns. Air draft remains unresolved unless model-level source evidence is sufficiently explicit.",
+  "records": [
+    {
+      "BoatModelID": "CHCR-302-322-340-CR",
+      "fields": {
+        "Fuel": "Gasoline",
+        "NormalizedFuel": "Gasoline",
+        "FuelCode": "fuel.gasoline",
+        "Propulsion": "Shaft",
+        "NormalizedPropulsion": "Shaft",
+        "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+        "EngineConfiguration": "Twin gasoline inboards",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/chris-craft/302-322-crowne-340-crowne-1991-95"
+      ]
+    },
+    {
+      "BoatModelID": "CHCR-CALYPSO-30",
+      "fields": {
+        "Fuel": "Gasoline",
+        "NormalizedFuel": "Gasoline",
+        "FuelCode": "fuel.gasoline",
+        "Propulsion": "Outboard",
+        "NormalizedPropulsion": "Outboard",
+        "MechanicalPropulsionCode": "mechanical_propulsion.outboard",
+        "EngineConfiguration": "Twin gasoline outboards",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/chris-craft/calypso-30-2017-current"
+      ]
+    },
+    {
+      "BoatModelID": "CHCR-320-322-AE",
+      "fields": {
+        "Fuel": "Gasoline",
+        "NormalizedFuel": "Gasoline",
+        "FuelCode": "fuel.gasoline",
+        "Propulsion": "Shaft",
+        "NormalizedPropulsion": "Shaft",
+        "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+        "EngineConfiguration": "Twin gasoline inboards",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/chris-craft/320-322-amerosport-express-1987-90"
+      ]
+    },
+    {
+      "BoatModelID": "CHCR-320-328-EC",
+      "fields": {
+        "Fuel": "Gasoline",
+        "NormalizedFuel": "Gasoline",
+        "FuelCode": "fuel.gasoline",
+        "Propulsion": "Shaft",
+        "NormalizedPropulsion": "Shaft",
+        "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+        "EngineConfiguration": "Twin gasoline inboards",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/chris-craft/320-328-express-cruiser-1997-2003"
+      ]
+    },
+    {
+      "BoatModelID": "CHCR-33-CAT",
+      "fields": {
+        "Fuel": "Gasoline",
+        "NormalizedFuel": "Gasoline",
+        "FuelCode": "fuel.gasoline",
+        "Propulsion": "Shaft",
+        "NormalizedPropulsion": "Shaft",
+        "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+        "EngineConfiguration": "Twin gasoline inboards",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/chris-craft/33-catalina-1973-80"
+      ]
+    },
+    {
+      "BoatModelID": "CHCR-33-COR",
+      "fields": {
+        "Fuel": "Gasoline",
+        "NormalizedFuel": "Gasoline",
+        "FuelCode": "fuel.gasoline",
+        "Propulsion": "Shaft",
+        "NormalizedPropulsion": "Shaft",
+        "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+        "EngineConfiguration": "Twin gasoline inboards",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/chris-craft/33-corinthian-1971-1981"
+      ]
+    },
+    {
+      "BoatModelID": "CHCR-33-CORSAIR",
+      "fields": {
+        "Fuel": "Gasoline",
+        "NormalizedFuel": "Gasoline",
+        "FuelCode": "fuel.gasoline",
+        "Propulsion": "Sterndrive",
+        "NormalizedPropulsion": "Sterndrive",
+        "MechanicalPropulsionCode": "mechanical_propulsion.sterndrive",
+        "EngineConfiguration": "Twin gasoline sterndrives",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/chris-craft/33-corsair-2006-10"
+      ]
+    },
+    {
+      "BoatModelID": "CHCR-333-SE",
+      "fields": {
+        "Fuel": "Gasoline",
+        "NormalizedFuel": "Gasoline",
+        "FuelCode": "fuel.gasoline",
+        "Propulsion": "Shaft",
+        "NormalizedPropulsion": "Shaft",
+        "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+        "EngineConfiguration": "Twin gasoline inboards",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/chris-craft/333-sedan-1981-87"
+      ]
+    },
+    {
+      "BoatModelID": "CHCR-336-MCE",
+      "fields": {
+        "Fuel": "Gasoline",
+        "NormalizedFuel": "Gasoline",
+        "FuelCode": "fuel.gasoline",
+        "Propulsion": "Shaft",
+        "NormalizedPropulsion": "Shaft",
+        "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+        "EngineConfiguration": "Twin gasoline inboards",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/chris-craft/336-mid-cabin-express-1983-87"
+      ]
+    },
+    {
+      "BoatModelID": "CHCR-CATALINA-34",
+      "fields": {
+        "Fuel": "Gasoline",
+        "NormalizedFuel": "Gasoline",
+        "FuelCode": "fuel.gasoline",
+        "Propulsion": "Outboard",
+        "NormalizedPropulsion": "Outboard",
+        "MechanicalPropulsionCode": "mechanical_propulsion.outboard",
+        "EngineConfiguration": "Triple gasoline outboards",
+        "EngineCount": 3
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachts-for-sale/chris-craft-catalina-34-2018-grace-2848298"
+      ]
+    },
+    {
+      "BoatModelID": "CHCR-CORSAIR-34",
+      "fields": {
+        "Fuel": "Gasoline",
+        "NormalizedFuel": "Gasoline",
+        "FuelCode": "fuel.gasoline",
+        "Propulsion": "Sterndrive",
+        "NormalizedPropulsion": "Sterndrive",
+        "MechanicalPropulsionCode": "mechanical_propulsion.sterndrive",
+        "EngineConfiguration": "Twin gasoline sterndrives",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/chris-craft/corsair-34-2018-22"
+      ]
+    },
+    {
+      "BoatModelID": "CHCR-CALYPSO-35",
+      "fields": {
+        "Fuel": "Gasoline",
+        "NormalizedFuel": "Gasoline",
+        "FuelCode": "fuel.gasoline",
+        "Propulsion": "Outboard",
+        "NormalizedPropulsion": "Outboard",
+        "MechanicalPropulsionCode": "mechanical_propulsion.outboard",
+        "EngineConfiguration": "Triple gasoline outboards",
+        "EngineCount": 3
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/chris-craft/calypso-35-2021-current"
+      ]
+    },
+    {
+      "BoatModelID": "CHCR-LAUNCH-35-GT",
+      "fields": {
+        "Fuel": "Gasoline",
+        "NormalizedFuel": "Gasoline",
+        "FuelCode": "fuel.gasoline",
+        "Propulsion": "Sterndrive",
+        "NormalizedPropulsion": "Sterndrive",
+        "MechanicalPropulsionCode": "mechanical_propulsion.sterndrive",
+        "EngineConfiguration": "Twin gasoline sterndrives",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/chris-craft/launch-35-gt-2019-current"
+      ]
+    },
+    {
+      "BoatModelID": "CHCR-36-CORSAIR",
+      "fields": {
+        "Fuel": "Gasoline",
+        "NormalizedFuel": "Gasoline",
+        "FuelCode": "fuel.gasoline",
+        "Propulsion": "Sterndrive",
+        "NormalizedPropulsion": "Sterndrive",
+        "MechanicalPropulsionCode": "mechanical_propulsion.sterndrive",
+        "EngineConfiguration": "Twin gasoline sterndrives",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/chris-craft/36-corsair-2005-16"
+      ]
+    },
+    {
+      "BoatModelID": "CHCR-36-ROAMER",
+      "fields": {
+        "Fuel": "Gasoline",
+        "NormalizedFuel": "Gasoline",
+        "FuelCode": "fuel.gasoline",
+        "Propulsion": "Shaft",
+        "NormalizedPropulsion": "Shaft",
+        "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+        "EngineConfiguration": "Twin gasoline inboards",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/chris-craft/36-roamer-2003-05"
+      ]
+    }
+  ]
+}
