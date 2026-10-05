@@ -1,0 +1,148 @@
+{
+  "date": "2026-10-05",
+  "phase": "Phase 1 enrichment",
+  "manufacturer": "Sea Ray",
+  "batch": 7,
+  "requestedBatchSize": 20,
+  "researchedRecords": 10,
+  "status": "source-verified enrichment staging; closes current Sea Ray pass",
+  "policy": "Populate only generation-level invariant facts; thinly documented older models remain unresolved.",
+  "records": [
+    {
+      "BoatModelID": "SRAY-430-440-CV",
+      "fields": {},
+      "note": "Existing AirDraft retained. No sufficiently strong generation-wide propulsion/fuel source located in this pass; leave unknown."
+    },
+    {
+      "BoatModelID": "SRAY-440-EB",
+      "fields": {},
+      "note": "No sufficiently strong generation-wide propulsion/fuel source located in this pass; leave unknown rather than infer from individual listings."
+    },
+    {
+      "BoatModelID": "SRAY-450-SB",
+      "fields": {
+        "Fuel": "Diesel",
+        "NormalizedFuel": "Diesel",
+        "FuelCode": "fuel.diesel",
+        "Propulsion": "Pod",
+        "NormalizedPropulsion": "Pod",
+        "MechanicalPropulsionCode": "mechanical_propulsion.pod",
+        "EngineConfiguration": "Twin Diesel Pod",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "note": "2012 example and model documentation support twin Cummins diesel engines with Zeus pod drives.",
+      "evidence": [
+        "https://boats.com/power-boats/2012-sea-ray-450-sedan-bridge-10321574/",
+        "https://www.yachtbuyer.com/en/sea-ray/for-sale/revival-bay-a6908818"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-450-SD-G1",
+      "fields": {
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "Fuel",
+        "NormalizedFuel",
+        "FuelCode",
+        "Propulsion",
+        "NormalizedPropulsion",
+        "MechanicalPropulsionCode",
+        "EngineConfiguration",
+        "AirDraft"
+      ],
+      "note": "Twin-engine configuration is supported, but available sources conflict or are incomplete regarding generation-wide fuel/drive standardization.",
+      "evidence": [
+        "https://www.yachtbuyer.com/en-us/sea-ray/new/450-sundancer-gen1",
+        "https://www.yachtbuyer.com/en-us/sea-ray/for-sale/450-sundancer"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-450-SD-G2",
+      "fields": {
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "Fuel",
+        "NormalizedFuel",
+        "FuelCode",
+        "Propulsion",
+        "NormalizedPropulsion",
+        "MechanicalPropulsionCode",
+        "EngineConfiguration",
+        "AirDraft"
+      ],
+      "note": "Generation chronology is supported, but propulsion packages changed across 2010–15. Preserve unknown fields pending stronger factory-level package evidence.",
+      "evidence": [
+        "https://www.yachtbuyer.com/en-us/sea-ray/for-sale/450-sundancer"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-460-EC",
+      "fields": {},
+      "note": "Existing AirDraft retained. Available individual-sale evidence is insufficient to establish generation-wide fuel/propulsion invariants.",
+      "evidence": [
+        "https://marinesource.com/boat/sea-ray-460-express-cruiser-1985-south-177b37d773-for-sale"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-460-FLY",
+      "fields": {
+        "Fuel": "Diesel",
+        "NormalizedFuel": "Diesel",
+        "FuelCode": "fuel.diesel",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "Propulsion",
+        "NormalizedPropulsion",
+        "MechanicalPropulsionCode",
+        "EngineConfiguration",
+        "AirDraft"
+      ],
+      "note": "Twin diesel configuration is well established for the 460 Fly; exact generation-wide drive normalization is left unresolved in this pass."
+    },
+    {
+      "BoatModelID": "SRAY-460-SF",
+      "fields": {},
+      "note": "Existing AirDraft retained. No strong generation-wide engine/propulsion reference located; fields remain unknown."
+    },
+    {
+      "BoatModelID": "SRAY-460-SD-G2",
+      "fields": {
+        "Fuel": "Diesel",
+        "NormalizedFuel": "Diesel",
+        "FuelCode": "fuel.diesel",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "Propulsion",
+        "NormalizedPropulsion",
+        "MechanicalPropulsionCode",
+        "EngineConfiguration",
+        "AirDraft"
+      ],
+      "note": "Twin diesel power is established; exact drive package is left unresolved pending stronger model-generation evidence."
+    },
+    {
+      "BoatModelID": "SRAY-470-SD",
+      "fields": {
+        "Fuel": "Diesel",
+        "NormalizedFuel": "Diesel",
+        "FuelCode": "fuel.diesel",
+        "Propulsion": "Pod",
+        "NormalizedPropulsion": "Pod",
+        "MechanicalPropulsionCode": "mechanical_propulsion.pod",
+        "EngineConfiguration": "Twin Diesel Pod",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "note": "470 Sundancer generation is documented with twin Cummins diesels and Zeus pod drives."
+    }
+  ]
+}
