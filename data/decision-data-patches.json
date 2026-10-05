@@ -1,87 +1,97 @@
 {
-  "patchSet": "phase1-decision-data-powertrain-airdraft-01",
+  "patchSet": "phase1-decision-data-powertrain-airdraft-02",
   "createdAt": "2026-10-05",
-  "purpose": "Fill high-value Sea Ray fuel, propulsion, engine configuration, and air-draft fields from exact-model HMY Powerboat Guide pages.",
+  "purpose": "Fill Carver fuel, propulsion, engine configuration, and selected air-draft fields from exact-model HMY Powerboat Guide pages.",
   "patches": [
     {
-      "BoatModelID": "SRAY-400-FLY",
-      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/400-fly-2016-18",
-      "fields": {
-        "Fuel": "Diesel",
-        "NormalizedFuel": "Diesel",
-        "Propulsion": "Shaft/V-Drive",
-        "NormalizedPropulsion": "Shaft/V-Drive",
-        "EngineCount": 2,
-        "EngineConfiguration": "Twin Cummins 480 hp V-drive diesel"
-      },
-      "confidence": {
-        "Fuel": "High",
-        "Propulsion": "High",
-        "EngineConfiguration": "High"
-      }
-    },
-    {
-      "BoatModelID": "SRAY-400-SD",
-      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/400-sundancer-2016-19",
-      "fields": {
-        "Fuel": "Diesel",
-        "NormalizedFuel": "Diesel",
-        "Propulsion": "Shaft/V-Drive",
-        "NormalizedPropulsion": "Shaft/V-Drive",
-        "EngineCount": 2,
-        "EngineConfiguration": "Twin Cummins QSB 480 hp V-drive diesel"
-      },
-      "confidence": {
-        "Fuel": "High",
-        "Propulsion": "High",
-        "EngineConfiguration": "High"
-      }
-    },
-    {
-      "BoatModelID": "SRAY-400-SLX-OB",
-      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/400-slx-outboard-2017-current",
+      "BoatModelID": "CARV-350-36-MAR",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/carver/350-mariner-36-mariner-1997-2012",
       "fields": {
         "Fuel": "Gasoline",
         "NormalizedFuel": "Gasoline",
-        "Propulsion": "Outboard",
-        "NormalizedPropulsion": "Outboard",
-        "EngineCount": 3,
-        "EngineConfiguration": "Triple gasoline outboard"
-      },
-      "confidence": {
-        "Fuel": "High",
-        "Propulsion": "High",
-        "EngineConfiguration": "High"
-      }
-    },
-    {
-      "BoatModelID": "SRAY-410-SD",
-      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/410-sundancer-2012-15",
-      "fields": {
-        "Fuel": "Diesel",
-        "NormalizedFuel": "Diesel",
-        "Propulsion": "V-drive or Zeus pod",
+        "Propulsion": "Shaft/V-Drive",
+        "NormalizedPropulsion": "Shaft/V-Drive",
         "EngineCount": 2,
-        "EngineConfiguration": "Twin Cummins diesel; V-drive or Zeus pod"
+        "EngineConfiguration": "Twin MerCruiser 300 hp V-drive gasoline",
+        "AirDraft": 4.318,
+        "AirDraft_ft": 14.1667
       },
       "confidence": {
         "Fuel": "High",
         "Propulsion": "High",
-        "EngineConfiguration": "High"
+        "EngineConfiguration": "High",
+        "AirDraft": "High"
       }
     },
     {
-      "BoatModelID": "SRAY-420-AC",
-      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/420-aft-cabin-1996-2002",
+      "BoatModelID": "CARV-355-356-MY",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/carver/355-356-motor-yacht-1995-2003",
       "fields": {
-        "Fuel": "Diesel",
-        "NormalizedFuel": "Diesel",
+        "Fuel": "Mixed Diesel/Gasoline",
+        "NormalizedFuel": "Mixed Diesel/Gasoline",
         "Propulsion": "Shaft",
         "NormalizedPropulsion": "Shaft",
         "EngineCount": 2,
-        "EngineConfiguration": "Twin diesel inboard",
-        "AirDraft": 4.7244,
-        "AirDraft_ft": 15.5
+        "EngineConfiguration": "Twin inboard; Volvo gasoline or Cummins diesel",
+        "AirDraft": 5.334,
+        "AirDraft_ft": 17.5
+      },
+      "confidence": {
+        "Fuel": "High",
+        "Propulsion": "High",
+        "EngineConfiguration": "High",
+        "AirDraft": "High"
+      }
+    },
+    {
+      "BoatModelID": "CARV-3607-AC",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/carver/3607-aft-cabin-1982-89",
+      "fields": {
+        "Fuel": "Gasoline",
+        "NormalizedFuel": "Gasoline",
+        "Propulsion": "Shaft",
+        "NormalizedPropulsion": "Shaft",
+        "EngineCount": 2,
+        "EngineConfiguration": "Twin Crusader 350 hp gasoline inboard",
+        "AirDraft": 3.5814,
+        "AirDraft_ft": 11.75
+      },
+      "confidence": {
+        "Fuel": "High",
+        "Propulsion": "High",
+        "EngineConfiguration": "High",
+        "AirDraft": "High"
+      }
+    },
+    {
+      "BoatModelID": "CARV-366-MY",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/carver/366-motor-yacht-2002-06",
+      "fields": {
+        "Fuel": "Mixed Diesel/Gasoline",
+        "NormalizedFuel": "Mixed Diesel/Gasoline",
+        "Propulsion": "Shaft",
+        "NormalizedPropulsion": "Shaft",
+        "EngineCount": 2,
+        "EngineConfiguration": "Twin inboard; MerCruiser gasoline or Volvo diesel"
+      },
+      "confidence": {
+        "Fuel": "High",
+        "Propulsion": "High",
+        "EngineConfiguration": "High"
+      }
+    },
+    {
+      "BoatModelID": "CARV-C37-CP",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/carver/c37-coupe-2014-21",
+      "fields": {
+        "Fuel": "Gasoline",
+        "NormalizedFuel": "Gasoline",
+        "Propulsion": "Sterndrive",
+        "NormalizedPropulsion": "Sterndrive",
+        "EngineCount": 2,
+        "EngineConfiguration": "Twin MerCruiser 320 hp gasoline sterndrive",
+        "AirDraft": 3.7592,
+        "AirDraft_ft": 12.3333
       },
       "confidence": {
         "Fuel": "High",
