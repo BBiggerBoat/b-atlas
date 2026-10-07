@@ -1,0 +1,259 @@
+{
+  "date": "2026-10-07",
+  "workflow": "Model enrichment restart",
+  "manufacturer": "Sea Ray",
+  "batch": 4,
+  "canonicalSource": "boatmodels.json",
+  "canonicalModelCount": 995,
+  "batchSize": 15,
+  "policy": [
+    "Stage only; do not modify canonical data.",
+    "Populate only defensible generation-level values.",
+    "Preserve existing canonical values.",
+    "Retain multi-configuration values where factory/model evidence supports more than one setup."
+  ],
+  "records": [
+    {
+      "BoatModelID": "SRAY-360-AC",
+      "fields": {},
+      "preserveExisting": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ],
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-360-SD",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "V-Drive",
+        "EngineConfiguration": "Twin gasoline V-drive inboards",
+        "EngineCount": 2
+      },
+      "preserveExisting": [
+        "AirDraft"
+      ],
+      "intentionallyUnresolved": [],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/360-sundancer-2002-06"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-SRV360-SSF",
+      "fields": {
+        "Fuel": "Gasoline or Diesel depending configuration",
+        "Propulsion": "Shaft",
+        "EngineConfiguration": "Twin inboards; gasoline standard, diesel optional",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/srv360-sedan-sportfish-1980-81"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-370-EC",
+      "fields": {},
+      "preserveExisting": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ],
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/370-express-cruiser-1997-2000"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-370-SB",
+      "fields": {},
+      "preserveExisting": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ],
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/370-sedan-bridge-1991-97"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-370-SD-G1",
+      "fields": {},
+      "preserveExisting": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ],
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-370-SD-G2",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Sterndrive",
+        "EngineConfiguration": "Twin gasoline sterndrives",
+        "EngineCount": 2
+      },
+      "preserveExisting": [
+        "AirDraft"
+      ],
+      "intentionallyUnresolved": [],
+      "evidence": [
+        "https://www.searay.com/ca/en/boats/sundancer/sundancer-370"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-370-SD-OB",
+      "fields": {
+        "AirDraft": 3.7592
+      },
+      "preserveExisting": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ],
+      "intentionallyUnresolved": [],
+      "evidence": [
+        "https://www.searay.com/ca/en/boats/sundancer/sundancer-370-outboard",
+        "https://www.boatingworld.com/boats/sea-ray-boats/2022-sea-ray-370-sundancer"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-370-VEN",
+      "fields": {},
+      "preserveExisting": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ],
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-370-380-AC",
+      "fields": {
+        "Fuel": "Gasoline or Diesel depending configuration",
+        "Propulsion": "Shaft",
+        "EngineConfiguration": "Twin inboards; gasoline or diesel depending configuration",
+        "EngineCount": 2,
+        "AirDraft": 4.9784
+      },
+      "preserveExisting": [],
+      "intentionallyUnresolved": [],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/370-380-aft-cabin-1997-2001"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-38-390-SD",
+      "fields": {
+        "Propulsion": "V-Drive or Pod Drive"
+      },
+      "preserveExisting": [
+        "Fuel",
+        "EngineConfiguration",
+        "EngineCount",
+        "AirDraft"
+      ],
+      "intentionallyUnresolved": [],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/38-390-sundancer-2006-11",
+        "https://www.manualzz.com/doc/53332716/sea-ray-2006-38-sundancer-owners-manual"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-380-AC",
+      "fields": {},
+      "preserveExisting": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ],
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/380-aft-cabin-1989-91"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-380-SD",
+      "fields": {},
+      "preserveExisting": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ],
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-390-EC",
+      "fields": {},
+      "preserveExisting": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ],
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/390-express-cruiser-1984-91"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-390-SB",
+      "fields": {
+        "Fuel": "Gasoline or Diesel depending configuration"
+      },
+      "preserveExisting": [
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ],
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/390-sedan-bridge-2010-only",
+        "https://www.jdpower.com/boats/2010/sea-ray-boats"
+      ]
+    }
+  ]
+}
