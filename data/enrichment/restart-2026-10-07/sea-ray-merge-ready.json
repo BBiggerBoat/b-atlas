@@ -1,0 +1,623 @@
+{
+  "date": "2026-10-07",
+  "workflow": "Model enrichment restart",
+  "manufacturer": "Sea Ray",
+  "status": "validated merge-ready patch",
+  "canonicalSource": "boatmodels.json",
+  "canonicalModelCount": 995,
+  "validation": {
+    "uniqueStagedIds": 84,
+    "missingCanonicalIds": 0,
+    "duplicateStagedIds": 0,
+    "existingValueOverwrites": 0,
+    "invalidNumericValues": 0,
+    "modelsWithWrites": 62,
+    "fieldWrites": 227
+  },
+  "rules": [
+    "Apply only where canonical target field is null/empty at merge time.",
+    "Abort on any non-empty conflicting canonical value.",
+    "Do not treat unresolved fields as errors."
+  ],
+  "records": [
+    {
+      "BoatModelID": "SRAY-300-SB",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "V-Drive",
+        "EngineConfiguration": "Twin gasoline V-drive inboards",
+        "EngineCount": 2
+      },
+      "sourceBatch": 1
+    },
+    {
+      "BoatModelID": "SRAY-300-SLX",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Sterndrive",
+        "EngineConfiguration": "Single or twin gasoline sterndrives"
+      },
+      "sourceBatch": 1
+    },
+    {
+      "BoatModelID": "SRAY-300-SPB",
+      "fields": {
+        "Propulsion": "Mixed: shaft or sterndrive by version"
+      },
+      "sourceBatch": 1
+    },
+    {
+      "BoatModelID": "SRAY-300-SD-G1",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Sterndrive",
+        "EngineConfiguration": "Twin gasoline sterndrives",
+        "EngineCount": 2
+      },
+      "sourceBatch": 1
+    },
+    {
+      "BoatModelID": "SRAY-300-SD-G2",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Varies: V-drive inboard or sterndrive",
+        "EngineConfiguration": "Twin gasoline engines; V-drive inboard or sterndrive depending configuration",
+        "EngineCount": 2
+      },
+      "sourceBatch": 1
+    },
+    {
+      "BoatModelID": "SRAY-300-SD-G3",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Varies: V-drive inboard or sterndrive",
+        "EngineConfiguration": "Twin gasoline engines; V-drive inboard or sterndrive depending configuration",
+        "EngineCount": 2
+      },
+      "sourceBatch": 1
+    },
+    {
+      "BoatModelID": "SRAY-300-SD-G4",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Sterndrive",
+        "EngineConfiguration": "Twin gasoline sterndrives",
+        "EngineCount": 2
+      },
+      "sourceBatch": 1
+    },
+    {
+      "BoatModelID": "SRAY-300-WE-G1",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Shaft",
+        "EngineConfiguration": "Twin gasoline inboards",
+        "EngineCount": 2
+      },
+      "sourceBatch": 1
+    },
+    {
+      "BoatModelID": "SRAY-300-WE-G2",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Shaft",
+        "EngineConfiguration": "Twin gasoline inboards",
+        "EngineCount": 2
+      },
+      "sourceBatch": 1
+    },
+    {
+      "BoatModelID": "SRAY-305-300-SB",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "V-Drive",
+        "EngineConfiguration": "Twin gasoline V-drive inboards",
+        "EngineCount": 2
+      },
+      "sourceBatch": 1
+    },
+    {
+      "BoatModelID": "SRAY-SRV300-EC",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Shaft",
+        "EngineConfiguration": "Twin gasoline inboards",
+        "EngineCount": 2
+      },
+      "sourceBatch": 1
+    },
+    {
+      "BoatModelID": "SRAY-310-AJ",
+      "fields": {
+        "Propulsion": "Shaft",
+        "EngineConfiguration": "Twin inboards; gasoline documented",
+        "EngineCount": 2
+      },
+      "sourceBatch": 1
+    },
+    {
+      "BoatModelID": "SRAY-310-SLX",
+      "fields": {
+        "Fuel": "Gasoline or Diesel depending configuration",
+        "Propulsion": "Varies: sterndrive or outboard",
+        "EngineConfiguration": "Twin engines; gasoline sterndrive/outboard or diesel sterndrive depending configuration",
+        "EngineCount": 2
+      },
+      "sourceBatch": 1
+    },
+    {
+      "BoatModelID": "SRAY-310-SPB",
+      "fields": {
+        "Fuel": "Gasoline or Diesel depending configuration",
+        "Propulsion": "Shaft",
+        "EngineConfiguration": "Twin inboards; gasoline or diesel depending configuration",
+        "EngineCount": 2
+      },
+      "sourceBatch": 1
+    },
+    {
+      "BoatModelID": "SRAY-310-SS",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Sterndrive",
+        "EngineConfiguration": "Twin gasoline sterndrives",
+        "EngineCount": 2
+      },
+      "sourceBatch": 1
+    },
+    {
+      "BoatModelID": "SRAY-310-SD-G1",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Varies: V-drive inboard or sterndrive",
+        "EngineConfiguration": "Twin gasoline engines; V-drive inboard or sterndrive depending configuration",
+        "EngineCount": 2
+      },
+      "sourceBatch": 2
+    },
+    {
+      "BoatModelID": "SRAY-310-SD-G2",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Sterndrive",
+        "EngineConfiguration": "Twin gasoline sterndrives",
+        "EngineCount": 2
+      },
+      "sourceBatch": 2
+    },
+    {
+      "BoatModelID": "SRAY-310-330-EC",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Varies: inboard shaft or sterndrive",
+        "EngineConfiguration": "Twin gasoline inboards or sterndrives depending configuration",
+        "EngineCount": 2
+      },
+      "sourceBatch": 2
+    },
+    {
+      "BoatModelID": "SRAY-310-330-SD-G1",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Varies: V-drive inboard or sterndrive",
+        "EngineConfiguration": "Twin gasoline engines; V-drive inboard or sterndrive depending configuration",
+        "EngineCount": 2
+      },
+      "sourceBatch": 2
+    },
+    {
+      "BoatModelID": "SRAY-310-330-SD-G2",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Varies: V-drive inboard or sterndrive",
+        "EngineConfiguration": "Twin gasoline engines; V-drive inboard or sterndrive depending configuration",
+        "EngineCount": 2
+      },
+      "sourceBatch": 2
+    },
+    {
+      "BoatModelID": "SRAY-SRV310-SD",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Shaft",
+        "EngineConfiguration": "Twin gasoline inboards",
+        "EngineCount": 2
+      },
+      "sourceBatch": 2
+    },
+    {
+      "BoatModelID": "SRAY-320-SD-G1",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Varies: V-drive inboard or sterndrive",
+        "EngineConfiguration": "Twin gasoline engines; V-drive inboard or sterndrive depending configuration",
+        "EngineCount": 2
+      },
+      "sourceBatch": 2
+    },
+    {
+      "BoatModelID": "SRAY-320-SD-G2",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Sterndrive",
+        "EngineConfiguration": "Twin gasoline sterndrives",
+        "EngineCount": 2
+      },
+      "sourceBatch": 2
+    },
+    {
+      "BoatModelID": "SRAY-320-SD-OB",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Outboard",
+        "EngineConfiguration": "Twin gasoline outboards",
+        "EngineCount": 2
+      },
+      "sourceBatch": 2
+    },
+    {
+      "BoatModelID": "SRAY-330-EC",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Shaft",
+        "EngineConfiguration": "Twin gasoline inboards",
+        "EngineCount": 2
+      },
+      "sourceBatch": 2
+    },
+    {
+      "BoatModelID": "SRAY-330-SD",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Varies: V-drive inboard or sterndrive",
+        "EngineConfiguration": "Twin gasoline engines; V-drive inboard or sterndrive depending configuration",
+        "EngineCount": 2
+      },
+      "sourceBatch": 2
+    },
+    {
+      "BoatModelID": "SRAY-330-350-SD",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Varies: V-drive inboard or sterndrive",
+        "EngineConfiguration": "Twin gasoline engines; V-drive inboard or sterndrive depending configuration",
+        "EngineCount": 2
+      },
+      "sourceBatch": 2
+    },
+    {
+      "BoatModelID": "SRAY-340-AJ",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Shaft",
+        "EngineConfiguration": "Twin gasoline inboards",
+        "EngineCount": 2
+      },
+      "sourceBatch": 2
+    },
+    {
+      "BoatModelID": "SRAY-340-EC",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Shaft",
+        "EngineConfiguration": "Twin gasoline inboards",
+        "EngineCount": 2
+      },
+      "sourceBatch": 2
+    },
+    {
+      "BoatModelID": "SRAY-340-SB",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "V-Drive",
+        "EngineConfiguration": "Twin gasoline V-drive inboards",
+        "EngineCount": 2
+      },
+      "sourceBatch": 2
+    },
+    {
+      "BoatModelID": "SRAY-340-SF",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Shaft",
+        "EngineConfiguration": "Twin gasoline inboards",
+        "EngineCount": 2
+      },
+      "sourceBatch": 3
+    },
+    {
+      "BoatModelID": "SRAY-340-SD-G1",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Shaft",
+        "EngineConfiguration": "Twin gasoline inboards",
+        "EngineCount": 2
+      },
+      "sourceBatch": 3
+    },
+    {
+      "BoatModelID": "SRAY-340-SD-G2",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Varies: V-drive inboard or sterndrive",
+        "EngineConfiguration": "Twin gasoline engines; V-drive inboard or sterndrive depending configuration",
+        "EngineCount": 2
+      },
+      "sourceBatch": 3
+    },
+    {
+      "BoatModelID": "SRAY-340-SD-G3",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Varies: V-drive inboard or sterndrive",
+        "EngineConfiguration": "Twin gasoline engines; V-drive inboard or sterndrive depending configuration",
+        "EngineCount": 2
+      },
+      "sourceBatch": 3
+    },
+    {
+      "BoatModelID": "SRAY-345-340-SB",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "V-Drive",
+        "EngineConfiguration": "Twin gasoline V-drive inboards",
+        "EngineCount": 2
+      },
+      "sourceBatch": 3
+    },
+    {
+      "BoatModelID": "SRAY-350-SLX-G1",
+      "fields": {
+        "EngineCount": 2
+      },
+      "sourceBatch": 3
+    },
+    {
+      "BoatModelID": "SRAY-350-370-EC",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Shaft",
+        "EngineConfiguration": "Twin gasoline inboards",
+        "EngineCount": 2
+      },
+      "sourceBatch": 3
+    },
+    {
+      "BoatModelID": "SRAY-350-370-SD-G1",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Varies: V-drive inboard or sterndrive",
+        "EngineConfiguration": "Twin gasoline engines; V-drive inboard or sterndrive depending configuration",
+        "EngineCount": 2
+      },
+      "sourceBatch": 3
+    },
+    {
+      "BoatModelID": "SRAY-350-370-SD-G2",
+      "fields": {
+        "Fuel": "Gasoline or Diesel depending configuration",
+        "Propulsion": "Varies: V-drive or pod drive",
+        "EngineConfiguration": "Twin inboards; gasoline V-drive or diesel pod depending configuration",
+        "EngineCount": 2
+      },
+      "sourceBatch": 3
+    },
+    {
+      "BoatModelID": "SRAY-355T-SE",
+      "fields": {
+        "Fuel": "Gasoline or Diesel depending configuration",
+        "Propulsion": "Shaft",
+        "EngineConfiguration": "Twin inboards",
+        "EngineCount": 2
+      },
+      "sourceBatch": 3
+    },
+    {
+      "BoatModelID": "SRAY-36-SB",
+      "fields": {
+        "Fuel": "Gasoline or Diesel depending configuration",
+        "Propulsion": "V-Drive",
+        "EngineConfiguration": "Twin V-drive inboards",
+        "EngineCount": 2
+      },
+      "sourceBatch": 3
+    },
+    {
+      "BoatModelID": "SRAY-360-SD",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "V-Drive",
+        "EngineConfiguration": "Twin gasoline V-drive inboards",
+        "EngineCount": 2
+      },
+      "sourceBatch": 4
+    },
+    {
+      "BoatModelID": "SRAY-SRV360-SSF",
+      "fields": {
+        "Fuel": "Gasoline or Diesel depending configuration",
+        "Propulsion": "Shaft",
+        "EngineConfiguration": "Twin inboards; gasoline standard, diesel optional",
+        "EngineCount": 2
+      },
+      "sourceBatch": 4
+    },
+    {
+      "BoatModelID": "SRAY-370-SD-G2",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Sterndrive",
+        "EngineConfiguration": "Twin gasoline sterndrives",
+        "EngineCount": 2
+      },
+      "sourceBatch": 4
+    },
+    {
+      "BoatModelID": "SRAY-370-SD-OB",
+      "fields": {
+        "AirDraft": 3.7592
+      },
+      "sourceBatch": 4
+    },
+    {
+      "BoatModelID": "SRAY-370-380-AC",
+      "fields": {
+        "Fuel": "Gasoline or Diesel depending configuration",
+        "Propulsion": "Shaft",
+        "EngineConfiguration": "Twin inboards; gasoline or diesel depending configuration",
+        "EngineCount": 2
+      },
+      "sourceBatch": 4
+    },
+    {
+      "BoatModelID": "SRAY-38-390-SD",
+      "fields": {
+        "Propulsion": "V-Drive or Pod Drive"
+      },
+      "sourceBatch": 4
+    },
+    {
+      "BoatModelID": "SRAY-390-SB",
+      "fields": {
+        "Fuel": "Gasoline or Diesel depending configuration"
+      },
+      "sourceBatch": 4
+    },
+    {
+      "BoatModelID": "SRAY-390-40-SD",
+      "fields": {
+        "Fuel": "Gasoline"
+      },
+      "sourceBatch": 5
+    },
+    {
+      "BoatModelID": "SRAY-410-EC",
+      "fields": {
+        "Propulsion": "Shaft",
+        "EngineConfiguration": "Twin inboards",
+        "EngineCount": 2
+      },
+      "sourceBatch": 5
+    },
+    {
+      "BoatModelID": "SRAY-410-415-440-AC",
+      "fields": {
+        "Fuel": "Gasoline or Diesel depending configuration",
+        "Propulsion": "Shaft",
+        "EngineConfiguration": "Twin inboards; gasoline standard, diesel optional",
+        "EngineCount": 2
+      },
+      "sourceBatch": 5
+    },
+    {
+      "BoatModelID": "SRAY-420-440-SD",
+      "fields": {
+        "Fuel": "Gasoline or Diesel depending configuration",
+        "Propulsion": "V-Drive",
+        "EngineConfiguration": "Twin V-drive inboards; gasoline or diesel depending configuration",
+        "EngineCount": 2
+      },
+      "sourceBatch": 5
+    },
+    {
+      "BoatModelID": "SRAY-430-440-CV",
+      "fields": {
+        "Fuel": "Diesel",
+        "Propulsion": "Shaft",
+        "EngineConfiguration": "Twin diesel inboards",
+        "EngineCount": 2
+      },
+      "sourceBatch": 5
+    },
+    {
+      "BoatModelID": "SRAY-440-EB",
+      "fields": {
+        "Fuel": "Gasoline or Diesel depending configuration",
+        "Propulsion": "V-Drive",
+        "EngineConfiguration": "Twin V-drive inboards; gasoline standard, diesel optional",
+        "EngineCount": 2
+      },
+      "sourceBatch": 6
+    },
+    {
+      "BoatModelID": "SRAY-450-SB",
+      "fields": {
+        "Fuel": "Diesel",
+        "Propulsion": "Pod",
+        "EngineConfiguration": "Twin Cummins diesels with Zeus pod drives",
+        "EngineCount": 2
+      },
+      "sourceBatch": 6
+    },
+    {
+      "BoatModelID": "SRAY-450-SD-G1",
+      "fields": {
+        "Fuel": "Diesel",
+        "Propulsion": "V-Drive",
+        "EngineConfiguration": "Twin Caterpillar diesel V-drive inboards",
+        "EngineCount": 2
+      },
+      "sourceBatch": 6
+    },
+    {
+      "BoatModelID": "SRAY-450-SD-G2",
+      "fields": {
+        "Fuel": "Diesel",
+        "Propulsion": "Pod",
+        "EngineConfiguration": "Twin Cummins diesels with Zeus pod drives",
+        "EngineCount": 2
+      },
+      "sourceBatch": 6
+    },
+    {
+      "BoatModelID": "SRAY-460-EC",
+      "fields": {
+        "Fuel": "Diesel",
+        "Propulsion": "Shaft",
+        "EngineConfiguration": "Twin diesel inboards",
+        "EngineCount": 2
+      },
+      "sourceBatch": 6
+    },
+    {
+      "BoatModelID": "SRAY-460-FLY",
+      "fields": {
+        "Fuel": "Diesel",
+        "Propulsion": "V-Drive or Pod Drive",
+        "EngineConfiguration": "Twin Cummins diesels; V-drive standard, Zeus pod optional",
+        "EngineCount": 2
+      },
+      "sourceBatch": 6
+    },
+    {
+      "BoatModelID": "SRAY-460-SF",
+      "fields": {
+        "Fuel": "Diesel",
+        "Propulsion": "Shaft",
+        "EngineConfiguration": "Twin Detroit diesel inboards",
+        "EngineCount": 2
+      },
+      "sourceBatch": 6
+    },
+    {
+      "BoatModelID": "SRAY-460-SD-G2",
+      "fields": {
+        "Fuel": "Diesel",
+        "Propulsion": "V-Drive",
+        "EngineConfiguration": "Twin Cummins diesel V-drive inboards",
+        "EngineCount": 2
+      },
+      "sourceBatch": 6
+    },
+    {
+      "BoatModelID": "SRAY-470-SD",
+      "fields": {
+        "Fuel": "Diesel",
+        "Propulsion": "V-Drive or Pod Drive",
+        "EngineConfiguration": "Twin Cummins diesels; V-drive standard or Zeus pod depending configuration",
+        "EngineCount": 2
+      },
+      "sourceBatch": 6
+    }
+  ]
+}
