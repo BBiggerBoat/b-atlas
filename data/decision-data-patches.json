@@ -1,117 +1,962 @@
 {
-  "patchSet": "phase1-decision-data-carver-powertrain-02",
-  "createdAt": "2026-10-05",
-  "purpose": "Continue Carver fuel, propulsion, engine configuration and air-draft completion.",
+  "patchSet": "restart-2026-10-07-sea-ray-enrichment",
+  "createdAt": "2026-10-07",
+  "purpose": "Apply validated Sea Ray restart enrichment fields to previously null/empty canonical fields.",
+  "sourceValidation": {
+    "stagedModels": 84,
+    "modelsWithWrites": 62,
+    "fieldWrites": 227,
+    "validation": "zero missing IDs, duplicate staged IDs, overwrite conflicts, or unresolved conflicts"
+  },
   "patches": [
     {
-      "BoatModelID": "CARV-350-VOY",
-      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/carver/350-voyager-1993-94",
+      "BoatModelID": "SRAY-300-SB",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/300-sedan-bridge-1985-87",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "V-Drive",
+        "EngineConfiguration": "Twin gasoline V-drive inboards",
+        "EngineCount": 2
+      },
+      "confidence": {
+        "Fuel": "High",
+        "Propulsion": "High",
+        "EngineConfiguration": "High",
+        "EngineCount": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-300-SLX",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/300-slx-2008-15",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Sterndrive",
+        "EngineConfiguration": "Single or twin gasoline sterndrives"
+      },
+      "confidence": {
+        "Fuel": "High",
+        "Propulsion": "High",
+        "EngineConfiguration": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-300-SPB",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/300-sport-bridge-1975-79",
+      "fields": {
+        "Propulsion": "Mixed: shaft or sterndrive by version"
+      },
+      "confidence": {
+        "Propulsion": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-300-SD-G1",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/300-sundancer-1985-89",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Sterndrive",
+        "EngineConfiguration": "Twin gasoline sterndrives",
+        "EngineCount": 2
+      },
+      "confidence": {
+        "Fuel": "High",
+        "Propulsion": "High",
+        "EngineConfiguration": "High",
+        "EngineCount": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-300-SD-G2",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/300-sundancer-1992-93",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Varies: V-drive inboard or sterndrive",
+        "EngineConfiguration": "Twin gasoline engines; V-drive inboard or sterndrive depending configuration",
+        "EngineCount": 2
+      },
+      "confidence": {
+        "Fuel": "High",
+        "Propulsion": "High",
+        "EngineConfiguration": "High",
+        "EngineCount": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-300-SD-G3",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/300-sundancer-1994-97",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Varies: V-drive inboard or sterndrive",
+        "EngineConfiguration": "Twin gasoline engines; V-drive inboard or sterndrive depending configuration",
+        "EngineCount": 2
+      },
+      "confidence": {
+        "Fuel": "High",
+        "Propulsion": "High",
+        "EngineConfiguration": "High",
+        "EngineCount": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-300-SD-G4",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/300-sundancer-2002-07",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Sterndrive",
+        "EngineConfiguration": "Twin gasoline sterndrives",
+        "EngineCount": 2
+      },
+      "confidence": {
+        "Fuel": "High",
+        "Propulsion": "High",
+        "EngineConfiguration": "High",
+        "EngineCount": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-300-WE-G1",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/300-weekender-1975-81",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Shaft",
+        "EngineConfiguration": "Twin gasoline inboards",
+        "EngineCount": 2
+      },
+      "confidence": {
+        "Fuel": "High",
+        "Propulsion": "High",
+        "EngineConfiguration": "High",
+        "EngineCount": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-300-WE-G2",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/300-weekender-1985-89",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Shaft",
+        "EngineConfiguration": "Twin gasoline inboards",
+        "EngineCount": 2
+      },
+      "confidence": {
+        "Fuel": "High",
+        "Propulsion": "High",
+        "EngineConfiguration": "High",
+        "EngineCount": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-305-300-SB",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/305-300-sedan-bridge-1988-89",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "V-Drive",
+        "EngineConfiguration": "Twin gasoline V-drive inboards",
+        "EngineCount": 2
+      },
+      "confidence": {
+        "Fuel": "High",
+        "Propulsion": "High",
+        "EngineConfiguration": "High",
+        "EngineCount": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-SRV300-EC",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/srv-300-express-cruiser-1978-81",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Shaft",
+        "EngineConfiguration": "Twin gasoline inboards",
+        "EngineCount": 2
+      },
+      "confidence": {
+        "Fuel": "High",
+        "Propulsion": "High",
+        "EngineConfiguration": "High",
+        "EngineCount": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-310-AJ",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/310-amberjack-1992-94",
+      "fields": {
+        "Propulsion": "Shaft",
+        "EngineConfiguration": "Twin inboards; gasoline documented",
+        "EngineCount": 2
+      },
+      "confidence": {
+        "Propulsion": "High",
+        "EngineConfiguration": "High",
+        "EngineCount": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-310-SLX",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/310-slx-2016-current",
+      "fields": {
+        "Fuel": "Gasoline or Diesel depending configuration",
+        "Propulsion": "Varies: sterndrive or outboard",
+        "EngineConfiguration": "Twin engines; gasoline sterndrive/outboard or diesel sterndrive depending configuration",
+        "EngineCount": 2
+      },
+      "confidence": {
+        "Fuel": "High",
+        "Propulsion": "High",
+        "EngineConfiguration": "High",
+        "EngineCount": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-310-SPB",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/310-sport-bridge-1992-93",
+      "fields": {
+        "Fuel": "Gasoline or Diesel depending configuration",
+        "Propulsion": "Shaft",
+        "EngineConfiguration": "Twin inboards; gasoline or diesel depending configuration",
+        "EngineCount": 2
+      },
+      "confidence": {
+        "Fuel": "High",
+        "Propulsion": "High",
+        "EngineConfiguration": "High",
+        "EngineCount": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-310-SS",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/310-sun-sport-1991-95",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Sterndrive",
+        "EngineConfiguration": "Twin gasoline sterndrives",
+        "EngineCount": 2
+      },
+      "confidence": {
+        "Fuel": "High",
+        "Propulsion": "High",
+        "EngineConfiguration": "High",
+        "EngineCount": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-310-SD-G1",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/310-sundancer-1998-2002",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Varies: V-drive inboard or sterndrive",
+        "EngineConfiguration": "Twin gasoline engines; V-drive inboard or sterndrive depending configuration",
+        "EngineCount": 2
+      },
+      "confidence": {
+        "Fuel": "High",
+        "Propulsion": "High",
+        "EngineConfiguration": "High",
+        "EngineCount": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-310-SD-G2",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/310-sundancer-2010-17",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Sterndrive",
+        "EngineConfiguration": "Twin gasoline sterndrives",
+        "EngineCount": 2
+      },
+      "confidence": {
+        "Fuel": "High",
+        "Propulsion": "High",
+        "EngineConfiguration": "High",
+        "EngineCount": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-310-330-EC",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/310-330-express-cruiser-1990-95",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Varies: inboard shaft or sterndrive",
+        "EngineConfiguration": "Twin gasoline inboards or sterndrives depending configuration",
+        "EngineCount": 2
+      },
+      "confidence": {
+        "Fuel": "High",
+        "Propulsion": "High",
+        "EngineConfiguration": "High",
+        "EngineCount": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-310-330-SD-G1",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/310-330-sundancer-1990-94",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Varies: V-drive inboard or sterndrive",
+        "EngineConfiguration": "Twin gasoline engines; V-drive inboard or sterndrive depending configuration",
+        "EngineCount": 2
+      },
+      "confidence": {
+        "Fuel": "High",
+        "Propulsion": "High",
+        "EngineConfiguration": "High",
+        "EngineCount": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-310-330-SD-G2",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/310-330-sundancer-2007-16",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Varies: V-drive inboard or sterndrive",
+        "EngineConfiguration": "Twin gasoline engines; V-drive inboard or sterndrive depending configuration",
+        "EngineCount": 2
+      },
+      "confidence": {
+        "Fuel": "High",
+        "Propulsion": "High",
+        "EngineConfiguration": "High",
+        "EngineCount": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-SRV310-SD",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/srv310-sundancer-1981-83",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Shaft",
+        "EngineConfiguration": "Twin gasoline inboards",
+        "EngineCount": 2
+      },
+      "confidence": {
+        "Fuel": "High",
+        "Propulsion": "High",
+        "EngineConfiguration": "High",
+        "EngineCount": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-320-SD-G1",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/320-sundancer-2003-07",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Varies: V-drive inboard or sterndrive",
+        "EngineConfiguration": "Twin gasoline engines; V-drive inboard or sterndrive depending configuration",
+        "EngineCount": 2
+      },
+      "confidence": {
+        "Fuel": "High",
+        "Propulsion": "High",
+        "EngineConfiguration": "High",
+        "EngineCount": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-320-SD-G2",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/320-sundancer-2019-current",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Sterndrive",
+        "EngineConfiguration": "Twin gasoline sterndrives",
+        "EngineCount": 2
+      },
+      "confidence": {
+        "Fuel": "High",
+        "Propulsion": "High",
+        "EngineConfiguration": "High",
+        "EngineCount": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-320-SD-OB",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/320-sundancer-outboard-2020-current",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Outboard",
+        "EngineConfiguration": "Twin gasoline outboards",
+        "EngineCount": 2
+      },
+      "confidence": {
+        "Fuel": "High",
+        "Propulsion": "High",
+        "EngineConfiguration": "High",
+        "EngineCount": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-330-EC",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/330-express-cruiser-1997-2000",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Shaft",
+        "EngineConfiguration": "Twin gasoline inboards",
+        "EngineCount": 2
+      },
+      "confidence": {
+        "Fuel": "High",
+        "Propulsion": "High",
+        "EngineConfiguration": "High",
+        "EngineCount": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-330-SD",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/330-sundancer-1995-99",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Varies: V-drive inboard or sterndrive",
+        "EngineConfiguration": "Twin gasoline engines; V-drive inboard or sterndrive depending configuration",
+        "EngineCount": 2
+      },
+      "confidence": {
+        "Fuel": "High",
+        "Propulsion": "High",
+        "EngineConfiguration": "High",
+        "EngineCount": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-330-350-SD",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/330-350-sundancer-2008-12",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Varies: V-drive inboard or sterndrive",
+        "EngineConfiguration": "Twin gasoline engines; V-drive inboard or sterndrive depending configuration",
+        "EngineCount": 2
+      },
+      "confidence": {
+        "Fuel": "High",
+        "Propulsion": "High",
+        "EngineConfiguration": "High",
+        "EngineCount": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-340-AJ",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-amberjack-2001-03",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Shaft",
+        "EngineConfiguration": "Twin gasoline inboards",
+        "EngineCount": 2
+      },
+      "confidence": {
+        "Fuel": "High",
+        "Propulsion": "High",
+        "EngineConfiguration": "High",
+        "EngineCount": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-340-EC",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-express-cruiser-1984-89",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Shaft",
+        "EngineConfiguration": "Twin gasoline inboards",
+        "EngineCount": 2
+      },
+      "confidence": {
+        "Fuel": "High",
+        "Propulsion": "High",
+        "EngineConfiguration": "High",
+        "EngineCount": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-340-SB",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-sedan-bridge-1983-87",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "V-Drive",
+        "EngineConfiguration": "Twin gasoline V-drive inboards",
+        "EngineCount": 2
+      },
+      "confidence": {
+        "Fuel": "High",
+        "Propulsion": "High",
+        "EngineConfiguration": "High",
+        "EngineCount": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-340-SF",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Shaft",
+        "EngineConfiguration": "Twin gasoline inboards",
+        "EngineCount": 2
+      },
+      "confidence": {
+        "Fuel": "High",
+        "Propulsion": "High",
+        "EngineConfiguration": "High",
+        "EngineCount": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-340-SD-G1",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Shaft",
+        "EngineConfiguration": "Twin gasoline inboards",
+        "EngineCount": 2
+      },
+      "confidence": {
+        "Fuel": "High",
+        "Propulsion": "High",
+        "EngineConfiguration": "High",
+        "EngineCount": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-340-SD-G2",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Varies: V-drive inboard or sterndrive",
+        "EngineConfiguration": "Twin gasoline engines; V-drive inboard or sterndrive depending configuration",
+        "EngineCount": 2
+      },
+      "confidence": {
+        "Fuel": "High",
+        "Propulsion": "High",
+        "EngineConfiguration": "High",
+        "EngineCount": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-340-SD-G3",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Varies: V-drive inboard or sterndrive",
+        "EngineConfiguration": "Twin gasoline engines; V-drive inboard or sterndrive depending configuration",
+        "EngineCount": 2
+      },
+      "confidence": {
+        "Fuel": "High",
+        "Propulsion": "High",
+        "EngineConfiguration": "High",
+        "EngineCount": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-345-340-SB",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "V-Drive",
+        "EngineConfiguration": "Twin gasoline V-drive inboards",
+        "EngineCount": 2
+      },
+      "confidence": {
+        "Fuel": "High",
+        "Propulsion": "High",
+        "EngineConfiguration": "High",
+        "EngineCount": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-350-SLX-G1",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray",
+      "fields": {
+        "EngineCount": 2
+      },
+      "confidence": {
+        "EngineCount": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-350-370-EC",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Shaft",
+        "EngineConfiguration": "Twin gasoline inboards",
+        "EngineCount": 2
+      },
+      "confidence": {
+        "Fuel": "High",
+        "Propulsion": "High",
+        "EngineConfiguration": "High",
+        "EngineCount": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-350-370-SD-G1",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Varies: V-drive inboard or sterndrive",
+        "EngineConfiguration": "Twin gasoline engines; V-drive inboard or sterndrive depending configuration",
+        "EngineCount": 2
+      },
+      "confidence": {
+        "Fuel": "High",
+        "Propulsion": "High",
+        "EngineConfiguration": "High",
+        "EngineCount": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-350-370-SD-G2",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray",
+      "fields": {
+        "Fuel": "Gasoline or Diesel depending configuration",
+        "Propulsion": "Varies: V-drive or pod drive",
+        "EngineConfiguration": "Twin inboards; gasoline V-drive or diesel pod depending configuration",
+        "EngineCount": 2
+      },
+      "confidence": {
+        "Fuel": "High",
+        "Propulsion": "High",
+        "EngineConfiguration": "High",
+        "EngineCount": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-355T-SE",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray",
+      "fields": {
+        "Fuel": "Gasoline or Diesel depending configuration",
+        "Propulsion": "Shaft",
+        "EngineConfiguration": "Twin inboards",
+        "EngineCount": 2
+      },
+      "confidence": {
+        "Fuel": "High",
+        "Propulsion": "High",
+        "EngineConfiguration": "High",
+        "EngineCount": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-36-SB",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray",
+      "fields": {
+        "Fuel": "Gasoline or Diesel depending configuration",
+        "Propulsion": "V-Drive",
+        "EngineConfiguration": "Twin V-drive inboards",
+        "EngineCount": 2
+      },
+      "confidence": {
+        "Fuel": "High",
+        "Propulsion": "High",
+        "EngineConfiguration": "High",
+        "EngineCount": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-360-SD",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/360-sundancer-2002-06",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "V-Drive",
+        "EngineConfiguration": "Twin gasoline V-drive inboards",
+        "EngineCount": 2
+      },
+      "confidence": {
+        "Fuel": "High",
+        "Propulsion": "High",
+        "EngineConfiguration": "High",
+        "EngineCount": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-SRV360-SSF",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/srv360-sedan-sportfish-1980-81",
+      "fields": {
+        "Fuel": "Gasoline or Diesel depending configuration",
+        "Propulsion": "Shaft",
+        "EngineConfiguration": "Twin inboards; gasoline standard, diesel optional",
+        "EngineCount": 2
+      },
+      "confidence": {
+        "Fuel": "High",
+        "Propulsion": "High",
+        "EngineConfiguration": "High",
+        "EngineCount": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-370-SD-G2",
+      "sourceURL": "https://www.searay.com/ca/en/boats/sundancer/sundancer-370",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Sterndrive",
+        "EngineConfiguration": "Twin gasoline sterndrives",
+        "EngineCount": 2
+      },
+      "confidence": {
+        "Fuel": "High",
+        "Propulsion": "High",
+        "EngineConfiguration": "High",
+        "EngineCount": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-370-SD-OB",
+      "sourceURL": "https://www.searay.com/ca/en/boats/sundancer/sundancer-370-outboard",
+      "fields": {
+        "AirDraft": 3.7592
+      },
+      "confidence": {
+        "AirDraft": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-370-380-AC",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/370-380-aft-cabin-1997-2001",
+      "fields": {
+        "Fuel": "Gasoline or Diesel depending configuration",
+        "Propulsion": "Shaft",
+        "EngineConfiguration": "Twin inboards; gasoline or diesel depending configuration",
+        "EngineCount": 2
+      },
+      "confidence": {
+        "Fuel": "High",
+        "Propulsion": "High",
+        "EngineConfiguration": "High",
+        "EngineCount": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-38-390-SD",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/38-390-sundancer-2006-11",
+      "fields": {
+        "Propulsion": "V-Drive or Pod Drive"
+      },
+      "confidence": {
+        "Propulsion": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-390-SB",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/390-sedan-bridge-2010-only",
+      "fields": {
+        "Fuel": "Gasoline or Diesel depending configuration"
+      },
+      "confidence": {
+        "Fuel": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-390-40-SD",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/390-sundancer-40-sundancer-2004-09",
+      "fields": {
+        "Fuel": "Gasoline"
+      },
+      "confidence": {
+        "Fuel": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-410-EC",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/410-express-cruiser-2000-03",
+      "fields": {
+        "Propulsion": "Shaft",
+        "EngineConfiguration": "Twin inboards",
+        "EngineCount": 2
+      },
+      "confidence": {
+        "Propulsion": "High",
+        "EngineConfiguration": "High",
+        "EngineCount": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-410-415-440-AC",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/410-415-440-aft-cabin-1986-91",
+      "fields": {
+        "Fuel": "Gasoline or Diesel depending configuration",
+        "Propulsion": "Shaft",
+        "EngineConfiguration": "Twin inboards; gasoline standard, diesel optional",
+        "EngineCount": 2
+      },
+      "confidence": {
+        "Fuel": "High",
+        "Propulsion": "High",
+        "EngineConfiguration": "High",
+        "EngineCount": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-420-440-SD",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/420-440-sundancer-1990-95",
+      "fields": {
+        "Fuel": "Gasoline or Diesel depending configuration",
+        "Propulsion": "V-Drive",
+        "EngineConfiguration": "Twin V-drive inboards; gasoline or diesel depending configuration",
+        "EngineCount": 2
+      },
+      "confidence": {
+        "Fuel": "High",
+        "Propulsion": "High",
+        "EngineConfiguration": "High",
+        "EngineCount": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-430-440-CV",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/430-440-convertible-1988-91",
       "fields": {
         "Fuel": "Diesel",
-        "NormalizedFuel": "Diesel",
         "Propulsion": "Shaft",
-        "NormalizedPropulsion": "Shaft",
-        "EngineCount": 2,
-        "EngineConfiguration": "Twin Volvo diesel inboards"
-      },
-      "confidence": {
-        "Fuel": "High",
-        "Propulsion": "High",
-        "EngineConfiguration": "High"
-      }
-    },
-    {
-      "BoatModelID": "CARV-366-MY",
-      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/carver/366-motor-yacht-2002-06",
-      "fields": {
-        "Fuel": "Mixed Diesel/Gasoline",
-        "NormalizedFuel": "Mixed Diesel/Gasoline",
-        "Propulsion": "Shaft",
-        "NormalizedPropulsion": "Shaft",
-        "EngineCount": 2,
-        "EngineConfiguration": "Twin inboards; gasoline standard, diesel optional"
-      },
-      "confidence": {
-        "Fuel": "High",
-        "Propulsion": "High",
-        "EngineConfiguration": "High"
-      }
-    },
-    {
-      "BoatModelID": "CARV-3697-MAR",
-      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/carver/3697-mariner-1984-88",
-      "fields": {
-        "Fuel": "Gasoline",
-        "NormalizedFuel": "Gasoline",
-        "Propulsion": "Shaft/V-Drive",
-        "NormalizedPropulsion": "Shaft/V-Drive",
-        "EngineCount": 2,
-        "EngineConfiguration": "Twin Crusader gasoline V-drive inboards",
-        "AirDraft": 4.1148,
-        "AirDraft_ft": 13.5
+        "EngineConfiguration": "Twin diesel inboards",
+        "EngineCount": 2
       },
       "confidence": {
         "Fuel": "High",
         "Propulsion": "High",
         "EngineConfiguration": "High",
-        "AirDraft": "High"
+        "EngineCount": "High"
       }
     },
     {
-      "BoatModelID": "CARV-C36-CB",
-      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/carver/c36-command-bridge-2019-21",
+      "BoatModelID": "SRAY-440-EB",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/440-express-bridge-1993-98",
       "fields": {
-        "Fuel": "Mixed Diesel/Gasoline",
-        "NormalizedFuel": "Mixed Diesel/Gasoline",
-        "Propulsion": "Shaft",
-        "NormalizedPropulsion": "Shaft",
-        "EngineCount": 2,
-        "EngineConfiguration": "Twin inboards; MerCruiser gasoline standard, Yanmar or Volvo diesels optional",
-        "AirDraft": 3.8354,
-        "AirDraft_ft": 12.5833
+        "Fuel": "Gasoline or Diesel depending configuration",
+        "Propulsion": "V-Drive",
+        "EngineConfiguration": "Twin V-drive inboards; gasoline standard, diesel optional",
+        "EngineCount": 2
       },
       "confidence": {
         "Fuel": "High",
         "Propulsion": "High",
         "EngineConfiguration": "High",
-        "AirDraft": "High"
+        "EngineCount": "High"
       }
     },
     {
-      "BoatModelID": "CARV-370-374-VOY",
-      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/carver/370-374-voyager-1993-2002",
+      "BoatModelID": "SRAY-450-SB",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/450-sedan-bridge-2012-14",
       "fields": {
-        "Fuel": "Mixed Diesel/Gasoline",
-        "NormalizedFuel": "Mixed Diesel/Gasoline",
-        "Propulsion": "Shaft",
-        "NormalizedPropulsion": "Shaft",
-        "EngineCount": 2,
-        "EngineConfiguration": "Twin inboards; gasoline or optional diesel"
-      },
-      "confidence": {
-        "Fuel": "High",
-        "Propulsion": "High",
-        "EngineConfiguration": "High"
-      }
-    },
-    {
-      "BoatModelID": "CARV-38-SS",
-      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/carver/38-super-sport-2005-09",
-      "fields": {
-        "Fuel": "Gasoline",
-        "NormalizedFuel": "Gasoline",
-        "Propulsion": "Shaft",
-        "NormalizedPropulsion": "Shaft",
-        "EngineCount": 2,
-        "EngineConfiguration": "Twin gasoline inboards",
-        "AirDraft": 4.2926,
-        "AirDraft_ft": 14.0833
+        "Fuel": "Diesel",
+        "Propulsion": "Pod",
+        "EngineConfiguration": "Twin Cummins diesels with Zeus pod drives",
+        "EngineCount": 2
       },
       "confidence": {
         "Fuel": "High",
         "Propulsion": "High",
         "EngineConfiguration": "High",
-        "AirDraft": "High"
+        "EngineCount": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-450-SD-G1",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/450-sundancer-1995-99",
+      "fields": {
+        "Fuel": "Diesel",
+        "Propulsion": "V-Drive",
+        "EngineConfiguration": "Twin Caterpillar diesel V-drive inboards",
+        "EngineCount": 2
+      },
+      "confidence": {
+        "Fuel": "High",
+        "Propulsion": "High",
+        "EngineConfiguration": "High",
+        "EngineCount": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-450-SD-G2",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/450-sundancer-2010-15",
+      "fields": {
+        "Fuel": "Diesel",
+        "Propulsion": "Pod",
+        "EngineConfiguration": "Twin Cummins diesels with Zeus pod drives",
+        "EngineCount": 2
+      },
+      "confidence": {
+        "Fuel": "High",
+        "Propulsion": "High",
+        "EngineConfiguration": "High",
+        "EngineCount": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-460-EC",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/460-express-cruiser-1985-89",
+      "fields": {
+        "Fuel": "Diesel",
+        "Propulsion": "Shaft",
+        "EngineConfiguration": "Twin diesel inboards",
+        "EngineCount": 2
+      },
+      "confidence": {
+        "Fuel": "High",
+        "Propulsion": "High",
+        "EngineConfiguration": "High",
+        "EngineCount": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-460-FLY",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/460-fly-2017-19",
+      "fields": {
+        "Fuel": "Diesel",
+        "Propulsion": "V-Drive or Pod Drive",
+        "EngineConfiguration": "Twin Cummins diesels; V-drive standard, Zeus pod optional",
+        "EngineCount": 2
+      },
+      "confidence": {
+        "Fuel": "High",
+        "Propulsion": "High",
+        "EngineConfiguration": "High",
+        "EngineCount": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-460-SF",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/460-sport-fisherman-1987-88",
+      "fields": {
+        "Fuel": "Diesel",
+        "Propulsion": "Shaft",
+        "EngineConfiguration": "Twin Detroit diesel inboards",
+        "EngineCount": 2
+      },
+      "confidence": {
+        "Fuel": "High",
+        "Propulsion": "High",
+        "EngineConfiguration": "High",
+        "EngineCount": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-460-SD-G2",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/460-sundancer-2017-18",
+      "fields": {
+        "Fuel": "Diesel",
+        "Propulsion": "V-Drive",
+        "EngineConfiguration": "Twin Cummins diesel V-drive inboards",
+        "EngineCount": 2
+      },
+      "confidence": {
+        "Fuel": "High",
+        "Propulsion": "High",
+        "EngineConfiguration": "High",
+        "EngineCount": "High"
+      }
+    },
+    {
+      "BoatModelID": "SRAY-470-SD",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/470-sundancer-2015-17",
+      "fields": {
+        "Fuel": "Diesel",
+        "Propulsion": "V-Drive or Pod Drive",
+        "EngineConfiguration": "Twin Cummins diesels; V-drive standard or Zeus pod depending configuration",
+        "EngineCount": 2
+      },
+      "confidence": {
+        "Fuel": "High",
+        "Propulsion": "High",
+        "EngineConfiguration": "High",
+        "EngineCount": "High"
       }
     }
   ]
