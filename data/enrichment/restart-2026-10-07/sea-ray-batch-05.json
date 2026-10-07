@@ -1,0 +1,254 @@
+{
+  "date": "2026-10-07",
+  "workflow": "Model enrichment restart",
+  "manufacturer": "Sea Ray",
+  "batch": 5,
+  "canonicalSource": "boatmodels.json",
+  "canonicalModelCount": 995,
+  "batchSize": 15,
+  "policy": [
+    "Stage only; do not modify canonical data.",
+    "Populate only defensible generation-level values.",
+    "Preserve existing canonical values.",
+    "Use unresolved when source evidence does not support a model-wide assertion."
+  ],
+  "records": [
+    {
+      "BoatModelID": "SRAY-390-SSF",
+      "fields": {},
+      "preserveExisting": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ],
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-390-40-SD",
+      "fields": {
+        "Fuel": "Gasoline"
+      },
+      "preserveExisting": [
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount",
+        "AirDraft"
+      ],
+      "intentionallyUnresolved": [],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/390-sundancer-40-sundancer-2004-09"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-400-EC",
+      "fields": {},
+      "preserveExisting": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ],
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-400-FLY",
+      "fields": {},
+      "preserveExisting": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ],
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/400-fly-2016-18"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-400-SB",
+      "fields": {},
+      "preserveExisting": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ],
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-400-SLX-OB",
+      "fields": {},
+      "preserveExisting": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ],
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/400-slx-outboard-2017-current"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-400-SD",
+      "fields": {},
+      "preserveExisting": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ],
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/400-sundancer-2016-19"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-400-410-SD",
+      "fields": {},
+      "preserveExisting": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ],
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-410-EC",
+      "fields": {
+        "Propulsion": "Shaft",
+        "EngineConfiguration": "Twin inboards",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "Fuel",
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/410-express-cruiser-2000-03"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-410-SD",
+      "fields": {},
+      "preserveExisting": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ],
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-410-415-440-AC",
+      "fields": {
+        "Fuel": "Gasoline or Diesel depending configuration",
+        "Propulsion": "Shaft",
+        "EngineConfiguration": "Twin inboards; gasoline standard, diesel optional",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/410-415-440-aft-cabin-1986-91"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-420-44-SB",
+      "fields": {},
+      "preserveExisting": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ],
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/420-sedan-bridge-44-sedan-bridge-2004-09"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-420-440-SD",
+      "fields": {
+        "Fuel": "Gasoline or Diesel depending configuration",
+        "Propulsion": "V-Drive",
+        "EngineConfiguration": "Twin V-drive inboards; gasoline or diesel depending configuration",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/420-440-sundancer-1990-95"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-43-470-SD",
+      "fields": {},
+      "preserveExisting": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ],
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/43-sundancer-470-sundancer-2009-14"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-430-440-CV",
+      "fields": {
+        "Fuel": "Diesel",
+        "Propulsion": "Shaft",
+        "EngineConfiguration": "Twin diesel inboards",
+        "EngineCount": 2
+      },
+      "preserveExisting": [
+        "AirDraft"
+      ],
+      "intentionallyUnresolved": [],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/430-440-convertible-1988-91"
+      ]
+    }
+  ]
+}
