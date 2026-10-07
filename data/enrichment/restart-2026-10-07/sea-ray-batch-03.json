@@ -1,0 +1,251 @@
+{
+  "date": "2026-10-07",
+  "workflow": "Model enrichment restart",
+  "manufacturer": "Sea Ray",
+  "batch": 3,
+  "canonicalSource": "boatmodels.json",
+  "canonicalModelCount": 995,
+  "batchSize": 15,
+  "policy": [
+    "Stage only; do not modify canonical data.",
+    "Populate only defensible generation-level values.",
+    "Preserve configuration-dependent alternatives.",
+    "Do not replace existing canonical values.",
+    "Where available evidence confirms model identity but not a field, leave that field unresolved."
+  ],
+  "records": [
+    {
+      "BoatModelID": "SRAY-340-SF",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Shaft",
+        "EngineConfiguration": "Twin gasoline inboards",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-340-SD-G1",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Shaft",
+        "EngineConfiguration": "Twin gasoline inboards",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-340-SD-G2",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Varies: V-drive inboard or sterndrive",
+        "EngineConfiguration": "Twin gasoline engines; V-drive inboard or sterndrive depending configuration",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-340-SD-G3",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Varies: V-drive inboard or sterndrive",
+        "EngineConfiguration": "Twin gasoline engines; V-drive inboard or sterndrive depending configuration",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-345-340-SB",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "V-Drive",
+        "EngineConfiguration": "Twin gasoline V-drive inboards",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-350-EB",
+      "fields": {},
+      "preserveExisting": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ],
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-350-SLX-G1",
+      "fields": {
+        "EngineCount": 2
+      },
+      "preserveExisting": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration"
+      ],
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-350-SLX-G2",
+      "fields": {},
+      "preserveExisting": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ],
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-350-SD",
+      "fields": {},
+      "preserveExisting": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ],
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-350-SD-CP",
+      "fields": {},
+      "preserveExisting": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ],
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-350-370-EC",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Shaft",
+        "EngineConfiguration": "Twin gasoline inboards",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-350-370-SD-G1",
+      "fields": {
+        "Fuel": "Gasoline",
+        "Propulsion": "Varies: V-drive inboard or sterndrive",
+        "EngineConfiguration": "Twin gasoline engines; V-drive inboard or sterndrive depending configuration",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-350-370-SD-G2",
+      "fields": {
+        "Fuel": "Gasoline or Diesel depending configuration",
+        "Propulsion": "Varies: V-drive or pod drive",
+        "EngineConfiguration": "Twin inboards; gasoline V-drive or diesel pod depending configuration",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-355T-SE",
+      "fields": {
+        "Fuel": "Gasoline or Diesel depending configuration",
+        "Propulsion": "Shaft",
+        "EngineConfiguration": "Twin inboards",
+        "EngineCount": 2
+      },
+      "preserveExisting": [
+        "AirDraft"
+      ],
+      "intentionallyUnresolved": [],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-36-SB",
+      "fields": {
+        "Fuel": "Gasoline or Diesel depending configuration",
+        "Propulsion": "V-Drive",
+        "EngineConfiguration": "Twin V-drive inboards",
+        "EngineCount": 2
+      },
+      "preserveExisting": [
+        "AirDraft"
+      ],
+      "intentionallyUnresolved": [],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray"
+      ]
+    }
+  ]
+}
