@@ -1,0 +1,265 @@
+{
+  "date": "2026-10-07",
+  "workflow": "Model enrichment restart",
+  "manufacturer": "Tiara Yachts",
+  "batch": 1,
+  "canonicalSource": "boatmodels.json",
+  "canonicalModelCount": 995,
+  "batchSize": 15,
+  "policy": [
+    "Stage only; do not modify canonical data.",
+    "Populate only missing priority fields.",
+    "Use generic twin-inboard wording when model-year power options include both gasoline and diesel.",
+    "Preserve existing canonical values.",
+    "Use manufacturer clearance where available for AirDraft."
+  ],
+  "records": [
+    {
+      "BoatModelID": "TIAR-3000-OPEN",
+      "fields": {
+        "EngineConfiguration": "Twin gasoline inboards"
+      },
+      "preserveExisting": [
+        "Fuel",
+        "Propulsion",
+        "EngineCount"
+      ],
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/tiara/3000-open-2007-12"
+      ]
+    },
+    {
+      "BoatModelID": "TIAR-3100-CONV",
+      "fields": {
+        "EngineConfiguration": "Twin gasoline inboards"
+      },
+      "preserveExisting": [
+        "Fuel",
+        "Propulsion",
+        "EngineCount",
+        "AirDraft"
+      ],
+      "intentionallyUnresolved": [],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/tiara/3100-convertible-1982-92"
+      ]
+    },
+    {
+      "BoatModelID": "TIAR-3100-OPEN-7991",
+      "fields": {
+        "EngineConfiguration": "Twin gasoline inboards"
+      },
+      "preserveExisting": [
+        "Fuel",
+        "Propulsion",
+        "EngineCount",
+        "AirDraft"
+      ],
+      "intentionallyUnresolved": [],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/tiara/3100-open-1979-91"
+      ]
+    },
+    {
+      "BoatModelID": "TIAR-3100-OPEN-9204",
+      "fields": {
+        "EngineConfiguration": "Twin inboards"
+      },
+      "preserveExisting": [
+        "Fuel",
+        "Propulsion",
+        "EngineCount"
+      ],
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/tiara/3100-open-1992-2004"
+      ]
+    },
+    {
+      "BoatModelID": "TIAR-3100-OPEN-1116",
+      "fields": {
+        "EngineConfiguration": "Twin inboards"
+      },
+      "preserveExisting": [
+        "Fuel",
+        "Propulsion",
+        "EngineCount",
+        "AirDraft"
+      ],
+      "intentionallyUnresolved": [],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/tiara/3100-open-2011-16"
+      ]
+    },
+    {
+      "BoatModelID": "TIAR-3100-CORONET",
+      "fields": {
+        "EngineConfiguration": "Twin inboards"
+      },
+      "preserveExisting": [
+        "Fuel",
+        "Propulsion",
+        "EngineCount",
+        "AirDraft"
+      ],
+      "intentionallyUnresolved": [],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/tiara/3100-coronet-2012-18"
+      ]
+    },
+    {
+      "BoatModelID": "TIAR-3200-OPEN",
+      "fields": {
+        "EngineConfiguration": "Twin inboards"
+      },
+      "preserveExisting": [
+        "Fuel",
+        "Propulsion",
+        "EngineCount"
+      ],
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/tiara/3200-open-2004-11"
+      ]
+    },
+    {
+      "BoatModelID": "TIAR-3300-FB",
+      "fields": {
+        "EngineConfiguration": "Twin inboards"
+      },
+      "preserveExisting": [
+        "Fuel",
+        "Propulsion",
+        "EngineCount",
+        "AirDraft"
+      ],
+      "intentionallyUnresolved": [],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/tiara/3300-flybridge-1986-92"
+      ]
+    },
+    {
+      "BoatModelID": "TIAR-3300-OPEN",
+      "fields": {
+        "EngineConfiguration": "Twin inboards"
+      },
+      "preserveExisting": [
+        "Fuel",
+        "Propulsion",
+        "EngineCount"
+      ],
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/tiara/3300-open-1988-97"
+      ]
+    },
+    {
+      "BoatModelID": "TIAR-34-LS",
+      "fields": {
+        "EngineConfiguration": "Twin gasoline outboards"
+      },
+      "preserveExisting": [
+        "Fuel",
+        "Propulsion",
+        "EngineCount"
+      ],
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.tiarayachts.com/series/ls"
+      ]
+    },
+    {
+      "BoatModelID": "TIAR-34-LX",
+      "fields": {
+        "EngineConfiguration": "Twin gasoline outboards",
+        "AirDraft": 3.0226
+      },
+      "preserveExisting": [
+        "Fuel",
+        "Propulsion",
+        "EngineCount"
+      ],
+      "intentionallyUnresolved": [],
+      "evidence": [
+        "https://www.tiarayachts.com/series/lx/models/34lx"
+      ]
+    },
+    {
+      "BoatModelID": "TIAR-3500-EXP",
+      "fields": {
+        "EngineConfiguration": "Twin V-drive inboards"
+      },
+      "preserveExisting": [
+        "Fuel",
+        "Propulsion",
+        "EngineCount"
+      ],
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/tiara/3500-express-1995-2003"
+      ]
+    },
+    {
+      "BoatModelID": "TIAR-3500-OPEN",
+      "fields": {
+        "EngineConfiguration": "Twin inboards"
+      },
+      "preserveExisting": [
+        "Fuel",
+        "Propulsion",
+        "EngineCount"
+      ],
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/tiara/3500-open-1998-2004"
+      ]
+    },
+    {
+      "BoatModelID": "TIAR-3500-SOVRAN",
+      "fields": {
+        "EngineConfiguration": "Twin Volvo IPS diesel pod drives"
+      },
+      "preserveExisting": [
+        "Fuel",
+        "Propulsion",
+        "EngineCount",
+        "AirDraft"
+      ],
+      "intentionallyUnresolved": [],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/tiara/3500-sovran-2008-13"
+      ]
+    },
+    {
+      "BoatModelID": "TIAR-3600-CVT",
+      "fields": {
+        "EngineConfiguration": "Twin inboards"
+      },
+      "preserveExisting": [
+        "Fuel",
+        "Propulsion",
+        "EngineCount",
+        "AirDraft"
+      ],
+      "intentionallyUnresolved": [],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/tiara/3600-convertible-1987-95"
+      ]
+    }
+  ]
+}
