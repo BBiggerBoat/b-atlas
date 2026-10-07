@@ -40,7 +40,7 @@ jobs:
             Object.assign(hit.r,fields);
             hit.r.SpecificationConfidence={...(hit.r.SpecificationConfidence||{}),...(p.confidence||{})};
             hit.r.DecisionDataSource=p.sourceURL||hit.r.DecisionDataSource||null;
-            hit.r.LastUpdated="2026-10-05";
+            hit.r.LastUpdated=doc.createdAt||hit.r.LastUpdated||null;
             applied.push({BoatModelID:p.BoatModelID,fields:Object.keys(fields)});
           }
           if(missing.length) {
