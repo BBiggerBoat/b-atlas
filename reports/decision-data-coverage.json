@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T19:14:46.462Z",
+  "generatedAt": "2026-10-07T21:33:26.346Z",
   "models": 995,
   "priority": [
     "Beam",
@@ -37,14 +37,14 @@
       "pct": 63.1
     },
     "FuelType": {
-      "known": 739,
-      "missing": 256,
-      "pct": 74.3
+      "known": 744,
+      "missing": 251,
+      "pct": 74.8
     },
     "Propulsion": {
-      "known": 669,
-      "missing": 326,
-      "pct": 67.2
+      "known": 674,
+      "missing": 321,
+      "pct": 67.7
     },
     "HullForm": {
       "known": 958,
@@ -57,9 +57,9 @@
       "pct": 100
     },
     "EngineConfig": {
-      "known": 618,
-      "missing": 377,
-      "pct": 62.1
+      "known": 623,
+      "missing": 372,
+      "pct": 62.6
     },
     "Displacement": {
       "known": 917,
@@ -269,7 +269,7 @@
       },
       {
         "manufacturer": "Carver",
-        "missing": 45
+        "missing": 40
       },
       {
         "manufacturer": "Cruisers Yachts",
@@ -311,7 +311,7 @@
       },
       {
         "manufacturer": "Carver",
-        "missing": 45
+        "missing": 40
       },
       {
         "manufacturer": "Cruisers Yachts",
@@ -375,12 +375,12 @@
         "missing": 57
       },
       {
-        "manufacturer": "Carver",
-        "missing": 45
-      },
-      {
         "manufacturer": "Wellcraft",
         "missing": 42
+      },
+      {
+        "manufacturer": "Carver",
+        "missing": 40
       },
       {
         "manufacturer": "Cruisers Yachts",
@@ -1466,30 +1466,6 @@
       ]
     },
     {
-      "BoatModelID": "CARV-350-VOY",
-      "Manufacturer": "Carver",
-      "Nickname": "Carver 350 Voyager",
-      "missing": 4,
-      "gaps": [
-        "FuelType",
-        "Propulsion",
-        "AirDraft",
-        "EngineConfig"
-      ]
-    },
-    {
-      "BoatModelID": "CARV-370-374-VOY",
-      "Manufacturer": "Carver",
-      "Nickname": "Carver 370 / 374 Voyager",
-      "missing": 4,
-      "gaps": [
-        "FuelType",
-        "Propulsion",
-        "AirDraft",
-        "EngineConfig"
-      ]
-    },
-    {
       "BoatModelID": "CARV-3807-390-AC",
       "Manufacturer": "Carver",
       "Nickname": "Carver 3807 Aft Cabin / 390 Aft Cabin",
@@ -1937,6 +1913,30 @@
       "BoatModelID": "REGL-42-FLY",
       "Manufacturer": "Regal",
       "Nickname": "Regal 42 FLY",
+      "missing": 4,
+      "gaps": [
+        "FuelType",
+        "Propulsion",
+        "AirDraft",
+        "EngineConfig"
+      ]
+    },
+    {
+      "BoatModelID": "RINK-290-300-EC",
+      "Manufacturer": "Rinker",
+      "Nickname": "Rinker 290 Fiesta Vee / 300 Express Cruiser",
+      "missing": 4,
+      "gaps": [
+        "FuelType",
+        "Propulsion",
+        "AirDraft",
+        "EngineConfig"
+      ]
+    },
+    {
+      "BoatModelID": "RINK-300-FV",
+      "Manufacturer": "Rinker",
+      "Nickname": "Rinker 300 Fiesta Vee",
       "missing": 4,
       "gaps": [
         "FuelType",
