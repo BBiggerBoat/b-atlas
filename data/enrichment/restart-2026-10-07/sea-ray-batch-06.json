@@ -1,0 +1,156 @@
+{
+  "date": "2026-10-07",
+  "workflow": "Model enrichment restart",
+  "manufacturer": "Sea Ray",
+  "batch": 6,
+  "canonicalSource": "boatmodels.json",
+  "canonicalModelCount": 995,
+  "batchSize": 9,
+  "status": "Final Sea Ray priority-field batch from current canonical gap set",
+  "policy": [
+    "Stage only; do not modify canonical data.",
+    "Populate only defensible model/generation-level values.",
+    "Preserve existing canonical values.",
+    "Retain multiple factory configurations where documented.",
+    "Leave clearance unresolved when reliable model-wide evidence is unavailable."
+  ],
+  "records": [
+    {
+      "BoatModelID": "SRAY-440-EB",
+      "fields": {
+        "Fuel": "Gasoline or Diesel depending configuration",
+        "Propulsion": "V-Drive",
+        "EngineConfiguration": "Twin V-drive inboards; gasoline standard, diesel optional",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/440-express-bridge-1993-98"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-450-SB",
+      "fields": {
+        "Fuel": "Diesel",
+        "Propulsion": "Pod",
+        "EngineConfiguration": "Twin Cummins diesels with Zeus pod drives",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/450-sedan-bridge-2012-14"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-450-SD-G1",
+      "fields": {
+        "Fuel": "Diesel",
+        "Propulsion": "V-Drive",
+        "EngineConfiguration": "Twin Caterpillar diesel V-drive inboards",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/450-sundancer-1995-99"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-450-SD-G2",
+      "fields": {
+        "Fuel": "Diesel",
+        "Propulsion": "Pod",
+        "EngineConfiguration": "Twin Cummins diesels with Zeus pod drives",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/450-sundancer-2010-15"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-460-EC",
+      "fields": {
+        "Fuel": "Diesel",
+        "Propulsion": "Shaft",
+        "EngineConfiguration": "Twin diesel inboards",
+        "EngineCount": 2
+      },
+      "preserveExisting": [
+        "AirDraft"
+      ],
+      "intentionallyUnresolved": [],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/460-express-cruiser-1985-89"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-460-FLY",
+      "fields": {
+        "Fuel": "Diesel",
+        "Propulsion": "V-Drive or Pod Drive",
+        "EngineConfiguration": "Twin Cummins diesels; V-drive standard, Zeus pod optional",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/460-fly-2017-19"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-460-SF",
+      "fields": {
+        "Fuel": "Diesel",
+        "Propulsion": "Shaft",
+        "EngineConfiguration": "Twin Detroit diesel inboards",
+        "EngineCount": 2
+      },
+      "preserveExisting": [
+        "AirDraft"
+      ],
+      "intentionallyUnresolved": [],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/460-sport-fisherman-1987-88"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-460-SD-G2",
+      "fields": {
+        "Fuel": "Diesel",
+        "Propulsion": "V-Drive",
+        "EngineConfiguration": "Twin Cummins diesel V-drive inboards",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/460-sundancer-2017-18"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-470-SD",
+      "fields": {
+        "Fuel": "Diesel",
+        "Propulsion": "V-Drive or Pod Drive",
+        "EngineConfiguration": "Twin Cummins diesels; V-drive standard or Zeus pod depending configuration",
+        "EngineCount": 2
+      },
+      "intentionallyUnresolved": [
+        "AirDraft"
+      ],
+      "evidence": [
+        "https://www.hmy.com/yachting/powerboat-guide/sea-ray/470-sundancer-2015-17"
+      ]
+    }
+  ]
+}
