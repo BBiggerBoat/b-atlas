@@ -1,78 +1,543 @@
 {
-  "generatedAt": "2026-10-07T21:33:26.206Z",
-  "patchSet": "phase1-decision-data-carver-powertrain-02",
-  "appliedCount": 6,
+  "generatedAt": "2026-10-07T21:33:50.666Z",
+  "patchSet": "restart-2026-10-07-sea-ray-enrichment",
+  "appliedCount": 62,
   "applied": [
     {
-      "BoatModelID": "CARV-350-VOY",
+      "BoatModelID": "SRAY-300-SB",
       "fields": [
         "Fuel",
-        "NormalizedFuel",
         "Propulsion",
-        "NormalizedPropulsion",
-        "EngineCount",
+        "EngineConfiguration",
+        "EngineCount"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-300-SLX",
+      "fields": [
+        "Fuel",
+        "Propulsion",
         "EngineConfiguration"
       ]
     },
     {
-      "BoatModelID": "CARV-366-MY",
+      "BoatModelID": "SRAY-300-SPB",
       "fields": [
-        "Fuel",
-        "NormalizedFuel",
-        "Propulsion",
-        "NormalizedPropulsion",
-        "EngineCount",
-        "EngineConfiguration"
+        "Propulsion"
       ]
     },
     {
-      "BoatModelID": "CARV-3697-MAR",
+      "BoatModelID": "SRAY-300-SD-G1",
       "fields": [
         "Fuel",
-        "NormalizedFuel",
         "Propulsion",
-        "NormalizedPropulsion",
-        "EngineCount",
         "EngineConfiguration",
-        "AirDraft",
-        "AirDraft_ft"
+        "EngineCount"
       ]
     },
     {
-      "BoatModelID": "CARV-C36-CB",
+      "BoatModelID": "SRAY-300-SD-G2",
       "fields": [
         "Fuel",
-        "NormalizedFuel",
         "Propulsion",
-        "NormalizedPropulsion",
-        "EngineCount",
         "EngineConfiguration",
-        "AirDraft",
-        "AirDraft_ft"
+        "EngineCount"
       ]
     },
     {
-      "BoatModelID": "CARV-370-374-VOY",
+      "BoatModelID": "SRAY-300-SD-G3",
       "fields": [
         "Fuel",
-        "NormalizedFuel",
         "Propulsion",
-        "NormalizedPropulsion",
-        "EngineCount",
-        "EngineConfiguration"
-      ]
-    },
-    {
-      "BoatModelID": "CARV-38-SS",
-      "fields": [
-        "Fuel",
-        "NormalizedFuel",
-        "Propulsion",
-        "NormalizedPropulsion",
-        "EngineCount",
         "EngineConfiguration",
-        "AirDraft",
-        "AirDraft_ft"
+        "EngineCount"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-300-SD-G4",
+      "fields": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-300-WE-G1",
+      "fields": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-300-WE-G2",
+      "fields": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-305-300-SB",
+      "fields": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-SRV300-EC",
+      "fields": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-310-AJ",
+      "fields": [
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-310-SLX",
+      "fields": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-310-SPB",
+      "fields": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-310-SS",
+      "fields": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-310-SD-G1",
+      "fields": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-310-SD-G2",
+      "fields": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-310-330-EC",
+      "fields": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-310-330-SD-G1",
+      "fields": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-310-330-SD-G2",
+      "fields": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-SRV310-SD",
+      "fields": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-320-SD-G1",
+      "fields": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-320-SD-G2",
+      "fields": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-320-SD-OB",
+      "fields": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-330-EC",
+      "fields": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-330-SD",
+      "fields": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-330-350-SD",
+      "fields": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-340-AJ",
+      "fields": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-340-EC",
+      "fields": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-340-SB",
+      "fields": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-340-SF",
+      "fields": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-340-SD-G1",
+      "fields": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-340-SD-G2",
+      "fields": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-340-SD-G3",
+      "fields": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-345-340-SB",
+      "fields": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-350-SLX-G1",
+      "fields": [
+        "EngineCount"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-350-370-EC",
+      "fields": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-350-370-SD-G1",
+      "fields": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-350-370-SD-G2",
+      "fields": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-355T-SE",
+      "fields": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-36-SB",
+      "fields": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-360-SD",
+      "fields": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-SRV360-SSF",
+      "fields": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-370-SD-G2",
+      "fields": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-370-SD-OB",
+      "fields": [
+        "AirDraft"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-370-380-AC",
+      "fields": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-38-390-SD",
+      "fields": [
+        "Propulsion"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-390-SB",
+      "fields": [
+        "Fuel"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-390-40-SD",
+      "fields": [
+        "Fuel"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-410-EC",
+      "fields": [
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-410-415-440-AC",
+      "fields": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-420-440-SD",
+      "fields": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-430-440-CV",
+      "fields": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-440-EB",
+      "fields": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-450-SB",
+      "fields": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-450-SD-G1",
+      "fields": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-450-SD-G2",
+      "fields": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-460-EC",
+      "fields": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-460-FLY",
+      "fields": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-460-SF",
+      "fields": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-460-SD-G2",
+      "fields": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
+      ]
+    },
+    {
+      "BoatModelID": "SRAY-470-SD",
+      "fields": [
+        "Fuel",
+        "Propulsion",
+        "EngineConfiguration",
+        "EngineCount"
       ]
     }
   ]

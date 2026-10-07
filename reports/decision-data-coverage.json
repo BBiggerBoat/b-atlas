@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T21:33:26.346Z",
+  "generatedAt": "2026-10-07T21:33:52.387Z",
   "models": 995,
   "priority": [
     "Beam",
@@ -32,19 +32,19 @@
       "pct": 92.9
     },
     "AirDraft": {
-      "known": 628,
-      "missing": 367,
-      "pct": 63.1
+      "known": 629,
+      "missing": 366,
+      "pct": 63.2
     },
     "FuelType": {
-      "known": 744,
-      "missing": 251,
-      "pct": 74.8
+      "known": 800,
+      "missing": 195,
+      "pct": 80.4
     },
     "Propulsion": {
-      "known": 674,
-      "missing": 321,
-      "pct": 67.7
+      "known": 732,
+      "missing": 263,
+      "pct": 73.6
     },
     "HullForm": {
       "known": 958,
@@ -57,9 +57,9 @@
       "pct": 100
     },
     "EngineConfig": {
-      "known": 623,
-      "missing": 372,
-      "pct": 62.6
+      "known": 679,
+      "missing": 316,
+      "pct": 68.2
     },
     "Displacement": {
       "known": 917,
@@ -167,7 +167,7 @@
     "AirDraft": [
       {
         "manufacturer": "Sea Ray",
-        "missing": 70
+        "missing": 69
       },
       {
         "manufacturer": "Riviera",
@@ -264,10 +264,6 @@
     ],
     "FuelType": [
       {
-        "manufacturer": "Sea Ray",
-        "missing": 59
-      },
-      {
         "manufacturer": "Carver",
         "missing": 40
       },
@@ -302,13 +298,13 @@
       {
         "manufacturer": "Formula",
         "missing": 3
+      },
+      {
+        "manufacturer": "Sea Ray",
+        "missing": 3
       }
     ],
     "Propulsion": [
-      {
-        "manufacturer": "Sea Ray",
-        "missing": 58
-      },
       {
         "manufacturer": "Carver",
         "missing": 40
@@ -371,10 +367,6 @@
     "Style": [],
     "EngineConfig": [
       {
-        "manufacturer": "Sea Ray",
-        "missing": 57
-      },
-      {
         "manufacturer": "Wellcraft",
         "missing": 42
       },
@@ -425,6 +417,10 @@
       {
         "manufacturer": "Maxum",
         "missing": 4
+      },
+      {
+        "manufacturer": "Sea Ray",
+        "missing": 1
       }
     ],
     "Displacement": [
@@ -1297,19 +1293,6 @@
       ]
     },
     {
-      "BoatModelID": "SRAY-320-SD-G2",
-      "Manufacturer": "Sea Ray",
-      "Nickname": "Sea Ray 320 Sundancer Generation 2",
-      "missing": 5,
-      "gaps": [
-        "FuelType",
-        "Propulsion",
-        "AirDraft",
-        "EngineConfig",
-        "Displacement"
-      ]
-    },
-    {
       "BoatModelID": "BAYL-300-315-SB",
       "Manufacturer": "Bayliner",
       "Nickname": "Bayliner 300 / 315 SB Cruiser",
@@ -1937,6 +1920,18 @@
       "BoatModelID": "RINK-300-FV",
       "Manufacturer": "Rinker",
       "Nickname": "Rinker 300 Fiesta Vee",
+      "missing": 4,
+      "gaps": [
+        "FuelType",
+        "Propulsion",
+        "AirDraft",
+        "EngineConfig"
+      ]
+    },
+    {
+      "BoatModelID": "RINK-310-312-320",
+      "Manufacturer": "Rinker",
+      "Nickname": "Rinker 310 / 312 Fiesta Vee / 320 Express",
       "missing": 4,
       "gaps": [
         "FuelType",
