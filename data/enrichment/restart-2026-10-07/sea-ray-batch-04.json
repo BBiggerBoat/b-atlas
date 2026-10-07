@@ -163,10 +163,11 @@
         "Fuel": "Gasoline or Diesel depending configuration",
         "Propulsion": "Shaft",
         "EngineConfiguration": "Twin inboards; gasoline or diesel depending configuration",
-        "EngineCount": 2,
-        "AirDraft": 4.9784
+        "EngineCount": 2
       },
-      "preserveExisting": [],
+      "preserveExisting": [
+        "AirDraft"
+      ],
       "intentionallyUnresolved": [],
       "evidence": [
         "https://www.hmy.com/yachting/powerboat-guide/sea-ray/370-380-aft-cabin-1997-2001"
