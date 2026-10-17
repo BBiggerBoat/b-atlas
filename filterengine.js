@@ -301,6 +301,16 @@
             : (profile.twinEngines ? [2] : []); // backward compatibility
         const actualFuel = canonicalPlanValue(boat, "FuelCode", ["NormalizedFuel","Fuel"]);
         const actualPropulsion = canonicalPlanValue(boat, "MechanicalPropulsionCode", ["PropulsionCode","NormalizedPropulsion","Propulsion"]);
+        // Map documented drive subtypes to their parent filter category.
+        const configurationPropulsionMatches = (selected, actual) => {
+            if (selectedIncludes("propulsion", selected, actual)) return true;
+            const subtype = canonicalComparable(actual).toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+            if (/^shaft v drive$|^shaft vdrive$|^v drive$|^vdrive$/.test(subtype))
+                return selectedIncludes("propulsion", selected, "shaft");
+            if (/^ips pod$|^pod ips$|^ips$/.test(subtype))
+                return selectedIncludes("propulsion", selected, "pod");
+            return false;
+        };
         const configurationRows = Array.isArray(boat.VerifiedConfigurations) ? boat.VerifiedConfigurations : [];
         if (configurationRows.length) {
             const rowPossible = row => {
@@ -310,7 +320,7 @@
                     !selectedIncludes("fuel", profile.fuels, row.FuelCode)) return false;
                 if (profile.propulsion?.length && known(row.MechanicalPropulsionCode) &&
                     !uncertainCanonical(row.MechanicalPropulsionCode) &&
-                    !selectedIncludes("propulsion", profile.propulsion, row.MechanicalPropulsionCode)) return false;
+                    !configurationPropulsionMatches(profile.propulsion, row.MechanicalPropulsionCode)) return false;
                 const count = numericValue(row.EngineCount);
                 if (selectedEngineCounts.length && count !== null && !selectedEngineCounts.includes(count)) return false;
                 return true;
