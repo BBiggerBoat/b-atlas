@@ -16,5 +16,7 @@ jobs:
           node-version: '22'
       - name: Audit provisional identity references
         run: node tools/audit-pending-identities.cjs
+      - name: Inventory historical research references
+        run: node tools/inventory-existing-research.cjs
       - name: Verify canonical integration
         run: node tests/canonical-integration.cjs
