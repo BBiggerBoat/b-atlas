@@ -8,6 +8,7 @@ const boats=read("boatmodels.json");
 const registry=read("data/registry/boat-registry.json");
 const phases=read("data/production-phases.json");
 const aliases=read("data/model-search-aliases.json");
+const manifest=read("data/data-manifest.json");
 const ids=new Set(boats.map(x=>x.BoatModelID));
 assert.equal(ids.size,boats.length,"Duplicate canonical IDs");
 assert.equal(new Set(registry.map(x=>x.BoatModelID)).size,registry.length,"Duplicate registry IDs");
@@ -16,6 +17,8 @@ assert(registry.every(x=>ids.has(x.BoatModelID)),"Registry references unknown mo
 assert(boats.every(x=>registry.some(y=>y.BoatModelID===x.BoatModelID)),"Missing registry identity");
 assert(phases.every(x=>ids.has(x.BoatModelID)),"Production phase references unknown model");
 assert(aliases.every(x=>ids.has(x.BoatModelID)),"Alias references unknown model");
+assert(!manifest.runtimeData.includes("data/phase2-live-models.json"),"Obsolete Phase 2 model shard remains in runtime manifest");
+assert(!manifest.runtimeData.includes("data/phase2-live-aliases.json"),"Obsolete Phase 2 alias shard remains in runtime manifest");
 const dataByPath={
  "boatmodels.json":boats,
  "data/registry/boat-registry.json":registry,
