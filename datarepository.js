@@ -109,7 +109,10 @@
                         data.boats = data.boats.map(row => applyCanonicalCompatibility(patches[row.BoatModelID] ? { ...row, ...patches[row.BoatModelID] } : row));
                         if (Array.isArray(overlay?.addedModels)) {
                             const ids = new Set(data.boats.map(x => x.BoatModelID));
-                            for (const row of overlay.addedModels) if (row?.BoatModelID && !ids.has(row.BoatModelID)) { data.boats.push(row); ids.add(row.BoatModelID); }
+                            for (const row of overlay.addedModels) if (row?.BoatModelID && !ids.has(row.BoatModelID)) {
+                                data.boats.push(applyCanonicalCompatibility(row));
+                                ids.add(row.BoatModelID);
+                            }
                         }
                     }
                     if (Array.isArray(data.manufacturers) && Array.isArray(overlay?.addedManufacturers)) {
