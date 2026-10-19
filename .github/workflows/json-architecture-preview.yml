@@ -16,6 +16,8 @@ jobs:
           node-version: '22'
       - name: Lossless split and reconstruction
         run: node tools/preview-json-architecture.cjs
+      - name: Verify opt-in split loader round trip
+        run: node tests/json-architecture-split.cjs
       - name: Audit runtime field consumers
         run: node tools/audit-json-field-consumers.cjs
       - name: Existing canonical regression
