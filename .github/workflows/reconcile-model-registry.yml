@@ -1,0 +1,40 @@
+name: Verify canonical model identity registry
+on:
+  workflow_dispatch:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'boatmodels.json'
+      - 'data/registry/**'
+      - 'data/data-manifest.json'
+      - 'data/production-phases.json'
+      - 'data/model-search-aliases.json'
+      - 'datarepository.js'
+      - 'filterengine.js'
+      - 'valuenormalizer.js'
+      - 'tests/**'
+      - 'tools/reconcile-model-registry.cjs'
+      - '.github/workflows/reconcile-model-registry.yml'
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify canonical registry synchronization
+        run: node tools/reconcile-model-registry.cjs --check
+      - name: Verify canonical loader and filtering
+        run: node tests/canonical-integration.cjs
+      - name: Verify filtering behavior
+        run: node tests/filter-behavior-regression.cjs
+      - name: Verify community overlay compatibility
+        run: node tests/community-overlay-regression.cjs
+      - name: Probe live community overlay compatibility
+        run: node tests/live-community-overlay-regression.cjs
+      - name: Verify correlated configurations
+        run: node tests/correlated-config-regression.cjs boatmodels.json
