@@ -105,7 +105,7 @@
         const settings = options || {};
         const manifest = Object.assign({}, DEFAULT_MANIFEST, settings.manifest || {});
         const fetchImpl = settings.fetchImpl;
-        const splitPaths = settings.splitModelPaths || null;
+        const splitPaths = settings.splitModelPaths || global.BAtlasSplitModelPaths || null;
         if(splitPaths){
             if(Object.keys(splitPaths).sort().join(",")!=="media,ownerKnowledge,resources,specifications")
                 throw new Error("Four split model paths required");
