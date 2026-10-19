@@ -32,12 +32,11 @@ for(const rel of manifest.temporaryModeratorFiles) copyFile(rel);
 // model shards or staging batches as independent public JSON databases.
 // The active model catalogue remains boatmodels.json; evidence files are
 // deliberately untouched until their consumer dependencies are audited.
-const archiveOnly = [
-  /^data\\/phase2-live-models(?:-.+)?\\.json$/,
-  /^data\\/phase2-live-aliases(?:-.+)?\\.json$/,
-  /^data\\/phase2-batches\\//,
-  /^data\\/enrichment\\//
-];
+const isArchiveOnly = rel =>
+  (rel.startsWith("data/phase2-live-models") && rel.endsWith(".json")) ||
+  (rel.startsWith("data/phase2-live-aliases") && rel.endsWith(".json")) ||
+  rel.startsWith("data/phase2-batches/") ||
+  rel.startsWith("data/enrichment/");
 let unpublishedArchiveCount=0;
 function pruneArchive(dir){
   if(!fs.existsSync(dir)) return;
@@ -46,7 +45,7 @@ function pruneArchive(dir){
     if(entry.isDirectory()) pruneArchive(full);
     else if(entry.isFile()){
       const rel=path.relative(out,full).split(path.sep).join("/");
-      if(archiveOnly.some(rule=>rule.test(rel))){
+      if(isArchiveOnly(rel)){
         fs.rmSync(full);
         unpublishedArchiveCount++;
       }
