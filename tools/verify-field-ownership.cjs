@@ -34,5 +34,5 @@ for(const left of Object.keys(sources))for(const right of Object.keys(sources)){
  if(shared.length)output.collisions.push({left,right,shared});
 }
 fs.writeFileSync("build/json-architecture-preview/field-ownership.json",JSON.stringify(output,null,2)+"\n");
-console.log(JSON.stringify({datasets:Object.fromEntries(Object.entries(output.datasets).map(([k,v])=>[k,{rows:v.rows,fields:v.fields.length,modelIds:v.uniqueModelIds,repeatedRecords:v.modelsWithRepeatedRecords}])),sharedFieldNames:output.collisions,invalidReferenceCount:output.invalidReferences.length},null,2));
+console.log(JSON.stringify({datasets:Object.fromEntries(Object.entries(output.datasets).map(([k,v])=>[k,{rows:v.rows,fields:v.fields.length,modelIds:v.uniqueModelIds,repeatedRecords:v.modelsWithRepeatedRecords}])),sharedFieldNames:output.collisions,invalidReferenceCount:output.invalidReferences.length,invalidReferences:output.invalidReferences.slice(0,30)},null,2));
 assert.equal(ids.size,995);
