@@ -1,0 +1,25 @@
+name: Verify JSON architecture preview
+on:
+  push:
+    branches:
+      - canonical-json-architecture-repair-2026-10
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  split-and-verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Lossless split and reconstruction
+        run: node tools/preview-json-architecture.cjs
+      - name: Existing canonical regression
+        run: node tests/canonical-integration.cjs
+      - name: Archive preview and complete field inventory
+        uses: actions/upload-artifact@v4
+        with:
+          name: json-architecture-preview
+          path: build/json-architecture-preview/
