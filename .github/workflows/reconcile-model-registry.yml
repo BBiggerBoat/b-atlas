@@ -15,3 +15,7 @@ jobs:
           node-version: '22'
       - name: Verify canonical registry synchronization
         run: node tools/reconcile-model-registry.cjs --check
+      - name: Verify canonical loader and filtering
+        run: node tests/canonical-integration.cjs
+      - name: Verify correlated configurations
+        run: node tests/correlated-config-regression.cjs boatmodels.json
