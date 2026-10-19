@@ -29,8 +29,11 @@ const endpoint = "https://api.b-atlas.org/api/public/overlays";
     clearTimeout(timeout);
   }
 
-  assert.equal(response.ok, true, `Live community overlay returned HTTP ${response.status}`);
-  const overlay = await response.json();
+  const responseText = await response.text();
+  if (!response.ok) {
+    throw new Error(`Live community overlay returned HTTP ${response.status}: ${responseText.slice(0, 500).replace(/\\s+/g, " ")}`);
+  }
+  const overlay = JSON.parse(responseText);
   assert(overlay && typeof overlay === "object" && !Array.isArray(overlay), "Overlay must be an object");
   assert(overlay.modelPatches && typeof overlay.modelPatches === "object" && !Array.isArray(overlay.modelPatches), "modelPatches must be an object");
   assert(Array.isArray(overlay.addedModels), "addedModels must be an array");
