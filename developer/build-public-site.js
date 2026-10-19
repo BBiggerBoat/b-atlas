@@ -28,6 +28,19 @@ resetDir(out);
 for(const rel of manifest.rootFiles) copyFile(rel);
 for(const rel of manifest.publicDirectories) copyDir(rel);
 for(const rel of manifest.temporaryModeratorFiles) copyFile(rel);
+if(process.env.BATLAS_SPLIT_BUILD==="1"){
+  const cp=require("node:child_process");
+  cp.execFileSync(process.execPath,["tools/preview-json-architecture.cjs","--production"],{cwd:root,stdio:"inherit"});
+  const src=path.join(root,"data/model-layers");
+  const dst=path.join(out,"data/model-layers");
+  fs.mkdirSync(dst,{recursive:true});
+  for(const name of ["specifications","ownerKnowledge","resources","media"])
+    fs.copyFileSync(path.join(src,name+".json"),path.join(dst,name+".json"));
+  // This candidate build deliberately retains boatmodels.json until all
+  // page and API readers use the split source. Never deploy with both as
+  // independent authorities.
+}
+
 
 // Static SEO pages remain crawlable, but human navigation should return to the
 // full interactive application instead of chaining through the simplified
