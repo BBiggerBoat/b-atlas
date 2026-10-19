@@ -1,6 +1,9 @@
 name: Verify canonical model identity registry
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - canonical-consolidation-2026-10
 permissions:
   contents: read
 jobs:
