@@ -36,21 +36,43 @@ for(const file of files){
    byId.get(id).push({file,hasSourceUrls:urls.length>0,sourceUrlCount:urls.length});
  }
 }
+const assertionFiles=walk("knowledge/data/evidence");
+const assertionById=new Map();
+let assertionCount=0;
+for(const file of assertionFiles){
+ const data=JSON.parse(fs.readFileSync(file,"utf8"));
+ const assertions=Array.isArray(data)?data:(Array.isArray(data.assertions)?data.assertions:[]);
+ for(const row of assertions){
+   if(!row?.BoatModelID) continue;
+   assertionCount++;
+   const id=String(row.BoatModelID);
+   if(!canonicalIds.has(id)){unmatched.push({file,BoatModelID:id,reason:"evidence_for_unknown_model"});continue;}
+   if(!assertionById.has(id))assertionById.set(id,[]);
+   assertionById.get(id).push({file,EvidenceAssertionID:row.EvidenceAssertionID||null,SourceRef:row.SourceRef||null});
+ }
+}
 const linkedPending=[...pending].filter(id=>byId.has(id));
+const linkedWithEither=[...pending].filter(id=>byId.has(id)||assertionById.has(id));
 const pendingByManufacturer={};
 for(const row of registry.filter(r=>pending.has(String(r.BoatModelID)))){
  const code=String(row.ManufacturerCode||"(missing)");
- const s=pendingByManufacturer[code] ||= {pending:0,withResearchFile:0,withSourceUrl:0};
+ const s=pendingByManufacturer[code] ||= {pending:0,withResearchFile:0,withSourceUrl:0,withEvidenceAssertions:0};
  s.pending++;
  const records=byId.get(String(row.BoatModelID))||[];
  if(records.length)s.withResearchFile++;
  if(records.some(x=>x.hasSourceUrls))s.withSourceUrl++;
+ if(assertionById.has(String(row.BoatModelID)))s.withEvidenceAssertions++;
 }
 const report={
- schema:"batlas-existing-research-inventory-v3",
+ schema:"batlas-existing-research-inventory-v4",
  recoveredLegacyShardFiles:liveShards.length,
  semantics:"Source-file linkage indicates historical research exists; it does NOT establish historical/specification correctness or approval.",
  scannedFiles:files.length,identifiedRecords:totalRecords,
+ evidenceAssertionFiles:assertionFiles.length,evidenceAssertions:assertionCount,
+ pendingWithEvidenceAssertions:[...pending].filter(id=>assertionById.has(id)).length,
+ pendingWithResearchOrEvidence:linkedWithEither.length,
+ pendingWithoutResearchOrEvidence:pending.size-linkedWithEither.length,
+ silverton52Evidence:assertionById.get("SILV-52-OV")||[],
  uniqueCanonicalIDsWithResearchFiles:byId.size,
  pendingWithResearchFiles:linkedPending.length,
  pendingWithoutMatchedResearchFiles:pending.size-linkedPending.length,
