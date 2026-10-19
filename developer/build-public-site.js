@@ -46,9 +46,9 @@ if(process.env.BATLAS_SPLIT_BUILD==="1"){
     media:"data/model-layers/media.json"
   };
   fs.writeFileSync(loaderPath,"globalThis.BAtlasSplitModelPaths="+JSON.stringify(paths)+";"+String.fromCharCode(10)+loaderSource);
-  // This candidate build deliberately retains boatmodels.json until all
-  // page and API readers use the split source. Never deploy with both as
-  // independent authorities.
+  // Candidate-only: eliminate the redundant monolith from the public output.
+  // Source boatmodels.json remains in the repository until migration approval.
+  fs.rmSync(path.join(out,"boatmodels.json"));
 }
 
 
