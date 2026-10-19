@@ -1,6 +1,21 @@
 name: Verify canonical model identity registry
 on:
   workflow_dispatch:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'boatmodels.json'
+      - 'data/registry/**'
+      - 'data/data-manifest.json'
+      - 'data/production-phases.json'
+      - 'data/model-search-aliases.json'
+      - 'datarepository.js'
+      - 'filterengine.js'
+      - 'valuenormalizer.js'
+      - 'tests/**'
+      - 'tools/reconcile-model-registry.cjs'
+      - '.github/workflows/reconcile-model-registry.yml'
 permissions:
   contents: read
 jobs:
@@ -8,8 +23,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          ref: canonical-consolidation-2026-10
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
