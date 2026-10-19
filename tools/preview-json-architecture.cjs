@@ -48,7 +48,7 @@ const reassemble=i=>{
  return row;
 };
 assert.deepEqual(original,original.map((_,i)=>reassemble(i)),"Split/rejoin changed record data");
-const output="build/json-architecture-preview";
+const output=process.argv.includes("--production")?"data/model-layers":"build/json-architecture-preview";
 fs.mkdirSync(output,{recursive:true});
 for(const [kind,rows] of Object.entries(out)){
  fs.writeFileSync(path.join(output,kind+".json"),JSON.stringify(rows,null,2)+"\n");
