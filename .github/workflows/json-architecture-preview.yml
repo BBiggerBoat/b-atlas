@@ -18,6 +18,8 @@ jobs:
         run: node tools/preview-json-architecture.cjs
       - name: Verify opt-in split loader round trip
         run: node tests/json-architecture-split.cjs
+      - name: Inspect JSON field ownership
+        run: node tools/audit-dataset-layout.cjs
       - name: Audit runtime field consumers
         run: node tools/audit-json-field-consumers.cjs
       - name: Existing canonical regression
