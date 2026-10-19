@@ -1,10 +1,9 @@
 {
   "schemaVersion": 21,
   "release": "v7.06.0",
-  "lastUpdated": "2026-10-02",
-  "purpose": "Lean runtime manifest for the B-Atlas primary site after repository hygiene consolidation.",
+  "lastUpdated": "2026-10-19",
+  "purpose": "Runtime data manifest. Canonical model count must be derived from boatmodels.json rather than maintained as a stale constant.",
   "authoritativeModelRecord": "boatmodels.json",
-  "modelCount": 371,
   "principles": [
     "boatmodels.json is the sole active source of current model-wide specifications.",
     "Secondary data may contain identities, taxonomies, production-phase overrides, evidence, provenance, resources, or community proposals, but not a competing current model specification database.",
@@ -79,5 +78,10 @@
     "threshold": 0.95,
     "rule": "A field at or above 95% resolved/usable coverage leaves active cleanup priority.",
     "communityRole": "Remaining blanks stay visible as contribution opportunities."
-  }
+  },
+  "notes": [
+    "The authoritative model count is derived at runtime from boatmodels.json.",
+    "Historical Phase 2 model shards are not authoritative runtime specifications.",
+    "This manifest documents intended data roles; actual loader dependencies require separate verification."
+  ]
 }
