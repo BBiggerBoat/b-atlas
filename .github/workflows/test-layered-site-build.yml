@@ -25,6 +25,7 @@ jobs:
           const specs=JSON.parse(fs.readFileSync(root+'specifications.json'));
           const details=['ownerKnowledge','resources','media'].map(x=>JSON.parse(fs.readFileSync(root+x+'.json')));
           assert.equal(src.length,995);
+          assert(!fs.existsSync('dist/boatmodels.json'),'Monolithic model file still deployed');
           assert.equal(specs.length,995);
           for(const layer of details)assert.deepEqual(layer.map(x=>x.BoatModelID),src.map(x=>x.BoatModelID));
           assert(fs.statSync(root+'specifications.json').size<fs.statSync('boatmodels.json').size);
