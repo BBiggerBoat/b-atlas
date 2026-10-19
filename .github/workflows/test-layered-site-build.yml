@@ -30,5 +30,29 @@ jobs:
           assert(fs.statSync(root+'specifications.json').size<fs.statSync('boatmodels.json').size);
           console.log('PASS: layered candidate artifact, 995 aligned records, reduced specification payload');
           NODE
+      - name: Verify deployed loader actually requests split datasets
+        run: |
+          node - <<'NODE'
+          const fs=require('fs'),vm=require('vm'),assert=require('assert/strict');
+          const source=fs.readFileSync('dist/datarepository.js','utf8');
+          const requests=[];
+          const context={};
+          context.globalThis=context;
+          vm.runInNewContext(source,context);
+          const fetchImpl=async url=>{
+            requests.push(url);
+            if(url.startsWith('https://')) return {ok:false,status:404};
+            const filename='dist/'+url;
+            assert(fs.existsSync(filename),'Missing candidate data '+filename);
+            return {ok:true,json:async()=>JSON.parse(fs.readFileSync(filename,'utf8'))};
+          };
+          context.BScoutDataRepository.loadApplicationData({fetchImpl}).then(data=>{
+            assert.equal(data.boats.length,995);
+            assert(!requests.includes('boatmodels.json'),'App still fetches monolith');
+            for(const layer of ['specifications','ownerKnowledge','resources','media'])
+              assert(requests.includes('data/model-layers/'+layer+'.json'),'Missing layer '+layer);
+            console.log('PASS: application repository loads all 995 models from split paths, not boatmodels.json');
+          }).catch(e=>{console.error(e);process.exitCode=1;});
+          NODE
       - name: Check existing application regressions
         run: node tests/canonical-integration.cjs
