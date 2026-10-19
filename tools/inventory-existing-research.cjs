@@ -46,12 +46,13 @@ for(const row of registry.filter(r=>pending.has(String(r.BoatModelID)))){
  if(records.some(x=>x.hasSourceUrls))s.withSourceUrl++;
 }
 const report={
- schema:"batlas-existing-research-inventory-v1",
+ schema:"batlas-existing-research-inventory-v2",
  semantics:"Source-file linkage indicates historical research exists; it does NOT establish historical/specification correctness or approval.",
  scannedFiles:files.length,identifiedRecords:totalRecords,
  uniqueCanonicalIDsWithResearchFiles:byId.size,
  pendingWithResearchFiles:linkedPending.length,
  pendingWithoutMatchedResearchFiles:pending.size-linkedPending.length,
+ unmatchedPendingIdentities:registry.filter(r=>pending.has(String(r.BoatModelID))&&!byId.has(String(r.BoatModelID))).map(r=>({BoatModelID:r.BoatModelID,ManufacturerCode:r.ManufacturerCode,CanonicalName:r.CanonicalName})),
  pendingByManufacturer:Object.fromEntries(Object.entries(pendingByManufacturer).sort((a,b)=>b[1].pending-a[1].pending)),
  unmatchedRecordCount:unmatched.length,unmatched:unmatched.slice(0,100),
  seaRayExamples:[...byId.entries()].filter(([id])=>id.startsWith("SRAY-")).slice(0,6).map(([id,sources])=>({BoatModelID:id,sources}))
