@@ -22,6 +22,8 @@ jobs:
         run: node tools/audit-dataset-layout.cjs
       - name: Verify field ownership across datasets
         run: node tools/verify-field-ownership.cjs
+      - name: Resolve historical model references
+        run: node tools/audit-orphan-redirects.cjs
       - name: Audit runtime field consumers
         run: node tools/audit-json-field-consumers.cjs
       - name: Existing canonical regression
