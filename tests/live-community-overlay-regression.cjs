@@ -17,7 +17,12 @@ const endpoint = "https://api.b-atlas.org/api/public/overlays";
   let response;
   try {
     response = await fetch(endpoint, {
-      headers: { Accept: "application/json" },
+      headers: {
+        Accept: "application/json",
+        Origin: "https://b-atlas.org",
+        Referer: "https://b-atlas.org/",
+        "User-Agent": "Mozilla/5.0 B-Atlas-Canonical-Verification/1.0"
+      },
       signal: controller.signal
     });
   } finally {
