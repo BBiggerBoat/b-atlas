@@ -42,7 +42,10 @@ function pruneArchive(dir){
   if(!fs.existsSync(dir)) return;
   for(const entry of fs.readdirSync(dir,{withFileTypes:true})){
     const full=path.join(dir,entry.name);
-    if(entry.isDirectory()) pruneArchive(full);
+    if(entry.isDirectory()) {
+      pruneArchive(full);
+      if(fs.readdirSync(full).length===0) fs.rmdirSync(full);
+    }
     else if(entry.isFile()){
       const rel=path.relative(out,full).split(path.sep).join("/");
       if(isArchiveOnly(rel)){
