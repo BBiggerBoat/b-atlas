@@ -1,0 +1,44 @@
+name: Build B-Atlas review preview
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'filterengine.js'
+      - 'index.html'
+      - 'developer/build-public-site.js'
+      - '.github/workflows/build-review-preview.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out review branch
+        uses: actions/checkout@v4
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify baseline
+        run: npm run guard:baseline
+      - name: Build allowlisted public site
+        run: npm run build:public
+      - name: Verify production-only and sensitive files are excluded
+        shell: bash
+        run: |
+          test -f dist/index.html
+          test -f dist/filterengine.js
+          test -f dist/boatmodels.json
+          test ! -e dist/server.js
+          test ! -e dist/moderatoraccess.js
+          test ! -e dist/cloudflare
+          test ! -e dist/package.json
+      - name: Upload isolated review build
+        uses: actions/upload-artifact@v4
+        with:
+          name: b-atlas-review-preview
+          path: dist/
+          retention-days: 7

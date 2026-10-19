@@ -294,15 +294,46 @@
             const actualHull = canonicalPlanValue(boat, "HullBehaviourCode", ["HullBehaviour","NormalizedHullForm","HullType"]);
             if (known(actualHull) && !selectedIncludes("hullType", profile.hullTypes, actualHull)) reasons.push("hull-type");
         }
-        const actualFuel = canonicalPlanValue(boat, "FuelCode", ["NormalizedFuel","Fuel"]);
-        if (profile.fuels?.length && known(actualFuel) && !selectedIncludes("fuel", profile.fuels, actualFuel)) reasons.push("fuel");
-        const actualPropulsion = canonicalPlanValue(boat, "MechanicalPropulsionCode", ["PropulsionCode","NormalizedPropulsion","Propulsion"]);
-        if (profile.propulsion?.length && known(actualPropulsion) && !selectedIncludes("propulsion", profile.propulsion, actualPropulsion)) reasons.push("propulsion");
-        // Engine count is a hard filter only when known. Unknown engine count remains eligible.
+        // Verified configurations are correlated: fuel, propulsion and engine count
+        // must all be compatible within at least one documented configuration.
         const selectedEngineCounts = Array.isArray(profile.engineCounts) && profile.engineCounts.length
             ? profile.engineCounts.map(Number)
-            : (profile.twinEngines ? [2] : []); // backward compatibility for older saved profiles
-        if (selectedEngineCounts.length && known(boat.EngineCount) && !selectedEngineCounts.includes(numericValue(boat.EngineCount))) reasons.push("engine-count");
+            : (profile.twinEngines ? [2] : []); // backward compatibility
+        const actualFuel = canonicalPlanValue(boat, "FuelCode", ["NormalizedFuel","Fuel"]);
+        const actualPropulsion = canonicalPlanValue(boat, "MechanicalPropulsionCode", ["PropulsionCode","NormalizedPropulsion","Propulsion"]);
+        // Map documented drive subtypes to their parent filter category.
+        const configurationPropulsionMatches = (selected, actual) => {
+            if (selectedIncludes("propulsion", selected, actual)) return true;
+            const subtype = canonicalComparable(actual).toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+            if (/^shaft v drive$|^shaft vdrive$|^v drive$|^vdrive$/.test(subtype))
+                return selectedIncludes("propulsion", selected, "shaft");
+            if (/^ips pod$|^pod ips$|^ips$/.test(subtype))
+                return selectedIncludes("propulsion", selected, "pod");
+            return false;
+        };
+        const configurationRows = Array.isArray(boat.VerifiedConfigurations) ? boat.VerifiedConfigurations : [];
+        if (configurationRows.length) {
+            const rowPossible = row => {
+                // Missing or uncertain evidence cannot justify exclusion.
+                if (!row || typeof row !== "object") return true;
+                if (profile.fuels?.length && known(row.FuelCode) && !uncertainCanonical(row.FuelCode) &&
+                    !selectedIncludes("fuel", profile.fuels, row.FuelCode)) return false;
+                if (profile.propulsion?.length && known(row.MechanicalPropulsionCode) &&
+                    !uncertainCanonical(row.MechanicalPropulsionCode) &&
+                    !configurationPropulsionMatches(profile.propulsion, row.MechanicalPropulsionCode)) return false;
+                const count = numericValue(row.EngineCount);
+                if (selectedEngineCounts.length && count !== null && !selectedEngineCounts.includes(count)) return false;
+                return true;
+            };
+            if (!configurationRows.some(rowPossible) && boat.VerifiedConfigurationsComplete === true) {
+                reasons.push("verified-configuration");
+            }
+        } else {
+            // Legacy model records must retain their existing behaviour.
+            if (profile.fuels?.length && known(actualFuel) && !selectedIncludes("fuel", profile.fuels, actualFuel)) reasons.push("fuel");
+            if (profile.propulsion?.length && known(actualPropulsion) && !selectedIncludes("propulsion", profile.propulsion, actualPropulsion)) reasons.push("propulsion");
+            if (selectedEngineCounts.length && known(boat.EngineCount) && !selectedEngineCounts.includes(numericValue(boat.EngineCount))) reasons.push("engine-count");
+        }
         if (profile.flybridge && known(boat.Flybridge) && boat.Flybridge !== profile.flybridge) reasons.push("flybridge");
         const actualSideDecks = boat.SideDecksCode || boat.SideDecks;
         if (profile.sideDecks && known(actualSideDecks)) {

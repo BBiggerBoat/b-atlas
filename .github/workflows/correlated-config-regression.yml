@@ -1,0 +1,24 @@
+name: Correlated configuration regression
+
+on:
+  pull_request:
+    paths:
+      - 'filterengine.js'
+      - 'valuenormalizer.js'
+      - 'tests/correlated-config-regression.cjs'
+      - '.github/workflows/correlated-config-regression.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  regression:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Test correlated configurations and legacy behaviour
+        run: node tests/correlated-config-regression.cjs
