@@ -45,7 +45,7 @@ if(process.env.BATLAS_SPLIT_BUILD==="1"){
     resources:"data/model-layers/resources.json",
     media:"data/model-layers/media.json"
   };
-  fs.writeFileSync(loaderPath,"globalThis.BAtlasSplitModelPaths="+JSON.stringify(paths)+";\\n"+loaderSource);
+  fs.writeFileSync(loaderPath,"globalThis.BAtlasSplitModelPaths="+JSON.stringify(paths)+";"+String.fromCharCode(10)+loaderSource);
   // This candidate build deliberately retains boatmodels.json until all
   // page and API readers use the split source. Never deploy with both as
   // independent authorities.
