@@ -14,7 +14,8 @@ function walk(dir) {
    return x.isDirectory()?walk(p):x.isFile()&&p.endsWith(".json")?[p]:[];
  });
 }
-const files=roots.flatMap(walk);
+const liveShards=fs.readdirSync("data").filter(name=>/^phase2-live-models(?:-.+)?\.json$/.test(name)).map(name=>path.join("data",name));
+const files=[...roots.flatMap(walk),...liveShards];
 const byId=new Map();
 const unmatched=[];
 let totalRecords=0;
@@ -46,7 +47,8 @@ for(const row of registry.filter(r=>pending.has(String(r.BoatModelID)))){
  if(records.some(x=>x.hasSourceUrls))s.withSourceUrl++;
 }
 const report={
- schema:"batlas-existing-research-inventory-v2",
+ schema:"batlas-existing-research-inventory-v3",
+ recoveredLegacyShardFiles:liveShards.length,
  semantics:"Source-file linkage indicates historical research exists; it does NOT establish historical/specification correctness or approval.",
  scannedFiles:files.length,identifiedRecords:totalRecords,
  uniqueCanonicalIDsWithResearchFiles:byId.size,
