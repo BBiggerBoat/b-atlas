@@ -36,6 +36,16 @@ if(process.env.BATLAS_SPLIT_BUILD==="1"){
   fs.mkdirSync(dst,{recursive:true});
   for(const name of ["specifications","ownerKnowledge","resources","media"])
     fs.copyFileSync(path.join(src,name+".json"),path.join(dst,name+".json"));
+  // Only this isolated candidate artifact activates the split data source.
+  const loaderPath=path.join(out,"datarepository.js");
+  const loaderSource=fs.readFileSync(loaderPath,"utf8");
+  const paths={
+    specifications:"data/model-layers/specifications.json",
+    ownerKnowledge:"data/model-layers/ownerKnowledge.json",
+    resources:"data/model-layers/resources.json",
+    media:"data/model-layers/media.json"
+  };
+  fs.writeFileSync(loaderPath,"globalThis.BAtlasSplitModelPaths="+JSON.stringify(paths)+";\\n"+loaderSource);
   // This candidate build deliberately retains boatmodels.json until all
   // page and API readers use the split source. Never deploy with both as
   // independent authorities.
