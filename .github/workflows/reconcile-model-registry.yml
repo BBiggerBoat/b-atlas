@@ -17,5 +17,9 @@ jobs:
         run: node tools/reconcile-model-registry.cjs --check
       - name: Verify canonical loader and filtering
         run: node tests/canonical-integration.cjs
+      - name: Verify filtering behavior
+        run: node tests/filter-behavior-regression.cjs
+      - name: Verify community overlay compatibility
+        run: node tests/community-overlay-regression.cjs
       - name: Verify correlated configurations
         run: node tests/correlated-config-regression.cjs boatmodels.json
