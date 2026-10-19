@@ -1,0 +1,24 @@
+name: Audit provisional model identities
+on:
+  push:
+    branches:
+      - identity-quality-review-2026-10
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Audit provisional identity references
+        run: node tools/audit-pending-identities.cjs
+      - name: Inventory historical research references
+        run: node tools/inventory-existing-research.cjs
+      - name: Compare historical and canonical fields without writes
+        run: node tools/audit-field-reconciliation.cjs
+      - name: Verify canonical integration
+        run: node tests/canonical-integration.cjs
