@@ -42,7 +42,12 @@ for(const file of batches){
  }
 }
 const dedupe=rows=>[...new Map(rows.map(x=>[x.BoatModelID+"|"+x.field+"|"+x.sourceFile,x])).values()];
-const report={schema:"batlas-field-reconciliation-v2",policy:"Read-only diagnostic. Historical values are not automatically authoritative. Inferred configuration-dependent fields are never filled.",canonicalModels:canonical.length,batches:batches.length,categories,alternateExamples,phaseExamples,canonicalMissing:dedupe(gaps).slice(0,35),conflicts:dedupe(conflicts).slice(0,35),uniqueModelsWithMissing:new Set(gaps.map(x=>x.BoatModelID)).size,uniqueModelsWithConflicts:new Set(conflicts.map(x=>x.BoatModelID)).size};
+const gapFieldCounts={};
+for(const row of gaps)gapFieldCounts[row.field]=(gapFieldCounts[row.field]||0)+1;
+const gapModels=[...new Set(gaps.map(x=>x.BoatModelID))];
+const potentialRecoveries=gaps.filter(row=>row.sourceURL && ["FirstYear","LastYear","LOAFt","BeamFt","DraftFt","AirDraftFt","DisplacementLb","DeadriseAftDeg"].includes(row.field));
+const report={gapFieldCounts,gapModelCount:gapModels.length,sourceLinkedPotentialRecoveries:potentialRecoveries.length,
+sourceLinkedPotentialRecoverySample:potentialRecoveries.slice(0,20),schema:"batlas-field-reconciliation-v2",policy:"Read-only diagnostic. Historical values are not automatically authoritative. Inferred configuration-dependent fields are never filled.",canonicalModels:canonical.length,batches:batches.length,categories,alternateExamples,phaseExamples,canonicalMissing:dedupe(gaps).slice(0,35),conflicts:dedupe(conflicts).slice(0,35),uniqueModelsWithMissing:new Set(gaps.map(x=>x.BoatModelID)).size,uniqueModelsWithConflicts:new Set(conflicts.map(x=>x.BoatModelID)).size};
 const counted=Object.values(categories).reduce((a,b)=>a+b,0);
 if(counted!==3969+2245) throw new Error("Historical comparison baseline shifted unexpectedly: "+counted);
 console.log(JSON.stringify(report,null,2));
