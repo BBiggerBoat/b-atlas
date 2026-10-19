@@ -28,6 +28,29 @@ resetDir(out);
 for(const rel of manifest.rootFiles) copyFile(rel);
 for(const rel of manifest.publicDirectories) copyDir(rel);
 for(const rel of manifest.temporaryModeratorFiles) copyFile(rel);
+if(process.env.BATLAS_SPLIT_BUILD==="1"){
+  const cp=require("node:child_process");
+  cp.execFileSync(process.execPath,["tools/preview-json-architecture.cjs","--production"],{cwd:root,stdio:"inherit"});
+  const src=path.join(root,"data/model-layers");
+  const dst=path.join(out,"data/model-layers");
+  fs.mkdirSync(dst,{recursive:true});
+  for(const name of ["specifications","ownerKnowledge","resources","media"])
+    fs.copyFileSync(path.join(src,name+".json"),path.join(dst,name+".json"));
+  // Only this isolated candidate artifact activates the split data source.
+  const loaderPath=path.join(out,"datarepository.js");
+  const loaderSource=fs.readFileSync(loaderPath,"utf8");
+  const paths={
+    specifications:"data/model-layers/specifications.json",
+    ownerKnowledge:"data/model-layers/ownerKnowledge.json",
+    resources:"data/model-layers/resources.json",
+    media:"data/model-layers/media.json"
+  };
+  fs.writeFileSync(loaderPath,"globalThis.BAtlasSplitModelPaths="+JSON.stringify(paths)+";"+String.fromCharCode(10)+loaderSource);
+  // Candidate-only: eliminate the redundant monolith from the public output.
+  // Source boatmodels.json remains in the repository until migration approval.
+  fs.rmSync(path.join(out,"boatmodels.json"));
+}
+
 
 // Static SEO pages remain crawlable, but human navigation should return to the
 // full interactive application instead of chaining through the simplified
