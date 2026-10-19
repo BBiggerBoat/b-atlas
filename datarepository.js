@@ -71,16 +71,57 @@
         return out;
     }
 
+    // Opt-in split model adapter; original production mode remains unchanged.
+    function assembleSplitModels(specifications, ownerKnowledge, resources, media) {
+        const layers = [specifications, ownerKnowledge, resources, media];
+        for (let i=0;i<layers.length;i++) ensureArray(layers[i], ["specifications","ownerKnowledge","resources","media"][i]);
+        const ids=new Set();
+        for(const row of specifications){
+            if(!row?.BoatModelID || ids.has(row.BoatModelID)) throw new Error("Invalid specification identity");
+            ids.add(row.BoatModelID);
+        }
+        const other=layers.slice(1).map((layer,i)=>{
+            const index=new Map();
+            for(const row of layer){
+                if(!row?.BoatModelID || index.has(row.BoatModelID) || !ids.has(row.BoatModelID))
+                    throw new Error("Invalid split-layer identity "+i);
+                index.set(row.BoatModelID,row);
+            }
+            if(index.size!==ids.size)throw new Error("Incomplete split layer "+i);
+            return index;
+        });
+        return specifications.map(spec=>{
+            const row={...spec};
+            for(const index of other)for(const [key,value] of Object.entries(index.get(spec.BoatModelID))){
+                if(key==="BoatModelID")continue;
+                if(Object.prototype.hasOwnProperty.call(row,key))throw new Error("Duplicate field ownership "+key);
+                row[key]=value;
+            }
+            return row;
+        });
+    }
+
     function loadApplicationData(options) {
         const settings = options || {};
         const manifest = Object.assign({}, DEFAULT_MANIFEST, settings.manifest || {});
         const fetchImpl = settings.fetchImpl;
+        const splitPaths = settings.splitModelPaths || null;
+        if(splitPaths){
+            if(Object.keys(splitPaths).sort().join(",")!=="media,ownerKnowledge,resources,specifications")
+                throw new Error("Four split model paths required");
+            delete manifest.boats;
+            for(const [key,value] of Object.entries(splitPaths))manifest["split_"+key]=value;
+        }
         const entries = Object.entries(manifest);
 
         return Promise.all(entries.map(([name, url]) =>
             fetchJson(url, fetchImpl).then(value => [name, ensureArray(value, name)])
         )).then(async results => {
             const data = Object.fromEntries(results);
+            if(splitPaths){
+                data.boats=assembleSplitModels(data.split_specifications,data.split_ownerKnowledge,data.split_resources,data.split_media);
+                for(const key of Object.keys(splitPaths))delete data["split_"+key];
+            }
 
             // Historical Phase 2 models and aliases are consolidated into the
             // authoritative boatmodels.json and model-search-aliases.json datasets.
@@ -136,6 +177,7 @@
         fetchJson,
         loadApplicationData,
         ensureArray,
-        applyCanonicalCompatibility
+        applyCanonicalCompatibility,
+        assembleSplitModels
     };
 })(typeof window !== "undefined" ? window : globalThis);
