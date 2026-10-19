@@ -1,0 +1,34 @@
+name: Test layered site build
+on:
+  push:
+    branches:
+      - canonical-json-architecture-repair-2026-10
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Candidate build with four model layers
+        run: BATLAS_SPLIT_BUILD=1 npm run build:public
+      - name: Validate generated files and model identities
+        run: |
+          node - <<'NODE'
+          const fs=require('fs'), assert=require('assert/strict');
+          const root='dist/data/model-layers/';
+          const src=JSON.parse(fs.readFileSync('boatmodels.json'));
+          const specs=JSON.parse(fs.readFileSync(root+'specifications.json'));
+          const details=['ownerKnowledge','resources','media'].map(x=>JSON.parse(fs.readFileSync(root+x+'.json')));
+          assert.equal(src.length,995);
+          assert.equal(specs.length,995);
+          for(const layer of details)assert.deepEqual(layer.map(x=>x.BoatModelID),src.map(x=>x.BoatModelID));
+          assert(fs.statSync(root+'specifications.json').size<fs.statSync('boatmodels.json').size);
+          console.log('PASS: layered candidate artifact, 995 aligned records, reduced specification payload');
+          NODE
+      - name: Check existing application regressions
+        run: node tests/canonical-integration.cjs
