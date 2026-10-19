@@ -1,9 +1,6 @@
 name: Verify canonical model identity registry
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - canonical-consolidation-2026-10
 permissions:
   contents: read
 jobs:
@@ -24,7 +21,7 @@ jobs:
         run: node tests/filter-behavior-regression.cjs
       - name: Verify community overlay compatibility
         run: node tests/community-overlay-regression.cjs
-      - name: Verify live community overlay compatibility
+      - name: Probe live community overlay compatibility
         run: node tests/live-community-overlay-regression.cjs
       - name: Verify correlated configurations
         run: node tests/correlated-config-regression.cjs boatmodels.json
