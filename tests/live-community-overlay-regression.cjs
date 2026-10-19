@@ -31,6 +31,17 @@ const endpoint = "https://api.b-atlas.org/api/public/overlays";
 
   const responseText = await response.text();
   if (!response.ok) {
+    const cloudflareChallenge = response.status === 403 &&
+      (/Just a moment/i.test(responseText) || /challenges\.cloudflare\.com/i.test(responseText));
+    if (cloudflareChallenge) {
+      console.log(JSON.stringify({
+        status: "SKIP",
+        endpoint,
+        httpStatus: response.status,
+        reason: "cloudflare-edge-challenge-blocks-github-runner"
+      }, null, 2));
+      return;
+    }
     throw new Error(`Live community overlay returned HTTP ${response.status}: ${responseText.slice(0, 500).replace(/\\s+/g, " ")}`);
   }
   const overlay = JSON.parse(responseText);
