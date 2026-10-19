@@ -55,7 +55,7 @@ for (const [id, model] of byId) {
 }
 const result = [...existing, ...added].sort((a,b)=>String(a.BoatModelID).localeCompare(String(b.BoatModelID)));
 const absent = existing.filter(row => !byId.has(row.BoatModelID)).map(row=>row.BoatModelID);
-if (absent.length) throw Error("Registry contains IDs absent from canonical database; review before write: " + absent.slice(0,30).join(", "));
+if (absent.length) throw Error("Registry has new unmatched IDs; preserve them in a reviewed archive before reconciliation: " + absent.slice(0,30).join(", "));
 if (result.length !== canonical.length) throw Error("Reconciled registry count mismatch");
 if (process.argv.includes("--check")) {
   const same = JSON.stringify(result) === JSON.stringify([...existing].sort((a,b)=>String(a.BoatModelID).localeCompare(String(b.BoatModelID)));
