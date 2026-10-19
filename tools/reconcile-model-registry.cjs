@@ -54,6 +54,9 @@ for (const [id, model] of byId) {
   if (!code) unresolved.push({ BoatModelID: id, ManufacturerID: model.ManufacturerID, Manufacturer: model.Manufacturer });
 }
 const result = [...existing, ...added].sort((a,b)=>String(a.BoatModelID).localeCompare(String(b.BoatModelID)));
+const validCodes = new Set(manufacturers.map(m => m.ManufacturerCode));
+const missingCodes = result.filter(row => !row.ManufacturerCode || !validCodes.has(row.ManufacturerCode));
+if (missingCodes.length) throw Error("Unresolved manufacturer codes: " + missingCodes.slice(0,20).map(x=>x.BoatModelID).join(", "));
 const absent = existing.filter(row => !byId.has(row.BoatModelID)).map(row=>row.BoatModelID);
 if (absent.length) throw Error("Registry has new unmatched IDs; preserve them in a reviewed archive before reconciliation: " + absent.slice(0,30).join(", "));
 if (result.length !== canonical.length) throw Error("Reconciled registry count mismatch");
