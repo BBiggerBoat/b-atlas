@@ -39,6 +39,15 @@
         return value;
     }
 
+    function validateModels(rows) {
+        const ids = new Set();
+        for (const row of rows) {
+            if (!row?.BoatModelID || ids.has(row.BoatModelID)) throw new Error('Missing or duplicate model ID: ' + row?.BoatModelID);
+            ids.add(row.BoatModelID);
+        }
+        return rows;
+    }
+
     function fetchJson(url, fetchImpl) {
         const request = fetchImpl || global.fetch;
         if (typeof request !== "function") {
@@ -81,9 +90,10 @@
             fetchJson(url, fetchImpl).then(value => [name, ensureArray(value, name)])
         )).then(async results => {
             const data = Object.fromEntries(results);
+            validateModels(data.boats);
 
             // Historical Phase 2 models and aliases are consolidated into the
-            // authoritative boatmodels.json and model-search-aliases.json datasets.
+            // generated boatmodels.json view and model-search-aliases.json datasets.
             // Do not load or merge archived shards at runtime.
 
             if (Array.isArray(data.boats)) {
@@ -101,12 +111,12 @@
             }
             try {
                 const request = fetchImpl || global.fetch;
-                const response = await request(`${COMMUNITY_API_BASE}/api/public/overlays`, { cache: "no-store" });
+                const response = await request(`${COMMUNITY_API_BASE}/api/public/overlays`, { cache: "no-store", ...(typeof AbortSignal !== 'undefined' ? {signal:AbortSignal.timeout(5000)} : {}) });
                 if (response?.ok) {
                     const overlay = await response.json();
                     if (Array.isArray(data.boats)) {
                         const patches = overlay?.modelPatches || {};
-                        data.boats = data.boats.map(row => applyCanonicalCompatibility(patches[row.BoatModelID] ? { ...row, ...patches[row.BoatModelID] } : row));
+                        data.boats = data.boats.map(row => applyCanonicalCompatibility(patches[row.BoatModelID] ? { ...row, ...patches[row.BoatModelID], BoatModelID:row.BoatModelID } : row));
                         if (Array.isArray(overlay?.addedModels)) {
                             const ids = new Set(data.boats.map(x => x.BoatModelID));
                             for (const row of overlay.addedModels) if (row?.BoatModelID && !ids.has(row.BoatModelID)) {

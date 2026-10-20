@@ -2103,5 +2103,7 @@
   },
   "scope": "global-power-sail-motorsailer",
   "productionPhaseRegistry": "data/production-phases.json",
-  "productionPhaseSchema": "knowledge/data/production-phase.schema.json"
+  "productionPhaseSchema": "knowledge/data/production-phase.schema.json",
+  "ownershipContract": "data/canonical/ownership.json",
+  "storagePolicy": "Schema describes fields; canonical ownership controls storage. boatmodels.json is a generated public view."
 }

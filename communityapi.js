@@ -23,7 +23,7 @@ async function submit(record,attachments=[]){
 }
 
 async function publicOverlays(){
-  try{return await request("/api/public/overlays")}
+  try{return await request("/api/public/overlays",{signal:AbortSignal.timeout(5000)})}
   catch{return {modelPatches:{},addedModels:[],addedManufacturers:[],reviewedContributions:[],knowledgeItems:[],knowledgeEvidence:[],resourceAdditions:[]}}
 }
 

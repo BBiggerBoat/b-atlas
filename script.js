@@ -657,7 +657,7 @@ function displayBoats(boats) {
 
         card.innerHTML = `
 
-<img src="${ImageAssetManager.resolveBoatImage(boat)}" class="boat-image" alt="${title}" data-boat-model-id="${boat.BoatModelID}" referrerpolicy="no-referrer" onerror="ImageAssetManager.applyImageFallback(this, this.dataset.boatModelId)">
+<img src="${ImageAssetManager.resolveBoatImage(boat)}" class="boat-image" alt="${title}" data-boat-model-id="${boat.BoatModelID}" referrerpolicy="no-referrer" onerror="ImageAssetManager.applyImageFallback(this, this.dataset.boatModelId, true)">
 
 
 <h2>
@@ -3673,7 +3673,7 @@ function renderComparisonTable() {
                 val = `
                     <div class="comparison-header-card">
                         <button class="remove-compare-btn" onclick="toggleCompareBoat('${boat.BoatModelID}')">×</button>
-                        <img src="${ImageAssetManager.resolveBoatImage(boat)}" alt="${title}" onerror="ImageAssetManager.applyImageFallback(this)">
+                        <img src="${ImageAssetManager.resolveBoatImage(boat)}" alt="${title}" data-boat-model-id="${boat.BoatModelID}" referrerpolicy="no-referrer" onerror="ImageAssetManager.applyImageFallback(this, this.dataset.boatModelId, true)">
                         <h4>${title}</h4>
                     </div>
                 `;
@@ -3722,7 +3722,9 @@ function renderComparisonTable() {
                 } else if (typeof rawVal === "boolean") {
                     val = rawVal ? "Yes" : "No";
                 } else {
-                    val = rawVal + (row.suffix || "");
+                    const displayValue = typeof rawVal === "string" && /^[a-z][a-z0-9_]*\.[a-z][a-z0-9_]*$/.test(rawVal)
+                        ? rawVal.split(".").slice(1).join(" ").replace(/_/g," ").replace(/^./,c=>c.toUpperCase()) : rawVal;
+                    val = escapeHtml(displayValue) + (row.suffix || "");
                 }
             }
 

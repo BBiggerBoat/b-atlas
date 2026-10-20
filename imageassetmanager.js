@@ -140,7 +140,7 @@
         return canonicalPath || PLACEHOLDER_PATH;
     }
 
-    function applyImageFallback(imageElement, boatOrId) {
+    function applyImageFallback(imageElement, boatOrId, alreadyFailed = false) {
         if (!imageElement) return;
         const modelId = typeof boatOrId === "string"
             ? boatOrId
@@ -169,6 +169,9 @@
                 imageElement.dataset.imageStatus = "available";
             }
         };
+        // Inline error handlers run after the first failure. Handle that failure
+        // immediately, including cached failures, instead of waiting for a second event.
+        if (alreadyFailed || (imageElement.complete === true && imageElement.naturalWidth === 0)) imageElement.onerror();
     }
 
     global.ImageAssetManager = {

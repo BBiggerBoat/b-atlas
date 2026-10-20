@@ -20,17 +20,24 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "22"
+
+      - name: Set up Python for isolated page-generation checks
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
 
       - name: Verify baseline version
         run: npm run guard:baseline
 
-      - name: Build allowlisted public site
-        run: npm run build:public
+      - name: Verify production readiness and build allowlisted public site
+        run: npm run verify:production
 
       - name: Verify sensitive source files are excluded
         shell: bash

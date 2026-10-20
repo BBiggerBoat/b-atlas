@@ -2,7 +2,7 @@
 // Regenerate the identity registry from the authoritative canonical model records.
 // Existing curated identity decisions are preserved verbatim.
 const fs = require("node:fs");
-const canonical = JSON.parse(fs.readFileSync("boatmodels.json", "utf8"));
+const canonical = require('../developer/canonical-store.cjs').load();
 const registryPath = "data/registry/boat-registry.json";
 const existing = JSON.parse(fs.readFileSync(registryPath, "utf8"));
 const manufacturers = JSON.parse(fs.readFileSync("data/registry/manufacturers.json", "utf8"));

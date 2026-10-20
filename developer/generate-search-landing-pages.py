@@ -1,4 +1,4 @@
-import json, os, re, html, shutil
+import json, os, re, html, shutil, subprocess
 from pathlib import Path
 from datetime import date
 from collections import Counter, defaultdict
@@ -6,7 +6,9 @@ from collections import Counter, defaultdict
 ROOT = Path(__file__).resolve().parents[1]
 BASE = 'https://b-atlas.org/'
 TODAY = date.today().isoformat()
-models = json.loads((ROOT/'boatmodels.json').read_text(encoding='utf-8'))
+page_input = json.loads(subprocess.check_output(['node', 'developer/model-page-input.cjs'], cwd=ROOT, encoding='utf-8'))
+models = page_input['models']
+image_sources = page_input['imageSources']
 
 # Runtime-equivalent canonical compatibility for generated public pages.
 # Canonical SI/code fields win when known; legacy fields remain fallbacks.
@@ -139,7 +141,13 @@ if models_dir.exists():
         mt=re.search(r'\?model=([^"&]+)', p.read_text(encoding='utf-8', errors='ignore'))
         if mt: id_to_slug[mt.group(1)] = p.parent.name
 for m in models:
-    id_to_slug.setdefault(m.get('BoatModelID'), model_slug(m))
+    if m.get('CanonicalSlug'):
+        id_to_slug[m.get('BoatModelID')] = model_slug(m)
+    else:
+        id_to_slug.setdefault(m.get('BoatModelID'), model_slug(m))
+# Existing historical pages may name retired IDs; they cannot reserve an active URL.
+active_ids = {m.get('BoatModelID') for m in models}
+id_to_slug = {mid: slug for mid, slug in id_to_slug.items() if mid in active_ids}
 # Prevent two canonical identities from overwriting the same generated page after an identity split.
 used_slugs={}
 for m in models:
@@ -321,8 +329,9 @@ for m in models:
     specs=[]
     for lab,v in [('LOA',fmt_length_dual(m,'LOA','LOA_ft','LengthFt')),('LWL',fmt_length_dual(m,'LWL','LWL_ft')),('Beam',fmt_length_dual(m,'Beam','Beam_ft','BeamFt')),('Draft',fmt_length_dual(m,'Draft','Draft_ft','DraftFt')),('Hull behaviour',text(m,'HullBehaviour','NormalizedHullType','HullType') or 'Unknown'),('Fuel',text(m,'NormalizedFuel','Fuel') or 'Unknown'),('Propulsion',text(m,'NormalizedPropulsion','Propulsion') or 'Unknown'),('Engine configuration',text(m,'EngineConfiguration') or 'Unknown'),('Displacement cruise',fmt_cruise(m,'DisplacementCruiseSpeed','DisplacementCruiseFuelBurn')),('Faster / planing cruise','Not applicable' if text(m,'HullBehaviour','NormalizedHullType','HullType').lower()=='displacement' else fmt_cruise(m,'PlaningCruiseSpeed','PlaningCruiseFuelBurn')),('Boat family',text(m,'BoatFamily','NormalizedStyle','Style') or 'Unknown'),('Construction',text(m,'Construction') or 'Unknown')]:
         specs.append(f'<div><dt>{esc(lab)}</dt><dd>{esc(v)}</dd></div>')
-    img=m.get('ImageURL')
-    img_html=f'<img class="hero-img" src="../../{esc(img)}" alt="{esc(nm)}" loading="eager">' if img else ''
+    img=image_sources.get(mid) or 'images/boat-placeholder.svg'
+    img_src=img if str(img).startswith(('https://','http://')) else '../../'+str(img)
+    img_html=f'<img class="hero-img" src="{esc(img_src)}" alt="{esc(nm)}" loading="eager" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src=\'../../images/boat-placeholder.svg\'">'
     def sec(title0,items,empty=None):
         if isinstance(items,str): items=[items]
         items=[x for x in (items or []) if str(x).strip()]
@@ -353,9 +362,23 @@ for m in models:
         if len(nav)>=4: break
     for cslug,other in comparison_links.get(mid,[])[:2]: nav.append(f'<a class="chip" href="../../compare/{cslug}/">Compare with {esc(other)}</a>')
     concern_sec=sec('Known concerns',concerns,'No model-specific concern has been promoted to B-Atlas’s evidence threshold. This does not mean the model has no age-, condition- or hull-specific risks.')
-    social_img=(BASE+str(img).lstrip('/')) if img else None
+    social_img=(str(img) if str(img).startswith(('https://','http://')) else BASE+str(img).lstrip('/')) if img else None
     body=head(title,desc,url,nm,social_img)+shell_open(f'<p class="crumbs"><a href="../../">Home</a> › <a href="../">Model Guides</a> › {esc(nm)}</p>')+f'<article><div class="hero hero-model"><div><div class="eyebrow">B-Atlas Boat Guide · {esc(mid)}</div><h1>{esc(nm)}</h1><p><strong>{esc(year_text(m))}</strong></p><p>{esc(overview)}</p><p><a class="cta" href="../../?model={esc(mid)}">Open full interactive guide</a></p></div>{img_html}</div><dl class="specs">{"".join(specs)}</dl>{sec("Best for",m.get("BestFor") or m.get("Strengths"))}{sec("Trade-offs",m.get("TradeOffs") or m.get("Weaknesses"))}{concern_sec}{sec("Inspection focus",m.get("InspectionFocus") or m.get("CommonProblems"))}<section><h2>Continue researching</h2><div class="chips">{"".join(nav)}</div></section><section><h2>Related boat models</h2><div class="grid">{rel_cards}</div></section><section><h2>About this record</h2><p>B-Atlas preserves uncertainty: missing information remains unknown rather than being treated as a negative. Specifications and guidance describe the model record; individual boats can differ by year, equipment, refit and condition.</p></section></article>'+shell_close()
     (d/'index.html').write_text(body,encoding='utf-8')
+
+# Retired pages must not continue publishing a competing specification record.
+# These redirects implement already recorded identity decisions, not new research.
+redirect_file = ROOT/'deployment'/'legacy-model-page-redirects.json'
+if redirect_file.exists():
+    for legacy_slug, entry in json.loads(redirect_file.read_text(encoding='utf-8')).items():
+        target_id = entry['BoatModelID']
+        if target_id not in id_to_slug or legacy_slug in id_to_slug.values():
+            raise ValueError('Invalid retired model-page redirect: '+legacy_slug)
+        redirect_dir = ROOT/'models'/legacy_slug
+        redirect_dir.mkdir(parents=True, exist_ok=True)
+        target = '../../?model='+target_id
+        canonical = BASE+'models/'+id_to_slug[target_id]+'/'
+        (redirect_dir/'index.html').write_text(f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex, follow"><link rel="canonical" href="{esc(canonical)}"><meta http-equiv="refresh" content="0;url={esc(target)}"><title>Model guide moved | B-Atlas</title></head><body><p>This historical model page has moved. <a href="{esc(target)}">Open the current model guide</a>.</p></body></html>',encoding='utf-8')
 
 # Rebuild models index with manufacturer + buyer entry points.
 model_cards=''.join(f'<div class="card"><a href="{id_to_slug[m.get("BoatModelID")]}/">{esc(name(m))}</a><p class="muted">{esc(fmt(num(m,"LengthFt","LOA_ft")," ft"))} · beam {esc(fmt(num(m,"BeamFt","Beam_ft")," ft"))} · {esc(text(m,"NormalizedFuel","Fuel") or "fuel unknown")}</p></div>' for m in sorted(models,key=lambda m:name(m)))
@@ -364,7 +387,7 @@ url=BASE+'models/'; title='Boat Model Guides: Specs, Concerns & Buyer Research |
 
 # Update public footer links/version without adding primary-nav clutter.
 idx=ROOT/'index.html'; s=idx.read_text(encoding='utf-8')
-s=s.replace('<a href="models/">Browse Model Guides</a>', '<a href="models/">Browse Model Guides</a>\n    <a href="boats/">Find by Criteria</a>\n    <a href="compare/">Compare Models</a>')
+s=re.sub(r'(<a href="models/">Browse Model Guides</a>)(?:\s*<a href="boats/">Find by Criteria</a>\s*<a href="compare/">Compare Models</a>)*', r'\1\n    <a href="boats/">Find by Criteria</a>\n    <a href="compare/">Compare Models</a>', s)
 pkg=json.loads((ROOT/'package.json').read_text(encoding='utf-8')); release=pkg.get('version',''); s=re.sub(r'Version [0-9]+\.[0-9]+\.[0-9]+[^<]*', f'Version {release}', s)
 idx.write_text(s,encoding='utf-8')
 

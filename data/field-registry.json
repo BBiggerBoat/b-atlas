@@ -2069,5 +2069,7 @@
       "identifierPolicy": "Stable ID. Add/deprecate/map rather than rename after validation begins.",
       "applicabilityNote": "Applicable only when the hull has a meaningful on-plane cruising regime. Full-displacement vessels are Not Applicable."
     }
-  ]
+  ],
+  "ownershipContract": "data/canonical/ownership.json",
+  "storagePolicy": "Schema describes fields; canonical ownership controls storage. boatmodels.json is a generated public view."
 }

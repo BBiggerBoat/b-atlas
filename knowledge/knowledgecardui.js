@@ -9,7 +9,6 @@
 })(typeof globalThis !== 'undefined' ? globalThis : this, function () {
     'use strict';
 
-    const COLLECTION_PATH = 'knowledge/data/knowledgecards.json';
     const RESOURCE_PATH = 'knowledge/data/curatedresources.json';
     const LISTING_PATH = 'knowledge/data/listingsearches.json';
     const INTELLIGENCE_PATH = 'boatmodels.json';
@@ -59,12 +58,29 @@
         }).then(items => Array.isArray(items) ? items : []);
     }
 
+function projectCards(boats,input={}) {
+const index = (rows) => new Map(rows.map(row => [String(row.BoatModelID || '').trim(), row]));
+
+const intelligence = index(boats.map(boat => ({ BoatModelID: boat.BoatModelID, intelligence: { overview: boat.Overview || null, suitability: boat.Suitability || {}, strengths: boat.Strengths || [], tradeOffs: boat.TradeOffs || [], bestFor: boat.BestFor || [], avoidIf: boat.AvoidIf || [], knownConcerns: boat.KnownConcerns || [], inspectionFocus: boat.InspectionFocus || [], buyerQuestions: boat.BuyerQuestions || [], ownerActions: boat.OwnerActions || [], modelVariations: boat.ModelVariations || [] }, evidence: boat.EvidenceSummary?.Statements || [], confidence: boat.EvidenceSummary?.EvidenceQuality || 'Unknown', updatedAt: boat.LastUpdated || null, revision: boat.Revision || 1 })));
+const resources = index(input.resources || []);
+const listings = index(input.listings || []);
+const annotations = index(input.annotations || []);
+const coverage = index(input.coverage || []);
+const cards = boats.map(b=>{
+ const id=b.BoatModelID, intel=intelligence.get(id)||{}, res=resources.get(id)||{}, list=listings.get(id)||{}, ann=annotations.get(id)||{}, cov=coverage.get(id)||{};
+ const card={schemaVersion:2,generated:true,generatedFrom:['boatmodels.json','curatedresources.json','listingsearches.json','knowledgeannotations.json','knowledge-coverage.json'],identity:{boatModelId:id,manufacturer:b.Manufacturer||'',model:[b.Model,b.Variant].filter(Boolean).join(' '),displayName:b.Nickname||[b.Manufacturer,b.Model,b.Variant].filter(Boolean).join(' ')},intelligence:intel.intelligence||{},evidence:intel.evidence||[],images:b.ImageURL?[{title:`${b.Nickname||id} image`,url:b.ImageURL,sourceLabel:'B-Atlas image library',resourceType:'Model image',verificationStatus:'Local asset'}]:[],videos:res.videos||[],listings:list.listings||[],documents:res.documents||[],ownerCommunities:res.ownerCommunities||[],knownIssues:ann.knownIssues||[],similarModels:ann.similarModels||[],missingInformation:ann.missingInformation||[],sources:[...(res.sources||[]),...(list.sources||[]),...(ann.sources||[])],confidence:intel.confidence||ann.confidence||b.DataConfidence||'Unknown',coverage:cov,updatedAt:[intel.updatedAt,res.updatedAt,list.updatedAt,ann.updatedAt,b.LastUpdated].filter(Boolean).sort().at(-1)||null};
+ return card;
+});
+return cards;
+}
     async function loadKnowledgeCards(fetchImpl) {
         if (!collectionPromise) {
-            collectionPromise = loadJson(COLLECTION_PATH, fetchImpl).catch(error => {
-                collectionPromise = null;
-                throw error;
-            });
+            collectionPromise = Promise.all([
+                loadBoatIntelligence(fetchImpl), loadCuratedResources(fetchImpl), loadListingSearches(fetchImpl),
+                loadJson('knowledge/data/knowledgeannotations.json',fetchImpl),
+                loadJson('knowledge/data/knowledge-coverage.json',fetchImpl)
+            ]).then(([boats,resources,listings,annotations,coverage]) => projectCards(boats,{resources,listings,annotations,coverage}))
+              .catch(error=>{collectionPromise=null;throw error;});
         }
         return collectionPromise;
     }
@@ -359,8 +375,8 @@
     }
 
     return {
-        COLLECTION_PATH, RESOURCE_PATH, LISTING_PATH, INTELLIGENCE_PATH, escapeHtml, displayFieldName, countAvailableSections,
+        RESOURCE_PATH, LISTING_PATH, INTELLIGENCE_PATH, escapeHtml, displayFieldName, countAvailableSections,
         buildResearchAction, renderBoatIntelligence, renderKnowledgeCard, renderLoadingState, renderErrorState, loadCardForBoat, renderForBoat,
-        loadKnowledgeCards, loadCuratedResources, loadListingSearches, loadBoatIntelligence, resetKnowledgeCardCache, enrichCard, safeUrl
+        projectCards, loadKnowledgeCards, loadCuratedResources, loadListingSearches, loadBoatIntelligence, resetKnowledgeCardCache, enrichCard, safeUrl
     };
 });

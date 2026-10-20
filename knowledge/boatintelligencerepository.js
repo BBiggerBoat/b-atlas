@@ -27,8 +27,20 @@
     }
     function normalizeRecord(input) {
         const source = input && typeof input === 'object' ? input : {};
-        const identity = source.identity && typeof source.identity === 'object' ? source.identity : {};
-        const intelligence = source.intelligence && typeof source.intelligence === 'object' ? source.intelligence : (source.SupplementalIntelligence && typeof source.SupplementalIntelligence === 'object' ? source.SupplementalIntelligence : {});
+        const identity = source.identity && typeof source.identity === 'object' ? source.identity : {
+            manufacturer:source.Manufacturer, model:[source.Model,source.Variant].filter(Boolean).join(' '), displayName:source.Nickname
+        };
+        // The public model view is flat. Adapt its existing guidance rather than
+        // replacing populated knowledge-card sections with empty legacy defaults.
+        const list = value => Array.isArray(value) ? value : value == null || value === '' ? [] : [value];
+        const intelligence = source.intelligence && typeof source.intelligence === 'object' ? source.intelligence : (source.SupplementalIntelligence && typeof source.SupplementalIntelligence === 'object' ? source.SupplementalIntelligence : {
+            signature:source.BScoutSignature, characterNarrative:source.ModelCharacter,
+            ownershipCharacter:source.OwnershipCharacter, designLineage:source.DesignLineage,
+            strengths:list(source.Strengths), tradeoffs:list(source.TradeOffs || source.Weaknesses),
+            bestMissions:list(source.BestFor), lessSuitableIf:list(source.AvoidIf),
+            inspectionPriorities:list(source.InspectionFocus),
+            crewFit:{bestFor:list(source.CrewFitBestFor),cautions:list(source.CrewFitCautions)}
+        });
         return {
             schemaVersion: Number(source.schemaVersion) || SCHEMA_VERSION,
             identity: {
@@ -70,8 +82,8 @@
             },
             evidence: asArray(source.evidence || source.SupplementalEvidence).map(normalizeEvidence).filter(item => item.claim),
             confidence: enumValue(source.confidence || source.SupplementalConfidence, CONFIDENCE_LEVELS, 'Unknown'),
-            updatedAt: (source.updatedAt || source.SupplementalUpdatedAt) ? text(source.updatedAt || source.SupplementalUpdatedAt) : null,
-            revision: Number(source.revision || source.SupplementalRevision) || 1
+            updatedAt: (source.updatedAt || source.SupplementalUpdatedAt || source.LastUpdated) ? text(source.updatedAt || source.SupplementalUpdatedAt || source.LastUpdated) : null,
+            revision: Number(source.revision || source.SupplementalRevision || source.Revision) || 1
         };
     }
     function validateRecord(input) {
@@ -85,7 +97,7 @@
     function findRecord(records, boatModelId) {
         const id = text(boatModelId);
         if (!id || !Array.isArray(records)) return null;
-        const found = records.find(item => normalizeRecord(item).identity.boatModelId === id);
+        const found = records.find(item => text(item.BoatModelID || item.identity?.boatModelId || item.identity?.BoatModelID) === id);
         return found ? normalizeRecord(found) : null;
     }
     function validateCollection(records) {
