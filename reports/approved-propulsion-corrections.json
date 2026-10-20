@@ -1,0 +1,167 @@
+{
+  "approval": "Owner approved the eight propulsion proposals on 2026-10-20; deployment not authorized.",
+  "changes": [
+    {
+      "BoatModelID": "CHCR-CALYPSO-30",
+      "name": "Chris-Craft Calypso 30",
+      "field": "MechanicalPropulsionCode",
+      "expectedValue": null,
+      "proposedValue": "mechanical_propulsion.outboard",
+      "confidence": "high",
+      "scope": {
+        "firstYear": 2017,
+        "lastYear": null,
+        "appliesTo": "Original named model/variant design only; no assertion about individual repowered vessels",
+        "basis": "Explicit model-specific design category, not generalization from one performance package"
+      },
+      "evidenceRefs": [
+        "HMY:CHCR-CALYPSO-30",
+        "CC-C30"
+      ],
+      "rationale": "Distinct outboard dual-console design; Yamaha and Mercury packages change engine make, not the drive category.",
+      "approvalRequiredBeforeApplication": true
+    },
+    {
+      "BoatModelID": "CHCR-CATALINA-30",
+      "name": "Chris-Craft Catalina 30",
+      "field": "MechanicalPropulsionCode",
+      "expectedValue": null,
+      "proposedValue": "mechanical_propulsion.outboard",
+      "confidence": "high",
+      "scope": {
+        "firstYear": 2018,
+        "lastYear": null,
+        "appliesTo": "Original named model/variant design only; no assertion about individual repowered vessels",
+        "basis": "Explicit model-specific design category, not generalization from one performance package"
+      },
+      "evidenceRefs": [
+        "HMY:CHCR-CATALINA-30",
+        "CC-CAT30"
+      ],
+      "rationale": "Distinct Catalina 30 outboard centre-console design. Debut-year discrepancy retained for review; no identity/year change.",
+      "approvalRequiredBeforeApplication": true
+    },
+    {
+      "BoatModelID": "CHCR-CATALINA-34",
+      "name": "Chris-Craft Catalina 34",
+      "field": "MechanicalPropulsionCode",
+      "expectedValue": null,
+      "proposedValue": "mechanical_propulsion.outboard",
+      "confidence": "high",
+      "scope": {
+        "firstYear": 2015,
+        "lastYear": null,
+        "appliesTo": "Original named model/variant design only; no assertion about individual repowered vessels",
+        "basis": "Explicit model-specific design category, not generalization from one performance package"
+      },
+      "evidenceRefs": [
+        "HMY:CHCR-CATALINA-34",
+        "CC-CAT34"
+      ],
+      "rationale": "Outboard design has documented two- and three-engine choices. Only the common drive category is proposed.",
+      "approvalRequiredBeforeApplication": true
+    },
+    {
+      "BoatModelID": "CHCR-CALYPSO-35",
+      "name": "Chris-Craft Calypso 35",
+      "field": "MechanicalPropulsionCode",
+      "expectedValue": null,
+      "proposedValue": "mechanical_propulsion.outboard",
+      "confidence": "high",
+      "scope": {
+        "firstYear": 2021,
+        "lastYear": null,
+        "appliesTo": "Original named model/variant design only; no assertion about individual repowered vessels",
+        "basis": "Explicit model-specific design category, not generalization from one performance package"
+      },
+      "evidenceRefs": [
+        "HMY:CHCR-CALYPSO-35",
+        "CC-C35"
+      ],
+      "rationale": "Earlier triple and current twin packages are outboards. No engine-count value is proposed.",
+      "approvalRequiredBeforeApplication": true
+    },
+    {
+      "BoatModelID": "SRAY-320-SD-OB",
+      "name": "Sea Ray 320 Sundancer Outboard",
+      "field": "MechanicalPropulsionCode",
+      "expectedValue": null,
+      "proposedValue": "mechanical_propulsion.outboard",
+      "confidence": "high",
+      "scope": {
+        "firstYear": 2020,
+        "lastYear": null,
+        "appliesTo": "Original named model/variant design only; no assertion about individual repowered vessels",
+        "basis": "Explicit model-specific design category, not generalization from one performance package"
+      },
+      "evidenceRefs": [
+        "HMY:SRAY-320-SD-OB",
+        "SR-320OB",
+        "SR-320OB23"
+      ],
+      "rationale": "Catalogue explicitly identifies the Outboard variant; not the separate sterndrive boat. Twin/triple differences do not change drive category.",
+      "approvalRequiredBeforeApplication": true
+    },
+    {
+      "BoatModelID": "SRAY-370-SD-OB",
+      "name": "Sea Ray 370 Sundancer Outboard",
+      "field": "MechanicalPropulsionCode",
+      "expectedValue": null,
+      "proposedValue": "mechanical_propulsion.outboard",
+      "confidence": "high",
+      "scope": {
+        "firstYear": 2022,
+        "lastYear": null,
+        "appliesTo": "Original named model/variant design only; no assertion about individual repowered vessels",
+        "basis": "Explicit model-specific design category, not generalization from one performance package"
+      },
+      "evidenceRefs": [
+        "HMY:SRAY-370-SD-OB",
+        "SR-370OB",
+        "SR-CHOICES"
+      ],
+      "rationale": "Catalogue explicitly identifies the Outboard variant; no values copied from other Sundancer generations or variants.",
+      "approvalRequiredBeforeApplication": true
+    },
+    {
+      "BoatModelID": "SRAY-400-SLX-OB",
+      "name": "Sea Ray 400 SLX Outboard",
+      "field": "MechanicalPropulsionCode",
+      "expectedValue": null,
+      "proposedValue": "mechanical_propulsion.outboard",
+      "confidence": "high",
+      "scope": {
+        "firstYear": 2017,
+        "lastYear": null,
+        "appliesTo": "Original named model/variant design only; no assertion about individual repowered vessels",
+        "basis": "Explicit model-specific design category, not generalization from one performance package"
+      },
+      "evidenceRefs": [
+        "HMY:SRAY-400-SLX-OB",
+        "SR-400OB"
+      ],
+      "rationale": "Factory distinguishes the Outboard variant from sterndrive SLX 400. Mixed HMY narrative was not used to assign sterndrive.",
+      "approvalRequiredBeforeApplication": true
+    },
+    {
+      "BoatModelID": "SRAY-370-VEN",
+      "name": "Sea Ray 370 Venture",
+      "field": "MechanicalPropulsionCode",
+      "expectedValue": null,
+      "proposedValue": "mechanical_propulsion.outboard",
+      "confidence": "high",
+      "scope": {
+        "firstYear": 2013,
+        "lastYear": 2015,
+        "appliesTo": "Original named model/variant design only; no assertion about individual repowered vessels",
+        "basis": "Explicit model-specific design category, not generalization from one performance package"
+      },
+      "evidenceRefs": [
+        "HMY:SRAY-370-VEN",
+        "VENTURE13"
+      ],
+      "rationale": "Concealed outboard propulsion is integral to the 2013–15 Venture design, explicitly described in its model reference and original launch test.",
+      "approvalRequiredBeforeApplication": true
+    }
+  ]
+}

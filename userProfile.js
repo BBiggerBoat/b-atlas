@@ -1,6 +1,11 @@
 let currentSearchProfile = null;
 
 function buildUserProfile() {
+    if(window.BScoutSearchState){
+        const settings=window.BScoutSearchState.readFromDocument(document);
+        if(currentSearchProfile)currentSearchProfile.SearchSettings=settings;
+        return settings;
+    }
     const textSearch =
         document.getElementById("textSearch")?.value?.trim().toLowerCase() || "";
 

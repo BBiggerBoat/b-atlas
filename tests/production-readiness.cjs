@@ -8,7 +8,10 @@ const original=JSON.parse(cp.execFileSync('git',['show',base+':boatmodels.json']
 const current=read('boatmodels.json'),rules=read('data/canonical/ownership.json');
 const expected=structuredClone(original);
 for(const change of read('reports/canonical-url-migration.json'))Object.assign(expected.find(m=>m.BoatModelID===change.BoatModelID),change.after);
-assert.deepEqual(current,expected,'Data differs from the original Git baseline beyond the five approved URL repairs');
+const propulsionApprovals=read('reports/approved-propulsion-corrections.json').changes;
+assert.equal(propulsionApprovals.length,8);assert.equal(new Set(propulsionApprovals.map(c=>c.BoatModelID)).size,8);
+for(const change of propulsionApprovals){assert.equal(change.field,'MechanicalPropulsionCode');assert.equal(change.expectedValue,null);assert.equal(change.proposedValue,'mechanical_propulsion.outboard');const row=expected.find(m=>m.BoatModelID===change.BoatModelID);assert.equal(row[change.field],change.expectedValue);row[change.field]=change.proposedValue;}
+assert.deepEqual(current,expected,'Data differs beyond approved URL and propulsion corrections');
 assert.equal(current.length,995);assert.equal(new Set(current.map(m=>m.BoatModelID)).size,995);
 assert.equal(new Set(current.map(m=>m.CanonicalSlug)).size,995);
 assert.deepEqual(require('../developer/canonical-store.cjs').load(),current);
@@ -30,7 +33,7 @@ const plain=x=>JSON.parse(JSON.stringify(x));
  assert.equal(contributionCatalog.length,995);assert.equal(new Set(contributionCatalog.map(m=>m.id)).size,995);
  assert.deepEqual(contributionCatalog.map(m=>m.id).sort(),current.map(m=>m.BoatModelID).sort());
  const phaseIndex=new Map();for(const p of data.productionPhases){if(!phaseIndex.has(p.BoatModelID))phaseIndex.set(p.BoatModelID,[]);phaseIndex.get(p.BoatModelID).push(p);}
- const baseline=original.map(b=>ctx.BScoutDataRepository.applyCanonicalCompatibility({...b,ProductionPhases:phaseIndex.get(b.BoatModelID)||[]}));
+ const baseline=expected.map(b=>ctx.BScoutDataRepository.applyCanonicalCompatibility({...b,ProductionPhases:phaseIndex.get(b.BoatModelID)||[]}));
  const profiles=[{},...read('data/search-profiles.json').map(p=>p.SearchSettings),{fuels:['Diesel']},{fuels:['Gasoline']},{propulsion:['Shaft']},{propulsion:['Outboard']},{engineCounts:[1]},{engineCounts:[2]},{minLength:25,maxLength:40},{maxBeam:12},{hullTypes:['Displacement']},{flybridge:'No'},{trailerable:'Yes'},...['Albin 25','Mainship','CHAP-307-SSX-21','SRAY-340-SD-G2'].map(textSearch=>({textSearch}))];
  let evaluations=0;
  for(const profile of profiles){

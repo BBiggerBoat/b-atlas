@@ -102,7 +102,7 @@
             const profile = global.BAtlasCanonical?.getUnitProfile?.() || "imperial";
             return profile === "metric" ? value / 0.3048 : value;
         };
-        return {
+        const captured = {
             textSearch: doc.getElementById("textSearch")?.value?.trim().toLowerCase() || "",
             routes: checkedValues(".routeFilter:checked"),
             cruisingIntent: [],
@@ -132,11 +132,29 @@
             crewComposition: doc.getElementById("crewComposition")?.value || "",
             tallestCrewHeight: numericValue("tallestCrewHeight"),
             guestFrequency: doc.getElementById("guestFrequency")?.value || "",
-            featurePriorities: Array.from(doc.querySelectorAll(".featurePriority")).reduce((result, node) => {
+            featurePriorities: Array.from(doc.querySelectorAll("#discoverView .featurePriority")).reduce((result, node) => {
                 if (node.value) result[node.dataset.feature] = node.value;
                 return result;
             }, {})
         };
+        const controls = {textSearch:'textSearch',minLength:'minLength',maxLength:'maxLength',minBeam:'minBeam',maxBeam:'maxBeam',maxDraft:'maxDraft',maxAirDraft:'maxAirDraft',flybridge:'flybridgeFilter',sideDecks:'sideDeckFilter',trailerable:'trailerFilter',greatLoop:'loopFilter',minimumBerths:'minimumBerths',minimumCabins:'minimumCabins',minimumHeads:'minimumHeads',crewComposition:'crewComposition',tallestCrewHeight:'tallestCrewHeight',guestFrequency:'guestFrequency'};
+        const groups = {routes:'.routeFilter',styles:'.styleFilter',boatFamilies:'.familyFilter',configurations:'.configurationFilter',constructionMaterials:'.constructionFilter',hullTypes:'.hullFilter',fuels:'.fuelFilter',propulsion:'.propulsionFilter',engineCounts:'.engineCountFilter',featurePriorities:'.featurePriority'};
+        for(const [key,id] of Object.entries(controls)) {
+            if(!doc.getElementById(id))captured[key]=clone(state.searchSettings[key]);
+            else if(['maxDraft','maxAirDraft'].includes(key))captured[key]=lengthFeetValue(id);
+            else if(['minimumBerths','minimumCabins','minimumHeads'].includes(key))captured[key]=numericValue(id);
+        }
+        for(const [key,selector] of Object.entries(groups)){
+            const nodes=Array.from(doc.querySelectorAll(`#discoverView ${selector}`));
+            if(!nodes.length)captured[key]=clone(state.searchSettings[key]);
+            else if(Array.isArray(captured[key])){
+                const visible=new Set(nodes.map(node=>String(node.value)));
+                captured[key].push(...(state.searchSettings[key]||[]).filter(value=>!visible.has(String(value))));
+            }
+        }
+        if(!doc.querySelectorAll('#discoverView .engineCountFilter').length)captured.twinEngines=state.searchSettings.twinEngines;
+        // Preserve saved requirements which this screen cannot edit; Clear explicitly resets them.
+        return Object.assign({},clone(state.searchSettings),captured);
     }
 
     function captureFromDocument(documentRef, options) {

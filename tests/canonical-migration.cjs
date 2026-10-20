@@ -12,7 +12,18 @@ for(const change of read('reports/canonical-url-migration.json')){
  Object.assign(row,change.after);
 }
 assert.equal(models.length,995);
-assert.deepEqual(models,expected,'Every model field must survive except the documented URL corrections');
+const approved=read('reports/approved-propulsion-corrections.json').changes;
+assert.equal(approved.length,8);
+assert.equal(new Set(approved.map(c=>c.BoatModelID)).size,8);
+for(const change of approved){
+ assert.equal(change.field,'MechanicalPropulsionCode');
+ assert.equal(change.expectedValue,null);
+ assert.equal(change.proposedValue,'mechanical_propulsion.outboard');
+ const row=expected.find(m=>m.BoatModelID===change.BoatModelID);
+ assert(row);assert.equal(row[change.field],change.expectedValue);
+ row[change.field]=change.proposedValue;
+}
+assert.deepEqual(models,expected,'Every model field must survive except documented URL corrections and eight approved propulsion corrections');
 assert.deepEqual(read('boatmodels.json'),models,'Stale generated view');
 assert.deepEqual(read('data/registry/boat-registry.json'),read(baseline+'data/registry/boat-registry.json'),'Identity decisions changed');
 const checksums=read(baseline+'manifest.json');

@@ -18,7 +18,7 @@
     "generate:models": "node developer/canonical-store.cjs",
     "check:canonical": "node developer/canonical-store.cjs --check",
     "inventory:canonical": "node tools/inventory-canonical.cjs",
-    "test": "node tests/canonical-migration.cjs && node tests/canonical-integration.cjs && node tests/filter-behavior-regression.cjs && node tests/correlated-config-regression.cjs && node tests/community-overlay-regression.cjs",
+    "test": "node tests/canonical-migration.cjs && node tests/canonical-integration.cjs && node tests/filter-behavior-regression.cjs && node tests/correlated-config-regression.cjs && node tests/community-overlay-regression.cjs && node tests/phase3-exclusion.cjs",
     "test:deployment": "node tests/canonical-deployment.cjs",
     "verify:production": "npm run check:canonical && npm test && node tests/canonical-admin.cjs && node tests/canonical-pages.cjs && npm run build:public && npm run test:deployment && node tests/production-readiness.cjs && node tests/production-worker.cjs && npm run guard:baseline && node developer/check-secrets.js"
   },

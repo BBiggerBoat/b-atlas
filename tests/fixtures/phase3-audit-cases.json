@@ -1,0 +1,1823 @@
+[
+  {
+    "id": "length-min-null",
+    "kind": "filter",
+    "boat": {
+      "LOA": null
+    },
+    "profile": {
+      "minLength": 30
+    },
+    "expectedRetained": true,
+    "actualRetained": true,
+    "reasons": [],
+    "conforms": true
+  },
+  {
+    "id": "length-min-incompatible",
+    "kind": "filter",
+    "boat": {
+      "LOA": 5
+    },
+    "profile": {
+      "minLength": 30
+    },
+    "expectedRetained": false,
+    "actualRetained": false,
+    "reasons": [
+      "min-length"
+    ],
+    "conforms": true
+  },
+  {
+    "id": "length-min-compatible",
+    "kind": "filter",
+    "boat": {
+      "LOA": 12
+    },
+    "profile": {
+      "minLength": 30
+    },
+    "expectedRetained": true,
+    "actualRetained": true,
+    "reasons": [],
+    "conforms": true
+  },
+  {
+    "id": "length-max-null",
+    "kind": "filter",
+    "boat": {
+      "LOA": null
+    },
+    "profile": {
+      "maxLength": 30
+    },
+    "expectedRetained": true,
+    "actualRetained": true,
+    "reasons": [],
+    "conforms": true
+  },
+  {
+    "id": "length-max-incompatible",
+    "kind": "filter",
+    "boat": {
+      "LOA": 12
+    },
+    "profile": {
+      "maxLength": 30
+    },
+    "expectedRetained": false,
+    "actualRetained": false,
+    "reasons": [
+      "max-length"
+    ],
+    "conforms": true
+  },
+  {
+    "id": "length-max-compatible",
+    "kind": "filter",
+    "boat": {
+      "LOA": 5
+    },
+    "profile": {
+      "maxLength": 30
+    },
+    "expectedRetained": true,
+    "actualRetained": true,
+    "reasons": [],
+    "conforms": true
+  },
+  {
+    "id": "beam-min-null",
+    "kind": "filter",
+    "boat": {
+      "Beam": null
+    },
+    "profile": {
+      "minBeam": 10
+    },
+    "expectedRetained": true,
+    "actualRetained": true,
+    "reasons": [],
+    "conforms": true
+  },
+  {
+    "id": "beam-min-incompatible",
+    "kind": "filter",
+    "boat": {
+      "Beam": 2
+    },
+    "profile": {
+      "minBeam": 10
+    },
+    "expectedRetained": false,
+    "actualRetained": false,
+    "reasons": [
+      "min-beam"
+    ],
+    "conforms": true
+  },
+  {
+    "id": "beam-min-compatible",
+    "kind": "filter",
+    "boat": {
+      "Beam": 4
+    },
+    "profile": {
+      "minBeam": 10
+    },
+    "expectedRetained": true,
+    "actualRetained": true,
+    "reasons": [],
+    "conforms": true
+  },
+  {
+    "id": "beam-max-null",
+    "kind": "filter",
+    "boat": {
+      "Beam": null
+    },
+    "profile": {
+      "maxBeam": 10
+    },
+    "expectedRetained": true,
+    "actualRetained": true,
+    "reasons": [],
+    "conforms": true
+  },
+  {
+    "id": "beam-max-incompatible",
+    "kind": "filter",
+    "boat": {
+      "Beam": 4
+    },
+    "profile": {
+      "maxBeam": 10
+    },
+    "expectedRetained": false,
+    "actualRetained": false,
+    "reasons": [
+      "max-beam"
+    ],
+    "conforms": true
+  },
+  {
+    "id": "beam-max-compatible",
+    "kind": "filter",
+    "boat": {
+      "Beam": 2
+    },
+    "profile": {
+      "maxBeam": 10
+    },
+    "expectedRetained": true,
+    "actualRetained": true,
+    "reasons": [],
+    "conforms": true
+  },
+  {
+    "id": "draft-max-null",
+    "kind": "filter",
+    "boat": {
+      "Draft": null
+    },
+    "profile": {
+      "maxDraft": 5
+    },
+    "expectedRetained": true,
+    "actualRetained": true,
+    "reasons": [],
+    "conforms": true
+  },
+  {
+    "id": "draft-max-incompatible",
+    "kind": "filter",
+    "boat": {
+      "Draft": 2
+    },
+    "profile": {
+      "maxDraft": 5
+    },
+    "expectedRetained": false,
+    "actualRetained": false,
+    "reasons": [
+      "max-draft"
+    ],
+    "conforms": true
+  },
+  {
+    "id": "draft-max-compatible",
+    "kind": "filter",
+    "boat": {
+      "Draft": 1
+    },
+    "profile": {
+      "maxDraft": 5
+    },
+    "expectedRetained": true,
+    "actualRetained": true,
+    "reasons": [],
+    "conforms": true
+  },
+  {
+    "id": "air-max-null",
+    "kind": "filter",
+    "boat": {
+      "AirDraft": null
+    },
+    "profile": {
+      "maxAirDraft": 10
+    },
+    "expectedRetained": true,
+    "actualRetained": true,
+    "reasons": [],
+    "conforms": true
+  },
+  {
+    "id": "air-max-incompatible",
+    "kind": "filter",
+    "boat": {
+      "AirDraft": 4
+    },
+    "profile": {
+      "maxAirDraft": 10
+    },
+    "expectedRetained": false,
+    "actualRetained": false,
+    "reasons": [
+      "max-air-draft"
+    ],
+    "conforms": true
+  },
+  {
+    "id": "air-max-compatible",
+    "kind": "filter",
+    "boat": {
+      "AirDraft": 2
+    },
+    "profile": {
+      "maxAirDraft": 10
+    },
+    "expectedRetained": true,
+    "actualRetained": true,
+    "reasons": [],
+    "conforms": true
+  },
+  {
+    "id": "fuel-null",
+    "kind": "filter",
+    "boat": {
+      "FuelCode": null
+    },
+    "profile": {
+      "fuels": [
+        "Diesel"
+      ]
+    },
+    "expectedRetained": true,
+    "actualRetained": true,
+    "reasons": [],
+    "conforms": true
+  },
+  {
+    "id": "fuel-incompatible",
+    "kind": "filter",
+    "boat": {
+      "FuelCode": "fuel.gasoline"
+    },
+    "profile": {
+      "fuels": [
+        "Diesel"
+      ]
+    },
+    "expectedRetained": false,
+    "actualRetained": false,
+    "reasons": [
+      "fuel"
+    ],
+    "conforms": true
+  },
+  {
+    "id": "fuel-compatible",
+    "kind": "filter",
+    "boat": {
+      "FuelCode": "fuel.diesel"
+    },
+    "profile": {
+      "fuels": [
+        "Diesel"
+      ]
+    },
+    "expectedRetained": true,
+    "actualRetained": true,
+    "reasons": [],
+    "conforms": true
+  },
+  {
+    "id": "propulsion-null",
+    "kind": "filter",
+    "boat": {
+      "MechanicalPropulsionCode": null
+    },
+    "profile": {
+      "propulsion": [
+        "Shaft"
+      ]
+    },
+    "expectedRetained": true,
+    "actualRetained": true,
+    "reasons": [],
+    "conforms": true
+  },
+  {
+    "id": "propulsion-incompatible",
+    "kind": "filter",
+    "boat": {
+      "MechanicalPropulsionCode": "mechanical_propulsion.outboard"
+    },
+    "profile": {
+      "propulsion": [
+        "Shaft"
+      ]
+    },
+    "expectedRetained": false,
+    "actualRetained": false,
+    "reasons": [
+      "propulsion"
+    ],
+    "conforms": true
+  },
+  {
+    "id": "propulsion-compatible",
+    "kind": "filter",
+    "boat": {
+      "MechanicalPropulsionCode": "mechanical_propulsion.shaft"
+    },
+    "profile": {
+      "propulsion": [
+        "Shaft"
+      ]
+    },
+    "expectedRetained": true,
+    "actualRetained": true,
+    "reasons": [],
+    "conforms": true
+  },
+  {
+    "id": "engine-count-null",
+    "kind": "filter",
+    "boat": {
+      "EngineCount": null
+    },
+    "profile": {
+      "engineCounts": [
+        1
+      ]
+    },
+    "expectedRetained": true,
+    "actualRetained": true,
+    "reasons": [],
+    "conforms": true
+  },
+  {
+    "id": "engine-count-incompatible",
+    "kind": "filter",
+    "boat": {
+      "EngineCount": 2
+    },
+    "profile": {
+      "engineCounts": [
+        1
+      ]
+    },
+    "expectedRetained": false,
+    "actualRetained": false,
+    "reasons": [
+      "engine-count"
+    ],
+    "conforms": true
+  },
+  {
+    "id": "engine-count-compatible",
+    "kind": "filter",
+    "boat": {
+      "EngineCount": 1
+    },
+    "profile": {
+      "engineCounts": [
+        1
+      ]
+    },
+    "expectedRetained": true,
+    "actualRetained": true,
+    "reasons": [],
+    "conforms": true
+  },
+  {
+    "id": "hull-null",
+    "kind": "filter",
+    "boat": {
+      "HullBehaviourCode": null
+    },
+    "profile": {
+      "hullTypes": [
+        "Planing"
+      ]
+    },
+    "expectedRetained": true,
+    "actualRetained": true,
+    "reasons": [],
+    "conforms": true
+  },
+  {
+    "id": "hull-incompatible",
+    "kind": "filter",
+    "boat": {
+      "HullBehaviourCode": "hull_behaviour.displacement"
+    },
+    "profile": {
+      "hullTypes": [
+        "Planing"
+      ]
+    },
+    "expectedRetained": false,
+    "actualRetained": false,
+    "reasons": [
+      "hull-type"
+    ],
+    "conforms": true
+  },
+  {
+    "id": "hull-compatible",
+    "kind": "filter",
+    "boat": {
+      "HullBehaviourCode": "hull_behaviour.planing"
+    },
+    "profile": {
+      "hullTypes": [
+        "Planing"
+      ]
+    },
+    "expectedRetained": true,
+    "actualRetained": true,
+    "reasons": [],
+    "conforms": true
+  },
+  {
+    "id": "style-null",
+    "kind": "filter",
+    "boat": {
+      "Style": null
+    },
+    "profile": {
+      "styles": [
+        "Trawler"
+      ]
+    },
+    "expectedRetained": true,
+    "actualRetained": true,
+    "reasons": [],
+    "conforms": true
+  },
+  {
+    "id": "style-incompatible",
+    "kind": "filter",
+    "boat": {
+      "Style": "Express Cruiser"
+    },
+    "profile": {
+      "styles": [
+        "Trawler"
+      ]
+    },
+    "expectedRetained": false,
+    "actualRetained": false,
+    "reasons": [
+      "style"
+    ],
+    "conforms": true
+  },
+  {
+    "id": "style-compatible",
+    "kind": "filter",
+    "boat": {
+      "Style": "Trawler"
+    },
+    "profile": {
+      "styles": [
+        "Trawler"
+      ]
+    },
+    "expectedRetained": true,
+    "actualRetained": true,
+    "reasons": [],
+    "conforms": true
+  },
+  {
+    "id": "family-null",
+    "kind": "filter",
+    "boat": {
+      "BoatFamilyCode": null
+    },
+    "profile": {
+      "boatFamilies": [
+        "Trawler"
+      ]
+    },
+    "expectedRetained": true,
+    "actualRetained": true,
+    "reasons": [],
+    "conforms": true
+  },
+  {
+    "id": "family-incompatible",
+    "kind": "filter",
+    "boat": {
+      "BoatFamilyCode": "boat_family.runabout"
+    },
+    "profile": {
+      "boatFamilies": [
+        "Trawler"
+      ]
+    },
+    "expectedRetained": false,
+    "actualRetained": false,
+    "reasons": [
+      "boat-family"
+    ],
+    "conforms": true
+  },
+  {
+    "id": "family-compatible",
+    "kind": "filter",
+    "boat": {
+      "BoatFamilyCode": "boat_family.trawler"
+    },
+    "profile": {
+      "boatFamilies": [
+        "Trawler"
+      ]
+    },
+    "expectedRetained": true,
+    "actualRetained": true,
+    "reasons": [],
+    "conforms": true
+  },
+  {
+    "id": "configuration-null",
+    "kind": "filter",
+    "boat": {
+      "Configuration": null
+    },
+    "profile": {
+      "configurations": [
+        "Express Cruiser"
+      ]
+    },
+    "expectedRetained": true,
+    "actualRetained": true,
+    "reasons": [],
+    "conforms": true
+  },
+  {
+    "id": "configuration-incompatible",
+    "kind": "filter",
+    "boat": {
+      "Configuration": "Classic Trawler"
+    },
+    "profile": {
+      "configurations": [
+        "Express Cruiser"
+      ]
+    },
+    "expectedRetained": false,
+    "actualRetained": false,
+    "reasons": [
+      "configuration"
+    ],
+    "conforms": true
+  },
+  {
+    "id": "configuration-compatible",
+    "kind": "filter",
+    "boat": {
+      "Configuration": "Express Cruiser"
+    },
+    "profile": {
+      "configurations": [
+        "Express Cruiser"
+      ]
+    },
+    "expectedRetained": true,
+    "actualRetained": true,
+    "reasons": [],
+    "conforms": true
+  },
+  {
+    "id": "construction-null",
+    "kind": "filter",
+    "boat": {
+      "Construction": null
+    },
+    "profile": {
+      "constructionMaterials": [
+        "Steel"
+      ]
+    },
+    "expectedRetained": true,
+    "actualRetained": true,
+    "reasons": [],
+    "conforms": true
+  },
+  {
+    "id": "construction-incompatible",
+    "kind": "filter",
+    "boat": {
+      "Construction": "Fiberglass"
+    },
+    "profile": {
+      "constructionMaterials": [
+        "Steel"
+      ]
+    },
+    "expectedRetained": false,
+    "actualRetained": false,
+    "reasons": [
+      "construction-material"
+    ],
+    "conforms": true
+  },
+  {
+    "id": "construction-compatible",
+    "kind": "filter",
+    "boat": {
+      "Construction": "Steel"
+    },
+    "profile": {
+      "constructionMaterials": [
+        "Steel"
+      ]
+    },
+    "expectedRetained": true,
+    "actualRetained": true,
+    "reasons": [],
+    "conforms": true
+  },
+  {
+    "id": "flybridge-null",
+    "kind": "filter",
+    "boat": {
+      "Flybridge": null
+    },
+    "profile": {
+      "flybridge": "Yes"
+    },
+    "expectedRetained": true,
+    "actualRetained": true,
+    "reasons": [],
+    "conforms": true
+  },
+  {
+    "id": "flybridge-incompatible",
+    "kind": "filter",
+    "boat": {
+      "Flybridge": "No"
+    },
+    "profile": {
+      "flybridge": "Yes"
+    },
+    "expectedRetained": false,
+    "actualRetained": false,
+    "reasons": [
+      "flybridge"
+    ],
+    "conforms": true
+  },
+  {
+    "id": "flybridge-compatible",
+    "kind": "filter",
+    "boat": {
+      "Flybridge": "Yes"
+    },
+    "profile": {
+      "flybridge": "Yes"
+    },
+    "expectedRetained": true,
+    "actualRetained": true,
+    "reasons": [],
+    "conforms": true
+  },
+  {
+    "id": "side-decks-null",
+    "kind": "filter",
+    "boat": {
+      "SideDecksCode": null
+    },
+    "profile": {
+      "sideDecks": "Wide"
+    },
+    "expectedRetained": true,
+    "actualRetained": true,
+    "reasons": [],
+    "conforms": true
+  },
+  {
+    "id": "side-decks-incompatible",
+    "kind": "filter",
+    "boat": {
+      "SideDecksCode": "side_decks.narrow"
+    },
+    "profile": {
+      "sideDecks": "Wide"
+    },
+    "expectedRetained": false,
+    "actualRetained": false,
+    "reasons": [
+      "side-decks"
+    ],
+    "conforms": true
+  },
+  {
+    "id": "side-decks-compatible",
+    "kind": "filter",
+    "boat": {
+      "SideDecksCode": "side_decks.wide"
+    },
+    "profile": {
+      "sideDecks": "Wide"
+    },
+    "expectedRetained": true,
+    "actualRetained": true,
+    "reasons": [],
+    "conforms": true
+  },
+  {
+    "id": "trailer-null",
+    "kind": "filter",
+    "boat": {
+      "Trailerable": null
+    },
+    "profile": {
+      "trailerable": "Yes"
+    },
+    "expectedRetained": true,
+    "actualRetained": true,
+    "reasons": [],
+    "conforms": true
+  },
+  {
+    "id": "trailer-incompatible",
+    "kind": "filter",
+    "boat": {
+      "Trailerable": "No"
+    },
+    "profile": {
+      "trailerable": "Yes"
+    },
+    "expectedRetained": false,
+    "actualRetained": false,
+    "reasons": [
+      "trailerable"
+    ],
+    "conforms": true
+  },
+  {
+    "id": "trailer-compatible",
+    "kind": "filter",
+    "boat": {
+      "Trailerable": "Yes"
+    },
+    "profile": {
+      "trailerable": "Yes"
+    },
+    "expectedRetained": true,
+    "actualRetained": true,
+    "reasons": [],
+    "conforms": true
+  },
+  {
+    "id": "loop-null",
+    "kind": "filter",
+    "boat": {
+      "GreatLoopSuitable": null
+    },
+    "profile": {
+      "greatLoop": "Yes"
+    },
+    "expectedRetained": true,
+    "actualRetained": true,
+    "reasons": [],
+    "conforms": true
+  },
+  {
+    "id": "loop-incompatible",
+    "kind": "filter",
+    "boat": {
+      "GreatLoopSuitable": "No"
+    },
+    "profile": {
+      "greatLoop": "Yes"
+    },
+    "expectedRetained": false,
+    "actualRetained": false,
+    "reasons": [
+      "great-loop"
+    ],
+    "conforms": true
+  },
+  {
+    "id": "loop-compatible",
+    "kind": "filter",
+    "boat": {
+      "GreatLoopSuitable": "Yes"
+    },
+    "profile": {
+      "greatLoop": "Yes"
+    },
+    "expectedRetained": true,
+    "actualRetained": true,
+    "reasons": [],
+    "conforms": true
+  },
+  {
+    "id": "berths-null",
+    "kind": "filter",
+    "boat": {
+      "Berths": null
+    },
+    "profile": {
+      "minimumBerths": 4
+    },
+    "expectedRetained": true,
+    "actualRetained": true,
+    "reasons": [],
+    "conforms": true
+  },
+  {
+    "id": "berths-incompatible",
+    "kind": "filter",
+    "boat": {
+      "Berths": 2
+    },
+    "profile": {
+      "minimumBerths": 4
+    },
+    "expectedRetained": false,
+    "actualRetained": false,
+    "reasons": [
+      "minimum-berths"
+    ],
+    "conforms": true
+  },
+  {
+    "id": "berths-compatible",
+    "kind": "filter",
+    "boat": {
+      "Berths": 4
+    },
+    "profile": {
+      "minimumBerths": 4
+    },
+    "expectedRetained": true,
+    "actualRetained": true,
+    "reasons": [],
+    "conforms": true
+  },
+  {
+    "id": "cabins-null",
+    "kind": "filter",
+    "boat": {
+      "Cabins": null
+    },
+    "profile": {
+      "minimumCabins": 2
+    },
+    "expectedRetained": true,
+    "actualRetained": true,
+    "reasons": [],
+    "conforms": true
+  },
+  {
+    "id": "cabins-incompatible",
+    "kind": "filter",
+    "boat": {
+      "Cabins": 1
+    },
+    "profile": {
+      "minimumCabins": 2
+    },
+    "expectedRetained": false,
+    "actualRetained": false,
+    "reasons": [
+      "minimum-cabins"
+    ],
+    "conforms": true
+  },
+  {
+    "id": "cabins-compatible",
+    "kind": "filter",
+    "boat": {
+      "Cabins": 2
+    },
+    "profile": {
+      "minimumCabins": 2
+    },
+    "expectedRetained": true,
+    "actualRetained": true,
+    "reasons": [],
+    "conforms": true
+  },
+  {
+    "id": "heads-null",
+    "kind": "filter",
+    "boat": {
+      "Heads": null
+    },
+    "profile": {
+      "minimumHeads": 2
+    },
+    "expectedRetained": true,
+    "actualRetained": true,
+    "reasons": [],
+    "conforms": true
+  },
+  {
+    "id": "heads-incompatible",
+    "kind": "filter",
+    "boat": {
+      "Heads": 1
+    },
+    "profile": {
+      "minimumHeads": 2
+    },
+    "expectedRetained": false,
+    "actualRetained": false,
+    "reasons": [
+      "minimum-heads"
+    ],
+    "conforms": true
+  },
+  {
+    "id": "heads-compatible",
+    "kind": "filter",
+    "boat": {
+      "Heads": 2
+    },
+    "profile": {
+      "minimumHeads": 2
+    },
+    "expectedRetained": true,
+    "actualRetained": true,
+    "reasons": [],
+    "conforms": true
+  },
+  {
+    "id": "fuel-unknown-marker",
+    "kind": "filter",
+    "boat": {
+      "FuelCode": "Unknown"
+    },
+    "profile": {
+      "fuels": [
+        "Diesel"
+      ]
+    },
+    "expectedRetained": true,
+    "actualRetained": true,
+    "reasons": [],
+    "conforms": true
+  },
+  {
+    "id": "propulsion-unknown-marker",
+    "kind": "filter",
+    "boat": {
+      "MechanicalPropulsionCode": "Unknown"
+    },
+    "profile": {
+      "propulsion": [
+        "Shaft"
+      ]
+    },
+    "expectedRetained": true,
+    "actualRetained": true,
+    "reasons": [],
+    "conforms": true
+  },
+  {
+    "id": "engine-count-unknown-marker",
+    "kind": "filter",
+    "boat": {
+      "EngineCount": "Unknown"
+    },
+    "profile": {
+      "engineCounts": [
+        1
+      ]
+    },
+    "expectedRetained": true,
+    "actualRetained": false,
+    "reasons": [
+      "engine-count"
+    ],
+    "conforms": false
+  },
+  {
+    "id": "hull-unknown-marker",
+    "kind": "filter",
+    "boat": {
+      "HullBehaviourCode": "Unknown"
+    },
+    "profile": {
+      "hullTypes": [
+        "Planing"
+      ]
+    },
+    "expectedRetained": true,
+    "actualRetained": true,
+    "reasons": [],
+    "conforms": true
+  },
+  {
+    "id": "style-unknown-marker",
+    "kind": "filter",
+    "boat": {
+      "Style": "Unknown"
+    },
+    "profile": {
+      "styles": [
+        "Trawler"
+      ]
+    },
+    "expectedRetained": true,
+    "actualRetained": false,
+    "reasons": [
+      "style"
+    ],
+    "conforms": false
+  },
+  {
+    "id": "family-unknown-marker",
+    "kind": "filter",
+    "boat": {
+      "BoatFamilyCode": "Unknown"
+    },
+    "profile": {
+      "boatFamilies": [
+        "Trawler"
+      ]
+    },
+    "expectedRetained": true,
+    "actualRetained": false,
+    "reasons": [
+      "boat-family"
+    ],
+    "conforms": false
+  },
+  {
+    "id": "configuration-unknown-marker",
+    "kind": "filter",
+    "boat": {
+      "Configuration": "Unknown"
+    },
+    "profile": {
+      "configurations": [
+        "Express Cruiser"
+      ]
+    },
+    "expectedRetained": true,
+    "actualRetained": false,
+    "reasons": [
+      "configuration"
+    ],
+    "conforms": false
+  },
+  {
+    "id": "construction-unknown-marker",
+    "kind": "filter",
+    "boat": {
+      "Construction": "Unknown"
+    },
+    "profile": {
+      "constructionMaterials": [
+        "Steel"
+      ]
+    },
+    "expectedRetained": true,
+    "actualRetained": false,
+    "reasons": [
+      "construction-material"
+    ],
+    "conforms": false
+  },
+  {
+    "id": "flybridge-unknown-marker",
+    "kind": "filter",
+    "boat": {
+      "Flybridge": "Unknown"
+    },
+    "profile": {
+      "flybridge": "Yes"
+    },
+    "expectedRetained": true,
+    "actualRetained": false,
+    "reasons": [
+      "flybridge"
+    ],
+    "conforms": false
+  },
+  {
+    "id": "side-decks-unknown-marker",
+    "kind": "filter",
+    "boat": {
+      "SideDecksCode": "Unknown"
+    },
+    "profile": {
+      "sideDecks": "Wide"
+    },
+    "expectedRetained": true,
+    "actualRetained": false,
+    "reasons": [
+      "side-decks"
+    ],
+    "conforms": false
+  },
+  {
+    "id": "trailer-unknown-marker",
+    "kind": "filter",
+    "boat": {
+      "Trailerable": "Unknown"
+    },
+    "profile": {
+      "trailerable": "Yes"
+    },
+    "expectedRetained": true,
+    "actualRetained": false,
+    "reasons": [
+      "trailerable"
+    ],
+    "conforms": false
+  },
+  {
+    "id": "loop-unknown-marker",
+    "kind": "filter",
+    "boat": {
+      "GreatLoopSuitable": "Unknown"
+    },
+    "profile": {
+      "greatLoop": "Yes"
+    },
+    "expectedRetained": true,
+    "actualRetained": false,
+    "reasons": [
+      "great-loop"
+    ],
+    "conforms": false
+  },
+  {
+    "id": "berths-unknown-marker",
+    "kind": "filter",
+    "boat": {
+      "Berths": "Unknown"
+    },
+    "profile": {
+      "minimumBerths": 4
+    },
+    "expectedRetained": true,
+    "actualRetained": false,
+    "reasons": [
+      "minimum-berths"
+    ],
+    "conforms": false
+  },
+  {
+    "id": "cabins-unknown-marker",
+    "kind": "filter",
+    "boat": {
+      "Cabins": "Unknown"
+    },
+    "profile": {
+      "minimumCabins": 2
+    },
+    "expectedRetained": true,
+    "actualRetained": false,
+    "reasons": [
+      "minimum-cabins"
+    ],
+    "conforms": false
+  },
+  {
+    "id": "heads-unknown-marker",
+    "kind": "filter",
+    "boat": {
+      "Heads": "Unknown"
+    },
+    "profile": {
+      "minimumHeads": 2
+    },
+    "expectedRetained": true,
+    "actualRetained": false,
+    "reasons": [
+      "minimum-heads"
+    ],
+    "conforms": false
+  },
+  {
+    "id": "v-drive-model-parent-category",
+    "kind": "filter",
+    "boat": {
+      "MechanicalPropulsionCode": "mechanical_propulsion.v_drive"
+    },
+    "profile": {
+      "propulsion": [
+        "Shaft"
+      ]
+    },
+    "expectedRetained": true,
+    "actualRetained": false,
+    "reasons": [
+      "propulsion"
+    ],
+    "conforms": false
+  },
+  {
+    "id": "v-drive-config-parent-category",
+    "kind": "filter",
+    "boat": {
+      "VerifiedConfigurationsComplete": true,
+      "VerifiedConfigurations": [
+        {
+          "MechanicalPropulsionCode": "mechanical_propulsion.v_drive"
+        }
+      ]
+    },
+    "profile": {
+      "propulsion": [
+        "Shaft"
+      ]
+    },
+    "expectedRetained": true,
+    "actualRetained": true,
+    "reasons": [],
+    "conforms": true
+  },
+  {
+    "id": "canonical-material-known-conflict",
+    "kind": "filter",
+    "boat": {
+      "HullMaterialCode": "hull_material.wood"
+    },
+    "profile": {
+      "constructionMaterials": [
+        "Steel"
+      ]
+    },
+    "expectedRetained": false,
+    "actualRetained": true,
+    "reasons": [],
+    "conforms": false
+  },
+  {
+    "id": "material-description-compatible",
+    "kind": "filter",
+    "boat": {
+      "HullMaterialCode": "hull_material.fiberglass",
+      "Construction": "Solid fiberglass hull with balsa-cored deck"
+    },
+    "profile": {
+      "constructionMaterials": [
+        "Fiberglass"
+      ]
+    },
+    "expectedRetained": true,
+    "actualRetained": false,
+    "reasons": [
+      "construction-material"
+    ],
+    "conforms": false
+  },
+  {
+    "id": "optional-flybridge",
+    "kind": "filter",
+    "boat": {
+      "Flybridge": "Optional"
+    },
+    "profile": {
+      "flybridge": "Yes"
+    },
+    "expectedRetained": true,
+    "actualRetained": false,
+    "reasons": [
+      "flybridge"
+    ],
+    "conforms": false
+  },
+  {
+    "id": "variable-flybridge",
+    "kind": "filter",
+    "boat": {
+      "Flybridge": "Varies"
+    },
+    "profile": {
+      "flybridge": "Yes"
+    },
+    "expectedRetained": true,
+    "actualRetained": false,
+    "reasons": [
+      "flybridge"
+    ],
+    "conforms": false
+  },
+  {
+    "id": "variable-engine-count-text",
+    "kind": "filter",
+    "boat": {
+      "EngineCount": "1 or 2"
+    },
+    "profile": {
+      "engineCounts": [
+        2
+      ]
+    },
+    "expectedRetained": true,
+    "actualRetained": false,
+    "reasons": [
+      "engine-count"
+    ],
+    "conforms": false
+  },
+  {
+    "id": "unknown-low-confidence-air",
+    "kind": "filter",
+    "boat": {
+      "AirDraft": 5,
+      "SpecificationConfidence": {
+        "AirDraft": {
+          "Level": "Low",
+          "Status": "estimated"
+        }
+      }
+    },
+    "profile": {
+      "maxAirDraft": 10
+    },
+    "expectedRetained": true,
+    "actualRetained": true,
+    "reasons": [],
+    "conforms": true
+  },
+  {
+    "id": "phase-range-straddles-max",
+    "kind": "filter",
+    "boat": {
+      "LOA": 12,
+      "ProductionPhases": [
+        {
+          "FactOverrides": [
+            {
+              "FieldID": "LOA",
+              "CanonicalValue": 8,
+              "ValueState": "known"
+            }
+          ]
+        },
+        {
+          "FactOverrides": [
+            {
+              "FieldID": "LOA",
+              "CanonicalValue": 12,
+              "ValueState": "known"
+            }
+          ]
+        }
+      ]
+    },
+    "profile": {
+      "maxLength": 30
+    },
+    "expectedRetained": true,
+    "actualRetained": true,
+    "reasons": [],
+    "conforms": true
+  },
+  {
+    "id": "phase-range-all-too-long",
+    "kind": "filter",
+    "boat": {
+      "ProductionPhases": [
+        {
+          "FactOverrides": [
+            {
+              "FieldID": "LOA",
+              "CanonicalValue": 11,
+              "ValueState": "known"
+            }
+          ]
+        },
+        {
+          "FactOverrides": [
+            {
+              "FieldID": "LOA",
+              "CanonicalValue": 12,
+              "ValueState": "known"
+            }
+          ]
+        }
+      ]
+    },
+    "profile": {
+      "maxLength": 30
+    },
+    "expectedRetained": false,
+    "actualRetained": false,
+    "reasons": [
+      "max-length"
+    ],
+    "conforms": true
+  },
+  {
+    "id": "phase-unknown-alternative-retained",
+    "kind": "filter",
+    "boat": {
+      "ProductionPhases": [
+        {
+          "FactOverrides": [
+            {
+              "FieldID": "LOA",
+              "CanonicalValue": 12,
+              "ValueState": "known"
+            }
+          ]
+        },
+        {
+          "FactOverrides": []
+        }
+      ]
+    },
+    "profile": {
+      "maxLength": 30
+    },
+    "expectedRetained": true,
+    "actualRetained": false,
+    "reasons": [
+      "max-length"
+    ],
+    "conforms": false
+  },
+  {
+    "id": "joint-dimensions-no-compatible-phase",
+    "kind": "filter",
+    "boat": {
+      "ProductionPhases": [
+        {
+          "FactOverrides": [
+            {
+              "FieldID": "LOA",
+              "CanonicalValue": 8,
+              "ValueState": "known"
+            },
+            {
+              "FieldID": "Beam",
+              "CanonicalValue": 5,
+              "ValueState": "known"
+            }
+          ]
+        },
+        {
+          "FactOverrides": [
+            {
+              "FieldID": "LOA",
+              "CanonicalValue": 12,
+              "ValueState": "known"
+            },
+            {
+              "FieldID": "Beam",
+              "CanonicalValue": 3,
+              "ValueState": "known"
+            }
+          ]
+        }
+      ]
+    },
+    "profile": {
+      "maxLength": 30,
+      "maxBeam": 11
+    },
+    "expectedRetained": false,
+    "actualRetained": true,
+    "reasons": [],
+    "conforms": false
+  },
+  {
+    "id": "joint-route-no-compatible-phase",
+    "kind": "filter",
+    "boat": {
+      "ProductionPhases": [
+        {
+          "FactOverrides": [
+            {
+              "FieldID": "LOA",
+              "CanonicalValue": 8,
+              "ValueState": "known"
+            },
+            {
+              "FieldID": "Beam",
+              "CanonicalValue": 5,
+              "ValueState": "known"
+            }
+          ]
+        },
+        {
+          "FactOverrides": [
+            {
+              "FieldID": "LOA",
+              "CanonicalValue": 12,
+              "ValueState": "known"
+            },
+            {
+              "FieldID": "Beam",
+              "CanonicalValue": 3,
+              "ValueState": "known"
+            }
+          ]
+        }
+      ]
+    },
+    "profile": {
+      "routes": [
+        "TEST"
+      ]
+    },
+    "expectedRetained": false,
+    "actualRetained": true,
+    "reasons": [],
+    "conforms": false
+  },
+  {
+    "id": "phase-propulsion-alternative",
+    "kind": "filter",
+    "boat": {
+      "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+      "ProductionPhases": [
+        {
+          "FactOverrides": [
+            {
+              "FieldID": "MechanicalPropulsionCode",
+              "CanonicalValue": "mechanical_propulsion.shaft",
+              "ValueState": "known"
+            }
+          ]
+        },
+        {
+          "FactOverrides": [
+            {
+              "FieldID": "MechanicalPropulsionCode",
+              "CanonicalValue": "mechanical_propulsion.sterndrive",
+              "ValueState": "known"
+            }
+          ]
+        }
+      ]
+    },
+    "profile": {
+      "propulsion": [
+        "Stern Drive"
+      ]
+    },
+    "expectedRetained": true,
+    "actualRetained": false,
+    "reasons": [
+      "propulsion"
+    ],
+    "conforms": false
+  },
+  {
+    "id": "complete-correlated-conflict",
+    "kind": "filter",
+    "boat": {
+      "VerifiedConfigurationsComplete": true,
+      "VerifiedConfigurations": [
+        {
+          "FuelCode": "fuel.gasoline",
+          "MechanicalPropulsionCode": "mechanical_propulsion.sterndrive",
+          "EngineCount": 2
+        },
+        {
+          "FuelCode": "fuel.diesel",
+          "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+          "EngineCount": 1
+        }
+      ]
+    },
+    "profile": {
+      "fuels": [
+        "Diesel"
+      ],
+      "propulsion": [
+        "Stern Drive"
+      ]
+    },
+    "expectedRetained": false,
+    "actualRetained": false,
+    "reasons": [
+      "verified-configuration"
+    ],
+    "conforms": true
+  },
+  {
+    "id": "incomplete-config-retained",
+    "kind": "filter",
+    "boat": {
+      "VerifiedConfigurationsComplete": false,
+      "VerifiedConfigurations": [
+        {
+          "FuelCode": "fuel.gasoline"
+        }
+      ]
+    },
+    "profile": {
+      "fuels": [
+        "Diesel"
+      ]
+    },
+    "expectedRetained": true,
+    "actualRetained": true,
+    "reasons": [],
+    "conforms": true
+  },
+  {
+    "id": "incomplete-config-shadows-independent-known-fuel",
+    "kind": "filter",
+    "boat": {
+      "FuelCode": "fuel.gasoline",
+      "VerifiedConfigurations": [
+        {
+          "EngineCount": 2
+        }
+      ],
+      "VerifiedConfigurationsComplete": false
+    },
+    "profile": {
+      "fuels": [
+        "Diesel"
+      ]
+    },
+    "expectedRetained": false,
+    "actualRetained": true,
+    "reasons": [],
+    "conforms": false
+  },
+  {
+    "id": "route-null-dimensions",
+    "kind": "filter",
+    "boat": {
+      "LOA": null,
+      "Beam": null,
+      "Draft": null,
+      "AirDraft": null
+    },
+    "profile": {
+      "routes": [
+        "TEST"
+      ]
+    },
+    "expectedRetained": true,
+    "actualRetained": true,
+    "reasons": [],
+    "conforms": true
+  },
+  {
+    "id": "route-known-incompatible",
+    "kind": "filter",
+    "boat": {
+      "Beam": 5
+    },
+    "profile": {
+      "routes": [
+        "TEST"
+      ]
+    },
+    "expectedRetained": false,
+    "actualRetained": false,
+    "reasons": [
+      "route-compatibility"
+    ],
+    "conforms": true
+  },
+  {
+    "id": "text-search-match",
+    "kind": "filter",
+    "boat": {
+      "Manufacturer": "Sea Ray",
+      "Model": "370 Venture"
+    },
+    "profile": {
+      "textSearch": "Sea Ray"
+    },
+    "expectedRetained": true,
+    "actualRetained": true,
+    "reasons": [],
+    "conforms": true
+  },
+  {
+    "id": "text-search-no-match",
+    "kind": "filter",
+    "boat": {
+      "Manufacturer": "Albin",
+      "Model": "25"
+    },
+    "profile": {
+      "textSearch": "Grand Banks"
+    },
+    "expectedRetained": false,
+    "actualRetained": false,
+    "reasons": [
+      "text-search"
+    ],
+    "conforms": true
+  },
+  {
+    "id": "missing-feature-uncertainty-label",
+    "kind": "explanation",
+    "expectedUnknown": true,
+    "actualUnknown": false,
+    "conforms": false
+  },
+  {
+    "id": "buyer-explanation-stale-legacy-drive",
+    "kind": "explanation",
+    "actual": {
+      "score": 60,
+      "reasons": [
+        "✓ Inboard shaft propulsion"
+      ],
+      "unknowns": [
+        "? Hull type unknown"
+      ]
+    },
+    "expected": "Do not claim shaft propulsion when authoritative value is outboard",
+    "conforms": false
+  },
+  {
+    "id": "saved-invisible-requirements-lost",
+    "kind": "state",
+    "before": {
+      "maxDraft": 4,
+      "maxAirDraft": 12,
+      "minimumBerths": 4,
+      "styles": [
+        "Trawler"
+      ]
+    },
+    "after": {
+      "textSearch": "",
+      "routes": [],
+      "cruisingIntent": [],
+      "maxPrice": null,
+      "minLength": null,
+      "maxLength": null,
+      "minBeam": null,
+      "maxBeam": null,
+      "maxDraft": null,
+      "maxAirDraft": null,
+      "styles": [],
+      "boatFamilies": [],
+      "configurations": [],
+      "constructionMaterials": [],
+      "hullTypes": [],
+      "fuels": [],
+      "propulsion": [],
+      "engineCounts": [],
+      "twinEngines": false,
+      "flybridge": "",
+      "sideDecks": "",
+      "trailerable": "",
+      "greatLoop": "",
+      "minimumBerths": null,
+      "minimumCabins": null,
+      "minimumHeads": null,
+      "crewComposition": "",
+      "tallestCrewHeight": null,
+      "guestFrequency": "",
+      "featurePriorities": {}
+    },
+    "conforms": false
+  },
+  {
+    "id": "desktop-mobile-apply-timing",
+    "kind": "ui-event-binding",
+    "mobile": {
+      "width": 390,
+      "searchCallsAfterCheckboxChange": 1
+    },
+    "desktop": {
+      "width": 1440,
+      "searchCallsAfterCheckboxChange": 0
+    },
+    "tablet": {
+      "width": 768,
+      "searchCallsAfterCheckboxChange": 0
+    },
+    "conforms": false,
+    "note": "Results update automatically at <=680px; wider screens require Search. This is an observed interaction inconsistency, not a different filter algorithm. Counts share the render path."
+  }
+]
