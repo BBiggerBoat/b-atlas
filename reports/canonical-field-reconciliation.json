@@ -1,0 +1,800 @@
+{
+  "schemaFieldDefinedForDeadrise": false,
+  "gapFieldCounts": {
+    "DeadriseAftDeg": 165
+  },
+  "gapModelCount": 165,
+  "sourceLinkedPotentialRecoveries": 165,
+  "sourceLinkedPotentialRecoverySample": [
+    {
+      "BoatModelID": "TOLL-30-SE",
+      "field": "DeadriseAftDeg",
+      "historical": 10,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-10-tollycraft-30-40.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/30-sedan-1977-84",
+      "classification": "historical_field_outside_schema"
+    },
+    {
+      "BoatModelID": "TOLL-30-SC",
+      "field": "DeadriseAftDeg",
+      "historical": 10,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-10-tollycraft-30-40.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/30-sport-cruiser-1985-92",
+      "classification": "historical_field_outside_schema"
+    },
+    {
+      "BoatModelID": "TOLL-34-CS",
+      "field": "DeadriseAftDeg",
+      "historical": 12,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-10-tollycraft-30-40.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/34-convertible-sedan-1981-86",
+      "classification": "historical_field_outside_schema"
+    },
+    {
+      "BoatModelID": "TOLL-34-SD",
+      "field": "DeadriseAftDeg",
+      "historical": 16,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-10-tollycraft-30-40.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/34-sedan-1972-80",
+      "classification": "historical_field_outside_schema"
+    },
+    {
+      "BoatModelID": "TOLL-34-SU",
+      "field": "DeadriseAftDeg",
+      "historical": 13,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-10-tollycraft-30-40.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/34-sundeck-1986-88",
+      "classification": "historical_field_outside_schema"
+    },
+    {
+      "BoatModelID": "TOLL-34-TC",
+      "field": "DeadriseAftDeg",
+      "historical": 13,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-10-tollycraft-30-40.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/34-tri-cabin-1975-85",
+      "classification": "historical_field_outside_schema"
+    },
+    {
+      "BoatModelID": "TOLL-40-SS",
+      "field": "DeadriseAftDeg",
+      "historical": 10,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-10-tollycraft-30-40.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/40-sport-sedan-1987-95",
+      "classification": "historical_field_outside_schema"
+    },
+    {
+      "BoatModelID": "TOLL-37-CV",
+      "field": "DeadriseAftDeg",
+      "historical": 8,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-11-tollycraft-37-48.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/37-convertible-1974-85",
+      "classification": "historical_field_outside_schema"
+    },
+    {
+      "BoatModelID": "TOLL-39-SY",
+      "field": "DeadriseAftDeg",
+      "historical": 10,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-11-tollycraft-37-48.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/39-sport-yacht-1990-91",
+      "classification": "historical_field_outside_schema"
+    },
+    {
+      "BoatModelID": "TOLL-40-SU",
+      "field": "DeadriseAftDeg",
+      "historical": 10,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-11-tollycraft-37-48.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/40-sundeck-1985-94",
+      "classification": "historical_field_outside_schema"
+    },
+    {
+      "BoatModelID": "TOLL-44-45-CMY",
+      "field": "DeadriseAftDeg",
+      "historical": 10,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-11-tollycraft-37-48.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/44-45-cockpit-my-1986-96",
+      "classification": "historical_field_outside_schema"
+    },
+    {
+      "BoatModelID": "TOLL-48-CV",
+      "field": "DeadriseAftDeg",
+      "historical": 10,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-11-tollycraft-37-48.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/48-convertible-1982-85",
+      "classification": "historical_field_outside_schema"
+    },
+    {
+      "BoatModelID": "TOLL-53-MY",
+      "field": "DeadriseAftDeg",
+      "historical": 11,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-12-tollycraft-53-65.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/53-motor-yacht-1988-94",
+      "classification": "historical_field_outside_schema"
+    },
+    {
+      "BoatModelID": "TOLL-57-CMY",
+      "field": "DeadriseAftDeg",
+      "historical": 11,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-12-tollycraft-53-65.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/57-cockpit-motor-yacht-1989-96",
+      "classification": "historical_field_outside_schema"
+    },
+    {
+      "BoatModelID": "TOLL-65-PHCMY",
+      "field": "DeadriseAftDeg",
+      "historical": 10,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-12-tollycraft-53-65.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/65-pilothouse-cockpit-my-1993-98",
+      "classification": "historical_field_outside_schema"
+    },
+    {
+      "BoatModelID": "TROJ-28-SE",
+      "field": "DeadriseAftDeg",
+      "historical": 12,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-13-trojan-28-36.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/trojan/28-sedan-1976-79",
+      "classification": "historical_field_outside_schema"
+    },
+    {
+      "BoatModelID": "TROJ-30-EX",
+      "field": "DeadriseAftDeg",
+      "historical": 12,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-13-trojan-28-36.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/trojan/f-30-express-1975-79",
+      "classification": "historical_field_outside_schema"
+    },
+    {
+      "BoatModelID": "TROJ-30-SC",
+      "field": "DeadriseAftDeg",
+      "historical": 12,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-13-trojan-28-36.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/trojan/f-30-sport-cruiser-1973-79",
+      "classification": "historical_field_outside_schema"
+    },
+    {
+      "BoatModelID": "TROJ-86-MC",
+      "field": "DeadriseAftDeg",
+      "historical": 14,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-13-trojan-28-36.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/trojan/86-meter-mid-cabin-1987-90",
+      "classification": "historical_field_outside_schema"
+    },
+    {
+      "BoatModelID": "TROJ-10M-EX",
+      "field": "DeadriseAftDeg",
+      "historical": 9,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-13-trojan-28-36.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/trojan/10-meter-express-1981-89",
+      "classification": "historical_field_outside_schema"
+    }
+  ],
+  "schema": "batlas-field-reconciliation-v3",
+  "policy": "Read-only diagnostic. Historical values are not automatically authoritative. Inferred configuration-dependent fields are never filled.",
+  "canonicalModels": 995,
+  "batches": 73,
+  "categories": {
+    "matching": 3969,
+    "canonicalMissing": 0,
+    "alternateFieldPresent": 2080,
+    "phaseScoped": 0,
+    "historicalFieldOutsideSchema": 165,
+    "conflicting": 0
+  },
+  "alternateExamples": [
+    {
+      "BoatModelID": "TOLL-30-SE",
+      "field": "LOAFt",
+      "historical": 29.9167,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-10-tollycraft-30-40.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/30-sedan-1977-84",
+      "alternateKeys": [
+        "LOA"
+      ]
+    },
+    {
+      "BoatModelID": "TOLL-30-SE",
+      "field": "BeamFt",
+      "historical": 11.75,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-10-tollycraft-30-40.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/30-sedan-1977-84",
+      "alternateKeys": [
+        "Beam"
+      ]
+    },
+    {
+      "BoatModelID": "TOLL-30-SE",
+      "field": "DraftFt",
+      "historical": 2.5,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-10-tollycraft-30-40.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/30-sedan-1977-84",
+      "alternateKeys": [
+        "Draft"
+      ]
+    },
+    {
+      "BoatModelID": "TOLL-30-SE",
+      "field": "AirDraftFt",
+      "historical": 11.6667,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-10-tollycraft-30-40.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/30-sedan-1977-84",
+      "alternateKeys": [
+        "AirDraft"
+      ]
+    },
+    {
+      "BoatModelID": "TOLL-30-SC",
+      "field": "LOAFt",
+      "historical": 30.5,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-10-tollycraft-30-40.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/30-sport-cruiser-1985-92",
+      "alternateKeys": [
+        "LOA"
+      ]
+    },
+    {
+      "BoatModelID": "TOLL-30-SC",
+      "field": "BeamFt",
+      "historical": 11.5,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-10-tollycraft-30-40.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/30-sport-cruiser-1985-92",
+      "alternateKeys": [
+        "Beam"
+      ]
+    },
+    {
+      "BoatModelID": "TOLL-30-SC",
+      "field": "DraftFt",
+      "historical": 2.5833,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-10-tollycraft-30-40.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/30-sport-cruiser-1985-92",
+      "alternateKeys": [
+        "Draft"
+      ]
+    },
+    {
+      "BoatModelID": "TOLL-30-SC",
+      "field": "AirDraftFt",
+      "historical": 11.6667,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-10-tollycraft-30-40.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/30-sport-cruiser-1985-92",
+      "alternateKeys": [
+        "AirDraft"
+      ]
+    },
+    {
+      "BoatModelID": "TOLL-34-CS",
+      "field": "LOAFt",
+      "historical": 34,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-10-tollycraft-30-40.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/34-convertible-sedan-1981-86",
+      "alternateKeys": [
+        "LOA"
+      ]
+    },
+    {
+      "BoatModelID": "TOLL-34-CS",
+      "field": "BeamFt",
+      "historical": 12.5,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-10-tollycraft-30-40.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/34-convertible-sedan-1981-86",
+      "alternateKeys": [
+        "Beam"
+      ]
+    },
+    {
+      "BoatModelID": "TOLL-34-CS",
+      "field": "DraftFt",
+      "historical": 2.8333,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-10-tollycraft-30-40.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/34-convertible-sedan-1981-86",
+      "alternateKeys": [
+        "Draft"
+      ]
+    },
+    {
+      "BoatModelID": "TOLL-34-CS",
+      "field": "AirDraftFt",
+      "historical": 12.1667,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-10-tollycraft-30-40.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/34-convertible-sedan-1981-86",
+      "alternateKeys": [
+        "AirDraft"
+      ]
+    },
+    {
+      "BoatModelID": "TOLL-34-SD",
+      "field": "LOAFt",
+      "historical": 33.5833,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-10-tollycraft-30-40.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/34-sedan-1972-80",
+      "alternateKeys": [
+        "LOA"
+      ]
+    },
+    {
+      "BoatModelID": "TOLL-34-SD",
+      "field": "BeamFt",
+      "historical": 12.25,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-10-tollycraft-30-40.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/34-sedan-1972-80",
+      "alternateKeys": [
+        "Beam"
+      ]
+    },
+    {
+      "BoatModelID": "TOLL-34-SD",
+      "field": "DraftFt",
+      "historical": 2.5,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-10-tollycraft-30-40.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/34-sedan-1972-80",
+      "alternateKeys": [
+        "Draft"
+      ]
+    },
+    {
+      "BoatModelID": "TOLL-34-SU",
+      "field": "LOAFt",
+      "historical": 34,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-10-tollycraft-30-40.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/34-sundeck-1986-88",
+      "alternateKeys": [
+        "LOA"
+      ]
+    },
+    {
+      "BoatModelID": "TOLL-34-SU",
+      "field": "BeamFt",
+      "historical": 12.5,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-10-tollycraft-30-40.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/34-sundeck-1986-88",
+      "alternateKeys": [
+        "Beam"
+      ]
+    },
+    {
+      "BoatModelID": "TOLL-34-SU",
+      "field": "DraftFt",
+      "historical": 2.8333,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-10-tollycraft-30-40.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/34-sundeck-1986-88",
+      "alternateKeys": [
+        "Draft"
+      ]
+    },
+    {
+      "BoatModelID": "TOLL-34-SU",
+      "field": "AirDraftFt",
+      "historical": 12,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-10-tollycraft-30-40.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/34-sundeck-1986-88",
+      "alternateKeys": [
+        "AirDraft"
+      ]
+    },
+    {
+      "BoatModelID": "TOLL-34-TC",
+      "field": "LOAFt",
+      "historical": 34,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-10-tollycraft-30-40.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/34-tri-cabin-1975-85",
+      "alternateKeys": [
+        "LOA"
+      ]
+    },
+    {
+      "BoatModelID": "TOLL-34-TC",
+      "field": "BeamFt",
+      "historical": 12.5,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-10-tollycraft-30-40.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/34-tri-cabin-1975-85",
+      "alternateKeys": [
+        "Beam"
+      ]
+    },
+    {
+      "BoatModelID": "TOLL-34-TC",
+      "field": "DraftFt",
+      "historical": 2.8333,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-10-tollycraft-30-40.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/34-tri-cabin-1975-85",
+      "alternateKeys": [
+        "Draft"
+      ]
+    },
+    {
+      "BoatModelID": "TOLL-34-TC",
+      "field": "AirDraftFt",
+      "historical": 12,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-10-tollycraft-30-40.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/34-tri-cabin-1975-85",
+      "alternateKeys": [
+        "AirDraft"
+      ]
+    },
+    {
+      "BoatModelID": "TOLL-40-SS",
+      "field": "LOAFt",
+      "historical": 40.1667,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-10-tollycraft-30-40.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/40-sport-sedan-1987-95",
+      "alternateKeys": [
+        "LOA"
+      ]
+    },
+    {
+      "BoatModelID": "TOLL-40-SS",
+      "field": "BeamFt",
+      "historical": 14.6667,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-10-tollycraft-30-40.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/40-sport-sedan-1987-95",
+      "alternateKeys": [
+        "Beam"
+      ]
+    }
+  ],
+  "phaseExamples": [],
+  "canonicalMissing": [
+    {
+      "BoatModelID": "TOLL-30-SE",
+      "field": "DeadriseAftDeg",
+      "historical": 10,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-10-tollycraft-30-40.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/30-sedan-1977-84",
+      "classification": "historical_field_outside_schema"
+    },
+    {
+      "BoatModelID": "TOLL-30-SC",
+      "field": "DeadriseAftDeg",
+      "historical": 10,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-10-tollycraft-30-40.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/30-sport-cruiser-1985-92",
+      "classification": "historical_field_outside_schema"
+    },
+    {
+      "BoatModelID": "TOLL-34-CS",
+      "field": "DeadriseAftDeg",
+      "historical": 12,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-10-tollycraft-30-40.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/34-convertible-sedan-1981-86",
+      "classification": "historical_field_outside_schema"
+    },
+    {
+      "BoatModelID": "TOLL-34-SD",
+      "field": "DeadriseAftDeg",
+      "historical": 16,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-10-tollycraft-30-40.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/34-sedan-1972-80",
+      "classification": "historical_field_outside_schema"
+    },
+    {
+      "BoatModelID": "TOLL-34-SU",
+      "field": "DeadriseAftDeg",
+      "historical": 13,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-10-tollycraft-30-40.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/34-sundeck-1986-88",
+      "classification": "historical_field_outside_schema"
+    },
+    {
+      "BoatModelID": "TOLL-34-TC",
+      "field": "DeadriseAftDeg",
+      "historical": 13,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-10-tollycraft-30-40.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/34-tri-cabin-1975-85",
+      "classification": "historical_field_outside_schema"
+    },
+    {
+      "BoatModelID": "TOLL-40-SS",
+      "field": "DeadriseAftDeg",
+      "historical": 10,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-10-tollycraft-30-40.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/40-sport-sedan-1987-95",
+      "classification": "historical_field_outside_schema"
+    },
+    {
+      "BoatModelID": "TOLL-37-CV",
+      "field": "DeadriseAftDeg",
+      "historical": 8,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-11-tollycraft-37-48.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/37-convertible-1974-85",
+      "classification": "historical_field_outside_schema"
+    },
+    {
+      "BoatModelID": "TOLL-39-SY",
+      "field": "DeadriseAftDeg",
+      "historical": 10,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-11-tollycraft-37-48.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/39-sport-yacht-1990-91",
+      "classification": "historical_field_outside_schema"
+    },
+    {
+      "BoatModelID": "TOLL-40-SU",
+      "field": "DeadriseAftDeg",
+      "historical": 10,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-11-tollycraft-37-48.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/40-sundeck-1985-94",
+      "classification": "historical_field_outside_schema"
+    },
+    {
+      "BoatModelID": "TOLL-44-45-CMY",
+      "field": "DeadriseAftDeg",
+      "historical": 10,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-11-tollycraft-37-48.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/44-45-cockpit-my-1986-96",
+      "classification": "historical_field_outside_schema"
+    },
+    {
+      "BoatModelID": "TOLL-48-CV",
+      "field": "DeadriseAftDeg",
+      "historical": 10,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-11-tollycraft-37-48.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/48-convertible-1982-85",
+      "classification": "historical_field_outside_schema"
+    },
+    {
+      "BoatModelID": "TOLL-53-MY",
+      "field": "DeadriseAftDeg",
+      "historical": 11,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-12-tollycraft-53-65.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/53-motor-yacht-1988-94",
+      "classification": "historical_field_outside_schema"
+    },
+    {
+      "BoatModelID": "TOLL-57-CMY",
+      "field": "DeadriseAftDeg",
+      "historical": 11,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-12-tollycraft-53-65.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/57-cockpit-motor-yacht-1989-96",
+      "classification": "historical_field_outside_schema"
+    },
+    {
+      "BoatModelID": "TOLL-65-PHCMY",
+      "field": "DeadriseAftDeg",
+      "historical": 10,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-12-tollycraft-53-65.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/65-pilothouse-cockpit-my-1993-98",
+      "classification": "historical_field_outside_schema"
+    },
+    {
+      "BoatModelID": "TROJ-28-SE",
+      "field": "DeadriseAftDeg",
+      "historical": 12,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-13-trojan-28-36.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/trojan/28-sedan-1976-79",
+      "classification": "historical_field_outside_schema"
+    },
+    {
+      "BoatModelID": "TROJ-30-EX",
+      "field": "DeadriseAftDeg",
+      "historical": 12,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-13-trojan-28-36.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/trojan/f-30-express-1975-79",
+      "classification": "historical_field_outside_schema"
+    },
+    {
+      "BoatModelID": "TROJ-30-SC",
+      "field": "DeadriseAftDeg",
+      "historical": 12,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-13-trojan-28-36.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/trojan/f-30-sport-cruiser-1973-79",
+      "classification": "historical_field_outside_schema"
+    },
+    {
+      "BoatModelID": "TROJ-86-MC",
+      "field": "DeadriseAftDeg",
+      "historical": 14,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-13-trojan-28-36.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/trojan/86-meter-mid-cabin-1987-90",
+      "classification": "historical_field_outside_schema"
+    },
+    {
+      "BoatModelID": "TROJ-10M-EX",
+      "field": "DeadriseAftDeg",
+      "historical": 9,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-13-trojan-28-36.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/trojan/10-meter-express-1981-89",
+      "classification": "historical_field_outside_schema"
+    },
+    {
+      "BoatModelID": "TROJ-10M-MC",
+      "field": "DeadriseAftDeg",
+      "historical": 9,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-13-trojan-28-36.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/trojan/10-meter-mid-cabin-1986-92",
+      "classification": "historical_field_outside_schema"
+    },
+    {
+      "BoatModelID": "TROJ-10M-SE",
+      "field": "DeadriseAftDeg",
+      "historical": 9,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-13-trojan-28-36.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/trojan/10-meter-sedan-1982-89",
+      "classification": "historical_field_outside_schema"
+    },
+    {
+      "BoatModelID": "TROJ-36-CV",
+      "field": "DeadriseAftDeg",
+      "historical": 9,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-13-trojan-28-36.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/trojan/36-convertible-1972-89",
+      "classification": "historical_field_outside_schema"
+    },
+    {
+      "BoatModelID": "TROJ-108-EX",
+      "field": "DeadriseAftDeg",
+      "historical": 20,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-14-trojan-108-400.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/trojan/108-meter-express-1991-92",
+      "classification": "historical_field_outside_schema"
+    },
+    {
+      "BoatModelID": "TROJ-108-SE",
+      "field": "DeadriseAftDeg",
+      "historical": 9,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-14-trojan-108-400.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/trojan/108-meter-sedan-1986-92",
+      "classification": "historical_field_outside_schema"
+    },
+    {
+      "BoatModelID": "TROJ-11M-EX-G1",
+      "field": "DeadriseAftDeg",
+      "historical": 14,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-14-trojan-108-400.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/trojan/11-meter-express-1983-89",
+      "classification": "historical_field_outside_schema"
+    },
+    {
+      "BoatModelID": "TROJ-11M-EX-G2",
+      "field": "DeadriseAftDeg",
+      "historical": 14,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-14-trojan-108-400.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/trojan/11-meter-express-1990-92",
+      "classification": "historical_field_outside_schema"
+    },
+    {
+      "BoatModelID": "TROJ-11M-SE",
+      "field": "DeadriseAftDeg",
+      "historical": 14,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-14-trojan-108-400.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/trojan/11-meter-sedan-1985-88",
+      "classification": "historical_field_outside_schema"
+    },
+    {
+      "BoatModelID": "TROJ-350-360-EX",
+      "field": "DeadriseAftDeg",
+      "historical": 16.5,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-14-trojan-108-400.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/trojan/350-360-express-1995-2001",
+      "classification": "historical_field_outside_schema"
+    },
+    {
+      "BoatModelID": "TROJ-370-390-400-EX",
+      "field": "DeadriseAftDeg",
+      "historical": 17,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-14-trojan-108-400.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/trojan/370-390-400-express-1993-2002",
+      "classification": "historical_field_outside_schema"
+    },
+    {
+      "BoatModelID": "HATT-32-FF",
+      "field": "DeadriseAftDeg",
+      "historical": 18,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-17-hatteras-32-40.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/hatteras/32-flybridge-fisherman-1983-88",
+      "classification": "historical_field_outside_schema"
+    },
+    {
+      "BoatModelID": "HATT-32-SF",
+      "field": "DeadriseAftDeg",
+      "historical": 18,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-17-hatteras-32-40.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/hatteras/32-sport-fisherman-1982-87",
+      "classification": "historical_field_outside_schema"
+    },
+    {
+      "BoatModelID": "HATT-36-SE",
+      "field": "DeadriseAftDeg",
+      "historical": 18,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-17-hatteras-32-40.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/hatteras/36-sedan-1986-87",
+      "classification": "historical_field_outside_schema"
+    },
+    {
+      "BoatModelID": "HATT-36-SF",
+      "field": "DeadriseAftDeg",
+      "historical": 18,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-17-hatteras-32-40.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/hatteras/36-sport-fisherman-1983-86",
+      "classification": "historical_field_outside_schema"
+    },
+    {
+      "BoatModelID": "HATT-39-CV",
+      "field": "DeadriseAftDeg",
+      "historical": 9,
+      "current": null,
+      "sourceFile": "data\\phase2-batches\\phase2-batch-17-hatteras-32-40.json",
+      "sourceURL": "https://www.hmy.com/yachting/powerboat-guide/hatteras/39-convertible-1994-98",
+      "classification": "historical_field_outside_schema"
+    }
+  ],
+  "conflicts": [],
+  "uniqueModelsWithMissing": 165,
+  "uniqueModelsWithConflicts": 0
+}

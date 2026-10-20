@@ -4,7 +4,7 @@
  */
 const fs=require("node:fs"),path=require("node:path");
 const read=p=>JSON.parse(fs.readFileSync(p,"utf8"));
-const canonical=read("boatmodels.json");
+const canonical=require('../developer/canonical-store.cjs').load();
 const current=new Map(canonical.map(row=>[String(row.BoatModelID),row]));
 const phases=read("data/production-phases.json");
 const modelSchema=read("data/model-schema.json");

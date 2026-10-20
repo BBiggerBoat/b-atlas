@@ -1,11 +1,12 @@
 {
-  "schemaVersion": 21,
+  "schemaVersion": 22,
   "release": "v7.06.0",
   "lastUpdated": "2026-10-19",
   "purpose": "Runtime data manifest. Canonical model count must be derived from boatmodels.json rather than maintained as a stale constant.",
-  "authoritativeModelRecord": "boatmodels.json",
+  "authoritativeModelRecord": "data/canonical/ownership.json",
   "principles": [
-    "boatmodels.json is the sole active source of current model-wide specifications.",
+    "Each model field has exactly one owner declared in data/canonical/ownership.json.",
+    "boatmodels.json is a validated generated public view, never an editable source.",
     "Secondary data may contain identities, taxonomies, production-phase overrides, evidence, provenance, resources, or community proposals, but not a competing current model specification database.",
     "Production-phase values are scoped overrides, not duplicate model-wide values.",
     "Evidence assertions document provenance and may quote sourced facts without becoming authoritative current specifications.",
@@ -38,10 +39,11 @@
     "data/taxonomy/style-families.json",
     "data/i18n/en.json",
     "data/locale-config.json",
-    "data/imageassets.json"
+    "data/imageassets.json",
+    "data/image-candidates.json",
+    "data/imageassets-external.json"
   ],
   "knowledgeLayer": [
-    "knowledge/data/knowledgecards.json",
     "knowledge/data/curatedresources.json",
     "knowledge/data/listingsearches.json",
     "knowledge/data/knowledgeannotations.json",
@@ -78,8 +80,16 @@
     "communityRole": "Remaining blanks stay visible as contribution opportunities."
   },
   "notes": [
-    "The authoritative model count is derived at runtime from boatmodels.json.",
-    "Historical Phase 2 model shards are retained only as historical source material and are not runtime specifications.",
-    "This manifest documents intended data roles; actual loader dependencies require separate verification."
+    "Public views are generated from source-only canonical datasets. Historical research is excluded from the public build.",
+    "Identity registry records are historical identity decisions; PendingReview is preserved without promoting verification."
+  ],
+  "canonicalDatasets": {
+    "identities": "data/canonical/identities.json",
+    "specifications": "data/canonical/specifications.json",
+    "guidance": "data/canonical/guidance.json",
+    "provenance": "data/canonical/provenance.json"
+  },
+  "generatedPublicViews": [
+    "boatmodels.json"
   ]
 }

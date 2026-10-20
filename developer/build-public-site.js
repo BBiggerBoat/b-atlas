@@ -5,6 +5,9 @@ const root=path.resolve(__dirname,"..");
 const out=path.join(root,"dist");
 const manifestPath=path.join(root,"deployment","public-manifest.json");
 const manifest=JSON.parse(fs.readFileSync(manifestPath,"utf8"));
+// Refuse hand-edited compatibility views; source changes must be regenerated explicitly.
+require('node:assert/strict').deepEqual(boatsFromDisk(),require('./canonical-store.cjs').load(),'Stale generated model view. Run npm run generate:models.');
+function boatsFromDisk(){return JSON.parse(fs.readFileSync(path.join(root,'boatmodels.json'),'utf8'));}
 
 function resetDir(dir){
   fs.rmSync(dir,{recursive:true,force:true});
@@ -28,6 +31,13 @@ resetDir(out);
 for(const rel of manifest.rootFiles) copyFile(rel);
 for(const rel of manifest.publicDirectories) copyDir(rel);
 for(const rel of manifest.temporaryModeratorFiles) copyFile(rel);
+
+// Directory allowlists must not publish source-only research or canonical owners.
+for(const rel of manifest.sourceOnlyNeverPublish || []) {
+  const target=path.resolve(out,rel);
+  if(!target.startsWith(out+path.sep)) throw Error(`Unsafe exclusion: ${rel}`);
+  if(fs.existsSync(target)) fs.rmSync(target,{recursive:true,force:true});
+}
 
 // Static SEO pages remain crawlable, but human navigation should return to the
 // full interactive application instead of chaining through the simplified

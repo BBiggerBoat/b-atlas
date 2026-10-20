@@ -151,6 +151,7 @@
     }
     function splitText(value) {
         if (!value) return [];
+        if (Array.isArray(value)) return value.map(item=>String(item).trim()).filter(Boolean);
         return String(value).split(/\s*;\s*|\r?\n/).map(item => item.trim()).filter(Boolean);
     }
     function safeUrl(value) {
@@ -238,9 +239,9 @@
         const relation = getRelationship();
         const coverage = getKnowledge()?.Coverage;
         const score = recommendation?.overallFit ?? recommendation?.score ?? (typeof root.calculateBScoutScore === "function" ? root.calculateBScoutScore(boat).score : null);
-        const positives = recommendation?.positives || recommendation?.decisionReport?.matches?.map(x => x.explanation) || splitText(boat.Strengths);
-        const cautions = recommendation?.cautions || recommendation?.decisionReport?.unknowns?.map(x => x.explanation) || splitText(boat.Weaknesses);
-        const conflicts = recommendation?.tradeoffs || recommendation?.decisionReport?.conflicts?.map(x => x.explanation) || splitText(boat.AvoidIf);
+        const positives = nonEmptyArray(recommendation?.positives).length ? recommendation.positives : splitText(boat.Strengths);
+        const cautions = nonEmptyArray(recommendation?.cautions).length ? recommendation.cautions : splitText(boat.Weaknesses);
+        const conflicts = nonEmptyArray(recommendation?.tradeoffs).length ? recommendation.tradeoffs : splitText(boat.AvoidIf);
         return `<div class="workspace-overview-grid">
             <section class="workspace-card workspace-decision-card">
                 <span class="workspace-label">Decision summary</span>
@@ -424,7 +425,7 @@
         const statements = arr(currentBoat?.EvidenceSummary?.Statements);
         return `<div class="workspace-section-stack">
             <section class="workspace-card"><h3>Source Registry</h3>${evidence.length ? `<ul class="workspace-resource-list">${evidence.map(src=>`<li><div><strong>${esc(src.Title||src.SourceID)}</strong><span>${esc(src.SourceType)} · ${esc(src.VerificationStatus)}${src.PublishedDate?` · ${esc(src.PublishedDate)}`:""}</span><p>${esc(src.Citation||src.Notes||"")}</p></div></li>`).join("")}</ul>` : `<p class="workspace-empty">No evidence sources are attached.</p>`}</section>
-            <section class="workspace-card"><h3>Canonical Data Provenance</h3>${statements.length ? `<ul class="workspace-resource-list">${statements.map(item=>`<li><div><strong>${esc(item.Scope||"Model evidence")}</strong><span>${esc(item.Confidence||currentBoat?.DataConfidence||"Unknown")} confidence</span><p>${esc(item.Notes||"")}</p></div></li>`).join("")}</ul>` : `<p class="workspace-empty">No field-level provenance statement is recorded. Current model specifications are stored only in the canonical model record.</p>`}<p class="workspace-note">Current model-wide specification values are read directly from boatmodels.json; evidence and provenance records do not maintain a second copy.</p></section>
+            <section class="workspace-card"><h3>Canonical Data Provenance</h3>${statements.length ? `<ul class="workspace-resource-list">${statements.map(item=>`<li><div><strong>${esc(item.Scope||"Model evidence")}</strong><span>${esc(item.Confidence||currentBoat?.DataConfidence||"Unknown")} confidence</span><p>${esc(item.Notes||"")}</p></div></li>`).join("")}</ul>` : `<p class="workspace-empty">No field-level provenance statement is recorded. Current model specifications are stored only in the canonical model record.</p>`}<p class="workspace-note">Model values are read from the generated public view of the canonical identity, specification, guidance and provenance datasets. Evidence retains its source scope.</p></section>
             <section class="workspace-card"><h3>Contradictions</h3>${conflicts.length ? textList(conflicts.map(c=>`${c.AttributeID}: ${c.Status||"Needs review"}`)) : `<p class="workspace-empty">No machine-detected contradictions are recorded. This does not imply independent verification.</p>`}</section>
         </div>`;
     }

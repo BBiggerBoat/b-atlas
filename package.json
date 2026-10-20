@@ -14,7 +14,13 @@
     "validate:backup": "node developer/validate-backup.js",
     "restore:sql": "node developer/backup-to-d1-sql.js",
     "check:image-health": "node developer/check-image-health.js",
-    "update:image-health": "node developer/check-image-health.js --write"
+    "update:image-health": "node developer/check-image-health.js --write",
+    "generate:models": "node developer/canonical-store.cjs",
+    "check:canonical": "node developer/canonical-store.cjs --check",
+    "inventory:canonical": "node tools/inventory-canonical.cjs",
+    "test": "node tests/canonical-migration.cjs && node tests/canonical-integration.cjs && node tests/filter-behavior-regression.cjs && node tests/correlated-config-regression.cjs && node tests/community-overlay-regression.cjs",
+    "test:deployment": "node tests/canonical-deployment.cjs",
+    "verify:production": "npm run check:canonical && npm test && node tests/canonical-admin.cjs && node tests/canonical-pages.cjs && npm run build:public && npm run test:deployment && node tests/production-readiness.cjs && node tests/production-worker.cjs && npm run guard:baseline && node developer/check-secrets.js"
   },
   "devDependencies": {
     "wrangler": "^4.0.0"

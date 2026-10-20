@@ -2,7 +2,7 @@
 /** Inventory existing historical research by canonical BoatModelID; read-only. */
 const fs = require("node:fs");
 const path = require("node:path");
-const canonical = JSON.parse(fs.readFileSync("boatmodels.json","utf8"));
+const canonical = require('../developer/canonical-store.cjs').load();
 const registry = JSON.parse(fs.readFileSync("data/registry/boat-registry.json","utf8"));
 const canonicalIds = new Set(canonical.map(r=>String(r.BoatModelID)));
 const pending = new Set(registry.filter(r=>r.IdentityStatus==="PendingReview").map(r=>String(r.BoatModelID)));

@@ -7,7 +7,7 @@
 const fs = require("node:fs");
 const assert = require("node:assert/strict");
 const registry = JSON.parse(fs.readFileSync("data/registry/boat-registry.json", "utf8"));
-const models = JSON.parse(fs.readFileSync("boatmodels.json", "utf8"));
+const models = require('../developer/canonical-store.cjs').load();
 const manufacturers = JSON.parse(fs.readFileSync("data/registry/manufacturers.json", "utf8"));
 const evidence = JSON.parse(fs.readFileSync("knowledge/data/evidence.json", "utf8"));
 const aliases = JSON.parse(fs.readFileSync("data/model-search-aliases.json", "utf8"));
