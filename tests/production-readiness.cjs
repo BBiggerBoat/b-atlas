@@ -88,8 +88,8 @@ const plain=x=>JSON.parse(JSON.stringify(x));
  ctx.document={getElementById:id=>id==='comparisonTable'?table:null};
  ctx.allBoats=data.boats;ctx.currentSearchProfile=null;ctx.getBoatRelationship=()=>null;ctx.STATUS_LABELS={};
  ctx.escapeHtml=ctx.BScoutKnowledgeUI.escapeHtml;
- // Score implementation is external to the comparison renderer and separately filter-tested.
- ctx.calculateFitScore=boat=>({score:ctx.BScoutFilterEngine.preferenceAssessment(boat,{}).score});
+ // Use the same shared assessment renderer as result cards.
+ vm.runInNewContext(script.slice(script.indexOf('function renderPreferenceMatchSummary('),script.indexOf('function formatCardMeasurement(')),ctx);
  vm.runInNewContext(comparison,ctx);
  let comparisonChecks=0;
  for(let i=0;i<995;i+=3){

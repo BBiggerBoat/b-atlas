@@ -31,6 +31,7 @@
         crewComposition: "",
         tallestCrewHeight: null,
         guestFrequency: "",
+        preferencePolicyVersion: 4,
         featurePriorities: {}
     });
 
@@ -44,7 +45,7 @@
     function createState(initial) {
         const source = initial || {};
         return {
-            searchSettings: Object.assign({}, clone(DEFAULT_SEARCH_SETTINGS), clone(source.searchSettings || {})),
+            searchSettings: Object.assign({}, clone(DEFAULT_SEARCH_SETTINGS), clone(source.searchSettings || {}), {preferencePolicyVersion:source.searchSettings?.preferencePolicyVersion || (Object.keys(source.searchSettings?.featurePriorities || {}).length ? 3 : 4)}),
             workspaceStatus: source.workspaceStatus || null,
             sort: Object.assign({ field: null, direction: "asc" }, clone(source.sort || {})),
             revision: Number(source.revision) || 0
@@ -56,7 +57,7 @@
     }
 
     function setSearchSettings(settings, options) {
-        state.searchSettings = Object.assign({}, clone(DEFAULT_SEARCH_SETTINGS), clone(settings || {}));
+        state.searchSettings = Object.assign({}, clone(DEFAULT_SEARCH_SETTINGS), clone(settings || {}), {preferencePolicyVersion:settings?.preferencePolicyVersion || (Object.keys(settings?.featurePriorities || {}).length ? 3 : 4)});
         state.workspaceStatus = null;
         state.revision += 1;
         notify(options && options.source ? options.source : "search-settings");
@@ -77,6 +78,12 @@
         return getState();
     }
 
+    function setSort(sort) {
+        state.sort = Object.assign({field:null,direction:'asc'},clone(sort || {}));
+        state.revision += 1;
+        notify('sort');
+        return getState();
+    }
     function subscribe(listener) {
         if (typeof listener !== "function") return function () {};
         listeners.add(listener);
@@ -147,6 +154,10 @@
         for(const [key,selector] of Object.entries(groups)){
             const nodes=Array.from(doc.querySelectorAll(`#discoverView ${selector}`));
             if(!nodes.length)captured[key]=clone(state.searchSettings[key]);
+            else if(key==='featurePriorities') {
+                const visible=new Set(nodes.map(node=>node.dataset.feature));
+                for(const [feature,priority] of Object.entries(state.searchSettings.featurePriorities||{}))if(!visible.has(feature))captured.featurePriorities[feature]=priority;
+            }
             else if(Array.isArray(captured[key])){
                 const visible=new Set(nodes.map(node=>String(node.value)));
                 captured[key].push(...(state.searchSettings[key]||[]).filter(value=>!visible.has(String(value))));
@@ -167,6 +178,7 @@
         getState,
         setSearchSettings,
         setWorkspaceStatus,
+        setSort,
         clear,
         subscribe,
         readFromDocument,

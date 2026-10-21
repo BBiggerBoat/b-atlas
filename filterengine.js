@@ -125,23 +125,19 @@
     }
 
     function crewPreferenceResult(boat, key, value) {
-        const berths = numericValue(boat.Berths);
-        const cabins = numericValue(boat.Cabins);
-        if (key === "crewComposition") {
-            if (berths === null) return { matched: false, unknown: true };
-            if (value === "Solo") return { matched: berths >= 1, unknown: false };
-            if (value === "Couple") return { matched: berths >= 2, unknown: false };
-            if (value === "TwoCouples") return { matched: berths >= 4 && (cabins === null || cabins >= 2), unknown: cabins === null };
-            if (value === "Family") return { matched: berths >= 4, unknown: false };
-        }
-        if (key === "guestFrequency") {
-            if (berths === null) return { matched: false, unknown: true };
-            if (value === "Rarely") return { matched: berths >= 2, unknown: false };
-            if (value === "Sometimes") return { matched: berths >= 4, unknown: false };
-            if (value === "Often") return { matched: berths >= 4 && (cabins === null || cabins >= 2), unknown: cabins === null };
+        const scalar = value => typeof value === 'number' && Number.isFinite(value) ? value : typeof value === 'string' && /^\d+(?:\.\d+)?$/.test(value.trim()) ? Number(value) : null;
+        const scalarFact = field => /estimated|conflict|variable|uncertain/.test(normalizeText(boat.SpecificationConfidence?.[field]?.Status)) ? null : scalar(boat[field]);
+        const crewNeeds = {Solo:[1,0],Couple:[2,0],TwoCouples:[4,2],Family:[4,0]};
+        const guestNeeds = {Rarely:[2,0],Sometimes:[4,0],Often:[4,2]};
+        const needs = key === 'crewComposition' ? crewNeeds[value] : key === 'guestFrequency' ? guestNeeds[value] : null;
+        if(needs) {
+            const checks=[{field:'Berths',minimum:needs[0]},...(needs[1]?[{field:'Cabins',minimum:needs[1]}]:[])];
+            const failures=checks.filter(c=>scalarFact(c.field)!==null&&scalarFact(c.field)<c.minimum);
+            if(failures.length)return {matched:false,unknown:false,fields:failures.map(c=>c.field)};
+            return {matched:checks.every(c=>scalarFact(c.field)!==null),unknown:checks.some(c=>scalarFact(c.field)===null),fields:checks.map(c=>c.field)};
         }
         if (key === "tallestCrewHeight") {
-            const canonicalInches = global.BAtlasCanonical?.inches(boat, "Headroom", []);
+            const canonicalInches = scalar(boat.Headroom) === null ? null : global.BAtlasCanonical?.inches(boat, "Headroom", []);
             const headroom = canonicalInches;
             if (headroom == null) return { matched: false, unknown: true };
             const inches = headroom;
@@ -150,49 +146,168 @@
         return { matched: false, unknown: true };
     }
 
-    function preferenceAssessment(boat, profile) {
-        const preferences = [];
-        const add = (label, weight, matched, unknown) => preferences.push({ label, weight, matched: Boolean(matched), unknown: Boolean(unknown) });
-
-        if (normalizeText(profile?.textSearch)) {
-            add(`Search: ${profile.textSearch}`, 2, relevanceScore(boat, profile.textSearch) > 0, false);
+    // One buyer-fit policy for cards, comparisons and ordering. These are policy
+    // weights, not probabilities. Canonical facts and Phase 3 eligibility are untouched.
+    const SCORING_POLICY = Object.freeze({
+        version: 4, important: 3, preferred: 1, neutral: 50,
+        verified: 1, supported: 0.5, legacy: 0.25,
+        high: 80, medium: 50, unresolvedCap: 49
+    });
+    function preferenceWeight(priority, profile) {
+        if (priority === 'Important') return SCORING_POLICY.important;
+        if (priority === 'PreferredV4') return SCORING_POLICY.preferred;
+        if (priority === 'Preferred') return profile?.preferencePolicyVersion >= 4 ? SCORING_POLICY.preferred : 2;
+        // Existing Required/Bonus entries remain soft 3/1 preferences forever,
+        // including mixed profiles where the buyer has edited other controls.
+        if (priority === 'Required') return 3;
+        if (priority === 'Bonus') return 1;
+        return 0;
+    }
+    const FEATURE_FIELDS = Object.freeze({
+        'separate shower':['ShowerTypeCode','ShowerType','Shower'],
+        'wide side decks':['SideDecksCode','SideDecks'], 'aft cabin':['AftCabin'],
+        'walkthrough transom':['WalkthroughTransom'], 'side helm door':['SideHelmDoor'],
+        'galley up with helm':['GalleyUpWithHelm','Galley'], 'removable flybridge':['RemovableFlybridge'],
+        'long keel':['KeelConfigurationCode','KeelConfiguration','KeelType'],
+        'skeg hung rudder':['RudderTypeCode','RudderType'], 'trailerable':['Trailerable'],
+        'single engine':['EngineCount'], 'twin engines':['EngineCount'],
+        'diesel fuel':['FuelCode'], 'shaft drive':['MechanicalPropulsionCode']
+    });
+    function factSupport(row, fields) {
+        return Math.min(...fields.map(field => {
+            const meta = row.SpecificationConfidence?.[field];
+            const status = normalizeText(meta?.Status);
+            if (/estimated|conflict|uncertain|configuration variable|unverified/.test(status)) return 0;
+            if (status === 'verified' && String(meta?.Level).toLowerCase() === 'high') return SCORING_POLICY.verified;
+            if (/normalized|corroborated|supported|verified/.test(status)) return SCORING_POLICY.supported;
+            return SCORING_POLICY.legacy;
+        }));
+    }
+    function featureResult(row, feature) {
+        const key = normalizeText(feature), fields = FEATURE_FIELDS[key] || [];
+        const field = fields.find(f => Object.prototype.hasOwnProperty.call(row, f)) || fields[0];
+        const raw = field ? row[field] : null;
+        const meta = row.SpecificationConfidence?.[field];
+        const text = normalizeText(raw), code = String(raw ?? '').split('.').pop().replace(/_/g,' ');
+        const unknown = () => ({matched:false,unknown:true,fields:field?[field]:fields,support:0,configurationDependent:/configuration variable|optional|varies|mixed/.test(text+' '+normalizeText(meta?.Status))});
+        if (!known(raw) || Array.isArray(raw) || /unknown|optional|varies|mixed|conflict|configuration variable|estimated|uncertain/.test(text+' '+normalizeText(meta?.Status))) return unknown();
+        let matched;
+        if (key === 'single engine' || key === 'twin engines') {
+            if (![1,2,3,4].includes(Number(raw)) || typeof raw === 'boolean') return unknown();
+            matched = Number(raw) === (key === 'single engine' ? 1 : 2);
+        } else if (key === 'diesel fuel') {
+            const value = global.BScoutValueNormalizer?.normalize('fuel',code) || code;
+            if (!['diesel','gasoline','gas','electric','hybrid'].includes(value)) return unknown();
+            matched = value === 'diesel';
+        } else if (key === 'shaft drive') {
+            const value = global.BScoutValueNormalizer?.normalize('propulsion',code) || code;
+            if (!['shaft','outboard','stern-drive','pod-drive','jet-drive'].includes(value)) return unknown();
+            matched = value === 'shaft';
+        } else if (key === 'wide side decks') {
+            if (!['wide','moderate','limited','narrow','none'].includes(code.toLowerCase())) return unknown();
+            matched = code.toLowerCase() === 'wide';
+        } else if (key === 'separate shower') {
+            if (!['separate stall','separate','wet head','none','combined','wet'].includes(code.toLowerCase())) return unknown();
+            matched = ['separate stall','separate'].includes(code.toLowerCase());
+        } else if (['long keel','skeg hung rudder'].includes(key)) {
+            // Only a structured category, not prose or marketing keywords.
+            if (!String(raw).includes('.') && !['full long','long keel','fin','skeg hung','spade'].includes(text)) return unknown();
+            matched = key === 'long keel' ? /full long|long keel/.test(code) : /skeg hung/.test(code);
+        } else if (key === 'galley up with helm' && field === 'Galley') {
+            if (!['galley up','galley down'].includes(text)) return unknown();
+            matched = text === 'galley up';
+        } else {
+            if (![true,false,'Yes','No','yes','no','true','false'].includes(raw)) return unknown();
+            matched = raw === true || ['yes','true'].includes(text);
         }
-
-        Object.entries(profile?.featurePriorities || {}).forEach(([feature, priority]) => {
-            const weight = priority === "Required" ? 3 : priority === "Preferred" ? 2 : 1;
-            const fields = {
-                'separate shower':['ShowerTypeCode','ShowerType','Shower'], 'wide side decks':['SideDecksCode','SideDecks'],
-                'aft cabin':['AftCabin'], 'walkthrough transom':['WalkthroughTransom'], 'side helm door':['SideHelmDoor'],
-                'galley up with helm':['GalleyUpWithHelm','Galley'], 'removable flybridge':['RemovableFlybridge'],
-                'long keel':['KeelConfigurationCode','KeelConfiguration','KeelType'], 'skeg hung rudder':['RudderTypeCode','RudderType'], 'trailerable':['Trailerable']
-            }[normalizeText(feature)] || [];
-            const firstField = fields.find(key => Object.prototype.hasOwnProperty.call(boat,key));
-            const raw = firstField ? boat[firstField] : null;
-            const unknown = raw == null || raw === '' || /unknown|optional|varies|mixed|conflict/i.test(String(raw));
-            const matched = !unknown && featureMatches(boat, feature);
-            add(feature, weight, matched, unknown);
-        });
-
-        if (profile?.crewComposition) {
-            const result = crewPreferenceResult(boat, "crewComposition", profile.crewComposition);
-            add("Primary Crew", 2, result.matched, result.unknown);
+        return {matched,unknown:false,fields:[field],support:factSupport(row,[field])};
+    }
+    function rowPreferences(boat, profile) {
+        const preferences = [], seen = new Set();
+        const add = (label, weight, result) => {
+            if (!weight || seen.has(normalizeText(label))) return;
+            seen.add(normalizeText(label));
+            preferences.push({label,weight,...result,matched:!result.unknown && !!result.matched});
+        };
+        Object.entries(profile?.featurePriorities || {}).forEach(([feature, priority]) =>
+            add(feature, preferenceWeight(priority,profile), featureResult(boat,feature)));
+        // Crew and guests share the same accommodation facts: combine their
+        // requirements into one preference rather than double-rewarding berths.
+        const crew = [];
+        if (profile?.crewComposition) crew.push(crewPreferenceResult(boat,'crewComposition',profile.crewComposition));
+        if (profile?.guestFrequency) crew.push(crewPreferenceResult(boat,'guestFrequency',profile.guestFrequency));
+        if (crew.length) {
+            const failures = crew.filter(r=>!r.unknown&&!r.matched);
+            const fields = [...new Set((failures.length?failures:crew).flatMap(r=>r.fields||[]))];
+            const unknown = !failures.length && crew.some(r=>r.unknown);
+            add('Crew and overnight guests',SCORING_POLICY.important,{matched:crew.every(r=>r.matched),unknown,fields,support:unknown?0:factSupport(boat,fields)});
         }
         if (known(profile?.tallestCrewHeight)) {
-            const result = crewPreferenceResult(boat, "tallestCrewHeight", profile.tallestCrewHeight);
-            add("Tallest Crew", 2, result.matched, result.unknown);
+            const result = crewPreferenceResult(boat,'tallestCrewHeight',profile.tallestCrewHeight);
+            const unknown = result.unknown || /estimated|conflict|variable/.test(normalizeText(boat.SpecificationConfidence?.Headroom?.Status));
+            add('Recorded headroom (verify occupied areas)',SCORING_POLICY.important,{...result,unknown,fields:['Headroom'],support:unknown?0:factSupport(boat,['Headroom'])});
         }
-        if (profile?.guestFrequency) {
-            const result = crewPreferenceResult(boat, "guestFrequency", profile.guestFrequency);
-            add("Overnight Guests", 2, result.matched, result.unknown);
+        return preferences;
+    }
+    function assessPreferences(boat, profile, scope, hardMatch, hardSpecs) {
+        if(hardMatch.status === 'excluded') return {
+            policyVersion:SCORING_POLICY.version,eligible:false,score:null,confidence:null,
+            confidenceLevel:'Not assessed',ordering:SCORING_POLICY.neutral,
+            matches:0,total:0,unknown:0,preferences:[],hardUnknowns:[],
+            hardConflicts:[hardMatch.explanation],configurationDependent:false,
+            scoreRange:null,rangeIncomplete:false,warnings:[],strengths:[],compromises:[],unknowns:[],
+            explanation:'Excluded by your must-haves. Preference ranking does not override this decision.',
+            confidenceExplanation:'No overall match is assessed for an excluded model.'
+        };
+        const rows = scope.length ? scope : [boat];
+        const alternatives = rows.map(row => {
+            const preferences = rowPreferences(row,profile);
+            const allWeight = preferences.reduce((n,p)=>n+p.weight,0);
+            const knownWeight = preferences.reduce((n,p)=>n+(p.unknown?0:p.weight),0);
+            const matchedWeight = preferences.reduce((n,p)=>n+(p.matched?p.weight:0),0);
+            const score = knownWeight ? 100*matchedWeight/knownWeight : null;
+            const confidence = allWeight ? 100*preferences.reduce((n,p)=>n+p.weight*p.support,0)/allWeight : null;
+            return {preferences,score,confidence};
+        });
+        const conditional = hardMatch.conditional || alternatives.some(a=>a.preferences.some(p=>p.configurationDependent)) || alternatives.some(a=>JSON.stringify(a.preferences.map(p=>[p.matched,p.unknown]))!==JSON.stringify(alternatives[0].preferences.map(p=>[p.matched,p.unknown])));
+        const hardUnknowns = hardMatch.unknowns.slice();
+        // Scoring may be more cautious about evidence than eligibility, but it
+        // must never change Phase 3 membership. Include material hard-field
+        // uncertainty even when a legacy scalar happens to pass the filter.
+        for(const spec of hardSpecs || []) {
+            if(rows.some(row=>/estimated|conflict|uncertain|configuration variable|unverified/.test(normalizeText(row.SpecificationConfidence?.[spec.field]?.Status)))) {
+                hardUnknowns.push(`${spec.label || 'Required specification'}. Evidence or version needs verification.`);
+            }
         }
-
-        const total = preferences.length;
-        const matches = preferences.filter(item => item.matched).length;
-        const unknown = preferences.filter(item => item.unknown).length;
-        const totalWeight = preferences.reduce((sum, item) => sum + (item.unknown ? 0 : item.weight), 0);
-        const matchedWeight = preferences.reduce((sum, item) => sum + (item.matched ? item.weight : 0), 0);
-        const score = totalWeight ? Math.round((matchedWeight / totalWeight) * 100) : 0;
-        return { score, matches, total, unknown, preferences };
+        if (hardMatch.conditional) hardUnknowns.push('Verify the applicable version and equipment against your must-haves.');
+        // Conservative ordering across applicable rows; never cherry-pick positives
+        // from different versions. Missing alternatives stay explicitly unknown.
+        const confidenceFor = a => a.confidence === null ? null : Math.min(a.confidence, hardUnknowns.length || conditional ? SCORING_POLICY.unresolvedCap : 100);
+        const orderingFor = a => a.score === null ? SCORING_POLICY.neutral : SCORING_POLICY.neutral+(confidenceFor(a)/100)*(a.score-SCORING_POLICY.neutral);
+        alternatives.sort((a,b)=>orderingFor(a)-orderingFor(b));
+        const selected = alternatives[0], preferences = selected.preferences;
+        const scores = alternatives.map(a=>a.score).filter(v=>v!==null);
+        const confidence = confidenceFor(selected);
+        const hasPreferences = preferences.length > 0;
+        const confidenceLevel = confidence === null ? 'Not assessed' : confidence >= SCORING_POLICY.high ? 'High' : confidence >= SCORING_POLICY.medium ? 'Medium' : 'Low';
+        return {
+            policyVersion:SCORING_POLICY.version, eligible:true, hardConflicts:[], score:selected.score === null?null:Math.round(selected.score),
+            confidence:confidence===null?null:Math.round(confidence), confidenceLevel,
+            ordering:hasPreferences?orderingFor(selected):SCORING_POLICY.neutral,
+            matches:preferences.filter(p=>p.matched).length,total:preferences.length,
+            unknown:preferences.filter(p=>p.unknown).length,preferences,hardUnknowns,
+            configurationDependent:conditional, scoreRange:scores.length?[Math.round(Math.min(...scores)),Math.round(Math.max(...scores))]:null,
+            rangeIncomplete:alternatives.some(a=>a.preferences.some(p=>p.unknown)),
+            explanation:!hasPreferences?'No preferences selected.':selected.score===null?'Not enough information to assess your preferences.':conditional?'Version-dependent assessment; verify which specifications coexist.':'Match describes known preferences; confidence describes their evidence.',
+            confidenceExplanation:hardUnknowns.length?'Overall confidence is limited by unresolved must-haves or configuration applicability.':'Confidence reflects applicable evidence for selected preferences, including unknown information.',
+            warnings:preferences.some(p=>p.label==='Single Engine')&&preferences.some(p=>p.label==='Twin Engines')?['Single and twin engines are competing preferences; no configuration can satisfy both.']:[],
+            strengths:preferences.filter(p=>p.matched).map(p=>p.label),
+            compromises:preferences.filter(p=>!p.matched&&!p.unknown).map(p=>p.label),
+            unknowns:preferences.filter(p=>p.unknown).map(p=>p.label)
+        };
+    }
+    function preferenceAssessment(boat, profile, routes) {
+        return evaluateBoat(boat,profile,routes || [],{}).preference;
     }
 
     function featureMatchScore(boat, profile) {
@@ -320,18 +435,38 @@
             return {row,phaseID:p.ProductionPhaseID};
         }):[{row:boat,phaseID:null}];
         const configFields=new Set(configs.flatMap(c=>c&&typeof c==='object'?Object.keys(c):[]).filter(k=>specs.some(s=>s.field===k)));
-        const overlay=(base,c)=>{const row={...base};for(const key of configFields)row[key]=null;for(const key of configFields)if(c&&Object.prototype.hasOwnProperty.call(c,key))row[key]=c[key];return row;};
+        const scoringRows=new Map();
+        const scoringFields=new Set(configs.flatMap(c=>Object.keys(c||{})).filter(k=>!['ProductionPhaseID','ConfigurationID','SpecificationConfidence'].includes(k)));
+        const phaseScoring=new Map(phaseRows.map((p,index)=>{
+            const row={...p.row,SpecificationConfidence:{...p.row.SpecificationConfidence}};
+            for(const f of phases[index]?.FactOverrides||[]) {
+                row.SpecificationConfidence[f.FieldID]={Level:f.Confidence||'Low',Status:f.ValueState==='known'?(String(f.Confidence).toLowerCase()==='high'?'verified':'supported'):'uncertain'};
+            }
+            return [p.row,row];
+        }));
+        const scoreOverlay=(base,c)=>{
+            const source=phaseScoring.get(base)||base;
+            const row={...source,SpecificationConfidence:{...source.SpecificationConfidence}};
+            for(const key of scoringFields){
+                row[key]=Object.prototype.hasOwnProperty.call(c||{},key)?c[key]:null;
+                // A model-wide evidence rating cannot certify a different option value.
+                row.SpecificationConfidence[key]=c?.SpecificationConfidence?.[key] || (row[key]===source[key]?source.SpecificationConfidence?.[key]:undefined);
+            }
+            return row;
+        };
+        const originalOverlay=(base,c)=>{const row={...base};for(const key of configFields)row[key]=null;for(const key of configFields)if(c&&Object.prototype.hasOwnProperty.call(c,key))row[key]=c[key];return row;};
+        const overlay=(base,c)=>{const row=originalOverlay(base,c);scoringRows.set(row,scoreOverlay(base,c));return row;};
         let rows,linkageUnknown=false;
         if(!configs.length)rows=phaseRows.map(p=>p.row);
         else if(!phases.length){
             rows=configs.map(c=>overlay(boat,c));
-            if(boat.VerifiedConfigurationsComplete!==true){const rest={...boat};for(const key of configFields)if(uncertain(boat[key]))rest[key]=null;rows.push(rest);}
+            if(boat.VerifiedConfigurationsComplete!==true){const rest={...boat};for(const key of configFields)if(uncertain(boat[key]))rest[key]=null;scoringRows.set(rest,scoreOverlay(rest,null));rows.push(rest);}
         }else{
             // Do not invent a Cartesian pairing between independent phase/configuration evidence.
             const scoped=configs.every(c=>c?.ProductionPhaseID&&phases.some(p=>p.ProductionPhaseID===c.ProductionPhaseID));
             if(scoped){
                 rows=[];
-                for(const p of phaseRows){const options=configs.filter(c=>c.ProductionPhaseID===p.phaseID);rows.push(...options.map(c=>overlay(p.row,c)));if(!options.length||boat.VerifiedConfigurationsComplete!==true)rows.push(p.row);}
+                for(const p of phaseRows){const options=configs.filter(c=>c.ProductionPhaseID===p.phaseID);rows.push(...options.map(c=>overlay(p.row,c)));if(!options.length||boat.VerifiedConfigurationsComplete!==true){scoringRows.set(p.row,scoreOverlay(p.row,null));rows.push(p.row);}}
             }else{
                 const phaseResults=phaseRows.map(p=>{const row={...p.row};for(const key of configFields)row[key]=null;return assess(row);});
                 const configBase={...boat};for(const key of phaseFields)configBase[key]=null;
@@ -339,7 +474,7 @@
                 if(boat.VerifiedConfigurationsComplete!==true)configRows.push(configBase);
                 const configResults=configRows.map(assess);
                 if(!phaseResults.some(r=>r.passes)||!configResults.some(r=>r.passes))rows=[];
-                else {const unresolved={...boat};for(const key of new Set([...phaseFields,...configFields]))unresolved[key]=null;rows=[unresolved];linkageUnknown=true;}
+                else {const unresolved={...boat};for(const key of new Set([...phaseFields,...configFields]))unresolved[key]=null;rows=[unresolved];const scoring={...unresolved};for(const key of scoringFields)scoring[key]=null;scoringRows.set(unresolved,scoring);linkageUnknown=true;}
             }
         }
         const results=rows.map(assess),possible=results.filter(r=>r.passes);
@@ -357,7 +492,9 @@
         const status=reasons.length?'excluded':unknowns.length?'unknown':conditional?'configuration-dependent':'confirmed';
         const explanation=status==='excluded'?'Known information conflicts with your requirements.':status==='unknown'?'Retained because some required information is unknown.':status==='configuration-dependent'?'A documented configuration fits; verify the boat’s version and equipment.':specs.length?'Confirmed against the selected requirements.':'No exclusion requirements selected.';
         const labels={'fuel':'Fuel type not verified','propulsion':'Drive type not verified','engine-count':'Engine count not verified','hull-type':'Hull behavior not verified','construction-material':'Hull material not verified','style':'Boat style not verified','boat-family':'Boat family not verified','configuration':'Layout not verified','flybridge':'Flybridge availability not verified','side-decks':'Side-deck access not verified','trailerable':'Trailerability not verified','great-loop':'Great Loop suitability not verified','minimum-berths':'Berths not verified','minimum-cabins':'Cabins not verified','minimum-heads':'Heads not verified','min-length':'Length not verified','max-length':'Length not verified','min-beam':'Beam not verified','max-beam':'Beam not verified','max-draft':'Draft not verified','max-air-draft':'Air clearance not verified','route-compatibility':'Route dimensions not verified'};
-        return {passes:!reasons.length,reasons:[...new Set(reasons)],relevance:relevanceScore(boat,profile.textSearch),preference:preferenceAssessment(boat,profile),match:{status,explanation,unknowns:[...new Set(unknowns.map(key=>labels[key]||key))],conditional,requirements:specs.length}};
+        const match={status,explanation,unknowns:[...new Set(unknowns.map(key=>labels[key]||key))],conditional,requirements:specs.length};
+        const scope=rows.filter((row,index)=>results[index].passes).map(row=>scoringRows.get(row)||phaseScoring.get(row)||row);
+        return {passes:!reasons.length,reasons:[...new Set(reasons)],relevance:relevanceScore(boat,profile.textSearch),preference:assessPreferences(boat,profile,scope,match,specs.map(spec=>({...spec,label:labels[spec.reason]}))),match};
     }
 
     function filterBoats(boats, settings, routes, dependencies) {
@@ -365,12 +502,12 @@
         const evaluated = source.map((boat, index) => ({ boat, index, result: evaluateBoat(boat, settings, routes, dependencies) }))
             .filter(item => item.result.passes);
         if (settings && (settings.textSearch || Object.keys(settings.featurePriorities || {}).length || settings.crewComposition || settings.tallestCrewHeight || settings.guestFrequency)) {
-            evaluated.sort((a, b) => b.result.preference.score - a.result.preference.score || b.result.preference.matches - a.result.preference.matches || b.result.relevance - a.result.relevance || a.index - b.index);
+            evaluated.sort((a, b) => b.result.preference.ordering - a.result.preference.ordering || (b.result.preference.confidence??0) - (a.result.preference.confidence??0) || b.result.relevance - a.result.relevance || String(a.boat.BoatModelID||a.index).localeCompare(String(b.boat.BoatModelID||b.index)));
         }
         return evaluated.map(item => item.boat);
     }
 
-    const returnApi = { evaluateBoat, filterBoats, known, numericValue, relevanceScore, levenshtein, featureMatchScore, preferenceAssessment, featureMatches };
+    const returnApi = { SCORING_POLICY, preferenceWeight, evaluateBoat, filterBoats, known, numericValue, relevanceScore, levenshtein, featureMatchScore, preferenceAssessment, featureMatches };
 
     global.BScoutFilterEngine = returnApi;
 })(typeof window !== "undefined" ? window : globalThis);

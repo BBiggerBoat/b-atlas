@@ -21,15 +21,12 @@ function passesRouteCompatibility(boat, userProfile, routes) {
 }
 
 function passesHardFilters(boat, userProfile) {
-    return true;
+    return typeof BScoutFilterEngine !== 'undefined' ? BScoutFilterEngine.evaluateBoat(boat,userProfile || {},[],{}).passes : true;
 }
 
 function calculateFitScore(boat, userProfile) {
-    return {
-        score: 100,
-        reasons: [],
-        unknowns: []
-    };
+    const engine = typeof BScoutFilterEngine !== 'undefined' ? BScoutFilterEngine : null;
+    return engine ? engine.preferenceAssessment(boat,userProfile || {},typeof window !== 'undefined' ? window.BScoutSearchOrchestrator?.getContext?.().routes : []) : {score:null,confidence:null,confidenceLevel:'Not assessed',preferences:[],unknowns:[]};
 }
 
 if (typeof window !== "undefined") {

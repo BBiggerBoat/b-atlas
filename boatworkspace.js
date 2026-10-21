@@ -168,7 +168,7 @@
     }
     function getRecommendation() {
         if (!currentBoat || typeof root.evaluateBoatForProfile !== "function") return null;
-        return root.evaluateBoatForProfile(currentBoat, null, root.currentSearchProfile || {}, null);
+        return root.evaluateBoatForProfile(currentBoat, null, {SearchSettings:root.BScoutSearchState?.getState?.().searchSettings || root.currentSearchProfile?.SearchSettings || {}}, null);
     }
 
     function nonEmptyArray(value) {
@@ -238,14 +238,14 @@
         const recommendation = getRecommendation();
         const relation = getRelationship();
         const coverage = getKnowledge()?.Coverage;
-        const score = recommendation?.overallFit ?? recommendation?.score ?? (typeof root.calculateBScoutScore === "function" ? root.calculateBScoutScore(boat).score : null);
+        const matchSummary = typeof root.renderPreferenceMatchSummary === 'function' ? root.renderPreferenceMatchSummary(boat,true) : '<p>Buyer match not assessed.</p>';
         const positives = nonEmptyArray(recommendation?.positives).length ? recommendation.positives : splitText(boat.Strengths);
         const cautions = nonEmptyArray(recommendation?.cautions).length ? recommendation.cautions : splitText(boat.Weaknesses);
         const conflicts = nonEmptyArray(recommendation?.tradeoffs).length ? recommendation.tradeoffs : splitText(boat.AvoidIf);
         return `<div class="workspace-overview-grid">
             <section class="workspace-card workspace-decision-card">
                 <span class="workspace-label">Decision summary</span>
-                <div class="workspace-score-row"><strong>${score == null ? "Not scored" : `${esc(score)}/100`}</strong><span>${esc(relation?.Status || "Unreviewed")}</span></div>
+                <div class="workspace-score-row"><span>${esc(relation?.Status || "Unreviewed")}</span></div>${matchSummary}
                 <p>${esc(boat.TypicalMission || "Mission fit has not been documented.")}</p>
             </section>
             <section class="workspace-card"><h3>Quick Specifications</h3><div class="workspace-fact-grid">
