@@ -307,6 +307,9 @@
 <label for="maxBeam">Max Beam (ft)</label>
 <input data-unit-input="length" id="maxBeam" inputmode="decimal" pattern="[0-9]*[.,]?[0-9]*" placeholder="10.5" type="text"/>
 </section>
+<section class="filter-section compact-number-row"><label for="maxDraft">Max Draft (ft)</label><input id="maxDraft" data-unit-input="length" type="number" inputmode="decimal" step="any"/></section>
+<section class="filter-section compact-number-row"><label for="maxAirDraft">Max Air Clearance (ft)</label><input id="maxAirDraft" data-unit-input="length" type="number" inputmode="decimal" step="any"/></section>
+<small>Unknown measurements retain a model. Check the individual boat before planning a route.</small>
 </div>
 </div>
 <div class="filter-group">
@@ -364,6 +367,9 @@
 <label><input class="propulsionFilter" type="checkbox" value="Stern Drive"/> Outdrive / Stern Drive</label>
 <label><input class="engineCountFilter" type="checkbox" value="1"/> Single Engine</label>
 <label><input class="engineCountFilter" type="checkbox" value="2"/> Twin Engines</label>
+<label><input class="engineCountFilter" type="checkbox" value="3"/> Three Engines</label>
+<label><input class="propulsionFilter" type="checkbox" value="Pod"/> Pod Drive</label>
+<label><input class="propulsionFilter" type="checkbox" value="Jet"/> Jet Drive</label>
 </div>
 </section>
 </div>
@@ -904,15 +910,15 @@ Engine manual — paper copy aboard..." rows="7"></textarea>
 <script src="boatregistry.js"></script>
 <script src="taxonomyregistry.js"></script>
 <script src="imageassetmanager.js?v=7.06.2-canonical-20261020"></script>
-<script src="userProfile.js"></script>
-<script src="searchstatemanager.js?v=7.06.2-mobilefilter2"></script>
-<script src="valuenormalizer.js"></script>
+<script src="userProfile.js?v=phase3-exclusion-20261020"></script>
+<script src="searchstatemanager.js?v=phase3-exclusion-20261020"></script>
+<script src="valuenormalizer.js?v=phase3-exclusion-20261020"></script>
 <script src="searchprofilemanager.js"></script>
 <script src="canonicaldata.js?v=7.06.2"></script>
 <script src="modelurls.js?v=7.06.2"></script>
-<script src="filterengine.js?v=7.06.4-configqa1"></script>
-<script src="searchorchestrator.js?v=7.06.2-mobilefilter2"></script>
-<script src="engine.js"></script>
+<script src="filterengine.js?v=phase3-exclusion-20261020"></script>
+<script src="searchorchestrator.js?v=phase3-exclusion-20261020"></script>
+<script src="engine.js?v=phase3-exclusion-20261020"></script>
 <script src="knowledge/knowledgeengine.js"></script>
 <script src="knowledge/boatintelligencerepository.js?v=7.06.2-canonical-20261020"></script>
 <script src="knowledge/manufacturerknowledgerepository.js"></script>
@@ -930,7 +936,7 @@ Engine manual — paper copy aboard..." rows="7"></textarea>
 <script src="communityguide.js?v=7.06.2"></script>
 <script src="modelknowledgescore.js?v=7.06.2"></script>
 <script src="boatworkspace.js?v=7.06.2-canonical-20261020"></script>
-<script src="script.js?v=7.06.2-canonical-20261020"></script>
+<script src="script.js?v=phase3-exclusion-20261020"></script>
 <script src="appbootstrap.js?v=7.06.3-riviera1"></script>
 <script src="ownership.js?v=7.06.2"></script>
 <script src="applicationpolish.js?v=7.06.2-phase1i-refresh2"></script>

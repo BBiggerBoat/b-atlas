@@ -165,6 +165,7 @@ window.resetSearchControls = resetSearchControls;
 
 function applySearchSettingsToControls(settings) {
     const values = settings || {};
+    window.BScoutSearchState?.setSearchSettings(values, {source:'restore-profile'});
     resetSearchControls();
     const setValue = (id, value) => { const element = document.getElementById(id); if (element && value !== undefined && value !== null) element.value = value; };
     const setCheckedValues = (selector, selected) => {
@@ -177,6 +178,8 @@ function applySearchSettingsToControls(settings) {
         return profile === "metric" ? Number((Number(value) * 0.3048).toFixed(2)) : value;
     };
     setValue("textSearch", values.textSearch || ""); setValue("minLength", displayLengthInput(values.minLength)); setValue("maxLength", displayLengthInput(values.maxLength)); setValue("minBeam", displayLengthInput(values.minBeam)); setValue("maxBeam", displayLengthInput(values.maxBeam));
+    for (const key of ["maxDraft","maxAirDraft"]) setValue(key, displayLengthInput(values[key]));
+    for (const key of ["minimumBerths","minimumCabins","minimumHeads"]) setValue(key, values[key]);
     setValue("flybridgeFilter", values.flybridge || ""); setValue("sideDeckFilter", values.sideDecks || ""); setValue("trailerFilter", values.trailerable || ""); setValue("loopFilter", values.greatLoop || "");
     setValue("crewComposition", values.crewComposition || ""); setValue("tallestCrewHeight", values.tallestCrewHeight ?? ""); setValue("guestFrequency", values.guestFrequency || "");
     setCheckedValues(".routeFilter", values.routes); setCheckedValues(".styleFilter", values.styles); setCheckedValues(".familyFilter", values.boatFamilies);
@@ -196,12 +199,16 @@ function describeSearchProfile(settings) {
         return window.BAtlasCanonical?.formatMeasurement?.(metres, "length", "both") || `${value} ft`;
     };
     if (s.minLength) lines.push(`Minimum length: ${fmtConstraint(s.minLength)}`); if (s.maxLength) lines.push(`Maximum length: ${fmtConstraint(s.maxLength)}`); if (s.minBeam) lines.push(`Minimum beam: ${fmtConstraint(s.minBeam)}`); if (s.maxBeam) lines.push(`Maximum beam: ${fmtConstraint(s.maxBeam)}`);
+    for (const key of ["maxDraft","maxAirDraft"]) if(s[key] != null) lines.push((key === "maxDraft" ? "Maximum draft: " : "Maximum air clearance: ") + fmtConstraint(s[key]));
+    for (const key of ["minimumBerths","minimumCabins","minimumHeads"]) if(s[key] != null) lines.push(key.replace("minimum","Minimum ") + ": " + s[key]);
+    if(s.styles?.length) lines.push("Saved style requirement: " + s.styles.join(", "));
     if (s.fuels?.length) lines.push(`Fuel: ${s.fuels.join(", ")}`); if (s.boatFamilies?.length) lines.push(`Boat family: ${s.boatFamilies.join(", ")}`);
     if (s.configurations?.length) lines.push(`Sub-Family: ${s.configurations.join(", ")}`); if (s.hullTypes?.length) lines.push(`Hull behaviour: ${s.hullTypes.join(", ")}`);
     if (s.constructionMaterials?.length) lines.push(`Construction: ${s.constructionMaterials.join(", ")}`); if (s.propulsion?.length) lines.push(`Propulsion: ${s.propulsion.join(", ")}`);
     const engineCounts = Array.isArray(s.engineCounts) && s.engineCounts.length ? s.engineCounts.map(Number) : (s.twinEngines ? [2] : []);
-    if (engineCounts.length === 1) lines.push(`Engine arrangement: ${engineCounts[0] === 1 ? "Single engine" : "Twin engines"}`);
-    else if (engineCounts.length > 1) lines.push("Engine arrangement: Single or twin engines");
+    if (engineCounts.length === 1) lines.push(`Engine arrangement: ${engineCounts[0] === 1 ? "Single engine" : engineCounts[0] === 2 ? "Twin engines" : engineCounts[0] + " engines"}`);
+    else if (engineCounts.length > 1) lines.push("Engine arrangement: " + engineCounts.join(", ") + " engines");
+    for(const [key,label] of [["flybridge","Flybridge"],["trailerable","Trailerable"],["greatLoop","Great Loop"]]) if(s[key]) lines.push(label+": "+s[key]);
     if (s.sideDecks) lines.push(`Side decks: ${s.sideDecks}`); return lines;
 }
 
@@ -351,156 +358,9 @@ function calculateMissionFit(boat, mission) {
 // =====================================================
 
 function calculateBScoutScore(boat) {
-
-
-    let score = 50;
-
-    let reasons = [];
-
-    let unknowns = [];
-
-
-
-    // Fuel
-
-    if (
-        boat.Fuel &&
-        boat.Fuel.toLowerCase().includes("diesel")
-    ) {
-
-        score += 10;
-
-        reasons.push("✓ Diesel power");
-
-    }
-
-    else if (!boat.Fuel) {
-
-        unknowns.push("? Fuel unknown");
-
-    }
-
-
-
-    // Hull
-
-    if (
-        boat.HullType === "Full Displacement" ||
-        boat.HullType === "Semi-Displacement"
-    ) {
-
-        score += 10;
-
-        reasons.push("✓ Cruising hull design");
-
-    }
-
-    else if (!boat.HullType) {
-
-        unknowns.push("? Hull type unknown");
-
-    }
-
-
-
-    // Propulsion
-
-    if (
-        boat.Propulsion &&
-        boat.Propulsion.toLowerCase().includes("shaft")
-    ) {
-
-        score += 10;
-
-        reasons.push("✓ Inboard shaft propulsion");
-
-    }
-
-    else if (!boat.Propulsion) {
-
-        unknowns.push("? Propulsion unknown");
-
-    }
-
-
-
-    // Side decks
-
-    if (boat.SideDecks === "Wide") {
-
-        score += 8;
-
-        reasons.push("✓ Wide side decks");
-
-    }
-
-    else if (boat.SideDecks === "Moderate") {
-
-        score += 5;
-
-        reasons.push("✓ Moderate side decks");
-
-    }
-
-    else if (boat.SideDecks === "Limited") {
-
-        score += 3;
-
-        reasons.push("✓ Limited side access");
-
-    }
-
-    else if (boat.SideDecks === "Narrow") {
-
-        score += 2;
-
-        reasons.push("✓ Narrow side access");
-
-    }
-
-
-
-    // Documentation
-
-    if (boat.Strengths) {
-
-        score += 5;
-
-        reasons.push("✓ Documented strengths");
-
-    }
-
-
-
-    if (boat.CommonProblems) {
-
-        score += 5;
-
-        reasons.push("✓ Known issues documented");
-
-    }
-
-
-
-    if (score > 100) {
-
-        score = 100;
-
-    }
-
-
-
-    return {
-
-        score,
-
-        reasons,
-
-        unknowns
-
-    };
-
-
+    const settings = window.BScoutSearchState?.getState?.().searchSettings || {};
+    const result = window.BScoutFilterEngine.evaluateBoat(boat, settings, typeof allRoutes !== 'undefined' ? allRoutes : [], {});
+    return {score:result.preference.score,reasons:[],unknowns:result.match.unknowns,match:result.match};
 }
 
 
@@ -557,7 +417,7 @@ function renderPreferenceMatchSummary(boat) {
     const unknownText = assessment.unknown ? ` · ${assessment.unknown} unknown` : "";
     return `<div class="preference-match-summary">
         <div class="preference-score"><strong>Preference Match ${assessment.score}%</strong></div>
-        <div class="preference-count">Matches ${assessment.matches} of ${assessment.total} Preferences${unknownText}</div>
+        <div class="preference-count">Matches ${assessment.matches} of ${assessment.total - assessment.unknown} known Preferences${unknownText}</div>
         ${matchedLabels.length ? `<div class="preference-labels">${matchedLabels.map(label => `<span>${escapeHtml(label)}</span>`).join("")}</div>` : ""}
     </div>`;
 }
@@ -711,8 +571,8 @@ ${renderPreferenceMatchSummary(boat)}
 ${window.BScoutIntelligenceLayer ? window.BScoutIntelligenceLayer.renderModelKnowledgeSummary(window.BScoutIntelligenceLayer.buildModelKnowledgeSummary(boat), { compact: true }) : ""}
 
 <div class="card-fit-summary">
-    <p class="hard-filter-pass"><strong>✓ Meets all known hard filters</strong></p>
-    <p class="unknown-data">${evaluation.unknowns.slice(0, 3).join("<br>") || "No key data gaps identified"}</p>
+    <p class="hard-filter-pass"><strong>${escapeHtml(evaluation.match.explanation)}</strong></p>
+    <p class="unknown-data">${evaluation.unknowns.slice(0, 3).map(escapeHtml).join("<br>") || (evaluation.match.status === "configuration-dependent" ? "Verify production version and equipment before purchase." : "Assessment applies only to your selected requirements.")}</p>
 </div>
 
 <hr>
@@ -908,7 +768,7 @@ function showBoatDetails(boat) {
         );
         const section = modalScore.closest(".modal-section");
         if (section) section.style.display = hasBuyerCriteria ? "block" : "none";
-        modalScore.innerHTML = hasBuyerCriteria ? `<strong>Hard-filter status:</strong> Meets all known hard filters.<br><br>${evaluation.unknowns.join("<br>") || "No key data gaps identified."}` : "";
+        modalScore.innerHTML = hasBuyerCriteria ? `<strong>Hard-filter status:</strong> ${escapeHtml(evaluation.match.explanation)}<br><br>${evaluation.unknowns.map(escapeHtml).join("<br>") || "Verify the individual boat before purchase."}` : "";
     }
 
 
@@ -1328,20 +1188,18 @@ const textSearchInput =
 
 // Mobile search UX: filters sit below the primary Search button, so requiring
 // a scroll back to the top makes selected filters appear non-functional.
-// On compact screens, apply filter/control changes immediately. Desktop keeps
-// the explicit Search-button workflow.
+// Apply changes immediately at every screen size. Search remains an explicit refresh.
 (function bindMobileLiveFiltering() {
     const panel = document.querySelector(".search-panel");
     if (!panel || panel.dataset.mobileLiveFilteringBound === "true") return;
     panel.dataset.mobileLiveFilteringBound = "true";
 
-    const isCompact = () => window.matchMedia && window.matchMedia("(max-width: 680px)").matches;
     const shouldIgnore = element => !element ||
         element.id === "searchProfileSelect" ||
         ["newProfileBtn", "saveProfileBtn", "duplicateProfileBtn"].includes(element.id);
 
     panel.addEventListener("change", event => {
-        if (!isCompact() || shouldIgnore(event.target)) return;
+        if (shouldIgnore(event.target)) return;
         if (event.target.matches("input, select")) runCurrentSearch();
     });
 
@@ -1349,7 +1207,6 @@ const textSearchInput =
     const mobileTextInput = document.getElementById("textSearch");
     if (mobileTextInput) {
         mobileTextInput.addEventListener("input", () => {
-            if (!isCompact()) return;
             clearTimeout(mobileTextSearchTimer);
             mobileTextSearchTimer = setTimeout(runCurrentSearch, 250);
         });

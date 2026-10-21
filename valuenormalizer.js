@@ -17,7 +17,15 @@
         driveType: { "single": "single", "single screw": "single", "single engine": "single", "twin": "twin", "twin screw": "twin", "twin engine": "twin" }
     };
     function key(value) { return String(value == null ? "" : value).toLowerCase().replace(/[^a-z0-9]+/g, " ").trim(); }
-    function normalize(domain, value) { const cleaned = key(value); return MAPS[domain]?.[cleaned] || cleaned; }
+    function normalize(domain, value) {
+        const cleaned = key(value);
+        const aliases = {
+            propulsion: { 'v drive':'shaft', 'shaft v drive':'shaft', 'vdrive':'shaft', 'ips':'pod-drive', 'ips pod':'pod-drive', 'zeus':'pod-drive', 'zeus pod':'pod-drive', 'pod zeus':'pod-drive' },
+            construction: { 'fiberglass composite':'fiberglass', 'glass reinforced plastic':'fiberglass' },
+            boatStyle: { 'expresscruiser':'express cruiser', 'sedanbridge':'sedan bridge', 'bowrider':'bowrider' }
+        };
+        return aliases[domain]?.[cleaned] || MAPS[domain]?.[cleaned] || cleaned;
+    }
     function normalizeMany(domain, values) { return (Array.isArray(values) ? values : []).map(value => normalize(domain, value)).filter(Boolean); }
     function matches(domain, selected, actual) { if (actual === undefined || actual === null || actual === "") return true; const normalizedActual = normalize(domain, actual); return normalizeMany(domain, selected).includes(normalizedActual); }
     global.BScoutValueNormalizer = { MAPS, key, normalize, normalizeMany, matches };
