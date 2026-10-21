@@ -1,0 +1,33 @@
+name: Verify public archive exclusions
+on:
+  push:
+    branches:
+      - repository-hygiene-2026-10
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Build public site
+        run: npm run build:public
+      - name: Verify canonical data retained and historical staging excluded
+        shell: bash
+        run: |
+          test -s dist/boatmodels.json
+          test -s dist/data/registry/boat-registry.json
+          test -s dist/data/production-phases.json
+          test ! -e dist/data/phase2-batches
+          test ! -e dist/data/enrichment
+          if find dist/data -maxdepth 1 -type f \( -name 'phase2-live-models*.json' -o -name 'phase2-live-aliases*.json' \) | grep -q .; then
+            echo "ERROR: historical model shard exposed in deployment"
+            exit 1
+          fi
+          node -e 'const fs=require("fs"); const b=JSON.parse(fs.readFileSync("dist/boatmodels.json"));if(b.length!==995)process.exit(1)'
+      - name: Verify canonical integration
+        run: node tests/canonical-integration.cjs

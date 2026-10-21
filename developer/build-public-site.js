@@ -31,6 +31,35 @@ resetDir(out);
 for(const rel of manifest.rootFiles) copyFile(rel);
 for(const rel of manifest.publicDirectories) copyDir(rel);
 for(const rel of manifest.temporaryModeratorFiles) copyFile(rel);
+// Retain migration/research datasets in GitHub, but do not publish obsolete
+// model shards or staging batches as independent public JSON databases.
+// The active model catalogue remains boatmodels.json; evidence files are
+// deliberately untouched until their consumer dependencies are audited.
+const isArchiveOnly = rel =>
+  (rel.startsWith("data/phase2-live-models") && rel.endsWith(".json")) ||
+  (rel.startsWith("data/phase2-live-aliases") && rel.endsWith(".json")) ||
+  rel.startsWith("data/phase2-batches/") ||
+  rel.startsWith("data/enrichment/");
+let unpublishedArchiveCount=0;
+function pruneArchive(dir){
+  if(!fs.existsSync(dir)) return;
+  for(const entry of fs.readdirSync(dir,{withFileTypes:true})){
+    const full=path.join(dir,entry.name);
+    if(entry.isDirectory()) {
+      pruneArchive(full);
+      if(fs.readdirSync(full).length===0) fs.rmdirSync(full);
+    }
+    else if(entry.isFile()){
+      const rel=path.relative(out,full).split(path.sep).join("/");
+      if(isArchiveOnly(rel)){
+        fs.rmSync(full);
+        unpublishedArchiveCount++;
+      }
+    }
+  }
+}
+pruneArchive(path.join(out,"data"));
+
 
 // Directory allowlists must not publish source-only research or canonical owners.
 for(const rel of manifest.sourceOnlyNeverPublish || []) {
@@ -81,7 +110,8 @@ const marker={
   baseline:manifest.version,
   rootFileCount:manifest.rootFiles.length,
   publicDirectoryCount:manifest.publicDirectories.length,
-  temporaryModeratorFileCount:manifest.temporaryModeratorFiles.length
+  temporaryModeratorFileCount:manifest.temporaryModeratorFiles.length,
+  unpublishedArchiveCount
 };
 fs.writeFileSync(path.join(out,"public-build.json"),JSON.stringify(marker,null,2)+"\n");
 console.log(`B-Atlas public build created in dist/ with ${manifest.rootFiles.length} root files, ${manifest.publicDirectories.length} public directories and ${manifest.temporaryModeratorFiles.length} temporary moderator files.`);
