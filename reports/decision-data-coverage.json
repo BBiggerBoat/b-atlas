@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T08:09:20.620Z",
+  "generatedAt": "2026-10-21T12:04:23.765Z",
   "models": 995,
   "priority": [
     "Beam",
@@ -42,9 +42,9 @@
       "pct": 80.4
     },
     "Propulsion": {
-      "known": 732,
-      "missing": 263,
-      "pct": 73.6
+      "known": 736,
+      "missing": 259,
+      "pct": 74
     },
     "HullForm": {
       "known": 958,
@@ -314,10 +314,6 @@
         "missing": 38
       },
       {
-        "manufacturer": "Chris-Craft",
-        "missing": 32
-      },
-      {
         "manufacturer": "Bayliner",
         "missing": 30
       },
@@ -327,6 +323,10 @@
       },
       {
         "manufacturer": "Wellcraft",
+        "missing": 28
+      },
+      {
+        "manufacturer": "Chris-Craft",
         "missing": 28
       },
       {
@@ -1064,54 +1064,6 @@
       ]
     },
     {
-      "BoatModelID": "CHCR-CALYPSO-30",
-      "Manufacturer": "Chris-Craft",
-      "Nickname": "Chris-Craft Calypso 30",
-      "missing": 8,
-      "gaps": [
-        "Beam",
-        "FuelType",
-        "Propulsion",
-        "HullForm",
-        "Draft",
-        "AirDraft",
-        "EngineConfig",
-        "Displacement"
-      ]
-    },
-    {
-      "BoatModelID": "CHCR-CALYPSO-35",
-      "Manufacturer": "Chris-Craft",
-      "Nickname": "Chris-Craft Calypso 35",
-      "missing": 8,
-      "gaps": [
-        "Beam",
-        "FuelType",
-        "Propulsion",
-        "HullForm",
-        "Draft",
-        "AirDraft",
-        "EngineConfig",
-        "Displacement"
-      ]
-    },
-    {
-      "BoatModelID": "CHCR-CATALINA-34",
-      "Manufacturer": "Chris-Craft",
-      "Nickname": "Chris-Craft Catalina 34",
-      "missing": 8,
-      "gaps": [
-        "Beam",
-        "FuelType",
-        "Propulsion",
-        "HullForm",
-        "Draft",
-        "AirDraft",
-        "EngineConfig",
-        "Displacement"
-      ]
-    },
-    {
       "BoatModelID": "CHCR-CORSAIR-34",
       "Manufacturer": "Chris-Craft",
       "Nickname": "Chris-Craft Corsair 34",
@@ -1152,6 +1104,51 @@
         "Beam",
         "FuelType",
         "Propulsion",
+        "HullForm",
+        "Draft",
+        "AirDraft",
+        "EngineConfig",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "CHCR-CALYPSO-30",
+      "Manufacturer": "Chris-Craft",
+      "Nickname": "Chris-Craft Calypso 30",
+      "missing": 7,
+      "gaps": [
+        "Beam",
+        "FuelType",
+        "HullForm",
+        "Draft",
+        "AirDraft",
+        "EngineConfig",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "CHCR-CALYPSO-35",
+      "Manufacturer": "Chris-Craft",
+      "Nickname": "Chris-Craft Calypso 35",
+      "missing": 7,
+      "gaps": [
+        "Beam",
+        "FuelType",
+        "HullForm",
+        "Draft",
+        "AirDraft",
+        "EngineConfig",
+        "Displacement"
+      ]
+    },
+    {
+      "BoatModelID": "CHCR-CATALINA-34",
+      "Manufacturer": "Chris-Craft",
+      "Nickname": "Chris-Craft Catalina 34",
+      "missing": 7,
+      "gaps": [
+        "Beam",
+        "FuelType",
         "HullForm",
         "Draft",
         "AirDraft",

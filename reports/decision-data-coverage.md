@@ -1,6 +1,6 @@
 # B-Atlas Decision Data Coverage Audit
 
-Generated: 2026-10-20T08:09:20.620Z
+Generated: 2026-10-21T12:04:23.765Z
 
 Canonical models: **995**
 
@@ -11,7 +11,7 @@ Canonical models: **995**
 | 1 | Beam | 938 | 57 | 94.3% |
 | 2 | LOA | 989 | 6 | 99.4% |
 | 3 | FuelType | 800 | 195 | 80.4% |
-| 4 | Propulsion | 732 | 263 | 73.6% |
+| 4 | Propulsion | 736 | 259 | 74% |
 | 5 | HullForm | 958 | 37 | 96.3% |
 | 6 | Draft | 924 | 71 | 92.9% |
 | 7 | AirDraft | 629 | 366 | 63.2% |
@@ -62,10 +62,10 @@ Canonical models: **995**
 |---|---:|
 | Carver | 40 |
 | Cruisers Yachts | 38 |
-| Chris-Craft | 32 |
 | Bayliner | 30 |
 | Regal | 28 |
 | Wellcraft | 28 |
+| Chris-Craft | 28 |
 | Formula | 20 |
 | Chaparral | 15 |
 | Four Winns | 15 |
@@ -153,12 +153,12 @@ Canonical models: **995**
 | Chris-Craft 332 Express | Chris-Craft | 8 | Beam, FuelType, Propulsion, HullForm, Draft, AirDraft, EngineConfig, Displacement |
 | Chris-Craft 333 Sedan | Chris-Craft | 8 | Beam, FuelType, Propulsion, HullForm, Draft, AirDraft, EngineConfig, Displacement |
 | Chris-Craft 336 Mid Cabin Express | Chris-Craft | 8 | Beam, FuelType, Propulsion, HullForm, Draft, AirDraft, EngineConfig, Displacement |
-| Chris-Craft Calypso 30 | Chris-Craft | 8 | Beam, FuelType, Propulsion, HullForm, Draft, AirDraft, EngineConfig, Displacement |
-| Chris-Craft Calypso 35 | Chris-Craft | 8 | Beam, FuelType, Propulsion, HullForm, Draft, AirDraft, EngineConfig, Displacement |
-| Chris-Craft Catalina 34 | Chris-Craft | 8 | Beam, FuelType, Propulsion, HullForm, Draft, AirDraft, EngineConfig, Displacement |
 | Chris-Craft Corsair 34 | Chris-Craft | 8 | Beam, FuelType, Propulsion, HullForm, Draft, AirDraft, EngineConfig, Displacement |
 | Chris-Craft Launch 35 GT | Chris-Craft | 8 | Beam, FuelType, Propulsion, HullForm, Draft, AirDraft, EngineConfig, Displacement |
 | Chris-Craft Launch 36 / 38 | Chris-Craft | 8 | Beam, FuelType, Propulsion, HullForm, Draft, AirDraft, EngineConfig, Displacement |
+| Chris-Craft Calypso 30 | Chris-Craft | 7 | Beam, FuelType, HullForm, Draft, AirDraft, EngineConfig, Displacement |
+| Chris-Craft Calypso 35 | Chris-Craft | 7 | Beam, FuelType, HullForm, Draft, AirDraft, EngineConfig, Displacement |
+| Chris-Craft Catalina 34 | Chris-Craft | 7 | Beam, FuelType, HullForm, Draft, AirDraft, EngineConfig, Displacement |
 | Four Winns 325 Express | Four Winns | 7 | LOA, FuelType, Propulsion, Draft, AirDraft, EngineConfig, Displacement |
 | Bayliner 3550 Bristol | Bayliner | 6 | FuelType, Propulsion, HullForm, AirDraft, EngineConfig, Displacement |
 | Cruisers Yachts 360 / 380 Express | Cruisers Yachts | 5 | FuelType, Propulsion, Draft, EngineConfig, Displacement |
