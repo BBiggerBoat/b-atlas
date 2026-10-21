@@ -66,26 +66,9 @@ function buildRecordedCharacteristics(boat) {
 }
 
 function buildConfidenceExplanation(decisionReport, recommendation) {
-    const confidence = Number.isFinite(Number(decisionReport && decisionReport.confidence))
-        ? Number(decisionReport.confidence)
-        : Number(recommendation && recommendation.dataCompleteness) || 0;
-    const unknownCount = normalizeArray(decisionReport && decisionReport.unknowns).length;
-    const conflictCount = normalizeArray(decisionReport && decisionReport.conflicts).length;
-
-    let label = INTELLIGENCE_CONFIDENCE_LABELS.Low;
-    if (confidence >= 80) label = INTELLIGENCE_CONFIDENCE_LABELS.High;
-    else if (confidence >= 55) label = INTELLIGENCE_CONFIDENCE_LABELS.Medium;
-
-    const reasons = [];
-    if (unknownCount > 0) reasons.push(`${unknownCount} item${unknownCount === 1 ? "" : "s"} still need verification`);
-    if (conflictCount > 0) reasons.push(`${conflictCount} conflict${conflictCount === 1 ? "" : "s"} require review`);
-    if (reasons.length === 0) reasons.push("no evaluated conflicts or unresolved unknowns were identified");
-
-    return {
-        score: Math.max(0, Math.min(100, confidence)),
-        label,
-        explanation: `${label} confidence: ${reasons.join("; ")}.`
-    };
+    const score = decisionReport?.confidence ?? null;
+    const label = decisionReport?.confidenceLevel || 'Not assessed';
+    return {score,label,explanation:decisionReport?.assessment?.confidenceExplanation || 'No buyer assessment is available.'};
 }
 
 function buildRouteStatement(recommendation) {
@@ -430,10 +413,10 @@ function renderModelKnowledgeSummary(summary, options = {}) {
         <section class="model-knowledge-summary${compact ? " model-knowledge-summary-compact" : ""}">
             <div class="model-knowledge-verdict-row">
                 <div>
-                    <span class="model-knowledge-eyebrow">B-Atlas Verdict</span>
+                    <span class="model-knowledge-eyebrow">General model guidance</span>
                     <strong class="model-knowledge-verdict-level model-knowledge-verdict-${intelligenceEscapeHtml(summary.verdictLevel.toLowerCase().replace(/\s+/g, "-"))}">${intelligenceEscapeHtml(summary.verdictLevel)}</strong>
                 </div>
-                <span class="model-knowledge-confidence model-knowledge-confidence-${confidenceClass}">${intelligenceEscapeHtml(summary.confidence)} confidence</span>
+                <span class="model-knowledge-confidence model-knowledge-confidence-${confidenceClass}">Knowledge: ${intelligenceEscapeHtml(summary.confidence)}</span>
             </div>
             <p class="model-knowledge-verdict">${intelligenceEscapeHtml(summary.verdict)}</p>
             ${compact ? "" : `

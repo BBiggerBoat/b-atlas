@@ -2,7 +2,7 @@
 // Local-only end-to-end test. All non-local requests are blocked; no community service writes.
 const fs=require('node:fs'),path=require('node:path'),http=require('node:http'),assert=require('node:assert/strict');
 const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
-const root=path.resolve(__dirname,'..'),out=path.resolve(root,'../../outputs/phase3-implementation');fs.mkdirSync(out,{recursive:true});
+const root=path.resolve(__dirname,'..'),out=process.env.PHASE3_OUTPUT_DIR?path.resolve(process.env.PHASE3_OUTPUT_DIR):path.resolve(root,'../../outputs/phase3-implementation');fs.mkdirSync(out,{recursive:true});
 const publicRoot=process.env.PHASE3_PUBLIC_ROOT?path.resolve(process.env.PHASE3_PUBLIC_ROOT):root;
 const types={'.html':'text/html','.js':'application/javascript','.json':'application/json','.css':'text/css','.svg':'image/svg+xml','.jpg':'image/jpeg','.png':'image/png'};
 const server=http.createServer((req,res)=>{let rel=decodeURIComponent(new URL(req.url,'http://localhost').pathname);let file=path.resolve(publicRoot,'.'+rel);if(!file.startsWith(publicRoot+path.sep)&&file!==publicRoot){res.writeHead(403);return res.end();}try{if(fs.statSync(file).isDirectory())file=path.join(file,'index.html');res.setHeader('Content-Type',types[path.extname(file)]||'application/octet-stream');res.end(fs.readFileSync(file));}catch{res.writeHead(404);res.end();}});

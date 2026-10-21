@@ -187,7 +187,7 @@ function applySearchSettingsToControls(settings) {
     setCheckedValues(".hullFilter", values.hullTypes); setCheckedValues(".fuelFilter", values.fuels); setCheckedValues(".propulsionFilter", values.propulsion);
     const engineCounts = Array.isArray(values.engineCounts) && values.engineCounts.length ? values.engineCounts.map(Number) : (values.twinEngines ? [2] : []);
     document.querySelectorAll(".engineCountFilter").forEach(element => { element.checked = engineCounts.includes(Number(element.value)); });
-    document.querySelectorAll(".featurePriority").forEach(element => { element.value = (values.featurePriorities || {})[element.dataset.feature] || ""; });
+    document.querySelectorAll(".featurePriority").forEach(element => { const priority = (values.featurePriorities || {})[element.dataset.feature] || ""; element.value = priority === 'Preferred' && values.preferencePolicyVersion >= 4 ? 'PreferredV4' : priority; });
 }
 
 function describeSearchProfile(settings) {
@@ -261,96 +261,7 @@ function evaluateMissionHardConstraint(boat, mission) {
 // ===========================================
 
 function calculateMissionFit(boat, mission) {
-
-    let score = 50;
-    let reasons = [];
-
-
-    // Fuel
-
-    if (boat.Fuel === "Diesel") {
-
-        score += 10;
-        reasons.push("Diesel");
-
-    }
-
-
-    // Hull Type
-
-    if (
-        boat.HullType === "Displacement" ||
-        boat.HullType === "Semi-Displacement"
-    ) {
-
-        score += 10;
-        reasons.push("Cruising hull");
-
-    }
-
-
-    // Shower
-
-  if (boat.Shower === true) {
-
-    score += 3;
-    reasons.push("Shower");
-
-}
-
-
-    // Fresh water
-
-    if (boat.WaterCapacity !== undefined) {
-
-        if (boat.WaterCapacity >= 100) {
-
-            score += 5;
-            reasons.push("Large fresh water capacity");
-
-        }
-
-        else if (boat.WaterCapacity >= 50) {
-
-            score += 2;
-
-        }
-
-    }
-
-
-    // Black water
-
-    if (boat.HoldingCapacity !== undefined) {
-
-        if (boat.HoldingCapacity >= 50) {
-
-            score += 5;
-            reasons.push("Large holding tank");
-
-        }
-
-    }
-
-
-    // Limit score
-
-    if (score > 100) {
-        score = 100;
-    }
-
-    if (score < 0) {
-        score = 0;
-    }
-
-
-    return {
-
-        score: score,
-        reasons: reasons
-
-    };
-
+    return window.BScoutFilterEngine.preferenceAssessment(boat, mission?.SearchSettings || mission || {}, window.BScoutSearchOrchestrator?.getContext?.().routes || []);
 }
 
 // =====================================================
@@ -407,19 +318,23 @@ function normalizeFeatureLabel(value) {
     return String(value || "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
 }
 
-function renderPreferenceMatchSummary(boat) {
+function renderPreferenceMatchSummary(boat, comparison = false) {
     const settings = window.BScoutSearchState?.getState?.().searchSettings || {};
-    const assessment = window.BScoutFilterEngine?.preferenceAssessment
-        ? window.BScoutFilterEngine.preferenceAssessment(boat, settings)
-        : { score: 0, matches: 0, total: 0, unknown: 0, preferences: [] };
-    if (!assessment.total) return "";
-    const matchedLabels = assessment.preferences.filter(item => item.matched).map(item => item.label);
-    const unknownText = assessment.unknown ? ` · ${assessment.unknown} unknown` : "";
-    return `<div class="preference-match-summary">
-        <div class="preference-score"><strong>Preference Match ${assessment.score}%</strong></div>
-        <div class="preference-count">Matches ${assessment.matches} of ${assessment.total - assessment.unknown} known Preferences${unknownText}</div>
-        ${matchedLabels.length ? `<div class="preference-labels">${matchedLabels.map(label => `<span>${escapeHtml(label)}</span>`).join("")}</div>` : ""}
-    </div>`;
+    const assessment = window.BScoutFilterEngine.preferenceAssessment(boat, settings, window.BScoutSearchOrchestrator?.getContext?.().routes || []);
+    if (!assessment.total && !comparison && !assessment.hardUnknowns.length) return "";
+    const score = assessment.eligible === false ? 'Excluded by your must-haves' : assessment.score === null ? (assessment.total ? 'Not enough information' : 'No preferences selected') : `${assessment.score}% known-preference match`;
+    const items = (label, values) => values.length ? `<div><strong>${label}:</strong> ${values.map(escapeHtml).join('; ')}</div>` : '';
+    return `<div class="preference-match-summary" data-match-score="${assessment.score ?? ''}" data-confidence="${assessment.confidenceLevel}">
+        <div class="preference-score"><strong>${score}</strong></div>
+        <div class="preference-count">${escapeHtml(assessment.confidenceLevel)} confidence${assessment.unknown ? ` · ${assessment.unknown} unanswered preferences` : ''}</div>
+        ${assessment.configurationDependent ? '<div>Version-dependent: verify the year and equipment.</div>' : ''}
+        ${assessment.hardUnknowns.length ? '<div class="match-verification">Must-haves still need verification.</div>' : ''}
+        <details><summary>Why this ranking?</summary>
+        <p>${escapeHtml(assessment.explanation)}</p>
+        ${items('Requirement conflicts',assessment.hardConflicts)}${items('Preference choices to review',assessment.warnings)}${items('Recorded strengths',assessment.strengths)}${items('Known compromises',assessment.compromises)}${items('Unknown preferences',assessment.unknowns)}${items('Must-haves to verify',assessment.hardUnknowns)}
+        ${assessment.configurationDependent && assessment.scoreRange ? `<div>Documented version scores: ${assessment.scoreRange[0]}–${assessment.scoreRange[1]}%${assessment.rangeIncomplete ? '; incomplete information' : ''}.</div>` : ''}
+        <p>${escapeHtml(assessment.confidenceExplanation)} Higher percentages based on little evidence may rank below better-supported matches. Unknowns are retained.</p>
+        </details></div>`;
 }
 
 function formatCardMeasurement(boat, key, legacy = []) {
@@ -1260,11 +1175,8 @@ if (closeModal) {
 closeModal.addEventListener("click", function(){
 
 
-    document
-
-    .getElementById("boatModal")
-
-    .style.display = "none";
+    const legacyModal = document.getElementById("boatModal");
+    if (legacyModal) legacyModal.style.display = "none";
 
 
 });
@@ -1816,6 +1728,7 @@ function initSearchProfiles() {
     selectEl.addEventListener("change", function() {
         syncActiveProfile();
         applySearchSettingsToControls(currentSearchProfile?.SearchSettings || {});
+        window.BScoutSearchState?.setSort(currentSearchProfile?.SortPreferences || {});
         const description = document.getElementById("cruisingProfileDescription");
         if (description) description.textContent = currentSearchProfile?.Description || "New Search uses an empty filter set and does not affect My Boats.";
         const locked = Boolean(currentSearchProfile?.Locked);
@@ -1983,7 +1896,7 @@ function initSearchProfiles() {
                 Icon: currentSearchProfile?.Icon || "search",
                 Locked: false,
                 SearchSettings: sourceSearchSettings,
-                SortPreferences: currentSearchProfile?.SortPreferences || { field: null, direction: "asc" },
+                SortPreferences: window.BScoutSearchState?.getState?.().sort || currentSearchProfile?.SortPreferences || { field: null, direction: "asc" },
                 DefaultLayout: currentSearchProfile?.DefaultLayout || null
             };
 
@@ -3481,7 +3394,7 @@ function renderComparisonTable() {
         { label: "Image / Remove", key: "header_card" },
         { label: "First Year", key: "FirstYear" },
         { label: "Last Year", key: "LastYear" },
-        { label: "Search Fit Score", key: "search_fit_score" },
+        { label: "Preference match and confidence", key: "search_fit_score" },
         { label: "Status", key: "status" },
         { label: "My Rating", key: "research_rating" },
         { label: "LOA", key: "LOA", dimension: "length", legacy: [] },
@@ -3535,8 +3448,7 @@ function renderComparisonTable() {
                     </div>
                 `;
             } else if (row.key === "search_fit_score") {
-                const fit = calculateFitScore(boat, currentSearchProfile ? currentSearchProfile.SearchSettings : {});
-                val = `<strong>${fit.score || 100}%</strong>`;
+                val = renderPreferenceMatchSummary(boat, true);
             } else if (row.key === "status") {
                 val = rel ? (STATUS_LABELS[rel.Status] || rel.Status || "Unreviewed") : "Unreviewed";
             } else if (row.key === "research_rating") {

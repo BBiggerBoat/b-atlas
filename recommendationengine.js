@@ -764,6 +764,7 @@ function evaluateBoatForProfile(
     // NOTE: This is an evaluation architecture task only. Existing legacy scoring
     // (calculateBScoutScore) and UI remain unchanged and fully functional.
     const evaluationContext = createBoatEvaluationContext(boat, activeUserProfile);
+    evaluationContext.routes = selectedRoutes?.length ? selectedRoutes : (typeof window !== "undefined" ? window.BScoutSearchOrchestrator?.getContext?.().routes : []) || [];
 
     // 5. Run first functional evaluator: evaluateFuel
     // Additional evaluators will follow this identical pattern.
@@ -820,10 +821,10 @@ function evaluateBoatForProfile(
         decisionReport: decisionReport,
 
         // Overall Fitness percentage score (weighted average of Mission and Comfort Fit based on Cruising Profile)
-        overallFit: null, // Placeholder: future weighted index
+        overallFit: decisionReport?.assessment?.score ?? null,
 
         // Text summary of the suitability rating (e.g., "Highly Recommended", "Good Choice", "Not Recommended")
-        overallRecommendation: "Not Yet Calculated", // Placeholder
+        overallRecommendation: decisionReport?.recommendation || "Needs Review",
 
         // Operational/Performance compatibility sub-score (0-100)
         missionFit: null, // Placeholder: future operational metric

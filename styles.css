@@ -3388,3 +3388,11 @@ body{padding-top:82px!important;}
     font-size:15px;
   }
 }
+
+/* Shared buyer assessment: accessible, wrapping explanations on both layouts. */
+.preference-match-summary { overflow-wrap:anywhere; }
+.preference-match-summary details { margin-top:.5rem; }
+.preference-match-summary summary { cursor:pointer; min-height:44px; display:list-item; padding:.6rem 0; }
+.preference-match-summary details div { margin:.4rem 0; }
+.match-verification { font-weight:600; }
+@media(max-width:680px) { .preference-match-summary { font-size:.9rem; } }

@@ -43,6 +43,17 @@
             );
         }
 
+        // Sorting changes order only. Unsupported saved sort keys are preserved.
+        const sort = snapshot.sort || {};
+        if (['Manufacturer','Model','LOA','Beam','score','confidence'].includes(sort.field)) {
+            const value = boat => ['score','confidence'].includes(sort.field) ? filterEngine.preferenceAssessment(boat,snapshot.searchSettings,context.routes)[sort.field] : boat[sort.field];
+            boats.sort((a,b) => {
+                const left=value(a),right=value(b);
+                if(left == null || right == null) return left == null ? right == null ? 0 : 1 : -1;
+                const comparison=typeof left==='number' && typeof right==='number' ? left-right : String(left).localeCompare(String(right));
+                return comparison*(sort.direction==='desc'?-1:1);
+            });
+        }
         const render = settings.render || context.render;
         if (settings.render !== false && typeof render === "function") render(boats);
         return { boats, count: boats.length, state: snapshot };
