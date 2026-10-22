@@ -1,0 +1,106 @@
+{
+  "startingSHA": "d082c427250cb0199039863335d4e82fbf483fe0",
+  "backup": {
+    "confirmedByOwner": true,
+    "location": "Not supplied"
+  },
+  "versions": {
+    "node": "v24.18.0",
+    "python": "Python 3.14.6"
+  },
+  "counts": {
+    "models": 995,
+    "phases": 66,
+    "aliases": 298,
+    "ownerFields": 181,
+    "pendingIdentities": 726
+  },
+  "files": [
+    {
+      "path": "boatmodels.json",
+      "checkoutBytes": 6925563,
+      "checkoutSha256": "25062f7df74f93674bde190467a2fe048f85b554d9f1a969bca80bea3ec64fd9",
+      "gitBlobBytes": 6750704,
+      "gitBlobSha256": "542dd4b6913511ff5e9ae445992ff1a43d886d89d1688cd2a7e77e285133bb53"
+    },
+    {
+      "path": "data/canonical/identities.json",
+      "checkoutBytes": 507465,
+      "checkoutSha256": "fddcf6f23a76eea8545da678a97d07443c5b9d7a59c5c3be27535ed02d98268d",
+      "gitBlobBytes": 492565,
+      "gitBlobSha256": "e4b19ff3da448789b89807251bc464ee7d23d29312ef9f3b36ac539125885d9a"
+    },
+    {
+      "path": "data/canonical/specifications.json",
+      "checkoutBytes": 1931633,
+      "checkoutSha256": "0ab54583ed2e4eced410fab1b64b7483b158f89c05bcd8d821855ede5bf4f54f",
+      "gitBlobBytes": 1871422,
+      "gitBlobSha256": "787bdc47c732e8a0413df450e1984543ddb9a3ba4d80b93bedc4e776965b0db9"
+    },
+    {
+      "path": "data/canonical/guidance.json",
+      "checkoutBytes": 1992708,
+      "checkoutSha256": "9a3f963352e251950b7475b006fb8cee0c760d6fac82dd676182b062ce565843",
+      "gitBlobBytes": 1952781,
+      "gitBlobSha256": "8def7d2f93d654a09328ea2784741479c4ab19d24339b4edfdcb76e6b9cd089b"
+    },
+    {
+      "path": "data/canonical/provenance.json",
+      "checkoutBytes": 2630968,
+      "checkoutSha256": "7387a1d9ac096c7e6d28aced8b445093748a4657fd3392c80c6db62dda8aac26",
+      "gitBlobBytes": 2562186,
+      "gitBlobSha256": "1916926cf2c49540866da8f2e56a19ae9a4a9b96442855279b620e33cc1be1c2"
+    },
+    {
+      "path": "data/canonical/ownership.json",
+      "checkoutBytes": 8310,
+      "checkoutSha256": "c3f926859e4869f060325586278a8abf6fc7eb37853d8b27487a8100c3256eee",
+      "gitBlobBytes": 8085,
+      "gitBlobSha256": "ce9cd965767a0f5aa059a233d48c9301b095963c22d4a9745e5c84cee2c9e527"
+    },
+    {
+      "path": "data/registry/boat-registry.json",
+      "checkoutBytes": 416474,
+      "checkoutSha256": "8619d5a83e008e1c5de04d11640d921dba723a0cf691fcf122f68e2f576c7ff2",
+      "gitBlobBytes": 403044,
+      "gitBlobSha256": "2d8d374e8320e4296186e5bb4c34b0cfedd36b4845f4bad6032bd14dc04ca256"
+    },
+    {
+      "path": "data/production-phases.json",
+      "checkoutBytes": 46466,
+      "checkoutSha256": "9a551cc852ac074a4f230ff46314da183100cfcf40d89b61f1a55fdece0073f8",
+      "gitBlobBytes": 44823,
+      "gitBlobSha256": "5caca7fc26375e0aee94b9487a232751dca54604768b447f3867f367457281e4"
+    },
+    {
+      "path": "data/model-search-aliases.json",
+      "checkoutBytes": 90330,
+      "checkoutSha256": "5759a11b1d8828257348ba89df253a5000a3c6a908a67c8b513331945c15f309",
+      "gitBlobBytes": 86187,
+      "gitBlobSha256": "935f7ccb1a6f112408b5f2d3f1710066f26cd086b9e59704eda08819d12634f6"
+    },
+    {
+      "path": "data/model-permalinks.json",
+      "checkoutBytes": 381769,
+      "checkoutSha256": "13738a00f537ee541093be8c7fcdb05492e91587e6e8965064bf59b8cece319e",
+      "gitBlobBytes": 371812,
+      "gitBlobSha256": "b46fffcebf244812449ce1c605dcc737f0a201a1721fd79344502e5639120eb7"
+    },
+    {
+      "path": "deployment/legacy-model-page-redirects.json",
+      "checkoutBytes": 223,
+      "checkoutSha256": "9a1a6f632330ad72cc16eca98e99f5aa84f5d6bbe123f946c485e2c273cd44fa",
+      "gitBlobBytes": 216,
+      "gitBlobSha256": "73005a58ebea77a3d8d16f756b7016989f6034b0bcefeaded6819e546597b676"
+    },
+    {
+      "path": "sitemap.xml",
+      "checkoutBytes": 139055,
+      "checkoutSha256": "6c58850f54ac344889aa9b4dddbbe191f064cf68c916849d2ed1e1320ecd3d17",
+      "gitBlobBytes": 134636,
+      "gitBlobSha256": "d8781aaaa043dbadfc9c103f0cb093a9a2c5a6f465a746e602131f7710751503"
+    }
+  ],
+  "note": "Checkout hashes capture Windows CRLF; Git-blob hashes capture repository bytes. Full baseline composition and logs remain in ignored local evidence.",
+  "baselineRelease": "PASS (frozen archive of starting SHA; full historical Git objects available from enclosing checkout)"
+}
