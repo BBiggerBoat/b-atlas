@@ -13,7 +13,7 @@ const all=files(root), rules=read('data/canonical/ownership.json');
 const sources=all.filter(p=>/\.(js|cjs|py|html|yml)$/.test(p)&&!p.startsWith('archive/'));
 const texts=new Map(sources.map(p=>[p,fs.readFileSync(path.join(root,p),'utf8')]));
 const publicManifest=read('deployment/public-manifest.json');
-const role=p=>p.startsWith('archive/')?'historical archive':Object.values(rules.datasets).includes(p)?'authoritative model owner':p==='boatmodels.json'?'generated public view':/phase2-|enrichment|evidence\/|decision-data-patches/.test(p)?'historical research':/schema|field-registry|unit-registry/.test(p)?'schema or field metadata':/registry\//.test(p)?'identity decisions or manufacturer registry':/production-phases/.test(p)?'scoped production overrides':/knowledge\//.test(p)?'evidence or resources': 'application configuration or auxiliary data';
+const role=p=>p.startsWith('archive/')?'historical archive':Object.values(rules.datasets).some(dir=>p.startsWith(dir+'/'))?'authoritative model owner':p==='boatmodels.json'?'generated public view':/phase2-|enrichment|evidence\/|decision-data-patches/.test(p)?'historical research':/schema|field-registry|unit-registry/.test(p)?'schema or field metadata':/registry\//.test(p)?'identity decisions or manufacturer registry':/production-phases/.test(p)?'scoped production overrides':/knowledge\//.test(p)?'evidence or resources': 'application configuration or auxiliary data';
 const json=all.filter(p=>p.endsWith('.json')&&p!=='reports/canonical-inventory.json').map(p=>{
  const bytes=fs.readFileSync(path.join(root,p)); let value;
  try {value=JSON.parse(bytes)} catch(e) {throw Error(`Invalid JSON ${p}: ${e.message}`)}

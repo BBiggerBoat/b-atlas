@@ -84,12 +84,20 @@
     "Identity registry records are historical identity decisions; PendingReview is preserved without promoting verification."
   ],
   "canonicalDatasets": {
-    "identities": "data/canonical/identities.json",
-    "specifications": "data/canonical/specifications.json",
-    "guidance": "data/canonical/guidance.json",
-    "provenance": "data/canonical/provenance.json"
+    "identities": "data/canonical/identities",
+    "specifications": "data/canonical/specifications",
+    "guidance": "data/canonical/guidance",
+    "provenance": "data/canonical/provenance"
   },
   "generatedPublicViews": [
     "boatmodels.json"
-  ]
+  ],
+  "canonicalStorage": {
+    "schemaVersion": 1,
+    "bucketCount": 32,
+    "routing": "sha256-utf8-first8hex-mod32",
+    "index": "data/canonical/index.json",
+    "warningBytes": 150000,
+    "maximumBytes": 200000
+  }
 }

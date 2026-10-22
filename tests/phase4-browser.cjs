@@ -2,7 +2,7 @@
 // Isolated local browser profiles. External requests and ALL writes are blocked.
 const fs=require('node:fs'),path=require('node:path'),http=require('node:http'),assert=require('node:assert/strict');
 const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
-const root=path.resolve(__dirname,'..'),publicRoot=path.resolve(process.env.PHASE4_PUBLIC_ROOT||root),out=path.resolve(root,'../../outputs/phase4-implementation');fs.mkdirSync(out,{recursive:true});
+const root=path.resolve(__dirname,'..'),publicRoot=path.resolve(process.env.PHASE4_PUBLIC_ROOT||root),out=path.resolve(process.env.PHASE4_OUTPUT_DIR||path.resolve(root,'../../outputs/phase4-implementation'));fs.mkdirSync(out,{recursive:true});
 const mime={'.html':'text/html','.js':'application/javascript','.css':'text/css','.json':'application/json','.png':'image/png','.svg':'image/svg+xml'};
 const server=http.createServer((req,res)=>{const pathname=decodeURIComponent(new URL(req.url,'http://localhost').pathname);let file=path.resolve(publicRoot,'.'+pathname);if(!file.startsWith(publicRoot+path.sep)&&file!==publicRoot){res.writeHead(403);return res.end();}try{if(fs.statSync(file).isDirectory())file=path.join(file,'index.html');res.setHeader('Content-Type',mime[path.extname(file)]||'application/octet-stream');res.end(fs.readFileSync(file));}catch{res.writeHead(404);res.end();}});
 (async()=>{await new Promise(r=>server.listen(0,'127.0.0.1',r));const base='http://127.0.0.1:'+server.address().port;let browser;const workflows=[];

@@ -30,10 +30,25 @@ async function stop(){if(child&&!child.killed){const done=new Promise(resolve=>c
   assert((await fetch(base+'/api/admin/snapshot',{method:'PUT',headers,body:JSON.stringify({reviewed:corrections})})).ok);
   const publish=await fetch(base+'/api/admin/publish',{method:'POST',headers});assert(publish.ok,await publish.text());
   let model=read('boatmodels.json').find(m=>m.BoatModelID==='ALBN-25');assert(Math.abs(model.LOA-12.192)<1e-10);assert.equal(model.FuelCode,'fuel.gasoline');assert.equal(model.AftCabin,false);
-  assert.equal(read('data/canonical/specifications.json')[0].FuelCode,'fuel.gasoline');
+  const isolatedStore=require(path.join(temp,'developer/canonical-store.cjs'));
+  assert.equal(isolatedStore.load().find(m=>m.BoatModelID==='ALBN-25').FuelCode,'fuel.gasoline');
   assert(!fs.existsSync(path.join(temp,'knowledge/data/knowledgecards.json')));
   await stop();await start();
   model=await (await fetch(base+'/boatmodels.json')).json();assert.equal(model[0].FuelCode,'fuel.gasoline');
+  // Import the existing monolithic durable snapshot on restart, through the new store.
+  await stop();
+  const legacySnapshot=path.join(temp,'.state/published/boatmodels.json');
+  const legacy=JSON.parse(fs.readFileSync(legacySnapshot));legacy[0].Overview='Legacy snapshot import regression';
+  fs.writeFileSync(legacySnapshot,JSON.stringify(legacy));await start();
+  assert.equal(isolatedStore.load()[0].Overview,'Legacy snapshot import regression');
+  const promoted=await fetch(base+'/api/admin/promote',{method:'POST',headers,body:JSON.stringify({contribution:{ContributionType:'new_model',CanonicalDraft:{Fields:{Manufacturer:'Test Partition Builder',Model:'Regression 28',LengthFt:28,Fuel:'Diesel'},ResearchNotes:'Isolated regression fixture'}}})});
+  const promotedText=await promoted.text();assert(promoted.ok,promotedText);const result=JSON.parse(promotedText);
+  const added=isolatedStore.load().find(m=>m.BoatModelID===result.id);assert(added);assert.equal(added.Model,'Regression 28');assert.equal(added.LOA,8.5344);
+  assert.equal(read('data/registry/boat-registry.json').find(r=>r.BoatModelID===result.id).IdentityStatus,'PendingReview');
+  assert.equal((await fetch(base+'/data/canonical/index.json')).status,404);
+  const ownerDir=isolatedStore.contract().datasets.specifications;
+  assert.equal((await fetch(base+'/'+ownerDir+'/00.json')).status,404);
+  await stop();await start();assert(isolatedStore.load().some(m=>m.BoatModelID===result.id));
   console.log('PASS: authenticated local moderation, canonical units/codes/booleans, owner writes, restart persistence and source exclusion.');
  }finally{await stop();fs.rmSync(temp,{recursive:true,force:true});}
 })().catch(e=>{console.error(e);process.exitCode=1});

@@ -1,7 +1,7 @@
 'use strict';
 const fs=require('node:fs'),vm=require('node:vm'),path=require('node:path'),assert=require('node:assert/strict'),cp=require('node:child_process');
 const root=path.resolve(__dirname,'..'),read=f=>fs.readFileSync(path.join(root,f),'utf8'),json=f=>JSON.parse(read(f));
-const out=path.resolve(root,'../../outputs/phase4-implementation');fs.mkdirSync(out,{recursive:true});
+const out=path.resolve(process.env.PHASE4_OUTPUT_DIR||path.resolve(root,'../../outputs/phase4-implementation'));fs.mkdirSync(out,{recursive:true});
 function runtime(previous=false){const s={console};s.window=s;s.globalThis=s;for(const file of ['canonicaldata.js','valuenormalizer.js','filterengine.js','engine.js','searchstatemanager.js','searchprofilemanager.js','datarepository.js','actionmodel.js','decisionreport.js'])vm.runInNewContext(previous&&file==='filterengine.js'?cp.execFileSync('git',['show','5cd69e8f:'+file],{cwd:root,encoding:'utf8'}):read(file),s,{filename:file});return s;}
 const s=runtime(),old=runtime(true),engine=s.BScoutFilterEngine,evaluate=(b,p={},routes=[])=>engine.evaluateBoat(b,p,routes,{}),assess=(b,p={},routes=[])=>evaluate(b,p,routes).preference;
 let targeted=0;const test=(name,fn)=>{try{fn();targeted++;}catch(e){throw Error(name+': '+e.message);}};

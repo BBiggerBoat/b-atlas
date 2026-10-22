@@ -1,0 +1,79 @@
+{
+  "method": "Headless installed Edge; five alternating before/after fresh contexts per viewport; one local server, normalized LF text, uncompressed, unthrottled; catalogue-ready mutation timestamp and settled initial resource totals; external traffic and all writes blocked. Response.json work includes body completion, not pure parse CPU; pure JSON parse/compatibility benchmark is separate. Heap is a point sample, not retained heap.",
+  "viewports": {
+    "desktop": {
+      "before": {
+        "catalogueReadyMs": 1242,
+        "requests": 88,
+        "transferBytes": 16827017,
+        "decodedBytes": 16800917,
+        "guideVisibleMs": 326,
+        "longTaskMs": 980,
+        "heapBytes": 25008996,
+        "parseMs": 12.399999976158142,
+        "compatibilityMs": 4,
+        "startupRangeMs": [
+          1132,
+          1381
+        ]
+      },
+      "after": {
+        "catalogueReadyMs": 1140,
+        "requests": 90,
+        "transferBytes": 17140675,
+        "decodedBytes": 17113975,
+        "guideVisibleMs": 321,
+        "longTaskMs": 876,
+        "heapBytes": 25122769,
+        "parseMs": 12.550000011920929,
+        "compatibilityMs": 4.100000023841858,
+        "startupRangeMs": [
+          980,
+          1200
+        ]
+      }
+    },
+    "mobile": {
+      "before": {
+        "catalogueReadyMs": 1120,
+        "requests": 95,
+        "transferBytes": 18052961,
+        "decodedBytes": 18024761,
+        "guideVisibleMs": 339,
+        "longTaskMs": 920,
+        "heapBytes": 25115764,
+        "parseMs": 13.200000047683716,
+        "compatibilityMs": 4.350000023841858,
+        "startupRangeMs": [
+          1090,
+          1325
+        ]
+      },
+      "after": {
+        "catalogueReadyMs": 1121,
+        "requests": 99,
+        "transferBytes": 18909621,
+        "decodedBytes": 18880221,
+        "guideVisibleMs": 328,
+        "longTaskMs": 897,
+        "heapBytes": 25165848,
+        "parseMs": 11.449999988079071,
+        "compatibilityMs": 3.799999952316284,
+        "startupRangeMs": [
+          1103,
+          1425
+        ]
+      }
+    }
+  },
+  "sourceLoadMedianMs": {
+    "before": 103.15719999999999,
+    "after": 279.9758999999999
+  },
+  "limitations": [
+    "Local uncompressed data, not production CDN or mobile hardware.",
+    "Request/byte totals vary with lazy-image and rendering scheduling; no payload reduction is claimed.",
+    "Heap is a point sample, not retained heap.",
+    "Source-file reads are slower with 128 files on this Windows/OneDrive checkout."
+  ]
+}
