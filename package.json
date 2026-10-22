@@ -20,8 +20,9 @@
     "inventory:canonical": "node tools/inventory-canonical.cjs",
     "test": "node tests/canonical-migration.cjs && node tests/canonical-partitions.cjs && node tests/canonical-integration.cjs && node tests/filter-behavior-regression.cjs && node tests/correlated-config-regression.cjs && node tests/community-overlay-regression.cjs && node tests/phase3-exclusion.cjs && node tests/phase4-scoring.cjs",
     "test:deployment": "node tests/canonical-deployment.cjs",
-    "verify:production": "npm run check:canonical && npm test && node tests/canonical-admin.cjs && node tests/canonical-pages.cjs && npm run build:public && npm run test:deployment && node tests/production-readiness.cjs && node tests/production-worker.cjs && npm run guard:baseline && node developer/check-secrets.js",
-    "test:browser:phase4": "node tests/phase4-browser.cjs"
+    "verify:production": "npm run generate:models && npm run check:canonical && npm test && node tests/canonical-admin.cjs && node tests/canonical-pages.cjs && npm run build:public && npm run test:deployment && node tests/public-artifacts.cjs && node tests/production-readiness.cjs && node tests/production-worker.cjs && npm run guard:baseline && node developer/check-secrets.js",
+    "test:browser:phase4": "node tests/phase4-browser.cjs",
+    "pretest": "npm run generate:models"
   },
   "devDependencies": {
     "wrangler": "^4.0.0"

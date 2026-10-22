@@ -5,7 +5,8 @@ on:
     branches:
       - main
     paths:
-      - 'boatmodels.json'
+      - 'data/canonical/**'
+      - 'developer/canonical-store.cjs'
       - 'data/registry/**'
       - 'data/data-manifest.json'
       - 'data/production-phases.json'
@@ -26,6 +27,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Generate untracked compatibility view
+        run: npm run generate:models
       - name: Verify canonical registry synchronization
         run: node tools/reconcile-model-registry.cjs --check
       - name: Verify canonical loader and filtering

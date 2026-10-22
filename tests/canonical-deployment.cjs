@@ -4,6 +4,9 @@ const manifest=JSON.parse(fs.readFileSync('deployment/public-manifest.json','utf
 for(const rel of manifest.sourceOnlyNeverPublish) assert(!fs.existsSync(path.join('dist',rel)),`Source leaked: ${rel}`);
 assert(!fs.existsSync('dist/knowledge/data/knowledgecards.json'));
 assert.deepEqual(JSON.parse(fs.readFileSync('dist/boatmodels.json','utf8')),require('../developer/canonical-store.cjs').load());
+assert(fs.existsSync('dist/data/generated/models/manifest.json'),'Missing generated shard manifest');
+assert(!manifest.publicDirectories.includes('data')&&!manifest.publicDirectories.includes('knowledge'),'Broad public data copy remains');
+assert(manifest.generatedFiles.includes('boatmodels.json')&&!manifest.rootFiles.includes('boatmodels.json'),'Compatibility view must be generated');
 const context={};require('node:vm').runInNewContext(fs.readFileSync('dist/datarepository.js','utf8'),context);
 for(const file of Object.values(context.BScoutDataRepository.DEFAULT_MANIFEST))assert(fs.existsSync(path.join('dist',file)),`Missing runtime dependency: ${file}`);
 for(const file of ['index.html','knowledge/knowledgecardui.js','developer/moderatorapi.js','data/model-schema.json','data/field-registry.json'])assert(fs.existsSync(path.join('dist',file)),file);

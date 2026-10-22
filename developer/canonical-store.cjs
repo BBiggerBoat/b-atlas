@@ -152,8 +152,9 @@ if (require.main === module) {
   if (process.argv.includes('--recover-before')) recover('before');
   else if (process.argv.includes('--recover-after')) recover('after');
   else if (process.argv.includes('--check')) {
-    require('node:assert/strict').deepEqual(read('boatmodels.json'),load(),'Generated model view is stale; run npm run generate:models');
-    console.log('Canonical ownership and generated model view verified.');
+    const rows=load();
+    if(fs.existsSync(path.join(root,'boatmodels.json')))require('node:assert/strict').deepEqual(read('boatmodels.json'),rows,'Generated model view is stale; run npm run generate:models');
+    console.log('Canonical ownership verified; optional local compatibility view checked when present.');
   } else console.log(`Generated ${materialize().length} models from canonical owners.`);
 }
 module.exports={load,save,split,compose,contract,materialize,recover};

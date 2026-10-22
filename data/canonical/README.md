@@ -16,8 +16,13 @@ and `npm run check:canonical`. For additions or bulk edits, use the existing sto
 API: `load`, `split`, `compose`, `save`, `materialize`, `recover`, `contract`.
 `save` routes every domain, updates model order, validates all prospective sizes
 before writing, and leaves byte-identical files untouched. Do not add a model to
-only one domain. `boatmodels.json` remains the generated public compatibility view
-through Phase 1. Runtime loading, public delivery and SEO behavior are unchanged.
+only one domain. In Phase 2, root `boatmodels.json` is an ignored, disposable local
+compatibility cache. `npm test` generates it automatically; `npm start` materializes
+it through the store. `check:canonical` validates owners and checks the local view
+when present. `npm run build:public` does not read that cache: it composes owners
+once and generates the public compatibility endpoint, small lossless shards and
+SEO pages in staging. Public browser clients still use the compatibility endpoint
+until Phase 3. See `deployment/ARTIFACT-PIPELINE.md` for the output contract.
 
 Partitions warn above 150,000 UTF-8 bytes and fail above 200,000. Future overflow
 requires an explicitly versioned routing contract: keep existing top-level buckets

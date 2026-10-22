@@ -51,6 +51,7 @@ jobs:
           test ! -e dist/PRIMARY_FILE_INVENTORY.txt
           test -e dist/index.html
           test -e dist/boatmodels.json
+          test -e dist/data/generated/models/manifest.json
           test -e dist/CNAME
           test -e dist/developer/contribution-review.html
 

@@ -5,6 +5,11 @@ on:
   pull_request:
     paths:
       - 'filterengine.js'
+      - 'data/canonical/**'
+      - 'deployment/public-manifest.json'
+      - 'developer/public-model-artifacts.cjs'
+      - 'developer/model-page-input.cjs'
+      - 'developer/generate-search-landing-pages.py'
       - 'index.html'
       - 'developer/build-public-site.js'
       - '.github/workflows/build-review-preview.yml'
@@ -24,6 +29,9 @@ jobs:
           node-version: '22'
       - name: Verify baseline
         run: npm run guard:baseline
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
       - name: Build allowlisted public site
         run: npm run build:public
       - name: Verify production-only and sensitive files are excluded
@@ -32,6 +40,7 @@ jobs:
           test -f dist/index.html
           test -f dist/filterengine.js
           test -f dist/boatmodels.json
+          test -f dist/data/generated/models/manifest.json
           test ! -e dist/server.js
           test ! -e dist/moderatoraccess.js
           test ! -e dist/cloudflare

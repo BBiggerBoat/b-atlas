@@ -18,7 +18,7 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "22"
       - name: Verify baseline version
         run: npm run guard:baseline
       - name: Verify repository contains no committed secrets
@@ -28,6 +28,9 @@ jobs:
         run: |
           npm run build:worker
           git diff --exit-code -- cloudflare/batlas-api-standalone.js
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
       - name: Build allowlisted public site
         run: npm run build:public
       - name: Verify internal files are excluded
@@ -42,6 +45,7 @@ jobs:
           test ! -e dist/PRIMARY_FILE_INVENTORY.txt
           test -e dist/index.html
           test -e dist/boatmodels.json
+          test -e dist/data/generated/models/manifest.json
           test -e dist/developer/contribution-review.html
           test -e dist/developer/moderatorapi.js
       - name: Verify public/admin API separation

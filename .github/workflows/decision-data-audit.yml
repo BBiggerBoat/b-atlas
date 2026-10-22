@@ -4,7 +4,8 @@ on:
   push:
     paths:
       - ".github/workflows/decision-data-audit.yml"
-      - "boatmodels.json"
+      - "data/canonical/**"
+      - "developer/canonical-store.cjs"
   workflow_dispatch:
 
 permissions:
@@ -15,12 +16,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
       - name: Audit decision-driving canonical fields
         shell: bash
         run: |
           node <<'NODE'
           const fs=require("fs");
-          const rows=JSON.parse(fs.readFileSync("boatmodels.json","utf8"));
+          const rows=require('./developer/canonical-store.cjs').load();
           const has=v=>v!==null && v!==undefined && !(typeof v==="string" && !v.trim());
           const checks={
             LOA:r=>has(r.LOA)||has(r.LOA_ft)||has(r.LengthFt),
