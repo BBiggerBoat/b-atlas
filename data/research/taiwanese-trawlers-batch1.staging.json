@@ -131,5 +131,16 @@
   "notes": [
     "CHB registry IDs have CHBB and CHBY prefixes; preserve until deliberate identity audit",
     "United Ocean 38 must not be assumed equivalent to CHB 38"
-  ]
+  ],
+  "registryReconciliation": {
+    "checkedAt": "2026-10-22",
+    "registryPath": "data/registry/boat-registry.json",
+    "registryCount": 995,
+    "existingMarineTraderCount": 7,
+    "existingCHBCount": 4,
+    "existingUnitedOceanCount": 0,
+    "fullBoatmodelsChecked": false,
+    "reason": "GitHub file connector did not return the 6.75 MB boatmodels.json content; registry-only checks cannot establish missing canonical models.",
+    "integrationBlockedUntil": "Full canonical boatmodels.json reconciliation and source-backed model verification"
+  }
 }
