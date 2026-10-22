@@ -12,6 +12,12 @@ on:
       - 'data/production-phases.json'
       - 'data/model-search-aliases.json'
       - 'datarepository.js'
+      - 'communityapi.js'
+      - 'communityguide.js'
+      - 'contributionentry.js'
+      - 'knowledge/knowledgecardui.js'
+      - 'developer/moderatorapi.js'
+      - 'developer/public-model-artifacts.cjs'
       - 'filterengine.js'
       - 'valuenormalizer.js'
       - 'tests/**'
@@ -24,6 +30,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
@@ -37,6 +45,8 @@ jobs:
         run: node tests/filter-behavior-regression.cjs
       - name: Verify community overlay compatibility
         run: node tests/community-overlay-regression.cjs
+      - name: Verify shared catalogue equivalence and failure recovery
+        run: node tests/shared-model-repository.cjs
       - name: Probe live community overlay compatibility
         run: node tests/live-community-overlay-regression.cjs
       - name: Verify correlated configurations

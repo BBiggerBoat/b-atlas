@@ -11,6 +11,17 @@ else canonicalStore.materialize();
 const persistedRegistry=path.join(PUBLISHED_DIR,'data/registry/boat-registry.json');
 if(fs.existsSync(persistedRegistry))writeJsonAtomic(path.join(ROOT,'data/registry/boat-registry.json'),JSON.parse(fs.readFileSync(persistedRegistry,'utf8')));
 ensureModelRegistry(canonicalStore.load());
+// Build a complete local release before exposing its manifest; never serve partial shards.
+function refreshLocalCatalogue(){
+ const work=fs.mkdtempSync(path.join(DATA_DIR,'catalogue-'));
+ try{
+  const m=require('./developer/public-model-artifacts.cjs').writeModels(work,canonicalStore.load(),canonicalStore.contract(),{sourceRoot:ROOT});
+  const files=[...m.shards,...Object.values(m.datasets).flatMap(d=>d.shards)];
+  for(const d of files){const dest=path.join(PUBLISHED_DIR,d.path);fs.mkdirSync(path.dirname(dest),{recursive:true});fs.copyFileSync(path.join(work,d.path),dest);}
+  writeJsonAtomic(path.join(PUBLISHED_DIR,'data/generated/models/manifest.json'),m);
+ }finally{if(!path.resolve(work).startsWith(DATA_DIR+path.sep))throw Error('Unsafe local catalogue cleanup');fs.rmSync(work,{recursive:true,force:true});}
+}
+refreshLocalCatalogue();
 const initial=()=>({schema:"bscout-shared-community-v1",pending:[],reviewed:[],knowledgeItems:readJson(path.join(ROOT,"data/community-knowledge-items.json"),[]),knowledgeEvidence:readJson(path.join(ROOT,"data/community-knowledge-evidence.json"),[]),resourceReview:[],updatedAt:new Date().toISOString()});
 function readJson(file,fallback){try{return JSON.parse(fs.readFileSync(file,"utf8"))}catch{return fallback}}
 function writeJsonAtomic(file,data){fs.mkdirSync(path.dirname(file),{recursive:true});const tmp=file+".tmp";fs.writeFileSync(tmp,JSON.stringify(data,null,2)+"\n");fs.renameSync(tmp,file)}
@@ -23,7 +34,7 @@ function ensureModelRegistry(models){
  }
  if(changed){writeJsonAtomic(path.join(ROOT,file),rows);writeJsonAtomic(path.join(PUBLISHED_DIR,file),rows);}
 }
-function mirrorJson(relative,data){if(relative==="boatmodels.json") {canonicalStore.save(data);writeJsonAtomic(path.join(PUBLISHED_DIR,relative),canonicalStore.load());ensureModelRegistry(data);return;}writeJsonAtomic(path.join(ROOT,relative),data);writeJsonAtomic(path.join(PUBLISHED_DIR,relative),data)}
+function mirrorJson(relative,data){if(relative==="boatmodels.json") {canonicalStore.save(data);writeJsonAtomic(path.join(PUBLISHED_DIR,relative),canonicalStore.load());ensureModelRegistry(data);refreshLocalCatalogue();return;}writeJsonAtomic(path.join(ROOT,relative),data);writeJsonAtomic(path.join(PUBLISHED_DIR,relative),data);if(Object.values(require("./datarepository.js").DATASET_PATHS).includes(relative))refreshLocalCatalogue()}
 function mirrorFile(relative,source){const rootTarget=path.join(ROOT,relative),persistentTarget=path.join(PUBLISHED_DIR,relative);fs.mkdirSync(path.dirname(rootTarget),{recursive:true});fs.mkdirSync(path.dirname(persistentTarget),{recursive:true});fs.copyFileSync(source,rootTarget);fs.copyFileSync(source,persistentTarget)}
 function state(){const s=readJson(STATE_FILE,null);if(s)return s;const n=initial();writeJsonAtomic(STATE_FILE,n);return n}
 function saveState(s){s.updatedAt=new Date().toISOString();writeJsonAtomic(STATE_FILE,s)}

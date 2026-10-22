@@ -169,19 +169,8 @@
     }
 
     async function loadModels() {
-        if (modelCatalog) return modelCatalog;
         try {
-            const response = await fetch("boatmodels.json", { cache: "no-store" });
-            if (!response.ok) throw new Error(`Boat models HTTP ${response.status}`);
-            let rows = await response.json();
-            rows = Array.isArray(rows) ? rows : [];
-            try {
-                const live = root.BScoutCommunityAPI ? await root.BScoutCommunityAPI.publicOverlays() : null;
-                const patches = live?.modelPatches || {};
-                rows = rows.map(row => patches[row.BoatModelID] ? { ...row, ...patches[row.BoatModelID] } : row);
-                const ids = new Set(rows.map(row => row.BoatModelID));
-                for (const row of live?.addedModels || []) if (row?.BoatModelID && !ids.has(row.BoatModelID)) { rows.push(row); ids.add(row.BoatModelID); }
-            } catch (_) {}
+            const rows = (await root.BScoutDataRepository.loadApplicationData()).boats;
             modelCatalog = rows.map(row => ({
                 id: row.BoatModelID || "",
                 manufacturer: row.Manufacturer || "",
@@ -192,7 +181,8 @@
             })).sort((a,b) => a.label.localeCompare(b.label));
         } catch (error) {
             console.error("Model catalog could not be loaded", error);
-            modelCatalog = [];
+            modelCatalog = null;
+            throw error;
         }
         return modelCatalog;
     }
@@ -1073,7 +1063,13 @@
         $("contributionSelectionState").hidden = true;
         $("contributionFormPanel").hidden = true;
         $("contributionTypeGroups").hidden = false;
-        const [data] = await Promise.all([loadTaxonomy(), loadModels(), loadModelSchema()]);
+        let data;
+        try { [data] = await Promise.all([loadTaxonomy(), loadModels(), loadModelSchema()]); }
+        catch (error) {
+            $("contributionTypeGroups").hidden = true;
+            $("contributionContextText").textContent = "Boat information could not be loaded. Please reopen Contribute to try again.";
+            return;
+        }
         renderGroups(data, returnContext);
         if (options.typeId) {
             selectType(options.typeId);

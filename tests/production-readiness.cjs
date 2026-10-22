@@ -18,9 +18,9 @@ assert.deepEqual(require('../developer/canonical-store.cjs').load(),current);
 for(const field of Object.keys(current[0]))if(field!=='BoatModelID')assert(Object.hasOwn(rules.fields,field));
 const history=cp.execFileSync('git',['diff','--name-only',base,'--','data/phase2-batches','knowledge/data/evidence','data/registry/boat-registry.json','data/production-phases.json','data/model-search-aliases.json','knowledge/data/curatedresources.json','data/imageassets.json','data/imageassets-external.json','data/image-candidates.json']).toString().trim();
 assert.equal(history,'','Existing research, resources, images, phases, aliases or identity decisions changed');
-const ctx={console,URL,setTimeout,clearTimeout,AbortSignal};ctx.window=ctx;ctx.globalThis=ctx;
+const ctx={...require('./catalogue-fixture.cjs').contextGlobals,console,URL,AbortSignal};ctx.window=ctx;ctx.globalThis=ctx;
 const blankOverlay={modelPatches:{},addedModels:[],addedManufacturers:[],resourceAdditions:[]};
-ctx.fetch=async url=>String(url).startsWith('https://')?{ok:true,json:async()=>blankOverlay}:{ok:fs.existsSync('dist/'+String(url).split('?')[0]),json:async()=>read('dist/'+String(url).split('?')[0])};
+ctx.fetch=async url=>String(url).startsWith('https://')?{ok:true,json:async()=>blankOverlay}:{ok:fs.existsSync('dist/'+String(url).split('?')[0]),json:async()=>read('dist/'+String(url).split('?')[0]),text:async()=>fs.readFileSync('dist/'+String(url).split('?')[0],'utf8')};
 for(const file of ['canonicaldata.js','valuenormalizer.js','filterengine.js','searchstatemanager.js','searchorchestrator.js','datarepository.js','imageassetmanager.js','knowledge/knowledgeengine.js','knowledge/boatintelligencerepository.js','knowledge/providers/curatedresourceprovider.js','knowledge/providers/listingdiscoveryprovider.js','knowledge/providers/boatintelligenceprovider.js','knowledge/knowledgecardui.js','boatworkspace.js'])vm.runInNewContext(fs.readFileSync('dist/'+file,'utf8'),ctx,{filename:file});
 const plain=x=>JSON.parse(JSON.stringify(x));
 (async()=>{
@@ -31,7 +31,7 @@ const plain=x=>JSON.parse(JSON.stringify(x));
  vm.runInNewContext(contributionSource.slice(contributionSource.indexOf('    async function loadModels()'),contributionSource.indexOf('    function hidePrimaryViews()')),contributionContext);
  const contributionCatalog=await contributionContext.loadModels();
  assert.equal(contributionCatalog.length,995);assert.equal(new Set(contributionCatalog.map(m=>m.id)).size,995);
- assert.deepEqual(contributionCatalog.map(m=>m.id).sort(),current.map(m=>m.BoatModelID).sort());
+ assert.deepEqual(plain(contributionCatalog.map(m=>m.id).sort()),current.map(m=>m.BoatModelID).sort());
  const phaseIndex=new Map();for(const p of data.productionPhases){if(!phaseIndex.has(p.BoatModelID))phaseIndex.set(p.BoatModelID,[]);phaseIndex.get(p.BoatModelID).push(p);}
  const baseline=expected.map(b=>ctx.BScoutDataRepository.applyCanonicalCompatibility({...b,ProductionPhases:phaseIndex.get(b.BoatModelID)||[]}));
  const profiles=[{},...read('data/search-profiles.json').map(p=>p.SearchSettings),{fuels:['Diesel']},{fuels:['Gasoline']},{propulsion:['Shaft']},{propulsion:['Outboard']},{engineCounts:[1]},{engineCounts:[2]},{minLength:25,maxLength:40},{maxBeam:12},{hullTypes:['Displacement']},{flybridge:'No'},{trailerable:'Yes'},...['Albin 25','Mainship','CHAP-307-SSX-21','SRAY-340-SD-G2'].map(textSearch=>({textSearch}))];

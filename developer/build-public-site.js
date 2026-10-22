@@ -36,7 +36,7 @@ async function build(){
   };
   for(const rel of [...manifest.rootFiles,...manifest.publicFiles,...manifest.temporaryModeratorFiles])copy(rel);
   for(const dir of manifest.publicDirectories){relative(dir);for(const file of walk(path.join(root,dir)))copy(dir+'/'+file);}
-  const publicModels=writeModels(stage,models,ownership);
+  const publicModels=writeModels(stage,models,ownership,{previousRoot:out});
   const input=path.join(work,'page-input.json');fs.writeFileSync(input,JSON.stringify(pageInput));
   cp.execFileSync('python',[path.join(root,'developer/generate-search-landing-pages.py')],{cwd:root,env:{...process.env,BATLAS_OUTPUT_DIR:stage,BATLAS_PAGE_INPUT:input},stdio:'pipe'});
   const slugToId=new Map(models.map(row=>[row.CanonicalSlug,row.BoatModelID]));

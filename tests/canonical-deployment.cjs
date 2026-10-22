@@ -19,7 +19,13 @@ for(const model of models){
  assert(fs.readFileSync(page,'utf8').includes(model.BoatModelID),`Wrong model page ${model.BoatModelID}`);
 }
 const html=fs.readFileSync('dist/index.html','utf8');
-for(const file of ['imageassetmanager.js','datarepository.js','communityapi.js','knowledge/knowledgecardui.js','knowledge/boatintelligencerepository.js'])assert(html.includes(file+'?v=7.06.2-canonical-20261020'),`Stale client cache version for ${file}`);
+for(const file of ['imageassetmanager.js','knowledge/boatintelligencerepository.js'])assert(html.includes(file+'?v=7.06.2-canonical-20261020'),`Stale client cache version for ${file}`);
 for(const file of ['boatworkspace.js','script.js','filterengine.js','engine.js','valuenormalizer.js','userProfile.js','searchstatemanager.js'])assert(html.includes(file+'?v=phase4-ranking-20261021'),`Stale discovery cache version for ${file}`);
 for(const [,url] of html.matchAll(/<script[^>]*src="([^"?#]+)(?:[^\"]*)"/g)) if(!/^https?:/.test(url))assert(fs.existsSync(path.join('dist',url)),`Missing script ${url}`);
 console.log('PASS: generated public view, loader dependencies, script assets, and all source exclusions.');
+
+for(const file of ['datarepository.js','communityapi.js','knowledge/knowledgecardui.js','contributionentry.js'])assert(html.includes(file+'?v=phase3-20261022'));
+for(const shell of ['privacy/index.html','saved-models/index.html']){
+ const source=fs.readFileSync('dist/'+shell,'utf8');
+ for(const file of ['datarepository.js','communityapi.js','communityguide.js','knowledge/knowledgecardui.js','contributionentry.js'])assert(source.includes(file+'?v=phase3-20261022'),`Stale shared repository in ${shell}: ${file}`);
+}

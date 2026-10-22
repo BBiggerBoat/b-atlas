@@ -1,8 +1,8 @@
 {
-  "schemaVersion": 22,
-  "release": "v7.06.0",
-  "lastUpdated": "2026-10-19",
-  "purpose": "Runtime data manifest. Canonical model count must be derived from boatmodels.json rather than maintained as a stale constant.",
+  "schemaVersion": 23,
+  "release": "v7.06.2",
+  "lastUpdated": "2026-10-22",
+  "purpose": "Runtime dependency inventory. The shared repository derives model count from the verified generated release manifest; canonical ownership remains the only editable model authority.",
   "authoritativeModelRecord": "data/canonical/ownership.json",
   "principles": [
     "Each model field has exactly one owner declared in data/canonical/ownership.json.",
@@ -14,7 +14,7 @@
     "Low-confidence estimates are visibly marked and do not hard-eliminate a candidate."
   ],
   "runtimeData": [
-    "boatmodels.json",
+    "data/generated/models/manifest.json",
     "routes.json",
     "data/model-schema.json",
     "data/field-registry.json",
@@ -102,5 +102,13 @@
     "index": "data/canonical/index.json",
     "warningBytes": 150000,
     "maximumBytes": 200000
+  },
+  "generatedCatalogue": {
+    "manifest": "data/generated/models/manifest.json",
+    "contract": "batlas-catalogue-release-v2",
+    "modelRecords": "complete; no projections",
+    "supportingDatasets": "Content-hashed snapshots named by the generated manifest. Listed source paths remain for build inputs and compatibility.",
+    "compatibilityEndpoint": "boatmodels.json",
+    "compatibilityRemoval": "Requires a separate external-consumer review."
   }
 }

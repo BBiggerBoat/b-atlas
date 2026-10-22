@@ -10,6 +10,8 @@ async function stop(){if(child&&!child.killed){const done=new Promise(resolve=>c
   for(const dir of ['data/canonical','data/registry','deployment'])fs.cpSync(dir,path.join(temp,dir),{recursive:true});
   fs.mkdirSync(path.join(temp,'developer'));
   for(const file of ['server.js','developer/canonical-store.cjs','developer/canonical-corrections.cjs','data/model-schema.json','index.html'])fs.copyFileSync(file,path.join(temp,file));
+  for(const file of ['datarepository.js','developer/public-model-artifacts.cjs','baseline-version.json',...Object.values(require('../datarepository.js').DATASET_PATHS).filter(p=>p!=='boatmodels.json')]){fs.mkdirSync(path.dirname(path.join(temp,file)),{recursive:true});fs.copyFileSync(file,path.join(temp,file));}
+
   fs.cpSync('data/i18n',path.join(temp,'data/i18n'),{recursive:true});
   const port=await new Promise(resolve=>{const s=net.createServer();s.listen(0,'127.0.0.1',()=>{const p=s.address().port;s.close(()=>resolve(p));});});
   const base=`http://127.0.0.1:${port}`;
@@ -19,6 +21,11 @@ async function stop(){if(child&&!child.killed){const done=new Promise(resolve=>c
    for(let i=0;i<100;i++){if(child.exitCode!==null)throw Error(errors);try{if((await fetch(base+'/api/health')).ok)return;}catch{}await new Promise(r=>setTimeout(r,50));}throw Error('Admin server failed to start: '+errors);
   }
   await start();
+  async function publishedBaseline(){
+   const repository=require('../datarepository.js').createRepository({baseUrl:base+'/',fetchImpl:url=>url.startsWith(base+'/')?fetch(url):Promise.resolve({ok:false})});
+   return repository.loadBaseline();
+  }
+  assert.deepEqual((await publishedBaseline()).boats,require(path.join(temp,'developer/canonical-store.cjs')).load(),'Local server release must match its canonical source');
   assert.equal((await fetch(base+'/api/admin/snapshot')).status,401);
   for(const file of ['/data/canonical/specifications.json','/archive/canonical-migration-baseline/boatmodels.json','/data/phase2-live-models.json','/server.js'])assert.equal((await fetch(base+file)).status,404,file);
   const headers={'Content-Type':'application/json',Authorization:`Bearer ${token}`};
@@ -44,6 +51,7 @@ async function stop(){if(child&&!child.killed){const done=new Promise(resolve=>c
   const promoted=await fetch(base+'/api/admin/promote',{method:'POST',headers,body:JSON.stringify({contribution:{ContributionType:'new_model',CanonicalDraft:{Fields:{Manufacturer:'Test Partition Builder',Model:'Regression 28',LengthFt:28,Fuel:'Diesel'},ResearchNotes:'Isolated regression fixture'}}})});
   const promotedText=await promoted.text();assert(promoted.ok,promotedText);const result=JSON.parse(promotedText);
   const added=isolatedStore.load().find(m=>m.BoatModelID===result.id);assert(added);assert.equal(added.Model,'Regression 28');assert.equal(added.LOA,8.5344);
+  const release=await publishedBaseline();assert.deepEqual(release.boats,isolatedStore.load(),'Promotion must refresh the served release');assert(release.boatRegistry.some(row=>row.BoatModelID===result.id));
   assert.equal(read('data/registry/boat-registry.json').find(r=>r.BoatModelID===result.id).IdentityStatus,'PendingReview');
   assert.equal((await fetch(base+'/data/canonical/index.json')).status,404);
   const ownerDir=isolatedStore.contract().datasets.specifications;

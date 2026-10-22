@@ -2,7 +2,7 @@
 const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');
 const sha=bytes=>crypto.createHash('sha256').update(bytes).digest('hex');
 const MAX_BYTES=200000;
-function writeModels(out,models,ownership){
+function writeModels(out,models,ownership,options={}){
  const sourceDigest=sha(JSON.stringify({ownership,models}));
  const directory='data/generated/models',shards=[],modelToShard=Object.create(null);
  fs.mkdirSync(path.join(out,directory),{recursive:true});
@@ -28,7 +28,45 @@ function writeModels(out,models,ownership){
  // Temporary output-only compatibility endpoint for Phase 2's unchanged clients.
  const compatibility=Buffer.from(JSON.stringify(models,null,2)+'\n');
  fs.writeFileSync(path.join(out,'boatmodels.json'),compatibility);
- const manifest={schemaVersion:1,format:'batlas-lossless-model-shards-v1',release:sourceDigest,sourceDigest,modelCount:models.length,maxShardBytes:MAX_BYTES,shards,modelToShard,compatibility:{path:'boatmodels.json',sha256:sha(compatibility),bytes:compatibility.length,records:models.length}};
+ const datasets={};
+ const {DATASET_PATHS}=require('../datarepository.js');
+ for(const [name,sourcePath] of Object.entries(DATASET_PATHS).filter(([name])=>name!=='boats')){
+  const source=options.sourceRoot||out;
+  const values=JSON.parse(fs.readFileSync(path.join(source,sourcePath),'utf8'));
+  if(!Array.isArray(values))throw Error('Catalogue dataset must be an array: '+sourcePath);
+  let chunks=[],group=[],size=2;
+  function save(){
+   const raw=Buffer.from(JSON.stringify(group)),digest=sha(raw),file='data/generated/catalogue/'+name+'-'+digest+'.json';
+   fs.mkdirSync(path.dirname(path.join(out,file)),{recursive:true});fs.writeFileSync(path.join(out,file),raw);
+   chunks.push({path:file,sha256:digest,bytes:raw.length,records:group.length});group=[];size=2;
+  }
+  for(const row of values){const length=Buffer.byteLength(JSON.stringify(row));if(length+2>MAX_BYTES)throw Error('Catalogue row exceeds shard limit: '+name);if(group.length&&size+1+length>MAX_BYTES)save();size+=length+(group.length?1:0);group.push(row);}
+  if(group.length||!chunks.length)save();
+  datasets[name]={sourcePath,records:values.length,shards:chunks};
+ }
+ const baselineVersion=JSON.parse(fs.readFileSync(path.join(options.sourceRoot||out,'baseline-version.json'),'utf8')).baselineVersion;
+ const release=sha(JSON.stringify({format:'batlas-catalogue-release-v2',sourceDigest,baselineVersion,modelCount:models.length,shards,modelToShard,datasets}));
+ const manifest={schemaVersion:2,format:'batlas-catalogue-release-v2',release,sourceDigest,baselineVersion,modelCount:models.length,maxShardBytes:MAX_BYTES,shards,modelToShard,datasets,compatibility:{path:'boatmodels.json',sha256:sha(compatibility),bytes:compatibility.length,records:models.length}};
+ // Keep one preceding release's immutable files for clients holding its manifest.
+ // A second-old release recovers through the reader's whole-release retry.
+ manifest.retained=[];
+ if(options.previousRoot){
+  const previousFile=path.join(options.previousRoot,directory,'manifest.json');
+  if(fs.existsSync(previousFile)){
+   const previous=JSON.parse(fs.readFileSync(previousFile,'utf8'));
+   const candidates=previous.release===release?(previous.retained||[]):[...previous.shards,...Object.values(previous.datasets||{}).flatMap(d=>d.shards)];
+   const current=new Set([...shards,...Object.values(datasets).flatMap(d=>d.shards)].map(d=>d.path));
+   const retained=candidates.filter(d=>!current.has(d.path));
+   // Never promote unsafe or corrupted previous files into a fresh release.
+   const verified=retained.map(d=>{
+    if(!/^data\/generated\/(models|catalogue)\/[a-zA-Z0-9_-]+-[a-f0-9]{64}\.json$/.test(d.path)||!d.path.includes(d.sha256))throw Error('Unsafe previous shard');
+    const raw=fs.readFileSync(path.join(options.previousRoot,d.path));
+    if(raw.length!==d.bytes||sha(raw)!==d.sha256)throw Error('Corrupt previous shard');
+    return {d,raw};
+   });
+   for(const {d,raw} of verified){fs.mkdirSync(path.dirname(path.join(out,d.path)),{recursive:true});fs.writeFileSync(path.join(out,d.path),raw);manifest.retained.push(d);}
+  }
+ }
  const content=JSON.stringify(manifest,null,2)+'\n';
  if(Buffer.byteLength(content)>MAX_BYTES)throw Error('Public model manifest exceeds limit');
  fs.writeFileSync(path.join(out,directory,'manifest.json'),content);
