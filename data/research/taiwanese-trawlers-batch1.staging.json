@@ -1,0 +1,135 @@
+{
+  "schema": "b-atlas-research-staging-v1",
+  "date": "2026-10-22",
+  "sourceBranch": "main",
+  "policy": "Research staging only; do not load into canonical registry until verified against boatmodels.json. Unknown values remain unknown.",
+  "existingMarineTrader": [
+    "MRTR-36-DO",
+    "MRTR-38-SD",
+    "MRTR-38-SD2",
+    "MRTR-40-DC",
+    "MRTR-44-TC",
+    "MTRA-34-EU",
+    "MTRA-34-SE"
+  ],
+  "existingCHB": [
+    "CHBB-34-SE",
+    "CHBY-34-SE",
+    "CHBY-35",
+    "CHBY-40"
+  ],
+  "candidates": [
+    {
+      "manufacturer": "Marine Trader",
+      "model": "32 Sedan",
+      "status": "new_candidate",
+      "canonicalId": null,
+      "approved": false,
+      "verification": [
+        "Check full canonical boatmodels.json, including alternate naming",
+        "Verify specifications against primary or multiple independent sources",
+        "Check variant and generation identity before allocating model ID"
+      ]
+    },
+    {
+      "manufacturer": "Marine Trader",
+      "model": "34 Double Cabin",
+      "status": "new_candidate",
+      "canonicalId": null,
+      "approved": false,
+      "verification": [
+        "Check full canonical boatmodels.json, including alternate naming",
+        "Verify specifications against primary or multiple independent sources",
+        "Check variant and generation identity before allocating model ID"
+      ]
+    },
+    {
+      "manufacturer": "Marine Trader",
+      "model": "36 Sedan",
+      "status": "new_candidate",
+      "canonicalId": null,
+      "approved": false,
+      "verification": [
+        "Check full canonical boatmodels.json, including alternate naming",
+        "Verify specifications against primary or multiple independent sources",
+        "Check variant and generation identity before allocating model ID"
+      ]
+    },
+    {
+      "manufacturer": "Marine Trader",
+      "model": "36 Sundeck",
+      "status": "new_candidate",
+      "canonicalId": null,
+      "approved": false,
+      "verification": [
+        "Check full canonical boatmodels.json, including alternate naming",
+        "Verify specifications against primary or multiple independent sources",
+        "Check variant and generation identity before allocating model ID"
+      ]
+    },
+    {
+      "manufacturer": "Marine Trader",
+      "model": "40 Europa",
+      "status": "new_candidate",
+      "canonicalId": null,
+      "approved": false,
+      "verification": [
+        "Check full canonical boatmodels.json, including alternate naming",
+        "Verify specifications against primary or multiple independent sources",
+        "Check variant and generation identity before allocating model ID"
+      ]
+    },
+    {
+      "manufacturer": "CHB",
+      "model": "38 Double Cabin",
+      "status": "new_candidate",
+      "canonicalId": null,
+      "approved": false,
+      "verification": [
+        "Check full canonical boatmodels.json, including alternate naming",
+        "Verify specifications against primary or multiple independent sources",
+        "Check variant and generation identity before allocating model ID"
+      ]
+    },
+    {
+      "manufacturer": "CHB",
+      "model": "42 Sundeck",
+      "status": "new_candidate",
+      "canonicalId": null,
+      "approved": false,
+      "verification": [
+        "Check full canonical boatmodels.json, including alternate naming",
+        "Verify specifications against primary or multiple independent sources",
+        "Check variant and generation identity before allocating model ID"
+      ]
+    },
+    {
+      "manufacturer": "CHB",
+      "model": "45 Pilothouse",
+      "status": "new_candidate",
+      "canonicalId": null,
+      "approved": false,
+      "verification": [
+        "Check full canonical boatmodels.json, including alternate naming",
+        "Verify specifications against primary or multiple independent sources",
+        "Check variant and generation identity before allocating model ID"
+      ]
+    },
+    {
+      "manufacturer": "United Ocean",
+      "model": "38 Trawler",
+      "status": "identity_unverified",
+      "canonicalId": null,
+      "approved": false,
+      "verification": [
+        "Check full canonical boatmodels.json, including alternate naming",
+        "Verify specifications against primary or multiple independent sources",
+        "Check variant and generation identity before allocating model ID"
+      ]
+    }
+  ],
+  "notes": [
+    "CHB registry IDs have CHBB and CHBY prefixes; preserve until deliberate identity audit",
+    "United Ocean 38 must not be assumed equivalent to CHB 38"
+  ]
+}
