@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Source-qualified staging register for seven Taiwanese trawler model additions. NOT canonical data. No values inferred from unsupported evidence.",
+  "branchBaseline": "main",
+  "preparedOn": "2026-10-23",
+  "status": "implementation-staging; requires canonical materialization, fixture review, generation, full test suite",
+  "candidates": [
+    {
+      "proposedID": "PRES-41-DC",
+      "manufacturer": "President",
+      "model": "41 Double Cabin",
+      "years": [
+        1982,
+        1987
+      ],
+      "loaFt": 40.5,
+      "beamFt": 13.416666666666666,
+      "draftFt": 2.8333333333333335,
+      "displacementLb": 22500,
+      "fuelUSGal": 420,
+      "waterUSGal": 120,
+      "holdingUSGal": 60,
+      "hullBehavior": "semi-displacement",
+      "engineConfiguration": "twin diesels documented; power varies",
+      "source": [
+        "https://www.hmy.com/yachting/powerboat-guide/president"
+      ],
+      "unresolved": [
+        "Builder identity and construction location by year",
+        "Engine options by production year"
+      ]
+    },
+    {
+      "proposedID": "PRES-42-TR",
+      "manufacturer": "President",
+      "model": "42 Trawler",
+      "years": [
+        2002,
+        2006
+      ],
+      "loaFt": 44.333333333333336,
+      "beamFt": 14.25,
+      "draftFt": 3.5,
+      "displacementLb": 30800,
+      "fuelUSGal": 400,
+      "waterUSGal": 150,
+      "holdingUSGal": null,
+      "hullBehavior": "semi-displacement",
+      "engineConfiguration": "twin Cummins 330 hp reported",
+      "source": [
+        "https://www.hmy.com/yachting/powerboat-guide/president/42-trawler-2002-06"
+      ],
+      "unresolved": [
+        "Additional engine configurations",
+        "Holding tank capacity"
+      ]
+    },
+    {
+      "proposedID": "OCAL-42-SE",
+      "manufacturer": "Ocean Alexander",
+      "model": "42 Sedan",
+      "years": [
+        1986,
+        1993
+      ],
+      "loaFt": 42,
+      "beamFt": 14.333333333333334,
+      "draftFt": 3.1666666666666665,
+      "displacementLb": 23000,
+      "fuelUSGal": 500,
+      "waterUSGal": 150,
+      "holdingUSGal": 40,
+      "hullBehavior": "modified-V",
+      "engineConfiguration": "twin engines; Cummins and Caterpillar options reported",
+      "source": [
+        "https://www.hmy.com/yachting/powerboat-guide/ocean-alexander/42-sedan-1986-93"
+      ],
+      "unresolved": [
+        "Year-specific equipment and flybridge changes",
+        "Do not conflate with later 420/422 sport sedan"
+      ]
+    },
+    {
+      "proposedID": "DEFE-44-OC",
+      "manufacturer": "DeFever",
+      "model": "44 Offshore Cruiser",
+      "years": [
+        1981,
+        2007
+      ],
+      "loaFt": 43.75,
+      "beamFt": 14.75,
+      "draftFt": 4.583333333333333,
+      "displacementLb": 44000,
+      "fuelUSGal": 900,
+      "waterUSGal": 350,
+      "holdingUSGal": 60,
+      "hullBehavior": "full displacement",
+      "engineConfiguration": "twin Ford Lehman or John Deere diesels reported",
+      "source": [
+        "https://www.hmy.com/yachting/powerboat-guide/defever",
+        "https://www.defevercruisers.com/design_details.asp?id=11"
+      ],
+      "unresolved": [
+        "Production yard and construction changes across production period"
+      ]
+    },
+    {
+      "proposedID": "MRTR-40-SU",
+      "manufacturer": "Marine Trader",
+      "model": "40 Sundeck",
+      "years": [
+        1983,
+        2000
+      ],
+      "loaFt": 39.333333333333336,
+      "beamFt": 12.916666666666666,
+      "draftFt": 4,
+      "displacementLb": 25000,
+      "fuelUSGal": 350,
+      "waterUSGal": 250,
+      "holdingUSGal": 50,
+      "hullBehavior": "semi-displacement",
+      "engineConfiguration": "single Ford Lehman standard; twins available",
+      "source": [
+        "https://www.hmy.com/yachting/powerboat-guide/marine-trader"
+      ],
+      "unresolved": [
+        "Single/twin variation should not be collapsed to one EngineCount",
+        "Confirm distinction from existing 40 Double Cabin"
+      ]
+    },
+    {
+      "proposedID": "CHBY-38-DC",
+      "manufacturer": "CHB",
+      "model": "38 Double Cabin",
+      "years": [
+        1978,
+        1985
+      ],
+      "loaFt": 37.833333333333336,
+      "beamFt": 13.5,
+      "draftFt": 3.5,
+      "displacementLb": 26000,
+      "fuelUSGal": 400,
+      "waterUSGal": 200,
+      "holdingUSGal": 40,
+      "hullBehavior": "semi-displacement",
+      "engineConfiguration": "single and twin Ford Lehman options reported",
+      "source": [
+        "https://www.hmy.com/yachting/powerboat-guide/chb"
+      ],
+      "unresolved": [
+        "Cross-check existing Marine Trader 38 Sundeck entries",
+        "Confirm no mold-level conflation with Marine Trader 38 Double Cabin"
+      ]
+    },
+    {
+      "proposedID": "KHAS-40-SU",
+      "manufacturer": "Kha Shing",
+      "model": "40 Sundeck",
+      "years": [
+        1980,
+        1988
+      ],
+      "loaFt": 39.5,
+      "beamFt": 14,
+      "draftFt": 3.5833333333333335,
+      "displacementLb": null,
+      "fuelUSGal": null,
+      "waterUSGal": null,
+      "holdingUSGal": null,
+      "hullBehavior": "semi-displacement",
+      "engineConfiguration": "twin Volvo diesel installations reported",
+      "aliases": [
+        "Spindrift 40 Sundeck",
+        "Vista 40 Sundeck",
+        "Southern Star 40 Sundeck"
+      ],
+      "source": [
+        "https://www.hmy.com/yachting/powerboat-guide/kha-shing/40-sundeck-1980-88"
+      ],
+      "unresolved": [
+        "Historical sources cite 300/340 US gallon alternatives",
+        "Confirm hull equivalence and marketing alias validity"
+      ]
+    }
+  ],
+  "implementationRequirements": [
+    "Inspect identity collision and alias relationships before assigning permanent IDs.",
+    "Use ownership.json and canonical-store.cjs to author the four canonical owners; do not edit generated projections directly.",
+    "Use SHA256 bucket routing and update modelOrder atomically with all four domains.",
+    "Remove stale frozen-snapshot assumptions from tests or retain historical regression coverage without asserting catalogues must remain identical.",
+    "Regenerate boatmodels.json and public SEO outputs through existing build scripts and run verify:production.",
+    "Keep uncertain, variable or disputed values null with source-specific provenance.",
+    "Do not merge or deploy until full validation and explicit owner approval."
+  ]
+}
