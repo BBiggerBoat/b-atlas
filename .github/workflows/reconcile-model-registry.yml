@@ -46,7 +46,7 @@ jobs:
       - name: Verify community overlay compatibility
         run: node tests/community-overlay-regression.cjs
       - name: Verify shared catalogue equivalence and failure recovery
-        run: node tests/shared-model-repository.cjs
+        run: node tests/shared-model-repository.cjs && node tests/search-detail-projection.cjs
       - name: Probe live community overlay compatibility
         run: node tests/live-community-overlay-regression.cjs
       - name: Verify correlated configurations

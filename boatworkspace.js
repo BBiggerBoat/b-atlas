@@ -7,6 +7,7 @@
 
     let currentBoat = null;
     let currentCard = null;
+    let resourcesReady=false, resourceWork=null, detailReady=false;
     let activeTab = "research";
     const tabOrder = ["research", "buying", "owning", "notebook"];
 
@@ -597,6 +598,20 @@
         });
         const panel = document.querySelector(`[data-workspace-panel="${activeTab}"]`);
         if (!panel || !currentBoat) return;
+        if(activeTab==='owning' && !resourcesReady){
+            panel.innerHTML='<p role="status">Loading model resources…</p>';
+            if(detailReady && !resourceWork){
+                const sequence=openSequence;
+                resourceWork=root.BScoutKnowledgeUI.loadCardForBoat(currentBoat).then(card=>{
+                    if(sequence!==openSequence)return;
+                    currentCard=card;resourcesReady=true;setTab(activeTab);
+                }).catch(error=>{
+                    if(sequence!==openSequence)return;
+                    panel.innerHTML='<p role="alert">Model resources could not be loaded. Select Owner Resources again to retry.</p>';
+                }).finally(()=>{if(sequence===openSequence)resourceWork=null;});
+            }
+            return;
+        }
         const renderers = {research:renderResearch, buying:renderBuying, owning:renderOwning, notebook:renderNotebook};
         panel.innerHTML = (renderers[activeTab] || renderResearch)();
         bindSectionMenu(panel);
@@ -712,7 +727,9 @@
         document.addEventListener("click",event=>{if(!menu.hidden&&!event.target.closest(".guide-share-wrap"))closeShareMenu();});
     }
 
+    let openSequence = 0;
     async function open(boat, tab, options = {}) {
+        const sequence=++openSequence;
         currentBoat = boat;
         if (options.history !== false) {
             const interactivePath = `/?model=${encodeURIComponent(boat.BoatModelID || "")}`;
@@ -720,6 +737,7 @@
             else if (root.history?.pushState) root.history.pushState({bscoutView:"guide",boatModelId:boat.BoatModelID,tab:tab||""}, "", interactivePath);
         }
         currentCard = null;
+        resourcesReady=false;resourceWork=null;detailReady=false;
         const guide = document.getElementById("boatGuideView"); if (!guide) return;
         document.getElementById("modalTitle").textContent = boatName(boat);
         document.getElementById("workspaceIdentitySummary").textContent = `${boat.FirstYear || "?"}–${boat.LastYear || "?"} · ${boat.NormalizedStyle || boat.Style || "Style unknown"} · Model knowledge, not an individual listing`;
@@ -765,12 +783,30 @@
         setTab(requestedTab || getRememberedTab(boat) || "research");
         const status = document.getElementById("boatWorkspaceStatus"); if (status) status.textContent = "Loading curated model knowledge…";
         try {
-            if (root.BScoutKnowledgeUI) currentCard = await root.BScoutKnowledgeUI.loadCardForBoat(boat);
+            // Start resources and detail together. Settle both even if detail fails,
+            // so rapid navigation and failed loads cannot leave rejected work unhandled.
+            const includeResources=activeTab==='owning';
+            const cardWork=root.BScoutKnowledgeUI ? root.BScoutKnowledgeUI.loadCardForBoat(boat,{includeResources}) : Promise.resolve(null);
+            const [detailResult,cardResult]=await Promise.allSettled([root.BScoutDataRepository.getRepository().getModel(boat.BoatModelID),cardWork]);
+            if(sequence!==openSequence)return;
+            if(detailResult.status==='rejected')throw detailResult.reason;
+            if(detailResult.value)currentBoat=detailResult.value;
+            detailReady=true;
+            if(cardResult.status==='rejected')throw cardResult.reason;
+            const card=cardResult.value;
+            if(sequence!==openSequence)return;
+            currentCard=card;
+            resourcesReady=includeResources;
             if (status) status.textContent = "";
             setTab(activeTab);
         } catch (error) {
+            if(sequence!==openSequence)return;
             console.error("Boat Workspace knowledge load failed:", error);
             if (status) status.textContent = "Curated resources could not be loaded. Core model data remains available.";
+            if(activeTab==='owning'){
+                const panel=document.querySelector('[data-workspace-panel="owning"]');
+                if(panel)panel.innerHTML='<p role="alert">Model resources could not be loaded. Select Owner Resources again to retry.</p>';
+            }else if(detailReady)setTab(activeTab);
         }
     }
 

@@ -17,6 +17,7 @@ try{
   await page.locator('[data-app-action="dream"]:visible').first().click();await page.locator('#newProfileBtn').click();
   await page.locator('.filter-header').filter({hasText:'Standard'}).click();
   await page.getByLabel('Wide Side Decks priority',{exact:true}).selectOption('Important');
+  if(!await page.getByLabel('Separate Shower priority',{exact:true}).isVisible())await page.locator('.filter-header').filter({hasText:'Standard'}).click();
   await page.getByLabel('Separate Shower priority',{exact:true}).selectOption('PreferredV4');
   await page.waitForFunction(()=>window.BScoutSearchState.getState().searchSettings.featurePriorities['Separate Shower']==='PreferredV4');
   assert.equal(await page.locator('#currentBoatsCount').textContent(),'995','Soft preferences preserve all candidates');

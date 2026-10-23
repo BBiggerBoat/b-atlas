@@ -17,7 +17,7 @@ function runtime(fetch,previous=false){
  return ctx;
 }
 const profiles=[{}, {fuels:['Diesel']},{propulsion:['Shaft']},{constructionMaterials:['Fiberglass']},{engineCounts:[1]},{engineCounts:[2]},{minLength:24,maxLength:40,maxAirDraft:15},{routes:['RC']},{textSearch:'Mainship'},{featurePriorities:{'Wide Side Decks':'Required','Separate Shower':'Preferred'}},{preferencePolicyVersion:4,featurePriorities:{'Wide Side Decks':'Important','Separate Shower':'Preferred'}},{fuels:['Diesel'],featurePriorities:{'Wide Side Decks':'Important'}},{propulsion:['Shaft'],maxLength:40},{crewComposition:'TwoCouples',guestFrequency:'Often'},{featurePriorities:{'Single Engine':'Important','Twin Engines':'Important'}}];
-function sign(m){m.release=sha(JSON.stringify({format:m.format,sourceDigest:m.sourceDigest,baselineVersion:m.baselineVersion,modelCount:m.modelCount,shards:m.shards,modelToShard:m.modelToShard,datasets:m.datasets}));return m;}
+function sign(m){m.release=sha(JSON.stringify({format:m.format,sourceDigest:m.sourceDigest,baselineVersion:m.baselineVersion,modelCount:m.modelCount,shards:m.shards,modelToShard:m.modelToShard,datasets:m.datasets,search:m.search}));return m;}
 async function small(label='A',overlay=blank){
  const values={'boatmodels.json':[{BoatModelID:'BASE',Model:label,FuelCode:'fuel.diesel',Overview:'Complete guidance',EvidenceSummary:{Statements:['Retain provenance']}}], 'data/production-phases.json':[{BoatModelID:'BASE',Sequence:1,Label:label}], 'data/registry/manufacturers.json':[{CanonicalName:'Base'}]};
  return releaseFetch(async url=>response(url===endpoint?overlay:values[url]||[]));
@@ -63,20 +63,20 @@ async function small(label='A',overlay=blank){
  // Invalid required releases reject completely. Recovery reuses no partial rows.
  const good=await small(),baseManifest=await (await good(manifestPath)).json();let failureCases=0;
  async function rejects(transform,pattern){const request=async(url,options)=>transform(url,await good(url,options));const r=runtime(request).BScoutDataRepository.createRepository({fetchImpl:request,timeoutMs:20});await assert.rejects(r.loadApplicationData(),pattern);failureCases++;}
- await rejects((u,r)=>u===baseManifest.shards[0].path?missing:r,/unavailable/);
- await rejects((u,r)=>u===baseManifest.shards[0].path?{ok:true,text:async()=> 'corrupt'}:r,/byte count/);
- await rejects((u,r)=>u===baseManifest.shards[0].path?{ok:true,text:async()=>{const text=await r.text();return text.replace('BASE','FAIL');}}:r,/checksum/);
+ await rejects((u,r)=>u===baseManifest.search.shards[0].path?missing:r,/unavailable/);
+ await rejects((u,r)=>u===baseManifest.search.shards[0].path?{ok:true,text:async()=> 'corrupt'}:r,/byte count/);
+ await rejects((u,r)=>u===baseManifest.search.shards[0].path?{ok:true,text:async()=>{const text=await r.text();return text.replace('BASE','FAIL');}}:r,/checksum/);
  await rejects((u,r)=>u===manifestPath?response({...baseManifest,release:'0'.repeat(64)}):r,/identity/);
  await rejects((u,r)=>u===manifestPath?response(sign({...plain(baseManifest),modelCount:2})):r,/model count/);
- await rejects((u,r)=>u===manifestPath?response(sign({...plain(baseManifest),modelToShard:{BASE:10}})):r,/routing/);
+ await rejects((u,r)=>u===manifestPath?response(sign({...plain(baseManifest),search:{...plain(baseManifest.search),modelToShard:{BASE:10}}})):r,/routing/);
  await rejects((u,r)=>u===manifestPath?response({...baseManifest,schemaVersion:1}):r,/Unsupported/);
- await rejects((u,r)=>u===baseManifest.shards[0].path?new Promise(()=>{}):r,/timed out/);
- const duplicate=plain(baseManifest),rows=JSON.parse(await (await good(duplicate.shards[0].path)).text());rows.push(rows[0]);const text=JSON.stringify(rows),hash=sha(text),d=duplicate.shards[0];d.path='data/generated/models/000-'+hash+'.json';d.sha256=hash;d.bytes=Buffer.byteLength(text);d.records=2;duplicate.modelCount=2;sign(duplicate);
+ await rejects((u,r)=>u===baseManifest.search.shards[0].path?new Promise(()=>{}):r,/timed out/);
+ const duplicate=plain(baseManifest),rows=JSON.parse(await (await good(duplicate.shards[0].path)).text());rows.push(rows[0]);const text=JSON.stringify(rows),hash=sha(text),d=duplicate.search.shards[0];d.path='data/generated/models/000-'+hash+'.json';d.sha256=hash;d.bytes=Buffer.byteLength(text);d.records=2;duplicate.modelCount=2;sign(duplicate);
  await rejects((u,r)=>u===manifestPath?response(duplicate):u===d.path?response(rows):r,/duplicate/);
  // A stale release with missing immutable files retries the entire manifest.
  const newer=await small('B');let manifests=0;
  const modes=[];
- const switching=async(u,o)=>{modes.push({url:u,cache:o?.cache,attempt:manifests});return u===manifestPath?(++manifests===1?good(u,o):newer(u,o)):manifests===1&&u===baseManifest.shards[0].path?missing:manifests===1?good(u,o):newer(u,o);};
+ const switching=async(u,o)=>{modes.push({url:u,cache:o?.cache,attempt:manifests});return u===manifestPath?(++manifests===1?good(u,o):newer(u,o)):manifests===1&&u===baseManifest.search.shards[0].path?missing:manifests===1?good(u,o):newer(u,o);};
  const switched=await runtime(switching).BScoutDataRepository.getRepository().loadApplicationData();
  assert.equal(manifests,2);assert.equal(switched.boats[0].Model,'B');assert.equal(switched.productionPhases[0].Label,'B');
  assert(modes.some(m=>m.attempt===1&&m.cache==='force-cache'));assert(modes.some(m=>m.attempt===2&&m.cache==='reload'));

@@ -133,6 +133,11 @@
         });
     }
 
+    // Conservative projection: retain every unlisted field, including future configuration
+    // and confidence keys. These audited fields are only read by full detail consumers.
+    const DETAIL_ONLY_FIELDS = Object.freeze(['Overview','ModelCharacter','OwnershipCharacter','DesignLineage','EvolutionNotes','BScoutSignature','OwnerExperienceNotes','KnownConcerns','InspectionFocus','BuyerQuestions','OwnerActions','ModelVariations','EvidenceSummary','Phase2Source','DecisionDataSource','ReviewedBy','DateCreated']);
+    const DEFERRED_DATASETS = Object.freeze(['curatedResources','listingSearches','knowledgeAnnotations']);
+    function projectSearchModel(row) {return Object.fromEntries(Object.entries(row).filter(([key])=>!DETAIL_ONLY_FIELDS.includes(key)));}
     const RELEASE_PATH = "data/generated/models/manifest.json";
     const KNOWLEDGE_DATASETS = Object.freeze({
         curatedResources: "knowledge/data/curatedresources.json",
@@ -155,12 +160,17 @@
     function createRepository(options = {}) {
         const request = options.fetchImpl || global.fetch;
         const resolve = path => (options.baseUrl || baseUrl) ? new URL(path, options.baseUrl || baseUrl).href : path;
-        let snapshotPromise = null, epoch = 0;
+        let snapshotPromise = null, epoch = 0, activeRequests=0;
+        const waiting=[];
+        async function acquire(){if(activeRequests<4){activeRequests++;return;}await new Promise(resolve=>waiting.push(resolve));}
+        function release(){if(waiting.length)waiting.shift()();else activeRequests--;}
+
         async function digest(bytes) {
             if (!global.crypto?.subtle) throw Error("Catalogue verification requires HTTPS or localhost");
             return Array.from(new Uint8Array(await global.crypto.subtle.digest("SHA-256", bytes)), n=>n.toString(16).padStart(2,"0")).join("");
         }
         async function json(path, descriptor, fresh = false) {
+            await acquire();
             const controller = typeof AbortController !== "undefined" ? new AbortController() : null;
             let timer;
             try {
@@ -177,21 +187,23 @@
                 return await Promise.race([operation, new Promise((_,reject)=> {
                     timer=setTimeout(()=>{controller?.abort();reject(Error("Catalogue request timed out: "+path));},options.timeoutMs || 30000);
                 })]);
-            } finally {clearTimeout(timer);}
+            } finally {clearTimeout(timer);release();}
         }
         async function loadRelease(fresh = false) {
             const manifest = await json(RELEASE_PATH);
-            if (manifest.schemaVersion !== 2 || manifest.format !== "batlas-catalogue-release-v2" || !/^[a-f0-9]{64}$/.test(manifest.release)) throw Error("Unsupported catalogue release");
-            const identity={format:manifest.format,sourceDigest:manifest.sourceDigest,baselineVersion:manifest.baselineVersion,modelCount:manifest.modelCount,shards:manifest.shards,modelToShard:manifest.modelToShard,datasets:manifest.datasets};
+            if (manifest.schemaVersion !== 3 || manifest.format !== "batlas-catalogue-release-v3" || !/^[a-f0-9]{64}$/.test(manifest.release)) throw Error("Unsupported catalogue release");
+            const identity={format:manifest.format,sourceDigest:manifest.sourceDigest,baselineVersion:manifest.baselineVersion,modelCount:manifest.modelCount,shards:manifest.shards,modelToShard:manifest.modelToShard,datasets:manifest.datasets,search:manifest.search};
             if (await digest(new TextEncoder().encode(JSON.stringify(identity))) !== manifest.release) throw Error("Catalogue release identity mismatch");
             const expectedNames=Object.keys(DATASET_PATHS).filter(n=>n!=="boats");
             if(Object.keys(manifest.datasets).length!==expectedNames.length || Object.keys(manifest.datasets).some(n=>!expectedNames.includes(n)))throw Error("Unexpected catalogue dataset");
-            const descriptors = [...manifest.shards.map(s=>({...s,name:"boats"})),
-                ...Object.entries(manifest.datasets).flatMap(([name,d])=>d.shards.map(s=>({...s,name})))];
+            if(manifest.search.projection !== 'batlas-search-v1' || JSON.stringify(manifest.search.detailOnlyFields)!==JSON.stringify(DETAIL_ONLY_FIELDS))throw Error('Unsupported search projection');
+            const modelShards=manifest.search.shards;
+            const descriptors = [...modelShards.map(s=>({...s,name:"boats"})),
+                ...Object.entries(manifest.datasets).filter(([name])=>!DEFERRED_DATASETS.includes(name)).flatMap(([name,d])=>d.shards.map(s=>({...s,name})))];
             for (const name of Object.keys(DATASET_PATHS).filter(n=>n!=="boats")) {
                 if (!manifest.datasets[name] || manifest.datasets[name].sourcePath !== DATASET_PATHS[name]) throw Error("Incomplete catalogue release: "+name);
             }
-            for (const d of descriptors) if (!/^data\/generated\/(models|catalogue)\/[a-zA-Z0-9_-]+-[a-f0-9]{64}\.json$/.test(d.path) || !d.path.includes(d.sha256) || !Number.isInteger(d.bytes) || d.bytes<2 || d.bytes>200000 || !Number.isInteger(d.records) || d.records<0) throw Error("Invalid catalogue descriptor");
+            for (const d of [...manifest.shards,...modelShards,...Object.values(manifest.datasets).flatMap(d=>d.shards)]) if (!/^data\/generated\/(models|catalogue)\/[a-zA-Z0-9_-]+-[a-f0-9]{64}\.json$/.test(d.path) || !d.path.includes(d.sha256) || !Number.isInteger(d.bytes) || d.bytes<2 || d.bytes>200000 || !Number.isInteger(d.records) || d.records<0) throw Error("Invalid catalogue descriptor");
             const loaded = new Array(descriptors.length); let next=0;
             let failure;
             await Promise.all(Array.from({length:Math.min(4,descriptors.length)},async()=>{
@@ -205,9 +217,11 @@
             descriptors.forEach((d,i)=>baseline[d.name].push(...loaded[i]));
             validateModels(baseline.boats);
             if(baseline.boats.length!==manifest.modelCount || Object.keys(manifest.modelToShard).length!==manifest.modelCount)throw Error("Catalogue model count mismatch");
-            manifest.shards.forEach((_,i)=>{for(const row of loaded[i])if(manifest.modelToShard[row.BoatModelID]!==i)throw Error("Catalogue routing mismatch");});
-            for(const [name,d] of Object.entries(manifest.datasets))if(baseline[name].length!==d.records)throw Error("Catalogue dataset count mismatch");
-            return freeze(baseline);
+            if(Object.keys(manifest.search.modelToShard).length!==manifest.modelCount)throw Error('Search routing count mismatch');
+            for(const row of baseline.boats){const index=manifest.modelToShard[row.BoatModelID];if(!Number.isInteger(index)||index<0||index>=manifest.shards.length)throw Error('Missing detail routing');}
+            modelShards.forEach((_,i)=>{for(const row of loaded[i])if(manifest.search.modelToShard[row.BoatModelID]!==i)throw Error("Catalogue routing mismatch");});
+            for(const [name,d] of Object.entries(manifest.datasets))if(!DEFERRED_DATASETS.includes(name)&&baseline[name].length!==d.records)throw Error("Catalogue dataset count mismatch");
+            return {baseline:freeze(baseline),manifest};
         }
         async function overlay() {
             const controller = typeof AbortController !== "undefined" ? new AbortController() : null;
@@ -220,22 +234,70 @@
             if(!snapshotPromise){
                 const current=epoch;
                 const pending=(async()=>{
-                    let baseline;
-                    try {baseline=await loadRelease();} catch (_) {baseline=await loadRelease(true);}
+                    let release;
+                    try {release=await loadRelease();} catch (_) {release=await loadRelease(true);}
+                    const {baseline,manifest}=release;
                     const live=await overlay();
                     const data=await composeApplicationData({loadBaseline:async()=>baseline,loadOverlay:async()=>live});
-                    return {baseline,data,overlay:live,epoch:current};
+                    return {baseline,data,manifest,overlay:live,epoch:current,files:new Map(),models:new Map(),datasets:new Map()};
                 })();
                 snapshotPromise=pending;
                 pending.catch(()=>{if(snapshotPromise===pending)snapshotPromise=null;});
             }
             return snapshotPromise;
         }
+        function memo(map,key,operation) {
+            if(!map.has(key)) {const pending=operation();map.set(key,pending);pending.catch(()=>{if(map.get(key)===pending)map.delete(key);});}
+            return map.get(key);
+        }
+        async function rows(s,d) {
+            return memo(s.files,d.path,async()=>{
+                let value;
+                try {value=await json(d.path,d);} catch (_) {value=await json(d.path,d,true);}
+                ensureArray(value,d.path);if(value.length!==d.records)throw Error('Catalogue record count mismatch');return value;
+            });
+        }
+        async function dataset(s,name) {
+            if(!DEFERRED_DATASETS.includes(name))return s.baseline[name];
+            return memo(s.datasets,name,async()=>{const value=[];for(const d of s.manifest.datasets[name].shards)value.push(...await rows(s,d));if(value.length!==s.manifest.datasets[name].records)throw Error('Dataset count mismatch');return freeze(value);});
+        }
+        async function rawModel(s,id) {
+            if(!Object.hasOwn(s.manifest.modelToShard,id))return null;
+            const index=s.manifest.modelToShard[id];
+            const values=await rows(s,s.manifest.shards[index]);validateModels(values);
+            for(const row of values)if(s.manifest.modelToShard[row.BoatModelID]!==index)throw Error('Detail routing mismatch');
+            const row=values.find(row=>row.BoatModelID===id);
+            if(!row)throw Error('Required model detail is missing: '+id);
+            return row;
+        }
+        async function model(s,id) {
+            return memo(s.models,id,async()=>{
+                const raw=await rawModel(s,id),projected=s.data.boats.find(r=>r.BoatModelID===id);
+                if(!raw)return projected||null;
+                const effective=await composeApplicationData({loadBaseline:async()=>({boats:[raw],productionPhases:s.baseline.productionPhases}),loadOverlay:async()=>({...s.overlay,addedModels:[],addedManufacturers:[]})});
+                // Never mutate the search projection or apply a second overlay to it.
+                return effective.boats[0];
+            });
+        }
+        async function baseline(s) {
+            if(!s.fullBaseline)s.fullBaseline=(async()=>{
+                const boats=[];
+                // Bounded batches preserve original manifest order.
+                for(let i=0;i<s.manifest.shards.length;i+=4){const batch=await Promise.all(s.manifest.shards.slice(i,i+4).map(d=>rows(s,d)));boats.push(...batch.flat());}
+                validateModels(boats);for(let i=0;i<s.manifest.shards.length;i++)for(const row of await rows(s,s.manifest.shards[i]))if(s.manifest.modelToShard[row.BoatModelID]!==i)throw Error('Detail routing mismatch');if(boats.length!==s.manifest.modelCount)throw Error('Full model count mismatch');
+                const value={...s.baseline,boats};for(const name of DEFERRED_DATASETS)value[name]=await dataset(s,name);return freeze(value);
+            })().catch(error=>{s.fullBaseline=null;throw error;});
+            return s.fullBaseline;
+        }
         return {
-            loadApplicationData:()=>snapshot().then(s=>s.data),
-            loadBaseline:()=>snapshot().then(s=>s.baseline),
+            loadSearchData:()=>snapshot().then(s=>s.data),
+            loadDataset:name=>snapshot().then(s=>dataset(s,name)),
+            loadApplicationData:()=>snapshot().then(s=>{
+                if(!s.fullData)s.fullData=baseline(s).then(value=>composeApplicationData({loadBaseline:async()=>value,loadOverlay:async()=>s.overlay})).catch(error=>{s.fullData=null;throw error;});return s.fullData;
+            }),
+            loadBaseline:()=>snapshot().then(s=>baseline(s)),
             loadOverlay:()=>snapshot().then(s=>s.overlay),
-            getModel:id=>snapshot().then(s=>s.data.boats.find(r=>r.BoatModelID===id)||null),
+            getModel:id=>snapshot().then(s=>model(s,id)),
             invalidate:()=>{epoch++;snapshotPromise=null;},
             get epoch(){return epoch;}
         };
@@ -247,7 +309,7 @@
         return repositories.get(request);
     }
     function loadApplicationData(options={}) {return getRepository(options.fetchImpl).loadApplicationData();}
-    const api = {DEFAULT_MANIFEST, DATASET_PATHS, RELEASE_PATH, fetchJson, loadApplicationData, ensureArray, applyCanonicalCompatibility, createRepository, getRepository};
+    const api = {DETAIL_ONLY_FIELDS, DEFERRED_DATASETS, projectSearchModel, loadSearchData:(options={})=>getRepository(options.fetchImpl).loadSearchData(), DEFAULT_MANIFEST, DATASET_PATHS, RELEASE_PATH, fetchJson, loadApplicationData, ensureArray, applyCanonicalCompatibility, createRepository, getRepository};
     global.BScoutDataRepository=api;
     if(typeof module === "object" && module.exports)module.exports=api;
 })(typeof window !== "undefined" ? window : globalThis);

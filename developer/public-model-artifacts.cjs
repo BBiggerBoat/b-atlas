@@ -44,9 +44,20 @@ function writeModels(out,models,ownership,options={}){
   if(group.length||!chunks.length)save();
   datasets[name]={sourcePath,records:values.length,shards:chunks};
  }
+ const {projectSearchModel,DETAIL_ONLY_FIELDS}=require('../datarepository.js');
+ const search={projection:'batlas-search-v1',detailOnlyFields:DETAIL_ONLY_FIELDS,shards:[],modelToShard:Object.create(null)};
+ let projected=[],projectedBytes=2;
+ function saveSearch(){
+  if(!projected.length)return;
+  const raw=Buffer.from(JSON.stringify(projected)),digest=sha(raw),file='data/generated/catalogue/search-'+String(search.shards.length).padStart(3,'0')+'-'+digest+'.json';
+  fs.writeFileSync(path.join(out,file),raw);
+  for(const row of projected)search.modelToShard[row.BoatModelID]=search.shards.length;
+  search.shards.push({path:file,sha256:digest,bytes:raw.length,records:projected.length});projected=[];projectedBytes=2;
+ }
+ for(const model of models){const row=projectSearchModel(model),length=Buffer.byteLength(JSON.stringify(row));if(length+2>MAX_BYTES)throw Error('Search row exceeds shard limit');if(projected.length&&projectedBytes+length+1>MAX_BYTES)saveSearch();projectedBytes+=length+(projected.length?1:0);projected.push(row);}saveSearch();
  const baselineVersion=JSON.parse(fs.readFileSync(path.join(options.sourceRoot||out,'baseline-version.json'),'utf8')).baselineVersion;
- const release=sha(JSON.stringify({format:'batlas-catalogue-release-v2',sourceDigest,baselineVersion,modelCount:models.length,shards,modelToShard,datasets}));
- const manifest={schemaVersion:2,format:'batlas-catalogue-release-v2',release,sourceDigest,baselineVersion,modelCount:models.length,maxShardBytes:MAX_BYTES,shards,modelToShard,datasets,compatibility:{path:'boatmodels.json',sha256:sha(compatibility),bytes:compatibility.length,records:models.length}};
+ const release=sha(JSON.stringify({format:'batlas-catalogue-release-v3',sourceDigest,baselineVersion,modelCount:models.length,shards,modelToShard,datasets,search}));
+ const manifest={schemaVersion:3,format:'batlas-catalogue-release-v3',release,sourceDigest,baselineVersion,modelCount:models.length,maxShardBytes:MAX_BYTES,shards,modelToShard,datasets,search,compatibility:{path:'boatmodels.json',sha256:sha(compatibility),bytes:compatibility.length,records:models.length}};
  // Keep one preceding release's immutable files for clients holding its manifest.
  // A second-old release recovers through the reader's whole-release retry.
  manifest.retained=[];
@@ -54,8 +65,8 @@ function writeModels(out,models,ownership,options={}){
   const previousFile=path.join(options.previousRoot,directory,'manifest.json');
   if(fs.existsSync(previousFile)){
    const previous=JSON.parse(fs.readFileSync(previousFile,'utf8'));
-   const candidates=previous.release===release?(previous.retained||[]):[...previous.shards,...Object.values(previous.datasets||{}).flatMap(d=>d.shards)];
-   const current=new Set([...shards,...Object.values(datasets).flatMap(d=>d.shards)].map(d=>d.path));
+   const candidates=previous.release===release?(previous.retained||[]):[...previous.shards,...Object.values(previous.datasets||{}).flatMap(d=>d.shards),...(previous.search?.shards||[])];
+   const current=new Set([...shards,...Object.values(datasets).flatMap(d=>d.shards),...search.shards].map(d=>d.path));
    const retained=candidates.filter(d=>!current.has(d.path));
    // Never promote unsafe or corrupted previous files into a fresh release.
    const verified=retained.map(d=>{

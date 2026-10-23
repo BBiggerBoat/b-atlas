@@ -16,7 +16,7 @@ function refreshLocalCatalogue(){
  const work=fs.mkdtempSync(path.join(DATA_DIR,'catalogue-'));
  try{
   const m=require('./developer/public-model-artifacts.cjs').writeModels(work,canonicalStore.load(),canonicalStore.contract(),{sourceRoot:ROOT});
-  const files=[...m.shards,...Object.values(m.datasets).flatMap(d=>d.shards)];
+  const files=[...m.shards,...m.search.shards,...Object.values(m.datasets).flatMap(d=>d.shards)];
   for(const d of files){const dest=path.join(PUBLISHED_DIR,d.path);fs.mkdirSync(path.dirname(dest),{recursive:true});fs.copyFileSync(path.join(work,d.path),dest);}
   writeJsonAtomic(path.join(PUBLISHED_DIR,'data/generated/models/manifest.json'),m);
  }finally{if(!path.resolve(work).startsWith(DATA_DIR+path.sep))throw Error('Unsafe local catalogue cleanup');fs.rmSync(work,{recursive:true,force:true});}

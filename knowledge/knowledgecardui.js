@@ -88,11 +88,12 @@ return cards;
     }
 
     async function loadCuratedResources(fetchImpl) {
-        const data=await repository(fetchImpl).loadApplicationData();
-        return mergeResourceAdditions(data.curatedResources,data.communityOverlay?.resourceAdditions);
+        const repo=repository(fetchImpl);
+        const [resources,overlay]=await Promise.all([repo.loadDataset("curatedResources"),repo.loadOverlay()]);
+        return mergeResourceAdditions(resources,overlay?.resourceAdditions);
     }
     async function loadBoatIntelligence(fetchImpl) {return (await repository(fetchImpl).loadApplicationData()).boats;}
-    async function loadListingSearches(fetchImpl) {return (await repository(fetchImpl).loadApplicationData()).listingSearches;}
+    async function loadListingSearches(fetchImpl) {return repository(fetchImpl).loadDataset("listingSearches");}
 
     function resetKnowledgeCardCache(fetchImpl) {repository(fetchImpl).invalidate();}
 
@@ -311,12 +312,11 @@ return cards;
     function renderErrorState() { return '<div class="knowledge-card-state knowledge-card-error"><strong>Knowledge Card unavailable</strong><p>The research record could not be loaded. This does not affect the boat\'s candidacy.</p></div>'; }
 
     async function loadCardForBoat(boat, options = {}) {
-        const cards = options.cards || await loadKnowledgeCards(options.fetchImpl);
-        const baseCard = findCard(cards, boat && boat.BoatModelID);
-        if (!baseCard) return null;
-        const resources = options.resources || await loadCuratedResources(options.fetchImpl);
-        const listings = options.listings || await loadListingSearches(options.fetchImpl);
-        const intelligenceRecords = options.intelligenceRecords || await loadBoatIntelligence(options.fetchImpl);
+        const repo=repository(options.fetchImpl);
+        const [full,resources,listings,annotations,coverage]=await Promise.all([repo.getModel(boat?.BoatModelID),options.resources || (options.includeResources===false ? [] : loadCuratedResources(options.fetchImpl)),options.listings || (options.includeResources===false ? [] : loadListingSearches(options.fetchImpl)),repo.loadDataset('knowledgeAnnotations'),repo.loadDataset('knowledgeCoverage')]);
+        if(!full)return null;
+        const baseCard=options.cards ? findCard(options.cards,full.BoatModelID) : projectCards([full],{resources,listings,annotations,coverage})[0];
+        const intelligenceRecords=options.intelligenceRecords || [full];
         return enrichCard(baseCard, resources, listings, intelligenceRecords);
     }
 

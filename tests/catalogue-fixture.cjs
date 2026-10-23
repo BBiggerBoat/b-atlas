@@ -14,7 +14,7 @@ async function releaseFetch(transport){
   fs.writeFileSync(path.join(root,'baseline-version.json'),JSON.stringify({baselineVersion:'fixture'}));
   const models=JSON.parse(fs.readFileSync(path.join(root,'boatmodels.json')));
   const manifest=writeModels(root,models,{}),files=new Map();
-  for(const d of [...manifest.shards,...Object.values(manifest.datasets).flatMap(d=>d.shards)])files.set(d.path,fs.readFileSync(path.join(root,d.path),'utf8'));
+  for(const d of [...manifest.shards,...manifest.search.shards,...Object.values(manifest.datasets).flatMap(d=>d.shards)])files.set(d.path,fs.readFileSync(path.join(root,d.path),'utf8'));
   files.set('data/generated/models/manifest.json',JSON.stringify(manifest));
   return async(url,options)=>files.has(url)?{ok:true,json:async()=>JSON.parse(files.get(url)),text:async()=>files.get(url)}:transport(url,options);
  }finally{if(!root.startsWith(path.resolve('.bscout-data')+path.sep))throw Error('Unsafe fixture cleanup');fs.rmSync(root,{recursive:true,force:true});}

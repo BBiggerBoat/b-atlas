@@ -105,8 +105,8 @@
   },
   "generatedCatalogue": {
     "manifest": "data/generated/models/manifest.json",
-    "contract": "batlas-catalogue-release-v2",
-    "modelRecords": "complete; no projections",
+    "contract": "batlas-catalogue-release-v3",
+    "modelRecords": "Declared search projection at startup; complete records on demand",
     "supportingDatasets": "Content-hashed snapshots named by the generated manifest. Listed source paths remain for build inputs and compatibility.",
     "compatibilityEndpoint": "boatmodels.json",
     "compatibilityRemoval": "Requires a separate external-consumer review."

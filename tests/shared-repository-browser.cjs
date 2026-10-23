@@ -16,23 +16,30 @@ const server=http.createServer((req,res)=>{
  try{
   browser=await chromium.launch({channel:'msedge',headless:true});
   for(const [name,viewport,isMobile] of [['desktop',{width:1440,height:1000},false],['mobile',{width:390,height:844},true]]){
-   const context=await browser.newContext({viewport,isMobile,hasTouch:isMobile}),calls=new Map();let writes=0;
+   const context=await browser.newContext({viewport,isMobile,hasTouch:isMobile}),calls=new Map();let writes=0,blockedResource=null;
    await context.route('**/*',route=>{
     const request=route.request(),url=request.url();calls.set(url,(calls.get(url)||0)+1);
     if(!['GET','HEAD'].includes(request.method())){writes++;return route.abort();}
+    if(url===blockedResource)return route.fulfill({status:404,body:'Unavailable fixture'});
     if(url==='https://api.b-atlas.org/api/public/overlays')return route.fulfill({status:200,contentType:'application/json',body:JSON.stringify(overlay)});
     return url.startsWith(base)?route.continue():route.fulfill({status:200,contentType:'application/json',body:'{}'});
    });
    const page=await context.newPage(),errors=[];page.on('pageerror',error=>errors.push(error.message));
    await page.goto(base,{waitUntil:'domcontentloaded'});
    await page.waitForFunction(()=>document.getElementById('totalBoatsCount')?.textContent==='996');
+   const manifest=JSON.parse(fs.readFileSync(path.join(root,'data/generated/models/manifest.json')));
+   for(const d of manifest.shards)assert(!calls.has(base+'/'+d.path),'Startup fetched a detail shard');
+   await page.evaluate(async()=>BScoutBoatWorkspace.open((await BScoutDataRepository.getRepository().loadSearchData()).boats.find(b=>b.BoatModelID==='ALBN-25'),'overview',{history:false}));
+   for(const name of ['curatedResources','listingSearches'])for(const d of manifest.datasets[name].shards)assert(!calls.has(base+'/'+d.path),'Research guide eagerly loaded owner resources');
    const result=await page.evaluate(async()=>{
-    const repository=BScoutDataRepository.getRepository(),data=await repository.loadApplicationData(),baseline=await repository.loadBaseline();
-    const cards=await BScoutKnowledgeUI.loadKnowledgeCards();
+    const repository=BScoutDataRepository.getRepository(),data=await repository.loadSearchData();
+    const baseline={boats:data.boats.filter(b=>b.BoatModelID!=='LOCAL-TEST')};
+    const card=await BScoutKnowledgeUI.loadCardForBoat(data.boats.find(b=>b.BoatModelID==='ALBN-25'),{includeResources:false});
     await BScoutContributions.openGuide({dataset:{modelId:'ALBN-25',manufacturer:'Albin',model:'25'}},{typeId:'correction',fieldId:'FuelCode',history:false});
     const source=(await repository.getModel('ALBN-25')).Overview;
-    const card=cards.find(c=>c.identity.boatModelId==='ALBN-25');
     const added=(await repository.getModel('LOCAL-TEST')).Overview;
+    await BScoutBoatWorkspace.open(data.boats.find(b=>b.BoatModelID==='ALBN-25'),'resources',{history:false});
+    if(!document.querySelector('[data-workspace-panel="owning"]').textContent.includes('Local test manual'))throw Error('Owner Resources did not render the lazy resource addition');
     const resources=await BScoutKnowledgeUI.loadCuratedResources();
     return {count:data.boats.length,baselineCount:baseline.boats.length,source,card:card.intelligence.overview,added,modelId:(await repository.getModel('ALBN-25')).BoatModelID,correction:document.getElementById('correctionCurrentValue').value,manuals:resources.find(r=>r.BoatModelID==='ALBN-25').documents.filter(d=>d.url==='https://example.test/manual').length,release:data.catalogueRelease};
    });
@@ -49,6 +56,24 @@ const server=http.createServer((req,res)=>{
     assert.equal(row,result.source);assert.equal(calls.get('https://api.b-atlas.org/api/public/overlays'),1);
     assert(![...calls.keys()].some(url=>new URL(url).pathname==='/boatmodels.json'));
    }
+   // A missing owner-resource shard must show an error, preserve candidates and retry.
+   await page.goto(base,{waitUntil:'domcontentloaded'});await page.waitForFunction(()=>document.getElementById('totalBoatsCount')?.textContent==='996');
+   blockedResource=base+'/'+manifest.datasets.curatedResources.shards[0].path;
+   await page.evaluate(async()=>BScoutBoatWorkspace.open((await BScoutDataRepository.getRepository().loadSearchData()).boats.find(b=>b.BoatModelID==='ALBN-25'),'resources',{history:false}));
+   assert.match(await page.locator('[data-workspace-panel="owning"]').textContent(),/could not be loaded/);
+   assert.equal(await page.locator('#totalBoatsCount').textContent(),'996');
+   blockedResource=null;
+   const dismissTour=page.getByRole('button',{name:'Not now',exact:true});
+   if(await dismissTour.isVisible())await dismissTour.click();
+   await page.locator('[data-workspace-tab="owning"]').click();
+   await page.waitForFunction(()=>document.querySelector('[data-workspace-panel="owning"]').textContent.includes('Local test manual'));
+   const latestGuide=await page.evaluate(async()=>{
+    const data=await BScoutDataRepository.getRepository().loadSearchData(),first=data.boats.find(b=>b.BoatModelID==='ALBN-25'),last=data.boats.find(b=>b.BoatModelID==='MNSH-34-TR');
+    await Promise.all([BScoutBoatWorkspace.open(first,'overview',{history:false}),BScoutBoatWorkspace.open(last,'overview',{history:false})]);
+    const full=await BScoutDataRepository.getRepository().getModel(last.BoatModelID);
+    return {contributionModel:document.getElementById('contributeToGuideBtn').dataset.modelId,character:full.ModelCharacter,body:document.querySelector('[data-workspace-panel="research"]').textContent};
+   });
+   assert.equal(latestGuide.contributionModel,'MNSH-34-TR');assert(latestGuide.character);assert(latestGuide.body.includes(latestGuide.character),'Late previous guide repainted the selected model');
    assert.equal(writes,0);assert.deepEqual(errors,[]);
    results.push({name,status:'PASS',...result,overlayRequests:1,monolithRequests:0,productionWrites:0,staticShells:['saved-models','privacy']});await context.close();
   }

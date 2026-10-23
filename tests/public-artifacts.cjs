@@ -7,14 +7,16 @@ function files(dir,base=''){return fs.readdirSync(dir,{withFileTypes:true}).flat
 function digests(dir){return Object.fromEntries(files(dir).sort().map(file=>[file,sha(fs.readFileSync(path.join(dir,file)))]));}
 function verify(dir,expected,ownership){
  const m=read(path.join(dir,'data/generated/models/manifest.json'));
- assert.equal(m.schemaVersion,2);assert.equal(m.format,'batlas-catalogue-release-v2');assert.equal(m.maxShardBytes,MAX_BYTES);
- assert.equal(m.sourceDigest,sha(JSON.stringify({ownership,models:expected})));assert.equal(m.release,sha(JSON.stringify({format:m.format,sourceDigest:m.sourceDigest,baselineVersion:m.baselineVersion,modelCount:m.modelCount,shards:m.shards,modelToShard:m.modelToShard,datasets:m.datasets})));
+ assert.equal(m.schemaVersion,3);assert.equal(m.format,'batlas-catalogue-release-v3');assert.equal(m.maxShardBytes,MAX_BYTES);
+ assert.equal(m.sourceDigest,sha(JSON.stringify({ownership,models:expected})));assert.equal(m.release,sha(JSON.stringify({format:m.format,sourceDigest:m.sourceDigest,baselineVersion:m.baselineVersion,modelCount:m.modelCount,shards:m.shards,modelToShard:m.modelToShard,datasets:m.datasets,search:m.search})));
  assert.equal(m.modelCount,expected.length);const rebuilt=[];
  m.shards.forEach((shard,index)=>{
   assert(/^data\/generated\/models\/\d{3}-[0-9a-f]{64}\.json$/.test(shard.path));
   const raw=fs.readFileSync(path.join(dir,shard.path));assert.equal(raw.length,shard.bytes);assert(raw.length<=MAX_BYTES);assert.equal(sha(raw),shard.sha256);assert(shard.path.includes(shard.sha256));
   const rows=JSON.parse(raw);assert.equal(rows.length,shard.records);for(const row of rows)assert.equal(m.modelToShard[row.BoatModelID],index);rebuilt.push(...rows);
  });
+ const projected=m.search.shards.flatMap((d,i)=>{const raw=fs.readFileSync(path.join(dir,d.path));assert.equal(raw.length,d.bytes);assert(raw.length<=MAX_BYTES);assert.equal(sha(raw),d.sha256);const values=JSON.parse(raw);assert.equal(values.length,d.records);for(const row of values)assert.equal(m.search.modelToShard[row.BoatModelID],i);return values;});
+ assert.deepEqual(projected,expected.map(require('../datarepository.js').projectSearchModel),'Search projection changed values/order');
  assert.deepEqual(rebuilt,expected,'Lossless shards changed records or sequence');assert.equal(Object.keys(m.modelToShard).length,expected.length);
  for(const [name,dataset] of Object.entries(m.datasets)){
   const rows=dataset.shards.flatMap(d=>{const raw=fs.readFileSync(path.join(dir,d.path));assert.equal(raw.length,d.bytes);assert(raw.length<=MAX_BYTES);assert.equal(sha(raw),d.sha256);return JSON.parse(raw);});

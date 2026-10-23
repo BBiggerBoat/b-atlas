@@ -170,7 +170,7 @@
 
     async function loadModels() {
         try {
-            const rows = (await root.BScoutDataRepository.loadApplicationData()).boats;
+            const rows = (await root.BScoutDataRepository.loadSearchData()).boats;
             modelCatalog = rows.map(row => ({
                 id: row.BoatModelID || "",
                 manufacturer: row.Manufacturer || "",

@@ -16,7 +16,7 @@ async function init(){
  const repository=root.BScoutDataRepository.getRepository();
  if(readyPromise&&readyEpoch===repository.epoch)return readyPromise;
  readyEpoch=repository.epoch;
- readyPromise=repository.loadApplicationData().then(data=>{
+ readyPromise=repository.loadSearchData().then(data=>{
   const k=data.communityKnowledgeItems,e=data.communityKnowledgeEvidence,r=data.communityReviewedContributions,live=data.communityOverlay;
   staticKnowledge=uniqBy([...(Array.isArray(k)?k:[]),...(Array.isArray(live?.knowledgeItems)?live.knowledgeItems:[])],"KnowledgeItemID");
   staticEvidence=uniqBy([...(Array.isArray(e)?e:[]),...(Array.isArray(live?.knowledgeEvidence)?live.knowledgeEvidence:[])],"KnowledgeEvidenceID");
