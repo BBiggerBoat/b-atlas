@@ -6,14 +6,14 @@ The local delivery receipt records the final review commit.
 
 ## Status and acceptance boundary
 
-The implementation and functional/data-safety validation are ready for review.
-The approved performance gate remains open: the assessment requires "no material
-startup or guide regression." Startup data and local startup medians improve, and
-the guide shell appears at least as quickly, but complete cold-guide knowledge
-now finishes roughly 0.20–0.21 seconds later. This report does not label that
-regression a passed gate or silently replace the agreed requirement with a new
-latency budget. Owner acceptance of this bounded cold-load tradeoff, or further
-latency work, is needed before calling Phase 4 fully accepted or starting Phase 5.
+Phase 4 is accepted as of October 23, 2026. Functional and data-safety validation
+passed. The owner accepted the measured roughly 0.20–0.21-second additional
+cold-guide completion time in response to the explicit acceptance question.
+Startup data and local startup medians improve, and the guide shell appears at
+least as quickly. The original "no material startup or guide regression" gate
+is closed by owner acceptance of this specific measured tradeoff, not by claiming
+that full cold-guide completion became faster. This acceptance authorizes neither
+deployment nor Phase 5 work.
 
 Main remains `d082c427250cb0199039863335d4e82fbf483fe0`. There was no push, PR,
 merge, deployment, production API write or database migration. The acknowledged
@@ -113,8 +113,7 @@ It remains a local sample, not a production or physical-device benchmark.
 
 The largest observed Phase 4 cold-guide completion in these six runs was about
 469 ms. The visible guide and startup improve; full cold completion regresses.
-That is the unresolved acceptance tradeoff, not hidden behind the earlier shell
-paint. Repeat guides can reuse verified file/model/resource promises, but no
+That is the owner-accepted tradeoff; the earlier shell paint does not remove it. Repeat guides can reuse verified file/model/resource promises, but no
 repeat-guide timing claim is made here.
 
 Overall image/fallback request totals vary and are not used to claim catalogue
@@ -161,11 +160,10 @@ No live-overlay probe, real submission, notification or production write ran.
 
 ## Review, migration and rollback
 
-Review this branch with the cold-guide gate still open. Do not treat the local
-implementation commit as deployment approval or begin Phase 5 under an assumption
-that the performance requirement was waived. The remaining choice is to accept
-the measured roughly 0.2-second cold-guide completion penalty in exchange for the
-startup reduction, or continue latency work and repeat the controlled comparison.
+The owner accepted the measured roughly 0.2-second cold-guide completion penalty
+in exchange for the startup reduction on October 23, 2026. Phase 4 acceptance is
+complete. The local implementation and acceptance commits are not deployment
+approval. Phase 5 requires a separate instruction.
 
 Reproduce functional gates with `npm run verify:production`, with full historical
 Git objects available. Set `PHASE4_OUTPUT_DIR` to a writable absolute directory
