@@ -1,6 +1,6 @@
 # B-Atlas Decision Data Coverage Audit
 
-Generated: 2026-10-23T19:58:23.193Z
+Generated: 2026-10-23T21:01:11.635Z
 
 Canonical models: **1002**
 
