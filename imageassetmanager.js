@@ -134,7 +134,9 @@
         if (externalCandidates.length) return externalCandidates[0];
 
         const legacyPath = typeof boatOrId === "object" ? normalizeLegacyPath(boatOrId.ImageURL) : "";
-        if (legacyPath && legacyPath !== PLACEHOLDER_PATH) return legacyPath;
+        // An explicit placeholder is intentional when no representative image is
+        // available; do not replace it with a guessed, nonexistent model JPG.
+        if (legacyPath) return legacyPath;
 
         const canonicalPath = canonicalImagePath(boatOrId);
         return canonicalPath || PLACEHOLDER_PATH;

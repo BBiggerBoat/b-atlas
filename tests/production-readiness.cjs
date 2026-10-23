@@ -6,21 +6,33 @@ const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
 const historical=require('../developer/historical-fixtures.cjs');
 const original=historical.json('original-models');
 const current=read('boatmodels.json'),rules=read('data/canonical/ownership.json');
+const {modelCount,historicalCount}=require('./catalogue-evolution.cjs');
 const expected=structuredClone(original);
 for(const change of read('reports/canonical-url-migration.json'))Object.assign(expected.find(m=>m.BoatModelID===change.BoatModelID),change.after);
 const propulsionApprovals=read('reports/approved-propulsion-corrections.json').changes;
 assert.equal(propulsionApprovals.length,8);assert.equal(new Set(propulsionApprovals.map(c=>c.BoatModelID)).size,8);
 for(const change of propulsionApprovals){assert.equal(change.field,'MechanicalPropulsionCode');assert.equal(change.expectedValue,null);assert.equal(change.proposedValue,'mechanical_propulsion.outboard');const row=expected.find(m=>m.BoatModelID===change.BoatModelID);assert.equal(row[change.field],change.expectedValue);row[change.field]=change.proposedValue;}
-assert.deepEqual(current,expected,'Data differs beyond approved URL and propulsion corrections');
-assert.equal(current.length,995);assert.equal(new Set(current.map(m=>m.BoatModelID)).size,995);
-assert.equal(new Set(current.map(m=>m.CanonicalSlug)).size,995);
+require('./catalogue-evolution.cjs').assertHistorical(current,expected,'Historical data differs beyond approved URL and propulsion corrections');
+// Addition semantics are independently checked by taiwan-trawler-integration.cjs.
+expected.push(...current.slice(historicalCount));
+assert.equal(current.length,modelCount);assert.equal(new Set(current.map(m=>m.BoatModelID)).size,modelCount);
+assert.equal(new Set(current.map(m=>m.CanonicalSlug)).size,modelCount);
 assert.deepEqual(require('../developer/canonical-store.cjs').load(),current);
 for(const field of Object.keys(current[0]))if(field!=='BoatModelID')assert(Object.hasOwn(rules.fields,field));
 const protectedResearch=historical.json('protected-research');
 const digest=require('node:crypto').createHash;
 function filesAt(rel){const stat=fs.statSync(rel);return stat.isDirectory()?fs.readdirSync(rel).flatMap(name=>filesAt(rel+'/'+name)):[rel];}
 assert.deepEqual(protectedResearch.roots.flatMap(filesAt).sort(),Object.keys(protectedResearch.files).sort(),'Historical research file set changed');
-for(const [file,expectedHash] of Object.entries(protectedResearch.files))assert.equal(digest('sha256').update(fs.readFileSync(file,'utf8').replace(/\r\n/g,'\n')).digest('hex'),expectedHash,'Existing research changed: '+file);
+for(const [file,expectedHash] of Object.entries(protectedResearch.files)){
+ let content=fs.readFileSync(file,'utf8').replace(/\r\n/g,'\n');
+ if(['data/model-search-aliases.json','data/registry/boat-registry.json'].includes(file)){
+  const rows=JSON.parse(content),{additionIDs}=require('./catalogue-evolution.cjs');
+  assert.deepEqual(rows.filter(row=>additionIDs.includes(row.BoatModelID)).map(row=>row.BoatModelID),additionIDs,'Missing or duplicate integration identities: '+file);
+  // Removing only the seven reviewed additions must recover the original bytes.
+  content=JSON.stringify(rows.filter(row=>!additionIDs.includes(row.BoatModelID)),null,2)+'\n';
+ }
+ assert.equal(digest('sha256').update(content).digest('hex'),expectedHash,'Existing research changed: '+file);
+}
 
 const ctx={...require('./catalogue-fixture.cjs').contextGlobals,console,URL,AbortSignal};ctx.window=ctx;ctx.globalThis=ctx;
 const blankOverlay={modelPatches:{},addedModels:[],addedManufacturers:[],resourceAdditions:[]};
@@ -29,12 +41,12 @@ for(const file of ['canonicaldata.js','valuenormalizer.js','filterengine.js','se
 const plain=x=>JSON.parse(JSON.stringify(x));
 (async()=>{
  const data=await ctx.BScoutDataRepository.loadApplicationData({fetchImpl:ctx.fetch});
- assert.equal(data.boats.length,995);
+ assert.equal(data.boats.length,modelCount);
  const contributionSource=fs.readFileSync('dist/contributionentry.js','utf8');
  const contributionContext={console,root:ctx,fetch:ctx.fetch,modelCatalog:null};
  vm.runInNewContext(contributionSource.slice(contributionSource.indexOf('    async function loadModels()'),contributionSource.indexOf('    function hidePrimaryViews()')),contributionContext);
  const contributionCatalog=await contributionContext.loadModels();
- assert.equal(contributionCatalog.length,995);assert.equal(new Set(contributionCatalog.map(m=>m.id)).size,995);
+ assert.equal(contributionCatalog.length,modelCount);assert.equal(new Set(contributionCatalog.map(m=>m.id)).size,modelCount);
  assert.deepEqual(plain(contributionCatalog.map(m=>m.id).sort()),current.map(m=>m.BoatModelID).sort());
  const phaseIndex=new Map();for(const p of data.productionPhases){if(!phaseIndex.has(p.BoatModelID))phaseIndex.set(p.BoatModelID,[]);phaseIndex.get(p.BoatModelID).push(p);}
  const baseline=expected.map(b=>ctx.BScoutDataRepository.applyCanonicalCompatibility({...b,ProductionPhases:phaseIndex.get(b.BoatModelID)||[]}));
@@ -44,7 +56,7 @@ const plain=x=>JSON.parse(JSON.stringify(x));
   const before=ctx.BScoutFilterEngine.filterBoats(baseline,profile,data.routes,{}).map(b=>b.BoatModelID);
   ctx.BScoutSearchOrchestrator.configure({boats:data.boats,routes:data.routes});
   const after=ctx.BScoutSearchOrchestrator.execute({state:{searchSettings:profile},render:false}).boats.map(b=>b.BoatModelID);
-  assert.deepEqual(plain(after),plain(before),'Search/filter changed: '+JSON.stringify(profile));evaluations+=995;
+  assert.deepEqual(plain(after),plain(before),'Search/filter changed: '+JSON.stringify(profile));evaluations+=modelCount;
  }
  await ctx.ImageAssetManager.loadImageAssetRegistry(ctx.fetch);
  const imageCounts={local:0,external:0,missingLocal:0};
@@ -96,7 +108,7 @@ const plain=x=>JSON.parse(JSON.stringify(x));
  vm.runInNewContext(script.slice(script.indexOf('function renderPreferenceMatchSummary('),script.indexOf('function formatCardMeasurement(')),ctx);
  vm.runInNewContext(comparison,ctx);
  let comparisonChecks=0;
- for(let i=0;i<995;i+=3){
+ for(let i=0;i<modelCount;i+=3){
   const selection=data.boats.slice(i,i+3);if(selection.length===1)selection.push(data.boats[0]);
   ctx.comparisonBoatIDs=selection.map(b=>b.BoatModelID);ctx.renderComparisonTable();
   for(const boat of selection)assert(table.innerHTML.includes(boat.BoatModelID));
@@ -123,6 +135,6 @@ const plain=x=>JSON.parse(JSON.stringify(x));
   assert(redirect.includes('http-equiv="refresh"')&&redirect.includes('noindex'),'Retired page must redirect');
   assert(!redirect.includes('class="specs"'),'Retired page still contains competing specifications');
  }
- const result={status:'PASS',models:995,baseline:'checksum-verified original Git snapshot fixture',fieldOwners:Object.keys(rules.fields).length,filterProfiles:profiles.length,filterEvaluations:evaluations,knowledgeDisplays:guidanceChecks,comparisonModelChecks:comparisonChecks,contributionCatalogModels:contributionCatalog.length,imageResolution:imageCounts,imageFallbackChecks:fallbackChecks,staticModelPages:995,historicalResearch:'unchanged',liveWrites:0};
+ const result={status:'PASS',models:modelCount,baseline:'checksum-verified original Git snapshot fixture',fieldOwners:Object.keys(rules.fields).length,filterProfiles:profiles.length,filterEvaluations:evaluations,knowledgeDisplays:guidanceChecks,comparisonModelChecks:comparisonChecks,contributionCatalogModels:contributionCatalog.length,imageResolution:imageCounts,imageFallbackChecks:fallbackChecks,staticModelPages:modelCount,historicalResearch:'unchanged',liveWrites:0};
  fs.mkdirSync('reports',{recursive:true});fs.writeFileSync('reports/production-readiness-results.json',JSON.stringify(result,null,2)+'\n');console.log(JSON.stringify(result,null,2));
 })().catch(e=>{console.error(e);process.exitCode=1});

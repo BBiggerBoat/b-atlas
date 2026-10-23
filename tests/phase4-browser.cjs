@@ -1,4 +1,5 @@
 'use strict';
+const {modelCount}=require('./catalogue-evolution.cjs');
 // Isolated local browser profiles. External requests and ALL writes are blocked.
 const fs=require('node:fs'),path=require('node:path'),http=require('node:http'),assert=require('node:assert/strict');
 const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
@@ -10,10 +11,12 @@ try{
  browser=await chromium.launch({channel:'msedge',headless:true,timeout:20000});
  for(const [name,viewport,isMobile] of [['desktop',{width:1440,height:1000},false],['mobile',{width:390,height:844},true]]){
   const context=await browser.newContext({viewport,isMobile,hasTouch:isMobile});
+  // Keep the delayed first-visit invitation out of preference-control workflows.
+  await context.addInitScript(()=>localStorage.setItem('batlas:firstVisitTour:v1','dismissed'));
   await context.route('**/*',route=>route.request().url().startsWith(base)&&['GET','HEAD'].includes(route.request().method())?route.continue():route.fulfill({status:200,contentType:'application/json',body:'{}'}));
   console.log(name+': start');
   const page=await context.newPage(),errors=[];page.on('pageerror',e=>errors.push(e.stack || e.message));page.on('dialog',d=>d.type()==='prompt'?d.accept('Phase 4 saved search'):d.accept());
-  await page.goto(base,{waitUntil:'domcontentloaded'});await page.waitForFunction(()=>document.getElementById('totalBoatsCount')?.textContent==='995',{timeout:30000});
+  await page.goto(base,{waitUntil:'domcontentloaded'});await page.waitForFunction((expected)=>document.getElementById('totalBoatsCount')?.textContent===String(expected),modelCount,{timeout:30000});
   await page.locator('[data-app-action="dream"]:visible').first().click();await page.locator('#newProfileBtn').click();
   await page.locator('.filter-header').filter({hasText:'Standard'}).click();
   await page.getByLabel('Wide Side Decks priority',{exact:true}).selectOption('Important');
@@ -21,7 +24,7 @@ try{
   await page.getByLabel('Separate Shower priority',{exact:true}).scrollIntoViewIfNeeded();
   await page.getByLabel('Separate Shower priority',{exact:true}).selectOption('PreferredV4');
   await page.waitForFunction(()=>window.BScoutSearchState.getState().searchSettings.featurePriorities['Separate Shower']==='PreferredV4');
-  assert.equal(await page.locator('#currentBoatsCount').textContent(),'995','Soft preferences preserve all candidates');
+  assert.equal(await page.locator('#currentBoatsCount').textContent(),String(modelCount),'Soft preferences preserve all candidates');
   assert(await page.locator('.preference-match-summary').filter({hasText:'Not enough information'}).count()>0);
   assert(await page.locator('.preference-match-summary').filter({hasText:'Known compromises'}).count()>0);
   const first=page.locator('.boat-card').first(),id=await first.locator('.compare-btn').getAttribute('data-id');
@@ -42,13 +45,13 @@ try{
   // Save, clear and reload using actual controls.
   await page.locator('#saveProfileBtn').click();const savedID=await page.locator('#searchProfileSelect').inputValue();assert(savedID);
   const rankedIDs=await page.locator('.boat-card .compare-btn').evaluateAll(nodes=>nodes.map(n=>n.dataset.id));
-  await page.locator('#clearButton').click();await page.reload({waitUntil:'domcontentloaded'});await page.waitForFunction(()=>document.getElementById('totalBoatsCount')?.textContent==='995');
+  await page.locator('#clearButton').click();await page.reload({waitUntil:'domcontentloaded'});await page.waitForFunction((expected)=>document.getElementById('totalBoatsCount')?.textContent===String(expected),modelCount);
   await page.locator('[data-app-action="dream"]:visible').first().click();await page.locator('#searchProfileSelect').selectOption(savedID);
   await page.waitForFunction(()=>window.BScoutSearchState.getState().searchSettings.featurePriorities['Separate Shower']==='PreferredV4');
   assert.deepEqual(await page.locator('.boat-card .compare-btn').evaluateAll(nodes=>nodes.map(n=>n.dataset.id)),rankedIDs);
   // Seed an actual legacy saved profile then restore it through the profile selector.
   await page.evaluate(()=>{const profiles=JSON.parse(localStorage.getItem('bscout_search_profiles')||'[]');profiles.push({ProfileID:'phase4-legacy',ProfileName:'Legacy search',SearchSettings:{fuels:['Diesel'],maxAirDraft:15,minimumBerths:4,featurePriorities:{'Wide Side Decks':'Required','Separate Shower':'Preferred','Hidden legacy feature':'Bonus'}},SortPreferences:{field:'LOA',direction:'desc'}});localStorage.setItem('bscout_search_profiles',JSON.stringify(profiles));});
-  await page.reload({waitUntil:'domcontentloaded'});await page.waitForFunction(()=>document.getElementById('totalBoatsCount')?.textContent==='995');await page.locator('[data-app-action="dream"]:visible').first().click();await page.locator('#searchProfileSelect').selectOption('phase4-legacy');
+  await page.reload({waitUntil:'domcontentloaded'});await page.waitForFunction((expected)=>document.getElementById('totalBoatsCount')?.textContent===String(expected),modelCount);await page.locator('[data-app-action="dream"]:visible').first().click();await page.locator('#searchProfileSelect').selectOption('phase4-legacy');
   await page.waitForFunction(()=>window.BScoutSearchState.getState().searchSettings.fuels.includes('Diesel'));
   assert.equal(await page.getByLabel('Wide Side Decks priority',{exact:true}).inputValue(),'Required');
   assert.equal(await page.getByLabel('Separate Shower priority',{exact:true}).inputValue(),'Preferred');
@@ -70,7 +73,7 @@ try{
   const mainship=page.locator('.boat-card').filter({has:page.locator('.compare-btn[data-id="MNSH-34-TR"]')});assert(await mainship.count());assert.match(await mainship.locator('.preference-match-summary').textContent(),/Not enough information|unanswered/);assert.match(await mainship.locator('.preference-match-summary').textContent(),/Version-dependent/);assert.match(await mainship.locator('.model-knowledge-confidence').textContent(),/Knowledge:/);
   await mainship.locator('summary').click();await mainship.scrollIntoViewIfNeeded();await page.screenshot({path:path.join(out,name+'-ranking.png')});
   assert.deepEqual(errors,[],'No browser JavaScript errors');
-  workflows.push({name,viewport,status:'PASS',catalogue:995,rankingPreservesCandidates:true,comparisonMatchesCards:true,guideMatchesCards:true,savedOrderReload:true,legacyRequirementsAndWeightsPreserved:true,hiddenPreferencesPreserved:true,savedSortPreserved:true,unknownMustHavesExplained:true,variableEngineRemainsUnknown:true,firstRankedModel:id});await context.close();
+  workflows.push({name,viewport,status:'PASS',catalogue:modelCount,rankingPreservesCandidates:true,comparisonMatchesCards:true,guideMatchesCards:true,savedOrderReload:true,legacyRequirementsAndWeightsPreserved:true,hiddenPreferencesPreserved:true,savedSortPreserved:true,unknownMustHavesExplained:true,variableEngineRemainsUnknown:true,firstRankedModel:id});await context.close();
  }
  assert.equal(workflows[0].firstRankedModel,workflows[1].firstRankedModel);
  fs.writeFileSync(path.join(out,'browser-results.json'),JSON.stringify({status:'PASS',browser:'Installed Edge, headless desktop and emulated mobile',workflows,productionWrites:false,externalRequestsBlocked:true},null,2)+'\n');console.log(JSON.stringify(workflows));

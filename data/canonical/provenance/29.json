@@ -477,6 +477,122 @@
     "Phase2Source": "https://www.chaparralboats.com/Chaparral-Boat.php?action=tab_specs&id=688"
   },
   {
+    "BoatModelID": "CHBY-38-DC",
+    "HullType": "semi-displacement",
+    "DateCreated": "2026-10-23",
+    "LastUpdated": "2026-10-23",
+    "ReviewedBy": "B-Atlas Taiwanese trawler integration",
+    "Revision": 1,
+    "DataConfidence": "Moderate",
+    "ResearchStatus": "Reviewed with unresolved specifications",
+    "LOA_ft": 37.833333333333336,
+    "Beam_ft": 13.5,
+    "Draft_ft": 3.5,
+    "DisplacementLb": 26000,
+    "FuelCapacityGal": 400,
+    "WaterCapacityGal": 200,
+    "HoldingCapacityGal": 40,
+    "ResearchNotes": "Integrated from research/taiwan-trawler-seven-2026-10-23.json. Distinct marketed CHB 38 (1978–1985; 13 ft 6 in beam, 3 ft 6 in draft). MRTR-38-SD is the Marine Trader Double Cabin (1980–2000; 12 ft 10 in beam, 4 ft draft); MRTR-38-SD2 is the existing Sundeck. No evidence warrants merging these identities or asserting shared molds. Source feet, pounds and staged US-gallon values are retained in provenance; canonical dimensions use metres, mass kilograms, tankage litres. Unverified values remain null. Kha Shing staged nulls retained despite additional figures on the live reference.",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Partial",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndProduction",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CHBY-38-DC"
+            ],
+            "Years": {
+              "From": 1978,
+              "To": 1985
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/chb/38-double-cabin-1978-85"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Distinct marketed CHB 38 (1978–1985; 13 ft 6 in beam, 3 ft 6 in draft). MRTR-38-SD is the Marine Trader Double Cabin (1980–2000; 12 ft 10 in beam, 4 ft draft); MRTR-38-SD2 is the existing Sundeck. No evidence warrants merging these identities or asserting shared molds."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Cross-check existing Marine Trader 38 Sundeck entries",
+        "Confirm no mold-level conflation with Marine Trader 38 Double Cabin"
+      ]
+    },
+    "SpecificationConfidence": {
+      "LOA": {
+        "Level": "Moderate",
+        "Status": "source_reported",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/chb/38-double-cabin-1978-85"
+        ],
+        "Note": "Staged source loaFt: 37.833333333333336 ft; canonical conversion factor 0.3048. Tankage follows the staged US-gallon interpretation; verify actual hull capacities."
+      },
+      "Beam": {
+        "Level": "Moderate",
+        "Status": "source_reported",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/chb/38-double-cabin-1978-85"
+        ],
+        "Note": "Staged source beamFt: 13.5 ft; canonical conversion factor 0.3048. Tankage follows the staged US-gallon interpretation; verify actual hull capacities."
+      },
+      "Draft": {
+        "Level": "Moderate",
+        "Status": "source_reported",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/chb/38-double-cabin-1978-85"
+        ],
+        "Note": "Staged source draftFt: 3.5 ft; canonical conversion factor 0.3048. Tankage follows the staged US-gallon interpretation; verify actual hull capacities."
+      },
+      "Displacement": {
+        "Level": "Moderate",
+        "Status": "source_reported",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/chb/38-double-cabin-1978-85"
+        ],
+        "Note": "Staged source displacementLb: 26000 lb; canonical conversion factor 0.45359237. Tankage follows the staged US-gallon interpretation; verify actual hull capacities."
+      },
+      "FuelCapacity": {
+        "Level": "Moderate",
+        "Status": "source_reported",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/chb/38-double-cabin-1978-85"
+        ],
+        "Note": "Staged source fuelUSGal: 400 US gal; canonical conversion factor 3.785411784. Tankage follows the staged US-gallon interpretation; verify actual hull capacities."
+      },
+      "WaterCapacity": {
+        "Level": "Moderate",
+        "Status": "source_reported",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/chb/38-double-cabin-1978-85"
+        ],
+        "Note": "Staged source waterUSGal: 200 US gal; canonical conversion factor 3.785411784. Tankage follows the staged US-gallon interpretation; verify actual hull capacities."
+      },
+      "HoldingCapacity": {
+        "Level": "Moderate",
+        "Status": "source_reported",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/chb/38-double-cabin-1978-85"
+        ],
+        "Note": "Staged source holdingUSGal: 40 US gal; canonical conversion factor 3.785411784. Tankage follows the staged US-gallon interpretation; verify actual hull capacities."
+      },
+      "EngineCount": {
+        "Level": "Unknown",
+        "Status": "variable",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/chb/38-double-cabin-1978-85"
+        ],
+        "Note": "single and twin Ford Lehman options reported"
+      }
+    }
+  },
+  {
     "BoatModelID": "CHCR-33-CAT",
     "HullType": null,
     "Style": "Motor Yacht",

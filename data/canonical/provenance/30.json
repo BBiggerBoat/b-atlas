@@ -1084,6 +1084,122 @@
     }
   },
   {
+    "BoatModelID": "OCAL-42-SE",
+    "HullType": "modified-V",
+    "DateCreated": "2026-10-23",
+    "LastUpdated": "2026-10-23",
+    "ReviewedBy": "B-Atlas Taiwanese trawler integration",
+    "Revision": 1,
+    "DataConfidence": "Moderate",
+    "ResearchStatus": "Reviewed with unresolved specifications",
+    "LOA_ft": 42,
+    "Beam_ft": 14.333333333333334,
+    "Draft_ft": 3.1666666666666665,
+    "DisplacementLb": 23000,
+    "FuelCapacityGal": 500,
+    "WaterCapacityGal": 150,
+    "HoldingCapacityGal": 40,
+    "ResearchNotes": "Integrated from research/taiwan-trawler-seven-2026-10-23.json. Distinct from OCAL-39-SE (39 Sedan); do not alias later 420/422 sport sedans or 420–440 Sundeck. Modified-V describes hull form, not a verified hull-behaviour classification. Source feet, pounds and staged US-gallon values are retained in provenance; canonical dimensions use metres, mass kilograms, tankage litres. Unverified values remain null. Kha Shing staged nulls retained despite additional figures on the live reference.",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Partial",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndProduction",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "OCAL-42-SE"
+            ],
+            "Years": {
+              "From": 1986,
+              "To": 1993
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/ocean-alexander/42-sedan-1986-93"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Distinct from OCAL-39-SE (39 Sedan); do not alias later 420/422 sport sedans or 420–440 Sundeck. Modified-V describes hull form, not a verified hull-behaviour classification."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Year-specific equipment and flybridge changes",
+        "Do not conflate with later 420/422 sport sedan"
+      ]
+    },
+    "SpecificationConfidence": {
+      "LOA": {
+        "Level": "Moderate",
+        "Status": "source_reported",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/ocean-alexander/42-sedan-1986-93"
+        ],
+        "Note": "Staged source loaFt: 42 ft; canonical conversion factor 0.3048. Tankage follows the staged US-gallon interpretation; verify actual hull capacities."
+      },
+      "Beam": {
+        "Level": "Moderate",
+        "Status": "source_reported",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/ocean-alexander/42-sedan-1986-93"
+        ],
+        "Note": "Staged source beamFt: 14.333333333333334 ft; canonical conversion factor 0.3048. Tankage follows the staged US-gallon interpretation; verify actual hull capacities."
+      },
+      "Draft": {
+        "Level": "Moderate",
+        "Status": "source_reported",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/ocean-alexander/42-sedan-1986-93"
+        ],
+        "Note": "Staged source draftFt: 3.1666666666666665 ft; canonical conversion factor 0.3048. Tankage follows the staged US-gallon interpretation; verify actual hull capacities."
+      },
+      "Displacement": {
+        "Level": "Moderate",
+        "Status": "source_reported",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/ocean-alexander/42-sedan-1986-93"
+        ],
+        "Note": "Staged source displacementLb: 23000 lb; canonical conversion factor 0.45359237. Tankage follows the staged US-gallon interpretation; verify actual hull capacities."
+      },
+      "FuelCapacity": {
+        "Level": "Moderate",
+        "Status": "source_reported",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/ocean-alexander/42-sedan-1986-93"
+        ],
+        "Note": "Staged source fuelUSGal: 500 US gal; canonical conversion factor 3.785411784. Tankage follows the staged US-gallon interpretation; verify actual hull capacities."
+      },
+      "WaterCapacity": {
+        "Level": "Moderate",
+        "Status": "source_reported",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/ocean-alexander/42-sedan-1986-93"
+        ],
+        "Note": "Staged source waterUSGal: 150 US gal; canonical conversion factor 3.785411784. Tankage follows the staged US-gallon interpretation; verify actual hull capacities."
+      },
+      "HoldingCapacity": {
+        "Level": "Moderate",
+        "Status": "source_reported",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/ocean-alexander/42-sedan-1986-93"
+        ],
+        "Note": "Staged source holdingUSGal: 40 US gal; canonical conversion factor 3.785411784. Tankage follows the staged US-gallon interpretation; verify actual hull capacities."
+      },
+      "EngineCount": {
+        "Level": "Moderate",
+        "Status": "source_reported",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/ocean-alexander/42-sedan-1986-93"
+        ],
+        "Note": "twin engines; Cummins and Caterpillar options reported"
+      }
+    }
+  },
+  {
     "BoatModelID": "PURS-C310",
     "HullType": "Deep-V",
     "Style": "Center Console",

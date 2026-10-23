@@ -700,6 +700,122 @@
     }
   },
   {
+    "BoatModelID": "PRES-42-TR",
+    "HullType": "semi-displacement",
+    "DateCreated": "2026-10-23",
+    "LastUpdated": "2026-10-23",
+    "ReviewedBy": "B-Atlas Taiwanese trawler integration",
+    "Revision": 1,
+    "DataConfidence": "Moderate",
+    "ResearchStatus": "Reviewed with unresolved specifications",
+    "LOA_ft": 44.333333333333336,
+    "Beam_ft": 14.25,
+    "Draft_ft": 3.5,
+    "DisplacementLb": 30800,
+    "FuelCapacityGal": 400,
+    "WaterCapacityGal": 150,
+    "HoldingCapacityGal": null,
+    "ResearchNotes": "Integrated from research/taiwan-trawler-seven-2026-10-23.json. Separate 2002–2006 President model; not the 1980s 41 Double Cabin. Source feet, pounds and staged US-gallon values are retained in provenance; canonical dimensions use metres, mass kilograms, tankage litres. Unverified values remain null. Kha Shing staged nulls retained despite additional figures on the live reference.",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Partial",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndProduction",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "PRES-42-TR"
+            ],
+            "Years": {
+              "From": 2002,
+              "To": 2006
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/president/42-trawler-2002-06"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Separate 2002–2006 President model; not the 1980s 41 Double Cabin."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Additional engine configurations",
+        "Holding tank capacity"
+      ]
+    },
+    "SpecificationConfidence": {
+      "LOA": {
+        "Level": "Moderate",
+        "Status": "source_reported",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/president/42-trawler-2002-06"
+        ],
+        "Note": "Staged source loaFt: 44.333333333333336 ft; canonical conversion factor 0.3048. Tankage follows the staged US-gallon interpretation; verify actual hull capacities."
+      },
+      "Beam": {
+        "Level": "Moderate",
+        "Status": "source_reported",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/president/42-trawler-2002-06"
+        ],
+        "Note": "Staged source beamFt: 14.25 ft; canonical conversion factor 0.3048. Tankage follows the staged US-gallon interpretation; verify actual hull capacities."
+      },
+      "Draft": {
+        "Level": "Moderate",
+        "Status": "source_reported",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/president/42-trawler-2002-06"
+        ],
+        "Note": "Staged source draftFt: 3.5 ft; canonical conversion factor 0.3048. Tankage follows the staged US-gallon interpretation; verify actual hull capacities."
+      },
+      "Displacement": {
+        "Level": "Moderate",
+        "Status": "source_reported",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/president/42-trawler-2002-06"
+        ],
+        "Note": "Staged source displacementLb: 30800 lb; canonical conversion factor 0.45359237. Tankage follows the staged US-gallon interpretation; verify actual hull capacities."
+      },
+      "FuelCapacity": {
+        "Level": "Moderate",
+        "Status": "source_reported",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/president/42-trawler-2002-06"
+        ],
+        "Note": "Staged source fuelUSGal: 400 US gal; canonical conversion factor 3.785411784. Tankage follows the staged US-gallon interpretation; verify actual hull capacities."
+      },
+      "WaterCapacity": {
+        "Level": "Moderate",
+        "Status": "source_reported",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/president/42-trawler-2002-06"
+        ],
+        "Note": "Staged source waterUSGal: 150 US gal; canonical conversion factor 3.785411784. Tankage follows the staged US-gallon interpretation; verify actual hull capacities."
+      },
+      "HoldingCapacity": {
+        "Level": "Unknown",
+        "Status": "unresolved",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/president/42-trawler-2002-06"
+        ],
+        "Note": "Staged value is absent or disputed; no representative value selected."
+      },
+      "EngineCount": {
+        "Level": "Moderate",
+        "Status": "source_reported",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/president/42-trawler-2002-06"
+        ],
+        "Note": "twin Cummins 330 hp reported"
+      }
+    }
+  },
+  {
     "BoatModelID": "PURS-C300",
     "HullType": "Modified-V",
     "Style": "Center Console",

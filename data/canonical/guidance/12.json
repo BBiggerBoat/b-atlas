@@ -477,6 +477,29 @@
     "OwnershipCharacter": null
   },
   {
+    "BoatModelID": "MRTR-40-SU",
+    "Strengths": [],
+    "Overview": "Marine Trader 40 Sundeck is documented for 1983–2000. Distinct marketed Sundeck layout and 1983–2000 production, not MRTR-40-DC (1974–1985 Double Cabin). single Ford Lehman standard; twins available. Specifications are representative source values; verify the individual hull and equipment.",
+    "ModelVariations": [
+      {
+        "Name": "Documented configurations",
+        "Description": "single Ford Lehman standard; twins available. Power and installation vary; no performance or equipment value is generalized to every hull.",
+        "AffectedYears": "1983–2000",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/marine-trader/40-sundeck-1983-2000"
+        ],
+        "Confidence": "Moderate"
+      }
+    ],
+    "InspectionFocus": [
+      "Verify hull identity, production year, engine installation and tank capacities against the boat’s documents."
+    ],
+    "BuyerQuestions": [
+      "What documentation resolves: Single/twin variation should not be collapsed to one EngineCount?",
+      "What documentation resolves: Confirm distinction from existing 40 Double Cabin?"
+    ]
+  },
+  {
     "BoatModelID": "NRDH-40",
     "Strengths": [
       "Documented transoceanic and circumnavigation capability",

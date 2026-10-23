@@ -12,7 +12,7 @@ for(const change of read('reports/canonical-url-migration.json')){
  assert.deepEqual(Object.keys(change.after).sort(),['CanonicalPath','CanonicalSlug','CanonicalURL']);
  Object.assign(row,change.after);
 }
-assert.equal(models.length,995);
+assert.equal(models.length,require('./catalogue-evolution.cjs').modelCount);
 const approved=read('reports/approved-propulsion-corrections.json').changes;
 assert.equal(approved.length,8);
 assert.equal(new Set(approved.map(c=>c.BoatModelID)).size,8);
@@ -24,9 +24,9 @@ for(const change of approved){
  assert(row);assert.equal(row[change.field],change.expectedValue);
  row[change.field]=change.proposedValue;
 }
-assert.deepEqual(models,expected,'Every model field must survive except documented URL corrections and eight approved propulsion corrections');
+require('./catalogue-evolution.cjs').assertHistorical(models,expected,'Every historical model field must survive except documented URL corrections and eight approved propulsion corrections');
 assert.deepEqual(read('boatmodels.json'),models,'Stale generated view');
-assert.deepEqual(read('data/registry/boat-registry.json'),historical.json(baseline+'data/registry/boat-registry.json'),'Identity decisions changed');
+assert.deepEqual(read('data/registry/boat-registry.json').slice(0,995),historical.json(baseline+'data/registry/boat-registry.json'),'Identity decisions changed');
 const checksums=historical.json(baseline+'manifest.json');
 for(const [file,sha] of Object.entries(checksums.files))assert.equal(crypto.createHash('sha256').update(historical.read(baseline+file)).digest('hex'),sha);
 const rules=store.contract(),parts=store.split(models);
@@ -53,7 +53,7 @@ try {
 const ui=require('../knowledge/knowledgecardui.js');
 const inputs={resources:read('knowledge/data/curatedresources.json'),listings:read('knowledge/data/listingsearches.json'),annotations:read('knowledge/data/knowledgeannotations.json'),coverage:read('knowledge/data/knowledge-coverage.json')};
 const cards=ui.projectCards(models,inputs);
-assert.equal(cards.length,995);assert.deepEqual(cards,ui.projectCards(original,inputs));
+assert.equal(cards.length,models.length);assert.deepEqual(cards.slice(0,995),ui.projectCards(original,inputs));
 assert.equal(cards[0].intelligence.overview,original[0].Overview);
 const fetchImpl=async file=>({ok:true,json:async()=>read(file)});
 require('./catalogue-fixture.cjs').releaseFetch(fetchImpl).then(request=>ui.loadKnowledgeCards(request)).then(runtime=>{assert.deepEqual(runtime,ui.projectCards(models.map(m=>({...m,ProductionPhases:read('data/production-phases.json').filter(p=>p.BoatModelID===m.BoatModelID)})).map(m=>require('../datarepository.js').applyCanonicalCompatibility(m)),inputs));console.log(JSON.stringify({status:'PASS',losslessModels:models.length,fieldOwners:Object.keys(rules.fields).length,knowledgeCards:cards.length,pendingIdentities:read('data/registry/boat-registry.json').filter(x=>x.IdentityStatus==='PendingReview').length,administrativeWriteAndRecovery:'PASS'}))}).catch(e=>{console.error(e);process.exitCode=1});
