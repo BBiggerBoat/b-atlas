@@ -1,4 +1,5 @@
 'use strict';
+const {modelCount}=require('./catalogue-evolution.cjs');
 // Real browser consumers, synthetic overlay, local static artifacts only.
 const fs=require('node:fs'),path=require('node:path'),http=require('node:http'),assert=require('node:assert/strict');
 const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
@@ -26,7 +27,7 @@ const server=http.createServer((req,res)=>{
    });
    const page=await context.newPage(),errors=[];page.on('pageerror',error=>errors.push(error.message));
    await page.goto(base,{waitUntil:'domcontentloaded'});
-   await page.waitForFunction(()=>document.getElementById('totalBoatsCount')?.textContent==='996');
+   await page.waitForFunction((expected)=>document.getElementById('totalBoatsCount')?.textContent===String(expected),modelCount+1);
    const manifest=JSON.parse(fs.readFileSync(path.join(root,'data/generated/models/manifest.json')));
    for(const d of manifest.shards)assert(!calls.has(base+'/'+d.path),'Startup fetched a detail shard');
    await page.evaluate(async()=>BScoutBoatWorkspace.open((await BScoutDataRepository.getRepository().loadSearchData()).boats.find(b=>b.BoatModelID==='ALBN-25'),'overview',{history:false}));
@@ -43,7 +44,7 @@ const server=http.createServer((req,res)=>{
     const resources=await BScoutKnowledgeUI.loadCuratedResources();
     return {count:data.boats.length,baselineCount:baseline.boats.length,source,card:card.intelligence.overview,added,modelId:(await repository.getModel('ALBN-25')).BoatModelID,correction:document.getElementById('correctionCurrentValue').value,manuals:resources.find(r=>r.BoatModelID==='ALBN-25').documents.filter(d=>d.url==='https://example.test/manual').length,release:data.catalogueRelease};
    });
-   assert.equal(result.count,996);assert.equal(result.baselineCount,995);assert.equal(result.source,'Shared repository browser verification');assert.equal(result.card,result.source);assert.equal(result.added,'Complete added guidance');assert.equal(result.modelId,'ALBN-25');assert.match(result.correction,/Gasoline/i);assert.equal(result.manuals,1);
+   assert.equal(result.count,modelCount+1);assert.equal(result.baselineCount,modelCount);assert.equal(result.source,'Shared repository browser verification');assert.equal(result.card,result.source);assert.equal(result.added,'Complete added guidance');assert.equal(result.modelId,'ALBN-25');assert.match(result.correction,/Gasoline/i);assert.equal(result.manuals,1);
    assert.equal(calls.get('https://api.b-atlas.org/api/public/overlays'),1);
    assert.equal(calls.get(base+'/data/generated/models/manifest.json'),1);
    assert(![...calls.keys()].some(url=>new URL(url).pathname==='/boatmodels.json'));
@@ -51,17 +52,17 @@ const server=http.createServer((req,res)=>{
    assert.equal(writes,0);assert.deepEqual(errors,[]);await page.screenshot({path:path.join(out,name+'-contribution.png')});
    for(const shell of ['/saved-models/','/privacy/']){
     calls.clear();await page.goto(base+shell,{waitUntil:'domcontentloaded'});
-    await page.waitForFunction(()=>typeof BScoutDataRepository?.getRepository==='function' && document.getElementById('totalBoatsCount')?.textContent==='996');
+    await page.waitForFunction((expected)=>typeof BScoutDataRepository?.getRepository==='function' && document.getElementById('totalBoatsCount')?.textContent===String(expected),modelCount+1);
     const row=await page.evaluate(async()=>(await BScoutDataRepository.getRepository().getModel('ALBN-25')).Overview);
     assert.equal(row,result.source);assert.equal(calls.get('https://api.b-atlas.org/api/public/overlays'),1);
     assert(![...calls.keys()].some(url=>new URL(url).pathname==='/boatmodels.json'));
    }
    // A missing owner-resource shard must show an error, preserve candidates and retry.
-   await page.goto(base,{waitUntil:'domcontentloaded'});await page.waitForFunction(()=>document.getElementById('totalBoatsCount')?.textContent==='996');
+   await page.goto(base,{waitUntil:'domcontentloaded'});await page.waitForFunction((expected)=>document.getElementById('totalBoatsCount')?.textContent===String(expected),modelCount+1);
    blockedResource=base+'/'+manifest.datasets.curatedResources.shards[0].path;
    await page.evaluate(async()=>BScoutBoatWorkspace.open((await BScoutDataRepository.getRepository().loadSearchData()).boats.find(b=>b.BoatModelID==='ALBN-25'),'resources',{history:false}));
    assert.match(await page.locator('[data-workspace-panel="owning"]').textContent(),/could not be loaded/);
-   assert.equal(await page.locator('#totalBoatsCount').textContent(),'996');
+   assert.equal(await page.locator('#totalBoatsCount').textContent(),String(modelCount+1));
    blockedResource=null;
    const dismissTour=page.getByRole('button',{name:'Not now',exact:true});
    if(await dismissTour.isVisible())await dismissTour.click();

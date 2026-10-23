@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-23T18:29:29.429Z",
-  "models": 995,
+  "generatedAt": "2026-10-23T19:58:23.193Z",
+  "models": 1002,
   "priority": [
     "Beam",
     "LOA",
@@ -17,64 +17,64 @@
   ],
   "coverage": {
     "LOA": {
-      "known": 989,
+      "known": 996,
       "missing": 6,
       "pct": 99.4
     },
     "Beam": {
-      "known": 938,
+      "known": 945,
       "missing": 57,
       "pct": 94.3
     },
     "Draft": {
-      "known": 924,
+      "known": 931,
       "missing": 71,
       "pct": 92.9
     },
     "AirDraft": {
       "known": 629,
-      "missing": 366,
-      "pct": 63.2
+      "missing": 373,
+      "pct": 62.8
     },
     "FuelType": {
-      "known": 800,
+      "known": 807,
       "missing": 195,
-      "pct": 80.4
+      "pct": 80.5
     },
     "Propulsion": {
       "known": 736,
-      "missing": 259,
-      "pct": 74
+      "missing": 266,
+      "pct": 73.5
     },
     "HullForm": {
-      "known": 958,
+      "known": 965,
       "missing": 37,
       "pct": 96.3
     },
     "Style": {
-      "known": 995,
-      "missing": 0,
-      "pct": 100
+      "known": 1001,
+      "missing": 1,
+      "pct": 99.9
     },
     "EngineConfig": {
-      "known": 679,
+      "known": 686,
       "missing": 316,
-      "pct": 68.2
+      "pct": 68.5
     },
     "Displacement": {
-      "known": 917,
-      "missing": 78,
-      "pct": 92.2
+      "known": 923,
+      "missing": 79,
+      "pct": 92.1
     },
     "FuelCapacity": {
-      "known": 915,
-      "missing": 80,
-      "pct": 92
+      "known": 921,
+      "missing": 81,
+      "pct": 91.9
     },
     "WaterCapacity": {
-      "known": 919,
-      "missing": 76,
-      "pct": 92.4
+      "known": 925,
+      "missing": 77,
+      "pct": 92.3
     }
   },
   "missingByManufacturer": {
@@ -258,6 +258,10 @@
         "missing": 4
       },
       {
+        "manufacturer": "President",
+        "missing": 2
+      },
+      {
         "manufacturer": "Hatteras",
         "missing": 1
       }
@@ -348,6 +352,30 @@
       {
         "manufacturer": "Monterey",
         "missing": 6
+      },
+      {
+        "manufacturer": "President",
+        "missing": 2
+      },
+      {
+        "manufacturer": "Ocean Alexander",
+        "missing": 1
+      },
+      {
+        "manufacturer": "DeFever",
+        "missing": 1
+      },
+      {
+        "manufacturer": "Marine Trader",
+        "missing": 1
+      },
+      {
+        "manufacturer": "CHB",
+        "missing": 1
+      },
+      {
+        "manufacturer": "Kha Shing",
+        "missing": 1
       }
     ],
     "HullForm": [
@@ -364,7 +392,12 @@
         "missing": 1
       }
     ],
-    "Style": [],
+    "Style": [
+      {
+        "manufacturer": "Ocean Alexander",
+        "missing": 1
+      }
+    ],
     "EngineConfig": [
       {
         "manufacturer": "Wellcraft",
@@ -483,6 +516,10 @@
       {
         "manufacturer": "Bayliner",
         "missing": 1
+      },
+      {
+        "manufacturer": "Kha Shing",
+        "missing": 1
       }
     ],
     "FuelCapacity": [
@@ -537,6 +574,10 @@
       {
         "manufacturer": "Trojan",
         "missing": 1
+      },
+      {
+        "manufacturer": "Kha Shing",
+        "missing": 1
       }
     ],
     "WaterCapacity": [
@@ -578,6 +619,10 @@
       },
       {
         "manufacturer": "Bayliner",
+        "missing": 1
+      },
+      {
+        "manufacturer": "Kha Shing",
         "missing": 1
       }
     ]

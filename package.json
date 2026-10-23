@@ -18,7 +18,7 @@
     "generate:models": "node developer/canonical-store.cjs",
     "check:canonical": "node developer/canonical-store.cjs --check",
     "inventory:canonical": "node tools/inventory-canonical.cjs",
-    "test": "node tests/historical-fixtures.cjs && node tests/canonical-migration.cjs && node tests/canonical-partitions.cjs && node tests/canonical-integration.cjs && node tests/filter-behavior-regression.cjs && node tests/correlated-config-regression.cjs && node tests/community-overlay-regression.cjs && node tests/phase3-exclusion.cjs && node tests/phase4-scoring.cjs && node tests/shared-model-repository.cjs && node tests/search-detail-projection.cjs",
+    "test": "node tests/historical-fixtures.cjs && node tests/taiwan-trawler-integration.cjs && node tests/canonical-migration.cjs && node tests/canonical-partitions.cjs && node tests/canonical-integration.cjs && node tests/filter-behavior-regression.cjs && node tests/correlated-config-regression.cjs && node tests/community-overlay-regression.cjs && node tests/phase3-exclusion.cjs && node tests/phase4-scoring.cjs && node tests/shared-model-repository.cjs && node tests/search-detail-projection.cjs",
     "test:deployment": "node tests/canonical-deployment.cjs",
     "verify:production": "npm run generate:models && npm run check:canonical && npm test && node tests/canonical-admin.cjs && node tests/canonical-pages.cjs && npm run build:public && npm run test:deployment && node tests/public-artifacts.cjs && node tests/production-readiness.cjs && node tests/production-worker.cjs && npm run guard:baseline && node developer/check-secrets.js && npm run guard:repository",
     "test:browser:phase4": "node tests/phase4-browser.cjs",

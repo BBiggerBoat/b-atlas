@@ -6,8 +6,8 @@ const historical=require('../developer/historical-fixtures.cjs');
 const original=historical.json('pre-storage-models');
 const originalRules=historical.json('pre-storage-ownership');
 assert.deepEqual(rules.fields,originalRules.fields,'Field ownership changed');
-assert.deepEqual(models,original,'Storage migration changed model values or sequence');
-assert.deepEqual(JSON.parse(fs.readFileSync('boatmodels.json')),original);
+require('./catalogue-evolution.cjs').assertHistorical(models,original,'Storage migration changed historical model values or sequence');
+assert.deepEqual(JSON.parse(fs.readFileSync('boatmodels.json')),models);
 const bucket=id=>String(parseInt(crypto.createHash('sha256').update(id,'utf8').digest('hex').slice(0,8),16)%32).padStart(2,'0')+'.json';
 let largest=0,total=0,partitions=0;
 for(const [name,dir] of Object.entries(rules.datasets)){

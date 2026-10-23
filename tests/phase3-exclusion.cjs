@@ -1,5 +1,6 @@
 'use strict';
-const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict'),path=require('node:path'),crypto=require('node:crypto');
+const {modelCount}=require('./catalogue-evolution.cjs');
+const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict'),path=require('node:path');
 const root=path.resolve(__dirname,'..'),read=f=>fs.readFileSync(path.join(root,f),'utf8'),json=f=>JSON.parse(read(f));
 const s={console};s.window=s;s.globalThis=s;
 for(const file of ['canonicaldata.js','valuenormalizer.js','filterengine.js','engine.js','searchstatemanager.js','searchprofilemanager.js','datarepository.js'])vm.runInNewContext(read(file),s,{filename:file});
@@ -48,13 +49,13 @@ const extra=[
  ['known option plus uncertain alternative',{VerifiedConfigurationsComplete:true,VerifiedConfigurations:[{FuelCode:'fuel.diesel'},{}]},{fuels:['Diesel']},'configuration-dependent']
 ];
 for(const [name,b,p,status]of extra)assert.equal(evaluate(b,p).match.status,status,name);
-const boats=json('boatmodels.json'),phases=json('data/production-phases.json'),routes=json('routes.json');assert.equal(boats.length,995);assert.equal(new Set(boats.map(b=>b.BoatModelID)).size,995);
+const boats=json('boatmodels.json'),phases=json('data/production-phases.json'),routes=json('routes.json');assert.equal(boats.length,modelCount);assert.equal(new Set(boats.map(b=>b.BoatModelID)).size,modelCount);
 let evaluated=0;const profiles=[{fuels:['Diesel']},{fuels:['Gas']},{propulsion:['Shaft']},{propulsion:['Outboard']},{propulsion:['Stern Drive']},{engineCounts:[1]},{engineCounts:[2]},{hullTypes:['Planing']},{hullTypes:['Full Displacement']},{hullTypes:['Semi-Displacement']},{constructionMaterials:['Fiberglass']},{boatFamilies:['Trawler']},{configurations:['Express Cruiser']},{minLength:24,maxLength:40,minBeam:8,maxBeam:14},{routes:['RC']}];
 for(const b of boats){const row=s.BScoutDataRepository.applyCanonicalCompatibility({...b,ProductionPhases:phases.filter(p=>p.BoatModelID===b.BoatModelID)});for(const p of profiles){const r=evaluate(row,p,routes);assert.equal(typeof r.passes,'boolean');assert(r.match.status);evaluated++;}
  if(/\.v_drive$/.test(b.MechanicalPropulsionCode))assert(evaluate(row,{propulsion:['Shaft']}).passes,b.BoatModelID);
  if(b.HullMaterialCode==='hull_material.fiberglass')assert(evaluate(row,{constructionMaterials:['Fiberglass']}).passes,b.BoatModelID);
 }
-// Canonical files must stay byte-for-byte identical to the approved pre-Phase-3 state.
-const receiptPath=path.resolve(root,'../../outputs/filter-data-quality/application-receipt.json');
-if(fs.existsSync(receiptPath))for(const [file,h]of Object.entries(JSON.parse(fs.readFileSync(receiptPath)).afterHashes))assert.equal(crypto.createHash('sha256').update(fs.readFileSync(path.join(root,file))).digest('hex'),h,file);
-console.log(JSON.stringify({status:'PASS',auditCases:103,additionalCases:extra.length,catalogue:995,filterEvaluations:evaluated,canonicalDataUnchanged:true}));
+// Preserve every historical field without requiring later catalogues to have the
+// same aggregate file hashes as an optional receipt outside this repository.
+require('./catalogue-evolution.cjs').assertHistorical(boats,require('../developer/historical-fixtures.cjs').json('pre-storage-models'));
+console.log(JSON.stringify({status:'PASS',auditCases:103,additionalCases:extra.length,catalogue:modelCount,filterEvaluations:evaluated,historicalCanonicalDataUnchanged:true}));

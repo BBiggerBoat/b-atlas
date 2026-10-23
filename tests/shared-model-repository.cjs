@@ -1,4 +1,5 @@
 'use strict';
+const {modelCount}=require('./catalogue-evolution.cjs');
 // Entirely local transports; no production requests or writes.
 const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
 const {sha}=require('../developer/public-model-artifacts.cjs');
@@ -35,7 +36,7 @@ async function small(label='A',overlay=blank){
  const contributionContext={root:ctx,console,modelCatalog:null};
  vm.runInNewContext(contributionSource.slice(contributionSource.indexOf('    async function loadModels()'),contributionSource.indexOf('    function hidePrimaryViews()')),contributionContext);
  const [data,baseline,cards,contributions,overlay]=await Promise.all([repo.loadApplicationData(),repo.loadBaseline(),ctx.BScoutKnowledgeUI.loadKnowledgeCards(),contributionContext.loadModels(),ctx.BScoutCommunityAPI.publicOverlays()]);
- assert.equal(data.boats.length,995);assert.equal(cards.length,995);assert.equal(contributions.length,995);assert.equal(maxActive,4);
+ assert.equal(data.boats.length,modelCount);assert.equal(cards.length,modelCount);assert.equal(contributions.length,modelCount);assert.equal(maxActive,4);
  assert.equal(calls.get(manifestPath),1);assert.equal(calls.get(endpoint),1);assert(!calls.has('boatmodels.json'));
  for(const [file,count] of calls)assert.equal(count,1,'Repeated shared request: '+file);
  assert.deepEqual(plain(baseline.boats),read('boatmodels.json'));assert(Object.isFrozen(baseline.boats[0].EvidenceSummary));
@@ -101,5 +102,5 @@ async function small(label='A',overlay=blank){
  mod.BScoutDataRepository={getRepository:()=>({loadBaseline:async()=>({boats:[{BoatModelID:'BASE',Model:'raw'}],manufacturers:[]}),invalidate(){invalidations++;}})};
  mod.fetch=async(u,o)=>{submitted=JSON.parse(o.body);return response({ok:true});};await mod.BScoutCommunityAPI.promote({ContributionID:'TEST'});
  assert.equal(submitted.baseline.models[0].Model,'raw');assert.equal(invalidations,1);
- console.log(JSON.stringify({status:'PASS',models:995,profiles:profiles.length,evaluations,fullAssessmentAndActionEquivalence:true,sharedRequests:calls.size,maxConcurrentShards:maxActive,failureCases,overlayHydrationAndResourceIntegrity:true,wholeReleaseRetry:true,retryAfterRejection:true,moderatorNoWriteOnFailure:true}));
+ console.log(JSON.stringify({status:'PASS',models:modelCount,profiles:profiles.length,evaluations,fullAssessmentAndActionEquivalence:true,sharedRequests:calls.size,maxConcurrentShards:maxActive,failureCases,overlayHydrationAndResourceIntegrity:true,wholeReleaseRetry:true,retryAfterRejection:true,moderatorNoWriteOnFailure:true}));
 })().catch(error=>{console.error(error);process.exitCode=1;});

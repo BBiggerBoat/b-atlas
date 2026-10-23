@@ -861,6 +861,122 @@
     }
   },
   {
+    "BoatModelID": "PRES-41-DC",
+    "HullType": "semi-displacement",
+    "DateCreated": "2026-10-23",
+    "LastUpdated": "2026-10-23",
+    "ReviewedBy": "B-Atlas Taiwanese trawler integration",
+    "Revision": 1,
+    "DataConfidence": "Moderate",
+    "ResearchStatus": "Reviewed with unresolved specifications",
+    "LOA_ft": 40.5,
+    "Beam_ft": 13.416666666666666,
+    "Draft_ft": 2.8333333333333335,
+    "DisplacementLb": 22500,
+    "FuelCapacityGal": 420,
+    "WaterCapacityGal": 120,
+    "HoldingCapacityGal": 60,
+    "ResearchNotes": "Integrated from research/taiwan-trawler-seven-2026-10-23.json. Separate President 41 Double Cabin identity; no existing President model or alias in the catalogue. Source feet, pounds and staged US-gallon values are retained in provenance; canonical dimensions use metres, mass kilograms, tankage litres. Unverified values remain null. Kha Shing staged nulls retained despite additional figures on the live reference.",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Partial",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndProduction",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "PRES-41-DC"
+            ],
+            "Years": {
+              "From": 1982,
+              "To": 1987
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/president/41-double-cabin-1982-87"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Separate President 41 Double Cabin identity; no existing President model or alias in the catalogue."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Builder identity and construction location by year",
+        "Engine options by production year"
+      ]
+    },
+    "SpecificationConfidence": {
+      "LOA": {
+        "Level": "Moderate",
+        "Status": "source_reported",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/president/41-double-cabin-1982-87"
+        ],
+        "Note": "Staged source loaFt: 40.5 ft; canonical conversion factor 0.3048. Tankage follows the staged US-gallon interpretation; verify actual hull capacities."
+      },
+      "Beam": {
+        "Level": "Moderate",
+        "Status": "source_reported",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/president/41-double-cabin-1982-87"
+        ],
+        "Note": "Staged source beamFt: 13.416666666666666 ft; canonical conversion factor 0.3048. Tankage follows the staged US-gallon interpretation; verify actual hull capacities."
+      },
+      "Draft": {
+        "Level": "Moderate",
+        "Status": "source_reported",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/president/41-double-cabin-1982-87"
+        ],
+        "Note": "Staged source draftFt: 2.8333333333333335 ft; canonical conversion factor 0.3048. Tankage follows the staged US-gallon interpretation; verify actual hull capacities."
+      },
+      "Displacement": {
+        "Level": "Moderate",
+        "Status": "source_reported",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/president/41-double-cabin-1982-87"
+        ],
+        "Note": "Staged source displacementLb: 22500 lb; canonical conversion factor 0.45359237. Tankage follows the staged US-gallon interpretation; verify actual hull capacities."
+      },
+      "FuelCapacity": {
+        "Level": "Moderate",
+        "Status": "source_reported",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/president/41-double-cabin-1982-87"
+        ],
+        "Note": "Staged source fuelUSGal: 420 US gal; canonical conversion factor 3.785411784. Tankage follows the staged US-gallon interpretation; verify actual hull capacities."
+      },
+      "WaterCapacity": {
+        "Level": "Moderate",
+        "Status": "source_reported",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/president/41-double-cabin-1982-87"
+        ],
+        "Note": "Staged source waterUSGal: 120 US gal; canonical conversion factor 3.785411784. Tankage follows the staged US-gallon interpretation; verify actual hull capacities."
+      },
+      "HoldingCapacity": {
+        "Level": "Moderate",
+        "Status": "source_reported",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/president/41-double-cabin-1982-87"
+        ],
+        "Note": "Staged source holdingUSGal: 60 US gal; canonical conversion factor 3.785411784. Tankage follows the staged US-gallon interpretation; verify actual hull capacities."
+      },
+      "EngineCount": {
+        "Level": "Moderate",
+        "Status": "source_reported",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/president/41-double-cabin-1982-87"
+        ],
+        "Note": "twin diesels documented; power varies"
+      }
+    }
+  },
+  {
     "BoatModelID": "RINK-300-FV",
     "HullType": "Modified-V",
     "Style": "Express Cruiser",

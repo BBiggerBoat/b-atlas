@@ -1,4 +1,5 @@
 'use strict';
+const {modelCount}=require('./catalogue-evolution.cjs');
 // Local-only end-to-end test. All non-local requests are blocked; no community service writes.
 const fs=require('node:fs'),path=require('node:path'),http=require('node:http'),assert=require('node:assert/strict');
 const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
@@ -15,21 +16,21 @@ try{
   const page=await context.newPage(),errors=[];page.on('pageerror',e=>errors.push(e.message));
   page.on('dialog',dialog=>dialog.type()==='prompt'?dialog.accept('Phase 3 saved search'):dialog.accept());
   await page.goto(base,{waitUntil:'domcontentloaded'});
-  await page.waitForFunction(()=>document.getElementById('totalBoatsCount')?.textContent==='995',{timeout:30000});
+  await page.waitForFunction((expected)=>document.getElementById('totalBoatsCount')?.textContent===String(expected),modelCount,{timeout:30000});
   await page.locator('[data-app-action="dream"]:visible').first().click();
   await page.locator('#newProfileBtn').click();
-  const baseline=await page.locator('#currentBoatsCount').textContent();assert.equal(baseline,'995');
+  const baseline=await page.locator('#currentBoatsCount').textContent();assert.equal(baseline,String(modelCount));
   await page.locator('.filter-header').filter({hasText:'Characteristics'}).click();
   await page.locator('.fuelFilter[value="Diesel"]').check();
   await page.waitForFunction(()=>window.BScoutSearchState.getState().searchSettings.fuels.includes('Diesel'));
-  const count=await page.locator('#currentBoatsCount').textContent();assert(Number(count)<995&&Number(count)>0);
+  const count=await page.locator('#currentBoatsCount').textContent();assert(Number(count)<modelCount&&Number(count)>0);
   await page.locator('.filter-header').filter({hasText:'Dimensions'}).click();
   await page.locator('#maxAirDraft').fill('15');await page.locator('#maxAirDraft').press('Tab');
   await page.waitForFunction(()=>window.BScoutSearchState.getState().searchSettings.maxAirDraft===15);
   await page.locator('#saveProfileBtn').click();
   const savedID=await page.locator('#searchProfileSelect').inputValue();assert(savedID);
   await page.locator('#clearButton').click();
-  await page.waitForFunction(()=>document.getElementById('currentBoatsCount').textContent==='995');
+  await page.waitForFunction((expected)=>document.getElementById('currentBoatsCount').textContent===String(expected),modelCount);
   await page.locator('#searchProfileSelect').selectOption(savedID);
   await page.waitForFunction(()=>window.BScoutSearchState.getState().searchSettings.maxAirDraft===15&&window.BScoutSearchState.getState().searchSettings.fuels.includes('Diesel'));
   let savedCount=await page.locator('#currentBoatsCount').textContent();
@@ -38,7 +39,7 @@ try{
   assert.equal(retained.minimumBerths,4);assert.deepEqual(retained.styles,['Trawler']);assert.equal(retained.maxAirDraft,15);
   await page.locator('#maxAirDraft').dispatchEvent('change');await page.locator('#saveProfileBtn').click();
   savedCount=await page.locator('#currentBoatsCount').textContent();
-  await page.reload({waitUntil:'domcontentloaded'});await page.waitForFunction(()=>document.getElementById('totalBoatsCount')?.textContent==='995');
+  await page.reload({waitUntil:'domcontentloaded'});await page.waitForFunction((expected)=>document.getElementById('totalBoatsCount')?.textContent===String(expected),modelCount);
   await page.locator('[data-app-action="dream"]:visible').first().click();await page.locator('#searchProfileSelect').selectOption(savedID);
   await page.waitForFunction(()=>window.BScoutSearchState.getState().searchSettings.maxAirDraft===15);
   assert.equal(await page.locator('#currentBoatsCount').textContent(),savedCount);
@@ -49,14 +50,14 @@ try{
   await page.locator('#clearButton').click();await page.locator('.filter-header').filter({hasText:'Characteristics'}).click();
   await page.locator('.constructionFilter[value="Fiberglass"]').check();await page.locator('.propulsionFilter[value="Shaft"]').check();await page.locator('.engineCountFilter[value="2"]').check();
   await page.waitForFunction(()=>window.BScoutSearchState.getState().searchSettings.engineCounts.includes(2));
-  const combinedCount=await page.locator('#currentBoatsCount').textContent();assert(Number(combinedCount)>0&&Number(combinedCount)<995);
+  const combinedCount=await page.locator('#currentBoatsCount').textContent();assert(Number(combinedCount)>0&&Number(combinedCount)<modelCount);
   await page.locator('#textSearch').fill('Tiara');await page.waitForFunction(()=>window.BScoutSearchState.getState().searchSettings.textSearch==='tiara');
   assert(Number(await page.locator('#currentBoatsCount').textContent())>0);
   const dismiss=page.getByRole('button',{name:'Not now',exact:true});if(await dismiss.isVisible())await dismiss.click();
   await page.locator('.card-fit-summary').first().scrollIntoViewIfNeeded();
   assert(await page.locator('.card-fit-summary').first().isVisible());
   await page.screenshot({path:path.join(out,name+'-search.png'),fullPage:false});assert.deepEqual(errors,[],'Browser JavaScript errors');
-  results.push({name,viewport,status:'PASS',catalogue:995,liveFilterCount:Number(count),savedCount:Number(savedCount),combinedCount:Number(combinedCount),savedSearchReload:true,hiddenRequirementsPreserved:true});await context.close();
+  results.push({name,viewport,status:'PASS',catalogue:modelCount,liveFilterCount:Number(count),savedCount:Number(savedCount),combinedCount:Number(combinedCount),savedSearchReload:true,hiddenRequirementsPreserved:true});await context.close();
  }
  assert.equal(results[0].liveFilterCount,results[1].liveFilterCount);assert.equal(results[0].savedCount,results[1].savedCount);
  fs.writeFileSync(path.join(out,'browser-results.json'),JSON.stringify({status:'PASS',browser:'Installed Edge, headless',workflows:results,externalRequestsBlocked:true,productionWrites:false},null,2)+'\n');console.log(JSON.stringify(results));

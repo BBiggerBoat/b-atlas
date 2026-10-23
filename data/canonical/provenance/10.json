@@ -722,6 +722,130 @@
     "Phase2Source": "https://www.hmy.com/yachting/powerboat-guide/cruisers/3850-3950-aft-cabin-1991-97"
   },
   {
+    "BoatModelID": "DEFE-44-OC",
+    "HullType": "full displacement",
+    "DateCreated": "2026-10-23",
+    "LastUpdated": "2026-10-23",
+    "ReviewedBy": "B-Atlas Taiwanese trawler integration",
+    "Revision": 1,
+    "DataConfidence": "Moderate",
+    "ResearchStatus": "Reviewed with unresolved specifications",
+    "LOA_ft": 43.75,
+    "Beam_ft": 14.75,
+    "Draft_ft": 4.583333333333333,
+    "DisplacementLb": 44000,
+    "FuelCapacityGal": 900,
+    "WaterCapacityGal": 350,
+    "HoldingCapacityGal": 60,
+    "ResearchNotes": "Integrated from research/taiwan-trawler-seven-2026-10-23.json. No existing 44 Offshore Cruiser. Distinct from the 40 Offshore Cruiser, 43 Flush Deck and 45 Pilothouse; the successor 45 Aft Cabin is a different design. Source feet, pounds and staged US-gallon values are retained in provenance; canonical dimensions use metres, mass kilograms, tankage litres. Unverified values remain null. Kha Shing staged nulls retained despite additional figures on the live reference.",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Partial",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndProduction",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "DEFE-44-OC"
+            ],
+            "Years": {
+              "From": 1981,
+              "To": 2007
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/defever/44-offshore-cruiser-1981-2007",
+            "https://www.defevercruisers.com/design_details.asp?id=11"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "No existing 44 Offshore Cruiser. Distinct from the 40 Offshore Cruiser, 43 Flush Deck and 45 Pilothouse; the successor 45 Aft Cabin is a different design."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Production yard and construction changes across production period"
+      ]
+    },
+    "SpecificationConfidence": {
+      "LOA": {
+        "Level": "Moderate",
+        "Status": "source_reported",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/defever/44-offshore-cruiser-1981-2007",
+          "https://www.defevercruisers.com/design_details.asp?id=11"
+        ],
+        "Note": "Staged source loaFt: 43.75 ft; canonical conversion factor 0.3048. Tankage follows the staged US-gallon interpretation; verify actual hull capacities."
+      },
+      "Beam": {
+        "Level": "Moderate",
+        "Status": "source_reported",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/defever/44-offshore-cruiser-1981-2007",
+          "https://www.defevercruisers.com/design_details.asp?id=11"
+        ],
+        "Note": "Staged source beamFt: 14.75 ft; canonical conversion factor 0.3048. Tankage follows the staged US-gallon interpretation; verify actual hull capacities."
+      },
+      "Draft": {
+        "Level": "Moderate",
+        "Status": "source_reported",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/defever/44-offshore-cruiser-1981-2007",
+          "https://www.defevercruisers.com/design_details.asp?id=11"
+        ],
+        "Note": "Staged source draftFt: 4.583333333333333 ft; canonical conversion factor 0.3048. Tankage follows the staged US-gallon interpretation; verify actual hull capacities."
+      },
+      "Displacement": {
+        "Level": "Moderate",
+        "Status": "source_reported",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/defever/44-offshore-cruiser-1981-2007",
+          "https://www.defevercruisers.com/design_details.asp?id=11"
+        ],
+        "Note": "Staged source displacementLb: 44000 lb; canonical conversion factor 0.45359237. Tankage follows the staged US-gallon interpretation; verify actual hull capacities."
+      },
+      "FuelCapacity": {
+        "Level": "Moderate",
+        "Status": "source_reported",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/defever/44-offshore-cruiser-1981-2007",
+          "https://www.defevercruisers.com/design_details.asp?id=11"
+        ],
+        "Note": "Staged source fuelUSGal: 900 US gal; canonical conversion factor 3.785411784. Tankage follows the staged US-gallon interpretation; verify actual hull capacities."
+      },
+      "WaterCapacity": {
+        "Level": "Moderate",
+        "Status": "source_reported",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/defever/44-offshore-cruiser-1981-2007",
+          "https://www.defevercruisers.com/design_details.asp?id=11"
+        ],
+        "Note": "Staged source waterUSGal: 350 US gal; canonical conversion factor 3.785411784. Tankage follows the staged US-gallon interpretation; verify actual hull capacities."
+      },
+      "HoldingCapacity": {
+        "Level": "Moderate",
+        "Status": "source_reported",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/defever/44-offshore-cruiser-1981-2007",
+          "https://www.defevercruisers.com/design_details.asp?id=11"
+        ],
+        "Note": "Staged source holdingUSGal: 60 US gal; canonical conversion factor 3.785411784. Tankage follows the staged US-gallon interpretation; verify actual hull capacities."
+      },
+      "EngineCount": {
+        "Level": "Moderate",
+        "Status": "source_reported",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/defever/44-offshore-cruiser-1981-2007",
+          "https://www.defevercruisers.com/design_details.asp?id=11"
+        ],
+        "Note": "twin Ford Lehman or John Deere diesels reported"
+      }
+    }
+  },
+  {
     "BoatModelID": "FORM-330-SS",
     "HullType": "Deep-V",
     "Style": "Sun Sport",

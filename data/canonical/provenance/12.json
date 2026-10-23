@@ -793,6 +793,122 @@
     "Phase2Source": "https://www.hmy.com/yachting/powerboat-guide/luhrs/300-tournament-1991-96"
   },
   {
+    "BoatModelID": "MRTR-40-SU",
+    "HullType": "semi-displacement",
+    "DateCreated": "2026-10-23",
+    "LastUpdated": "2026-10-23",
+    "ReviewedBy": "B-Atlas Taiwanese trawler integration",
+    "Revision": 1,
+    "DataConfidence": "Moderate",
+    "ResearchStatus": "Reviewed with unresolved specifications",
+    "LOA_ft": 39.333333333333336,
+    "Beam_ft": 12.916666666666666,
+    "Draft_ft": 4,
+    "DisplacementLb": 25000,
+    "FuelCapacityGal": 350,
+    "WaterCapacityGal": 250,
+    "HoldingCapacityGal": 50,
+    "ResearchNotes": "Integrated from research/taiwan-trawler-seven-2026-10-23.json. Distinct marketed Sundeck layout and 1983–2000 production, not MRTR-40-DC (1974–1985 Double Cabin). Source feet, pounds and staged US-gallon values are retained in provenance; canonical dimensions use metres, mass kilograms, tankage litres. Unverified values remain null. Kha Shing staged nulls retained despite additional figures on the live reference.",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Partial",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndProduction",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "MRTR-40-SU"
+            ],
+            "Years": {
+              "From": 1983,
+              "To": 2000
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/marine-trader/40-sundeck-1983-2000"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Distinct marketed Sundeck layout and 1983–2000 production, not MRTR-40-DC (1974–1985 Double Cabin)."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Single/twin variation should not be collapsed to one EngineCount",
+        "Confirm distinction from existing 40 Double Cabin"
+      ]
+    },
+    "SpecificationConfidence": {
+      "LOA": {
+        "Level": "Moderate",
+        "Status": "source_reported",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/marine-trader/40-sundeck-1983-2000"
+        ],
+        "Note": "Staged source loaFt: 39.333333333333336 ft; canonical conversion factor 0.3048. Tankage follows the staged US-gallon interpretation; verify actual hull capacities."
+      },
+      "Beam": {
+        "Level": "Moderate",
+        "Status": "source_reported",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/marine-trader/40-sundeck-1983-2000"
+        ],
+        "Note": "Staged source beamFt: 12.916666666666666 ft; canonical conversion factor 0.3048. Tankage follows the staged US-gallon interpretation; verify actual hull capacities."
+      },
+      "Draft": {
+        "Level": "Moderate",
+        "Status": "source_reported",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/marine-trader/40-sundeck-1983-2000"
+        ],
+        "Note": "Staged source draftFt: 4 ft; canonical conversion factor 0.3048. Tankage follows the staged US-gallon interpretation; verify actual hull capacities."
+      },
+      "Displacement": {
+        "Level": "Moderate",
+        "Status": "source_reported",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/marine-trader/40-sundeck-1983-2000"
+        ],
+        "Note": "Staged source displacementLb: 25000 lb; canonical conversion factor 0.45359237. Tankage follows the staged US-gallon interpretation; verify actual hull capacities."
+      },
+      "FuelCapacity": {
+        "Level": "Moderate",
+        "Status": "source_reported",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/marine-trader/40-sundeck-1983-2000"
+        ],
+        "Note": "Staged source fuelUSGal: 350 US gal; canonical conversion factor 3.785411784. Tankage follows the staged US-gallon interpretation; verify actual hull capacities."
+      },
+      "WaterCapacity": {
+        "Level": "Moderate",
+        "Status": "source_reported",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/marine-trader/40-sundeck-1983-2000"
+        ],
+        "Note": "Staged source waterUSGal: 250 US gal; canonical conversion factor 3.785411784. Tankage follows the staged US-gallon interpretation; verify actual hull capacities."
+      },
+      "HoldingCapacity": {
+        "Level": "Moderate",
+        "Status": "source_reported",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/marine-trader/40-sundeck-1983-2000"
+        ],
+        "Note": "Staged source holdingUSGal: 50 US gal; canonical conversion factor 3.785411784. Tankage follows the staged US-gallon interpretation; verify actual hull capacities."
+      },
+      "EngineCount": {
+        "Level": "Unknown",
+        "Status": "variable",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/marine-trader/40-sundeck-1983-2000"
+        ],
+        "Note": "single Ford Lehman standard; twins available"
+      }
+    }
+  },
+  {
     "BoatModelID": "NRDH-40",
     "HullType": "Full-displacement monohull",
     "Style": "Ocean Passagemaker",

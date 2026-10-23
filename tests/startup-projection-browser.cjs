@@ -1,4 +1,5 @@
 'use strict';
+const {modelCount}=require('./catalogue-evolution.cjs');
 // Compare a hash-verified Phase 3 runtime overlay with current dist. Local traffic only.
 const fs=require('node:fs'),path=require('node:path'),http=require('node:http'),assert=require('node:assert/strict');
 const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
@@ -32,14 +33,14 @@ const server=http.createServer((req,res)=>{
     // Resolve root-based image/site paths into the selected variant as well.
     const url=new URL(r.url());if(!/^\/(before|after)\//.test(url.pathname))return route.continue({url:origin+'/'+version+url.pathname+url.search});return route.continue();
    });
-   await context.addInitScript(()=>{
+   await context.addInitScript((modelCount)=>{
     performance.setResourceTimingBufferSize(10000);
     window.__metrics={ready:null,longTasks:[],textMs:0,jsonMs:0};
-    const observe=()=>{const el=document.getElementById('totalBoatsCount');if(el?.textContent==='995'&&window.__metrics.ready===null)window.__metrics.ready=performance.now();};
+    const observe=()=>{const el=document.getElementById('totalBoatsCount');if(el?.textContent===String(modelCount)&&window.__metrics.ready===null)window.__metrics.ready=performance.now();};
     new MutationObserver(observe).observe(document,{subtree:true,childList:true,characterData:true});
     try{new PerformanceObserver(list=>window.__metrics.longTasks.push(...list.getEntries().map(e=>e.duration))).observe({entryTypes:['longtask']});}catch{}
     for(const [key,metric] of [['text','textMs'],['json','jsonMs']]){const original=Response.prototype[key];Response.prototype[key]=async function(...args){const start=performance.now();try{return await original.apply(this,args);}finally{window.__metrics[metric]+=performance.now()-start;}};}
-   });
+   },modelCount);
    const page=await context.newPage(),errors=[];page.on('pageerror',e=>errors.push(e.message));
    await page.goto(origin+'/'+version+'/',{waitUntil:'domcontentloaded'});await page.waitForFunction(()=>window.__metrics.ready!==null);await page.waitForLoadState('networkidle');
    const startup=await page.evaluate(()=>{const resources=performance.getEntriesByType('resource');return {catalogueDecodedBytes:resources.filter(e=>/\/data\/generated\//.test(e.name)).reduce((n,e)=>n+e.decodedBodySize,0),catalogueRequests:resources.filter(e=>/\/data\/generated\//.test(e.name)).length,catalogueReadyMs:__metrics.ready,requests:resources.length,transferBytes:resources.reduce((n,e)=>n+e.transferSize,0),decodedBytes:resources.reduce((n,e)=>n+e.decodedBodySize,0),bodyCompletionMs:__metrics.textMs+__metrics.jsonMs,longTaskMs:__metrics.longTasks.reduce((a,b)=>a+b,0),heapBytes:performance.memory?.usedJSHeapSize||null,fullModelRequests:resources.filter(e=>/\/data\/generated\/models\/\d/.test(e.name)).length};});

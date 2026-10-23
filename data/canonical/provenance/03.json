@@ -500,6 +500,122 @@
     }
   },
   {
+    "BoatModelID": "KHAS-40-SU",
+    "HullType": "semi-displacement",
+    "DateCreated": "2026-10-23",
+    "LastUpdated": "2026-10-23",
+    "ReviewedBy": "B-Atlas Taiwanese trawler integration",
+    "Revision": 1,
+    "DataConfidence": "Moderate",
+    "ResearchStatus": "Reviewed with unresolved specifications",
+    "LOA_ft": 39.5,
+    "Beam_ft": 14,
+    "Draft_ft": 3.5833333333333335,
+    "DisplacementLb": null,
+    "FuelCapacityGal": null,
+    "WaterCapacityGal": null,
+    "HoldingCapacityGal": null,
+    "ResearchNotes": "Integrated from research/taiwan-trawler-seven-2026-10-23.json. Spindrift 40 Sundeck, Vista 40 Sundeck and Southern Star 40 Sundeck are documented marketing aliases of this model. No existing matching identity or alias; retain one canonical model. Source feet, pounds and staged US-gallon values are retained in provenance; canonical dimensions use metres, mass kilograms, tankage litres. Unverified values remain null. Kha Shing staged nulls retained despite additional figures on the live reference.",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Partial",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndProduction",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "KHAS-40-SU"
+            ],
+            "Years": {
+              "From": 1980,
+              "To": 1988
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/kha-shing/40-sundeck-1980-88"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Spindrift 40 Sundeck, Vista 40 Sundeck and Southern Star 40 Sundeck are documented marketing aliases of this model. No existing matching identity or alias; retain one canonical model."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Historical sources cite 300/340 US gallon alternatives",
+        "Confirm hull equivalence and marketing alias validity"
+      ]
+    },
+    "SpecificationConfidence": {
+      "LOA": {
+        "Level": "Moderate",
+        "Status": "source_reported",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/kha-shing/40-sundeck-1980-88"
+        ],
+        "Note": "Staged source loaFt: 39.5 ft; canonical conversion factor 0.3048. Tankage follows the staged US-gallon interpretation; verify actual hull capacities."
+      },
+      "Beam": {
+        "Level": "Moderate",
+        "Status": "source_reported",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/kha-shing/40-sundeck-1980-88"
+        ],
+        "Note": "Staged source beamFt: 14 ft; canonical conversion factor 0.3048. Tankage follows the staged US-gallon interpretation; verify actual hull capacities."
+      },
+      "Draft": {
+        "Level": "Moderate",
+        "Status": "source_reported",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/kha-shing/40-sundeck-1980-88"
+        ],
+        "Note": "Staged source draftFt: 3.5833333333333335 ft; canonical conversion factor 0.3048. Tankage follows the staged US-gallon interpretation; verify actual hull capacities."
+      },
+      "Displacement": {
+        "Level": "Unknown",
+        "Status": "unresolved",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/kha-shing/40-sundeck-1980-88"
+        ],
+        "Note": "Staged value is absent or disputed; no representative value selected."
+      },
+      "FuelCapacity": {
+        "Level": "Unknown",
+        "Status": "unresolved",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/kha-shing/40-sundeck-1980-88"
+        ],
+        "Note": "Staged value is absent or disputed; no representative value selected."
+      },
+      "WaterCapacity": {
+        "Level": "Unknown",
+        "Status": "unresolved",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/kha-shing/40-sundeck-1980-88"
+        ],
+        "Note": "Staged value is absent or disputed; no representative value selected."
+      },
+      "HoldingCapacity": {
+        "Level": "Unknown",
+        "Status": "unresolved",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/kha-shing/40-sundeck-1980-88"
+        ],
+        "Note": "Staged value is absent or disputed; no representative value selected."
+      },
+      "EngineCount": {
+        "Level": "Moderate",
+        "Status": "source_reported",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/kha-shing/40-sundeck-1980-88"
+        ],
+        "Note": "twin Volvo diesel installations reported"
+      }
+    }
+  },
+  {
     "BoatModelID": "LUHR-320-OPEN",
     "HullType": "Modified-V",
     "Style": "Open Sportfisher",

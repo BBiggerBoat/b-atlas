@@ -1,25 +1,25 @@
 # B-Atlas Decision Data Coverage Audit
 
-Generated: 2026-10-23T18:29:29.429Z
+Generated: 2026-10-23T19:58:23.193Z
 
-Canonical models: **995**
+Canonical models: **1002**
 
 ## Coverage by decision field
 
 | Priority | Field | Known | Missing | Coverage |
 |---:|---|---:|---:|---:|
-| 1 | Beam | 938 | 57 | 94.3% |
-| 2 | LOA | 989 | 6 | 99.4% |
-| 3 | FuelType | 800 | 195 | 80.4% |
-| 4 | Propulsion | 736 | 259 | 74% |
-| 5 | HullForm | 958 | 37 | 96.3% |
-| 6 | Draft | 924 | 71 | 92.9% |
-| 7 | AirDraft | 629 | 366 | 63.2% |
-| 8 | Style | 995 | 0 | 100% |
-| 9 | EngineConfig | 679 | 316 | 68.2% |
-| 10 | Displacement | 917 | 78 | 92.2% |
-| 11 | FuelCapacity | 915 | 80 | 92% |
-| 12 | WaterCapacity | 919 | 76 | 92.4% |
+| 1 | Beam | 945 | 57 | 94.3% |
+| 2 | LOA | 996 | 6 | 99.4% |
+| 3 | FuelType | 807 | 195 | 80.5% |
+| 4 | Propulsion | 736 | 266 | 73.5% |
+| 5 | HullForm | 965 | 37 | 96.3% |
+| 6 | Draft | 931 | 71 | 92.9% |
+| 7 | AirDraft | 629 | 373 | 62.8% |
+| 8 | Style | 1001 | 1 | 99.9% |
+| 9 | EngineConfig | 686 | 316 | 68.5% |
+| 10 | Displacement | 923 | 79 | 92.1% |
+| 11 | FuelCapacity | 921 | 81 | 91.9% |
+| 12 | WaterCapacity | 925 | 77 | 92.3% |
 
 ## Largest manufacturer gaps in top-priority fields
 
@@ -71,6 +71,7 @@ Canonical models: **995**
 | Four Winns | 15 |
 | Rinker | 11 |
 | Monterey | 6 |
+| President | 2 |
 
 ### HullForm
 
@@ -118,6 +119,7 @@ Canonical models: **995**
 
 | Manufacturer | Missing |
 |---|---:|
+| Ocean Alexander | 1 |
 
 ## Highest-gap models
 

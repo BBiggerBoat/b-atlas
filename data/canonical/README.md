@@ -48,7 +48,9 @@ not add support for concurrent independent writer processes; serialize local
 administration and maintenance operations.
 
 Run `npm run verify:production` in a checkout with historical test commits available.
-`tests/canonical-partitions.cjs` independently compares the complete composition
-with the pre-partition Git revision, verifies routing and size limits, exercises
+`tests/canonical-partitions.cjs` independently compares the historical records
+and their sequence with the checksum-verified pre-partition fixture, while an
+explicit addition allowlist and separate integration tests cover later models.
+It verifies routing and size limits, exercises
 corruption rejection, checks focused-write stability, and injects partial-write
 failures before recovering both sides. Public builds exclude this entire directory.
