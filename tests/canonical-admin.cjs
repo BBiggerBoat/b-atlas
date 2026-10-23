@@ -20,7 +20,12 @@ async function stop(){if(child&&!child.killed){const done=new Promise(resolve=>c
    let errors='';child.stderr.on('data',d=>errors+=d);
    for(let i=0;i<100;i++){if(child.exitCode!==null)throw Error(errors);try{if((await fetch(base+'/api/health')).ok)return;}catch{}await new Promise(r=>setTimeout(r,50));}throw Error('Admin server failed to start: '+errors);
   }
+  // Generated SEO files now belong to dist; the local server must serve that artifact.
+  fs.mkdirSync(path.join(temp,'dist/models/local-preview'),{recursive:true});
+  fs.mkdirSync(path.join(temp,'models/local-preview'),{recursive:true});
+  fs.writeFileSync(path.join(temp,'dist/models/local-preview/index.html'),'<title>Generated SEO fixture</title>');
   await start();
+  const seo=await fetch(base+'/models/local-preview/');assert.equal(seo.status,200);assert((await seo.text()).includes('Generated SEO fixture'));
   async function publishedBaseline(){
    const repository=require('../datarepository.js').createRepository({baseUrl:base+'/',fetchImpl:url=>url.startsWith(base+'/')?fetch(url):Promise.resolve({ok:false})});
    return repository.loadBaseline();

@@ -2,8 +2,9 @@
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),os=require('node:os'),crypto=require('node:crypto');
 const store=require('../developer/canonical-store.cjs');
 const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
-const baseline='archive/canonical-migration-baseline/';
-const original=read(baseline+'boatmodels.json'), models=store.load();
+const historical=require('../developer/historical-fixtures.cjs');
+const baseline='migration/';
+const original=historical.json(baseline+'boatmodels.json'), models=store.load();
 const expected=structuredClone(original);
 for(const change of read('reports/canonical-url-migration.json')){
  const row=expected.find(m=>m.BoatModelID===change.BoatModelID);
@@ -25,9 +26,9 @@ for(const change of approved){
 }
 assert.deepEqual(models,expected,'Every model field must survive except documented URL corrections and eight approved propulsion corrections');
 assert.deepEqual(read('boatmodels.json'),models,'Stale generated view');
-assert.deepEqual(read('data/registry/boat-registry.json'),read(baseline+'data/registry/boat-registry.json'),'Identity decisions changed');
-const checksums=read(baseline+'manifest.json');
-for(const [file,sha] of Object.entries(checksums.files))assert.equal(crypto.createHash('sha256').update(fs.readFileSync(baseline+file)).digest('hex'),sha);
+assert.deepEqual(read('data/registry/boat-registry.json'),historical.json(baseline+'data/registry/boat-registry.json'),'Identity decisions changed');
+const checksums=historical.json(baseline+'manifest.json');
+for(const [file,sha] of Object.entries(checksums.files))assert.equal(crypto.createHash('sha256').update(historical.read(baseline+file)).digest('hex'),sha);
 const rules=store.contract(),parts=store.split(models);
 assert.deepEqual(store.compose(parts),models);
 const bad=structuredClone(parts);bad.specifications[0].Model='wrong owner';assert.throws(()=>store.compose(bad),/not owned/);

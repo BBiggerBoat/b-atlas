@@ -1,0 +1,4333 @@
+  "Known": 4,
+          "Total": 5,
+          "Score": 80
+        },
+        "Evidence": {
+          "Known": 0,
+          "Total": 1,
+          "Score": 0
+        }
+      },
+      "OverallScore": 83,
+      "SourceCount": 1,
+      "VerifiedSourceCount": 0,
+      "ContradictionCount": 0,
+      "RelationshipCount": 5,
+      "CoverageStatus": "Strong",
+      "GeneratedAt": "2026-07-26",
+      "ScoredFieldCount": 33
+    },
+    "updatedAt": "2026-08-07"
+  },
+  {
+    "schemaVersion": 2,
+    "generated": true,
+    "generatedFrom": [
+      "boatmodels.json",
+      "curatedresources.json",
+      "listingsearches.json",
+      "knowledgeannotations.json",
+      "knowledge-coverage.json"
+    ],
+    "identity": {
+      "boatModelId": "BAYL-3288-MO",
+      "manufacturer": "Bayliner",
+      "model": "3270 / 3288 Motor Yacht Explorer / Motor Yacht",
+      "displayName": "Bayliner 3270 / 3288 Motor Yacht"
+    },
+    "intelligence": {
+      "overview": "Bayliner's all-time best-selling compact flybridge cruiser family: introduced as the 3270 Explorer in 1981, renamed 3270 Motor Yacht in 1985 and evolved into the 3288 Motor Yacht in 1989 without materially changing its celebrated mid-cabin, lower-helm layout.",
+      "suitability": {
+        "CoupleCruising": {
+          "Assessment": "Good",
+          "Summary": "The documented accommodation and cruising layout support use by a couple, subject to individual-condition survey.",
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/3270-explorer-3270-3288-motor-yacht-1981-95"
+          ]
+        },
+        "FamilyOrGuests": {
+          "Assessment": "Good",
+          "Summary": "Multiple sleeping areas improve guest separation.",
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/3270-explorer-3270-3288-motor-yacht-1981-95"
+          ]
+        },
+        "InlandAndCoastal": {
+          "Assessment": "Good",
+          "Summary": "The design is primarily suited to inland and coastal cruising within its documented dimensional and sea-state limits.",
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/3270-explorer-3270-3288-motor-yacht-1981-95"
+          ]
+        },
+        "SoloHandling": {
+          "Assessment": "Mixed",
+          "Summary": "Twin propulsion can aid docking, but duplicate systems and larger flybridge layouts increase workload.",
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/3270-explorer-3270-3288-motor-yacht-1981-95"
+          ]
+        }
+      },
+      "strengths": [
+        "Efficient accommodation layout with two sleeping areas",
+        "Twin inboard shaft propulsion",
+        "Lower helm plus flybridge",
+        "Large owner population and established parts knowledge"
+      ],
+      "tradeOffs": [
+        "Engine access remains tight",
+        "Two engines increase maintenance load",
+        "Interior finish and noise isolation are value-oriented",
+        "Individual engine packages materially affect speed, economy and serviceability"
+      ],
+      "bestFor": [
+        "Couples or small families wanting a compact twin-diesel cruiser",
+        "Inland and protected coastal cruising",
+        "Buyers valuing accommodation density and dual helms"
+      ],
+      "avoidIf": [
+        "You want single-engine simplicity",
+        "You require spacious engine-room access",
+        "You prefer premium joinery and heavy displacement construction"
+      ],
+      "knownConcerns": [],
+      "inspectionFocus": [
+        "Both engines, transmissions, shafts and cooling systems",
+        "Window and deck moisture",
+        "Fuel tanks and plumbing",
+        "Electrical and sanitation systems"
+      ],
+      "buyerQuestions": [
+        "Which Hino or gasoline engine package is installed?",
+        "What service history exists for both propulsion trains?",
+        "Have deck, window or tank repairs been documented?"
+      ],
+      "ownerActions": [
+        "Maintain both cooling and shaft systems consistently",
+        "Monitor deck/window sealing and fuel-system condition"
+      ],
+      "modelVariations": [
+        {
+          "Name": "Early lower-output diesel",
+          "Description": "Earlier 32xx family boats commonly used lower-output Hino diesels.",
+          "AffectedYears": "Early family production",
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/3270-explorer-3270-3288-motor-yacht-1981-95"
+          ],
+          "Confidence": "High"
+        },
+        {
+          "Name": "Later turbo diesel",
+          "Description": "Later 3288 examples used higher-output turbo Hino diesels, increasing cruise speed.",
+          "AffectedYears": "Later production",
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/3270-explorer-3270-3288-motor-yacht-1981-95"
+          ],
+          "Confidence": "High"
+        }
+      ]
+    },
+    "evidence": [
+      {
+        "Scope": "IdentityAndDimensions",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BAYL-3288-MO"
+          ],
+          "Years": {
+            "From": 1989,
+            "To": 1995
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/3270-explorer-3270-3288-motor-yacht-1981-95"
+        ],
+        "EvidenceTypes": [
+          "Technical or survey source",
+          "Marketplace observation"
+        ],
+        "Confidence": "High",
+        "Notes": "Identity, production period and principal specifications are based on model-specific references. Individual hull documentation remains controlling."
+      },
+      {
+        "Scope": "OverviewAndSuitability",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BAYL-3288-MO"
+          ],
+          "Years": {
+            "From": 1989,
+            "To": 1995
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/3270-explorer-3270-3288-motor-yacht-1981-95"
+        ],
+        "EvidenceTypes": [
+          "Technical or survey source"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Buyer guidance is derived from documented layout, dimensions, hull form and propulsion configuration."
+      },
+      {
+        "Scope": "InspectionFocus",
+        "AppliesTo": {
+          "Scope": "General age-related guidance",
+          "Models": [
+            "BAYL-3288-MO"
+          ],
+          "Years": {
+            "From": 1989,
+            "To": 1995
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/3270-explorer-3270-3288-motor-yacht-1981-95"
+        ],
+        "EvidenceTypes": [
+          "Technical or survey source"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Inspection guidance combines model-specific configuration with age-related system risks. These are inspection priorities, not assertions of a model-wide defect."
+      }
+    ],
+    "images": [
+      {
+        "title": "Bayliner 3270 / 3288 Motor Yacht image",
+        "url": "images/bayl-3288-mo.jpg",
+        "sourceLabel": "B-Atlas image library",
+        "resourceType": "Model image",
+        "verificationStatus": "Local asset"
+      }
+    ],
+    "videos": [],
+    "listings": [
+      {
+        "title": "Search Bayliner 3270 Motoryacht listings on YachtWorld",
+        "url": "https://www.yachtworld.com/boats-for-sale/make-bayliner/model-3270-motoryacht/",
+        "sourceLabel": "YachtWorld",
+        "resourceType": "Marketplace search",
+        "verificationStatus": "Search page verified",
+        "discoveryType": "MarketplaceSearch",
+        "inventoryStatus": "Live inventory changes continuously",
+        "lastChecked": "2026-07-24"
+      },
+      {
+        "title": "Search Bayliner 3270 Motoryacht listings across Canadian brokers",
+        "url": "https://www.google.com/search?q=Bayliner+3270+Motoryacht+Canada+broker+for+sale",
+        "sourceLabel": "Google",
+        "resourceType": "Broker search",
+        "verificationStatus": "Search link verified",
+        "discoveryType": "MarketplaceSearch",
+        "inventoryStatus": "Live inventory not verified",
+        "lastChecked": "2026-07-24"
+      },
+      {
+        "title": "Search Bayliner 3270 Motoryacht listings on Boat Trader",
+        "url": "https://www.boattrader.com/boats/make-bayliner/?model=3270",
+        "sourceLabel": "Boat Trader",
+        "resourceType": "Marketplace search",
+        "verificationStatus": "Search URL provided; inventory not guaranteed",
+        "discoveryType": "MarketplaceSearch",
+        "inventoryStatus": "Live inventory not verified",
+        "lastChecked": "2026-07-24"
+      }
+    ],
+    "documents": [
+      {
+        "title": "Bayliner 3270 Explorer / 3270–3288 Motor Yacht — Powerboat Guide",
+        "url": "https://www.hmy.com/yachting/powerboat-guide/bayliner/3270-explorer-3270-3288-motor-yacht-1981-95",
+        "sourceLabel": "HMY / factory / model archive",
+        "resourceType": "Model guide or reference",
+        "verificationStatus": "Verified",
+        "scope": "Model-specific",
+        "confidence": "High",
+        "notes": ""
+      }
+    ],
+    "ownerCommunities": [],
+    "knownIssues": [
+      {
+        "title": "Moisture intrusion and core condition",
+        "sourceLabel": "B-Atlas survey focus",
+        "resourceType": "Inspection priority",
+        "verificationStatus": "Model-level caution; inspect actual vessel"
+      },
+      {
+        "title": "Fuel tanks, exhaust systems and cooling circuits",
+        "sourceLabel": "B-Atlas survey focus",
+        "resourceType": "Inspection priority",
+        "verificationStatus": "Age-related systems require verification"
+      },
+      {
+        "title": "Engine access and service history for both engines",
+        "sourceLabel": "B-Atlas survey focus",
+        "resourceType": "Inspection priority",
+        "verificationStatus": "Configuration-specific verification required"
+      },
+      {
+        "title": "Underwater blistering reported on some older examples",
+        "sourceLabel": "B-Atlas survey focus",
+        "resourceType": "Inspection priority",
+        "verificationStatus": "Not universal; survey required"
+      }
+    ],
+    "similarModels": [
+      {
+        "title": "Mainship 34 Mk I Trawler",
+        "sourceLabel": "B-Atlas comparison set",
+        "resourceType": "Comparable model",
+        "verificationStatus": "Curated"
+      }
+    ],
+    "missingInformation": [
+      {
+        "field": "Actual headroom",
+        "reason": "Measure the specific listing; published model-wide headroom is inconsistent."
+      },
+      {
+        "field": "Installed engines and performance",
+        "reason": "The model was sold with different engine packages and repowers are common."
+      }
+    ],
+    "sources": [
+      {
+        "type": "CuratedResourceSet",
+        "label": "B-Atlas Model Character + Resources Batch 28 — Bayliner",
+        "verificationStatus": "Links researched and checked 2026-08-07"
+      },
+      {
+        "type": "ListingDiscoverySet",
+        "label": "B-Atlas model-specific broker and marketplace searches",
+        "verificationStatus": "Links checked July 2026"
+      },
+      {
+        "type": "CuratedReference",
+        "label": "Bayliner owner documents and manuals",
+        "verificationStatus": "Verified July 2026"
+      },
+      {
+        "type": "CuratedReference",
+        "label": "B-Atlas normalized model database",
+        "verificationStatus": "Verified July 2026"
+      },
+      {
+        "type": "CuratedReference",
+        "label": "Current marketplace model searches",
+        "verificationStatus": "Search pages verified July 2026"
+      }
+    ],
+    "confidence": "Moderate",
+    "coverage": {
+      "BoatModelID": "BAYL-3288-MO",
+      "Categories": {
+        "Identity": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Specifications": {
+          "Known": 10,
+          "Total": 10,
+          "Score": 100
+        },
+        "Configuration": {
+          "Known": 5,
+          "Total": 5,
+          "Score": 100
+        },
+        "Accommodation": {
+          "Known": 4,
+          "Total": 4,
+          "Score": 100
+        },
+        "Suitability": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Ownership": {
+          "Known": 5,
+          "Total": 5,
+          "Score": 100
+        },
+        "Evidence": {
+          "Known": 0,
+          "Total": 1,
+          "Score": 0
+        }
+      },
+      "OverallScore": 86,
+      "SourceCount": 1,
+      "VerifiedSourceCount": 0,
+      "ContradictionCount": 0,
+      "RelationshipCount": 5,
+      "CoverageStatus": "Strong",
+      "GeneratedAt": "2026-07-26",
+      "ScoredFieldCount": 34
+    },
+    "updatedAt": "2026-08-07"
+  },
+  {
+    "schemaVersion": 2,
+    "generated": true,
+    "generatedFrom": [
+      "boatmodels.json",
+      "curatedresources.json",
+      "listingsearches.json",
+      "knowledgeannotations.json",
+      "knowledge-coverage.json"
+    ],
+    "identity": {
+      "boatModelId": "BAYL-3388",
+      "manufacturer": "Bayliner",
+      "model": "3388 Motor Yacht Flybridge Motor Yacht",
+      "displayName": "Bayliner 3388 Motor Yacht"
+    },
+    "intelligence": {
+      "overview": "The Bayliner 3388 Motor Yacht is the successor to the 3288 family, retaining a two-stateroom, lower-helm and flybridge layout while adding a revised hull and more contemporary styling. Gasoline and diesel twin-inboard installations are documented, so propulsion should be treated as configuration-specific.",
+      "suitability": {
+        "CoupleCruising": {
+          "Assessment": "Good",
+          "Summary": "The documented accommodation and cruising layout support use by a couple, subject to individual-condition survey.",
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/3388-motor-yacht-1996-2001"
+          ]
+        },
+        "FamilyOrGuests": {
+          "Assessment": "Good",
+          "Summary": "Multiple sleeping areas improve guest separation.",
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/3388-motor-yacht-1996-2001"
+          ]
+        },
+        "InlandAndCoastal": {
+          "Assessment": "Good",
+          "Summary": "The design is primarily suited to inland and coastal cruising within its documented dimensional and sea-state limits.",
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/3388-motor-yacht-1996-2001"
+          ]
+        },
+        "SoloHandling": {
+          "Assessment": "Mixed",
+          "Summary": "Twin propulsion can aid docking, but duplicate systems and larger flybridge layouts increase workload.",
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/3388-motor-yacht-1996-2001"
+          ]
+        }
+      },
+      "strengths": [
+        "Two-stateroom layout in a compact length",
+        "Lower helm plus flybridge",
+        "Twin shaft-drive inboards",
+        "Prop pockets reduce shaft angle and draft"
+      ],
+      "tradeOffs": [
+        "Salon circulation is constrained by the mid-cabin stair arrangement",
+        "Low-deadrise hull prioritizes efficiency and space over rough-water comfort",
+        "Twin engines increase operating and service cost",
+        "Gasoline and diesel versions have materially different economics"
+      ],
+      "bestFor": [
+        "Family cruising on inland and protected coastal waters",
+        "Buyers wanting two cabins and dual helms around 33 feet",
+        "Owners comfortable with twin-inboard systems"
+      ],
+      "avoidIf": [
+        "You prioritize rough-water performance",
+        "You want a large open salon",
+        "You require single-engine simplicity"
+      ],
+      "knownConcerns": [],
+      "inspectionFocus": [
+        "Both engines, gears, shafts and prop-pocket running gear",
+        "Window and deck sealing",
+        "Fuel system and tank condition",
+        "Lower-helm and flybridge control systems"
+      ],
+      "buyerQuestions": [
+        "Is the boat gasoline or diesel powered, and what exact engines are installed?",
+        "What propulsion and cooling-system service has been completed?",
+        "Have window or deck leaks required repair?"
+      ],
+      "ownerActions": [
+        "Maintain both propulsion trains and shaft seals",
+        "Keep window and deck penetrations sealed"
+      ],
+      "modelVariations": [
+        {
+          "Name": "Gasoline twin inboards",
+          "Description": "Twin gasoline inboards were standard on some 3388 production.",
+          "AffectedYears": "1996–2001",
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/3388-motor-yacht-1996-2001"
+          ],
+          "Confidence": "High"
+        },
+        {
+          "Name": "Diesel twin inboards",
+          "Description": "Twin diesel configurations are also documented in the market.",
+          "AffectedYears": "1996–2001",
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/3388-motor-yacht-1996-2001"
+          ],
+          "Confidence": "Moderate"
+        }
+      ]
+    },
+    "evidence": [
+      {
+        "Scope": "IdentityAndDimensions",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BAYL-3388"
+          ],
+          "Years": {
+            "From": 1996,
+            "To": 2001
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/3388-motor-yacht-1996-2001"
+        ],
+        "EvidenceTypes": [
+          "Technical or survey source",
+          "Marketplace observation"
+        ],
+        "Confidence": "High",
+        "Notes": "Identity, production period and principal specifications are based on model-specific references. Individual hull documentation remains controlling."
+      },
+      {
+        "Scope": "OverviewAndSuitability",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BAYL-3388"
+          ],
+          "Years": {
+            "From": 1996,
+            "To": 2001
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/3388-motor-yacht-1996-2001"
+        ],
+        "EvidenceTypes": [
+          "Technical or survey source"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Buyer guidance is derived from documented layout, dimensions, hull form and propulsion configuration."
+      },
+      {
+        "Scope": "InspectionFocus",
+        "AppliesTo": {
+          "Scope": "General age-related guidance",
+          "Models": [
+            "BAYL-3388"
+          ],
+          "Years": {
+            "From": 1996,
+            "To": 2001
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/3388-motor-yacht-1996-2001"
+        ],
+        "EvidenceTypes": [
+          "Technical or survey source"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Inspection guidance combines model-specific configuration with age-related system risks. These are inspection priorities, not assertions of a model-wide defect."
+      }
+    ],
+    "images": [
+      {
+        "title": "Bayliner 3388 Motor Yacht image",
+        "url": "images/bayl-3388.jpg",
+        "sourceLabel": "B-Atlas image library",
+        "resourceType": "Model image",
+        "verificationStatus": "Local asset"
+      }
+    ],
+    "videos": [],
+    "listings": [],
+    "documents": [
+      {
+        "title": "Bayliner 3388 Motor Yacht — Powerboat Guide",
+        "url": "https://www.hmy.com/yachting/powerboat-guide/bayliner/3388-motor-yacht-1996-2001",
+        "sourceLabel": "HMY / factory / model archive",
+        "resourceType": "Model guide or reference",
+        "verificationStatus": "Verified",
+        "scope": "Model-specific",
+        "confidence": "High",
+        "notes": ""
+      }
+    ],
+    "ownerCommunities": [],
+    "knownIssues": [],
+    "similarModels": [],
+    "missingInformation": [],
+    "sources": [
+      {
+        "type": "CuratedResourceSet",
+        "label": "B-Atlas Model Character + Resources Batch 28 — Bayliner",
+        "verificationStatus": "Links researched and checked 2026-08-07"
+      }
+    ],
+    "confidence": "Moderate",
+    "coverage": {
+      "BoatModelID": "BAYL-3388",
+      "Categories": {
+        "Identity": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Specifications": {
+          "Known": 10,
+          "Total": 10,
+          "Score": 100
+        },
+        "Configuration": {
+          "Known": 5,
+          "Total": 5,
+          "Score": 100
+        },
+        "Accommodation": {
+          "Known": 4,
+          "Total": 4,
+          "Score": 100
+        },
+        "Suitability": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Ownership": {
+          "Known": 4,
+          "Total": 5,
+          "Score": 80
+        },
+        "Evidence": {
+          "Known": 0,
+          "Total": 1,
+          "Score": 0
+        }
+      },
+      "OverallScore": 83,
+      "SourceCount": 1,
+      "VerifiedSourceCount": 0,
+      "ContradictionCount": 0,
+      "RelationshipCount": 6,
+      "CoverageStatus": "Strong",
+      "GeneratedAt": "2026-07-26",
+      "ScoredFieldCount": 33
+    },
+    "updatedAt": "2026-08-07"
+  },
+  {
+    "schemaVersion": 2,
+    "generated": true,
+    "generatedFrom": [
+      "boatmodels.json",
+      "curatedresources.json",
+      "listingsearches.json",
+      "knowledgeannotations.json",
+      "knowledge-coverage.json"
+    ],
+    "identity": {
+      "boatModelId": "BAYL-3788",
+      "manufacturer": "Bayliner",
+      "model": "3788 Motor Yacht Two-Generation Flybridge Motor Yacht",
+      "displayName": "Bayliner 3788 Motor Yacht"
+    },
+    "intelligence": {
+      "overview": "The Bayliner 3788 Motor Yacht is a wide-beam two-stateroom flybridge cruiser built in two distinct generations. Both gasoline and Cummins diesel twin-inboard packages were available. The design emphasizes interior volume, dual-helm cruising and value, with shallow deadrise that favors efficiency and planing performance over a soft ride in larger seas.",
+      "suitability": {
+        "CoupleCruising": {
+          "Assessment": "Good",
+          "Summary": "The documented accommodation and cruising layout support use by a couple, subject to individual-condition survey.",
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/3788-motor-yacht-1996-99",
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/3788-motor-yacht-2001-02"
+          ]
+        },
+        "FamilyOrGuests": {
+          "Assessment": "Good",
+          "Summary": "Multiple sleeping areas improve guest separation.",
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/3788-motor-yacht-1996-99",
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/3788-motor-yacht-2001-02"
+          ]
+        },
+        "InlandAndCoastal": {
+          "Assessment": "Good",
+          "Summary": "The design is primarily suited to inland and coastal cruising within its documented dimensional and sea-state limits.",
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/3788-motor-yacht-1996-99",
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/3788-motor-yacht-2001-02"
+          ]
+        },
+        "SoloHandling": {
+          "Assessment": "Mixed",
+          "Summary": "Twin propulsion can aid docking, but duplicate systems and larger flybridge layouts increase workload.",
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/3788-motor-yacht-1996-99",
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/3788-motor-yacht-2001-02"
+          ]
+        }
+      },
+      "strengths": [
+        "Two-stateroom layout with good interior volume",
+        "Twin shaft-drive inboards",
+        "Lower helm and flybridge",
+        "Wide side decks and useful cruising amenities"
+      ],
+      "tradeOffs": [
+        "Shallow-deadrise hull can ride firmly in rough water",
+        "Twin engines and yacht-scale systems increase operating cost",
+        "Flybridge access is steep on the earlier generation",
+        "Specifications changed materially with the 2001 redesign"
+      ],
+      "bestFor": [
+        "Extended inland and coastal cruising",
+        "Families wanting two cabins and dual helms",
+        "Buyers seeking large-boat accommodation at value-oriented pricing"
+      ],
+      "avoidIf": [
+        "You prioritize offshore rough-water comfort",
+        "You require low air draft",
+        "You want single-engine simplicity"
+      ],
+      "knownConcerns": [],
+      "inspectionFocus": [
+        "Both engines, gears, shafts and cooling systems",
+        "Deck, window and flybridge structure",
+        "Fuel, water and sanitation tanks",
+        "Electrical and climate-control systems"
+      ],
+      "buyerQuestions": [
+        "Is this the 1996–99 or 2001–02 generation?",
+        "Which gasoline or diesel engine package is installed?",
+        "What major tank, cooling and electrical work has been completed?"
+      ],
+      "ownerActions": [
+        "Identify the generation before comparing specifications or ordering parts",
+        "Maintain both propulsion and cooling systems on a documented schedule"
+      ],
+      "modelVariations": [
+        {
+          "Name": "1996–99 generation",
+          "Description": "Original 3788, 38'6\" overall, 13'4\" beam, 20,000 lb.",
+          "AffectedYears": "1996–1999",
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/3788-motor-yacht-1996-99"
+          ],
+          "Confidence": "High"
+        },
+        {
+          "Name": "2001–02 generation",
+          "Description": "Redesigned 3788, 39'4\" overall, 13'7\" beam; became Meridian 381 in 2003.",
+          "AffectedYears": "2001–2002",
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/3788-motor-yacht-2001-02"
+          ],
+          "Confidence": "High"
+        }
+      ]
+    },
+    "evidence": [
+      {
+        "Scope": "IdentityAndDimensions",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BAYL-3788"
+          ],
+          "Years": {
+            "From": 1996,
+            "To": 2002
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/3788-motor-yacht-1996-99",
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/3788-motor-yacht-2001-02"
+        ],
+        "EvidenceTypes": [
+          "Technical or survey source",
+          "Marketplace observation"
+        ],
+        "Confidence": "High",
+        "Notes": "Identity, production period and principal specifications are based on model-specific references. Individual hull documentation remains controlling."
+      },
+      {
+        "Scope": "OverviewAndSuitability",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BAYL-3788"
+          ],
+          "Years": {
+            "From": 1996,
+            "To": 2002
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/3788-motor-yacht-1996-99",
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/3788-motor-yacht-2001-02"
+        ],
+        "EvidenceTypes": [
+          "Technical or survey source"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Buyer guidance is derived from documented layout, dimensions, hull form and propulsion configuration."
+      },
+      {
+        "Scope": "InspectionFocus",
+        "AppliesTo": {
+          "Scope": "General age-related guidance",
+          "Models": [
+            "BAYL-3788"
+          ],
+          "Years": {
+            "From": 1996,
+            "To": 2002
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/3788-motor-yacht-1996-99",
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/3788-motor-yacht-2001-02"
+        ],
+        "EvidenceTypes": [
+          "Technical or survey source"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Inspection guidance combines model-specific configuration with age-related system risks. These are inspection priorities, not assertions of a model-wide defect."
+      }
+    ],
+    "images": [
+      {
+        "title": "Bayliner 3788 Motor Yacht image",
+        "url": "images/bayl-3788.jpg",
+        "sourceLabel": "B-Atlas image library",
+        "resourceType": "Model image",
+        "verificationStatus": "Local asset"
+      }
+    ],
+    "videos": [],
+    "listings": [],
+    "documents": [
+      {
+        "title": "Bayliner 3788 Motor Yacht — 1996–99",
+        "url": "https://www.hmy.com/yachting/powerboat-guide/bayliner/3788-motor-yacht-1996-99",
+        "sourceLabel": "HMY / factory / model archive",
+        "resourceType": "Model guide or reference",
+        "verificationStatus": "Verified",
+        "scope": "Model-specific",
+        "confidence": "Moderate",
+        "notes": ""
+      },
+      {
+        "title": "Bayliner 3788 Motor Yacht — 2001–02",
+        "url": "https://www.hmy.com/yachting/powerboat-guide/bayliner/3788-motor-yacht-2001-02",
+        "sourceLabel": "HMY / factory / model archive",
+        "resourceType": "Model guide or reference",
+        "verificationStatus": "Verified",
+        "scope": "Model-specific",
+        "confidence": "Moderate",
+        "notes": ""
+      }
+    ],
+    "ownerCommunities": [],
+    "knownIssues": [],
+    "similarModels": [],
+    "missingInformation": [],
+    "sources": [
+      {
+        "type": "CuratedResourceSet",
+        "label": "B-Atlas Model Character + Resources Batch 28 — Bayliner",
+        "verificationStatus": "Links researched and checked 2026-08-07"
+      }
+    ],
+    "confidence": "Moderate",
+    "coverage": {
+      "BoatModelID": "BAYL-3788",
+      "Categories": {
+        "Identity": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Specifications": {
+          "Known": 10,
+          "Total": 10,
+          "Score": 100
+        },
+        "Configuration": {
+          "Known": 5,
+          "Total": 5,
+          "Score": 100
+        },
+        "Accommodation": {
+          "Known": 4,
+          "Total": 4,
+          "Score": 100
+        },
+        "Suitability": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Ownership": {
+          "Known": 5,
+          "Total": 5,
+          "Score": 100
+        },
+        "Evidence": {
+          "Known": 0,
+          "Total": 1,
+          "Score": 0
+        }
+      },
+      "OverallScore": 86,
+      "SourceCount": 1,
+      "VerifiedSourceCount": 0,
+      "ContradictionCount": 0,
+      "RelationshipCount": 6,
+      "CoverageStatus": "Strong",
+      "GeneratedAt": "2026-07-26",
+      "ScoredFieldCount": 34
+    },
+    "updatedAt": "2026-08-07"
+  },
+  {
+    "schemaVersion": 2,
+    "generated": true,
+    "generatedFrom": [
+      "boatmodels.json",
+      "curatedresources.json",
+      "listingsearches.json",
+      "knowledgeannotations.json",
+      "knowledge-coverage.json"
+    ],
+    "identity": {
+      "boatModelId": "BAYL-3888-MO",
+      "manufacturer": "Bayliner",
+      "model": "3870 / 3888 Motor Yacht Mid-Cabin Flybridge Motor Yacht",
+      "displayName": "Bayliner 3870 / 3888 Motor Yacht"
+    },
+    "intelligence": {
+      "overview": "The Bayliner 3888 Motor Yacht is a value-oriented twin-inboard flybridge cruiser built on a low-deadrise modified-V hull. Its distinguishing feature is a two-stateroom, two-head interior with a mid-cabin berth extending beneath the salon and a tub/shower arrangement unusual for this size and era.",
+      "suitability": {
+        "CoupleCruising": {
+          "Assessment": "Good",
+          "Summary": "The documented accommodation and cruising layout support use by a couple, subject to individual-condition survey.",
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/3870-3888-motor-yacht-1983-94"
+          ]
+        },
+        "FamilyOrGuests": {
+          "Assessment": "Good",
+          "Summary": "Multiple sleeping areas improve guest separation.",
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/3870-3888-motor-yacht-1983-94"
+          ]
+        },
+        "InlandAndCoastal": {
+          "Assessment": "Good",
+          "Summary": "The design is primarily suited to inland and coastal cruising within its documented dimensional and sea-state limits.",
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/3870-3888-motor-yacht-1983-94"
+          ]
+        },
+        "SoloHandling": {
+          "Assessment": "Mixed",
+          "Summary": "Twin propulsion can aid docking, but duplicate systems and larger flybridge layouts increase workload.",
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/3870-3888-motor-yacht-1983-94"
+          ]
+        }
+      },
+      "strengths": [
+        "Two private staterooms and two heads",
+        "Twin shaft-drive inboards",
+        "Lower helm plus flybridge",
+        "Large accommodation volume for purchase price"
+      ],
+      "tradeOffs": [
+        "Low-deadrise hull is optimized more for efficiency than rough-water softness",
+        "Two engines and multiple systems increase maintenance burden",
+        "Age makes tanks, wiring, hoses and interior leaks important survey items",
+        "Model was sold under earlier 3870/3780-related designations"
+      ],
+      "bestFor": [
+        "Couples or families wanting substantial accommodation at moderate purchase cost",
+        "Extended inland and protected coastal cruising",
+        "Owners comfortable maintaining an older twin-diesel motor yacht"
+      ],
+      "avoidIf": [
+        "You require modern systems with minimal refit exposure",
+        "You prioritize offshore rough-water performance",
+        "You want a small, simple boat to maintain"
+      ],
+      "knownConcerns": [],
+      "inspectionFocus": [
+        "Both diesels, transmissions, shafts and cooling systems",
+        "Fuel and water tanks and associated plumbing",
+        "Window/deck leaks and interior moisture",
+        "Electrical and sanitation systems"
+      ],
+      "buyerQuestions": [
+        "Which original model designation and engine package applies to this hull?",
+        "What tank, electrical and cooling-system renewals have been completed?",
+        "Have any recurring window or deck leaks been repaired?"
+      ],
+      "ownerActions": [
+        "Track aging tank, hose and electrical systems as individual-condition items",
+        "Maintain both propulsion trains and cooling systems consistently"
+      ],
+      "modelVariations": [
+        {
+          "Name": "Earlier designation",
+          "Description": "The family began under earlier 3780/3870 designations before the 3888 name became established.",
+          "AffectedYears": "1983–late 1980s",
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/3870-3888-motor-yacht-1983-94"
+          ],
+          "Confidence": "High"
+        },
+        {
+          "Name": "Engine evolution",
+          "Description": "Early boats used lower-output diesels; later production adopted other diesel packages including Hino engines.",
+          "AffectedYears": "1983–1994",
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/3870-3888-motor-yacht-1983-94"
+          ],
+          "Confidence": "High"
+        }
+      ]
+    },
+    "evidence": [
+      {
+        "Scope": "IdentityAndDimensions",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BAYL-3888-MO"
+          ],
+          "Years": {
+            "From": 1983,
+            "To": 1994
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/3870-3888-motor-yacht-1983-94"
+        ],
+        "EvidenceTypes": [
+          "Technical or survey source",
+          "Marketplace observation"
+        ],
+        "Confidence": "High",
+        "Notes": "Identity, production period and principal specifications are based on model-specific references. Individual hull documentation remains controlling."
+      },
+      {
+        "Scope": "OverviewAndSuitability",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BAYL-3888-MO"
+          ],
+          "Years": {
+            "From": 1983,
+            "To": 1994
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/3870-3888-motor-yacht-1983-94"
+        ],
+        "EvidenceTypes": [
+          "Technical or survey source"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Buyer guidance is derived from documented layout, dimensions, hull form and propulsion configuration."
+      },
+      {
+        "Scope": "InspectionFocus",
+        "AppliesTo": {
+          "Scope": "General age-related guidance",
+          "Models": [
+            "BAYL-3888-MO"
+          ],
+          "Years": {
+            "From": 1983,
+            "To": 1994
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/3870-3888-motor-yacht-1983-94"
+        ],
+        "EvidenceTypes": [
+          "Technical or survey source"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Inspection guidance combines model-specific configuration with age-related system risks. These are inspection priorities, not assertions of a model-wide defect."
+      }
+    ],
+    "images": [
+      {
+        "title": "Bayliner 3870 / 3888 Motor Yacht image",
+        "url": "images/bayl-3888-mo.jpg",
+        "sourceLabel": "B-Atlas image library",
+        "resourceType": "Model image",
+        "verificationStatus": "Local asset"
+      }
+    ],
+    "videos": [],
+    "listings": [],
+    "documents": [
+      {
+        "title": "Bayliner 3870 / 3888 Motor Yacht — Powerboat Guide",
+        "url": "https://www.hmy.com/yachting/powerboat-guide/bayliner/3870-3888-motor-yacht-1983-94",
+        "sourceLabel": "HMY / factory / model archive",
+        "resourceType": "Model guide or reference",
+        "verificationStatus": "Verified",
+        "scope": "Model-specific",
+        "confidence": "High",
+        "notes": ""
+      }
+    ],
+    "ownerCommunities": [],
+    "knownIssues": [],
+    "similarModels": [],
+    "missingInformation": [],
+    "sources": [
+      {
+        "type": "CuratedResourceSet",
+        "label": "B-Atlas Model Character + Resources Batch 28 — Bayliner",
+        "verificationStatus": "Links researched and checked 2026-08-07"
+      }
+    ],
+    "confidence": "Moderate",
+    "coverage": {
+      "BoatModelID": "BAYL-3888-MO",
+      "Categories": {
+        "Identity": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Specifications": {
+          "Known": 10,
+          "Total": 10,
+          "Score": 100
+        },
+        "Configuration": {
+          "Known": 5,
+          "Total": 5,
+          "Score": 100
+        },
+        "Accommodation": {
+          "Known": 4,
+          "Total": 4,
+          "Score": 100
+        },
+        "Suitability": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Ownership": {
+          "Known": 5,
+          "Total": 5,
+          "Score": 100
+        },
+        "Evidence": {
+          "Known": 0,
+          "Total": 1,
+          "Score": 0
+        }
+      },
+      "OverallScore": 86,
+      "SourceCount": 1,
+      "VerifiedSourceCount": 0,
+      "ContradictionCount": 0,
+      "RelationshipCount": 3,
+      "CoverageStatus": "Strong",
+      "GeneratedAt": "2026-07-26",
+      "ScoredFieldCount": 34
+    },
+    "updatedAt": "2026-08-07"
+  },
+  {
+    "schemaVersion": 2,
+    "generated": true,
+    "generatedFrom": [
+      "boatmodels.json",
+      "curatedresources.json",
+      "listingsearches.json",
+      "knowledgeannotations.json",
+      "knowledge-coverage.json"
+    ],
+    "identity": {
+      "boatModelId": "BAYL-4087",
+      "manufacturer": "Bayliner",
+      "model": "4087 Cockpit Motor Yacht Cockpit Motor Yacht",
+      "displayName": "Bayliner 4087 Cockpit Motor Yacht"
+    },
+    "intelligence": {
+      "overview": "The Bayliner 4087 Cockpit Motor Yacht is a cockpit version of the 3587 platform with three sleeping cabins, an aft owner cabin and twin inboard propulsion. It combines motor-yacht accommodation with easier cockpit boarding and water access, but the added cabins and systems leave limited engine-room working space.",
+      "suitability": {
+        "CoupleCruising": {
+          "Assessment": "Good",
+          "Summary": "The documented accommodation and cruising layout support use by a couple, subject to individual-condition survey.",
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/4087-cockpit-motor-yacht-1996-2002"
+          ]
+        },
+        "FamilyOrGuests": {
+          "Assessment": "Good",
+          "Summary": "Multiple sleeping areas improve guest separation.",
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/4087-cockpit-motor-yacht-1996-2002"
+          ]
+        },
+        "InlandAndCoastal": {
+          "Assessment": "Good",
+          "Summary": "The design is primarily suited to inland and coastal cruising within its documented dimensional and sea-state limits.",
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/4087-cockpit-motor-yacht-1996-2002"
+          ]
+        },
+        "SoloHandling": {
+          "Assessment": "Mixed",
+          "Summary": "Twin propulsion can aid docking, but duplicate systems and larger flybridge layouts increase workload.",
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/4087-cockpit-motor-yacht-1996-2002"
+          ]
+        }
+      },
+      "strengths": [
+        "Three sleeping cabins in a roughly 41-foot package",
+        "Aft owner cabin with private head and separate shower",
+        "Cockpit improves boarding and water access",
+        "Twin inboards provide maneuverability and cruising performance"
+      ],
+      "tradeOffs": [
+        "Engine room is tight",
+        "Three-cabin arrangement creates complex interior circulation",
+        "Twin engines and multiple heads increase systems burden",
+        "High bridge clearance limits some waterways and storage options"
+      ],
+      "bestFor": [
+        "Families needing three separate sleeping areas",
+        "Extended inland and coastal cruising",
+        "Owners wanting aft-cabin privacy plus a cockpit"
+      ],
+      "avoidIf": [
+        "You require low air draft",
+        "You want spacious machinery access",
+        "You prefer a simple two-cabin systems layout"
+      ],
+      "knownConcerns": [],
+      "inspectionFocus": [
+        "Both engines, transmissions, shafts and cooling systems",
+        "Engine-room access and serviceability",
+        "Fuel, water and sanitation tanks",
+        "Aft-cabin, deck and window moisture"
+      ],
+      "buyerQuestions": [
+        "Which gasoline or diesel engine package is installed?",
+        "What major engine-room service can be performed without component removal?",
+        "Have tanks, sanitation systems or deck leaks required repair?"
+      ],
+      "ownerActions": [
+        "Plan maintenance around restricted engine-room access",
+        "Monitor tank, hose and sanitation systems as the boat ages"
+      ],
+      "modelVariations": [
+        {
+          "Name": "Cockpit motor-yacht layout",
+          "Description": "The 4087 is the cockpit derivative of the Bayliner 3587 family and uses a distinctive three-stateroom arrangement.",
+          "AffectedYears": "1996–2002",
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/4087-cockpit-motor-yacht-1996-2002"
+          ],
+          "Confidence": "High"
+        },
+        {
+          "Name": "Diesel cruising package",
+          "Description": "Twin Cummins diesel installations are documented and provide approximately 20-knot cruise performance in period guidance.",
+          "AffectedYears": "1996–2002",
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/4087-cockpit-motor-yacht-1996-2002"
+          ],
+          "Confidence": "High"
+        }
+      ]
+    },
+    "evidence": [
+      {
+        "Scope": "IdentityAndDimensions",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BAYL-4087"
+          ],
+          "Years": {
+            "From": 1996,
+            "To": 2002
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/4087-cockpit-motor-yacht-1996-2002"
+        ],
+        "EvidenceTypes": [
+          "Technical or survey source",
+          "Marketplace observation"
+        ],
+        "Confidence": "High",
+        "Notes": "Identity, production period and principal specifications are based on model-specific references. Individual hull documentation remains controlling."
+      },
+      {
+        "Scope": "OverviewAndSuitability",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BAYL-4087"
+          ],
+          "Years": {
+            "From": 1996,
+            "To": 2002
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/4087-cockpit-motor-yacht-1996-2002"
+        ],
+        "EvidenceTypes": [
+          "Technical or survey source"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Buyer guidance is derived from documented layout, dimensions, hull form and propulsion configuration."
+      },
+      {
+        "Scope": "InspectionFocus",
+        "AppliesTo": {
+          "Scope": "General age-related guidance",
+          "Models": [
+            "BAYL-4087"
+          ],
+          "Years": {
+            "From": 1996,
+            "To": 2002
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/4087-cockpit-motor-yacht-1996-2002"
+        ],
+        "EvidenceTypes": [
+          "Technical or survey source"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Inspection guidance combines model-specific configuration with age-related system risks. These are inspection priorities, not assertions of a model-wide defect."
+      }
+    ],
+    "images": [
+      {
+        "title": "Bayliner 4087 Cockpit Motor Yacht image",
+        "url": "images/bayl-4087.jpg",
+        "sourceLabel": "B-Atlas image library",
+        "resourceType": "Model image",
+        "verificationStatus": "Local asset"
+      }
+    ],
+    "videos": [],
+    "listings": [],
+    "documents": [
+      {
+        "title": "Bayliner 4087 Cockpit Motor Yacht — Powerboat Guide",
+        "url": "https://www.hmy.com/yachting/powerboat-guide/bayliner/4087-cockpit-motor-yacht-1996-2002",
+        "sourceLabel": "HMY / factory / model archive",
+        "resourceType": "Model guide or reference",
+        "verificationStatus": "Verified",
+        "scope": "Model-specific",
+        "confidence": "High",
+        "notes": ""
+      }
+    ],
+    "ownerCommunities": [],
+    "knownIssues": [],
+    "similarModels": [],
+    "missingInformation": [],
+    "sources": [
+      {
+        "type": "CuratedResourceSet",
+        "label": "B-Atlas Model Character + Resources Batch 28 — Bayliner",
+        "verificationStatus": "Links researched and checked 2026-08-07"
+      }
+    ],
+    "confidence": "Moderate",
+    "coverage": {
+      "BoatModelID": "BAYL-4087",
+      "Categories": {
+        "Identity": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Specifications": {
+          "Known": 10,
+          "Total": 10,
+          "Score": 100
+        },
+        "Configuration": {
+          "Known": 5,
+          "Total": 5,
+          "Score": 100
+        },
+        "Accommodation": {
+          "Known": 4,
+          "Total": 4,
+          "Score": 100
+        },
+        "Suitability": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Ownership": {
+          "Known": 5,
+          "Total": 5,
+          "Score": 100
+        },
+        "Evidence": {
+          "Known": 0,
+          "Total": 1,
+          "Score": 0
+        }
+      },
+      "OverallScore": 86,
+      "SourceCount": 1,
+      "VerifiedSourceCount": 0,
+      "ContradictionCount": 0,
+      "RelationshipCount": 7,
+      "CoverageStatus": "Strong",
+      "GeneratedAt": "2026-07-26",
+      "ScoredFieldCount": 34
+    },
+    "updatedAt": "2026-08-07"
+  },
+  {
+    "schemaVersion": 2,
+    "generated": true,
+    "generatedFrom": [
+      "boatmodels.json",
+      "curatedresources.json",
+      "listingsearches.json",
+      "knowledgeannotations.json",
+      "knowledge-coverage.json"
+    ],
+    "identity": {
+      "boatModelId": "BENE-ANT-11",
+      "manufacturer": "Beneteau",
+      "model": "Antares 11 Coupé",
+      "displayName": "Beneteau Antares 11"
+    },
+    "intelligence": {
+      "overview": "The Beneteau Antares 11 Coupe is a French enclosed-pilothouse outboard cruiser designed for short coastal trips, fishing and weekend use. The Antares range prioritizes visibility, sheltered helm operation and practical cockpit access rather than traditional trawler-speed efficiency.",
+      "suitability": {
+        "CoupleCruising": {
+          "Assessment": "Good",
+          "Summary": "The enclosed helm and documented accommodation support weekend or extended couple cruising."
+        },
+        "SoloHandling": {
+          "Assessment": "Mixed",
+          "Summary": "Side-door access and good visibility help; docking burden rises with size, windage and twin-engine/flybridge configuration."
+        },
+        "InlandWaterways": {
+          "Assessment": "Good",
+          "Summary": "The enclosed cruising layout works well on inland routes; beam and air draft must be checked against route restrictions."
+        },
+        "ExposedWater": {
+          "Assessment": "Mixed",
+          "Summary": "Factory CE ratings and hull form support coastal use; loading, weather and individual boat condition remain decisive."
+        }
+      },
+      "strengths": [
+        "Protected pilothouse helm",
+        "Outboard propulsion simplifies engine access and winterization",
+        "Practical cockpit and side-deck access for coastal use"
+      ],
+      "tradeOffs": [
+        "Planing-speed operation uses substantially more fuel than displacement cruising",
+        "Outboard installations occupy transom space",
+        "Accommodation and tankage are modest relative to trawler-style cruisers of similar overall length"
+      ],
+      "bestFor": [
+        "Weekend coastal cruising",
+        "Owners wanting enclosed outboard operation",
+        "Fishing and family day use with occasional overnighting"
+      ],
+      "avoidIf": [
+        "You primarily cruise at 6–8 knots for maximum economy",
+        "You require large long-range tankage",
+        "You want shaft-drive diesel propulsion"
+      ],
+      "knownConcerns": [],
+      "inspectionFocus": [
+        "Inspect outboard service history, mounting and steering",
+        "Inspect pilothouse windows, doors and roof penetrations",
+        "Inspect cockpit drainage and transom structure",
+        "Verify tankage, sleeping layout and fitted sanitation equipment"
+      ],
+      "buyerQuestions": [
+        "What service, repair or inspection history is available for inspect outboard service history, mounting and steering?",
+        "What service, repair or inspection history is available for inspect pilothouse windows, doors and roof penetrations?",
+        "What service, repair or inspection history is available for inspect cockpit drainage and transom structure?",
+        "What service, repair or inspection history is available for verify tankage, sleeping layout and fitted sanitation equipment?"
+      ],
+      "ownerActions": [
+        "Keep windows, hatches, deck hardware and exterior penetrations sealed",
+        "Maintain propulsion, cooling, exhaust, steering and electrical systems to documented intervals",
+        "Document machinery and system upgrades for future survey and resale"
+      ],
+      "modelVariations": []
+    },
+    "evidence": [
+      {
+        "Scope": "IdentityAndDimensions",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BENE-ANT-11"
+          ],
+          "Years": {
+            "From": 2020,
+            "To": null
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.beneteau.com/en-us/antares-outboard/antares-11"
+        ],
+        "EvidenceTypes": [
+          "Factory documented"
+        ],
+        "Confidence": "High",
+        "Notes": "Factory and model-specific documentation support identity and representative specifications."
+      },
+      {
+        "Scope": "OverviewAndSuitability",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BENE-ANT-11"
+          ],
+          "Years": {
+            "From": 2020,
+            "To": null
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.beneteau.com/en-us/antares-outboard/antares-11"
+        ],
+        "EvidenceTypes": [
+          "Factory documented"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Guidance is derived from documented layout, hull form, propulsion and dimensions."
+      },
+      {
+        "Scope": "InspectionFocus",
+        "AppliesTo": {
+          "Scope": "Model family",
+          "Models": [
+            "BENE-ANT-11"
+          ],
+          "Years": {
+            "From": 2020,
+            "To": null
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.beneteau.com/en-us/antares-outboard/antares-11"
+        ],
+        "EvidenceTypes": [
+          "Factory documented",
+          "Technical or survey source"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Inspection guidance reflects configuration and age exposure; it is not a claim that every hull has a defect."
+      }
+    ],
+    "images": [
+      {
+        "title": "Beneteau Antares 11 image",
+        "url": "images/bene-ant-11.jpg",
+        "sourceLabel": "B-Atlas image library",
+        "resourceType": "Model image",
+        "verificationStatus": "Local asset"
+      }
+    ],
+    "videos": [],
+    "listings": [],
+    "documents": [
+      {
+        "title": "Beneteau Antares 11 — manufacturer / heritage reference",
+        "url": "https://www.beneteau.com/en-us/antares-outboard/antares-11",
+        "sourceLabel": "Beneteau",
+        "resourceType": "Manufacturer model or heritage page",
+        "verificationStatus": "Verified",
+        "scope": "Model-specific",
+        "confidence": "High",
+        "notes": ""
+      }
+    ],
+    "ownerCommunities": [],
+    "knownIssues": [],
+    "similarModels": [],
+    "missingInformation": [],
+    "sources": [
+      {
+        "type": "CuratedResourceSet",
+        "label": "B-Atlas Model Character + Resources Batch 31 — Beneteau / Jeanneau",
+        "verificationStatus": "Links researched and checked 2026-08-07"
+      }
+    ],
+    "confidence": "Moderate",
+    "coverage": {
+      "BoatModelID": "BENE-ANT-11",
+      "Categories": {
+        "Identity": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Specifications": {
+          "Known": 10,
+          "Total": 10,
+          "Score": 100
+        },
+        "Configuration": {
+          "Known": 5,
+          "Total": 5,
+          "Score": 100
+        },
+        "Accommodation": {
+          "Known": 4,
+          "Total": 4,
+          "Score": 100
+        },
+        "Suitability": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Ownership": {
+          "Known": 5,
+          "Total": 5,
+          "Score": 100
+        },
+        "Evidence": {
+          "Known": 0,
+          "Total": 1,
+          "Score": 0
+        }
+      },
+      "OverallScore": 86,
+      "SourceCount": 1,
+      "VerifiedSourceCount": 0,
+      "ContradictionCount": 0,
+      "RelationshipCount": 4,
+      "CoverageStatus": "Strong",
+      "GeneratedAt": "2026-07-26",
+      "ScoredFieldCount": 34
+    },
+    "updatedAt": "2026-08-07"
+  },
+  {
+    "schemaVersion": 2,
+    "generated": true,
+    "generatedFrom": [
+      "boatmodels.json",
+      "curatedresources.json",
+      "listingsearches.json",
+      "knowledgeannotations.json",
+      "knowledge-coverage.json"
+    ],
+    "identity": {
+      "boatModelId": "BENE-30-SW",
+      "manufacturer": "Beneteau",
+      "model": "Swift Trawler 30 Flybridge",
+      "displayName": "Beneteau Swift Trawler 30"
+    },
+    "intelligence": {
+      "overview": "The Beneteau Swift Trawler 30 is a compact flybridge passagemaker-style cruiser built around a semi-planing hull, single diesel shaft drive and a bright deck-saloon layout. It combines displacement-speed economy with the ability to cruise substantially faster when required.",
+      "suitability": {
+        "CoupleCruising": {
+          "Assessment": "Good",
+          "Summary": "The enclosed helm and documented accommodation support weekend or extended couple cruising."
+        },
+        "SoloHandling": {
+          "Assessment": "Good",
+          "Summary": "Side-door access and good visibility help; docking burden rises with size, windage and twin-engine/flybridge configuration."
+        },
+        "InlandWaterways": {
+          "Assessment": "Good",
+          "Summary": "The enclosed cruising layout works well on inland routes; beam and air draft must be checked against route restrictions."
+        },
+        "ExposedWater": {
+          "Assessment": "Good",
+          "Summary": "Factory CE ratings and hull form support coastal use; loading, weather and individual boat condition remain decisive."
+        }
+      },
+      "strengths": [
+        "Single diesel shaft drive simplifies machinery compared with larger twin-engine Swift Trawlers",
+        "Flybridge plus lower helm provide flexible all-weather operation",
+        "Compact dimensions retain useful long-cruise accommodation"
+      ],
+      "tradeOffs": [
+        "Flybridge adds windage and air draft",
+        "Fast-cruise capability comes with higher fuel burn than displacement operation",
+        "One-cabin layout is less private for extended guest cruising"
+      ],
+      "bestFor": [
+        "Couples wanting a compact long-range cruising layout",
+        "Great Loop and inland/coastal cruising",
+        "Buyers wanting single-diesel simplicity with flybridge visibility"
+      ],
+      "avoidIf": [
+        "You require two private sleeping cabins",
+        "You need low bridge clearance without flybridge windage",
+        "You want true full-displacement behavior only"
+      ],
+      "knownConcerns": [],
+      "inspectionFocus": [
+        "Inspect flybridge structure, helm controls and weather exposure",
+        "Inspect single-diesel cooling, exhaust, shaft and stern gear",
+        "Inspect saloon windows, side door and deck penetrations for leaks",
+        "Inspect fuel, water, sanitation and electrical systems"
+      ],
+      "buyerQuestions": [
+        "What service, repair or inspection history is available for inspect flybridge structure, helm controls and weather exposure?",
+        "What service, repair or inspection history is available for inspect single-diesel cooling, exhaust, shaft and stern gear?",
+        "What service, repair or inspection history is available for inspect saloon windows, side door and deck penetrations for leaks?",
+        "What service, repair or inspection history is available for inspect fuel, water, sanitation and electrical systems?"
+      ],
+      "ownerActions": [
+        "Keep windows, hatches, deck hardware and exterior penetrations sealed",
+        "Maintain propulsion, cooling, exhaust, steering and electrical systems to documented intervals",
+        "Document machinery and system upgrades for future survey and resale"
+      ],
+      "modelVariations": []
+    },
+    "evidence": [
+      {
+        "Scope": "IdentityAndDimensions",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BENE-30-SW"
+          ],
+          "Years": {
+            "From": 2016,
+            "To": 2020
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.beneteau.com/en-us/heritage-swift-trawler/swift-trawler-30"
+        ],
+        "EvidenceTypes": [
+          "Factory documented"
+        ],
+        "Confidence": "High",
+        "Notes": "Factory and model-specific documentation support identity and representative specifications."
+      },
+      {
+        "Scope": "OverviewAndSuitability",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BENE-30-SW"
+          ],
+          "Years": {
+            "From": 2016,
+            "To": 2020
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.beneteau.com/en-us/heritage-swift-trawler/swift-trawler-30"
+        ],
+        "EvidenceTypes": [
+          "Factory documented"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Guidance is derived from documented layout, hull form, propulsion and dimensions."
+      },
+      {
+        "Scope": "InspectionFocus",
+        "AppliesTo": {
+          "Scope": "Model family",
+          "Models": [
+            "BENE-30-SW"
+          ],
+          "Years": {
+            "From": 2016,
+            "To": 2020
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.beneteau.com/en-us/heritage-swift-trawler/swift-trawler-30"
+        ],
+        "EvidenceTypes": [
+          "Factory documented",
+          "Technical or survey source"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Inspection guidance reflects configuration and age exposure; it is not a claim that every hull has a defect."
+      }
+    ],
+    "images": [
+      {
+        "title": "Beneteau Swift Trawler 30 image",
+        "url": "images/bene-30-sw.jpg",
+        "sourceLabel": "B-Atlas image library",
+        "resourceType": "Model image",
+        "verificationStatus": "Local asset"
+      }
+    ],
+    "videos": [],
+    "listings": [],
+    "documents": [
+      {
+        "title": "Beneteau Swift Trawler 30 — manufacturer / heritage reference",
+        "url": "https://www.beneteau.com/en-us/heritage-swift-trawler/swift-trawler-30",
+        "sourceLabel": "Beneteau",
+        "resourceType": "Manufacturer model or heritage page",
+        "verificationStatus": "Verified",
+        "scope": "Model-specific",
+        "confidence": "High",
+        "notes": ""
+      }
+    ],
+    "ownerCommunities": [],
+    "knownIssues": [],
+    "similarModels": [],
+    "missingInformation": [],
+    "sources": [
+      {
+        "type": "CuratedResourceSet",
+        "label": "B-Atlas Model Character + Resources Batch 31 — Beneteau / Jeanneau",
+        "verificationStatus": "Links researched and checked 2026-08-07"
+      }
+    ],
+    "confidence": "Moderate",
+    "coverage": {
+      "BoatModelID": "BENE-30-SW",
+      "Categories": {
+        "Identity": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Specifications": {
+          "Known": 10,
+          "Total": 10,
+          "Score": 100
+        },
+        "Configuration": {
+          "Known": 5,
+          "Total": 5,
+          "Score": 100
+        },
+        "Accommodation": {
+          "Known": 4,
+          "Total": 4,
+          "Score": 100
+        },
+        "Suitability": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Ownership": {
+          "Known": 5,
+          "Total": 5,
+          "Score": 100
+        },
+        "Evidence": {
+          "Known": 0,
+          "Total": 1,
+          "Score": 0
+        }
+      },
+      "OverallScore": 86,
+      "SourceCount": 1,
+      "VerifiedSourceCount": 0,
+      "ContradictionCount": 0,
+      "RelationshipCount": 6,
+      "CoverageStatus": "Strong",
+      "GeneratedAt": "2026-07-26",
+      "ScoredFieldCount": 34
+    },
+    "updatedAt": "2026-08-07"
+  },
+  {
+    "schemaVersion": 2,
+    "generated": true,
+    "generatedFrom": [
+      "boatmodels.json",
+      "curatedresources.json",
+      "listingsearches.json",
+      "knowledgeannotations.json",
+      "knowledge-coverage.json"
+    ],
+    "identity": {
+      "boatModelId": "BENE-34-SW",
+      "manufacturer": "Beneteau",
+      "model": "Swift Trawler 34 Flybridge or Sedan",
+      "displayName": "Beneteau Swift Trawler 34"
+    },
+    "intelligence": {
+      "overview": "The Beneteau Swift Trawler 34 is a semi-displacement cruising boat offered with or without a flybridge. Its asymmetrical deck layout, single diesel shaft drive and broad speed range made it one of the defining early Swift Trawler models.",
+      "suitability": {
+        "CoupleCruising": {
+          "Assessment": "Good",
+          "Summary": "The enclosed helm and documented accommodation support weekend or extended couple cruising."
+        },
+        "SoloHandling": {
+          "Assessment": "Mixed",
+          "Summary": "Side-door access and good visibility help; docking burden rises with size, windage and twin-engine/flybridge configuration."
+        },
+        "InlandWaterways": {
+          "Assessment": "Mixed",
+          "Summary": "The enclosed cruising layout works well on inland routes; beam and air draft must be checked against route restrictions."
+        },
+        "ExposedWater": {
+          "Assessment": "Good",
+          "Summary": "Factory CE ratings and hull form support coastal use; loading, weather and individual boat condition remain decisive."
+        }
+      },
+      "strengths": [
+        "Single diesel shaft propulsion",
+        "Available in flybridge and non-flybridge configurations",
+        "Useful two-cabin cruising accommodation",
+        "Broad operating-speed range"
+      ],
+      "tradeOffs": [
+        "Asymmetrical side-deck arrangement favors one side for circulation",
+        "Flybridge examples carry substantially more air draft",
+        "Semi-displacement performance is less economical at speed than slow displacement cruising"
+      ],
+      "bestFor": [
+        "Couples seeking a practical Great Loop or coastal cruiser",
+        "Buyers wanting a single diesel with two cabins",
+        "Owners choosing between low-air-draft sedan and flybridge visibility"
+      ],
+      "avoidIf": [
+        "You require symmetrical wide side decks",
+        "You need very low air draft in flybridge form",
+        "You expect full-displacement fuel economy at all speeds"
+      ],
+      "knownConcerns": [],
+      "inspectionFocus": [
+        "Confirm flybridge versus non-flybridge factory configuration",
+        "Inspect single diesel, shaft, exhaust and cooling systems",
+        "Inspect asymmetric side deck, railings, deck hardware and windows",
+        "Review flybridge or roof structure for water intrusion",
+        "Verify air draft for the actual configuration"
+      ],
+      "buyerQuestions": [
+        "What service, repair or inspection history is available for confirm flybridge versus non-flybridge factory configuration?",
+        "What service, repair or inspection history is available for inspect single diesel, shaft, exhaust and cooling systems?",
+        "What service, repair or inspection history is available for inspect asymmetric side deck, railings, deck hardware and windows?",
+        "What service, repair or inspection history is available for review flybridge or roof structure for water intrusion?",
+        "What service, repair or inspection history is available for verify air draft for the actual configuration?"
+      ],
+      "ownerActions": [
+        "Keep windows, hatches, deck hardware and exterior penetrations sealed",
+        "Maintain propulsion, cooling, exhaust, steering and electrical systems to documented intervals",
+        "Document machinery and system upgrades for future survey and resale"
+      ],
+      "modelVariations": [
+        {
+          "Name": "Flybridge or non-flybridge versions",
+          "Description": "Beneteau offered the Swift Trawler 34 with or without an upper helm/flybridge.",
+          "AffectedYears": "Production run",
+          "EvidenceRefs": [
+            "https://www.beneteau.com/en-us/swift-trawler/swift-trawler-34"
+          ],
+          "Confidence": "High"
+        }
+      ]
+    },
+    "evidence": [
+      {
+        "Scope": "IdentityAndDimensions",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BENE-34-SW"
+          ],
+          "Years": {
+            "From": 2009,
+            "To": 2016
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.beneteau.com/en-us/swift-trawler/swift-trawler-34"
+        ],
+        "EvidenceTypes": [
+          "Factory documented"
+        ],
+        "Confidence": "High",
+        "Notes": "Factory and model-specific documentation support identity and representative specifications."
+      },
+      {
+        "Scope": "OverviewAndSuitability",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BENE-34-SW"
+          ],
+          "Years": {
+            "From": 2009,
+            "To": 2016
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.beneteau.com/en-us/swift-trawler/swift-trawler-34"
+        ],
+        "EvidenceTypes": [
+          "Factory documented"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Guidance is derived from documented layout, hull form, propulsion and dimensions."
+      },
+      {
+        "Scope": "InspectionFocus",
+        "AppliesTo": {
+          "Scope": "Model family",
+          "Models": [
+            "BENE-34-SW"
+          ],
+          "Years": {
+            "From": 2009,
+            "To": 2016
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.beneteau.com/en-us/swift-trawler/swift-trawler-34"
+        ],
+        "EvidenceTypes": [
+          "Factory documented",
+          "Technical or survey source"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Inspection guidance reflects configuration and age exposure; it is not a claim that every hull has a defect."
+      }
+    ],
+    "images": [
+      {
+        "title": "Beneteau Swift Trawler 34 image",
+        "url": "images/bene-34-sw.jpg",
+        "sourceLabel": "B-Atlas image library",
+        "resourceType": "Model image",
+        "verificationStatus": "Local asset"
+      }
+    ],
+    "videos": [],
+    "listings": [],
+    "documents": [
+      {
+        "title": "Beneteau Swift Trawler 34 — manufacturer / heritage reference",
+        "url": "https://www.beneteau.com/swift-trawler/swift-trawler-34",
+        "sourceLabel": "Beneteau",
+        "resourceType": "Manufacturer model or heritage page",
+        "verificationStatus": "Verified",
+        "scope": "Model-specific",
+        "confidence": "High",
+        "notes": ""
+      }
+    ],
+    "ownerCommunities": [],
+    "knownIssues": [],
+    "similarModels": [],
+    "missingInformation": [],
+    "sources": [
+      {
+        "type": "CuratedResourceSet",
+        "label": "B-Atlas Model Character + Resources Batch 31 — Beneteau / Jeanneau",
+        "verificationStatus": "Links researched and checked 2026-08-07"
+      }
+    ],
+    "confidence": "Moderate",
+    "coverage": {
+      "BoatModelID": "BENE-34-SW",
+      "Categories": {
+        "Identity": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Specifications": {
+          "Known": 10,
+          "Total": 10,
+          "Score": 100
+        },
+        "Configuration": {
+          "Known": 5,
+          "Total": 5,
+          "Score": 100
+        },
+        "Accommodation": {
+          "Known": 4,
+          "Total": 4,
+          "Score": 100
+        },
+        "Suitability": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Ownership": {
+          "Known": 5,
+          "Total": 5,
+          "Score": 100
+        },
+        "Evidence": {
+          "Known": 0,
+          "Total": 1,
+          "Score": 0
+        }
+      },
+      "OverallScore": 86,
+      "SourceCount": 1,
+      "VerifiedSourceCount": 0,
+      "ContradictionCount": 0,
+      "RelationshipCount": 5,
+      "CoverageStatus": "Strong",
+      "GeneratedAt": "2026-07-26",
+      "ScoredFieldCount": 34
+    },
+    "updatedAt": "2026-08-07"
+  },
+  {
+    "schemaVersion": 2,
+    "generated": true,
+    "generatedFrom": [
+      "boatmodels.json",
+      "curatedresources.json",
+      "listingsearches.json",
+      "knowledgeannotations.json",
+      "knowledge-coverage.json"
+    ],
+    "identity": {
+      "boatModelId": "BENE-35-SW",
+      "manufacturer": "Beneteau",
+      "model": "Swift Trawler 35 Flybridge",
+      "displayName": "Beneteau Swift Trawler 35"
+    },
+    "intelligence": {
+      "overview": "The Beneteau Swift Trawler 35 succeeded the 34 with a more contemporary two-cabin interior while retaining single-diesel shaft propulsion, semi-planing hull form and a substantial flybridge. It is aimed at extended family or couple cruising rather than low-speed trawler operation alone.",
+      "suitability": {
+        "CoupleCruising": {
+          "Assessment": "Good",
+          "Summary": "The enclosed helm and documented accommodation support weekend or extended couple cruising."
+        },
+        "SoloHandling": {
+          "Assessment": "Mixed",
+          "Summary": "Side-door access and good visibility help; docking burden rises with size, windage and twin-engine/flybridge configuration."
+        },
+        "InlandWaterways": {
+          "Assessment": "Mixed",
+          "Summary": "The enclosed cruising layout works well on inland routes; beam and air draft must be checked against route restrictions."
+        },
+        "ExposedWater": {
+          "Assessment": "Good",
+          "Summary": "Factory CE ratings and hull form support coastal use; loading, weather and individual boat condition remain decisive."
+        }
+      },
+      "strengths": [
+        "Single-diesel shaft propulsion",
+        "Two private cabins in a relatively compact hull",
+        "Large flybridge and enclosed lower helm",
+        "Semi-planing hull permits both economical slow cruise and faster passages"
+      ],
+      "tradeOffs": [
+        "13-foot-plus beam increases slip and haul-out requirements",
+        "Flybridge creates significant air draft and exterior exposure",
+        "Systems complexity is higher than on simpler traditional trawlers"
+      ],
+      "bestFor": [
+        "Couples or small families undertaking extended cruising",
+        "Great Loop and coastal cruising where beam is acceptable",
+        "Buyers wanting a modern single-engine flybridge cruiser"
+      ],
+      "avoidIf": [
+        "Your marina or storage limit is near 12 feet of beam",
+        "You need low bridge clearance",
+        "You prefer minimal systems and exterior equipment"
+      ],
+      "knownConcerns": [],
+      "inspectionFocus": [
+        "Inspect flybridge deck, seating bases and helm penetrations",
+        "Inspect Cummins cooling, exhaust, shaft and stern gear",
+        "Inspect deckhouse glazing and side door seals",
+        "Review sanitation, electrical, heating and charging systems"
+      ],
+      "buyerQuestions": [
+        "What service, repair or inspection history is available for inspect flybridge deck, seating bases and helm penetrations?",
+        "What service, repair or inspection history is available for inspect Cummins cooling, exhaust, shaft and stern gear?",
+        "What service, repair or inspection history is available for inspect deckhouse glazing and side door seals?",
+        "What service, repair or inspection history is available for review sanitation, electrical, heating and charging systems?"
+      ],
+      "ownerActions": [
+        "Keep windows, hatches, deck hardware and exterior penetrations sealed",
+        "Maintain propulsion, cooling, exhaust, steering and electrical systems to documented intervals",
+        "Document machinery and system upgrades for future survey and resale"
+      ],
+      "modelVariations": []
+    },
+    "evidence": [
+      {
+        "Scope": "IdentityAndDimensions",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BENE-35-SW"
+          ],
+          "Years": {
+            "From": 2017,
+            "To": 2024
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.beneteau.com/en-us/former-swift-trawler/swift-trawler-35"
+        ],
+        "EvidenceTypes": [
+          "Factory documented"
+        ],
+        "Confidence": "High",
+        "Notes": "Factory and model-specific documentation support identity and representative specifications."
+      },
+      {
+        "Scope": "OverviewAndSuitability",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BENE-35-SW"
+          ],
+          "Years": {
+            "From": 2017,
+            "To": 2024
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.beneteau.com/en-us/former-swift-trawler/swift-trawler-35"
+        ],
+        "EvidenceTypes": [
+          "Factory documented"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Guidance is derived from documented layout, hull form, propulsion and dimensions."
+      },
+      {
+        "Scope": "InspectionFocus",
+        "AppliesTo": {
+          "Scope": "Model family",
+          "Models": [
+            "BENE-35-SW"
+          ],
+          "Years": {
+            "From": 2017,
+            "To": 2024
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.beneteau.com/en-us/former-swift-trawler/swift-trawler-35"
+        ],
+        "EvidenceTypes": [
+          "Factory documented",
+          "Technical or survey source"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Inspection guidance reflects configuration and age exposure; it is not a claim that every hull has a defect."
+      }
+    ],
+    "images": [
+      {
+        "title": "Beneteau Swift Trawler 35 image",
+        "url": "images/bene-35-sw.jpg",
+        "sourceLabel": "B-Atlas image library",
+        "resourceType": "Model image",
+        "verificationStatus": "Local asset"
+      }
+    ],
+    "videos": [],
+    "listings": [],
+    "documents": [
+      {
+        "title": "Beneteau Swift Trawler 35 — manufacturer / heritage reference",
+        "url": "https://www.beneteau.com/en-us/former-swift-trawler/swift-trawler-35",
+        "sourceLabel": "Beneteau",
+        "resourceType": "Manufacturer model or heritage page",
+        "verificationStatus": "Verified",
+        "scope": "Model-specific",
+        "confidence": "High",
+        "notes": ""
+      }
+    ],
+    "ownerCommunities": [],
+    "knownIssues": [],
+    "similarModels": [],
+    "missingInformation": [],
+    "sources": [
+      {
+        "type": "CuratedResourceSet",
+        "label": "B-Atlas Model Character + Resources Batch 31 — Beneteau / Jeanneau",
+        "verificationStatus": "Links researched and checked 2026-08-07"
+      }
+    ],
+    "confidence": "Moderate",
+    "coverage": {
+      "BoatModelID": "BENE-35-SW",
+      "Categories": {
+        "Identity": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Specifications": {
+          "Known": 10,
+          "Total": 10,
+          "Score": 100
+        },
+        "Configuration": {
+          "Known": 5,
+          "Total": 5,
+          "Score": 100
+        },
+        "Accommodation": {
+          "Known": 4,
+          "Total": 4,
+          "Score": 100
+        },
+        "Suitability": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Ownership": {
+          "Known": 5,
+          "Total": 5,
+          "Score": 100
+        },
+        "Evidence": {
+          "Known": 0,
+          "Total": 1,
+          "Score": 0
+        }
+      },
+      "OverallScore": 86,
+      "SourceCount": 1,
+      "VerifiedSourceCount": 0,
+      "ContradictionCount": 0,
+      "RelationshipCount": 5,
+      "CoverageStatus": "Strong",
+      "GeneratedAt": "2026-07-26",
+      "ScoredFieldCount": 34
+    },
+    "updatedAt": "2026-08-07"
+  },
+  {
+    "schemaVersion": 2,
+    "generated": true,
+    "generatedFrom": [
+      "boatmodels.json",
+      "curatedresources.json",
+      "listingsearches.json",
+      "knowledgeannotations.json",
+      "knowledge-coverage.json"
+    ],
+    "identity": {
+      "boatModelId": "BENE-47",
+      "manufacturer": "Beneteau",
+      "model": "Swift Trawler 47 Flybridge",
+      "displayName": "Beneteau Swift Trawler 47"
+    },
+    "intelligence": {
+      "overview": "The Beneteau Swift Trawler 47 is a three-cabin flybridge cruiser designed for faster long-distance family cruising. Twin diesels, broad side decks and a large flybridge make it substantially more capable and more complex than the smaller single-engine Swift Trawlers.",
+      "suitability": {
+        "CoupleCruising": {
+          "Assessment": "Good",
+          "Summary": "The enclosed helm and documented accommodation support weekend or extended couple cruising."
+        },
+        "SoloHandling": {
+          "Assessment": "Mixed",
+          "Summary": "Side-door access and good visibility help; docking burden rises with size, windage and twin-engine/flybridge configuration."
+        },
+        "InlandWaterways": {
+          "Assessment": "Mixed",
+          "Summary": "The enclosed cruising layout works well on inland routes; beam and air draft must be checked against route restrictions."
+        },
+        "ExposedWater": {
+          "Assessment": "Good",
+          "Summary": "Factory CE ratings and hull form support coastal use; loading, weather and individual boat condition remain decisive."
+        }
+      },
+      "strengths": [
+        "Three-cabin family cruising layout",
+        "Twin-diesel redundancy and maneuverability",
+        "Large flybridge and practical side decks",
+        "Large fuel capacity supports extended passages"
+      ],
+      "tradeOffs": [
+        "Twin machinery and larger systems increase ownership cost",
+        "Nearly 15-foot beam requires larger slips and haul-out facilities",
+        "Flybridge air draft limits some inland routes"
+      ],
+      "bestFor": [
+        "Families or couples wanting substantial long-range accommodation",
+        "Coastal and Great Lakes cruising with larger marina infrastructure",
+        "Owners comfortable maintaining twin diesels and yacht-scale systems"
+      ],
+      "avoidIf": [
+        "You need compact slips or economical haul-out",
+        "You require low air draft",
+        "You want single-engine mechanical simplicity"
+      ],
+      "knownConcerns": [],
+      "inspectionFocus": [
+        "Inspect both engines, shafts, exhausts and cooling systems",
+        "Inspect flybridge structure, electronics and helm controls",
+        "Inspect side doors, glazing and deck penetrations",
+        "Review generator, charging, sanitation and domestic systems"
+      ],
+      "buyerQuestions": [
+        "What service, repair or inspection history is available for inspect both engines, shafts, exhausts and cooling systems?",
+        "What service, repair or inspection history is available for inspect flybridge structure, electronics and helm controls?",
+        "What service, repair or inspection history is available for inspect side doors, glazing and deck penetrations?",
+        "What service, repair or inspection history is available for review generator, charging, sanitation and domestic systems?"
+      ],
+      "ownerActions": [
+        "Keep windows, hatches, deck hardware and exterior penetrations sealed",
+        "Maintain propulsion, cooling, exhaust, steering and electrical systems to documented intervals",
+        "Document machinery and system upgrades for future survey and resale"
+      ],
+      "modelVariations": []
+    },
+    "evidence": [
+      {
+        "Scope": "IdentityAndDimensions",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BENE-47"
+          ],
+          "Years": {
+            "From": 2019,
+            "To": 2022
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.beneteau.com/en-us/heritage-swift-trawler/swift-trawler-47"
+        ],
+        "EvidenceTypes": [
+          "Factory documented"
+        ],
+        "Confidence": "High",
+        "Notes": "Factory and model-specific documentation support identity and representative specifications."
+      },
+      {
+        "Scope": "OverviewAndSuitability",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BENE-47"
+          ],
+          "Years": {
+            "From": 2019,
+            "To": 2022
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.beneteau.com/en-us/heritage-swift-trawler/swift-trawler-47"
+        ],
+        "EvidenceTypes": [
+          "Factory documented"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Guidance is derived from documented layout, hull form, propulsion and dimensions."
+      },
+      {
+        "Scope": "InspectionFocus",
+        "AppliesTo": {
+          "Scope": "Model family",
+          "Models": [
+            "BENE-47"
+          ],
+          "Years": {
+            "From": 2019,
+            "To": 2022
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.beneteau.com/en-us/heritage-swift-trawler/swift-trawler-47"
+        ],
+        "EvidenceTypes": [
+          "Factory documented",
+          "Technical or survey source"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Inspection guidance reflects configuration and age exposure; it is not a claim that every hull has a defect."
+      }
+    ],
+    "images": [
+      {
+        "title": "Beneteau Swift Trawler 47 image",
+        "url": "images/bene-47.jpg",
+        "sourceLabel": "B-Atlas image library",
+        "resourceType": "Model image",
+        "verificationStatus": "Local asset"
+      }
+    ],
+    "videos": [],
+    "listings": [],
+    "documents": [
+      {
+        "title": "Beneteau Swift Trawler 47 — manufacturer / heritage reference",
+        "url": "https://www.beneteau.com/en-us/heritage-swift-trawler/swift-trawler-47",
+        "sourceLabel": "Beneteau",
+        "resourceType": "Manufacturer model or heritage page",
+        "verificationStatus": "Verified",
+        "scope": "Model-specific",
+        "confidence": "High",
+        "notes": ""
+      }
+    ],
+    "ownerCommunities": [],
+    "knownIssues": [],
+    "similarModels": [],
+    "missingInformation": [],
+    "sources": [
+      {
+        "type": "CuratedResourceSet",
+        "label": "B-Atlas Model Character + Resources Batch 31 — Beneteau / Jeanneau",
+        "verificationStatus": "Links researched and checked 2026-08-07"
+      }
+    ],
+    "confidence": "Moderate",
+    "coverage": {
+      "BoatModelID": "BENE-47",
+      "Categories": {
+        "Identity": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Specifications": {
+          "Known": 10,
+          "Total": 10,
+          "Score": 100
+        },
+        "Configuration": {
+          "Known": 5,
+          "Total": 5,
+          "Score": 100
+        },
+        "Accommodation": {
+          "Known": 4,
+          "Total": 4,
+          "Score": 100
+        },
+        "Suitability": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Ownership": {
+          "Known": 5,
+          "Total": 5,
+          "Score": 100
+        },
+        "Evidence": {
+          "Known": 0,
+          "Total": 1,
+          "Score": 0
+        }
+      },
+      "OverallScore": 86,
+      "SourceCount": 1,
+      "VerifiedSourceCount": 0,
+      "ContradictionCount": 0,
+      "RelationshipCount": 5,
+      "CoverageStatus": "Strong",
+      "GeneratedAt": "2026-07-26",
+      "ScoredFieldCount": 34
+    },
+    "updatedAt": "2026-08-07"
+  },
+  {
+    "schemaVersion": 2,
+    "generated": true,
+    "generatedFrom": [
+      "boatmodels.json",
+      "curatedresources.json",
+      "listingsearches.json",
+      "knowledgeannotations.json",
+      "knowledge-coverage.json"
+    ],
+    "identity": {
+      "boatModelId": "BENE-48",
+      "manufacturer": "Beneteau",
+      "model": "Swift Trawler 48 Flybridge",
+      "displayName": "Beneteau Swift Trawler 48"
+    },
+    "intelligence": {
+      "overview": "The Beneteau Swift Trawler 48 is a modern three-cabin flybridge passagemaker-style cruiser with twin shaft-drive Cummins diesels and a semi-planing hull. Factory data emphasizes long-range operation at displacement speeds while retaining cruising speeds around the high teens.",
+      "suitability": {
+        "CoupleCruising": {
+          "Assessment": "Good",
+          "Summary": "The enclosed helm and documented accommodation support weekend or extended couple cruising."
+        },
+        "SoloHandling": {
+          "Assessment": "Mixed",
+          "Summary": "Side-door access and good visibility help; docking burden rises with size, windage and twin-engine/flybridge configuration."
+        },
+        "InlandWaterways": {
+          "Assessment": "Mixed",
+          "Summary": "The enclosed cruising layout works well on inland routes; beam and air draft must be checked against route restrictions."
+        },
+        "ExposedWater": {
+          "Assessment": "Good",
+          "Summary": "Factory CE ratings and hull form support coastal use; loading, weather and individual boat condition remain decisive."
+        }
+      },
+      "strengths": [
+        "Three-cabin accommodation with two heads",
+        "Large 510-gallon fuel capacity",
+        "Twin shaft-drive diesels",
+        "Factory-documented efficient displacement and fast-cruise operating modes"
+      ],
+      "tradeOffs": [
+        "19-foot bridge clearance is a major inland-route constraint",
+        "Twin diesel and yacht-scale systems raise maintenance cost",
+        "14-foot-9-inch beam requires substantial marina infrastructure"
+      ],
+      "bestFor": [
+        "Extended family coastal and Great Lakes cruising",
+        "Owners wanting modern passagemaker comfort with speed reserve",
+        "Buyers with marina access for a 48-foot yacht"
+      ],
+      "avoidIf": [
+        "Your route has restrictive bridge clearance",
+        "You need compact slips or economical storage",
+        "You prefer single-engine simplicity"
+      ],
+      "knownConcerns": [],
+      "inspectionFocus": [
+        "Inspect twin Cummins engines, shafts, cooling and exhaust",
+        "Inspect flybridge structure, T-top options and exposed systems",
+        "Inspect side door, glazing and roof penetrations",
+        "Review generator, battery, charging, sanitation and domestic systems"
+      ],
+      "buyerQuestions": [
+        "What service, repair or inspection history is available for inspect twin Cummins engines, shafts, cooling and exhaust?",
+        "What service, repair or inspection history is available for inspect flybridge structure, T-top options and exposed systems?",
+        "What service, repair or inspection history is available for inspect side door, glazing and roof penetrations?",
+        "What service, repair or inspection history is available for review generator, battery, charging, sanitation and domestic systems?"
+      ],
+      "ownerActions": [
+        "Keep windows, hatches, deck hardware and exterior penetrations sealed",
+        "Maintain propulsion, cooling, exhaust, steering and electrical systems to documented intervals",
+        "Document machinery and system upgrades for future survey and resale"
+      ],
+      "modelVariations": []
+    },
+    "evidence": [
+      {
+        "Scope": "IdentityAndDimensions",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BENE-48"
+          ],
+          "Years": {
+            "From": 2022,
+            "To": null
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.beneteau.com/en-us/swift-trawler/swift-trawler-48"
+        ],
+        "EvidenceTypes": [
+          "Factory documented"
+        ],
+        "Confidence": "High",
+        "Notes": "Factory and model-specific documentation support identity and representative specifications."
+      },
+      {
+        "Scope": "OverviewAndSuitability",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BENE-48"
+          ],
+          "Years": {
+            "From": 2022,
+            "To": null
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.beneteau.com/en-us/swift-trawler/swift-trawler-48"
+        ],
+        "EvidenceTypes": [
+          "Factory documented"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Guidance is derived from documented layout, hull form, propulsion and dimensions."
+      },
+      {
+        "Scope": "InspectionFocus",
+        "AppliesTo": {
+          "Scope": "Model family",
+          "Models": [
+            "BENE-48"
+          ],
+          "Years": {
+            "From": 2022,
+            "To": null
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.beneteau.com/en-us/swift-trawler/swift-trawler-48"
+        ],
+        "EvidenceTypes": [
+          "Factory documented",
+          "Technical or survey source"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Inspection guidance reflects configuration and age exposure; it is not a claim that every hull has a defect."
+      }
+    ],
+    "images": [
+      {
+        "title": "Beneteau Swift Trawler 48 image",
+        "url": "images/bene-48.jpg",
+        "sourceLabel": "B-Atlas image library",
+        "resourceType": "Model image",
+        "verificationStatus": "Local asset"
+      }
+    ],
+    "videos": [],
+    "listings": [],
+    "documents": [
+      {
+        "title": "Beneteau Swift Trawler 48 — manufacturer / heritage reference",
+        "url": "https://www.beneteau.com/en-us/swift-trawler/swift-trawler-48",
+        "sourceLabel": "Beneteau",
+        "resourceType": "Manufacturer model or heritage page",
+        "verificationStatus": "Verified",
+        "scope": "Model-specific",
+        "confidence": "High",
+        "notes": ""
+      }
+    ],
+    "ownerCommunities": [],
+    "knownIssues": [],
+    "similarModels": [],
+    "missingInformation": [],
+    "sources": [
+      {
+        "type": "CuratedResourceSet",
+        "label": "B-Atlas Model Character + Resources Batch 31 — Beneteau / Jeanneau",
+        "verificationStatus": "Links researched and checked 2026-08-07"
+      }
+    ],
+    "confidence": "Moderate",
+    "coverage": {
+      "BoatModelID": "BENE-48",
+      "Categories": {
+        "Identity": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Specifications": {
+          "Known": 10,
+          "Total": 10,
+          "Score": 100
+        },
+        "Configuration": {
+          "Known": 5,
+          "Total": 5,
+          "Score": 100
+        },
+        "Accommodation": {
+          "Known": 4,
+          "Total": 4,
+          "Score": 100
+        },
+        "Suitability": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Ownership": {
+          "Known": 5,
+          "Total": 5,
+          "Score": 100
+        },
+        "Evidence": {
+          "Known": 0,
+          "Total": 1,
+          "Score": 0
+        }
+      },
+      "OverallScore": 86,
+      "SourceCount": 1,
+      "VerifiedSourceCount": 0,
+      "ContradictionCount": 0,
+      "RelationshipCount": 3,
+      "CoverageStatus": "Strong",
+      "GeneratedAt": "2026-07-26",
+      "ScoredFieldCount": 34
+    },
+    "updatedAt": "2026-08-07"
+  },
+  {
+    "schemaVersion": 2,
+    "generated": true,
+    "generatedFrom": [
+      "boatmodels.json",
+      "curatedresources.json",
+      "listingsearches.json",
+      "knowledgeannotations.json",
+      "knowledge-coverage.json"
+    ],
+    "identity": {
+      "boatModelId": "BENE-52",
+      "manufacturer": "Beneteau",
+      "model": "Swift Trawler 52 Flybridge Flagship",
+      "displayName": "Beneteau Swift Trawler 52"
+    },
+    "intelligence": {
+      "overview": "The Beneteau Swift Trawler 52 is an early large flagship of the Swift Trawler family, combining a 55-foot overall envelope, twin diesels, large tankage and a substantial flybridge. It is a yacht-scale cruising platform rather than a compact trawler.",
+      "suitability": {
+        "CoupleCruising": {
+          "Assessment": "Good",
+          "Summary": "The enclosed helm and documented accommodation support weekend or extended couple cruising."
+        },
+        "SoloHandling": {
+          "Assessment": "Mixed",
+          "Summary": "Side-door access and good visibility help; docking burden rises with size, windage and twin-engine/flybridge configuration."
+        },
+        "InlandWaterways": {
+          "Assessment": "Mixed",
+          "Summary": "The enclosed cruising layout works well on inland routes; beam and air draft must be checked against route restrictions."
+        },
+        "ExposedWater": {
+          "Assessment": "Good",
+          "Summary": "Factory CE ratings and hull form support coastal use; loading, weather and individual boat condition remain decisive."
+        }
+      },
+      "strengths": [
+        "Very large fuel and water capacities",
+        "Three-cabin long-range accommodation",
+        "Twin-diesel propulsion and substantial flybridge",
+        "High cruising capability for a trawler-style yacht"
+      ],
+      "tradeOffs": [
+        "16-foot-plus beam and 21-foot air draft impose major infrastructure limits",
+        "Large twin-diesel systems carry high operating and maintenance costs",
+        "Older examples now require age-sensitive inspection of complex domestic systems"
+      ],
+      "bestFor": [
+        "Experienced owners seeking large-volume long-distance cruising",
+        "Families needing three cabins and substantial tankage",
+        "Buyers with yacht-scale dockage and service access"
+      ],
+      "avoidIf": [
+        "You need inland-route bridge flexibility",
+        "You have compact marina or haul-out limits",
+        "You want low-cost simple ownership"
+      ],
+      "knownConcerns": [],
+      "inspectionFocus": [
+        "Inspect twin engines, shafts, fuel and exhaust systems",
+        "Inspect flybridge and deckhouse for weather exposure and leaks",
+        "Review generator, chargers, batteries and AC/DC distribution",
+        "Inspect tanks, sanitation and domestic water systems",
+        "Verify bridge clearance with antennas and electronics"
+      ],
+      "buyerQuestions": [
+        "What service, repair or inspection history is available for inspect twin engines, shafts, fuel and exhaust systems?",
+        "What service, repair or inspection history is available for inspect flybridge and deckhouse for weather exposure and leaks?",
+        "What service, repair or inspection history is available for review generator, chargers, batteries and AC/DC distribution?",
+        "What service, repair or inspection history is available for inspect tanks, sanitation and domestic water systems?",
+        "What service, repair or inspection history is available for verify bridge clearance with antennas and electronics?"
+      ],
+      "ownerActions": [
+        "Keep windows, hatches, deck hardware and exterior penetrations sealed",
+        "Maintain propulsion, cooling, exhaust, steering and electrical systems to documented intervals",
+        "Document machinery and system upgrades for future survey and resale"
+      ],
+      "modelVariations": []
+    },
+    "evidence": [
+      {
+        "Scope": "IdentityAndDimensions",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BENE-52"
+          ],
+          "Years": {
+            "From": 2008,
+            "To": 2012
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.beneteau.com/en-us/swift-trawler/swift-trawler-52"
+        ],
+        "EvidenceTypes": [
+          "Factory documented"
+        ],
+        "Confidence": "High",
+        "Notes": "Factory and model-specific documentation support identity and representative specifications."
+      },
+      {
+        "Scope": "OverviewAndSuitability",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BENE-52"
+          ],
+          "Years": {
+            "From": 2008,
+            "To": 2012
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.beneteau.com/en-us/swift-trawler/swift-trawler-52"
+        ],
+        "EvidenceTypes": [
+          "Factory documented"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Guidance is derived from documented layout, hull form, propulsion and dimensions."
+      },
+      {
+        "Scope": "InspectionFocus",
+        "AppliesTo": {
+          "Scope": "Model family",
+          "Models": [
+            "BENE-52"
+          ],
+          "Years": {
+            "From": 2008,
+            "To": 2012
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.beneteau.com/en-us/swift-trawler/swift-trawler-52"
+        ],
+        "EvidenceTypes": [
+          "Factory documented",
+          "Technical or survey source"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Inspection guidance reflects configuration and age exposure; it is not a claim that every hull has a defect."
+      }
+    ],
+    "images": [
+      {
+        "title": "Beneteau Swift Trawler 52 image",
+        "url": "images/bene-52.jpg",
+        "sourceLabel": "B-Atlas image library",
+        "resourceType": "Model image",
+        "verificationStatus": "Local asset"
+      }
+    ],
+    "videos": [],
+    "listings": [],
+    "documents": [
+      {
+        "title": "Beneteau Swift Trawler 52 — manufacturer / heritage reference",
+        "url": "https://www.beneteau.com/heritage-powerboats",
+        "sourceLabel": "Beneteau",
+        "resourceType": "Manufacturer model or heritage page",
+        "verificationStatus": "Verified",
+        "scope": "Model-specific",
+        "confidence": "High",
+        "notes": ""
+      }
+    ],
+    "ownerCommunities": [],
+    "knownIssues": [],
+    "similarModels": [],
+    "missingInformation": [],
+    "sources": [
+      {
+        "type": "CuratedResourceSet",
+        "label": "B-Atlas Model Character + Resources Batch 31 — Beneteau / Jeanneau",
+        "verificationStatus": "Links researched and checked 2026-08-07"
+      }
+    ],
+    "confidence": "Moderate",
+    "coverage": {
+      "BoatModelID": "BENE-52",
+      "Categories": {
+        "Identity": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Specifications": {
+          "Known": 10,
+          "Total": 10,
+          "Score": 100
+        },
+        "Configuration": {
+          "Known": 5,
+          "Total": 5,
+          "Score": 100
+        },
+        "Accommodation": {
+          "Known": 4,
+          "Total": 4,
+          "Score": 100
+        },
+        "Suitability": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Ownership": {
+          "Known": 5,
+          "Total": 5,
+          "Score": 100
+        },
+        "Evidence": {
+          "Known": 0,
+          "Total": 1,
+          "Score": 0
+        }
+      },
+      "OverallScore": 86,
+      "SourceCount": 1,
+      "VerifiedSourceCount": 0,
+      "ContradictionCount": 0,
+      "RelationshipCount": 3,
+      "CoverageStatus": "Strong",
+      "GeneratedAt": "2026-07-26",
+      "ScoredFieldCount": 34
+    },
+    "updatedAt": "2026-08-07"
+  },
+  {
+    "schemaVersion": 2,
+    "generated": true,
+    "generatedFrom": [
+      "boatmodels.json",
+      "curatedresources.json",
+      "listingsearches.json",
+      "knowledgeannotations.json",
+      "knowledge-coverage.json"
+    ],
+    "identity": {
+      "boatModelId": "BENE-ANT-7",
+      "manufacturer": "Beneteau",
+      "model": "Antares 7 Cruising / Fishing",
+      "displayName": "Beneteau Antares 7"
+    },
+    "intelligence": {
+      "overview": "The Beneteau Antares 7 is a French enclosed-pilothouse outboard cruiser designed for short coastal trips, fishing and weekend use. The Antares range prioritizes visibility, sheltered helm operation and practical cockpit access rather than traditional trawler-speed efficiency.",
+      "suitability": {
+        "CoupleCruising": {
+          "Assessment": "Good",
+          "Summary": "The enclosed helm and documented accommodation support weekend or extended couple cruising."
+        },
+        "SoloHandling": {
+          "Assessment": "Good",
+          "Summary": "Side-door access and good visibility help; docking burden rises with size, windage and twin-engine/flybridge configuration."
+        },
+        "InlandWaterways": {
+          "Assessment": "Good",
+          "Summary": "The enclosed cruising layout works well on inland routes; beam and air draft must be checked against route restrictions."
+        },
+        "ExposedWater": {
+          "Assessment": "Mixed",
+          "Summary": "Factory CE ratings and hull form support coastal use; loading, weather and individual boat condition remain decisive."
+        }
+      },
+      "strengths": [
+        "Protected pilothouse helm",
+        "Outboard propulsion simplifies engine access and winterization",
+        "Practical cockpit and side-deck access for coastal use"
+      ],
+      "tradeOffs": [
+        "Planing-speed operation uses substantially more fuel than displacement cruising",
+        "Outboard installations occupy transom space",
+        "Accommodation and tankage are modest relative to trawler-style cruisers of similar overall length"
+      ],
+      "bestFor": [
+        "Weekend coastal cruising",
+        "Owners wanting enclosed outboard operation",
+        "Fishing and family day use with occasional overnighting"
+      ],
+      "avoidIf": [
+        "You primarily cruise at 6–8 knots for maximum economy",
+        "You require large long-range tankage",
+        "You want shaft-drive diesel propulsion"
+      ],
+      "knownConcerns": [],
+      "inspectionFocus": [
+        "Inspect outboard service history, mounting and steering",
+        "Inspect pilothouse windows, doors and roof penetrations",
+        "Inspect cockpit drainage and transom structure",
+        "Verify tankage, sleeping layout and fitted sanitation equipment"
+      ],
+      "buyerQuestions": [
+        "What service, repair or inspection history is available for inspect outboard service history, mounting and steering?",
+        "What service, repair or inspection history is available for inspect pilothouse windows, doors and roof penetrations?",
+        "What service, repair or inspection history is available for inspect cockpit drainage and transom structure?",
+        "What service, repair or inspection history is available for verify tankage, sleeping layout and fitted sanitation equipment?"
+      ],
+      "ownerActions": [
+        "Keep windows, hatches, deck hardware and exterior penetrations sealed",
+        "Maintain propulsion, cooling, exhaust, steering and electrical systems to documented intervals",
+        "Document machinery and system upgrades for future survey and resale"
+      ],
+      "modelVariations": []
+    },
+    "evidence": [
+      {
+        "Scope": "IdentityAndDimensions",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BENE-ANT-7"
+          ],
+          "Years": {
+            "From": 2018,
+            "To": 2026
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.beneteau.com/en-us/heritage-powerboats/antares-2012-2022"
+        ],
+        "EvidenceTypes": [
+          "Factory documented"
+        ],
+        "Confidence": "High",
+        "Notes": "Factory and model-specific documentation support identity and representative specifications."
+      },
+      {
+        "Scope": "OverviewAndSuitability",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BENE-ANT-7"
+          ],
+          "Years": {
+            "From": 2018,
+            "To": 2026
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.beneteau.com/en-us/heritage-powerboats/antares-2012-2022"
+        ],
+        "EvidenceTypes": [
+          "Factory documented"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Guidance is derived from documented layout, hull form, propulsion and dimensions."
+      },
+      {
+        "Scope": "InspectionFocus",
+        "AppliesTo": {
+          "Scope": "Model family",
+          "Models": [
+            "BENE-ANT-7"
+          ],
+          "Years": {
+            "From": 2018,
+            "To": 2026
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.beneteau.com/en-us/heritage-powerboats/antares-2012-2022"
+        ],
+        "EvidenceTypes": [
+          "Factory documented",
+          "Technical or survey source"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Inspection guidance reflects configuration and age exposure; it is not a claim that every hull has a defect."
+      }
+    ],
+    "images": [
+      {
+        "title": "Beneteau Antares 7 image",
+        "url": "images/bene-ant-7.jpg",
+        "sourceLabel": "B-Atlas image library",
+        "resourceType": "Model image",
+        "verificationStatus": "Local asset"
+      }
+    ],
+    "videos": [],
+    "listings": [],
+    "documents": [
+      {
+        "title": "Beneteau Antares 7 — manufacturer / heritage reference",
+        "url": "https://www.beneteau.com/antares-outboard/antares-7",
+        "sourceLabel": "Beneteau",
+        "resourceType": "Manufacturer model or heritage page",
+        "verificationStatus": "Verified",
+        "scope": "Model-specific",
+        "confidence": "High",
+        "notes": ""
+      }
+    ],
+    "ownerCommunities": [],
+    "knownIssues": [],
+    "similarModels": [],
+    "missingInformation": [],
+    "sources": [
+      {
+        "type": "CuratedResourceSet",
+        "label": "B-Atlas Model Character + Resources Batch 31 — Beneteau / Jeanneau",
+        "verificationStatus": "Links researched and checked 2026-08-07"
+      }
+    ],
+    "confidence": "Moderate",
+    "coverage": {
+      "BoatModelID": "BENE-ANT-7",
+      "Categories": {
+        "Identity": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Specifications": {
+          "Known": 10,
+          "Total": 10,
+          "Score": 100
+        },
+        "Configuration": {
+          "Known": 5,
+          "Total": 5,
+          "Score": 100
+        },
+        "Accommodation": {
+          "Known": 4,
+          "Total": 4,
+          "Score": 100
+        },
+        "Suitability": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Ownership": {
+          "Known": 5,
+          "Total": 5,
+          "Score": 100
+        },
+        "Evidence": {
+          "Known": 0,
+          "Total": 1,
+          "Score": 0
+        }
+      },
+      "OverallScore": 86,
+      "SourceCount": 1,
+      "VerifiedSourceCount": 0,
+      "ContradictionCount": 0,
+      "RelationshipCount": 3,
+      "CoverageStatus": "Strong",
+      "GeneratedAt": "2026-07-26",
+      "ScoredFieldCount": 34
+    },
+    "updatedAt": "2026-08-07"
+  },
+  {
+    "schemaVersion": 2,
+    "generated": true,
+    "generatedFrom": [
+      "boatmodels.json",
+      "curatedresources.json",
+      "listingsearches.json",
+      "knowledgeannotations.json",
+      "knowledge-coverage.json"
+    ],
+    "identity": {
+      "boatModelId": "BENE-ANT-8",
+      "manufacturer": "Beneteau",
+      "model": "Antares 8 Cruising / Fishing",
+      "displayName": "Beneteau Antares 8"
+    },
+    "intelligence": {
+      "overview": "The Beneteau Antares 8 is a French enclosed-pilothouse outboard cruiser designed for short coastal trips, fishing and weekend use. The Antares range prioritizes visibility, sheltered helm operation and practical cockpit access rather than traditional trawler-speed efficiency.",
+      "suitability": {
+        "CoupleCruising": {
+          "Assessment": "Good",
+          "Summary": "The enclosed helm and documented accommodation support weekend or extended couple cruising."
+        },
+        "SoloHandling": {
+          "Assessment": "Good",
+          "Summary": "Side-door access and good visibility help; docking burden rises with size, windage and twin-engine/flybridge configuration."
+        },
+        "InlandWaterways": {
+          "Assessment": "Good",
+          "Summary": "The enclosed cruising layout works well on inland routes; beam and air draft must be checked against route restrictions."
+        },
+        "ExposedWater": {
+          "Assessment": "Mixed",
+          "Summary": "Factory CE ratings and hull form support coastal use; loading, weather and individual boat condition remain decisive."
+        }
+      },
+      "strengths": [
+        "Protected pilothouse helm",
+        "Outboard propulsion simplifies engine access and winterization",
+        "Practical cockpit and side-deck access for coastal use"
+      ],
+      "tradeOffs": [
+        "Planing-speed operation uses substantially more fuel than displacement cruising",
+        "Outboard installations occupy transom space",
+        "Accommodation and tankage are modest relative to trawler-style cruisers of similar overall length"
+      ],
+      "bestFor": [
+        "Weekend coastal cruising",
+        "Owners wanting enclosed outboard operation",
+        "Fishing and family day use with occasional overnighting"
+      ],
+      "avoidIf": [
+        "You primarily cruise at 6–8 knots for maximum economy",
+        "You require large long-range tankage",
+        "You want shaft-drive diesel propulsion"
+      ],
+      "knownConcerns": [],
+      "inspectionFocus": [
+        "Inspect outboard service history, mounting and steering",
+        "Inspect pilothouse windows, doors and roof penetrations",
+        "Inspect cockpit drainage and transom structure",
+        "Verify tankage, sleeping layout and fitted sanitation equipment"
+      ],
+      "buyerQuestions": [
+        "What service, repair or inspection history is available for inspect outboard service history, mounting and steering?",
+        "What service, repair or inspection history is available for inspect pilothouse windows, doors and roof penetrations?",
+        "What service, repair or inspection history is available for inspect cockpit drainage and transom structure?",
+        "What service, repair or inspection history is available for verify tankage, sleeping layout and fitted sanitation equipment?"
+      ],
+      "ownerActions": [
+        "Keep windows, hatches, deck hardware and exterior penetrations sealed",
+        "Maintain propulsion, cooling, exhaust, steering and electrical systems to documented intervals",
+        "Document machinery and system upgrades for future survey and resale"
+      ],
+      "modelVariations": []
+    },
+    "evidence": [
+      {
+        "Scope": "IdentityAndDimensions",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BENE-ANT-8"
+          ],
+          "Years": {
+            "From": 2018,
+            "To": 2026
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.beneteau.com/en-us/heritage-powerboats/antares-2012-2022"
+        ],
+        "EvidenceTypes": [
+          "Factory documented"
+        ],
+        "Confidence": "High",
+        "Notes": "Factory and model-specific documentation support identity and representative specifications."
+      },
+      {
+        "Scope": "OverviewAndSuitability",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BENE-ANT-8"
+          ],
+          "Years": {
+            "From": 2018,
+            "To": 2026
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.beneteau.com/en-us/heritage-powerboats/antares-2012-2022"
+        ],
+        "EvidenceTypes": [
+          "Factory documented"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Guidance is derived from documented layout, hull form, propulsion and dimensions."
+      },
+      {
+        "Scope": "InspectionFocus",
+        "AppliesTo": {
+          "Scope": "Model family",
+          "Models": [
+            "BENE-ANT-8"
+          ],
+          "Years": {
+            "From": 2018,
+            "To": 2026
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.beneteau.com/en-us/heritage-powerboats/antares-2012-2022"
+        ],
+        "EvidenceTypes": [
+          "Factory documented",
+          "Technical or survey source"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Inspection guidance reflects configuration and age exposure; it is not a claim that every hull has a defect."
+      }
+    ],
+    "images": [
+      {
+        "title": "Beneteau Antares 8 image",
+        "url": "images/bene-ant-8.jpg",
+        "sourceLabel": "B-Atlas image library",
+        "resourceType": "Model image",
+        "verificationStatus": "Local asset"
+      }
+    ],
+    "videos": [],
+    "listings": [],
+    "documents": [
+      {
+        "title": "Beneteau Antares 8 — manufacturer / heritage reference",
+        "url": "https://www.beneteau.com/antares-outboard/antares-8",
+        "sourceLabel": "Beneteau",
+        "resourceType": "Manufacturer model or heritage page",
+        "verificationStatus": "Verified",
+        "scope": "Model-specific",
+        "confidence": "High",
+        "notes": ""
+      }
+    ],
+    "ownerCommunities": [],
+    "knownIssues": [],
+    "similarModels": [],
+    "missingInformation": [],
+    "sources": [
+      {
+        "type": "CuratedResourceSet",
+        "label": "B-Atlas Model Character + Resources Batch 31 — Beneteau / Jeanneau",
+        "verificationStatus": "Links researched and checked 2026-08-07"
+      }
+    ],
+    "confidence": "Moderate",
+    "coverage": {
+      "BoatModelID": "BENE-ANT-8",
+      "Categories": {
+        "Identity": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Specifications": {
+          "Known": 10,
+          "Total": 10,
+          "Score": 100
+        },
+        "Configuration": {
+          "Known": 5,
+          "Total": 5,
+          "Score": 100
+        },
+        "Accommodation": {
+          "Known": 4,
+          "Total": 4,
+          "Score": 100
+        },
+        "Suitability": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Ownership": {
+          "Known": 4,
+          "Total": 5,
+          "Score": 80
+        },
+        "Evidence": {
+          "Known": 0,
+          "Total": 1,
+          "Score": 0
+        }
+      },
+      "OverallScore": 83,
+      "SourceCount": 1,
+      "VerifiedSourceCount": 0,
+      "ContradictionCount": 0,
+      "RelationshipCount": 5,
+      "CoverageStatus": "Strong",
+      "GeneratedAt": "2026-07-26",
+      "ScoredFieldCount": 34
+    },
+    "updatedAt": "2026-08-07"
+  },
+  {
+    "schemaVersion": 2,
+    "generated": true,
+    "generatedFrom": [
+      "boatmodels.json",
+      "curatedresources.json",
+      "listingsearches.json",
+      "knowledgeannotations.json",
+      "knowledge-coverage.json"
+    ],
+    "identity": {
+      "boatModelId": "BENE-BAR-8",
+      "manufacturer": "Beneteau",
+      "model": "Barracuda 8 Sport-Fishing Pilothouse",
+      "displayName": "Beneteau Barracuda 8"
+    },
+    "intelligence": {
+      "overview": "The Beneteau Barracuda 8 is an enclosed walkaround sport-fishing cruiser from Beneteau's Barracuda line. Its planing hull, outboard propulsion, broad cockpit and optional upper helm on some versions emphasize fishing versatility and all-weather day use rather than displacement-speed passagemaking.",
+      "suitability": {
+        "CoupleCruising": {
+          "Assessment": "Good",
+          "Summary": "The enclosed helm and documented accommodation support weekend or extended couple cruising."
+        },
+        "SoloHandling": {
+          "Assessment": "Good",
+          "Summary": "Side-door access and good visibility help; docking burden rises with size, windage and twin-engine/flybridge configuration."
+        },
+        "InlandWaterways": {
+          "Assessment": "Good",
+          "Summary": "The enclosed cruising layout works well on inland routes; beam and air draft must be checked against route restrictions."
+        },
+        "ExposedWater": {
+          "Assessment": "Mixed",
+          "Summary": "Factory CE ratings and hull form support coastal use; loading, weather and individual boat condition remain decisive."
+        }
+      },
+      "strengths": [
+        "Protected pilothouse with strong exterior access",
+        "Fishing-oriented cockpit and deck layout",
+        "Outboard propulsion and planing performance"
+      ],
+      "tradeOffs": [
+        "Accommodation is secondary to fishing and deck space",
+        "Optional flybridge adds air draft and exposure",
+        "Fuel use at planing speeds exceeds slow-cruiser expectations"
+      ],
+      "bestFor": [
+        "Fishing-focused coastal owners",
+        "All-weather day boating",
+        "Buyers wanting a practical outboard pilothouse"
+      ],
+      "avoidIf": [
+        "You need large private cabins for extended cruising",
+        "You primarily want economical displacement-speed operation",
+        "You require diesel shaft propulsion"
+      ],
+      "knownConcerns": [],
+      "inspectionFocus": [
+        "Inspect outboard installation, steering and service history",
+        "Inspect cockpit drainage, fishboxes and deck hardware",
+        "Inspect pilothouse doors/windows and optional flybridge penetrations",
+        "Verify actual engine count and options on the individual boat"
+      ],
+      "buyerQuestions": [
+        "What service, repair or inspection history is available for inspect outboard installation, steering and service history?",
+        "What service, repair or inspection history is available for inspect cockpit drainage, fishboxes and deck hardware?",
+        "What service, repair or inspection history is available for inspect pilothouse doors/windows and optional flybridge penetrations?",
+        "What service, repair or inspection history is available for verify actual engine count and options on the individual boat?"
+      ],
+      "ownerActions": [
+        "Keep windows, hatches, deck hardware and exterior penetrations sealed",
+        "Maintain propulsion, cooling, exhaust, steering and electrical systems to documented intervals",
+        "Document machinery and system upgrades for future survey and resale"
+      ],
+      "modelVariations": [
+        {
+          "Name": "Configuration options",
+          "Description": "Barracuda models were offered in multiple deck/door layouts; flybridge and engine count can vary by version.",
+          "AffectedYears": "Production run",
+          "EvidenceRefs": [
+            "https://www.beneteau.com/en-us/barracuda/barracuda-8-23"
+          ],
+          "Confidence": "High"
+        }
+      ]
+    },
+    "evidence": [
+      {
+        "Scope": "IdentityAndDimensions",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BENE-BAR-8"
+          ],
+          "Years": {
+            "From": 2014,
+            "To": 2026
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.beneteau.com/en-us/barracuda/barracuda-8-23"
+        ],
+        "EvidenceTypes": [
+          "Factory documented"
+        ],
+        "Confidence": "High",
+        "Notes": "Factory and model-specific documentation support identity and representative specifications."
+      },
+      {
+        "Scope": "OverviewAndSuitability",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BENE-BAR-8"
+          ],
+          "Years": {
+            "From": 2014,
+            "To": 2026
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.beneteau.com/en-us/barracuda/barracuda-8-23"
+        ],
+        "EvidenceTypes": [
+          "Factory documented"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Guidance is derived from documented layout, hull form, propulsion and dimensions."
+      },
+      {
+        "Scope": "InspectionFocus",
+        "AppliesTo": {
+          "Scope": "Model family",
+          "Models": [
+            "BENE-BAR-8"
+          ],
+          "Years": {
+            "From": 2014,
+            "To": 2026
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.beneteau.com/en-us/barracuda/barracuda-8-23"
+        ],
+        "EvidenceTypes": [
+          "Factory documented",
+          "Technical or survey source"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Inspection guidance reflects configuration and age exposure; it is not a claim that every hull has a defect."
+      }
+    ],
+    "images": [
+      {
+        "title": "Beneteau Barracuda 8 image",
+        "url": "images/bene-bar-8.jpg",
+        "sourceLabel": "B-Atlas image library",
+        "resourceType": "Model image",
+        "verificationStatus": "Local asset"
+      }
+    ],
+    "videos": [],
+    "listings": [],
+    "documents": [
+      {
+        "title": "Beneteau Barracuda 8 — manufacturer / heritage reference",
+        "url": "https://www.beneteau.com/en-us/barracuda/barracuda-8-23",
+        "sourceLabel": "Beneteau",
+        "resourceType": "Manufacturer model or heritage page",
+        "verificationStatus": "Verified",
+        "scope": "Model-specific",
+        "confidence": "High",
+        "notes": ""
+      }
+    ],
+    "ownerCommunities": [],
+    "knownIssues": [],
+    "similarModels": [],
+    "missingInformation": [],
+    "sources": [
+      {
+        "type": "CuratedResourceSet",
+        "label": "B-Atlas Model Character + Resources Batch 31 — Beneteau / Jeanneau",
+        "verificationStatus": "Links researched and checked 2026-08-07"
+      }
+    ],
+    "confidence": "Moderate",
+    "coverage": {
+      "BoatModelID": "BENE-BAR-8",
+      "Categories": {
+        "Identity": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Specifications": {
+          "Known": 10,
+          "Total": 10,
+          "Score": 100
+        },
+        "Configuration": {
+          "Known": 5,
+          "Total": 5,
+          "Score": 100
+        },
+        "Accommodation": {
+          "Known": 4,
+          "Total": 4,
+          "Score": 100
+        },
+        "Suitability": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Ownership": {
+          "Known": 4,
+          "Total": 5,
+          "Score": 80
+        },
+        "Evidence": {
+          "Known": 0,
+          "Total": 1,
+          "Score": 0
+        }
+      },
+      "OverallScore": 83,
+      "SourceCount": 1,
+      "VerifiedSourceCount": 0,
+      "ContradictionCount": 0,
+      "RelationshipCount": 4,
+      "CoverageStatus": "Strong",
+      "GeneratedAt": "2026-07-26",
+      "ScoredFieldCount": 34
+    },
+    "updatedAt": "2026-09-13"
+  },
+  {
+    "schemaVersion": 2,
+    "generated": true,
+    "generatedFrom": [
+      "boatmodels.json",
+      "curatedresources.json",
+      "listingsearches.json",
+      "knowledgeannotations.json",
+      "knowledge-coverage.json"
+    ],
+    "identity": {
+      "boatModelId": "BENE-ANT-9",
+      "manufacturer": "Beneteau",
+      "model": "Antares 9 Generation 1",
+      "displayName": "Beneteau Antares 9"
+    },
+    "intelligence": {
+      "overview": "The Beneteau Antares 9 is a French enclosed-pilothouse outboard cruiser designed for short coastal trips, fishing and weekend use. The Antares range prioritizes visibility, sheltered helm operation and practical cockpit access rather than traditional trawler-speed efficiency.",
+      "suitability": {
+        "CoupleCruising": {
+          "Assessment": "Good",
+          "Summary": "The enclosed helm and documented accommodation support weekend or extended couple cruising."
+        },
+        "SoloHandling": {
+          "Assessment": "Good",
+          "Summary": "Side-door access and good visibility help; docking burden rises with size, windage and twin-engine/flybridge configuration."
+        },
+        "InlandWaterways": {
+          "Assessment": "Good",
+          "Summary": "The enclosed cruising layout works well on inland routes; beam and air draft must be checked against route restrictions."
+        },
+        "ExposedWater": {
+          "Assessment": "Mixed",
+          "Summary": "Factory CE ratings and hull form support coastal use; loading, weather and individual boat condition remain decisive."
+        }
+      },
+      "strengths": [
+        "Protected pilothouse helm",
+        "Outboard propulsion simplifies engine access and winterization",
+        "Practical cockpit and side-deck access for coastal use"
+      ],
+      "tradeOffs": [
+        "Planing-speed operation uses substantially more fuel than displacement cruising",
+        "Outboard installations occupy transom space",
+        "Accommodation and tankage are modest relative to trawler-style cruisers of similar overall length"
+      ],
+      "bestFor": [
+        "Weekend coastal cruising",
+        "Owners wanting enclosed outboard operation",
+        "Fishing and family day use with occasional overnighting"
+      ],
+      "avoidIf": [
+        "You primarily cruise at 6–8 knots for maximum economy",
+        "You require large long-range tankage",
+        "You want shaft-drive diesel propulsion"
+      ],
+      "knownConcerns": [],
+      "inspectionFocus": [
+        "Inspect outboard service history, mounting and steering",
+        "Inspect pilothouse windows, doors and roof penetrations",
+        "Inspect cockpit drainage and transom structure",
+        "Verify tankage, sleeping layout and fitted sanitation equipment"
+      ],
+      "buyerQuestions": [
+        "What service, repair or inspection history is available for inspect outboard service history, mounting and steering?",
+        "What service, repair or inspection history is available for inspect pilothouse windows, doors and roof penetrations?",
+        "What service, repair or inspection history is available for inspect cockpit drainage and transom structure?",
+        "What service, repair or inspection history is available for verify tankage, sleeping layout and fitted sanitation equipment?"
+      ],
+      "ownerActions": [
+        "Keep windows, hatches, deck hardware and exterior penetrations sealed",
+        "Maintain propulsion, cooling, exhaust, steering and electrical systems to documented intervals",
+        "Document machinery and system upgrades for future survey and resale"
+      ],
+      "modelVariations": [
+        {
+          "Name": "Original modern Antares 9",
+          "Description": "29'11\" generation with twin outboards up to 200 hp each.",
+          "AffectedYears": "2019–mid-2020s",
+          "EvidenceRefs": [
+            "https://www.beneteau.com/5th-generation-antares-2012-today/antares-9"
+          ],
+          "Confidence": "High"
+        },
+        {
+          "Name": "Antares 9 Series 2",
+          "Description": "Redesigned current generation with revised hull/construction and twin 250 hp capability.",
+          "AffectedYears": "mid-2020s onward",
+          "EvidenceRefs": [
+            "https://www.beneteau.com/antares/antares-9"
+          ],
+          "Confidence": "High"
+        }
+      ]
+    },
+    "evidence": [
+      {
+        "Scope": "IdentityAndDimensions",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BENE-ANT-9"
+          ],
+          "Years": {
+            "From": 2019,
+            "To": 2026
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.beneteau.com/en-us/heritage-powerboats/antares-2012-2022"
+        ],
+        "EvidenceTypes": [
+          "Factory documented"
+        ],
+        "Confidence": "High",
+        "Notes": "Factory and model-specific documentation support identity and representative specifications."
+      },
+      {
+        "Scope": "OverviewAndSuitability",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BENE-ANT-9"
+          ],
+          "Years": {
+            "From": 2019,
+            "To": 2026
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.beneteau.com/en-us/heritage-powerboats/antares-2012-2022"
+        ],
+        "EvidenceTypes": [
+          "Factory documented"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Guidance is derived from documented layout, hull form, propulsion and dimensions."
+      },
+      {
+        "Scope": "InspectionFocus",
+        "AppliesTo": {
+          "Scope": "Model family",
+          "Models": [
+            "BENE-ANT-9"
+          ],
+          "Years": {
+            "From": 2019,
+            "To": 2026
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.beneteau.com/en-us/heritage-powerboats/antares-2012-2022"
+        ],
+        "EvidenceTypes": [
+          "Factory documented",
+          "Technical or survey source"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Inspection guidance reflects configuration and age exposure; it is not a claim that every hull has a defect."
+      }
+    ],
+    "images": [
+      {
+        "title": "Beneteau Antares 9 image",
+        "url": "images/bene-ant-9.jpg",
+        "sourceLabel": "B-Atlas image library",
+        "resourceType": "Model image",
+        "verificationStatus": "Local asset"
+      }
+    ],
+    "videos": [],
+    "listings": [],
+    "documents": [
+      {
+        "title": "Beneteau Antares 9 — manufacturer / heritage reference",
+        "url": "https://www.beneteau.com/5th-generation-antares-2012-today/antares-9",
+        "sourceLabel": "Beneteau",
+        "resourceType": "Manufacturer model or heritage page",
+        "verificationStatus": "Verified",
+        "scope": "Model-specific",
+        "confidence": "High",
+        "notes": ""
+      },
+      {
+        "title": "Beneteau Antares 9 — manufacturer / heritage reference",
+        "url": "https://www.beneteau.com/antares/antares-9",
+        "sourceLabel": "Beneteau",
+        "resourceType": "Manufacturer model or heritage page",
+        "verificationStatus": "Verified",
+        "scope": "Model-specific",
+        "confidence": "High",
+        "notes": ""
+      }
+    ],
+    "ownerCommunities": [],
+    "knownIssues": [],
+    "similarModels": [],
+    "missingInformation": [],
+    "sources": [
+      {
+        "type": "CuratedResourceSet",
+        "label": "B-Atlas Model Character + Resources Batch 31 — Beneteau / Jeanneau",
+        "verificationStatus": "Links researched and checked 2026-08-07"
+      }
+    ],
+    "confidence": "Moderate",
+    "coverage": {
+      "BoatModelID": "BENE-ANT-9",
+      "Categories": {
+        "Identity": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Specifications": {
+          "Known": 10,
+          "Total": 10,
+          "Score": 100
+        },
+        "Configuration": {
+          "Known": 5,
+          "Total": 5,
+          "Score": 100
+        },
+        "Accommodation": {
+          "Known": 4,
+          "Total": 4,
+          "Score": 100
+        },
+        "Suitability": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Ownership": {
+          "Known": 4,
+          "Total": 5,
+          "Score": 80
+        },
+        "Evidence": {
+          "Known": 0,
+          "Total": 1,
+          "Score": 0
+        }
+      },
+      "OverallScore": 83,
+      "SourceCount": 1,
+      "VerifiedSourceCount": 0,
+      "ContradictionCount": 0,
+      "RelationshipCount": 5,
+      "CoverageStatus": "Strong",
+      "GeneratedAt": "2026-07-26",
+      "ScoredFieldCount": 34
+    },
+    "updatedAt": "2026-08-07"
+  },
+  {
+    "schemaVersion": 2,
+    "generated": true,
+    "generatedFrom": [
+      "boatmodels.json",
+      "curatedresources.json",
+      "listingsearches.json",
+      "knowledgeannotations.json",
+      "knowledge-coverage.json"
+    ],
+    "identity": {
+      "boatModelId": "BENE-BAR-9",
+      "manufacturer": "Beneteau",
+      "model": "Barracuda 9 Sport-Fishing Pilothouse",
+      "displayName": "Beneteau Barracuda 9"
+    },
+    "intelligence": {
+      "overview": "The Beneteau Barracuda 9 is an enclosed walkaround sport-fishing cruiser from Beneteau's Barracuda line. Its planing hull, outboard propulsion, broad cockpit and optional upper helm on some versions emphasize fishing versatility and all-weather day use rather than displacement-speed passagemaking.",
+      "suitability": {
+        "CoupleCruising": {
+          "Assessment": "Good",
+          "Summary": "The enclosed helm and documented accommodation support weekend or extended couple cruising."
+        },
+        "SoloHandling": {
+          "Assessment": "Good",
+          "Summary": "Side-door access and good visibility help; docking burden rises with size, windage and twin-engine/flybridge configuration."
+        },
+        "InlandWaterways": {
+          "Assessment": "Good",
+          "Summary": "The enclosed cruising layout works well on inland routes; beam and air draft must be checked against route restrictions."
+        },
+        "ExposedWater": {
+          "Assessment": "Mixed",
+          "Summary": "Factory CE ratings and hull form support coastal use; loading, weather and individual boat condition remain decisive."
+        }
+      },
+      "strengths": [
+        "Protected pilothouse with strong exterior access",
+        "Fishing-oriented cockpit and deck layout",
+        "Outboard propulsion and planing performance"
+      ],
+      "tradeOffs": [
+        "Accommodation is secondary to fishing and deck space",
+        "Optional flybridge adds air draft and exposure",
+        "Fuel use at planing speeds exceeds slow-cruiser expectations"
+      ],
+      "bestFor": [
+        "Fishing-focused coastal owners",
+        "All-weather day boating",
+        "Buyers wanting a practical outboard pilothouse"
+      ],
+      "avoidIf": [
+        "You need large private cabins for extended cruising",
+        "You primarily want economical displacement-speed operation",
+        "You require diesel shaft propulsion"
+      ],
+      "knownConcerns": [],
+      "inspectionFocus": [
+        "Inspect outboard installation, steering and service history",
+        "Inspect cockpit drainage, fishboxes and deck hardware",
+        "Inspect pilothouse doors/windows and optional flybridge penetrations",
+        "Verify actual engine count and options on the individual boat"
+      ],
+      "buyerQuestions": [
+        "What service, repair or inspection history is available for inspect outboard installation, steering and service history?",
+        "What service, repair or inspection history is available for inspect cockpit drainage, fishboxes and deck hardware?",
+        "What service, repair or inspection history is available for inspect pilothouse doors/windows and optional flybridge penetrations?",
+        "What service, repair or inspection history is available for verify actual engine count and options on the individual boat?"
+      ],
+      "ownerActions": [
+        "Keep windows, hatches, deck hardware and exterior penetrations sealed",
+        "Maintain propulsion, cooling, exhaust, steering and electrical systems to documented intervals",
+        "Document machinery and system upgrades for future survey and resale"
+      ],
+      "modelVariations": [
+        {
+          "Name": "Configuration options",
+          "Description": "Barracuda models were offered in multiple deck/door layouts; flybridge and engine count can vary by version.",
+          "AffectedYears": "Production run",
+          "EvidenceRefs": [
+            "https://www.beneteau.com/barracuda/barracuda-9"
+          ],
+          "Confidence": "High"
+        }
+      ]
+    },
+    "evidence": [
+      {
+        "Scope": "IdentityAndDimensions",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BENE-BAR-9"
+          ],
+          "Years": {
+            "From": 2015,
+            "To": 2026
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.beneteau.com/barracuda/barracuda-9"
+        ],
+        "EvidenceTypes": [
+          "Factory documented"
+        ],
+        "Confidence": "High",
+        "Notes": "Factory and model-specific documentation support identity and representative specifications."
+      },
+      {
+        "Scope": "OverviewAndSuitability",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BENE-BAR-9"
+          ],
+          "Years": {
+            "From": 2015,
+            "To": 2026
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.beneteau.com/barracuda/barracuda-9"
+        ],
+        "EvidenceTypes": [
+          "Factory documented"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Guidance is derived from documented layout, hull form, propulsion and dimensions."
+      },
+      {
+        "Scope": "InspectionFocus",
+        "AppliesTo": {
+          "Scope": "Model family",
+          "Models": [
+            "BENE-BAR-9"
+          ],
+          "Years": {
+            "From": 2015,
+            "To": 2026
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.beneteau.com/barracuda/barracuda-9"
+        ],
+        "EvidenceTypes": [
+          "Factory documented",
+          "Technical or survey source"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Inspection guidance reflects configuration and age exposure; it is not a claim that every hull has a defect."
+      }
+    ],
+    "images": [
+      {
+        "title": "Beneteau Barracuda 9 image",
+        "url": "images/bene-bar-9.jpg",
+        "sourceLabel": "B-Atlas image library",
+        "resourceType": "Model image",
+        "verificationStatus": "Local asset"
+      }
+    ],
+    "videos": [],
+    "listings": [],
+    "documents": [
+      {
+        "title": "Beneteau Barracuda 9 — manufacturer / heritage reference",
+        "url": "https://www.beneteau.com/barracuda/barracuda-9",
+        "sourceLabel": "Beneteau",
+        "resourceType": "Manufacturer model or heritage page",
+        "verificationStatus": "Verified",
+        "scope": "Model-specific",
+        "confidence": "High",
+        "notes": ""
+      }
+    ],
+    "ownerCommunities": [],
+    "knownIssues": [],
+    "similarModels": [],
+    "missingInformation": [],
+    "sources": [
+      {
+        "type": "CuratedResourceSet",
+        "label": "B-Atlas Model Character + Resources Batch 31 — Beneteau / Jeanneau",
+        "verificationStatus": "Links researched and checked 2026-08-07"
+      }
+    ],
+    "confidence": "Moderate",
+    "coverage": {
+      "BoatModelID": "BENE-BAR-9",
+      "Categories": {
+        "Identity": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Specifications": {
+          "Known": 10,
+          "Total": 10,
+          "Score": 100
+        },
+        "Configuration": {
+          "Known": 5,
+          "Total": 5,
+          "Score": 100
+        },
+        "Accommodation": {
+          "Known": 4,
+          "Total": 4,
+          "Score": 100
+        },
+        "Suitability": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Ownership": {
+          "Known": 4,
+          "Total": 5,
+          "Score": 80
+        },
+        "Evidence": {
+          "Known": 0,
+          "Total": 1,
+          "Score": 0
+        }
+      },
+      "OverallScore": 83,
+      "SourceCount": 1,
+      "VerifiedSourceCount": 0,
+      "ContradictionCount": 0,
+      "RelationshipCount": 4,
+      "CoverageStatus": "Strong",
+      "GeneratedAt": "2026-07-26",
+      "ScoredFieldCount": 34
+    },
+    "updatedAt": "2026-08-07"
+  },
+  {
+    "schemaVersion": 2,
+    "generated": true,
+    "generatedFrom": [
+      "boatmodels.json",
+      "curatedresources.json",
+      "listingsearches.json",
+      "knowledgeannotations.json",
+      "knowledge-coverage.json"
+    ],
+    "identity": {
+      "boatModelId": "BHMB-32",
+      "manufacturer": "BHM",
+      "model": "32 Flye Point / Semi-Custom Downeast",
+      "displayName": "BHM 32 / Flye Point 32"
+    },
+    "intelligence": {
+      "overview": "The BHM 32 is a Downeast/lobster-boat-derived hull whose individual finish and propulsion can vary significantly. B-Atlas treats the hull identity as useful, but not every legacy accommodation, tankage or equipment value as a factory-wide standard.",
+      "suitability": {
+        "CoupleCruising": {
+          "Assessment": "Good",
+          "Summary": "The documented layout and protected helm arrangement are practical for a cruising couple, with accommodation depth varying by model."
+        },
+        "SoloHandling": {
+          "Assessment": "Good",
+          "Summary": "Visibility and cockpit access are generally strong; docking burden depends on size, engine arrangement and fitted thrusters."
+        },
+        "InlandWaterways": {
+          "Assessment": "Good",
+          "Summary": "Shallow-to-moderate draft and protected helm layouts suit many inland routes, but beam and air draft remain route-specific."
+        },
+        "ExposedWater": {
+          "Assessment": "Good",
+          "Summary": "Downeast/lobster-derived hull forms are intended for coastal conditions, but individual hull condition, loading and configuration remain decisive."
+        }
+      },
+      "strengths": [
+        "Authentic New England working-boat hull heritage",
+        "Simple, practical coastal layout with strong cockpit utility",
+        "Individual examples can be configured effectively for fishing or compact cruising"
+      ],
+      "tradeOffs": [
+        "Semi-custom and custom finishes create large hull-to-hull differences",
+        "Model-wide accommodation and tankage data are not consistently standardized",
+        "Older examples may have extensive owner modifications"
+      ],
+      "bestFor": [
+        "Experienced buyers seeking a genuine lobster-boat-style hull",
+        "Coastal cruisers who prioritize seakeeping and cockpit utility",
+        "Owners comfortable verifying hull-specific equipment"
+      ],
+      "avoidIf": [
+        "You require standardized production-boat layouts and specifications",
+        "You want extensive factory model documentation",
+        "You are unwilling to investigate custom finish history"
+      ],
+      "knownConcerns": [],
+      "inspectionFocus": [
+        "Confirm hull builder, finisher, year and HIN",
+        "Inspect structural additions, deckhouse and bulkhead workmanship",
+        "Inspect engine installation, exhaust, cooling and shaft/outboard conversion",
+        "Verify tankage, wiring and plumbing installations",
+        "Verify actual dimensions, displacement and accommodations"
+      ],
+      "buyerQuestions": [
+        "What service, inspection or repair history is available for confirm hull builder, finisher, year and HIN?",
+        "What service, inspection or repair history is available for inspect structural additions, deckhouse and bulkhead workmanship?",
+        "What service, inspection or repair history is available for inspect engine installation, exhaust, cooling and shaft/outboard conversion?",
+        "What service, inspection or repair history is available for verify tankage, wiring and plumbing installations?",
+        "What service, inspection or repair history is available for verify actual dimensions, displace

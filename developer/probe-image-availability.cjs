@@ -17,5 +17,5 @@ const read=p=>JSON.parse(fs.readFileSync(p.split('?')[0],'utf8'));
  await Promise.all(Array.from({length:16},next));
  const statuses={};for(const row of rows)statuses[String(row.status||row.error)]=(statuses[String(row.status||row.error)]||0)+1;
  const result={checkedAt:new Date().toISOString(),mode:'HEAD only; servers may reject probes differently from browser image loads',uniqueURLs:rows.length,modelsWithExternalImages:[...urls.values()].flat().length,reachableImageURLs:rows.filter(r=>r.available).length,statuses,automaticFallbackVerifiedForModels:995,liveWrites:0,rows};
- fs.writeFileSync('reports/production-image-availability.json',JSON.stringify(result,null,2)+'\n');console.log(JSON.stringify({...result,rows:undefined},null,2));
+ fs.mkdirSync('.bscout-data/image-audit',{recursive:true});fs.writeFileSync('.bscout-data/image-audit/production-image-availability.json',JSON.stringify(result,null,2)+'\n');console.log(JSON.stringify({...result,rows:undefined},null,2));
 })().catch(e=>{console.error(e);process.exitCode=1});

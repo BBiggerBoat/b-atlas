@@ -1,6 +1,6 @@
 'use strict';
 // Entirely local transports; no production requests or writes.
-const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),cp=require('node:child_process');
+const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
 const {sha}=require('../developer/public-model-artifacts.cjs');
 const {releaseFetch,contextGlobals}=require('./catalogue-fixture.cjs');
 const read=p=>JSON.parse(fs.readFileSync(p,'utf8')),plain=x=>JSON.parse(JSON.stringify(x));
@@ -11,7 +11,7 @@ const missing={ok:false,status:404};
 function runtime(fetch,previous=false){
  const ctx={...contextGlobals,console,fetch,URL};ctx.window=ctx;ctx.globalThis=ctx;
  for(const file of ['canonicaldata.js','valuenormalizer.js','filterengine.js','actionmodel.js','datarepository.js','knowledge/knowledgecardui.js','communityapi.js']){
-  const source=previous&&file==='datarepository.js'?cp.execFileSync('git',['show','427c46d:'+file],{encoding:'utf8'}):fs.readFileSync(file,'utf8');
+  const source=previous&&file==='datarepository.js'?require('../developer/historical-fixtures.cjs').read('pre-repository-datarepository.js').toString('utf8'):fs.readFileSync(file,'utf8');
   vm.runInNewContext(source,ctx,{filename:file});
  }
  return ctx;

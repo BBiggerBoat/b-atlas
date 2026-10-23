@@ -1,9 +1,10 @@
 'use strict';
-const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict'),crypto=require('node:crypto'),cp=require('node:child_process');
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict'),crypto=require('node:crypto');
 const store=require('../developer/canonical-store.cjs'),models=store.load(),rules=store.contract();
 // Independent, complete pre-storage-migration snapshot: no regenerated expectations.
-const original=JSON.parse(cp.execFileSync('git',['show','d082c427250cb0199039863335d4e82fbf483fe0:boatmodels.json'],{maxBuffer:20000000}));
-const originalRules=JSON.parse(cp.execFileSync('git',['show','d082c427250cb0199039863335d4e82fbf483fe0:data/canonical/ownership.json']));
+const historical=require('../developer/historical-fixtures.cjs');
+const original=historical.json('pre-storage-models');
+const originalRules=historical.json('pre-storage-ownership');
 assert.deepEqual(rules.fields,originalRules.fields,'Field ownership changed');
 assert.deepEqual(models,original,'Storage migration changed model values or sequence');
 assert.deepEqual(JSON.parse(fs.readFileSync('boatmodels.json')),original);

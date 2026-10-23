@@ -1,0 +1,36 @@
+{
+  "schema": "batlas-repository-size-policy-v1",
+  "maxTextBytes": 200000,
+  "warnTextBytes": 150000,
+  "binaryException": "Only raster image extensions under images/; SVG and every other file are checked as text. This is a text/connector budget, not a clone-size budget.",
+  "exceptions": {
+    "data/imageassets-external.json": {
+      "maxBytes": 671944,
+      "reason": "Authoritative image provenance/selection registry; public runtime remains unchanged. Binary images are separately exempt. Partitioning this auxiliary owner requires its own consumer migration."
+    },
+    "data/marketplace-source-validation.json": {
+      "maxBytes": 649667,
+      "reason": "Authoritative marketplace validation and evidence records, retained intact; not a generated model aggregate."
+    },
+    "data/image-candidates.json": {
+      "maxBytes": 491804,
+      "reason": "Authoritative image candidates and evidence; retained intact to preserve fallback decisions."
+    },
+    "data/registry/boat-registry.json": {
+      "maxBytes": 416474,
+      "reason": "Authoritative identity decisions, including pending identities. Preserve this separate owner; not a generated model view."
+    },
+    "knowledge/data/curatedresources.json": {
+      "maxBytes": 341836,
+      "reason": "Authoritative curated resource evidence; lazy public shards are generated but source consumer migration is out of this cleanup scope."
+    },
+    "knowledge/data/knowledge-coverage.json": {
+      "maxBytes": 255434,
+      "reason": "Knowledge coverage inputs consumed by knowledge scoring; retain exact behavior rather than repartition without a separate migration."
+    },
+    "knowledge/data/relationships.json": {
+      "maxBytes": 220853,
+      "reason": "Authoritative model relationship assertions; separate consumer migration needed before partitioning."
+    }
+  }
+}

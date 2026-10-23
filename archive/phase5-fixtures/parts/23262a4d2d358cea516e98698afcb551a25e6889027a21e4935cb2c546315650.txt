@@ -1,0 +1,3240 @@
+ spacious staterooms, generous aft deck and wide side decks. It was Carver's flagship-scale offering in the second half of the 1980s.",
+    "DesignLineage": [
+      "Introduced in 1985 as one of Carver's largest yachts.",
+      "Produced through 1991.",
+      "Two major interior plans were offered, both emphasizing true two-stateroom comfort.",
+      "B-Atlas corrected the generic '42 Aft Cabin' record to the documented 4207 model identity."
+    ],
+    "OwnershipCharacter": "A genuine large motor yacht: excellent living space and deck circulation, but 400 gallons fuel, twin mains, two heads, large bridge and 15-foot beam mean substantial dockage, storage and maintenance costs.",
+    "CharacterConfidence": "High",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "RarityConfidence": "Not rated",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "PriceConfidence": "Not rated",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "BoatFamilyCode": "boat_family.motor_yacht",
+    "HullBehaviourCode": "hull_behaviour.planing",
+    "LOA": 12.8016,
+    "Beam": 4.572,
+    "Draft": 1.0668,
+    "Displacement": 10704.8,
+    "ShowerTypeCode": "shower.separate_stall",
+    "FuelCode": "fuel.gasoline",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "AirDraft": 6.096,
+    "KeelConfigurationCode": "keel.protective",
+    "CanonicalSlug": "carver-4207-aft-cabin-aft-cabin-motor-yacht",
+    "CanonicalPath": "/models/carver-4207-aft-cabin-aft-cabin-motor-yacht/",
+    "CanonicalURL": "https://b-atlas.org/models/carver-4207-aft-cabin-aft-cabin-motor-yacht/",
+    "StyleCode": "Motor Yacht",
+    "CoolingCode": "cooling.raw_water",
+    "FlybridgeCode": "availability.yes",
+    "SideDecksCode": "side_decks.wide",
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "LWL": 11.5824,
+    "SpecificationConfidence": {
+      "LWL": {
+        "Level": "Low",
+        "Status": "restored_legacy_working_value",
+        "EvidenceRefs": [],
+        "Note": "Working LWL restored from the pre-v6.81 archived B-Atlas value (38 ft). Retained as a low-confidence community-verifiable value rather than leaving a basic performance input blank."
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from canonical keel geometry (keel.protective); shaft/propeller is protected by the keel envelope to a meaningful degree."
+      }
+    },
+    "RunningGearProtectionCode": "running_gear.keel_protected"
+  },
+  {
+    "ManufacturerID": "CHB",
+    "Manufacturer": "CHB",
+    "Model": "34",
+    "Variant": "Sedan",
+    "Nickname": "CHB 34 Sedan",
+    "ImageURL": "images/chbb-34-se.jpg",
+    "Active": false,
+    "FirstYear": 1977,
+    "LastYear": 1987,
+    "TotalBuilt": null,
+    "Designer": null,
+    "HullType": "Semi-Displacement",
+    "Style": "Sedan Trawler",
+    "Construction": "Taiwan-built fiberglass hull; early examples commonly include teak-over-plywood decks and extensive exterior teak",
+    "KeelType": "Full protective keel",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Single Inboard",
+    "Propulsion": "Shaft",
+    "Flybridge": "Yes",
+    "AftCabin": "No",
+    "SideDecks": "Moderate",
+    "TypicalEngineID": "Ford Lehman 120",
+    "FuelCapacity": 946.3529,
+    "WaterCapacity": 378.5412,
+    "HoldingCapacity": 94.6353,
+    "Berths": 4,
+    "Cabins": 1,
+    "Heads": 1,
+    "Shower": "Wet head",
+    "Galley": "Salon galley with lower helm",
+    "CoastalRating": "Yes",
+    "OffshoreRating": "No",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "Strengths": [
+      "Affordable classic Taiwan trawler with economical single-diesel operation and broad used-market availability"
+    ],
+    "Weaknesses": "Build quality varies; wet decks, leaking windows and aging tanks can dominate ownership cost.",
+    "CommonProblems": "Inspect teak-over-plywood decks, window frames, cabin sides, fuel tanks, exhaust, shaft, rudder and owner-modified electrical systems.",
+    "TypicalMission": "Budget coastal, Great Loop and inland-waterway cruising.",
+    "AvoidIf": [
+      "You cannot absorb structural moisture repairs or require consistent factory documentation"
+    ],
+    "DateCreated": "2026-07-27",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "OpenAI_Research",
+    "Revision": 2,
+    "BoatModelID": "CHBB-34-SE",
+    "BoatFamily": null,
+    "Configuration": null,
+    "HullBehaviour": "Semi-Displacement",
+    "Features": [],
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Semi-Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Cruiser",
+    "ResearchStatus": "Reviewed",
+    "ResearchNotes": "Representative CHB 34 sedan specifications synthesized from buyer guides and listings; verify layout and tankage by hull.\n\nBatch 33 confidence audit: exact-model identity and source quality rechecked. Confidence is intentionally retained where factory/importer documentation is incomplete; missing evidence does not trigger deletion or inferred consolidation.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "DataConfidence": "Low",
+    "Overview": "The CHB 34 is a sedan trawler and semi-displacement produced from 1977 to 1987. Typical examples use single inboard, diesel, and shaft. The recorded configuration includes a flybridge, 1 cabin, 4 berths, and 1 head.",
+    "Suitability": {},
+    "TradeOffs": [
+      "Build quality varies",
+      "wet decks, leaking windows and aging tanks can dominate ownership cost"
+    ],
+    "BestFor": [],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Confirm HIN, yard, importer and actual layout",
+      "Moisture-map decks, cabin sides and flybridge",
+      "Inspect windows and exterior teak",
+      "Inspect steel or iron fuel tanks",
+      "Inspect exhaust, shaft, rudder and steering",
+      "Audit electrical and plumbing modifications"
+    ],
+    "BuyerQuestions": [
+      "Confirm HIN, yard, importer and actual layout?",
+      "What inspection, repair or service history is available for moisture-map decks, cabin sides and flybridge?",
+      "Has the seller documented this item: Inspect windows and exterior teak?",
+      "Has the seller documented this item: Inspect steel or iron fuel tanks?",
+      "Has the seller documented this item: Inspect exhaust, shaft, rudder and steering?",
+      "What inspection, repair or service history is available for audit electrical and plumbing modifications?"
+    ],
+    "OwnerActions": [],
+    "ModelVariations": [],
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Limited",
+      "EvidenceQuality": "Low",
+      "Statements": [
+        {
+          "Scope": "Overview",
+          "EvidenceRefs": [
+            "SRC-LEGACY-CHBB-34-SE"
+          ],
+          "EvidenceTypes": [
+            "Unverified"
+          ],
+          "Confidence": "Low",
+          "Notes": "Neutral synthesis generated from recorded configuration and specification fields."
+        },
+        {
+          "Scope": "Strengths",
+          "EvidenceRefs": [
+            "SRC-LEGACY-CHBB-34-SE"
+          ],
+          "EvidenceTypes": [
+            "Unverified"
+          ],
+          "Confidence": "Low",
+          "Notes": "Legacy editorial content retained and normalized; independent support not yet established."
+        },
+        {
+          "Scope": "TradeOffs",
+          "EvidenceRefs": [
+            "SRC-LEGACY-CHBB-34-SE"
+          ],
+          "EvidenceTypes": [
+            "Unverified"
+          ],
+          "Confidence": "Low",
+          "Notes": "Legacy editorial content retained and normalized; independent support not yet established."
+        },
+        {
+          "Scope": "AvoidIf",
+          "EvidenceRefs": [
+            "SRC-LEGACY-CHBB-34-SE"
+          ],
+          "EvidenceTypes": [
+            "Unverified"
+          ],
+          "Confidence": "Low",
+          "Notes": "Legacy editorial content retained and normalized; independent support not yet established."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "EvidenceRefs": [
+            "manufacturerknowledge:CHB:CHB Taiwan Trawler Family"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Shared family guidance; confirm that each item applies to the model year and variation."
+        },
+        {
+          "Scope": "BuyerQuestions",
+          "EvidenceRefs": [
+            "manufacturerknowledge:CHB:CHB Taiwan Trawler Family"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Questions derived from supported family inspection priorities."
+        },
+        {
+          "Scope": "IdentityAndDimensions",
+          "EvidenceRefs": [
+            "SRC-LEGACY-CHBB-34-SE"
+          ],
+          "EvidenceTypes": [
+            "Unverified"
+          ],
+          "Confidence": "Low",
+          "Notes": "Identity and dimensions currently rely primarily on legacy B-Atlas data; family guidance does not independently verify this model."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Suitability and Best For require evidence-based editorial review; legacy TypicalMission was retained but not promoted",
+        "Legacy CommonProblems requires model-specific source verification before promotion to Known Concerns",
+        "Air draft is unknown or not documented",
+        "Displacement is unknown or not documented",
+        "Legacy Common Problems text has not been verified as a model-specific Known Concern.",
+        "Meaningful model variations remain undocumented or unverified.",
+        "Best For remains unassessed pending model-specific evidence.",
+        "Suitability remains unassessed pending model-specific evidence.",
+        "Independent model-specific source required before Reviewed status can be restored."
+      ]
+    },
+    "EngineCount": 1,
+    "ModelCharacter": "A rare sedan interpretation of the classic CHB 34 hull, replacing the familiar aft-cabin arrangement with a more open cockpit-and-salon cruiser layout. It keeps the same economical single-diesel, full-keel Taiwan-trawler character but is less common and less consistently documented than the Double Cabin.",
+    "DesignLineage": [
+      "Owner records confirm that CHB produced a sedan version of the 34 in addition to the more common aft/tri-cabin arrangements.",
+      "The sedan belongs to the same broad Chung Hwa 34-foot trawler family rather than representing a separate builder lineage.",
+      "Some export markets used other names, including Clipper, for CHB-built 34-foot boats.",
+      "Because surviving records are sparse, B-Atlas treats the Sedan as a real but moderately documented layout variant."
+    ],
+    "OwnershipCharacter": "Mechanically simple and compact, with easier cockpit-to-salon flow than the aft-cabin versions. As with other early CHBs, deck cores, windows, tanks, wiring and teak condition are more consequential than the basic single-diesel drivetrain.",
+    "CharacterConfidence": "Moderate",
+    "NormalizedHullType": "Semi-Displacement",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "RarityConfidence": "Not rated",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "PriceConfidence": "Not rated",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "FuelCode": "fuel.diesel",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "HullBehaviourCode": "hull_behaviour.semi_displacement",
+    "BoatFamilyCode": "boat_family.trawler",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "KeelConfigurationCode": "keel.full_long",
+    "RunningGearProtectionCode": "running_gear.keel_protected",
+    "FlybridgeCode": "availability.yes",
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "LOA": 10.2108,
+    "PlanCriticalStatus": {
+      "LOA": "researched_unknown",
+      "Beam": "researched_unknown",
+      "Draft": "researched_unknown"
+    },
+    "Beam": 3.5814,
+    "Draft": 1.0668,
+    "AirDraft": 3.5500000000000003,
+    "CanonicalSlug": "chb-34-sedan",
+    "CanonicalPath": "/models/chb-34-sedan/",
+    "CanonicalURL": "https://b-atlas.org/models/chb-34-sedan/",
+    "ModelIdentityFamilyID": "CHBB-34",
+    "StyleCode": "Cruiser",
+    "CoolingCode": "cooling.fresh_water",
+    "SideDecksCode": "side_decks.moderate",
+    "SpecificationConfidence": {
+      "AirDraft": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [],
+        "Note": "B-Atlas working estimate derived from nearest comparable models with similar style, size and flybridge configuration. Verify actual mast/radar/antenna clearance before route planning. Comparable model IDs: MTRA-34-SE, TOLL-34-SE, MNSH-34-MK3, BAYL-3258, JEAU-1095-FLY, CALF-34-TR, CARV-33-MAR"
+      },
+      "DisplacementCruiseSpeed": {
+        "Level": "Medium",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://seattle.boatshed.com/chb_34_trawler-boat-156342.html",
+          "https://rabbetboats.com/guides/trawlers/chb/34-trawler"
+        ],
+        "Note": "Representative single Ford Lehman 120-hp CHB 34 sedan/trawler examples report about 7 kn at roughly 2 US gal/h. Twin and repowered hulls exist; stored point represents the common single-diesel economy configuration."
+      },
+      "DisplacementCruiseFuelBurn": {
+        "Level": "Medium",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://seattle.boatshed.com/chb_34_trawler-boat-156342.html",
+          "https://rabbetboats.com/guides/trawlers/chb/34-trawler"
+        ],
+        "Note": "Representative single Ford Lehman 120-hp CHB 34 sedan/trawler examples report about 7 kn at roughly 2 US gal/h. Twin and repowered hulls exist; stored point represents the common single-diesel economy configuration."
+      },
+      "EngineCount": {
+        "Level": "Medium",
+        "Status": "inferred_from_engine_configuration",
+        "EvidenceRefs": [],
+        "Note": "Engine count (1) normalized from the existing canonical EngineConfiguration description; no new external specification source was required."
+      },
+      "LWL": {
+        "Level": "Low",
+        "Status": "estimated_family_ratio",
+        "EvidenceRefs": [],
+        "Note": "Working LWL estimate derived from the median LWL/LOA ratio (0.903) of other B-Atlas CHB models with recorded waterline lengths. Intended for hull-speed context and community verification, not survey use."
+      },
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      }
+    },
+    "DisplacementCruiseSpeed": 7,
+    "DisplacementCruiseFuelBurn": 7.571,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "LWL": 9.2202,
+    "ShowerTypeCode": "shower.wet_head"
+  },
+  {
+    "ManufacturerID": "CHB",
+    "Manufacturer": "CHB",
+    "Model": "34",
+    "Variant": "Double Cabin",
+    "Nickname": "CHB 34 Double Cabin",
+    "ImageURL": "images/chby-34-se.jpg",
+    "Active": false,
+    "FirstYear": 1972,
+    "LastYear": 1985,
+    "TotalBuilt": 600,
+    "Designer": "Chung Hwa",
+    "HullType": "Semi-Displacement",
+    "Style": "Aft Cabin Trawler",
+    "Construction": "Fiberglass",
+    "KeelType": "Full Length",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Single Inboard",
+    "Propulsion": "Shaft",
+    "Flybridge": "Yes",
+    "AftCabin": true,
+    "SideDecks": "Wide",
+    "TypicalEngineID": "Ford Lehman 120",
+    "FuelCapacity": 1135.6235,
+    "WaterCapacity": 567.8118,
+    "HoldingCapacity": 151.4165,
+    "Berths": 4,
+    "Cabins": 2,
+    "Heads": 2,
+    "Shower": false,
+    "Galley": false,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "No",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "Strengths": [
+      "Two private cabins in a compact hull",
+      "Economical single-diesel operation on most examples",
+      "Protected running gear and walkaround decks",
+      "Large surviving fleet and broad parts and owner knowledge"
+    ],
+    "Weaknesses": "Heavy maintenance required on extensive exterior teak trim, prone to rhythmic roll in a beam sea.",
+    "CommonProblems": "Black iron fuel tank side wall corrosion from deck leaks, window track frame sub-core rotting.",
+    "TypicalMission": "Low-cost Great Loop exploration, couples coastal cruising, and inland river crawling.",
+    "AvoidIf": [
+      "You require low-maintenance exterior construction",
+      "You need modern systems without refit risk",
+      "You expect planing speeds"
+    ],
+    "DateCreated": "2026-07-13",
+    "LastUpdated": "2026-10-05",
+    "ReviewedBy": "B-Atlas Marine Trader / CHB Family Research",
+    "Revision": 3,
+    "BoatModelID": "CHBY-34-SE",
+    "BoatFamily": "Trawler",
+    "Configuration": "Classic Trawler",
+    "HullBehaviour": "Semi-Displacement",
+    "Features": [
+      "Flybridge",
+      "Wide Side Decks"
+    ],
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Semi-Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Trawler",
+    "DataConfidence": "Moderate",
+    "ResearchStatus": "Reviewed",
+    "Overview": "The CHB 34 Double Cabin is a classic Taiwan-built aft-cabin trawler. Listings also commonly use “Tri-Cabin” for the same basic layout: forward stateroom, central saloon and aft stateroom. Typical examples use diesel shaft drive with a flybridge and full walkaround side decks.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented cabin and living arrangement supports couple cruising, subject to condition and configuration.",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/chb/34-double-cabin-1972-85",
+          "https://murrayyachtsales.com/marine-trader-history/"
+        ]
+      },
+      "SoloHandling": {
+        "Assessment": "Mixed",
+        "Summary": "Walkaround decks and lower helms help, but windage, single-screw handling or vessel size can require experience and docking assistance.",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/chb/34-double-cabin-1972-85",
+          "https://murrayyachtsales.com/marine-trader-history/"
+        ]
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "Displacement-speed efficiency suits inland cruising, while beam and air draft must be checked against route and marina limits.",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/chb/34-double-cabin-1972-85",
+          "https://murrayyachtsales.com/marine-trader-history/"
+        ]
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "The long-keel semi-displacement form supports coastal use, but condition, loading and individual construction determine exposed-water suitability.",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/chb/34-double-cabin-1972-85",
+          "https://murrayyachtsales.com/marine-trader-history/"
+        ]
+      }
+    },
+    "TradeOffs": [
+      "Early plywood cabin houses and teak-fastened decks demand careful moisture inspection",
+      "Extensive exterior teak can create substantial maintenance",
+      "Single-screw handling requires technique or docking assistance",
+      "Builder and year differences make individual verification essential"
+    ],
+    "BestFor": [
+      "Couples wanting private guest accommodation in a 34-foot trawler",
+      "Inland and coastal cruising at displacement speeds",
+      "Buyers comfortable evaluating and maintaining an older Taiwan-built cruiser"
+    ],
+    "KnownConcerns": [
+      {
+        "ConcernID": "CHB-34-EARLY-HOUSE-DECK-MOISTURE",
+        "System": "Deck and superstructure",
+        "Description": "Early plywood cabin-house construction and teak-fastened cored decks are documented moisture and rot risk areas on the CHB 34.",
+        "AffectedYears": {
+          "From": 1972,
+          "To": 1985
+        },
+        "AffectedVariations": [
+          "Early plywood cabin house",
+          "Teak-planked deck construction"
+        ],
+        "BuyerQuestion": "What moisture readings, deck repairs or cabin-house repairs have been documented?",
+        "InspectionAction": "Moisture-test the decks, cabin-house structure, window surrounds and hardware penetrations.",
+        "OwnerAction": "Maintain bedding and coatings and repair water intrusion promptly.",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/chb/34-double-cabin-1972-85"
+        ],
+        "Confidence": "Moderate"
+      }
+    ],
+    "InspectionFocus": [
+      "Moisture-test teak-deck fasteners, deck penetrations, window surrounds and cabin-house joints",
+      "Inspect fuel tanks, fill and vent hoses, supports and access for corrosion or leakage",
+      "Inspect original wiring, shore-power equipment, bonding and later electrical modifications",
+      "Inspect exhaust systems, engine mounts, shafting, rudders and steering gear",
+      "Confirm builder, model configuration and major refit history from hull documentation"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for moisture-test teak-deck fasteners, deck penetrations, window surrounds and cabin-house joints?",
+      "What inspection, repair or service history is available for inspect fuel tanks, fill and vent hoses, supports and access for corrosion or leakage?",
+      "What inspection, repair or service history is available for inspect original wiring, shore-power equipment, bonding and later electrical modifications?",
+      "What inspection, repair or service history is available for inspect exhaust systems, engine mounts, shafting, rudders and steering gear?",
+      "What inspection, repair or service history is available for confirm builder, model configuration and major refit history from hull documentation?"
+    ],
+    "OwnerActions": [
+      "Keep deck hardware, windows and cabin-house joints sealed and address leaks promptly",
+      "Maintain access to tanks, exhaust, steering and electrical systems for inspection",
+      "Document structural, tank and electrical repairs for future buyers"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "Early plywood cabin house",
+        "Description": "Before approximately 1975, some examples used a plywood house with fiberglass covering, increasing the importance of rot and moisture inspection.",
+        "AffectedYears": "Before approximately 1975",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/chb/34-double-cabin-1972-85"
+        ],
+        "Confidence": "Moderate"
+      },
+      {
+        "Name": "Deck and superstructure changes",
+        "Description": "Teak-planked decks over a cored sub-deck were used through approximately 1985; later CHB 34 production adopted a one-piece fiberglass deck and house, with later flybridge and window-frame revisions.",
+        "AffectedYears": "Production changes after 1985",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/chb/34-double-cabin-1972-85"
+        ],
+        "Confidence": "High"
+      },
+      "Tri-Cabin (alternate market/listing name for the aft-cabin/two-stateroom arrangement)"
+    ],
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndProduction",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CHBY-34-SE"
+            ],
+            "Years": {
+              "From": 1972,
+              "To": 1985
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/chb/34-double-cabin-1972-85",
+            "https://murrayyachtsales.com/marine-trader-history/"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Identity, production period and representative specifications are supported by model references; individual hull documentation remains controlling."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CHBY-34-SE"
+            ],
+            "Years": {
+              "From": 1972,
+              "To": 1985
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/chb/34-double-cabin-1972-85",
+            "https://murrayyachtsales.com/marine-trader-history/"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source",
+            "Marketplace observation"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Guidance is derived from documented arrangement, propulsion and dimensions rather than advertising language."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "CHBY-34-SE"
+            ],
+            "Years": {
+              "From": 1972,
+              "To": 1985
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/chb/34-double-cabin-1972-85",
+            "https://murrayyachtsales.com/marine-trader-history/"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Family inspection guidance reflects common Taiwan-import construction and aging systems; applicability must be verified on the individual boat."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Specifications, builder and equipment must be confirmed for the individual hull and production year",
+        "Legacy CommonProblems were not promoted unless model-specific evidence met the approved threshold"
+      ]
+    },
+    "EngineCount": 1,
+    "ModelCharacter": "The canonical CHB 34 aft-cabin trawler. “Double Cabin” and “Tri-Cabin” are overlapping market names for the same basic two-stateroom arrangement: a forward cabin, central saloon and aft cabin. Exterior details vary by year, yard and importer, but B-Atlas does not treat Tri-Cabin as a separate exterior model.",
+    "DesignLineage": [
+      "Built by Chung Hwa Boat Building in Taiwan and imported under several distributor identities.",
+      "The same underlying boat was sold as the CHB 34 Double Cabin and Marine Trader 34 Double Cabin, with La Paz and Eagle names also appearing in the U.S. market.",
+      "Early boats used plywood-and-fiberglass deckhouse construction; later boats moved toward molded fiberglass structures and reduced exterior teak.",
+      "B-Atlas uses CHB 34 Double Cabin as the canonical identity and preserves distributor names as aliases."
+    ],
+    "OwnershipCharacter": "A simple, economical cruiser whose purchase price can be modest relative to its accommodation. Survey attention should focus heavily on decks, windows, tanks, wiring and decades of owner modifications; a well-refitted boat can be fundamentally different from a neglected original example.",
+    "CharacterConfidence": "High",
+    "DisplacementLb": 17000,
+    "FuelCapacityGal": 300,
+    "WaterCapacityGal": 150,
+    "NormalizedHullType": "Semi-Displacement",
+    "ResearchNotes": "Canonicalized CHB 34 aft-cabin identity. “Double Cabin” and “Tri-Cabin” are treated as aliases for the same basic CHB-built 34-foot aft-cabin/two-stateroom trawler platform rather than separate exterior models.\n\nMarine Trader 34 Double Cabin, La Paz 34 and Eagle 34 Double Cabin may represent CHB-built/distributor-branded variants; verify HIN, builder and importer by hull.\n\nExterior details, deckhouse construction, flybridge and windows changed over the production life, so year-specific photos may differ.",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "RarityConfidence": "Not rated",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "PriceConfidence": "Not rated",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "FuelCode": "fuel.diesel",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "HullBehaviourCode": "hull_behaviour.semi_displacement",
+    "BoatFamilyCode": "boat_family.trawler",
+    "LOA": 10.2108,
+    "LWL": 9.2202,
+    "Beam": 3.5814,
+    "Draft": 1.0668,
+    "Displacement": 7711.1,
+    "HullMaterialCode": "hull_material.fiberglass",
+    "KeelConfigurationCode": "keel.full_long",
+    "RunningGearProtectionCode": "running_gear.keel_protected",
+    "FlybridgeCode": "availability.yes",
+    "SideDecksCode": "side_decks.wide",
+    "ShowerTypeCode": "shower.wet_head",
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "AirDraft": 4.1000000000000005,
+    "CanonicalSlug": "chb-34-double-cabin",
+    "CanonicalPath": "/models/chb-34-double-cabin/",
+    "CanonicalURL": "https://b-atlas.org/models/chb-34-double-cabin/",
+    "ModelIdentityFamilyID": "CHBB-34",
+    "StyleCode": "Trawler",
+    "CoolingCode": "cooling.fresh_water",
+    "SpecificationConfidence": {
+      "AirDraft": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [],
+        "Note": "B-Atlas working estimate derived from nearest comparable models with similar style, size and flybridge configuration. Verify actual mast/radar/antenna clearance before route planning. Comparable model IDs: MNSH-34-MK2, MNSH-34-MK1, BENE-30-SW, ALBN-36-CL, ISGY-36, MONK-36-TR, BENE-34-SW"
+      }
+    },
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null
+  },
+  {
+    "ManufacturerID": "CHB",
+    "Manufacturer": "CHB",
+    "Model": "35",
+    "Variant": "Sundeck",
+    "Nickname": "CHB 35 Sundeck",
+    "ImageURL": "images/chby-35.jpg",
+    "Active": false,
+    "FirstYear": 1983,
+    "LastYear": 1986,
+    "TotalBuilt": null,
+    "Designer": "CHB Design Group",
+    "HullType": "Semi-Displacement",
+    "Style": "Trawler",
+    "Construction": "Fiberglass",
+    "KeelType": "Full Length",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Single Inboard",
+    "Propulsion": "Shaft",
+    "Flybridge": "Yes",
+    "AftCabin": true,
+    "SideDecks": "Wide",
+    "TypicalEngineID": "Lehman 120",
+    "FuelCapacity": 1135.6235,
+    "WaterCapacity": 454.2494,
+    "HoldingCapacity": 151.4165,
+    "Berths": 4,
+    "Cabins": 2,
+    "Heads": 1,
+    "Shower": false,
+    "Galley": false,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "Yes",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "Strengths": [
+      "Two-cabin accommodation and a useful covered aft deck",
+      "Traditional teak interior and separate sleeping areas",
+      "Economical diesel cruising",
+      "Compact dimensions for an aft-cabin layout"
+    ],
+    "Weaknesses": "Older systems and teak maintenance.",
+    "CommonProblems": "Deck core moisture, tank corrosion.",
+    "TypicalMission": "Loop cruising and coastal passages.",
+    "AvoidIf": [
+      "You require low air draft",
+      "You want wide machinery spaces and easy tank replacement",
+      "You prefer a simple sedan layout"
+    ],
+    "DateCreated": "High",
+    "LastUpdated": "2026-09-12",
+    "ReviewedBy": "B-Atlas Marine Trader / CHB Family Research",
+    "Revision": 2,
+    "BoatModelID": "CHBY-35",
+    "BoatFamily": "Trawler",
+    "Configuration": "Classic Trawler",
+    "HullBehaviour": "Semi-Displacement",
+    "Features": [
+      "Flybridge",
+      "Aft Cabin",
+      "Wide Side Decks"
+    ],
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Semi-Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Trawler",
+    "DataConfidence": "Moderate",
+    "ResearchStatus": "Reviewed",
+    "Overview": "The CHB 35 Sundeck is a compact aft-cabin flybridge cruiser that places a covered aft deck and two-cabin accommodation into a 35-foot hull. It uses traditional teak interior finishes and displacement-speed diesel operation, with the elevated sundeck arrangement emphasizing living space over a low profile.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented cabin and living arrangement supports couple cruising, subject to condition and configuration.",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/chb/35-sundeck-1983-86",
+          "https://www.hmy.com/yachting/powerboat-guide/chb"
+        ]
+      },
+      "SoloHandling": {
+        "Assessment": "Mixed",
+        "Summary": "Walkaround decks and lower helms help, but windage, single-screw handling or vessel size can require experience and docking assistance.",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/chb/35-sundeck-1983-86",
+          "https://www.hmy.com/yachting/powerboat-guide/chb"
+        ]
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "Displacement-speed efficiency suits inland cruising, while beam and air draft must be checked against route and marina limits.",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/chb/35-sundeck-1983-86",
+          "https://www.hmy.com/yachting/powerboat-guide/chb"
+        ]
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "The long-keel semi-displacement form supports coastal use, but condition, loading and individual construction determine exposed-water suitability.",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/chb/35-sundeck-1983-86",
+          "https://www.hmy.com/yachting/powerboat-guide/chb"
+        ]
+      }
+    },
+    "TradeOffs": [
+      "High profile and windage affect docking and bridge clearance",
+      "Exterior teak and aging deck or window structures require surveillance",
+      "Engine-room and service access are tighter than on larger trawlers",
+      "Individual builder and equipment variation is significant"
+    ],
+    "BestFor": [
+      "Couples wanting an aft-cabin layout below 36 feet",
+      "Liveaboard or extended-cruising buyers prioritizing interior volume",
+      "Owners comfortable maintaining an older Taiwan-built trawler"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Moisture-test teak-deck fasteners, deck penetrations, window surrounds and cabin-house joints",
+      "Inspect fuel tanks, fill and vent hoses, supports and access for corrosion or leakage",
+      "Inspect original wiring, shore-power equipment, bonding and later electrical modifications",
+      "Inspect exhaust systems, engine mounts, shafting, rudders and steering gear",
+      "Confirm builder, model configuration and major refit history from hull documentation"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for moisture-test teak-deck fasteners, deck penetrations, window surrounds and cabin-house joints?",
+      "What inspection, repair or service history is available for inspect fuel tanks, fill and vent hoses, supports and access for corrosion or leakage?",
+      "What inspection, repair or service history is available for inspect original wiring, shore-power equipment, bonding and later electrical modifications?",
+      "What inspection, repair or service history is available for inspect exhaust systems, engine mounts, shafting, rudders and steering gear?",
+      "What inspection, repair or service history is available for confirm builder, model configuration and major refit history from hull documentation?"
+    ],
+    "OwnerActions": [
+      "Keep deck hardware, windows and cabin-house joints sealed and address leaks promptly",
+      "Maintain access to tanks, exhaust, steering and electrical systems for inspection",
+      "Document structural, tank and electrical repairs for future buyers"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "CHB and related importer labels",
+        "Description": "Closely related 35-foot sundeck boats were sold under multiple Taiwan-import labels; hull documentation and actual builder should be verified.",
+        "AffectedYears": "1980s production",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/chb/35-sundeck-1983-86",
+          "https://www.hmy.com/yachting/powerboat-guide/chb"
+        ],
+        "Confidence": "Moderate"
+      }
+    ],
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndProduction",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CHBY-35"
+            ],
+            "Years": {
+              "From": 1983,
+              "To": 1986
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/chb/35-sundeck-1983-86",
+            "https://www.hmy.com/yachting/powerboat-guide/chb"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Identity, production period and representative specifications are supported by model references; individual hull documentation remains controlling."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CHBY-35"
+            ],
+            "Years": {
+              "From": 1983,
+              "To": 1986
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/chb/35-sundeck-1983-86",
+            "https://www.hmy.com/yachting/powerboat-guide/chb"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source",
+            "Marketplace observation"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Guidance is derived from documented arrangement, propulsion and dimensions rather than advertising language."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "CHBY-35"
+            ],
+            "Years": {
+              "From": 1983,
+              "To": 1986
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/chb/35-sundeck-1983-86",
+            "https://www.hmy.com/yachting/powerboat-guide/chb"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Family inspection guidance reflects common Taiwan-import construction and aging systems; applicability must be verified on the individual boat."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Specifications, builder and equipment must be confirmed for the individual hull and production year",
+        "Legacy CommonProblems were not promoted unless model-specific evidence met the approved threshold"
+      ]
+    },
+    "EngineCount": 1,
+    "ModelCharacter": "A later, wider CHB sundeck trawler with a full aft master, raised covered outdoor living space and substantially more liveaboard volume than the classic 34. It represents the 1980s move from compact aft-cabin trawlers toward broader sundeck cruisers.",
+    "DesignLineage": [
+      "Documented 1984–85 examples identify the model as a CHB/Chien Hwa 35 Sundeck Trawler.",
+      "The design is commonly associated with Monk styling and semi-displacement hull form.",
+      "It is materially wider and more accommodation-focused than the classic CHB 34 family.",
+      "The 35 appears under closely related builder/importer naming, reflecting the broader Taiwan-trawler distribution system."
+    ],
+    "OwnershipCharacter": "A strong liveaboard/Loop-style layout with generous covered exterior space. The larger house, multiple cabins and greater systems count make restoration and dockage more demanding than a 34, while single-engine examples remain economical underway.",
+    "CharacterConfidence": "High",
+    "DisplacementLb": 18700,
+    "FuelCapacityGal": 300,
+    "WaterCapacityGal": 100,
+    "NormalizedHullType": "Semi-Displacement",
+    "ResearchNotes": "Documented 1984 CHB 35 Sundeck examples support approximately 35 ft on deck, 11.75 ft beam and semi-displacement form. Tankage and engines varied by hull.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "RarityConfidence": "Not rated",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "PriceConfidence": "Not rated",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "FuelCode": "fuel.diesel",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "HullBehaviourCode": "hull_behaviour.semi_displacement",
+    "BoatFamilyCode": "boat_family.trawler",
+    "LOA": 10.4648,
+    "LWL": 9.6012,
+    "Beam": 3.6576,
+    "Draft": 1.27,
+    "Displacement": 8482.2,
+    "HullMaterialCode": "hull_material.fiberglass",
+    "KeelConfigurationCode": "keel.full_long",
+    "RunningGearProtectionCode": "running_gear.keel_protected",
+    "FlybridgeCode": "availability.yes",
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "AirDraft": 4.1000000000000005,
+    "CanonicalSlug": "chb-35-sundeck-sundeck",
+    "CanonicalPath": "/models/chb-35-sundeck-sundeck/",
+    "CanonicalURL": "https://b-atlas.org/models/chb-35-sundeck-sundeck/",
+    "StyleCode": "Trawler",
+    "CoolingCode": "cooling.fresh_water",
+    "SideDecksCode": "side_decks.wide",
+    "SpecificationConfidence": {
+      "AirDraft": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [],
+        "Note": "B-Atlas working estimate derived from nearest comparable models with similar style, size and flybridge configuration. Verify actual mast/radar/antenna clearance before route planning. Comparable model IDs: MNSH-34-MK2, MNSH-34-MK1, ALBN-36-CL, BENE-30-SW, ISGY-36, MONK-36-TR, BENE-34-SW"
+      },
+      "WaterCapacity": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [],
+        "Note": "Legacy sources conflict on tankage. v6.95 retains the existing working value, interprets its legacy basis as US gallons, and converts it to canonical litres pending owner/source verification."
+      },
+      "EngineCount": {
+        "Level": "Medium",
+        "Status": "inferred_from_engine_configuration",
+        "EvidenceRefs": [],
+        "Note": "Engine count (1) normalized from the existing canonical EngineConfiguration description; no new external specification source was required."
+      },
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      }
+    },
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "ShowerTypeCode": "shower.none"
+  },
+  {
+    "ManufacturerID": "CHB",
+    "Manufacturer": "CHB",
+    "Model": "40",
+    "Variant": "Double Cabin",
+    "Nickname": "CHB 40 Double Cabin",
+    "ImageURL": "images/chby-40.jpg",
+    "Active": false,
+    "FirstYear": 1978,
+    "LastYear": 1995,
+    "TotalBuilt": null,
+    "Designer": "CHB Design Group",
+    "HullType": "Semi-Displacement",
+    "Style": "Trawler",
+    "Construction": "Fiberglass",
+    "KeelType": "Full Length",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Twin Inboard",
+    "Propulsion": "Shaft",
+    "Flybridge": "Yes",
+    "AftCabin": true,
+    "SideDecks": "Wide",
+    "TypicalEngineID": "Lehman 135",
+    "FuelCapacity": 1514.1647,
+    "WaterCapacity": 567.8118,
+    "HoldingCapacity": 189.2706,
+    "Berths": 6,
+    "Cabins": 2,
+    "Heads": 2,
+    "Shower": false,
+    "Galley": false,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "Yes",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "Strengths": [
+      "Substantial two-cabin living space",
+      "Twin-diesel maneuverability and redundancy on typical examples",
+      "Walkaround decks and traditional interior",
+      "Useful platform for extended cruising or liveaboard use"
+    ],
+    "Weaknesses": "Older systems and teak decks.",
+    "CommonProblems": "Deck core moisture, window leaks.",
+    "TypicalMission": "Loop cruising and extended coastal passages.",
+    "AvoidIf": [
+      "You need verified offshore capability",
+      "You require low bridge clearance or narrow slips",
+      "You want a small, simple or inexpensive boat to maintain"
+    ],
+    "DateCreated": "Critical",
+    "LastUpdated": "2026-09-12",
+    "ReviewedBy": "B-Atlas Marine Trader / CHB Family Research",
+    "Revision": 2,
+    "BoatModelID": "CHBY-40",
+    "BoatFamily": "Trawler",
+    "Configuration": "Classic Trawler",
+    "HullBehaviour": "Semi-Displacement",
+    "Features": [
+      "Flybridge",
+      "Aft Cabin",
+      "Wide Side Decks"
+    ],
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Semi-Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Trawler",
+    "DataConfidence": "Moderate",
+    "ResearchStatus": "Reviewed",
+    "Overview": "The CHB 40 is a large traditional aft-cabin flybridge cruiser with two private cabins, two heads and twin-diesel shaft propulsion in typical examples. The design emphasizes interior volume, teak joinery and displacement-speed cruising, but the current record spans configurations and production years that require individual verification.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented cabin and living arrangement supports couple cruising, subject to condition and configuration.",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/chb"
+        ]
+      },
+      "SoloHandling": {
+        "Assessment": "Limited",
+        "Summary": "Walkaround decks and lower helms help, but windage, single-screw handling or vessel size can require experience and docking assistance.",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/chb"
+        ]
+      },
+      "InlandWaterways": {
+        "Assessment": "Mixed",
+        "Summary": "Displacement-speed efficiency suits inland cruising, while beam and air draft must be checked against route and marina limits.",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/chb"
+        ]
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "The long-keel semi-displacement form supports coastal use, but condition, loading and individual construction determine exposed-water suitability.",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/chb"
+        ]
+      }
+    },
+    "TradeOffs": [
+      "High profile, beam and displacement increase operating and marina costs",
+      "Extensive aging systems and exterior teak can require major refit",
+      "Specifications and builder details vary across examples",
+      "Not documented as an offshore passagemaker merely because of its size"
+    ],
+    "BestFor": [
+      "Couples wanting generous aft-cabin accommodations",
+      "Extended inland and coastal cruising",
+      "Buyers prepared for yacht-scale maintenance and systems renewal"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Moisture-test teak-deck fasteners, deck penetrations, window surrounds and cabin-house joints",
+      "Inspect fuel tanks, fill and vent hoses, supports and access for corrosion or leakage",
+      "Inspect original wiring, shore-power equipment, bonding and later electrical modifications",
+      "Inspect exhaust systems, engine mounts, shafting, rudders and steering gear",
+      "Confirm builder, model configuration and major refit history from hull documentation"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for moisture-test teak-deck fasteners, deck penetrations, window surrounds and cabin-house joints?",
+      "What inspection, repair or service history is available for inspect fuel tanks, fill and vent hoses, supports and access for corrosion or leakage?",
+      "What inspection, repair or service history is available for inspect original wiring, shore-power equipment, bonding and later electrical modifications?",
+      "What inspection, repair or service history is available for inspect exhaust systems, engine mounts, shafting, rudders and steering gear?",
+      "What inspection, repair or service history is available for confirm builder, model configuration and major refit history from hull documentation?"
+    ],
+    "OwnerActions": [
+      "Keep deck hardware, windows and cabin-house joints sealed and address leaks promptly",
+      "Maintain access to tanks, exhaust, steering and electrical systems for inspection",
+      "Document structural, tank and electrical repairs for future buyers"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "Configuration and importer variation",
+        "Description": "CHB 40 examples appear in multiple aft-cabin and sundeck configurations; exact production identity and specifications should be confirmed from the individual hull.",
+        "AffectedYears": null,
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/chb"
+        ],
+        "Confidence": "Low"
+      }
+    ],
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndProduction",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CHBY-40"
+            ],
+            "Years": {
+              "From": 1978,
+              "To": 1995
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/chb"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Identity, production period and representative specifications are supported by model references; individual hull documentation remains controlling."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CHBY-40"
+            ],
+            "Years": {
+              "From": 1978,
+              "To": 1995
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/chb"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source",
+            "Marketplace observation"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Guidance is derived from documented arrangement, propulsion and dimensions rather than advertising language."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "CHBY-40"
+            ],
+            "Years": {
+              "From": 1978,
+              "To": 1995
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/chb"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Family inspection guidance reflects common Taiwan-import construction and aging systems; applicability must be verified on the individual boat."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Specifications, builder and equipment must be confirmed for the individual hull and production year",
+        "Legacy CommonProblems were not promoted unless model-specific evidence met the approved threshold"
+      ]
+    },
+    "EngineCount": 2,
+    "ModelCharacter": "A larger double-cabin CHB Taiwan trawler aimed at extended cruising and liveaboard use, with significantly more salon, aft-cabin and machinery space than the 34/35-foot boats while retaining conventional diesel propulsion and traditional teak-heavy construction.",
+    "DesignLineage": [
+      "CHB/Chung Hwa produced numerous trawlers in the roughly 40-foot range under several model and distributor names.",
+      "Documented CHB 40 examples overlap heavily with Marine Trader-style double-cabin and sundeck terminology.",
+      "The model belongs to the broader Chung Hwa Taiwan-trawler lineage rather than a tightly standardized single-series production program.",
+      "B-Atlas retains the CHB 40 Double Cabin as a distinct searchable identity but marks lineage precision as moderate."
+    ],
+    "OwnershipCharacter": "Substantial accommodation for comparatively low purchase cost, but yacht-scale teak, tanks, plumbing and electrical systems create meaningful refit exposure. Exact builder, layout and machinery should be confirmed hull by hull.",
+    "CharacterConfidence": "Moderate",
+    "ResearchNotes": "CHB 40 examples are well documented, but Taiwan-builder/distributor naming and layout labels vary. Retained as a distinct searchable identity with Moderate lineage confidence; verify exact hull and builder.\n\nBatch 33 confidence audit: exact-model identity and source quality rechecked. Confidence is intentionally retained where factory/importer documentation is incomplete; missing evidence does not trigger deletion or inferred consolidation.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "RarityConfidence": "Not rated",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "PriceConfidence": "Not rated",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "FuelCode": "fuel.diesel",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "HullBehaviourCode": "hull_behaviour.semi_displacement",
+    "BoatFamilyCode": "boat_family.trawler",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "KeelConfigurationCode": "keel.full_long",
+    "RunningGearProtectionCode": "running_gear.keel_protected",
+    "FlybridgeCode": "availability.yes",
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "LOA": 12.192,
+    "PlanCriticalStatus": {
+      "LOA": "researched_unknown",
+      "Beam": "researched_unknown",
+      "Draft": "researched_unknown"
+    },
+    "Beam": 3.9624,
+    "Draft": 1.2192,
+    "AirDraft": 5.2,
+    "CanonicalSlug": "chb-40-double-cabin-double-cabin",
+    "CanonicalPath": "/models/chb-40-double-cabin-double-cabin/",
+    "CanonicalURL": "https://b-atlas.org/models/chb-40-double-cabin-double-cabin/",
+    "StyleCode": "Trawler",
+    "CoolingCode": "cooling.fresh_water",
+    "SideDecksCode": "side_decks.wide",
+    "SpecificationConfidence": {
+      "AirDraft": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [],
+        "Note": "B-Atlas working estimate derived from nearest comparable models with similar style, size and flybridge configuration. Verify actual mast/radar/antenna clearance before route planning. Comparable model IDs: ISGY-40, UNIV-40-TR, MNSH-34-TR, BENE-35-SW, GRBK-36-CL, GRBK-42-CL, GULF-43-TR"
+      },
+      "LWL": {
+        "Level": "Low",
+        "Status": "restored_legacy_working_value",
+        "EvidenceRefs": [],
+        "Note": "Working LWL restored from the pre-v6.81 archived B-Atlas value (36 ft). Retained as a low-confidence community-verifiable value rather than leaving a basic performance input blank."
+      },
+      "Displacement": {
+        "Level": "Low",
+        "Status": "restored_legacy_working_value",
+        "EvidenceRefs": [],
+        "Note": "Working displacement restored from the archived pre-v6.81 value (24000 lb) and converted to canonical kilograms. Community/factory verification remains welcome."
+      },
+      "EngineCount": {
+        "Level": "Medium",
+        "Status": "inferred_from_engine_configuration",
+        "EvidenceRefs": [],
+        "Note": "Engine count (2) normalized from the existing canonical EngineConfiguration description; no new external specification source was required."
+      },
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      }
+    },
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "LWL": 10.9728,
+    "Displacement": 10886.2,
+    "ShowerTypeCode": "shower.none"
+  },
+  {
+    "ManufacturerID": "CHEOY",
+    "Manufacturer": "Cheoy Lee",
+    "Model": "28 Sedan Trawler",
+    "Variant": "Sedan",
+    "Nickname": "Cheoy Lee 28 Sedan Trawler",
+    "ImageURL": "images/chly-28.jpg",
+    "Active": false,
+    "FirstYear": 1975,
+    "LastYear": 1985,
+    "TotalBuilt": null,
+    "Designer": "Cheoy Lee Shipyard",
+    "HullType": "Displacement",
+    "Style": "Classic Trawler",
+    "Construction": "Fiberglass",
+    "KeelType": "Full-length keel with protected running gear",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Single diesel; engine make and horsepower vary by hull",
+    "Propulsion": "Shaft",
+    "Flybridge": "Varies",
+    "AftCabin": false,
+    "SideDecks": "Moderate",
+    "TypicalEngineID": "Single Lehman, Perkins or other period diesel installations vary by boat",
+    "FuelCapacity": 1173.4777,
+    "WaterCapacity": 567.8118,
+    "HoldingCapacity": null,
+    "Berths": 4,
+    "Cabins": 1,
+    "Heads": 1,
+    "Shower": "Head arrangement varies; enclosed shower not established as universal",
+    "Galley": "Compact interior galley documented on representative sedan trawlers",
+    "CoastalRating": "Yes",
+    "OffshoreRating": "Limited",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "Strengths": [
+      "Traditional teak interior and substantial fiberglass construction",
+      "Protected shaft/rudder arrangement suited to low-speed cruising",
+      "Strong classic-yacht character with practical side-deck access"
+    ],
+    "Weaknesses": "Very heavy for length, slow, generation and equipment documentation is sparse, exterior and interior woodwork can demand major upkeep, and systems access may be constrained.",
+    "CommonProblems": "Inspect teak decks and trim, deck and window leaks, plywood or timber core damage, aging fuel tanks, wiring, plumbing, engine replacement history, shaft and rudder gear, fasteners and any osmotic blistering or laminate repairs.",
+    "TypicalMission": "Traditional couple cruising on lakes, canals and protected coastal routes where range, character and low-speed economy matter more than speed or road transport.",
+    "AvoidIf": [
+      "You require modern low-maintenance finishes",
+      "You need planing-speed performance",
+      "You want standardized equipment and documentation across every hull"
+    ],
+    "DateCreated": "2026-07-18",
+    "LastUpdated": "2026-09-12",
+    "ReviewedBy": "B-Atlas Phase 8C-11 Classic Taiwanese / Older Motoryacht Research",
+    "Revision": 4,
+    "BoatModelID": "CHLY-28",
+    "BoatFamily": "Trawler",
+    "Configuration": "Classic Trawler",
+    "HullBehaviour": "Semi-Displacement",
+    "Features": [],
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Semi-Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Trawler",
+    "ResearchStatus": "Reviewed",
+    "DataConfidence": "Moderate",
+    "ResearchNotes": "Cheoy Lee 28 Sedan Trawler is verified through owner-association and surviving 1977–78 brokerage records. Core geometry is taken from a preserved 1977 listing; production span and factory model nomenclature remain incompletely documented.\n\nBatch 33 confidence audit: exact-model identity and source quality rechecked. Confidence is intentionally retained where factory/importer documentation is incomplete; missing evidence does not trigger deletion or inferred consolidation.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "Overview": "The Cheoy Lee 28 Trawler is a Hong Kong-built traditional cruising powerboat from Cheoy Lee's classic trawler period. Heavy fiberglass construction, teak joinery, protected running gear and displacement-oriented operation define the family, while layout and machinery differ materially by model.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented cruising layout is practical for a couple; guest capacity and privacy vary by model."
+      },
+      "SoloHandling": {
+        "Assessment": "Mixed",
+        "Summary": "Lower-helm access and protected decks can help short-handed operation, but windage, engine count and docking equipment remain hull-specific."
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "Route fit depends on actual beam, draft and air draft; verify bridge and marina limits for the individual boat."
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "Condition, loading and actual hull configuration are decisive; this assessment reflects documented design intent rather than an offshore guarantee."
+      }
+    },
+    "TradeOffs": [
+      "Exterior teak and older deck/window systems can demand substantial upkeep",
+      "Heavy displacement and low-speed mission limit performance",
+      "Age, yard practices and owner modifications create significant hull-to-hull variation"
+    ],
+    "BestFor": [
+      "Couples seeking a traditional wood-rich cruising boat",
+      "Owners comfortable maintaining older teak-intensive yachts",
+      "Low-speed inland and coastal cruising"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Confirm exact model identity and build year from hull documentation",
+      "Inspect teak decks, cabin-top penetrations, windows and trim for moisture intrusion",
+      "Inspect fuel/water tanks, wiring, plumbing and owner modifications",
+      "Inspect engine cooling, exhaust, mounts, shaft, rudder and keel/skeg",
+      "Verify flybridge, mast and air-draft configuration for intended routes"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for confirm exact model identity and build year from hull documentation?",
+      "What inspection, repair or service history is available for inspect teak decks, cabin-top penetrations, windows and trim for moisture intrusion?",
+      "What inspection, repair or service history is available for inspect fuel/water tanks, wiring, plumbing and owner modifications?",
+      "What inspection, repair or service history is available for inspect engine cooling, exhaust, mounts, shaft, rudder and keel/skeg?",
+      "What inspection, repair or service history is available for verify flybridge, mast and air-draft configuration for intended routes?"
+    ],
+    "OwnerActions": [
+      "Keep deck, window and hardware penetrations sealed and investigate leaks promptly",
+      "Maintain propulsion, cooling, exhaust, steering and fuel systems to documented intervals",
+      "Document structural, tank, electrical and machinery repairs for future buyers"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "Model and equipment variation",
+        "Description": "Cheoy Lee produced multiple trawler sizes and machinery/layout arrangements; individual hull documentation controls exact equipment and construction detail.",
+        "AffectedYears": "Production run",
+        "EvidenceRefs": [
+          "https://www.cheoyleeassociation.com/Power/Powertrawler3.htm",
+          "https://www.hmy.com/yachting/powerboat-guide/cheoy-lee"
+        ],
+        "Confidence": "Moderate"
+      }
+    ],
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CHLY-28"
+            ],
+            "Years": {
+              "From": 1975,
+              "To": 1985
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.cheoyleeassociation.com/Power/Powertrawler3.htm",
+            "https://www.hmy.com/yachting/powerboat-guide/cheoy-lee"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Representative identity and specifications use model-specific references where available; unresolved production or hull differences remain explicit."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CHLY-28"
+            ],
+            "Years": {
+              "From": 1975,
+              "To": 1985
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.cheoyleeassociation.com/Power/Powertrawler3.htm",
+            "https://www.hmy.com/yachting/powerboat-guide/cheoy-lee"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Guidance is derived from documented configuration and design traits, not marketplace promotion."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "CHLY-28"
+            ],
+            "Years": {
+              "From": 1975,
+              "To": 1985
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.cheoyleeassociation.com/Power/Powertrawler3.htm",
+            "https://www.hmy.com/yachting/powerboat-guide/cheoy-lee"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection items are age/configuration risks to investigate and are not assertions that every hull has the defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Published production-year detail for the 28 Trawler remains less complete than its brochure specifications.",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "EngineCount": 1,
+    "ModelCharacter": "A rare compact Cheoy Lee sedan trawler from the yard's 1970s fiberglass pleasure-boat era, combining a traditional teak-lined wheelhouse, single-diesel shaft drive and unusually heavy construction in a genuinely small footprint.",
+    "DesignLineage": [
+      "Cheoy Lee owner-association records document surviving 1977–78 28-foot trawlers/sedan trawlers.",
+      "Marketplace records consistently identify a 28 Sedan Trawler with fiberglass hull and single diesel propulsion.",
+      "The model appears to belong to Cheoy Lee's small fiberglass trawler program of the 1970s, but surviving factory documentation is sparse.",
+      "B-Atlas therefore retains the 28 Sedan Trawler as a real model identity while assigning Moderate confidence to detailed production lineage."
+    ],
+    "OwnershipCharacter": "Simple and appealing as a couple's classic cruiser, but rarity makes model-specific hardware, glazing and teak components harder to replace. Survey condition, deck moisture, tanks, wiring and prior repower quality matter more than the straightforward single-diesel drivetrain.",
+    "CharacterConfidence": "Moderate",
+    "DisplacementLb": 14500,
+    "FuelCapacityGal": 300,
+    "WaterCapacityGal": 150,
+    "NormalizedHullType": "Semi-Displacement",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "RarityConfidence": "Not rated",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "PriceConfidence": "Not rated",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "HullBehaviourCode": "hull_behaviour.semi_displacement",
+    "BoatFamilyCode": "boat_family.trawler",
+    "FuelCode": "fuel.diesel",
+    "KeelConfigurationCode": "keel.full_long",
+    "RunningGearProtectionCode": "running_gear.keel_protected",
+    "LOA": 8.509,
+    "Beam": 3.1242,
+    "Draft": 0.9906,
+    "Displacement": 6577.1,
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres",
+    "HoldingCapacityUnitStatus": "unit_unverified",
+    "AirDraft": 3,
+    "CanonicalSlug": "cheoy-lee-28-sedan-trawler-sedan",
+    "CanonicalPath": "/models/cheoy-lee-28-sedan-trawler-sedan/",
+    "CanonicalURL": "https://b-atlas.org/models/cheoy-lee-28-sedan-trawler-sedan/",
+    "StyleCode": "Trawler",
+    "CoolingCode": "cooling.fresh_water",
+    "FlybridgeCode": "availability.varies",
+    "SideDecksCode": "side_decks.moderate",
+    "SpecificationConfidence": {
+      "AirDraft": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [],
+        "Note": "B-Atlas working estimate derived from nearest comparable models with similar style, size and flybridge configuration. Verify actual mast/radar/antenna clearance before route planning. Comparable model IDs: CPDR-28-FB, CPDR-28-OF, CARV-28-V, BAYL-2855, BAYL-2859, CUTW-28-P, RNGR-R-23"
+      },
+      "FuelCapacity": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [],
+        "Note": "Legacy sources conflict on tankage. v6.95 retains the existing working value, interprets its legacy basis as US gallons, and converts it to canonical litres pending owner/source verification."
+      },
+      "WaterCapacity": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [
+          "https://boats-from-usa.com/not-specified/cheoy-lee-28-sedan-trawler-145835",
+          "https://marinesource.com/boat/cheoy-lee-28-sedan-trawler-1977-holmes-beach-177b6c6493-for-sale",
+          "https://s3.amazonaws.com/pop.web.assets/Listing-Brochures/Pop-Brochure-117294.pdf"
+        ],
+        "Note": "Repeated listings for a documented 1977 Cheoy Lee 28 report 150 US gal fresh water. The boat was substantially refitted, so retain as a working model estimate pending owner/factory confirmation."
+      },
+      "LWL": {
+        "Level": "Low",
+        "Status": "estimated_family_ratio",
+        "EvidenceRefs": [],
+        "Note": "Working LWL estimate derived from the median LWL/LOA ratio (0.924) of other B-Atlas Cheoy Lee models with recorded waterline lengths. Intended for hull-speed context and community verification, not survey use."
+      },
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      }
+    },
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "LWL": 7.8647,
+    "ShowerTypeCode": "shower.varies"
+  },
+  {
+    "ManufacturerID": "CHEOY",
+    "Manufacturer": "Cheoy Lee",
+    "Model": "32 Trawler",
+    "Variant": "Trawler",
+    "Nickname": "Cheoy Lee 32 Trawler",
+    "ImageURL": "images/chly-32.jpg",
+    "Active": false,
+    "FirstYear": 1977,
+    "LastYear": 1986,
+    "TotalBuilt": null,
+    "Designer": "Cheoy Lee Shipyard",
+    "HullType": "Semi-Displacement",
+    "Style": "Trawler",
+    "Construction": "Fiberglass",
+    "KeelType": "Full Length",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Single Ford Lehman 120 hp diesel commonly documented",
+    "Propulsion": "Shaft",
+    "Flybridge": "Yes",
+    "AftCabin": false,
+    "SideDecks": "Wide",
+    "TypicalEngineID": "Ford Lehman 120",
+    "FuelCapacity": 1362.7482,
+    "WaterCapacity": 757.0824,
+    "HoldingCapacity": 113.5624,
+    "Berths": 4,
+    "Cabins": 1,
+    "Heads": 1,
+    "Shower": false,
+    "Galley": false,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "Yes",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "Strengths": [
+      "Traditional teak interior and substantial fiberglass construction",
+      "Protected shaft/rudder arrangement suited to low-speed cruising",
+      "Strong classic-yacht character with practical side-deck access"
+    ],
+    "Weaknesses": "Older systems and modest tankage.",
+    "CommonProblems": "Deck core moisture, tank corrosion.",
+    "TypicalMission": "Loop cruising and coastal passages.",
+    "AvoidIf": [
+      "You require modern low-maintenance finishes",
+      "You need planing-speed performance",
+      "You want standardized equipment and documentation across every hull"
+    ],
+    "DateCreated": "High",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "B-Atlas Phase 8C-11 Classic Taiwanese / Older Motoryacht Research",
+    "Revision": 3,
+    "BoatModelID": "CHLY-32",
+    "BoatFamily": "Trawler",
+    "Configuration": "Classic Trawler",
+    "HullBehaviour": "Semi-Displacement",
+    "Features": [
+      "Flybridge",
+      "Wide Side Decks"
+    ],
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Semi-Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Trawler",
+    "DataConfidence": "Moderate",
+    "ResearchStatus": "Reviewed",
+    "Overview": "The Cheoy Lee 32 Trawler is a Hong Kong-built traditional cruising powerboat from Cheoy Lee's classic trawler period. Heavy fiberglass construction, teak joinery, protected running gear and displacement-oriented operation define the family, while layout and machinery differ materially by model.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented cruising layout is practical for a couple; guest capacity and privacy vary by model."
+      },
+      "SoloHandling": {
+        "Assessment": "Mixed",
+        "Summary": "Lower-helm access and protected decks can help short-handed operation, but windage, engine count and docking equipment remain hull-specific."
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "Route fit depends on actual beam, draft and air draft; verify bridge and marina limits for the individual boat."
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "Condition, loading and actual hull configuration are decisive; this assessment reflects documented design intent rather than an offshore guarantee."
+      }
+    },
+    "TradeOffs": [
+      "Exterior teak and older deck/window systems can demand substantial upkeep",
+      "Heavy displacement and low-speed mission limit performance",
+      "Age, yard practices and owner modifications create significant hull-to-hull variation"
+    ],
+    "BestFor": [
+      "Couples seeking a traditional wood-rich cruising boat",
+      "Owners comfortable maintaining older teak-intensive yachts",
+      "Low-speed inland and coastal cruising"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Confirm exact model identity and build year from hull documentation",
+      "Inspect teak decks, cabin-top penetrations, windows and trim for moisture intrusion",
+      "Inspect fuel/water tanks, wiring, plumbing and owner modifications",
+      "Inspect engine cooling, exhaust, mounts, shaft, rudder and keel/skeg",
+      "Verify flybridge, mast and air-draft configuration for intended routes"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for confirm exact model identity and build year from hull documentation?",
+      "What inspection, repair or service history is available for inspect teak decks, cabin-top penetrations, windows and trim for moisture intrusion?",
+      "What inspection, repair or service history is available for inspect fuel/water tanks, wiring, plumbing and owner modifications?",
+      "What inspection, repair or service history is available for inspect engine cooling, exhaust, mounts, shaft, rudder and keel/skeg?",
+      "What inspection, repair or service history is available for verify flybridge, mast and air-draft configuration for intended routes?"
+    ],
+    "OwnerActions": [
+      "Keep deck, window and hardware penetrations sealed and investigate leaks promptly",
+      "Maintain propulsion, cooling, exhaust, steering and fuel systems to documented intervals",
+      "Document structural, tank, electrical and machinery repairs for future buyers"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "Model and equipment variation",
+        "Description": "Cheoy Lee produced multiple trawler sizes and machinery/layout arrangements; individual hull documentation controls exact equipment and construction detail.",
+        "AffectedYears": "Production run",
+        "EvidenceRefs": [
+          "https://www.cheoyleeassociation.com/Power/Powertrawler3.htm",
+          "https://www.hmy.com/yachting/powerboat-guide/cheoy-lee",
+          "https://www.hmy.com/yachting/powerboat-guide/cheoy-lee/32-trawler-1977-86"
+        ],
+        "Confidence": "Moderate"
+      }
+    ],
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CHLY-32"
+            ],
+            "Years": {
+              "From": 1977,
+              "To": 1986
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.cheoyleeassociation.com/Power/Powertrawler3.htm",
+            "https://www.hmy.com/yachting/powerboat-guide/cheoy-lee",
+            "https://www.hmy.com/yachting/powerboat-guide/cheoy-lee/32-trawler-1977-86"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Representative identity and specifications use model-specific references where available; unresolved production or hull differences remain explicit."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CHLY-32"
+            ],
+            "Years": {
+              "From": 1977,
+              "To": 1986
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.cheoyleeassociation.com/Power/Powertrawler3.htm",
+            "https://www.hmy.com/yachting/powerboat-guide/cheoy-lee",
+            "https://www.hmy.com/yachting/powerboat-guide/cheoy-lee/32-trawler-1977-86"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Guidance is derived from documented configuration and design traits, not marketplace promotion."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "CHLY-32"
+            ],
+            "Years": {
+              "From": 1977,
+              "To": 1986
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.cheoyleeassociation.com/Power/Powertrawler3.htm",
+            "https://www.hmy.com/yachting/powerboat-guide/cheoy-lee",
+            "https://www.hmy.com/yachting/powerboat-guide/cheoy-lee/32-trawler-1977-86"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection items are age/configuration risks to investigate and are not assertions that every hull has the defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "EngineCount": 1,
+    "ResearchNotes": "Cheoy Lee 32 Trawler identity/specification correction 2026-08-07. Verified against model-specific Powerboat Guide/HMY data; clearance remains unknown rather than inferred.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "ModelCharacter": "A heavily built small Cheoy Lee coastal trawler with a large cockpit, wide side decks, deep forefoot and full-length skeg. Its single Lehman diesel, teak interior and nearly 1,000-mile slow-speed range make it a traditional utility cruiser rather than a high-volume liveaboard.",
+    "DesignLineage": [
+      "Powerboat Guide documents the Cheoy Lee 32 Trawler from 1977–1986.",
+      "The 32 was built as a dedicated fiberglass power cruiser during Cheoy Lee's mature Hong Kong production era.",
+      "Its large cockpit and straightforward sedan layout distinguish it from the more residential 35 and larger Cheoy Lee LRC models.",
+      "The 32 is a distinct production model, not a renamed 28 or 35."
+    ],
+    "OwnershipCharacter": "Economical and mechanically simple, with excellent deck access for its size. The main ownership burden is age-related teak, deck-core, window, tank and electrical work; well-kept examples can be exceptionally durable.",
+    "CharacterConfidence": "High",
+    "DisplacementLb": 19000,
+    "FuelCapacityGal": 360,
+    "WaterCapacityGal": 200,
+    "NormalizedHullType": "Semi-Displacement",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "RarityConfidence": "Not rated",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "PriceConfidence": "Not rated",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "HullBehaviourCode": "hull_behaviour.semi_displacement",
+    "BoatFamilyCode": "boat_family.trawler",
+    "FuelCode": "fuel.diesel",
+    "KeelConfigurationCode": "keel.full_long",
+    "RunningGearProtectionCode": "running_gear.keel_protected",
+    "LOA": 9.7282,
+    "LWL": 8.9916,
+    "Beam": 3.6576,
+    "Draft": 1.3462,
+    "Displacement": 8618.3,
+    "EnginePowerPerEngine": 89.48,
+    "Headroom": 1.9304,
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "AirDraft": 4.1000000000000005,
+    "CanonicalSlug": "cheoy-lee-32-trawler-trawler",
+    "CanonicalPath": "/models/cheoy-lee-32-trawler-trawler/",
+    "CanonicalURL": "https://b-atlas.org/models/cheoy-lee-32-trawler-trawler/",
+    "StyleCode": "Trawler",
+    "CoolingCode": "cooling.fresh_water",
+    "FlybridgeCode": "availability.yes",
+    "SideDecksCode": "side_decks.wide",
+    "SpecificationConfidence": {
+      "AirDraft": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [],
+        "Note": "B-Atlas working estimate derived from nearest comparable models with similar style, size and flybridge configuration. Verify actual mast/radar/antenna clearance before route planning. Comparable model IDs: BENE-30-SW, MNSH-34-MK2, MNSH-34-MK1, ALBN-36-CL, ISGY-36, MONK-36-TR, BENE-34-SW"
+      },
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      }
+    },
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "ShowerTypeCode": "shower.none"
+  },
+  {
+    "ManufacturerID": "CHEOY",
+    "Manufacturer": "Cheoy Lee",
+    "Model": "35 Trawler",
+    "Variant": "Trawler",
+    "Nickname": "Cheoy Lee 35 Trawler",
+    "ImageURL": "images/chly-35.jpg",
+    "Active": false,
+    "FirstYear": 1979,
+    "LastYear": 1986,
+    "TotalBuilt": null,
+    "Designer": "Cheoy Lee Shipyard",
+    "HullType": "Semi-Displacement",
+    "Style": "Trawler",
+    "Construction": "Fiberglass",
+    "KeelType": "Full Length",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Single 120 hp Ford Lehman diesel commonly documented",
+    "Propulsion": "Shaft",
+    "Flybridge": "Yes",
+    "AftCabin": false,
+    "SideDecks": "Wide",
+    "TypicalEngineID": "Perkins 6.354",
+    "FuelCapacity": 2460.5177,
+    "WaterCapacity": 794.9365,
+    "HoldingCapacity": 113.5624,
+    "Berths": 4,
+    "Cabins": 1,
+    "Heads": 1,
+    "Shower": false,
+    "Galley": false,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "Yes",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "Strengths": [
+      "Traditional teak interior and substantial fiberglass construction",
+      "Protected shaft/rudder arrangement suited to low-speed cruising",
+      "Strong classic-yacht character with practical side-deck access"
+    ],
+    "Weaknesses": "Older systems and teak maintenance.",
+    "CommonProblems": "Deck core moisture, window leaks.",
+    "TypicalMission": "Loop cruising and extended coastal passages.",
+    "AvoidIf": [
+      "You require modern low-maintenance finishes",
+      "You need planing-speed performance",
+      "You want standardized equipment and documentation across every hull"
+    ],
+    "DateCreated": "Critical",
+    "LastUpdated": "2026-09-02",
+    "ReviewedBy": "B-Atlas Phase 8C-11 Classic Taiwanese / Older Motoryacht Research",
+    "Revision": 3,
+    "BoatModelID": "CHLY-35",
+    "BoatFamily": "Trawler",
+    "Configuration": "Classic Trawler",
+    "HullBehaviour": "Semi-Displacement",
+    "Features": [
+      "Flybridge",
+      "Aft Cabin",
+      "Wide Side Decks"
+    ],
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Semi-Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Trawler",
+    "DataConfidence": "Moderate",
+    "ResearchStatus": "Reviewed",
+    "Overview": "The Cheoy Lee 35 Trawler is a Hong Kong-built traditional cruising powerboat from Cheoy Lee's classic trawler period. Heavy fiberglass construction, teak joinery, protected running gear and displacement-oriented operation define the family, while layout and machinery differ materially by model.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented cruising layout is practical for a couple; guest capacity and privacy vary by model."
+      },
+      "SoloHandling": {
+        "Assessment": "Mixed",
+        "Summary": "Lower-helm access and protected decks can help short-handed operation, but windage, engine count and docking equipment remain hull-specific."
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "Route fit depends on actual beam, draft and air draft; verify bridge and marina limits for the individual boat."
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "Condition, loading and actual hull configuration are decisive; this assessment reflects documented design intent rather than an offshore guarantee."
+      }
+    },
+    "TradeOffs": [
+      "Exterior teak and older deck/window systems can demand substantial upkeep",
+      "Heavy displacement and low-speed mission limit performance",
+      "Age, yard practices and owner modifications create significant hull-to-hull variation"
+    ],
+    "BestFor": [
+      "Couples seeking a traditional wood-rich cruising boat",
+      "Owners comfortable maintaining older teak-intensive yachts",
+      "Low-speed inland and coastal cruising"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Confirm exact model identity and build year from hull documentation",
+      "Inspect teak decks, cabin-top penetrations, windows and trim for moisture intrusion",
+      "Inspect fuel/water tanks, wiring, plumbing and owner modifications",
+      "Inspect engine cooling, exhaust, mounts, shaft, rudder and keel/skeg",
+      "Verify flybridge, mast and air-draft configuration for intended routes"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for confirm exact model identity and build year from hull documentation?",
+      "What inspection, repair or service history is available for inspect teak decks, cabin-top penetrations, windows and trim for moisture intrusion?",
+      "What inspection, repair or service history is available for inspect fuel/water tanks, wiring, plumbing and owner modifications?",
+      "What inspection, repair or service history is available for inspect engine cooling, exhaust, mounts, shaft, rudder and keel/skeg?",
+      "What inspection, repair or service history is available for verify flybridge, mast and air-draft configuration for intended routes?"
+    ],
+    "OwnerActions": [
+      "Keep deck, window and hardware penetrations sealed and investigate leaks promptly",
+      "Maintain propulsion, cooling, exhaust, steering and fuel systems to documented intervals",
+      "Document structural, tank, electrical and machinery repairs for future buyers"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "Model and equipment variation",
+        "Description": "Cheoy Lee produced multiple trawler sizes and machinery/layout arrangements; individual hull documentation controls exact equipment and construction detail.",
+        "AffectedYears": "Production run",
+        "EvidenceRefs": [
+          "https://www.cheoyleeassociation.com/Power/Powertrawler3.htm",
+          "https://www.hmy.com/yachting/powerboat-guide/cheoy-lee",
+          "https://www.hmy.com/yachting/powerboat-guide/cheoy-lee/35-trawler-1979-86"
+        ],
+        "Confidence": "Moderate"
+      }
+    ],
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CHLY-35"
+            ],
+            "Years": {
+              "From": 1979,
+              "To": 1986
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.cheoyleeassociation.com/Power/Powertrawler3.htm",
+            "https://www.hmy.com/yachting/powerboat-guide/cheoy-lee",
+            "https://www.hmy.com/yachting/powerboat-guide/cheoy-lee/35-trawler-1979-86"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Representative identity and specifications use model-specific references where available; unresolved production or hull differences remain explicit."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CHLY-35"
+            ],
+            "Years": {
+              "From": 1979,
+              "To": 1986
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.cheoyleeassociation.com/Power/Powertrawler3.htm",
+            "https://www.hmy.com/yachting/powerboat-guide/cheoy-lee",
+            "https://www.hmy.com/yachting/powerboat-guide/cheoy-lee/35-trawler-1979-86"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Guidance is derived from documented configuration and design traits, not marketplace promotion."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "CHLY-35"
+            ],
+            "Years": {
+              "From": 1979,
+              "To": 1986
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.cheoyleeassociation.com/Power/Powertrawler3.htm",
+            "https://www.hmy.com/yachting/powerboat-guide/cheoy-lee",
+            "https://www.hmy.com/yachting/powerboat-guide/cheoy-lee/35-trawler-1979-86"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection items are age/configuration risks to investigate and are not assertions that every hull has the defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "EngineCount": 1,
+    "ResearchNotes": "Phase 8C-11 classic Taiwanese / older motoryacht normalization 2026-08-07. Unsupported defects remain unknown.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "ModelCharacter": "A long-range small Cheoy Lee trawler built around weight, tankage and comfort rather than speed: 21,000 pounds, a full-length keel, wide decks and a single Lehman give it unusually substantial cruising character for a nominal 35-footer.",
+    "DesignLineage": [
+      "Powerboat Guide documents the Cheoy Lee 35 Trawler from 1979–1986.",
+      "The model is a separate one-stateroom sedan-style cruiser, not simply a stretched 32.",
+      "Its unusually large 650-gallon fuel capacity supports roughly 1,200 miles of range at about 7 knots.",
+      "The extended hardtop and sheltered cockpit distinguish the 35 visually and functionally within Cheoy Lee's small-trawler range."
+    ],
+    "OwnershipCharacter": "Extremely economical underway relative to its displacement and range, but the boat carries a great deal of teak and large tankage for its size. Tank condition, decks, window framing and legacy electrical systems should be treated as major valuation variables.",
+    "CharacterConfidence": "High",
+    "DisplacementLb": 23500,
+    "FuelCapacityGal": 650,
+    "WaterCapacityGal": 210,
+    "NormalizedHullType": "Semi-Displacement",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "RarityConfidence": "Not rated",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "PriceConfidence": "Not rated",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "HullBehaviourCode": "hull_behaviour.semi_displacement",
+    "BoatFamilyCode": "boat_family.trawler",
+    "FuelCode": "fuel.diesel",
+    "KeelConfigurationCode": "keel.full_long",
+    "RunningGearProtectionCode": "running_gear.keel_protected",
+    "LOA": 10.6426,
+    "Beam": 3.6576,
+    "Draft": 1.0922,
+    "Displacement": 10659.4,
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "LWL": 9.906,
+    "AirDraft": 3.8000000000000003,
+    "CanonicalSlug": "cheoy-lee-35-trawler-trawler",
+    "CanonicalPath": "/models/cheoy-lee-35-trawler-trawler/",
+    "CanonicalURL": "https://b-atlas.org/models/cheoy-lee-35-trawler-trawler/",
+    "StyleCode": "Trawler",
+    "CoolingCode": "cooling.fresh_water",
+    "FlybridgeCode": "availability.yes",
+    "SideDecksCode": "side_decks.wide",
+    "SpecificationConfidence": {
+      "AirDraft": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [],
+        "Note": "B-Atlas working estimate derived from nearest comparable models with similar style, size and flybridge configuration. Verify actual mast/radar/antenna clearance before route planning. Comparable model IDs: ALBN-36-CL, MNSH-34-MK2, MNSH-34-MK1, ISGY-36, MONK-36-TR, BENE-34-SW, GULF-36-TR"
+      },
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      }
+    },
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "ShowerTypeCode": "shower.none"
+  },
+  {
+    "ManufacturerID": "CHEOY",
+    "Manufacturer": "Cheoy Lee",
+    "Model": "36 Trawler",
+    "Variant": "Trawler",
+    "Nickname": "Cheoy Lee 36 Trawler",
+    "ImageURL": "images/chly-36-tr.jpg",
+    "Active": false,
+    "FirstYear": 1968,
+    "LastYear": 1979,
+    "TotalBuilt": 120,
+    "Designer": "Luders",
+    "HullType": "Displacement",
+    "Style": "Ketch Cruiser",
+    "Construction": "Fiberglass/Wood",
+    "KeelType": "Full Length",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Single Inboard",
+    "Propulsion": "Shaft",
+    "Flybridge": "Yes",
+    "AftCabin": false,
+    "SideDecks": "Wide",
+    "TypicalEngineID": "Perkins 4.108",
+    "FuelCapacity": 2346.9553,
+    "WaterCapacity": 378.5412,
+    "HoldingCapacity": 94.6353,
+    "Berths": 5,
+    "Cabins": 2,
+    "Heads": 1,
+    "Shower": false,
+    "Galley": false,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "Limited",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "Strengths": [
+      "Traditional teak interior and substantial fiberglass construction",
+      "Protected shaft/rudder arrangement suited to low-speed cruising",
+      "Strong classic-yacht character with practical side-deck access"
+    ],
+    "Weaknesses": "Lacks a modern expansive salon deck layout, slow hull-speed operational limits.",
+    "CommonProblems": "Teak overlays on deck warping and leaking into sub-layers, chainplate attachment wall soft spots.",
+    "TypicalMission": "Traditional passage making, protected loop trail transit, and historic yacht rallies.",
+    "AvoidIf": [
+      "You require modern low-maintenance finishes",
+      "You need planing-speed performance",
+      "You want standardized equipment and documentation across every hull"
+    ],
+    "DateCreated": "2026-07-13",
+    "LastUpdated": "2026-09-13",
+    "ReviewedBy": "B-Atlas Phase 8C-11 Classic Taiwanese / Older Motoryacht Research",
+    "Revision": 4,
+    "BoatModelID": "CHLY-36-TR",
+    "BoatFamily": "Cruiser",
+    "Configuration": "Aft Cabin Cruiser",
+    "HullBehaviour": "Displacement",
+    "Features": [
+      "Aft Cabin",
+      "Wide Side Decks"
+    ],
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Trawler",
+    "DataConfidence": "High",
+    "ResearchStatus": "Reviewed",
+    "Overview": "The Cheoy Lee 36 Trawler Mk II is a Hong Kong-built traditional cruising powerboat from Cheoy Lee's classic trawler period. Heavy fiberglass construction, teak joinery, protected running gear and displacement-oriented operation define the family, while layout and machinery differ materially by model.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented cruising layout is practical for a couple; guest capacity and privacy vary by model."
+      },
+      "SoloHandling": {
+        "Assessment": "Mixed",
+        "Summary": "Lower-helm access and protected decks can help short-handed operation, but windage, engine count and docking equipment remain hull-specific."
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "Route fit depends on actual beam, draft and air draft; verify bridge and marina limits for the individual boat."
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "Condition, loading and actual hull configuration are decisive; this assessment reflects documented design intent rather than an offshore guarantee."
+      }
+    },
+    "TradeOffs": [
+      "Exterior teak and older deck/window systems can demand substantial upkeep",
+      "Heavy displacement and low-speed mission limit performance",
+      "Age, yard practices and owner modifications create significant hull-to-hull variation"
+    ],
+    "BestFor": [
+      "Couples seeking a traditional wood-rich cruising boat",
+      "Owners comfortable maintaining older teak-intensive yachts",
+      "Low-speed inland and coastal cruising"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Confirm exact model identity and build year from hull documentation",
+      "Inspect teak decks, cabin-top penetrations, windows and trim for moisture intrusion",
+      "Inspect fuel/water tanks, wiring, plumbing and owner modifications",
+      "Inspect engine cooling, exhaust, mounts, shaft, rudder and keel/skeg",
+      "Verify flybridge, mast and air-draft configuration for intended routes"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for confirm exact model identity and build year from hull documentation?",
+      "What inspection, repair or service history is available for inspect teak decks, cabin-top penetrations, windows and trim for moisture intrusion?",
+      "What inspection, repair or service history is available for inspect fuel/water tanks, wiring, plumbing and owner modifications?",
+      "What inspection, repair or service history is available for inspect engine cooling, exhaust, mounts, shaft, rudder and keel/skeg?",
+      "What inspection, repair or service history is available for verify flybridge, mast and air-draft configuration for intended routes?"
+    ],
+    "OwnerActions": [
+      "Keep deck, window and hardware penetrations sealed and investigate leaks promptly",
+      "Maintain propulsion, cooling, exhaust, steering and fuel systems to documented intervals",
+      "Document structural, tank, electrical and machinery repairs for future buyers"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "Model and equipment variation",
+        "Description": "Cheoy Lee produced multiple trawler sizes and machinery/layout arrangements; individual hull documentation controls exact equipment and construction detail.",
+        "AffectedYears": "Production run",
+        "EvidenceRefs": [
+          "https://www.cheoyleeassociation.com/Power/Powertrawler3.htm",
+          "https://www.hmy.com/yachting/powerboat-guide/cheoy-lee"
+        ],
+        "Confidence": "Moderate"
+      }
+    ],
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Partial",
+      "EvidenceQuality": "Low",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CHLY-36-TR"
+            ],
+            "Years": {
+              "From": 1968,
+              "To": 1979
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.cheoyleeassociation.com/Power/Powertrawler3.htm",
+            "https://www.hmy.com/yachting/powerboat-guide/cheoy-lee"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Representative identity and specifications use model-specific references where available; unresolved production or hull differences remain explicit."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CHLY-36-TR"
+            ],
+            "Years": {
+              "From": 1968,
+              "To": 1979
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.cheoyleeassociation.com/Power/Powertrawler3.htm",
+            "https://www.hmy.com/yachting/powerboat-guide/cheoy-lee"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Guidance is derived from documented configuration and design traits, not marketplace promotion."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "CHLY-36-TR"
+            ],
+            "Years": {
+              "From": 1968,
+              "To": 1979
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.cheoyleeassociation.com/Power/Powertrawler3.htm",
+            "https://www.hmy.com/yachting/powerboat-guide/cheoy-lee"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection items are age/configuration risks to investigate and are not assertions that every hull has the defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Original brochure material confirms the 36 Trawler Mk II dimensions and tankage, but a precise production-year range and representative machinery package require stronger model-specific documentation.",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "EngineCount": 2,
+    "ResearchNotes": "Canonical name normalized from '36 Sedan / 36 Trawler Mk II' to Cheoy Lee 36 Trawler. Surviving 1970s/early-1980s boats are well documented, but propulsion, tankage and nomenclature vary by example; avoid false precision.\n\nBatch 33 confidence audit: exact-model identity and source quality rechecked. Confidence is intentionally retained where factory/importer documentation is incomplete; missing evidence does not trigger deletion or inferred consolidation. Exact Cheoy Lee 36 Trawler examples and specifications are independently documented, so model-character confidence is upgraded to High; propulsion/tankage remain hull-specific.\n\nHigh-impact missing-data research Wave 3 v6.88 (2026-09-13): a documented 1974 Cheoy Lee Traveller/Trawler 36 shows approximately 2.00 m saloon headroom, twin Ford 2710 diesels rated 120 hp (88.2 kW) each, and an ensuite bathroom with toilet, washbasin and shower. Source: https://www.devalk.nl/en/yachtbrokerage/500477/CHEOY-LEE-36.html\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "ModelCharacter": "A substantial 1970s Cheoy Lee flybridge trawler with broad beam, heavy fiberglass construction, twin or single diesel examples and traditional teak decks/interior. It sits between the compact sedan trawlers and Cheoy Lee's larger long-range motor-yacht families.",
+    "DesignLineage": [
+      "Surviving 1974–81 boats are consistently documented as Cheoy Lee 36 Trawlers, with some European records using 'Traveller 36'.",
+      "Period records show both single- and twin-diesel installations, indicating propulsion varied across boats or sub-generations.",
+      "The 36 is broader and substantially heavier than the 32/35 family and should be treated as a distinct hull/model identity.",
+      "Factory model-generation labels such as 'Mk II' are not sufficiently documented to use as B-Atlas's canonical name, so the record is normalized to Cheoy Lee 36 Trawler."
+    ],
+    "OwnershipCharacter": "A sturdy, comfortable cruiser with strong low-speed manners, but twin-engine examples, extensive teak and very large tankage create materially higher ownership demands than the 32/35. Exact machinery and layout should be verified hull by hull.",
+    "CharacterConfidence": "High",
+    "DisplacementLb": 29600,
+    "NormalizedHullType": "Semi-Displacement",
+    "FuelCapacityGal": null,
+    "WaterCapacityGal": null,
+    "RarityScore": null,
+    "RarityLabel": "",
+    "RarityConfidence": "Not rated",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "PriceConfidence": "Not rated",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "HullBehaviourCode": "hull_behaviour.semi_displacement",
+    "BoatFamilyCode": "boat_family.trawler",
+    "FuelCode": "fuel.diesel",
+    "KeelConfigurationCode": "keel.full_long",
+    "RunningGearProtectionCode": "running_gear.keel_protected",
+    "ModelAliases": [
+      "36 MKII"
+    ],
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "LOA": 11.1252,
+    "Beam": 3.9624,
+    "Draft": 1.0668,
+    "AirDraft": 4.25,
+    "CanonicalSlug": "cheoy-lee-36-trawler-trawler",
+    "CanonicalPath": "/models/cheoy-lee-36-trawler-trawler/",
+    "CanonicalURL": "https://b-atlas.org/models/cheoy-lee-36-trawler-trawler/",
+    "StyleCode": "Trawler",
+    "CoolingCode": "cooling.fresh_water",
+    "FlybridgeCode": "availability.yes",
+    "SideDecksCode": "side_decks.wide",
+    "Headroom": 2,
+    "EnginePowerPerEngine": 88.2,
+    "ShowerTypeCode": "shower.wet_head",
+    "SpecificationConfidence": {
+      "AirDraft": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [],
+        "Note": "B-Atlas working estimate derived from nearest comparable models with similar style, size and flybridge configuration. Verify actual mast/radar/antenna clearance before route planning. Comparable model IDs: ATLB-37-TR, PRAI-36-TR, KDKR-36-MA, GULF-36-TR, GRBK-36-CL, BENE-34-SW, ISGY-36"
+      },
+      "Displacement": {
+        "Level": "Medium",
+        "Status": "supported",
+        "EvidenceRefs": [
+          "https://www.devalk.nl/en/yachtbrokerage/53371/CHEOY-LEE-36.html"
+        ],
+        "Note": "Representative Cheoy Lee Traveller 36 is reported at approximately 16 tonnes displacement; hull-specific outfitting can vary."
+      },
+      "LWL": {
+        "Level": "Low",
+        "Status": "restored_legacy_working_value",
+        "EvidenceRefs": [],
+        "Note": "Working LWL restored from the pre-v6.81 archived B-Atlas value (25 ft). Retained as a low-confidence community-verifiable value rather than leaving a basic performance input blank."
+      }
+    },
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "Displacement": 16000,
+    "LWL": 7.62
+  },
+  {
+    "ManufacturerID": "CRUISERS",
+    "Manufacturer": "Cruisers Yachts",
+    "Model": "288 / 298 Villa Vee / 2980 Esprit",
+    "Variant": "Flybridge Cruiser",
+    "Nickname": "Cruisers 288 / 298 Villa Vee / 2980 Esprit",
+    "ImageURL": "images/cruy-2980.jpg",
+    "Active": false,
+    "FirstYear": 1978,
+    "LastYear": 1990,
+    "TotalBuilt": null,
+    "Designer": "Cruisers Design Team",
+    "HullType": "Modified-V",
+    "Style": "Express Cruiser",
+    "Construction": "Fiberglass",
+    "KeelType": "Modified V",
+    "Fuel": "Gasoline",
+    "Cooling": "Raw Water",
+    "EngineConfiguration": "Twin Inboard",
+    "Propulsion": "Stern Drive",
+    "Flybridge": "Yes",
+    "AftCabin": false,
+    "SideDecks": "Medium",
+    "TypicalEngineID": "MerCruiser 5.7 Twin",
+    "FuelCapacity": 567.8118,
+    "WaterCapacity": 170.3435,
+    "HoldingCapacity": 94.6353,
+    "Berths": 4,
+    "Cabins": 1,
+    "Heads": 1,
+    "Shower": false,
+    "Galley": false,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "No",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "Strengths": [
+      "Large social cockpit for the boat size",
+      "Planing performance and responsive handling",
+      "Useful weekend accommodation",
+      "Broad service and parts familiarity in the production-cruiser market"
+    ],
+    "Weaknesses": "Higher fuel burn.",
+    "CommonProblems": "Transom rot and wiring issues.",
+    "TypicalMission": "Coastal cruising and inland passages.",
+    "AvoidIf": [
+      "You require displacement-speed fuel economy",
+      "You want a flybridge or separate aft-cabin privacy",
+      "You need long-range passagemaking capability"
+    ],
+    "DateCreated": "2026-07-18",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "B-Atlas Phase 8C-15 Production Motoryacht/Cruiser Research",
+    "Revision": 2,
+    "BoatModelID": "CRUY-2980",
+    "BoatFamily": "Cruiser",
+    "Configuration": "Express Cruiser",
+    "HullBehaviour": "Planing",
+    "Features": [],
+    "NormalizedFuel": "Gasoline",
+    "NormalizedPropulsion": "Sterndrive",
+    "NormalizedHullForm": "Modified-V",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Cruiser",
+    "DataConfidence": "High",
+    "ResearchStatus": "Reviewed",
+    "Overview": "The Cruisers Yachts 2980 Esprit is a production express cruiser designed around cockpit social space, planing performance and overnight accommodation below. Twin-engine propulsion is typical, with model generations varying in drive type, dimensions and interior arrangement.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented accommodation and enclosed living spaces support weekend or regional couple cruising."
+      },
+      "SoloHandling": {
+        "Assessment": "Mixed",
+        "Summary": "Twin engines can assist close-quarters maneuvering, but size, windage and multi-level access increase workload."
+      },
+      "InlandWaterways": {
+        "Assessment": "Mixed",
+        "Summary": "Comfortable for inland cruising, but beam, air draft and fuel consumption must be checked against route and marina constraints."
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "These are coastal production cruisers; actual capability depends on generation, loading, machinery, weather and individual condition."
+      }
+    },
+    "TradeOffs": [
+      "Fuel consumption rises sharply at planing speeds",
+      "Engine-room access can be tight",
+      "Sleeping areas may rely on curtains or convertible spaces",
+      "Low-profile express layouts provide less enclosed living volume than flybridge yachts"
+    ],
+    "BestFor": [
+      "Weekend cruising and entertaining",
+      "Buyers who value speed over displacement economy",
+      "Marina-based coastal and inland use"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Verify moisture around deck hardware, windows, hatches and rail bases",
+      "Inspect flybridge, arch, windshield and upper-deck penetrations for water intrusion and structural movement",
+      "Inspect fuel, water and waste tanks plus hoses and fittings",
+      "Inspect engines, transmissions or sterndrives, exhaust and cooling systems",
+      "Review AC/DC wiring, shore-power equipment and documented electrical modifications",
+      "Confirm steering, trim-tab and generator operation where fitted"
+    ],
+    "BuyerQuestions": [
+      "What repair or survey history is available for moisture around deck hardware, windows, hatches and rail bases?",
+      "What repair or survey history is available for flybridge, arch, windshield and upper-deck penetrations for water intrusion and structural movement?",
+      "What repair or survey history is available for fuel, water and waste tanks plus hoses and fittings?",
+      "What repair or survey history is available for engines, transmissions or sterndrives, exhaust and cooling systems?",
+      "What repair or survey history is available for ac/dc wiring, shore-power equipment and documented electrical modifications?"
+    ],
+    "OwnerActions": [
+      "Keep deck, window and hardware penetrations sealed",
+      "Maintain propulsion, cooling, exhaust, steering and electrical systems to documented intervals",
+      "Document structural, tank, electrical and machinery repairs for future survey and resale"
+    ],
+    "ModelVariations": [],
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CRUY-2980"
+            ],
+            "Years": {
+              "From": 1988,
+              "To": 1990
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/cruisers/288-298-villa-vee-2980-esprit-1978-90"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Model identity and representative specifications checked against model-guide or catalog evidence."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CRUY-2980"
+            ],
+            "Years": {
+              "From": 1988,
+              "To": 1990
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/cruisers/288-298-villa-vee-2980-esprit-1978-90"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance derives from documented configuration, propulsion and accommodation."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "General age-related guidance",
+            "Models": [
+              "CRUY-2980"
+            ],
+            "Years": {
+              "From": 1988,
+              "To": 1990
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/cruisers/288-298-villa-vee-2980-esprit-1978-90"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance is age/configuration based and is not a claim of a model-wide defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "EngineCount": 2,
+    "ResearchNotes": "Batch 29 identity, lineage and specification normalization from model-specific Powerboat Guide evidence. Renames are preserved as aliases; missing listing-specific configuration remains unknown rather than inferred.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "ModelCharacter": "A long-running small flybridge cruiser whose changing model numbers disguise one continuous family. It combined a solid-fiberglass modified-V hull, compact single-stateroom interior, optional lower helm and twin inboards in an unusually long-lived 28-foot package.",
+    "DesignLineage": [
+      "Introduced in 1978 as the 288 Villa Vee.",
+      "Renamed 298 Villa Vee for 1984–87.",
+      "Renamed again 2980 Esprit for 1988–90.",
+      "The model-number changes did not create separate hull families."
+    ],
+    "OwnershipCharacter": "Twin inboards add maintenance but are simple and conventional. Narrow side decks and high flybridge loading deserve attention; older examples are now restoration-age boats.",
+    "CharacterConfidence": "High",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "RarityConfidence": "Not rated",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "PriceConfidence": "Not rated",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "BoatFamilyCode": "boat_family.flybridge_cruiser",
+    "HullBehaviourCode": "hull_behaviour.planing",
+    "FuelCode": "fuel.gasoline",
+    "LOA": 8.7376,
+    "LWL": 7.5946,
+    "Beam": 3.2512,
+    "Draft": 0.8382,
+    "Displacement": 4309.1,
+    "FlybridgeCode": "availability.yes",
+    "ModelAliases": [
+      "288 Villa Vee",
+      "298 Villa Vee",
+      "2980 Esprit"
+    ],
+    "MechanicalPropulsionCode": "mechanical_propulsion.sterndrive",
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "AirDraft": 3.3528,
+    "RudderTypeCode": "rudder.none_external_drive",
+    "CanonicalSlug": "cruisers-yachts-288-298-villa-vee-2980-esprit-flybridge-cruiser",
+    "CanonicalPath": "/models/cruisers-yachts-288-298-villa-vee-2980-esprit-flybridge-cruiser/",
+    "CanonicalURL": "https://b-atlas.org/models/cruisers-yachts-288-298-villa-vee-2980-esprit-flybridge-cruiser/",
+    "StyleCode": "Cruiser",
+    "CoolingCode": "cooling.raw_water",
+    "SideDecksCode": "side_decks.moderate",
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "ShowerTypeCode": "shower.none",
+    "SpecificationConfidence": {
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      },
+      "KeelConfigurationCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from unambiguous existing KeelType text."
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing propulsion/keel description; no new factual assertion introduced."
+      }
+    },
+    "KeelConfigurationCode": "keel.no_keel",
+    "RunningGearProtectionCode": "running_gear.exposed"
+  },
+  {
+    "ManufacturerID": "CRUISERS",
+    "Manufacturer": "Cruisers Yachts",
+    "Model": "3275 / 320 Express",
+    "Variant": "Express Cruiser",
+    "Nickname": "Cruisers 3275 / 320 Express",
+    "ImageURL": "images/cruy-320-exp.jpg",
+    "Active": false,
+    "FirstYear": 2002,
+    "LastYear": 2006,
+    "TotalBuilt": null,
+    "Designer": "Cruisers Design Team",
+    "HullType": "Modified-V",
+    "Style": "Express Cruiser",
+    "Construction": "Fiberglass",
+    "KeelType": "Modified V",
+    "Fuel": "Gasoline",
+    "Cooling": "Raw Water",
+    "EngineConfiguration": "Twin gasoline sterndrives or inboards",
+    "Propulsion": "Shaft",
+    "Flybridge": "No",
+    "AftCabin": false,
+    "SideDecks": "Medium",
+    "TypicalEngineID": "MerCruiser 7.4 Twin",
+    "FuelCapacity": 757.0824,
+    "WaterCapacity": 151.4165,
+    "HoldingCapacity": 113.5624,
+    "Berths": 4,
+    "Cabins": 1,
+    "Heads": 1,
+    "Shower": false,
+    "Galley": false,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "No",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "Strengths": [
+      "Large social cockpit for the boat size",
+      "Planing performance and responsive handling",
+      "Useful weekend accommodation",
+      "Broad service and parts familiarity in the production-cruiser market"
+    ],
+    "Weaknesses": "Higher fuel burn.",
+    "CommonProblems": "Deck core moisture and window leaks.",
+    "TypicalMission": "Coastal cruising and inland passages.",
+    "AvoidIf": [
+      "You require displacement-speed fuel economy",
+      "You want a flybridge or separate aft-cabin privacy",
+      "You need long-range passagemaking capability"
+    ],
+    "DateCreated": "2026-07-18",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "B-Atlas Phase 8C-15 Production Motoryacht/Cruiser Research",
+    "Revision": 2,
+    "BoatModelID": "CRUY-320-EXP",
+    "BoatFamily": "Cruiser",
+    "Configuration": "Express Cruiser",
+    "HullBehaviour": "Planing",
+    "Features": [
+      "Flybridge"
+    ],
+    "NormalizedFuel": "Gasoline",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Modified-V",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Cruiser",
+    "DataConfidence": "High",
+    "ResearchStatus": "Reviewed",
+    "Overview": "The Cruisers Yachts 320 Express is a production express cruiser designed around cockpit social space, planing performance and overnight accommodation below. Twin-engine propulsion is typical, with model generations varying in drive type, dimensions and interior arrangement.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented accommodation and enclosed living spaces support weekend or regional couple cruising."
+      },
+      "SoloHandling": {
+        "Assessment": "Mixed",
+        "Summary": "Twin engines can assist close-quarters maneuvering, but size, windage and multi-level access increase workload."
+      },
+      "InlandWaterways": {
+        "Assessment": "Mixed",
+        "Summary": "Comfortable for inland cruising, but beam, air draft and fuel consumption must be checked against route and marina constraints."
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "These are coastal production cruisers; actual capability depends on generation, loading, machinery, weather and individual condition."
+      }
+    },
+    "TradeOffs": [
+      "Fuel consumption rises sharply at planing speeds",
+      "Engine-room access can be tight",
+      "Sleeping areas may rely on curtains or convertible spaces",
+      "Low-profile express layouts provide less enclosed living volume than flybridge yachts"
+    ],
+    "BestFor": [
+      "Weekend cruising and entertaining",
+      "Buyers who value speed over displacement economy",
+      "Marina-based coastal and inland use"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Verify moisture around deck hardware, windows, hatches and rail bases",
+      "Inspect fuel, water and waste tanks plus hoses and fittings",
+      "Inspect engines, transmissions or sterndrives, exhaust and cooling systems",
+      "Review AC/DC wiring, shore-power equipment and documented electrical modifications",
+      "Confirm steering, trim-tab and generator operation where fitted"
+    ],
+    "BuyerQuestions": [
+      "What repair or survey history is available for moisture around deck hardware, windows, hatches and rail bases?",
+      "What repair or survey history is available for fuel, water and waste tanks plus hoses and fittings?",
+      "What repair or survey history is available for engines, transmissions or sterndrives, exhaust and cooling systems?",
+      "What repair or survey history is available for ac/dc wiring, shore-power equipment and documented electrical modifications?",
+      "What repair or survey history is available for steering, trim-tab and generator operation where fitted?"
+    ],
+    "OwnerActions": [
+      "Keep deck, window and hardware penetrations sealed",
+      "Maintain propulsion, cooling, exhaust, steering and electrical systems to documented intervals",
+      "Document structural, tank, electrical and machinery repairs for future survey and resale"
+    ],
+    "ModelVariations": [],
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CRUY-320-EXP"
+            ],
+            "Years": {
+              "From": 2002,
+              "To": 2006
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/cruisers/320-express-2002-06"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Model identity and representative specifications checked against model-guide or catalog evidence."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CRUY-320-EXP"
+            ],
+            "Years": {
+              "From": 2002,
+              "To": 2006
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/cruisers/320-express-2002-06"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance derives from documented configuration, propulsion and accommodation."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "General age-related guidance",
+            "Models": [
+              "CRUY-320-EXP"
+            ],
+            "Years": {
+              "From": 2002,
+              "To": 2006
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/cruisers/320-express-2002-06"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance is age/configuration based and is not a claim of a model-wide defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "EngineCount": 2,
+    "ResearchNotes": "Batch 29 identity, lineage and specification normalization from model-specific Powerboat Guide evidence. Renames are preserved as aliases; missing listing-specific configuration remains unknown rather than inferred.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "ModelCharacter": "A popular mid-cabin express that balanced value, 6'4\" cabin headroom, hydraulic engine access and a walk-through windshield with twin-sterndrive performance.",
+    "DesignLineage": [
+      "Introduced as the 3275 Express for 2002–03.",
+      "Renamed 320 Express for the remainder of the 2002–06 family run.",
+      "The rename did not represent a new hull.",
+      "The model sits between the older Esprit series and the later 300/310 Express generation."
+    ],
+    "OwnershipCharacter": "Twin sterndrives provide speed but double drive service. Hydraulic cockpit lift improves engine access; cored structure and drive/transom condition are important on older boats.",
+    "CharacterConfidence": "High",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "RarityConfidence": "Not rated",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "PriceConfidence": "Not rated",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "BoatFamilyCode": "boat_family.express_cruiser",
+    "HullBehaviourCode": "hull_behaviour.planing",
+    "FuelCode": "fuel.gasoline",
+    "MechanicalPropulsionCode": "mechanical_propulsion.sterndrive",
+    "LOA": 10.8966,
+    "Beam": 3.429,
+    "Draft": 0.889,
+    "Displacement": 6123.5,
+    "ModelAliases": [
+      "3275 Express",
+      "320 Express"
+    ],
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "LWL": 8.8392,
+    "AirDraft": 3.6576,
+    "RudderTypeCode": "rudder.none_external_drive",
+    "CanonicalSlug": "cruisers-yachts-3275-320-express-express-cruiser",
+    "CanonicalPath": "/models/cruisers-yachts-3275-320-express-express-cruiser/",
+    "CanonicalURL": "https://b-atlas.org/models/cruisers-yachts-3275-320-express-express-cruiser/",
+    "StyleCode": "Cruiser",
+    "CoolingCode": "cooling.raw_water",
+    "FlybridgeCode": "availability.no",
+    "SideDecksCode": "side_decks.moderate",
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "ShowerTypeCode": "shower.none",
+    "SpecificationConfidence": {
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      },
+      "KeelConfigurationCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from unambiguous existing KeelType text."
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from canonical no-keel geometry with inboard shaft/V-drive propulsion; propeller/rudder running gear is exposed below the hull rather than protected by a keel or skeg."
+      }
+    },
+    "KeelConfigurationCode": "keel.no_keel",
+    "RunningGearProtectionCode": "running_gear.exposed"
+  },
+  {
+    "ManufacturerID": "CRUISERS",
+    "Manufacturer": "Cruisers Yachts",
+    "Model": "3270 Esprit",
+    "Variant": "Mid-Cabin",
+    "Nickname": "Cruisers 3260 / 3270 Esprit",
+    "ImageURL": "images/cruy-3280.jpg",
+    "Active": false,
+    "FirstYear": 1988,
+    "LastYear": 1994,
+    "TotalBuilt": null,
+    "Designer": "Cruisers Design Team",
+    "HullType": "Planing",
+    "Style": "Sedan Cruiser",
+    "Construction": "Fiberglass",
+    "KeelType": "Modified V",
+    "Fuel": "Gasoline",
+    "Cooling": "Raw Water",
+    "EngineConfiguration": "Twin Inboard",
+    "Propulsion": "Shaft/V-Drive",
+    "Flybridge": "No",
+    "AftCabin": false,
+    "SideDecks": "Medium",
+    "TypicalEngineID": "MerCruiser 5.7 Twin",
+    "FuelCapacity": 757.0824,
+    "WaterCapacity": 170.3435,
+    "HoldingCapacity": 113.5624,
+    "Berths": 4,
+    "Cabins": 1,
+    "Heads": 1,
+    "Shower": false,
+    "Galley": false,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "No",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "Strengths": [
+      "Large social cockpit for the boat size",
+      "Planing performance and responsive handling",
+      "Useful weekend accommodation",
+      "Broad service and parts familiarity in the production-cruiser market"
+    ],
+    "Weaknesses": "Gas engines reduce range.",
+    "CommonProblems": "Deck rot and wiring issues.",
+    "TypicalMission": "Coastal cruising and inland passages.",
+    "AvoidIf": [
+      "You require displacement-speed fuel economy",
+      "You want a flybridge or separate aft-cabin privacy",
+      "You need long-range passagemaking capability"
+    ],
+    "DateCreated": "2026-07-18",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "B-Atlas Phase 8C-15 Production Motoryacht/Cruiser Research",
+    "Revision": 2,
+    "BoatModelID": "CRUY-3280",
+    "BoatFamily": "Cruiser",
+    "HullBehaviour": "Planing",
+    "Features": [],
+    "NormalizedFuel": "Gasoline",
+    "NormalizedPropulsion": "Shaft/V-Drive",
+    "NormalizedHullForm": "Modified-V",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Cruiser",
+    "DataConfidence": "High",
+    "ResearchStatus": "Reviewed",
+    "Overview": "The Cruisers Yachts 3280 Esprit is a production express cruiser designed around cockpit social space, planing performance and overnight accommodation below. Twin-engine propulsion is typical, with model generations varying in drive type, dimensions and interior arrangement.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented accommodation and enclosed living spaces support weekend or regional couple cruising."
+      },
+      "SoloHandling": {
+        "Assessment": "Mixed",
+        "Summary": "Twin engines can assist close-quarters maneuvering, but size, windage and multi-level access increase workload."
+      },
+      "InlandWaterways": {
+        "Assessment": "Mixed",
+        "Summary": "Comfortable for inland cruising, but beam, air draft and fuel consumption must be checked against route and marina constraints."
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "These are coastal production cruisers; actual capability depends on generation, loading, machinery, weather and individual condition."
+      }
+    },
+    "TradeOffs": [
+      "Fuel consumption rises sharply at planing speeds",
+      "Engine-room access can be tight",
+      "Sleeping areas may rely on curtains or convertible spaces",
+      "Low-profile express layouts provide less enclosed living volume than flybridge yachts"
+    ],
+    "BestFor": [
+      "Weekend cruising and entertaining",
+      "Buyers who value speed over displacement economy",
+      "Marina-based coastal and inland use"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Verify moisture around deck hardware, windows, hatches and rail bases",
+      "Inspect fuel, water and waste tanks plus hoses and fittings",
+      "Inspect engines, transmissions or sterndrives, exhaust and cooling systems",
+      "Review AC/DC wiring, shore-power equipment and documented electrical modifications",
+      "Confirm steering, trim-tab and generator operation where fitted"
+    ],
+    "BuyerQuestions": [
+      "What repair or survey history is available for moisture around deck hardware, windows, hatches and rail bases?",
+      "What repair or survey history is available for fuel, water and waste tanks plus hoses and fittings?",
+      "What repair or survey history is available for engines, transmissions or sterndrives, exhaust and cooling systems?",
+      "What repair or survey history is available for ac/dc wiring, shore-power equipment and documented electrical modifications?",
+      "What repair or survey history is available for steering, trim-tab and generator operation where fitted?"
+    ],
+    "OwnerActions": [
+      "Keep deck, window and hardware penetrations sealed",
+      "Maintain propulsion, cooling, exhaust, steering and electrical systems to documented intervals",
+      "Document structural, tank, electrical and machinery repairs for future survey and resale"
+    ],
+    "ModelVariations": [],
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CRUY-3280"
+            ],
+            "Years": {
+              "From": 1989,
+              "To": 1996
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/cruisers"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Model identity and representative specifications checked against model-guide or catalog evidence."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CRUY-3280"
+            ],
+            "Years": {
+              "From": 1989,
+              "To": 1996
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/cruisers"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance derives from documented configuration, propulsion and accommodation."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "General age-related guidance",
+            "Models": [
+              "CRUY-3280"
+            ],
+            "Years": {
+              "From": 1989,
+              "To": 1996
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/cruisers"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance is age/configuration based and is not a claim of a model-wide defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "EngineCount": 2,
+    "ResearchNotes": "Batch 29 identity, lineage and specification normalization from model-specific Powerboat Guide evidence. Renames are preserved as aliases; missing listing-specific configuration remains unknown rather than inferred.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "ModelCharacter": "Two near-look-alike Cruisers sharing the same exterior/hull family but very different interiors. The 3260 uses a more open cabin without a mid-berth and straight drives; the more popular 3270 adds a conventional mid-cabin and V-drives.",
+    "DesignLineage": [
+      "3260 and 3270 Esprit were introduced in the late 1980s on the same basic exterior platform.",
+      "The 3260 was short-lived; the 3270 continued through 1994.",
+      "Their internal layouts and drivetrains differ enough to matter when evaluating a listing.",
+      "B-Atlas corrected the unsupported '3280 Esprit' identity to the documented 3260/3270 family."
+    ],
+    "OwnershipCharacter": "Conventional twin gasoline inboards make the basic machinery understandable, but the specific 3260 versus 3270 drivetrain/layout must be verified. Cored deck structure and 1980s tanks/electrical deserve survey attention.",
+    "CharacterConfidence": "High",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "RarityConfidence": "Not rated",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "PriceConfidence": "Not rated",
+    "ModelAliases": [
+      "3270 Esprit"
+    ],
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "BoatFamilyCode": "boat_family.express_cruiser",
+    "HullBehaviourCode": "hull_behaviour.planing",
+    "FuelCode": "fuel.gasoline",
+    "MechanicalPropulsionCode": "mechanical_propulsion.v_drive",
+    "LOA": 9.398,
+    "Beam": 3.302,
+    "Draft": 0.8636,
+    "Displacement": 4762.7,
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "LWL": 8.8392,
+    "AirDraft": 3.6576,
+    "CanonicalSlug": "cruisers-yachts-3260-3270-esprit-esprit",
+    "CanonicalPath": "/models/cruisers-yachts-3260-3270-esprit-esprit/",
+    "CanonicalURL": "https://b-atlas.org/models/cruisers-yachts-3260-3270-esprit-esprit/",
+    "StyleCode": "Cruiser",
+    "CoolingCode": "cooling.raw_water",
+    "FlybridgeCode": "availability.no",
+    "SideDecksCode": "side_decks.moderate",
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "ShowerTypeCode": "shower.none",
+    "SpecificationConfidence": {
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      },
+      "KeelConfigurationCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from unambiguous existing KeelType text."
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing propulsion/keel description; no new factual assertion introduced."
+      },
+      "RudderTypeCode": {
+        "Level": "High",
+        "Status": "derived_from_propulsion",
+        "EvidenceRefs": [],
+        "Note": "External-drive propulsion steers at the drive/outboard and has no conventional inboard rudder."
+      },
+      "Headroom": {
+        "Level": "Medium",
+        "Status": "representative",
+        "EvidenceRefs": [
+          "https://www.yachtall.com/en/boat/cruiser-3270-esprit-s302319"
+        ],
+        "Note": "Representative 1.90 m headroom from a documented 3270 Esprit; production interiors/refits can vary."
+      },
+      "Propulsion": {
+        "Level": "High",
+        "Status": "source_backed",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/cruisers/3260-esprit-3270-esprit-1988-94"
+        ],
+        "Note": "PowerBoat Guide identifies V-drives on the 3270 Esprit."
+      },
+      "NormalizedPropulsion": {
+        "Level": "High",
+        "Status": "source_backed",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/cruis

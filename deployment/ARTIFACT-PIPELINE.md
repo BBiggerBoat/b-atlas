@@ -1,12 +1,17 @@
 # Public artifacts and shared runtime repository
 
-Build with `npm run build:public` (Node and Python required). Outputs remain in
+Build with `npm run build:public` (Node and Python required).
+`npm run generate:search-pages` now delegates to that same complete build so it
+cannot leave a public artifact with stale manifest/digest metadata.
+`npm run cf:dev` builds first and serves `dist/` instead of the source checkout. Outputs remain in
 ignored `dist/`; canonical owners remain the only editable model authority.
 The builder composes owners once and generates complete model records, supporting
 catalogue datasets and SEO. It stages and validates the site before replacing
 `dist/`, restoring the preceding artifact if replacement fails. Explicit allowlists
-exclude canonical owners and research archives. Checked-in SEO and the ignored
-root model cache are not model inputs.
+exclude canonical owners and research archives. SEO, sitemap and permalink outputs are untracked and build-owned. The ignored
+root model cache is not a model input. Run `npm run build:public` before local
+SEO preview; `npm start` serves generated pages from `dist/` when no source
+file exists. Do not deploy the source checkout.
 
 ## Generated contract
 
@@ -152,3 +157,31 @@ for blocked external image requests and writes a separate results folder.
 `PHASE4_PERFORMANCE_REPEATS` accepts 1–5; the primary comparison uses three.
 These diagnostics must not replace the primary receipt without identifying the
 changed fixture conditions.
+
+## Phase 5 source-tree policy and frozen references
+
+Run `npm run guard:repository` to enforce a 200,000-byte text-file ceiling
+(150,000-byte warning), reject tracked generated/retired paths, and verify every
+historical fixture. It is included in `verify:production` and registry CI.
+Seven explicitly named auxiliary owners retain exact byte ceilings and reasons
+in `deployment/repository-size-policy.json`; none is a model-wide generated view.
+Raster images under `images/` are excluded from this text-size budget. This
+policy does not promise reduced historical clone size or uniform connector limits.
+
+`archive/phase5-fixtures/manifest.json` pins original bytes and Git-source labels. Uniform CRLF originals share LF fragments
+with their LF counterparts; an explicit descriptor restores CRLF before the
+whole-file checksum check. Mixed line endings retain their exact stored bytes.
+Its immutable, deduplicated UTF-8 fragments are at most 150,000 bytes each and
+are marked `-text` in `.gitattributes` so Git preserves exact line endings.
+`developer/historical-fixtures.cjs` verifies each part plus the full original
+SHA-256 before reconstructing a buffer or parsing JSON. They are archive
+fragments, not independently editable model sources or public assets.
+Historical test expectations must never be regenerated from current owners.
+
+Tests now read those frozen references rather than old Git blobs. Research
+integrity checks compare the exact protected file set and LF-normalized SHA-256
+values captured from the original commit. Benchmark reconstruction also uses
+frozen Phase 3 code. A Git checkout is still needed for the tracked-file guard;
+full historical Git objects are no longer needed for the standard release suite.
+The existing user backup and prior commits remain separate rollback copies;
+short-lived CI artifacts are not the only retained references.

@@ -4,7 +4,7 @@ from datetime import date, datetime, timezone
 from collections import Counter, defaultdict
 
 SOURCE = Path(__file__).resolve().parents[1]
-ROOT = Path(os.environ.get('BATLAS_OUTPUT_DIR', str(SOURCE))).resolve()
+ROOT = Path(os.environ.get('BATLAS_OUTPUT_DIR', str(SOURCE / 'dist'))).resolve()
 BASE = 'https://b-atlas.org/'
 TODAY = (datetime.fromtimestamp(int(os.environ['SOURCE_DATE_EPOCH']), timezone.utc).date() if 'SOURCE_DATE_EPOCH' in os.environ else date.today()).isoformat()
 page_input = (json.loads(Path(os.environ['BATLAS_PAGE_INPUT']).read_text(encoding='utf-8')) if os.environ.get('BATLAS_PAGE_INPUT') else json.loads(subprocess.check_output(['node', 'developer/model-page-input.cjs'], cwd=SOURCE, encoding='utf-8')))

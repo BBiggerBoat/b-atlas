@@ -1,0 +1,3246 @@
+  "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Identity and representative specifications are based on model-specific documentation."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "GRNL-39"
+            ],
+            "Years": {
+              "From": 2017,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://greenlinehybrid.ca/models/greenline39",
+            "https://www.boatingnz.co.nz/boat-reviews/greenline-39-hybrid/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Guidance is derived from documented layout, hull and propulsion characteristics."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "GRNL-39"
+            ],
+            "Years": {
+              "From": 2017,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://greenlinehybrid.ca/models/greenline39",
+            "https://www.boatingnz.co.nz/boat-reviews/greenline-39-hybrid/"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance addresses configuration and age risks and is not a claim of universal model defects."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "ResearchNotes": "Current Greenline specifications confirm 39'5\" LOA, 12'4\" beam, 2'11\" draft, 185 gal fuel, 105 gal water and single Yanmar diesel plus optional H-Drive hybrid architecture. Current-production status retained.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "SpecificationConfidence": {
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing propulsion/keel description; no new factual assertion introduced."
+      }
+    }
+  },
+  {
+    "BoatModelID": "GULF-36-TR",
+    "ManufacturerID": "GULFSTAR",
+    "Manufacturer": "Gulfstar",
+    "Model": "36 Trawler",
+    "Variant": "Trawler",
+    "Nickname": "Gulfstar 36 Trawler",
+    "Active": false,
+    "CanonicalSlug": "gulfstar-36-trawler-trawler",
+    "CanonicalPath": "/models/gulfstar-36-trawler-trawler/",
+    "CanonicalURL": "https://b-atlas.org/models/gulfstar-36-trawler-trawler/",
+    "ImageURL": "images/gulf-36-tr.jpg",
+    "FirstYear": 1972,
+    "LastYear": 1976,
+    "TotalBuilt": 200,
+    "Designer": "Lazzara",
+    "HullType": "Semi-Displacement",
+    "Style": "Tri-Cabin Trawler",
+    "Construction": "Fiberglass",
+    "KeelType": "Full Length",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Twin 80 hp Perkins diesels commonly documented",
+    "Propulsion": "Shaft",
+    "Flybridge": "Yes",
+    "AftCabin": true,
+    "SideDecks": "Wide",
+    "TypicalEngineID": "Perkins 4.236",
+    "FuelCapacity": 946.35,
+    "WaterCapacity": 378.54,
+    "HoldingCapacity": 113.5624,
+    "Berths": 6,
+    "Cabins": 2,
+    "Heads": 2,
+    "Shower": false,
+    "Galley": false,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "No",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "BoatFamily": "Trawler",
+    "Configuration": "Classic Trawler",
+    "HullBehaviour": "Semi-Displacement",
+    "Features": [
+      "Flybridge",
+      "Aft Cabin",
+      "Wide Side Decks"
+    ],
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Semi-Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Trawler",
+    "EngineCount": 2,
+    "DisplacementLb": 16000,
+    "FuelCapacityGal": 250,
+    "WaterCapacityGal": 100,
+    "NormalizedHullType": "Semi-Displacement",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "HullBehaviourCode": "hull_behaviour.semi_displacement",
+    "BoatFamilyCode": "boat_family.trawler",
+    "LOA": 11.049,
+    "LWL": 9.4488,
+    "Beam": 3.6576,
+    "Draft": 0.9144,
+    "Displacement": 7257.5,
+    "AirDraft": 3.6576,
+    "Headroom": 1.9304,
+    "KeelConfigurationCode": "keel.full_long",
+    "RunningGearProtectionCode": "running_gear.keel_protected",
+    "FlybridgeCode": "availability.yes",
+    "FuelCode": "fuel.diesel",
+    "FuelCapacityUnitStatus": "canonical_litres",
+    "WaterCapacityUnitStatus": "canonical_litres",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "StyleCode": "Trawler",
+    "CoolingCode": "cooling.fresh_water",
+    "SideDecksCode": "side_decks.wide",
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "ShowerTypeCode": "shower.none",
+    "Strengths": [
+      "Substantial cruising accommodations and tankage for length",
+      "Generally practical machinery and lower-helm arrangements on power models",
+      "Distinctive designs ranging from efficient trawlers to capable motor yachts"
+    ],
+    "Weaknesses": "Early hull configurations prone to flexing in rough seas, light factory hardware choices.",
+    "CommonProblems": "Laminate blistering on the hull bottom, original fuel tank side seams rust out.",
+    "TypicalMission": "Budget family weekend looping and entry-level coastal cruising.",
+    "AvoidIf": [
+      "You assume every Gulfstar is a slow displacement trawler",
+      "You need low systems complexity or easy road transport",
+      "You are unwilling to verify model generation, hull construction and engine package"
+    ],
+    "Overview": "The Gulfstar 36 Trawler reflects Gulfstar's broad 1970s–1980s range from sail-derived trawlers and motorsailers to larger motor yachts. The specific model's hull form, speed and accommodation must be judged independently rather than treating all Gulfstars as conventional trawlers.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented cruising layout is practical for a couple; guest capacity and privacy vary by model."
+      },
+      "SoloHandling": {
+        "Assessment": "Mixed",
+        "Summary": "Lower-helm access and protected decks can help short-handed operation, but windage, engine count and docking equipment remain hull-specific."
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "Route fit depends on actual beam, draft and air draft; verify bridge and marina limits for the individual boat."
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "Condition, loading and actual hull configuration are decisive; this assessment reflects documented design intent rather than an offshore guarantee."
+      }
+    },
+    "TradeOffs": [
+      "Model families differ substantially in hull construction and performance",
+      "Age makes tanks, deck penetrations, wiring and machinery condition critical",
+      "Larger models carry significant systems, air-draft and operating-cost burdens"
+    ],
+    "BestFor": [
+      "Cruising buyers who understand the specific Gulfstar generation",
+      "Owners comfortable maintaining older systems-rich fiberglass yachts",
+      "Inland and coastal cruising where the documented model mission fits"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Verify exact model and generation against hull documentation",
+      "Inspect deck/core areas, windows and structural penetrations",
+      "Inspect fuel/water tanks, wiring, plumbing, generator and HVAC systems",
+      "Inspect engines, exhaust, cooling, shafts, rudders and keel",
+      "Confirm air draft and actual displacement for intended route and haul-out"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for verify exact model and generation against hull documentation?",
+      "What inspection, repair or service history is available for inspect deck/core areas, windows and structural penetrations?",
+      "What inspection, repair or service history is available for inspect fuel/water tanks, wiring, plumbing, generator and HVAC systems?",
+      "What inspection, repair or service history is available for inspect engines, exhaust, cooling, shafts, rudders and keel?",
+      "What inspection, repair or service history is available for confirm air draft and actual displacement for intended route and haul-out?"
+    ],
+    "OwnerActions": [
+      "Keep deck, window and hardware penetrations sealed and investigate leaks promptly",
+      "Maintain propulsion, cooling, exhaust, steering and fuel systems to documented intervals",
+      "Document structural, tank, electrical and machinery repairs for future buyers"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "Generation-specific design changes",
+        "Description": "Gulfstar reused and evolved hull concepts across trawlers, motorsailers and motor yachts; Mk II and later motor-yacht generations can differ materially in layout, structure and speed.",
+        "AffectedYears": "Varies by model",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/gulfstar",
+          "https://sailboatdata.com/sailboat/gulfstar-39-sailmaster/",
+          "https://www.hmy.com/yachting/powerboat-guide/gulfstar/36-trawler-1972-76"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "ModelCharacter": "An unusual American trawler built on the same soft-chined, ballasted semi-displacement hull as Gulfstar's 36 Motorsailer. Twin small Perkins diesels, a deep keel and moderate beam make it a slow, economical powerboat with distinctly sailboat-like hull behavior rather than a conventional boxy Taiwan trawler.",
+    "DesignLineage": [
+      "The Gulfstar 36 Trawler was produced from 1972–1976 on the same hull used for the Gulfstar 36 Motorsailer.",
+      "The powerboat identity is legitimate: the Trawler received twin diesels, powerboat deck/helm arrangements and no dependence on a sailing rig.",
+      "In 1975 Gulfstar introduced the 36 Mk II with a raised aft deck, full-beam master, enlarged flybridge, larger rudders and redesigned teak interior.",
+      "The 36 Trawler and 36 Motorsailer therefore share hull lineage but remain materially different factory configurations and B-Atlas scopes."
+    ],
+    "OwnershipCharacter": "Exceptionally economical at 7–8 knots and mechanically simple despite twin engines because the original Perkins installations are low-output. Age, ballast/keel structure, old tanks, windows, decks and insurance on a 50-year-old boat matter more than performance machinery.",
+    "DateCreated": "2026-07-13",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "B-Atlas Phase 8C-11 Classic Taiwanese / Older Motoryacht Research",
+    "Revision": 2,
+    "DataConfidence": "Moderate",
+    "ResearchStatus": "Reviewed",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "GULF-36-TR"
+            ],
+            "Years": {
+              "From": 1972,
+              "To": 1976
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/gulfstar",
+            "https://sailboatdata.com/sailboat/gulfstar-39-sailmaster/",
+            "https://www.hmy.com/yachting/powerboat-guide/gulfstar/36-trawler-1972-76"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Representative identity and specifications use model-specific references where available; unresolved production or hull differences remain explicit."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "GULF-36-TR"
+            ],
+            "Years": {
+              "From": 1972,
+              "To": 1976
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/gulfstar",
+            "https://sailboatdata.com/sailboat/gulfstar-39-sailmaster/",
+            "https://www.hmy.com/yachting/powerboat-guide/gulfstar/36-trawler-1972-76"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Guidance is derived from documented configuration and design traits, not marketplace promotion."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "GULF-36-TR"
+            ],
+            "Years": {
+              "From": 1972,
+              "To": 1976
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/gulfstar",
+            "https://sailboatdata.com/sailboat/gulfstar-39-sailmaster/",
+            "https://www.hmy.com/yachting/powerboat-guide/gulfstar/36-trawler-1972-76"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection items are age/configuration risks to investigate and are not assertions that every hull has the defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "ResearchNotes": "Powerboat Guide verifies 1972–76 production and shared hull with the Gulfstar 36 Motorsailer. The 1975 Mk II is an in-family generation update, not a separate canonical model. This is a valid factory powerboat despite its motorsailer-derived hull.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "SpecificationConfidence": {
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      }
+    }
+  },
+  {
+    "BoatModelID": "GULF-43-TR",
+    "ManufacturerID": "GULFSTAR",
+    "Manufacturer": "Gulfstar",
+    "Model": "43 Trawler",
+    "Variant": "Trawler",
+    "Nickname": "Gulfstar 43 Trawler",
+    "Active": false,
+    "CanonicalSlug": "gulfstar-43-trawler-trawler",
+    "CanonicalPath": "/models/gulfstar-43-trawler-trawler/",
+    "CanonicalURL": "https://b-atlas.org/models/gulfstar-43-trawler-trawler/",
+    "ImageURL": "images/gulf-43-tr.jpg",
+    "FirstYear": 1972,
+    "LastYear": 1977,
+    "TotalBuilt": null,
+    "Designer": "Gulfstar Design Group",
+    "HullType": "Semi-Displacement",
+    "Style": "Trawler",
+    "Construction": "Fiberglass",
+    "KeelType": "Full Length",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Twin Perkins diesels commonly documented",
+    "Propulsion": "Shaft",
+    "Flybridge": "Yes",
+    "AftCabin": true,
+    "SideDecks": "Wide",
+    "TypicalEngineID": "Lehman 135",
+    "FuelCapacity": 1135.62,
+    "WaterCapacity": 492.1,
+    "HoldingCapacity": 189.2706,
+    "Berths": 6,
+    "Cabins": 2,
+    "Heads": 2,
+    "Shower": false,
+    "Galley": false,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "Yes",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "BoatFamily": "Trawler",
+    "Configuration": "Classic Trawler",
+    "HullBehaviour": "Semi-Displacement",
+    "Features": [
+      "Flybridge",
+      "Aft Cabin",
+      "Wide Side Decks"
+    ],
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Semi-Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Trawler",
+    "EngineCount": 2,
+    "DisplacementLb": 21000,
+    "FuelCapacityGal": 300,
+    "WaterCapacityGal": 130,
+    "NormalizedHullType": "Semi-Displacement",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "HullBehaviourCode": "hull_behaviour.semi_displacement",
+    "BoatFamilyCode": "boat_family.trawler",
+    "LOA": 13.208,
+    "LWL": 11.938,
+    "Beam": 4.2418,
+    "Draft": 1.0668,
+    "Displacement": 9525.4,
+    "AirDraft": 3.6576,
+    "Headroom": 1.9304,
+    "KeelConfigurationCode": "keel.full_long",
+    "RunningGearProtectionCode": "running_gear.keel_protected",
+    "FlybridgeCode": "availability.yes",
+    "FuelCode": "fuel.diesel",
+    "FuelCapacityUnitStatus": "canonical_litres",
+    "WaterCapacityUnitStatus": "canonical_litres",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "StyleCode": "Trawler",
+    "CoolingCode": "cooling.fresh_water",
+    "SideDecksCode": "side_decks.wide",
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "ShowerTypeCode": "shower.none",
+    "Strengths": [
+      "Substantial cruising accommodations and tankage for length",
+      "Generally practical machinery and lower-helm arrangements on power models",
+      "Distinctive designs ranging from efficient trawlers to capable motor yachts"
+    ],
+    "Weaknesses": "Older systems and teak maintenance.",
+    "CommonProblems": "Deck core moisture and tank corrosion.",
+    "TypicalMission": "Loop cruising and extended coastal passages.",
+    "AvoidIf": [
+      "You assume every Gulfstar is a slow displacement trawler",
+      "You need low systems complexity or easy road transport",
+      "You are unwilling to verify model generation, hull construction and engine package"
+    ],
+    "Overview": "The Gulfstar 43 Trawler reflects Gulfstar's broad 1970s–1980s range from sail-derived trawlers and motorsailers to larger motor yachts. The specific model's hull form, speed and accommodation must be judged independently rather than treating all Gulfstars as conventional trawlers.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented cruising layout is practical for a couple; guest capacity and privacy vary by model."
+      },
+      "SoloHandling": {
+        "Assessment": "Mixed",
+        "Summary": "Lower-helm access and protected decks can help short-handed operation, but windage, engine count and docking equipment remain hull-specific."
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "Route fit depends on actual beam, draft and air draft; verify bridge and marina limits for the individual boat."
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "Condition, loading and actual hull configuration are decisive; this assessment reflects documented design intent rather than an offshore guarantee."
+      }
+    },
+    "TradeOffs": [
+      "Model families differ substantially in hull construction and performance",
+      "Age makes tanks, deck penetrations, wiring and machinery condition critical",
+      "Larger models carry significant systems, air-draft and operating-cost burdens"
+    ],
+    "BestFor": [
+      "Cruising buyers who understand the specific Gulfstar generation",
+      "Owners comfortable maintaining older systems-rich fiberglass yachts",
+      "Inland and coastal cruising where the documented model mission fits"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Verify exact model and generation against hull documentation",
+      "Inspect deck/core areas, windows and structural penetrations",
+      "Inspect fuel/water tanks, wiring, plumbing, generator and HVAC systems",
+      "Inspect engines, exhaust, cooling, shafts, rudders and keel",
+      "Confirm air draft and actual displacement for intended route and haul-out"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for verify exact model and generation against hull documentation?",
+      "What inspection, repair or service history is available for inspect deck/core areas, windows and structural penetrations?",
+      "What inspection, repair or service history is available for inspect fuel/water tanks, wiring, plumbing, generator and HVAC systems?",
+      "What inspection, repair or service history is available for inspect engines, exhaust, cooling, shafts, rudders and keel?",
+      "What inspection, repair or service history is available for confirm air draft and actual displacement for intended route and haul-out?"
+    ],
+    "OwnerActions": [
+      "Keep deck, window and hardware penetrations sealed and investigate leaks promptly",
+      "Maintain propulsion, cooling, exhaust, steering and fuel systems to documented intervals",
+      "Document structural, tank, electrical and machinery repairs for future buyers"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "Generation-specific design changes",
+        "Description": "Gulfstar reused and evolved hull concepts across trawlers, motorsailers and motor yachts; Mk II and later motor-yacht generations can differ materially in layout, structure and speed.",
+        "AffectedYears": "Varies by model",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/gulfstar",
+          "https://sailboatdata.com/sailboat/gulfstar-39-sailmaster/",
+          "https://www.hmy.com/yachting/powerboat-guide/gulfstar/43-trawler-1972-77"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "ModelCharacter": "A long, moderate-beam Gulfstar trawler using essentially the Gulfstar 43 Motorsailer hull without the sailing rig. Its rounded bilges, long deep keel and twin Perkins diesels produce seakindly nine-knot cruising, while the Mk II sundeck version adds the larger aft master associated with later motor yachts.",
+    "DesignLineage": [
+      "The Gulfstar 43 Trawler was produced from 1972–1977 on the Gulfstar 43 Motorsailer hull.",
+      "The original version used a traditional trunk-cabin arrangement.",
+      "A 1975 Mk II redesign added a full-width aft deck, revised flybridge and larger master stateroom, along with a full teak interior.",
+      "The 43 remains a valid powerboat despite its sail-derived hull; the motorsailer is a separate configuration outside this B-Atlas record."
+    ],
+    "OwnershipCharacter": "A comfortable and efficient offshore-oriented cruiser at displacement-like speeds, with protected running gear and useful engine-room access. Twin machinery, extensive teak, aging tanks and large vintage systems make ownership materially more demanding than the 36.",
+    "DateCreated": "2026-07-18",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "B-Atlas Phase 8C-11 Classic Taiwanese / Older Motoryacht Research",
+    "Revision": 2,
+    "DataConfidence": "Moderate",
+    "ResearchStatus": "Reviewed",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "GULF-43-TR"
+            ],
+            "Years": {
+              "From": 1972,
+              "To": 1977
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/gulfstar",
+            "https://sailboatdata.com/sailboat/gulfstar-39-sailmaster/",
+            "https://www.hmy.com/yachting/powerboat-guide/gulfstar/43-trawler-1972-77"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Representative identity and specifications use model-specific references where available; unresolved production or hull differences remain explicit."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "GULF-43-TR"
+            ],
+            "Years": {
+              "From": 1972,
+              "To": 1977
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/gulfstar",
+            "https://sailboatdata.com/sailboat/gulfstar-39-sailmaster/",
+            "https://www.hmy.com/yachting/powerboat-guide/gulfstar/43-trawler-1972-77"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Guidance is derived from documented configuration and design traits, not marketplace promotion."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "GULF-43-TR"
+            ],
+            "Years": {
+              "From": 1972,
+              "To": 1977
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/gulfstar",
+            "https://sailboatdata.com/sailboat/gulfstar-39-sailmaster/",
+            "https://www.hmy.com/yachting/powerboat-guide/gulfstar/43-trawler-1972-77"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection items are age/configuration risks to investigate and are not assertions that every hull has the defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "ResearchNotes": "Powerboat Guide verifies 1972–77 production and shared hull with the Gulfstar 43 Motorsailer. The 1975 Mk II sundeck redesign remains within this canonical Trawler record.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "SpecificationConfidence": {
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      }
+    }
+  },
+  {
+    "BoatModelID": "GULF-44-MC",
+    "ManufacturerID": "GULFSTAR",
+    "Manufacturer": "Gulfstar",
+    "Model": "44 Motor Cruiser",
+    "Variant": "Motor Cruiser",
+    "Nickname": "Gulfstar 44 Motor Cruiser",
+    "Active": false,
+    "CanonicalSlug": "gulfstar-44-motor-cruiser-motor-cruiser",
+    "CanonicalPath": "/models/gulfstar-44-motor-cruiser-motor-cruiser/",
+    "CanonicalURL": "https://b-atlas.org/models/gulfstar-44-motor-cruiser-motor-cruiser/",
+    "ImageURL": "images/gulf-44-mc.jpg",
+    "FirstYear": 1978,
+    "LastYear": 1980,
+    "TotalBuilt": 105,
+    "Designer": "Vince Lazzara / Gulfstar",
+    "HullType": "Full-displacement / trawler form",
+    "Style": "Motor Cruiser",
+    "Construction": "Fiberglass hull and superstructure",
+    "KeelType": "Deep full-length protective keel",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Twin Perkins diesels",
+    "Propulsion": "Shaft",
+    "Flybridge": "Yes",
+    "AftCabin": true,
+    "SideDecks": "Wide",
+    "TypicalEngineID": "Twin Perkins 6.354 naturally aspirated diesels, approximately 130–135 hp each; 160 hp turbo option reported",
+    "FuelCapacity": 1892.71,
+    "WaterCapacity": 946.35,
+    "HoldingCapacity": 151.42,
+    "Berths": 6,
+    "Cabins": 2,
+    "Heads": 2,
+    "Shower": true,
+    "Galley": true,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "Conditional",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "BoatFamily": "Cruiser",
+    "HullBehaviour": "Semi-Displacement",
+    "Features": [
+      "Aft Cabin",
+      "Flybridge",
+      "Wide Side Decks",
+      "Two Heads",
+      "Stall Showers",
+      "Stand-up Engine Room",
+      "Large Tankage"
+    ],
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Trawler",
+    "EngineCount": 2,
+    "DisplacementLb": 28400,
+    "FuelCapacityGal": 500,
+    "WaterCapacityGal": 250,
+    "NormalizedHullType": "Displacement",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "HullBehaviourCode": "hull_behaviour.displacement",
+    "BoatFamilyCode": "boat_family.motor_yacht",
+    "LOA": 13.5382,
+    "Beam": 4.4196,
+    "Draft": 1.2192,
+    "Displacement": 12882,
+    "AirDraft": 4.953,
+    "KeelConfigurationCode": "keel.full_long",
+    "RunningGearProtectionCode": "running_gear.keel_protected",
+    "ShowerTypeCode": "shower.separate_stall",
+    "FlybridgeCode": "availability.yes",
+    "SideDecksCode": "side_decks.wide",
+    "FuelCode": "fuel.diesel",
+    "FuelCapacityUnitStatus": "canonical_litres",
+    "WaterCapacityUnitStatus": "canonical_litres",
+    "HoldingCapacityUnitStatus": "canonical_litres",
+    "HoldingCapacityGal": 40,
+    "StyleCode": "Trawler",
+    "CoolingCode": "cooling.fresh_water",
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "LWL": 12.2364,
+    "Strengths": [
+      "Substantial cruising accommodations and tankage for length",
+      "Generally practical machinery and lower-helm arrangements on power models",
+      "Distinctive designs ranging from efficient trawlers to capable motor yachts"
+    ],
+    "Weaknesses": "Large systems inventory, twin-engine maintenance, high displacement and substantial bridge clearance increase operating and storage demands.",
+    "CommonProblems": "Inspect fuel and water tanks, deck and window leaks, aft-cabin and hardtop structure, exhaust and cooling systems, generator and air-conditioning installations, wiring, shaft gear and accumulated owner modifications.",
+    "TypicalMission": "Extended coastal and inland-waterway cruising for owners prioritizing living space, range and low-speed economy over compact dimensions.",
+    "AvoidIf": [
+      "You assume every Gulfstar is a slow displacement trawler",
+      "You need low systems complexity or easy road transport",
+      "You are unwilling to verify model generation, hull construction and engine package"
+    ],
+    "Overview": "The Gulfstar 44 Motor Cruiser reflects Gulfstar's broad 1970s–1980s range from sail-derived trawlers and motorsailers to larger motor yachts. The specific model's hull form, speed and accommodation must be judged independently rather than treating all Gulfstars as conventional trawlers.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented cruising layout is practical for a couple; guest capacity and privacy vary by model."
+      },
+      "SoloHandling": {
+        "Assessment": "Mixed",
+        "Summary": "Lower-helm access and protected decks can help short-handed operation, but windage, engine count and docking equipment remain hull-specific."
+      },
+      "InlandWaterways": {
+        "Assessment": "Mixed",
+        "Summary": "Route fit depends on actual beam, draft and air draft; verify bridge and marina limits for the individual boat."
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "Condition, loading and actual hull configuration are decisive; this assessment reflects documented design intent rather than an offshore guarantee."
+      }
+    },
+    "TradeOffs": [
+      "Model families differ substantially in hull construction and performance",
+      "Age makes tanks, deck penetrations, wiring and machinery condition critical",
+      "Larger models carry significant systems, air-draft and operating-cost burdens"
+    ],
+    "BestFor": [
+      "Cruising buyers who understand the specific Gulfstar generation",
+      "Owners comfortable maintaining older systems-rich fiberglass yachts",
+      "Inland and coastal cruising where the documented model mission fits"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Verify exact model and generation against hull documentation",
+      "Inspect deck/core areas, windows and structural penetrations",
+      "Inspect fuel/water tanks, wiring, plumbing, generator and HVAC systems",
+      "Inspect engines, exhaust, cooling, shafts, rudders and keel",
+      "Confirm air draft and actual displacement for intended route and haul-out"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for verify exact model and generation against hull documentation?",
+      "What inspection, repair or service history is available for inspect deck/core areas, windows and structural penetrations?",
+      "What inspection, repair or service history is available for inspect fuel/water tanks, wiring, plumbing, generator and HVAC systems?",
+      "What inspection, repair or service history is available for inspect engines, exhaust, cooling, shafts, rudders and keel?",
+      "What inspection, repair or service history is available for confirm air draft and actual displacement for intended route and haul-out?"
+    ],
+    "OwnerActions": [
+      "Keep deck, window and hardware penetrations sealed and investigate leaks promptly",
+      "Maintain propulsion, cooling, exhaust, steering and fuel systems to documented intervals",
+      "Document structural, tank, electrical and machinery repairs for future buyers"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "Generation-specific design changes",
+        "Description": "Gulfstar reused and evolved hull concepts across trawlers, motorsailers and motor yachts; Mk II and later motor-yacht generations can differ materially in layout, structure and speed.",
+        "AffectedYears": "Varies by model",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/gulfstar",
+          "https://sailboatdata.com/sailboat/gulfstar-39-sailmaster/",
+          "https://www.hmy.com/yachting/powerboat-guide/gulfstar/44-motor-cruiser-1978-80"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "ModelCharacter": "Gulfstar's transition into the modern motor-yacht market: a heavy deep-keel Motor Cruiser that looks like a conventional aft-deck motor yacht but behaves like a trawler, cruising around 8½ knots on modest twin Perkins diesels.",
+    "DesignLineage": [
+      "The 44 Motor Cruiser was introduced in 1978 and produced through 1980.",
+      "It marked Gulfstar's move away from the earlier trawlers that directly reused motorsailer hulls and toward purpose-developed motor-yacht products.",
+      "The deep-keel hull is displacement-oriented and the standard 130-hp Perkins twins deliver trawler-speed performance despite the motor-yacht profile.",
+      "The later Gulfstar 48/49 Motor Yacht family developed the enclosed-aft-deck motor-yacht concept further and should not be conflated with this 44."
+    ],
+    "OwnershipCharacter": "A substantial two-stateroom liveaboard cruiser with excellent engine-room separation and secure side decks. Twin engines are modestly powered, but 500 gallons of fuel, two heads, generator/air-conditioning spaces and large teak surfaces make restoration and annual upkeep yacht-scale.",
+    "DateCreated": "",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "B-Atlas Phase 8C-11 Classic Taiwanese / Older Motoryacht Research",
+    "Revision": 4,
+    "ResearchStatus": "Reviewed",
+    "ResearchNotes": "Powerboat Guide describes the 44 as a full-displacement/deep-keel trawler in motor-yacht form, while its specification table labels the hull 'Semi-Disp.' B-Atlas classifies it as Displacement based on its 8.5-knot hull-speed performance and the source's narrative description, while preserving the ambiguity in evidence.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "DataConfidence": "Moderate",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "GULF-44-MC"
+            ],
+            "Years": {
+              "From": 1978,
+              "To": 1980
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/gulfstar",
+            "https://sailboatdata.com/sailboat/gulfstar-39-sailmaster/",
+            "https://www.hmy.com/yachting/powerboat-guide/gulfstar/44-motor-cruiser-1978-80"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Representative identity and specifications use model-specific references where available; unresolved production or hull differences remain explicit."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "GULF-44-MC"
+            ],
+            "Years": {
+              "From": 1978,
+              "To": 1980
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/gulfstar",
+            "https://sailboatdata.com/sailboat/gulfstar-39-sailmaster/",
+            "https://www.hmy.com/yachting/powerboat-guide/gulfstar/44-motor-cruiser-1978-80"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Guidance is derived from documented configuration and design traits, not marketplace promotion."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "GULF-44-MC"
+            ],
+            "Years": {
+              "From": 1978,
+              "To": 1980
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/gulfstar",
+            "https://sailboatdata.com/sailboat/gulfstar-39-sailmaster/",
+            "https://www.hmy.com/yachting/powerboat-guide/gulfstar/44-motor-cruiser-1978-80"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection items are age/configuration risks to investigate and are not assertions that every hull has the defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "SpecificationConfidence": {
+      "LWL": {
+        "Level": "Low",
+        "Status": "estimated_family_ratio",
+        "EvidenceRefs": [],
+        "Note": "Working LWL estimate derived from the median LWL/LOA ratio (0.904) of other B-Atlas Gulfstar models with recorded waterline lengths. Intended for hull-speed context and community verification, not survey use."
+      }
+    }
+  },
+  {
+    "BoatModelID": "GULF-49-MC",
+    "ManufacturerID": "GULFSTAR",
+    "Manufacturer": "Gulfstar",
+    "Model": "49 Motor Yacht",
+    "Variant": "Motor Yacht",
+    "Nickname": "Gulfstar 49 Motor Yacht",
+    "Active": false,
+    "CanonicalSlug": "gulfstar-49-motor-yacht-motor-yacht",
+    "CanonicalPath": "/models/gulfstar-49-motor-yacht-motor-yacht/",
+    "CanonicalURL": "https://b-atlas.org/models/gulfstar-49-motor-yacht-motor-yacht/",
+    "ImageURL": "images/gulf-49-mc.jpg",
+    "FirstYear": 1984,
+    "LastYear": 1987,
+    "TotalBuilt": null,
+    "Designer": "Gulfstar Design Group",
+    "HullType": "Semi-Displacement",
+    "Style": "Motor Cruiser",
+    "Construction": "Fiberglass",
+    "KeelType": "Full Length",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Twin Perkins 350 hp or GM 6-71 diesel packages",
+    "Propulsion": "Shaft",
+    "Flybridge": "Yes",
+    "AftCabin": true,
+    "SideDecks": "Wide",
+    "TypicalEngineID": "CAT 3208",
+    "FuelCapacity": 2555.15,
+    "WaterCapacity": 1400.6,
+    "HoldingCapacity": 227.1247,
+    "Berths": 6,
+    "Cabins": 3,
+    "Heads": 3,
+    "Shower": false,
+    "Galley": false,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "Yes",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "BoatFamily": "Cruiser",
+    "Configuration": "Aft Cabin Cruiser",
+    "HullBehaviour": "Semi-Displacement",
+    "Features": [
+      "Flybridge",
+      "Aft Cabin",
+      "Wide Side Decks"
+    ],
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Semi-Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Motor Yacht",
+    "EngineCount": 2,
+    "DisplacementLb": 42000,
+    "FuelCapacityGal": 675,
+    "WaterCapacityGal": 370,
+    "NormalizedHullType": "Semi-Displacement",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "HullBehaviourCode": "hull_behaviour.semi_displacement",
+    "BoatFamilyCode": "boat_family.motor_yacht",
+    "LOA": 14.9352,
+    "LWL": 13.5128,
+    "Beam": 4.5974,
+    "Draft": 1.1684,
+    "Displacement": 19050.9,
+    "AirDraft": 5.1816,
+    "KeelConfigurationCode": "keel.full_long",
+    "RunningGearProtectionCode": "running_gear.keel_protected",
+    "ShowerTypeCode": "shower.separate_stall",
+    "FlybridgeCode": "availability.yes",
+    "FuelCode": "fuel.diesel",
+    "FuelCapacityUnitStatus": "canonical_litres",
+    "WaterCapacityUnitStatus": "canonical_litres",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "StyleCode": "Motor Yacht",
+    "CoolingCode": "cooling.fresh_water",
+    "SideDecksCode": "side_decks.wide",
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "Strengths": [
+      "Substantial cruising accommodations and tankage for length",
+      "Generally practical machinery and lower-helm arrangements on power models",
+      "Distinctive designs ranging from efficient trawlers to capable motor yachts"
+    ],
+    "Weaknesses": "Older systems and teak decks.",
+    "CommonProblems": "Deck core moisture and hydraulic leaks.",
+    "TypicalMission": "Extended Loop cruising and offshore passages.",
+    "AvoidIf": [
+      "You assume every Gulfstar is a slow displacement trawler",
+      "You need low systems complexity or easy road transport",
+      "You are unwilling to verify model generation, hull construction and engine package"
+    ],
+    "Overview": "The Gulfstar 49 Motor Yacht reflects Gulfstar's broad 1970s–1980s range from sail-derived trawlers and motorsailers to larger motor yachts. The specific model's hull form, speed and accommodation must be judged independently rather than treating all Gulfstars as conventional trawlers.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented cruising layout is practical for a couple; guest capacity and privacy vary by model."
+      },
+      "SoloHandling": {
+        "Assessment": "Mixed",
+        "Summary": "Lower-helm access and protected decks can help short-handed operation, but windage, engine count and docking equipment remain hull-specific."
+      },
+      "InlandWaterways": {
+        "Assessment": "Mixed",
+        "Summary": "Route fit depends on actual beam, draft and air draft; verify bridge and marina limits for the individual boat."
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "Condition, loading and actual hull configuration are decisive; this assessment reflects documented design intent rather than an offshore guarantee."
+      }
+    },
+    "TradeOffs": [
+      "Model families differ substantially in hull construction and performance",
+      "Age makes tanks, deck penetrations, wiring and machinery condition critical",
+      "Larger models carry significant systems, air-draft and operating-cost burdens"
+    ],
+    "BestFor": [
+      "Cruising buyers who understand the specific Gulfstar generation",
+      "Owners comfortable maintaining older systems-rich fiberglass yachts",
+      "Inland and coastal cruising where the documented model mission fits"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Verify exact model and generation against hull documentation",
+      "Inspect deck/core areas, windows and structural penetrations",
+      "Inspect fuel/water tanks, wiring, plumbing, generator and HVAC systems",
+      "Inspect engines, exhaust, cooling, shafts, rudders and keel",
+      "Confirm air draft and actual displacement for intended route and haul-out"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for verify exact model and generation against hull documentation?",
+      "What inspection, repair or service history is available for inspect deck/core areas, windows and structural penetrations?",
+      "What inspection, repair or service history is available for inspect fuel/water tanks, wiring, plumbing, generator and HVAC systems?",
+      "What inspection, repair or service history is available for inspect engines, exhaust, cooling, shafts, rudders and keel?",
+      "What inspection, repair or service history is available for confirm air draft and actual displacement for intended route and haul-out?"
+    ],
+    "OwnerActions": [
+      "Keep deck, window and hardware penetrations sealed and investigate leaks promptly",
+      "Maintain propulsion, cooling, exhaust, steering and fuel systems to documented intervals",
+      "Document structural, tank, electrical and machinery repairs for future buyers"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "Generation-specific design changes",
+        "Description": "Gulfstar reused and evolved hull concepts across trawlers, motorsailers and motor yachts; Mk II and later motor-yacht generations can differ materially in layout, structure and speed.",
+        "AffectedYears": "Varies by model",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/gulfstar",
+          "https://sailboatdata.com/sailboat/gulfstar-39-sailmaster/",
+          "https://www.hmy.com/yachting/powerboat-guide/gulfstar/49-motor-yacht-1984-87"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "ModelCharacter": "A large three-stateroom Gulfstar motor yacht whose enclosed, air-conditioned aft deck becomes the main salon. Twin high-output diesels, semi-displacement hull and small line-handling cockpit give it genuine 12–17-knot cruising capability while retaining a long keel and traditional Gulfstar teak interior.",
+    "DesignLineage": [
+      "The Gulfstar 49 Motor Yacht was produced from 1984–1987.",
+      "It was an evolutionary refinement of Gulfstar's 48-footer built from 1981–1983.",
+      "The defining change is the fully enclosed aft deck used as the main salon, with the mid-level deckhouse devoted to galley and dinette.",
+      "The 49 belongs to Gulfstar's later performance motor-yacht lineage and is distinct from the slower 44 Motor Cruiser and earlier sail-derived trawlers."
+    ],
+    "OwnershipCharacter": "A true large-yacht proposition: three staterooms, three heads, walk-in engine room, laundry, large generator/air-conditioning loads and twin 350–435 hp diesels. Balsa-cored hull construction makes moisture history particularly important in addition to machinery and tank condition.",
+    "DateCreated": "2026-07-18",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "B-Atlas Phase 8C-11 Classic Taiwanese / Older Motoryacht Research",
+    "Revision": 2,
+    "DataConfidence": "Moderate",
+    "ResearchStatus": "Reviewed",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "GULF-49-MC"
+            ],
+            "Years": {
+              "From": 1984,
+              "To": 1987
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/gulfstar",
+            "https://sailboatdata.com/sailboat/gulfstar-39-sailmaster/",
+            "https://www.hmy.com/yachting/powerboat-guide/gulfstar/49-motor-yacht-1984-87"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Representative identity and specifications use model-specific references where available; unresolved production or hull differences remain explicit."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "GULF-49-MC"
+            ],
+            "Years": {
+              "From": 1984,
+              "To": 1987
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/gulfstar",
+            "https://sailboatdata.com/sailboat/gulfstar-39-sailmaster/",
+            "https://www.hmy.com/yachting/powerboat-guide/gulfstar/49-motor-yacht-1984-87"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Guidance is derived from documented configuration and design traits, not marketplace promotion."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "GULF-49-MC"
+            ],
+            "Years": {
+              "From": 1984,
+              "To": 1987
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/gulfstar",
+            "https://sailboatdata.com/sailboat/gulfstar-39-sailmaster/",
+            "https://www.hmy.com/yachting/powerboat-guide/gulfstar/49-motor-yacht-1984-87"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection items are age/configuration risks to investigate and are not assertions that every hull has the defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "ResearchNotes": "Canonical display name corrected from '49 Motor Cruiser' to the documented '49 Motor Yacht'. HMY identifies the 49 as an evolutionary refinement of the earlier Gulfstar 48 (1981–83).\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated"
+  },
+  {
+    "BoatModelID": "HELM-31-CA",
+    "ManufacturerID": "HELMSMAN",
+    "Manufacturer": "Helmsman",
+    "Model": "31 Sedan",
+    "Variant": "Sedan",
+    "Nickname": "Helmsman 31 Sedan",
+    "Active": false,
+    "ModelAliases": [
+      "Camano 31 lineage"
+    ],
+    "CanonicalSlug": "helmsman-31-sedan-sedan",
+    "CanonicalPath": "/models/helmsman-31-sedan-sedan/",
+    "CanonicalURL": "https://b-atlas.org/models/helmsman-31-sedan-sedan/",
+    "ImageURL": "images/helm-31-ca.jpg",
+    "FirstYear": 2011,
+    "LastYear": null,
+    "TotalBuilt": 30,
+    "Designer": "Bob Warman",
+    "HullType": "Semi-Displacement",
+    "Style": "Flybridge Sedan",
+    "Construction": "Fiberglass",
+    "KeelType": "Full Skeg",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Single inboard diesel",
+    "Propulsion": "Shaft",
+    "Flybridge": "Yes",
+    "AftCabin": false,
+    "SideDecks": "Moderate",
+    "TypicalEngineID": "Hyundai SeasAll S270",
+    "FuelCapacity": 567.8118,
+    "WaterCapacity": 378.5412,
+    "HoldingCapacity": 113.5624,
+    "Berths": 4,
+    "Cabins": 1,
+    "Heads": 1,
+    "Shower": false,
+    "Galley": false,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "No",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "HullBehaviour": "Semi-Displacement",
+    "Features": [
+      "Flybridge"
+    ],
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Semi-Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Cruiser",
+    "EngineCount": 1,
+    "HullLength_ft": 28,
+    "RarityScore": null,
+    "RarityLabel": "",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "BoatFamilyCode": "boat_family.trawler",
+    "HullBehaviourCode": "hull_behaviour.semi_displacement",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "FuelCode": "fuel.diesel",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "LOA": 9.4488,
+    "Beam": 3.2004,
+    "Draft": 0.9144,
+    "Displacement": 5216.3,
+    "KeelConfigurationCode": "keel.protective",
+    "RunningGearProtectionCode": "running_gear.keel_protected",
+    "FlybridgeCode": "availability.yes",
+    "ShowerTypeCode": "shower.separate_stall",
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "AirDraft": 3.6576,
+    "StyleCode": "Cruiser",
+    "CoolingCode": "cooling.fresh_water",
+    "SideDecksCode": "side_decks.moderate",
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "LWL": 8.6258,
+    "Strengths": [
+      "Single diesel with full-keel/skeg running-gear protection",
+      "Low-maintenance exterior with strong machinery access",
+      "Modern layouts combine traditional wood interiors with contemporary systems"
+    ],
+    "Weaknesses": "Compact head design footprint, single-level salon area feels snug with four adults.",
+    "CommonProblems": "Electronic engine display module glitches, entry door latch alignment wear.",
+    "TypicalMission": "Extended regional loop cruising and active couples inside passage navigation.",
+    "AvoidIf": [
+      "You require twin-engine propulsion redundancy",
+      "You need compact trailerable dimensions beyond the 31 class",
+      "You prefer minimalist systems with little dependence on thrusters/electrical equipment"
+    ],
+    "Overview": "The Helmsman 31 Sedan is a modern single-diesel semi-displacement cruising trawler emphasizing protected running gear, practical machinery access, low exterior maintenance and warm traditional interiors. Helmsman’s range spans the Camano-derived 31 Sedan through larger raised-pilothouse boats intended for extended coastal and long-range cruising.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented layout and cruising systems are well suited to a cruising couple, with guest capacity varying by model."
+      },
+      "SoloHandling": {
+        "Assessment": "Mixed",
+        "Summary": "Protected helms and deck access can support short-handed operation, but displacement, windage, engine arrangement and docking equipment vary materially by model."
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "Route suitability depends on beam, draft and actual air draft; larger models may face marina and lock constraints."
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "Hull form and construction support the documented cruising role, but condition, loading, weather and individual configuration remain decisive."
+      }
+    },
+    "TradeOffs": [
+      "Wide-beam larger models require substantial marina and haul-out infrastructure",
+      "Single-engine propulsion lacks second-engine redundancy",
+      "Newer complex electrical, thruster and comfort systems increase systems-management burden"
+    ],
+    "BestFor": [
+      "Couples planning serious coastal and extended cruising",
+      "Owners wanting traditional trawler utility without exterior teak burden",
+      "Buyers prioritizing machinery access and single-diesel efficiency"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Verify factory build specification and optional-equipment list",
+      "Inspect hull/deck penetrations, windows and pilothouse doors for leaks",
+      "Inspect engine, cooling, exhaust, shaft, skeg, rudder and hydraulic steering",
+      "Test bow/stern thrusters, charging, inverter, generator and navigation systems",
+      "Confirm loaded weight, air draft and tankage for intended route"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for verify factory build specification and optional-equipment list?",
+      "What inspection, repair or service history is available for inspect hull/deck penetrations, windows and pilothouse doors for leaks?",
+      "What inspection, repair or service history is available for inspect engine, cooling, exhaust, shaft, skeg, rudder and hydraulic steering?",
+      "What inspection, repair or service history is available for test bow/stern thrusters, charging, inverter, generator and navigation systems?",
+      "What inspection, repair or service history is available for confirm loaded weight, air draft and tankage for intended route?"
+    ],
+    "OwnerActions": [
+      "Keep deck, window and hardware penetrations sealed and investigate leaks promptly",
+      "Service propulsion, cooling, exhaust, steering and fuel systems to documented intervals",
+      "Document structural, tank, electrical and machinery repairs for future buyers"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "Sedan and pilothouse range",
+        "Description": "Helmsman uses related design principles across Sedan and Pilothouse models; the 31 derives from the Camano 31 hull while larger boats are separate Helmsman designs.",
+        "AffectedYears": "2011 onward",
+        "EvidenceRefs": [
+          "https://helmsmantrawlers.com/",
+          "https://helmsmantrawlers.com/about-helmsman-trawlers/"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "ModelCharacter": "The modern continuation of the Camano 31 concept: the proven Warman hull underneath, but with updated exterior lines, a substantially redesigned interior and more contemporary equipment and finish.",
+    "DesignLineage": [
+      "Helmsman identifies the 31 Sedan as an update of the original Camano 31.",
+      "It retains the Bob Warman Camano hull lineage rather than being an unrelated Helmsman design.",
+      "Helmsman modernized the exterior lines and completely redesigned the interior.",
+      "The model should be treated as a successor to the Camano 28/31 Troll, not as the same production generation."
+    ],
+    "OwnershipCharacter": "A refined pocket trawler for couples who want Camano-scale handling and efficiency with newer systems, improved accommodation and yacht-level finish. Newer equipment raises replacement cost relative to an older Camano.",
+    "DateCreated": "2026-07-13",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "B-Atlas Phase 8C-10 Traditional Trawler Family Research",
+    "Revision": 2,
+    "DataConfidence": "Moderate",
+    "ResearchStatus": "Reviewed",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "HELM-31-CA"
+            ],
+            "Years": {
+              "From": 2011,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://helmsmantrawlers.com/",
+            "https://helmsmantrawlers.com/about-helmsman-trawlers/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Representative identity and specifications are based on manufacturer, owner-association or model-specific technical references; hull-specific differences remain explicit."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "HELM-31-CA"
+            ],
+            "Years": {
+              "From": 2011,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://helmsmantrawlers.com/",
+            "https://helmsmantrawlers.com/about-helmsman-trawlers/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance is derived from documented configuration, dimensions, propulsion and intended use rather than sales language."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "HELM-31-CA"
+            ],
+            "Years": {
+              "From": 2011,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://helmsmantrawlers.com/",
+            "https://helmsmantrawlers.com/about-helmsman-trawlers/"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance identifies systems and age/configuration risks to inspect; it is not an assertion that every hull has a defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "ResearchNotes": "Phase 8C-10 traditional-trawler family normalization 2026-08-07. Unsupported defects remain unknown.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "SpecificationConfidence": {
+      "AirDraft": {
+        "Level": "Medium",
+        "Status": "estimated",
+        "EvidenceRefs": [
+          "https://helmsmantrawlers.com/2015-helmsman-trawlers-31-sedan/"
+        ],
+        "Note": "Retracted radar-arch clearance is documented as under 12 ft; 12 ft is retained as a conservative working value. Fixed bridge clearance with arch up is 16 ft 4 in."
+      },
+      "LWL": {
+        "Level": "Low",
+        "Status": "restored_legacy_working_value",
+        "EvidenceRefs": [],
+        "Note": "Working LWL restored from the pre-v6.81 archived B-Atlas value (28.3 ft). Retained as a low-confidence community-verifiable value rather than leaving a basic performance input blank."
+      }
+    }
+  },
+  {
+    "BoatModelID": "HELM-38E-TR",
+    "ManufacturerID": "HELMSMAN",
+    "Manufacturer": "Helmsman",
+    "Model": "38E Pilothouse",
+    "Variant": "Pilothouse",
+    "Nickname": "Helmsman 38E Pilothouse",
+    "Active": false,
+    "CanonicalSlug": "helmsman-38e-pilothouse-pilothouse",
+    "CanonicalPath": "/models/helmsman-38e-pilothouse-pilothouse/",
+    "CanonicalURL": "https://b-atlas.org/models/helmsman-38e-pilothouse-pilothouse/",
+    "ImageURL": "images/helm-38e-tr.jpg",
+    "FirstYear": 2014,
+    "LastYear": null,
+    "TotalBuilt": 45,
+    "Designer": "Helmsman Design",
+    "HullType": "Semi-Displacement",
+    "Style": "Pilothouse Trawler",
+    "Construction": "Fiberglass",
+    "KeelType": "Full Skeg",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Single inboard diesel",
+    "Propulsion": "Shaft",
+    "Flybridge": "Yes",
+    "AftCabin": false,
+    "SideDecks": "Wide",
+    "TypicalEngineID": "Cummins QSB 6.7 380 hp",
+    "FuelCapacity": 1514.16,
+    "WaterCapacity": 548.88,
+    "HoldingCapacity": 170.34,
+    "Berths": 6,
+    "Cabins": 2,
+    "Heads": 1,
+    "Shower": false,
+    "Galley": false,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "Limited",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "BoatFamily": "Trawler",
+    "Configuration": "Pilothouse Trawler",
+    "HullBehaviour": "Semi-Displacement",
+    "Features": [
+      "Wide Side Decks"
+    ],
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Semi-Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Trawler",
+    "EngineCount": 1,
+    "HullLength_ft": 37.833,
+    "RarityScore": null,
+    "RarityLabel": "",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "BoatFamilyCode": "boat_family.trawler",
+    "HullBehaviourCode": "hull_behaviour.semi_displacement",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "FuelCode": "fuel.diesel",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "LOA": 12.446,
+    "Beam": 4.2418,
+    "Draft": 1.2192,
+    "Displacement": 13607.8,
+    "EnginePowerPerEngine": 283.37,
+    "KeelConfigurationCode": "keel.full_long",
+    "RunningGearProtectionCode": "running_gear.keel_protected",
+    "FlybridgeCode": "availability.yes",
+    "ShowerTypeCode": "shower.separate_stall",
+    "FuelCapacityUnitStatus": "canonical_litres",
+    "WaterCapacityUnitStatus": "canonical_litres",
+    "HoldingCapacityUnitStatus": "canonical_litres",
+    "FuelCapacityGal": 400,
+    "WaterCapacityGal": 145,
+    "HoldingCapacityGal": 45,
+    "AirDraft": 4.55,
+    "StyleCode": "Trawler",
+    "CoolingCode": "cooling.fresh_water",
+    "SideDecksCode": "side_decks.wide",
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "LWL": 10.8204,
+    "Strengths": [
+      "Single diesel with full-keel/skeg running-gear protection",
+      "Low-maintenance exterior with strong machinery access",
+      "Modern layouts combine traditional wood interiors with contemporary systems"
+    ],
+    "Weaknesses": "Single propulsion makes windy cross-docking challenging without thrusters, heavy weight.",
+    "CommonProblems": "Raw water washdown pump switch shorts, engine hatch mechanical seal wear.",
+    "TypicalMission": "Extended luxury liveaboard voyaging, loops, and serious coastal passage making.",
+    "AvoidIf": [
+      "You require twin-engine propulsion redundancy",
+      "You need compact trailerable dimensions beyond the 31 class",
+      "You prefer minimalist systems with little dependence on thrusters/electrical equipment"
+    ],
+    "Overview": "The Helmsman 38E Pilothouse is a modern single-diesel semi-displacement cruising trawler emphasizing protected running gear, practical machinery access, low exterior maintenance and warm traditional interiors. Helmsman’s range spans the Camano-derived 31 Sedan through larger raised-pilothouse boats intended for extended coastal and long-range cruising.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented layout and cruising systems are well suited to a cruising couple, with guest capacity varying by model."
+      },
+      "SoloHandling": {
+        "Assessment": "Mixed",
+        "Summary": "Protected helms and deck access can support short-handed operation, but displacement, windage, engine arrangement and docking equipment vary materially by model."
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "Route suitability depends on beam, draft and actual air draft; larger models may face marina and lock constraints."
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "Hull form and construction support the documented cruising role, but condition, loading, weather and individual configuration remain decisive."
+      }
+    },
+    "TradeOffs": [
+      "Wide-beam larger models require substantial marina and haul-out infrastructure",
+      "Single-engine propulsion lacks second-engine redundancy",
+      "Newer complex electrical, thruster and comfort systems increase systems-management burden"
+    ],
+    "BestFor": [
+      "Couples planning serious coastal and extended cruising",
+      "Owners wanting traditional trawler utility without exterior teak burden",
+      "Buyers prioritizing machinery access and single-diesel efficiency"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Verify factory build specification and optional-equipment list",
+      "Inspect hull/deck penetrations, windows and pilothouse doors for leaks",
+      "Inspect engine, cooling, exhaust, shaft, skeg, rudder and hydraulic steering",
+      "Test bow/stern thrusters, charging, inverter, generator and navigation systems",
+      "Confirm loaded weight, air draft and tankage for intended route"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for verify factory build specification and optional-equipment list?",
+      "What inspection, repair or service history is available for inspect hull/deck penetrations, windows and pilothouse doors for leaks?",
+      "What inspection, repair or service history is available for inspect engine, cooling, exhaust, shaft, skeg, rudder and hydraulic steering?",
+      "What inspection, repair or service history is available for test bow/stern thrusters, charging, inverter, generator and navigation systems?",
+      "What inspection, repair or service history is available for confirm loaded weight, air draft and tankage for intended route?"
+    ],
+    "OwnerActions": [
+      "Keep deck, window and hardware penetrations sealed and investigate leaks promptly",
+      "Service propulsion, cooling, exhaust, steering and fuel systems to documented intervals",
+      "Document structural, tank, electrical and machinery repairs for future buyers"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "Sedan and pilothouse range",
+        "Description": "Helmsman uses related design principles across Sedan and Pilothouse models; the 31 derives from the Camano 31 hull while larger boats are separate Helmsman designs.",
+        "AffectedYears": "2011 onward",
+        "EvidenceRefs": [
+          "https://helmsmantrawlers.com/",
+          "https://helmsmantrawlers.com/about-helmsman-trawlers/"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "ModelCharacter": "A wide-beam low-rise pilothouse trawler that prioritizes interior volume, visibility and protected cruising while keeping a relatively low profile and economical single-engine drivetrain.",
+    "DesignLineage": [
+      "Evolution of Helmsman's earlier 38 Pilothouse.",
+      "The 38E revised the deck, cockpit cover, pilothouse roof drainage, forward-window styling and sound attenuation.",
+      "It is a Helmsman design lineage separate from the Camano-derived 31.",
+      "The larger 43/43E family was subsequently derived from the 38 Pilothouse concept."
+    ],
+    "OwnershipCharacter": "Comfortable and unusually spacious for the nominal length, with strong machinery access and protected decks. Wide beam and substantial systems make it more marina- and maintenance-intensive than the 31.",
+    "DateCreated": "2026-07-13",
+    "LastUpdated": "2026-09-02",
+    "ReviewedBy": "B-Atlas Phase 8C-10 Traditional Trawler Family Research",
+    "Revision": 3,
+    "DataConfidence": "Moderate",
+    "ResearchStatus": "Reviewed",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "HELM-38E-TR"
+            ],
+            "Years": {
+              "From": 2014,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://helmsmantrawlers.com/",
+            "https://helmsmantrawlers.com/about-helmsman-trawlers/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Representative identity and specifications are based on manufacturer, owner-association or model-specific technical references; hull-specific differences remain explicit."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "HELM-38E-TR"
+            ],
+            "Years": {
+              "From": 2014,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://helmsmantrawlers.com/",
+            "https://helmsmantrawlers.com/about-helmsman-trawlers/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance is derived from documented configuration, dimensions, propulsion and intended use rather than sales language."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "HELM-38E-TR"
+            ],
+            "Years": {
+              "From": 2014,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://helmsmantrawlers.com/",
+            "https://helmsmantrawlers.com/about-helmsman-trawlers/"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance identifies systems and age/configuration risks to inspect; it is not an assertion that every hull has a defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "ResearchNotes": "Phase 8C-10 traditional-trawler family normalization 2026-08-07. Unsupported defects remain unknown.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "SpecificationConfidence": {
+      "AirDraft": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [],
+        "Note": "B-Atlas working estimate derived from nearest comparable models with similar style, size and flybridge configuration. Verify actual mast/radar/antenna clearance before route planning. Comparable model IDs: ISGY-40, UNIV-40-TR, MNSH-34-TR, GRBK-42-CL, GULF-43-TR, ISGY-44, GULF-44-MC"
+      },
+      "LWL": {
+        "Level": "Low",
+        "Status": "restored_legacy_working_value",
+        "EvidenceRefs": [],
+        "Note": "Working LWL restored from the pre-v6.81 archived B-Atlas value (35.5 ft). Retained as a low-confidence community-verifiable value rather than leaving a basic performance input blank."
+      }
+    }
+  },
+  {
+    "BoatModelID": "HELM-43-E",
+    "ManufacturerID": "HELMSMAN",
+    "Manufacturer": "Helmsman",
+    "Model": "43E Pilothouse",
+    "Variant": "Pilothouse",
+    "Nickname": "Helmsman 43E Pilothouse",
+    "Active": true,
+    "CanonicalSlug": "helmsman-43e-pilothouse-pilothouse",
+    "CanonicalPath": "/models/helmsman-43e-pilothouse-pilothouse/",
+    "CanonicalURL": "https://b-atlas.org/models/helmsman-43e-pilothouse-pilothouse/",
+    "ImageURL": "images/helm-43-e.jpg",
+    "FirstYear": 2018,
+    "LastYear": null,
+    "TotalBuilt": null,
+    "Designer": "Helmsman Design Group",
+    "HullType": "Semi-Displacement",
+    "Style": "Modern Trawler",
+    "Construction": "Fiberglass",
+    "KeelType": "Full Length",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Single inboard diesel",
+    "Propulsion": "Shaft",
+    "Flybridge": "Yes",
+    "AftCabin": "No",
+    "SideDecks": "Wide",
+    "TypicalEngineID": "Cummins QSB 6.7 380 hp",
+    "FuelCapacity": 2271.25,
+    "WaterCapacity": 757.08,
+    "HoldingCapacity": 227.12,
+    "Berths": 6,
+    "Cabins": 2,
+    "Heads": 2,
+    "Shower": false,
+    "Galley": false,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "Yes",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "BoatFamily": "Trawler",
+    "Configuration": "Classic Trawler",
+    "HullBehaviour": "Semi-Displacement",
+    "Features": [
+      "Flybridge",
+      "Aft Cabin",
+      "Wide Side Decks"
+    ],
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Semi-Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Trawler",
+    "EngineCount": 1,
+    "HullLength_ft": 42.5,
+    "RarityScore": null,
+    "RarityLabel": "",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "BoatFamilyCode": "boat_family.trawler",
+    "HullBehaviourCode": "hull_behaviour.semi_displacement",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "FuelCode": "fuel.diesel",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "LOA": 13.8684,
+    "Beam": 4.318,
+    "Draft": 1.3716,
+    "Displacement": 15875.7,
+    "KeelConfigurationCode": "keel.full_long",
+    "RunningGearProtectionCode": "running_gear.keel_protected",
+    "FlybridgeCode": "availability.yes",
+    "ShowerTypeCode": "shower.separate_stall",
+    "FuelCapacityUnitStatus": "canonical_litres",
+    "WaterCapacityUnitStatus": "canonical_litres",
+    "HoldingCapacityUnitStatus": "canonical_litres",
+    "AirDraft": 4.1148,
+    "FuelCapacityGal": 600,
+    "WaterCapacityGal": 200,
+    "HoldingCapacityGal": 60,
+    "StyleCode": "Trawler",
+    "CoolingCode": "cooling.fresh_water",
+    "SideDecksCode": "side_decks.wide",
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "LWL": 11.8872,
+    "Strengths": [
+      "Single diesel with full-keel/skeg running-gear protection",
+      "Low-maintenance exterior with strong machinery access",
+      "Modern layouts combine traditional wood interiors with contemporary systems"
+    ],
+    "Weaknesses": "Higher price and maintenance.",
+    "CommonProblems": "Deck core moisture and hydraulic leaks.",
+    "TypicalMission": "Loop cruising and extended coastal passages.",
+    "AvoidIf": [
+      "You require twin-engine propulsion redundancy",
+      "You need compact trailerable dimensions beyond the 31 class",
+      "You prefer minimalist systems with little dependence on thrusters/electrical equipment"
+    ],
+    "Overview": "The Helmsman 43E Pilothouse is a modern single-diesel semi-displacement cruising trawler emphasizing protected running gear, practical machinery access, low exterior maintenance and warm traditional interiors. Helmsman’s range spans the Camano-derived 31 Sedan through larger raised-pilothouse boats intended for extended coastal and long-range cruising.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented layout and cruising systems are well suited to a cruising couple, with guest capacity varying by model."
+      },
+      "SoloHandling": {
+        "Assessment": "Mixed",
+        "Summary": "Protected helms and deck access can support short-handed operation, but displacement, windage, engine arrangement and docking equipment vary materially by model."
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "Route suitability depends on beam, draft and actual air draft; larger models may face marina and lock constraints."
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "Hull form and construction support the documented cruising role, but condition, loading, weather and individual configuration remain decisive."
+      }
+    },
+    "TradeOffs": [
+      "Wide-beam larger models require substantial marina and haul-out infrastructure",
+      "Single-engine propulsion lacks second-engine redundancy",
+      "Newer complex electrical, thruster and comfort systems increase systems-management burden"
+    ],
+    "BestFor": [
+      "Couples planning serious coastal and extended cruising",
+      "Owners wanting traditional trawler utility without exterior teak burden",
+      "Buyers prioritizing machinery access and single-diesel efficiency"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Verify factory build specification and optional-equipment list",
+      "Inspect hull/deck penetrations, windows and pilothouse doors for leaks",
+      "Inspect engine, cooling, exhaust, shaft, skeg, rudder and hydraulic steering",
+      "Test bow/stern thrusters, charging, inverter, generator and navigation systems",
+      "Confirm loaded weight, air draft and tankage for intended route"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for verify factory build specification and optional-equipment list?",
+      "What inspection, repair or service history is available for inspect hull/deck penetrations, windows and pilothouse doors for leaks?",
+      "What inspection, repair or service history is available for inspect engine, cooling, exhaust, shaft, skeg, rudder and hydraulic steering?",
+      "What inspection, repair or service history is available for test bow/stern thrusters, charging, inverter, generator and navigation systems?",
+      "What inspection, repair or service history is available for confirm loaded weight, air draft and tankage for intended route?"
+    ],
+    "OwnerActions": [
+      "Keep deck, window and hardware penetrations sealed and investigate leaks promptly",
+      "Service propulsion, cooling, exhaust, steering and fuel systems to documented intervals",
+      "Document structural, tank, electrical and machinery repairs for future buyers"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "Sedan and pilothouse range",
+        "Description": "Helmsman uses related design principles across Sedan and Pilothouse models; the 31 derives from the Camano 31 hull while larger boats are separate Helmsman designs.",
+        "AffectedYears": "2011 onward",
+        "EvidenceRefs": [
+          "https://helmsmantrawlers.com/",
+          "https://helmsmantrawlers.com/about-helmsman-trawlers/"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "ModelCharacter": "A larger evolution of the Helmsman low-rise pilothouse formula, adding a genuine second stateroom, more salon and cockpit volume and greater cruising capacity while preserving single-diesel efficiency and protected running gear.",
+    "DesignLineage": [
+      "Derived directly from the Helmsman 38 Pilothouse family and expanded in length, beam and freeboard.",
+      "The original 43 launched before the 43E evolutionary revision.",
+      "The 43E represents the second generation of the 43 concept.",
+      "It is not part of the Camano hull lineage."
+    ],
+    "OwnershipCharacter": "Serious couple or small-family cruising platform with liveaboard-scale comfort. More displacement, systems and dockage requirements than the 38E, but still intentionally simpler than twin-engine motoryachts of similar volume.",
+    "DateCreated": "2026-07-18",
+    "LastUpdated": "2026-09-02",
+    "ReviewedBy": "B-Atlas Phase 8C-10 Traditional Trawler Family Research",
+    "Revision": 3,
+    "DataConfidence": "Moderate",
+    "ResearchStatus": "Reviewed",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "HELM-43-E"
+            ],
+            "Years": {
+              "From": 2018,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://helmsmantrawlers.com/",
+            "https://helmsmantrawlers.com/about-helmsman-trawlers/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Representative identity and specifications are based on manufacturer, owner-association or model-specific technical references; hull-specific differences remain explicit."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "HELM-43-E"
+            ],
+            "Years": {
+              "From": 2018,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://helmsmantrawlers.com/",
+            "https://helmsmantrawlers.com/about-helmsman-trawlers/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance is derived from documented configuration, dimensions, propulsion and intended use rather than sales language."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "HELM-43-E"
+            ],
+            "Years": {
+              "From": 2018,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://helmsmantrawlers.com/",
+            "https://helmsmantrawlers.com/about-helmsman-trawlers/"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance identifies systems and age/configuration risks to inspect; it is not an assertion that every hull has a defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "ResearchNotes": "Phase 8C-10 traditional-trawler family normalization 2026-08-07. Unsupported defects remain unknown.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "SpecificationConfidence": {
+      "LWL": {
+        "Level": "Low",
+        "Status": "restored_legacy_working_value",
+        "EvidenceRefs": [],
+        "Note": "Working LWL restored from the pre-v6.81 archived B-Atlas value (39 ft). Retained as a low-confidence community-verifiable value rather than leaving a basic performance input blank."
+      }
+    }
+  },
+  {
+    "BoatModelID": "HELM-46-PH",
+    "ManufacturerID": "HELMSMAN",
+    "Manufacturer": "Helmsman",
+    "Model": "46 Pilothouse",
+    "Variant": "Pilothouse",
+    "Nickname": "Helmsman 46 Pilothouse",
+    "Active": true,
+    "CanonicalSlug": "helmsman-46-pilothouse-pilothouse",
+    "CanonicalPath": "/models/helmsman-46-pilothouse-pilothouse/",
+    "CanonicalURL": "https://b-atlas.org/models/helmsman-46-pilothouse-pilothouse/",
+    "ImageURL": "images/helm-46-ph.jpg",
+    "FirstYear": 2025,
+    "LastYear": null,
+    "TotalBuilt": null,
+    "Designer": "Ivan Erdevicki",
+    "HullType": "Semi-Displacement",
+    "Style": "Pilothouse Trawler",
+    "Construction": "Fiberglass",
+    "KeelType": "Full Length",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Single inboard diesel",
+    "Propulsion": "Shaft",
+    "Flybridge": "Yes",
+    "AftCabin": "No",
+    "SideDecks": "Wide",
+    "TypicalEngineID": "Cummins QSC 8.3 493 hp",
+    "FuelCapacity": 3028.33,
+    "WaterCapacity": 1135.62,
+    "HoldingCapacity": 378.54,
+    "Berths": 6,
+    "Cabins": 2,
+    "Heads": 2,
+    "Shower": false,
+    "Galley": false,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "Yes",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "BoatFamily": "Trawler",
+    "Configuration": "Pilothouse Trawler",
+    "HullBehaviour": "Semi-Displacement",
+    "Features": [
+      "Flybridge",
+      "Aft Cabin",
+      "Wide Side Decks"
+    ],
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Semi-Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Trawler",
+    "EngineCount": 1,
+    "HullLength_ft": 46,
+    "RarityScore": null,
+    "RarityLabel": "",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "BoatFamilyCode": "boat_family.trawler",
+    "HullBehaviourCode": "hull_behaviour.semi_displacement",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "FuelCode": "fuel.diesel",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "LOA": 15.2654,
+    "LWL": 12.954,
+    "Beam": 4.953,
+    "Draft": 1.524,
+    "Displacement": 23586.8,
+    "KeelConfigurationCode": "keel.full_long",
+    "RunningGearProtectionCode": "running_gear.keel_protected",
+    "FlybridgeCode": "availability.yes",
+    "ShowerTypeCode": "shower.separate_stall",
+    "FuelCapacityUnitStatus": "canonical_litres",
+    "WaterCapacityUnitStatus": "canonical_litres",
+    "HoldingCapacityUnitStatus": "canonical_litres",
+    "FuelCapacityGal": 800,
+    "WaterCapacityGal": 300,
+    "HoldingCapacityGal": 100,
+    "AirDraft": 4.95,
+    "StyleCode": "Trawler",
+    "CoolingCode": "cooling.fresh_water",
+    "SideDecksCode": "side_decks.wide",
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "Strengths": [
+      "Single diesel with full-keel/skeg running-gear protection",
+      "Low-maintenance exterior with strong machinery access",
+      "Modern layouts combine traditional wood interiors with contemporary systems"
+    ],
+    "Weaknesses": "Higher price and maintenance.",
+    "CommonProblems": "Deck core moisture and hydraulic leaks.",
+    "TypicalMission": "Loop cruising and extended coastal passages.",
+    "AvoidIf": [
+      "You require twin-engine propulsion redundancy",
+      "You need compact trailerable dimensions beyond the 31 class",
+      "You prefer minimalist systems with little dependence on thrusters/electrical equipment"
+    ],
+    "Overview": "The Helmsman 46 Pilothouse is a modern single-diesel semi-displacement cruising trawler emphasizing protected running gear, practical machinery access, low exterior maintenance and warm traditional interiors. Helmsman’s range spans the Camano-derived 31 Sedan through larger raised-pilothouse boats intended for extended coastal and long-range cruising.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented layout and cruising systems are well suited to a cruising couple, with guest capacity varying by model."
+      },
+      "SoloHandling": {
+        "Assessment": "Mixed",
+        "Summary": "Protected helms and deck access can support short-handed operation, but displacement, windage, engine arrangement and docking equipment vary materially by model."
+      },
+      "InlandWaterways": {
+        "Assessment": "Mixed",
+        "Summary": "Route suitability depends on beam, draft and actual air draft; larger models may face marina and lock constraints."
+      },
+      "ExposedWater": {
+        "Assessment": "Good",
+        "Summary": "Hull form and construction support the documented cruising role, but condition, loading, weather and individual configuration remain decisive."
+      }
+    },
+    "TradeOffs": [
+      "Wide-beam larger models require substantial marina and haul-out infrastructure",
+      "Single-engine propulsion lacks second-engine redundancy",
+      "Newer complex electrical, thruster and comfort systems increase systems-management burden"
+    ],
+    "BestFor": [
+      "Couples planning serious coastal and extended cruising",
+      "Owners wanting traditional trawler utility without exterior teak burden",
+      "Buyers prioritizing machinery access and single-diesel efficiency"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Verify factory build specification and optional-equipment list",
+      "Inspect hull/deck penetrations, windows and pilothouse doors for leaks",
+      "Inspect engine, cooling, exhaust, shaft, skeg, rudder and hydraulic steering",
+      "Test bow/stern thrusters, charging, inverter, generator and navigation systems",
+      "Confirm loaded weight, air draft and tankage for intended route"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for verify factory build specification and optional-equipment list?",
+      "What inspection, repair or service history is available for inspect hull/deck penetrations, windows and pilothouse doors for leaks?",
+      "What inspection, repair or service history is available for inspect engine, cooling, exhaust, shaft, skeg, rudder and hydraulic steering?",
+      "What inspection, repair or service history is available for test bow/stern thrusters, charging, inverter, generator and navigation systems?",
+      "What inspection, repair or service history is available for confirm loaded weight, air draft and tankage for intended route?"
+    ],
+    "OwnerActions": [
+      "Keep deck, window and hardware penetrations sealed and investigate leaks promptly",
+      "Service propulsion, cooling, exhaust, steering and fuel systems to documented intervals",
+      "Document structural, tank, electrical and machinery repairs for future buyers"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "Sedan and pilothouse range",
+        "Description": "Helmsman uses related design principles across Sedan and Pilothouse models; the 31 derives from the Camano 31 hull while larger boats are separate Helmsman designs.",
+        "AffectedYears": "2011 onward",
+        "EvidenceRefs": [
+          "https://helmsmantrawlers.com/",
+          "https://helmsmantrawlers.com/about-helmsman-trawlers/"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "ModelCharacter": "Helmsman's expedition-scale pilothouse: a substantially heavier, wider and longer-range design intended for serious passagemaking, while retaining the brand's single-engine, full-keel and service-access philosophy.",
+    "DesignLineage": [
+      "A separate design by naval architect Ivan Erdevicki.",
+      "Extends the Helmsman philosophy beyond the 38/43 family rather than simply enlarging one of those hulls.",
+      "Designed around greater range, payload, accommodation and seagoing capability.",
+      "Introduced as the 46 Pilothouse / Expedition Pilothouse generation."
+    ],
+    "OwnershipCharacter": "A large, systems-rich cruising yacht despite the single-engine philosophy. It demands serious dockage, haul-out capacity and operating budget, but emphasizes accessible machinery and protected running gear.",
+    "DateCreated": "2026-07-18",
+    "LastUpdated": "2026-09-02",
+    "ReviewedBy": "B-Atlas Phase 8C-10 Traditional Trawler Family Research",
+    "Revision": 3,
+    "DataConfidence": "Moderate",
+    "ResearchStatus": "Reviewed",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "HELM-46-PH"
+            ],
+            "Years": {
+              "From": 2025,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://helmsmantrawlers.com/",
+            "https://helmsmantrawlers.com/about-helmsman-trawlers/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Representative identity and specifications are based on manufacturer, owner-association or model-specific technical references; hull-specific differences remain explicit."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "HELM-46-PH"
+            ],
+            "Years": {
+              "From": 2025,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://helmsmantrawlers.com/",
+            "https://helmsmantrawlers.com/about-helmsman-trawlers/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance is derived from documented configuration, dimensions, propulsion and intended use rather than sales language."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "HELM-46-PH"
+            ],
+            "Years": {
+              "From": 2025,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://helmsmantrawlers.com/",
+            "https://helmsmantrawlers.com/about-helmsman-trawlers/"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance identifies systems and age/configuration risks to inspect; it is not an assertion that every hull has a defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "ResearchNotes": "Phase 8C-10 traditional-trawler family normalization 2026-08-07. Unsupported defects remain unknown.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "SpecificationConfidence": {
+      "AirDraft": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [],
+        "Note": "B-Atlas working estimate derived from nearest comparable models with similar style, size and flybridge configuration. Verify actual mast/radar/antenna clearance before route planning. Comparable model IDs: KDKR-44-AE, BENE-47, BENE-48, GRBK-46-CL, DEFE-47, HELM-43-E, GULF-44-MC"
+      }
+    }
+  },
+  {
+    "BoatModelID": "HLMN-38-CO",
+    "ManufacturerID": "HOLIDAY",
+    "Manufacturer": "Holiday Mansion",
+    "Model": "38 Barracuda Coastal",
+    "Variant": "Coastal Houseboat Cruiser",
+    "Nickname": "Holiday Mansion 38 Barracuda Coastal",
+    "Active": false,
+    "CanonicalSlug": "holiday-mansion-38-barracuda-coastal-coastal-houseboat-cruiser",
+    "CanonicalPath": "/models/holiday-mansion-38-barracuda-coastal-coastal-houseboat-cruiser/",
+    "CanonicalURL": "https://b-atlas.org/models/holiday-mansion-38-barracuda-coastal-coastal-houseboat-cruiser/",
+    "ImageURL": "images/hlmn-38-co.jpg",
+    "FirstYear": 1988,
+    "LastYear": 1997,
+    "TotalBuilt": 500,
+    "Designer": "Holiday Mansion",
+    "HullType": "Planing",
+    "Style": "Coastal Houseboat",
+    "Construction": "Fiberglass",
+    "KeelType": "Modified V",
+    "Fuel": "Gasoline",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Twin Inboard",
+    "Propulsion": "Sterndrive or V-Drive",
+    "Flybridge": "Yes",
+    "AftCabin": false,
+    "SideDecks": "Wide",
+    "TypicalEngineID": "Volvo Penta AQ145",
+    "FuelCapacity": 567.8118,
+    "WaterCapacity": 378.5412,
+    "HoldingCapacity": 151.4165,
+    "Berths": 8,
+    "Cabins": 2,
+    "Heads": 1,
+    "Shower": false,
+    "Galley": false,
+    "CoastalRating": "Limited",
+    "OffshoreRating": "No",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "HullBehaviour": "Planing",
+    "Features": [
+      "Flybridge",
+      "Wide Side Decks"
+    ],
+    "NormalizedFuel": "Gasoline",
+    "NormalizedPropulsion": "Mixed",
+    "NormalizedHullForm": "Planing",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Houseboat",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "BoatFamilyCode": "boat_family.other",
+    "HullBehaviourCode": "hull_behaviour.planing",
+    "FuelCode": "fuel.gasoline",
+    "MechanicalPropulsionCode": "mechanical_propulsion.mixed",
+    "LOA": 11.5824,
+    "Beam": 3.6576,
+    "Draft": 0.6858,
+    "Displacement": 6350.3,
+    "ShowerTypeCode": "shower.separate_stall",
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "AirDraft": 4.25,
+    "StyleCode": "Houseboat",
+    "CoolingCode": "cooling.fresh_water",
+    "FlybridgeCode": "availability.yes",
+    "SideDecksCode": "side_decks.wide",
+    "EngineCount": 2,
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "KeelConfigurationCode": "keel.no_keel",
+    "RunningGearProtectionCode": "running_gear.exposed",
+    "Strengths": [
+      "Good accommodation relative to purchase price",
+      "Twin-engine maneuverability",
+      "Established production-boat service familiarity"
+    ],
+    "Weaknesses": "Pounds severely in open-water head seas, high windage combined with shallow hull depth causes drifting.",
+    "CommonProblems": "Superstructure window framing water leaks, outdrive lower unit corrosion if kept in salt water.",
+    "TypicalMission": "Protected inland waterway river cruising, family weekend partying, and calm lake shanty living.",
+    "AvoidIf": [
+      "You require offshore passagemaking capability",
+      "You want minimal systems or single-diesel economy",
+      "You cannot accommodate model-specific beam or air draft"
+    ],
+    "Overview": "The Holiday Mansion 38 Coastal Commander is a production coastal cruiser emphasizing interior volume, straightforward twin-engine propulsion and accessible used-market pricing. Layout and machinery vary by model, so individual configuration and condition remain important purchase factors.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented accommodation and enclosed living spaces support weekend or regional couple cruising."
+      },
+      "SoloHandling": {
+        "Assessment": "Mixed",
+        "Summary": "Twin engines can assist close-quarters maneuvering, but size, windage and multi-level access increase workload."
+      },
+      "InlandWaterways": {
+        "Assessment": "Mixed",
+        "Summary": "Comfortable for inland cruising, but beam, air draft and fuel consumption must be checked against route and marina constraints."
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "These are coastal production cruisers; actual capability depends on generation, loading, machinery, weather and individual condition."
+      }
+    },
+    "TradeOffs": [
+      "Operating cost reflects twin-engine planing performance",
+      "Model-year changes can materially alter layout and systems",
+      "Older examples require close survey attention to structure, tanks, wiring and machinery"
+    ],
+    "BestFor": [
+      "Inland and coastal cruising",
+      "Buyers prioritizing space and value",
+      "Owners comfortable maintaining older production systems"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Verify moisture around deck hardware, windows, hatches and rail bases",
+      "Inspect flybridge, arch, windshield and upper-deck penetrations for water intrusion and structural movement",
+      "Inspect fuel, water and waste tanks plus hoses and fittings",
+      "Inspect engines, transmissions or sterndrives, exhaust and cooling systems",
+      "Review AC/DC wiring, shore-power equipment and documented electrical modifications",
+      "Confirm steering, trim-tab and generator operation where fitted"
+    ],
+    "BuyerQuestions": [
+      "What repair or survey history is available for moisture around deck hardware, windows, hatches and rail bases?",
+      "What repair or survey history is available for flybridge, arch, windshield and upper-deck penetrations for water intrusion and structural movement?",
+      "What repair or survey history is available for fuel, water and waste tanks plus hoses and fittings?",
+      "What repair or survey history is available for engines, transmissions or sterndrives, exhaust and cooling systems?",
+      "What repair or survey history is available for ac/dc wiring, shore-power equipment and documented electrical modifications?"
+    ],
+    "OwnerActions": [
+      "Keep deck, window and hardware penetrations sealed",
+      "Maintain propulsion, cooling, exhaust, steering and electrical systems to documented intervals",
+      "Document structural, tank, electrical and machinery repairs for future survey and resale"
+    ],
+    "ModelVariations": [],
+    "ModelCharacter": "A 38-foot fiberglass Holiday Mansion Barracuda Coastal—essentially a mobile waterfront cottage with unusually shallow draft and sterndrive propulsion rather than a conventional trawler or motor yacht. Its enormous interior volume is achieved through houseboat proportions and modest sea-going ambitions.",
+    "DesignLineage": [
+      "Period valuation/model records consistently list a 38-foot Barracuda Coastal in the Holiday Mansion range.",
+      "The previous B-Atlas '38 Coastal Commander' identity was incorrect: Coastal Commander models were substantially larger 45/49-foot boats in the same era.",
+      "Holiday Mansion produced no boats from 1998–2004 before later production resumed.",
+      "B-Atlas preserves the existing record as the verified 38 Barracuda Coastal rather than deleting the legitimate 38-foot hull family."
+    ],
+    "OwnershipCharacter": "Maximum living space per dollar, but tall slab-sided profile, sterndrive machinery and houseboat construction limit open-water suitability. Hull/deck joint, windows, transom/drive condition and extensive domestic systems matter more than traditional trawler seaworthiness metrics.",
+    "DateCreated": "2026-07-13",
+    "LastUpdated": "2026-09-13",
+    "ReviewedBy": "B-Atlas Phase 8C-15 Production Motoryacht/Cruiser Research",
+    "Revision": 3,
+    "DataConfidence": "High",
+    "ResearchStatus": "Reviewed",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Partial",
+      "EvidenceQuality": "Low",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "HLMN-38-CO"
+            ],
+            "Years": {
+              "From": 1984,
+              "To": 2002
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.powerboatlistings.com/view/25067",
+            "https://bluewateryachtsales.com/yachts-for-sale/stanford/1987-holiday-mansion-38-costal-barracuda/"
+          ],
+          "EvidenceTypes": [
+            "Unverified"
+          ],
+          "Confidence": "Low",
+          "Notes": "Model identity and representative specifications checked against model-guide or catalog evidence."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "HLMN-38-CO"
+            ],
+            "Years": {
+              "From": 1984,
+              "To": 2002
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [],
+          "EvidenceTypes": [
+            "Unverified"
+          ],
+          "Confidence": "Low",
+          "Notes": "Buyer guidance derives from documented configuration, propulsion and accommodation."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "General age-related guidance",
+            "Models": [
+              "HLMN-38-CO"
+            ],
+            "Years": {
+              "From": 1984,
+              "To": 2002
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [],
+          "EvidenceTypes": [
+            "Unverified"
+          ],
+          "Confidence": "Low",
+          "Notes": "Inspection guidance is age/configuration based and is not a claim of a model-wide defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "ResearchNotes": "Batch 32 specialist-tail research. Identity, lineage and specifications normalized from model-specific builder, owner-archive and Powerboat Guide evidence; unsupported details remain unknown.\n\nHigh-impact missing-data research pass v6.86 (2026-09-13): evidence-backed canonical fields added; configuration-dependent values remain explicitly variable rather than guessed.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "PlanCriticalStatus": {
+      "MechanicalPropulsionCode": "configuration_or_production_mixed",
+      "KeelConfigurationCode": "configuration_or_production_mixed",
+      "RudderTypeCode": "configuration_or_production_mixed",
+      "RunningGearProtectionCode": "configuration_or_production_mixed",
+      "EnginePowerPerEngine": "configuration_or_production_mixed"
+    },
+    "SpecificationConfidence": {
+      "AirDraft": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [],
+        "Note": "B-Atlas working estimate derived from nearest comparable models with similar style, size and flybridge configuration. Verify actual mast/radar/antenna clearance before route planning. Comparable model IDs: BAYL-3888-MO, CUTW-32, BAYL-3788, MERI-381-SE, TOLL-37-SE, MNSH-34-TR, BENE-35-SW"
+      },
+      "KeelConfigurationCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from unambiguous existing KeelType text."
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing propulsion/keel description; no new factual assertion introduced."
+      }
+    }
+  },
+  {
+    "BoatModelID": "HUNT-29",
+    "ManufacturerID": "HUNT",
+    "Manufacturer": "Hunt Yachts",
+    "Model": "Surfhunter 29",
+    "Variant": "Deep-V Express Cruiser",
+    "Nickname": "Hunt Surfhunter 29",
+    "Active": true,
+    "CanonicalSlug": "hunt-yachts-surfhunter-29-deep-v-express-cruiser",
+    "CanonicalPath": "/models/hunt-yachts-surfhunter-29-deep-v-express-cruiser/",
+    "CanonicalURL": "https://b-atlas.org/models/hunt-yachts-surfhunter-29-deep-v-express-cruiser/",
+    "ImageURL": "images/hunt-29.jpg",
+    "FirstYear": 2005,
+    "LastYear": 2026,
+    "TotalBuilt": null,
+    "Designer": "Hunt Design Group",
+    "HullType": "Planing",
+    "Style": "Downeast Cruiser",
+    "Construction": "Fiberglass",
+    "KeelType": "Modified V",
+    "Fuel": "Diesel/Gas",
+    "Cooling": "Raw Water",
+    "EngineConfiguration": "Single diesel or gasoline package depending configuration",
+    "Propulsion": "Shaft",
+    "Flybridge": "No",
+    "AftCabin": false,
+    "SideDecks": "Medium",
+    "TypicalEngineID": "Yamaha 250",
+    "FuelCapacity": 567.81,
+    "WaterCapacity": 105.99,
+    "HoldingCapacity": 56.78,
+    "Berths": 2,
+    "Cabins": 1,
+    "Heads": 1,
+    "Shower": false,
+    "Galley": false,
+    "CoastalRating": "Limited",
+    "OffshoreRating": "Yes",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "BoatFamily": "Downeast",
+    "HullBehaviour": "Planing",
+    "Features": [],
+    "NormalizedFuel": "Gasoline",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Planing",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Downeast Cruiser",
+    "DisplacementLb": 8000,
+    "FuelCapacityGal": 150,
+    "WaterCapacityGal": 28,
+    "NormalizedHullType": "Deep-V",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "HullBehaviourCode": "hull_behaviour.planing",
+    "BoatFamilyCode": "boat_family.express_cruiser",
+    "LOA": 8.9916,
+    "Beam": 3.2004,
+    "Draft": 0.9144,
+    "Displacement": 3628.7,
+    "FuelCode": "fuel.mixed",
+    "MechanicalPropulsionCode": "mechanical_propulsion.mixed",
+    "FuelCapacityUnitStatus": "canonical_litres",
+    "WaterCapacityUnitStatus": "canonical_litres",
+    "HoldingCapacityUnitStatus": "canonical_litres",
+    "AirDraft": 1.7526,
+    "RudderTypeCode": "rudder.none_external_drive",
+    "HoldingCapacityGal": 15,
+    "StyleCode": "Downeast Cruiser",
+    "CoolingCode": "cooling.raw_water",
+    "FlybridgeCode": "availability.no",
+    "SideDecksCode": "side_decks.moderate",
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "LWL": 8.2296,
+    "EngineCount": 1,
+    "ShowerTypeCode": "shower.none",
+    "KeelConfigurationCode": "keel.no_keel",
+    "RunningGearProtectionCode": "running_gear.exposed",
+    "Strengths": [
+      "Deep-V Hunt hull heritage supports confident higher-speed coastal operation",
+      "Low-profile Downeast styling with strong helm visibility",
+      "Quality construction and well-developed recreational layouts"
+    ],
+    "Weaknesses": "Limited interior volume.",
+    "CommonProblems": "Bracket corrosion and wiring issues.",
+    "TypicalMission": "Coastal cruising and short Loop segments.",
+    "AvoidIf": [
+      "You want 6–8 knot displacement economy",
+      "You need extensive liveaboard volume",
+      "You prioritize very shallow draft over rough-water performance"
+    ],
+    "Overview": "The Hunt Surfhunter 29 is a performance-oriented Downeast cruiser based on C. Raymond Hunt deep-V design heritage. It combines a protected helm/coupe concept with higher-speed coastal capability and refined recreational accommodations.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented layout and protected helm arrangement are practical for a cruising couple, with accommodation depth varying by model."
+      },
+      "SoloHandling": {
+        "Assessment": "Good",
+        "Summary": "Visibility and cockpit access are generally strong; docking burden depends on size, engine arrangement and fitted thrusters."
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "Shallow-to-moderate draft and protected helm layouts suit many inland routes, but beam and air draft remain route-specific."
+      },
+      "ExposedWater": {
+        "Assessment": "Good",
+        "Summary": "Downeast/lobster-derived hull forms are intended for coastal conditions, but individual hull condition, loading and configuration remain decisive."
+      }
+    },
+    "TradeOffs": [
+      "Higher cruising speed brings materially greater fuel use than displacement trawlers",
+      "Deep-V hull and performance machinery add complexity and draft compared with simple lobster-hull cruisers",
+      "Interior volume is moderate for overall length"
+    ],
+    "BestFor": [
+      "Buyers prioritizing rough-water ride and speed",
+      "Couples wanting a refined Downeast day/weekend cruiser",
+      "Owners comfortable with performance-boat operating costs"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Inspect hull/deck laminate and hardware penetrations",
+      "Review engine, pod/shaft, exhaust and cooling service records",
+      "Inspect trim tabs, steering, thrusters and electronic controls",
+      "Verify machinery package and performance configuration",
+      "Inspect glazing, hatches and deck drainage"
+    ],
+    "BuyerQuestions": [
+      "What service, inspection or repair history is available for inspect hull/deck laminate and hardware penetrations?",
+      "What service, inspection or repair history is available for review engine, pod/shaft, exhaust and cooling service records?",
+      "What service, inspection or repair history is available for inspect trim tabs, steering, thrusters and electronic controls?",
+      "What service, inspection or repair history is available for verify machinery package and performance configuration?",
+      "What service, inspection or repair history is available for inspect glazing, hatches and deck drainage?"
+    ],
+    "OwnerActions": [
+      "Keep deck, window, hatch and hardware penetrations sealed",
+      "Maintain engine cooling, exhaust, fuel, steering and drive systems to documented intervals",
+      "Document structural, machinery and system modifications for future survey and resale"
+    ],
+    "ModelVariations": [],
+    "ModelCharacter": "A compact high-performance expression of C. Raymond Hunt's deep-V heritage: 21-degree transom deadrise, single gasoline or diesel power, sterndrive or V-drive configurations and a finely finished weekender interior capable of 25–30-knot cruising in difficult coastal water.",
+    "DesignLineage": [
+      "The Surfhunter 29 grew from Hunt's long-running Surfhunter concept and the deep-V hull form pioneered by C. Raymond Hunt.",
+      "Modern Hunt engineering refined the original concept while preserving a fine entry and approximately 21-degree transom deadrise.",
+      "Verified surviving production examples span at least 2004–2008.",
+      "Single gas and diesel packages from roughly 310–375 hp were offered with sterndrive and V-drive arrangements."
+    ],
+    "OwnershipCharacter": "Premium construction and one-engine simplicity are positives, but high-output stern-drive boats demand more drivetrain maintenance than shaft-driven Downeast cruisers. Drive corrosion, bellows, transom structure, cored topsides and repower quality deserve focused survey attention.",
+    "DateCreated": "2026-07-18",
+    "LastUpdated": "2026-09-12",
+    "ReviewedBy": "B-Atlas Phase 8C-12 Downeast / Lobster-Style Research",
+    "Revision": 2,
+    "DataConfidence": "Moderate",
+    "ResearchStatus": "Reviewed",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "HUNT-29"
+            ],
+            "Years": {
+              "From": 2005,
+              "To": 2026
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://huntyachts.com/wp-content/uploads/2015/11/2016-Surfhunter-29-standard-equipment-11-3-15.pdf",
+            "https://www.yachtingmagazine.com/new-coupe-hunt/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Representative model identity and principal specifications are based on model-specific sources where available."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "HUNT-29"
+            ],
+            "Years": {
+              "From": 2005,
+              "To": 2026
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://huntyachts.com/wp-content/uploads/2015/11/2016-Surfhunter-29-standard-equipment-11-3-15.pdf",
+            "https://www.yachtingmagazine.com/new-coupe-hunt/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Decision guidance is derived from documented hull, propulsion, layout and intended use rather than advertising claims."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "HUNT-29"
+            ],
+            "Years": {
+              "From": 2005,
+              "To": 2026
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://huntyachts.com/wp-content/uploads/2015/11/2016-Surfhunter-29-standard-equipment-11-3-15.pdf",
+            "https://www.yachtingmagazine.com/new-coupe-hunt/"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection items are configuration and age risks, not assertions that every hull suffers a defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "ResearchNotes": "Verified 2004–2008 examples establish the modern Surfhunter 29 production identity. YachtWorld/Yachting document 29'4\"–29'6\" LOA, 10'6\" beam, 3' draft, 21-degree transom deadrise, 150 gal fuel, 28 gal water and single gas/diesel power. Exact final production year is not forced.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "PlanCriticalStatus": {
+      "FuelCode": "configuration_or_production_mixed",
+      "MechanicalPropulsionCode": "configuration_or_production_mixed"
+    },
+    "SpecificationConfidence": {
+      "LWL": {
+        "Level": "Low",
+        "Status": "restored_legacy_working_value",
+        "EvidenceRefs": [],
+        "Note": "Working LWL restored from the pre-v6.81 archived B-Atlas value (27 ft). Retained as a low-confidence community-verifiable value rather than leaving a basic performance input blank."
+      },
+      "EngineCount": {
+        "Level": "Medium",
+        "Status": "inferred_from_engine_configuration",
+        "EvidenceRefs": [],
+        "Note": "Engine count (1) normalized from the existing canonical EngineConfiguration description; no new external specification source was required."
+      },
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      },
+      "KeelConfigurationCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from unambiguous existing KeelType text."
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from canonical no-keel geometry with inboard shaft/V-drive propulsion; propeller/rudder running gear is exposed below the hull rather than protected by a keel or skeg."
+      }
+    }
+  },
+  {
+    "BoatModelID": "HUNT-36",
+    "ManufacturerID": "HUNT",
+    "Manufacturer": "Hunt Yachts",
+    "Model": "Surfhunter 36",
+    "Variant": "Coupe",
+    "Nickname": "Hunt Surfhunter 36 Coupe",
+    "Active": true,
+    "CanonicalSlug": "hunt-yachts-surfhunter-36-coupe-coupe",
+    "CanonicalPath": "/models/hunt-yachts-surfhunter-36-coupe-coupe/",
+    "CanonicalURL": "https://b-atlas.org/models/hunt-yachts-surfhunter-36-coupe-coupe/",
+    "ImageURL": "images/hunt-36.jpg",
+    "FirstYear": 2012,
+    "LastYear": 2026,
+    "TotalBuilt": null,
+    "Designer": "Hunt Design Group",
+    "HullType": "Planing",
+    "Style": "Downeast Cruiser",
+    "Construction": "Fiberglass",
+    "KeelType": "Modified V",
+    "Fuel": "Diesel",
+    "Cooling": "Raw Water",
+    "EngineConfiguration": "Single diesel; pod or conventional inboard options documented",
+    "Propulsion": "Pod Drive",
+    "Flybridge": "No",
+    "AftCabin": false,
+    "SideDecks": "Wide",
+    "TypicalEngineID": "Yamaha 300 Twin",
+    "FuelCapacity": 567.81,
+    "WaterCapacity": 189.27,
+    "HoldingCapacity": 113.5624,
+    "Berths": 4,
+    "Cabins": 1,
+    "Heads": 1,
+    "Shower": false,
+    "Galley": false,
+    "CoastalRating": "Limited",
+    "OffshoreRating": "Yes",
+    "GreatLoopSuitable": false,
+    "Trailerable": false,
+    "BoatFamily": "Downeast",
+    "HullBehaviour": "Planing",
+    "Features": [
+      "Flybridge",
+      "Wide Side Decks"
+    ],
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Pod",
+    "NormalizedHullForm": "Planing",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Downeast Cruiser",
+    "DisplacementLb": 14000,
+    "FuelCapacityGal": 150,
+    "WaterCapacityGal": 50,
+    "NormalizedHullType": "Deep-V",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "HullBehaviourCode": "hull_behaviour.planing",
+    "BoatFamilyCode": "boat_family.express_cruiser",
+    "LOA": 11.1252,
+    "Beam": 3.4544,
+    "Draft": 0.9906,
+    "Displacement": 6350.3,
+    "FuelCode": "fuel.diesel",
+    "ShowerTypeCode": "shower.separate_stall",
+    "MechanicalPropulsionCode": "mechanical_propulsion.mixed",
+    "FuelCapacityUnitStatus": "canonical_litres",
+    "WaterCapacityUnitStatus": "canonical_litres",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "AirDraft": 3.7,
+    "StyleCode": "Downeast Cruiser",
+    "CoolingCode": "cooling.raw_water",
+    "FlybridgeCode": "availability.no",
+    "SideDecksCode": "side_decks.wide",
+    "EngineCount": 1,
+    "Configuration": "Surfhunter 36 Coupe; three interior layout choices",
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "LWL": 10.0584,
+    "KeelConfigurationCode": "keel.no_keel",
+    "RunningGearProtectionCode": "running_gear.exposed",
+    "RudderTypeCode": "rudder.none_external_drive",
+    "Strengths": [
+      "Deep-V Hunt hull heritage supports confident higher-speed coastal operation",
+      "Low-profile Downeast styling with strong helm visibility",
+      "Quality construction and well-developed recreational layouts"
+    ],
+    "Weaknesses": "High fuel burn and premium pricing.",
+    "CommonProblems": "Bracket corrosion and electronics failures.",
+    "TypicalMission": "Coastal cruising and modern Loop segments.",
+    "AvoidIf": [
+      "You want 6–8 knot displacement economy",
+      "You need extensive liveaboard volume",
+      "You prioritize very shallow draft over rough-water performance"
+    ],
+    "Overview": "The Hunt Surfhunter 36 Coupe is a performance-oriented Downeast cruiser based on C. Raymond Hunt deep-V design heritage. It combines a protected helm/coupe concept with higher-speed coastal capability and refined recreational accommodations.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented layout and protected helm arrangement are practical for a cruising couple, with accommodation depth varying by model."
+      },
+      "SoloHandling": {
+        "Assessment": "Mixed",
+        "Summary": "Visibility and cockpit access are generally strong; docking burden depends on size, engine arrangement and fitted thrusters."
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "Shallow-to-moderate draft and protected helm layouts suit many inland routes, but beam and air draft remain route-specific."
+      },
+      "ExposedWater": {
+        "Assessment": "Good",
+        "Summary": "Downeast/lobster-derived hull forms are intended for coastal conditions, but individual hull condition, loading and configuration remain decisive."
+      }
+    },
+    "TradeOffs": [
+      "Higher cruising speed brings materially greater fuel use than displacement trawlers",
+      "Deep-V hull and performance machinery add complexity and draft compared with simple lobster-hull cruisers",
+      "Interior volume is moderate for overall length"
+    ],
+    "BestFor": [
+      "Buyers prioritizing rough-water ride and speed",
+      "Couples wanting a refined Downeast day/weekend cruiser",
+      "Owners comfortable with performance-boat operating costs"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Inspect hull/deck laminate and hardware penetrations",
+      "Review engine, pod/shaft, exhaust and cooling service records",
+      "Inspect trim tabs, steering, thrusters and electronic controls",
+      "Verify machinery package and performance configuration",
+      "Inspect glazing, hatches and deck drainage"
+    ],
+    "BuyerQuestions": [
+      "What service, inspection or repair history is available for inspect hull/deck laminate and hardware penetrations?",
+      "What service, inspection or repair history is available for review engine, pod/shaft, exhaust and cooling service records?",
+      "What service, inspection or repair history is available for inspect trim tabs, steering, thrusters and electronic controls?",
+      "What service, inspection or repair history is available for verify machinery package and performance configuration?",
+      "What service, inspection or repair history is available for inspect glazing, hatches and deck drainage?"
+    ],
+    "OwnerActions": [
+      "Keep deck, window, hatch and hardware penetrations sealed",
+      "Maintain engine cooling, exhaust, fuel, steering and drive systems to documented intervals",
+      "Document structural, machinery and system modifications for future survey and resale"
+    ],
+    "ModelVariations": [],
+    "ModelCharacter": "The all-weather cruising coupe built on Hunt's formidable Harrier 36 deep-V hull, adding a hardtop salon, continuous single-level helm-to-cockpit deck and more developed overnight accommodations while retaining 28-knot cruise capability with single diesel pod or conventional inboard propulsion.",
+    "DesignLineage": [
+      "The Hunt Harrier 36 was introduced earlier and 18 Harrier hulls were built from 2002–2015.",
+      "The Surfhunter 36 Coupe was introduced in 2012 on the Harrier 36 hull in response to owners wanting more weather protection and cruising accommodation.",
+      "The Coupe offered three interior layouts plus single-diesel ZF pod or conventional inboard options.",
+      "B-Atlas corrects the previous mixed identity: this record is the Surfhunter 36 Coupe; 'Harrier 36' remains a lineage/search alias, not the canonical model name."
+    ],
+    "OwnershipCharacter": "Single-engine pod or inboard options reduce engine count but the boat is performance-oriented and technically sophisticated. Pod-drive examples require specialist maintenance; conventional inboards are simpler. Premium composite construction lowers weight but increases the importance of knowledgeable structural repair.",
+    "DateCreated": "2026-07-18",
+    "LastUpdated": "2026-09-13",
+    "ReviewedBy": "B-Atlas Phase 8C-12 Downeast / Lobster-Style Research",
+    "Revision": 3,
+    "DataConfidence": "Moderate",
+    "ResearchStatus": "Reviewed",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "HUNT-36"
+            ],
+            "Years": {
+              "From": 2012,
+              "To": 2026
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://huntyachts.com/wp-content/uploads/2015/11/2016-Surfhunter-29-standard-equipment-11-3-15.pdf",
+            "https://www.yachtingmagazine.com/new-coupe-hunt/",
+            "https://www.usharbors.com/2012/03/hunt-presents-new-surfhunter-new-options/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Representative model identity and principal specifications are based on model-specific sources where available."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "HUNT-36"
+            ],
+            "Years": {
+              "From": 2012,
+              "To": 2026
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://huntyachts.com/wp-content/uploads/2015/11/2016-Surfhunter-29-standard-equipment-11-3-15.pdf",
+            "https://www.yachtingmagazine.com/new-coupe-hunt/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Decision guidance is derived from documented hull, propulsion, layout and intended use rather than advertising claims."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "HUNT-36"
+            ],
+            "Years": {
+              "From": 2012,
+              "To": 2026
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://huntyachts.com/wp-content/uploads/2015/11/2016-Surfhunter-29-standard-equipment-11-3-15.pdf",
+            "https://www.yachtingmagazine.com/new-coupe-hunt/"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection items are configuration and age risks, not assertions that every hull suffers a defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "ResearchNotes": "Canonical identity corrected from conflicting 'Hunt Harrier 36' nickname / 'Surfhunter 36 Coupe' model to Hunt Surfhunter 36 Coupe. Yachting's 2012 introduction gives 36'6\" LOA, 11'4\" beam, 3'3\" draft, 14,000 lb, 150 gal fuel, 50 gal water and standard single 480 hp Cummins/ZF pod with optional conventional inboards. Harrier 36 remains separate predecessor/shared-hull lineage.\n\nHigh-impact missing-data research pass v6.86 (2026-09-13): evidence-backed canonical fields added; configuration-dependent values remain explicitly variable rather than guessed.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "PlanCriticalStatus": {
+      "MechanicalPropulsionCode": "configuration_or_production_mixed",
+      "KeelConfigurationCode": "configuration_or_production_mixed",
+      "RudderTypeCode": "configuration_or_production_mixed",
+      "RunningGearProtectionCode": "configuration_or_production_mixed",
+      "EnginePowerPerEngine": "configuration_or_production_mixed"
+    },
+    "SpecificationConfidence": {
+      "AirDraft": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [],
+        "Note": "B-Atlas working estimate derived from nearest comparable models with similar style, size and flybridge configuration. Verify actual mast/radar/antenna clearance before route planning. Comparable model IDs: BKCV-32, BKCV-33, BKCV-34, SABR-34-EX, BKCV-30, SABR-38-SA, BKCV-37"
+      },
+      "LWL": {
+        "Level": "Low",
+        "Status": "restored_legacy_working_value",
+        "EvidenceRefs": [],
+        "Note": "Working LWL restored from the pre-v6.81 archived B-Atlas value (33 ft). Retained as a low-confidence community-verifiable value rather than leaving a basic performance input blank."
+      },
+      "KeelConfigurationCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from unambiguous existing KeelType text."
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing propulsion/keel description; no new factual assertion introduced."
+      },
+      "RudderTypeCode": {
+        "Level": "High",
+        "Status": "derived_from_propulsion",
+        "EvidenceRefs": [],
+        "Note": "External-drive propulsion steers at the drive/outboard and has no conventional inboard rudder."
+      }
+    }
+  },
+  {
+    "BoatModelID": "ISGY-32-EU",
+    "ManufacturerID": "ISLANDGYPSY",
+    "Manufacturer": "Island Gypsy",
+    "Model": "32 Europa",
+    "Variant": "Europa",
+    "Nickname": "Island Gypsy 32 Europa",
+    "Active": false,
+    "CanonicalSlug": "island-gypsy-32-europa-europa",
+    "CanonicalPath": "/models/island-gypsy-32-europa-europa/",
+    "CanonicalURL": "https://b-atlas.org/models/island-gypsy-32-europa-europa/",
+    "ImageURL": "images/isgy-32-eu.jpg",
+    "FirstYear": 1989,
+    "LastYear": 2003,
+    "TotalBuilt": null,
+    "Designer": null,
+    "HullType": "Semi-Displacement",
+    "Style": "Europa Sedan",
+    "Construction": "Solid fiberglass hull with extended salon overhang protecting side decks; extensive teak interior",
+    "KeelType": "Shallow full-length keel",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Single Inboard",
+    "Propulsion": "Shaft",
+    "Flybridge": "Yes",
+    "AftCabin": false,
+    "SideDecks": "Wide covered",
+    "TypicalEngineID": "Single diesel; verify listing",
+    "FuelCapacity": 946.3529,
+    "WaterCapacity": 454.2494,
+    "HoldingCapacity": 56.7812,
+    "Berths": 4,
+    "Cabins": 1,
+    "Heads": 1,
+    "Shower": "Separate or split-head arrangement reported; verify hull",
+    "Galley": "Forward salon galley opposite lower helm",
+    "CoastalRating": "Yes",
+    "OffshoreRating": "No",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "BoatFamily": null,
+    "Configuration": null,
+    "HullBehaviour": "Semi-Displacement",
+    "Features": [],
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Semi-Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Cruiser",
+    "EngineCount": 1,
+    "DisplacementLb": 16400,
+    "FuelCapacityGal": 250,
+    "WaterCapacityGal": 120,
+    "NormalizedHullType": "Semi-Displacement",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "FuelCode": "fuel.diesel",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "BoatFamilyCode": "boat_family.trawler",
+    "LOA": 9.7536,
+    "LWL": 9.017,
+    "Beam": 3.6576,
+    "Draft": 1.1176,
+    "HullBehaviourCode": "hull_behaviour.semi_displacement",
+    "KeelConfigurationCode": "keel.full_long",
+    "RunningGearProtectionCode": "running_gear.keel_protected",
+    "FlybridgeCode": "availability.yes",
+    "SideDecksCode": "side_decks.wide",
+    "Displacement": 7438.9,
+    "ShowerTypeCode": "shower.separate_stall",
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "AirDraft": 3.7592,
+    "StyleCode": "Cruiser",
+    "CoolingCode": "cooling.fresh_water",
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "Strengths": [
+      "Traditional teak interior and practical cruising layout",
+      "Protected shaft-drive running gear and economical low-to-moderate-speed operation",
+      "Good side-deck and helm access on documented sedan/Europa models"
+    ],
+    "Weaknesses": "Very rare, 12-foot beam and teak-related maintenance.",
+    "CommonProblems": "Inspect teak decks and trim, window leaks, deck cores, tankage, exhaust, shaft and steering systems.",
+    "TypicalMission": "Couples coastal cruising where covered side decks and classic interior matter.",
+    "AvoidIf": [
+      "You want low-maintenance exterior finishes",
+      "You require high-speed planing performance",
+      "You need modern systems with minimal refit exposure"
+    ],
+    "Overview": "The Island Gypsy 32 Europa is a traditional fiberglass cruising boat from the Halvorsen-associated Island Gypsy line. Depending on model it ranges from compact sedan/Europa layouts to larger motor cruisers, generally combining teak-rich interiors, semi-displacement hulls, protected shafting and flybridge/lower-helm cruising arrangements.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented layout and cruising systems are well suited to a cruising couple, with guest capacity varying by model."
+      },
+      "SoloHandling": {
+        "Assessment": "Mixed",
+        "Summary": "Protected helms and deck access can support short-handed operation, but displacement, windage, engine arrangement and docking equipment vary materially by model."
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "Route suitability depends on beam, draft and actual air draft; larger models may face marina and lock constraints."
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "Hull form and construction support the documented cruising role, but condition, loading, weather and individual configuration remain decisive."
+      }
+    },
+    "TradeOffs": [
+      "Exterior teak can create substantial maintenance burden",
+      "Older tanks, windows and deck structures require condition-specific inspection",
+      "Performance and engine count vary significantly across versions"
+    ],
+    "BestFor": [
+      "Couples wanting traditional trawler character and warm interiors",
+      "Coastal and inland cruisers comfortable with older-boat maintenance",
+      "Buyers who value flybridge and lower-helm flexibility"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Confirm exact Island Gypsy model/variant and engine configuration from build records",
+      "Moisture-test teak decks, window surrounds, rail bases and cabin-top penetrations",
+      "Inspect fuel/water/waste tanks and hoses, particularly original installations",
+      "Inspect engine cooling, exhaust, shaft, rudder and keel/running gear",
+      "Review electrical, charging and generator upgrades and workmanship"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for confirm exact Island Gypsy model/variant and engine configuration from build records?",
+      "What inspection, repair or service history is available for moisture-test teak decks, window surrounds, rail bases and cabin-top penetrations?",
+      "What inspection, repair or service history is available for inspect fuel/wa

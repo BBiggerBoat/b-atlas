@@ -14,14 +14,15 @@ function walk(dir) {
    return x.isDirectory()?walk(p):x.isFile()&&p.endsWith(".json")?[p]:[];
  });
 }
-const liveShards=fs.readdirSync("data").filter(name=>/^phase2-live-models(?:-.+)?\.json$/.test(name)).map(name=>path.join("data",name));
+const historical=require("../developer/historical-fixtures.cjs");
+const liveShards=Object.keys(historical.manifest().entries).filter(name=>/^retired\/data\/phase2-live-models(?:-.+)?\.json$/.test(name));
 const files=[...roots.flatMap(walk),...liveShards];
 const byId=new Map();
 const unmatched=[];
 let totalRecords=0;
 for(const file of files){
  let data;
- try { data=JSON.parse(fs.readFileSync(file,"utf8")); }
+ try { data=file.startsWith("retired/")?historical.json(file):JSON.parse(fs.readFileSync(file,"utf8")); }
  catch(err){ unmatched.push({file,reason:"invalid_json",message:err.message}); continue; }
  // Files can contain intermediate research or meta objects. Only identified
  // model-level records are included; never infer identities from file names.

@@ -21,6 +21,10 @@ on:
       - 'filterengine.js'
       - 'valuenormalizer.js'
       - 'tests/**'
+      - 'archive/phase5-fixtures/**'
+      - 'deployment/repository-size-policy.json'
+      - 'developer/historical-fixtures.cjs'
+      - 'developer/check-repository-size.cjs'
       - 'tools/reconcile-model-registry.cjs'
       - '.github/workflows/reconcile-model-registry.yml'
 permissions:
@@ -35,6 +39,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Check repository file sizes and historical fixture integrity
+        run: npm run guard:repository
       - name: Generate untracked compatibility view
         run: npm run generate:models
       - name: Verify canonical registry synchronization

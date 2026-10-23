@@ -1,10 +1,10 @@
 'use strict';
-// Independent release audit: compare against the original Git commit, then run
+// Independent release audit: compare against checksum-verified original Git snapshot bytes, then run
 // the actual published loaders, filter engine, knowledge providers and comparison renderer.
-const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),cp=require('node:child_process');
-const base='0712feabc5afdcc2c37d2ee3196239d847ad1de8';
+const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
 const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
-const original=JSON.parse(cp.execFileSync('git',['show',base+':boatmodels.json'],{maxBuffer:20000000}).toString());
+const historical=require('../developer/historical-fixtures.cjs');
+const original=historical.json('original-models');
 const current=read('boatmodels.json'),rules=read('data/canonical/ownership.json');
 const expected=structuredClone(original);
 for(const change of read('reports/canonical-url-migration.json'))Object.assign(expected.find(m=>m.BoatModelID===change.BoatModelID),change.after);
@@ -16,8 +16,12 @@ assert.equal(current.length,995);assert.equal(new Set(current.map(m=>m.BoatModel
 assert.equal(new Set(current.map(m=>m.CanonicalSlug)).size,995);
 assert.deepEqual(require('../developer/canonical-store.cjs').load(),current);
 for(const field of Object.keys(current[0]))if(field!=='BoatModelID')assert(Object.hasOwn(rules.fields,field));
-const history=cp.execFileSync('git',['diff','--name-only',base,'--','data/phase2-batches','knowledge/data/evidence','data/registry/boat-registry.json','data/production-phases.json','data/model-search-aliases.json','knowledge/data/curatedresources.json','data/imageassets.json','data/imageassets-external.json','data/image-candidates.json']).toString().trim();
-assert.equal(history,'','Existing research, resources, images, phases, aliases or identity decisions changed');
+const protectedResearch=historical.json('protected-research');
+const digest=require('node:crypto').createHash;
+function filesAt(rel){const stat=fs.statSync(rel);return stat.isDirectory()?fs.readdirSync(rel).flatMap(name=>filesAt(rel+'/'+name)):[rel];}
+assert.deepEqual(protectedResearch.roots.flatMap(filesAt).sort(),Object.keys(protectedResearch.files).sort(),'Historical research file set changed');
+for(const [file,expectedHash] of Object.entries(protectedResearch.files))assert.equal(digest('sha256').update(fs.readFileSync(file,'utf8').replace(/\r\n/g,'\n')).digest('hex'),expectedHash,'Existing research changed: '+file);
+
 const ctx={...require('./catalogue-fixture.cjs').contextGlobals,console,URL,AbortSignal};ctx.window=ctx;ctx.globalThis=ctx;
 const blankOverlay={modelPatches:{},addedModels:[],addedManufacturers:[],resourceAdditions:[]};
 ctx.fetch=async url=>String(url).startsWith('https://')?{ok:true,json:async()=>blankOverlay}:{ok:fs.existsSync('dist/'+String(url).split('?')[0]),json:async()=>read('dist/'+String(url).split('?')[0]),text:async()=>fs.readFileSync('dist/'+String(url).split('?')[0],'utf8')};
@@ -119,6 +123,6 @@ const plain=x=>JSON.parse(JSON.stringify(x));
   assert(redirect.includes('http-equiv="refresh"')&&redirect.includes('noindex'),'Retired page must redirect');
   assert(!redirect.includes('class="specs"'),'Retired page still contains competing specifications');
  }
- const result={status:'PASS',models:995,baseline:'original Git commit',fieldOwners:Object.keys(rules.fields).length,filterProfiles:profiles.length,filterEvaluations:evaluations,knowledgeDisplays:guidanceChecks,comparisonModelChecks:comparisonChecks,contributionCatalogModels:contributionCatalog.length,imageResolution:imageCounts,imageFallbackChecks:fallbackChecks,staticModelPages:995,historicalResearch:'unchanged',liveWrites:0};
+ const result={status:'PASS',models:995,baseline:'checksum-verified original Git snapshot fixture',fieldOwners:Object.keys(rules.fields).length,filterProfiles:profiles.length,filterEvaluations:evaluations,knowledgeDisplays:guidanceChecks,comparisonModelChecks:comparisonChecks,contributionCatalogModels:contributionCatalog.length,imageResolution:imageCounts,imageFallbackChecks:fallbackChecks,staticModelPages:995,historicalResearch:'unchanged',liveWrites:0};
  fs.mkdirSync('reports',{recursive:true});fs.writeFileSync('reports/production-readiness-results.json',JSON.stringify(result,null,2)+'\n');console.log(JSON.stringify(result,null,2));
 })().catch(e=>{console.error(e);process.exitCode=1});

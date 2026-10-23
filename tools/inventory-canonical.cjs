@@ -20,7 +20,7 @@ const json=all.filter(p=>p.endsWith('.json')&&p!=='reports/canonical-inventory.j
  return {path:p,role:role(p),bytes:bytes.length,sha256:crypto.createHash('sha256').update(bytes).digest('hex'),records:Array.isArray(value)?value.length:null,keys:Array.isArray(value)?[...new Set(value.flatMap(x=>x&&typeof x==='object'?Object.keys(x):[]))].sort():Object.keys(value||{}),consumers:[...texts].filter(([,t])=>t.includes(p)||t.includes(path.posix.basename(p))).map(([f])=>f)};
 });
 const fields=Object.entries(rules.fields).map(([field,owner])=>({field,owner,dataset:rules.datasets[owner],consumers:[...texts].filter(([,text])=>new RegExp('\\b'+field+'\\b').test(text)).map(([p])=>p)}));
-const report={schemaVersion:1,note:'Static string/reference inventory, including dynamic consumer candidates; runtime behavior is separately tested. The inventory excludes its own output. boatmodels.json is the only published model-wide view.',dependencies:read('package.json'),datasets:json,otherDataFiles:all.filter(p=>/\.(sql|jsonc|csv|tsv|ya?ml)$/.test(p)),fields,publicExclusions:publicManifest.sourceOnlyNeverPublish};
-fs.mkdirSync(path.join(root,'reports'),{recursive:true});
-fs.writeFileSync(path.join(root,'reports/canonical-inventory.json'),JSON.stringify(report,null,2)+'\n');
+const report={schemaVersion:1,note:'Static string/reference inventory, including dynamic consumer candidates; runtime behavior is separately tested. The inventory excludes its own output. Canonical owners generate pinned search/detail shards plus a temporary compatibility view.',dependencies:read('package.json'),datasets:json,otherDataFiles:all.filter(p=>/\.(sql|jsonc|csv|tsv|ya?ml)$/.test(p)),fields,publicExclusions:publicManifest.sourceOnlyNeverPublish};
+fs.mkdirSync(path.join(root,'.bscout-data/inventory'),{recursive:true});
+fs.writeFileSync(path.join(root,'.bscout-data/inventory/canonical-inventory.json'),JSON.stringify(report,null,2)+'\n');
 console.log(`Inventoried ${json.length} JSON files, ${fields.length} fields, ${sources.length} source consumers.`);

@@ -1,0 +1,3249 @@
+uel.gasoline",
+    "MechanicalPropulsionCode": "mechanical_propulsion.outboard",
+    "Beam": 2.81,
+    "ShowerTypeCode": "shower.wet_head",
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "LWL": 7.3152,
+    "AirDraft": 2.8956,
+    "RudderTypeCode": "rudder.none_external_drive",
+    "LOA": 7.43,
+    "Draft": 0.5,
+    "StyleCode": "Cruiser",
+    "CoolingCode": "cooling.raw_water",
+    "FlybridgeCode": "availability.no",
+    "SideDecksCode": "side_decks.moderate",
+    "DisplacementCruiseSpeed": 6.43,
+    "DisplacementCruiseFuelBurn": 7.19,
+    "PlaningCruiseSpeed": 23.55,
+    "PlaningCruiseFuelBurn": 36.34,
+    "Displacement": 2150,
+    "KeelConfigurationCode": "keel.no_keel",
+    "RunningGearProtectionCode": "running_gear.exposed",
+    "EnginePowerPerEngine": 149.14,
+    "Strengths": [
+      "Protected pilothouse helm and strong visibility",
+      "Outboard propulsion simplifies engine access and replacement",
+      "Practical cockpit-to-saloon connection"
+    ],
+    "Weaknesses": "Higher fuel burn.",
+    "CommonProblems": "Bracket corrosion and helm failures.",
+    "TypicalMission": "Coastal cruising and short Loop segments.",
+    "AvoidIf": [
+      "You primarily cruise at displacement speed for maximum economy",
+      "You require diesel shaft propulsion",
+      "You need traditional trawler-scale tankage"
+    ],
+    "Overview": "The Jeanneau Merry Fisher 795 is a French enclosed family cruiser from Jeanneau's Merry Fisher/NC family. It uses outboard propulsion and a planing hull, with emphasis on protected helm visibility, flexible cockpit space and compact weekend accommodation.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The enclosed helm and documented accommodation support weekend or extended couple cruising."
+      },
+      "SoloHandling": {
+        "Assessment": "Good",
+        "Summary": "Side-door access and good visibility help; docking burden rises with size, windage and twin-engine/flybridge configuration."
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "The enclosed cruising layout works well on inland routes; beam and air draft must be checked against route restrictions."
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "Factory CE ratings and hull form support coastal use; loading, weather and individual boat condition remain decisive."
+      }
+    },
+    "TradeOffs": [
+      "Planing-speed fuel use is higher than displacement trawlers",
+      "Outboards occupy transom space and place machinery outside the hull",
+      "Tankage and storage are more weekend-oriented than long-range trawler layouts"
+    ],
+    "BestFor": [
+      "Weekend and short coastal cruising",
+      "Owners wanting enclosed outboard operation",
+      "Family day use with occasional overnighting"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Inspect outboard service history, transom mounting and steering",
+      "Inspect pilothouse windows, side doors, roof hatches and deck penetrations",
+      "Inspect cockpit drains, sliding seating and exterior hardware",
+      "Verify actual tankage, sleeping layout and optional equipment"
+    ],
+    "BuyerQuestions": [
+      "What service, repair or inspection history is available for inspect outboard service history, transom mounting and steering?",
+      "What service, repair or inspection history is available for inspect pilothouse windows, side doors, roof hatches and deck penetrations?",
+      "What service, repair or inspection history is available for inspect cockpit drains, sliding seating and exterior hardware?",
+      "What service, repair or inspection history is available for verify actual tankage, sleeping layout and optional equipment?"
+    ],
+    "OwnerActions": [
+      "Keep windows, hatches, deck hardware and exterior penetrations sealed",
+      "Maintain propulsion, cooling, exhaust, steering and electrical systems to documented intervals",
+      "Document machinery and system upgrades for future survey and resale"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "Series 2",
+        "Description": "Current redesigned 795 generation with 18° deadrise and revised dimensions.",
+        "AffectedYears": "current generation",
+        "EvidenceRefs": [
+          "https://www.jeanneau.com/en-us/boats/powerboat/41-nc-weekender/662-nc-795"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "ModelCharacter": "One of Jeanneau's most successful small pilothouse cruisers, combining a single outboard, enclosed saloon and convertible family accommodation in a trailerable-width package. In North America the same concept has also been marketed under NC naming.",
+    "DesignLineage": [
+      "The Merry Fisher 795 followed the successful 695 as a larger single-outboard weekender.",
+      "A Series 2 introduced updated hull/deck design and current 18-degree deadrise.",
+      "North American NC 795 naming is a market identity for the same current-family concept rather than a separate B-Atlas hull unless year-specific differences demand it.",
+      "The 855/895 family is the next twin-outboard step up."
+    ],
+    "OwnershipCharacter": "Still mechanically simple with one outboard, but refrigerator, enclosed head and optional climate systems make it a real weekender. Trailer/tow weight is materially greater than the 605/695.",
+    "DateCreated": "2026-07-18",
+    "LastUpdated": "2026-09-13",
+    "ReviewedBy": "B-Atlas Research v6.93",
+    "Revision": 3,
+    "DataConfidence": "High",
+    "ResearchStatus": "Reviewed",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "JEAU-795"
+            ],
+            "Years": {
+              "From": 2017,
+              "To": 2026
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.jeanneau.com/fr/comparateur/moteur"
+          ],
+          "EvidenceTypes": [
+            "Factory documented"
+          ],
+          "Confidence": "High",
+          "Notes": "Factory and model-specific documentation support identity and representative specifications."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "JEAU-795"
+            ],
+            "Years": {
+              "From": 2017,
+              "To": 2026
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.jeanneau.com/fr/comparateur/moteur"
+          ],
+          "EvidenceTypes": [
+            "Factory documented"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Guidance is derived from documented layout, hull form, propulsion and dimensions."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "JEAU-795"
+            ],
+            "Years": {
+              "From": 2017,
+              "To": 2026
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.jeanneau.com/fr/comparateur/moteur"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance reflects configuration and age exposure; it is not a claim that every hull has a defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Exact production end and generation-specific specifications should be verified by model year.",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "ResearchNotes": "Batch 31 Beneteau/Jeanneau identity and lineage normalization. Reused model names and market-name aliases are preserved explicitly; uncertain generation-specific values remain listing-specific.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.\n\nCruising Performance Research Wave 3 v7.02 (2026-09-14).",
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "PlanCriticalStatus": {},
+    "SpecificationConfidence": {
+      "Displacement": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://www.jeanneau.com/boats/powerboat/9-merry-fisher/27-merry-fisher-795"
+        ],
+        "Note": "Jeanneau factory specification lists weight 2,150 kg for the original Merry Fisher 795."
+      },
+      "KeelConfigurationCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from unambiguous existing KeelType text."
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing propulsion/keel description; no new factual assertion introduced."
+      },
+      "DisplacementCruiseSpeed": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://www.yamaha-motor.com.au/-/media/products/marine/outboard/power-reports/f200/jeanneau-merry-fisher-795-f200xca.ashx?la=en",
+          "https://you-magazine.yamaha-motor.eu/marine-bulletins/wp-content/uploads/2024/07/Perf_Bulletin_JEANNEAU_MERRY-FISHER-795-S2_F200XCB_Reliance-14.pdf"
+        ],
+        "Note": "Yamaha performance bulletin with F200: 11.91 km/h (6.43 kn) at 2000 rpm burning 7.19 L/h. Stored as the displacement-speed cruise point for the tested F200 configuration."
+      },
+      "DisplacementCruiseFuelBurn": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://www.yamaha-motor.com.au/-/media/products/marine/outboard/power-reports/f200/jeanneau-merry-fisher-795-f200xca.ashx?la=en",
+          "https://you-magazine.yamaha-motor.eu/marine-bulletins/wp-content/uploads/2024/07/Perf_Bulletin_JEANNEAU_MERRY-FISHER-795-S2_F200XCB_Reliance-14.pdf"
+        ],
+        "Note": "Yamaha performance bulletin with F200: 11.91 km/h (6.43 kn) at 2000 rpm burning 7.19 L/h. Stored as the displacement-speed cruise point for the tested F200 configuration."
+      },
+      "PlaningCruiseSpeed": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://www.yamaha-motor.com.au/-/media/products/marine/outboard/power-reports/f200/jeanneau-merry-fisher-795-f200xca.ashx?la=en",
+          "https://you-magazine.yamaha-motor.eu/marine-bulletins/wp-content/uploads/2024/07/Perf_Bulletin_JEANNEAU_MERRY-FISHER-795-S2_F200XCB_Reliance-14.pdf"
+        ],
+        "Note": "Yamaha performance bulletin with F200: 43.61 km/h (23.55 kn) at 4500 rpm burning 36.34 L/h, near the tested best-cruise region."
+      },
+      "PlaningCruiseFuelBurn": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://www.yamaha-motor.com.au/-/media/products/marine/outboard/power-reports/f200/jeanneau-merry-fisher-795-f200xca.ashx?la=en",
+          "https://you-magazine.yamaha-motor.eu/marine-bulletins/wp-content/uploads/2024/07/Perf_Bulletin_JEANNEAU_MERRY-FISHER-795-S2_F200XCB_Reliance-14.pdf"
+        ],
+        "Note": "Yamaha performance bulletin with F200: 43.61 km/h (23.55 kn) at 4500 rpm burning 36.34 L/h, near the tested best-cruise region."
+      },
+      "EnginePowerPerEngine": {
+        "Level": "High",
+        "Status": "supported",
+        "EvidenceRefs": [
+          "https://www.yamaha-motor.com.au/-/media/products/marine/outboard/power-reports/f200/jeanneau-merry-fisher-795-f200xca.ashx?la=en",
+          "https://you-magazine.yamaha-motor.eu/marine-bulletins/wp-content/uploads/2024/07/Perf_Bulletin_JEANNEAU_MERRY-FISHER-795-S2_F200XCB_Reliance-14.pdf"
+        ],
+        "Note": "Factory-tested configuration uses one Yamaha F200 (200 hp / 147 kW); model-year maximum power and options vary."
+      }
+    }
+  },
+  {
+    "BoatModelID": "JEAU-855",
+    "ManufacturerID": "JEAU",
+    "Manufacturer": "Jeanneau",
+    "Model": "Merry Fisher 855",
+    "Variant": "Twin-Outboard Weekender",
+    "Nickname": "Jeanneau Merry Fisher 855",
+    "Active": true,
+    "CanonicalSlug": "jeanneau-merry-fisher-855-twin-outboard-weekender",
+    "CanonicalPath": "/models/jeanneau-merry-fisher-855-twin-outboard-weekender/",
+    "CanonicalURL": "https://b-atlas.org/models/jeanneau-merry-fisher-855-twin-outboard-weekender/",
+    "ImageURL": "images/boat-placeholder.svg",
+    "FirstYear": 2013,
+    "LastYear": 2017,
+    "TotalBuilt": null,
+    "Designer": "Jeanneau Design Group",
+    "HullType": "Planing",
+    "Style": "Outboard Cruiser",
+    "Construction": "Fiberglass",
+    "KeelType": "Modified V",
+    "Fuel": "Gasoline",
+    "Cooling": "Raw Water",
+    "EngineConfiguration": "Twin outboards",
+    "Propulsion": "Outboard",
+    "Flybridge": "No",
+    "AftCabin": false,
+    "SideDecks": "Medium",
+    "TypicalEngineID": "Yamaha 200 Twin",
+    "FuelCapacity": 400.118,
+    "WaterCapacity": 99.9349,
+    "HoldingCapacity": 75.7082,
+    "Berths": 4,
+    "Cabins": 2,
+    "Heads": 1,
+    "Shower": true,
+    "Galley": false,
+    "CoastalRating": "Limited",
+    "OffshoreRating": "Yes",
+    "GreatLoopSuitable": false,
+    "Trailerable": false,
+    "BoatFamily": "Cruiser",
+    "HullBehaviour": "Planing",
+    "Features": [
+      "Flybridge"
+    ],
+    "NormalizedFuel": "Gasoline",
+    "NormalizedPropulsion": "Outboard",
+    "NormalizedHullForm": "Planing",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Cruiser",
+    "EngineCount": 2,
+    "Configuration": "Two-Cabin Pilothouse Outboard Cruiser",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "BoatFamilyCode": "boat_family.pilothouse",
+    "HullBehaviourCode": "hull_behaviour.planing",
+    "FuelCode": "fuel.gasoline",
+    "MechanicalPropulsionCode": "mechanical_propulsion.outboard",
+    "LOA": 8.72,
+    "Beam": 2.99,
+    "Draft": 0.56,
+    "Displacement": 2900,
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "LWL": 7.9248,
+    "AirDraft": 3.048,
+    "RudderTypeCode": "rudder.none_external_drive",
+    "StyleCode": "Cruiser",
+    "CoolingCode": "cooling.raw_water",
+    "FlybridgeCode": "availability.no",
+    "SideDecksCode": "side_decks.moderate",
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "ShowerTypeCode": "shower.present_unspecified",
+    "KeelConfigurationCode": "keel.no_keel",
+    "RunningGearProtectionCode": "running_gear.exposed",
+    "Strengths": [
+      "Protected pilothouse helm and strong visibility",
+      "Outboard propulsion simplifies engine access and replacement",
+      "Practical cockpit-to-saloon connection",
+      "Multiple cabins provide unusually useful accommodation for the length"
+    ],
+    "Weaknesses": "Higher fuel burn.",
+    "CommonProblems": "Bracket corrosion and helm failures.",
+    "TypicalMission": "Coastal cruising and short Loop segments.",
+    "AvoidIf": [
+      "You primarily cruise at displacement speed for maximum economy",
+      "You require diesel shaft propulsion",
+      "You need traditional trawler-scale tankage"
+    ],
+    "Overview": "The Jeanneau Merry Fisher 855 is a French enclosed family cruiser from Jeanneau's Merry Fisher/NC family. It uses outboard propulsion and a planing hull, with emphasis on protected helm visibility, flexible cockpit space and compact weekend accommodation.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The enclosed helm and documented accommodation support weekend or extended couple cruising."
+      },
+      "SoloHandling": {
+        "Assessment": "Good",
+        "Summary": "Side-door access and good visibility help; docking burden rises with size, windage and twin-engine/flybridge configuration."
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "The enclosed cruising layout works well on inland routes; beam and air draft must be checked against route restrictions."
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "Factory CE ratings and hull form support coastal use; loading, weather and individual boat condition remain decisive."
+      }
+    },
+    "TradeOffs": [
+      "Planing-speed fuel use is higher than displacement trawlers",
+      "Outboards occupy transom space and place machinery outside the hull",
+      "Tankage and storage are more weekend-oriented than long-range trawler layouts"
+    ],
+    "BestFor": [
+      "Weekend and short coastal cruising",
+      "Owners wanting enclosed outboard operation",
+      "Family day use with occasional overnighting"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Inspect outboard service history, transom mounting and steering",
+      "Inspect pilothouse windows, side doors, roof hatches and deck penetrations",
+      "Inspect cockpit drains, sliding seating and exterior hardware",
+      "Verify actual tankage, sleeping layout and optional equipment"
+    ],
+    "BuyerQuestions": [
+      "What service, repair or inspection history is available for inspect outboard service history, transom mounting and steering?",
+      "What service, repair or inspection history is available for inspect pilothouse windows, side doors, roof hatches and deck penetrations?",
+      "What service, repair or inspection history is available for inspect cockpit drains, sliding seating and exterior hardware?",
+      "What service, repair or inspection history is available for verify actual tankage, sleeping layout and optional equipment?"
+    ],
+    "OwnerActions": [
+      "Keep windows, hatches, deck hardware and exterior penetrations sealed",
+      "Maintain propulsion, cooling, exhaust, steering and electrical systems to documented intervals",
+      "Document machinery and system upgrades for future survey and resale"
+    ],
+    "ModelVariations": [],
+    "ModelCharacter": "The predecessor to Jeanneau's 895 family: a compact twin-outboard two-cabin pilothouse cruiser that proved genuine family weekending could fit into roughly 29 feet without diesel inboards.",
+    "DesignLineage": [
+      "The Merry Fisher 855 was introduced in the early 2010s as a larger two-cabin step in the range.",
+      "It uses twin outboards and a two-cabin arrangement rather than the simpler single-engine 795 architecture.",
+      "The Merry Fisher 895 succeeded the 855 with a redesigned hull, improved circulation and updated styling.",
+      "The 855 therefore remains a distinct predecessor generation, not an alias for the 895."
+    ],
+    "OwnershipCharacter": "Twin outboards are easy to service but double routine engine cost. Two cabins, galley and head make it considerably more systems-heavy than smaller Merry Fishers.",
+    "DateCreated": "2026-07-18",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "B-Atlas Phase 8C-14 French Production Research",
+    "Revision": 2,
+    "DataConfidence": "High",
+    "ResearchStatus": "Reviewed",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "JEAU-855"
+            ],
+            "Years": {
+              "From": 2013,
+              "To": 2020
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.jeanneau.com/fr/bateaux/moteur/9-merry-fisher/29-merry-fisher-855"
+          ],
+          "EvidenceTypes": [
+            "Factory documented"
+          ],
+          "Confidence": "High",
+          "Notes": "Factory and model-specific documentation support identity and representative specifications."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "JEAU-855"
+            ],
+            "Years": {
+              "From": 2013,
+              "To": 2020
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.jeanneau.com/fr/bateaux/moteur/9-merry-fisher/29-merry-fisher-855"
+          ],
+          "EvidenceTypes": [
+            "Factory documented"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Guidance is derived from documented layout, hull form, propulsion and dimensions."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "JEAU-855"
+            ],
+            "Years": {
+              "From": 2013,
+              "To": 2020
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.jeanneau.com/fr/bateaux/moteur/9-merry-fisher/29-merry-fisher-855"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance reflects configuration and age exposure; it is not a claim that every hull has a defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Exact production end and generation-specific specifications should be verified by model year.",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "ResearchNotes": "Batch 31 Beneteau/Jeanneau identity and lineage normalization. Reused model names and market-name aliases are preserved explicitly; uncertain generation-specific values remain listing-specific.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "SpecificationConfidence": {
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      },
+      "KeelConfigurationCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from unambiguous existing KeelType text."
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing propulsion/keel description; no new factual assertion introduced."
+      }
+    }
+  },
+  {
+    "BoatModelID": "JEAU-895",
+    "ManufacturerID": "JEAU",
+    "Manufacturer": "Jeanneau",
+    "Model": "Merry Fisher 895",
+    "Variant": "Series 1 / Series 2",
+    "Nickname": "Jeanneau Merry Fisher 895 / NC 895",
+    "Active": true,
+    "CanonicalSlug": "jeanneau-merry-fisher-895-series-1-series-2",
+    "CanonicalPath": "/models/jeanneau-merry-fisher-895-series-1-series-2/",
+    "CanonicalURL": "https://b-atlas.org/models/jeanneau-merry-fisher-895-series-1-series-2/",
+    "ImageURL": "images/boat-placeholder.svg",
+    "FirstYear": 2017,
+    "LastYear": null,
+    "TotalBuilt": null,
+    "Designer": "Centkowski & Denert Design Studio",
+    "HullType": "Planing",
+    "Style": "Outboard Cruiser",
+    "Construction": "Fiberglass",
+    "KeelType": "Modified V",
+    "Fuel": "Gasoline",
+    "Cooling": "Raw Water",
+    "EngineConfiguration": "Twin outboards up to 200 hp each",
+    "Propulsion": "Outboard",
+    "Flybridge": "No",
+    "AftCabin": false,
+    "SideDecks": "Medium",
+    "TypicalEngineID": "Yamaha 250 Twin",
+    "FuelCapacity": 599.9878,
+    "WaterCapacity": 160.1229,
+    "HoldingCapacity": 94.6353,
+    "Berths": 6,
+    "Cabins": 2,
+    "Heads": 1,
+    "Shower": true,
+    "Galley": false,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "Limited",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "BoatFamily": "Cruiser",
+    "HullBehaviour": "Planing",
+    "Features": [
+      "Flybridge"
+    ],
+    "NormalizedFuel": "Gasoline",
+    "NormalizedPropulsion": "Outboard",
+    "NormalizedHullForm": "Planing",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Cruiser",
+    "EngineCount": 2,
+    "Configuration": "Two-Cabin Pilothouse Outboard Cruiser",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "BoatFamilyCode": "boat_family.pilothouse",
+    "HullBehaviourCode": "hull_behaviour.planing",
+    "FuelCode": "fuel.gasoline",
+    "MechanicalPropulsionCode": "mechanical_propulsion.outboard",
+    "LOA": 8.94,
+    "Draft": 0.68,
+    "Displacement": 4197,
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "LWL": 8.2296,
+    "Beam": 2.9718,
+    "AirDraft": 3.2004,
+    "RudderTypeCode": "rudder.none_external_drive",
+    "StyleCode": "Cruiser",
+    "CoolingCode": "cooling.raw_water",
+    "FlybridgeCode": "availability.no",
+    "SideDecksCode": "side_decks.moderate",
+    "DisplacementCruiseSpeed": 7.2,
+    "DisplacementCruiseFuelBurn": 16.9,
+    "PlaningCruiseSpeed": 25,
+    "PlaningCruiseFuelBurn": 79.9,
+    "ShowerTypeCode": "shower.present_unspecified",
+    "KeelConfigurationCode": "keel.no_keel",
+    "RunningGearProtectionCode": "running_gear.exposed",
+    "Strengths": [
+      "Protected pilothouse helm and strong visibility",
+      "Outboard propulsion simplifies engine access and replacement",
+      "Practical cockpit-to-saloon connection",
+      "Multiple cabins provide unusually useful accommodation for the length"
+    ],
+    "Weaknesses": "Higher fuel burn.",
+    "CommonProblems": "Bracket corrosion and electronics failures.",
+    "TypicalMission": "Coastal cruising and Loop segments.",
+    "AvoidIf": [
+      "You primarily cruise at displacement speed for maximum economy",
+      "You require diesel shaft propulsion",
+      "You need traditional trawler-scale tankage"
+    ],
+    "Overview": "The Jeanneau Merry Fisher 895 / NC 895 is a French enclosed family cruiser from Jeanneau's Merry Fisher/NC family. It uses outboard propulsion and a planing hull, with emphasis on protected helm visibility, flexible cockpit space and compact weekend accommodation.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The enclosed helm and documented accommodation support weekend or extended couple cruising."
+      },
+      "SoloHandling": {
+        "Assessment": "Good",
+        "Summary": "Side-door access and good visibility help; docking burden rises with size, windage and twin-engine/flybridge configuration."
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "The enclosed cruising layout works well on inland routes; beam and air draft must be checked against route restrictions."
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "Factory CE ratings and hull form support coastal use; loading, weather and individual boat condition remain decisive."
+      }
+    },
+    "TradeOffs": [
+      "Planing-speed fuel use is higher than displacement trawlers",
+      "Outboards occupy transom space and place machinery outside the hull",
+      "Tankage and storage are more weekend-oriented than long-range trawler layouts"
+    ],
+    "BestFor": [
+      "Weekend and short coastal cruising",
+      "Owners wanting enclosed outboard operation",
+      "Family day use with occasional overnighting"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Inspect outboard service history, transom mounting and steering",
+      "Inspect pilothouse windows, side doors, roof hatches and deck penetrations",
+      "Inspect cockpit drains, sliding seating and exterior hardware",
+      "Verify actual tankage, sleeping layout and optional equipment"
+    ],
+    "BuyerQuestions": [
+      "What service, repair or inspection history is available for inspect outboard service history, transom mounting and steering?",
+      "What service, repair or inspection history is available for inspect pilothouse windows, side doors, roof hatches and deck penetrations?",
+      "What service, repair or inspection history is available for inspect cockpit drains, sliding seating and exterior hardware?",
+      "What service, repair or inspection history is available for verify actual tankage, sleeping layout and optional equipment?"
+    ],
+    "OwnerActions": [
+      "Keep windows, hatches, deck hardware and exterior penetrations sealed",
+      "Maintain propulsion, cooling, exhaust, steering and electrical systems to documented intervals",
+      "Document machinery and system upgrades for future survey and resale"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "Original 895 / NC 895",
+        "Description": "First-generation twin-outboard two-cabin weekender.",
+        "AffectedYears": "2017–mid-2020s",
+        "EvidenceRefs": [
+          "https://www.jeanneau.com/boats/powerboat/9-merry-fisher/697-merry-fisher-895"
+        ],
+        "Confidence": "High"
+      },
+      {
+        "Name": "895 Series 2 / NC 895 Series 2",
+        "Description": "Redesigned current generation with new hull and twin 250 hp maximum.",
+        "AffectedYears": "current generation",
+        "EvidenceRefs": [
+          "https://www.jeanneau.com/en-us/boats/powerboat/41-nc-weekender/698-nc-895"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "ModelCharacter": "A two-cabin twin-outboard pilothouse weekender that became one of Jeanneau's defining North American powerboats. The same family is marketed as Merry Fisher 895 in many markets and NC 895 in North America, with a newer Series 2 now carrying the identity forward.",
+    "DesignLineage": [
+      "The original 895 launched as the successor to the Merry Fisher 855.",
+      "Merry Fisher 895 and NC 895 are market names for the same core model family.",
+      "A Series 2 later introduced a redesigned hull and updated styling while retaining the 895 identity.",
+      "Current Series 2 boats accept twin outboards up to 250 hp each and remain in production."
+    ],
+    "OwnershipCharacter": "Twin outboards and two cabins make it a capable small cruising yacht. Mechanical service is straightforward, but HVAC/generator/lithium/solar options can make highly equipped examples much more complex.",
+    "DateCreated": "2026-07-18",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "B-Atlas Phase 8C-14 French Production Research",
+    "Revision": 2,
+    "DataConfidence": "High",
+    "ResearchStatus": "Reviewed",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "JEAU-895"
+            ],
+            "Years": {
+              "From": 2017,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.jeanneau.com/fr/articles/744-new-jeanneau-merry-fisher-895-launched",
+            "https://www.jeanneau.com/en-us/boats/powerboat/41-nc-weekender/103-nc-895"
+          ],
+          "EvidenceTypes": [
+            "Factory documented"
+          ],
+          "Confidence": "High",
+          "Notes": "Factory and model-specific documentation support identity and representative specifications."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "JEAU-895"
+            ],
+            "Years": {
+              "From": 2017,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.jeanneau.com/fr/articles/744-new-jeanneau-merry-fisher-895-launched",
+            "https://www.jeanneau.com/en-us/boats/powerboat/41-nc-weekender/103-nc-895"
+          ],
+          "EvidenceTypes": [
+            "Factory documented"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Guidance is derived from documented layout, hull form, propulsion and dimensions."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "JEAU-895"
+            ],
+            "Years": {
+              "From": 2017,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.jeanneau.com/fr/articles/744-new-jeanneau-merry-fisher-895-launched",
+            "https://www.jeanneau.com/en-us/boats/powerboat/41-nc-weekender/103-nc-895"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance reflects configuration and age exposure; it is not a claim that every hull has a defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Exact production end and generation-specific specifications should be verified by model year.",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "ResearchNotes": "Batch 31 Beneteau/Jeanneau identity and lineage normalization. Reused model names and market-name aliases are preserved explicitly; uncertain generation-specific values remain listing-specific.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.\n\nCruising Performance Research Wave 3 v7.02 (2026-09-14).",
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "SpecificationConfidence": {
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      },
+      "KeelConfigurationCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from unambiguous existing KeelType text."
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing propulsion/keel description; no new factual assertion introduced."
+      },
+      "DisplacementCruiseSpeed": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://www.yachtdigest.com/merry-fisher-895-serie-2/",
+          "https://powerboatandrib.com/boat-reviews/jeanneau-merry-fisher-895-2/"
+        ],
+        "Note": "Instrumented Merry Fisher 895 test: 7.2 kn at 2000 rpm with 16.9 L/h total fuel burn. Configuration-specific; 895 engine packages vary by year."
+      },
+      "DisplacementCruiseFuelBurn": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://www.yachtdigest.com/merry-fisher-895-serie-2/",
+          "https://powerboatandrib.com/boat-reviews/jeanneau-merry-fisher-895-2/"
+        ],
+        "Note": "Instrumented Merry Fisher 895 test: 7.2 kn at 2000 rpm with 16.9 L/h total fuel burn. Configuration-specific; 895 engine packages vary by year."
+      },
+      "PlaningCruiseSpeed": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://www.yachtdigest.com/merry-fisher-895-serie-2/",
+          "https://powerboatandrib.com/boat-reviews/jeanneau-merry-fisher-895-2/"
+        ],
+        "Note": "Instrumented Merry Fisher 895 test: 25 kn at 4500 rpm with 79.9 L/h total burn. Stored as a representative faster/planing cruise point; alternate single/twin packages differ."
+      },
+      "PlaningCruiseFuelBurn": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://www.yachtdigest.com/merry-fisher-895-serie-2/",
+          "https://powerboatandrib.com/boat-reviews/jeanneau-merry-fisher-895-2/"
+        ],
+        "Note": "Instrumented Merry Fisher 895 test: 25 kn at 4500 rpm with 79.9 L/h total burn. Stored as a representative faster/planing cruise point; alternate single/twin packages differ."
+      },
+      "EnginePowerPerEngine": {
+        "Level": "High",
+        "Status": "varies_by_configuration",
+        "EvidenceRefs": [
+          "https://www.yachtdigest.com/merry-fisher-895-serie-2/",
+          "https://powerboatandrib.com/boat-reviews/jeanneau-merry-fisher-895-2/"
+        ],
+        "Note": "Merry Fisher 895 production includes single 300/350-hp and twin-engine packages; the cited test uses a 300-hp Yamaha."
+      }
+    }
+  },
+  {
+    "BoatModelID": "JEAU-895-SP",
+    "ManufacturerID": "JEAU",
+    "Manufacturer": "Jeanneau",
+    "Model": "Merry Fisher 895 Sport",
+    "Variant": "Walkaround Sport Pilothouse",
+    "Nickname": "Jeanneau Merry Fisher 895 Sport",
+    "Active": true,
+    "CanonicalSlug": "jeanneau-merry-fisher-895-sport-walkaround-sport-pilothouse",
+    "CanonicalPath": "/models/jeanneau-merry-fisher-895-sport-walkaround-sport-pilothouse/",
+    "CanonicalURL": "https://b-atlas.org/models/jeanneau-merry-fisher-895-sport-walkaround-sport-pilothouse/",
+    "ImageURL": "images/boat-placeholder.svg",
+    "FirstYear": 2018,
+    "LastYear": null,
+    "TotalBuilt": null,
+    "Designer": "Centkowski & Denert Design Studio",
+    "HullType": "Planing",
+    "Style": "Sport Cruiser",
+    "Construction": "Fiberglass",
+    "KeelType": "Modified V",
+    "Fuel": "Gasoline",
+    "Cooling": "Raw Water",
+    "EngineConfiguration": "Twin outboards",
+    "Propulsion": "Outboard",
+    "Flybridge": "No",
+    "AftCabin": false,
+    "SideDecks": "Medium",
+    "TypicalEngineID": "Yamaha 250 Twin",
+    "FuelCapacity": 529.9576,
+    "WaterCapacity": 189.2706,
+    "HoldingCapacity": 94.6353,
+    "Berths": 4,
+    "Cabins": 2,
+    "Heads": 1,
+    "Shower": false,
+    "Galley": false,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "Limited",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "BoatFamily": "Cruiser",
+    "HullBehaviour": "Planing",
+    "Features": [
+      "Flybridge"
+    ],
+    "NormalizedFuel": "Gasoline",
+    "NormalizedPropulsion": "Outboard",
+    "NormalizedHullForm": "Planing",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Sport Fisher",
+    "EngineCount": 2,
+    "Configuration": "Walkaround Sport Pilothouse",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "BoatFamilyCode": "boat_family.pilothouse",
+    "HullBehaviourCode": "hull_behaviour.planing",
+    "FuelCode": "fuel.gasoline",
+    "MechanicalPropulsionCode": "mechanical_propulsion.outboard",
+    "LOA": 8.83,
+    "Beam": 2.99,
+    "Draft": 0.66,
+    "Displacement": 3737,
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "LWL": 8.2296,
+    "AirDraft": 3.2004,
+    "RudderTypeCode": "rudder.none_external_drive",
+    "StyleCode": "Sport Fisher",
+    "CoolingCode": "cooling.raw_water",
+    "FlybridgeCode": "availability.no",
+    "SideDecksCode": "side_decks.moderate",
+    "DisplacementCruiseSpeed": 7,
+    "DisplacementCruiseFuelBurn": 15.5,
+    "PlaningCruiseSpeed": 22.4,
+    "PlaningCruiseFuelBurn": 66.7,
+    "ShowerTypeCode": "shower.none",
+    "KeelConfigurationCode": "keel.no_keel",
+    "RunningGearProtectionCode": "running_gear.exposed",
+    "Strengths": [
+      "Protected pilothouse helm and strong visibility",
+      "Outboard propulsion simplifies engine access and replacement",
+      "Practical cockpit-to-saloon connection",
+      "Multiple cabins provide unusually useful accommodation for the length"
+    ],
+    "Weaknesses": "Higher fuel burn.",
+    "CommonProblems": "Bracket corrosion and electronics failures.",
+    "TypicalMission": "Coastal cruising and Loop segments.",
+    "AvoidIf": [
+      "You primarily cruise at displacement speed for maximum economy",
+      "You require diesel shaft propulsion",
+      "You need traditional trawler-scale tankage"
+    ],
+    "Overview": "The Jeanneau Merry Fisher 895 Sport is a French enclosed walkaround sport cruiser from Jeanneau's Merry Fisher/NC family. It uses outboard propulsion and a planing hull, with emphasis on protected helm visibility, flexible cockpit space and compact weekend accommodation.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The enclosed helm and documented accommodation support weekend or extended couple cruising."
+      },
+      "SoloHandling": {
+        "Assessment": "Good",
+        "Summary": "Side-door access and good visibility help; docking burden rises with size, windage and twin-engine/flybridge configuration."
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "The enclosed cruising layout works well on inland routes; beam and air draft must be checked against route restrictions."
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "Factory CE ratings and hull form support coastal use; loading, weather and individual boat condition remain decisive."
+      }
+    },
+    "TradeOffs": [
+      "Planing-speed fuel use is higher than displacement trawlers",
+      "Outboards occupy transom space and place machinery outside the hull",
+      "Tankage and storage are more weekend-oriented than long-range trawler layouts"
+    ],
+    "BestFor": [
+      "Weekend and short coastal cruising",
+      "Owners wanting enclosed outboard operation",
+      "Fishing and watersports with protected pilothouse shelter"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Inspect outboard service history, transom mounting and steering",
+      "Inspect pilothouse windows, side doors, roof hatches and deck penetrations",
+      "Inspect cockpit drains, sliding seating and exterior hardware",
+      "Verify actual tankage, sleeping layout and optional equipment"
+    ],
+    "BuyerQuestions": [
+      "What service, repair or inspection history is available for inspect outboard service history, transom mounting and steering?",
+      "What service, repair or inspection history is available for inspect pilothouse windows, side doors, roof hatches and deck penetrations?",
+      "What service, repair or inspection history is available for inspect cockpit drains, sliding seating and exterior hardware?",
+      "What service, repair or inspection history is available for verify actual tankage, sleeping layout and optional equipment?"
+    ],
+    "OwnerActions": [
+      "Keep windows, hatches, deck hardware and exterior penetrations sealed",
+      "Maintain propulsion, cooling, exhaust, steering and electrical systems to documented intervals",
+      "Document machinery and system upgrades for future survey and resale"
+    ],
+    "ModelVariations": [],
+    "ModelCharacter": "The fishing/adventure-oriented 895 branch, with walkaround decks, side doors and a working-cockpit layout rather than the enclosed family-salon emphasis of the standard 895.",
+    "DesignLineage": [
+      "The model originated within Jeanneau's Marlin sport-fishing/pilothouse line.",
+      "Jeanneau later renamed the Marlin concept under the Merry Fisher Sport identity.",
+      "The 895 Sport shares size and twin-outboard mission with the standard 895 but uses materially different deck/cabin architecture.",
+      "It remains a distinct canonical model rather than an equipment package for the regular 895."
+    ],
+    "OwnershipCharacter": "Excellent deck access and outboard serviceability, but fishing hardware, doors and exposed deck systems need more upkeep. Twin engines and optional cruising systems create moderate complexity.",
+    "DateCreated": "2026-07-18",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "B-Atlas Phase 8C-14 French Production Research",
+    "Revision": 2,
+    "DataConfidence": "High",
+    "ResearchStatus": "Reviewed",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "JEAU-895-SP"
+            ],
+            "Years": {
+              "From": 2018,
+              "To": 2026
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.jeanneau.com/fr/comparateur/moteur"
+          ],
+          "EvidenceTypes": [
+            "Factory documented"
+          ],
+          "Confidence": "High",
+          "Notes": "Factory and model-specific documentation support identity and representative specifications."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "JEAU-895-SP"
+            ],
+            "Years": {
+              "From": 2018,
+              "To": 2026
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.jeanneau.com/fr/comparateur/moteur"
+          ],
+          "EvidenceTypes": [
+            "Factory documented"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Guidance is derived from documented layout, hull form, propulsion and dimensions."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "JEAU-895-SP"
+            ],
+            "Years": {
+              "From": 2018,
+              "To": 2026
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.jeanneau.com/fr/comparateur/moteur"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance reflects configuration and age exposure; it is not a claim that every hull has a defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Exact production end and generation-specific specifications should be verified by model year.",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "ResearchNotes": "Batch 31 Beneteau/Jeanneau identity and lineage normalization. Reused model names and market-name aliases are preserved explicitly; uncertain generation-specific values remain listing-specific.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.\n\nCruising Performance Research Wave 5 v7.04 (2026-09-14).",
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "SpecificationConfidence": {
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      },
+      "KeelConfigurationCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from unambiguous existing KeelType text."
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing propulsion/keel description; no new factual assertion introduced."
+      },
+      "DisplacementCruiseSpeed": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://www.boote-magazin.de/en/boats/sport-boats/merry-fisher-895-sport-series-2-sporty-all-rounder-from-france/",
+          "https://www.boatreviewmagazine.com/merry-fisher-895-sport-test/"
+        ],
+        "Note": "BOOTE instrumented Merry Fisher 895 Sport Series 2 table: 7.0 kn at 2000 rpm burning 15.5 L/h. Stored as displacement-speed cruise point."
+      },
+      "DisplacementCruiseFuelBurn": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://www.boote-magazin.de/en/boats/sport-boats/merry-fisher-895-sport-series-2-sporty-all-rounder-from-france/",
+          "https://www.boatreviewmagazine.com/merry-fisher-895-sport-test/"
+        ],
+        "Note": "BOOTE instrumented Merry Fisher 895 Sport Series 2 table: 7.0 kn at 2000 rpm burning 15.5 L/h. Stored as displacement-speed cruise point."
+      },
+      "PlaningCruiseSpeed": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://www.boote-magazin.de/en/boats/sport-boats/merry-fisher-895-sport-series-2-sporty-all-rounder-from-france/",
+          "https://www.boatreviewmagazine.com/merry-fisher-895-sport-test/"
+        ],
+        "Note": "Same instrumented table identifies 22.4 kn at 4500 rpm and 66.7 L/h as the economical planing point."
+      },
+      "PlaningCruiseFuelBurn": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://www.boote-magazin.de/en/boats/sport-boats/merry-fisher-895-sport-series-2-sporty-all-rounder-from-france/",
+          "https://www.boatreviewmagazine.com/merry-fisher-895-sport-test/"
+        ],
+        "Note": "Same instrumented table identifies 22.4 kn at 4500 rpm and 66.7 L/h as the economical planing point."
+      }
+    }
+  },
+  {
+    "BoatModelID": "KDKR-36-MA",
+    "ManufacturerID": "KROGEN",
+    "Manufacturer": "Kadey-Krogen",
+    "Model": "36 Manatee",
+    "Variant": "Manatee",
+    "Nickname": "Kadey-Krogen 36 Manatee",
+    "Active": false,
+    "CanonicalSlug": "kadey-krogen-36-manatee-manatee",
+    "CanonicalPath": "/models/kadey-krogen-36-manatee-manatee/",
+    "CanonicalURL": "https://b-atlas.org/models/kadey-krogen-36-manatee-manatee/",
+    "ImageURL": "images/kdkr-36-ma.jpg",
+    "FirstYear": 1984,
+    "LastYear": 1992,
+    "TotalBuilt": 99,
+    "Designer": "James Krogen",
+    "HullType": "Displacement",
+    "Style": "Pilothouse Trawler",
+    "Construction": "Fiberglass",
+    "KeelType": "Full Length",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Single Inboard",
+    "Propulsion": "Shaft",
+    "Flybridge": "Yes",
+    "AftCabin": false,
+    "SideDecks": "Wide",
+    "TypicalEngineID": "Varies by hull",
+    "FuelCapacity": 946.3529,
+    "WaterCapacity": 1135.6235,
+    "HoldingCapacity": 113.5624,
+    "Berths": 4,
+    "Cabins": 1,
+    "Heads": 1,
+    "Shower": true,
+    "Galley": true,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "Limited",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "BoatFamily": "Trawler",
+    "Configuration": "Pilothouse Trawler",
+    "HullBehaviour": "Displacement",
+    "Features": [
+      "Flybridge",
+      "Wide Side Decks"
+    ],
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Trawler",
+    "EngineCount": 1,
+    "DisplacementLb": 23000,
+    "FuelCapacityGal": 280,
+    "WaterCapacityGal": 300,
+    "NormalizedHullType": "Displacement",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "FuelCode": "fuel.diesel",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "HullBehaviourCode": "hull_behaviour.displacement",
+    "BoatFamilyCode": "boat_family.trawler",
+    "LOA": 11.0744,
+    "LWL": 10.3632,
+    "Beam": 4.1656,
+    "Draft": 0.9652,
+    "Displacement": 10432.6,
+    "KeelConfigurationCode": "keel.full_long",
+    "RunningGearProtectionCode": "running_gear.keel_protected",
+    "FlybridgeCode": "availability.yes",
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres",
+    "AirDraft": 4.2672,
+    "StyleCode": "Trawler",
+    "CoolingCode": "cooling.fresh_water",
+    "SideDecksCode": "side_decks.wide",
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "ShowerTypeCode": "shower.present_unspecified",
+    "Strengths": [
+      "Purpose-built long-range cruising design with efficient displacement operation",
+      "Protected running gear and substantial tankage on power models",
+      "Strong builder/owner knowledge base and liveaboard-oriented layouts"
+    ],
+    "Weaknesses": "Broad beam, substantial windage and displacement speed limit marina flexibility and rule out practical road transport.",
+    "CommonProblems": "Inspect deck and superstructure core, window tracks, tanks, sanitation systems, underwater blister history and the condition of the individual engine installation.",
+    "TypicalMission": "Seasonal or full-time couple liveaboard use, inland waterways, Great Loop cruising and protected-coastal travel.",
+    "AvoidIf": [
+      "You require sustained planing speeds",
+      "You need trailerable or narrow-beam dimensions",
+      "You want very simple weekend-cruiser systems"
+    ],
+    "Overview": "The Kadey-Krogen 36 Manatee is a purpose-built cruising design from a builder focused on displacement-speed efficiency and long-range use. The family emphasizes substantial tankage, protected single-screw propulsion and liveaboard-oriented interiors; the 38 Cutter is the major exception, combining shoal-draft sailing capability with auxiliary diesel power.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented layout and cruising systems are well suited to a cruising couple, with guest capacity varying by model."
+      },
+      "SoloHandling": {
+        "Assessment": "Mixed",
+        "Summary": "Protected helms and deck access can support short-handed operation, but displacement, windage, engine arrangement and docking equipment vary materially by model."
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "Route suitability depends on beam, draft and actual air draft; larger models may face marina and lock constraints."
+      },
+      "ExposedWater": {
+        "Assessment": "Good",
+        "Summary": "Hull form and construction support the documented cruising role, but condition, loading, weather and individual configuration remain decisive."
+      }
+    },
+    "TradeOffs": [
+      "Low-speed cruising requires patience and weather planning",
+      "Large tankage and systems increase refit and maintenance scope",
+      "Beam and displacement of larger models materially affect marina and haul-out options"
+    ],
+    "BestFor": [
+      "Couples planning extended liveaboard and long-distance cruising",
+      "Owners prioritizing range, efficiency and protected machinery",
+      "Buyers comfortable with displacement-speed passage planning"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Verify model generation, build year and engine installation from factory documentation",
+      "Inspect cored decks, windows, hatches and hardware penetrations for moisture",
+      "Inspect tanks, fuel transfer/filtration, exhaust and cooling systems",
+      "Inspect shaft, rudder, stern gear and keel protection",
+      "Review electrical, charging, generator and navigation-system refits"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for verify model generation, build year and engine installation from factory documentation?",
+      "What inspection, repair or service history is available for inspect cored decks, windows, hatches and hardware penetrations for moisture?",
+      "What inspection, repair or service history is available for inspect tanks, fuel transfer/filtration, exhaust and cooling systems?",
+      "What inspection, repair or service history is available for inspect shaft, rudder, stern gear and keel protection?",
+      "What inspection, repair or service history is available for review electrical, charging, generator and navigation-system refits?"
+    ],
+    "OwnerActions": [
+      "Keep deck, window and hardware penetrations sealed and investigate leaks promptly",
+      "Service propulsion, cooling, exhaust, steering and fuel systems to documented intervals",
+      "Document structural, tank, electrical and machinery repairs for future buyers"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "Model-specific layouts and generations",
+        "Description": "Kadey-Krogen models evolved through multiple layouts and equipment packages; the 38 Cutter is a distinct sailing/motorsailing design rather than a conventional Krogen trawler.",
+        "AffectedYears": "Varies by model",
+        "EvidenceRefs": [
+          "https://www.kadeykrogen.com/our-history/",
+          "https://www.kadeykrogen.com/"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "ModelCharacter": "The unconventional coastal Krogen: a very wide, full-beam 36-footer built around interior volume rather than offshore passagemaking. The Manatee feels closer to a compact floating cottage than a traditional narrow trawler, with a huge salon, one large stateroom and extremely economical single-diesel operation.",
+    "DesignLineage": [
+      "Kadey-Krogen introduced the Krogen 36 Manatee in 1984 as a coastal cruiser rather than a bluewater passagemaker.",
+      "Its broad, full-beam salon and lack of exterior side decks distinguish it sharply from the company's classic raised-pilothouse offshore trawlers.",
+      "The single-stateroom arrangement became far more popular than the original two-stateroom layout.",
+      "The Manatee is a distinct design branch and not a shortened version of the Krogen 42."
+    ],
+    "OwnershipCharacter": "Mechanically simple and exceptionally economical, with excellent liveaboard room for its length. The tradeoffs are limited side-deck circulation, very slow speed and 1980s systems/structure that make survey condition more important than drivetrain complexity.",
+    "DateCreated": "2026-07-27",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "B-Atlas Phase 8C-10 Traditional Trawler Family Research",
+    "Revision": 5,
+    "ResearchNotes": "Phase 8C-10 traditional-trawler family normalization 2026-08-07. Unsupported defects remain unknown.\n\nBuilder history confirms the 1984 introduction, coastal-cruiser mission, closed-cell PVC foam-core construction, heavy hand lay-up and teak interior. Secondary production histories report 99 boats through 1992; hull-specific machinery and tank details require verification. Published draft, engine and tank details vary by source and individual hull. Kadey-Krogen Yachts filed Chapter 7 liquidation on 2026-07-06; future factory-specific parts/support are uncertain.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "ResearchStatus": "Reviewed",
+    "DataConfidence": "Moderate",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "KDKR-36-MA"
+            ],
+            "Years": {
+              "From": 1984,
+              "To": 1992
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.kadeykrogen.com/our-history/",
+            "https://www.kadeykrogen.com/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Representative identity and specifications are based on manufacturer, owner-association or model-specific technical references; hull-specific differences remain explicit."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "KDKR-36-MA"
+            ],
+            "Years": {
+              "From": 1984,
+              "To": 1992
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.kadeykrogen.com/our-history/",
+            "https://www.kadeykrogen.com/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance is derived from documented configuration, dimensions, propulsion and intended use rather than sales language."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "KDKR-36-MA"
+            ],
+            "Years": {
+              "From": 1984,
+              "To": 1992
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.kadeykrogen.com/our-history/",
+            "https://www.kadeykrogen.com/"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance identifies systems and age/configuration risks to inspect; it is not an assertion that every hull has a defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "SpecificationConfidence": {
+      "FuelCapacity": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [],
+        "Note": "Legacy sources conflict on tankage. v6.95 retains the existing working value, interprets its legacy basis as US gallons, and converts it to canonical litres pending owner/source verification."
+      },
+      "HoldingCapacity": {
+        "Level": "High",
+        "Status": "supported",
+        "EvidenceRefs": [
+          "https://akyachts.com/yacht-details/36-kadey-krogen-1985/",
+          "https://mls.ybaa.org/yacht-details/?vessel=2799100"
+        ],
+        "Note": "Two model-specific Krogen 36 Manatee listings independently report 30 US gal holding tanks."
+      },
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      }
+    }
+  },
+  {
+    "BoatModelID": "KDKR-39",
+    "ManufacturerID": "KROGEN",
+    "Manufacturer": "Kadey-Krogen",
+    "Model": "39",
+    "Variant": null,
+    "Nickname": "Kadey-Krogen 39",
+    "Active": false,
+    "CanonicalSlug": "kadey-krogen-39",
+    "CanonicalPath": "/models/kadey-krogen-39/",
+    "CanonicalURL": "https://b-atlas.org/models/kadey-krogen-39/",
+    "ImageURL": "images/kdkr-39.jpg",
+    "FirstYear": 1997,
+    "LastYear": 2008,
+    "TotalBuilt": null,
+    "Designer": "James Krogen",
+    "HullType": "Displacement",
+    "Style": "Raised Pilothouse Trawler",
+    "Construction": "Fiberglass",
+    "KeelType": "Full Length",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Single Inboard",
+    "Propulsion": "Shaft",
+    "Flybridge": "No",
+    "AftCabin": false,
+    "SideDecks": "Wide",
+    "TypicalEngineID": "John Deere 4045",
+    "FuelCapacity": 2649.7882,
+    "WaterCapacity": 1135.6235,
+    "HoldingCapacity": 189.2706,
+    "Berths": 4,
+    "Cabins": 1,
+    "Heads": 1,
+    "Shower": true,
+    "Galley": true,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "Yes",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "BoatFamily": "Trawler",
+    "Configuration": "Raised Pilothouse",
+    "HullBehaviour": "Displacement",
+    "Features": [
+      "Wide Side Decks"
+    ],
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Trawler",
+    "EngineCount": 1,
+    "DisplacementLb": 33470,
+    "FuelCapacityGal": 700,
+    "WaterCapacityGal": 300,
+    "NormalizedHullType": "Displacement",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "FuelCode": "fuel.diesel",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "HullBehaviourCode": "hull_behaviour.displacement",
+    "BoatFamilyCode": "boat_family.trawler",
+    "LOA": 13.3096,
+    "LWL": 11.176,
+    "Beam": 4.3434,
+    "Draft": 1.2954,
+    "Displacement": 15181.7,
+    "Ballast": 907.2,
+    "KeelConfigurationCode": "keel.full_long",
+    "RunningGearProtectionCode": "running_gear.keel_protected",
+    "FlybridgeCode": "availability.yes",
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "AirDraft": 4.7,
+    "StyleCode": "Trawler",
+    "CoolingCode": "cooling.fresh_water",
+    "SideDecksCode": "side_decks.wide",
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "ShowerTypeCode": "shower.present_unspecified",
+    "Strengths": [
+      "Purpose-built long-range cruising design with efficient displacement operation",
+      "Protected running gear and substantial tankage on power models",
+      "Strong builder/owner knowledge base and liveaboard-oriented layouts"
+    ],
+    "Weaknesses": "Slow cruising speed, deep systems complexity and high ownership costs compared with ordinary coastal trawlers.",
+    "CommonProblems": "Inspect tanks, exhaust and cooling systems, stabilizers or paravanes, steering, deck hardware, windows, electrical modifications and machinery access history.",
+    "TypicalMission": "Long-range couple cruising, extended liveaboard use and offshore passages with occasional guests.",
+    "AvoidIf": [
+      "You require sustained planing speeds",
+      "You need trailerable or narrow-beam dimensions",
+      "You want very simple weekend-cruiser systems"
+    ],
+    "Overview": "The Kadey-Krogen 39 is a purpose-built cruising design from a builder focused on displacement-speed efficiency and long-range use. The family emphasizes substantial tankage, protected single-screw propulsion and liveaboard-oriented interiors; the 38 Cutter is the major exception, combining shoal-draft sailing capability with auxiliary diesel power.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented layout and cruising systems are well suited to a cruising couple, with guest capacity varying by model."
+      },
+      "SoloHandling": {
+        "Assessment": "Mixed",
+        "Summary": "Protected helms and deck access can support short-handed operation, but displacement, windage, engine arrangement and docking equipment vary materially by model."
+      },
+      "InlandWaterways": {
+        "Assessment": "Mixed",
+        "Summary": "Route suitability depends on beam, draft and actual air draft; larger models may face marina and lock constraints."
+      },
+      "ExposedWater": {
+        "Assessment": "Good",
+        "Summary": "Hull form and construction support the documented cruising role, but condition, loading, weather and individual configuration remain decisive."
+      }
+    },
+    "TradeOffs": [
+      "Low-speed cruising requires patience and weather planning",
+      "Large tankage and systems increase refit and maintenance scope",
+      "Beam and displacement of larger models materially affect marina and haul-out options"
+    ],
+    "BestFor": [
+      "Couples planning extended liveaboard and long-distance cruising",
+      "Owners prioritizing range, efficiency and protected machinery",
+      "Buyers comfortable with displacement-speed passage planning"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Verify model generation, build year and engine installation from factory documentation",
+      "Inspect cored decks, windows, hatches and hardware penetrations for moisture",
+      "Inspect tanks, fuel transfer/filtration, exhaust and cooling systems",
+      "Inspect shaft, rudder, stern gear and keel protection",
+      "Review electrical, charging, generator and navigation-system refits"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for verify model generation, build year and engine installation from factory documentation?",
+      "What inspection, repair or service history is available for inspect cored decks, windows, hatches and hardware penetrations for moisture?",
+      "What inspection, repair or service history is available for inspect tanks, fuel transfer/filtration, exhaust and cooling systems?",
+      "What inspection, repair or service history is available for inspect shaft, rudder, stern gear and keel protection?",
+      "What inspection, repair or service history is available for review electrical, charging, generator and navigation-system refits?"
+    ],
+    "OwnerActions": [
+      "Keep deck, window and hardware penetrations sealed and investigate leaks promptly",
+      "Service propulsion, cooling, exhaust, steering and fuel systems to documented intervals",
+      "Document structural, tank, electrical and machinery repairs for future buyers"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "Model-specific layouts and generations",
+        "Description": "Kadey-Krogen models evolved through multiple layouts and equipment packages; the 38 Cutter is a distinct sailing/motorsailing design rather than a conventional Krogen trawler.",
+        "AffectedYears": "Varies by model",
+        "EvidenceRefs": [
+          "https://www.kadeykrogen.com/our-history/",
+          "https://www.kadeykrogen.com/"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "ModelCharacter": "A couple-focused bluewater Krogen that distills the 42's full-displacement passagemaking philosophy into a smaller one-stateroom package. It combines a raised pilothouse, stand-up engine room and 2,000-plus-mile range with dimensions still manageable for an experienced owner-operator.",
+    "DesignLineage": [
+      "Kadey-Krogen introduced the 39 in 1997 as a smaller Pure Full Displacement cruiser for couples and single-handers.",
+      "Powerboat Guide describes the 39 as being based on the classic Krogen 42 concept.",
+      "The layout centers on one forward master stateroom, a pilothouse watch berth and a stand-up engine room rather than maximizing guest cabins.",
+      "The 39 is a distinct smaller successor concept, not a rebadged 42."
+    ],
+    "OwnershipCharacter": "A serious passagemaker with relatively simple single-engine propulsion, but stabilizers, generator, large tankage and offshore-grade systems move ownership well beyond ordinary coastal-cruiser maintenance. Strong factory and owner support reduces the learning burden.",
+    "DateCreated": "2026-07-27",
+    "LastUpdated": "2026-09-12",
+    "ReviewedBy": "B-Atlas Phase 8C-10 Traditional Trawler Family Research",
+    "Revision": 5,
+    "ResearchStatus": "Reviewed",
+    "DataConfidence": "Moderate",
+    "ResearchNotes": "Phase 8C-10 traditional-trawler family normalization 2026-08-07. Unsupported defects remain unknown.\n\nKadey-Krogen states the Krogen 39 was introduced in 1997 as a Pure Full Displacement cruiser for couples or single-handers capable of coastal and farther-ranging cruising. Do not describe it as introduced in 1998 or apply unsupported final-production dates. Kadey-Krogen Yachts filed Chapter 7 liquidation on 2026-07-06; future factory-specific parts/support are uncertain.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "KDKR-39"
+            ],
+            "Years": {
+              "From": 1997,
+              "To": 2013
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.kadeykrogen.com/our-history/",
+            "https://www.kadeykrogen.com/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Representative identity and specifications are based on manufacturer, owner-association or model-specific technical references; hull-specific differences remain explicit."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "KDKR-39"
+            ],
+            "Years": {
+              "From": 1997,
+              "To": 2013
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.kadeykrogen.com/our-history/",
+            "https://www.kadeykrogen.com/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance is derived from documented configuration, dimensions, propulsion and intended use rather than sales language."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "KDKR-39"
+            ],
+            "Years": {
+              "From": 1997,
+              "To": 2013
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.kadeykrogen.com/our-history/",
+            "https://www.kadeykrogen.com/"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance identifies systems and age/configuration risks to inspect; it is not an assertion that every hull has a defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "SpecificationConfidence": {
+      "AirDraft": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [],
+        "Note": "B-Atlas working estimate derived from nearest comparable models with similar style, size and flybridge configuration. Verify actual mast/radar/antenna clearance before route planning. Comparable model IDs: GULF-43-TR, GRBK-42-CL, ISGY-44, GULF-44-MC, HELM-43-E, DEFE-47, GRBK-46-CL"
+      },
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      }
+    }
+  },
+  {
+    "BoatModelID": "KDKR-42",
+    "ManufacturerID": "KROGEN",
+    "Manufacturer": "Kadey-Krogen",
+    "Active": false,
+    "Model": "42",
+    "Variant": null,
+    "Nickname": "Kadey-Krogen 42",
+    "CanonicalSlug": "kadey-krogen-42",
+    "CanonicalPath": "/models/kadey-krogen-42/",
+    "CanonicalURL": "https://b-atlas.org/models/kadey-krogen-42/",
+    "Designer": "James Krogen",
+    "Construction": "Fiberglass",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "Propulsion": "Shaft",
+    "Trailerable": false,
+    "BoatFamily": "Trawler",
+    "HullBehaviour": "Displacement",
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Trawler",
+    "ImageURL": "images/kdkr-42.jpg",
+    "FirstYear": 1977,
+    "LastYear": 1998,
+    "TotalBuilt": 206,
+    "HullType": "Displacement",
+    "Style": "Raised Pilothouse Trawler",
+    "KeelType": "Full Length",
+    "EngineConfiguration": "Single Inboard",
+    "Flybridge": "Yes",
+    "AftCabin": false,
+    "SideDecks": "Wide",
+    "TypicalEngineID": "Ford Lehman SP135 common; varies by year",
+    "FuelCapacity": 2649.7882,
+    "WaterCapacity": 1362.7482,
+    "HoldingCapacity": 113.5624,
+    "Berths": 6,
+    "Cabins": 2,
+    "Heads": 2,
+    "Shower": true,
+    "Galley": true,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "Yes",
+    "GreatLoopSuitable": true,
+    "Configuration": "Raised Pilothouse",
+    "Features": [
+      "Flybridge",
+      "Wide Side Decks"
+    ],
+    "EngineCount": 1,
+    "DisplacementLb": 40000,
+    "FuelCapacityGal": 700,
+    "WaterCapacityGal": 360,
+    "NormalizedHullType": "Displacement",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "FuelCode": "fuel.diesel",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "HullBehaviourCode": "hull_behaviour.displacement",
+    "BoatFamilyCode": "boat_family.trawler",
+    "LOA": 12.9032,
+    "LWL": 11.938,
+    "Beam": 4.572,
+    "Draft": 1.397,
+    "Displacement": 18143.7,
+    "Ballast": 1134,
+    "KeelConfigurationCode": "keel.full_long",
+    "RunningGearProtectionCode": "running_gear.keel_protected",
+    "FlybridgeCode": "availability.yes",
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres",
+    "AirDraft": 4.15,
+    "StyleCode": "Trawler",
+    "CoolingCode": "cooling.fresh_water",
+    "SideDecksCode": "side_decks.wide",
+    "DisplacementCruiseSpeed": 7,
+    "DisplacementCruiseFuelBurn": 6.4352000328,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "ShowerTypeCode": "shower.present_unspecified",
+    "Strengths": [
+      "Purpose-built long-range cruising design with efficient displacement operation",
+      "Protected running gear and substantial tankage on power models",
+      "Strong builder/owner knowledge base and liveaboard-oriented layouts"
+    ],
+    "Weaknesses": "Older boats can carry decades of systems changes, teak maintenance and deferred tank, window or deck work.",
+    "CommonProblems": "Inspect fuel and water tanks, deck and cabin moisture, windows, exhaust and cooling systems, steering, stabilizers or paravanes, electrical modifications and running gear.",
+    "TypicalMission": "Extended liveaboard cruising, Great Loop use with mast management and serious offshore passagemaking.",
+    "AvoidIf": [
+      "You require sustained planing speeds",
+      "You need trailerable or narrow-beam dimensions",
+      "You want very simple weekend-cruiser systems"
+    ],
+    "Overview": "The Kadey-Krogen 42 is a purpose-built cruising design from a builder focused on displacement-speed efficiency and long-range use. The family emphasizes substantial tankage, protected single-screw propulsion and liveaboard-oriented interiors; the 38 Cutter is the major exception, combining shoal-draft sailing capability with auxiliary diesel power.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented layout and cruising systems are well suited to a cruising couple, with guest capacity varying by model."
+      },
+      "SoloHandling": {
+        "Assessment": "Mixed",
+        "Summary": "Protected helms and deck access can support short-handed operation, but displacement, windage, engine arrangement and docking equipment vary materially by model."
+      },
+      "InlandWaterways": {
+        "Assessment": "Mixed",
+        "Summary": "Route suitability depends on beam, draft and actual air draft; larger models may face marina and lock constraints."
+      },
+      "ExposedWater": {
+        "Assessment": "Good",
+        "Summary": "Hull form and construction support the documented cruising role, but condition, loading, weather and individual configuration remain decisive."
+      }
+    },
+    "TradeOffs": [
+      "Low-speed cruising requires patience and weather planning",
+      "Large tankage and systems increase refit and maintenance scope",
+      "Beam and displacement of larger models materially affect marina and haul-out options"
+    ],
+    "BestFor": [
+      "Couples planning extended liveaboard and long-distance cruising",
+      "Owners prioritizing range, efficiency and protected machinery",
+      "Buyers comfortable with displacement-speed passage planning"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Verify model generation, build year and engine installation from factory documentation",
+      "Inspect cored decks, windows, hatches and hardware penetrations for moisture",
+      "Inspect tanks, fuel transfer/filtration, exhaust and cooling systems",
+      "Inspect shaft, rudder, stern gear and keel protection",
+      "Review electrical, charging, generator and navigation-system refits"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for verify model generation, build year and engine installation from factory documentation?",
+      "What inspection, repair or service history is available for inspect cored decks, windows, hatches and hardware penetrations for moisture?",
+      "What inspection, repair or service history is available for inspect tanks, fuel transfer/filtration, exhaust and cooling systems?",
+      "What inspection, repair or service history is available for inspect shaft, rudder, stern gear and keel protection?",
+      "What inspection, repair or service history is available for review electrical, charging, generator and navigation-system refits?"
+    ],
+    "OwnerActions": [
+      "Keep deck, window and hardware penetrations sealed and investigate leaks promptly",
+      "Service propulsion, cooling, exhaust, steering and fuel systems to documented intervals",
+      "Document structural, tank, electrical and machinery repairs for future buyers"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "Model-specific layouts and generations",
+        "Description": "Kadey-Krogen models evolved through multiple layouts and equipment packages; the 38 Cutter is a distinct sailing/motorsailing design rather than a conventional Krogen trawler.",
+        "AffectedYears": "Varies by model",
+        "EvidenceRefs": [
+          "https://www.kadeykrogen.com/our-history/",
+          "https://www.kadeykrogen.com/"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "ModelCharacter": "The foundational Kadey-Krogen passagemaker: a ballasted full-displacement trawler with high bow, sweeping sheer, deep forefoot and protected single propeller designed for efficient open-water cruising rather than speed. It is the model that established the company's bluewater identity.",
+    "DesignLineage": [
+      "Art Kadey and Jim Krogen developed the original 42 as the company's first long-range cruising trawler, introduced in 1977.",
+      "The 42 established the full-displacement hull philosophy that became central to the Krogen brand.",
+      "Standard walkaround and Widebody versions were offered; the Widebody arrived in 1989 with a full-width salon.",
+      "The Krogen 44 debuted in 2004 as a refined and slightly larger evolution of the pioneering 42."
+    ],
+    "OwnershipCharacter": "Purpose-built for long-range cruising and commonly owner-operated, but age matters: early boats used glass-over-plywood deck/superstructure construction before later cored fiberglass revisions. Large tankage and offshore systems make refit quality central to value.",
+    "DateCreated": "2026-07-27",
+    "LastUpdated": "2026-09-14",
+    "ReviewedBy": "B-Atlas Phase 8C-10 Traditional Trawler Family Research",
+    "Revision": 5,
+    "ResearchStatus": "Reviewed",
+    "DataConfidence": "Moderate",
+    "ResearchNotes": "Phase 8C-10 traditional-trawler family normalization 2026-08-07. Unsupported defects remain unknown.\n\nKadey-Krogen identifies the 42 as the 1977 founding model and reports 206 built, its highest model production. Published dimensions and capacities vary by generation and should be verified against hull year and builder documentation. Kadey-Krogen Yachts filed Chapter 7 liquidation on 2026-07-06; future factory-specific parts/support are uncertain.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.\n\nv7.05 cruising-performance research: Kadey-Krogen 42 listing documents 7–7.5 knots at 1800 rpm burning 1.7 US gal/h with a Ford Lehman 120; representative of that engine configuration.",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "KDKR-42"
+            ],
+            "Years": {
+              "From": 1977,
+              "To": 1998
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.kadeykrogen.com/our-history/",
+            "https://www.kadeykrogen.com/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Representative identity and specifications are based on manufacturer, owner-association or model-specific technical references; hull-specific differences remain explicit."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "KDKR-42"
+            ],
+            "Years": {
+              "From": 1977,
+              "To": 1998
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.kadeykrogen.com/our-history/",
+            "https://www.kadeykrogen.com/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance is derived from documented configuration, dimensions, propulsion and intended use rather than sales language."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "KDKR-42"
+            ],
+            "Years": {
+              "From": 1977,
+              "To": 1998
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.kadeykrogen.com/our-history/",
+            "https://www.kadeykrogen.com/"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance identifies systems and age/configuration risks to inspect; it is not an assertion that every hull has a defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "SpecificationConfidence": {
+      "AirDraft": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [],
+        "Note": "B-Atlas working estimate derived from nearest comparable models with similar style, size and flybridge configuration. Verify actual mast/radar/antenna clearance before route planning. Comparable model IDs: GRBK-42-CL, GULF-43-TR, ISGY-44, GULF-44-MC, ISGY-40, UNIV-40-TR, HELM-43-E"
+      },
+      "HoldingCapacity": {
+        "Level": "Medium",
+        "Status": "supported",
+        "EvidenceRefs": [
+          "https://www.boattrader.com/boat/1991-kadey-krogen-42-10304428/"
+        ],
+        "Note": "Representative 1991 Krogen 42 reports 30 US gal holding capacity; verify hull-specific refits."
+      },
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      },
+      "DisplacementCruiseSpeed": {
+        "Level": "Medium",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://www.merrittboat.com/used-yachts-for-sale/1983-kadey-krogen-42-in-do-time_2831718/"
+        ],
+        "Note": "Kadey-Krogen 42 listing documents 7–7.5 knots at 1800 rpm burning 1.7 US gal/h with a Ford Lehman 120; representative of that engine configuration."
+      },
+      "DisplacementCruiseFuelBurn": {
+        "Level": "Medium",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://www.merrittboat.com/used-yachts-for-sale/1983-kadey-krogen-42-in-do-time_2831718/"
+        ],
+        "Note": "Kadey-Krogen 42 listing documents 7–7.5 knots at 1800 rpm burning 1.7 US gal/h with a Ford Lehman 120; representative of that engine configuration."
+      }
+    }
+  },
+  {
+    "BoatModelID": "KDKR-44",
+    "ManufacturerID": "KROGEN",
+    "Manufacturer": "Kadey-Krogen",
+    "Active": true,
+    "Model": "44",
+    "Variant": "Trawler",
+    "Nickname": "Krogen 44 Trawler / Classic",
+    "ModelAliases": [
+      "44 Classic"
+    ],
+    "CanonicalSlug": "kadey-krogen-44-trawler",
+    "CanonicalPath": "/models/kadey-krogen-44-trawler/",
+    "CanonicalURL": "https://b-atlas.org/models/kadey-krogen-44-trawler/",
+    "Designer": "James Krogen",
+    "Construction": "Fiberglass",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "Propulsion": "Shaft",
+    "Trailerable": false,
+    "BoatFamily": "Trawler",
+    "HullBehaviour": "Displacement",
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Trawler",
+    "ImageURL": "images/kdkr-44.jpg",
+    "FirstYear": 2004,
+    "LastYear": 2012,
+    "TotalBuilt": null,
+    "HullType": "Displacement",
+    "Style": "Raised Pilothouse Trawler",
+    "KeelType": "Full Length",
+    "EngineConfiguration": "Single Inboard",
+    "Flybridge": "Yes",
+    "AftCabin": false,
+    "SideDecks": "Wide",
+    "TypicalEngineID": "Single diesel; verify build specification",
+    "FuelCapacity": 3217.6,
+    "WaterCapacity": 1135.6235,
+    "HoldingCapacity": 196.8414,
+    "Berths": 6,
+    "Cabins": 2,
+    "Heads": 1,
+    "Shower": true,
+    "Galley": true,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "Yes",
+    "GreatLoopSuitable": true,
+    "Configuration": "Raised Pilothouse",
+    "Features": [
+      "Flybridge",
+      "Wide Side Decks"
+    ],
+    "EngineCount": 1,
+    "DisplacementLb": 43140,
+    "FuelCapacityGal": 850,
+    "WaterCapacityGal": 300,
+    "NormalizedHullType": "Displacement",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "FuelCode": "fuel.diesel",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "HullBehaviourCode": "hull_behaviour.displacement",
+    "BoatFamilyCode": "boat_family.trawler",
+    "LOA": 14.9352,
+    "LWL": 12.4714,
+    "Beam": 4.7244,
+    "Draft": 1.3716,
+    "Displacement": 19568,
+    "Ballast": 1134,
+    "KeelConfigurationCode": "keel.full_long",
+    "RunningGearProtectionCode": "running_gear.keel_protected",
+    "FlybridgeCode": "availability.yes",
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres",
+    "AirDraft": 4.95,
+    "StyleCode": "Trawler",
+    "CoolingCode": "cooling.fresh_water",
+    "SideDecksCode": "side_decks.wide",
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "ShowerTypeCode": "shower.present_unspecified",
+    "Strengths": [
+      "Purpose-built long-range cruising design with efficient displacement operation",
+      "Protected running gear and substantial tankage on power models",
+      "Strong builder/owner knowledge base and liveaboard-oriented layouts"
+    ],
+    "Weaknesses": "Large beam, purchase cost, complex systems and displacement speed make it unsuitable for budget or compact-waterway missions.",
+    "CommonProblems": "Survey tanks, stabilizers, thrusters, hydraulic systems, exhaust and cooling, deck hardware, windows, electrical systems and maintenance documentation.",
+    "TypicalMission": "Premium owner-operated liveaboard cruising, Great Loop use with mast lowered and transoceanic passagemaking.",
+    "AvoidIf": [
+      "You require sustained planing speeds",
+      "You need trailerable or narrow-beam dimensions",
+      "You want very simple weekend-cruiser systems"
+    ],
+    "Overview": "The Kadey-Krogen 44 is a purpose-built cruising design from a builder focused on displacement-speed efficiency and long-range use. The family emphasizes substantial tankage, protected single-screw propulsion and liveaboard-oriented interiors; the 38 Cutter is the major exception, combining shoal-draft sailing capability with auxiliary diesel power.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented layout and cruising systems are well suited to a cruising couple, with guest capacity varying by model."
+      },
+      "SoloHandling": {
+        "Assessment": "Mixed",
+        "Summary": "Protected helms and deck access can support short-handed operation, but displacement, windage, engine arrangement and docking equipment vary materially by model."
+      },
+      "InlandWaterways": {
+        "Assessment": "Mixed",
+        "Summary": "Route suitability depends on beam, draft and actual air draft; larger models may face marina and lock constraints."
+      },
+      "ExposedWater": {
+        "Assessment": "Good",
+        "Summary": "Hull form and construction support the documented cruising role, but condition, loading, weather and individual configuration remain decisive."
+      }
+    },
+    "TradeOffs": [
+      "Low-speed cruising requires patience and weather planning",
+      "Large tankage and systems increase refit and maintenance scope",
+      "Beam and displacement of larger models materially affect marina and haul-out options"
+    ],
+    "BestFor": [
+      "Couples planning extended liveaboard and long-distance cruising",
+      "Owners prioritizing range, efficiency and protected machinery",
+      "Buyers comfortable with displacement-speed passage planning"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Verify model generation, build year and engine installation from factory documentation",
+      "Inspect cored decks, windows, hatches and hardware penetrations for moisture",
+      "Inspect tanks, fuel transfer/filtration, exhaust and cooling systems",
+      "Inspect shaft, rudder, stern gear and keel protection",
+      "Review electrical, charging, generator and navigation-system refits"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for verify model generation, build year and engine installation from factory documentation?",
+      "What inspection, repair or service history is available for inspect cored decks, windows, hatches and hardware penetrations for moisture?",
+      "What inspection, repair or service history is available for inspect tanks, fuel transfer/filtration, exhaust and cooling systems?",
+      "What inspection, repair or service history is available for inspect shaft, rudder, stern gear and keel protection?",
+      "What inspection, repair or service history is available for review electrical, charging, generator and navigation-system refits?"
+    ],
+    "OwnerActions": [
+      "Keep deck, window and hardware penetrations sealed and investigate leaks promptly",
+      "Service propulsion, cooling, exhaust, steering and fuel systems to documented intervals",
+      "Document structural, tank, electrical and machinery repairs for future buyers"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "Model-specific layouts and generations",
+        "Description": "Kadey-Krogen models evolved through multiple layouts and equipment packages; the 38 Cutter is a distinct sailing/motorsailing design rather than a conventional Krogen trawler.",
+        "AffectedYears": "Varies by model",
+        "EvidenceRefs": [
+          "https://www.kadeykrogen.com/our-history/",
+          "https://www.kadeykrogen.com/"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "ModelCharacter": "The modern evolution of the original Krogen 42 formula: a full-displacement, transoceanic owner-operator trawler with improved structure, ergonomics and machinery access while preserving the single-engine, raised-pilothouse and deep-keel character of the earlier boat.",
+    "DesignLineage": [
+      "The Krogen 44 debuted in 2004 as a refined successor to the Krogen 42.",
+      "The original 44 retained the 42's basic arrangement but gained a slightly wider beam, more pilothouse/aft-deck room and a stronger integrated pilothouse/flybridge/boat-deck structure.",
+      "The later AE designation means Advanced Ergonomics and added features such as improved engine-room access, redesigned boarding/steps and updated interior systems.",
+      "B-Atlas treats the 44 AE as the later evolutionary generation of the same Krogen 44 hull lineage, not as an unrelated model."
+    ],
+    "OwnershipCharacter": "Designed specifically for an owner-operator couple and unusually serviceable for an ocean-capable yacht. It remains yacht-scale ownership, with stabilizers, generator, hydraulic systems, large tankage and substantial preventative maintenance despite the simplicity of a single main engine.",
+    "DateCreated": "2026-07-27",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "B-Atlas Phase 8C-10 Traditional Trawler Family Research",
+    "Revision": 5,
+    "ResearchStatus": "Reviewed",
+    "DataConfidence": "Moderate",
+    "ResearchNotes": "Krogen 44 Trawler / Classic is the 2004–2012 predecessor to the 44 AE. The two share the 44 hull lineage, but the AE is retained as a separate manufacturer-recognized canonical identity because of its substantial ergonomic, deck and interior changes.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "KDKR-44"
+            ],
+            "Years": {
+              "From": 2004,
+              "To": 2016
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.kadeykrogen.com/our-history/",
+            "https://www.kadeykrogen.com/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Representative identity and specifications are based on manufacturer, owner-association or model-specific technical references; hull-specific differences remain explicit."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "KDKR-44"
+            ],
+            "Years": {
+              "From": 2004,
+              "To": 2016
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.kadeykrogen.com/our-history/",
+            "https://www.kadeykrogen.com/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance is derived from documented configuration, dimensions, propulsion and intended use rather than sales language."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "KDKR-44"
+            ],
+            "Years": {
+              "From": 2004,
+              "To": 2016
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.kadeykrogen.com/our-history/",
+            "https://www.kadeykrogen.com/"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance identifies systems and age/configuration risks to inspect; it is not an assertion that every hull has a defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "SpecificationConfidence": {
+      "AirDraft": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [],
+        "Note": "B-Atlas working estimate derived from nearest comparable models with similar style, size and flybridge configuration. Verify actual mast/radar/antenna clearance before route planning. Comparable model IDs: KDKR-44-AE, BENE-47, BENE-48, GRBK-46-CL, DEFE-47, HELM-43-E, GULF-44-MC"
+      },
+      "HoldingCapacity": {
+        "Level": "High",
+        "Status": "supported",
+        "EvidenceRefs": [
+          "https://kadeykrogen44.com/specifications/",
+          "https://www.kadeykrogen.com/wp-content/uploads/sites/10/2021/09/44-AE-Standard-Equipment-List-1.pdf"
+        ],
+        "Note": "Krogen 44 specification lists 52 US gal holding capacity."
+      },
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      }
+    }
+  },
+  {
+    "BoatModelID": "KDKR-48-NS",
+    "ManufacturerID": "KROGEN",
+    "Manufacturer": "Kadey-Krogen",
+    "Active": false,
+    "Model": "48 North Sea",
+    "Variant": "North Sea",
+    "Nickname": "Krogen 48 North Sea",
+    "CanonicalSlug": "kadey-krogen-48-north-sea-north-sea",
+    "CanonicalPath": "/models/kadey-krogen-48-north-sea-north-sea/",
+    "CanonicalURL": "https://b-atlas.org/models/kadey-krogen-48-north-sea-north-sea/",
+    "Designer": "James Krogen",
+    "Construction": "Fiberglass",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "Propulsion": "Shaft",
+    "Trailerable": false,
+    "BoatFamily": "Trawler",
+    "HullBehaviour": "Displacement",
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Trawler",
+    "ImageURL": "images/kdkr-48-ns.jpg",
+    "FirstYear": 1996,
+    "LastYear": 2010,
+    "TotalBuilt": null,
+    "HullType": "Displacement",
+    "Style": "Raised Pilothouse Trawler",
+    "KeelType": "Full Length",
+    "EngineConfiguration": "Single Inboard",
+    "Flybridge": "Yes",
+    "AftCabin": false,
+    "SideDecks": "Wide",
+    "TypicalEngineID": "Single diesel varies by hull",
+    "FuelCapacity": 3785.4118,
+    "WaterCapacity": 1514.1647,
+    "HoldingCapacity": 378.5412,
+    "Berths": 6,
+    "Cabins": 2,
+    "Heads": 2,
+    "Shower": true,
+    "Galley": true,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "Yes",
+    "GreatLoopSuitable": false,
+    "Configuration": "Raised Pilothouse",
+    "Features": [
+      "Flybridge",
+      "Wide Side Decks"
+    ],
+    "EngineCount": 1,
+    "DisplacementLb": 56450,
+    "FuelCapacityGal": 1000,
+    "WaterCapacityGal": 400,
+    "NormalizedHullType": "Displacement",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "FuelCode": "fuel.diesel",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "HullBehaviourCode": "hull_behaviour.displacement",
+    "BoatFamilyCode": "boat_family.trawler",
+    "LOA": 16.1544,
+    "LWL": 13.843,
+    "Beam": 5.08,
+    "Draft": 1.524,
+    "Displacement": 25605.3,
+    "Ballast": 2041.2,
+    "KeelConfigurationCode": "keel.full_long",
+    "RunningGearProtectionCode": "running_gear.keel_protected",
+    "FlybridgeCode": "availability.yes",
+    "FuelCapacityUnitStatus": "canonical_litres",
+    "WaterCapacityUnitStatus": "canonical_litres",
+    "HoldingCapacityUnitStatus": "canonical_litres",
+    "AirDraft": 5.800000000000001,
+    "StyleCode": "Trawler",
+    "CoolingCode": "cooling.fresh_water",
+    "SideDecksCode": "side_decks.wide",
+    "DisplacementCruiseSpeed": 7,
+    "DisplacementCruiseFuelBurn": 11.356,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "ShowerTypeCode": "shower.present_unspecified",
+    "Strengths": [
+      "Purpose-built long-range cruising design with efficient displacement operation",
+      "Protected running gear and substantial tankage on power models",
+      "Strong builder/owner knowledge base and liveaboard-oriented layouts"
+    ],
+    "Weaknesses": "Large dimensions, complex systems and significant operating and refit costs exceed the needs of most coastal buyers.",
+    "CommonProblems": "Inspect tanks, stabilizers, hydraulics, exhaust and cooling, windows, deck hardware, electrical modifications, generators, thrusters and machinery service records.",
+    "TypicalMission": "Full-time liveaboard use, long-distance passagemaking and remote cruising with two-stateroom comfort.",
+    "AvoidIf": [
+      "You require sustained planing speeds",
+      "You need trailerable or narrow-beam dimensions",
+      "You want very simple weekend-cruiser systems"
+    ],
+    "Overview": "The Kadey-Krogen 48 North Sea is a purpose-built cruising design from a builder focused on displacement-speed efficiency and long-range use. The family emphasizes substantial tankage, protected single-screw propulsion and liveaboard-oriented interiors; the 38 Cutter is the major exception, combining shoal-draft sailing capability with auxiliary diesel power.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented layout and cruising systems are well suited to a cruising couple, with guest capacity varying by model."
+      },
+      "SoloHandling": {
+        "Assessment": "Mixed",
+        "Summary": "Protected helms and deck access can support short-handed operation, but displacement, windage, engine arrangement and docking equipment vary materially by model."
+      },
+      "InlandWaterways": {
+        "Assessment": "Mixed",
+        "Summary": "Route suitability depends on beam, draft and actual air draft; larger models may face marina and lock constraints."
+      },
+      "ExposedWater": {
+        "Assessment": "Good",
+        "Summary": "Hull form and construction support the documented cruising role, but condition, loading, weather and individual configuration remain decisive."
+      }
+    },
+    "TradeOffs": [
+      "Low-speed cruising requires patience and weather planning",
+      "Large tankage and systems increase refit and maintenance scope",
+      "Beam and displacement of larger models materially affect marina and haul-out options"
+    ],
+    "BestFor": [
+      "Couples planning extended liveaboard and long-distance cruising",
+      "Owners prioritizing range, efficiency and protected machinery",
+      "Buyers comfortable with displacement-speed passage planning"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Verify model generation, build year and engine installation from factory documentation",
+      "Inspect cored decks, windows, hatches and hardware penetrations for moisture",
+      "Inspect tanks, fuel transfer/filtration, exhaust and cooling systems",
+      "Inspect shaft, rudder, stern gear and keel protection",
+      "Review electrical, charging, generator and navigation-system refits"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for verify model generation, build year and engine installation from factory documentation?",
+      "What inspection, repair or service history is available for inspect cored decks, windows, hatches and hardware penetrations for moisture?",
+      "What inspection, repair or service history is available for inspect tanks, fuel transfer/filtration, exhaust and cooling systems?",
+      "What inspection, repair or service history is available for inspect shaft, rudder, stern gear and keel protection?",
+      "What inspection, repair or service history is available for review electrical, charging, generator and navigation-system refits?"
+    ],
+    "OwnerActions": [
+      "Keep deck, window and hardware penetrations sealed and investigate leaks promptly",
+      "Service propulsion, cooling, exhaust, steering and fuel systems to documented intervals",
+      "Document structural, tank, electrical and machinery repairs for future buyers"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "Model-specific layouts and generations",
+        "Description": "Kadey-Krogen models evolved through multiple layouts and equipment packages; the 38 Cutter is a distinct sailing/motorsailing design rather than a conventional Krogen trawler.",
+        "AffectedYears": "Varies by model",
+        "EvidenceRefs": [
+          "https://www.kadeykrogen.com/our-history/",
+          "https://www.kadeykrogen.com/"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "ModelCharacter": "A large raised-pilothouse ocean trawler with deep forefoot, ballasted full-displacement hull and genuine two- or three-stateroom liveaboard capability. The North Sea emphasizes traditional offshore security and volume rather than the more contemporary refinements of the later 48 AE.",
+    "DesignLineage": [
+      "The Krogen 48 North Sea was produced from the mid-1990s through 2010 as a semi-custom long-range passagemaker.",
+      "Standard walkaround and Widebody arrangements were available, with the Widebody sacrificing the port side deck for greater salon volume.",
+      "The North Sea shares Krogen's full-displacement design philosophy but is a distinct older model from the later Krogen 48 AE.",
+      "More than 50 North Sea examples were built, establishing it as one of Krogen's significant large-model families."
+    ],
+    "OwnershipCharacter": "A true long-range liveaboard yacht with major tankage, stabilizers and large-system maintenance requirements. Single-engine propulsion remains efficient and straightforward, but haul-out, dockage, coatings, hydraulics and hotel systems are firmly yacht-scale.",
+    "DateCreated": "2026-07-27",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "B-Atlas Phase 8C-10 Traditional Trawler Family Research",
+    "Revision": 5,
+    "ResearchStatus": "Reviewed",
+    "DataConfidence": "Moderate",
+    "ResearchNotes": "Krogen 48 North Sea is a distinct 1996–2010 model and should not be conflated with the newer Krogen 48 AE. Kadey-Krogen Yachts filed Chapter 7 liquidation on 2026-07-06; future factory-specific parts/support are uncertain.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "KDKR-48-NS"
+            ],
+            "Years": {
+              "From": 1995,
+              "To": 2007
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.kadeykrogen.com/our-history/",
+            "https://www.kadeykrogen.com/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Representative identity and specifications are based on manufacturer, owner-association or model-specific technical references; hull-specific differences remain explicit."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "KDKR-48-NS"
+            ],
+            "Years": {
+              "From": 1995,
+              "To": 2007
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.kadeykrogen.com/our-history/",
+            "https://www.kadeykrogen.com/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance is derived from documented configuration, dimensions, propulsion and intended use rather than sales language."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "KDKR-48-NS"
+            ],
+            "Years": {
+              "From": 1995,
+              "To": 2007
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.kadeykrogen.com/our-history/",
+            "https://www.kadeykrogen.com/"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance identifies systems and age/configuration risks to inspect; it is not an assertion that every hull has a defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "SpecificationConfidence": {
+      "AirDraft": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [],
+        "Note": "B-Atlas working estimate derived from nearest comparable models with similar style, size and flybridge configuration. Verify actual mast/radar/antenna clearance before route planning. Comparable model IDs: BENE-52, KDKR-44-AE, BENE-47, BENE-48, GRBK-46-CL, DEFE-47, HELM-43-E"
+      },
+      "FuelCapacity": {
+        "Level": "High",
+        "Status": "supported",
+        "EvidenceRefs": [
+          "https://kadeykrogen48.com/specifications/",
+          "https://www.breweryacht.com/listings/2010-kadey-krogen-48-ft-mandevilla/2856002",
+          "https://www.boats.com/power-boats/2000-kadey-krogen-48-north-sea-10280392/"
+        ],
+        "Note": "Representative North Sea tankage consistently reported at 1,000 US gal fuel."
+      },
+      "WaterCapacity": {
+        "Level": "High",
+        "Status": "supported",
+        "EvidenceRefs": [
+          "https://kadeykrogen48.com/specifications/",
+          "https://www.breweryacht.com/listings/2010-kadey-krogen-48-ft-mandevilla/2856002",
+          "https://www.boats.com/power-boats/2000-kadey-krogen-48-north-sea-10280392/"
+        ],
+        "Note": "Representative North Sea tankage consistently reported at 400 US gal fresh water."
+      },
+      "HoldingCapacity": {
+        "Level": "Medium",
+        "Status": "supported",
+        "EvidenceRefs": [
+          "https://kadeykrogen48.com/specifications/",
+          "https://www.breweryacht.com/listings/2010-kadey-krogen-48-ft-mandevilla/2856002",
+          "https://www.boats.com/power-boats/2000-kadey-krogen-48-north-sea-10280392/"
+        ],
+        "Note": "Most later North Sea examples report 100 US gal holding; some representative literature reports 80 gal, so verify by year/hull."
+      },
+      "EnginePowerPerEngine": {
+        "Level": "Medium",
+        "Status": "varies_by_configuration",
+        "EvidenceRefs": [
+          "https://kadeykrogen48.com/specifications/",
+          "https://www.breweryacht.com/listings/2010-kadey-krogen-48-ft-mandevilla/2856002",
+          "https://www.boats.com/power-boats/2000-kadey-krogen-48-north-sea-10280392/"
+        ],
+        "Note": "North Sea examples span Caterpillar/John Deere installations around 201–225 hp; use hull/year-specific engine data."
+      },
+      "DisplacementCruiseSpeed": {
+        "Level": "Medium",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://www.greatloop.org/classified/grace-full-living-48-kadey-krogen-north-sea-48-trawler-2000.html",
+          "https://kadeykrogen48forsale.com/specifications/"
+        ],
+        "Note": "Representative North Sea performance: documented 2000 hull reports 7 kn cruise and about 3 US gal/h. Engine installations vary by year, so treat as a representative displacement-cruise point."
+      },
+      "DisplacementCruiseFuelBurn": {
+        "Level": "Medium",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://www.greatloop.org/classified/grace-full-living-48-kadey-krogen-north-sea-48-trawler-2000.html",
+          "https://kadeykrogen48forsale.com/specifications/"
+        ],
+        "Note": "Representative North Sea performance: documented 2000 hull reports 7 kn cruise and about 3 US gal/h. Engine installations vary by year, so treat as a representative displacement-cruise point."
+      },
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      }
+    },
+    "PlanCriticalStatus": {
+      "EnginePowerPerEngine": "configuration_or_production_mixed"
+    }
+  },
+  {
+    "BoatModelID": "LUHR-30",
+    "ManufacturerID": "LUHRS",
+    "Manufacturer": "Luhrs",
+    "Model": "30 Alura",
+    "Variant": "Downeast-Profile Fishing Cruiser",
+    "Nickname": "Luhrs 30 Alura",
+    "Active": false,
+    "CanonicalSlug": "luhrs-30-alura-downeast-profile-fishing-cruiser",
+    "CanonicalPath": "/models/luhrs-30-alura-downeast-profile-fishing-cruiser/",
+    "CanonicalURL": "https://b-atlas.org/models/luhrs-30-alura-downeast-profile-fishing-cruiser/",
+    "ImageURL": "images/luhr-30.jpg",
+    "FirstYear": 1987,
+    "LastYear": 1990,
+    "TotalBuilt": null,
+    "Designer": "Luhrs Design Group",
+    "HullType": "Semi-Displacement",
+    "Style": "Downeast Cruiser",
+    "Construction": "Fiberglass",
+    "KeelType": "Full Length",
+    "Fuel": "Gasoline",
+    "Cooling": "Raw Water",
+    "EngineConfiguration": "Single gasoline inboard",
+    "Propulsion": "Shaft",
+    "Flybridge": "No",
+    "AftCabin": false,
+    "SideDecks": "Medium",
+    "TypicalEngineID": "MerCruiser 5.7",
+    "FuelCapacity": 741.940709664,
+    "WaterCapacity": 143.845647792,
+    "HoldingCapacity": 56.78117676,
+    "Berths": 4,
+    "Cabins": 1,
+    "Heads": 1,
+    "Shower": false,
+    "Galley": false,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "No",
+    "GreatLoopSuitable": true,
+    "Trailerable": true,
+    "BoatFamily": "Downeast",
+    "HullBehaviour": "Semi-Displacement",
+    "Features": [
+      "Trailerable"
+    ],
+    "NormalizedFuel": "Gasoline",
+    "NormalizedPropulsion": "Sterndrive",
+    "NormalizedHullForm": "Semi-Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Downeast",
+    "EngineCount": 1,
+    "RarityScore": null,
+    "RarityLabel": "",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "BoatFamilyCode": "boat_family.downeast",
+    "HullBehaviourCode": "hull_behaviour.semi_displacement",
+    "FuelCode": "fuel.gasoline",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "LOA": 9.144,
+    "LWL": 8.5344,
+    "Beam": 3.1242,
+    "Draft": 0.889,
+    "Displacement": 3538,
+    "Headroom": 1.9304,
+    "EnginePowerPerEngine": 201.34,
+    "KeelConfigurationCode": "keel.full_long",
+    "RunningGearProtectionCode": "running_gear.keel_protected",
+    "ShowerTypeCode": "shower.wet_head",
+    "FuelCapacityUnitStatus": "canonical_litres",
+    "WaterCapacityUnitStatus": "canonical_litres",
+    "HoldingCapacityUnitStatus": "canonical_litres",
+    "AirDraft": 3.3528000000000002,
+    "FuelCapacityGal": 196,
+    "WaterCapacityGal": 38,
+    "HoldingCapacityGal": 15,
+    "StyleCode": "Downeast",
+    "CoolingCode": "cooling.raw_water",
+    "FlybridgeCode": "availability.no",
+    "SideDecksCode": "side_decks.moderate",
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "Strengths": [
+      "Good accommodation relative to purchase price",
+      "Twin-engine maneuverability",
+      "Established production-boat service familiarity"
+    ],
+    "Weaknesses": "Gas engines reduce range.",
+    "CommonProblems": "Transom rot and wiring issues.",
+    "TypicalMission": "Coastal cruising and inland passages.",
+    "AvoidIf": [
+      "You require offshore passagemaking capability",
+      "You want minimal systems or single-diesel economy",
+      "You cannot accommodate model-specific beam or air draft"
+    ],
+    "Overview": "The Luhrs 30 Alura is a production coastal cruiser emphasizing interior volume, straightforward twin-engine propulsion and accessible used-market pricing. Layout and machinery vary by model, so individual configuration and condition remain important purchase factors.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented accommodation and enclosed living spaces support weekend or regional couple cruising."
+      },
+      "SoloHandling": {
+        "Assessment": "Mixed",
+        "Summary": "Twin engines can assist close-quarters maneuvering, but size, windage and multi-level access increase workload."
+      },
+      "InlandWaterways": {
+        "Assessment": "Mixed",
+        "Summary": "Comfortable for inland cruising, but beam, air draft and fuel consumption must be checked against route and marina constraints."
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "These are coastal production cruisers; actual capability depends on generation, loading, machinery, weather and individual condition."
+      }
+    },
+    "TradeOffs": [
+      "Operating cost reflects twin-engine planing performance",
+      "Model-year changes can materially alter layout and systems",
+      "Older examples require close survey attention to structure, tanks, wiring and machinery"
+    ],
+    "BestFor": [
+      "Inland and coastal cruising",
+      "Buyers prioritizing space and value",
+      "Owners comfortable maintaining older production systems"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Verify moisture around deck hardware, windows, hatches and rail bases",
+      "Inspect fuel, water and waste tanks plus hoses and fittings",
+      "Inspect engines, transmissions or sterndrives, exhaust and cooling systems",
+      "Review AC/DC wiring, shore-power equipment and documented electrical modifications",
+      "Confirm steering, trim-tab and generator operation where fitted"
+    ],
+    "BuyerQuestions": [
+      "What repair or survey history is available for moisture around deck hardware, windows, hatches and rail bases?",
+      "What repair or survey history is available for fuel, water and waste tanks plus hoses and fittings?",
+      "What repair or survey history is available for engines, transmissions or sterndrives, exhaust and cooling systems?",
+      "What repair or survey history is available for ac/dc wiring, shore-power equipment and documented electrical modifications?",
+      "What repair or survey history is available for steering, trim-tab and generator operation where fitted?"
+    ],
+    "OwnerActions": [
+      "Keep deck, window and hardware penetrations sealed",
+      "Maintain propulsion, cooling, exhaust, steering and electrical systems to documented intervals",
+      "Document structural, tank, electrical and machinery repairs for future survey and resale"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "1988 keel revision",
+        "Description": "Keel design was revised in 1988 to reduce vibration.",
+        "AffectedYears": "1988 onward",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/luhrs/30-alura-1987-90"
+        ],
+        "Confidence": "Moderate"
+      }
+    ],
+    "ModelCharacter": "A full-keel semi-displacement fishing/weekend cruiser with distinctive Downeast styling, enormous 110-square-foot cockpit and surprisingly complete four-berth cabin. It combines a single gasoline inboard with 14–15-knot cruise and unusually secure working decks.",
+    "DesignLineage": [
+      "Produced from 1987–1990.",
+      "The Alura 30 was one of Luhrs' more cruising-oriented models rather than a conventional convertible sportfisher.",
+      "The keel was redesigned in 1988 specifically to reduce vibration problems.",
+      "The larger Alura 35 shared the same broad multipurpose fishing/cruising concept but was a separate hull."
+    ],
+    "OwnershipCharacter": "One inboard and full keel are mechanically straightforward, although gasoline fuel burn is substantial relative to a diesel trawler. The 1988 keel revision makes year important; steering linkage, shaft alignment, fuel tanks and cockpit structure should be checked.",
+    "DateCreated": "2026-07-18",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "B-Atlas Phase 8C-15 Production Motoryacht/Cruiser Research",
+    "Revision": 2,
+    "DataConfidence": "High",
+    "ResearchStatus": "Reviewed",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "LUHR-30"
+            ],
+            "Years": {
+              "From": 1987,
+              "To": 1990
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/luhrs/30-alura-1987-90"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Model identity and representative specifications checked against model-guide or catalog evidence."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "LUHR-30"
+            ],
+            "Years": {
+              "From": 1987,
+              "To": 1990
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/luhrs/30-alura-1987-90"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance derives from documented configuration, propulsion and accommodation."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "General age-related guidance",
+            "Models": [
+              "LUHR-30"
+            ],
+            "Years": {
+              "From": 1987,
+              "To": 1990
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/luhrs/30-alura-1987-90"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance is age/configuration based and is not a claim of a model-wide defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "ResearchNotes": "Batch 32 specialist-tail research. Identity, lineage and specifications normalized from model-specific builder, owner-archive and Powerboat Guide evidence; unsupported details remain unknown.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated"
+  },
+  {
+    "BoatModelID": "MNSH-30-PI",
+    "ManufacturerID": "MAINSHIP",
+    "Manufacturer": "Mainship",
+    "Model": "30",
+    "Variant": "Pilot",
+    "Nickname": "Mainship 30 Pilot",
+    "Active": false,
+    "CanonicalSlug": "mainship-30-pilot",
+    "CanonicalPath": "/models/mainship-30-pilot/",
+    "CanonicalURL": "https://b-atlas.org/models/mainship-30-pilot/",
+    "ImageURL": "images/mnsh-30-pi.jpg",
+    "FirstYear": 1998,
+    "LastYear": 2008,
+    "TotalBuilt": 550,
+    "Designer": "Mainship Design",
+    "HullType": "Semi-Displacement",
+    "Style": "Downeast Express Cruiser",
+    "Construction": "Solid fiberglass hull with cored deck structures",
+    "KeelType": "Propeller-protecting skeg; 2003 Series II uses shortened keel and propeller tunnel",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Single inboard diesel",
+    "Propulsion": "Shaft",
+    "Flybridge": "No",
+    "AftCabin": false,
+    "SideDecks": "Moderate",
+    "TypicalEngineID": "Yanmar 4LHA",
+    "FuelCapacity": 662.4471,
+    "WaterCapacity": 151.4165,
+    "HoldingCapacity": 49.2104,
+    "Berths": 4,
+    "Cabins": 1,
+    "Heads": 1,
+    "Shower": "Good-sized enclosed head; shower arrangement should be confirmed on the individual boat",
+    "Galley": "Compact cabin galley; layout and finish changed with the 2003 Series II interior",
+    "CoastalRating": "Yes",
+    "OffshoreRating": "No",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "BoatFamily": "Downeast",
+    "HullBehaviour": "Semi-Displacement",
+    "Features": [],
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Semi-Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Downeast",
+    "HullLength_ft": 30,
+    "EngineCount": 1,
+    "DisplacementLb": 10000,
+    "FuelCapacityGal": 175,
+    "WaterCapacityGal": 40,
+    "NormalizedHullType": "Semi-Displacement",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "FuelCode": "fuel.diesel",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "BoatFamilyCode": "boat_family.downeast",
+    "LOA": 10.083800000000002,
+    "Beam": 3.1242,
+    "Displacement": 4535.9,
+    "HullBehaviourCode": "hull_behaviour.semi_displacement",
+    "KeelConfigurationCode": "keel.partial_skeg",
+    "RunningGearProtectionCode": "running_gear.skeg_protected",
+    "ShowerTypeCode": "shower.wet_head",
+    "FlybridgeCode": "availability.no",
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "Draft": 0.89,
+    "AirDraft": 3.5,
+    "StyleCode": "Downeast",
+    "CoolingCode": "cooling.fresh_water",
+    "SideDecksCode": "side_decks.moderate",
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "LWL": 9.144,
+    "Strengths": [
+      "Compact beam and low bridge clearance",
+      "Large cockpit for day use, fishing or entertaining",
+      "Single-diesel shaft simplicity on most examples",
+      "Can cruise efficiently at displacement speed or run faster when needed"
+    ],
+    "Weaknesses": "Modest interior volume and privacy, basic production finish, and material Series I versus Series II differences that must be confirmed by year.",
+    "CommonProblems": "Inspect moisture around cockpit and bridge-deck penetrations, windshield and hatch leaks, exhaust and raw-water cooling systems, shaft alignment, rudder and steering gear, fuel-system condition and evidence of poorly executed repowers or accessory installations.",
+    "TypicalMission": "Day boating, fishing, diving and couple weekend coastal cruising with moderate-speed capability.",
+    "AvoidIf": [
+      "You require two private cabins",
+      "You need a fully enclosed all-weather salon",
+      "You want full-displacement motion and operating speeds"
+    ],
+    "Overview": "The Mainship 30 Pilot is a compact Downeast-style express cruiser with a semi-displacement hull, a large cockpit and one-cabin accommodation below. Most examples use a single diesel shaft drive, with original and Series II hull and interior changes during production. It combines moderate planing capability with economical operation at reduced speeds.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "One-cabin accommodation, enclosed head and a large cockpit suit short- to medium-duration cruising for two.",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/mainship/30-pilot-1998-2008"
+        ]
+      },
+      "SoloHandling": {
+        "Assessment": "Good",
+        "Summary": "Compact dimensions and single-engine simplicity support solo use, although visibility and docking aids vary by version.",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/mainship/30-pilot-1998-2008"
+        ]
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "Moderate beam and low clearance suit many inland routes; verify draft because the Series II hull differs.",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/mainship/30-pilot-1998-2008"
+        ]
+      },
+      "GuestAccommodation": {
+        "Assessment": "Limited",
+        "Summary": "Additional berths are possible, but privacy and storage are limited.",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/mainship/30-pilot-1998-2008"
+        ]
+      }
+    },
+    "TradeOffs": [
+      "Limited interior volume and guest privacy",
+      "Engine access and cabin arrangement vary by version",
+      "Higher-speed operation increases fuel use substantially",
+      "Open or semi-enclosed helm arrangements offer less weather protection than a trawler salon"
+    ],
+    "BestFor": [
+      "Couples wanting a compact Downeast-style cruiser",
+      "Owners combining day use with short coastal trips",
+      "Buyers needing lower air draft than a flybridge trawler"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Confirm whether the boat is the original hull or Series II and verify actual draft",
+      "Inspect deck and windshield bedding for moisture intrusion",
+      "Inspect fuel tank, exhaust, shaft, rudder and engine mounts",
+      "Confirm cockpit drainage and access to machinery and steering"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for confirm whether the boat is the original hull or Series II and verify actual draft?",
+      "What inspection, repair or service history is available for inspect deck and windshield bedding for moisture intrusion?",
+      "What inspection, repair or service history is available for inspect fuel tank, exhaust, shaft, rudder and engine mounts?",
+      "What inspection, repair or service history is available for confirm cockpit drainage and access to machinery and steering?"
+    ],
+    "OwnerActions": [
+      "Maintain windshield, deck-hardware and cockpit-drain sealing",
+      "Preserve service access around the single diesel, shaft and fuel system"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "Original and Series II hulls",
+        "Description": "The Series II used a shallower-draft hull and revised arrangements; draft and interior details must be verified by year.",
+        "AffectedYears": "Production change during 1998–2008",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/mainship/30-pilot-1998-2008"
+        ],
+        "Confidence": "High"
+      },
+      {
+        "Name": "Pilot and Sedan arrangements",
+        "Description": "Open Pilot and more enclosed Sedan versions materially change weather protection and helm-deck use.",
+        "AffectedYears": null,
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/mainship/30-pilot-1998-2008"
+        ],
+        "Confidence": "Moderate"
+      }
+    ],
+    "ModelCharacter": "A compact Downeast-style diesel express built around a large cockpit, low air draft and useful cruising speed rather than trawler-style interior volume. It is a weekend cruiser that can fish, dive or travel efficiently without the height and windage of a flybridge boat.",
+    "DesignLineage": [
+      "Introduced in 1998 as Mainship moved its single-diesel efficiency formula into a Downeast-style express cruiser.",
+      "A hardtop Pilot Sedan sister model followed in 1999 on the same basic platform.",
+      "The 2003 Series II update revised the cabin, shortened the keel, added a propeller tunnel and typically used higher-output Yanmar power.",
+      "The larger Mainship 34 Pilot was an enlarged derivative rather than the same hull."
+    ],
+    "OwnershipCharacter": "Relatively straightforward for a diesel cruiser: one engine, direct shaft drive, good cockpit engine access and modest hotel systems. The main trade is limited cabin/storage volume for extended living, while Series I versus Series II hull details matter when comparing examples.",
+    "DateCreated": "2026-07-13",
+    "LastUpdated": "2026-09-12",
+    "ReviewedBy": "B-Atlas Mainship Family Research",
+    "Revision": "6.251",
+    "ResearchStatus": "Reviewed",
+    "ResearchNotes": "Produced 1998–2008. Original hulls use a full skeg and published draft of about 2 ft 11 in. The 2003 Series II introduced a shortened keel, propeller tunnel, five-blade propeller, revised cherry interior and higher-power engine packages; published Series II draft is about 2 ft 3 in.\n\n[Phase 8A legacy structured context]\n{\n  \"marketAvailability\": \"Common in eastern North American used markets.\",\n  \"partsAvailability\": \"Generally good for production hardware and common diesel packages; exact support depends on year and engine.\",\n  \"commonUpgrades\": [\n    \"Updated electronics\",\n    \"Improved helm seating and canvas\",\n    \"Electrical and charging upgrades\"\n  ],\n  \"comparableModels\": [\n    \"Albin 28 Tournament Express\",\n    \"Camano Troll 31\",\n    \"Rosborough RF-28\"\n  ],\n  \"ownershipEase\": \"Moderate\",\n  \"maintenanceEase\": \"Moderate\"\n}\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "DataConfidence": "Moderate",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndProduction",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "MNSH-30-PI"
+            ],
+            "Years": {
+              "From": null,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/mainship/30-pilot-1998-2008"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Identity, production and representative specifications supported by model references."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "MNSH-30-PI"
+            ],
+            "Years": {
+              "From": null,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/mainship/30-pilot-1998-2008"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source",
+            "Marketplace observation"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Interpretive guidance derived from documented configuration and representative specifications."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "MNSH-30-PI"
+            ],
+            "Years": {
+              "From": null,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/mainship/30-pilot-1998-2008"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance reflects construction and systems; individual applicability must be confirmed."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Specifications and equipment must be confirmed for the individual hull and production year",
+        "Legacy CommonProblems were not promoted unless model-specific evidence met the approved threshold"
+      ]
+    },
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "PlanCriticalStatus": {
+      "Draft": "researched_unknown"
+    },
+    "SpecificationConfidence": {
+      "AirDraft": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [],
+        "Note": "B-Atlas working estimate derived from nearest comparable models with similar style, size and flybridge configuration. Verify actual mast/radar/antenna clearance before route planning. Comparable model IDs: BKCV-30, BKCV-33, LUHR-30, BKCV-29, BKCV-32, CPDR-28-OF, BKCV-34"
+      },
+      "LWL": {
+        "Level": "Low",
+        "Status": "restored_legacy_working_value",
+        "EvidenceRefs": [],
+        "Note": "Working LWL restored from the pre-v6.81 archived B-Atlas value (30 ft). Retained as a low-confidence community-verifiable value rather than leaving a basic performance input blank."
+      }
+    }
+  },
+  {
+    "BoatModelID": "MNSH-34-MK2",
+    "ManufacturerID": "MAINSHIP",
+    "Manufacturer": "Mainship",
+    "Model": "34",
+    "Variant": "II",
+    "Nickname": "Mainship 34 MKII",
+    "Active": true,
+    "ModelSeries": "Mainship 34 early generation",
+    "ModelGeneration": "Mk II",
+    "ModelAliases": [
+      "34 MKII"
+    ],
+    "CanonicalSlug": "mainship-34-mkii",
+    "CanonicalPath": "/models/mainship-34-mkii/",
+    "CanonicalURL": "https://b-atlas.org/models/mainship-34-mkii/",
+    "ModelIdentityFamilyID": "MNSH-34",
+    "ImageURL": "images/mnsh-34-mk2.jpg",
+    "FirstYear": 1979,
+    "LastYear": 1982,
+    "TotalBuilt": null,
+    "Designer": "John Cherubini",
+    "HullType": "Semi-Displacement",
+    "Style": "Flybridge Sedan Trawler",
+    "Construction": "Solid fiberglass hull with cored deck structures",
+    "KeelType": "Full-length keel with protected running gear",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Single inboard diesel",
+    "Propulsion": "Shaft",
+    "Flybridge": "Yes",
+    "AftCabin": false,
+    "SideDecks": "Wide",
+    "TypicalEngineID": "Perkins 6.354",
+    "FuelCapacity": 832.7906,
+    "WaterCapacity": 189.2706,
+    "HoldingCapacity": null,
+    "Berths": 4,
+    "Cabins": 1,
+    "Heads": 1,
+    "Shower": "Separate stall shower",
+    "Galley": "Salon-level galley",
+    "CoastalRating": "Yes",
+    "OffshoreRating": "No",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "BoatFamily": "Trawler",
+    "Configuration": "Cockpit Trawler",
+    "HullBehaviour": "Semi-Displacement",
+    "Features": [
+      "Flybridge",
+      "Wide Side Decks",
+      "Lower Helm",
+      "Single Shaft Drive",
+      "Separate Shower",
+      "Large Cockpit"
+    ],
+    "SleepingArrangement": "Forward V-berth with convertible salon accommodation",
+    "EvolutionSequence": 2,
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "Normal
