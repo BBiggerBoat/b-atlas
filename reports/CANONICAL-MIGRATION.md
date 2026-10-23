@@ -19,7 +19,7 @@ The migration preserves all 995 model IDs and every specification, guidance valu
 
 Legacy labels and imperial measurements remain in provenance as source representations. Their unit uncertainties are preserved; they are not promoted to competing current specifications. Canonical SI/code fields retain precedence. Production phases own only scoped overrides; registry entries retain identity decisions; aliases, resources, taxonomies, evidence assertions and community proposals retain their existing scopes. Unknowns never become inferred facts.
 
-The old knowledge-card database is removed from runtime. Cards are projected in memory from the public model view and the authoritative resource, listing, annotation and coverage datasets. Historical cards and the exact original model/registry files are preserved with SHA-256 checksums in `archive/canonical-migration-baseline/`.
+The old knowledge-card database is removed from runtime. Cards are projected in memory from the public model view and the authoritative resource, listing, annotation and coverage datasets. Historical cards and the exact original model/registry files are preserved as exact bytes with SHA-256 checksums in the Phase 5 small-piece archive `archive/phase5-fixtures/` (formerly `archive/canonical-migration-baseline/`).
 
 ## Application and deployment changes
 

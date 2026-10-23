@@ -1,0 +1,3417 @@
+rritory. Current owner resources and shared corporate support with Sabre are strong positives.",
+    "CharacterConfidence": "High",
+    "DisplacementLb": 24300,
+    "FuelCapacityGal": 300,
+    "WaterCapacityGal": 120,
+    "NormalizedHullType": "Modified-V",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "RarityConfidence": "Not rated",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "PriceConfidence": "Not rated",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "HullBehaviourCode": "hull_behaviour.planing",
+    "BoatFamilyCode": "boat_family.downeast",
+    "propulsion": "mechanical_propulsion.shaft",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "FuelCode": "fuel.diesel",
+    "LOA": 12.8016,
+    "Beam": 4.0386,
+    "Draft": 1.0922,
+    "Displacement": 11022.3,
+    "AirDraft": 3.81,
+    "Headroom": 1.9558,
+    "KeelConfigurationCode": "keel.pocket",
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "CanonicalSlug": "back-cove-37-downeast-cruiser",
+    "CanonicalPath": "/models/back-cove-37-downeast-cruiser/",
+    "CanonicalURL": "https://b-atlas.org/models/back-cove-37-downeast-cruiser/",
+    "StyleCode": "Downeast Cruiser",
+    "CoolingCode": "cooling.fresh_water",
+    "FlybridgeCode": "availability.no",
+    "SideDecksCode": "side_decks.moderate",
+    "DisplacementCruiseSpeed": 8,
+    "DisplacementCruiseFuelBurn": 6.057,
+    "PlaningCruiseSpeed": 23.5,
+    "PlaningCruiseFuelBurn": 76.087,
+    "LWL": 10.9118,
+    "SpecificationConfidence": {
+      "LWL": {
+        "Level": "Low",
+        "Status": "restored_legacy_working_value",
+        "EvidenceRefs": [],
+        "Note": "Working LWL restored from the pre-v6.81 archived B-Atlas value (35.8 ft). Retained as a low-confidence community-verifiable value rather than leaving a basic performance input blank."
+      },
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      },
+      "DisplacementCruiseSpeed": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://powerandmotoryacht.com/boats/boat-tests/back-cove-37/"
+        ],
+        "Note": "Power & Motoryacht instrumented 600-hp Cummins test: 8.0 kn at 1.6 US gal/h (1000 rpm) and 23.5 kn at 20.1 US gal/h (2600 rpm)."
+      },
+      "DisplacementCruiseFuelBurn": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://powerandmotoryacht.com/boats/boat-tests/back-cove-37/"
+        ],
+        "Note": "Power & Motoryacht instrumented 600-hp Cummins test: 8.0 kn at 1.6 US gal/h (1000 rpm) and 23.5 kn at 20.1 US gal/h (2600 rpm)."
+      },
+      "PlaningCruiseSpeed": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://powerandmotoryacht.com/boats/boat-tests/back-cove-37/"
+        ],
+        "Note": "Power & Motoryacht instrumented 600-hp Cummins test: 8.0 kn at 1.6 US gal/h (1000 rpm) and 23.5 kn at 20.1 US gal/h (2600 rpm)."
+      },
+      "PlaningCruiseFuelBurn": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://powerandmotoryacht.com/boats/boat-tests/back-cove-37/"
+        ],
+        "Note": "Power & Motoryacht instrumented 600-hp Cummins test: 8.0 kn at 1.6 US gal/h (1000 rpm) and 23.5 kn at 20.1 US gal/h (2600 rpm)."
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from canonical keel geometry (keel.pocket); shaft/propeller is protected by the keel envelope to a meaningful degree."
+      }
+    },
+    "ShowerTypeCode": "shower.none",
+    "RunningGearProtectionCode": "running_gear.keel_protected"
+  },
+  {
+    "ManufacturerID": "BACKCOVE",
+    "Manufacturer": "Back Cove",
+    "Model": "39O",
+    "Variant": "Outboard Salon Cruiser",
+    "Nickname": "Back Cove 39O",
+    "ImageURL": "images/bkcv-39o.jpg",
+    "Active": true,
+    "FirstYear": 2020,
+    "LastYear": null,
+    "TotalBuilt": null,
+    "Designer": "Back Cove Design Team",
+    "HullType": "Planing",
+    "Style": "Outboard Cruiser",
+    "Construction": "Fiberglass",
+    "KeelType": "Modified V",
+    "Fuel": "Gasoline",
+    "Cooling": "Raw Water",
+    "EngineConfiguration": "Triple gasoline outboards standard; twin 600 hp outboards also offered",
+    "Propulsion": "Outboard",
+    "Flybridge": "No",
+    "AftCabin": false,
+    "SideDecks": "Wide",
+    "TypicalEngineID": "Yamaha 300 Triple",
+    "FuelCapacity": 1968.4141,
+    "WaterCapacity": 367.1849,
+    "HoldingCapacity": 158.9873,
+    "Berths": 4,
+    "Cabins": 2,
+    "Heads": 1,
+    "Shower": false,
+    "Galley": false,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "Limited",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "Strengths": [
+      "Maine-built Downeast design with practical helm and cockpit circulation",
+      "Good visibility and side-deck access for couple cruising",
+      "Propulsion package emphasizes efficient coastal cruising for its size"
+    ],
+    "Weaknesses": "High fuel burn, outboard maintenance complexity.",
+    "CommonProblems": "",
+    "TypicalMission": "Day trips, weekend cruising and protected coastal travel, with longer trips dependent on layout, range and condition.",
+    "AvoidIf": [
+      "You require full-displacement economy at 6–8 knots",
+      "You need extensive multi-cabin liveaboard volume in a short hull",
+      "You prefer a flybridge or aft-cabin layout"
+    ],
+    "DateCreated": " helm electronics failures.",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "B-Atlas Phase 8C-12 Downeast / Lobster-Style Research",
+    "Revision": 2,
+    "BoatModelID": "BKCV-39O",
+    "BoatFamily": "Cruiser",
+    "Configuration": "Aft Cabin Cruiser",
+    "HullBehaviour": "Planing",
+    "Features": [
+      "Flybridge",
+      "Aft Cabin",
+      "Wide Side Decks"
+    ],
+    "NormalizedFuel": "Gasoline",
+    "NormalizedPropulsion": "Outboard",
+    "NormalizedHullForm": "Planing",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Downeast Cruiser",
+    "DataConfidence": "Moderate",
+    "ResearchStatus": "Reviewed",
+    "Overview": "The Back Cove 39O is a Maine-built Downeast cruiser emphasizing clean sightlines, practical cockpit-to-helm flow and efficient propulsion. The model combines lobster-boat-influenced styling with contemporary recreational construction and accommodations.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented layout and protected helm arrangement are practical for a cruising couple, with accommodation depth varying by model."
+      },
+      "SoloHandling": {
+        "Assessment": "Mixed",
+        "Summary": "Visibility and cockpit access are generally strong; docking burden depends on size, engine arrangement and fitted thrusters."
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "Shallow-to-moderate draft and protected helm layouts suit many inland routes, but beam and air draft remain route-specific."
+      },
+      "ExposedWater": {
+        "Assessment": "Good",
+        "Summary": "Downeast/lobster-derived hull forms are intended for coastal conditions, but individual hull condition, loading and configuration remain decisive."
+      }
+    },
+    "TradeOffs": [
+      "Performance-oriented Downeast cruisers use more fuel than displacement trawlers",
+      "Accommodation volume is concentrated forward rather than in multiple private cabins on smaller models",
+      "Mechanical access and system complexity increase materially with size"
+    ],
+    "BestFor": [
+      "Couples wanting traditional Downeast styling with modern systems",
+      "Coastal and inland cruising at moderate-to-fast cruising speeds",
+      "Owners who value protected helm visibility and straightforward deck circulation"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Inspect hull/deck coring around hardware and penetrations",
+      "Verify engine, cooling, exhaust and drive-system service history",
+      "Inspect hydraulic/electric helm-deck mechanisms where fitted",
+      "Confirm air draft, mast and antenna configuration",
+      "Verify tank capacities and propulsion package for the exact model year"
+    ],
+    "BuyerQuestions": [
+      "What service, inspection or repair history is available for inspect hull/deck coring around hardware and penetrations?",
+      "What service, inspection or repair history is available for verify engine, cooling, exhaust and drive-system service history?",
+      "What service, inspection or repair history is available for inspect hydraulic/electric helm-deck mechanisms where fitted?",
+      "What service, inspection or repair history is available for confirm air draft, mast and antenna configuration?",
+      "What service, inspection or repair history is available for verify tank capacities and propulsion package for the exact model year?"
+    ],
+    "OwnerActions": [
+      "Keep deck, window, hatch and hardware penetrations sealed",
+      "Maintain engine cooling, exhaust, fuel, steering and drive systems to documented intervals",
+      "Document structural, machinery and system modifications for future survey and resale"
+    ],
+    "ModelVariations": [],
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "BKCV-39O"
+            ],
+            "Years": {
+              "From": 2020,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.backcoveyachts.com/owners/heritage-models",
+            "https://www.backcoveyachts.com/motor-yachts/back-cove-39o",
+            "https://www.backcoveyachts.com/motor-yachts/back-cove-39o"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Representative model identity and principal specifications are based on model-specific sources where available."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "BKCV-39O"
+            ],
+            "Years": {
+              "From": 2020,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.backcoveyachts.com/owners/heritage-models",
+            "https://www.backcoveyachts.com/motor-yachts/back-cove-39o",
+            "https://www.backcoveyachts.com/motor-yachts/back-cove-39o"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Decision guidance is derived from documented hull, propulsion, layout and intended use rather than advertising claims."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "BKCV-39O"
+            ],
+            "Years": {
+              "From": 2020,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.backcoveyachts.com/owners/heritage-models",
+            "https://www.backcoveyachts.com/motor-yachts/back-cove-39o",
+            "https://www.backcoveyachts.com/motor-yachts/back-cove-39o"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection items are configuration and age risks, not assertions that every hull suffers a defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "EngineCount": 3,
+    "ResearchNotes": "Current factory specs confirm 43'6\" overall, 13'6\" beam, 2'4\" draft, 520 gal gasoline, 97 gal water and triple 400 or twin 600 outboard configurations. EngineCount=3 represents the standard triple-400 architecture; listings with twin 600s must override at listing level.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.\n\nCruising Performance Research Wave 4 v7.03 (2026-09-14).",
+    "ModelCharacter": "Back Cove's large modern outboard cruiser, using a proprietary planing hull and either triple 400-hp or twin 600-hp gasoline outboards to deliver 35–40-knot-class performance while preserving the brand's enclosed Maine-style salon and two-cabin cruising accommodations.",
+    "DesignLineage": [
+      "The 39O was announced for a late-summer 2020 launch as Back Cove's second outboard model.",
+      "It follows the earlier 34O but is a substantially larger two-cabin salon cruiser.",
+      "The 39O abandons the traditional single-diesel shaft-drive architecture of classic Back Coves in favor of high-output outboards and a dedicated planing hull.",
+      "Current factory offerings include triple Mercury V10 400s or twin Mercury V12 600s."
+    ],
+    "OwnershipCharacter": "Easy engine replacement/access compared with inboards, but three large gasoline outboards, 520 gallons of fuel, joystick systems and sophisticated electronics make this one of the most complex and expensive Back Coves to operate.",
+    "CharacterConfidence": "High",
+    "DisplacementLb": 22000,
+    "FuelCapacityGal": 520,
+    "WaterCapacityGal": 97,
+    "NormalizedHullType": "Planing",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "RarityConfidence": "Not rated",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "PriceConfidence": "Not rated",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "HullBehaviourCode": "hull_behaviour.planing",
+    "BoatFamilyCode": "boat_family.express_cruiser",
+    "LOA": 13.2588,
+    "Beam": 4.1148,
+    "Draft": 0.7112,
+    "FuelCode": "fuel.gasoline",
+    "MechanicalPropulsionCode": "mechanical_propulsion.outboard",
+    "EnginePowerPerEngine": 298.28,
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "RudderTypeCode": "rudder.none_external_drive",
+    "AirDraft": 3.8000000000000003,
+    "CanonicalSlug": "back-cove-39o-outboard-salon-cruiser",
+    "CanonicalPath": "/models/back-cove-39o-outboard-salon-cruiser/",
+    "CanonicalURL": "https://b-atlas.org/models/back-cove-39o-outboard-salon-cruiser/",
+    "StyleCode": "Downeast Cruiser",
+    "CoolingCode": "cooling.raw_water",
+    "FlybridgeCode": "availability.no",
+    "SideDecksCode": "side_decks.wide",
+    "SpecificationConfidence": {
+      "AirDraft": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [],
+        "Note": "B-Atlas working estimate derived from nearest comparable models with similar style, size and flybridge configuration. Verify actual mast/radar/antenna clearance before route planning. Comparable model IDs: BKCV-37, SABR-38-SA, BKCV-41, BKCV-34, BKCV-32, BKCV-33, SABR-34-EX"
+      },
+      "Displacement": {
+        "Level": "High",
+        "Status": "supported",
+        "EvidenceRefs": [
+          "https://bostonyacht.com/wp-content/uploads/2019/09/BackCove-39O-Brochure.pdf",
+          "https://www.backcoveyachts.com/motor-yachts/back-cove-39o"
+        ],
+        "Note": "Back Cove 39O brochure lists approximately 26,500 lb / 11.83 t full-load displacement."
+      },
+      "LWL": {
+        "Level": "Low",
+        "Status": "restored_legacy_working_value",
+        "EvidenceRefs": [],
+        "Note": "Working LWL restored from the pre-v6.81 archived B-Atlas value (38 ft). Retained as a low-confidence community-verifiable value rather than leaving a basic performance input blank."
+      },
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      },
+      "KeelConfigurationCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from unambiguous existing KeelType text."
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing propulsion/keel description; no new factual assertion introduced."
+      },
+      "DisplacementCruiseSpeed": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://backcoveyachts25.s3.amazonaws.com/backcoveyachts/wp-content/uploads/2025/07/18175545/Performance-Data-BC39O-K030-Mercury-400hp-V10.pdf"
+        ],
+        "Note": "Back Cove factory test, triple Mercury V10 400: 9.6 kn at 2000 rpm burning 14.2 US gal/h total. Stored as lower-speed cruise point for this tested configuration."
+      },
+      "DisplacementCruiseFuelBurn": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://backcoveyachts25.s3.amazonaws.com/backcoveyachts/wp-content/uploads/2025/07/18175545/Performance-Data-BC39O-K030-Mercury-400hp-V10.pdf"
+        ],
+        "Note": "Back Cove factory test, triple Mercury V10 400: 9.6 kn at 2000 rpm burning 14.2 US gal/h total. Stored as lower-speed cruise point for this tested configuration."
+      },
+      "PlaningCruiseSpeed": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://backcoveyachts25.s3.amazonaws.com/backcoveyachts/wp-content/uploads/2025/07/18175545/Performance-Data-BC39O-K030-Mercury-400hp-V10.pdf"
+        ],
+        "Note": "Same factory test: 27.5 kn at 4000 rpm burning 38.3 US gal/h total, a representative efficient planing-cruise point."
+      },
+      "PlaningCruiseFuelBurn": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://backcoveyachts25.s3.amazonaws.com/backcoveyachts/wp-content/uploads/2025/07/18175545/Performance-Data-BC39O-K030-Mercury-400hp-V10.pdf"
+        ],
+        "Note": "Same factory test: 27.5 kn at 4000 rpm burning 38.3 US gal/h total, a representative efficient planing-cruise point."
+      },
+      "EnginePowerPerEngine": {
+        "Level": "High",
+        "Status": "supported",
+        "EvidenceRefs": [
+          "https://backcoveyachts25.s3.amazonaws.com/backcoveyachts/wp-content/uploads/2025/07/18175545/Performance-Data-BC39O-K030-Mercury-400hp-V10.pdf"
+        ],
+        "Note": "Factory test uses triple Mercury V10 Verado 400-hp outboards. Twin V12 600-hp package is also offered."
+      }
+    },
+    "DisplacementCruiseSpeed": 9.6,
+    "DisplacementCruiseFuelBurn": 53.753,
+    "PlaningCruiseSpeed": 27.5,
+    "PlaningCruiseFuelBurn": 144.981,
+    "Displacement": 11830,
+    "LWL": 11.5824,
+    "ShowerTypeCode": "shower.none",
+    "KeelConfigurationCode": "keel.no_keel",
+    "RunningGearProtectionCode": "running_gear.exposed"
+  },
+  {
+    "ManufacturerID": "BACKCOVE",
+    "Manufacturer": "Back Cove",
+    "Model": "41",
+    "Variant": "Flagship Downeast Cruiser",
+    "Nickname": "Back Cove 41",
+    "ImageURL": "images/bkcv-41.jpg",
+    "Active": true,
+    "FirstYear": 2014,
+    "LastYear": 2024,
+    "TotalBuilt": null,
+    "Designer": "Back Cove Design Team",
+    "HullType": "Semi-Displacement",
+    "Style": "Luxury Downeast Cruiser",
+    "Construction": "Fiberglass",
+    "KeelType": "Full Length",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Twin diesel inboards",
+    "Propulsion": "Shaft",
+    "Flybridge": "No",
+    "AftCabin": false,
+    "SideDecks": "Wide",
+    "TypicalEngineID": "Volvo D6",
+    "FuelCapacity": 1514.1647,
+    "WaterCapacity": 605.6659,
+    "HoldingCapacity": 208.1976,
+    "Berths": 6,
+    "Cabins": 2,
+    "Heads": 2,
+    "Shower": false,
+    "Galley": false,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "Yes",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "Strengths": [
+      "Maine-built Downeast design with practical helm and cockpit circulation",
+      "Good visibility and side-deck access for couple cruising",
+      "Propulsion package emphasizes efficient coastal cruising for its size"
+    ],
+    "Weaknesses": "Higher price and maintenance.",
+    "CommonProblems": "Deck core moisture and electronics failures.",
+    "TypicalMission": "Loop cruising and extended coastal passages.",
+    "AvoidIf": [
+      "You require full-displacement economy at 6–8 knots",
+      "You need extensive multi-cabin liveaboard volume in a short hull",
+      "You prefer a flybridge or aft-cabin layout"
+    ],
+    "DateCreated": "2026-07-18",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "B-Atlas Phase 8C-12 Downeast / Lobster-Style Research",
+    "Revision": 2,
+    "BoatModelID": "BKCV-41",
+    "BoatFamily": "Downeast",
+    "Configuration": "Aft Cabin Cruiser",
+    "HullBehaviour": "Semi-Displacement",
+    "Features": [
+      "Flybridge",
+      "Aft Cabin",
+      "Wide Side Decks"
+    ],
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Semi-Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Downeast Cruiser",
+    "DataConfidence": "Moderate",
+    "ResearchStatus": "Reviewed",
+    "Overview": "The Back Cove 41 is a Maine-built Downeast cruiser emphasizing clean sightlines, practical cockpit-to-helm flow and efficient propulsion. The model combines lobster-boat-influenced styling with contemporary recreational construction and accommodations.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented layout and protected helm arrangement are practical for a cruising couple, with accommodation depth varying by model."
+      },
+      "SoloHandling": {
+        "Assessment": "Mixed",
+        "Summary": "Visibility and cockpit access are generally strong; docking burden depends on size, engine arrangement and fitted thrusters."
+      },
+      "InlandWaterways": {
+        "Assessment": "Mixed",
+        "Summary": "Shallow-to-moderate draft and protected helm layouts suit many inland routes, but beam and air draft remain route-specific."
+      },
+      "ExposedWater": {
+        "Assessment": "Good",
+        "Summary": "Downeast/lobster-derived hull forms are intended for coastal conditions, but individual hull condition, loading and configuration remain decisive."
+      }
+    },
+    "TradeOffs": [
+      "Performance-oriented Downeast cruisers use more fuel than displacement trawlers",
+      "Accommodation volume is concentrated forward rather than in multiple private cabins on smaller models",
+      "Mechanical access and system complexity increase materially with size"
+    ],
+    "BestFor": [
+      "Couples wanting traditional Downeast styling with modern systems",
+      "Coastal and inland cruising at moderate-to-fast cruising speeds",
+      "Owners who value protected helm visibility and straightforward deck circulation"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Inspect hull/deck coring around hardware and penetrations",
+      "Verify engine, cooling, exhaust and drive-system service history",
+      "Inspect hydraulic/electric helm-deck mechanisms where fitted",
+      "Confirm air draft, mast and antenna configuration",
+      "Verify tank capacities and propulsion package for the exact model year"
+    ],
+    "BuyerQuestions": [
+      "What service, inspection or repair history is available for inspect hull/deck coring around hardware and penetrations?",
+      "What service, inspection or repair history is available for verify engine, cooling, exhaust and drive-system service history?",
+      "What service, inspection or repair history is available for inspect hydraulic/electric helm-deck mechanisms where fitted?",
+      "What service, inspection or repair history is available for confirm air draft, mast and antenna configuration?",
+      "What service, inspection or repair history is available for verify tank capacities and propulsion package for the exact model year?"
+    ],
+    "OwnerActions": [
+      "Keep deck, window, hatch and hardware penetrations sealed",
+      "Maintain engine cooling, exhaust, fuel, steering and drive systems to documented intervals",
+      "Document structural, machinery and system modifications for future survey and resale"
+    ],
+    "ModelVariations": [],
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "BKCV-41"
+            ],
+            "Years": {
+              "From": 2014,
+              "To": 2024
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.backcoveyachts.com/owners/heritage-models",
+            "https://www.backcoveyachts.com/motor-yachts/back-cove-39o",
+            "https://www.backcoveyachts.com/owners/heritage-models/back-cove-41"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Representative model identity and principal specifications are based on model-specific sources where available."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "BKCV-41"
+            ],
+            "Years": {
+              "From": 2014,
+              "To": 2024
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.backcoveyachts.com/owners/heritage-models",
+            "https://www.backcoveyachts.com/motor-yachts/back-cove-39o",
+            "https://www.backcoveyachts.com/owners/heritage-models/back-cove-41"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Decision guidance is derived from documented hull, propulsion, layout and intended use rather than advertising claims."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "BKCV-41"
+            ],
+            "Years": {
+              "From": 2014,
+              "To": 2024
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.backcoveyachts.com/owners/heritage-models",
+            "https://www.backcoveyachts.com/motor-yachts/back-cove-39o",
+            "https://www.backcoveyachts.com/owners/heritage-models/back-cove-41"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection items are configuration and age risks, not assertions that every hull suffers a defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "EngineCount": 1,
+    "ResearchNotes": "Major correction: prior record incorrectly listed twin diesel inboards. Period launch coverage identifies the Back Cove 41 as a single-engine yacht, consistent with the brand's design philosophy. Factory heritage specs give 46'1\" overall, 14' beam, 3'9\" draft, 400 gal fuel and 160 gal water. Hull #1 launched in early 2014.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "ModelCharacter": "The flagship of Back Cove's traditional diesel line, launched in 2014 with two staterooms, two heads, 14-foot beam and 400 gallons of fuel while still adhering to the brand's unusually simple single-diesel straight-shaft architecture.",
+    "DesignLineage": [
+      "Hull #1 of the Back Cove 41 launched in early 2014.",
+      "The 41 was conceived as the largest expression of Back Cove's single-engine Maine cruiser philosophy.",
+      "It expands the accommodation concept to two private cabins and two heads without adopting Sabre-style twin engines or pod drives.",
+      "The later 39O represents a separate outboard-performance branch, not a replacement lineage for the 41."
+    ],
+    "OwnershipCharacter": "Large-yacht domestic systems and 46-foot overall length create substantial dockage and service costs, but one main engine materially reduces propulsion maintenance versus similarly sized twin-diesel yachts. Generator, HVAC, bow/stern thrusters and hydraulic systems still matter.",
+    "CharacterConfidence": "High",
+    "DisplacementLb": 29500,
+    "FuelCapacityGal": 400,
+    "WaterCapacityGal": 160,
+    "NormalizedHullType": "Modified-V",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "RarityConfidence": "Not rated",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "PriceConfidence": "Not rated",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "HullBehaviourCode": "hull_behaviour.planing",
+    "BoatFamilyCode": "boat_family.downeast",
+    "propulsion": "mechanical_propulsion.shaft",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "FuelCode": "fuel.diesel",
+    "LOA": 14.0462,
+    "Beam": 4.2672,
+    "Draft": 1.143,
+    "AirDraft": 4.0132,
+    "Headroom": 1.9812,
+    "ShowerTypeCode": "shower.separate_stall",
+    "KeelConfigurationCode": "keel.full_long",
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "Displacement": 13381,
+    "CanonicalSlug": "back-cove-41-flagship-downeast-cruiser",
+    "CanonicalPath": "/models/back-cove-41-flagship-downeast-cruiser/",
+    "CanonicalURL": "https://b-atlas.org/models/back-cove-41-flagship-downeast-cruiser/",
+    "StyleCode": "Downeast Cruiser",
+    "CoolingCode": "cooling.fresh_water",
+    "FlybridgeCode": "availability.no",
+    "SideDecksCode": "side_decks.wide",
+    "DisplacementCruiseSpeed": 7.5,
+    "DisplacementCruiseFuelBurn": 5.678,
+    "PlaningCruiseSpeed": 20.8,
+    "PlaningCruiseFuelBurn": 76.844,
+    "LWL": 11.5824,
+    "SpecificationConfidence": {
+      "LWL": {
+        "Level": "Low",
+        "Status": "restored_legacy_working_value",
+        "EvidenceRefs": [],
+        "Note": "Working LWL restored from the pre-v6.81 archived B-Atlas value (38 ft). Retained as a low-confidence community-verifiable value rather than leaving a basic performance input blank."
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing propulsion/keel description; no new factual assertion introduced."
+      },
+      "DisplacementCruiseSpeed": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://powerandmotoryacht.com/boats/boat-tests/back-cove-41-2/"
+        ],
+        "Note": "Power & Motoryacht instrumented 600-hp Cummins test: 7.5 kn at 1.5 US gal/h (1000 rpm) and 20.8 kn at 20.3 US gal/h (2500 rpm)."
+      },
+      "DisplacementCruiseFuelBurn": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://powerandmotoryacht.com/boats/boat-tests/back-cove-41-2/"
+        ],
+        "Note": "Power & Motoryacht instrumented 600-hp Cummins test: 7.5 kn at 1.5 US gal/h (1000 rpm) and 20.8 kn at 20.3 US gal/h (2500 rpm)."
+      },
+      "PlaningCruiseSpeed": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://powerandmotoryacht.com/boats/boat-tests/back-cove-41-2/"
+        ],
+        "Note": "Power & Motoryacht instrumented 600-hp Cummins test: 7.5 kn at 1.5 US gal/h (1000 rpm) and 20.8 kn at 20.3 US gal/h (2500 rpm)."
+      },
+      "PlaningCruiseFuelBurn": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://powerandmotoryacht.com/boats/boat-tests/back-cove-41-2/"
+        ],
+        "Note": "Power & Motoryacht instrumented 600-hp Cummins test: 7.5 kn at 1.5 US gal/h (1000 rpm) and 20.8 kn at 20.3 US gal/h (2500 rpm)."
+      }
+    },
+    "RunningGearProtectionCode": "running_gear.keel_protected"
+  },
+  {
+    "ManufacturerID": "BAYLINER",
+    "Manufacturer": "Bayliner",
+    "Model": "2452 Ciera Express",
+    "Variant": "Hardtop Cruiser",
+    "Nickname": "Bayliner 2452 Ciera Express",
+    "ImageURL": "images/bayl-2452.jpg",
+    "Active": false,
+    "FirstYear": 1992,
+    "LastYear": 2003,
+    "TotalBuilt": null,
+    "Designer": "Bayliner Design Team",
+    "HullType": "Planing",
+    "Style": "Pilothouse Cruiser",
+    "Construction": "Fiberglass",
+    "KeelType": "Modified V",
+    "Fuel": "Gasoline",
+    "Cooling": "Raw Water",
+    "EngineConfiguration": "Single Inboard",
+    "Propulsion": "Stern Drive",
+    "Flybridge": "No",
+    "AftCabin": false,
+    "SideDecks": "Medium",
+    "TypicalEngineID": "MerCruiser 5.0",
+    "FuelCapacity": 295.2621,
+    "WaterCapacity": 75.7082,
+    "HoldingCapacity": 75.7082,
+    "Berths": 4,
+    "Cabins": 1,
+    "Heads": 1,
+    "Shower": false,
+    "Galley": false,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "No",
+    "GreatLoopSuitable": true,
+    "Trailerable": true,
+    "Strengths": [
+      "Hardtop provides useful weather protection",
+      "Trailer-friendly 8-foot-4-inch beam",
+      "Simple single-engine sterndrive package",
+      "Cabin includes galley, enclosed head and convertible sleeping space"
+    ],
+    "Weaknesses": "Lower build quality.",
+    "CommonProblems": "Transom rot and wiring issues.",
+    "TypicalMission": "Budget Loop segments and inland cruising.",
+    "AvoidIf": [
+      "You require diesel shaft propulsion",
+      "You need generous long-term liveaboard space",
+      "You want wide walkaround side decks"
+    ],
+    "DateCreated": "2026-07-18",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "AI_Database_Gen",
+    "Revision": 1,
+    "BoatModelID": "BAYL-2452",
+    "BoatFamily": "Cruiser",
+    "HullBehaviour": "Planing",
+    "Features": [
+      "Trailerable"
+    ],
+    "NormalizedFuel": "Gasoline",
+    "NormalizedPropulsion": "Sterndrive",
+    "NormalizedHullForm": "Modified-V",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Cruiser",
+    "DataConfidence": "High",
+    "ResearchStatus": "Reviewed",
+    "Overview": "The Bayliner 2452 Ciera Express is a compact hardtop cruiser built around a single sterndrive and a weather-protected helm. Its cabin combines a V-berth, convertible dinette, galley and enclosed head in a trailer-friendly beam, making it more practical for short coastal and inland trips than for extended liveaboard use.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented accommodation and cruising layout support use by a couple, subject to individual-condition survey.",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/2452-ciera-express-1992-2003"
+        ]
+      },
+      "FamilyOrGuests": {
+        "Assessment": "Mixed",
+        "Summary": "Convertible sleeping spaces can accommodate guests, but privacy and storage are limited.",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/2452-ciera-express-1992-2003"
+        ]
+      },
+      "InlandAndCoastal": {
+        "Assessment": "Good",
+        "Summary": "The design is primarily suited to inland and coastal cruising within its documented dimensional and sea-state limits.",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/2452-ciera-express-1992-2003"
+        ]
+      },
+      "SoloHandling": {
+        "Assessment": "Good",
+        "Summary": "Single-engine machinery is simpler, though docking assistance depends on the individual configuration.",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/2452-ciera-express-1992-2003"
+        ]
+      }
+    },
+    "TradeOffs": [
+      "Limited interior and storage volume",
+      "Single sterndrive concentrates propulsion risk in one system",
+      "Cockpit and side access are compact",
+      "Older examples require careful inspection of sterndrive, transom and deck structure"
+    ],
+    "BestFor": [
+      "Weekend cruising in variable weather",
+      "Buyers needing a compact hardtop cruiser",
+      "Owners who value trailerability and simple marina requirements"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Sterndrive, bellows, transom assembly and cooling system",
+      "Moisture around deck fittings, windows and transom penetrations",
+      "Fuel system, wiring and sanitation equipment",
+      "Cabin leaks and hardtop/window sealing"
+    ],
+    "BuyerQuestions": [
+      "When was the sterndrive last removed and serviced?",
+      "Has the transom or deck structure ever required moisture or core repair?",
+      "What fuel-system, cooling-system and electrical work has been completed?"
+    ],
+    "OwnerActions": [
+      "Maintain sterndrive bellows, anodes and cooling components on schedule",
+      "Keep window, deck-hardware and transom penetrations sealed"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "2452 Ciera Express production",
+        "Description": "Production references place the 2452 Ciera Express from 1992 through 2003; equipment and engine packages vary by year.",
+        "AffectedYears": "1992–2003",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/2452-ciera-express-1992-2003"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "BAYL-2452"
+            ],
+            "Years": {
+              "From": 1992,
+              "To": 2003
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/2452-ciera-express-1992-2003"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source",
+            "Marketplace observation"
+          ],
+          "Confidence": "High",
+          "Notes": "Identity, production period and principal specifications are based on model-specific references. Individual hull documentation remains controlling."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "BAYL-2452"
+            ],
+            "Years": {
+              "From": 1992,
+              "To": 2003
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/2452-ciera-express-1992-2003"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance is derived from documented layout, dimensions, hull form and propulsion configuration."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "General age-related guidance",
+            "Models": [
+              "BAYL-2452"
+            ],
+            "Years": {
+              "From": 1992,
+              "To": 2003
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/2452-ciera-express-1992-2003"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance combines model-specific configuration with age-related system risks. These are inspection priorities, not assertions of a model-wide defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Individual engine packages, equipment and refit histories vary by production year and hull",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold"
+      ]
+    },
+    "EngineCount": 1,
+    "ModelCharacter": "A compact hardtop sterndrive cruiser with an enclosed helm, V-berth, convertible dinette, galley and head. Its weather protection and 8-foot-class beam make it a practical trailerable weekender rather than a large-volume express boat.",
+    "DesignLineage": [
+      "Produced from 1992–2003 as Bayliner's 24-foot hardtop Ciera Express.",
+      "The 2452 belongs to Bayliner's enclosed-hardtop cruiser branch rather than the open Sunbridge line.",
+      "Its single-sterndrive layout and modest beam distinguish it from the larger 2859/3058 hardtop and command-bridge cruisers.",
+      "The model retained the same basic practical mission through its run rather than undergoing a major rename."
+    ],
+    "OwnershipCharacter": "Simple single-sterndrive ownership and trailerable size keep costs manageable, but drive bellows, transom/core moisture and older hardtop/window sealing deserve careful inspection.",
+    "CharacterConfidence": "High",
+    "ResearchNotes": "Batch 28 identity, generation and lineage normalization. Missing/variable specifications remain listing-specific rather than inferred.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "RarityConfidence": "Not rated",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "PriceConfidence": "Not rated",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "BoatFamilyCode": "boat_family.express_cruiser",
+    "HullBehaviourCode": "hull_behaviour.planing",
+    "FuelCode": "fuel.gasoline",
+    "MechanicalPropulsionCode": "mechanical_propulsion.sterndrive",
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "LOA": 7.1384,
+    "LWL": 6.7056,
+    "Beam": 2.539,
+    "Draft": 0.89,
+    "AirDraft": 2.7432,
+    "Displacement": 2118.3,
+    "RudderTypeCode": "rudder.none_external_drive",
+    "CanonicalSlug": "bayliner-2452-ciera-express-hardtop-cruiser",
+    "CanonicalPath": "/models/bayliner-2452-ciera-express-hardtop-cruiser/",
+    "CanonicalURL": "https://b-atlas.org/models/bayliner-2452-ciera-express-hardtop-cruiser/",
+    "StyleCode": "Cruiser",
+    "CoolingCode": "cooling.raw_water",
+    "FlybridgeCode": "availability.no",
+    "SideDecksCode": "side_decks.moderate",
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "ShowerTypeCode": "shower.none",
+    "SpecificationConfidence": {
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      },
+      "KeelConfigurationCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from unambiguous existing KeelType text."
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing propulsion/keel description; no new factual assertion introduced."
+      }
+    },
+    "KeelConfigurationCode": "keel.no_keel",
+    "RunningGearProtectionCode": "running_gear.exposed"
+  },
+  {
+    "ManufacturerID": "BAYLINER",
+    "Manufacturer": "Bayliner",
+    "Model": "2855 Ciera Sunbridge",
+    "Variant": "Multi-Generation Sunbridge",
+    "Nickname": "Bayliner 2855 Ciera Sunbridge",
+    "ImageURL": "images/bayl-2855.jpg",
+    "Active": false,
+    "FirstYear": null,
+    "LastYear": null,
+    "TotalBuilt": null,
+    "Designer": "Bayliner Design Team",
+    "HullType": "Planing",
+    "Style": "Express Cruiser",
+    "Construction": "Fiberglass",
+    "KeelType": "Modified V",
+    "Fuel": "Gasoline",
+    "Cooling": "Raw Water",
+    "EngineConfiguration": "Single Inboard",
+    "Propulsion": "Stern Drive",
+    "Flybridge": "No",
+    "AftCabin": false,
+    "SideDecks": "Medium",
+    "TypicalEngineID": "MerCruiser 5.7",
+    "FuelCapacity": 386.112,
+    "WaterCapacity": 132.4894,
+    "HoldingCapacity": 75.7082,
+    "Berths": 4,
+    "Cabins": 1,
+    "Heads": 1,
+    "Shower": false,
+    "Galley": false,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "No",
+    "GreatLoopSuitable": true,
+    "Trailerable": true,
+    "Strengths": [
+      "Good accommodation volume for a single-engine cruiser",
+      "Mid-cabin layout provides multiple sleeping areas",
+      "Single sterndrive keeps machinery count low",
+      "Large production numbers support parts and owner knowledge"
+    ],
+    "Weaknesses": "Gas engines reduce range.",
+    "CommonProblems": "Transom rot and wiring issues.",
+    "TypicalMission": "Coastal cruising and inland passages.",
+    "AvoidIf": [
+      "You require diesel shaft propulsion",
+      "You need wide walkaround side decks",
+      "You want one specification set to apply across all production years"
+    ],
+    "DateCreated": "2026-07-18",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "AI_Database_Gen",
+    "Revision": 1,
+    "BoatModelID": "BAYL-2855",
+    "BoatFamily": "Cruiser",
+    "Configuration": "Express Cruiser",
+    "HullBehaviour": "Planing",
+    "Features": [
+      "Trailerable"
+    ],
+    "NormalizedFuel": "Gasoline",
+    "NormalizedPropulsion": "Sterndrive",
+    "NormalizedHullForm": "Modified-V",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Cruiser",
+    "DataConfidence": "High",
+    "ResearchStatus": "Reviewed",
+    "Overview": "The Bayliner 2855 Ciera Sunbridge is a single-sterndrive family express cruiser with a mid-cabin layout, convertible dinette, galley and enclosed head. The 2855 designation spans several materially different generations, so dimensions, hull details and interior arrangement should be verified against the production year rather than treated as one unchanged model.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented accommodation and cruising layout support use by a couple, subject to individual-condition survey.",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/2855-ciera-sunbridge-1991-93",
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/2855-ciera-sunbridge-1994-99",
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner"
+        ]
+      },
+      "FamilyOrGuests": {
+        "Assessment": "Mixed",
+        "Summary": "Convertible sleeping spaces can accommodate guests, but privacy and storage are limited.",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/2855-ciera-sunbridge-1991-93",
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/2855-ciera-sunbridge-1994-99",
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner"
+        ]
+      },
+      "InlandAndCoastal": {
+        "Assessment": "Good",
+        "Summary": "The design is primarily suited to inland and coastal cruising within its documented dimensional and sea-state limits.",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/2855-ciera-sunbridge-1991-93",
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/2855-ciera-sunbridge-1994-99",
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner"
+        ]
+      },
+      "SoloHandling": {
+        "Assessment": "Good",
+        "Summary": "Single-engine machinery is simpler, though docking assistance depends on the individual configuration.",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/2855-ciera-sunbridge-1991-93",
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/2855-ciera-sunbridge-1994-99",
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner"
+        ]
+      }
+    },
+    "TradeOffs": [
+      "The 2855 name covers multiple hull and interior generations",
+      "Limited side-deck access on later Sunbridge layouts",
+      "Finish and equipment are oriented toward value rather than premium construction",
+      "Sterndrive service and transom condition are central ownership considerations"
+    ],
+    "BestFor": [
+      "Family weekend cruising",
+      "Buyers seeking maximum accommodation for purchase price",
+      "Owners comfortable maintaining a gasoline sterndrive"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Sterndrive, transom assembly and engine cooling system",
+      "Deck and transom moisture",
+      "Fuel system and original wiring",
+      "Cabin leaks and interior moisture"
+    ],
+    "BuyerQuestions": [
+      "Which 2855 generation and production year is this boat?",
+      "What sterndrive and transom service history is documented?",
+      "Have deck, transom or window leaks required repair?"
+    ],
+    "OwnerActions": [
+      "Identify the exact production generation before ordering parts or comparing specifications",
+      "Maintain sterndrive and transom sealing carefully"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "1991–93 generation",
+        "Description": "9'6\" beam, moderate-V single-sterndrive 2855 Ciera Sunbridge.",
+        "AffectedYears": "1991–1993",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/2855-ciera-sunbridge-1991-93"
+        ],
+        "Confidence": "High"
+      },
+      {
+        "Name": "1994–99 generation",
+        "Description": "Restyled 2855 with 9'7\" beam and deeper 22-degree transom deadrise.",
+        "AffectedYears": "1994–1999",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/2855-ciera-sunbridge-1994-99"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "BAYL-2855"
+            ],
+            "Years": {
+              "From": 1991,
+              "To": 2002
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/2855-ciera-sunbridge-1991-93",
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/2855-ciera-sunbridge-1994-99",
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source",
+            "Marketplace observation"
+          ],
+          "Confidence": "High",
+          "Notes": "Identity, production period and principal specifications are based on model-specific references. Individual hull documentation remains controlling."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "BAYL-2855"
+            ],
+            "Years": {
+              "From": 1991,
+              "To": 2002
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/2855-ciera-sunbridge-1991-93",
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/2855-ciera-sunbridge-1994-99",
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance is derived from documented layout, dimensions, hull form and propulsion configuration."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "General age-related guidance",
+            "Models": [
+              "BAYL-2855"
+            ],
+            "Years": {
+              "From": 1991,
+              "To": 2002
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/2855-ciera-sunbridge-1991-93",
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/2855-ciera-sunbridge-1994-99",
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance combines model-specific configuration with age-related system risks. These are inspection priorities, not assertions of a model-wide defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Individual engine packages, equipment and refit histories vary by production year and hull",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold"
+      ]
+    },
+    "EngineCount": 1,
+    "ModelCharacter": "A recurring Bayliner model name applied to several generations of single-sterndrive family express cruiser. Across the 1980s and 1990s, the 2855 consistently emphasized a mid-cabin layout and affordable overnight accommodation, but hull dimensions, styling and deadrise changed enough that year must be treated as part of the model identity.",
+    "DesignLineage": [
+      "The 2855 Ciera Sunbridge name was used across multiple materially different generations.",
+      "A 1991–93 generation used a 9'6\" beam and moderate-V hull.",
+      "The 1994–99 generation was a restyled successor with 9'7\" beam and deeper 22-degree deadrise.",
+      "Later Bayliner 285/2855 naming continued the size/mission but should not be assumed to share the same hull."
+    ],
+    "OwnershipCharacter": "Mass-market parts and one-engine simplicity help, but exact sterndrive generation and hull year matter. Older examples should be surveyed closely for transom/core moisture, drive condition, fuel system and owner modifications.",
+    "CharacterConfidence": "High",
+    "ResearchNotes": "Batch 28 identity, generation and lineage normalization. Missing/variable specifications remain listing-specific rather than inferred.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "RarityConfidence": "Not rated",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "PriceConfidence": "Not rated",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "BoatFamilyCode": "boat_family.express_cruiser",
+    "HullBehaviourCode": "hull_behaviour.planing",
+    "FuelCode": "fuel.gasoline",
+    "MechanicalPropulsionCode": "mechanical_propulsion.sterndrive",
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "LOA": 8.5588,
+    "LWL": 7.9248,
+    "Beam": 2.8956,
+    "Draft": 0.9906,
+    "AirDraft": 3.048,
+    "Displacement": 2952.9,
+    "RudderTypeCode": "rudder.none_external_drive",
+    "CanonicalSlug": "bayliner-2855-ciera-sunbridge-multi-generation-sunbridge",
+    "CanonicalPath": "/models/bayliner-2855-ciera-sunbridge-multi-generation-sunbridge/",
+    "CanonicalURL": "https://b-atlas.org/models/bayliner-2855-ciera-sunbridge-multi-generation-sunbridge/",
+    "StyleCode": "Cruiser",
+    "CoolingCode": "cooling.raw_water",
+    "FlybridgeCode": "availability.no",
+    "SideDecksCode": "side_decks.moderate",
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "ShowerTypeCode": "shower.none",
+    "SpecificationConfidence": {
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      },
+      "KeelConfigurationCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from unambiguous existing KeelType text."
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing propulsion/keel description; no new factual assertion introduced."
+      }
+    },
+    "KeelConfigurationCode": "keel.no_keel",
+    "RunningGearProtectionCode": "running_gear.exposed"
+  },
+  {
+    "ManufacturerID": "BAYLINER",
+    "Manufacturer": "Bayliner",
+    "Model": "2859 Ciera Express",
+    "Variant": "Hardtop Cruiser",
+    "Nickname": "Bayliner 2859 Super Classic / Ciera Express",
+    "ImageURL": "images/bayl-2859.jpg",
+    "Active": false,
+    "FirstYear": 1993,
+    "LastYear": 2002,
+    "TotalBuilt": null,
+    "Designer": "Bayliner Design Team",
+    "HullType": "Planing",
+    "Style": "Pilothouse Cruiser",
+    "Construction": "Fiberglass",
+    "KeelType": "Modified V",
+    "Fuel": "Gasoline",
+    "Cooling": "Raw Water",
+    "EngineConfiguration": "Single Inboard",
+    "Propulsion": "Stern Drive",
+    "Flybridge": "No",
+    "AftCabin": false,
+    "SideDecks": "Medium",
+    "TypicalEngineID": "MerCruiser 5.7",
+    "FuelCapacity": 386.112,
+    "WaterCapacity": 136.2748,
+    "HoldingCapacity": 113.5624,
+    "Berths": 4,
+    "Cabins": 1,
+    "Heads": 1,
+    "Shower": false,
+    "Galley": false,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "No",
+    "GreatLoopSuitable": true,
+    "Trailerable": true,
+    "Strengths": [
+      "Enclosed hardtop helm improves shoulder-season usability",
+      "Mid-cabin berth expands sleeping capacity",
+      "Single-engine layout limits machinery count",
+      "Practical galley and enclosed head for short cruising"
+    ],
+    "Weaknesses": "Lower build quality, stern-drive maintenance demands.",
+    "CommonProblems": "",
+    "TypicalMission": "Day trips, weekend cruising and protected coastal travel, with longer trips dependent on layout, range and condition.",
+    "AvoidIf": [
+      "You require twin-engine redundancy",
+      "You need diesel shaft propulsion",
+      "You want a large open cockpit"
+    ],
+    "DateCreated": " fuel tank corrosion",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "Budget Loop segments",
+    "Revision": null,
+    "BoatModelID": "BAYL-2859",
+    "BoatFamily": "Cruiser",
+    "HullBehaviour": "Planing",
+    "Features": [
+      "Trailerable"
+    ],
+    "NormalizedFuel": "Gasoline",
+    "NormalizedPropulsion": "Sterndrive",
+    "NormalizedHullForm": "Modified-V",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Cruiser",
+    "DataConfidence": "High",
+    "ResearchStatus": "Reviewed",
+    "Overview": "The Bayliner 2859 Ciera Express is a hardtop cruiser originally sold as the 2859 Super Classic and later renamed Ciera Express. A single sterndrive, enclosed helm, mid-cabin berth and practical galley/head arrangement make it a weather-protected family cruiser with more cabin utility than open express designs of similar size.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented accommodation and cruising layout support use by a couple, subject to individual-condition survey.",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/2859-super-classic-2859-ciera-express-1993-2002"
+        ]
+      },
+      "FamilyOrGuests": {
+        "Assessment": "Mixed",
+        "Summary": "Convertible sleeping spaces can accommodate guests, but privacy and storage are limited.",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/2859-super-classic-2859-ciera-express-1993-2002"
+        ]
+      },
+      "InlandAndCoastal": {
+        "Assessment": "Good",
+        "Summary": "The design is primarily suited to inland and coastal cruising within its documented dimensional and sea-state limits.",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/2859-super-classic-2859-ciera-express-1993-2002"
+        ]
+      },
+      "SoloHandling": {
+        "Assessment": "Good",
+        "Summary": "Single-engine machinery is simpler, though docking assistance depends on the individual configuration.",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/2859-super-classic-2859-ciera-express-1993-2002"
+        ]
+      }
+    },
+    "TradeOffs": [
+      "Modest fuel capacity for extended high-speed travel",
+      "Small cockpit relative to overall accommodation",
+      "Sterndrive maintenance remains a major ownership item",
+      "Sleeping capacity exceeds comfortable long-duration living space"
+    ],
+    "BestFor": [
+      "Couples or small families cruising in cool or wet climates",
+      "Buyers wanting a hardtop without a flybridge",
+      "Mixed cruising and light fishing"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Sterndrive and transom assembly",
+      "Hardtop and window leaks",
+      "Fuel and cooling systems",
+      "Deck moisture and cockpit drainage"
+    ],
+    "BuyerQuestions": [
+      "Has the sterndrive and transom assembly been serviced recently?",
+      "Are there any recurring hardtop or window leaks?",
+      "Has the fuel tank or fuel plumbing been inspected?"
+    ],
+    "OwnerActions": [
+      "Maintain hardtop/window seals and cockpit drains",
+      "Service sterndrive, cooling and transom components proactively"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "Super Classic",
+        "Description": "The model was sold as the 2859 Super Classic from 1993 through 1995.",
+        "AffectedYears": "1993–1995",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/2859-super-classic-2859-ciera-express-1993-2002"
+        ],
+        "Confidence": "High"
+      },
+      {
+        "Name": "Ciera Express",
+        "Description": "The same basic model continued under the Ciera Express name through 2002.",
+        "AffectedYears": "1996–2002",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/2859-super-classic-2859-ciera-express-1993-2002"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "BAYL-2859"
+            ],
+            "Years": {
+              "From": 1993,
+              "To": 2002
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/2859-super-classic-2859-ciera-express-1993-2002"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source",
+            "Marketplace observation"
+          ],
+          "Confidence": "High",
+          "Notes": "Identity, production period and principal specifications are based on model-specific references. Individual hull documentation remains controlling."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "BAYL-2859"
+            ],
+            "Years": {
+              "From": 1993,
+              "To": 2002
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/2859-super-classic-2859-ciera-express-1993-2002"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance is derived from documented layout, dimensions, hull form and propulsion configuration."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "General age-related guidance",
+            "Models": [
+              "BAYL-2859"
+            ],
+            "Years": {
+              "From": 1993,
+              "To": 2002
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/2859-super-classic-2859-ciera-express-1993-2002"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance combines model-specific configuration with age-related system risks. These are inspection priorities, not assertions of a model-wide defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Individual engine packages, equipment and refit histories vary by production year and hull",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold"
+      ]
+    },
+    "EngineCount": 1,
+    "ModelCharacter": "A practical enclosed-hardtop family cruiser with a single sterndrive and unusually useful mid-cabin berth. It began as the 2859 Super Classic and was later renamed Ciera Express without becoming a different hull.",
+    "DesignLineage": [
+      "Introduced in 1993 as the 2859 Super Classic.",
+      "Renamed 2859 Ciera Express after the 1993–95 Super Classic period.",
+      "The hull and basic hardtop/mid-cabin concept remained continuous through 2002.",
+      "It is distinct from the open 2855 Ciera Sunbridge despite similar nominal length."
+    ],
+    "OwnershipCharacter": "Single-drive simplicity and enclosed weather protection suit northern cruising. Sterndrive service, transom condition, cabin leaks and the relatively small cockpit are the main practical tradeoffs.",
+    "CharacterConfidence": "High",
+    "ResearchNotes": "Batch 28 identity, generation and lineage normalization. Missing/variable specifications remain listing-specific rather than inferred.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.\n\nCruising Performance Research Wave 3 v7.02 (2026-09-14).",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "RarityConfidence": "Not rated",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "PriceConfidence": "Not rated",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "BoatFamilyCode": "boat_family.express_cruiser",
+    "HullBehaviourCode": "hull_behaviour.planing",
+    "FuelCode": "fuel.gasoline",
+    "MechanicalPropulsionCode": "mechanical_propulsion.sterndrive",
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "LOA": 8.4582,
+    "LWL": 8.2296,
+    "Beam": 2.9718,
+    "Draft": 0.9144,
+    "AirDraft": 3.048,
+    "Displacement": 3445.9,
+    "RudderTypeCode": "rudder.none_external_drive",
+    "CanonicalSlug": "bayliner-2859-ciera-express-hardtop-cruiser",
+    "CanonicalPath": "/models/bayliner-2859-ciera-express-hardtop-cruiser/",
+    "CanonicalURL": "https://b-atlas.org/models/bayliner-2859-ciera-express-hardtop-cruiser/",
+    "StyleCode": "Cruiser",
+    "CoolingCode": "cooling.raw_water",
+    "FlybridgeCode": "availability.no",
+    "SideDecksCode": "side_decks.moderate",
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": 24,
+    "PlaningCruiseFuelBurn": 71.923,
+    "ShowerTypeCode": "shower.none",
+    "SpecificationConfidence": {
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      },
+      "KeelConfigurationCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from unambiguous existing KeelType text."
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing propulsion/keel description; no new factual assertion introduced."
+      },
+      "PlaningCruiseSpeed": {
+        "Level": "Medium",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://www.baylinerownersclub.org/forum/current-topics-gc6/technical-discussion-gc12/235276-2858-fuel-burn-gctid664770",
+          "https://www.baylinerownersclub.org/forum/current-topics-gc6/technical-discussion-gc12/661567-thought%E2%80%99s-of-my-2858-89-performance"
+        ],
+        "Note": "Multiple Bayliner 2858/2859 owner reports with 7.4L/Bravo and later MPI packages cluster around 22–26 kn cruise at roughly 18–20 US gal/h; stored working point uses 24 kn / 19 gph. Engine, drive, propeller and hull-year differences materially affect results."
+      },
+      "PlaningCruiseFuelBurn": {
+        "Level": "Medium",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://www.baylinerownersclub.org/forum/current-topics-gc6/technical-discussion-gc12/235276-2858-fuel-burn-gctid664770",
+          "https://www.baylinerownersclub.org/forum/current-topics-gc6/technical-discussion-gc12/661567-thought%E2%80%99s-of-my-2858-89-performance"
+        ],
+        "Note": "Multiple Bayliner 2858/2859 owner reports with 7.4L/Bravo and later MPI packages cluster around 22–26 kn cruise at roughly 18–20 US gal/h; stored working point uses 24 kn / 19 gph. Engine, drive, propeller and hull-year differences materially affect results."
+      },
+      "EnginePowerPerEngine": {
+        "Level": "Medium",
+        "Status": "varies_by_configuration",
+        "EvidenceRefs": [
+          "https://www.baylinerownersclub.org/forum/current-topics-gc6/technical-discussion-gc12/235276-2858-fuel-burn-gctid664770",
+          "https://www.baylinerownersclub.org/forum/current-topics-gc6/technical-discussion-gc12/661567-thought%E2%80%99s-of-my-2858-89-performance"
+        ],
+        "Note": "2859/related hulls were offered or repowered with multiple gasoline and diesel packages; performance point is representative of 7.4L/Bravo gasoline examples."
+      }
+    },
+    "KeelConfigurationCode": "keel.no_keel",
+    "RunningGearProtectionCode": "running_gear.exposed"
+  },
+  {
+    "ManufacturerID": "BAYLINER",
+    "Manufacturer": "Bayliner",
+    "Model": "3055 Ciera Sunbridge / 305 SB",
+    "Variant": "Express Cruiser",
+    "Nickname": "Bayliner 3055 Ciera Sunbridge / 305 SB",
+    "ImageURL": "images/bayl-3055.jpg",
+    "Active": false,
+    "FirstYear": 1999,
+    "LastYear": 2007,
+    "TotalBuilt": null,
+    "Designer": "Bayliner Design Team",
+    "HullType": "Planing",
+    "Style": "Express Cruiser",
+    "Construction": "Fiberglass",
+    "KeelType": "Modified V",
+    "Fuel": "Gasoline",
+    "Cooling": "Raw Water",
+    "EngineConfiguration": "Twin Inboard",
+    "Propulsion": "Stern Drive",
+    "Flybridge": "No",
+    "AftCabin": false,
+    "SideDecks": "Medium",
+    "TypicalEngineID": "MerCruiser 5.7 Twin",
+    "FuelCapacity": 560.2409,
+    "WaterCapacity": 132.4894,
+    "HoldingCapacity": 113.5624,
+    "Berths": 4,
+    "Cabins": 1,
+    "Heads": 1,
+    "Shower": false,
+    "Galley": false,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "No",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "Strengths": [
+      "Wide beam creates substantial cabin and cockpit volume",
+      "Twin engines improve close-quarters control and provide propulsion redundancy",
+      "Good headroom and conventional mid-cabin family layout",
+      "Large used-market population and familiar sterndrive systems"
+    ],
+    "Weaknesses": "Higher fuel burn and stern-drive upkeep.",
+    "CommonProblems": "Deck core moisture and wiring issues.",
+    "TypicalMission": "Coastal cruising and inland passages.",
+    "AvoidIf": [
+      "You require diesel economy",
+      "You need narrow-beam marina compatibility",
+      "You want easy bow access via side decks"
+    ],
+    "DateCreated": "2026-07-18",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "AI_Database_Gen",
+    "Revision": 1,
+    "BoatModelID": "BAYL-3055",
+    "BoatFamily": "Cruiser",
+    "Configuration": "Express Cruiser",
+    "HullBehaviour": "Planing",
+    "Features": [],
+    "NormalizedFuel": "Gasoline",
+    "NormalizedPropulsion": "Sterndrive",
+    "NormalizedHullForm": "Modified-V",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Cruiser",
+    "DataConfidence": "High",
+    "ResearchStatus": "Reviewed",
+    "Overview": "The later Bayliner 3055 Ciera Sunbridge is a wide-beam twin-sterndrive express cruiser focused on family accommodation and cockpit seating. It became the Bayliner 305 after the 3055 designation was dropped, so year-specific naming is important when comparing examples.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented accommodation and cruising layout support use by a couple, subject to individual-condition survey.",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/305-sb-cruiser-1999-2007"
+        ]
+      },
+      "FamilyOrGuests": {
+        "Assessment": "Mixed",
+        "Summary": "Convertible sleeping spaces can accommodate guests, but privacy and storage are limited.",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/305-sb-cruiser-1999-2007"
+        ]
+      },
+      "InlandAndCoastal": {
+        "Assessment": "Good",
+        "Summary": "The design is primarily suited to inland and coastal cruising within its documented dimensional and sea-state limits.",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/305-sb-cruiser-1999-2007"
+        ]
+      },
+      "SoloHandling": {
+        "Assessment": "Mixed",
+        "Summary": "Twin propulsion can aid docking, but duplicate systems and larger flybridge layouts increase workload.",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/305-sb-cruiser-1999-2007"
+        ]
+      }
+    },
+    "TradeOffs": [
+      "Twin gasoline sterndrives increase fuel and maintenance costs",
+      "No practical walkaround side decks",
+      "Value-oriented finish is less robust than premium cruisers",
+      "Width and weight reduce trailer and storage flexibility"
+    ],
+    "BestFor": [
+      "Family weekend cruising",
+      "Buyers prioritizing interior volume and cockpit seating",
+      "Owners comfortable maintaining twin gasoline sterndrives"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Both sterndrives, transom assemblies and engine cooling systems",
+      "Fuel-system age and ventilation",
+      "Deck, transom and cockpit moisture",
+      "Electrical, sanitation and air-conditioning systems where fitted"
+    ],
+    "BuyerQuestions": [
+      "What service history exists for both sterndrives and transom assemblies?",
+      "Have fuel-system components been replaced or inspected?",
+      "Has any deck or transom core repair been completed?"
+    ],
+    "OwnerActions": [
+      "Service both sterndrives and transom assemblies consistently",
+      "Maintain bilge ventilation and fuel-system components carefully"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "3055 designation",
+        "Description": "The later 3055 Ciera Sunbridge designation applies from 1999 through 2002 before the boat continued as the Bayliner 305.",
+        "AffectedYears": "1999–2002",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/305-sb-cruiser-1999-2007"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "BAYL-3055"
+            ],
+            "Years": {
+              "From": 1999,
+              "To": 2002
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/305-sb-cruiser-1999-2007"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source",
+            "Marketplace observation"
+          ],
+          "Confidence": "High",
+          "Notes": "Identity, production period and principal specifications are based on model-specific references. Individual hull documentation remains controlling."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "BAYL-3055"
+            ],
+            "Years": {
+              "From": 1999,
+              "To": 2002
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/305-sb-cruiser-1999-2007"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance is derived from documented layout, dimensions, hull form and propulsion configuration."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "General age-related guidance",
+            "Models": [
+              "BAYL-3055"
+            ],
+            "Years": {
+              "From": 1999,
+              "To": 2002
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/305-sb-cruiser-1999-2007"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance combines model-specific configuration with age-related system risks. These are inspection priorities, not assertions of a model-wide defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Individual engine packages, equipment and refit histories vary by production year and hull",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold"
+      ]
+    },
+    "EngineCount": 2,
+    "ModelCharacter": "A wide-beam twin-sterndrive express cruiser marketed first as the 3055 Ciera Sunbridge and then simply the 305 SB. The 11-foot beam and conventional mid-cabin layout deliver excellent family space for the price, at the cost of twin-drive maintenance and limited side-deck access.",
+    "DesignLineage": [
+      "The later 3055 Ciera Sunbridge was introduced for 1999.",
+      "The same basic boat was renamed 305 SB after the 3055 designation was dropped.",
+      "HMY treats the 1999–2007 run as one continuous 305/3055 family.",
+      "This later boat is distinct from the earlier 1991–94 3055 Ciera Sunbridge generation."
+    ],
+    "OwnershipCharacter": "Twin sterndrives provide good performance but double drive-related service and fuel-system complexity. Wide beam, generator/AC options and cockpit systems make it much more boat to maintain than the 2855.",
+    "CharacterConfidence": "High",
+    "ResearchNotes": "Batch 28 identity, generation and lineage normalization. Missing/variable specifications remain listing-specific rather than inferred.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "RarityConfidence": "Not rated",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "PriceConfidence": "Not rated",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "BoatFamilyCode": "boat_family.express_cruiser",
+    "HullBehaviourCode": "hull_behaviour.planing",
+    "FuelCode": "fuel.gasoline",
+    "MechanicalPropulsionCode": "mechanical_propulsion.sterndrive",
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "LOA": 9.6012,
+    "LWL": 8.8392,
+    "Beam": 3.3528,
+    "Draft": 0.8382,
+    "AirDraft": 3.3528,
+    "Displacement": 5378.2,
+    "RudderTypeCode": "rudder.none_external_drive",
+    "CanonicalSlug": "bayliner-3055-ciera-sunbridge-305-sb-express-cruiser",
+    "CanonicalPath": "/models/bayliner-3055-ciera-sunbridge-305-sb-express-cruiser/",
+    "CanonicalURL": "https://b-atlas.org/models/bayliner-3055-ciera-sunbridge-305-sb-express-cruiser/",
+    "StyleCode": "Cruiser",
+    "CoolingCode": "cooling.raw_water",
+    "FlybridgeCode": "availability.no",
+    "SideDecksCode": "side_decks.moderate",
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "ShowerTypeCode": "shower.none",
+    "SpecificationConfidence": {
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      },
+      "KeelConfigurationCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from unambiguous existing KeelType text."
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing propulsion/keel description; no new factual assertion introduced."
+      }
+    },
+    "KeelConfigurationCode": "keel.no_keel",
+    "RunningGearProtectionCode": "running_gear.exposed"
+  },
+  {
+    "ManufacturerID": "BAYLINER",
+    "Manufacturer": "Bayliner",
+    "Model": "3058 Command Bridge",
+    "Variant": "Command Bridge Cruiser",
+    "Nickname": "Bayliner 3058 Command Bridge",
+    "ImageURL": "images/bayl-3058.jpg",
+    "Active": false,
+    "FirstYear": 1991,
+    "LastYear": 1992,
+    "TotalBuilt": null,
+    "Designer": "Bayliner Design Team",
+    "HullType": "Planing",
+    "Style": "Sedan Cruiser",
+    "Construction": "Fiberglass",
+    "KeelType": "Modified V",
+    "Fuel": "Gasoline",
+    "Cooling": "Raw Water",
+    "EngineConfiguration": "Twin Inboard",
+    "Propulsion": "Stern Drive",
+    "Flybridge": "Yes",
+    "AftCabin": false,
+    "SideDecks": "Medium",
+    "TypicalEngineID": "MerCruiser 5.7 Twin",
+    "FuelCapacity": 567.8118,
+    "WaterCapacity": 189.2706,
+    "HoldingCapacity": 94.6353,
+    "Berths": 4,
+    "Cabins": 2,
+    "Heads": 1,
+    "Shower": false,
+    "Galley": false,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "No",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "Strengths": [
+      "Flybridge adds an open-air helm and additional seating",
+      "Twin engines aid maneuvering",
+      "Useful interior volume for a roughly 31-foot hull",
+      "Gasoline and diesel twin-engine packages were offered"
+    ],
+    "Weaknesses": "Higher fuel burn, stern-drive upkeep.",
+    "CommonProblems": "",
+    "TypicalMission": "Day trips, weekend cruising and protected coastal travel, with longer trips dependent on layout, range and condition.",
+    "AvoidIf": [
+      "You need a single simple propulsion system",
+      "You require low bridge clearance",
+      "You want generous engine-room access"
+    ],
+    "DateCreated": " transom rot",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "Coastal cruising",
+    "Revision": null,
+    "BoatModelID": "BAYL-3058",
+    "BoatFamily": "Cruiser",
+    "HullBehaviour": "Planing",
+    "Features": [],
+    "NormalizedFuel": "Gasoline",
+    "NormalizedPropulsion": "Sterndrive",
+    "NormalizedHullForm": "Modified-V",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Cruiser",
+    "DataConfidence": "Moderate",
+    "ResearchStatus": "Reviewed",
+    "Overview": "The Bayliner 3058 Command Bridge is a compact flybridge cruiser using twin sterndrives and a two-level cabin arrangement to provide more living space than many boats of similar length. The bridge and lower accommodation improve cruising versatility, while machinery access and twin-drive maintenance remain important ownership compromises.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented accommodation and cruising layout support use by a couple, subject to individual-condition survey.",
+        "EvidenceRefs": [
+          "https://www.jdpower.com/boats/1993/bayliner-marine-corp/ciera-series/3058-command-bridge/10018363/specs"
+        ]
+      },
+      "FamilyOrGuests": {
+        "Assessment": "Good",
+        "Summary": "Multiple sleeping areas improve guest separation.",
+        "EvidenceRefs": [
+          "https://www.jdpower.com/boats/1993/bayliner-marine-corp/ciera-series/3058-command-bridge/10018363/specs"
+        ]
+      },
+      "InlandAndCoastal": {
+        "Assessment": "Good",
+        "Summary": "The design is primarily suited to inland and coastal cruising within its documented dimensional and sea-state limits.",
+        "EvidenceRefs": [
+          "https://www.jdpower.com/boats/1993/bayliner-marine-corp/ciera-series/3058-command-bridge/10018363/specs"
+        ]
+      },
+      "SoloHandling": {
+        "Assessment": "Mixed",
+        "Summary": "Twin propulsion can aid docking, but duplicate systems and larger flybridge layouts increase workload.",
+        "EvidenceRefs": [
+          "https://www.jdpower.com/boats/1993/bayliner-marine-corp/ciera-series/3058-command-bridge/10018363/specs"
+        ]
+      }
+    },
+    "TradeOffs": [
+      "Twin sterndrives create two complete drive systems to maintain",
+      "Engine-room working space is limited",
+      "Flybridge increases windage and bridge-clearance requirements",
+      "Exact engine packages vary materially by year"
+    ],
+    "BestFor": [
+      "Family cruising where a flybridge is desirable",
+      "Buyers wanting twin-engine handling below 32 feet",
+      "Owners comfortable with sterndrive maintenance"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Both sterndrives, transom assemblies and steering systems",
+      "Engine-room access, mounts and cooling systems",
+      "Flybridge structure, controls and wiring",
+      "Fuel system and deck moisture"
+    ],
+    "BuyerQuestions": [
+      "Which factory engine package is installed?",
+      "When were both sterndrives and transom assemblies last serviced?",
+      "Have flybridge controls or steering components been renewed?"
+    ],
+    "OwnerActions": [
+      "Maintain both drive systems on the same service cycle",
+      "Inspect flybridge and control-system connections regularly"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "Gasoline twin package",
+        "Description": "1993 references document twin 250-hp gasoline sterndrives.",
+        "AffectedYears": "1993",
+        "EvidenceRefs": [
+          "https://www.jdpower.com/boats/1993/bayliner-marine-corp/ciera-series/3058-command-bridge/10018363/specs"
+        ],
+        "Confidence": "Moderate"
+      },
+      {
+        "Name": "Diesel twin package",
+        "Description": "Contemporary specifications also list twin diesel sterndrive packages.",
+        "AffectedYears": "1992–1993",
+        "EvidenceRefs": [
+          "https://www.jdpower.com/boats/1993/bayliner-marine-corp/ciera-series/3058-command-bridge/10018363/specs"
+        ],
+        "Confidence": "Moderate"
+      }
+    ],
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "BAYL-3058"
+            ],
+            "Years": {
+              "From": 1992,
+              "To": 1993
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.jdpower.com/boats/1993/bayliner-marine-corp/ciera-series/3058-command-bridge/10018363/specs"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source",
+            "Marketplace observation"
+          ],
+          "Confidence": "High",
+          "Notes": "Identity, production period and principal specifications are based on model-specific references. Individual hull documentation remains controlling."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "BAYL-3058"
+            ],
+            "Years": {
+              "From": 1992,
+              "To": 1993
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.jdpower.com/boats/1993/bayliner-marine-corp/ciera-series/3058-command-bridge/10018363/specs"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance is derived from documented layout, dimensions, hull form and propulsion configuration."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "General age-related guidance",
+            "Models": [
+              "BAYL-3058"
+            ],
+            "Years": {
+              "From": 1992,
+              "To": 1993
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.jdpower.com/boats/1993/bayliner-marine-corp/ciera-series/3058-command-bridge/10018363/specs"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance combines model-specific configuration with age-related system risks. These are inspection priorities, not assertions of a model-wide defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Individual engine packages, equipment and refit histories vary by production year and hull",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold"
+      ]
+    },
+    "EngineCount": 2,
+    "ModelCharacter": "A compact flybridge cruiser that squeezes dual helms, two sleeping cabins and a convertible dinette into roughly 31 feet. Most surviving examples are sterndrive boats, making it a value-oriented bridge cruiser with more accommodation than machinery access.",
+    "DesignLineage": [
+      "Factory manuals and surviving boats verify the 3058 Command Bridge in the early 1990s.",
+      "The 3058 combines Bayliner's hardtop/express interior packaging with an upper command bridge.",
+      "It is distinct from the 3055 Sunbridge despite similar length and shared era.",
+      "Exact full production chronology is poorly documented; B-Atlas uses the directly verified 1991–92 window rather than inventing a broader span."
+    ],
+    "OwnershipCharacter": "Twin sterndrive examples offer performance and redundancy but can be labor-intensive in older freshwater/saltwater service. Bridge enclosure, drive condition, engine access and transom/core moisture deserve close survey attention.",
+    "CharacterConfidence": "Moderate",
+    "ResearchNotes": "Batch 28 identity, generation and lineage normalization. Missing/variable specifications remain listing-specific rather than inferred.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "RarityConfidence": "Not rated",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "PriceConfidence": "Not rated",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "BoatFamilyCode": "boat_family.express_cruiser",
+    "HullBehaviourCode": "hull_behaviour.planing",
+    "FuelCode": "fuel.gasoline",
+    "MechanicalPropulsionCode": "mechanical_propulsion.sterndrive",
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "LOA": 9.4488,
+    "LWL": 8.8392,
+    "Beam": 3.301,
+    "Draft": 0.9144,
+    "AirDraft": 3.3528,
+    "Displacement": 4173,
+    "RudderTypeCode": "rudder.none_external_drive",
+    "CanonicalSlug": "bayliner-3058-command-bridge-command-bridge-cruiser",
+    "CanonicalPath": "/models/bayliner-3058-command-bridge-command-bridge-cruiser/",
+    "CanonicalURL": "https://b-atlas.org/models/bayliner-3058-command-bridge-command-bridge-cruiser/",
+    "StyleCode": "Cruiser",
+    "CoolingCode": "cooling.raw_water",
+    "FlybridgeCode": "availability.yes",
+    "SideDecksCode": "side_decks.moderate",
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "ShowerTypeCode": "shower.none",
+    "SpecificationConfidence": {
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      },
+      "KeelConfigurationCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from unambiguous existing KeelType text."
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing propulsion/keel description; no new factual assertion introduced."
+      }
+    },
+    "KeelConfigurationCode": "keel.no_keel",
+    "RunningGearProtectionCode": "running_gear.exposed"
+  },
+  {
+    "ManufacturerID": "BAYLINER",
+    "Manufacturer": "Bayliner",
+    "Model": "3218 Motoryacht",
+    "Variant": "Flybridge Motor Yacht",
+    "Nickname": "Bayliner 3218 Motoryacht",
+    "ImageURL": "images/bayl-3218.jpg",
+    "Active": false,
+    "FirstYear": 1987,
+    "LastYear": 1989,
+    "TotalBuilt": null,
+    "Designer": "Bayliner Design Team",
+    "HullType": "Semi-Displacement",
+    "Style": "Aft Cabin Cruiser",
+    "Construction": "Fiberglass",
+    "KeelType": "Modified V",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh/Raw",
+    "EngineConfiguration": "Twin Inboard",
+    "Propulsion": "Shaft",
+    "Flybridge": "Yes",
+    "AftCabin": false,
+    "SideDecks": "Wide",
+    "TypicalEngineID": "Hino W04C twin",
+    "FuelCapacity": 757.0824,
+    "WaterCapacity": 283.9059,
+    "HoldingCapacity": 132.4894,
+    "Berths": 6,
+    "Cabins": 2,
+    "Heads": 2,
+    "Shower": false,
+    "Galley": false,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "No",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "Strengths": [
+      "Two private sleeping areas in a compact hull",
+      "Twin shaft-drive inboards on documented diesel examples",
+      "Lower helm plus flybridge",
+      "Good interior volume and useful side access"
+    ],
+    "Weaknesses": "Older build quality, gasoline engines reduce range.",
+    "CommonProblems": "",
+    "TypicalMission": "Comfort-oriented inland and coastal cruising, with suitability dependent on range, condition and operating budget.",
+    "AvoidIf": [
+      "You want single-engine simplicity",
+      "You require easy engine-room access",
+      "You need an unambiguous one-name production history"
+    ],
+    "DateCreated": " tank corrosion",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "Loop cruising",
+    "Revision": null,
+    "BoatModelID": "BAYL-3218",
+    "BoatFamily": "Cruiser",
+    "Configuration": "Aft Cabin Cruiser",
+    "HullBehaviour": "Semi-Displacement",
+    "Features": [
+      "Flybridge",
+      "Aft Cabin",
+      "Wide Side Decks"
+    ],
+    "NormalizedFuel": "Gasoline",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Modified-V",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Motor Yacht",
+    "DataConfidence": "Moderate",
+    "ResearchStatus": "Reviewed",
+    "Overview": "The Bayliner 3218 Motoryacht belongs to the 32xx family of compact flybridge cruisers and uses twin inboards, a lower helm and a two-stateroom interior to deliver unusually high accommodation volume for its length. Diesel Hino installations are common, although gasoline versions also exist.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented accommodation and cruising layout support use by a couple, subject to individual-condition survey.",
+        "EvidenceRefs": [
+          "https://www.boats.com/power-boats/1989-bayliner-3218-motoryacht-9746507/",
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/3270-explorer-3270-3288-motor-yacht-1981-95"
+        ]
+      },
+      "FamilyOrGuests": {
+        "Assessment": "Good",
+        "Summary": "Multiple sleeping areas improve guest separation.",
+        "EvidenceRefs": [
+          "https://www.boats.com/power-boats/1989-bayliner-3218-motoryacht-9746507/",
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/3270-explorer-3270-3288-motor-yacht-1981-95"
+        ]
+      },
+      "InlandAndCoastal": {
+        "Assessment": "Good",
+        "Summary": "The design is primarily suited to inland and coastal cruising within its documented dimensional and sea-state limits.",
+        "EvidenceRefs": [
+          "https://www.boats.com/power-boats/1989-bayliner-3218-motoryacht-9746507/",
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/3270-explorer-3270-3288-motor-yacht-1981-95"
+        ]
+      },
+      "SoloHandling": {
+        "Assessment": "Mixed",
+        "Summary": "Twin propulsion can aid docking, but duplicate systems and larger flybridge layouts increase workload.",
+        "EvidenceRefs": [
+          "https://www.boats.com/power-boats/1989-bayliner-3218-motoryacht-9746507/",
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/3270-explorer-3270-3288-motor-yacht-1981-95"
+        ]
+      }
+    },
+    "TradeOffs": [
+      "Machinery access is tight",
+      "Two engines double routine propulsion service points",
+      "Model naming overlaps with 3270/3288 family references",
+      "Individual boats may have gasoline or diesel power"
+    ],
+    "BestFor": [
+      "Couples or families wanting two sleeping areas below 33 feet",
+      "PNW and inland cruising where protected lower helm is useful",
+      "Buyers valuing twin-shaft handling over mechanical simplicity"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Both engines, transmissions, shafts and cooling systems",
+      "Fuel tanks, crossover plumbing and return routing",
+      "Window and deck moisture",
+      "Electrical and sanitation systems"
+    ],
+    "BuyerQuestions": [
+      "Is the boat documented as a 3218, 3270 or related 32xx designation?",
+      "What engines and transmissions are installed, and what major service has been completed?",
+      "Has the fuel-tank and crossover system been inspected or modified?"
+    ],
+    "OwnerActions": [
+      "Verify fuel-valve and return-line configuration before extended operation",
+      "Maintain both propulsion trains and cooling systems consistently"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "32xx naming overlap",
+        "Description": "Late-1980s examples may be described in records or listings as 3218, 3270 or related 32xx variants; HIN and original documentation should control identity.",
+        "AffectedYears": "Late 1980s",
+        "EvidenceRefs": [
+          "https://www.boats.com/power-boats/1989-bayliner-3218-motoryacht-9746507/",
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/3270-explorer-3270-3288-motor-yacht-1981-95"
+        ],
+        "Confidence": "Moderate"
+      },
+      {
+        "Name": "Diesel and gasoline power",
+        "Description": "Twin Hino diesels are well documented, while gasoline twin-inboard examples also exist.",
+        "AffectedYears": "Late 1980s",
+        "EvidenceRefs": [
+          "https://www.boats.com/power-boats/1989-bayliner-3218-motoryacht-9746507/"
+        ],
+        "Confidence": "Moderate"
+      }
+    ],
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "BAYL-3218"
+            ],
+            "Years": {
+              "From": 1987,
+              "To": 1989
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.boats.com/power-boats/1989-bayliner-3218-motoryacht-9746507/",
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/3270-explorer-3270-3288-motor-yacht-1981-95"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source",
+            "Marketplace observation"
+          ],
+          "Confidence": "High",
+          "Notes": "Identity, production period and principal specifications are based on model-specific references. Individual hull documentation remains controlling."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "BAYL-3218"
+            ],
+            "Years": {
+              "From": 1987,
+              "To": 1989
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.boats.com/power-boats/1989-bayliner-3218-motoryacht-9746507/",
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/3270-explorer-3270-3288-motor-yacht-1981-95"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance is derived from documented layout, dimensions, hull form and propulsion configuration."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "General age-related guidance",
+            "Models": [
+              "BAYL-3218"
+            ],
+            "Years": {
+              "From": 1987,
+              "To": 1989
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.boats.com/power-boats/1989-bayliner-3218-motoryacht-9746507/",
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/3270-explorer-3270-3288-motor-yacht-1981-95"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance combines model-specific configuration with age-related system risks. These are inspection priorities, not assertions of a model-wide defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Individual engine packages, equipment and refit histories vary by production year and hull",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold"
+      ]
+    },
+    "EngineCount": 2,
+    "ModelCharacter": "An early compact Bayliner flybridge motor yacht with lower helm, two-cabin accommodation and twin inboards. It shares the practical mid-cabin/dual-helm thinking seen in the better-known 3270/3288 family, but evidence is insufficient to collapse the 3218 into that lineage as a simple rename.",
+    "DesignLineage": [
+      "Verified surviving 3218 Motoryachts are documented in 1987–1989.",
+      "The model uses the same broad Bayliner philosophy of a lower helm, elevated dinette and private amidships sleeping space.",
+      "Owner and brokerage references sometimes group 3218/3270/3288 boats together, suggesting close family resemblance.",
+      "B-Atlas keeps the 3218 separate because a direct factory rename/shared-hull equivalence has not been established strongly enough."
+    ],
+    "OwnershipCharacter": "Twin Hino or gasoline inboards and conventional shaft drive are serviceable, but the engine room is compact. Window leaks, tanks, electrical modernization and availability of specific Hino parts are typical age-related concerns.",
+    "CharacterConfidence": "Moderate",
+    "ResearchNotes": "Batch 28 identity, generation and lineage normalization. Missing/variable specifications remain listing-specific rather than inferred.\n\nCruising Performance Research Wave 3 / core cleanup v6.96 (2026-09-13).\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "RarityConfidence": "Not rated",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "PriceConfidence": "Not rated",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "BoatFamilyCode": "boat_family.motor_yacht",
+    "HullBehaviourCode": "hull_behaviour.planing",
+    "FuelCode": "fuel.diesel",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "LOA": 9.9578,
+    "LWL": 8.8392,
+    "Beam": 3.5052,
+    "Draft": 0.89,
+    "AirDraft": 3.6576,
+    "Displacement": 5715.3,
+    "CanonicalSlug": "bayliner-3218-motoryacht-flybridge-motor-yacht",
+    "CanonicalPath": "/models/bayliner-3218-motoryacht-flybridge-motor-yacht/",
+    "CanonicalURL": "https://b-atlas.org/models/bayliner-3218-motoryacht-flybridge-motor-yacht/",
+    "StyleCode": "Motor Yacht",
+    "CoolingCode": "cooling.fresh_raw",
+    "FlybridgeCode": "availability.yes",
+    "SideDecksCode": "side_decks.wide",
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": 13,
+    "PlaningCruiseFuelBurn": 26.498,
+    "SpecificationConfidence": {
+      "PlaningCruiseSpeed": {
+        "Level": "Medium",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://everett.boatshed.com/bayliner_3218-boat-241436.html",
+          "https://manualzz.com/doc/34718597/bayliner-3218-motoryacht-user-manual"
+        ],
+        "Note": "Representative twin-Hino diesel 3218 performance: Boatshed reports about 13 kn at 7 US gal/h; the owner manual describes approximately 15 kn at 2700 rpm as maximum normal cruise. Stored point uses the measured/listed 13 kn / 7 US gal/h figure; gasoline and later 150-hp Hino installations can differ."
+      },
+      "PlaningCruiseFuelBurn": {
+        "Level": "Medium",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://everett.boatshed.com/bayliner_3218-boat-241436.html",
+          "https://manualzz.com/doc/34718597/bayliner-3218-motoryacht-user-manual"
+        ],
+        "Note": "Representative twin-Hino diesel 3218 performance: Boatshed reports about 13 kn at 7 US gal/h; the owner manual describes approximately 15 kn at 2700 rpm as maximum normal cruise. Stored point uses the measured/listed 13 kn / 7 US gal/h figure; gasoline and later 150-hp Hino installations can differ."
+      },
+      "EnginePowerPerEngine": {
+        "Level": "Medium",
+        "Status": "varies_by_configuration",
+        "EvidenceRefs": [
+          "https://everett.boatshed.com/bayliner_3218-boat-241436.html",
+          "https://manualzz.com/doc/34718597/bayliner-3218-motoryacht-user-manual"
+        ],
+        "Note": "3218 examples include 135-hp and later 150-hp Hino diesels as well as gasoline installations; verify hull-specific engines."
+      },
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      },
+      "KeelConfigurationCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from unambiguous existing KeelType text."
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from canonical no-keel geometry with inboard shaft/V-drive propulsion; propeller/rudder running gear is exposed below the hull rather than protected by a keel or skeg."
+      }
+    },
+    "ShowerTypeCode": "shower.none",
+    "KeelConfigurationCode": "keel.no_keel",
+    "RunningGearProtectionCode": "running_gear.exposed"
+  },
+  {
+    "ManufacturerID": "BAYLINER",
+    "Manufacturer": "Bayliner",
+    "Model": "3258 Command Bridge",
+    "Variant": "Command Bridge Cruiser",
+    "Nickname": "Bayliner 3258 Command Bridge",
+    "ImageURL": "images/bayl-3258.jpg",
+    "Active": false,
+    "FirstYear": 1995,
+    "LastYear": 2000,
+    "TotalBuilt": null,
+    "Designer": "Bayliner Design Team",
+    "HullType": "Planing",
+    "Style": "Sedan Cruiser",
+    "Construction": "Fiberglass",
+    "KeelType": "Modified V",
+    "Fuel": "Gasoline",
+    "Cooling": "Raw Water",
+    "EngineConfiguration": "Twin Inboard",
+    "Propulsion": "Stern Drive",
+    "Flybridge": "Yes",
+    "AftCabin": false,
+    "SideDecks": "Medium",
+    "TypicalEngineID": "MerCruiser 5.7 Twin",
+    "FuelCapacity": 681.3741,
+    "WaterCapacity": 196.8414,
+    "HoldingCapacity": 177.9144,
+    "Berths": 4,
+    "Cabins": 2,
+    "Heads": 1,
+    "Shower": false,
+    "Galley": false,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "No",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "Strengths": [
+      "Factory-documented capacities support multi-day cruising",
+      "Twin engines improve docking control",
+      "Flybridge adds visibility and outdoor seating",
+      "Compact beam for the accommodation provided"
+    ],
+    "Weaknesses": "Higher fuel burn, stern-drive maintenance.",
+    "CommonProblems": "",
+    "TypicalMission": "Day trips, weekend cruising and protected coastal travel, with longer trips dependent on layout, range and condition.",
+    "AvoidIf": [
+      "You require single shaft-drive simplicity",
+      "You need minimal air draft",
+      "You want low-cost propulsion maintenance"
+    ],
+    "DateCreated": " deck core moisture",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "Coastal cruising",
+    "Revision": null,
+    "BoatModelID": "BAYL-3258",
+    "BoatFamily": "Cruiser",
+    "HullBehaviour": "Planing",
+    "Features": [
+      "Flybridge"
+    ],
+    "NormalizedFuel": "Gasoline",
+    "NormalizedPropulsion": "Sterndrive",
+    "NormalizedHullForm": "Modified-V",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Cruiser",
+    "DataConfidence": "High",
+    "ResearchStatus": "Reviewed",
+    "Overview": "The Bayliner 3258 Ciera Command Bridge is a twin-sterndrive flybridge cruiser with an 11-foot beam and family-oriented cabin arrangement. Factory documentation confirms substantial tankage and a roughly 33-foot overall length; gasoline and diesel twin-engine packages were offered.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented accommodation and cruising layout support use by a couple, subject to individual-condition survey.",
+        "EvidenceRefs": [
+          "https://www.bayliner.com/content/dam/bayliner/brand-assets/marketing-materials/product-info/past-owners-manuals/1999-Ciera-3258.pdf"
+        ]
+      },
+      "FamilyOrGuests": {
+        "Assessment": "Good",
+        "Summary": "Multiple sleeping areas improve guest separation.",
+        "EvidenceRefs": [
+          "https://www.bayliner.com/content/dam/bayliner/brand-assets/marketing-materials/product-info/past-owners-manuals/1999-Ciera-3258.pdf"
+        ]
+      },
+      "InlandAndCoastal": {
+        "Assessment": "Good",
+        "Summary": "The design is primarily suited to inland and coastal cruising within its documented dimensional and sea-state limits.",
+        "EvidenceRefs": [
+          "https://www.bayliner.com/content/dam/bayliner/brand-assets/marketing-materials/product-info/past-owners-manuals/1999-Ciera-3258.pdf"
+        ]
+      },
+      "SoloHandling": {
+        "Assessment": "Mixed",
+        "Summary": "Twin propulsion can aid docking, but duplicate systems and larger flybridge layouts increase workload.",
+        "EvidenceRefs": [
+          "https://www.bayliner.com/content/dam/bayliner/brand-assets/marketing-materials/product-info/past-owners-manuals/1999-Ciera-3258.pdf"
+        ]
+      }
+    },
+    "TradeOffs": [
+      "Twin sterndrives increase service complexity",
+      "Bridge height affects transport and covered storage",
+      "Machinery and drive access require careful survey",
+      "Gasoline and diesel variants have different performance and ownership economics"
+    ],
+    "BestFor": [
+      "Family coastal and inland cruising",
+      "Buyers wanting a flybridge around 33 feet",
+      "Owners comfortable maintaining twin sterndrives"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Both sterndrives, transom assemblies and steering",
+      "Fuel and holding tanks and associated plumbing",
+      "Flybridge controls and electrical systems",
+      "Deck and transom moisture"
+    ],
+    "BuyerQuestions": [
+      "Which gasoline or diesel engine package is installed?",
+      "When were both sterndrives and transom assemblies last serviced?",
+      "Have the fuel, water or holding tanks required repair or replacement?"
+    ],
+    "OwnerActions": [
+      "Keep both drive systems on a documented maintenance schedule",
+      "Inspect tank access and plumbing for leaks or corrosion"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "Gasoline package",
+        "Description": "Twin gasoline sterndrive configurations were offered.",
+        "AffectedYears": "1995–2000",
+        "EvidenceRefs": [
+          "https://www.bayliner.com/content/dam/bayliner/brand-assets/marketing-materials/product-info/past-owners-manuals/1999-Ciera-3258.pdf"
+        ],
+        "Confidence": "High"
+      },
+      {
+        "Name": "Diesel package",
+        "Description": "Twin diesel sterndrive configurations were also available.",
+        "AffectedYears": "1995–2000",
+        "EvidenceRefs": [
+          "https://www.bayliner.com/content/dam/bayliner/brand-assets/marketing-materials/product-info/past-owners-manuals/1999-Ciera-3258.pdf"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "BAYL-3258"
+            ],
+            "Years": {
+              "From": 1995,
+              "To": 2000
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.bayliner.com/content/dam/bayliner/brand-assets/marketing-materials/product-info/past-owners-manuals/1999-Ciera-3258.pdf"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source",
+            "Marketplace observation"
+          ],
+          "Confidence": "High",
+          "Notes": "Identity, production period and principal specifications are based on model-specific references. Individual hull documentation remains controlling."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "BAYL-3258"
+            ],
+            "Years": {
+              "From": 1995,
+              "To": 2000
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.bayliner.com/content/dam/bayliner/brand-assets/marketing-materials/product-info/past-owners-manuals/1999-Ciera-3258.pdf"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance is derived from documented layout, dimensions, hull form and propulsion configuration."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "General age-related guidance",
+            "Models": [
+              "BAYL-3258"
+            ],
+            "Years": {
+              "From": 1995,
+              "To": 2000
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.bayliner.com/content/dam/bayliner/brand-assets/marketing-materials/product-info/past-owners-manuals/1999-Ciera-3258.pdf"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance combines model-specific configuration with age-related system risks. These are inspection priorities, not assertions of a model-wide defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Individual engine packages, equipment and refit histories vary by production year and hull",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold"
+      ]
+    },
+    "EngineCount": 2,
+    "ModelCharacter": "A late-1990s Euro-styled flybridge cruiser with twin sterndrives, huge interior for its beam and almost nonexistent side decks. The elevated lower helm, aft cabin under the windshield and small cockpit make it a space-first family cruiser rather than a deck-access-oriented yacht.",
+    "DesignLineage": [
+      "Produced from 1995–2000.",
+      "The 3258 belongs to Bayliner's Ciera Command Bridge line rather than the shaft-drive 32xx Motor Yacht family.",
+      "Its twin sterndrives and 17-degree transom deadrise distinguish it mechanically and hydrodynamically from the 3270/3288.",
+      "The model was a self-contained late-1990s design rather than a rename of the 3058."
+    ],
+    "OwnershipCharacter": "Great accommodation value, but twin sterndrives, tight cockpit and minimal side decks create service and handling compromises. Drive maintenance and core/transom condition are central purchase issues.",
+    "CharacterConfidence": "High",
+    "ResearchNotes": "Batch 28 identity, generation and lineage normalization. Missing/variable specifications remain listing-specific rather than inferred.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "RarityConfidence": "Not rated",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "PriceConfidence": "Not rated",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "BoatFamilyCode": "boat_family.express_cruiser",
+    "HullBehaviourCode": "hull_behaviour.planing",
+    "FuelCode": "fuel.gasoline",
+    "MechanicalPropulsionCode": "mechanical_propulsion.sterndrive",
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "LOA": 10.034,
+    "LWL": 9.4488,
+    "Beam": 3.3528,
+    "Draft": 0.9906,
+    "AirDraft": 3.5296,
+    "Displacement": 4640.2,
+    "RudderTypeCode": "rudder.none_external_drive",
+    "CanonicalSlug": "bayliner-3258-command-bridge-command-bridge-cruiser",
+    "CanonicalPath": "/models/bayliner-3258-command-bridge-command-bridge-cruiser/",
+    "CanonicalURL": "https://b-atlas.org/models/bayliner-3258-command-bridge-command-bridge-cruiser/",
+    "StyleCode": "Cruiser",
+    "CoolingCode": "cooling.raw_water",
+    "FlybridgeCode": "availability.yes",
+    "SideDecksCode": "side_decks.moderate",
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "ShowerTypeCode": "shower.none",
+    "SpecificationConfidence": {
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      },
+      "KeelConfigurationCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from unambiguous existing KeelType text."
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing propulsion/keel description; no new factual assertion introduced."
+      }
+    },
+    "KeelConfigurationCode": "keel.no_keel",
+    "RunningGearProtectionCode": "running_gear.exposed"
+  },
+  {
+    "ManufacturerID": "BAYLINER",
+    "Manufacturer": "Bayliner",
+    "Model": "3270 / 3288 Motor Yacht",
+    "Variant": "Explorer / Motor Yacht",
+    "Nickname": "Bayliner 3270 / 3288 Motor Yacht",
+    "ImageURL": "images/bayl-3288-mo.jpg",
+    "Active": false,
+    "FirstYear": 1981,
+    "LastYear": 1995,
+    "TotalBuilt": 2500,
+    "Designer": "Bayliner Marine",
+    "HullType": "Semi-Displacement",
+    "Style": "Flybridge Sedan",
+    "Construction": "Fiberglass",
+    "KeelType": "Twin Skeg",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Twin Inboard",
+    "Propulsion": "Shaft",
+    "Flybridge": "Yes",
+    "AftCabin": true,
+    "SideDecks": "Moderate",
+    "TypicalEngineID": "Hino WO4D",
+    "FuelCapacity": 757.0824,
+    "WaterCapacity": 246.0518,
+    "HoldingCapacity": 87.0645,
+    "Berths": 6,
+    "Cabins": 2,
+    "Heads": 1,
+    "Shower": false,
+    "Galley": false,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "No",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "Strengths": [
+      "Efficient accommodation layout with two sleeping areas",
+      "Twin inboard shaft propulsion",
+      "Lower helm plus flybridge",
+      "Large owner population and established parts knowledge"
+    ],
+    "Weaknesses": "Thin hull laminate promotes inside engine noise, restricted head room inside master shower.",
+    "CommonProblems": "Flybridge core water saturation around snap tracks, shaft packing wear.",
+    "TypicalMission": "Budget-conscious coastal passage making, loops, and regional family day hops.",
+    "AvoidIf": [
+      "You want single-engine simplicity",
+      "You require spacious engine-room access",
+      "You prefer premium joinery and heavy displacement construction"
+    ],
+    "DateCreated": "2026-07-13",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "AI_Database_Gen",
+    "Revision": 1,
+    "BoatModelID": "BAYL-3288-MO",
+    "BoatFamily": "Motor Yacht",
+    "Configuration": "Aft Cabin Cruiser",
+    "HullBehaviour": "Semi-Displacement",
+    "Features": [
+      "Flybridge",
+      "Aft Cabin"
+    ],
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Modified-V",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Cruiser",
+    "DataConfidence": "High",
+    "ResearchStatus": "Reviewed",
+    "Overview": "Bayliner's all-time best-selling compact flybridge cruiser family: introduced as the 3270 Explorer in 1981, renamed 3270 Motor Yacht in 1985 and evolved into the 3288 Motor Yacht in 1989 without materially changing its celebrated mid-cabin, lower-helm layout.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented accommodation and cruising layout support use by a couple, subject to individual-condition survey.",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/3270-explorer-3270-3288-motor-yacht-1981-95"
+        ]
+      },
+      "FamilyOrGuests": {
+        "Assessment": "Good",
+        "Summary": "Multiple sleeping areas improve guest separation.",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/3270-explorer-3270-3288-motor-yacht-1981-95"
+        ]
+      },
+      "InlandAndCoastal": {
+        "Assessment": "Good",
+        "Summary": "The design is primarily suited to inland and coastal cruising within its documented dimensional and sea-state limits.",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/3270-explorer-3270-3288-motor-yacht-1981-95"
+        ]
+      },
+      "SoloHandling": {
+        "Assessment": "Mixed",
+        "Summary": "Twin propulsion can aid docking, but duplicate systems and larger flybridge layouts increase workload.",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/3270-explorer-3270-3288-motor-yacht-1981-95"
+        ]
+      }
+    },
+    "TradeOffs": [
+      "Engine access remains tight",
+      "Two engines increase maintenance load",
+      "Interior finish and noise isolation are value-oriented",
+      "Individual engine packages materially affect speed, economy and serviceability"
+    ],
+    "BestFor": [
+      "Couples or small families wanting a compact twin-diesel cruiser",
+      "Inland and protected coastal cruising",
+      "Buyers valuing accommodation density and dual helms"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Both engines, transmissions, shafts and cooling systems",
+      "Window and deck moisture",
+      "Fuel tanks and plumbing",
+      "Electrical and sanitation systems"
+    ],
+    "BuyerQuestions": [
+      "Which Hino or gasoline engine package is installed?",
+      "What service history exists for both propulsion trains?",
+      "Have deck, window or tank repairs been documented?"
+    ],
+    "OwnerActions": [
+      "Maintain both cooling and shaft systems consistently",
+      "Monitor deck/window sealing and fuel-system condition"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "Early lower-output diesel",
+        "Description": "Earlier 32xx family boats commonly used lower-output Hino diesels.",
+        "AffectedYears": "Early family production",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/3270-explorer-3270-3288-motor-yacht-1981-95"
+        ],
+        "Confidence": "High"
+      },
+      {
+        "Name": "Later turbo diesel",
+        "Description": "Later 3288 examples used higher-output turbo Hino diesels, increasing cruise speed.",
+        "AffectedYears": "Later production",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/3270-explorer-3270-3288-motor-yacht-1981-95"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "BAYL-3288-MO"
+            ],
+            "Years": {
+              "From": 1989,
+              "To": 1995
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/3270-explorer-3270-3288-motor-yacht-1981-95"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source",
+            "Marketplace observation"
+          ],
+          "Confidence": "High",
+          "Notes": "Identity, production period and principal specifications are based on model-specific references. Individual hull documentation remains controlling."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "BAYL-3288-MO"
+            ],
+            "Years": {
+              "From": 1989,
+              "To": 1995
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/3270-explorer-3270-3288-motor-yacht-1981-95"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance is derived from documented layout, dimensions, hull form and propulsion configuration."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "General age-related guidance",
+            "Models": [
+              "BAYL-3288-MO"
+            ],
+            "Years": {
+              "From": 1989,
+              "To": 1995
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/3270-explorer-3270-3288-motor-yacht-1981-95"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance combines model-specific configuration with age-related system risks. These are inspection priorities, not assertions of a model-wide defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Individual engine packages, equipment and refit histories vary by production year and hull",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold"
+      ]
+    },
+    "EngineCount": 2,
+    "ModelCharacter": "A landmark affordable family cruiser whose 3270/3288 naming changes disguise one continuous 1981–95 model family. Twin inboards, lower and upper helms, wide cabin windows and a private mid-cabin under the dinette made it unusually livable and efficient for 32 feet.",
+    "DesignLineage": [
+      "Introduced in 1981 as the Bayliner 3270 Explorer.",
+      "Renamed Bayliner 3270 Motor Yacht in 1985 with updated flybridge/radar-arch treatment.",
+      "Evolved into the Bayliner 3288 Motor Yacht in 1989 while retaining the same basic hull and mid-cabin floorplan.",
+      "More than 3,000 are reported sold; the later 3388 became the next-generation successor in 1996."
+    ],
+    "OwnershipCharacter": "One of Bayliner's most practical older cruising platforms. Twin Hino diesels can be very economical and shaft drive is straightforward, but the engine compartment is tight and specific Hino parts support varies by region. Windows, tanks, decks and decades of owner modifications remain major survey items.",
+    "CharacterConfidence": "High",
+    "ResearchNotes": "Canonical consolidation 2026-08-07: BAYL-3270 merged into BAYL-3288-MO because Powerboat Guide documents one continuous 1981–95 family: 3270 Explorer (1981), 3270 Motor Yacht (1985), 3288 Motor Yacht (1989). Search aliases preserve all names.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "RarityConfidence": "Not rated",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "PriceConfidence": "Not rated",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "BoatFamilyCode": "boat_family.motor_yacht",
+    "HullBehaviourCode": "hull_behaviour.planing",
+    "LOA": 9.779,
+    "Beam": 3.5052,
+    "Draft": 0.889,
+    "Displacement": 5669.9,
+    "ModelAliases": [
+      "3270 Explorer",
+      "3270 Motor Yacht",
+      "3288 Motor Yacht"
+    ],
+    "FuelCode": "fuel.diesel",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "KeelConfigurationCode": "keel.twin",
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "LWL": 8.9611,
+    "AirDraft": 3.81,
+    "CanonicalSlug": "bayliner-3270-3288-motor-yacht-explorer-motor-yacht",
+    "CanonicalPath": "/models/bayliner-3270-3288-motor-yacht-explorer-motor-yacht/",
+    "CanonicalURL": "https://b-atlas.org/models/bayliner-3270-3288-motor-yacht-explorer-motor-yacht/",
+    "StyleCode": "Cruiser",
+    "CoolingCode": "cooling.fresh_water",
+    "FlybridgeCode": "availability.yes",
+    "SideDecksCode": "side_decks.moderate",
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "ShowerTypeCode": "shower.none",
+    "SpecificationConfidence": {
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing propulsion/keel description; no new factual assertion introduced."
+      }
+    },
+    "RunningGearProtectionCode": "running_gear.skeg_protected"
+  },
+  {
+    "ManufacturerID": "BAYLINER",
+    "Manufacturer": "Bayliner",
+    "Model": "3388 Motor Yacht",
+    "Variant": "Flybridge Motor Yacht",
+    "Nickname": "Bayliner 3388 Motor Yacht",
+    "ImageURL": "images/bayl-3388.jpg",
+    "Active": false,
+    "FirstYear": 1996,
+    "LastYear": 2001,
+    "TotalBuilt": null,
+    "Designer": "Bayliner Design Team",
+    "HullType": "Semi-Displacement",
+    "Style": "Aft Cabin Motor Yacht",
+    "Construction": "Fiberglass",
+    "KeelType": "Modified V",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Twin Inboard",
+    "Propulsion": "Shaft",
+    "Flybridge": "Yes",
+    "AftCabin": false,
+    "SideDecks": "Wide",
+    "TypicalEngineID": "Cummins 210",
+    "FuelCapacity": 757.0824,
+    "WaterCapacity": 340.6871,
+    "HoldingCapacity": 113.5624,
+    "Berths": 6,
+    "Cabins": 2,
+    "Heads": 2,
+    "Shower": false,
+    "Galley": false,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "Limited",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "Strengths": [
+      "Two-stateroom layout in a compact length",
+      "Lower helm plus flybridge",
+      "Twin shaft-drive inboards",
+      "Prop pockets reduce shaft angle and draft"
+    ],
+    "Weaknesses": "Older build quality, modest offshore capability.",
+    "CommonProblems": "",
+    "TypicalMission": "Comfort-oriented inland and coastal cruising, with suitability dependent on range, condition and operating budget.",
+    "AvoidIf": [
+      "You prioritize rough-water performance",
+      "You want a large open salon",
+      "You require single-engine simplicity"
+    ],
+    "DateCreated": " window leaks",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "Loop cruising",
+    "Revision": null,
+    "BoatModelID": "BAYL-3388",
+    "BoatFamily": "Motor Yacht",
+    "Configuration": "Aft Cabin Cruiser",
+    "HullBehaviour": "Semi-Displacement",
+    "Features": [
+      "Flybridge",
+      "Aft Cabin",
+      "Wide Side Decks"
+    ],
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Modified-V",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Motor Yacht",
+    "DataConfidence": "High",
+    "ResearchStatus": "Reviewed",
+    "Overview": "The Bayliner 3388 Motor Yacht is the successor to the 3288 family, retaining a two-stateroom, lower-helm and flybridge layout while adding a revised hull and more contemporary styling. Gasoline and diesel twin-inboard installations are documented, so propulsion should be treated as configuration-specific.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented accommodation and cruising layout support use by a couple, subject to individual-condition survey.",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/3388-motor-yacht-1996-2001"
+        ]
+      },
+      "FamilyOrGuests": {
+        "Assessment": "Good",
+        "Summary": "Multiple sleeping areas improve guest separation.",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/3388-motor-yacht-1996-2001"
+        ]
+      },
+      "InlandAndCoastal": {
+        "Assessment": "Good",
+        "Summary": "The design is primarily suited to inland and coastal cruising within its documented dimensional and sea-state limits.",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/3388-motor-yacht-1996-2001"
+        ]
+      },
+      "SoloHandling": {
+        "Assessment": "Mixed",
+        "Summary": "Twin propulsion can aid docking, but duplicate systems and larger flybridge layouts increase workload.",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/3388-motor-yacht-1996-2001"
+        ]
+      }
+    },
+    "TradeOffs": [
+      "Salon circulation is constrained by the mid-cabin stair arrangement",
+      "Low-deadrise hull prioritizes efficiency and space over rough-water comfort",
+      "Twin engines increase operating and service cost",
+      "Gasoline and diesel versions have materially different economics"
+    ],
+    "BestFor": [
+      "Family cruising on inland and protected coastal waters",
+      "Buyers wanting two cabins and dual helms around 33 feet",
+      "Owners comfortable with twin-inboard systems"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Both engines, gears, shafts and prop-pocket running gear",
+      "Window and deck sealing",
+      "Fuel system and tank condition",
+      "Lower-helm and flybridge control systems"
+    ],
+    "BuyerQuestions": [
+      "Is the boat gasoline or diesel powered, and what exact engines are installed?",
+      "What propulsion and cooling-system service has been completed?",
+      "Have window or deck leaks required repair?"
+    ],
+    "OwnerActions": [
+      "Maintain both propulsion trains and shaft seals",
+      "Keep window and deck penetrations sealed"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "Gasoline twin inboards",
+        "Description": "Twin gasoline inboards were standard on some 3388 production.",
+        "AffectedYears": "1996–2001",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/3388-motor-yacht-1996-2001"
+        ],
+        "Confidence": "High"
+      },
+      {
+        "Name": "Diesel twin inboards",
+        "Description": "Twin diesel configurations are also documented in the market.",
+        "AffectedYears": "1996–2001",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/3388-motor-yacht-1996-2001"
+        ],
+        "Confidence": "Moderate"
+      }
+    ],
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "BAYL-3388"
+            ],
+            "Years": {
+              "From": 1996,
+              "To": 2001
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/3388-motor-yacht-1996-2001"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source",
+            "Marketplace observation"
+          ],
+          "Confidence": "High",
+          "Notes": "Identity, production period and principal specifications are based on model-specific references. Individual hull documentation remains controlling."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "BAYL-3388"
+            ],
+            "Years": {
+              "From": 1996,
+              "To": 2001
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/3388-motor-yacht-1996-2001"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance is derived from documented layout, dimensions, hull form and propulsion configuration."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "General age-related guidance",
+            "Models": [
+              "BAYL-3388"
+            ],
+            "Years": {
+              "From": 1996,
+              "To": 2001
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/3388-motor-yacht-1996-2001"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance combines model-specific configuration with age-related system risks. These are inspection priorities, not assertions of a model-wide defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Individual engine packages, equipment and refit histories vary by production year and hull",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold"
+      ]
+    },
+    "EngineCount": 2,
+    "ModelCharacter": "The direct stylistic and hull-development successor to the famous 3288 family, retaining the mid-cabin/lower-helm layout while adding a fresher profile, prop pockets and a more integrated cabin/bridge mold.",
+    "DesignLineage": [
+      "Produced from 1996–2001.",
+      "HMY explicitly describes the 3388 as an updated version of the 3288 Motor Yacht.",
+      "The two-stateroom mid-cabin layout remained conceptually similar to the predecessor.",
+      "The 3388 used revised hull details, newer styling and both gasoline and diesel twin-inboard packages."
+    ],
+    "OwnershipCharacter": "Conventional twin inboards are preferable to sterndrives for many cruisers, but the compact salon/engine packaging and twin systems still require hands-on maintenance. Hino/Cummins configuration materially affects parts support and value.",
+    "CharacterConfidence": "High",
+    "ResearchNotes": "Batch 28 identity, generation and lineage normalization. Missing/variable specifications remain listing-specific rather than inferred.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "RarityConfidence": "Not rated",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "PriceConfidence": "Not rated",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "BoatFamilyCode": "boat_family.motor_yacht",
+    "HullBehaviourCode": "hull_behaviour.planing",
+    "LOA": 10.033,
+    "Beam": 3.5052,
+    "Draft": 0.8128,
+    "Displacement": 7030.7,
+    "ShowerTypeCode": "shower.separate_stall",
+    "FuelCode": "fuel.diesel",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "LWL": 9.7536,
+    "AirDraft": 4.1148,
+    "CanonicalSlug": "bayliner-3388-motor-yacht-flybridge-motor-yacht",
+    "CanonicalPath": "/models/bayliner-3388-motor-yacht-flybridge-motor-yacht/",
+    "CanonicalURL": "https://b-atlas.org/models/bayliner-3388-motor-yacht-flybridge-motor-yacht/",
+    "StyleCode": "Motor Yacht",
+    "CoolingCode": "cooling.fresh_water",
+    "FlybridgeCode": "availability.yes",
+    "SideDecksCode": "side_decks.wide",
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "KeelConfigurationCode": "keel.no_keel",
+    "SpecificationConfidence": {
+      "KeelConfigurationCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from unambiguous existing KeelType text."
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from canonical no-keel geometry with inboard shaft/V-drive propulsion; propeller

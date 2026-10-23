@@ -1,12 +1,13 @@
 import json, os, re, html, shutil, subprocess
 from pathlib import Path
-from datetime import date
+from datetime import date, datetime, timezone
 from collections import Counter, defaultdict
 
-ROOT = Path(__file__).resolve().parents[1]
+SOURCE = Path(__file__).resolve().parents[1]
+ROOT = Path(os.environ.get('BATLAS_OUTPUT_DIR', str(SOURCE / 'dist'))).resolve()
 BASE = 'https://b-atlas.org/'
-TODAY = date.today().isoformat()
-page_input = json.loads(subprocess.check_output(['node', 'developer/model-page-input.cjs'], cwd=ROOT, encoding='utf-8'))
+TODAY = (datetime.fromtimestamp(int(os.environ['SOURCE_DATE_EPOCH']), timezone.utc).date() if 'SOURCE_DATE_EPOCH' in os.environ else date.today()).isoformat()
+page_input = (json.loads(Path(os.environ['BATLAS_PAGE_INPUT']).read_text(encoding='utf-8')) if os.environ.get('BATLAS_PAGE_INPUT') else json.loads(subprocess.check_output(['node', 'developer/model-page-input.cjs'], cwd=SOURCE, encoding='utf-8')))
 models = page_input['models']
 image_sources = page_input['imageSources']
 
@@ -135,7 +136,7 @@ def semidisplacement(m): return 'semi' in text(m,'HullBehaviour','NormalizedHull
 
 # Preserve v6.23.2 model URLs where possible by reading existing pages.
 id_to_slug={}
-models_dir=ROOT/'models'
+models_dir=SOURCE/'models'
 if models_dir.exists():
     for p in models_dir.glob('*/index.html'):
         mt=re.search(r'\?model=([^"&]+)', p.read_text(encoding='utf-8', errors='ignore'))
@@ -368,7 +369,7 @@ for m in models:
 
 # Retired pages must not continue publishing a competing specification record.
 # These redirects implement already recorded identity decisions, not new research.
-redirect_file = ROOT/'deployment'/'legacy-model-page-redirects.json'
+redirect_file = SOURCE/'deployment'/'legacy-model-page-redirects.json'
 if redirect_file.exists():
     for legacy_slug, entry in json.loads(redirect_file.read_text(encoding='utf-8')).items():
         target_id = entry['BoatModelID']
@@ -388,7 +389,7 @@ url=BASE+'models/'; title='Boat Model Guides: Specs, Concerns & Buyer Research |
 # Update public footer links/version without adding primary-nav clutter.
 idx=ROOT/'index.html'; s=idx.read_text(encoding='utf-8')
 s=re.sub(r'(<a href="models/">Browse Model Guides</a>)(?:\s*<a href="boats/">Find by Criteria</a>\s*<a href="compare/">Compare Models</a>)*', r'\1\n    <a href="boats/">Find by Criteria</a>\n    <a href="compare/">Compare Models</a>', s)
-pkg=json.loads((ROOT/'package.json').read_text(encoding='utf-8')); release=pkg.get('version',''); s=re.sub(r'Version [0-9]+\.[0-9]+\.[0-9]+[^<]*', f'Version {release}', s)
+pkg=json.loads((SOURCE/'package.json').read_text(encoding='utf-8')); release=pkg.get('version',''); s=re.sub(r'Version [0-9]+\.[0-9]+\.[0-9]+[^<]*', f'Version {release}', s)
 idx.write_text(s,encoding='utf-8')
 
 
@@ -413,7 +414,7 @@ xml.append('</urlset>')
 
 # Report generation summary to stdout only. Historical/maintainability reports live in the separate Development Archive.
 report={
- 'version':json.loads((ROOT/'package.json').read_text(encoding='utf-8')).get('version',''), 'generated':TODAY, 'model_pages':len(models), 'manufacturer_pages':len(manufacturer_slugs),
+ 'version':json.loads((SOURCE/'package.json').read_text(encoding='utf-8')).get('version',''), 'generated':TODAY, 'model_pages':len(models), 'manufacturer_pages':len(manufacturer_slugs),
  'constraint_pages':len(criteria_defs), 'comparison_pages':len(pairs), 'sitemap_urls':len(urls),
  'principle':'Generate stable, useful pages from canonical model data. Do not generate every possible filter or model pair.'
 }

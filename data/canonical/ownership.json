@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "joinKey": "BoatModelID",
   "datasets": {
-    "identities": "data/canonical/identities.json",
-    "specifications": "data/canonical/specifications.json",
-    "guidance": "data/canonical/guidance.json",
-    "provenance": "data/canonical/provenance.json"
+    "identities": "data/canonical/identities",
+    "specifications": "data/canonical/specifications",
+    "guidance": "data/canonical/guidance",
+    "provenance": "data/canonical/provenance"
   },
   "fields": {
     "Active": "identities",
@@ -221,5 +221,13 @@
     "AirDraft_ft",
     "HullLength_ft"
   ],
-  "legacyEvidencePolicy": "Legacy labels and unit-bearing measurements are retained as historical source representations in provenance, not competing current specifications. Public compatibility fallbacks remain available; canonical SI/code values take precedence. Unresolved units are never inferred."
+  "legacyEvidencePolicy": "Legacy labels and unit-bearing measurements are retained as historical source representations in provenance, not competing current specifications. Public compatibility fallbacks remain available; canonical SI/code values take precedence. Unresolved units are never inferred.",
+  "storage": {
+    "schemaVersion": 1,
+    "bucketCount": 32,
+    "routing": "sha256-utf8-first8hex-mod32",
+    "index": "data/canonical/index.json",
+    "warningBytes": 150000,
+    "maximumBytes": 200000
+  }
 }

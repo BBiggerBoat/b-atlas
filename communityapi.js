@@ -23,6 +23,7 @@ async function submit(record,attachments=[]){
 }
 
 async function publicOverlays(){
+  if(root.BScoutDataRepository)return (await root.BScoutDataRepository.getRepository().loadOverlay()) || {modelPatches:{},addedModels:[],addedManufacturers:[],resourceAdditions:[]};
   try{return await request("/api/public/overlays",{signal:AbortSignal.timeout(5000)})}
   catch{return {modelPatches:{},addedModels:[],addedManufacturers:[],reviewedContributions:[],knowledgeItems:[],knowledgeEvidence:[],resourceAdditions:[]}}
 }

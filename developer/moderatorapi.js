@@ -21,10 +21,11 @@ async function adminRequest(path,options={}){
   let body=null;try{body=await res.json()}catch{}
   if(res.status===401||res.status===403) sessionStorage.removeItem(TOKEN_KEY);
   if(!res.ok) throw new Error(body?.error||`${res.status} ${res.statusText}`);
+  if(options.method && options.method!=="GET")root.BScoutDataRepository?.getRepository().invalidate();
   return body;
 }
 
-async function adminSnapshot(){return adminRequest("/api/admin/snapshot")}
+async function adminSnapshot(){const snapshot=await adminRequest("/api/admin/snapshot");root.BScoutDataRepository?.getRepository().invalidate();return snapshot}
 async function saveAdminSnapshot(snapshot){return adminRequest("/api/admin/snapshot",{method:"PUT",body:JSON.stringify(snapshot)})}
 async function publish(){return adminRequest("/api/admin/publish",{method:"POST",body:"{}"})}
 async function backup(){return adminRequest("/api/admin/backup")}
@@ -33,12 +34,10 @@ async function revertCanonicalChange(changeId){return adminRequest(`/api/admin/c
 
 async function reconciliation(){
   if(typeof api.publicOverlays!=="function") throw new Error("Public B-Atlas API client is unavailable");
-  const [baselineMeta,models,manufacturers,published]=await Promise.all([
-    fetch("/baseline-version.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw new Error("Baseline version manifest unavailable");return r.json()}),
-    fetch("/boatmodels.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw new Error("Baseline boat models unavailable");return r.json()}),
-    fetch("/data/registry/manufacturers.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw new Error("Baseline manufacturer registry unavailable");return r.json()}),
-    api.publicOverlays()
-  ]);
+  const repository=root.BScoutDataRepository.getRepository();
+  const [data,publishedOverlay]=await Promise.all([repository.loadBaseline(),repository.loadOverlay()]);
+  if(!publishedOverlay)throw Error("Published overlays unavailable; reconciliation cannot be verified");
+  const baselineMeta={baselineVersion:data.baselineVersion},models=data.boats,manufacturers=data.manufacturers,published=publishedOverlay||{};
   const modelRows=Array.isArray(models)?models:[], manufacturerRows=Array.isArray(manufacturers)?manufacturers:[];
   const byModel=new Map(modelRows.map(x=>[String(x.BoatModelID||""),x]));
   const byManufacturer=new Map(manufacturerRows.map(x=>[String(x.ManufacturerCode||""),x]));
@@ -77,20 +76,12 @@ async function reconciliation(){
 }
 
 async function promote(contribution){
-  let baseline={models:[],manufacturers:[]};
-  try{
-    const [models,manufacturers]=await Promise.all([
-      fetch("/boatmodels.json",{cache:"no-store"}).then(r=>r.ok?r.json():[]),
-      fetch("/data/registry/manufacturers.json",{cache:"no-store"}).then(r=>r.ok?r.json():[])
-    ]);
-    baseline={
-      models:Array.isArray(models)?models.map(x=>({
-        BoatModelID:x.BoatModelID,ManufacturerID:x.ManufacturerID,Manufacturer:x.Manufacturer,
-        Model:x.Model,Variant:x.Variant,CanonicalSlug:x.CanonicalSlug,CanonicalPath:x.CanonicalPath,CanonicalURL:x.CanonicalURL
-      })):[],
-      manufacturers:Array.isArray(manufacturers)?manufacturers.map(x=>({ManufacturerCode:x.ManufacturerCode,CanonicalName:x.CanonicalName})):[]
-    };
-  }catch{}
+  // A failed required baseline must stop promotion, never submit an empty duplicate-check list.
+  const data=await root.BScoutDataRepository.getRepository().loadBaseline();
+  const baseline={
+    models:data.boats.map(x=>({BoatModelID:x.BoatModelID,ManufacturerID:x.ManufacturerID,Manufacturer:x.Manufacturer,Model:x.Model,Variant:x.Variant,CanonicalSlug:x.CanonicalSlug,CanonicalPath:x.CanonicalPath,CanonicalURL:x.CanonicalURL})),
+    manufacturers:data.manufacturers.map(x=>({ManufacturerCode:x.ManufacturerCode,CanonicalName:x.CanonicalName}))
+  };
   return adminRequest("/api/admin/promote",{method:"POST",body:JSON.stringify({contribution,baseline})});
 }
 

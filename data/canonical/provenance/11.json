@@ -1,0 +1,2424 @@
+[
+  {
+    "BoatModelID": "BKCV-30",
+    "HullType": "Semi-Displacement",
+    "Style": "Downeast Express",
+    "KeelType": "Pocket Keel",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "Propulsion": "Shaft",
+    "Flybridge": "No",
+    "SideDecks": "Moderate",
+    "BoatFamily": "Trawler",
+    "HullBehaviour": "Semi-Displacement",
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Semi-Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Downeast Cruiser",
+    "DisplacementLb": 12300,
+    "FuelCapacityGal": 164,
+    "WaterCapacityGal": 58,
+    "NormalizedHullType": "Modified-V",
+    "propulsion": "mechanical_propulsion.shaft",
+    "DateCreated": "2026-07-13",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "B-Atlas Phase 8C-12 Downeast / Lobster-Style Research",
+    "Revision": 2,
+    "DataConfidence": "Moderate",
+    "ResearchStatus": "Reviewed",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "BKCV-30"
+            ],
+            "Years": {
+              "From": 2011,
+              "To": 2019
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.backcoveyachts.com/owners/heritage-models",
+            "https://www.backcoveyachts.com/motor-yachts/back-cove-39o",
+            "https://www.backcoveyachts.com/owners/heritage-models/back-cove-30"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Representative model identity and principal specifications are based on model-specific sources where available."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "BKCV-30"
+            ],
+            "Years": {
+              "From": 2011,
+              "To": 2019
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.backcoveyachts.com/owners/heritage-models",
+            "https://www.backcoveyachts.com/motor-yachts/back-cove-39o",
+            "https://www.backcoveyachts.com/owners/heritage-models/back-cove-30"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Decision guidance is derived from documented hull, propulsion, layout and intended use rather than advertising claims."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "BKCV-30"
+            ],
+            "Years": {
+              "From": 2011,
+              "To": 2019
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.backcoveyachts.com/owners/heritage-models",
+            "https://www.backcoveyachts.com/motor-yachts/back-cove-39o",
+            "https://www.backcoveyachts.com/owners/heritage-models/back-cove-30"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection items are configuration and age risks, not assertions that every hull suffers a defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "ResearchNotes": "Canonical name corrected from misleading 'Back Cove 30 Trawler' to Back Cove 30. Factory heritage page gives 34'2\" overall including appendages, 11'3\" beam, 2'8\" draft, 164 gal fuel, 58 gal water and standard 320 hp single diesel. Exact production start/end are not forced.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "SpecificationConfidence": {
+      "LWL": {
+        "Level": "Low",
+        "Status": "restored_legacy_working_value",
+        "EvidenceRefs": [],
+        "Note": "Working LWL restored from the pre-v6.81 archived B-Atlas value (28.5 ft). Retained as a low-confidence community-verifiable value rather than leaving a basic performance input blank."
+      },
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      },
+      "DisplacementCruiseSpeed": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://boattest.com/boats/back-cove/30-2015"
+        ],
+        "Note": "BoatTEST instrumented 370-hp Yanmar 8LV table: 6.7 kn at 1.25 US gal/h (1300 rpm) and 20.2 kn at 10.5 US gal/h (3000 rpm)."
+      },
+      "DisplacementCruiseFuelBurn": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://boattest.com/boats/back-cove/30-2015"
+        ],
+        "Note": "BoatTEST instrumented 370-hp Yanmar 8LV table: 6.7 kn at 1.25 US gal/h (1300 rpm) and 20.2 kn at 10.5 US gal/h (3000 rpm)."
+      },
+      "PlaningCruiseSpeed": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://boattest.com/boats/back-cove/30-2015"
+        ],
+        "Note": "BoatTEST instrumented 370-hp Yanmar 8LV table: 6.7 kn at 1.25 US gal/h (1300 rpm) and 20.2 kn at 10.5 US gal/h (3000 rpm)."
+      },
+      "PlaningCruiseFuelBurn": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://boattest.com/boats/back-cove/30-2015"
+        ],
+        "Note": "BoatTEST instrumented 370-hp Yanmar 8LV table: 6.7 kn at 1.25 US gal/h (1300 rpm) and 20.2 kn at 10.5 US gal/h (3000 rpm)."
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from canonical keel geometry (keel.pocket); shaft/propeller is protected by the keel envelope to a meaningful degree."
+      }
+    }
+  },
+  {
+    "BoatModelID": "BKCV-39O",
+    "HullType": "Planing",
+    "Style": "Outboard Cruiser",
+    "KeelType": "Modified V",
+    "Fuel": "Gasoline",
+    "Cooling": "Raw Water",
+    "Propulsion": "Outboard",
+    "Flybridge": "No",
+    "SideDecks": "Wide",
+    "BoatFamily": "Cruiser",
+    "HullBehaviour": "Planing",
+    "NormalizedFuel": "Gasoline",
+    "NormalizedPropulsion": "Outboard",
+    "NormalizedHullForm": "Planing",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Downeast Cruiser",
+    "DisplacementLb": 22000,
+    "FuelCapacityGal": 520,
+    "WaterCapacityGal": 97,
+    "NormalizedHullType": "Planing",
+    "DateCreated": " helm electronics failures.",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "B-Atlas Phase 8C-12 Downeast / Lobster-Style Research",
+    "Revision": 2,
+    "DataConfidence": "Moderate",
+    "ResearchStatus": "Reviewed",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "BKCV-39O"
+            ],
+            "Years": {
+              "From": 2020,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.backcoveyachts.com/owners/heritage-models",
+            "https://www.backcoveyachts.com/motor-yachts/back-cove-39o",
+            "https://www.backcoveyachts.com/motor-yachts/back-cove-39o"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Representative model identity and principal specifications are based on model-specific sources where available."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "BKCV-39O"
+            ],
+            "Years": {
+              "From": 2020,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.backcoveyachts.com/owners/heritage-models",
+            "https://www.backcoveyachts.com/motor-yachts/back-cove-39o",
+            "https://www.backcoveyachts.com/motor-yachts/back-cove-39o"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Decision guidance is derived from documented hull, propulsion, layout and intended use rather than advertising claims."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "BKCV-39O"
+            ],
+            "Years": {
+              "From": 2020,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.backcoveyachts.com/owners/heritage-models",
+            "https://www.backcoveyachts.com/motor-yachts/back-cove-39o",
+            "https://www.backcoveyachts.com/motor-yachts/back-cove-39o"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection items are configuration and age risks, not assertions that every hull suffers a defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "ResearchNotes": "Current factory specs confirm 43'6\" overall, 13'6\" beam, 2'4\" draft, 520 gal gasoline, 97 gal water and triple 400 or twin 600 outboard configurations. EngineCount=3 represents the standard triple-400 architecture; listings with twin 600s must override at listing level.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.\n\nCruising Performance Research Wave 4 v7.03 (2026-09-14).",
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "SpecificationConfidence": {
+      "AirDraft": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [],
+        "Note": "B-Atlas working estimate derived from nearest comparable models with similar style, size and flybridge configuration. Verify actual mast/radar/antenna clearance before route planning. Comparable model IDs: BKCV-37, SABR-38-SA, BKCV-41, BKCV-34, BKCV-32, BKCV-33, SABR-34-EX"
+      },
+      "Displacement": {
+        "Level": "High",
+        "Status": "supported",
+        "EvidenceRefs": [
+          "https://bostonyacht.com/wp-content/uploads/2019/09/BackCove-39O-Brochure.pdf",
+          "https://www.backcoveyachts.com/motor-yachts/back-cove-39o"
+        ],
+        "Note": "Back Cove 39O brochure lists approximately 26,500 lb / 11.83 t full-load displacement."
+      },
+      "LWL": {
+        "Level": "Low",
+        "Status": "restored_legacy_working_value",
+        "EvidenceRefs": [],
+        "Note": "Working LWL restored from the pre-v6.81 archived B-Atlas value (38 ft). Retained as a low-confidence community-verifiable value rather than leaving a basic performance input blank."
+      },
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      },
+      "KeelConfigurationCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from unambiguous existing KeelType text."
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing propulsion/keel description; no new factual assertion introduced."
+      },
+      "DisplacementCruiseSpeed": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://backcoveyachts25.s3.amazonaws.com/backcoveyachts/wp-content/uploads/2025/07/18175545/Performance-Data-BC39O-K030-Mercury-400hp-V10.pdf"
+        ],
+        "Note": "Back Cove factory test, triple Mercury V10 400: 9.6 kn at 2000 rpm burning 14.2 US gal/h total. Stored as lower-speed cruise point for this tested configuration."
+      },
+      "DisplacementCruiseFuelBurn": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://backcoveyachts25.s3.amazonaws.com/backcoveyachts/wp-content/uploads/2025/07/18175545/Performance-Data-BC39O-K030-Mercury-400hp-V10.pdf"
+        ],
+        "Note": "Back Cove factory test, triple Mercury V10 400: 9.6 kn at 2000 rpm burning 14.2 US gal/h total. Stored as lower-speed cruise point for this tested configuration."
+      },
+      "PlaningCruiseSpeed": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://backcoveyachts25.s3.amazonaws.com/backcoveyachts/wp-content/uploads/2025/07/18175545/Performance-Data-BC39O-K030-Mercury-400hp-V10.pdf"
+        ],
+        "Note": "Same factory test: 27.5 kn at 4000 rpm burning 38.3 US gal/h total, a representative efficient planing-cruise point."
+      },
+      "PlaningCruiseFuelBurn": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://backcoveyachts25.s3.amazonaws.com/backcoveyachts/wp-content/uploads/2025/07/18175545/Performance-Data-BC39O-K030-Mercury-400hp-V10.pdf"
+        ],
+        "Note": "Same factory test: 27.5 kn at 4000 rpm burning 38.3 US gal/h total, a representative efficient planing-cruise point."
+      },
+      "EnginePowerPerEngine": {
+        "Level": "High",
+        "Status": "supported",
+        "EvidenceRefs": [
+          "https://backcoveyachts25.s3.amazonaws.com/backcoveyachts/wp-content/uploads/2025/07/18175545/Performance-Data-BC39O-K030-Mercury-400hp-V10.pdf"
+        ],
+        "Note": "Factory test uses triple Mercury V10 Verado 400-hp outboards. Twin V12 600-hp package is also offered."
+      }
+    }
+  },
+  {
+    "BoatModelID": "CARV-356-AF",
+    "HullType": "Planing",
+    "Style": "Aft Cabin",
+    "KeelType": "Modified V",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "Propulsion": "Shaft",
+    "Flybridge": "Yes",
+    "SideDecks": "Moderate",
+    "HullBehaviour": "Planing",
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Modified-V",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Motor Yacht",
+    "DateCreated": "2026-07-13",
+    "LastUpdated": "2026-09-12",
+    "ReviewedBy": "B-Atlas Phase 8C-15 Production Motoryacht/Cruiser Research",
+    "Revision": 2,
+    "DataConfidence": "High",
+    "ResearchStatus": "Reviewed",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CARV-356-AF"
+            ],
+            "Years": {
+              "From": 1999,
+              "To": 2003
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/carver"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Model identity and representative specifications checked against model-guide or catalog evidence."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CARV-356-AF"
+            ],
+            "Years": {
+              "From": 1999,
+              "To": 2003
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/carver"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance derives from documented configuration, propulsion and accommodation."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "General age-related guidance",
+            "Models": [
+              "CARV-356-AF"
+            ],
+            "Years": {
+              "From": 1999,
+              "To": 2003
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/carver"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance is age/configuration based and is not a claim of a model-wide defect."
+        },
+        {
+          "Scope": "SpecificationCompletionV647",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CARV-356-AF"
+            ],
+            "Years": {
+              "From": 1995,
+              "To": 2003
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/carver/355-356-motor-yacht-1995-2003"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Targeted source-backed specification completion v6.47.0."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "ResearchNotes": "Batch 29 identity, lineage and specification normalization from model-specific Powerboat Guide evidence. Renames are preserved as aliases; missing listing-specific configuration remains unknown rather than inferred.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "PlanCriticalStatus": {
+      "LOA": "researched_unknown"
+    },
+    "SpecificationConfidence": {
+      "LWL": {
+        "Level": "Low",
+        "Status": "restored_legacy_working_value",
+        "EvidenceRefs": [],
+        "Note": "Working LWL restored from the pre-v6.81 archived B-Atlas value (32.1 ft). Retained as a low-confidence community-verifiable value rather than leaving a basic performance input blank."
+      },
+      "KeelConfigurationCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from unambiguous existing KeelType text."
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from canonical no-keel geometry with inboard shaft/V-drive propulsion; propeller/rudder running gear is exposed below the hull rather than protected by a keel or skeg."
+      }
+    }
+  },
+  {
+    "BoatModelID": "CARV-42-AC",
+    "HullType": "Planing",
+    "Style": "Aft Cabin Motor Yacht",
+    "KeelType": "Modified V",
+    "Fuel": "Gasoline",
+    "Cooling": "Raw Water",
+    "Propulsion": "Shaft",
+    "Flybridge": "Yes",
+    "SideDecks": "Wide",
+    "BoatFamily": "Motor Yacht",
+    "HullBehaviour": "Planing",
+    "NormalizedFuel": "Gasoline",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Modified-V",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Motor Yacht",
+    "DateCreated": "2026-07-18",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "B-Atlas Phase 8C-15 Production Motoryacht/Cruiser Research",
+    "Revision": 2,
+    "DataConfidence": "High",
+    "ResearchStatus": "Reviewed",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CARV-42-AC"
+            ],
+            "Years": {
+              "From": 1988,
+              "To": 1996
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/carver"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Model identity and representative specifications checked against model-guide or catalog evidence."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CARV-42-AC"
+            ],
+            "Years": {
+              "From": 1988,
+              "To": 1996
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/carver"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance derives from documented configuration, propulsion and accommodation."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "General age-related guidance",
+            "Models": [
+              "CARV-42-AC"
+            ],
+            "Years": {
+              "From": 1988,
+              "To": 1996
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/carver"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance is age/configuration based and is not a claim of a model-wide defect."
+        },
+        {
+          "Scope": "SpecificationCompletionV647",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CARV-42-AC"
+            ],
+            "Years": {
+              "From": 1985,
+              "To": 1991
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/carver/4207-aft-cabin-1985-91"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Targeted source-backed specification completion v6.47.0."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "ResearchNotes": "Batch 29 identity, lineage and specification normalization from model-specific Powerboat Guide evidence. Renames are preserved as aliases; missing listing-specific configuration remains unknown rather than inferred.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "SpecificationConfidence": {
+      "LWL": {
+        "Level": "Low",
+        "Status": "restored_legacy_working_value",
+        "EvidenceRefs": [],
+        "Note": "Working LWL restored from the pre-v6.81 archived B-Atlas value (38 ft). Retained as a low-confidence community-verifiable value rather than leaving a basic performance input blank."
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from canonical keel geometry (keel.protective); shaft/propeller is protected by the keel envelope to a meaningful degree."
+      }
+    }
+  },
+  {
+    "BoatModelID": "CHCR-LAUNCH-35-GT",
+    "HullType": null,
+    "Style": "Bowrider",
+    "KeelType": null,
+    "Fuel": null,
+    "Cooling": null,
+    "Propulsion": null,
+    "Flybridge": "No",
+    "SideDecks": null,
+    "BoatFamily": "Bowrider",
+    "HullBehaviour": null,
+    "NormalizedFuel": null,
+    "NormalizedPropulsion": null,
+    "NormalizedHullForm": null,
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Bowrider",
+    "DisplacementLb": null,
+    "FuelCapacityGal": null,
+    "WaterCapacityGal": null,
+    "NormalizedHullType": null,
+    "HoldingCapacityGal": null,
+    "DateCreated": "2026-10-02",
+    "LastUpdated": "2026-10-02",
+    "ReviewedBy": "B-Atlas Phase 2A Data Expansion",
+    "Revision": 1,
+    "DataConfidence": "Medium",
+    "ResearchStatus": "Reviewed",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Partial",
+      "EvidenceQuality": "Medium",
+      "Statements": [],
+      "UnresolvedInformation": []
+    },
+    "ResearchNotes": null,
+    "CharacterConfidence": "Medium",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "SpecificationConfidence": {},
+    "Phase2Source": "https://www.hmy.com/yachting/powerboat-guide/chris-craft/launch-35-gt-2019-current"
+  },
+  {
+    "BoatModelID": "CRUY-4370-440-EX",
+    "HullType": "Modified-V",
+    "Style": "Express Cruiser",
+    "KeelType": null,
+    "Fuel": null,
+    "Cooling": null,
+    "Propulsion": null,
+    "Flybridge": "No",
+    "SideDecks": null,
+    "BoatFamily": "Express Cruiser",
+    "HullBehaviour": null,
+    "NormalizedFuel": null,
+    "NormalizedPropulsion": null,
+    "NormalizedHullForm": "Modified-V",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Express Cruiser",
+    "DisplacementLb": 24300,
+    "FuelCapacityGal": 400,
+    "WaterCapacityGal": 95,
+    "NormalizedHullType": "Modified-V",
+    "HoldingCapacityGal": 50,
+    "DateCreated": "2026-10-02",
+    "LastUpdated": "2026-10-02",
+    "ReviewedBy": "B-Atlas Phase 2A Data Expansion",
+    "Revision": 1,
+    "DataConfidence": "High",
+    "ResearchStatus": "Reviewed",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Partial",
+      "EvidenceQuality": "High",
+      "Statements": [],
+      "UnresolvedInformation": []
+    },
+    "ResearchNotes": null,
+    "CharacterConfidence": "Medium",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "SpecificationConfidence": {},
+    "Phase2Source": "https://www.hmy.com/yachting/powerboat-guide/cruisers/4370-express-440-express-2003-05"
+  },
+  {
+    "BoatModelID": "DUFF-29",
+    "HullType": "Semi-Displacement",
+    "Style": "Downeast Cruiser",
+    "KeelType": "Full Length",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "Propulsion": "Shaft",
+    "Flybridge": "Optional",
+    "SideDecks": "Medium",
+    "BoatFamily": "Downeast",
+    "HullBehaviour": "Semi-Displacement",
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Semi-Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Downeast Cruiser",
+    "NormalizedHullType": "Semi-Displacement",
+    "DateCreated": "2026-07-18",
+    "LastUpdated": "2026-09-12",
+    "ReviewedBy": "B-Atlas Phase 8C-12 Downeast / Lobster-Style Research",
+    "Revision": 2,
+    "DataConfidence": "Low",
+    "ResearchStatus": "Reviewed",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Partial",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "DUFF-29"
+            ],
+            "Years": {
+              "From": 1980,
+              "To": 1995
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://kraftpower.com/wp-content/uploads/2025/06/Duffy-31-Application-Page-v1-1.pdf"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Representative model identity and principal specifications are based on model-specific sources where available."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "DUFF-29"
+            ],
+            "Years": {
+              "From": 1980,
+              "To": 1995
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://kraftpower.com/wp-content/uploads/2025/06/Duffy-31-Application-Page-v1-1.pdf"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Decision guidance is derived from documented hull, propulsion, layout and intended use rather than advertising claims."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "DUFF-29"
+            ],
+            "Years": {
+              "From": 1980,
+              "To": 1995
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://kraftpower.com/wp-content/uploads/2025/06/Duffy-31-Application-Page-v1-1.pdf"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection items are configuration and age risks, not assertions that every hull suffers a defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Model-wide production years and standard accommodation specifications are not sufficiently standardized to treat current legacy values as factory standards.",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "ResearchNotes": "Duffy 29 existence is retained, but the current Atlantic Boat catalog does not list a 29 mold and strong model-specific production documentation is limited. Existing dimensions and tankage remain representative only; CharacterConfidence is Moderate pending better factory/archival evidence.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "CharacterConfidence": "Moderate",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "PlanCriticalStatus": {
+      "LOA": "researched_unknown",
+      "Beam": "researched_unknown",
+      "Draft": "researched_unknown"
+    },
+    "SpecificationConfidence": {
+      "AirDraft": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [],
+        "Note": "B-Atlas working estimate derived from nearest comparable models with similar style, size and flybridge configuration. Verify actual mast/radar/antenna clearance before route planning. Comparable model IDs: BENE-BAR-9, BENE-BAR-8, DUFF-37"
+      },
+      "LWL": {
+        "Level": "Low",
+        "Status": "restored_legacy_working_value",
+        "EvidenceRefs": [],
+        "Note": "Working LWL restored from the pre-v6.81 archived B-Atlas value (26 ft). Retained as a low-confidence community-verifiable value rather than leaving a basic performance input blank."
+      },
+      "Displacement": {
+        "Level": "Low",
+        "Status": "restored_legacy_working_value",
+        "EvidenceRefs": [],
+        "Note": "Working displacement restored from the archived pre-v6.81 value (9000 lb) and converted to canonical kilograms. Community/factory verification remains welcome."
+      },
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      }
+    }
+  },
+  {
+    "BoatModelID": "FORT-33",
+    "HullType": "Semi-Displacement",
+    "Style": "Downeast Cruiser",
+    "KeelType": "Full Length",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "Propulsion": "Shaft",
+    "Flybridge": "No",
+    "SideDecks": "Wide",
+    "BoatFamily": "Downeast",
+    "HullBehaviour": "Semi-Displacement",
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Semi-Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Downeast Cruiser",
+    "DisplacementLb": 12000,
+    "FuelCapacityGal": 220,
+    "NormalizedHullType": "Semi-Displacement",
+    "DateCreated": "2026-07-18",
+    "LastUpdated": "2026-09-13",
+    "ReviewedBy": "B-Atlas Research v6.93",
+    "Revision": 4,
+    "DataConfidence": "Moderate",
+    "ResearchStatus": "Reviewed",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "FORT-33"
+            ],
+            "Years": {
+              "From": 1988,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://fortierboats.com/",
+            "https://fortierboats.com/fortier-26/",
+            "https://fortierboats.com/fortier-33/",
+            "https://fortierboats.com/fortier-33/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Representative model identity and principal specifications are based on model-specific sources where available."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "FORT-33"
+            ],
+            "Years": {
+              "From": 1988,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://fortierboats.com/",
+            "https://fortierboats.com/fortier-26/",
+            "https://fortierboats.com/fortier-33/",
+            "https://fortierboats.com/fortier-33/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Decision guidance is derived from documented hull, propulsion, layout and intended use rather than advertising claims."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "FORT-33"
+            ],
+            "Years": {
+              "From": 1988,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://fortierboats.com/",
+            "https://fortierboats.com/fortier-26/",
+            "https://fortierboats.com/fortier-33/",
+            "https://fortierboats.com/fortier-33/"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection items are configuration and age risks, not assertions that every hull suffers a defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "ResearchNotes": "Fortier factory specifications: 33'6\" LOA, 11'8\" beam, 2'8\" draft, 12,000 lb and two 110-gal fuel tanks. Standard current twin Volvo diesels cruise above 23 knots, with IPS available. Factory owner gallery identifies a 1980 33 as hull #1. Batch 10: Fortier’s own page conflicts on fuel tank size (2x110 versus 2x100 gallons), so 220 gal remains a research value rather than a normalized canonical litre value. Unpublished water/holding capacities were cleared.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "SpecificationConfidence": {
+      "AirDraft": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [],
+        "Note": "B-Atlas working estimate derived from nearest comparable models with similar style, size and flybridge configuration. Verify actual mast/radar/antenna clearance before route planning. Comparable model IDs: BKCV-30, SABR-34-EX, BKCV-33, BKCV-32, BKCV-29, HUNT-29, BKCV-34"
+      },
+      "WaterCapacity": {
+        "Level": "Medium",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://www.boaterbase.com/listings/2008-Fortier-33-wah1NgNd"
+        ],
+        "Note": "Representative 2008 Fortier 33 lists 40 US gal fresh water; later/custom boats may differ."
+      },
+      "HoldingCapacity": {
+        "Level": "Medium",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://marinesource.com/boat/fortier-33-2008-bridgeport-23ef70659-for-sale"
+        ],
+        "Note": "Representative 2008 Fortier 33 lists 13 US gal holding tank; custom builds may vary."
+      },
+      "EngineCount": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://fortierboats.com/fortier-33/"
+        ],
+        "Note": "Fortier factory specification describes standard twin inboard diesels."
+      },
+      "FuelCapacity": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [],
+        "Note": "Legacy sources conflict on tankage. v6.95 retains the existing working value, interprets its legacy basis as US gallons, and converts it to canonical litres pending owner/source verification."
+      },
+      "LWL": {
+        "Level": "Low",
+        "Status": "restored_legacy_working_value",
+        "EvidenceRefs": [],
+        "Note": "Working LWL restored from the pre-v6.81 archived B-Atlas value (30 ft). Retained as a low-confidence community-verifiable value rather than leaving a basic performance input blank."
+      },
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      }
+    }
+  },
+  {
+    "BoatModelID": "FWIN-338-348-VIS",
+    "HullType": "Modified-V",
+    "Style": "Express Cruiser",
+    "KeelType": null,
+    "Fuel": null,
+    "Cooling": null,
+    "Propulsion": null,
+    "Flybridge": null,
+    "SideDecks": null,
+    "BoatFamily": "Express Cruiser",
+    "HullBehaviour": null,
+    "NormalizedFuel": null,
+    "NormalizedPropulsion": null,
+    "NormalizedHullForm": "Modified-V",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Express Cruiser",
+    "DisplacementLb": 13100,
+    "FuelCapacityGal": 220,
+    "WaterCapacityGal": 44,
+    "NormalizedHullType": "Modified-V",
+    "HoldingCapacityGal": 30,
+    "DateCreated": "2026-10-02",
+    "LastUpdated": "2026-10-02",
+    "ReviewedBy": "B-Atlas Phase 2A Data Expansion",
+    "Revision": 1,
+    "DataConfidence": "High",
+    "ResearchStatus": "Reviewed",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Partial",
+      "EvidenceQuality": "High",
+      "Statements": [],
+      "UnresolvedInformation": []
+    },
+    "ResearchNotes": "338 Vista called 348 Vista in 2002–04; distinct from later 2005–09 348/V358.",
+    "CharacterConfidence": "Medium",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "SpecificationConfidence": {},
+    "Phase2Source": "https://www.hmy.com/yachting/powerboat-guide/four-winns/338-348-vista-2000-04"
+  },
+  {
+    "BoatModelID": "HATT-32-FF",
+    "HullType": "Modified-V",
+    "Style": "Sportfisher",
+    "KeelType": null,
+    "Fuel": "Gasoline or Diesel depending configuration",
+    "Cooling": null,
+    "Propulsion": "Shaft",
+    "Flybridge": "Yes",
+    "SideDecks": null,
+    "BoatFamily": "Motor Yacht",
+    "HullBehaviour": null,
+    "NormalizedFuel": null,
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Modified-V",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Sportfisher",
+    "DisplacementLb": 18000,
+    "FuelCapacityGal": 265,
+    "WaterCapacityGal": 50,
+    "NormalizedHullType": "Modified-V",
+    "HoldingCapacityGal": 30,
+    "DateCreated": "2026-10-02",
+    "LastUpdated": "2026-10-02",
+    "ReviewedBy": "B-Atlas Phase 2A Data Expansion",
+    "Revision": 1,
+    "DataConfidence": "High",
+    "ResearchStatus": "Reviewed",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "High",
+      "Statements": [],
+      "UnresolvedInformation": []
+    },
+    "ResearchNotes": "Sistership to 32 Sport Fisherman, same basic hull but distinct flybridge configuration.",
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "SpecificationConfidence": {},
+    "Phase2Source": "https://www.hmy.com/yachting/powerboat-guide/hatteras/32-flybridge-fisherman-1983-88"
+  },
+  {
+    "BoatModelID": "HATT-48-LRC",
+    "HullType": "Displacement",
+    "Style": "Trawler / LRC",
+    "KeelType": null,
+    "Fuel": "Diesel",
+    "Cooling": null,
+    "Propulsion": "Shaft",
+    "Flybridge": "Yes",
+    "SideDecks": null,
+    "BoatFamily": "Motor Yacht",
+    "HullBehaviour": null,
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Trawler / LRC",
+    "DisplacementLb": 54000,
+    "FuelCapacityGal": 1390,
+    "WaterCapacityGal": 430,
+    "NormalizedHullType": "Displacement",
+    "HoldingCapacityGal": 80,
+    "DateCreated": "2026-10-02",
+    "LastUpdated": "2026-10-02",
+    "ReviewedBy": "B-Atlas Phase 2A Data Expansion",
+    "Revision": 1,
+    "DataConfidence": "High",
+    "ResearchStatus": "Reviewed",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "High",
+      "Statements": [],
+      "UnresolvedInformation": []
+    },
+    "ResearchNotes": "Source reports over 40 built; exact production count remains unresolved.",
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "SpecificationConfidence": {},
+    "Phase2Source": "https://www.hmy.com/yachting/powerboat-guide/hatteras/48-lrc-1976-81"
+  },
+  {
+    "BoatModelID": "HELM-43-E",
+    "HullType": "Semi-Displacement",
+    "Style": "Modern Trawler",
+    "KeelType": "Full Length",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "Propulsion": "Shaft",
+    "Flybridge": "Yes",
+    "SideDecks": "Wide",
+    "BoatFamily": "Trawler",
+    "HullBehaviour": "Semi-Displacement",
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Semi-Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Trawler",
+    "HullLength_ft": 42.5,
+    "FuelCapacityGal": 600,
+    "WaterCapacityGal": 200,
+    "HoldingCapacityGal": 60,
+    "DateCreated": "2026-07-18",
+    "LastUpdated": "2026-09-02",
+    "ReviewedBy": "B-Atlas Phase 8C-10 Traditional Trawler Family Research",
+    "Revision": 3,
+    "DataConfidence": "Moderate",
+    "ResearchStatus": "Reviewed",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "HELM-43-E"
+            ],
+            "Years": {
+              "From": 2018,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://helmsmantrawlers.com/",
+            "https://helmsmantrawlers.com/about-helmsman-trawlers/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Representative identity and specifications are based on manufacturer, owner-association or model-specific technical references; hull-specific differences remain explicit."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "HELM-43-E"
+            ],
+            "Years": {
+              "From": 2018,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://helmsmantrawlers.com/",
+            "https://helmsmantrawlers.com/about-helmsman-trawlers/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance is derived from documented configuration, dimensions, propulsion and intended use rather than sales language."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "HELM-43-E"
+            ],
+            "Years": {
+              "From": 2018,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://helmsmantrawlers.com/",
+            "https://helmsmantrawlers.com/about-helmsman-trawlers/"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance identifies systems and age/configuration risks to inspect; it is not an assertion that every hull has a defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "ResearchNotes": "Phase 8C-10 traditional-trawler family normalization 2026-08-07. Unsupported defects remain unknown.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "SpecificationConfidence": {
+      "LWL": {
+        "Level": "Low",
+        "Status": "restored_legacy_working_value",
+        "EvidenceRefs": [],
+        "Note": "Working LWL restored from the pre-v6.81 archived B-Atlas value (39 ft). Retained as a low-confidence community-verifiable value rather than leaving a basic performance input blank."
+      }
+    }
+  },
+  {
+    "BoatModelID": "KDKR-36-MA",
+    "HullType": "Displacement",
+    "Style": "Pilothouse Trawler",
+    "KeelType": "Full Length",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "Propulsion": "Shaft",
+    "Flybridge": "Yes",
+    "SideDecks": "Wide",
+    "BoatFamily": "Trawler",
+    "HullBehaviour": "Displacement",
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Trawler",
+    "DisplacementLb": 23000,
+    "FuelCapacityGal": 280,
+    "WaterCapacityGal": 300,
+    "NormalizedHullType": "Displacement",
+    "DateCreated": "2026-07-27",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "B-Atlas Phase 8C-10 Traditional Trawler Family Research",
+    "Revision": 5,
+    "ResearchNotes": "Phase 8C-10 traditional-trawler family normalization 2026-08-07. Unsupported defects remain unknown.\n\nBuilder history confirms the 1984 introduction, coastal-cruiser mission, closed-cell PVC foam-core construction, heavy hand lay-up and teak interior. Secondary production histories report 99 boats through 1992; hull-specific machinery and tank details require verification. Published draft, engine and tank details vary by source and individual hull. Kadey-Krogen Yachts filed Chapter 7 liquidation on 2026-07-06; future factory-specific parts/support are uncertain.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "ResearchStatus": "Reviewed",
+    "DataConfidence": "Moderate",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "KDKR-36-MA"
+            ],
+            "Years": {
+              "From": 1984,
+              "To": 1992
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.kadeykrogen.com/our-history/",
+            "https://www.kadeykrogen.com/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Representative identity and specifications are based on manufacturer, owner-association or model-specific technical references; hull-specific differences remain explicit."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "KDKR-36-MA"
+            ],
+            "Years": {
+              "From": 1984,
+              "To": 1992
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.kadeykrogen.com/our-history/",
+            "https://www.kadeykrogen.com/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance is derived from documented configuration, dimensions, propulsion and intended use rather than sales language."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "KDKR-36-MA"
+            ],
+            "Years": {
+              "From": 1984,
+              "To": 1992
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.kadeykrogen.com/our-history/",
+            "https://www.kadeykrogen.com/"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance identifies systems and age/configuration risks to inspect; it is not an assertion that every hull has a defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "SpecificationConfidence": {
+      "FuelCapacity": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [],
+        "Note": "Legacy sources conflict on tankage. v6.95 retains the existing working value, interprets its legacy basis as US gallons, and converts it to canonical litres pending owner/source verification."
+      },
+      "HoldingCapacity": {
+        "Level": "High",
+        "Status": "supported",
+        "EvidenceRefs": [
+          "https://akyachts.com/yacht-details/36-kadey-krogen-1985/",
+          "https://mls.ybaa.org/yacht-details/?vessel=2799100"
+        ],
+        "Note": "Two model-specific Krogen 36 Manatee listings independently report 30 US gal holding tanks."
+      },
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      }
+    }
+  },
+  {
+    "BoatModelID": "LUHR-30-ALURA",
+    "HullType": "Semi-Displacement",
+    "Style": "Downeast / Cruiser",
+    "KeelType": null,
+    "Fuel": "Gasoline",
+    "Cooling": null,
+    "Propulsion": "Inboard",
+    "Flybridge": "No",
+    "SideDecks": null,
+    "BoatFamily": "Cruiser",
+    "HullBehaviour": null,
+    "NormalizedFuel": "Gasoline",
+    "NormalizedPropulsion": "Inboard",
+    "NormalizedHullForm": "Semi-Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Downeast / Cruiser",
+    "DisplacementLb": 7800,
+    "FuelCapacityGal": 196,
+    "WaterCapacityGal": 38,
+    "NormalizedHullType": "Semi-Displacement",
+    "HoldingCapacityGal": 15,
+    "DateCreated": "2026-10-03",
+    "LastUpdated": "2026-10-03",
+    "ReviewedBy": "B-Atlas Phase 2A Data Expansion",
+    "Revision": 1,
+    "DataConfidence": "High",
+    "ResearchStatus": "Reviewed",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Partial",
+      "EvidenceQuality": "High",
+      "Statements": [],
+      "UnresolvedInformation": []
+    },
+    "ResearchNotes": "Single-inboard semi-displacement Alura; keel redesigned in 1988, retained as a production-phase change.",
+    "CharacterConfidence": "Medium",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "SpecificationConfidence": {},
+    "Phase2Source": "https://www.hmy.com/yachting/powerboat-guide/luhrs/30-alura-1987-90"
+  },
+  {
+    "BoatModelID": "MAXU-4200-SCR-SY",
+    "HullType": "Modified-V",
+    "Style": "Sport Yacht",
+    "KeelType": null,
+    "Fuel": "Diesel",
+    "Cooling": null,
+    "Propulsion": "V-Drive",
+    "Flybridge": "No",
+    "SideDecks": null,
+    "BoatFamily": "Express Cruiser",
+    "HullBehaviour": null,
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "V-Drive",
+    "NormalizedHullForm": "Modified-V",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Sport Yacht",
+    "DisplacementLb": 35700,
+    "FuelCapacityGal": 480,
+    "WaterCapacityGal": 130,
+    "NormalizedHullType": "Modified-V",
+    "HoldingCapacityGal": 70,
+    "DateCreated": "2026-10-03",
+    "LastUpdated": "2026-10-03",
+    "ReviewedBy": "B-Atlas Phase 2A Data Expansion",
+    "Revision": 1,
+    "DataConfidence": "High",
+    "ResearchStatus": "Reviewed",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Partial",
+      "EvidenceQuality": "High",
+      "Statements": [],
+      "UnresolvedInformation": []
+    },
+    "ResearchNotes": "One continuous identity. HMY states the 2002 model was called the 4200 SCR; thereafter marketed as 4200 Sport Yacht / 4200 SY. Twin Cummins V-drive diesels documented.",
+    "CharacterConfidence": "Medium",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "SpecificationConfidence": {},
+    "Phase2Source": "https://www.hmy.com/yachting/powerboat-guide/maxum/4200-sy-2002-08"
+  },
+  {
+    "BoatModelID": "MERI-341-SE",
+    "HullType": "Modified-V",
+    "Style": "Flybridge Sedan",
+    "KeelType": "Modified V",
+    "Fuel": "Gasoline",
+    "Cooling": "Fresh Water",
+    "Propulsion": "Shaft",
+    "Flybridge": "Yes",
+    "SideDecks": "Moderate",
+    "HullBehaviour": "Planing",
+    "NormalizedFuel": "Gasoline",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Planing",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Cruiser",
+    "DisplacementLb": 18254,
+    "FuelCapacityGal": 250,
+    "WaterCapacityGal": 90,
+    "NormalizedHullType": "Modified-V",
+    "DateCreated": "2026-07-13",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "B-Atlas Phase 8C-15 Production Motoryacht/Cruiser Research",
+    "Revision": 2,
+    "DataConfidence": "Moderate",
+    "ResearchStatus": "Reviewed",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "MERI-341-SE"
+            ],
+            "Years": {
+              "From": 2003,
+              "To": 2014
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/meridian/341-sedan-2005-14"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Model identity and representative specifications checked against model-guide or catalog evidence."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "MERI-341-SE"
+            ],
+            "Years": {
+              "From": 2003,
+              "To": 2014
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/meridian/341-sedan-2005-14"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance derives from documented configuration, propulsion and accommodation."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "General age-related guidance",
+            "Models": [
+              "MERI-341-SE"
+            ],
+            "Years": {
+              "From": 2003,
+              "To": 2014
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/meridian/341-sedan-2005-14"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance is age/configuration based and is not a claim of a model-wide defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "The Meridian 341 name covers two materially different generations; top-level dimensions represent the later 2005–14 design.",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "ResearchNotes": "This canonical record spans two genuinely different generations. 2003–04: Bayliner 3488-derived, 35'3\" LOA, 11'8\" beam, 17,000 lb, 224 gal fuel, 92 gal water. 2005–14: all-new design, 35'10\" LOA, 12'6\" beam, 18,254 lb, 250 gal fuel, 90 gal water. B-Atlas's baseline specifications represent the longer-running 2005–14 generation; generation must be explicit when evaluating a listing.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "SpecificationConfidence": {
+      "LWL": {
+        "Level": "Low",
+        "Status": "restored_legacy_working_value",
+        "EvidenceRefs": [],
+        "Note": "Working LWL restored from the pre-v6.81 archived B-Atlas value (32.8 ft). Retained as a low-confidence community-verifiable value rather than leaving a basic performance input blank."
+      },
+      "KeelConfigurationCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from unambiguous existing KeelType text."
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from canonical no-keel geometry with inboard shaft/V-drive propulsion; propeller/rudder running gear is exposed below the hull rather than protected by a keel or skeg."
+      }
+    }
+  },
+  {
+    "BoatModelID": "RIVI-42-OFB-G2",
+    "HullType": "Modified-V",
+    "Style": "Open Flybridge",
+    "KeelType": null,
+    "Fuel": "Diesel",
+    "Cooling": null,
+    "Propulsion": "Inboard",
+    "Flybridge": "Yes",
+    "SideDecks": null,
+    "BoatFamily": "Sedan / Flybridge",
+    "HullBehaviour": null,
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Inboard",
+    "NormalizedHullForm": "Modified-V",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Open Flybridge",
+    "DisplacementLb": 30900,
+    "FuelCapacityGal": 476,
+    "WaterCapacityGal": 122,
+    "NormalizedHullType": "Modified-V",
+    "HoldingCapacityGal": null,
+    "LOA_ft": 50.8333,
+    "Beam_ft": 14.9167,
+    "Draft_ft": 4.1667,
+    "DateCreated": "2026-10-03",
+    "LastUpdated": "2026-10-05",
+    "ReviewedBy": "B-Atlas Phase 2A Data Expansion",
+    "Revision": 1,
+    "DataConfidence": "Medium",
+    "ResearchStatus": "Reviewed",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Limited",
+      "EvidenceQuality": "Medium",
+      "Statements": [],
+      "UnresolvedInformation": []
+    },
+    "ResearchNotes": "Riviera historical archive confirms model identity; unresolved specifications intentionally remain unknown.",
+    "CharacterConfidence": "Medium",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "SpecificationConfidence": {
+      "LOA": "High",
+      "Beam": "High",
+      "Draft": "High",
+      "Displacement": "High",
+      "FuelCapacity": "High",
+      "WaterCapacity": "High",
+      "Fuel": "High",
+      "EngineConfiguration": "High"
+    },
+    "Phase2Source": "https://www.rivieraaustralia.com/classic-models/",
+    "DecisionDataSource": "https://www.rivieraaustralia.com/classic-models/riviera-42-open-flybridge-2/"
+  },
+  {
+    "BoatModelID": "RNGR-21-EC",
+    "HullType": "Planing",
+    "Style": "Tug Cruiser",
+    "KeelType": "Model-specific; verify actual hull and running gear",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "Propulsion": "Shaft",
+    "Flybridge": "No",
+    "SideDecks": "Asymmetric",
+    "BoatFamily": "Tug Cruiser",
+    "HullBehaviour": "Planing",
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Planing",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Tug Cruiser",
+    "DateCreated": "2026-07-25",
+    "LastUpdated": "2026-09-13",
+    "ReviewedBy": "B-Atlas Phase 8C-9 Family Research",
+    "Revision": 3,
+    "DataConfidence": "Moderate",
+    "ResearchStatus": "Reviewed",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "RNGR-21-EC"
+            ],
+            "Years": {
+              "From": 2007,
+              "To": 2021
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.rangertugs.com/models",
+            "https://www.rangertugs.com/past-models",
+            "https://ca.boats.com/power-boats/2009-ranger-tugs-r-21-ec-10005540/",
+            "https://www.rangertugs.com/media/2234/r-21-ec-spec-sheet-2016.pdf"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Identity and representative specifications are supported by manufacturer or model-specific technical references; unresolved production or configuration differences remain explicit."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "RNGR-21-EC"
+            ],
+            "Years": {
+              "From": 2007,
+              "To": 2021
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.rangertugs.com/models",
+            "https://www.rangertugs.com/past-models"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance is derived from documented configuration, propulsion, dimensions and intended use rather than marketplace promotional language."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "RNGR-21-EC"
+            ],
+            "Years": {
+              "From": 2007,
+              "To": 2021
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.rangertugs.com/models",
+            "https://www.rangertugs.com/past-models"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance combines documented systems with age- and configuration-related checks; it does not assert that every hull has a defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Exact production-year boundaries for some historical Ranger generations should be verified against individual HIN/model-year documentation.",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold"
+      ]
+    },
+    "ResearchNotes": "Phase 8C-9 normalized 2026-08-07 using manufacturer/model-specific sources. Unsupported defects remain unknown.\n\n[Phase 8A legacy structured context]\n{\n  \"marketAvailability\": \"Used-market availability varies by generation, propulsion and region.\",\n  \"partsAvailability\": \"Factory support and owner community are strengths; model-specific legacy components still require verification.\",\n  \"commonUpgrades\": [\n    \"Battery monitoring\",\n    \"Modern electronics where dated\",\n    \"Canvas or cockpit weather protection\"\n  ],\n  \"comparableModels\": [\n    \"Ranger Tug R-21 Classic\",\n    \"Rosborough RF-18\"\n  ],\n  \"knowledgeRelationships\": {\n    \"comparableTo\": [\n      \"Ranger Tug R-21 Classic\",\n      \"Rosborough RF-18\"\n    ],\n    \"alternativeIf\": [\n      \"A different Ranger generation better matches propulsion, budget or space priorities\"\n    ],\n    \"stepUpFrom\": []\n  },\n  \"bScoutNotes\": [\n    \"Identify the exact R-21 generation before applying specifications.\",\n    \"Factory packages and owner modifications can materially change equipment and weight.\"\n  ],\n  \"refitPriority\": {\n    \"essential\": [\n      \"Engine and cooling service\",\n      \"Cockpit drains\"\n    ],\n    \"recommended\": [\n      \"Battery monitoring\",\n      \"Cooling-system service\"\n    ],\n    \"optional\": [\n      \"Canvas or cockpit weather protection\"\n    ]\n  },\n  \"ownershipScores\": {\n    \"mechanicalSimplicity\": 3,\n    \"maintenanceEase\": 3,\n    \"partsAvailability\": 4,\n    \"diyFriendliness\": 3,\n    \"operatingAffordability\": 3\n  },\n  \"ownershipEase\": \"Moderate\",\n  \"maintenanceEase\": \"Moderate\"\n}\n\nHigh-impact missing-data research pass v6.86 (2026-09-13): evidence-backed canonical fields added; configuration-dependent values remain explicitly variable rather than guessed.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "SpecificationConfidence": {
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Ranger inboard model family uses shallow keel/protected shaft arrangement; representative classification retained with model-specific verification encouraged."
+      }
+    }
+  },
+  {
+    "BoatModelID": "SEAH-35-PH",
+    "HullType": "Semi-Displacement",
+    "Style": "Pilothouse Trawler",
+    "KeelType": "Full Length",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "Propulsion": "Shaft",
+    "Flybridge": "Yes",
+    "SideDecks": "Wide",
+    "BoatFamily": "Trawler",
+    "HullBehaviour": "Semi-Displacement",
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Trawler",
+    "DateCreated": "2026-07-18",
+    "LastUpdated": "2026-09-02",
+    "ReviewedBy": "B-Atlas Phase 8C-11 Classic Taiwanese / Older Motoryacht Research",
+    "Revision": "3",
+    "DataConfidence": "High",
+    "ResearchStatus": "Reviewed",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Partial",
+      "EvidenceQuality": "Low",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "SEAH-35-PH"
+            ],
+            "Years": {
+              "From": 1990,
+              "To": 2005
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://passagemaker.com/cruiser-reviews/the-mighty-ducks/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Representative identity and specifications use model-specific references where available; unresolved production or hull differences remain explicit."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "SEAH-35-PH"
+            ],
+            "Years": {
+              "From": 1990,
+              "To": 2005
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://passagemaker.com/cruiser-reviews/the-mighty-ducks/"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Guidance is derived from documented configuration and design traits, not marketplace promotion."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "SEAH-35-PH"
+            ],
+            "Years": {
+              "From": 1990,
+              "To": 2005
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://passagemaker.com/cruiser-reviews/the-mighty-ducks/"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection items are age/configuration risks to investigate and are not assertions that every hull has the defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "The current research set confirms Seahorse as a yacht-building/importing operation but does not establish these 35/40 Pilothouse records as standardized production models with reliable model-wide specifications. Retain as provisional until stronger evidence is found.",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "ResearchNotes": "Batch 32 specialist-tail research. Identity, lineage and specifications normalized from model-specific builder, owner-archive and Powerboat Guide evidence; unsupported details remain unknown. Batch 10: legacy construction corrected to Steel; dimension shadows reconciled. Rudder classified skeg-hung from the documented rudder skeg. Conflicting tank capacities were cleared rather than generalized.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "SpecificationConfidence": {
+      "AirDraft": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [],
+        "Note": "B-Atlas working estimate derived from nearest comparable models with similar style, size and flybridge configuration. Verify actual mast/radar/antenna clearance before route planning. Comparable model IDs: ALBN-36-CL, ISGY-36, MONK-36-TR, BENE-34-SW, GULF-36-TR, KDKR-36-MA, ATLB-37-TR"
+      },
+      "FuelCapacity": {
+        "Level": "Medium",
+        "Status": "estimated",
+        "EvidenceRefs": [
+          "https://www.boattrader.com/boat/2005-seahorse-coot-35-8632224/",
+          "https://uk.boats.com/power-boats/2005-seahorse-coot-35-8632224/",
+          "https://dailyboats.com/ca/boat/339048-buy-seahorse-coot-35-38-for-sale"
+        ],
+        "Note": "A documented 2005 Coot 35 carries 400 US gal; later combined Coot 35/38 literature differs, so verify production version."
+      },
+      "WaterCapacity": {
+        "Level": "Medium",
+        "Status": "estimated",
+        "EvidenceRefs": [
+          "https://www.boattrader.com/boat/2005-seahorse-coot-35-8632224/",
+          "https://uk.boats.com/power-boats/2005-seahorse-coot-35-8632224/",
+          "https://dailyboats.com/ca/boat/339048-buy-seahorse-coot-35-38-for-sale"
+        ],
+        "Note": "A documented 2005 Coot 35 carries 210 US gal fresh water; production versions differ."
+      },
+      "HoldingCapacity": {
+        "Level": "Medium",
+        "Status": "estimated",
+        "EvidenceRefs": [
+          "https://www.boattrader.com/boat/2005-seahorse-coot-35-8632224/",
+          "https://uk.boats.com/power-boats/2005-seahorse-coot-35-8632224/",
+          "https://dailyboats.com/ca/boat/339048-buy-seahorse-coot-35-38-for-sale"
+        ],
+        "Note": "A documented 2005 Coot 35 reports 30 US gal holding; verify hull/year."
+      },
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      }
+    }
+  },
+  {
+    "BoatModelID": "SILV-37-CV-G2",
+    "HullType": "Modified-V",
+    "Style": "Convertible",
+    "KeelType": null,
+    "Fuel": "Gasoline",
+    "Cooling": null,
+    "Propulsion": "Shaft",
+    "Flybridge": "Yes",
+    "SideDecks": null,
+    "BoatFamily": "Motor Yacht",
+    "HullBehaviour": "Planing",
+    "NormalizedFuel": "Gasoline",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Modified-V",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Sportfisher",
+    "DisplacementLb": 21852,
+    "FuelCapacityGal": 375,
+    "WaterCapacityGal": 100,
+    "NormalizedHullType": "Modified-V",
+    "HoldingCapacityGal": 40,
+    "DateCreated": "2026-10-02",
+    "LastUpdated": "2026-10-02",
+    "ReviewedBy": "B-Atlas Phase 2 Data Expansion",
+    "Revision": 1,
+    "DataConfidence": "High",
+    "ResearchStatus": "Reviewed",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "High",
+      "Statements": [],
+      "UnresolvedInformation": []
+    },
+    "ResearchNotes": "HMY documents 1990–2000 production at 41'3\" length with pulpit, 37'4\" hull length, 13'11\" beam, 3'7\" draft, 21,852 lb, 375 US gal fuel, 100 US gal water, 40 US gal waste and 17° aft deadrise. The solid-fiberglass modified-V hull uses prop pockets to reduce draft.",
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "SpecificationConfidence": {}
+  },
+  {
+    "BoatModelID": "SILV-42-CV",
+    "HullType": "Modified-V",
+    "Style": "Convertible",
+    "KeelType": null,
+    "Fuel": "Diesel",
+    "Cooling": null,
+    "Propulsion": "Shaft",
+    "Flybridge": "Yes",
+    "SideDecks": null,
+    "BoatFamily": "Motor Yacht",
+    "HullBehaviour": "Planing",
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Modified-V",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Sportfisher",
+    "DisplacementLb": 26300,
+    "FuelCapacityGal": 524,
+    "WaterCapacityGal": 200,
+    "NormalizedHullType": "Modified-V",
+    "HoldingCapacityGal": 40,
+    "DateCreated": "2026-10-02",
+    "LastUpdated": "2026-10-02",
+    "ReviewedBy": "B-Atlas Phase 2A Data Expansion",
+    "Revision": 1,
+    "DataConfidence": "High",
+    "ResearchStatus": "Reviewed",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "High",
+      "Statements": [],
+      "UnresolvedInformation": []
+    },
+    "ResearchNotes": "HMY documents 44'6\" overall, 14'11\" beam, 3'7\" draft, 26,300 lb, 16'8\" clearance, 524 US gal fuel, 200 water, 40 waste and 17° aft deadrise. Twin 440 hp Cummins diesels cruise about 20 knots.",
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "SpecificationConfidence": {}
+  },
+  {
+    "BoatModelID": "SRAY-340-SB",
+    "HullType": "Deep-V",
+    "Style": "Motor Yacht",
+    "KeelType": null,
+    "Fuel": "Gasoline",
+    "Cooling": null,
+    "Propulsion": "V-Drive",
+    "Flybridge": "Yes",
+    "SideDecks": null,
+    "BoatFamily": "Motor Yacht",
+    "HullBehaviour": null,
+    "NormalizedFuel": null,
+    "NormalizedPropulsion": null,
+    "NormalizedHullForm": "Deep-V",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Motor Yacht",
+    "DisplacementLb": 11400,
+    "FuelCapacityGal": 204,
+    "WaterCapacityGal": 80,
+    "NormalizedHullType": "Deep-V",
+    "HoldingCapacityGal": 30,
+    "DateCreated": "2026-10-02",
+    "LastUpdated": "2026-10-07",
+    "ReviewedBy": "B-Atlas Phase 2A Data Expansion",
+    "Revision": 1,
+    "DataConfidence": "High",
+    "ResearchStatus": "Reviewed",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "High",
+      "Statements": [],
+      "UnresolvedInformation": []
+    },
+    "ResearchNotes": null,
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "SpecificationConfidence": {
+      "Fuel": "High",
+      "Propulsion": "High",
+      "EngineConfiguration": "High",
+      "EngineCount": "High"
+    },
+    "Phase2Source": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-sedan-bridge-1983-87",
+    "DecisionDataSource": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-sedan-bridge-1983-87"
+  },
+  {
+    "BoatModelID": "SRAY-400-SD",
+    "HullType": "Modified-V",
+    "Style": "Express Cruiser",
+    "KeelType": null,
+    "Fuel": "Diesel",
+    "Cooling": null,
+    "Propulsion": "Shaft/V-Drive",
+    "Flybridge": "No",
+    "SideDecks": null,
+    "BoatFamily": "Express Cruiser",
+    "HullBehaviour": null,
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft/V-Drive",
+    "NormalizedHullForm": "Modified-V",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Express Cruiser",
+    "DisplacementLb": 31391,
+    "FuelCapacityGal": 320,
+    "WaterCapacityGal": 100,
+    "NormalizedHullType": "Modified-V",
+    "HoldingCapacityGal": 42,
+    "DateCreated": "2026-10-02",
+    "LastUpdated": "2026-10-05",
+    "ReviewedBy": "B-Atlas Phase 2A Data Expansion",
+    "Revision": 1,
+    "DataConfidence": "High",
+    "ResearchStatus": "Reviewed",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "High",
+      "Statements": [],
+      "UnresolvedInformation": []
+    },
+    "ResearchNotes": null,
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "SpecificationConfidence": {
+      "Fuel": "High",
+      "Propulsion": "High",
+      "EngineConfiguration": "High"
+    },
+    "Phase2Source": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/400-sundancer-2016-19",
+    "DecisionDataSource": "https://www.hmy.com/yachting/powerboat-guide/sea-ray/400-sundancer-2016-19"
+  },
+  {
+    "BoatModelID": "TIAR-43-LE",
+    "HullType": "Deep-V",
+    "Style": "Luxury Crossover / Day Boat",
+    "KeelType": null,
+    "Fuel": "Gasoline",
+    "Cooling": null,
+    "Propulsion": "Outboard",
+    "Flybridge": "No",
+    "SideDecks": null,
+    "BoatFamily": "Day Boat",
+    "HullBehaviour": null,
+    "NormalizedFuel": "Gasoline",
+    "NormalizedPropulsion": "Outboard",
+    "NormalizedHullForm": "Deep-V",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Luxury Crossover / Day Boat",
+    "DisplacementLb": 21100,
+    "FuelCapacityGal": 400,
+    "WaterCapacityGal": 60,
+    "NormalizedHullType": "Deep-V",
+    "HoldingCapacityGal": null,
+    "DateCreated": "2026-10-03",
+    "LastUpdated": "2026-10-03",
+    "ReviewedBy": "B-Atlas Phase 2A Data Expansion",
+    "Revision": 1,
+    "DataConfidence": "High",
+    "ResearchStatus": "Reviewed",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Partial",
+      "EvidenceQuality": "High",
+      "Statements": [],
+      "UnresolvedInformation": []
+    },
+    "ResearchNotes": "Distinct LE luxury-entertaining layout with fold-down port hull side and triple outboards.",
+    "CharacterConfidence": "Medium",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "SpecificationConfidence": {},
+    "Phase2Source": "https://www.hmy.com/yachting/powerboat-guide/tiara/43-le-2021-current"
+  },
+  {
+    "BoatModelID": "TOLL-43-MY",
+    "HullType": "Semi-Displacement",
+    "Style": "Trawler / Motor Yacht",
+    "KeelType": null,
+    "Fuel": "Diesel",
+    "Cooling": null,
+    "Propulsion": "Shaft",
+    "Flybridge": "Yes",
+    "SideDecks": null,
+    "BoatFamily": "Motor Yacht",
+    "HullBehaviour": null,
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Semi-Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Motor Yacht",
+    "DisplacementLb": 30000,
+    "FuelCapacityGal": 400,
+    "WaterCapacityGal": 140,
+    "NormalizedHullType": "Semi-Displacement",
+    "HoldingCapacityGal": 80,
+    "DateCreated": "2026-10-02",
+    "LastUpdated": "2026-10-02",
+    "ReviewedBy": "B-Atlas Phase 2A Data Expansion",
+    "Revision": 1,
+    "DataConfidence": "High",
+    "ResearchStatus": "Reviewed",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "High",
+      "Statements": [],
+      "UnresolvedInformation": []
+    },
+    "ResearchNotes": null,
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "SpecificationConfidence": {},
+    "Phase2Source": "https://www.hmy.com/yachting/powerboat-guide/tollycraft/43-motor-yacht-1980-85"
+  },
+  {
+    "BoatModelID": "TROJ-36-TR",
+    "HullType": "Modified-V",
+    "Style": "Tri-Cabin Motor Yacht",
+    "KeelType": "Modified V",
+    "Fuel": "Gasoline or Diesel",
+    "Cooling": "Fresh/Raw",
+    "Propulsion": "Shaft/V-Drive",
+    "Flybridge": "Yes",
+    "SideDecks": "Wide",
+    "BoatFamily": "Motor Yacht",
+    "HullBehaviour": "Planing",
+    "NormalizedFuel": "Gasoline",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Planing",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Motor Yacht",
+    "DisplacementLb": 17500,
+    "FuelCapacityGal": 220,
+    "WaterCapacityGal": 85,
+    "NormalizedHullType": "Modified-V",
+    "HoldingCapacityGal": 40,
+    "DateCreated": "2026-07-13",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "B-Atlas Phase 8C-15 Production Motoryacht/Cruiser Research",
+    "Revision": 2,
+    "DataConfidence": "Moderate",
+    "ResearchStatus": "Reviewed",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "TROJ-36-TR"
+            ],
+            "Years": {
+              "From": 1970,
+              "To": 1987
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/trojan/36-tri-cabin-1970-87"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Model identity and representative specifications checked against model-guide or catalog evidence."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "TROJ-36-TR"
+            ],
+            "Years": {
+              "From": 1970,
+              "To": 1987
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/trojan/36-tri-cabin-1970-87"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance derives from documented configuration, propulsion and accommodation."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "General age-related guidance",
+            "Models": [
+              "TROJ-36-TR"
+            ],
+            "Years": {
+              "From": 1970,
+              "To": 1987
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/trojan/36-tri-cabin-1970-87"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance is age/configuration based and is not a claim of a model-wide defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "ResearchNotes": "Canonical name refined to Trojan F-36 Tri-Cabin. Powerboat Guide documents 1970–87 production, 36' LOA, 13' beam, 2'11\" draft, 17,500 lb and variable factory tankage: 150/220/300 gal fuel and 65/85 gal water. Early Sea Raider/first Tri-Cabins could use V-drives with engines beneath the aft berths; later direct-drive installations are common. Gasoline power predominates, with diesel examples relatively rare.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "PlanCriticalStatus": {
+      "FuelCode": "configuration_or_production_mixed",
+      "MechanicalPropulsionCode": "configuration_or_production_mixed"
+    },
+    "SpecificationConfidence": {
+      "LWL": {
+        "Level": "Low",
+        "Status": "restored_legacy_working_value",
+        "EvidenceRefs": [],
+        "Note": "Working LWL restored from the pre-v6.81 archived B-Atlas value (33.4 ft). Retained as a low-confidence community-verifiable value rather than leaving a basic performance input blank."
+      },
+      "KeelConfigurationCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from unambiguous existing KeelType text."
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from canonical no-keel geometry with inboard shaft/V-drive propulsion; propeller/rudder running gear is exposed below the hull rather than protected by a keel or skeg."
+      }
+    }
+  },
+  {
+    "BoatModelID": "VIKI-35-CV-G1",
+    "HullType": "Modified-V",
+    "Style": "Sportfisher",
+    "KeelType": null,
+    "Fuel": "Gasoline or Diesel depending configuration",
+    "Cooling": null,
+    "Propulsion": "Shaft",
+    "Flybridge": "Yes",
+    "SideDecks": null,
+    "BoatFamily": "Motor Yacht",
+    "HullBehaviour": null,
+    "NormalizedFuel": null,
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Modified-V",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Sportfisher",
+    "DisplacementLb": 20000,
+    "FuelCapacityGal": 275,
+    "WaterCapacityGal": 90,
+    "NormalizedHullType": "Modified-V",
+    "HoldingCapacityGal": 20,
+    "DateCreated": "2026-10-02",
+    "LastUpdated": "2026-10-02",
+    "ReviewedBy": "B-Atlas Phase 2A Data Expansion",
+    "Revision": 1,
+    "DataConfidence": "High",
+    "ResearchStatus": "Reviewed",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "High",
+      "Statements": [],
+      "UnresolvedInformation": []
+    },
+    "ResearchNotes": null,
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "SpecificationConfidence": {},
+    "Phase2Source": "https://www.hmy.com/yachting/powerboat-guide/viking/35-convertible-1974-85"
+  },
+  {
+    "BoatModelID": "VIKI-45-CV-G1",
+    "HullType": "Modified-V",
+    "Style": "Sportfisher",
+    "KeelType": null,
+    "Fuel": "Diesel",
+    "Cooling": null,
+    "Propulsion": "Shaft",
+    "Flybridge": "Yes",
+    "SideDecks": null,
+    "BoatFamily": "Motor Yacht",
+    "HullBehaviour": null,
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Modified-V",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Sportfisher",
+    "DisplacementLb": 44400,
+    "FuelCapacityGal": 600,
+    "WaterCapacityGal": 160,
+    "NormalizedHullType": "Modified-V",
+    "HoldingCapacityGal": 50,
+    "DateCreated": "2026-10-02",
+    "LastUpdated": "2026-10-02",
+    "ReviewedBy": "B-Atlas Phase 2A Data Expansion",
+    "Revision": 1,
+    "DataConfidence": "High",
+    "ResearchStatus": "Reviewed",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "High",
+      "Statements": [],
+      "UnresolvedInformation": []
+    },
+    "ResearchNotes": "About 250 built.",
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "SpecificationConfidence": {},
+    "Phase2Source": "https://www.hmy.com/yachting/powerboat-guide/viking/45-convertible-1987-93"
+  }
+]

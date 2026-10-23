@@ -1,3 +1,9 @@
 # Baseline checksums cover exact bytes, including original line endings.
 archive/canonical-migration-baseline/** -text -diff
 archive/retired-model-pages/** -text -diff
+
+# Immutable archive fragments must retain their exact checksummed bytes.
+/archive/phase5-fixtures/parts/*.txt -text -diff -whitespace
+
+# Retirement inventory descriptors checksum these exact JSON shard bytes.
+/reports/phase5-retired-files/*.json -text

@@ -72,11 +72,12 @@ const endpoint = "https://api.b-atlas.org/api/public/overlays";
     return { ok: true, json: async () => localData[url] || [] };
   };
 
-  const context = { fetch: fetchImpl, console };
+  const context = { ...require('./catalogue-fixture.cjs').contextGlobals, fetch: fetchImpl, console };
   context.window = context;
   context.globalThis = context;
   vm.runInNewContext(fs.readFileSync("datarepository.js", "utf8"), context, { filename: "datarepository.js" });
-  const data = await context.BScoutDataRepository.loadApplicationData({ fetchImpl });
+  const generatedFetch=await require('./catalogue-fixture.cjs').releaseFetch(fetchImpl);
+  const data = await context.BScoutDataRepository.loadApplicationData({ fetchImpl:generatedFetch });
 
   const mergedIds = data.boats.map(x => x.BoatModelID);
   assert.equal(new Set(mergedIds).size, mergedIds.length, "Live overlay merge produced duplicate BoatModelID values");

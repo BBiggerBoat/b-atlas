@@ -1,0 +1,3269 @@
+rityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "SpecificationConfidence": {
+      "AirDraft": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [],
+        "Note": "B-Atlas working estimate derived from nearest comparable models with similar style, size and flybridge configuration. Verify actual mast/radar/antenna clearance before route planning. Comparable model IDs: ISGY-36, MONK-36-TR, BENE-34-SW, ALBN-36-CL, GULF-36-TR, KDKR-36-MA, ATLB-37-TR"
+      },
+      "LWL": {
+        "Level": "Low",
+        "Status": "restored_legacy_working_value",
+        "EvidenceRefs": [],
+        "Note": "Working LWL restored from the pre-v6.81 archived B-Atlas value (33 ft). Retained as a low-confidence community-verifiable value rather than leaving a basic performance input blank."
+      },
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      }
+    }
+  },
+  {
+    "BoatModelID": "WILL-40-NO",
+    "ManufacturerID": "WILLARD",
+    "Manufacturer": "Willard",
+    "Model": "Vega 40 Nomad",
+    "Variant": "Widebody Flybridge Sedan",
+    "Nickname": "Willard Vega 40 Nomad",
+    "Active": false,
+    "CanonicalSlug": "willard-vega-40-nomad-widebody-flybridge-sedan",
+    "CanonicalPath": "/models/willard-vega-40-nomad-widebody-flybridge-sedan/",
+    "CanonicalURL": "https://b-atlas.org/models/willard-vega-40-nomad-widebody-flybridge-sedan/",
+    "ImageURL": "images/will-40-no.jpg",
+    "FirstYear": 1973,
+    "LastYear": 1977,
+    "TotalBuilt": 3,
+    "Designer": "Hale Field / Willard Marine",
+    "HullType": "Displacement",
+    "Style": "Flybridge Sedan Trawler",
+    "Construction": "Solid-fiberglass displacement hull with fiberglass-over-plywood widebody superstructure; later Willard 40 models used molded cored-fiberglass superstructures and walk-around side decks",
+    "KeelType": "Full-displacement keel; verify individual hull",
+    "Fuel": "Diesel",
+    "Cooling": null,
+    "EngineConfiguration": "Single inboard; verify installation",
+    "Propulsion": "Shaft",
+    "Flybridge": "Yes",
+    "AftCabin": false,
+    "SideDecks": "No",
+    "TypicalEngineID": "Original installations and repowers vary",
+    "FuelCapacity": 2271.2471,
+    "WaterCapacity": 1135.6235,
+    "HoldingCapacity": 283.9059,
+    "Berths": null,
+    "Cabins": 2,
+    "Heads": 2,
+    "Shower": null,
+    "Galley": null,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "Unknown",
+    "GreatLoopSuitable": null,
+    "Trailerable": false,
+    "BoatFamily": "Trawler",
+    "Configuration": "Widebody Flybridge Sedan",
+    "HullBehaviour": "Displacement",
+    "Features": [
+      "Flybridge"
+    ],
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Trawler",
+    "EngineCount": 1,
+    "NormalizedHullType": "Displacement",
+    "DisplacementLb": null,
+    "FuelCapacityGal": null,
+    "WaterCapacityGal": null,
+    "RarityScore": null,
+    "RarityLabel": "",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "FuelCode": "fuel.diesel",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "HullBehaviourCode": "hull_behaviour.displacement",
+    "BoatFamilyCode": "boat_family.trawler",
+    "KeelConfigurationCode": "keel.full_long",
+    "RunningGearProtectionCode": "running_gear.keel_protected",
+    "LOA": 12.192,
+    "FlybridgeCode": "availability.yes",
+    "FuelCapacityUnitStatus": "canonical_litres",
+    "WaterCapacityUnitStatus": "canonical_litres",
+    "HoldingCapacityUnitStatus": "canonical_litres",
+    "Beam": 4.1656,
+    "Draft": 1.3716,
+    "AirDraft": 3.6068,
+    "StyleCode": "Trawler",
+    "SideDecksCode": "side_decks.none",
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "LWL": 11.176,
+    "ShowerTypeCode": "shower.none",
+    "Strengths": [
+      "Heavy displacement fiberglass construction with protected running gear",
+      "Simple low-speed diesel propulsion and strong owner-association documentation",
+      "Compact models provide unusual cruising utility for their length"
+    ],
+    "Weaknesses": "Only three Nomads were built; individual specifications, modifications and condition matter more than generalized model assumptions.",
+    "CommonProblems": "Inspect plywood-backed superstructure, windows and deck penetrations, tanks, exhaust and cooling, shaft and rudder gear, wiring, plumbing and repower history.",
+    "TypicalMission": "Slow extended coastal cruising and liveaboard use for buyers willing to maintain a rare heavy-displacement yacht.",
+    "AvoidIf": [
+      "You require fast cruise speeds",
+      "You want turnkey modern systems without refit exposure",
+      "You cannot accommodate model-specific restoration or customization"
+    ],
+    "Overview": "The Willard 40 Vega Nomad belongs to Willard Marine’s early production-fiberglass cruising lineage. These heavy, economical boats use displacement hulls and simple diesel propulsion, with the Vega families offered in materially different sedan, pilothouse and motorsailer configurations.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented layout and cruising systems are well suited to a cruising couple, with guest capacity varying by model."
+      },
+      "SoloHandling": {
+        "Assessment": "Mixed",
+        "Summary": "Protected helms and deck access can support short-handed operation, but displacement, windage, engine arrangement and docking equipment vary materially by model."
+      },
+      "InlandWaterways": {
+        "Assessment": "Mixed",
+        "Summary": "Route suitability depends on beam, draft and actual air draft; larger models may face marina and lock constraints."
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "Hull form and construction support the documented cruising role, but condition, loading, weather and individual configuration remain decisive."
+      }
+    },
+    "TradeOffs": [
+      "Very low cruising speeds compared with semi-displacement alternatives",
+      "Many examples are now restoration-age boats with decades of owner modifications",
+      "Interior and deck configuration varies substantially by Vega version"
+    ],
+    "BestFor": [
+      "Owners who value simplicity, efficiency and traditional displacement behavior",
+      "Restoration-minded buyers seeking historically significant fiberglass trawlers",
+      "Slow coastal and inland cruising where speed is secondary"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Confirm exact Vega model/version and hull number from documentation",
+      "Inspect deck/superstructure cores or fiberglass-over-plywood areas appropriate to production period",
+      "Inspect tanks, wiring, exhaust, cooling and original plumbing for age-related deterioration",
+      "Inspect shaft, rudder, keel and steering systems",
+      "Review structural and systems modifications made over the boat’s long service life"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for confirm exact Vega model/version and hull number from documentation?",
+      "What inspection, repair or service history is available for inspect deck/superstructure cores or fiberglass-over-plywood areas appropriate to production period?",
+      "What inspection, repair or service history is available for inspect tanks, wiring, exhaust, cooling and original plumbing for age-related deterioration?",
+      "What inspection, repair or service history is available for inspect shaft, rudder, keel and steering systems?",
+      "What inspection, repair or service history is available for review structural and systems modifications made over the boat’s long service life?"
+    ],
+    "OwnerActions": [
+      "Keep deck, window and hardware penetrations sealed and investigate leaks promptly",
+      "Service propulsion, cooling, exhaust, steering and fuel systems to documented intervals",
+      "Document structural, tank, electrical and machinery repairs for future buyers"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "Vega configuration families",
+        "Description": "Willard used the same hull families for distinct Nomad, Voyager, Horizon, Searcher and other configurations. “Vega” identifies a hull family rather than one universal layout.",
+        "AffectedYears": "1961–1977 primary Vega era",
+        "EvidenceRefs": [
+          "https://willardboats.org/about",
+          "https://willardboats.org/boats/vega30",
+          "https://willardboats.org/boats/vega36",
+          "https://willardboats.org/boats/vega40"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "ModelCharacter": "An exceptionally rare widebody flybridge sedan from Willard's early Vega 40 family, using a full-displacement hull, two-stateroom/two-head interior and no side decks to maximize living space in a traditional long-range cruiser.",
+    "DesignLineage": [
+      "The Vega 40 was introduced in 1973 as the larger replacement for the Vega 36.",
+      "The early 1973–1977 Vega 40 family consisted of Nomad flybridge sedans, Voyager raised-pilothouse boats and one motorsailer.",
+      "Only three Vega 40 Nomads were built, and the Nomad used a widebody salon without walkaround side decks.",
+      "In 1977 Willard replaced the early Vega 40 with a new molded-superstructure 40; the later Flybridge Sedan regained side decks and should not be conflated with the Vega 40 Nomad."
+    ],
+    "OwnershipCharacter": "Large living space and full-displacement efficiency are attractive, but scarcity means nearly every assumption must be verified on the individual hull. Lack of side decks, vintage systems, plywood-era superstructure construction and limited model-specific parts make condition more important than nominal specification.",
+    "DateCreated": "2026-07-13",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "B-Atlas Phase 8C-10 Traditional Trawler Family Research",
+    "Revision": 4,
+    "ResearchStatus": "Reviewed",
+    "ResearchNotes": "Only three Vega 40 Nomad widebody flybridge sedans are documented. The early 1973–77 Vega 40 must not be confused with the redesigned 1977–2003 Willard 40. Model-specific beam, draft, displacement and tankage remain unknown until supported by early-Nomad documentation.\n\nDimension confidence policy v6.89 (2026-09-13): Because only three early Vega 40 Nomad widebody sedans are documented, beam/draft/air-draft now use low-confidence working estimates derived from the closely related successor hull and are explicitly flagged for community verification.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "DataConfidence": "Moderate",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "WILL-40-NO"
+            ],
+            "Years": {
+              "From": 1973,
+              "To": 1977
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://willardboats.org/about",
+            "https://willardboats.org/boats/vega30",
+            "https://willardboats.org/boats/vega36",
+            "https://willardboats.org/boats/vega40"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Representative identity and specifications are based on manufacturer, owner-association or model-specific technical references; hull-specific differences remain explicit."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "WILL-40-NO"
+            ],
+            "Years": {
+              "From": 1973,
+              "To": 1977
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://willardboats.org/about",
+            "https://willardboats.org/boats/vega30",
+            "https://willardboats.org/boats/vega36",
+            "https://willardboats.org/boats/vega40"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance is derived from documented configuration, dimensions, propulsion and intended use rather than sales language."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "WILL-40-NO"
+            ],
+            "Years": {
+              "From": 1973,
+              "To": 1977
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://willardboats.org/about",
+            "https://willardboats.org/boats/vega30",
+            "https://willardboats.org/boats/vega36",
+            "https://willardboats.org/boats/vega40"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance identifies systems and age/configuration risks to inspect; it is not an assertion that every hull has a defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "The Vega 40 family also included Voyager pilothouse and motorsailer versions. This record represents the Nomad/widebody flybridge form.",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "PlanCriticalStatus": {},
+    "SpecificationConfidence": {
+      "Beam": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [
+          "https://willardboats.org/boats/vega40",
+          "https://ca.boats.com/power-boats/2001-willard-marine-40-trawler-10294777/"
+        ],
+        "Note": "Estimated from the closely related successor Willard 40 hull (13 ft 8 in); early Vega 40 Nomad documentation should supersede this when found."
+      },
+      "Draft": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [
+          "https://willardboats.org/boats/vega40",
+          "https://ca.boats.com/power-boats/2001-willard-marine-40-trawler-10294777/"
+        ],
+        "Note": "Working estimate of 4 ft 6 in based on closely related Willard 40 geometry; verify on an early Vega 40 Nomad."
+      },
+      "AirDraft": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [
+          "https://willardboats.org/boats/vega40",
+          "https://ca.boats.com/power-boats/2001-willard-marine-40-trawler-10294777/"
+        ],
+        "Note": "Working estimate based on successor Willard 40 bridge-clearance data; flybridge equipment can vary."
+      },
+      "FuelCapacity": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [
+          "https://willardboats.org/boats/vega40",
+          "https://ca.boats.com/power-boats/2001-willard-marine-40-trawler-10294777/",
+          "https://bvi.boatshed.com/willard_40_trawler-boat-351246.html"
+        ],
+        "Note": "Direct Vega 40 Nomad tankage documentation remains scarce. The closely related later Willard 40 reports about 600 gal total fuel; retained only as a working proxy for the early Vega 40 pending owner/factory-document verification."
+      },
+      "WaterCapacity": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [
+          "https://willardboats.org/boats/vega40",
+          "https://ca.boats.com/power-boats/2001-willard-marine-40-trawler-10294777/",
+          "https://bvi.boatshed.com/willard_40_trawler-boat-351246.html"
+        ],
+        "Note": "Later closely related Willard 40 documentation reports about 300 gal fresh water; retained as a low-confidence proxy for the early Vega 40 Nomad."
+      },
+      "HoldingCapacity": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [
+          "https://willardboats.org/boats/vega40",
+          "https://ca.boats.com/power-boats/2001-willard-marine-40-trawler-10294777/",
+          "https://bvi.boatshed.com/willard_40_trawler-boat-351246.html"
+        ],
+        "Note": "Later closely related Willard 40 documentation reports about 75 gal holding; retained as a low-confidence proxy for the early Vega 40 Nomad."
+      },
+      "LWL": {
+        "Level": "Low",
+        "Status": "estimated_family_ratio",
+        "EvidenceRefs": [],
+        "Note": "Working LWL estimate derived from the median LWL/LOA ratio (0.917) of other B-Atlas Willard models with recorded waterline lengths. Intended for hull-speed context and community verification, not survey use."
+      },
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      }
+    }
+  },
+  {
+    "BoatModelID": "WIND-26-SN",
+    "ManufacturerID": "WINDY",
+    "Manufacturer": "Windy",
+    "Model": "26 Snekke",
+    "Variant": "26 SN / Norwegian Snekke",
+    "Nickname": "Windy 26 SN",
+    "Active": false,
+    "ModelAliases": [
+      "26 SN",
+      "Windy 26 SN"
+    ],
+    "CanonicalSlug": "windy-26-sn-norwegian-pocket-trawler-snekke",
+    "CanonicalPath": "/models/windy-26-sn-norwegian-pocket-trawler-snekke/",
+    "CanonicalURL": "https://b-atlas.org/models/windy-26-sn-norwegian-pocket-trawler-snekke/",
+    "ImageURL": "images/wind-26-sn.jpg",
+    "FirstYear": 1981,
+    "LastYear": 1986,
+    "TotalBuilt": null,
+    "Designer": "Windy Boats A/S / Kjell Jørgensen",
+    "HullType": "Semi-Displacement",
+    "Style": "Norwegian Pocket Trawler",
+    "Construction": "Hand-laid fiberglass Norwegian-built hull with simulated lapstrake topsides, hard-chine/semi-displacement form, full-length skeg and molded bilge keels aft",
+    "KeelType": "Full-length skeg with protected shaft and rudder",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Single inboard diesel",
+    "Propulsion": "Shaft",
+    "Flybridge": "No",
+    "AftCabin": false,
+    "SideDecks": "Moderate",
+    "TypicalEngineID": "Volvo Penta MD30 65 hp documented in 1984 Canadian test; MD21B/other Volvo installations also documented on surviving examples",
+    "FuelCapacity": 123.0259,
+    "WaterCapacity": 96.528,
+    "HoldingCapacity": 96.528,
+    "Berths": 3,
+    "Cabins": 1,
+    "Heads": 1,
+    "Shower": false,
+    "Galley": "Compact cockpit/helm-area galley; equipment varies by boat",
+    "CoastalRating": "Yes",
+    "OffshoreRating": "No",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "BoatFamily": "Windy SN",
+    "Configuration": "Hardtop Pocket Trawler",
+    "HullBehaviour": "Semi-Displacement",
+    "Features": [
+      "Hardtop Helm",
+      "Single Diesel",
+      "Shaft Drive",
+      "Full-Length Skeg",
+      "Bilge Keels",
+      "Double-Ended Hull",
+      "Cockpit Seating"
+    ],
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Semi-Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Trawler",
+    "EngineCount": 1,
+    "RarityScore": null,
+    "RarityLabel": "",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "BoatFamilyCode": "boat_family.trawler",
+    "HullBehaviourCode": "hull_behaviour.semi_displacement",
+    "FuelCode": "fuel.diesel",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "LOA": 7.75,
+    "Beam": 2.93,
+    "Displacement": 2350,
+    "EnginePowerPerEngine": 48.47,
+    "KeelConfigurationCode": "keel.partial_skeg",
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "Draft": 0.72,
+    "AirDraft": 2.3,
+    "StyleCode": "Trawler",
+    "CoolingCode": "cooling.fresh_water",
+    "FlybridgeCode": "availability.no",
+    "SideDecksCode": "side_decks.moderate",
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "ShowerTypeCode": "shower.none",
+    "RunningGearProtectionCode": "running_gear.skeg_protected",
+    "Strengths": [
+      "Economical single-diesel shaft-drive operation",
+      "Stable double-ended Norwegian hull with full-length skeg and bilge keels",
+      "Protected hardtop helm and practical cockpit for a 26-foot cruiser",
+      "Shallow draft and strong low-speed maneuverability for inland and coastal cruising"
+    ],
+    "Weaknesses": "Limited interior volume and headroom by modern standards, modest speed, narrow service access and potentially difficult sourcing for older European-specific trim and hardware.",
+    "CommonProblems": "Inspect aging Volvo diesel cooling and exhaust systems, shaft and rudder gear, window and deck sealing, fuel and water tanks, sanitation plumbing, wiring and owner modifications.",
+    "TypicalMission": "Economical couple cruising on inland waterways, Great Lakes and sheltered coastal routes at displacement or semi-displacement speeds.",
+    "AvoidIf": [
+      "You require a flybridge or separate aft cabin",
+      "You need sustained planing-cruiser speeds",
+      "You require modern interior volume or easy access to all machinery"
+    ],
+    "Overview": "The Windy 26 SN is a Norwegian-built 26-foot hardtop pocket trawler/snekke from the early-to-mid 1980s. Its double-ended fiberglass hull combines a full-length skeg, aft bilge keels and single diesel shaft drive with a protected helm, large cockpit and compact overnight accommodation. Period testing emphasized unusually good stability, economical operation and easy low-speed handling for a boat of this size.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The convertible forward dinette, separate head, compact galley and large cockpit suit a couple cruising modest distances."
+      },
+      "SoloHandling": {
+        "Assessment": "Good",
+        "Summary": "Single-lever controls, a large rudder, protected shaft and documented ability to steer in reverse support manageable solo operation."
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "Shallow draft, modest air draft and economical diesel operation suit canals, rivers and inland cruising."
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "The stable Norwegian hull and protected helm support coastal use, but the boat remains a small 26-foot cruiser whose condition, loading and weather limits matter."
+      }
+    },
+    "TradeOffs": [
+      "Compact accommodation and headroom are modest compared with newer 26-foot cruisers",
+      "Cruising speed is primarily in the 7-10 knot range rather than modern planing-cruiser speeds",
+      "Older European hardware and model-specific parts may require adaptation or specialist sourcing"
+    ],
+    "BestFor": [
+      "Couples wanting a small traditional diesel cruiser with Scandinavian character",
+      "Great Lakes, river, canal and sheltered-coastal cruising",
+      "Buyers prioritizing fuel economy, stability and protected shaft drive over speed"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Inspect Volvo diesel cooling, exhaust, mounts and service history",
+      "Check shaft, stern gear, rudder, skeg and emergency-steering arrangement",
+      "Inspect windows, hardtop and deck fittings for water intrusion",
+      "Verify fuel, water and sanitation tanks and plumbing, which vary between examples",
+      "Review aging electrical systems and owner modifications"
+    ],
+    "BuyerQuestions": [
+      "Which engine is currently installed, and what major cooling or exhaust work has been completed?",
+      "Have the fuel or water tanks been replaced or repaired?",
+      "Have windows, hardtop fittings or deck penetrations shown leakage?",
+      "What is the measured air draft in the boat's current configuration?"
+    ],
+    "OwnerActions": [
+      "Maintain cooling and exhaust systems according to the installed Volvo engine requirements",
+      "Keep window, hardtop and deck penetrations properly sealed",
+      "Monitor shaft, rudder and skeg hardware for wear or corrosion",
+      "Document any replacement tanks, wiring changes and non-original equipment"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "Engine variations",
+        "Description": "Period and surviving boats document Volvo Penta MD30 and MD21B installations, with later repowers also common.",
+        "EvidenceRefs": [
+          "https://canadianboating.ca/boat-reviews/windy-26-sn/",
+          "https://www.beekhuisyachtbrokers.com/en/sold-yachts/windy-26-sn-spitsgatter/"
+        ]
+      },
+      {
+        "Name": "Tankage and cockpit drainage",
+        "Description": "Period sources document optional larger fuel capacity, and the 1984 review notes later imported boats received a self-draining cockpit.",
+        "EvidenceRefs": [
+          "https://canadianboating.ca/boat-reviews/windy-26-sn/"
+        ]
+      }
+    ],
+    "ModelCharacter": "A rare Norwegian-built pocket trawler whose double-ended snekke-inspired hull, full-length skeg and single Volvo diesel deliver remarkable stability and economy in only 25½ feet. Its hardtop helm, large cockpit and U-shaped forward dinette make it a genuine tiny cruising boat rather than a fishing cuddy.",
+    "DesignLineage": [
+      "Documented examples span 1981–1986.",
+      "A 1984 Canadian Yachting road test specifically describes the 26 SN as a diesel-powered small trawler.",
+      "The hull incorporates a full-length skeg plus small aft bilge keels for stability and tracking.",
+      "The SN belongs to Windy's older Scandinavian cruising lineage and bears little relationship to the brand's later high-performance sports cruisers."
+    ],
+    "OwnershipCharacter": "Single shaft diesel, manual backup steering and tiny system count make it extremely economical. Scandinavian-specific fittings and age are the challenges; cabin size and standing headroom are naturally limited.",
+    "DateCreated": "2026-08-07",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "B-Atlas Windy 26 SN Research",
+    "Revision": 1,
+    "ResearchStatus": "Reviewed",
+    "ResearchNotes": "Batch 32 specialist-tail research. Identity, lineage and specifications normalized from model-specific builder, owner-archive and Powerboat Guide evidence; unsupported details remain unknown.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "DataConfidence": "High",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "WIND-26-SN"
+            ],
+            "Years": {
+              "From": 1981,
+              "To": 1986
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://canadianboating.ca/boat-reviews/windy-26-sn/",
+            "https://www.beekhuisyachtbrokers.com/en/sold-yachts/windy-26-sn-spitsgatter/",
+            "https://www.yachtworld.com/yacht/1986-windy-26-sn-10251694/"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source",
+            "Marketplace observation"
+          ],
+          "Confidence": "High",
+          "Notes": "Identity and representative dimensions are supported by a period Canadian test and multiple surviving examples."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "WIND-26-SN"
+            ],
+            "Years": {
+              "From": 1981,
+              "To": 1986
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://canadianboating.ca/boat-reviews/windy-26-sn/"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Suitability is derived from documented hull, handling, accommodation and propulsion characteristics."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "General age-related guidance",
+            "Models": [
+              "WIND-26-SN"
+            ],
+            "Years": {
+              "From": 1981,
+              "To": 1986
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://canadianboating.ca/boat-reviews/windy-26-sn/",
+            "https://www.beekhuisyachtbrokers.com/en/sold-yachts/windy-26-sn-spitsgatter/"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source",
+            "Marketplace observation"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance reflects configuration and age risks, not documented universal model defects."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Exact full production years and total production are not established.",
+        "Air draft, tankage and engine installation vary between individual examples.",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "SpecificationConfidence": {
+      "FuelCapacity": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [],
+        "Note": "Legacy sources conflict on tankage. v6.95 retains the existing working value, interprets its legacy basis as US gallons, and converts it to canonical litres pending owner/source verification."
+      },
+      "WaterCapacity": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [],
+        "Note": "Legacy sources conflict on tankage. v6.95 retains the existing working value, interprets its legacy basis as US gallons, and converts it to canonical litres pending owner/source verification."
+      },
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing propulsion/keel description; no new factual assertion introduced."
+      }
+    }
+  },
+  {
+    "BoatModelID": "MNSH-34-MK3",
+    "ManufacturerID": "MAINSHIP",
+    "Manufacturer": "Mainship",
+    "Model": "34",
+    "Variant": "III",
+    "Nickname": "Mainship 34 MKIII",
+    "Active": true,
+    "ModelSeries": "Mainship 34 early generation",
+    "ModelGeneration": "Mk I",
+    "ModelAliases": [
+      "34 MKIII"
+    ],
+    "CanonicalSlug": "mainship-34-mkiii",
+    "CanonicalPath": "/models/mainship-34-mkiii/",
+    "CanonicalURL": "https://b-atlas.org/models/mainship-34-mkiii/",
+    "ModelIdentityFamilyID": "MNSH-34",
+    "ImageURL": "images/mnsh-34-mk3.jpg",
+    "FirstYear": 1983,
+    "LastYear": 1988,
+    "TotalBuilt": null,
+    "Designer": "John Cherubini",
+    "HullType": "Semi-Displacement",
+    "Style": "Flybridge Sedan Trawler",
+    "Construction": "Solid fiberglass hull with balsa-cored foredeck",
+    "KeelType": "Full-length keel with protected running gear",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Single diesel inboard",
+    "Propulsion": "Shaft",
+    "Flybridge": "Yes",
+    "AftCabin": false,
+    "SideDecks": "Wide",
+    "TypicalEngineID": "Perkins 6.354",
+    "FuelCapacity": 719.2282,
+    "WaterCapacity": 151.4165,
+    "HoldingCapacity": 94.6353,
+    "Berths": 4,
+    "Cabins": 1,
+    "Heads": 1,
+    "Shower": "Separate stall shower",
+    "Galley": "Salon-level galley",
+    "CoastalRating": "Yes",
+    "OffshoreRating": "No",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "BoatFamily": "Trawler",
+    "Configuration": "Classic Trawler",
+    "HullBehaviour": "Semi-Displacement",
+    "Features": [
+      "Flybridge",
+      "Wide Side Decks",
+      "Lower Helm",
+      "Single Shaft Drive",
+      "Salon-Level Galley",
+      "Swim Platform"
+    ],
+    "SleepingArrangement": "Forward V-berth with convertible salon accommodation",
+    "EvolutionSequence": 1,
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Semi-Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Cruiser",
+    "EngineCount": 1,
+    "DisplacementLb": 14000,
+    "FuelCapacityGal": 220,
+    "WaterCapacityGal": 50,
+    "NormalizedHullType": "Semi-Displacement",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "FuelCode": "fuel.diesel",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "BoatFamilyCode": "boat_family.trawler",
+    "LOA": 10.3632,
+    "Beam": 3.6322,
+    "Draft": 0.8636,
+    "Displacement": 6350.3,
+    "HullBehaviourCode": "hull_behaviour.semi_displacement",
+    "KeelConfigurationCode": "keel.full_long",
+    "RunningGearProtectionCode": "running_gear.keel_protected",
+    "ShowerTypeCode": "shower.separate_stall",
+    "FlybridgeCode": "availability.yes",
+    "SideDecksCode": "side_decks.wide",
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres",
+    "AirDraft": 4.1148,
+    "StyleCode": "Cruiser",
+    "CoolingCode": "cooling.fresh_water",
+    "DisplacementCruiseSpeed": 7,
+    "DisplacementCruiseFuelBurn": 7.570823568,
+    "PlaningCruiseSpeed": 10,
+    "PlaningCruiseFuelBurn": 15.141647136,
+    "LWL": 9.2285,
+    "Strengths": [
+      "Economical single-diesel shaft propulsion",
+      "Wide side decks and lower and upper helm positions",
+      "Protected running gear and shallow draft",
+      "Strong recognition and a large surviving fleet"
+    ],
+    "Weaknesses": "Modest speed, limited private guest accommodation, small flybridge and substantial age-related systems burden.",
+    "CommonProblems": "Balsa-cored foredeck moisture is a documented concern. Also inspect aging fuel tanks, window and deck leaks, flybridge penetrations, exhaust and cooling systems, steering gear, wiring, plumbing and prior owner modifications.",
+    "TypicalMission": "Economical couple cruising on inland, Great Lakes and protected coastal routes.",
+    "AvoidIf": [
+      "You require twin-engine redundancy",
+      "You need two private cabins",
+      "You want modern systems without refit risk"
+    ],
+    "CrewFitBestFor": [
+      "Cruising couple",
+      "Tall owners after vessel-specific headroom verification",
+      "Owners who value salon space over a second private cabin",
+      "Economical long-duration cruising"
+    ],
+    "CrewFitCautions": [
+      "Families requiring two private cabins",
+      "Frequent overnight guests",
+      "Buyers wanting planing speeds"
+    ],
+    "OwnerExperienceNotes": [
+      "Open salon and single forward cabin suit a cruising couple.",
+      "Standing headroom is generous for the era but must be verified on each modified vessel.",
+      "Wide side decks and simple single-diesel systems support practical cruising."
+    ],
+    "EvolutionNotes": "Original Motor Cruiser arrangement with the shorter cockpit and larger salon. Do not combine with the Mainship 34 II, III, or the unrelated 2000s 34 Trawler.",
+    "Overview": "The Mainship 34 III is the 1983–88 third generation of the original Mainship 34 concept. It keeps the single-diesel, long-keel semi-displacement hull philosophy but uses a more open cockpit, larger salon windows, lighter oak interior and updated exterior styling.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The single-stateroom layout, salon and lower helm suit a cruising couple.",
+        "EvidenceRefs": [
+          "https://soundingsonline.com/news/used-boat-mainship-34/",
+          "https://www.hmy.com/yachting/powerboat-guide/mainship/34-diesel-cruiser-1978-82"
+        ]
+      },
+      "SoloHandling": {
+        "Assessment": "Mixed",
+        "Summary": "Wide side decks and dual helms help, but single-screw handling and windage require planning.",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/mainship/34-diesel-cruiser-1978-82"
+        ]
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "Moderate beam, shallow draft and economical diesel operation suit many inland routes; verify mast clearance.",
+        "EvidenceRefs": [
+          "https://soundingsonline.com/news/used-boat-mainship-34/"
+        ]
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "The keel and semi-displacement hull support coastal use, but this is not a heavy full-displacement offshore trawler.",
+        "EvidenceRefs": [
+          "https://soundingsonline.com/news/used-boat-mainship-34/"
+        ]
+      }
+    },
+    "TradeOffs": [
+      "Single-screw docking requires technique or assistance",
+      "Balsa-cored foredeck requires careful moisture inspection",
+      "Older fuel, exhaust, electrical and steering systems may require refit",
+      "Single-cabin layout limits guest privacy"
+    ],
+    "BestFor": [
+      "Couples cruising inland and coastal waters",
+      "Buyers seeking an affordable classic diesel cruiser",
+      "Owners comfortable updating late-1970s and early-1980s systems"
+    ],
+    "KnownConcerns": [
+      {
+        "ConcernID": "MNSH-34-MK1-DECK-CORE",
+        "System": "Deck structure",
+        "Description": "Moisture intrusion in the balsa-cored foredeck is a documented model concern.",
+        "AffectedYears": {
+          "From": 1978,
+          "To": 1982
+        },
+        "AffectedVariations": [],
+        "BuyerQuestion": "Have moisture readings or foredeck core repairs been documented?",
+        "InspectionAction": "Moisture-test the foredeck, especially around hardware and the mast step.",
+        "OwnerAction": "Maintain bedding around foredeck penetrations and repair leaks promptly.",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/mainship/34-diesel-cruiser-1978-82"
+        ],
+        "Confidence": "Moderate"
+      }
+    ],
+    "InspectionFocus": [
+      "Moisture-test the balsa-cored foredeck around hardware and the mast step",
+      "Inspect aluminum fuel tanks and access for replacement",
+      "Inspect exhaust, cooling, steering, shaft and rudder systems",
+      "Review electrical upgrades and structural alterations"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for moisture-test the balsa-cored foredeck around hardware and the mast step?",
+      "What inspection, repair or service history is available for inspect aluminum fuel tanks and access for replacement?",
+      "What inspection, repair or service history is available for inspect exhaust, cooling, steering, shaft and rudder systems?",
+      "What inspection, repair or service history is available for review electrical upgrades and structural alterations?"
+    ],
+    "OwnerActions": [
+      "Keep foredeck hardware and mast penetrations properly bedded",
+      "Maintain access to fuel tanks, exhaust and steering components"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "Original 34 configuration",
+        "Description": "The first 34 used the original salon, cockpit and bridge-extension arrangement and preceded the 34 II and 34 III.",
+        "AffectedYears": "1978–1982",
+        "EvidenceRefs": [
+          "https://soundingsonline.com/news/used-boat-mainship-34/"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "ModelCharacter": "The 1983–88 third generation and the compromise between MK I interior space and MK II cockpit space. It restores roughly a foot of salon compared with the MK II, keeps a useful but shorter cockpit than the MK II, adds a short overhang, larger windows and lighter oak interior trim, and uses lower stepped side decks/transom geometry.",
+    "DesignLineage": [
+      "The 34 III replaced both the MK I and MK II for 1983.",
+      "It splits the difference between the MK I and MK II: more salon than the MK II, more cockpit openness than the MK I, and only a short flybridge/cabin-top overhang.",
+      "The III introduced larger cabin windows, lighter oak interior treatment and lower stepped side-deck/transom details.",
+      "Production continued through 1988; the later 2005–09 Mainship 34 Trawler is a completely different hull and generation, not a MK IV."
+    ],
+    "OwnershipCharacter": "The most balanced classic 34 for buyers wanting both cockpit and salon usability. The single diesel remains simple, while larger glazing, lower cockpit/deck geometry and 1980s systems make window sealing, deck moisture, tanks and wiring important inspection points.",
+    "DateCreated": "2026-07-13",
+    "LastUpdated": "2026-09-14",
+    "ReviewedBy": "B-Atlas Mainship Family Research",
+    "Revision": "6.251",
+    "ResearchStatus": "Reviewed",
+    "ResearchNotes": "Batch 33 Mainship generation refinement. HMY verifies 1983–88 production, revised salon, larger windows and lighter oak interior. Owner references consistently describe the MK III as the middle-ground cockpit/salon layout with short overhang. Tank configuration is deliberately treated as variable by hull/year because owner reports contradict a universal single-tank rule.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.\n\nv7.05 cruising-performance research: Soundings retrospective covering Mainship 34 I/II/III reports owner fuel burn around 2 US gal/h at 7 knots with the 160-hp Perkins configuration. Faster-cruise context: The same Mainship 34 retrospective reports about 4 US gal/h around 10 knots for 200-hp Perkins-equipped boats; stored as a faster configuration-specific cruise point.",
+    "DataConfidence": "High",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndProduction",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "MNSH-34-MK1"
+            ],
+            "Years": {
+              "From": null,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://soundingsonline.com/news/used-boat-mainship-34/",
+            "https://www.hmy.com/yachting/powerboat-guide/mainship/34-diesel-cruiser-1978-82"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Identity, production and representative specifications supported by model references."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "MNSH-34-MK1"
+            ],
+            "Years": {
+              "From": null,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://soundingsonline.com/news/used-boat-mainship-34/",
+            "https://www.hmy.com/yachting/powerboat-guide/mainship/34-diesel-cruiser-1978-82"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source",
+            "Marketplace observation"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Interpretive guidance derived from documented configuration and representative specifications."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "MNSH-34-MK1"
+            ],
+            "Years": {
+              "From": null,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://soundingsonline.com/news/used-boat-mainship-34/",
+            "https://www.hmy.com/yachting/powerboat-guide/mainship/34-diesel-cruiser-1978-82"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance reflects construction and systems; individual applicability must be confirmed."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Specifications and equipment must be confirmed for the individual hull and production year",
+        "Legacy CommonProblems were not promoted unless model-specific evidence met the approved threshold"
+      ]
+    },
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "SpecificationConfidence": {
+      "FuelCapacity": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [],
+        "Note": "Legacy sources conflict on tankage. v6.95 retains the existing working value, interprets its legacy basis as US gallons, and converts it to canonical litres pending owner/source verification."
+      },
+      "WaterCapacity": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [],
+        "Note": "Legacy sources conflict on tankage. v6.95 retains the existing working value, interprets its legacy basis as US gallons, and converts it to canonical litres pending owner/source verification."
+      },
+      "LWL": {
+        "Level": "Low",
+        "Status": "estimated_family_ratio",
+        "EvidenceRefs": [],
+        "Note": "Working LWL estimate derived from the median LWL/LOA ratio (0.891) of other B-Atlas Mainship models with recorded waterline lengths. Intended for hull-speed context and community verification, not survey use."
+      },
+      "HoldingCapacity": {
+        "Level": "Medium",
+        "Status": "supported_listing",
+        "EvidenceRefs": [
+          "https://marinesource.com/boat/mainship-34-iii-trawler-1983-1763245be3-for-sale"
+        ],
+        "Note": "Representative Mainship 34 Mk III listing reports a 25 US gal holding tank; other individual boats report 16–30 US gal, so this remains representative."
+      },
+      "DisplacementCruiseSpeed": {
+        "Level": "Medium",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://soundingsonline.com/boats/classic-boats/classic-boat-mainship-34/"
+        ],
+        "Note": "Soundings retrospective covering Mainship 34 I/II/III reports owner fuel burn around 2 US gal/h at 7 knots with the 160-hp Perkins configuration."
+      },
+      "DisplacementCruiseFuelBurn": {
+        "Level": "Medium",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://soundingsonline.com/boats/classic-boats/classic-boat-mainship-34/"
+        ],
+        "Note": "Soundings retrospective covering Mainship 34 I/II/III reports owner fuel burn around 2 US gal/h at 7 knots with the 160-hp Perkins configuration."
+      },
+      "PlaningCruiseSpeed": {
+        "Level": "Medium",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://soundingsonline.com/boats/classic-boats/classic-boat-mainship-34/"
+        ],
+        "Note": "The same Mainship 34 retrospective reports about 4 US gal/h around 10 knots for 200-hp Perkins-equipped boats; stored as a faster configuration-specific cruise point."
+      },
+      "PlaningCruiseFuelBurn": {
+        "Level": "Medium",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://soundingsonline.com/boats/classic-boats/classic-boat-mainship-34/"
+        ],
+        "Note": "The same Mainship 34 retrospective reports about 4 US gal/h around 10 knots for 200-hp Perkins-equipped boats; stored as a faster configuration-specific cruise point."
+      }
+    }
+  },
+  {
+    "BoatModelID": "MNSH-34-TR",
+    "ManufacturerID": "MAINSHIP",
+    "Manufacturer": "Mainship",
+    "Model": "34",
+    "Variant": "Trawler",
+    "Nickname": "Mainship 34T",
+    "Active": true,
+    "ModelSeries": "Mainship 34 early generation",
+    "ModelGeneration": "Mk I",
+    "CanonicalSlug": "mainship-34t",
+    "CanonicalPath": "/models/mainship-34t/",
+    "CanonicalURL": "https://b-atlas.org/models/mainship-34t/",
+    "ModelIdentityFamilyID": "MNSH-34",
+    "ImageURL": null,
+    "FirstYear": 2005,
+    "LastYear": 2009,
+    "TotalBuilt": null,
+    "Designer": "John Cherubini",
+    "HullType": "Semi-Displacement",
+    "Style": "Flybridge Sedan Trawler",
+    "Construction": "Solid fiberglass hull with balsa-cored foredeck",
+    "KeelType": "Full-length keel with protected running gear",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Single Yanmar diesel standard; twin Yanmar diesels optional",
+    "Propulsion": "Shaft",
+    "Flybridge": "Yes",
+    "AftCabin": false,
+    "SideDecks": "Wide",
+    "TypicalEngineID": "Perkins 6.354",
+    "FuelCapacity": 946.3529,
+    "WaterCapacity": 264.9788,
+    "HoldingCapacity": 128.7039,
+    "Berths": 4,
+    "Cabins": 1,
+    "Heads": 1,
+    "Shower": "Separate stall shower",
+    "Galley": "Salon-level galley",
+    "CoastalRating": "Yes",
+    "OffshoreRating": "No",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "BoatFamily": "Trawler",
+    "Configuration": "Classic Trawler",
+    "HullBehaviour": "Semi-Displacement",
+    "Features": [
+      "Flybridge",
+      "Wide Side Decks",
+      "Lower Helm",
+      "Single Shaft Drive",
+      "Salon-Level Galley",
+      "Swim Platform"
+    ],
+    "SleepingArrangement": "Forward V-berth with convertible salon accommodation",
+    "EvolutionSequence": 1,
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Semi-Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Trawler",
+    "DisplacementLb": 14000,
+    "FuelCapacityGal": 220,
+    "WaterCapacityGal": 50,
+    "NormalizedHullType": "Semi-Displacement",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "FuelCode": "fuel.diesel",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "BoatFamilyCode": "boat_family.trawler",
+    "LOA": 11.8364,
+    "Beam": 4.3434,
+    "Draft": 1.016,
+    "Displacement": 9071.8,
+    "AirDraft": 4.572,
+    "Headroom": 1.9304,
+    "HullBehaviourCode": "hull_behaviour.semi_displacement",
+    "KeelConfigurationCode": "keel.full_long",
+    "RunningGearProtectionCode": "running_gear.keel_protected",
+    "ShowerTypeCode": "shower.separate_stall",
+    "FlybridgeCode": "availability.yes",
+    "SideDecksCode": "side_decks.wide",
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres",
+    "StyleCode": "Trawler",
+    "CoolingCode": "cooling.fresh_water",
+    "DisplacementCruiseSpeed": 7,
+    "DisplacementCruiseFuelBurn": 6.4,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "LWL": 10.5404,
+    "Strengths": [
+      "Economical single-diesel shaft propulsion",
+      "Wide side decks and lower and upper helm positions",
+      "Protected running gear and shallow draft",
+      "Strong recognition and a large surviving fleet"
+    ],
+    "Weaknesses": "Modest speed, limited private guest accommodation, small flybridge and substantial age-related systems burden.",
+    "CommonProblems": "Balsa-cored foredeck moisture is a documented concern. Also inspect aging fuel tanks, window and deck leaks, flybridge penetrations, exhaust and cooling systems, steering gear, wiring, plumbing and prior owner modifications.",
+    "TypicalMission": "Economical couple cruising on inland, Great Lakes and protected coastal routes.",
+    "AvoidIf": [
+      "You require twin-engine redundancy",
+      "You need two private cabins",
+      "You want modern systems without refit risk"
+    ],
+    "CrewFitBestFor": [
+      "Cruising couple",
+      "Tall owners after vessel-specific headroom verification",
+      "Owners who value salon space over a second private cabin",
+      "Economical long-duration cruising"
+    ],
+    "CrewFitCautions": [
+      "Families requiring two private cabins",
+      "Frequent overnight guests",
+      "Buyers wanting planing speeds"
+    ],
+    "OwnerExperienceNotes": [
+      "Open salon and single forward cabin suit a cruising couple.",
+      "Standing headroom is generous for the era but must be verified on each modified vessel.",
+      "Wide side decks and simple single-diesel systems support practical cruising."
+    ],
+    "EvolutionNotes": "Original Motor Cruiser arrangement with the shorter cockpit and larger salon. Do not combine with the Mainship 34 II, III, or the unrelated 2000s 34 Trawler.",
+    "Overview": "The Mainship 34 III is the 1983–88 third generation of the original Mainship 34 concept. It keeps the single-diesel, long-keel semi-displacement hull philosophy but uses a more open cockpit, larger salon windows, lighter oak interior and updated exterior styling.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The single-stateroom layout, salon and lower helm suit a cruising couple.",
+        "EvidenceRefs": [
+          "https://soundingsonline.com/news/used-boat-mainship-34/",
+          "https://www.hmy.com/yachting/powerboat-guide/mainship/34-diesel-cruiser-1978-82"
+        ]
+      },
+      "SoloHandling": {
+        "Assessment": "Mixed",
+        "Summary": "Wide side decks and dual helms help, but single-screw handling and windage require planning.",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/mainship/34-diesel-cruiser-1978-82"
+        ]
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "Moderate beam, shallow draft and economical diesel operation suit many inland routes; verify mast clearance.",
+        "EvidenceRefs": [
+          "https://soundingsonline.com/news/used-boat-mainship-34/"
+        ]
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "The keel and semi-displacement hull support coastal use, but this is not a heavy full-displacement offshore trawler.",
+        "EvidenceRefs": [
+          "https://soundingsonline.com/news/used-boat-mainship-34/"
+        ]
+      }
+    },
+    "TradeOffs": [
+      "Single-screw docking requires technique or assistance",
+      "Balsa-cored foredeck requires careful moisture inspection",
+      "Older fuel, exhaust, electrical and steering systems may require refit",
+      "Single-cabin layout limits guest privacy"
+    ],
+    "BestFor": [
+      "Couples cruising inland and coastal waters",
+      "Buyers seeking an affordable classic diesel cruiser",
+      "Owners comfortable updating late-1970s and early-1980s systems"
+    ],
+    "KnownConcerns": [
+      {
+        "ConcernID": "MNSH-34-MK1-DECK-CORE",
+        "System": "Deck structure",
+        "Description": "Moisture intrusion in the balsa-cored foredeck is a documented model concern.",
+        "AffectedYears": {
+          "From": 1978,
+          "To": 1982
+        },
+        "AffectedVariations": [],
+        "BuyerQuestion": "Have moisture readings or foredeck core repairs been documented?",
+        "InspectionAction": "Moisture-test the foredeck, especially around hardware and the mast step.",
+        "OwnerAction": "Maintain bedding around foredeck penetrations and repair leaks promptly.",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/mainship/34-diesel-cruiser-1978-82"
+        ],
+        "Confidence": "Moderate"
+      }
+    ],
+    "InspectionFocus": [
+      "Moisture-test the balsa-cored foredeck around hardware and the mast step",
+      "Inspect aluminum fuel tanks and access for replacement",
+      "Inspect exhaust, cooling, steering, shaft and rudder systems",
+      "Review electrical upgrades and structural alterations"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for moisture-test the balsa-cored foredeck around hardware and the mast step?",
+      "What inspection, repair or service history is available for inspect aluminum fuel tanks and access for replacement?",
+      "What inspection, repair or service history is available for inspect exhaust, cooling, steering, shaft and rudder systems?",
+      "What inspection, repair or service history is available for review electrical upgrades and structural alterations?"
+    ],
+    "OwnerActions": [
+      "Keep foredeck hardware and mast penetrations properly bedded",
+      "Maintain access to fuel tanks, exhaust and steering components"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "Original 34 configuration",
+        "Description": "The first 34 used the original salon, cockpit and bridge-extension arrangement and preceded the 34 II and 34 III.",
+        "AffectedYears": "1978–1982",
+        "EvidenceRefs": [
+          "https://soundingsonline.com/news/used-boat-mainship-34/"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "ModelCharacter": "A completely new 2005–09 Mainship 34 Trawler, unrelated in hull and dimensions to the classic MK I/II/III family. It is a much wider 14'3\" semi-displacement flybridge cruiser with a full keel, wide sheltered walkways, spacious galley-down salon and either single- or twin-diesel propulsion.",
+    "DesignLineage": [
+      "Introduced for 2005 as a new Mainship 34 Trawler rather than a continuation of the 1978–88 classic 34 hull.",
+      "At 14'3\" beam and nearly 39 feet overall with pulpit, it is substantially larger than the 11'11\"-beam classic MK I/II/III boats.",
+      "A single Yanmar diesel was standard and twin Yanmars were optional, giving displacement-speed economy or higher semi-planing performance depending configuration.",
+      "This 2005–09 model belongs to Mainship's later 350/390/400-era trawler design philosophy, not the classic 34 Mark lineage."
+    ],
+    "OwnershipCharacter": "A far larger and more systems-heavy boat than the classic 34 despite sharing the model number. Single-engine boats preserve Mainship's economical-cruiser appeal, while twins add speed and redundancy; 14'3\" beam, 15-foot clearance, generator/HVAC options and larger domestic systems materially increase storage and ownership cost.",
+    "DateCreated": "2026-07-13",
+    "LastUpdated": "2026-09-12",
+    "ReviewedBy": "B-Atlas Mainship Family Research",
+    "Revision": "6.251",
+    "ResearchStatus": "Reviewed",
+    "ResearchNotes": "Added in Batch 33 as a missing canonical model. HMY Powerboat Guide verifies 2005–09 production, 38'10\" overall with pulpit, 14'3\" beam, 3'4\" draft, 20,000 lb, 250 gal fuel and 70 gal water. Single 240 hp Yanmar versions cruise efficiently near 8 knots; twin 315 hp Yanmars provide higher performance. Other contemporary references note later higher-output single-engine installations, so engine horsepower must remain listing-specific.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "DataConfidence": "High",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndProduction",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "MNSH-34-MK1"
+            ],
+            "Years": {
+              "From": null,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://soundingsonline.com/news/used-boat-mainship-34/",
+            "https://www.hmy.com/yachting/powerboat-guide/mainship/34-diesel-cruiser-1978-82"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Identity, production and representative specifications supported by model references."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "MNSH-34-MK1"
+            ],
+            "Years": {
+              "From": null,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://soundingsonline.com/news/used-boat-mainship-34/",
+            "https://www.hmy.com/yachting/powerboat-guide/mainship/34-diesel-cruiser-1978-82"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source",
+            "Marketplace observation"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Interpretive guidance derived from documented configuration and representative specifications."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "MNSH-34-MK1"
+            ],
+            "Years": {
+              "From": null,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://soundingsonline.com/news/used-boat-mainship-34/",
+            "https://www.hmy.com/yachting/powerboat-guide/mainship/34-diesel-cruiser-1978-82"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance reflects construction and systems; individual applicability must be confirmed."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Specifications and equipment must be confirmed for the individual hull and production year",
+        "Legacy CommonProblems were not promoted unless model-specific evidence met the approved threshold"
+      ]
+    },
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "SpecificationConfidence": {
+      "DisplacementCruiseSpeed": {
+        "Level": "Medium",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://medway.boatshed.com/mainship_34_trawler-boat-202526.html",
+          "https://www.hmy.com/yachting/powerboat-guide/mainship/34-trawler-2005-09"
+        ],
+        "Note": "Representative single-Yanmar 2009 example reports about 7 kn cruise at 6.4 L/h. Mainship also offered twin-engine installations, so this point applies to the economical single-diesel configuration."
+      },
+      "DisplacementCruiseFuelBurn": {
+        "Level": "Medium",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://medway.boatshed.com/mainship_34_trawler-boat-202526.html",
+          "https://www.hmy.com/yachting/powerboat-guide/mainship/34-trawler-2005-09"
+        ],
+        "Note": "Representative single-Yanmar 2009 example reports about 7 kn cruise at 6.4 L/h. Mainship also offered twin-engine installations, so this point applies to the economical single-diesel configuration."
+      },
+      "HoldingCapacity": {
+        "Level": "High",
+        "Status": "supported",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/mainship/34-trawler-2005-09",
+          "https://medway.boatshed.com/mainship_34_trawler-boat-202526.html"
+        ],
+        "Note": "Representative published specification is 34 US gal waste capacity."
+      },
+      "EngineCount": {
+        "Level": "Medium",
+        "Status": "configuration_variable",
+        "EvidenceRefs": [],
+        "Note": "Existing canonical engine-configuration description documents both single and twin installations; a single model-wide engine count would be misleading."
+      },
+      "FuelCapacity": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [],
+        "Note": "Legacy sources conflict on tankage. v6.95 retains the existing working value, interprets its legacy basis as US gallons, and converts it to canonical litres pending owner/source verification."
+      },
+      "WaterCapacity": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [],
+        "Note": "Legacy sources conflict on tankage. v6.95 retains the existing working value, interprets its legacy basis as US gallons, and converts it to canonical litres pending owner/source verification."
+      },
+      "LWL": {
+        "Level": "Low",
+        "Status": "estimated_family_ratio",
+        "EvidenceRefs": [],
+        "Note": "Working LWL estimate derived from the median LWL/LOA ratio (0.891) of other B-Atlas Mainship models with recorded waterline lengths. Intended for hull-speed context and community verification, not survey use."
+      }
+    },
+    "PlanCriticalStatus": {
+      "EngineCount": "configuration_or_production_mixed"
+    }
+  },
+  {
+    "BoatModelID": "KDKR-44-AE",
+    "ManufacturerID": "KROGEN",
+    "Manufacturer": "Kadey-Krogen",
+    "Active": true,
+    "Model": "44 AE",
+    "Variant": "Advanced Ergonomics",
+    "Nickname": "Krogen 44 AE",
+    "ModelAliases": [],
+    "CanonicalSlug": "kadey-krogen-44-ae-advanced-ergonomics",
+    "CanonicalPath": "/models/kadey-krogen-44-ae-advanced-ergonomics/",
+    "CanonicalURL": "https://b-atlas.org/models/kadey-krogen-44-ae-advanced-ergonomics/",
+    "Designer": "James Krogen",
+    "Construction": "Fiberglass",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "Propulsion": "Shaft",
+    "Trailerable": false,
+    "BoatFamily": "Trawler",
+    "HullBehaviour": "Displacement",
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Trawler",
+    "ImageURL": "images/kdkr-44.jpg",
+    "FirstYear": 2012,
+    "LastYear": null,
+    "TotalBuilt": null,
+    "HullType": "Displacement",
+    "Style": "Raised Pilothouse Trawler",
+    "KeelType": "Full Length",
+    "EngineConfiguration": "Single Inboard",
+    "Flybridge": "Yes",
+    "AftCabin": false,
+    "SideDecks": "Wide",
+    "TypicalEngineID": "Single diesel; verify build specification",
+    "FuelCapacity": 3217.6,
+    "WaterCapacity": 1135.6235,
+    "HoldingCapacity": null,
+    "Berths": 6,
+    "Cabins": 2,
+    "Heads": 1,
+    "Shower": true,
+    "Galley": true,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "Yes",
+    "GreatLoopSuitable": true,
+    "Configuration": "Raised Pilothouse",
+    "Features": [
+      "Flybridge",
+      "Wide Side Decks"
+    ],
+    "EngineCount": 1,
+    "DisplacementLb": 43140,
+    "FuelCapacityGal": 850,
+    "WaterCapacityGal": 300,
+    "NormalizedHullType": "Displacement",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "FuelCode": "fuel.diesel",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "HullBehaviourCode": "hull_behaviour.displacement",
+    "BoatFamilyCode": "boat_family.trawler",
+    "LOA": 14.9352,
+    "LWL": 12.4714,
+    "Beam": 4.9784,
+    "Draft": 1.3716,
+    "Displacement": 19568,
+    "Ballast": 1134,
+    "KeelConfigurationCode": "keel.full_long",
+    "RunningGearProtectionCode": "running_gear.keel_protected",
+    "FlybridgeCode": "availability.yes",
+    "EnginePowerPerEngine": 119.31,
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "unit_unverified",
+    "AirDraft": 4.1656,
+    "StyleCode": "Trawler",
+    "CoolingCode": "cooling.fresh_water",
+    "SideDecksCode": "side_decks.wide",
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "ShowerTypeCode": "shower.present_unspecified",
+    "Strengths": [
+      "Purpose-built long-range cruising design with efficient displacement operation",
+      "Protected running gear and substantial tankage on power models",
+      "Strong builder/owner knowledge base and liveaboard-oriented layouts"
+    ],
+    "Weaknesses": "Large beam, purchase cost, complex systems and displacement speed make it unsuitable for budget or compact-waterway missions.",
+    "CommonProblems": "Survey tanks, stabilizers, thrusters, hydraulic systems, exhaust and cooling, deck hardware, windows, electrical systems and maintenance documentation.",
+    "TypicalMission": "Premium owner-operated liveaboard cruising, Great Loop use with mast lowered and transoceanic passagemaking.",
+    "AvoidIf": [
+      "You require sustained planing speeds",
+      "You need trailerable or narrow-beam dimensions",
+      "You want very simple weekend-cruiser systems"
+    ],
+    "Overview": "The Kadey-Krogen 44 is a purpose-built cruising design from a builder focused on displacement-speed efficiency and long-range use. The family emphasizes substantial tankage, protected single-screw propulsion and liveaboard-oriented interiors; the 38 Cutter is the major exception, combining shoal-draft sailing capability with auxiliary diesel power.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented layout and cruising systems are well suited to a cruising couple, with guest capacity varying by model."
+      },
+      "SoloHandling": {
+        "Assessment": "Mixed",
+        "Summary": "Protected helms and deck access can support short-handed operation, but displacement, windage, engine arrangement and docking equipment vary materially by model."
+      },
+      "InlandWaterways": {
+        "Assessment": "Mixed",
+        "Summary": "Route suitability depends on beam, draft and actual air draft; larger models may face marina and lock constraints."
+      },
+      "ExposedWater": {
+        "Assessment": "Good",
+        "Summary": "Hull form and construction support the documented cruising role, but condition, loading, weather and individual configuration remain decisive."
+      }
+    },
+    "TradeOffs": [
+      "Low-speed cruising requires patience and weather planning",
+      "Large tankage and systems increase refit and maintenance scope",
+      "Beam and displacement of larger models materially affect marina and haul-out options"
+    ],
+    "BestFor": [
+      "Couples planning extended liveaboard and long-distance cruising",
+      "Owners prioritizing range, efficiency and protected machinery",
+      "Buyers comfortable with displacement-speed passage planning"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Verify model generation, build year and engine installation from factory documentation",
+      "Inspect cored decks, windows, hatches and hardware penetrations for moisture",
+      "Inspect tanks, fuel transfer/filtration, exhaust and cooling systems",
+      "Inspect shaft, rudder, stern gear and keel protection",
+      "Review electrical, charging, generator and navigation-system refits"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for verify model generation, build year and engine installation from factory documentation?",
+      "What inspection, repair or service history is available for inspect cored decks, windows, hatches and hardware penetrations for moisture?",
+      "What inspection, repair or service history is available for inspect tanks, fuel transfer/filtration, exhaust and cooling systems?",
+      "What inspection, repair or service history is available for inspect shaft, rudder, stern gear and keel protection?",
+      "What inspection, repair or service history is available for review electrical, charging, generator and navigation-system refits?"
+    ],
+    "OwnerActions": [
+      "Keep deck, window and hardware penetrations sealed and investigate leaks promptly",
+      "Service propulsion, cooling, exhaust, steering and fuel systems to documented intervals",
+      "Document structural, tank, electrical and machinery repairs for future buyers"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "Model-specific layouts and generations",
+        "Description": "Kadey-Krogen models evolved through multiple layouts and equipment packages; the 38 Cutter is a distinct sailing/motorsailing design rather than a conventional Krogen trawler.",
+        "AffectedYears": "Varies by model",
+        "EvidenceRefs": [
+          "https://www.kadeykrogen.com/our-history/",
+          "https://www.kadeykrogen.com/"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "ModelCharacter": "The modern evolution of the original Krogen 42 formula: a full-displacement, transoceanic owner-operator trawler with improved structure, ergonomics and machinery access while preserving the single-engine, raised-pilothouse and deep-keel character of the earlier boat.",
+    "DesignLineage": [
+      "The Krogen 44 debuted in 2004 as a refined successor to the Krogen 42.",
+      "The original 44 retained the 42's basic arrangement but gained a slightly wider beam, more pilothouse/aft-deck room and a stronger integrated pilothouse/flybridge/boat-deck structure.",
+      "The later AE designation means Advanced Ergonomics and added features such as improved engine-room access, redesigned boarding/steps and updated interior systems.",
+      "B-Atlas treats the 44 AE as the later evolutionary generation of the same Krogen 44 hull lineage, not as an unrelated model."
+    ],
+    "OwnershipCharacter": "Designed specifically for an owner-operator couple and unusually serviceable for an ocean-capable yacht. It remains yacht-scale ownership, with stabilizers, generator, hydraulic systems, large tankage and substantial preventative maintenance despite the simplicity of a single main engine.",
+    "DateCreated": "2026-07-27",
+    "LastUpdated": "2026-09-12",
+    "ReviewedBy": "B-Atlas Phase 8C-10 Traditional Trawler Family Research",
+    "Revision": 5,
+    "ResearchStatus": "Reviewed",
+    "DataConfidence": "Moderate",
+    "ResearchNotes": "Krogen 44 AE is the Advanced Ergonomics evolution of the Krogen 44 introduced in 2004. Current factory AE specifications are used; exact AE introduction year is not stored until independently resolved. Kadey-Krogen Yachts filed Chapter 7 liquidation on 2026-07-06; future factory-specific parts/support are uncertain.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "KDKR-44"
+            ],
+            "Years": {
+              "From": 2004,
+              "To": 2016
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.kadeykrogen.com/our-history/",
+            "https://www.kadeykrogen.com/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Representative identity and specifications are based on manufacturer, owner-association or model-specific technical references; hull-specific differences remain explicit."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "KDKR-44"
+            ],
+            "Years": {
+              "From": 2004,
+              "To": 2016
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.kadeykrogen.com/our-history/",
+            "https://www.kadeykrogen.com/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance is derived from documented configuration, dimensions, propulsion and intended use rather than sales language."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "KDKR-44"
+            ],
+            "Years": {
+              "From": 2004,
+              "To": 2016
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.kadeykrogen.com/our-history/",
+            "https://www.kadeykrogen.com/"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance identifies systems and age/configuration risks to inspect; it is not an assertion that every hull has a defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "Status": "Current",
+    "SpecificationConfidence": {
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      }
+    }
+  },
+  {
+    "BoatModelID": "MERI-341-SE-03",
+    "ManufacturerID": "MERIDIAN",
+    "Manufacturer": "Meridian",
+    "Model": "341 Sedan",
+    "Variant": "Original Generation / Bayliner 3488 lineage",
+    "Nickname": "Meridian 341 Sedan",
+    "Active": false,
+    "ModelAliases": [
+      "Bayliner 3488 Command Bridge lineage"
+    ],
+    "CanonicalSlug": "meridian-341-sedan-original-generation-bayliner-3488-lineage",
+    "CanonicalPath": "/models/meridian-341-sedan-original-generation-bayliner-3488-lineage/",
+    "CanonicalURL": "https://b-atlas.org/models/meridian-341-sedan-original-generation-bayliner-3488-lineage/",
+    "ModelIdentityFamilyID": "MERI-341",
+    "ImageURL": "images/boat-placeholder.svg",
+    "FirstYear": 2003,
+    "LastYear": 2004,
+    "TotalBuilt": 400,
+    "Designer": "Meridian Design Team",
+    "HullType": "Modified-V",
+    "Style": "Flybridge Sedan",
+    "Construction": "Fiberglass",
+    "KeelType": "Modified V",
+    "Fuel": "Gasoline",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Twin inboards; gasoline or diesel depending year",
+    "Propulsion": "Shaft",
+    "Flybridge": "Yes",
+    "AftCabin": false,
+    "SideDecks": "Moderate",
+    "TypicalEngineID": "Mercruiser 6.2L",
+    "FuelCapacity": 847.93,
+    "WaterCapacity": 348.26,
+    "HoldingCapacity": 113.56,
+    "Berths": 6,
+    "Cabins": 2,
+    "Heads": 1,
+    "Shower": false,
+    "Galley": false,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "No",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "HullBehaviour": "Planing",
+    "Features": [
+      "Flybridge"
+    ],
+    "NormalizedFuel": "Gasoline",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Planing",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Cruiser",
+    "EngineCount": 2,
+    "DisplacementLb": 18254,
+    "FuelCapacityGal": 224,
+    "WaterCapacityGal": 92,
+    "NormalizedHullType": "Modified-V",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "BoatFamilyCode": "boat_family.motor_yacht",
+    "HullBehaviourCode": "hull_behaviour.planing",
+    "LOA": 10.7442,
+    "Beam": 3.556,
+    "Draft": 0.9652,
+    "Displacement": 7711.1,
+    "ShowerTypeCode": "shower.separate_stall",
+    "FuelCode": "fuel.gasoline",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "AirDraft": 4.1148,
+    "HoldingCapacityGal": 30,
+    "StyleCode": "Cruiser",
+    "CoolingCode": "cooling.fresh_water",
+    "FlybridgeCode": "availability.yes",
+    "SideDecksCode": "side_decks.moderate",
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "LWL": 9.9974,
+    "KeelConfigurationCode": "keel.no_keel",
+    "RunningGearProtectionCode": "running_gear.exposed",
+    "Strengths": [
+      "Good accommodation relative to purchase price",
+      "Twin-engine maneuverability",
+      "Established production-boat service familiarity"
+    ],
+    "Weaknesses": "High fuel burn when pushing over planing speeds, small guest stateroom bunk arrangement.",
+    "CommonProblems": "Forward salon window seal tracking updates required, thruster motor relay overheating.",
+    "TypicalMission": "Regional weekend family cruising and destination marina hopping.",
+    "AvoidIf": [
+      "You require offshore passagemaking capability",
+      "You want minimal systems or single-diesel economy",
+      "You cannot accommodate model-specific beam or air draft"
+    ],
+    "Overview": "The Meridian 341 Sedan is a production coastal cruiser emphasizing interior volume, straightforward twin-engine propulsion and accessible used-market pricing. Layout and machinery vary by model, so individual configuration and condition remain important purchase factors.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented accommodation and enclosed living spaces support weekend or regional couple cruising."
+      },
+      "SoloHandling": {
+        "Assessment": "Mixed",
+        "Summary": "Twin engines can assist close-quarters maneuvering, but size, windage and multi-level access increase workload."
+      },
+      "InlandWaterways": {
+        "Assessment": "Mixed",
+        "Summary": "Comfortable for inland cruising, but beam, air draft and fuel consumption must be checked against route and marina constraints."
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "These are coastal production cruisers; actual capability depends on generation, loading, machinery, weather and individual condition."
+      }
+    },
+    "TradeOffs": [
+      "Operating cost reflects twin-engine planing performance",
+      "Model-year changes can materially alter layout and systems",
+      "Older examples require close survey attention to structure, tanks, wiring and machinery"
+    ],
+    "BestFor": [
+      "Inland and coastal cruising",
+      "Buyers prioritizing space and value",
+      "Owners comfortable maintaining older production systems"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Verify moisture around deck hardware, windows, hatches and rail bases",
+      "Inspect flybridge, arch, windshield and upper-deck penetrations for water intrusion and structural movement",
+      "Inspect fuel, water and waste tanks plus hoses and fittings",
+      "Inspect engines, transmissions or sterndrives, exhaust and cooling systems",
+      "Review AC/DC wiring, shore-power equipment and documented electrical modifications",
+      "Confirm steering, trim-tab and generator operation where fitted"
+    ],
+    "BuyerQuestions": [
+      "What repair or survey history is available for moisture around deck hardware, windows, hatches and rail bases?",
+      "What repair or survey history is available for flybridge, arch, windshield and upper-deck penetrations for water intrusion and structural movement?",
+      "What repair or survey history is available for fuel, water and waste tanks plus hoses and fittings?",
+      "What repair or survey history is available for engines, transmissions or sterndrives, exhaust and cooling systems?",
+      "What repair or survey history is available for ac/dc wiring, shore-power equipment and documented electrical modifications?"
+    ],
+    "OwnerActions": [
+      "Keep deck, window and hardware penetrations sealed",
+      "Maintain propulsion, cooling, exhaust, steering and electrical systems to documented intervals",
+      "Document structural, tank, electrical and machinery repairs for future survey and resale"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "2003–04 generation",
+        "Description": "Bayliner 3488-derived first-generation Meridian 341 Sedan.",
+        "AffectedYears": "2003–2004",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/meridian/341-sedan-2003-04"
+        ],
+        "Confidence": "High"
+      },
+      {
+        "Name": "2005–14 generation",
+        "Description": "All-new, wider Meridian 341 Sedan introduced for 2005.",
+        "AffectedYears": "2005–2014",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/meridian/341-sedan-2005-14"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "ModelCharacter": "Meridian's entry-level bridge cruiser, but really two distinct boats under one model number. The 2003–04 version is essentially the Bayliner 3488 Command Bridge rebadged as Meridian; the 2005–14 generation is a completely new, wider two-stateroom yacht with far more interior volume and almost no conventional side decks.",
+    "DesignLineage": [
+      "The first Meridian 341 (2003–04) directly continues the Bayliner 3488 Command Bridge hull, accommodations and flybridge layout.",
+      "An all-new 341 Sedan arrived for 2005 with greater beam, new styling, revised two-stateroom interior and different hull geometry.",
+      "The 2003–04 and 2005–14 boats therefore share a marketed model number, not a common hull.",
+      "Both generations fit Meridian's core formula of affordable flybridge living space, twin inboards and easy molded-stair bridge access."
+    ],
+    "OwnershipCharacter": "The later 341 is extremely roomy for its nominal size but achieves that volume by minimizing side decks and carrying considerable machinery/system density. Twin gas inboards are common; diesel examples exist. Thrusters, bridge systems, generator, HVAC and tight access make it more complex than a simple sedan of similar length.",
+    "DateCreated": "2026-07-13",
+    "LastUpdated": "2026-09-12",
+    "ReviewedBy": "B-Atlas Phase 8C-15 Production Motoryacht/Cruiser Research",
+    "Revision": 2,
+    "DataConfidence": "Moderate",
+    "ResearchStatus": "Reviewed",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "MERI-341-SE"
+            ],
+            "Years": {
+              "From": 2003,
+              "To": 2014
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/meridian/341-sedan-2005-14"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Model identity and representative specifications checked against model-guide or catalog evidence."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "MERI-341-SE"
+            ],
+            "Years": {
+              "From": 2003,
+              "To": 2014
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/meridian/341-sedan-2005-14"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance derives from documented configuration, propulsion and accommodation."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "General age-related guidance",
+            "Models": [
+              "MERI-341-SE"
+            ],
+            "Years": {
+              "From": 2003,
+              "To": 2014
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/meridian/341-sedan-2005-14"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance is age/configuration based and is not a claim of a model-wide defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "The Meridian 341 name covers two materially different generations; top-level dimensions represent the later 2005–14 design.",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "ResearchNotes": "This canonical record spans two genuinely different generations. 2003–04: Bayliner 3488-derived, 35'3\" LOA, 11'8\" beam, 17,000 lb, 224 gal fuel, 92 gal water. 2005–14: all-new design, 35'10\" LOA, 12'6\" beam, 18,254 lb, 250 gal fuel, 90 gal water. B-Atlas's baseline specifications represent the longer-running 2005–14 generation; generation must be explicit when evaluating a listing.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "SpecificationConfidence": {
+      "LWL": {
+        "Level": "Low",
+        "Status": "restored_legacy_working_value",
+        "EvidenceRefs": [],
+        "Note": "Working LWL restored from the pre-v6.81 archived B-Atlas value (32.8 ft). Retained as a low-confidence community-verifiable value rather than leaving a basic performance input blank."
+      },
+      "KeelConfigurationCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from unambiguous existing KeelType text."
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from canonical no-keel geometry with inboard shaft/V-drive propulsion; propeller/rudder running gear is exposed below the hull rather than protected by a keel or skeg."
+      }
+    }
+  },
+  {
+    "BoatModelID": "BENE-ANT-9-S2",
+    "ManufacturerID": "BENE",
+    "Manufacturer": "Beneteau",
+    "Model": "Antares 9",
+    "Variant": "Generation 2",
+    "Nickname": "Beneteau Antares 9",
+    "Active": true,
+    "ModelAliases": [
+      "Antares 9 (2025–current)"
+    ],
+    "CanonicalSlug": "beneteau-antares-9-generation-2",
+    "CanonicalPath": "/models/beneteau-antares-9-generation-2/",
+    "CanonicalURL": "https://b-atlas.org/models/beneteau-antares-9-generation-2/",
+    "ModelIdentityFamilyID": "BENE-ANT-9",
+    "ImageURL": "images/bene-ant-9.jpg",
+    "FirstYear": 2025,
+    "LastYear": null,
+    "TotalBuilt": null,
+    "Designer": "Beneteau Design Team",
+    "HullType": "Planing",
+    "Style": "Outboard Cruiser",
+    "Construction": "Fiberglass",
+    "KeelType": "Modified V",
+    "Fuel": "Gasoline",
+    "Cooling": "Raw Water",
+    "EngineConfiguration": "Twin outboards",
+    "Propulsion": "Outboard",
+    "Flybridge": "No",
+    "AftCabin": false,
+    "SideDecks": "Medium",
+    "TypicalEngineID": "Yamaha 200 Twin",
+    "FuelCapacity": 598.0951,
+    "WaterCapacity": 158.9873,
+    "HoldingCapacity": 75.7082,
+    "Berths": 4,
+    "Cabins": 2,
+    "Heads": 1,
+    "Shower": false,
+    "Galley": false,
+    "CoastalRating": "Limited",
+    "OffshoreRating": "Yes",
+    "GreatLoopSuitable": false,
+    "Trailerable": false,
+    "BoatFamily": "Cruiser",
+    "HullBehaviour": "Planing",
+    "Features": [
+      "Flybridge"
+    ],
+    "NormalizedFuel": "Gasoline",
+    "NormalizedPropulsion": "Outboard",
+    "NormalizedHullForm": "Planing",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Cruiser",
+    "EngineCount": 2,
+    "Configuration": "Pilothouse Outboard Cruiser",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "BoatFamilyCode": "boat_family.sedan_cruiser",
+    "HullBehaviourCode": "hull_behaviour.planing",
+    "FuelCode": "fuel.gasoline",
+    "MechanicalPropulsionCode": "mechanical_propulsion.outboard",
+    "LOA": 8.23,
+    "Beam": 2.99,
+    "Draft": 0.96,
+    "Displacement": 4620,
+    "AirDraft": 3.27,
+    "EnginePowerPerEngine": 186.42,
+    "ShowerTypeCode": "shower.wet_head",
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "LWL": 7.9248,
+    "RudderTypeCode": "rudder.none_external_drive",
+    "StyleCode": "Cruiser",
+    "CoolingCode": "cooling.raw_water",
+    "FlybridgeCode": "availability.no",
+    "SideDecksCode": "side_decks.moderate",
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "KeelConfigurationCode": "keel.no_keel",
+    "RunningGearProtectionCode": "running_gear.exposed",
+    "Strengths": [
+      "Protected pilothouse helm",
+      "Outboard propulsion simplifies engine access and winterization",
+      "Practical cockpit and side-deck access for coastal use"
+    ],
+    "Weaknesses": "Higher fuel burn and limited storage.",
+    "CommonProblems": "Bracket corrosion and helm electronics issues.",
+    "TypicalMission": "Coastal cruising and short Loop segments.",
+    "AvoidIf": [
+      "You primarily cruise at 6–8 knots for maximum economy",
+      "You require large long-range tankage",
+      "You want shaft-drive diesel propulsion"
+    ],
+    "Overview": "The Beneteau Antares 9 is a French enclosed-pilothouse outboard cruiser designed for short coastal trips, fishing and weekend use. The Antares range prioritizes visibility, sheltered helm operation and practical cockpit access rather than traditional trawler-speed efficiency.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The enclosed helm and documented accommodation support weekend or extended couple cruising."
+      },
+      "SoloHandling": {
+        "Assessment": "Good",
+        "Summary": "Side-door access and good visibility help; docking burden rises with size, windage and twin-engine/flybridge configuration."
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "The enclosed cruising layout works well on inland routes; beam and air draft must be checked against route restrictions."
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "Factory CE ratings and hull form support coastal use; loading, weather and individual boat condition remain decisive."
+      }
+    },
+    "TradeOffs": [
+      "Planing-speed operation uses substantially more fuel than displacement cruising",
+      "Outboard installations occupy transom space",
+      "Accommodation and tankage are modest relative to trawler-style cruisers of similar overall length"
+    ],
+    "BestFor": [
+      "Weekend coastal cruising",
+      "Owners wanting enclosed outboard operation",
+      "Fishing and family day use with occasional overnighting"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Inspect outboard service history, mounting and steering",
+      "Inspect pilothouse windows, doors and roof penetrations",
+      "Inspect cockpit drainage and transom structure",
+      "Verify tankage, sleeping layout and fitted sanitation equipment"
+    ],
+    "BuyerQuestions": [
+      "What service, repair or inspection history is available for inspect outboard service history, mounting and steering?",
+      "What service, repair or inspection history is available for inspect pilothouse windows, doors and roof penetrations?",
+      "What service, repair or inspection history is available for inspect cockpit drainage and transom structure?",
+      "What service, repair or inspection history is available for verify tankage, sleeping layout and fitted sanitation equipment?"
+    ],
+    "OwnerActions": [
+      "Keep windows, hatches, deck hardware and exterior penetrations sealed",
+      "Maintain propulsion, cooling, exhaust, steering and electrical systems to documented intervals",
+      "Document machinery and system upgrades for future survey and resale"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "Original modern Antares 9",
+        "Description": "29'11\" generation with twin outboards up to 200 hp each.",
+        "AffectedYears": "2019–mid-2020s",
+        "EvidenceRefs": [
+          "https://www.beneteau.com/5th-generation-antares-2012-today/antares-9"
+        ],
+        "Confidence": "High"
+      },
+      {
+        "Name": "Antares 9 Series 2",
+        "Description": "Redesigned current generation with revised hull/construction and twin 250 hp capability.",
+        "AffectedYears": "mid-2020s onward",
+        "EvidenceRefs": [
+          "https://www.beneteau.com/antares/antares-9"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "ModelCharacter": "A twin-outboard two-cabin weekender that moves the Antares concept into genuine family-cruising territory. The model now spans an original 29'11\" generation and a newer Series 2 with a shorter nominal LOA but higher displacement and up to twin 250 hp.",
+    "DesignLineage": [
+      "The first modern Antares 9 used a 9.12 m / 29'11\" hull with twin outboards up to 200 hp each.",
+      "A new Antares 9 Series 2 later replaced it with revised hull, construction and twin 250 hp capability.",
+      "Both generations share the Antares 9 marketed identity but are materially different boats.",
+      "B-Atlas therefore keeps one searchable model with explicit generation variation rather than pretending the specifications are continuous."
+    ],
+    "OwnershipCharacter": "Twin outboards, two cabins and full weekend systems make it a substantial small yacht. Outboard service access is easy, but two engines, generator/AC options and increasing electronics raise cost sharply over the Antares 7/8.",
+    "DateCreated": "2026-07-18",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "B-Atlas Phase 8C-14 French Production Research",
+    "Revision": 2,
+    "DataConfidence": "High",
+    "ResearchStatus": "Reviewed",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "BENE-ANT-9"
+            ],
+            "Years": {
+              "From": 2019,
+              "To": 2026
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.beneteau.com/en-us/heritage-powerboats/antares-2012-2022"
+          ],
+          "EvidenceTypes": [
+            "Factory documented"
+          ],
+          "Confidence": "High",
+          "Notes": "Factory and model-specific documentation support identity and representative specifications."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "BENE-ANT-9"
+            ],
+            "Years": {
+              "From": 2019,
+              "To": 2026
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.beneteau.com/en-us/heritage-powerboats/antares-2012-2022"
+          ],
+          "EvidenceTypes": [
+            "Factory documented"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Guidance is derived from documented layout, hull form, propulsion and dimensions."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "BENE-ANT-9"
+            ],
+            "Years": {
+              "From": 2019,
+              "To": 2026
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.beneteau.com/en-us/heritage-powerboats/antares-2012-2022"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance reflects configuration and age exposure; it is not a claim that every hull has a defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Production years and exact tankage vary by Antares generation; verify the individual model year.",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "ResearchNotes": "Batch 31 Beneteau/Jeanneau identity and lineage normalization. Reused model names and market-name aliases are preserved explicitly; uncertain generation-specific values remain listing-specific.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "Status": "Current",
+    "SpecificationConfidence": {
+      "KeelConfigurationCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from unambiguous existing KeelType text."
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing propulsion/keel description; no new factual assertion introduced."
+      }
+    }
+  },
+  {
+    "BoatModelID": "CRUY-3260",
+    "ManufacturerID": "CRUISERS",
+    "Manufacturer": "Cruisers Yachts",
+    "Model": "3260 Esprit",
+    "Variant": "Open Interior / No Mid-Cabin",
+    "Nickname": "Cruisers 3260 / 3270 Esprit",
+    "Active": false,
+    "ModelAliases": [
+      "3260 Esprit"
+    ],
+    "CanonicalSlug": "cruisers-yachts-3260-esprit-open-interior-no-mid-cabin",
+    "CanonicalPath": "/models/cruisers-yachts-3260-esprit-open-interior-no-mid-cabin/",
+    "CanonicalURL": "https://b-atlas.org/models/cruisers-yachts-3260-esprit-open-interior-no-mid-cabin/",
+    "ImageURL": "images/cruy-3280.jpg",
+    "FirstYear": 1988,
+    "LastYear": 1990,
+    "TotalBuilt": null,
+    "Designer": "Cruisers Design Team",
+    "HullType": "Planing",
+    "Style": "Sedan Cruiser",
+    "Construction": "Fiberglass",
+    "KeelType": "Modified V",
+    "Fuel": "Gasoline",
+    "Cooling": "Raw Water",
+    "EngineConfiguration": "Twin Inboard",
+    "Propulsion": "Shaft",
+    "Flybridge": "No",
+    "AftCabin": false,
+    "SideDecks": "Medium",
+    "TypicalEngineID": "MerCruiser 5.7 Twin",
+    "FuelCapacity": 757.0824,
+    "WaterCapacity": 170.3435,
+    "HoldingCapacity": 113.5624,
+    "Berths": 4,
+    "Cabins": 1,
+    "Heads": 1,
+    "Shower": false,
+    "Galley": false,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "No",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "BoatFamily": "Cruiser",
+    "HullBehaviour": "Planing",
+    "Features": [],
+    "NormalizedFuel": "Gasoline",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Modified-V",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Cruiser",
+    "EngineCount": 2,
+    "RarityScore": null,
+    "RarityLabel": "",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "BoatFamilyCode": "boat_family.express_cruiser",
+    "HullBehaviourCode": "hull_behaviour.planing",
+    "FuelCode": "fuel.gasoline",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "LOA": 9.398,
+    "Beam": 3.302,
+    "Draft": 0.8636,
+    "Displacement": 4762.7,
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "LWL": 8.8392,
+    "AirDraft": 3.6576,
+    "StyleCode": "Cruiser",
+    "CoolingCode": "cooling.raw_water",
+    "FlybridgeCode": "availability.no",
+    "SideDecksCode": "side_decks.moderate",
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "ShowerTypeCode": "shower.none",
+    "KeelConfigurationCode": "keel.no_keel",
+    "RunningGearProtectionCode": "running_gear.exposed",
+    "RudderTypeCode": "rudder.none_external_drive",
+    "Headroom": 1.905,
+    "Strengths": [
+      "Large social cockpit for the boat size",
+      "Planing performance and responsive handling",
+      "Useful weekend accommodation",
+      "Broad service and parts familiarity in the production-cruiser market"
+    ],
+    "Weaknesses": "Gas engines reduce range.",
+    "CommonProblems": "Deck rot and wiring issues.",
+    "TypicalMission": "Coastal cruising and inland passages.",
+    "AvoidIf": [
+      "You require displacement-speed fuel economy",
+      "You want a flybridge or separate aft-cabin privacy",
+      "You need long-range passagemaking capability"
+    ],
+    "Overview": "The Cruisers Yachts 3280 Esprit is a production express cruiser designed around cockpit social space, planing performance and overnight accommodation below. Twin-engine propulsion is typical, with model generations varying in drive type, dimensions and interior arrangement.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented accommodation and enclosed living spaces support weekend or regional couple cruising."
+      },
+      "SoloHandling": {
+        "Assessment": "Mixed",
+        "Summary": "Twin engines can assist close-quarters maneuvering, but size, windage and multi-level access increase workload."
+      },
+      "InlandWaterways": {
+        "Assessment": "Mixed",
+        "Summary": "Comfortable for inland cruising, but beam, air draft and fuel consumption must be checked against route and marina constraints."
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "These are coastal production cruisers; actual capability depends on generation, loading, machinery, weather and individual condition."
+      }
+    },
+    "TradeOffs": [
+      "Fuel consumption rises sharply at planing speeds",
+      "Engine-room access can be tight",
+      "Sleeping areas may rely on curtains or convertible spaces",
+      "Low-profile express layouts provide less enclosed living volume than flybridge yachts"
+    ],
+    "BestFor": [
+      "Weekend cruising and entertaining",
+      "Buyers who value speed over displacement economy",
+      "Marina-based coastal and inland use"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Verify moisture around deck hardware, windows, hatches and rail bases",
+      "Inspect fuel, water and waste tanks plus hoses and fittings",
+      "Inspect engines, transmissions or sterndrives, exhaust and cooling systems",
+      "Review AC/DC wiring, shore-power equipment and documented electrical modifications",
+      "Confirm steering, trim-tab and generator operation where fitted"
+    ],
+    "BuyerQuestions": [
+      "What repair or survey history is available for moisture around deck hardware, windows, hatches and rail bases?",
+      "What repair or survey history is available for fuel, water and waste tanks plus hoses and fittings?",
+      "What repair or survey history is available for engines, transmissions or sterndrives, exhaust and cooling systems?",
+      "What repair or survey history is available for ac/dc wiring, shore-power equipment and documented electrical modifications?",
+      "What repair or survey history is available for steering, trim-tab and generator operation where fitted?"
+    ],
+    "OwnerActions": [
+      "Keep deck, window and hardware penetrations sealed",
+      "Maintain propulsion, cooling, exhaust, steering and electrical systems to documented intervals",
+      "Document structural, tank, electrical and machinery repairs for future survey and resale"
+    ],
+    "ModelVariations": [],
+    "ModelCharacter": "Two near-look-alike Cruisers sharing the same exterior/hull family but very different interiors. The 3260 uses a more open cabin without a mid-berth and straight drives; the more popular 3270 adds a conventional mid-cabin and V-drives.",
+    "DesignLineage": [
+      "3260 and 3270 Esprit were introduced in the late 1980s on the same basic exterior platform.",
+      "The 3260 was short-lived; the 3270 continued through 1994.",
+      "Their internal layouts and drivetrains differ enough to matter when evaluating a listing.",
+      "B-Atlas corrected the unsupported '3280 Esprit' identity to the documented 3260/3270 family."
+    ],
+    "OwnershipCharacter": "Conventional twin gasoline inboards make the basic machinery understandable, but the specific 3260 versus 3270 drivetrain/layout must be verified. Cored deck structure and 1980s tanks/electrical deserve survey attention.",
+    "DateCreated": "2026-07-18",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "B-Atlas Phase 8C-15 Production Motoryacht/Cruiser Research",
+    "Revision": 2,
+    "DataConfidence": "High",
+    "ResearchStatus": "Reviewed",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CRUY-3280"
+            ],
+            "Years": {
+              "From": 1989,
+              "To": 1996
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/cruisers"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Model identity and representative specifications checked against model-guide or catalog evidence."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CRUY-3280"
+            ],
+            "Years": {
+              "From": 1989,
+              "To": 1996
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/cruisers"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance derives from documented configuration, propulsion and accommodation."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "General age-related guidance",
+            "Models": [
+              "CRUY-3280"
+            ],
+            "Years": {
+              "From": 1989,
+              "To": 1996
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/cruisers"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance is age/configuration based and is not a claim of a model-wide defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "ResearchNotes": "Batch 29 identity, lineage and specification normalization from model-specific Powerboat Guide evidence. Renames are preserved as aliases; missing listing-specific configuration remains unknown rather than inferred.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "SpecificationConfidence": {
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      },
+      "KeelConfigurationCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from unambiguous existing KeelType text."
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing propulsion/keel description; no new factual assertion introduced."
+      },
+      "RudderTypeCode": {
+        "Level": "High",
+        "Status": "derived_from_propulsion",
+        "EvidenceRefs": [],
+        "Note": "External-drive propulsion steers at the drive/outboard and has no conventional inboard rudder."
+      },
+      "Headroom": {
+        "Level": "Medium",
+        "Status": "representative",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/cruisers/3110-3210-sea-devil-1988-90",
+          "https://www.hmy.com/yachting/powerboat-guide/cruisers/3260-esprit-3270-esprit-1988-94"
+        ],
+        "Note": "Working 1.905 m (6 ft 3 in) headroom based on the same 31-ft hull/interior envelope documented for the closely related Cruisers 3110/3210 Sea Devil and good-headroom 3260/3270 family descriptions."
+      },
+      "Propulsion": {
+        "Level": "High",
+        "Status": "source_backed",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/cruisers/3260-esprit-3270-esprit-1988-94"
+        ],
+        "Note": "PowerBoat Guide identifies straight drives on the 3260 Esprit."
+      },
+      "NormalizedPropulsion": {
+        "Level": "High",
+        "Status": "source_backed",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/cruisers/3260-esprit-3270-esprit-1988-94"
+        ],
+        "Note": "Aligned with source-backed straight-drive configuration."
+      }
+    }
+  },
+  {
+    "BoatModelID": "SEAR-340-SU-99",
+    "ManufacturerID": "SEA",
+    "Manufacturer": "Sea Ray",
+    "Model": "340 Sundancer",
+    "Variant": "Generation 2",
+    "Nickname": "Sea Ray 340 Sundancer",
+    "Active": false,
+    "ModelAliases": [
+      "340 Sundancer (1999–2002)"
+    ],
+    "CanonicalSlug": "sea-ray-340-sundancer-generation-2",
+    "CanonicalPath": "/models/sea-ray-340-sundancer-generation-2/",
+    "CanonicalURL": "https://b-atlas.org/models/sea-ray-340-sundancer-generation-2/",
+    "ModelIdentityFamilyID": "SEAR-340-SU",
+    "ImageURL": "images/sear-340-su.jpg",
+    "FirstYear": 1999,
+    "LastYear": 2002,
+    "TotalBuilt": 1400,
+    "Designer": "Sea Ray Design",
+    "HullType": "Deep-V",
+    "Style": "Express Cruiser",
+    "Construction": "Fiberglass",
+    "KeelType": "Modified V",
+    "Fuel": "Gasoline",
+    "Cooling": "Fresh/Raw",
+    "EngineConfiguration": "Twin gasoline inboards or sterndrives depending generation",
+    "Propulsion": "Shaft/V-Drive",
+    "Flybridge": "No",
+    "AftCabin": false,
+    "SideDecks": "Narrow",
+    "TypicalEngineID": "Mercruiser 8.1L",
+    "FuelCapacity": 851.72,
+    "WaterCapacity": 151.42,
+    "HoldingCapacity": 105.99,
+    "Berths": 6,
+    "Cabins": 1,
+    "Heads": 1,
+    "Shower": false,
+    "Galley": false,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "No",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "BoatFamily": "Cruiser",
+    "Configuration": "Express Cruiser",
+    "HullBehaviour": "Planing",
+    "Features": [],
+    "NormalizedFuel": "Gasoline",
+    "NormalizedPropulsion": "Shaft/V-Drive",
+    "NormalizedHullForm": "Planing",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Cruiser",
+    "EngineCount": 2,
+    "DisplacementLb": 14600,
+    "FuelCapacityGal": 225,
+    "WaterCapacityGal": 40,
+    "NormalizedHullType": "Modified-V",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "BoatFamilyCode": "boat_family.express_cruiser",
+    "HullBehaviourCode": "hull_behaviour.planing",
+    "LOA": 10.2108,
+    "HullLength": 10.2362,
+    "Beam": 3.4798,
+    "Draft": 0.7366,
+    "Displacement": 5896.7,
+    "EnginePowerPerEngine": 253.54,
+    "FuelCode": "fuel.gasoline",
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "MechanicalPropulsionCode": "mechanical_propulsion.v_drive",
+    "HoldingCapacityGal": 28,
+    "AirDraft": 3.6500000000000004,
+    "StyleCode": "Cruiser",
+    "CoolingCode": "cooling.fresh_raw",
+    "FlybridgeCode": "availability.no",
+    "SideDecksCode": "side_decks.narrow",
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "LWL": 9.5707,
+    "ShowerTypeCode": "shower.none",
+    "KeelConfigurationCode": "keel.no_keel",
+    "RunningGearProtectionCode": "running_gear.exposed",
+    "Strengths": [
+      "Large social cockpit for the boat size",
+      "Planing performance and responsive handling",
+      "Useful weekend accommodation",
+      "Broad service and parts familiarity in the production-cruiser market"
+    ],
+    "Weaknesses": "Cockpit canvas enclosure setup creates prominent greenhouse heat, narrow side walkways require agile steps forward.",
+    "CommonProblems": "V-drive transmission fluid leaks, wet core spots beneath foredeck stanchion pads.",
+    "TypicalMission": "Family weekend overnight hopping and casual regional inland waterway day cruising.",
+    "AvoidIf": [
+      "You require displacement-speed fuel economy",
+      "You want a flybridge or separate aft-cabin privacy",
+      "You need long-range passagemaking capability"
+    ],
+    "Overview": "The Sea Ray 340 Sundancer (multi-generation) is a production express cruiser designed around cockpit social space, planing performance and overnight accommodation below. Twin-engine propulsion is typical, with model generations varying in drive type, dimensions and interior arrangement.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented accommodation and enclosed living spaces support weekend or regional couple cruising."
+      },
+      "SoloHandling": {
+        "Assessment": "Mixed",
+        "Summary": "Twin engines can assist close-quarters maneuvering, but size, windage and multi-level access increase workload."
+      },
+      "InlandWaterways": {
+        "Assessment": "Mixed",
+        "Summary": "Comfortable for inland cruising, but beam, air draft and fuel consumption must be checked against route and marina constraints."
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "These are coastal production cruisers; actual capability depends on generation, loading, machinery, weather and individual condition."
+      }
+    },
+    "TradeOffs": [
+      "Fuel consumption rises sharply at planing speeds",
+      "Engine-room access can be tight",
+      "Sleeping areas may rely on curtains or convertible spaces",
+      "Low-profile express layouts provide less enclosed living volume than flybridge yachts"
+    ],
+    "BestFor": [
+      "Weekend cruising and entertaining",
+      "Buyers who value speed over displacement economy",
+      "Marina-based coastal and inland use"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Verify moisture around deck hardware, windows, hatches and rail bases",
+      "Inspect fuel, water and waste tanks plus hoses and fittings",
+      "Inspect engines, transmissions or sterndrives, exhaust and cooling systems",
+      "Review AC/DC wiring, shore-power equipment and documented electrical modifications",
+      "Confirm steering, trim-tab and generator operation where fitted"
+    ],
+    "BuyerQuestions": [
+      "What repair or survey history is available for moisture around deck hardware, windows, hatches and rail bases?",
+      "What repair or survey history is available for fuel, water and waste tanks plus hoses and fittings?",
+      "What repair or survey history is available for engines, transmissions or sterndrives, exhaust and cooling systems?",
+      "What repair or survey history is available for ac/dc wiring, shore-power equipment and documented electrical modifications?",
+      "What repair or survey history is available for steering, trim-tab and generator operation where fitted?"
+    ],
+    "OwnerActions": [
+      "Keep deck, window and hardware penetrations sealed",
+      "Maintain propulsion, cooling, exhaust, steering and electrical systems to documented intervals",
+      "Document structural, tank, electrical and machinery repairs for future survey and resale"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "1984–89 generation",
+        "Description": "Early 340 Sundancer generation; roughly 35 ft 11 in overall with swim platform, 11 ft 11 in beam and 172 gal fuel.",
+        "AffectedYears": "1984–1989",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-sundancer-1984-89"
+        ],
+        "Confidence": "High"
+      },
+      {
+        "Name": "1999–2002 generation",
+        "Description": "Later 340 Sundancer generation with 11 ft 5 in beam and 225 gal fuel.",
+        "AffectedYears": "1999–2002",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-sundancer-1999-2002"
+        ],
+        "Confidence": "High"
+      },
+      {
+        "Name": "2003–08 generation",
+        "Description": "Redesigned, larger 340 Sundancer with 12 ft beam and substantially different hull and cockpit.",
+        "AffectedYears": "2003–2008",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-sundancer-2003-08"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "ModelCharacter": "One of Sea Ray's most enduring model names, but not one continuous boat. The 340 Sundancer appeared in at least three distinct generations—1984–89, 1999–2002 and 2003–08—each a twin-engine planing express with large social cockpit and overnight cabin, but with materially different dimensions, hulls and layouts.",
+    "DesignLineage": [
+      "The first major 340 Sundancer generation ran from 1984–1989.",
+      "Sea Ray revived the 340 Sundancer name for an all-new 1999–2002 generation.",
+      "A substantially larger redesigned 340 followed for 2003–2008 with 12-foot beam and different cockpit/hull architecture.",
+      "The repeated model name should never be treated as a single continuous hull family; listing year is essential to identity."
+    ],
+    "OwnershipCharacter": "Broad dealer knowledge and mass-market parts support are advantages, but ownership varies strongly by generation and drivetrain. Twin gasoline engines are common and fuel-intensive; sterndrive examples add drive/bellows maintenance, while inboard boats trade efficiency for simpler underwater gear.",
+    "DateCreated": "2026-07-13",
+    "LastUpdated": "2026-09-12",
+    "ReviewedBy": "B-Atlas Phase 8C-15 Production Motoryacht/Cruiser Research",
+    "Revision": 2,
+    "DataConfidence": "Moderate",
+    "ResearchStatus": "Reviewed",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "SEAR-340-SU"
+            ],
+            "Years": {
+              "From": 1984,
+              "To": 2008
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-sundancer-2003-08"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Model identity and representative specifications checked against model-guide or catalog evidence."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "SEAR-340-SU"
+            ],
+            "Years": {
+              "From": 1984,
+              "To": 2008
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-sundancer-2003-08"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance derives from documented configuration, propulsion and accommodation."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "General age-related guidance",
+            "Models": [
+              "SEAR-340-SU"
+            ],
+            "Years": {
+              "From": 1984,
+              "To": 2008
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-sundancer-2003-08"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance is age/configuration based and is not a claim of a model-wide defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "The 340 Sundancer name covers materially different generations; dimensions in the top-level record are representative and should not substitute for year-specific verification.",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "ResearchNotes": "Production is intentionally not represented as one continuous YearStart/YearEnd because the 340 Sundancer name was reused across distinct generations: 1984–89, 1999–2002 and 2003–08. Existing baseline dimensions/tankage correspond most closely to the 1999–2002 generation. B-Atlas should use ModelVariations/listing year for generation-specific comparison.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "SpecificationConfidence": {
+      "AirDraft": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [],
+        "Note": "B-Atlas working estimate derived from nearest comparable models with similar style, size and flybridge configuration. Verify actual mast/radar/antenna clearance before route planning. Comparable model IDs: GRNL-33, JEAU-1095, CRUY-3375, BAYL-3055, CRUY-320-EXP, CRUY-3280, CRUY-3260"
+      },
+      "LWL": {
+        "Level": "Low",
+        "Status": "restored_legacy_working_value",
+        "EvidenceRefs": [],
+        "Note": "Working LWL restored from the pre-v6.81 archived B-Atlas value (31.4 ft). Retained as a low-confidence community-verifiable value rather than leaving a basic performance input blank."
+      },
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      },
+      "KeelConfigurationCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from unambiguous existing KeelType text."
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from canonical no-keel geometry with inboard shaft/V-drive propulsion; propeller/rudder running gear is exposed below the hull rather than protected by a keel or skeg."
+      }
+    }
+  },
+  {
+    "BoatModelID": "SEAR-340-SU-03",
+    "ManufacturerID": "SEA",
+    "Manufacturer": "Sea Ray",
+    "Model": "340 Sundancer",
+    "Variant": "Generation 3",
+    "Nickname": "Sea Ray 340 Sundancer",
+    "Active": false,
+    "ModelAliases": [
+      "340 Sundancer (2003–08)"
+    ],
+    "CanonicalSlug": "sea-ray-340-sundancer-generation-3",
+    "CanonicalPath": "/models/sea-ray-340-sundancer-generation-3/",
+    "CanonicalURL": "https://b-atlas.org/models/sea-ray-340-sundancer-generation-3/",
+    "ModelIdentityFamilyID": "SEAR-340-SU",
+    "ImageURL": "images/sear-340-su.jpg",
+    "FirstYear": 2003,
+    "LastYear": 2008,
+    "TotalBuilt": 1400,
+    "Designer": "Sea Ray Design",
+    "HullType": "Deep-V",
+    "Style": "Express Cruiser",
+    "Construction": "Fiberglass",
+    "KeelType": "Modified V",
+    "Fuel": "Gasoline",
+    "Cooling": "Fresh/Raw",
+    "EngineConfiguration": "Twin gasoline inboards or sterndrives depending generation",
+    "Propulsion": "Shaft/V-Drive",
+    "Flybridge": "No",
+    "AftCabin": false,
+    "SideDecks": "Narrow",
+    "TypicalEngineID": "Mercruiser 8.1L",
+    "FuelCapacity": 851.72,
+    "WaterCapacity": 170.34,
+    "HoldingCapacity": 105.99,
+    "Berths": 6,
+    "Cabins": 1,
+    "Heads": 1,
+    "Shower": false,
+    "Galley": false,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "No",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "BoatFamily": "Cruiser",
+    "Configuration": "Express Cruiser",
+    "HullBehaviour": "Planing",
+    "Features": [],
+    "NormalizedFuel": "Gasoline",
+    "NormalizedPropulsion": "Shaft/V-Drive",
+    "NormalizedHullForm": "Planing",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Cruiser",
+    "EngineCount": 2,
+    "DisplacementLb": 14600,
+    "FuelCapacityGal": 225,
+    "WaterCapacityGal": 45,
+    "NormalizedHullType": "Modified-V",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "BoatFamilyCode": "boat_family.express_cruiser",
+    "HullBehaviourCode": "hull_behaviour.planing",
+    "FuelCode": "fuel.gasoline",
+    "MechanicalPropulsionCode": "mechanical_propulsion.v_drive",
+    "LOA": 11.43,
+    "HullLength": 10.2362,
+    "Beam": 3.6576,
+    "Draft": 0.9398,
+    "Displacement": 7030.7,
+    "EnginePowerPerEngine": 279.64,
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityGal": 28,
+    "AirDraft": 3.8000000000000003,
+    "StyleCode": "Cruiser",
+    "CoolingCode": "cooling.fresh_raw",
+    "FlybridgeCode": "availability.no",
+    "SideDecksCode": "side_decks.narrow",
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "LWL": 9.5707,
+    "ShowerTypeCode": "shower.none",
+    "KeelConfigurationCode": "keel.no_keel",
+    "RunningGearProtectionCode": "running_gear.exposed",
+    "Strengths": [
+      "Large social cockpit for the boat size",
+      "Planing performance and responsive handling",
+      "Useful weekend accommodation",
+      "Broad service and parts familiarity in the production-cruiser market"
+    ],
+    "Weaknesses": "Cockpit canvas enclosure setup creates prominent greenhouse heat, narrow side walkways require agile steps forward.",
+    "CommonProblems": "V-drive transmission fluid leaks, wet core spots beneath foredeck stanchion pads.",
+    "TypicalMission": "Family weekend overnight hopping and casual regional inland waterway day cruising.",
+    "AvoidIf": [
+      "You require displacement-speed fuel economy",
+      "You want a flybridge or separate aft-cabin privacy",
+      "You need long-range passagemaking capability"
+    ],
+    "Overview": "The Sea Ray 340 Sundancer (multi-generation) is a production express cruiser designed around cockpit social space, planing performance and overnight accommodation below. Twin-engine propulsion is typical, with model generations varying in drive type, dimensions and interior arrangement.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented accommodation and enclosed living spaces support weekend or regional couple cruising."
+      },
+      "SoloHandling": {
+        "Assessment": "Mixed",
+        "Summary": "Twin engines can assist close-quarters maneuvering, but size, windage and multi-level access increase workload."
+      },
+      "InlandWaterways": {
+        "Assessment": "Mixed",
+        "Summary": "Comfortable for inland cruising, but beam, air draft and fuel consumption must be checked against route and marina constraints."
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "These are coastal production cruisers; actual capability depends on generation, loading, machinery, weather and individual condition."
+      }
+    },
+    "TradeOffs": [
+      "Fuel consumption rises sharply at planing speeds",
+      "Engine-room access can be tight",
+      "Sleeping areas may rely on curtains or convertible spaces",
+      "Low-profile express layouts provide less enclosed living volume than flybridge yachts"
+    ],
+    "BestFor": [
+      "Weekend cruising and entertaining",
+      "Buyers who value speed over displacement economy",
+      "Marina-based coastal and inland use"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Verify moisture around deck hardware, windows, hatches and rail bases",
+      "Inspect fuel, water and waste tanks plus hoses and fittings",
+      "Inspect engines, transmissions or sterndrives, exhaust and cooling systems",
+      "Review AC/DC wiring, shore-power equipment and documented electrical modifications",
+      "Confirm steering, trim-tab and generator operation where fitted"
+    ],
+    "BuyerQuestions": [
+      "What repair or survey history is available for moisture around deck hardware, windows, hatches and rail bases?",
+      "What repair or survey history is available for fuel, water and waste tanks plus hoses and fittings?",
+      "What repair or survey history is available for engines, transmissions or sterndrives, exhaust and cooling systems?",
+      "What repair or survey history is available for ac/dc wiring, shore-power equipment and documented electrical modifications?",
+      "What repair or survey history is available for steering, trim-tab and generator operation where fitted?"
+    ],
+    "OwnerActions": [
+      "Keep deck, window and hardware penetrations sealed",
+      "Maintain propulsion, cooling, exhaust, steering and electrical systems to documented intervals",
+      "Document structural, tank, electrical and machinery repairs for future survey and resale"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "1984–89 generation",
+        "Description": "Early 340 Sundancer generation; roughly 35 ft 11 in overall with swim platform, 11 ft 11 in beam and 172 gal fuel.",
+        "AffectedYears": "1984–1989",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-sundancer-1984-89"
+        ],
+        "Confidence": "High"
+      },
+      {
+        "Name": "1999–2002 generation",
+        "Description": "Later 340 Sundancer generation with 11 ft 5 in beam and 225 gal fuel.",
+        "AffectedYears": "1999–2002",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-sundancer-1999-2002"
+        ],
+        "Confidence": "High"
+      },
+      {
+        "Name": "2003–08 generation",
+        "Description": "Redesigned, larger 340 Sundancer with 12 ft beam and substantially different hull and cockpit.",
+        "AffectedYears": "2003–2008",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-sundancer-2003-08"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "ModelCharacter": "One of Sea Ray's most enduring model names, but not one continuous boat. The 340 Sundancer appeared in at least three distinct generations—1984–89, 1999–2002 and 2003–08—each a twin-engine planing express with large social cockpit and overnight cabin, but with materially different dimensions, hulls and layouts.",
+    "DesignLineage": [
+      "The first major 340 Sundancer generation ran from 1984–1989.",
+      "Sea Ray revived the 340 Sundancer name for an all-new 1999–2002 generation.",
+      "A substantially larger redesigned 340 followed for 2003–2008 with 12-foot beam and different cockpit/hull architecture.",
+      "The repeated model name should never be treated as a single continuous hull family; listing year is essential to identity."
+    ],
+    "OwnershipCharacter": "Broad dealer knowledge and mass-market parts support are advantages, but ownership varies strongly by generation and drivetrain. Twin gasoline engines are common and fuel-intensive; sterndrive examples add drive/bellows maintenance, while inboard boats trade efficiency for simpler underwater gear.",
+    "DateCreated": "2026-07-13",
+    "LastUpdated": "2026-09-12",
+    "ReviewedBy": "B-Atlas Phase 8C-15 Production Motoryacht/Cruiser Research",
+    "Revision": 2,
+    "DataConfidence": "Moderate",
+    "ResearchStatus": "Reviewed",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "SEAR-340-SU"
+            ],
+            "Years": {
+              "From": 1984,
+              "To": 2008
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-sundancer-2003-08"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Model identity and representative specifications checked against model-guide or catalog evidence."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "SEAR-340-SU"
+            ],
+            "Years": {
+              "From": 1984,
+              "To": 2008
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-sundancer-2003-08"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance derives from documented configuration, propulsion and accommodation."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "General age-related guidance",
+            "Models": [
+              "SEAR-340-SU"
+            ],
+            "Years": {
+              "From": 1984,
+              "To": 2008
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-sundancer-2003-08"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance is age/configuration based and is not a claim of a model-wide defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "The 340 Sundancer name covers materially different generations; dimensions in the top-level record are representative and should not substitute for year-specific verification.",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "ResearchNotes": "Production is intentionally not represented as one continuous YearStart/YearEnd because the 340 Sundancer name was reused across distinct generations: 1984–89, 1999–2002 and 2003–08. Existing baseline dimensions/tankage correspond most closely to the 1999–2002 generation. B-Atlas should use ModelVariations/listing year for generation-specific comparison.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "SpecificationConfidence": {
+      "AirDraft": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [],
+        "Note": "B-Atlas working estimate derived from nearest comparable models with similar style, size and flybridge configuration. Verify actual mast/radar/antenna clearance before route planning. Comparable model IDs: NMBS-365-CO, BENE-ANT-11, CRUY-3470, CRUY-320-EXP, GRNL-39, CRUY-3375, CRUY-390-EXP"
+      },
+      "LWL": {
+        "Level": "Low",
+        "Status": "restored_legacy_working_value",
+        "EvidenceRefs": [],
+        "Note": "Working LWL restored from the pre-v6.81 archived B-Atlas value (31.4 ft). Retained as a low-confidence community-verifiable value rather than leaving a basic performance input blank."
+      },
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      },
+      "KeelConfigurationCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from unambiguous existing KeelType text."
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from canonical no-keel geometry with inboard shaft/V-drive propulsion; propeller/rudder running gear is exposed below the hull rather than protected by a keel or skeg."
+      }
+    }
+  },
+  {
+    "BoatModelID": "TOLL-26-SE",
+    "ManufacturerID": "TOLLYCRAFT",
+    "Manufacturer": "Tollycraft",
+    "Model": "26 Sedan",
+    "Variant": "Flybridge Sedan",
+    "Nickname": "Tollycraft 26 Sedan",
+    "Active": false,
+    "CanonicalSlug": "tollycraft-26-sedan",
+    "CanonicalPath": "/models/tollycraft-26-sedan/",
+    "CanonicalURL": "https://b-atlas.org/models/tollycraft-26-sedan/",
+    "ImageURL": null,
+    "FirstYear": 1973,
+    "LastYear": 1987,
+    "TotalBuilt": 887,
+    "Designer": null,
+    "HullType": "Modified-V",
+    "Style": "Flybridge Sedan",
+    "Construction": "Fiberglass",
+    "KeelType": null,
+    "Fuel": "Gasoline common; verify individual boat",
+    "Cooling": null,
+    "EngineConfiguration": "Single V-drive inboard common; verify individual boat",
+    "Propulsion": "Shaft",
+    "Flybridge": "Yes",
+    "AftCabin": false,
+    "SideDecks": "Wide",
+    "TypicalEngineID": null,
+    "FuelCapacity": 529.9576,
+    "WaterCapacity": 124.9186,
+    "HoldingCapacity": 37.8541,
+    "Berths": 4,
+    "Cabins": null,
+    "Heads": 1,
+    "Shower": null,
+    "Galley": null,
+    "CoastalRating": null,
+    "OffshoreRating": null,
+    "GreatLoopSuitable": null,
+    "Trailerable": null,
+    "HullBehaviour": "Planing",
+    "Features": [
+      "Flybridge",
+      "Lower Helm",
+      "Wide Side Decks"
+    ],
+    "NormalizedFuel": null,
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Modified-V",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Cruiser",
+    "EngineCount": null,
+    "DisplacementLb": 9000,
+    "FuelCapacityGal": 140,
+    "WaterCapacityGal": 33,
+    "NormalizedHullType": "Modified-V",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "BoatFamilyCode": "boat_family.flybridge_cruiser",
+    "HullBehaviourCode": "hull_behaviour.planing",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "LOA": 8.128,
+    "Beam": 3.048,
+    "Draft": 0.8636,
+    "Displacement": 4082.3,
+    "AirDraft": 3.048,
+    "FlybridgeCode": "availability.yes",
+    "KeelConfigurationCode": null,
+    "FuelCapacityUnitStatus": "canonical_litres",
+    "WaterCapacityUnitStatus": "canonical_litres",
+    "HoldingCapacityUnitStatus": "canonical_litres",
+    "LWL": 9.5504,
+    "FuelCode": null,
+    "StyleCode": "Cruiser",
+    "CoolingCode": null,
+    "SideDecksCode": "side_decks.wide",
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "

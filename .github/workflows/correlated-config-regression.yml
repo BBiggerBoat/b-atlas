@@ -3,6 +3,7 @@ name: Correlated configuration regression
 on:
   pull_request:
     paths:
+      - 'data/canonical/**'
       - 'filterengine.js'
       - 'valuenormalizer.js'
       - 'tests/correlated-config-regression.cjs'

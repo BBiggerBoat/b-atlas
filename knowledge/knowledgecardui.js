@@ -9,13 +9,10 @@
 })(typeof globalThis !== 'undefined' ? globalThis : this, function () {
     'use strict';
 
+    // Legacy source labels retained for consumers of card provenance metadata.
     const RESOURCE_PATH = 'knowledge/data/curatedresources.json';
     const LISTING_PATH = 'knowledge/data/listingsearches.json';
     const INTELLIGENCE_PATH = 'boatmodels.json';
-    let collectionPromise = null;
-    let resourcePromise = null;
-    let listingPromise = null;
-    let intelligencePromise = null;
 
     function escapeHtml(value) {
         return String(value == null ? '' : value)
@@ -49,15 +46,6 @@
         return typeof globalThis !== 'undefined' ? globalThis.BScoutListingDiscoveryProvider || null : null;
     }
 
-    function loadJson(path, fetchImpl) {
-        const request = fetchImpl || (typeof fetch === 'function' ? fetch.bind(globalThis) : null);
-        if (!request) return Promise.reject(new Error('No fetch implementation is available'));
-        return request(path).then(response => {
-            if (!response.ok) throw new Error(`${path} failed to load (${response.status})`);
-            return response.json();
-        }).then(items => Array.isArray(items) ? items : []);
-    }
-
 function projectCards(boats,input={}) {
 const index = (rows) => new Map(rows.map(row => [String(row.BoatModelID || '').trim(), row]));
 
@@ -73,20 +61,18 @@ const cards = boats.map(b=>{
 });
 return cards;
 }
+    function repository(fetchImpl) {
+        const api = globalThis.BScoutDataRepository || (typeof require === 'function' ? require('../datarepository.js') : null);
+        if (!api) throw Error('Shared catalogue repository is unavailable');
+        return api.getRepository(fetchImpl);
+    }
     async function loadKnowledgeCards(fetchImpl) {
-        if (!collectionPromise) {
-            collectionPromise = Promise.all([
-                loadBoatIntelligence(fetchImpl), loadCuratedResources(fetchImpl), loadListingSearches(fetchImpl),
-                loadJson('knowledge/data/knowledgeannotations.json',fetchImpl),
-                loadJson('knowledge/data/knowledge-coverage.json',fetchImpl)
-            ]).then(([boats,resources,listings,annotations,coverage]) => projectCards(boats,{resources,listings,annotations,coverage}))
-              .catch(error=>{collectionPromise=null;throw error;});
-        }
-        return collectionPromise;
+        const data = await repository(fetchImpl).loadApplicationData();
+        return projectCards(data.boats, {resources:mergeResourceAdditions(data.curatedResources,data.communityOverlay?.resourceAdditions),listings:data.listingSearches,annotations:data.knowledgeAnnotations,coverage:data.knowledgeCoverage});
     }
 
     function mergeResourceAdditions(base, additions) {
-        const rows = Array.isArray(base) ? base.map(r => ({...r})) : [];
+        const rows = Array.isArray(base) ? base.map(r => JSON.parse(JSON.stringify(r))) : [];
         const map = new Map(rows.map(r => [String(r.BoatModelID || ""), r]));
         for (const add of Array.isArray(additions) ? additions : []) {
             const id = String(add?.BoatModelID || "").trim();
@@ -102,48 +88,14 @@ return cards;
     }
 
     async function loadCuratedResources(fetchImpl) {
-        if (!resourcePromise) {
-            resourcePromise = loadJson(RESOURCE_PATH, fetchImpl).then(async rows => {
-                try {
-                    const api = typeof globalThis !== "undefined" ? globalThis.BScoutCommunityAPI : null;
-                    if (api?.publicOverlays) { const live = await api.publicOverlays(); return mergeResourceAdditions(rows, live?.resourceAdditions || []); }
-                } catch { /* Static resources remain authoritative fallback. */ }
-                return rows;
-            }).catch(error => {
-                resourcePromise = null;
-                throw error;
-            });
-        }
-        return resourcePromise;
+        const repo=repository(fetchImpl);
+        const [resources,overlay]=await Promise.all([repo.loadDataset("curatedResources"),repo.loadOverlay()]);
+        return mergeResourceAdditions(resources,overlay?.resourceAdditions);
     }
+    async function loadBoatIntelligence(fetchImpl) {return (await repository(fetchImpl).loadApplicationData()).boats;}
+    async function loadListingSearches(fetchImpl) {return repository(fetchImpl).loadDataset("listingSearches");}
 
-    async function loadBoatIntelligence(fetchImpl) {
-        if (!intelligencePromise) {
-            intelligencePromise = loadJson(INTELLIGENCE_PATH, fetchImpl).catch(error => {
-                intelligencePromise = null;
-                throw error;
-            });
-        }
-        return intelligencePromise;
-    }
-
-    async function loadListingSearches(fetchImpl) {
-        if (!listingPromise) {
-            listingPromise = loadJson(LISTING_PATH, fetchImpl).catch(error => {
-                listingPromise = null;
-        intelligencePromise = null;
-                throw error;
-            });
-        }
-        return listingPromise;
-    }
-
-    function resetKnowledgeCardCache() {
-        collectionPromise = null;
-        resourcePromise = null;
-        listingPromise = null;
-        intelligencePromise = null;
-    }
+    function resetKnowledgeCardCache(fetchImpl) {repository(fetchImpl).invalidate();}
 
     function findCard(cards, boatModelId) {
         const api = getKnowledgeApi();
@@ -360,12 +312,11 @@ return cards;
     function renderErrorState() { return '<div class="knowledge-card-state knowledge-card-error"><strong>Knowledge Card unavailable</strong><p>The research record could not be loaded. This does not affect the boat\'s candidacy.</p></div>'; }
 
     async function loadCardForBoat(boat, options = {}) {
-        const cards = options.cards || await loadKnowledgeCards(options.fetchImpl);
-        const baseCard = findCard(cards, boat && boat.BoatModelID);
-        if (!baseCard) return null;
-        const resources = options.resources || await loadCuratedResources(options.fetchImpl);
-        const listings = options.listings || await loadListingSearches(options.fetchImpl);
-        const intelligenceRecords = options.intelligenceRecords || await loadBoatIntelligence(options.fetchImpl);
+        const repo=repository(options.fetchImpl);
+        const [full,resources,listings,annotations,coverage]=await Promise.all([repo.getModel(boat?.BoatModelID),options.resources || (options.includeResources===false ? [] : loadCuratedResources(options.fetchImpl)),options.listings || (options.includeResources===false ? [] : loadListingSearches(options.fetchImpl)),repo.loadDataset('knowledgeAnnotations'),repo.loadDataset('knowledgeCoverage')]);
+        if(!full)return null;
+        const baseCard=options.cards ? findCard(options.cards,full.BoatModelID) : projectCards([full],{resources,listings,annotations,coverage})[0];
+        const intelligenceRecords=options.intelligenceRecords || [full];
         return enrichCard(baseCard, resources, listings, intelligenceRecords);
     }
 

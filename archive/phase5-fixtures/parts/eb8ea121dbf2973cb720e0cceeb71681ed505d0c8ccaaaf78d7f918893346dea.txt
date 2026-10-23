@@ -1,0 +1,3045 @@
+    "https://www.alaskaboatbrokers.com/boats/raven",
+          "https://www.yachtworld.com/yacht/2017-ranger-tugs-r-27-9951657/"
+        ],
+        "Note": "Representative R-27 Classic diesel example reports 7 kn at about 2.4 US gal/h. Other D3-200/220 loads and propellers vary; use as a medium-confidence displacement-speed point."
+      },
+      "DisplacementCruiseFuelBurn": {
+        "Level": "Medium",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://www.alaskaboatbrokers.com/boats/raven",
+          "https://www.yachtworld.com/yacht/2017-ranger-tugs-r-27-9951657/"
+        ],
+        "Note": "Representative R-27 Classic diesel example reports 7 kn at about 2.4 US gal/h. Other D3-200/220 loads and propellers vary; use as a medium-confidence displacement-speed point."
+      },
+      "PlaningCruiseSpeed": {
+        "Level": "Medium",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://www.alaskaboatbrokers.com/boats/raven",
+          "https://www.yachtworld.com/yacht/2017-ranger-tugs-r-27-9951657/"
+        ],
+        "Note": "Same representative R-27 Classic diesel example reports about 12.8 kn at roughly 7 US gal/h; another 2017 D3-220 listing reports roughly 12 kn and 2.5 mpg. Stored as a medium-confidence faster/semi-planing cruise point."
+      },
+      "PlaningCruiseFuelBurn": {
+        "Level": "Medium",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://www.alaskaboatbrokers.com/boats/raven",
+          "https://www.yachtworld.com/yacht/2017-ranger-tugs-r-27-9951657/"
+        ],
+        "Note": "Same representative R-27 Classic diesel example reports about 12.8 kn at roughly 7 US gal/h; another 2017 D3-220 listing reports roughly 12 kn and 2.5 mpg. Stored as a medium-confidence faster/semi-planing cruise point."
+      },
+      "EnginePowerPerEngine": {
+        "Level": "High",
+        "Status": "varies_by_configuration",
+        "EvidenceRefs": [
+          "https://www.alaskaboatbrokers.com/boats/raven",
+          "https://www.yachtworld.com/yacht/2017-ranger-tugs-r-27-9951657/"
+        ],
+        "Note": "Classic R-27 production includes Volvo D3-200 and D3-220 installations; no single model-wide power is appropriate."
+      },
+      "LWL": {
+        "Level": "Low",
+        "Status": "estimated_family_ratio",
+        "EvidenceRefs": [],
+        "Note": "Working LWL estimate derived from the median LWL/LOA ratio (0.833) of other B-Atlas Ranger Tugs models with recorded waterline lengths. Intended for hull-speed context and community verification, not survey use."
+      },
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Ranger inboard model family uses shallow keel/protected shaft arrangement; representative classification retained with model-specific verification encouraged."
+      }
+    },
+    "LWL": 6.858,
+    "ShowerTypeCode": "shower.wet_head",
+    "RunningGearProtectionCode": "running_gear.keel_protected"
+  },
+  {
+    "ManufacturerID": "RANGER_TUGS",
+    "Manufacturer": "Ranger Tugs",
+    "Model": "R-27",
+    "Variant": "Current twin-outboard",
+    "Nickname": "Ranger Tugs R-27",
+    "ImageURL": "images/rngr-r-27.jpg",
+    "Active": true,
+    "FirstYear": 2026,
+    "LastYear": null,
+    "TotalBuilt": null,
+    "Designer": "David Livingston",
+    "HullType": "Planing",
+    "Style": "Tug Cruiser",
+    "Construction": "Fiberglass",
+    "KeelType": "Model-specific; verify actual hull and running gear",
+    "Fuel": "Gasoline",
+    "Cooling": "Outboard",
+    "EngineConfiguration": "Twin Yamaha F150 outboards",
+    "Propulsion": "Outboard",
+    "Flybridge": "No",
+    "AftCabin": false,
+    "SideDecks": "Asymmetric",
+    "TypicalEngineID": "Twin Yamaha F150 outboards",
+    "FuelCapacity": 567.8118,
+    "WaterCapacity": 151.4165,
+    "HoldingCapacity": 113.5624,
+    "Berths": 4,
+    "Cabins": 1,
+    "Heads": 1,
+    "Shower": true,
+    "Galley": true,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "No",
+    "GreatLoopSuitable": true,
+    "Trailerable": true,
+    "Strengths": [
+      "Enclosed pilothouse with strong all-weather visibility",
+      "Cruising systems and accommodations packaged into a relatively compact hull",
+      "Strong factory documentation and owner-support ecosystem"
+    ],
+    "Weaknesses": "Compact spaces and equipment density require hands-on crew-fit and service-access checks.",
+    "CommonProblems": "Verify propulsion service, cooling, thrusters, electrical integration, glazing, deck penetrations and model-year-specific systems.",
+    "TypicalMission": "Protected coastal, inland and Great Loop cruising.",
+    "AvoidIf": [
+      "You want a simple low-systems boat with minimal installed equipment",
+      "You require large private accommodations for several adults",
+      "You prefer only traditional displacement-speed shaft-drive propulsion"
+    ],
+    "DateCreated": "2026-07-25",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "B-Atlas Phase 8C-9 Family Research",
+    "Revision": 2,
+    "BoatModelID": "RNGR-R-27",
+    "BoatFamily": "Tug Cruiser",
+    "Configuration": "Twin-Outboard Tug Cruiser",
+    "HullBehaviour": "Planing",
+    "Features": [
+      "Walkthrough Transom",
+      "Swim Platform",
+      "Windlass",
+      "Wet Head",
+      "Side Helm Door",
+      "Inverter",
+      "Bow Thruster",
+      "Trailerable",
+      "Solar Panel"
+    ],
+    "ModelSeries": "Ranger Tugs R-27",
+    "ModelGeneration": "Current twin-outboard",
+    "EvolutionSequence": 1,
+    "EvolutionNotes": "Twin-outboard redesign superseding the single-outboard NW/LE generation.",
+    "NormalizedFuel": "Gasoline",
+    "NormalizedPropulsion": "Outboard",
+    "NormalizedHullForm": "Planing",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Tug Cruiser",
+    "DataConfidence": "Moderate",
+    "ResearchStatus": "Reviewed",
+    "Overview": "The Ranger Tugs R-27 Current twin-outboard is a compact pilothouse cruising boat in Ranger Tugs’ trailerable-to-coastal range. This version is outboard-powered and combines an enclosed helm, cruising accommodations and a workboat-inspired profile with systems intended for short-handed recreational cruising.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "Compact accommodations are oriented to one couple or a small crew."
+      },
+      "SoloHandling": {
+        "Assessment": "Good",
+        "Summary": "Compact dimensions and straightforward helm arrangements support short-handed operation."
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "Shallow draft and manageable dimensions suit inland and protected-water cruising."
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "Capability depends on hull form, load, weather and operator judgment; verify the individual model’s limits."
+      }
+    },
+    "TradeOffs": [
+      "High systems density can make service access tight",
+      "Accommodation volume is achieved within relatively narrow hulls on the trailerable models",
+      "Later outboard and pod-drive versions trade traditional shaft simplicity for speed and maneuverability"
+    ],
+    "BestFor": [
+      "Couples or small crews wanting a compact, highly equipped pilothouse cruiser",
+      "Owners who value trailerability or manageable marina dimensions where the specific model permits it",
+      "Inland, Great Loop and coastal cruising within the model’s dimensional and operating limits"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Confirm exact generation, engine package and factory variant from HIN and documentation",
+      "Inspect propulsion, cooling, fuel, steering, thrusters and charging systems",
+      "Test windows, hatches, doors and roof/deck penetrations for leakage",
+      "Verify trailer, bridge-clearance and actual loaded-weight limits where trailering is planned"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for confirm exact generation, engine package and factory variant from HIN and documentation?",
+      "What inspection, repair or service history is available for inspect propulsion, cooling, fuel, steering, thrusters and charging systems?",
+      "What inspection, repair or service history is available for test windows, hatches, doors and roof/deck penetrations for leakage?",
+      "What inspection, repair or service history is available for verify trailer, bridge-clearance and actual loaded-weight limits where trailering is planned?"
+    ],
+    "OwnerActions": [
+      "Maintain engine, cooling, fuel and steering systems to manufacturer intervals",
+      "Keep deck, window and hardware penetrations sealed and investigate leaks promptly",
+      "Document structural, electrical and propulsion repairs for future buyers"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "Generation and propulsion changes",
+        "Description": "Ranger reused several model numbers across materially different diesel-inboard and later outboard generations; Sedan and Command Bridge versions are separate configurations where offered.",
+        "AffectedYears": "Varies by model",
+        "EvidenceRefs": [
+          "https://www.rangertugs.com/past-models",
+          "https://www.rangertugs.com/models"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "RNGR-R-27"
+            ],
+            "Years": {
+              "From": 2026,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.rangertugs.com/models",
+            "https://www.rangertugs.com/past-models",
+            "https://www.rangertugs.com/spec-sheets/r-27"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Identity and representative specifications are supported by manufacturer or model-specific technical references; unresolved production or configuration differences remain explicit."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "RNGR-R-27"
+            ],
+            "Years": {
+              "From": 2026,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.rangertugs.com/models",
+            "https://www.rangertugs.com/past-models",
+            "https://www.rangertugs.com/spec-sheets/r-27"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance is derived from documented configuration, propulsion, dimensions and intended use rather than marketplace promotional language."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "RNGR-R-27"
+            ],
+            "Years": {
+              "From": 2026,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.rangertugs.com/models",
+            "https://www.rangertugs.com/past-models",
+            "https://www.rangertugs.com/spec-sheets/r-27"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance combines documented systems with age- and configuration-related checks; it does not assert that every hull has a defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Exact production-year boundaries for some historical Ranger generations should be verified against individual HIN/model-year documentation.",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold"
+      ]
+    },
+    "ResearchNotes": "Current twin-outboard R-27 generation. Do not merge with diesel R-27 Classic or single-outboard R-27 NW/LE.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "EngineCount": 2,
+    "ModelCharacter": "The current R-27 is the twin-outboard evolution of Ranger's long-running 27-foot trailerable cruiser, using two Yamaha F150s for redundancy and performance while keeping the 8'6\" beam and full cabin.",
+    "DesignLineage": [
+      "The current R-27 follows both the original diesel R-27 and the later single-outboard NW/LE generation.",
+      "Twin Yamaha F150 outboards distinguish the current configuration.",
+      "The interior mission remains a trailerable cruising couple/family boat with multiple convertible berths.",
+      "It is a generation change, not a duplicate of the earlier R-27 records."
+    ],
+    "OwnershipCharacter": "Fast, trailerable and easier to repower than an inboard boat, but twin engines increase maintenance items and fuel-system complexity compared with the single-outboard predecessor.",
+    "CharacterConfidence": "High",
+    "DisplacementLb": 8200,
+    "FuelCapacityGal": 150,
+    "WaterCapacityGal": 40,
+    "NormalizedHullType": "Planing",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "RarityConfidence": "Not rated",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "PriceConfidence": "Not rated",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "BoatFamilyCode": "boat_family.tug",
+    "FuelCode": "fuel.gasoline",
+    "MechanicalPropulsionCode": "mechanical_propulsion.outboard",
+    "LOA": 9.6266,
+    "Beam": 2.5908,
+    "Draft": 0.8636,
+    "Displacement": 3719.5,
+    "EnginePowerPerEngine": 111.85,
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "AirDraft": 2.5908,
+    "HullBehaviourCode": "hull_behaviour.planing",
+    "RudderTypeCode": "rudder.none_external_drive",
+    "CanonicalSlug": "ranger-tugs-r-27-current-twin-outboard",
+    "CanonicalPath": "/models/ranger-tugs-r-27-current-twin-outboard/",
+    "CanonicalURL": "https://b-atlas.org/models/ranger-tugs-r-27-current-twin-outboard/",
+    "ModelIdentityFamilyID": "RNGR-R27",
+    "StyleCode": "Tug Cruiser",
+    "CoolingCode": "cooling.outboard",
+    "FlybridgeCode": "availability.no",
+    "SideDecksCode": "side_decks.asymmetric",
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "LWL": 8.0222,
+    "SpecificationConfidence": {
+      "LWL": {
+        "Level": "Low",
+        "Status": "estimated_family_ratio",
+        "EvidenceRefs": [],
+        "Note": "Working LWL estimate derived from the median LWL/LOA ratio (0.833) of other B-Atlas Ranger Tugs models with recorded waterline lengths. Intended for hull-speed context and community verification, not survey use."
+      },
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing propulsion/keel description; no new factual assertion introduced."
+      }
+    },
+    "ShowerTypeCode": "shower.present_unspecified",
+    "RunningGearProtectionCode": "running_gear.exposed"
+  },
+  {
+    "ManufacturerID": "RANGER_TUGS",
+    "Manufacturer": "Ranger Tugs",
+    "Model": "R-27",
+    "Variant": "Single-outboard NW/LE",
+    "Nickname": "Ranger Tugs R-27 NW/LE",
+    "ImageURL": "images/rngr-27-ob.jpg",
+    "Active": false,
+    "FirstYear": 2018,
+    "LastYear": 2025,
+    "TotalBuilt": null,
+    "Designer": "David Livingston",
+    "HullType": "Planing",
+    "Style": "Tug Cruiser",
+    "Construction": "Fiberglass",
+    "KeelType": "Model-specific; verify actual hull and running gear",
+    "Fuel": "Gas",
+    "Cooling": "Outboard",
+    "EngineConfiguration": "Single Yamaha F300 outboard",
+    "Propulsion": "Outboard",
+    "Flybridge": "No",
+    "AftCabin": false,
+    "SideDecks": "Asymmetric",
+    "TypicalEngineID": "Single Yamaha F300 outboard",
+    "FuelCapacity": 567.8118,
+    "WaterCapacity": 151.4165,
+    "HoldingCapacity": 113.5624,
+    "Berths": 4,
+    "Cabins": 1,
+    "Heads": 1,
+    "Shower": true,
+    "Galley": true,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "No",
+    "GreatLoopSuitable": true,
+    "Trailerable": true,
+    "Strengths": [
+      "Enclosed pilothouse with strong all-weather visibility",
+      "Cruising systems and accommodations packaged into a relatively compact hull",
+      "Strong factory documentation and owner-support ecosystem"
+    ],
+    "Weaknesses": "Compact spaces and equipment density require hands-on crew-fit and service-access checks.",
+    "CommonProblems": "Verify propulsion service, cooling, thrusters, electrical integration, glazing, deck penetrations and model-year-specific systems.",
+    "TypicalMission": "Protected coastal, inland and Great Loop cruising.",
+    "AvoidIf": [
+      "You want a simple low-systems boat with minimal installed equipment",
+      "You require large private accommodations for several adults",
+      "You prefer only traditional displacement-speed shaft-drive propulsion"
+    ],
+    "DateCreated": "2026-07-25",
+    "LastUpdated": "2026-09-13",
+    "ReviewedBy": "B-Atlas Research v6.93",
+    "Revision": 4,
+    "BoatModelID": "RNGR-27-OB",
+    "BoatFamily": "Tug Cruiser",
+    "Configuration": "Outboard Tug Cruiser",
+    "HullBehaviour": "Planing",
+    "Features": [
+      "Walkthrough Transom",
+      "Swim Platform",
+      "Windlass",
+      "Wet Head",
+      "Side Helm Door",
+      "Inverter",
+      "Bow Thruster",
+      "Trailerable",
+      "Solar Panel"
+    ],
+    "ModelSeries": "Ranger Tugs R-27",
+    "ModelGeneration": "Single-outboard NW/LE",
+    "EvolutionSequence": 1,
+    "EvolutionNotes": "NW and LE equipment packages precede the current twin-outboard generation.",
+    "NormalizedFuel": "Gasoline",
+    "NormalizedPropulsion": "Outboard",
+    "NormalizedHullForm": "Planing",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Tug Cruiser",
+    "DataConfidence": "Moderate",
+    "ResearchStatus": "Reviewed",
+    "Overview": "The Ranger Tugs R-27 Single-outboard NW/LE is a compact pilothouse cruising boat in Ranger Tugs’ trailerable-to-coastal range. This version is outboard-powered and combines an enclosed helm, cruising accommodations and a workboat-inspired profile with systems intended for short-handed recreational cruising.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "Compact accommodations are oriented to one couple or a small crew."
+      },
+      "SoloHandling": {
+        "Assessment": "Good",
+        "Summary": "Compact dimensions and straightforward helm arrangements support short-handed operation."
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "Shallow draft and manageable dimensions suit inland and protected-water cruising."
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "Capability depends on hull form, load, weather and operator judgment; verify the individual model’s limits."
+      }
+    },
+    "TradeOffs": [
+      "High systems density can make service access tight",
+      "Accommodation volume is achieved within relatively narrow hulls on the trailerable models",
+      "Later outboard and pod-drive versions trade traditional shaft simplicity for speed and maneuverability"
+    ],
+    "BestFor": [
+      "Couples or small crews wanting a compact, highly equipped pilothouse cruiser",
+      "Owners who value trailerability or manageable marina dimensions where the specific model permits it",
+      "Inland, Great Loop and coastal cruising within the model’s dimensional and operating limits"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Confirm exact generation, engine package and factory variant from HIN and documentation",
+      "Inspect propulsion, cooling, fuel, steering, thrusters and charging systems",
+      "Test windows, hatches, doors and roof/deck penetrations for leakage",
+      "Verify trailer, bridge-clearance and actual loaded-weight limits where trailering is planned"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for confirm exact generation, engine package and factory variant from HIN and documentation?",
+      "What inspection, repair or service history is available for inspect propulsion, cooling, fuel, steering, thrusters and charging systems?",
+      "What inspection, repair or service history is available for test windows, hatches, doors and roof/deck penetrations for leakage?",
+      "What inspection, repair or service history is available for verify trailer, bridge-clearance and actual loaded-weight limits where trailering is planned?"
+    ],
+    "OwnerActions": [
+      "Maintain engine, cooling, fuel and steering systems to manufacturer intervals",
+      "Keep deck, window and hardware penetrations sealed and investigate leaks promptly",
+      "Document structural, electrical and propulsion repairs for future buyers"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "Generation and propulsion changes",
+        "Description": "Ranger reused several model numbers across materially different diesel-inboard and later outboard generations; Sedan and Command Bridge versions are separate configurations where offered.",
+        "AffectedYears": "Varies by model",
+        "EvidenceRefs": [
+          "https://www.rangertugs.com/past-models",
+          "https://www.rangertugs.com/models"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "RNGR-27-OB"
+            ],
+            "Years": {
+              "From": 2018,
+              "To": 2025
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.rangertugs.com/models",
+            "https://www.rangertugs.com/past-models"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Identity and representative specifications are supported by manufacturer or model-specific technical references; unresolved production or configuration differences remain explicit."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "RNGR-27-OB"
+            ],
+            "Years": {
+              "From": 2018,
+              "To": 2025
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.rangertugs.com/models",
+            "https://www.rangertugs.com/past-models"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance is derived from documented configuration, propulsion, dimensions and intended use rather than marketplace promotional language."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "RNGR-27-OB"
+            ],
+            "Years": {
+              "From": 2018,
+              "To": 2025
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.rangertugs.com/models",
+            "https://www.rangertugs.com/past-models"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance combines documented systems with age- and configuration-related checks; it does not assert that every hull has a defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Exact production-year boundaries for some historical Ranger generations should be verified against individual HIN/model-year documentation.",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold"
+      ]
+    },
+    "ResearchNotes": "Single-outboard R-27 NW/LE generation retained separately from the earlier diesel R-27 Classic and current twin-outboard R-27. Ranger states NW ended after 2024 and LE continued through 2025.\n\nHigh-impact missing-data research Wave 3 v6.88 (2026-09-13): Ranger R-27 outboard documentation supports approximately 6 ft 6 in cabin interior height and a single Yamaha F300 outboard (300 hp / 223.71 kW). Sources: https://www.rangertugs.com/media/4572/2025-04-28_2025-r27-spec-sheet-web.pdf ; https://ca.boats.com/power-boats/2024-ranger-tugs-r-27-9934720/\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "EngineCount": 1,
+    "ModelCharacter": "The first outboard R-27 generation, replacing the classic diesel drivetrain with a single Yamaha while preserving the 8'6\" trailerable beam and enclosed cruising layout.",
+    "DesignLineage": [
+      "This generation followed the diesel R-27 Classic.",
+      "Ranger sold it in Northwest and Luxury Edition equipment packages rather than as different hull models.",
+      "The single-outboard NW/LE generation continued through the 2025 model year.",
+      "The current R-27 moves to twin Yamaha F150 outboards, so B-Atlas keeps the single-outboard generation separate."
+    ],
+    "OwnershipCharacter": "More accessible propulsion service than the diesel R-27 and substantially faster performance, while retaining true trailerability and Ranger's dense cruising systems.",
+    "CharacterConfidence": "High",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "RarityConfidence": "Not rated",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "PriceConfidence": "Not rated",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "BoatFamilyCode": "boat_family.tug",
+    "FuelCode": "fuel.gasoline",
+    "MechanicalPropulsionCode": "mechanical_propulsion.outboard",
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "LOA": 9.6256,
+    "Beam": 2.5908,
+    "Draft": 0.8626,
+    "AirDraft": 2.5908,
+    "Displacement": 3492.7,
+    "HullBehaviourCode": "hull_behaviour.planing",
+    "RudderTypeCode": "rudder.none_external_drive",
+    "CanonicalSlug": "ranger-tugs-r-27-single-outboard-nw-le",
+    "CanonicalPath": "/models/ranger-tugs-r-27-single-outboard-nw-le/",
+    "CanonicalURL": "https://b-atlas.org/models/ranger-tugs-r-27-single-outboard-nw-le/",
+    "ModelIdentityFamilyID": "RNGR-R27",
+    "StyleCode": "Tug Cruiser",
+    "CoolingCode": "cooling.outboard",
+    "FlybridgeCode": "availability.no",
+    "SideDecksCode": "side_decks.asymmetric",
+    "Headroom": 1.9812,
+    "EnginePowerPerEngine": 223.71,
+    "DisplacementCruiseSpeed": 5.9,
+    "DisplacementCruiseFuelBurn": 7.192,
+    "PlaningCruiseSpeed": 26.7,
+    "PlaningCruiseFuelBurn": 57.917,
+    "SpecificationConfidence": {
+      "DisplacementCruiseSpeed": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://yamahaoutboards.com/outboards/350-150-hp/v6-4-2l/f300-%284-2l%29/pb_rgt_r-27_f300uca_2017-06-28_owa"
+        ],
+        "Note": "Yamaha factory performance bulletin for single F300 R-27: 6.8 mph (5.9 kn) at 1.9 US gal/h and best planing cruise around 30.7 mph (26.7 kn) at 15.3 US gal/h, 4500 rpm."
+      },
+      "DisplacementCruiseFuelBurn": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://yamahaoutboards.com/outboards/350-150-hp/v6-4-2l/f300-%284-2l%29/pb_rgt_r-27_f300uca_2017-06-28_owa"
+        ],
+        "Note": "Yamaha factory performance bulletin for single F300 R-27: 6.8 mph (5.9 kn) at 1.9 US gal/h and best planing cruise around 30.7 mph (26.7 kn) at 15.3 US gal/h, 4500 rpm."
+      },
+      "PlaningCruiseSpeed": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://yamahaoutboards.com/outboards/350-150-hp/v6-4-2l/f300-%284-2l%29/pb_rgt_r-27_f300uca_2017-06-28_owa"
+        ],
+        "Note": "Yamaha factory performance bulletin for single F300 R-27: 6.8 mph (5.9 kn) at 1.9 US gal/h and best planing cruise around 30.7 mph (26.7 kn) at 15.3 US gal/h, 4500 rpm."
+      },
+      "PlaningCruiseFuelBurn": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://yamahaoutboards.com/outboards/350-150-hp/v6-4-2l/f300-%284-2l%29/pb_rgt_r-27_f300uca_2017-06-28_owa"
+        ],
+        "Note": "Yamaha factory performance bulletin for single F300 R-27: 6.8 mph (5.9 kn) at 1.9 US gal/h and best planing cruise around 30.7 mph (26.7 kn) at 15.3 US gal/h, 4500 rpm."
+      },
+      "LWL": {
+        "Level": "Low",
+        "Status": "estimated_family_ratio",
+        "EvidenceRefs": [],
+        "Note": "Working LWL estimate derived from the median LWL/LOA ratio (0.833) of other B-Atlas Ranger Tugs models with recorded waterline lengths. Intended for hull-speed context and community verification, not survey use."
+      },
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing propulsion/keel description; no new factual assertion introduced."
+      }
+    },
+    "LWL": 8.0213,
+    "ShowerTypeCode": "shower.present_unspecified",
+    "RunningGearProtectionCode": "running_gear.exposed"
+  },
+  {
+    "ManufacturerID": "RANGER_TUGS",
+    "Manufacturer": "Ranger Tugs",
+    "Model": "R-29",
+    "Variant": "Classic diesel",
+    "Nickname": "Ranger Tug R-29 Classic",
+    "ImageURL": "images/rngr-29-classic.jpg",
+    "Active": false,
+    "FirstYear": 2009,
+    "LastYear": 2019,
+    "TotalBuilt": null,
+    "Designer": "David Livingston",
+    "HullType": "Planing",
+    "Style": "Tug Cruiser",
+    "Construction": "Fiberglass",
+    "KeelType": "Shallow planing hull with protected inboard shaft and bronze rudder",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Single inboard diesel",
+    "Propulsion": "Shaft",
+    "Flybridge": "No",
+    "AftCabin": false,
+    "SideDecks": "Asymmetric",
+    "TypicalEngineID": "Yanmar 6BY2 260 hp on the 2009 introductory specification; later engines vary",
+    "FuelCapacity": 454.2494,
+    "WaterCapacity": 264.9788,
+    "HoldingCapacity": 151.4165,
+    "Berths": 6,
+    "Cabins": 2,
+    "Heads": 1,
+    "Shower": "Enclosed head with shower and sink",
+    "Galley": "Two-burner propane cooktop and oven, microwave, refrigerator and multiple sinks in the pilothouse/saloon arrangement",
+    "CoastalRating": "Yes",
+    "OffshoreRating": "No",
+    "GreatLoopSuitable": true,
+    "Trailerable": true,
+    "Strengths": [
+      "Enclosed pilothouse with strong all-weather visibility",
+      "Cruising systems and accommodations packaged into a relatively compact hull",
+      "Strong factory documentation and owner-support ecosystem"
+    ],
+    "Weaknesses": "Dense systems installation, asymmetric deck access, limited machinery working room and substantially greater towing weight and height than smaller Ranger models.",
+    "CommonProblems": "Inspect Yanmar or later-model propulsion service history, cooling and exhaust systems, thrusters, inverter/charger installation, bonded electrical system, window and hatch leaks, deck penetrations, tanks and shaft or rudder gear.",
+    "TypicalMission": "Extended couple cruising, Great Loop and protected coastal travel with occasional guests and higher onboard comfort than the R-25/R-27 generation.",
+    "AvoidIf": [
+      "You want a simple low-systems boat with minimal installed equipment",
+      "You require large private accommodations for several adults",
+      "You prefer only traditional displacement-speed shaft-drive propulsion"
+    ],
+    "DateCreated": "2026-07-25",
+    "LastUpdated": "2026-09-13",
+    "ReviewedBy": "B-Atlas Phase 8C-9 Family Research",
+    "Revision": 3,
+    "BoatModelID": "RNGR-29-CLASSIC",
+    "BoatFamily": "Tug Cruiser",
+    "Configuration": "Classic Diesel Tug Cruiser",
+    "HullBehaviour": "Planing",
+    "Features": [
+      "Walkthrough Transom",
+      "Swim Platform",
+      "Windlass",
+      "Wet Head",
+      "Side Helm Door",
+      "Inverter",
+      "Bow Thruster",
+      "Stern Thruster"
+    ],
+    "ModelSeries": "Ranger Tugs R-29",
+    "ModelGeneration": "Classic diesel",
+    "EvolutionSequence": 1,
+    "EvolutionNotes": "Classic generation predating current Sedan and Command Bridge forms.",
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Planing",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Tug Cruiser",
+    "ResearchStatus": "Reviewed",
+    "ResearchNotes": "Phase 8C-9 normalized 2026-08-07 using manufacturer/model-specific sources. Unsupported defects remain unknown.\n\nThe R-29 Classic is the original diesel-inboard generation and must remain separate from current R-29 Sedan and Command Bridge models. The 2009 factory equipment sheet confirms a 260 hp Yanmar 6BY2, enclosed shower, full galley, midship double berth, convertible dinette and standard bow/stern thrusters. Tankage and dimensions can vary across later Classic model years.\n\n[Phase 8A legacy structured context]\n{\n  \"marketAvailability\": \"Used-market availability varies by generation, propulsion and region.\",\n  \"partsAvailability\": \"Factory support and owner community are strengths; model-specific legacy components still require verification.\",\n  \"commonUpgrades\": [\n    \"Battery monitoring\",\n    \"Modern electronics where dated\",\n    \"Canvas or cockpit weather protection\"\n  ],\n  \"comparableModels\": [\n    \"Ranger Tugs R-29 Sedan\",\n    \"Camano Troll 31\"\n  ],\n  \"knowledgeRelationships\": {\n    \"comparableTo\": [\n      \"Ranger Tugs R-29 Sedan\",\n      \"Camano Troll 31\"\n    ],\n    \"alternativeIf\": [\n      \"A different Ranger generation better matches propulsion, budget or space priorities\"\n    ],\n    \"stepUpFrom\": []\n  },\n  \"bScoutNotes\": [\n    \"Identify the exact R-29 generation before applying specifications.\",\n    \"Factory packages and owner modifications can materially change equipment and weight.\"\n  ],\n  \"refitPriority\": {\n    \"essential\": [\n      \"Diesel and cooling system\",\n      \"Thrusters and electrical integration\"\n    ],\n    \"recommended\": [\n      \"Battery monitoring\",\n      \"Cooling-system service\"\n    ],\n    \"optional\": [\n      \"Canvas or cockpit weather protection\"\n    ]\n  },\n  \"ownershipScores\": {\n    \"mechanicalSimplicity\": 3,\n    \"maintenanceEase\": 3,\n    \"partsAvailability\": 4,\n    \"diyFriendliness\": 3,\n    \"operatingAffordability\": 3\n  },\n  \"ownershipEase\": \"Moderate\",\n  \"maintenanceEase\": \"Moderate\"\n}\n\nHigh-impact missing-data research Wave 2 v6.87 (2026-09-13): Wave 2: 2011 R-29 Classic walkthrough documents 6 ft 6 in salon headroom and 6 ft 2 in master stateroom and head/shower; the head/shower is a combined compartment. Sources: https://marinesource.com/boat/ranger-tug-r-29-2011-grafton-a84bf04b-for-sale\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.\n\nCruising Performance Research Wave 3 v7.02 (2026-09-14).",
+    "DataConfidence": "Moderate",
+    "Overview": "The Ranger Tugs R-29 Classic diesel is a compact pilothouse cruising boat in Ranger Tugs’ trailerable-to-coastal range. This version is single-diesel and combines an enclosed helm, cruising accommodations and a workboat-inspired profile with systems intended for short-handed recreational cruising.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "Layout and systems support extended cruising for a couple."
+      },
+      "SoloHandling": {
+        "Assessment": "Good",
+        "Summary": "Pilothouse visibility and accessible controls support short-handed operation."
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "Suitable where beam, draft and bridge clearance fit the route."
+      },
+      "ExposedWater": {
+        "Assessment": "Good",
+        "Summary": "Designed for coastal operation, subject to weather, load and operator judgment."
+      }
+    },
+    "TradeOffs": [
+      "High systems density can make service access tight",
+      "Accommodation volume is achieved within relatively narrow hulls on the trailerable models",
+      "Later outboard and pod-drive versions trade traditional shaft simplicity for speed and maneuverability"
+    ],
+    "BestFor": [
+      "Couples or small crews wanting a compact, highly equipped pilothouse cruiser",
+      "Owners who value trailerability or manageable marina dimensions where the specific model permits it",
+      "Inland, Great Loop and coastal cruising within the model’s dimensional and operating limits"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Confirm exact generation, engine package and factory variant from HIN and documentation",
+      "Inspect propulsion, cooling, fuel, steering, thrusters and charging systems",
+      "Test windows, hatches, doors and roof/deck penetrations for leakage",
+      "Verify trailer, bridge-clearance and actual loaded-weight limits where trailering is planned"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for confirm exact generation, engine package and factory variant from HIN and documentation?",
+      "What inspection, repair or service history is available for inspect propulsion, cooling, fuel, steering, thrusters and charging systems?",
+      "What inspection, repair or service history is available for test windows, hatches, doors and roof/deck penetrations for leakage?",
+      "What inspection, repair or service history is available for verify trailer, bridge-clearance and actual loaded-weight limits where trailering is planned?"
+    ],
+    "OwnerActions": [
+      "Maintain engine, cooling, fuel and steering systems to manufacturer intervals",
+      "Keep deck, window and hardware penetrations sealed and investigate leaks promptly",
+      "Document structural, electrical and propulsion repairs for future buyers"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "Generation and propulsion changes",
+        "Description": "Ranger reused several model numbers across materially different diesel-inboard and later outboard generations; Sedan and Command Bridge versions are separate configurations where offered.",
+        "AffectedYears": "Varies by model",
+        "EvidenceRefs": [
+          "https://www.rangertugs.com/past-models",
+          "https://www.rangertugs.com/models"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "RNGR-29-CLASSIC"
+            ],
+            "Years": {
+              "From": 2009,
+              "To": 2019
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.rangertugs.com/models",
+            "https://www.rangertugs.com/past-models"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Identity and representative specifications are supported by manufacturer or model-specific technical references; unresolved production or configuration differences remain explicit."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "RNGR-29-CLASSIC"
+            ],
+            "Years": {
+              "From": 2009,
+              "To": 2019
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.rangertugs.com/models",
+            "https://www.rangertugs.com/past-models"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance is derived from documented configuration, propulsion, dimensions and intended use rather than marketplace promotional language."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "RNGR-29-CLASSIC"
+            ],
+            "Years": {
+              "From": 2009,
+              "To": 2019
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.rangertugs.com/models",
+            "https://www.rangertugs.com/past-models"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance combines documented systems with age- and configuration-related checks; it does not assert that every hull has a defect."
+        },
+        {
+          "Scope": "Wave2CanonicalData",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "RNGR-29-CLASSIC"
+            ],
+            "Years": {
+              "From": 2009,
+              "To": 2019
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://marinesource.com/boat/ranger-tug-r-29-2011-grafton-a84bf04b-for-sale"
+          ],
+          "EvidenceTypes": [
+            "Manufacturer/manual, technical review, or model-specific listing evidence"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Wave 2: 2011 R-29 Classic walkthrough documents 6 ft 6 in salon headroom and 6 ft 2 in master stateroom and head/shower; the head/shower is a combined compartment."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Exact production-year boundaries for some historical Ranger generations should be verified against individual HIN/model-year documentation.",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold"
+      ]
+    },
+    "EngineCount": 1,
+    "ModelCharacter": "The original diesel R-29: a compact semi-displacement coastal trawler with straight commercial-tug styling, single Yanmar shaft drive and more conventional pilothouse proportions than today's glassier R-29.",
+    "DesignLineage": [
+      "The R-29 Classic was produced roughly 2009–2014.",
+      "It used a single diesel inboard and semi-displacement hull.",
+      "A substantially restyled R-29 Sedan succeeded it for 2015.",
+      "The Command Bridge version arrived later as an upper-helm derivative of the modern R-29 Sedan family."
+    ],
+    "OwnershipCharacter": "Simple propulsion and strong cruising utility, but older Yanmar-era systems and compact service spaces distinguish it from the current Volvo-powered generation.",
+    "CharacterConfidence": "High",
+    "DisplacementLb": 9250,
+    "FuelCapacityGal": 120,
+    "WaterCapacityGal": 70,
+    "NormalizedHullType": "Semi-Displacement",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "RarityConfidence": "Not rated",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "PriceConfidence": "Not rated",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "BoatFamilyCode": "boat_family.tug",
+    "FuelCode": "fuel.diesel",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "LOA": 8.8392,
+    "Beam": 3.048,
+    "Draft": 0.762,
+    "AirDraft": 3.81,
+    "Displacement": 4195.7,
+    "HullBehaviourCode": "hull_behaviour.semi_displacement",
+    "CanonicalSlug": "ranger-tugs-r-29-classic-diesel",
+    "CanonicalPath": "/models/ranger-tugs-r-29-classic-diesel/",
+    "CanonicalURL": "https://b-atlas.org/models/ranger-tugs-r-29-classic-diesel/",
+    "StyleCode": "Tug Cruiser",
+    "CoolingCode": "cooling.fresh_water",
+    "FlybridgeCode": "availability.no",
+    "SideDecksCode": "side_decks.asymmetric",
+    "Headroom": 1.9812,
+    "HeadroomSalon": 1.9812,
+    "HeadroomHead": 1.8796,
+    "HeadroomForwardCabin": 1.8796,
+    "ShowerTypeCode": "shower.wet_head",
+    "DisplacementCruiseSpeed": 8,
+    "DisplacementCruiseFuelBurn": 7.571,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "LWL": 7.366,
+    "SpecificationConfidence": {
+      "LWL": {
+        "Level": "Low",
+        "Status": "estimated_family_ratio",
+        "EvidenceRefs": [],
+        "Note": "Working LWL estimate derived from the median LWL/LOA ratio (0.833) of other B-Atlas Ranger Tugs models with recorded waterline lengths. Intended for hull-speed context and community verification, not survey use."
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Ranger inboard model family uses shallow keel/protected shaft arrangement; representative classification retained with model-specific verification encouraged."
+      },
+      "DisplacementCruiseSpeed": {
+        "Level": "Medium",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://www.yachtworld.com/yacht/2012-ranger-tugs-r-29-s-10298994/"
+        ],
+        "Note": "Well-documented 2012 R-29 with Yanmar 6BY2-260 reports approximately 6 kn at 1600 rpm / 1.5 US gal/h and 8 kn at 1800 rpm / 2 US gal/h. Stored point uses 8 kn / 2 gph as representative efficient cruise for this configuration."
+      },
+      "DisplacementCruiseFuelBurn": {
+        "Level": "Medium",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://www.yachtworld.com/yacht/2012-ranger-tugs-r-29-s-10298994/"
+        ],
+        "Note": "Well-documented 2012 R-29 with Yanmar 6BY2-260 reports approximately 6 kn at 1600 rpm / 1.5 US gal/h and 8 kn at 1800 rpm / 2 US gal/h. Stored point uses 8 kn / 2 gph as representative efficient cruise for this configuration."
+      },
+      "EnginePowerPerEngine": {
+        "Level": "Medium",
+        "Status": "varies_by_configuration",
+        "EvidenceRefs": [
+          "https://www.yachtworld.com/yacht/2012-ranger-tugs-r-29-s-10298994/"
+        ],
+        "Note": "Classic R-29 examples include Yanmar 260-hp and later Volvo installations; cited hull uses Yanmar 6BY2-260."
+      }
+    },
+    "RunningGearProtectionCode": "running_gear.keel_protected"
+  },
+  {
+    "ManufacturerID": "RANGER_TUGS",
+    "Manufacturer": "Ranger Tugs",
+    "Model": "R-29 CB",
+    "Variant": "Command Bridge",
+    "Nickname": "Ranger Tugs R-29 CB",
+    "ImageURL": "images/rngr-29-cb.jpg",
+    "Active": false,
+    "FirstYear": 2015,
+    "LastYear": null,
+    "TotalBuilt": 140,
+    "Designer": "David Livingston",
+    "HullType": "Planing",
+    "Style": "Tug Cruiser",
+    "Construction": "Fiberglass",
+    "KeelType": "Shallow keel / skeg-protected running gear",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Single Inboard",
+    "Propulsion": "Shaft",
+    "Flybridge": "Yes",
+    "AftCabin": false,
+    "SideDecks": "Asymmetric",
+    "TypicalEngineID": "Volvo Penta D4 diesel",
+    "FuelCapacity": 548.8847,
+    "WaterCapacity": 170.3435,
+    "HoldingCapacity": 151.4165,
+    "Berths": 6,
+    "Cabins": 2,
+    "Heads": 1,
+    "Shower": true,
+    "Galley": true,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "No",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "Strengths": [
+      "Enclosed pilothouse with strong all-weather visibility",
+      "Cruising systems and accommodations packaged into a relatively compact hull",
+      "Strong factory documentation and owner-support ecosystem"
+    ],
+    "Weaknesses": "Complex systems, narrow interior circulation and ten-foot beam complicate routine road transport.",
+    "CommonProblems": "Verify Volvo service history, thrusters, electrical integration, glazing, cockpit drains and moisture around deck fittings.",
+    "TypicalMission": "Extended couple cruising, Great Loop and protected coastal passages.",
+    "AvoidIf": [
+      "You want a simple low-systems boat with minimal installed equipment",
+      "You require large private accommodations for several adults",
+      "You prefer only traditional displacement-speed shaft-drive propulsion"
+    ],
+    "DateCreated": "2026-07-10",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "B-Atlas Phase 8C-9 Family Research",
+    "Revision": 3,
+    "BoatModelID": "RNGR-29-CB",
+    "BoatFamily": "Tug Cruiser",
+    "Configuration": "Command-Bridge Tug Cruiser",
+    "HullBehaviour": "Planing",
+    "Features": [
+      "Walkthrough Transom",
+      "Swim Platform",
+      "Bow Thruster",
+      "Stern Thruster",
+      "Windlass",
+      "Wet Head",
+      "Side Helm Door",
+      "Solar Panel",
+      "Inverter",
+      "Command Bridge"
+    ],
+    "ModelSeries": "Ranger Tugs R-29",
+    "ModelGeneration": "Command Bridge",
+    "EvolutionSequence": 2,
+    "EvolutionNotes": "Sedan and Command Bridge are separate buyer-fit configurations; the bridge adds a complete upper helm, height and exterior access demands.",
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Planing",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Tug Cruiser",
+    "DataConfidence": "Moderate",
+    "ResearchStatus": "Reviewed",
+    "Overview": "The Ranger Tugs R-29 Command Bridge is a compact pilothouse cruising boat in Ranger Tugs’ trailerable-to-coastal range. This version is single-diesel and combines an enclosed helm, cruising accommodations and a workboat-inspired profile with systems intended for short-handed recreational cruising.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "Layout and systems support extended cruising for a couple."
+      },
+      "SoloHandling": {
+        "Assessment": "Good",
+        "Summary": "Pilothouse visibility and accessible controls support short-handed operation."
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "Suitable where beam, draft and bridge clearance fit the route."
+      },
+      "ExposedWater": {
+        "Assessment": "Good",
+        "Summary": "Designed for coastal operation, subject to weather, load and operator judgment."
+      }
+    },
+    "TradeOffs": [
+      "High systems density can make service access tight",
+      "Accommodation volume is achieved within relatively narrow hulls on the trailerable models",
+      "Later outboard and pod-drive versions trade traditional shaft simplicity for speed and maneuverability"
+    ],
+    "BestFor": [
+      "Couples or small crews wanting a compact, highly equipped pilothouse cruiser",
+      "Owners who value trailerability or manageable marina dimensions where the specific model permits it",
+      "Inland, Great Loop and coastal cruising within the model’s dimensional and operating limits"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Confirm exact generation, engine package and factory variant from HIN and documentation",
+      "Inspect propulsion, cooling, fuel, steering, thrusters and charging systems",
+      "Test windows, hatches, doors and roof/deck penetrations for leakage",
+      "Verify trailer, bridge-clearance and actual loaded-weight limits where trailering is planned"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for confirm exact generation, engine package and factory variant from HIN and documentation?",
+      "What inspection, repair or service history is available for inspect propulsion, cooling, fuel, steering, thrusters and charging systems?",
+      "What inspection, repair or service history is available for test windows, hatches, doors and roof/deck penetrations for leakage?",
+      "What inspection, repair or service history is available for verify trailer, bridge-clearance and actual loaded-weight limits where trailering is planned?"
+    ],
+    "OwnerActions": [
+      "Maintain engine, cooling, fuel and steering systems to manufacturer intervals",
+      "Keep deck, window and hardware penetrations sealed and investigate leaks promptly",
+      "Document structural, electrical and propulsion repairs for future buyers"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "Generation and propulsion changes",
+        "Description": "Ranger reused several model numbers across materially different diesel-inboard and later outboard generations; Sedan and Command Bridge versions are separate configurations where offered.",
+        "AffectedYears": "Varies by model",
+        "EvidenceRefs": [
+          "https://www.rangertugs.com/past-models",
+          "https://www.rangertugs.com/models"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "RNGR-29-CB"
+            ],
+            "Years": {
+              "From": 2015,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.rangertugs.com/models",
+            "https://www.rangertugs.com/past-models",
+            "https://www.rangertugs.com/spec-sheets/r-29-cb"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Identity and representative specifications are supported by manufacturer or model-specific technical references; unresolved production or configuration differences remain explicit."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "RNGR-29-CB"
+            ],
+            "Years": {
+              "From": 2015,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.rangertugs.com/models",
+            "https://www.rangertugs.com/past-models",
+            "https://www.rangertugs.com/spec-sheets/r-29-cb"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance is derived from documented configuration, propulsion, dimensions and intended use rather than marketplace promotional language."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "RNGR-29-CB"
+            ],
+            "Years": {
+              "From": 2015,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.rangertugs.com/models",
+            "https://www.rangertugs.com/past-models",
+            "https://www.rangertugs.com/spec-sheets/r-29-cb"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance combines documented systems with age- and configuration-related checks; it does not assert that every hull has a defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Exact production-year boundaries for some historical Ranger generations should be verified against individual HIN/model-year documentation.",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold"
+      ]
+    },
+    "ResearchNotes": "Phase 8C-9 normalized 2026-08-07 using manufacturer/model-specific sources. Unsupported defects remain unknown.\n\n[Phase 8A legacy structured context]\n{\n  \"marketAvailability\": \"Used-market availability varies by region, configuration and condition.\",\n  \"partsAvailability\": \"Major systems remain serviceable; model-specific trim, glazing and obsolete components require verification.\",\n  \"commonUpgrades\": [\n    \"Bridge canvas renewal\",\n    \"Battery-health monitoring\",\n    \"Preventive cooling-system service\"\n  ],\n  \"comparableModels\": [\n    \"Ranger Tugs R-29 Sedan\",\n    \"Nimbus 305 Coupé\",\n    \"Camano Troll 31\"\n  ],\n  \"knowledgeRelationships\": {\n    \"comparableTo\": [\n      \"Ranger Tugs R-29 Sedan\",\n      \"Camano Troll 31\"\n    ],\n    \"alternativeIf\": [\n      \"Elevated helm visibility is a priority\"\n    ],\n    \"stepUpFrom\": [\n      \"Ranger Tugs R-27\"\n    ]\n  },\n  \"bScoutNotes\": [\n    \"Command Bridge and Sedan are separate buyer-fit models.\",\n    \"The upper helm must be evaluated for safe access, seating and route clearance.\"\n  ],\n  \"refitPriority\": {\n    \"essential\": [\n      \"Bridge structure, drains and controls\",\n      \"Volvo service records and cooling system\"\n    ],\n    \"recommended\": [\n      \"Bridge canvas renewal\",\n      \"Battery-health monitoring\"\n    ],\n    \"optional\": [\n      \"Preventive cooling-system service\"\n    ]\n  },\n  \"ownershipScores\": {\n    \"mechanicalSimplicity\": 2,\n    \"maintenanceEase\": 2,\n    \"partsAvailability\": 4,\n    \"diyFriendliness\": 2,\n    \"operatingAffordability\": 2\n  },\n  \"ownershipEase\": \"Low\",\n  \"maintenanceEase\": \"Low\"\n}\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "EngineCount": 1,
+    "ModelCharacter": "The upper-helm version of the modern R-29, adding a four-seat command bridge and duplicate navigation/engine controls to the same compact diesel cruising platform.",
+    "DesignLineage": [
+      "The R-29 CB is the command-bridge sistership of the R-29 S.",
+      "Ranger defines CB as Command Bridge and S as Sedan.",
+      "The hull, lower accommodations and single Volvo diesel are shared with the Sedan.",
+      "The bridge adds height, weight and exterior social space rather than creating a different hull generation."
+    ],
+    "OwnershipCharacter": "Offers a true outdoor helm without sacrificing the lower station, but adds canvas, electronics, controls and vertical clearance to maintain and consider for bridges/trailering.",
+    "CharacterConfidence": "High",
+    "DisplacementLb": 10800,
+    "FuelCapacityGal": 145,
+    "WaterCapacityGal": 45,
+    "NormalizedHullType": "Semi-Displacement",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "RarityConfidence": "Not rated",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "PriceConfidence": "Not rated",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "BoatFamilyCode": "boat_family.tug",
+    "FuelCode": "fuel.diesel",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "LOA": 10.0584,
+    "LWL": 8.382,
+    "Beam": 3.048,
+    "Draft": 0.762,
+    "AirDraft": 4.1148,
+    "Displacement": 4762.7,
+    "HullBehaviourCode": "hull_behaviour.semi_displacement",
+    "KeelConfigurationCode": "keel.protective",
+    "CanonicalSlug": "ranger-tugs-r-29-cb-command-bridge",
+    "CanonicalPath": "/models/ranger-tugs-r-29-cb-command-bridge/",
+    "CanonicalURL": "https://b-atlas.org/models/ranger-tugs-r-29-cb-command-bridge/",
+    "StyleCode": "Tug Cruiser",
+    "CoolingCode": "cooling.fresh_water",
+    "FlybridgeCode": "availability.yes",
+    "SideDecksCode": "side_decks.asymmetric",
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "ShowerTypeCode": "shower.present_unspecified",
+    "SpecificationConfidence": {
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing propulsion/keel description; no new factual assertion introduced."
+      }
+    },
+    "RunningGearProtectionCode": "running_gear.skeg_protected"
+  },
+  {
+    "ManufacturerID": "RANGER_TUGS",
+    "Manufacturer": "Ranger Tugs",
+    "Model": "R-29 S",
+    "Variant": "Sedan",
+    "Nickname": "Ranger Tugs R-29 S",
+    "ImageURL": "images/rngr-r-29.jpg",
+    "Active": false,
+    "FirstYear": 2009,
+    "LastYear": 2026,
+    "TotalBuilt": 160,
+    "Designer": "David Livingston",
+    "HullType": "Planing",
+    "Style": "Tug Cruiser",
+    "Construction": "Fiberglass",
+    "KeelType": "Shallow keel / skeg-protected running gear",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Single Inboard",
+    "Propulsion": "Shaft",
+    "Flybridge": "No",
+    "AftCabin": false,
+    "SideDecks": "Asymmetric",
+    "TypicalEngineID": "Volvo Penta D4 diesel",
+    "FuelCapacity": 548.8847,
+    "WaterCapacity": 170.3435,
+    "HoldingCapacity": 151.4165,
+    "Berths": 6,
+    "Cabins": 2,
+    "Heads": 1,
+    "Shower": true,
+    "Galley": true,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "No",
+    "GreatLoopSuitable": true,
+    "Trailerable": true,
+    "Strengths": [
+      "Enclosed pilothouse with strong all-weather visibility",
+      "Cruising systems and accommodations packaged into a relatively compact hull",
+      "Strong factory documentation and owner-support ecosystem"
+    ],
+    "Weaknesses": "Complex systems, narrow interior circulation and ten-foot beam complicate routine road transport.",
+    "CommonProblems": "Verify Volvo service history, thrusters, electrical integration, glazing, cockpit drains and moisture around deck fittings.",
+    "TypicalMission": "Extended couple cruising, Great Loop and protected coastal passages.",
+    "AvoidIf": [
+      "You want a simple low-systems boat with minimal installed equipment",
+      "You require large private accommodations for several adults",
+      "You prefer only traditional displacement-speed shaft-drive propulsion"
+    ],
+    "DateCreated": "2026-07-13",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "B-Atlas Phase 8C-9 Family Research",
+    "Revision": 3,
+    "BoatModelID": "RNGR-R-29",
+    "BoatFamily": "Tug Cruiser",
+    "Configuration": "Sedan Tug Cruiser",
+    "HullBehaviour": "Planing",
+    "Features": [
+      "Walkthrough Transom",
+      "Swim Platform",
+      "Bow Thruster",
+      "Stern Thruster",
+      "Windlass",
+      "Wet Head",
+      "Side Helm Door",
+      "Solar Panel",
+      "Inverter",
+      "Sedan Hardtop"
+    ],
+    "ModelSeries": "Ranger Tugs R-29",
+    "ModelGeneration": "Sedan",
+    "EvolutionSequence": 1,
+    "EvolutionNotes": "Sedan and Command Bridge are separate buyer-fit configurations; the bridge adds a complete upper helm, height and exterior access demands.",
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Planing",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Tug Cruiser",
+    "DataConfidence": "Moderate",
+    "ResearchStatus": "Reviewed",
+    "Overview": "The Ranger Tugs R-29 Sedan is a compact pilothouse cruising boat in Ranger Tugs’ trailerable-to-coastal range. This version is single-diesel and combines an enclosed helm, cruising accommodations and a workboat-inspired profile with systems intended for short-handed recreational cruising.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "Layout and systems support extended cruising for a couple."
+      },
+      "SoloHandling": {
+        "Assessment": "Good",
+        "Summary": "Pilothouse visibility and accessible controls support short-handed operation."
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "Suitable where beam, draft and bridge clearance fit the route."
+      },
+      "ExposedWater": {
+        "Assessment": "Good",
+        "Summary": "Designed for coastal operation, subject to weather, load and operator judgment."
+      }
+    },
+    "TradeOffs": [
+      "High systems density can make service access tight",
+      "Accommodation volume is achieved within relatively narrow hulls on the trailerable models",
+      "Later outboard and pod-drive versions trade traditional shaft simplicity for speed and maneuverability"
+    ],
+    "BestFor": [
+      "Couples or small crews wanting a compact, highly equipped pilothouse cruiser",
+      "Owners who value trailerability or manageable marina dimensions where the specific model permits it",
+      "Inland, Great Loop and coastal cruising within the model’s dimensional and operating limits"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Confirm exact generation, engine package and factory variant from HIN and documentation",
+      "Inspect propulsion, cooling, fuel, steering, thrusters and charging systems",
+      "Test windows, hatches, doors and roof/deck penetrations for leakage",
+      "Verify trailer, bridge-clearance and actual loaded-weight limits where trailering is planned"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for confirm exact generation, engine package and factory variant from HIN and documentation?",
+      "What inspection, repair or service history is available for inspect propulsion, cooling, fuel, steering, thrusters and charging systems?",
+      "What inspection, repair or service history is available for test windows, hatches, doors and roof/deck penetrations for leakage?",
+      "What inspection, repair or service history is available for verify trailer, bridge-clearance and actual loaded-weight limits where trailering is planned?"
+    ],
+    "OwnerActions": [
+      "Maintain engine, cooling, fuel and steering systems to manufacturer intervals",
+      "Keep deck, window and hardware penetrations sealed and investigate leaks promptly",
+      "Document structural, electrical and propulsion repairs for future buyers"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "Generation and propulsion changes",
+        "Description": "Ranger reused several model numbers across materially different diesel-inboard and later outboard generations; Sedan and Command Bridge versions are separate configurations where offered.",
+        "AffectedYears": "Varies by model",
+        "EvidenceRefs": [
+          "https://www.rangertugs.com/past-models",
+          "https://www.rangertugs.com/models"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "RNGR-R-29"
+            ],
+            "Years": {
+              "From": 2009,
+              "To": 2026
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.rangertugs.com/models",
+            "https://www.rangertugs.com/past-models"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Identity and representative specifications are supported by manufacturer or model-specific technical references; unresolved production or configuration differences remain explicit."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "RNGR-R-29"
+            ],
+            "Years": {
+              "From": 2009,
+              "To": 2026
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.rangertugs.com/models",
+            "https://www.rangertugs.com/past-models"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance is derived from documented configuration, propulsion, dimensions and intended use rather than marketplace promotional language."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "RNGR-R-29"
+            ],
+            "Years": {
+              "From": 2009,
+              "To": 2026
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.rangertugs.com/models",
+            "https://www.rangertugs.com/past-models"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance combines documented systems with age- and configuration-related checks; it does not assert that every hull has a defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Exact production-year boundaries for some historical Ranger generations should be verified against individual HIN/model-year documentation.",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold"
+      ]
+    },
+    "ResearchNotes": "Phase 8C-9 normalized 2026-08-07 using manufacturer/model-specific sources. Unsupported defects remain unknown.\n\n[Phase 8A legacy structured context]\n{\n  \"marketAvailability\": \"Used-market availability varies by region, configuration and condition.\",\n  \"partsAvailability\": \"Major systems remain serviceable; model-specific trim, glazing and obsolete components require verification.\",\n  \"commonUpgrades\": [\n    \"Battery-health monitoring\",\n    \"Preventive cooling-system service\",\n    \"Cockpit shade or enclosure\"\n  ],\n  \"comparableModels\": [\n    \"Ranger Tugs R-29 Command Bridge\",\n    \"Nimbus 305 Coupé\",\n    \"Camano Troll 31\"\n  ],\n  \"knowledgeRelationships\": {\n    \"comparableTo\": [\n      \"Ranger Tugs R-29 Command Bridge\",\n      \"Nimbus 305 Coupé\"\n    ],\n    \"alternativeIf\": [\n      \"Lower air draft and single helm are preferred\"\n    ],\n    \"stepUpFrom\": [\n      \"Ranger Tugs R-27\"\n    ]\n  },\n  \"bScoutNotes\": [\n    \"The sedan avoids bridge access but does not make the boat mechanically simple.\",\n    \"Evaluate the mid-berth and cabin circulation in person.\"\n  ],\n  \"refitPriority\": {\n    \"essential\": [\n      \"Volvo service records and cooling system\",\n      \"Thrusters and integrated electrical systems\"\n    ],\n    \"recommended\": [\n      \"Battery-health monitoring\",\n      \"Preventive cooling-system service\"\n    ],\n    \"optional\": [\n      \"Cockpit shade or enclosure\"\n    ]\n  },\n  \"ownershipScores\": {\n    \"mechanicalSimplicity\": 2,\n    \"maintenanceEase\": 2,\n    \"partsAvailability\": 4,\n    \"diyFriendliness\": 2,\n    \"operatingAffordability\": 2\n  },\n  \"ownershipEase\": \"Low\",\n  \"maintenanceEase\": \"Low\"\n}\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.\n\nCruising Performance Research Wave 3 v7.02 (2026-09-14).",
+    "EngineCount": 1,
+    "ModelCharacter": "A modern 10-foot-beam diesel sedan cruiser with an unusually open, light-filled cabin, convertible cockpit seating and enough volume for extended couple cruising while remaining transportable with permits.",
+    "DesignLineage": [
+      "The R-29 S succeeded the earlier R-29 Classic with a new, more contemporary cabin and interior architecture.",
+      "S means Sedan—the hardtop/lower-helm version of the current R-29 family.",
+      "The R-29 CB shares the same core hull and accommodations but adds a full upper command bridge.",
+      "Both current versions use single Volvo D4 diesel inboard propulsion."
+    ],
+    "OwnershipCharacter": "Single-diesel economy and bow/stern thrusters keep handling approachable, but dense installed systems and tight packaging mean maintenance access is more involved than on simpler traditional trawlers.",
+    "CharacterConfidence": "High",
+    "DisplacementLb": 10500,
+    "FuelCapacityGal": 145,
+    "WaterCapacityGal": 45,
+    "NormalizedHullType": "Semi-Displacement",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "RarityConfidence": "Not rated",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "PriceConfidence": "Not rated",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "BoatFamilyCode": "boat_family.tug",
+    "FuelCode": "fuel.diesel",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "LOA": 10.0584,
+    "Beam": 3.048,
+    "Draft": 0.762,
+    "Displacement": 4762.7,
+    "EnginePowerPerEngine": 238.62,
+    "KeelConfigurationCode": "keel.protective",
+    "RunningGearProtectionCode": "running_gear.keel_protected",
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "LWL": 8.382,
+    "AirDraft": 4.1148,
+    "HullBehaviourCode": "hull_behaviour.semi_displacement",
+    "CanonicalSlug": "ranger-tugs-r-29-s-sedan",
+    "CanonicalPath": "/models/ranger-tugs-r-29-s-sedan/",
+    "CanonicalURL": "https://b-atlas.org/models/ranger-tugs-r-29-s-sedan/",
+    "StyleCode": "Tug Cruiser",
+    "CoolingCode": "cooling.fresh_water",
+    "FlybridgeCode": "availability.no",
+    "SideDecksCode": "side_decks.asymmetric",
+    "DisplacementCruiseSpeed": 7.2,
+    "DisplacementCruiseFuelBurn": 7.571,
+    "PlaningCruiseSpeed": 17.3,
+    "PlaningCruiseFuelBurn": 45.046,
+    "ShowerTypeCode": "shower.present_unspecified",
+    "SpecificationConfidence": {
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      },
+      "DisplacementCruiseSpeed": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://www.rangertugs.com/media/2392/ranger-tugs-r29-d4-320.pdf"
+        ],
+        "Note": "Ranger Tugs/Volvo-verified performance bulletin, D4-320: 7.2 kn at 1600 rpm and 2.0 US gal/h. Stored as displacement-cruise point for the D4-320 configuration."
+      },
+      "DisplacementCruiseFuelBurn": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://www.rangertugs.com/media/2392/ranger-tugs-r29-d4-320.pdf"
+        ],
+        "Note": "Ranger Tugs/Volvo-verified performance bulletin, D4-320: 7.2 kn at 1600 rpm and 2.0 US gal/h. Stored as displacement-cruise point for the D4-320 configuration."
+      },
+      "PlaningCruiseSpeed": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://www.rangertugs.com/media/2392/ranger-tugs-r29-d4-320.pdf"
+        ],
+        "Note": "Same verified D4-320 bulletin: 17.3 kn at 3200 rpm and 11.9 US gal/h; representative faster/semi-planing cruise point."
+      },
+      "PlaningCruiseFuelBurn": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://www.rangertugs.com/media/2392/ranger-tugs-r29-d4-320.pdf"
+        ],
+        "Note": "Same verified D4-320 bulletin: 17.3 kn at 3200 rpm and 11.9 US gal/h; representative faster/semi-planing cruise point."
+      },
+      "EnginePowerPerEngine": {
+        "Level": "High",
+        "Status": "supported",
+        "EvidenceRefs": [
+          "https://www.rangertugs.com/media/2392/ranger-tugs-r29-d4-320.pdf"
+        ],
+        "Note": "Verified Ranger/Volvo bulletin uses one Volvo Penta D4-320 diesel."
+      }
+    }
+  },
+  {
+    "ManufacturerID": "RANGER_TUGS",
+    "Manufacturer": "Ranger Tugs",
+    "Model": "R-31 CB",
+    "Variant": "Command Bridge",
+    "Nickname": "Ranger Tugs R-31 CB",
+    "ImageURL": "images/rngr-31-cb.jpg",
+    "Active": true,
+    "FirstYear": 2012,
+    "LastYear": null,
+    "TotalBuilt": null,
+    "Designer": "David Livingston",
+    "HullType": "Planing",
+    "Style": "Tug Cruiser",
+    "Construction": "Fiberglass",
+    "KeelType": "Model-specific; verify actual hull and running gear",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Single Volvo D4 320 diesel inboard",
+    "Propulsion": "Shaft",
+    "Flybridge": "Yes",
+    "AftCabin": false,
+    "SideDecks": "Asymmetric",
+    "TypicalEngineID": "Single Volvo D4 320 diesel inboard",
+    "FuelCapacity": 681.3741,
+    "WaterCapacity": 227.1247,
+    "HoldingCapacity": 151.4165,
+    "Berths": 4,
+    "Cabins": 1,
+    "Heads": 1,
+    "Shower": true,
+    "Galley": true,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "No",
+    "GreatLoopSuitable": true,
+    "Trailerable": true,
+    "Strengths": [
+      "Enclosed pilothouse with strong all-weather visibility",
+      "Cruising systems and accommodations packaged into a relatively compact hull",
+      "Strong factory documentation and owner-support ecosystem"
+    ],
+    "Weaknesses": "Compact spaces and equipment density require hands-on crew-fit and service-access checks.",
+    "CommonProblems": "Verify propulsion service, cooling, thrusters, electrical integration, glazing, deck penetrations and model-year-specific systems.",
+    "TypicalMission": "Protected coastal, inland and Great Loop cruising.",
+    "AvoidIf": [
+      "You want a simple low-systems boat with minimal installed equipment",
+      "You require large private accommodations for several adults",
+      "You prefer only traditional displacement-speed shaft-drive propulsion"
+    ],
+    "DateCreated": "2026-07-25",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "B-Atlas Phase 8C-9 Family Research",
+    "Revision": 2,
+    "BoatModelID": "RNGR-31-CB",
+    "BoatFamily": "Tug Cruiser",
+    "Configuration": "Command Bridge Tug Cruiser",
+    "HullBehaviour": "Planing",
+    "Features": [
+      "Walkthrough Transom",
+      "Swim Platform",
+      "Windlass",
+      "Wet Head",
+      "Side Helm Door",
+      "Inverter",
+      "Bow Thruster",
+      "Stern Thruster",
+      "Solar Panel",
+      "Separate Shower",
+      "Flybridge"
+    ],
+    "ModelSeries": "Ranger Tugs R-31",
+    "ModelGeneration": "Command Bridge",
+    "EvolutionSequence": 1,
+    "EvolutionNotes": "Command Bridge counterpart to the R-31 Sedan.",
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Planing",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Tug Cruiser",
+    "DataConfidence": "Moderate",
+    "ResearchStatus": "Reviewed",
+    "Overview": "The Ranger Tugs R-31 Command Bridge is a compact pilothouse cruising boat in Ranger Tugs’ trailerable-to-coastal range. This version is single-diesel and combines an enclosed helm, cruising accommodations and a workboat-inspired profile with systems intended for short-handed recreational cruising.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "Layout and systems support extended cruising for a couple."
+      },
+      "SoloHandling": {
+        "Assessment": "Good",
+        "Summary": "Pilothouse visibility and accessible controls support short-handed operation."
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "Suitable where beam, draft and bridge clearance fit the route."
+      },
+      "ExposedWater": {
+        "Assessment": "Good",
+        "Summary": "Designed for coastal operation, subject to weather, load and operator judgment."
+      }
+    },
+    "TradeOffs": [
+      "High systems density can make service access tight",
+      "Accommodation volume is achieved within relatively narrow hulls on the trailerable models",
+      "Later outboard and pod-drive versions trade traditional shaft simplicity for speed and maneuverability"
+    ],
+    "BestFor": [
+      "Couples or small crews wanting a compact, highly equipped pilothouse cruiser",
+      "Owners who value trailerability or manageable marina dimensions where the specific model permits it",
+      "Inland, Great Loop and coastal cruising within the model’s dimensional and operating limits"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Confirm exact generation, engine package and factory variant from HIN and documentation",
+      "Inspect propulsion, cooling, fuel, steering, thrusters and charging systems",
+      "Test windows, hatches, doors and roof/deck penetrations for leakage",
+      "Verify trailer, bridge-clearance and actual loaded-weight limits where trailering is planned"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for confirm exact generation, engine package and factory variant from HIN and documentation?",
+      "What inspection, repair or service history is available for inspect propulsion, cooling, fuel, steering, thrusters and charging systems?",
+      "What inspection, repair or service history is available for test windows, hatches, doors and roof/deck penetrations for leakage?",
+      "What inspection, repair or service history is available for verify trailer, bridge-clearance and actual loaded-weight limits where trailering is planned?"
+    ],
+    "OwnerActions": [
+      "Maintain engine, cooling, fuel and steering systems to manufacturer intervals",
+      "Keep deck, window and hardware penetrations sealed and investigate leaks promptly",
+      "Document structural, electrical and propulsion repairs for future buyers"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "Generation and propulsion changes",
+        "Description": "Ranger reused several model numbers across materially different diesel-inboard and later outboard generations; Sedan and Command Bridge versions are separate configurations where offered.",
+        "AffectedYears": "Varies by model",
+        "EvidenceRefs": [
+          "https://www.rangertugs.com/past-models",
+          "https://www.rangertugs.com/models"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "RNGR-31-CB"
+            ],
+            "Years": {
+              "From": 2012,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.rangertugs.com/models",
+            "https://www.rangertugs.com/past-models"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Identity and representative specifications are supported by manufacturer or model-specific technical references; unresolved production or configuration differences remain explicit."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "RNGR-31-CB"
+            ],
+            "Years": {
+              "From": 2012,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.rangertugs.com/models",
+            "https://www.rangertugs.com/past-models"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance is derived from documented configuration, propulsion, dimensions and intended use rather than marketplace promotional language."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "RNGR-31-CB"
+            ],
+            "Years": {
+              "From": 2012,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.rangertugs.com/models",
+            "https://www.rangertugs.com/past-models"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance combines documented systems with age- and configuration-related checks; it does not assert that every hull has a defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Exact production-year boundaries for some historical Ranger generations should be verified against individual HIN/model-year documentation.",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold"
+      ]
+    },
+    "ResearchNotes": "Phase 8C-9 normalized 2026-08-07 using manufacturer/model-specific sources. Unsupported defects remain unknown.\n\n[Phase 8A legacy structured context]\n{\n  \"marketAvailability\": \"Used-market availability varies by generation, propulsion and region.\",\n  \"partsAvailability\": \"Factory support and owner community are strengths; model-specific legacy components still require verification.\",\n  \"commonUpgrades\": [\n    \"Battery monitoring\",\n    \"Modern electronics where dated\",\n    \"Canvas or cockpit weather protection\"\n  ],\n  \"comparableModels\": [\n    \"Ranger Tugs R-31 Sedan\",\n    \"Ranger Tugs R-29 Command Bridge\"\n  ],\n  \"knowledgeRelationships\": {\n    \"comparableTo\": [\n      \"Ranger Tugs R-31 Sedan\",\n      \"Ranger Tugs R-29 Command Bridge\"\n    ],\n    \"alternativeIf\": [\n      \"A different Ranger generation better matches propulsion, budget or space priorities\"\n    ],\n    \"stepUpFrom\": []\n  },\n  \"bScoutNotes\": [\n    \"Identify the exact R-31 generation before applying specifications.\",\n    \"Factory packages and owner modifications can materially change equipment and weight.\"\n  ],\n  \"refitPriority\": {\n    \"essential\": [\n      \"Bridge structure and controls\",\n      \"Volvo and thrusters\"\n    ],\n    \"recommended\": [\n      \"Battery monitoring\",\n      \"Cooling-system service\"\n    ],\n    \"optional\": [\n      \"Canvas or cockpit weather protection\"\n    ]\n  },\n  \"ownershipScores\": {\n    \"mechanicalSimplicity\": 2,\n    \"maintenanceEase\": 2,\n    \"partsAvailability\": 4,\n    \"diyFriendliness\": 2,\n    \"operatingAffordability\": 2\n  },\n  \"ownershipEase\": \"Low\",\n  \"maintenanceEase\": \"Low\"\n}\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.\n\nCruising Performance Research Wave 4 v7.03 (2026-09-14).",
+    "EngineCount": 1,
+    "ModelCharacter": "A two-helm, 10-foot-beam cruiser that combines the accommodations of the R-31 Sedan with a retractable command bridge seating six—an unusually complete package for a boat still designed around trailering.",
+    "DesignLineage": [
+      "The R-31 CB is the command-bridge sistership of the R-31 S.",
+      "Ranger identifies it as the first Ranger Tug to feature a flybridge with electronic controls at both helms.",
+      "The bridge retracts for transport.",
+      "Hull, accommodations and single Volvo D4 propulsion are shared with the Sedan family."
+    ],
+    "OwnershipCharacter": "The upper helm greatly expands fair-weather use, but increases air-draft management, electronics duplication and exterior maintenance.",
+    "CharacterConfidence": "High",
+    "DisplacementLb": 12500,
+    "FuelCapacityGal": 180,
+    "WaterCapacityGal": 60,
+    "NormalizedHullType": "Semi-Displacement",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "RarityConfidence": "Not rated",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "PriceConfidence": "Not rated",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "BoatFamilyCode": "boat_family.tug",
+    "FuelCode": "fuel.diesel",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "LOA": 10.6172,
+    "Beam": 3.048,
+    "Draft": 0.762,
+    "Displacement": 5669.9,
+    "EnginePowerPerEngine": 238.62,
+    "FlybridgeCode": "availability.yes",
+    "KeelConfigurationCode": "keel.protective",
+    "RunningGearProtectionCode": "running_gear.keel_protected",
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "AirDraft": 3.9624,
+    "HullBehaviourCode": "hull_behaviour.semi_displacement",
+    "CanonicalSlug": "ranger-tugs-r-31-cb-command-bridge",
+    "CanonicalPath": "/models/ranger-tugs-r-31-cb-command-bridge/",
+    "CanonicalURL": "https://b-atlas.org/models/ranger-tugs-r-31-cb-command-bridge/",
+    "StyleCode": "Tug Cruiser",
+    "CoolingCode": "cooling.fresh_water",
+    "SideDecksCode": "side_decks.asymmetric",
+    "DisplacementCruiseSpeed": 6.6,
+    "DisplacementCruiseFuelBurn": 6.057,
+    "PlaningCruiseSpeed": 15.5,
+    "PlaningCruiseFuelBurn": 37.854,
+    "LWL": 8.8477,
+    "SpecificationConfidence": {
+      "LWL": {
+        "Level": "Low",
+        "Status": "estimated_family_ratio",
+        "EvidenceRefs": [],
+        "Note": "Working LWL estimate derived from the median LWL/LOA ratio (0.833) of other B-Atlas Ranger Tugs models with recorded waterline lengths. Intended for hull-speed context and community verification, not survey use."
+      },
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      },
+      "DisplacementCruiseSpeed": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://www.rangertugs.com/media/2394/ranger-tugs-r31-d4-320.pdf"
+        ],
+        "Note": "Ranger Tugs / Volvo Penta verified bulletin, D4-320: 6.6 kn at 1500 rpm and 1.6 US gal/h. Stored as displacement-speed cruise point."
+      },
+      "DisplacementCruiseFuelBurn": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://www.rangertugs.com/media/2394/ranger-tugs-r31-d4-320.pdf"
+        ],
+        "Note": "Ranger Tugs / Volvo Penta verified bulletin, D4-320: 6.6 kn at 1500 rpm and 1.6 US gal/h. Stored as displacement-speed cruise point."
+      },
+      "PlaningCruiseSpeed": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://www.rangertugs.com/media/2394/ranger-tugs-r31-d4-320.pdf"
+        ],
+        "Note": "Same verified bulletin: 15.5 kn at 3000 rpm and 10.0 US gal/h; representative faster/semi-planing cruise point."
+      },
+      "PlaningCruiseFuelBurn": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://www.rangertugs.com/media/2394/ranger-tugs-r31-d4-320.pdf"
+        ],
+        "Note": "Same verified bulletin: 15.5 kn at 3000 rpm and 10.0 US gal/h; representative faster/semi-planing cruise point."
+      },
+      "EnginePowerPerEngine": {
+        "Level": "High",
+        "Status": "supported",
+        "EvidenceRefs": [
+          "https://www.rangertugs.com/media/2394/ranger-tugs-r31-d4-320.pdf"
+        ],
+        "Note": "Verified bulletin uses one Volvo Penta D4-320 diesel."
+      }
+    },
+    "ShowerTypeCode": "shower.present_unspecified"
+  },
+  {
+    "ManufacturerID": "RANGER_TUGS",
+    "Manufacturer": "Ranger Tugs",
+    "Model": "R-31 S",
+    "Variant": "Sedan",
+    "Nickname": "Ranger Tugs R-31 S",
+    "ImageURL": "images/rngr-r-31.jpg",
+    "Active": true,
+    "FirstYear": 2012,
+    "LastYear": 2026,
+    "TotalBuilt": null,
+    "Designer": "David Livingston",
+    "HullType": "Planing",
+    "Style": "Tug Cruiser",
+    "Construction": "Fiberglass",
+    "KeelType": "Model-specific; verify actual hull and running gear",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Single Volvo D4 320 diesel inboard",
+    "Propulsion": "Shaft",
+    "Flybridge": "No",
+    "AftCabin": false,
+    "SideDecks": "Asymmetric",
+    "TypicalEngineID": "Single Volvo D4 320 diesel inboard",
+    "FuelCapacity": 681.3741,
+    "WaterCapacity": 227.1247,
+    "HoldingCapacity": 151.4165,
+    "Berths": 4,
+    "Cabins": 1,
+    "Heads": 1,
+    "Shower": true,
+    "Galley": true,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "No",
+    "GreatLoopSuitable": true,
+    "Trailerable": true,
+    "Strengths": [
+      "Enclosed pilothouse with strong all-weather visibility",
+      "Cruising systems and accommodations packaged into a relatively compact hull",
+      "Strong factory documentation and owner-support ecosystem"
+    ],
+    "Weaknesses": "Compact spaces and equipment density require hands-on crew-fit and service-access checks.",
+    "CommonProblems": "Verify propulsion service, cooling, thrusters, electrical integration, glazing, deck penetrations and model-year-specific systems.",
+    "TypicalMission": "Protected coastal, inland and Great Loop cruising.",
+    "AvoidIf": [
+      "You want a simple low-systems boat with minimal installed equipment",
+      "You require large private accommodations for several adults",
+      "You prefer only traditional displacement-speed shaft-drive propulsion"
+    ],
+    "DateCreated": "2026-07-25",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "B-Atlas Phase 8C-9 Family Research",
+    "Revision": 2,
+    "BoatModelID": "RNGR-R-31",
+    "BoatFamily": "Tug Cruiser",
+    "Configuration": "Sedan Tug Cruiser",
+    "HullBehaviour": "Planing",
+    "Features": [
+      "Walkthrough Transom",
+      "Swim Platform",
+      "Windlass",
+      "Wet Head",
+      "Side Helm Door",
+      "Inverter",
+      "Bow Thruster",
+      "Stern Thruster",
+      "Solar Panel",
+      "Separate Shower"
+    ],
+    "ModelSeries": "Ranger Tugs R-31",
+    "ModelGeneration": "Sedan",
+    "EvolutionSequence": 1,
+    "EvolutionNotes": "Sedan counterpart to the retractable Command Bridge model.",
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Planing",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Tug Cruiser",
+    "DataConfidence": "Moderate",
+    "ResearchStatus": "Reviewed",
+    "Overview": "The Ranger Tugs R-31 Sedan is a compact pilothouse cruising boat in Ranger Tugs’ trailerable-to-coastal range. This version is single-diesel and combines an enclosed helm, cruising accommodations and a workboat-inspired profile with systems intended for short-handed recreational cruising.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "Layout and systems support extended cruising for a couple."
+      },
+      "SoloHandling": {
+        "Assessment": "Good",
+        "Summary": "Pilothouse visibility and accessible controls support short-handed operation."
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "Suitable where beam, draft and bridge clearance fit the route."
+      },
+      "ExposedWater": {
+        "Assessment": "Good",
+        "Summary": "Designed for coastal operation, subject to weather, load and operator judgment."
+      }
+    },
+    "TradeOffs": [
+      "High systems density can make service access tight",
+      "Accommodation volume is achieved within relatively narrow hulls on the trailerable models",
+      "Later outboard and pod-drive versions trade traditional shaft simplicity for speed and maneuverability"
+    ],
+    "BestFor": [
+      "Couples or small crews wanting a compact, highly equipped pilothouse cruiser",
+      "Owners who value trailerability or manageable marina dimensions where the specific model permits it",
+      "Inland, Great Loop and coastal cruising within the model’s dimensional and operating limits"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Confirm exact generation, engine package and factory variant from HIN and documentation",
+      "Inspect propulsion, cooling, fuel, steering, thrusters and charging systems",
+      "Test windows, hatches, doors and roof/deck penetrations for leakage",
+      "Verify trailer, bridge-clearance and actual loaded-weight limits where trailering is planned"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for confirm exact generation, engine package and factory variant from HIN and documentation?",
+      "What inspection, repair or service history is available for inspect propulsion, cooling, fuel, steering, thrusters and charging systems?",
+      "What inspection, repair or service history is available for test windows, hatches, doors and roof/deck penetrations for leakage?",
+      "What inspection, repair or service history is available for verify trailer, bridge-clearance and actual loaded-weight limits where trailering is planned?"
+    ],
+    "OwnerActions": [
+      "Maintain engine, cooling, fuel and steering systems to manufacturer intervals",
+      "Keep deck, window and hardware penetrations sealed and investigate leaks promptly",
+      "Document structural, electrical and propulsion repairs for future buyers"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "Generation and propulsion changes",
+        "Description": "Ranger reused several model numbers across materially different diesel-inboard and later outboard generations; Sedan and Command Bridge versions are separate configurations where offered.",
+        "AffectedYears": "Varies by model",
+        "EvidenceRefs": [
+          "https://www.rangertugs.com/past-models",
+          "https://www.rangertugs.com/models"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "RNGR-R-31"
+            ],
+            "Years": {
+              "From": 2012,
+              "To": 2026
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.rangertugs.com/models",
+            "https://www.rangertugs.com/past-models",
+            "https://www.rangertugs.com/spec-sheets/r-31-s"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Identity and representative specifications are supported by manufacturer or model-specific technical references; unresolved production or configuration differences remain explicit."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "RNGR-R-31"
+            ],
+            "Years": {
+              "From": 2012,
+              "To": 2026
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.rangertugs.com/models",
+            "https://www.rangertugs.com/past-models",
+            "https://www.rangertugs.com/spec-sheets/r-31-s"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance is derived from documented configuration, propulsion, dimensions and intended use rather than marketplace promotional language."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "RNGR-R-31"
+            ],
+            "Years": {
+              "From": 2012,
+              "To": 2026
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.rangertugs.com/models",
+            "https://www.rangertugs.com/past-models",
+            "https://www.rangertugs.com/spec-sheets/r-31-s"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance combines documented systems with age- and configuration-related checks; it does not assert that every hull has a defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Exact production-year boundaries for some historical Ranger generations should be verified against individual HIN/model-year documentation.",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold"
+      ]
+    },
+    "ResearchNotes": "Phase 8C-9 normalized 2026-08-07 using manufacturer/model-specific sources. Unsupported defects remain unknown.\n\n[Phase 8A legacy structured context]\n{\n  \"marketAvailability\": \"Used-market availability varies by generation, propulsion and region.\",\n  \"partsAvailability\": \"Factory support and owner community are strengths; model-specific legacy components still require verification.\",\n  \"commonUpgrades\": [\n    \"Battery monitoring\",\n    \"Modern electronics where dated\",\n    \"Canvas or cockpit weather protection\"\n  ],\n  \"comparableModels\": [\n    \"Ranger Tugs R-31 Command Bridge\",\n    \"Ranger Tugs R-29 Sedan\"\n  ],\n  \"knowledgeRelationships\": {\n    \"comparableTo\": [\n      \"Ranger Tugs R-31 Command Bridge\",\n      \"Ranger Tugs R-29 Sedan\"\n    ],\n    \"alternativeIf\": [\n      \"A different Ranger generation better matches propulsion, budget or space priorities\"\n    ],\n    \"stepUpFrom\": []\n  },\n  \"bScoutNotes\": [\n    \"Identify the exact R-31 generation before applying specifications.\",\n    \"Factory packages and owner modifications can materially change equipment and weight.\"\n  ],\n  \"refitPriority\": {\n    \"essential\": [\n      \"Volvo service and cooling\",\n      \"Thrusters and electrical system\"\n    ],\n    \"recommended\": [\n      \"Battery monitoring\",\n      \"Cooling-system service\"\n    ],\n    \"optional\": [\n      \"Canvas or cockpit weather protection\"\n    ]\n  },\n  \"ownershipScores\": {\n    \"mechanicalSimplicity\": 2,\n    \"maintenanceEase\": 2,\n    \"partsAvailability\": 4,\n    \"diyFriendliness\": 2,\n    \"operatingAffordability\": 2\n  },\n  \"ownershipEase\": \"Low\",\n  \"maintenanceEase\": \"Low\"\n}\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "EngineCount": 1,
+    "ModelCharacter": "The largest trailerable single-diesel Ranger Sedan, adding two private sleeping zones, larger cockpit and foredeck seating while retaining a 10-foot beam and lower enclosed helm.",
+    "DesignLineage": [
+      "The R-31 S is the Sedan version of the R-31 family.",
+      "It extends the R-29 concept with more accommodation and cockpit volume.",
+      "The R-31 CB shares the same core platform but adds a retractable command bridge.",
+      "Ranger continues to position both as trailerable cruisers despite their substantial transport dimensions."
+    ],
+    "OwnershipCharacter": "Impressive accommodation for a single-engine boat, with relatively straightforward propulsion but many yacht-style electrical, climate and entertainment systems packed into a compact hull.",
+    "CharacterConfidence": "High",
+    "DisplacementLb": 12000,
+    "FuelCapacityGal": 180,
+    "WaterCapacityGal": 60,
+    "NormalizedHullType": "Semi-Displacement",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "RarityConfidence": "Not rated",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "PriceConfidence": "Not rated",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "BoatFamilyCode": "boat_family.tug",
+    "FuelCode": "fuel.diesel",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "LOA": 10.6172,
+    "Beam": 3.048,
+    "Draft": 0.762,
+    "Displacement": 5443.1,
+    "EnginePowerPerEngine": 238.62,
+    "KeelConfigurationCode": "keel.protective",
+    "RunningGearProtectionCode": "running_gear.keel_protected",
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "AirDraft": 3.048,
+    "HullBehaviourCode": "hull_behaviour.semi_displacement",
+    "CanonicalSlug": "ranger-tugs-r-31-s-sedan",
+    "CanonicalPath": "/models/ranger-tugs-r-31-s-sedan/",
+    "CanonicalURL": "https://b-atlas.org/models/ranger-tugs-r-31-s-sedan/",
+    "StyleCode": "Tug Cruiser",
+    "CoolingCode": "cooling.fresh_water",
+    "FlybridgeCode": "availability.no",
+    "SideDecksCode": "side_decks.asymmetric",
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "LWL": 8.8477,
+    "SpecificationConfidence": {
+      "LWL": {
+        "Level": "Low",
+        "Status": "estimated_family_ratio",
+        "EvidenceRefs": [],
+        "Note": "Working LWL estimate derived from the median LWL/LOA ratio (0.833) of other B-Atlas Ranger Tugs models with recorded waterline lengths. Intended for hull-speed context and community verification, not survey use."
+      },
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      }
+    },
+    "ShowerTypeCode": "shower.present_unspecified"
+  },
+  {
+    "ManufacturerID": "RANGER_TUGS",
+    "Manufacturer": "Ranger Tugs",
+    "Model": "R-43 CB",
+    "Variant": "Command Bridge",
+    "Nickname": "Ranger Tugs R-43 CB",
+    "ImageURL": "images/rngr-43-cb.jpg",
+    "Active": true,
+    "FirstYear": 2020,
+    "LastYear": 2026,
+    "TotalBuilt": null,
+    "Designer": "David Livingston",
+    "HullType": "Planing",
+    "Style": "Tug Cruiser",
+    "Construction": "Fiberglass",
+    "KeelType": "Model-specific; verify actual hull and running gear",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Twin Volvo IPS500 pod drives",
+    "Propulsion": "Pod",
+    "Flybridge": "Yes",
+    "AftCabin": false,
+    "SideDecks": "Asymmetric",
+    "TypicalEngineID": "Twin Volvo IPS500 pod drives",
+    "FuelCapacity": 1135.6235,
+    "WaterCapacity": 454.2494,
+    "HoldingCapacity": 215.7685,
+    "Berths": 4,
+    "Cabins": 1,
+    "Heads": 1,
+    "Shower": true,
+    "Galley": true,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "No",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "Strengths": [
+      "Enclosed pilothouse with strong all-weather visibility",
+      "Cruising systems and accommodations packaged into a relatively compact hull",
+      "Strong factory documentation and owner-support ecosystem"
+    ],
+    "Weaknesses": "Compact spaces and equipment density require hands-on crew-fit and service-access checks.",
+    "CommonProblems": "Verify propulsion service, cooling, thrusters, electrical integration, glazing, deck penetrations and model-year-specific systems.",
+    "TypicalMission": "Protected coastal, inland and Great Loop cruising.",
+    "AvoidIf": [
+      "You want a simple low-systems boat with minimal installed equipment",
+      "You require large private accommodations for several adults",
+      "You prefer only traditional displacement-speed shaft-drive propulsion"
+    ],
+    "DateCreated": "2026-07-25",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "B-Atlas Phase 8C-9 Family Research",
+    "Revision": 2,
+    "BoatModelID": "RNGR-43-CB",
+    "BoatFamily": "Tug Cruiser",
+    "Configuration": "Large Command Bridge Motor Cruiser",
+    "HullBehaviour": "Planing",
+    "Features": [
+      "Walkthrough Transom",
+      "Swim Platform",
+      "Windlass",
+      "Wet Head",
+      "Side Helm Door",
+      "Inverter",
+      "Generator",
+      "Separate Shower",
+      "Joystick Docking",
+      "Flybridge"
+    ],
+    "ModelSeries": "Ranger Tugs R-43",
+    "ModelGeneration": "Command Bridge",
+    "EvolutionSequence": 1,
+    "EvolutionNotes": "Command Bridge flagship distinct from the Sedan in height, access and exterior helm experience.",
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Pod",
+    "NormalizedHullForm": "Planing",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Tug Cruiser",
+    "DataConfidence": "Moderate",
+    "ResearchStatus": "Reviewed",
+    "Overview": "The Ranger Tugs R-43 Command Bridge is a compact pilothouse cruising boat in Ranger Tugs’ trailerable-to-coastal range. This version is twin-pod and combines an enclosed helm, cruising accommodations and a workboat-inspired profile with systems intended for short-handed recreational cruising.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "Layout and systems support extended cruising for a couple."
+      },
+      "SoloHandling": {
+        "Assessment": "Good",
+        "Summary": "Pilothouse visibility and accessible controls support short-handed operation."
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "Suitable where beam, draft and bridge clearance fit the route."
+      },
+      "ExposedWater": {
+        "Assessment": "Good",
+        "Summary": "Designed for coastal operation, subject to weather, load and operator judgment."
+      }
+    },
+    "TradeOffs": [
+      "High systems density can make service access tight",
+      "Accommodation volume is achieved within relatively narrow hulls on the trailerable models",
+      "Later outboard and pod-drive versions trade traditional shaft simplicity for speed and maneuverability"
+    ],
+    "BestFor": [
+      "Couples or small crews wanting a compact, highly equipped pilothouse cruiser",
+      "Owners who value trailerability or manageable marina dimensions where the specific model permits it",
+      "Inland, Great Loop and coastal cruising within the model’s dimensional and operating limits"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Confirm exact generation, engine package and factory variant from HIN and documentation",
+      "Inspect propulsion, cooling, fuel, steering, thrusters and charging systems",
+      "Test windows, hatches, doors and roof/deck penetrations for leakage",
+      "Verify trailer, bridge-clearance and actual loaded-weight limits where trailering is planned"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for confirm exact generation, engine package and factory variant from HIN and documentation?",
+      "What inspection, repair or service history is available for inspect propulsion, cooling, fuel, steering, thrusters and charging systems?",
+      "What inspection, repair or service history is available for test windows, hatches, doors and roof/deck penetrations for leakage?",
+      "What inspection, repair or service history is available for verify trailer, bridge-clearance and actual loaded-weight limits where trailering is planned?"
+    ],
+    "OwnerActions": [
+      "Maintain engine, cooling, fuel and steering systems to manufacturer intervals",
+      "Keep deck, window and hardware penetrations sealed and investigate leaks promptly",
+      "Document structural, electrical and propulsion repairs for future buyers"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "Generation and propulsion changes",
+        "Description": "Ranger reused several model numbers across materially different diesel-inboard and later outboard generations; Sedan and Command Bridge versions are separate configurations where offered.",
+        "AffectedYears": "Varies by model",
+        "EvidenceRefs": [
+          "https://www.rangertugs.com/past-models",
+          "https://www.rangertugs.com/models"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "RNGR-43-CB"
+            ],
+            "Years": {
+              "From": 2020,
+              "To": 2026
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.rangertugs.com/models",
+            "https://www.rangertugs.com/past-models"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Identity and representative specifications are supported by manufacturer or model-specific technical references; unresolved production or configuration differences remain explicit."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "RNGR-43-CB"
+            ],
+            "Years": {
+              "From": 2020,
+              "To": 2026
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.rangertugs.com/models",
+            "https://www.rangertugs.com/past-models"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance is derived from documented configuration, propulsion, dimensions and intended use rather than marketplace promotional language."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "RNGR-43-CB"
+            ],
+            "Years": {
+              "From": 2020,
+              "To": 2026
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.rangertugs.com/models",
+            "https://www.rangertugs.com/past-models"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance combines documented systems with age- and configuration-related checks; it does not assert that every hull has a defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Exact production-year boundaries for some historical Ranger generations should be verified against individual HIN/model-year documentation.",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold"
+      ]
+    },
+    "ResearchNotes": "Phase 8C-9 normalized 2026-08-07 using manufacturer/model-specific sources. Unsupported defects remain unknown.\n\n[Phase 8A legacy structured context]\n{\n  \"marketAvailability\": \"Used-market availability varies by generation, propulsion and region.\",\n  \"partsAvailability\": \"Factory support and owner community are strengths; model-specific legacy components still require verification.\",\n  \"commonUpgrades\": [\n    \"Battery monitoring\",\n    \"Modern electronics where dated\",\n    \"Canvas or cockpit weather protection\"\n  ],\n  \"comparableModels\": [\n    \"Ranger Tugs R-43 Sedan\",\n    \"Ranger Tugs R-31 Command Bridge\"\n  ],\n  \"knowledgeRelationships\": {\n    \"comparableTo\": [\n      \"Ranger Tugs R-43 Sedan\",\n      \"Ranger Tugs R-31 Command Bridge\"\n    ],\n    \"alternativeIf\": [\n      \"A different Ranger generation better matches propulsion, budget or space priorities\"\n    ],\n    \"stepUpFrom\": []\n  },\n  \"bScoutNotes\": [\n    \"Identify the exact R-43 generation before applying specifications.\",\n    \"Factory packages and owner modifications can materially change equipment and weight.\"\n  ],\n  \"refitPriority\": {\n    \"essential\": [\n      \"Bridge controls and structure\",\n      \"IPS and joystick systems\"\n    ],\n    \"recommended\": [\n      \"Battery monitoring\",\n      \"Cooling-system service\"\n    ],\n    \"optional\": [\n      \"Canvas or cockpit weather protection\"\n    ]\n  },\n  \"ownershipScores\": {\n    \"mechanicalSimplicity\": 2,\n    \"maintenanceEase\": 2,\n    \"partsAvailability\": 4,\n    \"diyFriendliness\": 2,\n    \"operatingAffordability\": 2\n  },\n  \"ownershipEase\": \"Low\",\n  \"maintenanceEase\": \"Low\"\n}\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "EngineCount": 2,
+    "ModelCharacter": "The command-bridge version of Ranger's flagship R-43 platform, adding a full upper helm and outdoor entertaining level to the twin-IPS, two-stateroom cruising yacht.",
+    "DesignLineage": [
+      "The R-43 CB shares the R-43 S hull, accommodations and twin Volvo IPS architecture.",
+      "CB denotes Command Bridge; Ranger uses the same S/CB distinction on the R-29 and R-31.",
+      "The bridge dramatically increases air draft compared with the Sedan.",
+      "It remains a distinct configuration rather than a separate hull family."
+    ],
+    "OwnershipCharacter": "Large-yacht systems plus an additional helm, controls and exterior space create the highest maintenance and infrastructure demands in the Ranger family.",
+    "CharacterConfidence": "High",
+    "FuelCapacityGal": 300,
+    "WaterCapacityGal": 120,
+    "RarityScore": null,
+    "RarityLabel": "",
+    "RarityConfidence": "Not rated",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "PriceConfidence": "Not rated",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "BoatFamilyCode": "boat_family.tug",
+    "MechanicalPropulsionCode": "mechanical_propulsion.pod",
+    "FuelCode": "fuel.diesel",
+    "HullBehaviourCode": "hull_behaviour.planing",
+    "LOA": 14.2494,
+    "Beam": 4.2672,
+    "Draft": 1.0668,
+    "FlybridgeCode": "availability.yes",
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "AirDraft": 5.4864,
+    "Displacement": 14061.4,
+    "RudderTypeCode": "rudder.none_external_drive",
+    "CanonicalSlug": "ranger-tugs-r-43-cb-command-bridge",
+    "CanonicalPath": "/models/ranger-tugs-r-43-cb-command-bridge/",
+    "CanonicalURL": "https://b-atlas.org/models/ranger-tugs-r-43-cb-command-bridge/",
+    "StyleCode": "Tug Cruiser",
+    "CoolingCode": "cooling.fresh_water",
+    "SideDecksCode": "side_decks.asymmetric",
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "LWL": 11.8745,
+    "SpecificationConfidence": {
+      "LWL": {
+        "Level": "Low",
+        "Status": "estimated_family_ratio",
+        "EvidenceRefs": [],
+        "Note": "Working LWL estimate derived from the median LWL/LOA ratio (0.833) of other B-Atlas Ranger Tugs models with recorded waterline lengths. Intended for hull-speed context and community verification, not survey use."
+      },
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing propulsion/keel description; no new factual assertion introduced."
+      }
+    },
+    "ShowerTypeCode": "shower.present_unspecified",
+    "RunningGearProtectionCode": "running_gear.exposed"
+  },
+  {
+    "ManufacturerID": "RANGER_TUGS",
+    "Manufacturer": "Ranger Tugs",
+    "Model": "R-43 S",
+    "Variant": "Sedan",
+    "Nickname": "Ranger Tugs R-43 S",
+    "ImageURL": "images/rngr-43-s.jpg",
+    "Active": true,
+    "FirstYear": 2020,
+    "LastYear": 2026,
+    "TotalBuilt": null,
+    "Designer": "David Livingston",
+    "HullType": "Planing",
+    "Style": "Tug Cruiser",
+    "Construction": "Fiberglass",
+    "KeelType": "Model-specific; verify actual hull and running gear",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Twin Volvo IPS500 pod drives",
+    "Propulsion": "Pod",
+    "Flybridge": "No",
+    "AftCabin": false,
+    "SideDecks": "Asymmetric",
+    "TypicalEngineID": "Twin Volvo IPS500 pod drives",
+    "FuelCapacity": 1135.6235,
+    "WaterCapacity": 454.2494,
+    "HoldingCapacity": 215.7685,
+    "Berths": 4,
+    "Cabins": 1,
+    "Heads": 1,
+    "Shower": true,
+    "Galley": true,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "No",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "Strengths": [
+      "Enclosed pilothouse with strong all-weather visibility",
+      "Cruising systems and accommodations packaged into a relatively compact hull",
+      "Strong factory documentation and owner-support ecosystem"
+    ],
+    "Weaknesses": "Compact spaces and equipment density require hands-on crew-fit and service-access checks.",
+    "CommonProblems": "Verify propulsion service, cooling, thrusters, electrical integration, glazing, deck penetrations and model-year-specific systems.",
+    "TypicalMission": "Protected coastal, inland and Great Loop cruising.",
+    "AvoidIf": [
+      "You want a simple low-systems boat with minimal installed equipment",
+      "You require large private accommodations for several adults",
+      "You prefer only traditional displacement-speed shaft-drive propulsion"
+    ],
+    "DateCreated": "2026-07-25",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "B-Atlas Phase 8C-9 Family Research",
+    "Revision": 2,
+    "BoatModelID": "RNGR-43-S",
+    "BoatFamily": "Tug Cruiser",
+    "Configuration": "Large Sedan Motor Cruiser",
+    "HullBehaviour": "Planing",
+    "Features": [
+      "Walkthrough Transom",
+      "Swim Platform",
+      "Windlass",
+      "Wet Head",
+      "Side Helm Door",
+      "Inverter",
+      "Generator",
+      "Separate Shower",
+      "Joystick Docking"
+    ],
+    "ModelSeries": "Ranger Tugs R-43",
+    "ModelGeneration": "Sedan",
+    "EvolutionSequence": 1,
+    "EvolutionNotes": "The flagship sedan; no longer meaningfully trailerable or comparable to the pocket-tug models.",
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Pod",
+    "NormalizedHullForm": "Planing",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Tug Cruiser",
+    "DataConfidence": "Moderate",
+    "ResearchStatus": "Reviewed",
+    "Overview": "The Ranger Tugs R-43 Sedan is a compact pilothouse cruising boat in Ranger Tugs’ trailerable-to-coastal range. This version is twin-pod and combines an enclosed helm, cruising accommodations and a workboat-inspired profile with systems intended for short-handed recreational cruising.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "Layout and systems support extended cruising for a couple."
+      },
+      "SoloHandling": {
+        "Assessment": "Good",
+        "Summary": "Pilothouse visibility and accessible controls support short-handed operation."
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "Suitable where beam, draft and bridge clearance fit the route."
+      },
+      "ExposedWater": {
+        "Assessment": "Good",
+        "Summary": "Designed for coastal operation, subject to weather, load and operator judgment."
+      }
+    },
+    "TradeOffs": [
+      "High systems density can make service access tight",
+      "Accommodation volume is achieved within relatively narrow hulls on the trailerable models",
+      "Later outboard and pod-drive versions trade traditional shaft simplicity for speed and maneuverability"
+    ],
+    "BestFor": [
+      "Couples or small crews wanting a compact, highly equipped pilothouse cruiser",
+      "Owners who value trailerability or manageable marina dimensions where the specific model permits it",
+      "Inland, Great Loop and coastal cruising within the model’s dimensional and operating limits"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Confirm exact generation, engine package and factory variant from HIN and documentation",
+      "Inspect propulsion, cooling, fuel, steering, thrusters and charging systems",
+      "Test windows, hatches, doors and roof/deck penetrations for leakage",
+      "Verify trailer, bridge-clearance and actual loaded-weight limits where trailering is planned"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for confirm exact generation, engine package and factory variant from HIN and documentation?",
+      "What inspection, repair or service history is available for inspect propulsion, cooling, fuel, steering, thrusters and charging systems?",
+      "What inspection, repair or service history is available for test windows, hatches, doors and roof/deck penetrations for leakage?",
+      "What inspection, repair or service history is available for verify trailer, bridge-clearance and actual loaded-weight limits where trailering is planned?"
+    ],
+    "OwnerActions": [
+      "Maintain engine, cooling, fuel and steering systems to manufacturer intervals",
+      "Keep deck, window and hardware penetrations sealed and investigate leaks promptly",
+      "Document structural, electrical and propulsion repairs for future buyers"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "Generation and propulsion changes",
+        "Description": "Ranger reused several model numbers across materially different diesel-inboard and later outboard generations; Sedan and Command Bridge versions are separate configurations where offered.",
+        "AffectedYears": "Varies by model",
+        "EvidenceRefs": [
+          "https://www.rangertugs.com/past-models",
+          "https://www.rangertugs.com/models"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "RNGR-43-S"
+            ],
+            "Years": {
+              "From": 2020,
+              "To": 2026
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.rangertugs.com/models",
+            "https://www.rangertugs.com/past-models",
+            "https://www.rangertugs.com/spec-sheets/r-43-s"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Identity and representative specifications are supported by manufacturer or model-specific technical references; unresolved production or configuration differences remain explicit."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "RNGR-43-S"
+            ],
+            "Years": {
+              "From": 2020,
+              "To": 2026
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.rangertugs.com/models",
+            "https://www.rangertugs.com/past-models",
+            "https://www.rangertugs.com/spec-sheets/r-43-s"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance is derived from documented configuration, propulsion, dimensions and intended use rather than marketplace promotional language."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "RNGR-43-S"
+            ],
+            "Years": {
+              "From": 2020,
+              "To": 2026
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.rangertugs.com/models",
+            "https://www.rangertugs.com/past-models",
+            "https://www.rangertugs.com/spec-sheets/r-43-s"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance combines documented systems with age- and configuration-related checks; it does not assert that every hull has a defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Exact production-year boundaries for some historical Ranger generations should be verified against individual HIN/model-year documentation.",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold"
+      ]
+    },
+    "ResearchNotes": "Phase 8C-9 normalized 2026-08-07 using manufacturer/model-specific sources. Unsupported defects remain unknown.\n\n[Phase 8A legacy structured context]\n{\n  \"marketAvailability\": \"Used-market availability varies by generation, propulsion and region.\",\n  \"partsAvailability\": \"Factory support and owner community are strengths; model-specific legacy components still require verification.\",\n  \"commonUpgrades\": [\n    \"Battery monitoring\",\n    \"Modern electronics where dated\",\n    \"Canvas or cockpit weather protection\"\n  ],\n  \"comparableModels\": [\n    \"Ranger Tugs R-43 Command Bridge\",\n    \"Nordic Tug 44\"\n  ],\n  \"knowledgeRelationships\": {\n    \"comparableTo\": [\n      \"Ranger Tugs R-43 Command Bridge\",\n      \"Nordic Tug 44\"\n    ],\n    \"alternativeIf\": [\n      \"A different Ranger generation better matches propulsion, budget or space priorities\"\n    ],\n    \"stepUpFrom\": []\n  },\n  \"bScoutNotes\": [\n    \"Identify the exact R-43 generation before applying specifications.\",\n    \"Factory packages and owner modifications can materially change equipment and weight.\"\n  ],\n  \"refitPriority\": {\n    \"essential\": [\n      \"IPS service history\",\n      \"Generator and HVAC\"\n    ],\n    \"recommended\": [\n      \"Battery monitoring\",\n      \"Cooling-system service\"\n    ],\n    \"optional\": [\n      \"Canvas or cockpit weather protection\"\n    ]\n  },\n  \"ownershipScores\": {\n    \"mechanicalSimplicity\": 2,\n    \"maintenanceEase\": 2,\n    \"partsAvailability\": 4,\n    \"diyFriendliness\": 2,\n    \"operatingAffordability\": 2\n  },\n  \"ownershipEase\": \"Low\",\n  \"maintenanceEase\": \"Low\"\n}\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "EngineCount": 2,
+    "ModelCharacter": "A major departure from the pocket-tug formula: the R-43 S is a 46'9\" twin-IPS cruising yacht with two staterooms, household-scale amenities and sedan roof storage, retaining Ranger's practical owner-operator philosophy at far larger scale.",
+    "DesignLineage": [
+      "The R-43 created a new large-yacht branch above Ranger's trailerable single-diesel models.",
+      "S denotes Sedan, with no upper helm.",
+      "Twin Volvo IPS pod drives replace the single-shaft propulsion used on R-29/R-31.",
+      "The R-43 CB shares the same hull/accommodation platform and adds a command bridge."
+    ],
+    "OwnershipCharacter": "Full yacht-scale ownership: twin pods, generator, multiple refrigeration/climate systems and large hotel loads. Joystick handling is easy, but maintenance and dockage are in a different class from smaller Rangers.",
+    "CharacterConfidence": "High",
+    "FuelCapacityGal": 300,
+    "WaterCapacityGal": 120,
+    "RarityScore": null,
+    "RarityLabel": "",
+    "RarityConfidence": "Not rated",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "PriceConfidence": "Not rated",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "BoatFamilyCode": "boat_family.tug",
+    "MechanicalPropulsionCode": "mechanical_propulsion.pod",
+    "FuelCode": "fuel.diesel",
+    "HullBehaviourCode": "hull_behaviour.planing",
+    "LOA": 14.2494,
+    "Beam": 4.2672,
+    "Draft": 1.0668,
+    "FlybridgeCode": "availability.no",
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "AirDraft": 3.7582,
+    "Displacement": 13607.8,
+    "RudderTypeCode": "rudder.none_external_drive",
+    "CanonicalSlug": "ranger-tugs-r-43-s-sedan",
+    "CanonicalPath": "/models/ranger-tugs-r-43-s-sedan/",
+    "CanonicalURL": "https://b-atlas.org/models/ranger-tugs-r-43-s-sedan/",
+    "StyleCode": "Tug Cruiser",
+    "CoolingCode": "cooling.fresh_water",
+    "SideDecksCode": "side_decks.asymmetric",
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "LWL": 11.8745,
+    "SpecificationConfidence": {
+      "LWL": {
+        "Level": "Low",
+        "Status": "estimated_family_ratio",
+        "EvidenceRefs": [],
+        "Note": "Working LWL estimate derived from the median LWL/LOA ratio (0.833) of other B-Atlas Ranger Tugs models with recorded waterline lengths. Intended for hull-speed context and community verification, not survey use."
+      },
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing propulsion/keel description; no new factual assertion introduced."
+      }
+    },
+    "ShowerTypeCode": "shower.present_unspecified",
+    "RunningGearProtectionCode": "running_gear.exposed"
+  },
+  {
+    "ManufacturerID": "ROSBOROUGH",
+    "Manufacturer": "Rosborough",
+    "Model": "RF-246",
+    "Variant": "Custom Wheelhouse",
+    "Nickname": "Rosborough RF-246 Custom Wheelhouse",
+    "ImageURL": "images/rosb-246-wh.jpg",
+    "Active": true,
+    "FirstYear": 1987,
+    "LastYear": null,
+    "TotalBuilt": null,
+    "Designer": "James “Bob” Rosborough",
+    "HullType": "Semi-Displacement",
+    "Style": "Downeast Workboat / Pilothouse",
+    "Construction": "Hand-laid fiberglass hull with one-piece stringer grid and foam flotation on current Eastern-built generation",
+    "KeelType": "Shallow-draft outboard hull; no shaft keel",
+    "Fuel": "Gasoline",
+    "Cooling": "Raw-water-cooled outboard",
+    "EngineConfiguration": "Single outboard standard concept; custom power arrangements require verification",
+    "Propulsion": "Outboard",
+    "Flybridge": "No",
+    "AftCabin": false,
+    "SideDecks": "Moderate",
+    "TypicalEngineID": "Outboard power varies by build; verify individual boat",
+    "FuelCapacity": 435.3224,
+    "WaterCapacity": 151.4164,
+    "HoldingCapacity": 124.9185,
+    "Berths": 2,
+    "Cabins": 1,
+    "Heads": 1,
+    "Shower": "Not standard; options vary",
+    "Galley": "Not standard; custom options available",
+    "CoastalRating": "Yes",
+    "OffshoreRating": "Limited",
+    "GreatLoopSuitable": true,
+    "Trailerable": true,
+    "Strengths": [
+      "Rugged compact hull with practical enclosed wheelhouse",
+      "Trailerable beam and shallow draft for a boat with genuine coastal-cruising capability",
+      "Long production history with cruising, fishing and commercial derivatives"
+    ],
+    "Weaknesses": "Sparse standard cruising amenities, utilitarian finish and configuration variability that makes listing-level verification essential.",
+    "CommonProblems": "Inspect transom and bracket structure, fuel system, cockpit scuppers, pilothouse window and door seals, deck penetrations, steering, wiring, custom cabinetry and trailer.",
+    "TypicalMission": "All-weather fishing, utility work and minimalist couple cruising where shelter, cockpit function and trailerability matter more than finished accommodation.",
+    "AvoidIf": [
+      "You need wide side decks or large private accommodations",
+      "You want a standardized model with little year-to-year variation",
+      "You prioritize high-speed planing performance"
+    ],
+    "DateCreated": "2026-07-10",
+    "LastUpdated": "2026-09-12",
+    "ReviewedBy": "B-Atlas Phase 8C-9 Family Research",
+    "Revision": 4,
+    "BoatModelID": "ROSB-246-WH",
+    "BoatFamily": "Downeast",
+    "HullBehaviour": "Semi-Displacement",
+    "Features": [
+      "Trailerable"
+    ],
+    "NormalizedFuel": "Gasoline",
+    "NormalizedPropulsion": "Outboard",
+    "NormalizedHullForm": "Semi-Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Downeast",
+    "Configuration": "Custom Wheelhouse",
+    "ResearchStatus": "Reviewed",
+    "DataConfidence": "Moderate",
+    "ModelSeries": "RF-246",
+    "ModelGeneration": "Current Eastern-built Custom Wheelhouse",
+    "EvolutionNotes": "This is a documented factory configuration, not a generic marketplace synonym for every wheelhouse-equipped RF-246.",
+    "ResearchNotes": "Current Eastern Boat Works Custom Wheelhouse uses single 150–250 hp outboard power. Historical RF-246 Custom Wheelhouse examples also used diesel/gas sterndrives and single/twin outboards. B-Atlas retains the model as one utility layout rather than splitting propulsion eras.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "Overview": "The Rosborough RF-246 Custom Wheelhouse is a Nova Scotia-designed compact semi-displacement cruiser/workboat derivative built around an 8-foot-6-inch trailerable beam. The RF-246 has appeared with materially different interior layouts and propulsion packages over its long production history, so exact engine, tank and accommodation details must be matched to the individual build.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "Compact accommodations are oriented to one couple or a small crew."
+      },
+      "SoloHandling": {
+        "Assessment": "Good",
+        "Summary": "Compact dimensions and straightforward helm arrangements support short-handed operation."
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "Shallow draft and manageable dimensions suit inland and protected-water cruising."
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "Capability depends on hull form, load, weather and operator judgment; verify the individual model’s limits."
+      }
+    },
+    "TradeOffs": [
+      "Narrow beam limits side-deck and interior volume",
+      "Long production history creates substantial variation in engines, tanks and layouts",
+      "Utilitarian finish and workboat ergonomics may feel basic compared with modern cruisers"
+    ],
+    "BestFor": [
+      "Couples wanting a compact all-weather coastal cruiser",
+      "Owners needing trailerable beam with more displacement and workboat character than a light pilothouse boat",
+      "Cruising, fishing or mixed-use operation"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Confirm exact builder, year, layout and propulsion package",
+      "Inspect hull/deck structure, wheelhouse joints and previous hardware penetrations",
+      "Inspect engine/outboard installation, fuel system and steering",
+      "Verify actual tank capacities, loaded weight and trailer suitability"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for confirm exact builder, year, layout and propulsion package?",
+      "What inspection, repair or service history is available for inspect hull/deck structure, wheelhouse joints and previous hardware penetrations?",
+      "What inspection, repair or service history is available for inspect engine/outboard installation, fuel system and steering?",
+      "What inspection, repair or service history is available for verify actual tank capacities, loaded weight and trailer suitability?"
+    ],
+    "OwnerActions": [
+      "Maintain engine, cooling, fuel and steering systems to manufacturer intervals",
+      "Keep deck, window and hardware penetrations sealed and investigate leaks promptly",
+      "Document structural, electrical and propulsion repairs for future buyers"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "RF-246 layout and propulsion families",
+        "Description": "Historical Sedan Cruiser, Custom Wheelhouse and later Digby/Halifax/Yarmouth arrangements share the RF-246 platform but differ materially in interior layout, power and tankage.",
+        "AffectedYears": "Long production history",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/rosborough/rf-246-sedan-cruiser-1988-13",
+          "https://boattest.com/boats/eastern-boats/rosborough-246-yarmouth-2022",
+          "https://www.boats.com/power-boats/2020-rosborough-rf-246-custom-wheelhouse-10182555/"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "ROSB-246-WH"
+            ],
+            "Years": {
+              "From": 1987,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/rosborough/rf-246-sedan-cruiser-1988-13",
+            "https://boattest.com/boats/eastern-boats/rosborough-246-yarmouth-2022",
+            "https://www.boats.com/power-boats/2020-rosborough-rf-246-custom-wheelhouse-10182555/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Identity and representative specifications are supported by manufacturer or model-specific technical references; unresolved production or configuration differences remain explicit."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "ROSB-246-WH"
+            ],
+            "Years": {
+              "From": 1987,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/rosborough/rf-246-sedan-cruiser-1988-13",
+            "https://boattest.com/boats/eastern-boats/rosborough-246-yarmouth-2022",
+            "https://www.boats.com/power-boats/2020-rosborough-rf-246-custom-wheelhouse-10182555/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance is derived from documented configuration, propulsion, dimensions and intended use rather than marketplace promotional language."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "ROSB-246-WH"
+            ],
+            "Years": {
+              "From": 1987,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/rosborough/rf-246-sedan-cruiser-1988-13",
+            "https://boattest.com/boats/eastern-boats/rosborough-246-yarmouth-2022",
+            "htt

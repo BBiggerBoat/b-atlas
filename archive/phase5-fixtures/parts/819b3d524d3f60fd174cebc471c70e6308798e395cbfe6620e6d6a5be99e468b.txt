@@ -1,0 +1,809 @@
+ridian/341-sedan-2005-14"
+        ],
+        "EvidenceTypes": [
+          "Technical or survey source"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Inspection guidance is age/configuration based and is not a claim of a model-wide defect."
+      }
+    ],
+    "images": [
+      {
+        "title": "Meridian 341 Sedan image",
+        "url": "images/meri-341-se.jpg",
+        "sourceLabel": "B-Atlas image library",
+        "resourceType": "Model image",
+        "verificationStatus": "Local asset"
+      }
+    ],
+    "videos": [],
+    "listings": [],
+    "documents": [],
+    "ownerCommunities": [],
+    "knownIssues": [],
+    "similarModels": [],
+    "missingInformation": [],
+    "sources": [
+      {
+        "type": "CuratedResourceSet",
+        "label": "B-Atlas Global Resource Coverage Audit v6.66",
+        "verificationStatus": "Resource-set created; no resources inferred"
+      }
+    ],
+    "confidence": "Moderate",
+    "coverage": {},
+    "updatedAt": "2026-09-12"
+  },
+  {
+    "schemaVersion": 2,
+    "generated": true,
+    "generatedFrom": [
+      "boatmodels.json",
+      "curatedresources.json",
+      "listingsearches.json",
+      "knowledgeannotations.json",
+      "knowledge-coverage.json"
+    ],
+    "identity": {
+      "boatModelId": "BENE-ANT-9-S2",
+      "manufacturer": "Beneteau",
+      "model": "Antares 9 Generation 2",
+      "displayName": "Beneteau Antares 9"
+    },
+    "intelligence": {
+      "overview": "The Beneteau Antares 9 is a French enclosed-pilothouse outboard cruiser designed for short coastal trips, fishing and weekend use. The Antares range prioritizes visibility, sheltered helm operation and practical cockpit access rather than traditional trawler-speed efficiency.",
+      "suitability": {
+        "CoupleCruising": {
+          "Assessment": "Good",
+          "Summary": "The enclosed helm and documented accommodation support weekend or extended couple cruising."
+        },
+        "SoloHandling": {
+          "Assessment": "Good",
+          "Summary": "Side-door access and good visibility help; docking burden rises with size, windage and twin-engine/flybridge configuration."
+        },
+        "InlandWaterways": {
+          "Assessment": "Good",
+          "Summary": "The enclosed cruising layout works well on inland routes; beam and air draft must be checked against route restrictions."
+        },
+        "ExposedWater": {
+          "Assessment": "Mixed",
+          "Summary": "Factory CE ratings and hull form support coastal use; loading, weather and individual boat condition remain decisive."
+        }
+      },
+      "strengths": [
+        "Protected pilothouse helm",
+        "Outboard propulsion simplifies engine access and winterization",
+        "Practical cockpit and side-deck access for coastal use"
+      ],
+      "tradeOffs": [
+        "Planing-speed operation uses substantially more fuel than displacement cruising",
+        "Outboard installations occupy transom space",
+        "Accommodation and tankage are modest relative to trawler-style cruisers of similar overall length"
+      ],
+      "bestFor": [
+        "Weekend coastal cruising",
+        "Owners wanting enclosed outboard operation",
+        "Fishing and family day use with occasional overnighting"
+      ],
+      "avoidIf": [
+        "You primarily cruise at 6–8 knots for maximum economy",
+        "You require large long-range tankage",
+        "You want shaft-drive diesel propulsion"
+      ],
+      "knownConcerns": [],
+      "inspectionFocus": [
+        "Inspect outboard service history, mounting and steering",
+        "Inspect pilothouse windows, doors and roof penetrations",
+        "Inspect cockpit drainage and transom structure",
+        "Verify tankage, sleeping layout and fitted sanitation equipment"
+      ],
+      "buyerQuestions": [
+        "What service, repair or inspection history is available for inspect outboard service history, mounting and steering?",
+        "What service, repair or inspection history is available for inspect pilothouse windows, doors and roof penetrations?",
+        "What service, repair or inspection history is available for inspect cockpit drainage and transom structure?",
+        "What service, repair or inspection history is available for verify tankage, sleeping layout and fitted sanitation equipment?"
+      ],
+      "ownerActions": [
+        "Keep windows, hatches, deck hardware and exterior penetrations sealed",
+        "Maintain propulsion, cooling, exhaust, steering and electrical systems to documented intervals",
+        "Document machinery and system upgrades for future survey and resale"
+      ],
+      "modelVariations": [
+        {
+          "Name": "Original modern Antares 9",
+          "Description": "29'11\" generation with twin outboards up to 200 hp each.",
+          "AffectedYears": "2019–mid-2020s",
+          "EvidenceRefs": [
+            "https://www.beneteau.com/5th-generation-antares-2012-today/antares-9"
+          ],
+          "Confidence": "High"
+        },
+        {
+          "Name": "Antares 9 Series 2",
+          "Description": "Redesigned current generation with revised hull/construction and twin 250 hp capability.",
+          "AffectedYears": "mid-2020s onward",
+          "EvidenceRefs": [
+            "https://www.beneteau.com/antares/antares-9"
+          ],
+          "Confidence": "High"
+        }
+      ]
+    },
+    "evidence": [
+      {
+        "Scope": "IdentityAndDimensions",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BENE-ANT-9"
+          ],
+          "Years": {
+            "From": 2019,
+            "To": 2026
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.beneteau.com/en-us/heritage-powerboats/antares-2012-2022"
+        ],
+        "EvidenceTypes": [
+          "Factory documented"
+        ],
+        "Confidence": "High",
+        "Notes": "Factory and model-specific documentation support identity and representative specifications."
+      },
+      {
+        "Scope": "OverviewAndSuitability",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BENE-ANT-9"
+          ],
+          "Years": {
+            "From": 2019,
+            "To": 2026
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.beneteau.com/en-us/heritage-powerboats/antares-2012-2022"
+        ],
+        "EvidenceTypes": [
+          "Factory documented"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Guidance is derived from documented layout, hull form, propulsion and dimensions."
+      },
+      {
+        "Scope": "InspectionFocus",
+        "AppliesTo": {
+          "Scope": "Model family",
+          "Models": [
+            "BENE-ANT-9"
+          ],
+          "Years": {
+            "From": 2019,
+            "To": 2026
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.beneteau.com/en-us/heritage-powerboats/antares-2012-2022"
+        ],
+        "EvidenceTypes": [
+          "Factory documented",
+          "Technical or survey source"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Inspection guidance reflects configuration and age exposure; it is not a claim that every hull has a defect."
+      }
+    ],
+    "images": [
+      {
+        "title": "Beneteau Antares 9 image",
+        "url": "images/bene-ant-9.jpg",
+        "sourceLabel": "B-Atlas image library",
+        "resourceType": "Model image",
+        "verificationStatus": "Local asset"
+      }
+    ],
+    "videos": [],
+    "listings": [],
+    "documents": [],
+    "ownerCommunities": [],
+    "knownIssues": [],
+    "similarModels": [],
+    "missingInformation": [],
+    "sources": [
+      {
+        "type": "CuratedResourceSet",
+        "label": "B-Atlas Global Resource Coverage Audit v6.66",
+        "verificationStatus": "Resource-set created; no resources inferred"
+      }
+    ],
+    "confidence": "Moderate",
+    "coverage": {},
+    "updatedAt": "2026-09-03"
+  },
+  {
+    "schemaVersion": 2,
+    "generated": true,
+    "generatedFrom": [
+      "boatmodels.json",
+      "curatedresources.json",
+      "listingsearches.json",
+      "knowledgeannotations.json",
+      "knowledge-coverage.json"
+    ],
+    "identity": {
+      "boatModelId": "CRUY-3260",
+      "manufacturer": "Cruisers Yachts",
+      "model": "3260 Esprit Open Interior / No Mid-Cabin",
+      "displayName": "Cruisers 3260 / 3270 Esprit"
+    },
+    "intelligence": {
+      "overview": "The Cruisers Yachts 3280 Esprit is a production express cruiser designed around cockpit social space, planing performance and overnight accommodation below. Twin-engine propulsion is typical, with model generations varying in drive type, dimensions and interior arrangement.",
+      "suitability": {
+        "CoupleCruising": {
+          "Assessment": "Good",
+          "Summary": "The documented accommodation and enclosed living spaces support weekend or regional couple cruising."
+        },
+        "SoloHandling": {
+          "Assessment": "Mixed",
+          "Summary": "Twin engines can assist close-quarters maneuvering, but size, windage and multi-level access increase workload."
+        },
+        "InlandWaterways": {
+          "Assessment": "Mixed",
+          "Summary": "Comfortable for inland cruising, but beam, air draft and fuel consumption must be checked against route and marina constraints."
+        },
+        "ExposedWater": {
+          "Assessment": "Mixed",
+          "Summary": "These are coastal production cruisers; actual capability depends on generation, loading, machinery, weather and individual condition."
+        }
+      },
+      "strengths": [
+        "Large social cockpit for the boat size",
+        "Planing performance and responsive handling",
+        "Useful weekend accommodation",
+        "Broad service and parts familiarity in the production-cruiser market"
+      ],
+      "tradeOffs": [
+        "Fuel consumption rises sharply at planing speeds",
+        "Engine-room access can be tight",
+        "Sleeping areas may rely on curtains or convertible spaces",
+        "Low-profile express layouts provide less enclosed living volume than flybridge yachts"
+      ],
+      "bestFor": [
+        "Weekend cruising and entertaining",
+        "Buyers who value speed over displacement economy",
+        "Marina-based coastal and inland use"
+      ],
+      "avoidIf": [
+        "You require displacement-speed fuel economy",
+        "You want a flybridge or separate aft-cabin privacy",
+        "You need long-range passagemaking capability"
+      ],
+      "knownConcerns": [],
+      "inspectionFocus": [
+        "Verify moisture around deck hardware, windows, hatches and rail bases",
+        "Inspect fuel, water and waste tanks plus hoses and fittings",
+        "Inspect engines, transmissions or sterndrives, exhaust and cooling systems",
+        "Review AC/DC wiring, shore-power equipment and documented electrical modifications",
+        "Confirm steering, trim-tab and generator operation where fitted"
+      ],
+      "buyerQuestions": [
+        "What repair or survey history is available for moisture around deck hardware, windows, hatches and rail bases?",
+        "What repair or survey history is available for fuel, water and waste tanks plus hoses and fittings?",
+        "What repair or survey history is available for engines, transmissions or sterndrives, exhaust and cooling systems?",
+        "What repair or survey history is available for ac/dc wiring, shore-power equipment and documented electrical modifications?",
+        "What repair or survey history is available for steering, trim-tab and generator operation where fitted?"
+      ],
+      "ownerActions": [
+        "Keep deck, window and hardware penetrations sealed",
+        "Maintain propulsion, cooling, exhaust, steering and electrical systems to documented intervals",
+        "Document structural, tank, electrical and machinery repairs for future survey and resale"
+      ],
+      "modelVariations": []
+    },
+    "evidence": [
+      {
+        "Scope": "IdentityAndDimensions",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "CRUY-3280"
+          ],
+          "Years": {
+            "From": 1989,
+            "To": 1996
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/cruisers"
+        ],
+        "EvidenceTypes": [
+          "Technical or survey source"
+        ],
+        "Confidence": "High",
+        "Notes": "Model identity and representative specifications checked against model-guide or catalog evidence."
+      },
+      {
+        "Scope": "OverviewAndSuitability",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "CRUY-3280"
+          ],
+          "Years": {
+            "From": 1989,
+            "To": 1996
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/cruisers"
+        ],
+        "EvidenceTypes": [
+          "Technical or survey source"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Buyer guidance derives from documented configuration, propulsion and accommodation."
+      },
+      {
+        "Scope": "InspectionFocus",
+        "AppliesTo": {
+          "Scope": "General age-related guidance",
+          "Models": [
+            "CRUY-3280"
+          ],
+          "Years": {
+            "From": 1989,
+            "To": 1996
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/cruisers"
+        ],
+        "EvidenceTypes": [
+          "Technical or survey source"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Inspection guidance is age/configuration based and is not a claim of a model-wide defect."
+      }
+    ],
+    "images": [
+      {
+        "title": "Cruisers 3260 / 3270 Esprit image",
+        "url": "images/cruy-3280.jpg",
+        "sourceLabel": "B-Atlas image library",
+        "resourceType": "Model image",
+        "verificationStatus": "Local asset"
+      }
+    ],
+    "videos": [],
+    "listings": [],
+    "documents": [],
+    "ownerCommunities": [],
+    "knownIssues": [],
+    "similarModels": [],
+    "missingInformation": [],
+    "sources": [
+      {
+        "type": "CuratedResourceSet",
+        "label": "B-Atlas Global Resource Coverage Audit v6.66",
+        "verificationStatus": "Resource-set created; no resources inferred"
+      }
+    ],
+    "confidence": "Moderate",
+    "coverage": {},
+    "updatedAt": "2026-09-03"
+  },
+  {
+    "schemaVersion": 2,
+    "generated": true,
+    "generatedFrom": [
+      "boatmodels.json",
+      "curatedresources.json",
+      "listingsearches.json",
+      "knowledgeannotations.json",
+      "knowledge-coverage.json"
+    ],
+    "identity": {
+      "boatModelId": "SEAR-340-SU-99",
+      "manufacturer": "Sea Ray",
+      "model": "340 Sundancer Generation 2",
+      "displayName": "Sea Ray 340 Sundancer"
+    },
+    "intelligence": {
+      "overview": "The Sea Ray 340 Sundancer (multi-generation) is a production express cruiser designed around cockpit social space, planing performance and overnight accommodation below. Twin-engine propulsion is typical, with model generations varying in drive type, dimensions and interior arrangement.",
+      "suitability": {
+        "CoupleCruising": {
+          "Assessment": "Good",
+          "Summary": "The documented accommodation and enclosed living spaces support weekend or regional couple cruising."
+        },
+        "SoloHandling": {
+          "Assessment": "Mixed",
+          "Summary": "Twin engines can assist close-quarters maneuvering, but size, windage and multi-level access increase workload."
+        },
+        "InlandWaterways": {
+          "Assessment": "Mixed",
+          "Summary": "Comfortable for inland cruising, but beam, air draft and fuel consumption must be checked against route and marina constraints."
+        },
+        "ExposedWater": {
+          "Assessment": "Mixed",
+          "Summary": "These are coastal production cruisers; actual capability depends on generation, loading, machinery, weather and individual condition."
+        }
+      },
+      "strengths": [
+        "Large social cockpit for the boat size",
+        "Planing performance and responsive handling",
+        "Useful weekend accommodation",
+        "Broad service and parts familiarity in the production-cruiser market"
+      ],
+      "tradeOffs": [
+        "Fuel consumption rises sharply at planing speeds",
+        "Engine-room access can be tight",
+        "Sleeping areas may rely on curtains or convertible spaces",
+        "Low-profile express layouts provide less enclosed living volume than flybridge yachts"
+      ],
+      "bestFor": [
+        "Weekend cruising and entertaining",
+        "Buyers who value speed over displacement economy",
+        "Marina-based coastal and inland use"
+      ],
+      "avoidIf": [
+        "You require displacement-speed fuel economy",
+        "You want a flybridge or separate aft-cabin privacy",
+        "You need long-range passagemaking capability"
+      ],
+      "knownConcerns": [],
+      "inspectionFocus": [
+        "Verify moisture around deck hardware, windows, hatches and rail bases",
+        "Inspect fuel, water and waste tanks plus hoses and fittings",
+        "Inspect engines, transmissions or sterndrives, exhaust and cooling systems",
+        "Review AC/DC wiring, shore-power equipment and documented electrical modifications",
+        "Confirm steering, trim-tab and generator operation where fitted"
+      ],
+      "buyerQuestions": [
+        "What repair or survey history is available for moisture around deck hardware, windows, hatches and rail bases?",
+        "What repair or survey history is available for fuel, water and waste tanks plus hoses and fittings?",
+        "What repair or survey history is available for engines, transmissions or sterndrives, exhaust and cooling systems?",
+        "What repair or survey history is available for ac/dc wiring, shore-power equipment and documented electrical modifications?",
+        "What repair or survey history is available for steering, trim-tab and generator operation where fitted?"
+      ],
+      "ownerActions": [
+        "Keep deck, window and hardware penetrations sealed",
+        "Maintain propulsion, cooling, exhaust, steering and electrical systems to documented intervals",
+        "Document structural, tank, electrical and machinery repairs for future survey and resale"
+      ],
+      "modelVariations": [
+        {
+          "Name": "1984–89 generation",
+          "Description": "Early 340 Sundancer generation; roughly 35 ft 11 in overall with swim platform, 11 ft 11 in beam and 172 gal fuel.",
+          "AffectedYears": "1984–1989",
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-sundancer-1984-89"
+          ],
+          "Confidence": "High"
+        },
+        {
+          "Name": "1999–2002 generation",
+          "Description": "Later 340 Sundancer generation with 11 ft 5 in beam and 225 gal fuel.",
+          "AffectedYears": "1999–2002",
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-sundancer-1999-2002"
+          ],
+          "Confidence": "High"
+        },
+        {
+          "Name": "2003–08 generation",
+          "Description": "Redesigned, larger 340 Sundancer with 12 ft beam and substantially different hull and cockpit.",
+          "AffectedYears": "2003–2008",
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-sundancer-2003-08"
+          ],
+          "Confidence": "High"
+        }
+      ]
+    },
+    "evidence": [
+      {
+        "Scope": "IdentityAndDimensions",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "SEAR-340-SU"
+          ],
+          "Years": {
+            "From": 1984,
+            "To": 2008
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-sundancer-2003-08"
+        ],
+        "EvidenceTypes": [
+          "Technical or survey source"
+        ],
+        "Confidence": "High",
+        "Notes": "Model identity and representative specifications checked against model-guide or catalog evidence."
+      },
+      {
+        "Scope": "OverviewAndSuitability",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "SEAR-340-SU"
+          ],
+          "Years": {
+            "From": 1984,
+            "To": 2008
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-sundancer-2003-08"
+        ],
+        "EvidenceTypes": [
+          "Technical or survey source"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Buyer guidance derives from documented configuration, propulsion and accommodation."
+      },
+      {
+        "Scope": "InspectionFocus",
+        "AppliesTo": {
+          "Scope": "General age-related guidance",
+          "Models": [
+            "SEAR-340-SU"
+          ],
+          "Years": {
+            "From": 1984,
+            "To": 2008
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-sundancer-2003-08"
+        ],
+        "EvidenceTypes": [
+          "Technical or survey source"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Inspection guidance is age/configuration based and is not a claim of a model-wide defect."
+      }
+    ],
+    "images": [
+      {
+        "title": "Sea Ray 340 Sundancer image",
+        "url": "images/sear-340-su.jpg",
+        "sourceLabel": "B-Atlas image library",
+        "resourceType": "Model image",
+        "verificationStatus": "Local asset"
+      }
+    ],
+    "videos": [],
+    "listings": [],
+    "documents": [],
+    "ownerCommunities": [],
+    "knownIssues": [],
+    "similarModels": [],
+    "missingInformation": [],
+    "sources": [
+      {
+        "type": "CuratedResourceSet",
+        "label": "B-Atlas Global Resource Coverage Audit v6.66",
+        "verificationStatus": "Resource-set created; no resources inferred"
+      }
+    ],
+    "confidence": "Moderate",
+    "coverage": {},
+    "updatedAt": "2026-09-12"
+  },
+  {
+    "schemaVersion": 2,
+    "generated": true,
+    "generatedFrom": [
+      "boatmodels.json",
+      "curatedresources.json",
+      "listingsearches.json",
+      "knowledgeannotations.json",
+      "knowledge-coverage.json"
+    ],
+    "identity": {
+      "boatModelId": "SEAR-340-SU-03",
+      "manufacturer": "Sea Ray",
+      "model": "340 Sundancer Generation 3",
+      "displayName": "Sea Ray 340 Sundancer"
+    },
+    "intelligence": {
+      "overview": "The Sea Ray 340 Sundancer (multi-generation) is a production express cruiser designed around cockpit social space, planing performance and overnight accommodation below. Twin-engine propulsion is typical, with model generations varying in drive type, dimensions and interior arrangement.",
+      "suitability": {
+        "CoupleCruising": {
+          "Assessment": "Good",
+          "Summary": "The documented accommodation and enclosed living spaces support weekend or regional couple cruising."
+        },
+        "SoloHandling": {
+          "Assessment": "Mixed",
+          "Summary": "Twin engines can assist close-quarters maneuvering, but size, windage and multi-level access increase workload."
+        },
+        "InlandWaterways": {
+          "Assessment": "Mixed",
+          "Summary": "Comfortable for inland cruising, but beam, air draft and fuel consumption must be checked against route and marina constraints."
+        },
+        "ExposedWater": {
+          "Assessment": "Mixed",
+          "Summary": "These are coastal production cruisers; actual capability depends on generation, loading, machinery, weather and individual condition."
+        }
+      },
+      "strengths": [
+        "Large social cockpit for the boat size",
+        "Planing performance and responsive handling",
+        "Useful weekend accommodation",
+        "Broad service and parts familiarity in the production-cruiser market"
+      ],
+      "tradeOffs": [
+        "Fuel consumption rises sharply at planing speeds",
+        "Engine-room access can be tight",
+        "Sleeping areas may rely on curtains or convertible spaces",
+        "Low-profile express layouts provide less enclosed living volume than flybridge yachts"
+      ],
+      "bestFor": [
+        "Weekend cruising and entertaining",
+        "Buyers who value speed over displacement economy",
+        "Marina-based coastal and inland use"
+      ],
+      "avoidIf": [
+        "You require displacement-speed fuel economy",
+        "You want a flybridge or separate aft-cabin privacy",
+        "You need long-range passagemaking capability"
+      ],
+      "knownConcerns": [],
+      "inspectionFocus": [
+        "Verify moisture around deck hardware, windows, hatches and rail bases",
+        "Inspect fuel, water and waste tanks plus hoses and fittings",
+        "Inspect engines, transmissions or sterndrives, exhaust and cooling systems",
+        "Review AC/DC wiring, shore-power equipment and documented electrical modifications",
+        "Confirm steering, trim-tab and generator operation where fitted"
+      ],
+      "buyerQuestions": [
+        "What repair or survey history is available for moisture around deck hardware, windows, hatches and rail bases?",
+        "What repair or survey history is available for fuel, water and waste tanks plus hoses and fittings?",
+        "What repair or survey history is available for engines, transmissions or sterndrives, exhaust and cooling systems?",
+        "What repair or survey history is available for ac/dc wiring, shore-power equipment and documented electrical modifications?",
+        "What repair or survey history is available for steering, trim-tab and generator operation where fitted?"
+      ],
+      "ownerActions": [
+        "Keep deck, window and hardware penetrations sealed",
+        "Maintain propulsion, cooling, exhaust, steering and electrical systems to documented intervals",
+        "Document structural, tank, electrical and machinery repairs for future survey and resale"
+      ],
+      "modelVariations": [
+        {
+          "Name": "1984–89 generation",
+          "Description": "Early 340 Sundancer generation; roughly 35 ft 11 in overall with swim platform, 11 ft 11 in beam and 172 gal fuel.",
+          "AffectedYears": "1984–1989",
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-sundancer-1984-89"
+          ],
+          "Confidence": "High"
+        },
+        {
+          "Name": "1999–2002 generation",
+          "Description": "Later 340 Sundancer generation with 11 ft 5 in beam and 225 gal fuel.",
+          "AffectedYears": "1999–2002",
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-sundancer-1999-2002"
+          ],
+          "Confidence": "High"
+        },
+        {
+          "Name": "2003–08 generation",
+          "Description": "Redesigned, larger 340 Sundancer with 12 ft beam and substantially different hull and cockpit.",
+          "AffectedYears": "2003–2008",
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-sundancer-2003-08"
+          ],
+          "Confidence": "High"
+        }
+      ]
+    },
+    "evidence": [
+      {
+        "Scope": "IdentityAndDimensions",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "SEAR-340-SU"
+          ],
+          "Years": {
+            "From": 1984,
+            "To": 2008
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-sundancer-2003-08"
+        ],
+        "EvidenceTypes": [
+          "Technical or survey source"
+        ],
+        "Confidence": "High",
+        "Notes": "Model identity and representative specifications checked against model-guide or catalog evidence."
+      },
+      {
+        "Scope": "OverviewAndSuitability",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "SEAR-340-SU"
+          ],
+          "Years": {
+            "From": 1984,
+            "To": 2008
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-sundancer-2003-08"
+        ],
+        "EvidenceTypes": [
+          "Technical or survey source"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Buyer guidance derives from documented configuration, propulsion and accommodation."
+      },
+      {
+        "Scope": "InspectionFocus",
+        "AppliesTo": {
+          "Scope": "General age-related guidance",
+          "Models": [
+            "SEAR-340-SU"
+          ],
+          "Years": {
+            "From": 1984,
+            "To": 2008
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-sundancer-2003-08"
+        ],
+        "EvidenceTypes": [
+          "Technical or survey source"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Inspection guidance is age/configuration based and is not a claim of a model-wide defect."
+      }
+    ],
+    "images": [
+      {
+        "title": "Sea Ray 340 Sundancer image",
+        "url": "images/sear-340-su.jpg",
+        "sourceLabel": "B-Atlas image library",
+        "resourceType": "Model image",
+        "verificationStatus": "Local asset"
+      }
+    ],
+    "videos": [],
+    "listings": [],
+    "documents": [],
+    "ownerCommunities": [],
+    "knownIssues": [],
+    "similarModels": [],
+    "missingInformation": [],
+    "sources": [
+      {
+        "type": "CuratedResourceSet",
+        "label": "B-Atlas Global Resource Coverage Audit v6.66",
+        "verificationStatus": "Resource-set created; no resources inferred"
+      }
+    ],
+    "confidence": "Moderate",
+    "coverage": {},
+    "updatedAt": "2026-09-12"
+  }
+]

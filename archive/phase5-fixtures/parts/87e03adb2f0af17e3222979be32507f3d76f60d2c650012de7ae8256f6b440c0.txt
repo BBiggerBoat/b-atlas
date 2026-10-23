@@ -1,0 +1,4162 @@
+  "Score": 100
+        },
+        "Configuration": {
+          "Known": 5,
+          "Total": 5,
+          "Score": 100
+        },
+        "Accommodation": {
+          "Known": 4,
+          "Total": 4,
+          "Score": 100
+        },
+        "Suitability": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Ownership": {
+          "Known": 5,
+          "Total": 5,
+          "Score": 100
+        },
+        "Evidence": {
+          "Known": 0,
+          "Total": 1,
+          "Score": 0
+        }
+      },
+      "OverallScore": 86,
+      "SourceCount": 1,
+      "VerifiedSourceCount": 0,
+      "ContradictionCount": 0,
+      "RelationshipCount": 7,
+      "CoverageStatus": "Strong",
+      "GeneratedAt": "2026-07-26",
+      "ScoredFieldCount": 34
+    },
+    "updatedAt": "2026-08-07"
+  },
+  {
+    "schemaVersion": 2,
+    "generated": true,
+    "generatedFrom": [
+      "boatmodels.json",
+      "curatedresources.json",
+      "listingsearches.json",
+      "knowledgeannotations.json",
+      "knowledge-coverage.json"
+    ],
+    "identity": {
+      "boatModelId": "BKCV-26",
+      "manufacturer": "Back Cove",
+      "model": "26 Downeast Cruiser",
+      "displayName": "Back Cove 26"
+    },
+    "intelligence": {
+      "overview": "The Back Cove 26 is a Maine-built Downeast cruiser emphasizing clean sightlines, practical cockpit-to-helm flow and efficient propulsion. The model combines lobster-boat-influenced styling with contemporary recreational construction and accommodations.",
+      "suitability": {
+        "CoupleCruising": {
+          "Assessment": "Good",
+          "Summary": "The documented layout and protected helm arrangement are practical for a cruising couple, with accommodation depth varying by model."
+        },
+        "SoloHandling": {
+          "Assessment": "Good",
+          "Summary": "Visibility and cockpit access are generally strong; docking burden depends on size, engine arrangement and fitted thrusters."
+        },
+        "InlandWaterways": {
+          "Assessment": "Good",
+          "Summary": "Shallow-to-moderate draft and protected helm layouts suit many inland routes, but beam and air draft remain route-specific."
+        },
+        "ExposedWater": {
+          "Assessment": "Good",
+          "Summary": "Downeast/lobster-derived hull forms are intended for coastal conditions, but individual hull condition, loading and configuration remain decisive."
+        }
+      },
+      "strengths": [
+        "Maine-built Downeast design with practical helm and cockpit circulation",
+        "Good visibility and side-deck access for couple cruising",
+        "Propulsion package emphasizes efficient coastal cruising for its size"
+      ],
+      "tradeOffs": [
+        "Performance-oriented Downeast cruisers use more fuel than displacement trawlers",
+        "Accommodation volume is concentrated forward rather than in multiple private cabins on smaller models",
+        "Mechanical access and system complexity increase materially with size"
+      ],
+      "bestFor": [
+        "Couples wanting traditional Downeast styling with modern systems",
+        "Coastal and inland cruising at moderate-to-fast cruising speeds",
+        "Owners who value protected helm visibility and straightforward deck circulation"
+      ],
+      "avoidIf": [
+        "You require full-displacement economy at 6–8 knots",
+        "You need extensive multi-cabin liveaboard volume in a short hull",
+        "You prefer a flybridge or aft-cabin layout"
+      ],
+      "knownConcerns": [],
+      "inspectionFocus": [
+        "Inspect hull/deck coring around hardware and penetrations",
+        "Verify engine, cooling, exhaust and drive-system service history",
+        "Inspect hydraulic/electric helm-deck mechanisms where fitted",
+        "Confirm air draft, mast and antenna configuration",
+        "Verify tank capacities and propulsion package for the exact model year"
+      ],
+      "buyerQuestions": [
+        "What service, inspection or repair history is available for inspect hull/deck coring around hardware and penetrations?",
+        "What service, inspection or repair history is available for verify engine, cooling, exhaust and drive-system service history?",
+        "What service, inspection or repair history is available for inspect hydraulic/electric helm-deck mechanisms where fitted?",
+        "What service, inspection or repair history is available for confirm air draft, mast and antenna configuration?",
+        "What service, inspection or repair history is available for verify tank capacities and propulsion package for the exact model year?"
+      ],
+      "ownerActions": [
+        "Keep deck, window, hatch and hardware penetrations sealed",
+        "Maintain engine cooling, exhaust, fuel, steering and drive systems to documented intervals",
+        "Document structural, machinery and system modifications for future survey and resale"
+      ],
+      "modelVariations": []
+    },
+    "evidence": [
+      {
+        "Scope": "IdentityAndDimensions",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BKCV-26"
+          ],
+          "Years": {
+            "From": 2004,
+            "To": 2010
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.backcoveyachts.com/owners/heritage-models",
+          "https://www.backcoveyachts.com/motor-yachts/back-cove-39o",
+          "https://www.backcoveyachts.com/owners/heritage-models/back-cove-26"
+        ],
+        "EvidenceTypes": [
+          "Factory documented",
+          "Technical or survey source"
+        ],
+        "Confidence": "High",
+        "Notes": "Representative model identity and principal specifications are based on model-specific sources where available."
+      },
+      {
+        "Scope": "OverviewAndSuitability",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BKCV-26"
+          ],
+          "Years": {
+            "From": 2004,
+            "To": 2010
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.backcoveyachts.com/owners/heritage-models",
+          "https://www.backcoveyachts.com/motor-yachts/back-cove-39o",
+          "https://www.backcoveyachts.com/owners/heritage-models/back-cove-26"
+        ],
+        "EvidenceTypes": [
+          "Factory documented",
+          "Technical or survey source"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Decision guidance is derived from documented hull, propulsion, layout and intended use rather than advertising claims."
+      },
+      {
+        "Scope": "InspectionFocus",
+        "AppliesTo": {
+          "Scope": "Model family",
+          "Models": [
+            "BKCV-26"
+          ],
+          "Years": {
+            "From": 2004,
+            "To": 2010
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.backcoveyachts.com/owners/heritage-models",
+          "https://www.backcoveyachts.com/motor-yachts/back-cove-39o",
+          "https://www.backcoveyachts.com/owners/heritage-models/back-cove-26"
+        ],
+        "EvidenceTypes": [
+          "Technical or survey source"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Inspection items are configuration and age risks, not assertions that every hull suffers a defect."
+      }
+    ],
+    "images": [
+      {
+        "title": "Back Cove 26 image",
+        "url": "images/bkcv-26.jpg",
+        "sourceLabel": "B-Atlas image library",
+        "resourceType": "Model image",
+        "verificationStatus": "Local asset"
+      }
+    ],
+    "videos": [],
+    "listings": [],
+    "documents": [
+      {
+        "title": "Back Cove 26 — factory heritage page",
+        "url": "https://www.backcoveyachts.com/owners/heritage-models/back-cove-26",
+        "sourceLabel": "Back Cove Yachts",
+        "resourceType": "Manufacturer heritage page",
+        "verificationStatus": "Verified",
+        "scope": "Model-specific",
+        "confidence": "High",
+        "notes": ""
+      },
+      {
+        "title": "Back Cove heritage model archive",
+        "url": "https://www.backcoveyachts.com/owners/heritage-models",
+        "sourceLabel": "Back Cove Yachts",
+        "resourceType": "Manufacturer heritage archive",
+        "verificationStatus": "Verified",
+        "scope": "Back Cove family",
+        "confidence": "High",
+        "notes": ""
+      }
+    ],
+    "ownerCommunities": [],
+    "knownIssues": [],
+    "similarModels": [],
+    "missingInformation": [],
+    "sources": [
+      {
+        "type": "CuratedResourceSet",
+        "label": "B-Atlas Model Character + Resources Batch 26 — Back Cove / Sabre / Hunt",
+        "verificationStatus": "Links researched and checked 2026-08-07"
+      }
+    ],
+    "confidence": "Moderate",
+    "coverage": {
+      "BoatModelID": "BKCV-26",
+      "Categories": {
+        "Identity": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Specifications": {
+          "Known": 10,
+          "Total": 10,
+          "Score": 100
+        },
+        "Configuration": {
+          "Known": 5,
+          "Total": 5,
+          "Score": 100
+        },
+        "Accommodation": {
+          "Known": 4,
+          "Total": 4,
+          "Score": 100
+        },
+        "Suitability": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Ownership": {
+          "Known": 4,
+          "Total": 5,
+          "Score": 80
+        },
+        "Evidence": {
+          "Known": 0,
+          "Total": 1,
+          "Score": 0
+        }
+      },
+      "OverallScore": 83,
+      "SourceCount": 1,
+      "VerifiedSourceCount": 0,
+      "ContradictionCount": 0,
+      "RelationshipCount": 3,
+      "CoverageStatus": "Strong",
+      "GeneratedAt": "2026-07-26",
+      "ScoredFieldCount": 33
+    },
+    "updatedAt": "2026-08-07"
+  },
+  {
+    "schemaVersion": 2,
+    "generated": true,
+    "generatedFrom": [
+      "boatmodels.json",
+      "curatedresources.json",
+      "listingsearches.json",
+      "knowledgeannotations.json",
+      "knowledge-coverage.json"
+    ],
+    "identity": {
+      "boatModelId": "BKCV-29",
+      "manufacturer": "Back Cove",
+      "model": "29 Downeast Cruiser",
+      "displayName": "Back Cove 29"
+    },
+    "intelligence": {
+      "overview": "The Back Cove 29 is a Maine-built Downeast cruiser emphasizing clean sightlines, practical cockpit-to-helm flow and efficient propulsion. The model combines lobster-boat-influenced styling with contemporary recreational construction and accommodations.",
+      "suitability": {
+        "CoupleCruising": {
+          "Assessment": "Good",
+          "Summary": "The documented layout and protected helm arrangement are practical for a cruising couple, with accommodation depth varying by model."
+        },
+        "SoloHandling": {
+          "Assessment": "Good",
+          "Summary": "Visibility and cockpit access are generally strong; docking burden depends on size, engine arrangement and fitted thrusters."
+        },
+        "InlandWaterways": {
+          "Assessment": "Good",
+          "Summary": "Shallow-to-moderate draft and protected helm layouts suit many inland routes, but beam and air draft remain route-specific."
+        },
+        "ExposedWater": {
+          "Assessment": "Good",
+          "Summary": "Downeast/lobster-derived hull forms are intended for coastal conditions, but individual hull condition, loading and configuration remain decisive."
+        }
+      },
+      "strengths": [
+        "Maine-built Downeast design with practical helm and cockpit circulation",
+        "Good visibility and side-deck access for couple cruising",
+        "Propulsion package emphasizes efficient coastal cruising for its size"
+      ],
+      "tradeOffs": [
+        "Performance-oriented Downeast cruisers use more fuel than displacement trawlers",
+        "Accommodation volume is concentrated forward rather than in multiple private cabins on smaller models",
+        "Mechanical access and system complexity increase materially with size"
+      ],
+      "bestFor": [
+        "Couples wanting traditional Downeast styling with modern systems",
+        "Coastal and inland cruising at moderate-to-fast cruising speeds",
+        "Owners who value protected helm visibility and straightforward deck circulation"
+      ],
+      "avoidIf": [
+        "You require full-displacement economy at 6–8 knots",
+        "You need extensive multi-cabin liveaboard volume in a short hull",
+        "You prefer a flybridge or aft-cabin layout"
+      ],
+      "knownConcerns": [],
+      "inspectionFocus": [
+        "Inspect hull/deck coring around hardware and penetrations",
+        "Verify engine, cooling, exhaust and drive-system service history",
+        "Inspect hydraulic/electric helm-deck mechanisms where fitted",
+        "Confirm air draft, mast and antenna configuration",
+        "Verify tank capacities and propulsion package for the exact model year"
+      ],
+      "buyerQuestions": [
+        "What service, inspection or repair history is available for inspect hull/deck coring around hardware and penetrations?",
+        "What service, inspection or repair history is available for verify engine, cooling, exhaust and drive-system service history?",
+        "What service, inspection or repair history is available for inspect hydraulic/electric helm-deck mechanisms where fitted?",
+        "What service, inspection or repair history is available for confirm air draft, mast and antenna configuration?",
+        "What service, inspection or repair history is available for verify tank capacities and propulsion package for the exact model year?"
+      ],
+      "ownerActions": [
+        "Keep deck, window, hatch and hardware penetrations sealed",
+        "Maintain engine cooling, exhaust, fuel, steering and drive systems to documented intervals",
+        "Document structural, machinery and system modifications for future survey and resale"
+      ],
+      "modelVariations": []
+    },
+    "evidence": [
+      {
+        "Scope": "IdentityAndDimensions",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BKCV-29"
+          ],
+          "Years": {
+            "From": 2004,
+            "To": 2010
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.backcoveyachts.com/owners/heritage-models",
+          "https://www.backcoveyachts.com/motor-yachts/back-cove-39o",
+          "https://www.backcoveyachts.com/owners/heritage-models/back-cove-29"
+        ],
+        "EvidenceTypes": [
+          "Factory documented",
+          "Technical or survey source"
+        ],
+        "Confidence": "High",
+        "Notes": "Representative model identity and principal specifications are based on model-specific sources where available."
+      },
+      {
+        "Scope": "OverviewAndSuitability",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BKCV-29"
+          ],
+          "Years": {
+            "From": 2004,
+            "To": 2010
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.backcoveyachts.com/owners/heritage-models",
+          "https://www.backcoveyachts.com/motor-yachts/back-cove-39o",
+          "https://www.backcoveyachts.com/owners/heritage-models/back-cove-29"
+        ],
+        "EvidenceTypes": [
+          "Factory documented",
+          "Technical or survey source"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Decision guidance is derived from documented hull, propulsion, layout and intended use rather than advertising claims."
+      },
+      {
+        "Scope": "InspectionFocus",
+        "AppliesTo": {
+          "Scope": "Model family",
+          "Models": [
+            "BKCV-29"
+          ],
+          "Years": {
+            "From": 2004,
+            "To": 2010
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.backcoveyachts.com/owners/heritage-models",
+          "https://www.backcoveyachts.com/motor-yachts/back-cove-39o",
+          "https://www.backcoveyachts.com/owners/heritage-models/back-cove-29"
+        ],
+        "EvidenceTypes": [
+          "Technical or survey source"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Inspection items are configuration and age risks, not assertions that every hull suffers a defect."
+      }
+    ],
+    "images": [
+      {
+        "title": "Back Cove 29 image",
+        "url": "images/bkcv-29.jpg",
+        "sourceLabel": "B-Atlas image library",
+        "resourceType": "Model image",
+        "verificationStatus": "Local asset"
+      }
+    ],
+    "videos": [],
+    "listings": [],
+    "documents": [
+      {
+        "title": "Back Cove 29 — factory heritage page",
+        "url": "https://www.backcoveyachts.com/owners/heritage-models/back-cove-29",
+        "sourceLabel": "Back Cove Yachts",
+        "resourceType": "Manufacturer heritage page",
+        "verificationStatus": "Verified",
+        "scope": "Model-specific",
+        "confidence": "High",
+        "notes": ""
+      },
+      {
+        "title": "Back Cove 29 — Yachting retrospective",
+        "url": "https://www.yachtingmagazine.com/brokerage-back-cove-29/",
+        "sourceLabel": "Yachting",
+        "resourceType": "Model retrospective",
+        "verificationStatus": "Verified",
+        "scope": "Model-specific",
+        "confidence": "High",
+        "notes": ""
+      },
+      {
+        "title": "Back Cove heritage model archive",
+        "url": "https://www.backcoveyachts.com/owners/heritage-models",
+        "sourceLabel": "Back Cove Yachts",
+        "resourceType": "Manufacturer heritage archive",
+        "verificationStatus": "Verified",
+        "scope": "Back Cove family",
+        "confidence": "High",
+        "notes": ""
+      }
+    ],
+    "ownerCommunities": [],
+    "knownIssues": [],
+    "similarModels": [],
+    "missingInformation": [],
+    "sources": [
+      {
+        "type": "CuratedResourceSet",
+        "label": "B-Atlas Model Character + Resources Batch 26 — Back Cove / Sabre / Hunt",
+        "verificationStatus": "Links researched and checked 2026-08-07"
+      }
+    ],
+    "confidence": "Moderate",
+    "coverage": {
+      "BoatModelID": "BKCV-29",
+      "Categories": {
+        "Identity": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Specifications": {
+          "Known": 10,
+          "Total": 10,
+          "Score": 100
+        },
+        "Configuration": {
+          "Known": 5,
+          "Total": 5,
+          "Score": 100
+        },
+        "Accommodation": {
+          "Known": 4,
+          "Total": 4,
+          "Score": 100
+        },
+        "Suitability": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Ownership": {
+          "Known": 5,
+          "Total": 5,
+          "Score": 100
+        },
+        "Evidence": {
+          "Known": 0,
+          "Total": 1,
+          "Score": 0
+        }
+      },
+      "OverallScore": 86,
+      "SourceCount": 1,
+      "VerifiedSourceCount": 0,
+      "ContradictionCount": 0,
+      "RelationshipCount": 5,
+      "CoverageStatus": "Strong",
+      "GeneratedAt": "2026-07-26",
+      "ScoredFieldCount": 33
+    },
+    "updatedAt": "2026-09-12"
+  },
+  {
+    "schemaVersion": 2,
+    "generated": true,
+    "generatedFrom": [
+      "boatmodels.json",
+      "curatedresources.json",
+      "listingsearches.json",
+      "knowledgeannotations.json",
+      "knowledge-coverage.json"
+    ],
+    "identity": {
+      "boatModelId": "BKCV-30",
+      "manufacturer": "Back Cove",
+      "model": "30 Downeast Cruiser",
+      "displayName": "Back Cove 30"
+    },
+    "intelligence": {
+      "overview": "The Back Cove 30 is a Maine-built Downeast cruiser emphasizing clean sightlines, practical cockpit-to-helm flow and efficient propulsion. The model combines lobster-boat-influenced styling with contemporary recreational construction and accommodations.",
+      "suitability": {
+        "CoupleCruising": {
+          "Assessment": "Good",
+          "Summary": "The documented layout and protected helm arrangement are practical for a cruising couple, with accommodation depth varying by model."
+        },
+        "SoloHandling": {
+          "Assessment": "Good",
+          "Summary": "Visibility and cockpit access are generally strong; docking burden depends on size, engine arrangement and fitted thrusters."
+        },
+        "InlandWaterways": {
+          "Assessment": "Good",
+          "Summary": "Shallow-to-moderate draft and protected helm layouts suit many inland routes, but beam and air draft remain route-specific."
+        },
+        "ExposedWater": {
+          "Assessment": "Good",
+          "Summary": "Downeast/lobster-derived hull forms are intended for coastal conditions, but individual hull condition, loading and configuration remain decisive."
+        }
+      },
+      "strengths": [
+        "Maine-built Downeast design with practical helm and cockpit circulation",
+        "Good visibility and side-deck access for couple cruising",
+        "Propulsion package emphasizes efficient coastal cruising for its size"
+      ],
+      "tradeOffs": [
+        "Performance-oriented Downeast cruisers use more fuel than displacement trawlers",
+        "Accommodation volume is concentrated forward rather than in multiple private cabins on smaller models",
+        "Mechanical access and system complexity increase materially with size"
+      ],
+      "bestFor": [
+        "Couples wanting traditional Downeast styling with modern systems",
+        "Coastal and inland cruising at moderate-to-fast cruising speeds",
+        "Owners who value protected helm visibility and straightforward deck circulation"
+      ],
+      "avoidIf": [
+        "You require full-displacement economy at 6–8 knots",
+        "You need extensive multi-cabin liveaboard volume in a short hull",
+        "You prefer a flybridge or aft-cabin layout"
+      ],
+      "knownConcerns": [],
+      "inspectionFocus": [
+        "Inspect hull/deck coring around hardware and penetrations",
+        "Verify engine, cooling, exhaust and drive-system service history",
+        "Inspect hydraulic/electric helm-deck mechanisms where fitted",
+        "Confirm air draft, mast and antenna configuration",
+        "Verify tank capacities and propulsion package for the exact model year"
+      ],
+      "buyerQuestions": [
+        "What service, inspection or repair history is available for inspect hull/deck coring around hardware and penetrations?",
+        "What service, inspection or repair history is available for verify engine, cooling, exhaust and drive-system service history?",
+        "What service, inspection or repair history is available for inspect hydraulic/electric helm-deck mechanisms where fitted?",
+        "What service, inspection or repair history is available for confirm air draft, mast and antenna configuration?",
+        "What service, inspection or repair history is available for verify tank capacities and propulsion package for the exact model year?"
+      ],
+      "ownerActions": [
+        "Keep deck, window, hatch and hardware penetrations sealed",
+        "Maintain engine cooling, exhaust, fuel, steering and drive systems to documented intervals",
+        "Document structural, machinery and system modifications for future survey and resale"
+      ],
+      "modelVariations": []
+    },
+    "evidence": [
+      {
+        "Scope": "IdentityAndDimensions",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BKCV-30"
+          ],
+          "Years": {
+            "From": 2011,
+            "To": 2019
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.backcoveyachts.com/owners/heritage-models",
+          "https://www.backcoveyachts.com/motor-yachts/back-cove-39o",
+          "https://www.backcoveyachts.com/owners/heritage-models/back-cove-30"
+        ],
+        "EvidenceTypes": [
+          "Factory documented",
+          "Technical or survey source"
+        ],
+        "Confidence": "High",
+        "Notes": "Representative model identity and principal specifications are based on model-specific sources where available."
+      },
+      {
+        "Scope": "OverviewAndSuitability",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BKCV-30"
+          ],
+          "Years": {
+            "From": 2011,
+            "To": 2019
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.backcoveyachts.com/owners/heritage-models",
+          "https://www.backcoveyachts.com/motor-yachts/back-cove-39o",
+          "https://www.backcoveyachts.com/owners/heritage-models/back-cove-30"
+        ],
+        "EvidenceTypes": [
+          "Factory documented",
+          "Technical or survey source"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Decision guidance is derived from documented hull, propulsion, layout and intended use rather than advertising claims."
+      },
+      {
+        "Scope": "InspectionFocus",
+        "AppliesTo": {
+          "Scope": "Model family",
+          "Models": [
+            "BKCV-30"
+          ],
+          "Years": {
+            "From": 2011,
+            "To": 2019
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.backcoveyachts.com/owners/heritage-models",
+          "https://www.backcoveyachts.com/motor-yachts/back-cove-39o",
+          "https://www.backcoveyachts.com/owners/heritage-models/back-cove-30"
+        ],
+        "EvidenceTypes": [
+          "Technical or survey source"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Inspection items are configuration and age risks, not assertions that every hull suffers a defect."
+      }
+    ],
+    "images": [
+      {
+        "title": "Back Cove 30 image",
+        "url": "images/bkcv-30.jpg",
+        "sourceLabel": "B-Atlas image library",
+        "resourceType": "Model image",
+        "verificationStatus": "Local asset"
+      }
+    ],
+    "videos": [],
+    "listings": [],
+    "documents": [
+      {
+        "title": "Back Cove 30 — factory heritage page",
+        "url": "https://www.backcoveyachts.com/owners/heritage-models/back-cove-30",
+        "sourceLabel": "Back Cove Yachts",
+        "resourceType": "Manufacturer heritage page",
+        "verificationStatus": "Verified",
+        "scope": "Model-specific",
+        "confidence": "High",
+        "notes": ""
+      },
+      {
+        "title": "Back Cove heritage model archive",
+        "url": "https://www.backcoveyachts.com/owners/heritage-models",
+        "sourceLabel": "Back Cove Yachts",
+        "resourceType": "Manufacturer heritage archive",
+        "verificationStatus": "Verified",
+        "scope": "Back Cove family",
+        "confidence": "High",
+        "notes": ""
+      }
+    ],
+    "ownerCommunities": [],
+    "knownIssues": [],
+    "similarModels": [],
+    "missingInformation": [],
+    "sources": [
+      {
+        "type": "CuratedResourceSet",
+        "label": "B-Atlas Model Character + Resources Batch 26 — Back Cove / Sabre / Hunt",
+        "verificationStatus": "Links researched and checked 2026-08-07"
+      }
+    ],
+    "confidence": "Moderate",
+    "coverage": {
+      "BoatModelID": "BKCV-30",
+      "Categories": {
+        "Identity": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Specifications": {
+          "Known": 10,
+          "Total": 10,
+          "Score": 100
+        },
+        "Configuration": {
+          "Known": 5,
+          "Total": 5,
+          "Score": 100
+        },
+        "Accommodation": {
+          "Known": 4,
+          "Total": 4,
+          "Score": 100
+        },
+        "Suitability": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Ownership": {
+          "Known": 5,
+          "Total": 5,
+          "Score": 100
+        },
+        "Evidence": {
+          "Known": 0,
+          "Total": 1,
+          "Score": 0
+        }
+      },
+      "OverallScore": 86,
+      "SourceCount": 1,
+      "VerifiedSourceCount": 0,
+      "ContradictionCount": 0,
+      "RelationshipCount": 4,
+      "CoverageStatus": "Strong",
+      "GeneratedAt": "2026-07-26",
+      "ScoredFieldCount": 34
+    },
+    "updatedAt": "2026-08-07"
+  },
+  {
+    "schemaVersion": 2,
+    "generated": true,
+    "generatedFrom": [
+      "boatmodels.json",
+      "curatedresources.json",
+      "listingsearches.json",
+      "knowledgeannotations.json",
+      "knowledge-coverage.json"
+    ],
+    "identity": {
+      "boatModelId": "BKCV-32",
+      "manufacturer": "Back Cove",
+      "model": "32 Downeast Cruiser",
+      "displayName": "Back Cove 32"
+    },
+    "intelligence": {
+      "overview": "The Back Cove 32 is a Maine-built Downeast cruiser emphasizing clean sightlines, practical cockpit-to-helm flow and efficient propulsion. The model combines lobster-boat-influenced styling with contemporary recreational construction and accommodations.",
+      "suitability": {
+        "CoupleCruising": {
+          "Assessment": "Good",
+          "Summary": "The documented layout and protected helm arrangement are practical for a cruising couple, with accommodation depth varying by model."
+        },
+        "SoloHandling": {
+          "Assessment": "Good",
+          "Summary": "Visibility and cockpit access are generally strong; docking burden depends on size, engine arrangement and fitted thrusters."
+        },
+        "InlandWaterways": {
+          "Assessment": "Good",
+          "Summary": "Shallow-to-moderate draft and protected helm layouts suit many inland routes, but beam and air draft remain route-specific."
+        },
+        "ExposedWater": {
+          "Assessment": "Good",
+          "Summary": "Downeast/lobster-derived hull forms are intended for coastal conditions, but individual hull condition, loading and configuration remain decisive."
+        }
+      },
+      "strengths": [
+        "Maine-built Downeast design with practical helm and cockpit circulation",
+        "Good visibility and side-deck access for couple cruising",
+        "Propulsion package emphasizes efficient coastal cruising for its size"
+      ],
+      "tradeOffs": [
+        "Performance-oriented Downeast cruisers use more fuel than displacement trawlers",
+        "Accommodation volume is concentrated forward rather than in multiple private cabins on smaller models",
+        "Mechanical access and system complexity increase materially with size"
+      ],
+      "bestFor": [
+        "Couples wanting traditional Downeast styling with modern systems",
+        "Coastal and inland cruising at moderate-to-fast cruising speeds",
+        "Owners who value protected helm visibility and straightforward deck circulation"
+      ],
+      "avoidIf": [
+        "You require full-displacement economy at 6–8 knots",
+        "You need extensive multi-cabin liveaboard volume in a short hull",
+        "You prefer a flybridge or aft-cabin layout"
+      ],
+      "knownConcerns": [],
+      "inspectionFocus": [
+        "Inspect hull/deck coring around hardware and penetrations",
+        "Verify engine, cooling, exhaust and drive-system service history",
+        "Inspect hydraulic/electric helm-deck mechanisms where fitted",
+        "Confirm air draft, mast and antenna configuration",
+        "Verify tank capacities and propulsion package for the exact model year"
+      ],
+      "buyerQuestions": [
+        "What service, inspection or repair history is available for inspect hull/deck coring around hardware and penetrations?",
+        "What service, inspection or repair history is available for verify engine, cooling, exhaust and drive-system service history?",
+        "What service, inspection or repair history is available for inspect hydraulic/electric helm-deck mechanisms where fitted?",
+        "What service, inspection or repair history is available for confirm air draft, mast and antenna configuration?",
+        "What service, inspection or repair history is available for verify tank capacities and propulsion package for the exact model year?"
+      ],
+      "ownerActions": [
+        "Keep deck, window, hatch and hardware penetrations sealed",
+        "Maintain engine cooling, exhaust, fuel, steering and drive systems to documented intervals",
+        "Document structural, machinery and system modifications for future survey and resale"
+      ],
+      "modelVariations": []
+    },
+    "evidence": [
+      {
+        "Scope": "IdentityAndDimensions",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BKCV-32"
+          ],
+          "Years": {
+            "From": 2016,
+            "To": 2020
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.backcoveyachts.com/owners/heritage-models",
+          "https://www.backcoveyachts.com/motor-yachts/back-cove-39o",
+          "https://www.backcoveyachts.com/owners/heritage-models/back-cove-32"
+        ],
+        "EvidenceTypes": [
+          "Factory documented",
+          "Technical or survey source"
+        ],
+        "Confidence": "High",
+        "Notes": "Representative model identity and principal specifications are based on model-specific sources where available."
+      },
+      {
+        "Scope": "OverviewAndSuitability",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BKCV-32"
+          ],
+          "Years": {
+            "From": 2016,
+            "To": 2020
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.backcoveyachts.com/owners/heritage-models",
+          "https://www.backcoveyachts.com/motor-yachts/back-cove-39o",
+          "https://www.backcoveyachts.com/owners/heritage-models/back-cove-32"
+        ],
+        "EvidenceTypes": [
+          "Factory documented",
+          "Technical or survey source"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Decision guidance is derived from documented hull, propulsion, layout and intended use rather than advertising claims."
+      },
+      {
+        "Scope": "InspectionFocus",
+        "AppliesTo": {
+          "Scope": "Model family",
+          "Models": [
+            "BKCV-32"
+          ],
+          "Years": {
+            "From": 2016,
+            "To": 2020
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.backcoveyachts.com/owners/heritage-models",
+          "https://www.backcoveyachts.com/motor-yachts/back-cove-39o",
+          "https://www.backcoveyachts.com/owners/heritage-models/back-cove-32"
+        ],
+        "EvidenceTypes": [
+          "Technical or survey source"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Inspection items are configuration and age risks, not assertions that every hull suffers a defect."
+      }
+    ],
+    "images": [
+      {
+        "title": "Back Cove 32 image",
+        "url": "images/bkcv-32.jpg",
+        "sourceLabel": "B-Atlas image library",
+        "resourceType": "Model image",
+        "verificationStatus": "Local asset"
+      }
+    ],
+    "videos": [],
+    "listings": [],
+    "documents": [
+      {
+        "title": "Back Cove 32 — factory heritage page",
+        "url": "https://www.backcoveyachts.com/owners/heritage-models/back-cove-32",
+        "sourceLabel": "Back Cove Yachts",
+        "resourceType": "Manufacturer heritage page",
+        "verificationStatus": "Verified",
+        "scope": "Model-specific",
+        "confidence": "High",
+        "notes": ""
+      },
+      {
+        "title": "Back Cove 32 — 2016 launch review",
+        "url": "https://www.yachtingmagazine.com/back-cove-32-new-yacht/",
+        "sourceLabel": "Yachting",
+        "resourceType": "Launch review",
+        "verificationStatus": "Verified",
+        "scope": "Model-specific",
+        "confidence": "High",
+        "notes": ""
+      },
+      {
+        "title": "Back Cove heritage model archive",
+        "url": "https://www.backcoveyachts.com/owners/heritage-models",
+        "sourceLabel": "Back Cove Yachts",
+        "resourceType": "Manufacturer heritage archive",
+        "verificationStatus": "Verified",
+        "scope": "Back Cove family",
+        "confidence": "High",
+        "notes": ""
+      }
+    ],
+    "ownerCommunities": [],
+    "knownIssues": [],
+    "similarModels": [],
+    "missingInformation": [],
+    "sources": [
+      {
+        "type": "CuratedResourceSet",
+        "label": "B-Atlas Model Character + Resources Batch 26 — Back Cove / Sabre / Hunt",
+        "verificationStatus": "Links researched and checked 2026-08-07"
+      }
+    ],
+    "confidence": "Moderate",
+    "coverage": {
+      "BoatModelID": "BKCV-32",
+      "Categories": {
+        "Identity": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Specifications": {
+          "Known": 10,
+          "Total": 10,
+          "Score": 100
+        },
+        "Configuration": {
+          "Known": 5,
+          "Total": 5,
+          "Score": 100
+        },
+        "Accommodation": {
+          "Known": 4,
+          "Total": 4,
+          "Score": 100
+        },
+        "Suitability": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Ownership": {
+          "Known": 5,
+          "Total": 5,
+          "Score": 100
+        },
+        "Evidence": {
+          "Known": 0,
+          "Total": 1,
+          "Score": 0
+        }
+      },
+      "OverallScore": 86,
+      "SourceCount": 1,
+      "VerifiedSourceCount": 0,
+      "ContradictionCount": 0,
+      "RelationshipCount": 4,
+      "CoverageStatus": "Strong",
+      "GeneratedAt": "2026-07-26",
+      "ScoredFieldCount": 34
+    },
+    "updatedAt": "2026-09-12"
+  },
+  {
+    "schemaVersion": 2,
+    "generated": true,
+    "generatedFrom": [
+      "boatmodels.json",
+      "curatedresources.json",
+      "listingsearches.json",
+      "knowledgeannotations.json",
+      "knowledge-coverage.json"
+    ],
+    "identity": {
+      "boatModelId": "BKCV-33",
+      "manufacturer": "Back Cove",
+      "model": "33 Downeast Cruiser",
+      "displayName": "Back Cove 33"
+    },
+    "intelligence": {
+      "overview": "The Back Cove 33 is a Maine-built Downeast cruiser emphasizing clean sightlines, practical cockpit-to-helm flow and efficient propulsion. The model combines lobster-boat-influenced styling with contemporary recreational construction and accommodations.",
+      "suitability": {
+        "CoupleCruising": {
+          "Assessment": "Good",
+          "Summary": "The documented layout and protected helm arrangement are practical for a cruising couple, with accommodation depth varying by model."
+        },
+        "SoloHandling": {
+          "Assessment": "Good",
+          "Summary": "Visibility and cockpit access are generally strong; docking burden depends on size, engine arrangement and fitted thrusters."
+        },
+        "InlandWaterways": {
+          "Assessment": "Good",
+          "Summary": "Shallow-to-moderate draft and protected helm layouts suit many inland routes, but beam and air draft remain route-specific."
+        },
+        "ExposedWater": {
+          "Assessment": "Good",
+          "Summary": "Downeast/lobster-derived hull forms are intended for coastal conditions, but individual hull condition, loading and configuration remain decisive."
+        }
+      },
+      "strengths": [
+        "Maine-built Downeast design with practical helm and cockpit circulation",
+        "Good visibility and side-deck access for couple cruising",
+        "Propulsion package emphasizes efficient coastal cruising for its size"
+      ],
+      "tradeOffs": [
+        "Performance-oriented Downeast cruisers use more fuel than displacement trawlers",
+        "Accommodation volume is concentrated forward rather than in multiple private cabins on smaller models",
+        "Mechanical access and system complexity increase materially with size"
+      ],
+      "bestFor": [
+        "Couples wanting traditional Downeast styling with modern systems",
+        "Coastal and inland cruising at moderate-to-fast cruising speeds",
+        "Owners who value protected helm visibility and straightforward deck circulation"
+      ],
+      "avoidIf": [
+        "You require full-displacement economy at 6–8 knots",
+        "You need extensive multi-cabin liveaboard volume in a short hull",
+        "You prefer a flybridge or aft-cabin layout"
+      ],
+      "knownConcerns": [],
+      "inspectionFocus": [
+        "Inspect hull/deck coring around hardware and penetrations",
+        "Verify engine, cooling, exhaust and drive-system service history",
+        "Inspect hydraulic/electric helm-deck mechanisms where fitted",
+        "Confirm air draft, mast and antenna configuration",
+        "Verify tank capacities and propulsion package for the exact model year"
+      ],
+      "buyerQuestions": [
+        "What service, inspection or repair history is available for inspect hull/deck coring around hardware and penetrations?",
+        "What service, inspection or repair history is available for verify engine, cooling, exhaust and drive-system service history?",
+        "What service, inspection or repair history is available for inspect hydraulic/electric helm-deck mechanisms where fitted?",
+        "What service, inspection or repair history is available for confirm air draft, mast and antenna configuration?",
+        "What service, inspection or repair history is available for verify tank capacities and propulsion package for the exact model year?"
+      ],
+      "ownerActions": [
+        "Keep deck, window, hatch and hardware penetrations sealed",
+        "Maintain engine cooling, exhaust, fuel, steering and drive systems to documented intervals",
+        "Document structural, machinery and system modifications for future survey and resale"
+      ],
+      "modelVariations": [
+        {
+          "Name": "33 to 34 designation change",
+          "Description": "The Back Cove 33 was relaunched/renamed as the Back Cove 34 for 2012; the two records represent a documented model evolution rather than unrelated hulls.",
+          "AffectedYears": "2006–2018",
+          "EvidenceRefs": [
+            "https://www.backcoveyachts.com/owners/heritage-models/back-cove-33",
+            "https://www.backcoveyachts.com/owners/heritage-models/back-cove-34"
+          ],
+          "Confidence": "High"
+        }
+      ]
+    },
+    "evidence": [
+      {
+        "Scope": "IdentityAndDimensions",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BKCV-33"
+          ],
+          "Years": {
+            "From": 2006,
+            "To": 2011
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.backcoveyachts.com/owners/heritage-models",
+          "https://www.backcoveyachts.com/motor-yachts/back-cove-39o",
+          "https://www.backcoveyachts.com/owners/heritage-models/back-cove-33"
+        ],
+        "EvidenceTypes": [
+          "Factory documented",
+          "Technical or survey source"
+        ],
+        "Confidence": "High",
+        "Notes": "Representative model identity and principal specifications are based on model-specific sources where available."
+      },
+      {
+        "Scope": "OverviewAndSuitability",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BKCV-33"
+          ],
+          "Years": {
+            "From": 2006,
+            "To": 2011
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.backcoveyachts.com/owners/heritage-models",
+          "https://www.backcoveyachts.com/motor-yachts/back-cove-39o",
+          "https://www.backcoveyachts.com/owners/heritage-models/back-cove-33"
+        ],
+        "EvidenceTypes": [
+          "Factory documented",
+          "Technical or survey source"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Decision guidance is derived from documented hull, propulsion, layout and intended use rather than advertising claims."
+      },
+      {
+        "Scope": "InspectionFocus",
+        "AppliesTo": {
+          "Scope": "Model family",
+          "Models": [
+            "BKCV-33"
+          ],
+          "Years": {
+            "From": 2006,
+            "To": 2011
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.backcoveyachts.com/owners/heritage-models",
+          "https://www.backcoveyachts.com/motor-yachts/back-cove-39o",
+          "https://www.backcoveyachts.com/owners/heritage-models/back-cove-33"
+        ],
+        "EvidenceTypes": [
+          "Technical or survey source"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Inspection items are configuration and age risks, not assertions that every hull suffers a defect."
+      }
+    ],
+    "images": [
+      {
+        "title": "Back Cove 33 image",
+        "url": "images/bkcv-33.jpg",
+        "sourceLabel": "B-Atlas image library",
+        "resourceType": "Model image",
+        "verificationStatus": "Local asset"
+      }
+    ],
+    "videos": [],
+    "listings": [],
+    "documents": [
+      {
+        "title": "Back Cove 33 — factory heritage page",
+        "url": "https://www.backcoveyachts.com/owners/heritage-models/back-cove-33",
+        "sourceLabel": "Back Cove Yachts",
+        "resourceType": "Manufacturer heritage page",
+        "verificationStatus": "Verified",
+        "scope": "Model-specific",
+        "confidence": "High",
+        "notes": ""
+      },
+      {
+        "title": "Back Cove heritage model archive",
+        "url": "https://www.backcoveyachts.com/owners/heritage-models",
+        "sourceLabel": "Back Cove Yachts",
+        "resourceType": "Manufacturer heritage archive",
+        "verificationStatus": "Verified",
+        "scope": "Back Cove family",
+        "confidence": "High",
+        "notes": ""
+      }
+    ],
+    "ownerCommunities": [],
+    "knownIssues": [],
+    "similarModels": [],
+    "missingInformation": [],
+    "sources": [
+      {
+        "type": "CuratedResourceSet",
+        "label": "B-Atlas Model Character + Resources Batch 26 — Back Cove / Sabre / Hunt",
+        "verificationStatus": "Links researched and checked 2026-08-07"
+      }
+    ],
+    "confidence": "Moderate",
+    "coverage": {
+      "BoatModelID": "BKCV-33",
+      "Categories": {
+        "Identity": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Specifications": {
+          "Known": 10,
+          "Total": 10,
+          "Score": 100
+        },
+        "Configuration": {
+          "Known": 5,
+          "Total": 5,
+          "Score": 100
+        },
+        "Accommodation": {
+          "Known": 4,
+          "Total": 4,
+          "Score": 100
+        },
+        "Suitability": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Ownership": {
+          "Known": 5,
+          "Total": 5,
+          "Score": 100
+        },
+        "Evidence": {
+          "Known": 0,
+          "Total": 1,
+          "Score": 0
+        }
+      },
+      "OverallScore": 86,
+      "SourceCount": 1,
+      "VerifiedSourceCount": 0,
+      "ContradictionCount": 0,
+      "RelationshipCount": 10,
+      "CoverageStatus": "Strong",
+      "GeneratedAt": "2026-07-26",
+      "ScoredFieldCount": 33
+    },
+    "updatedAt": "2026-08-07"
+  },
+  {
+    "schemaVersion": 2,
+    "generated": true,
+    "generatedFrom": [
+      "boatmodels.json",
+      "curatedresources.json",
+      "listingsearches.json",
+      "knowledgeannotations.json",
+      "knowledge-coverage.json"
+    ],
+    "identity": {
+      "boatModelId": "BKCV-34",
+      "manufacturer": "Back Cove",
+      "model": "34 Downeast Cruiser",
+      "displayName": "Back Cove 34"
+    },
+    "intelligence": {
+      "overview": "The Back Cove 34 is a Maine-built Downeast cruiser emphasizing clean sightlines, practical cockpit-to-helm flow and efficient propulsion. The model combines lobster-boat-influenced styling with contemporary recreational construction and accommodations.",
+      "suitability": {
+        "CoupleCruising": {
+          "Assessment": "Good",
+          "Summary": "The documented layout and protected helm arrangement are practical for a cruising couple, with accommodation depth varying by model."
+        },
+        "SoloHandling": {
+          "Assessment": "Mixed",
+          "Summary": "Visibility and cockpit access are generally strong; docking burden depends on size, engine arrangement and fitted thrusters."
+        },
+        "InlandWaterways": {
+          "Assessment": "Good",
+          "Summary": "Shallow-to-moderate draft and protected helm layouts suit many inland routes, but beam and air draft remain route-specific."
+        },
+        "ExposedWater": {
+          "Assessment": "Good",
+          "Summary": "Downeast/lobster-derived hull forms are intended for coastal conditions, but individual hull condition, loading and configuration remain decisive."
+        }
+      },
+      "strengths": [
+        "Maine-built Downeast design with practical helm and cockpit circulation",
+        "Good visibility and side-deck access for couple cruising",
+        "Propulsion package emphasizes efficient coastal cruising for its size"
+      ],
+      "tradeOffs": [
+        "Performance-oriented Downeast cruisers use more fuel than displacement trawlers",
+        "Accommodation volume is concentrated forward rather than in multiple private cabins on smaller models",
+        "Mechanical access and system complexity increase materially with size"
+      ],
+      "bestFor": [
+        "Couples wanting traditional Downeast styling with modern systems",
+        "Coastal and inland cruising at moderate-to-fast cruising speeds",
+        "Owners who value protected helm visibility and straightforward deck circulation"
+      ],
+      "avoidIf": [
+        "You require full-displacement economy at 6–8 knots",
+        "You need extensive multi-cabin liveaboard volume in a short hull",
+        "You prefer a flybridge or aft-cabin layout"
+      ],
+      "knownConcerns": [],
+      "inspectionFocus": [
+        "Inspect hull/deck coring around hardware and penetrations",
+        "Verify engine, cooling, exhaust and drive-system service history",
+        "Inspect hydraulic/electric helm-deck mechanisms where fitted",
+        "Confirm air draft, mast and antenna configuration",
+        "Verify tank capacities and propulsion package for the exact model year"
+      ],
+      "buyerQuestions": [
+        "What service, inspection or repair history is available for inspect hull/deck coring around hardware and penetrations?",
+        "What service, inspection or repair history is available for verify engine, cooling, exhaust and drive-system service history?",
+        "What service, inspection or repair history is available for inspect hydraulic/electric helm-deck mechanisms where fitted?",
+        "What service, inspection or repair history is available for confirm air draft, mast and antenna configuration?",
+        "What service, inspection or repair history is available for verify tank capacities and propulsion package for the exact model year?"
+      ],
+      "ownerActions": [
+        "Keep deck, window, hatch and hardware penetrations sealed",
+        "Maintain engine cooling, exhaust, fuel, steering and drive systems to documented intervals",
+        "Document structural, machinery and system modifications for future survey and resale"
+      ],
+      "modelVariations": []
+    },
+    "evidence": [
+      {
+        "Scope": "IdentityAndDimensions",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BKCV-34"
+          ],
+          "Years": {
+            "From": 2012,
+            "To": 2018
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.backcoveyachts.com/owners/heritage-models",
+          "https://www.backcoveyachts.com/motor-yachts/back-cove-39o",
+          "https://www.backcoveyachts.com/owners/heritage-models/back-cove-34"
+        ],
+        "EvidenceTypes": [
+          "Factory documented",
+          "Technical or survey source"
+        ],
+        "Confidence": "High",
+        "Notes": "Representative model identity and principal specifications are based on model-specific sources where available."
+      },
+      {
+        "Scope": "OverviewAndSuitability",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BKCV-34"
+          ],
+          "Years": {
+            "From": 2012,
+            "To": 2018
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.backcoveyachts.com/owners/heritage-models",
+          "https://www.backcoveyachts.com/motor-yachts/back-cove-39o",
+          "https://www.backcoveyachts.com/owners/heritage-models/back-cove-34"
+        ],
+        "EvidenceTypes": [
+          "Factory documented",
+          "Technical or survey source"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Decision guidance is derived from documented hull, propulsion, layout and intended use rather than advertising claims."
+      },
+      {
+        "Scope": "InspectionFocus",
+        "AppliesTo": {
+          "Scope": "Model family",
+          "Models": [
+            "BKCV-34"
+          ],
+          "Years": {
+            "From": 2012,
+            "To": 2018
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.backcoveyachts.com/owners/heritage-models",
+          "https://www.backcoveyachts.com/motor-yachts/back-cove-39o",
+          "https://www.backcoveyachts.com/owners/heritage-models/back-cove-34"
+        ],
+        "EvidenceTypes": [
+          "Technical or survey source"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Inspection items are configuration and age risks, not assertions that every hull suffers a defect."
+      }
+    ],
+    "images": [
+      {
+        "title": "Back Cove 34 image",
+        "url": "images/bkcv-34.jpg",
+        "sourceLabel": "B-Atlas image library",
+        "resourceType": "Model image",
+        "verificationStatus": "Local asset"
+      }
+    ],
+    "videos": [],
+    "listings": [],
+    "documents": [
+      {
+        "title": "Back Cove 34 — factory heritage page",
+        "url": "https://www.backcoveyachts.com/owners/heritage-models/back-cove-34",
+        "sourceLabel": "Back Cove Yachts",
+        "resourceType": "Manufacturer heritage page",
+        "verificationStatus": "Verified",
+        "scope": "Model-specific",
+        "confidence": "High",
+        "notes": ""
+      },
+      {
+        "title": "Back Cove heritage model archive",
+        "url": "https://www.backcoveyachts.com/owners/heritage-models",
+        "sourceLabel": "Back Cove Yachts",
+        "resourceType": "Manufacturer heritage archive",
+        "verificationStatus": "Verified",
+        "scope": "Back Cove family",
+        "confidence": "High",
+        "notes": ""
+      }
+    ],
+    "ownerCommunities": [],
+    "knownIssues": [],
+    "similarModels": [],
+    "missingInformation": [],
+    "sources": [
+      {
+        "type": "CuratedResourceSet",
+        "label": "B-Atlas Model Character + Resources Batch 26 — Back Cove / Sabre / Hunt",
+        "verificationStatus": "Links researched and checked 2026-08-07"
+      }
+    ],
+    "confidence": "Moderate",
+    "coverage": {
+      "BoatModelID": "BKCV-34",
+      "Categories": {
+        "Identity": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Specifications": {
+          "Known": 10,
+          "Total": 10,
+          "Score": 100
+        },
+        "Configuration": {
+          "Known": 5,
+          "Total": 5,
+          "Score": 100
+        },
+        "Accommodation": {
+          "Known": 4,
+          "Total": 4,
+          "Score": 100
+        },
+        "Suitability": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Ownership": {
+          "Known": 5,
+          "Total": 5,
+          "Score": 100
+        },
+        "Evidence": {
+          "Known": 0,
+          "Total": 1,
+          "Score": 0
+        }
+      },
+      "OverallScore": 86,
+      "SourceCount": 1,
+      "VerifiedSourceCount": 0,
+      "ContradictionCount": 0,
+      "RelationshipCount": 4,
+      "CoverageStatus": "Strong",
+      "GeneratedAt": "2026-07-26",
+      "ScoredFieldCount": 34
+    },
+    "updatedAt": "2026-08-07"
+  },
+  {
+    "schemaVersion": 2,
+    "generated": true,
+    "generatedFrom": [
+      "boatmodels.json",
+      "curatedresources.json",
+      "listingsearches.json",
+      "knowledgeannotations.json",
+      "knowledge-coverage.json"
+    ],
+    "identity": {
+      "boatModelId": "BKCV-37",
+      "manufacturer": "Back Cove",
+      "model": "37 Downeast Cruiser",
+      "displayName": "Back Cove 37"
+    },
+    "intelligence": {
+      "overview": "The Back Cove 37 is a Maine-built Downeast cruiser emphasizing clean sightlines, practical cockpit-to-helm flow and efficient propulsion. The model combines lobster-boat-influenced styling with contemporary recreational construction and accommodations.",
+      "suitability": {
+        "CoupleCruising": {
+          "Assessment": "Good",
+          "Summary": "The documented layout and protected helm arrangement are practical for a cruising couple, with accommodation depth varying by model."
+        },
+        "SoloHandling": {
+          "Assessment": "Mixed",
+          "Summary": "Visibility and cockpit access are generally strong; docking burden depends on size, engine arrangement and fitted thrusters."
+        },
+        "InlandWaterways": {
+          "Assessment": "Good",
+          "Summary": "Shallow-to-moderate draft and protected helm layouts suit many inland routes, but beam and air draft remain route-specific."
+        },
+        "ExposedWater": {
+          "Assessment": "Good",
+          "Summary": "Downeast/lobster-derived hull forms are intended for coastal conditions, but individual hull condition, loading and configuration remain decisive."
+        }
+      },
+      "strengths": [
+        "Maine-built Downeast design with practical helm and cockpit circulation",
+        "Good visibility and side-deck access for couple cruising",
+        "Propulsion package emphasizes efficient coastal cruising for its size"
+      ],
+      "tradeOffs": [
+        "Performance-oriented Downeast cruisers use more fuel than displacement trawlers",
+        "Accommodation volume is concentrated forward rather than in multiple private cabins on smaller models",
+        "Mechanical access and system complexity increase materially with size"
+      ],
+      "bestFor": [
+        "Couples wanting traditional Downeast styling with modern systems",
+        "Coastal and inland cruising at moderate-to-fast cruising speeds",
+        "Owners who value protected helm visibility and straightforward deck circulation"
+      ],
+      "avoidIf": [
+        "You require full-displacement economy at 6–8 knots",
+        "You need extensive multi-cabin liveaboard volume in a short hull",
+        "You prefer a flybridge or aft-cabin layout"
+      ],
+      "knownConcerns": [],
+      "inspectionFocus": [
+        "Inspect hull/deck coring around hardware and penetrations",
+        "Verify engine, cooling, exhaust and drive-system service history",
+        "Inspect hydraulic/electric helm-deck mechanisms where fitted",
+        "Confirm air draft, mast and antenna configuration",
+        "Verify tank capacities and propulsion package for the exact model year"
+      ],
+      "buyerQuestions": [
+        "What service, inspection or repair history is available for inspect hull/deck coring around hardware and penetrations?",
+        "What service, inspection or repair history is available for verify engine, cooling, exhaust and drive-system service history?",
+        "What service, inspection or repair history is available for inspect hydraulic/electric helm-deck mechanisms where fitted?",
+        "What service, inspection or repair history is available for confirm air draft, mast and antenna configuration?",
+        "What service, inspection or repair history is available for verify tank capacities and propulsion package for the exact model year?"
+      ],
+      "ownerActions": [
+        "Keep deck, window, hatch and hardware penetrations sealed",
+        "Maintain engine cooling, exhaust, fuel, steering and drive systems to documented intervals",
+        "Document structural, machinery and system modifications for future survey and resale"
+      ],
+      "modelVariations": []
+    },
+    "evidence": [
+      {
+        "Scope": "IdentityAndDimensions",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BKCV-37"
+          ],
+          "Years": {
+            "From": 2009,
+            "To": 2020
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.backcoveyachts.com/owners/heritage-models",
+          "https://www.backcoveyachts.com/motor-yachts/back-cove-39o",
+          "https://www.backcoveyachts.com/owners/heritage-models/back-cove-37"
+        ],
+        "EvidenceTypes": [
+          "Factory documented",
+          "Technical or survey source"
+        ],
+        "Confidence": "High",
+        "Notes": "Representative model identity and principal specifications are based on model-specific sources where available."
+      },
+      {
+        "Scope": "OverviewAndSuitability",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BKCV-37"
+          ],
+          "Years": {
+            "From": 2009,
+            "To": 2020
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.backcoveyachts.com/owners/heritage-models",
+          "https://www.backcoveyachts.com/motor-yachts/back-cove-39o",
+          "https://www.backcoveyachts.com/owners/heritage-models/back-cove-37"
+        ],
+        "EvidenceTypes": [
+          "Factory documented",
+          "Technical or survey source"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Decision guidance is derived from documented hull, propulsion, layout and intended use rather than advertising claims."
+      },
+      {
+        "Scope": "InspectionFocus",
+        "AppliesTo": {
+          "Scope": "Model family",
+          "Models": [
+            "BKCV-37"
+          ],
+          "Years": {
+            "From": 2009,
+            "To": 2020
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.backcoveyachts.com/owners/heritage-models",
+          "https://www.backcoveyachts.com/motor-yachts/back-cove-39o",
+          "https://www.backcoveyachts.com/owners/heritage-models/back-cove-37"
+        ],
+        "EvidenceTypes": [
+          "Technical or survey source"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Inspection items are configuration and age risks, not assertions that every hull suffers a defect."
+      }
+    ],
+    "images": [
+      {
+        "title": "Back Cove 37 image",
+        "url": "images/bkcv-37.jpg",
+        "sourceLabel": "B-Atlas image library",
+        "resourceType": "Model image",
+        "verificationStatus": "Local asset"
+      }
+    ],
+    "videos": [],
+    "listings": [],
+    "documents": [
+      {
+        "title": "Back Cove 37 — factory heritage page",
+        "url": "https://www.backcoveyachts.com/owners/heritage-models/back-cove-37",
+        "sourceLabel": "Back Cove Yachts",
+        "resourceType": "Manufacturer heritage page",
+        "verificationStatus": "Verified",
+        "scope": "Model-specific",
+        "confidence": "High",
+        "notes": ""
+      },
+      {
+        "title": "Back Cove 37 — launch/spec review",
+        "url": "https://powerboatmagazine.co.nz/back-cove-37/",
+        "sourceLabel": "Power Boat Magazine",
+        "resourceType": "Model review",
+        "verificationStatus": "Verified",
+        "scope": "Model-specific",
+        "confidence": "High",
+        "notes": ""
+      },
+      {
+        "title": "Back Cove heritage model archive",
+        "url": "https://www.backcoveyachts.com/owners/heritage-models",
+        "sourceLabel": "Back Cove Yachts",
+        "resourceType": "Manufacturer heritage archive",
+        "verificationStatus": "Verified",
+        "scope": "Back Cove family",
+        "confidence": "High",
+        "notes": ""
+      }
+    ],
+    "ownerCommunities": [],
+    "knownIssues": [],
+    "similarModels": [],
+    "missingInformation": [],
+    "sources": [
+      {
+        "type": "CuratedResourceSet",
+        "label": "B-Atlas Model Character + Resources Batch 26 — Back Cove / Sabre / Hunt",
+        "verificationStatus": "Links researched and checked 2026-08-07"
+      }
+    ],
+    "confidence": "Moderate",
+    "coverage": {
+      "BoatModelID": "BKCV-37",
+      "Categories": {
+        "Identity": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Specifications": {
+          "Known": 10,
+          "Total": 10,
+          "Score": 100
+        },
+        "Configuration": {
+          "Known": 5,
+          "Total": 5,
+          "Score": 100
+        },
+        "Accommodation": {
+          "Known": 4,
+          "Total": 4,
+          "Score": 100
+        },
+        "Suitability": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Ownership": {
+          "Known": 5,
+          "Total": 5,
+          "Score": 100
+        },
+        "Evidence": {
+          "Known": 0,
+          "Total": 1,
+          "Score": 0
+        }
+      },
+      "OverallScore": 86,
+      "SourceCount": 1,
+      "VerifiedSourceCount": 0,
+      "ContradictionCount": 0,
+      "RelationshipCount": 3,
+      "CoverageStatus": "Strong",
+      "GeneratedAt": "2026-07-26",
+      "ScoredFieldCount": 34
+    },
+    "updatedAt": "2026-08-07"
+  },
+  {
+    "schemaVersion": 2,
+    "generated": true,
+    "generatedFrom": [
+      "boatmodels.json",
+      "curatedresources.json",
+      "listingsearches.json",
+      "knowledgeannotations.json",
+      "knowledge-coverage.json"
+    ],
+    "identity": {
+      "boatModelId": "BKCV-39O",
+      "manufacturer": "Back Cove",
+      "model": "39O Outboard Salon Cruiser",
+      "displayName": "Back Cove 39O"
+    },
+    "intelligence": {
+      "overview": "The Back Cove 39O is a Maine-built Downeast cruiser emphasizing clean sightlines, practical cockpit-to-helm flow and efficient propulsion. The model combines lobster-boat-influenced styling with contemporary recreational construction and accommodations.",
+      "suitability": {
+        "CoupleCruising": {
+          "Assessment": "Good",
+          "Summary": "The documented layout and protected helm arrangement are practical for a cruising couple, with accommodation depth varying by model."
+        },
+        "SoloHandling": {
+          "Assessment": "Mixed",
+          "Summary": "Visibility and cockpit access are generally strong; docking burden depends on size, engine arrangement and fitted thrusters."
+        },
+        "InlandWaterways": {
+          "Assessment": "Good",
+          "Summary": "Shallow-to-moderate draft and protected helm layouts suit many inland routes, but beam and air draft remain route-specific."
+        },
+        "ExposedWater": {
+          "Assessment": "Good",
+          "Summary": "Downeast/lobster-derived hull forms are intended for coastal conditions, but individual hull condition, loading and configuration remain decisive."
+        }
+      },
+      "strengths": [
+        "Maine-built Downeast design with practical helm and cockpit circulation",
+        "Good visibility and side-deck access for couple cruising",
+        "Propulsion package emphasizes efficient coastal cruising for its size"
+      ],
+      "tradeOffs": [
+        "Performance-oriented Downeast cruisers use more fuel than displacement trawlers",
+        "Accommodation volume is concentrated forward rather than in multiple private cabins on smaller models",
+        "Mechanical access and system complexity increase materially with size"
+      ],
+      "bestFor": [
+        "Couples wanting traditional Downeast styling with modern systems",
+        "Coastal and inland cruising at moderate-to-fast cruising speeds",
+        "Owners who value protected helm visibility and straightforward deck circulation"
+      ],
+      "avoidIf": [
+        "You require full-displacement economy at 6–8 knots",
+        "You need extensive multi-cabin liveaboard volume in a short hull",
+        "You prefer a flybridge or aft-cabin layout"
+      ],
+      "knownConcerns": [],
+      "inspectionFocus": [
+        "Inspect hull/deck coring around hardware and penetrations",
+        "Verify engine, cooling, exhaust and drive-system service history",
+        "Inspect hydraulic/electric helm-deck mechanisms where fitted",
+        "Confirm air draft, mast and antenna configuration",
+        "Verify tank capacities and propulsion package for the exact model year"
+      ],
+      "buyerQuestions": [
+        "What service, inspection or repair history is available for inspect hull/deck coring around hardware and penetrations?",
+        "What service, inspection or repair history is available for verify engine, cooling, exhaust and drive-system service history?",
+        "What service, inspection or repair history is available for inspect hydraulic/electric helm-deck mechanisms where fitted?",
+        "What service, inspection or repair history is available for confirm air draft, mast and antenna configuration?",
+        "What service, inspection or repair history is available for verify tank capacities and propulsion package for the exact model year?"
+      ],
+      "ownerActions": [
+        "Keep deck, window, hatch and hardware penetrations sealed",
+        "Maintain engine cooling, exhaust, fuel, steering and drive systems to documented intervals",
+        "Document structural, machinery and system modifications for future survey and resale"
+      ],
+      "modelVariations": []
+    },
+    "evidence": [
+      {
+        "Scope": "IdentityAndDimensions",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BKCV-39O"
+          ],
+          "Years": {
+            "From": 2020,
+            "To": null
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.backcoveyachts.com/owners/heritage-models",
+          "https://www.backcoveyachts.com/motor-yachts/back-cove-39o",
+          "https://www.backcoveyachts.com/motor-yachts/back-cove-39o"
+        ],
+        "EvidenceTypes": [
+          "Factory documented",
+          "Technical or survey source"
+        ],
+        "Confidence": "High",
+        "Notes": "Representative model identity and principal specifications are based on model-specific sources where available."
+      },
+      {
+        "Scope": "OverviewAndSuitability",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BKCV-39O"
+          ],
+          "Years": {
+            "From": 2020,
+            "To": null
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.backcoveyachts.com/owners/heritage-models",
+          "https://www.backcoveyachts.com/motor-yachts/back-cove-39o",
+          "https://www.backcoveyachts.com/motor-yachts/back-cove-39o"
+        ],
+        "EvidenceTypes": [
+          "Factory documented",
+          "Technical or survey source"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Decision guidance is derived from documented hull, propulsion, layout and intended use rather than advertising claims."
+      },
+      {
+        "Scope": "InspectionFocus",
+        "AppliesTo": {
+          "Scope": "Model family",
+          "Models": [
+            "BKCV-39O"
+          ],
+          "Years": {
+            "From": 2020,
+            "To": null
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.backcoveyachts.com/owners/heritage-models",
+          "https://www.backcoveyachts.com/motor-yachts/back-cove-39o",
+          "https://www.backcoveyachts.com/motor-yachts/back-cove-39o"
+        ],
+        "EvidenceTypes": [
+          "Technical or survey source"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Inspection items are configuration and age risks, not assertions that every hull suffers a defect."
+      }
+    ],
+    "images": [
+      {
+        "title": "Back Cove 39O image",
+        "url": "images/bkcv-39o.jpg",
+        "sourceLabel": "B-Atlas image library",
+        "resourceType": "Model image",
+        "verificationStatus": "Local asset"
+      }
+    ],
+    "videos": [],
+    "listings": [],
+    "documents": [
+      {
+        "title": "Back Cove 39O — current factory page",
+        "url": "https://www.backcoveyachts.com/motor-yachts/back-cove-39o",
+        "sourceLabel": "Back Cove Yachts",
+        "resourceType": "Manufacturer model page",
+        "verificationStatus": "Verified",
+        "scope": "Model-specific",
+        "confidence": "High",
+        "notes": ""
+      },
+      {
+        "title": "Back Cove 39O — 2020 launch announcement",
+        "url": "https://canadianboating.ca/news/current/just-launching-back-cove-390/",
+        "sourceLabel": "Canadian Boating",
+        "resourceType": "Launch announcement",
+        "verificationStatus": "Verified",
+        "scope": "Model-specific",
+        "confidence": "High",
+        "notes": ""
+      }
+    ],
+    "ownerCommunities": [],
+    "knownIssues": [],
+    "similarModels": [],
+    "missingInformation": [],
+    "sources": [
+      {
+        "type": "CuratedResourceSet",
+        "label": "B-Atlas Model Character + Resources Batch 26 — Back Cove / Sabre / Hunt",
+        "verificationStatus": "Links researched and checked 2026-08-07"
+      }
+    ],
+    "confidence": "Moderate",
+    "coverage": {
+      "BoatModelID": "BKCV-39O",
+      "Categories": {
+        "Identity": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Specifications": {
+          "Known": 10,
+          "Total": 10,
+          "Score": 100
+        },
+        "Configuration": {
+          "Known": 5,
+          "Total": 5,
+          "Score": 100
+        },
+        "Accommodation": {
+          "Known": 4,
+          "Total": 4,
+          "Score": 100
+        },
+        "Suitability": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Ownership": {
+          "Known": 4,
+          "Total": 5,
+          "Score": 80
+        },
+        "Evidence": {
+          "Known": 0,
+          "Total": 1,
+          "Score": 0
+        }
+      },
+      "OverallScore": 83,
+      "SourceCount": 1,
+      "VerifiedSourceCount": 0,
+      "ContradictionCount": 0,
+      "RelationshipCount": 3,
+      "CoverageStatus": "Strong",
+      "GeneratedAt": "2026-07-26",
+      "ScoredFieldCount": 34
+    },
+    "updatedAt": "2026-08-07"
+  },
+  {
+    "schemaVersion": 2,
+    "generated": true,
+    "generatedFrom": [
+      "boatmodels.json",
+      "curatedresources.json",
+      "listingsearches.json",
+      "knowledgeannotations.json",
+      "knowledge-coverage.json"
+    ],
+    "identity": {
+      "boatModelId": "BKCV-41",
+      "manufacturer": "Back Cove",
+      "model": "41 Flagship Downeast Cruiser",
+      "displayName": "Back Cove 41"
+    },
+    "intelligence": {
+      "overview": "The Back Cove 41 is a Maine-built Downeast cruiser emphasizing clean sightlines, practical cockpit-to-helm flow and efficient propulsion. The model combines lobster-boat-influenced styling with contemporary recreational construction and accommodations.",
+      "suitability": {
+        "CoupleCruising": {
+          "Assessment": "Good",
+          "Summary": "The documented layout and protected helm arrangement are practical for a cruising couple, with accommodation depth varying by model."
+        },
+        "SoloHandling": {
+          "Assessment": "Mixed",
+          "Summary": "Visibility and cockpit access are generally strong; docking burden depends on size, engine arrangement and fitted thrusters."
+        },
+        "InlandWaterways": {
+          "Assessment": "Mixed",
+          "Summary": "Shallow-to-moderate draft and protected helm layouts suit many inland routes, but beam and air draft remain route-specific."
+        },
+        "ExposedWater": {
+          "Assessment": "Good",
+          "Summary": "Downeast/lobster-derived hull forms are intended for coastal conditions, but individual hull condition, loading and configuration remain decisive."
+        }
+      },
+      "strengths": [
+        "Maine-built Downeast design with practical helm and cockpit circulation",
+        "Good visibility and side-deck access for couple cruising",
+        "Propulsion package emphasizes efficient coastal cruising for its size"
+      ],
+      "tradeOffs": [
+        "Performance-oriented Downeast cruisers use more fuel than displacement trawlers",
+        "Accommodation volume is concentrated forward rather than in multiple private cabins on smaller models",
+        "Mechanical access and system complexity increase materially with size"
+      ],
+      "bestFor": [
+        "Couples wanting traditional Downeast styling with modern systems",
+        "Coastal and inland cruising at moderate-to-fast cruising speeds",
+        "Owners who value protected helm visibility and straightforward deck circulation"
+      ],
+      "avoidIf": [
+        "You require full-displacement economy at 6–8 knots",
+        "You need extensive multi-cabin liveaboard volume in a short hull",
+        "You prefer a flybridge or aft-cabin layout"
+      ],
+      "knownConcerns": [],
+      "inspectionFocus": [
+        "Inspect hull/deck coring around hardware and penetrations",
+        "Verify engine, cooling, exhaust and drive-system service history",
+        "Inspect hydraulic/electric helm-deck mechanisms where fitted",
+        "Confirm air draft, mast and antenna configuration",
+        "Verify tank capacities and propulsion package for the exact model year"
+      ],
+      "buyerQuestions": [
+        "What service, inspection or repair history is available for inspect hull/deck coring around hardware and penetrations?",
+        "What service, inspection or repair history is available for verify engine, cooling, exhaust and drive-system service history?",
+        "What service, inspection or repair history is available for inspect hydraulic/electric helm-deck mechanisms where fitted?",
+        "What service, inspection or repair history is available for confirm air draft, mast and antenna configuration?",
+        "What service, inspection or repair history is available for verify tank capacities and propulsion package for the exact model year?"
+      ],
+      "ownerActions": [
+        "Keep deck, window, hatch and hardware penetrations sealed",
+        "Maintain engine cooling, exhaust, fuel, steering and drive systems to documented intervals",
+        "Document structural, machinery and system modifications for future survey and resale"
+      ],
+      "modelVariations": []
+    },
+    "evidence": [
+      {
+        "Scope": "IdentityAndDimensions",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BKCV-41"
+          ],
+          "Years": {
+            "From": 2014,
+            "To": 2024
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.backcoveyachts.com/owners/heritage-models",
+          "https://www.backcoveyachts.com/motor-yachts/back-cove-39o",
+          "https://www.backcoveyachts.com/owners/heritage-models/back-cove-41"
+        ],
+        "EvidenceTypes": [
+          "Factory documented",
+          "Technical or survey source"
+        ],
+        "Confidence": "High",
+        "Notes": "Representative model identity and principal specifications are based on model-specific sources where available."
+      },
+      {
+        "Scope": "OverviewAndSuitability",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BKCV-41"
+          ],
+          "Years": {
+            "From": 2014,
+            "To": 2024
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.backcoveyachts.com/owners/heritage-models",
+          "https://www.backcoveyachts.com/motor-yachts/back-cove-39o",
+          "https://www.backcoveyachts.com/owners/heritage-models/back-cove-41"
+        ],
+        "EvidenceTypes": [
+          "Factory documented",
+          "Technical or survey source"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Decision guidance is derived from documented hull, propulsion, layout and intended use rather than advertising claims."
+      },
+      {
+        "Scope": "InspectionFocus",
+        "AppliesTo": {
+          "Scope": "Model family",
+          "Models": [
+            "BKCV-41"
+          ],
+          "Years": {
+            "From": 2014,
+            "To": 2024
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.backcoveyachts.com/owners/heritage-models",
+          "https://www.backcoveyachts.com/motor-yachts/back-cove-39o",
+          "https://www.backcoveyachts.com/owners/heritage-models/back-cove-41"
+        ],
+        "EvidenceTypes": [
+          "Technical or survey source"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Inspection items are configuration and age risks, not assertions that every hull suffers a defect."
+      }
+    ],
+    "images": [
+      {
+        "title": "Back Cove 41 image",
+        "url": "images/bkcv-41.jpg",
+        "sourceLabel": "B-Atlas image library",
+        "resourceType": "Model image",
+        "verificationStatus": "Local asset"
+      }
+    ],
+    "videos": [],
+    "listings": [],
+    "documents": [
+      {
+        "title": "Back Cove 41 — factory heritage page",
+        "url": "https://www.backcoveyachts.com/owners/heritage-models/back-cove-41",
+        "sourceLabel": "Back Cove Yachts",
+        "resourceType": "Manufacturer heritage page",
+        "verificationStatus": "Verified",
+        "scope": "Model-specific",
+        "confidence": "High",
+        "notes": ""
+      },
+      {
+        "title": "Back Cove 41 — launch/specification article",
+        "url": "https://www.poweryachtblog.com/2014/08/new-model-back-cove-41.html",
+        "sourceLabel": "PowerYacht",
+        "resourceType": "Launch/specification article",
+        "verificationStatus": "Verified",
+        "scope": "Model-specific",
+        "confidence": "Medium",
+        "notes": ""
+      },
+      {
+        "title": "Back Cove heritage model archive",
+        "url": "https://www.backcoveyachts.com/owners/heritage-models",
+        "sourceLabel": "Back Cove Yachts",
+        "resourceType": "Manufacturer heritage archive",
+        "verificationStatus": "Verified",
+        "scope": "Back Cove family",
+        "confidence": "High",
+        "notes": ""
+      }
+    ],
+    "ownerCommunities": [],
+    "knownIssues": [],
+    "similarModels": [],
+    "missingInformation": [],
+    "sources": [
+      {
+        "type": "CuratedResourceSet",
+        "label": "B-Atlas Model Character + Resources Batch 26 — Back Cove / Sabre / Hunt",
+        "verificationStatus": "Links researched and checked 2026-08-07"
+      }
+    ],
+    "confidence": "Moderate",
+    "coverage": {
+      "BoatModelID": "BKCV-41",
+      "Categories": {
+        "Identity": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Specifications": {
+          "Known": 10,
+          "Total": 10,
+          "Score": 100
+        },
+        "Configuration": {
+          "Known": 5,
+          "Total": 5,
+          "Score": 100
+        },
+        "Accommodation": {
+          "Known": 4,
+          "Total": 4,
+          "Score": 100
+        },
+        "Suitability": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Ownership": {
+          "Known": 5,
+          "Total": 5,
+          "Score": 100
+        },
+        "Evidence": {
+          "Known": 0,
+          "Total": 1,
+          "Score": 0
+        }
+      },
+      "OverallScore": 86,
+      "SourceCount": 1,
+      "VerifiedSourceCount": 0,
+      "ContradictionCount": 0,
+      "RelationshipCount": 3,
+      "CoverageStatus": "Strong",
+      "GeneratedAt": "2026-07-26",
+      "ScoredFieldCount": 33
+    },
+    "updatedAt": "2026-08-07"
+  },
+  {
+    "schemaVersion": 2,
+    "generated": true,
+    "generatedFrom": [
+      "boatmodels.json",
+      "curatedresources.json",
+      "listingsearches.json",
+      "knowledgeannotations.json",
+      "knowledge-coverage.json"
+    ],
+    "identity": {
+      "boatModelId": "BAYL-2452",
+      "manufacturer": "Bayliner",
+      "model": "2452 Ciera Express Hardtop Cruiser",
+      "displayName": "Bayliner 2452 Ciera Express"
+    },
+    "intelligence": {
+      "overview": "The Bayliner 2452 Ciera Express is a compact hardtop cruiser built around a single sterndrive and a weather-protected helm. Its cabin combines a V-berth, convertible dinette, galley and enclosed head in a trailer-friendly beam, making it more practical for short coastal and inland trips than for extended liveaboard use.",
+      "suitability": {
+        "CoupleCruising": {
+          "Assessment": "Good",
+          "Summary": "The documented accommodation and cruising layout support use by a couple, subject to individual-condition survey.",
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/2452-ciera-express-1992-2003"
+          ]
+        },
+        "FamilyOrGuests": {
+          "Assessment": "Mixed",
+          "Summary": "Convertible sleeping spaces can accommodate guests, but privacy and storage are limited.",
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/2452-ciera-express-1992-2003"
+          ]
+        },
+        "InlandAndCoastal": {
+          "Assessment": "Good",
+          "Summary": "The design is primarily suited to inland and coastal cruising within its documented dimensional and sea-state limits.",
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/2452-ciera-express-1992-2003"
+          ]
+        },
+        "SoloHandling": {
+          "Assessment": "Good",
+          "Summary": "Single-engine machinery is simpler, though docking assistance depends on the individual configuration.",
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/2452-ciera-express-1992-2003"
+          ]
+        }
+      },
+      "strengths": [
+        "Hardtop provides useful weather protection",
+        "Trailer-friendly 8-foot-4-inch beam",
+        "Simple single-engine sterndrive package",
+        "Cabin includes galley, enclosed head and convertible sleeping space"
+      ],
+      "tradeOffs": [
+        "Limited interior and storage volume",
+        "Single sterndrive concentrates propulsion risk in one system",
+        "Cockpit and side access are compact",
+        "Older examples require careful inspection of sterndrive, transom and deck structure"
+      ],
+      "bestFor": [
+        "Weekend cruising in variable weather",
+        "Buyers needing a compact hardtop cruiser",
+        "Owners who value trailerability and simple marina requirements"
+      ],
+      "avoidIf": [
+        "You require diesel shaft propulsion",
+        "You need generous long-term liveaboard space",
+        "You want wide walkaround side decks"
+      ],
+      "knownConcerns": [],
+      "inspectionFocus": [
+        "Sterndrive, bellows, transom assembly and cooling system",
+        "Moisture around deck fittings, windows and transom penetrations",
+        "Fuel system, wiring and sanitation equipment",
+        "Cabin leaks and hardtop/window sealing"
+      ],
+      "buyerQuestions": [
+        "When was the sterndrive last removed and serviced?",
+        "Has the transom or deck structure ever required moisture or core repair?",
+        "What fuel-system, cooling-system and electrical work has been completed?"
+      ],
+      "ownerActions": [
+        "Maintain sterndrive bellows, anodes and cooling components on schedule",
+        "Keep window, deck-hardware and transom penetrations sealed"
+      ],
+      "modelVariations": [
+        {
+          "Name": "2452 Ciera Express production",
+          "Description": "Production references place the 2452 Ciera Express from 1992 through 2003; equipment and engine packages vary by year.",
+          "AffectedYears": "1992–2003",
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/2452-ciera-express-1992-2003"
+          ],
+          "Confidence": "High"
+        }
+      ]
+    },
+    "evidence": [
+      {
+        "Scope": "IdentityAndDimensions",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BAYL-2452"
+          ],
+          "Years": {
+            "From": 1992,
+            "To": 2003
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/2452-ciera-express-1992-2003"
+        ],
+        "EvidenceTypes": [
+          "Technical or survey source",
+          "Marketplace observation"
+        ],
+        "Confidence": "High",
+        "Notes": "Identity, production period and principal specifications are based on model-specific references. Individual hull documentation remains controlling."
+      },
+      {
+        "Scope": "OverviewAndSuitability",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BAYL-2452"
+          ],
+          "Years": {
+            "From": 1992,
+            "To": 2003
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/2452-ciera-express-1992-2003"
+        ],
+        "EvidenceTypes": [
+          "Technical or survey source"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Buyer guidance is derived from documented layout, dimensions, hull form and propulsion configuration."
+      },
+      {
+        "Scope": "InspectionFocus",
+        "AppliesTo": {
+          "Scope": "General age-related guidance",
+          "Models": [
+            "BAYL-2452"
+          ],
+          "Years": {
+            "From": 1992,
+            "To": 2003
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/2452-ciera-express-1992-2003"
+        ],
+        "EvidenceTypes": [
+          "Technical or survey source"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Inspection guidance combines model-specific configuration with age-related system risks. These are inspection priorities, not assertions of a model-wide defect."
+      }
+    ],
+    "images": [
+      {
+        "title": "Bayliner 2452 Ciera Express image",
+        "url": "images/bayl-2452.jpg",
+        "sourceLabel": "B-Atlas image library",
+        "resourceType": "Model image",
+        "verificationStatus": "Local asset"
+      }
+    ],
+    "videos": [],
+    "listings": [],
+    "documents": [
+      {
+        "title": "Bayliner 2452 Ciera Express — Powerboat Guide",
+        "url": "https://www.hmy.com/yachting/powerboat-guide/bayliner/2452-ciera-express-1992-2003",
+        "sourceLabel": "HMY / factory / model archive",
+        "resourceType": "Model guide or reference",
+        "verificationStatus": "Verified",
+        "scope": "Model-specific",
+        "confidence": "High",
+        "notes": ""
+      }
+    ],
+    "ownerCommunities": [],
+    "knownIssues": [],
+    "similarModels": [],
+    "missingInformation": [],
+    "sources": [
+      {
+        "type": "CuratedResourceSet",
+        "label": "B-Atlas Model Character + Resources Batch 28 — Bayliner",
+        "verificationStatus": "Links researched and checked 2026-08-07"
+      }
+    ],
+    "confidence": "Moderate",
+    "coverage": {
+      "BoatModelID": "BAYL-2452",
+      "Categories": {
+        "Identity": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Specifications": {
+          "Known": 10,
+          "Total": 10,
+          "Score": 100
+        },
+        "Configuration": {
+          "Known": 5,
+          "Total": 5,
+          "Score": 100
+        },
+        "Accommodation": {
+          "Known": 4,
+          "Total": 4,
+          "Score": 100
+        },
+        "Suitability": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Ownership": {
+          "Known": 5,
+          "Total": 5,
+          "Score": 100
+        },
+        "Evidence": {
+          "Known": 0,
+          "Total": 1,
+          "Score": 0
+        }
+      },
+      "OverallScore": 86,
+      "SourceCount": 1,
+      "VerifiedSourceCount": 0,
+      "ContradictionCount": 0,
+      "RelationshipCount": 6,
+      "CoverageStatus": "Strong",
+      "GeneratedAt": "2026-07-26",
+      "ScoredFieldCount": 34
+    },
+    "updatedAt": "2026-08-07"
+  },
+  {
+    "schemaVersion": 2,
+    "generated": true,
+    "generatedFrom": [
+      "boatmodels.json",
+      "curatedresources.json",
+      "listingsearches.json",
+      "knowledgeannotations.json",
+      "knowledge-coverage.json"
+    ],
+    "identity": {
+      "boatModelId": "BAYL-2855",
+      "manufacturer": "Bayliner",
+      "model": "2855 Ciera Sunbridge Multi-Generation Sunbridge",
+      "displayName": "Bayliner 2855 Ciera Sunbridge"
+    },
+    "intelligence": {
+      "overview": "The Bayliner 2855 Ciera Sunbridge is a single-sterndrive family express cruiser with a mid-cabin layout, convertible dinette, galley and enclosed head. The 2855 designation spans several materially different generations, so dimensions, hull details and interior arrangement should be verified against the production year rather than treated as one unchanged model.",
+      "suitability": {
+        "CoupleCruising": {
+          "Assessment": "Good",
+          "Summary": "The documented accommodation and cruising layout support use by a couple, subject to individual-condition survey.",
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/2855-ciera-sunbridge-1991-93",
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/2855-ciera-sunbridge-1994-99",
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner"
+          ]
+        },
+        "FamilyOrGuests": {
+          "Assessment": "Mixed",
+          "Summary": "Convertible sleeping spaces can accommodate guests, but privacy and storage are limited.",
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/2855-ciera-sunbridge-1991-93",
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/2855-ciera-sunbridge-1994-99",
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner"
+          ]
+        },
+        "InlandAndCoastal": {
+          "Assessment": "Good",
+          "Summary": "The design is primarily suited to inland and coastal cruising within its documented dimensional and sea-state limits.",
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/2855-ciera-sunbridge-1991-93",
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/2855-ciera-sunbridge-1994-99",
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner"
+          ]
+        },
+        "SoloHandling": {
+          "Assessment": "Good",
+          "Summary": "Single-engine machinery is simpler, though docking assistance depends on the individual configuration.",
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/2855-ciera-sunbridge-1991-93",
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/2855-ciera-sunbridge-1994-99",
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner"
+          ]
+        }
+      },
+      "strengths": [
+        "Good accommodation volume for a single-engine cruiser",
+        "Mid-cabin layout provides multiple sleeping areas",
+        "Single sterndrive keeps machinery count low",
+        "Large production numbers support parts and owner knowledge"
+      ],
+      "tradeOffs": [
+        "The 2855 name covers multiple hull and interior generations",
+        "Limited side-deck access on later Sunbridge layouts",
+        "Finish and equipment are oriented toward value rather than premium construction",
+        "Sterndrive service and transom condition are central ownership considerations"
+      ],
+      "bestFor": [
+        "Family weekend cruising",
+        "Buyers seeking maximum accommodation for purchase price",
+        "Owners comfortable maintaining a gasoline sterndrive"
+      ],
+      "avoidIf": [
+        "You require diesel shaft propulsion",
+        "You need wide walkaround side decks",
+        "You want one specification set to apply across all production years"
+      ],
+      "knownConcerns": [],
+      "inspectionFocus": [
+        "Sterndrive, transom assembly and engine cooling system",
+        "Deck and transom moisture",
+        "Fuel system and original wiring",
+        "Cabin leaks and interior moisture"
+      ],
+      "buyerQuestions": [
+        "Which 2855 generation and production year is this boat?",
+        "What sterndrive and transom service history is documented?",
+        "Have deck, transom or window leaks required repair?"
+      ],
+      "ownerActions": [
+        "Identify the exact production generation before ordering parts or comparing specifications",
+        "Maintain sterndrive and transom sealing carefully"
+      ],
+      "modelVariations": [
+        {
+          "Name": "1991–93 generation",
+          "Description": "9'6\" beam, moderate-V single-sterndrive 2855 Ciera Sunbridge.",
+          "AffectedYears": "1991–1993",
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/2855-ciera-sunbridge-1991-93"
+          ],
+          "Confidence": "High"
+        },
+        {
+          "Name": "1994–99 generation",
+          "Description": "Restyled 2855 with 9'7\" beam and deeper 22-degree transom deadrise.",
+          "AffectedYears": "1994–1999",
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/2855-ciera-sunbridge-1994-99"
+          ],
+          "Confidence": "High"
+        }
+      ]
+    },
+    "evidence": [
+      {
+        "Scope": "IdentityAndDimensions",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BAYL-2855"
+          ],
+          "Years": {
+            "From": 1991,
+            "To": 2002
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/2855-ciera-sunbridge-1991-93",
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/2855-ciera-sunbridge-1994-99",
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner"
+        ],
+        "EvidenceTypes": [
+          "Technical or survey source",
+          "Marketplace observation"
+        ],
+        "Confidence": "High",
+        "Notes": "Identity, production period and principal specifications are based on model-specific references. Individual hull documentation remains controlling."
+      },
+      {
+        "Scope": "OverviewAndSuitability",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BAYL-2855"
+          ],
+          "Years": {
+            "From": 1991,
+            "To": 2002
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/2855-ciera-sunbridge-1991-93",
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/2855-ciera-sunbridge-1994-99",
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner"
+        ],
+        "EvidenceTypes": [
+          "Technical or survey source"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Buyer guidance is derived from documented layout, dimensions, hull form and propulsion configuration."
+      },
+      {
+        "Scope": "InspectionFocus",
+        "AppliesTo": {
+          "Scope": "General age-related guidance",
+          "Models": [
+            "BAYL-2855"
+          ],
+          "Years": {
+            "From": 1991,
+            "To": 2002
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/2855-ciera-sunbridge-1991-93",
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/2855-ciera-sunbridge-1994-99",
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner"
+        ],
+        "EvidenceTypes": [
+          "Technical or survey source"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Inspection guidance combines model-specific configuration with age-related system risks. These are inspection priorities, not assertions of a model-wide defect."
+      }
+    ],
+    "images": [
+      {
+        "title": "Bayliner 2855 Ciera Sunbridge image",
+        "url": "images/bayl-2855.jpg",
+        "sourceLabel": "B-Atlas image library",
+        "resourceType": "Model image",
+        "verificationStatus": "Local asset"
+      }
+    ],
+    "videos": [],
+    "listings": [],
+    "documents": [
+      {
+        "title": "Bayliner 2855 Ciera Sunbridge — 1991–93",
+        "url": "https://www.hmy.com/yachting/powerboat-guide/bayliner/2855-ciera-sunbridge-1991-93",
+        "sourceLabel": "HMY / factory / model archive",
+        "resourceType": "Model guide or reference",
+        "verificationStatus": "Verified",
+        "scope": "Model-specific",
+        "confidence": "Moderate",
+        "notes": ""
+      },
+      {
+        "title": "Bayliner 2855 Ciera Sunbridge — 1994–99",
+        "url": "https://www.hmy.com/yachting/powerboat-guide/bayliner/2855-ciera-sunbridge-1994-99",
+        "sourceLabel": "HMY / factory / model archive",
+        "resourceType": "Model guide or reference",
+        "verificationStatus": "Verified",
+        "scope": "Model-specific",
+        "confidence": "Moderate",
+        "notes": ""
+      }
+    ],
+    "ownerCommunities": [],
+    "knownIssues": [],
+    "similarModels": [],
+    "missingInformation": [],
+    "sources": [
+      {
+        "type": "CuratedResourceSet",
+        "label": "B-Atlas Model Character + Resources Batch 28 — Bayliner",
+        "verificationStatus": "Links researched and checked 2026-08-07"
+      }
+    ],
+    "confidence": "Moderate",
+    "coverage": {
+      "BoatModelID": "BAYL-2855",
+      "Categories": {
+        "Identity": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Specifications": {
+          "Known": 10,
+          "Total": 10,
+          "Score": 100
+        },
+        "Configuration": {
+          "Known": 5,
+          "Total": 5,
+          "Score": 100
+        },
+        "Accommodation": {
+          "Known": 4,
+          "Total": 4,
+          "Score": 100
+        },
+        "Suitability": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Ownership": {
+          "Known": 5,
+          "Total": 5,
+          "Score": 100
+        },
+        "Evidence": {
+          "Known": 0,
+          "Total": 1,
+          "Score": 0
+        }
+      },
+      "OverallScore": 86,
+      "SourceCount": 1,
+      "VerifiedSourceCount": 0,
+      "ContradictionCount": 0,
+      "RelationshipCount": 6,
+      "CoverageStatus": "Strong",
+      "GeneratedAt": "2026-07-26",
+      "ScoredFieldCount": 34
+    },
+    "updatedAt": "2026-08-07"
+  },
+  {
+    "schemaVersion": 2,
+    "generated": true,
+    "generatedFrom": [
+      "boatmodels.json",
+      "curatedresources.json",
+      "listingsearches.json",
+      "knowledgeannotations.json",
+      "knowledge-coverage.json"
+    ],
+    "identity": {
+      "boatModelId": "BAYL-2859",
+      "manufacturer": "Bayliner",
+      "model": "2859 Ciera Express Hardtop Cruiser",
+      "displayName": "Bayliner 2859 Super Classic / Ciera Express"
+    },
+    "intelligence": {
+      "overview": "The Bayliner 2859 Ciera Express is a hardtop cruiser originally sold as the 2859 Super Classic and later renamed Ciera Express. A single sterndrive, enclosed helm, mid-cabin berth and practical galley/head arrangement make it a weather-protected family cruiser with more cabin utility than open express designs of similar size.",
+      "suitability": {
+        "CoupleCruising": {
+          "Assessment": "Good",
+          "Summary": "The documented accommodation and cruising layout support use by a couple, subject to individual-condition survey.",
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/2859-super-classic-2859-ciera-express-1993-2002"
+          ]
+        },
+        "FamilyOrGuests": {
+          "Assessment": "Mixed",
+          "Summary": "Convertible sleeping spaces can accommodate guests, but privacy and storage are limited.",
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/2859-super-classic-2859-ciera-express-1993-2002"
+          ]
+        },
+        "InlandAndCoastal": {
+          "Assessment": "Good",
+          "Summary": "The design is primarily suited to inland and coastal cruising within its documented dimensional and sea-state limits.",
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/2859-super-classic-2859-ciera-express-1993-2002"
+          ]
+        },
+        "SoloHandling": {
+          "Assessment": "Good",
+          "Summary": "Single-engine machinery is simpler, though docking assistance depends on the individual configuration.",
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/2859-super-classic-2859-ciera-express-1993-2002"
+          ]
+        }
+      },
+      "strengths": [
+        "Enclosed hardtop helm improves shoulder-season usability",
+        "Mid-cabin berth expands sleeping capacity",
+        "Single-engine layout limits machinery count",
+        "Practical galley and enclosed head for short cruising"
+      ],
+      "tradeOffs": [
+        "Modest fuel capacity for extended high-speed travel",
+        "Small cockpit relative to overall accommodation",
+        "Sterndrive maintenance remains a major ownership item",
+        "Sleeping capacity exceeds comfortable long-duration living space"
+      ],
+      "bestFor": [
+        "Couples or small families cruising in cool or wet climates",
+        "Buyers wanting a hardtop without a flybridge",
+        "Mixed cruising and light fishing"
+      ],
+      "avoidIf": [
+        "You require twin-engine redundancy",
+        "You need diesel shaft propulsion",
+        "You want a large open cockpit"
+      ],
+      "knownConcerns": [],
+      "inspectionFocus": [
+        "Sterndrive and transom assembly",
+        "Hardtop and window leaks",
+        "Fuel and cooling systems",
+        "Deck moisture and cockpit drainage"
+      ],
+      "buyerQuestions": [
+        "Has the sterndrive and transom assembly been serviced recently?",
+        "Are there any recurring hardtop or window leaks?",
+        "Has the fuel tank or fuel plumbing been inspected?"
+      ],
+      "ownerActions": [
+        "Maintain hardtop/window seals and cockpit drains",
+        "Service sterndrive, cooling and transom components proactively"
+      ],
+      "modelVariations": [
+        {
+          "Name": "Super Classic",
+          "Description": "The model was sold as the 2859 Super Classic from 1993 through 1995.",
+          "AffectedYears": "1993–1995",
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/2859-super-classic-2859-ciera-express-1993-2002"
+          ],
+          "Confidence": "High"
+        },
+        {
+          "Name": "Ciera Express",
+          "Description": "The same basic model continued under the Ciera Express name through 2002.",
+          "AffectedYears": "1996–2002",
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/2859-super-classic-2859-ciera-express-1993-2002"
+          ],
+          "Confidence": "High"
+        }
+      ]
+    },
+    "evidence": [
+      {
+        "Scope": "IdentityAndDimensions",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BAYL-2859"
+          ],
+          "Years": {
+            "From": 1993,
+            "To": 2002
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/2859-super-classic-2859-ciera-express-1993-2002"
+        ],
+        "EvidenceTypes": [
+          "Technical or survey source",
+          "Marketplace observation"
+        ],
+        "Confidence": "High",
+        "Notes": "Identity, production period and principal specifications are based on model-specific references. Individual hull documentation remains controlling."
+      },
+      {
+        "Scope": "OverviewAndSuitability",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BAYL-2859"
+          ],
+          "Years": {
+            "From": 1993,
+            "To": 2002
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/2859-super-classic-2859-ciera-express-1993-2002"
+        ],
+        "EvidenceTypes": [
+          "Technical or survey source"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Buyer guidance is derived from documented layout, dimensions, hull form and propulsion configuration."
+      },
+      {
+        "Scope": "InspectionFocus",
+        "AppliesTo": {
+          "Scope": "General age-related guidance",
+          "Models": [
+            "BAYL-2859"
+          ],
+          "Years": {
+            "From": 1993,
+            "To": 2002
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/2859-super-classic-2859-ciera-express-1993-2002"
+        ],
+        "EvidenceTypes": [
+          "Technical or survey source"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Inspection guidance combines model-specific configuration with age-related system risks. These are inspection priorities, not assertions of a model-wide defect."
+      }
+    ],
+    "images": [
+      {
+        "title": "Bayliner 2859 Super Classic / Ciera Express image",
+        "url": "images/bayl-2859.jpg",
+        "sourceLabel": "B-Atlas image library",
+        "resourceType": "Model image",
+        "verificationStatus": "Local asset"
+      }
+    ],
+    "videos": [],
+    "listings": [],
+    "documents": [
+      {
+        "title": "Bayliner 2859 Super Classic / Ciera Express — Powerboat Guide",
+        "url": "https://www.hmy.com/yachting/powerboat-guide/bayliner/2859-super-classic-2859-ciera-express-1993-2002",
+        "sourceLabel": "HMY / factory / model archive",
+        "resourceType": "Model guide or reference",
+        "verificationStatus": "Verified",
+        "scope": "Model-specific",
+        "confidence": "High",
+        "notes": ""
+      }
+    ],
+    "ownerCommunities": [],
+    "knownIssues": [],
+    "similarModels": [],
+    "missingInformation": [],
+    "sources": [
+      {
+        "type": "CuratedResourceSet",
+        "label": "B-Atlas Model Character + Resources Batch 28 — Bayliner",
+        "verificationStatus": "Links researched and checked 2026-08-07"
+      }
+    ],
+    "confidence": "Moderate",
+    "coverage": {
+      "BoatModelID": "BAYL-2859",
+      "Categories": {
+        "Identity": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Specifications": {
+          "Known": 10,
+          "Total": 10,
+          "Score": 100
+        },
+        "Configuration": {
+          "Known": 5,
+          "Total": 5,
+          "Score": 100
+        },
+        "Accommodation": {
+          "Known": 4,
+          "Total": 4,
+          "Score": 100
+        },
+        "Suitability": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Ownership": {
+          "Known": 4,
+          "Total": 5,
+          "Score": 80
+        },
+        "Evidence": {
+          "Known": 0,
+          "Total": 1,
+          "Score": 0
+        }
+      },
+      "OverallScore": 83,
+      "SourceCount": 1,
+      "VerifiedSourceCount": 0,
+      "ContradictionCount": 0,
+      "RelationshipCount": 6,
+      "CoverageStatus": "Strong",
+      "GeneratedAt": "2026-07-26",
+      "ScoredFieldCount": 34
+    },
+    "updatedAt": "2026-08-07"
+  },
+  {
+    "schemaVersion": 2,
+    "generated": true,
+    "generatedFrom": [
+      "boatmodels.json",
+      "curatedresources.json",
+      "listingsearches.json",
+      "knowledgeannotations.json",
+      "knowledge-coverage.json"
+    ],
+    "identity": {
+      "boatModelId": "BAYL-3055",
+      "manufacturer": "Bayliner",
+      "model": "3055 Ciera Sunbridge / 305 SB Express Cruiser",
+      "displayName": "Bayliner 3055 Ciera Sunbridge / 305 SB"
+    },
+    "intelligence": {
+      "overview": "The later Bayliner 3055 Ciera Sunbridge is a wide-beam twin-sterndrive express cruiser focused on family accommodation and cockpit seating. It became the Bayliner 305 after the 3055 designation was dropped, so year-specific naming is important when comparing examples.",
+      "suitability": {
+        "CoupleCruising": {
+          "Assessment": "Good",
+          "Summary": "The documented accommodation and cruising layout support use by a couple, subject to individual-condition survey.",
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/305-sb-cruiser-1999-2007"
+          ]
+        },
+        "FamilyOrGuests": {
+          "Assessment": "Mixed",
+          "Summary": "Convertible sleeping spaces can accommodate guests, but privacy and storage are limited.",
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/305-sb-cruiser-1999-2007"
+          ]
+        },
+        "InlandAndCoastal": {
+          "Assessment": "Good",
+          "Summary": "The design is primarily suited to inland and coastal cruising within its documented dimensional and sea-state limits.",
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/305-sb-cruiser-1999-2007"
+          ]
+        },
+        "SoloHandling": {
+          "Assessment": "Mixed",
+          "Summary": "Twin propulsion can aid docking, but duplicate systems and larger flybridge layouts increase workload.",
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/305-sb-cruiser-1999-2007"
+          ]
+        }
+      },
+      "strengths": [
+        "Wide beam creates substantial cabin and cockpit volume",
+        "Twin engines improve close-quarters control and provide propulsion redundancy",
+        "Good headroom and conventional mid-cabin family layout",
+        "Large used-market population and familiar sterndrive systems"
+      ],
+      "tradeOffs": [
+        "Twin gasoline sterndrives increase fuel and maintenance costs",
+        "No practical walkaround side decks",
+        "Value-oriented finish is less robust than premium cruisers",
+        "Width and weight reduce trailer and storage flexibility"
+      ],
+      "bestFor": [
+        "Family weekend cruising",
+        "Buyers prioritizing interior volume and cockpit seating",
+        "Owners comfortable maintaining twin gasoline sterndrives"
+      ],
+      "avoidIf": [
+        "You require diesel economy",
+        "You need narrow-beam marina compatibility",
+        "You want easy bow access via side decks"
+      ],
+      "knownConcerns": [],
+      "inspectionFocus": [
+        "Both sterndrives, transom assemblies and engine cooling systems",
+        "Fuel-system age and ventilation",
+        "Deck, transom and cockpit moisture",
+        "Electrical, sanitation and air-conditioning systems where fitted"
+      ],
+      "buyerQuestions": [
+        "What service history exists for both sterndrives and transom assemblies?",
+        "Have fuel-system components been replaced or inspected?",
+        "Has any deck or transom core repair been completed?"
+      ],
+      "ownerActions": [
+        "Service both sterndrives and transom assemblies consistently",
+        "Maintain bilge ventilation and fuel-system components carefully"
+      ],
+      "modelVariations": [
+        {
+          "Name": "3055 designation",
+          "Description": "The later 3055 Ciera Sunbridge designation applies from 1999 through 2002 before the boat continued as the Bayliner 305.",
+          "AffectedYears": "1999–2002",
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/305-sb-cruiser-1999-2007"
+          ],
+          "Confidence": "High"
+        }
+      ]
+    },
+    "evidence": [
+      {
+        "Scope": "IdentityAndDimensions",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BAYL-3055"
+          ],
+          "Years": {
+            "From": 1999,
+            "To": 2002
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/305-sb-cruiser-1999-2007"
+        ],
+        "EvidenceTypes": [
+          "Technical or survey source",
+          "Marketplace observation"
+        ],
+        "Confidence": "High",
+        "Notes": "Identity, production period and principal specifications are based on model-specific references. Individual hull documentation remains controlling."
+      },
+      {
+        "Scope": "OverviewAndSuitability",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BAYL-3055"
+          ],
+          "Years": {
+            "From": 1999,
+            "To": 2002
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/305-sb-cruiser-1999-2007"
+        ],
+        "EvidenceTypes": [
+          "Technical or survey source"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Buyer guidance is derived from documented layout, dimensions, hull form and propulsion configuration."
+      },
+      {
+        "Scope": "InspectionFocus",
+        "AppliesTo": {
+          "Scope": "General age-related guidance",
+          "Models": [
+            "BAYL-3055"
+          ],
+          "Years": {
+            "From": 1999,
+            "To": 2002
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/305-sb-cruiser-1999-2007"
+        ],
+        "EvidenceTypes": [
+          "Technical or survey source"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Inspection guidance combines model-specific configuration with age-related system risks. These are inspection priorities, not assertions of a model-wide defect."
+      }
+    ],
+    "images": [
+      {
+        "title": "Bayliner 3055 Ciera Sunbridge / 305 SB image",
+        "url": "images/bayl-3055.jpg",
+        "sourceLabel": "B-Atlas image library",
+        "resourceType": "Model image",
+        "verificationStatus": "Local asset"
+      }
+    ],
+    "videos": [],
+    "listings": [],
+    "documents": [
+      {
+        "title": "Bayliner 305 / 3055 Ciera Sunbridge — Powerboat Guide",
+        "url": "https://www.hmy.com/yachting/powerboat-guide/bayliner/305-sb-cruiser-1999-2007",
+        "sourceLabel": "HMY / factory / model archive",
+        "resourceType": "Model guide or reference",
+        "verificationStatus": "Verified",
+        "scope": "Model-specific",
+        "confidence": "High",
+        "notes": ""
+      }
+    ],
+    "ownerCommunities": [],
+    "knownIssues": [],
+    "similarModels": [],
+    "missingInformation": [],
+    "sources": [
+      {
+        "type": "CuratedResourceSet",
+        "label": "B-Atlas Model Character + Resources Batch 28 — Bayliner",
+        "verificationStatus": "Links researched and checked 2026-08-07"
+      }
+    ],
+    "confidence": "Moderate",
+    "coverage": {
+      "BoatModelID": "BAYL-3055",
+      "Categories": {
+        "Identity": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Specifications": {
+          "Known": 10,
+          "Total": 10,
+          "Score": 100
+        },
+        "Configuration": {
+          "Known": 5,
+          "Total": 5,
+          "Score": 100
+        },
+        "Accommodation": {
+          "Known": 4,
+          "Total": 4,
+          "Score": 100
+        },
+        "Suitability": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Ownership": {
+          "Known": 5,
+          "Total": 5,
+          "Score": 100
+        },
+        "Evidence": {
+          "Known": 0,
+          "Total": 1,
+          "Score": 0
+        }
+      },
+      "OverallScore": 86,
+      "SourceCount": 1,
+      "VerifiedSourceCount": 0,
+      "ContradictionCount": 0,
+      "RelationshipCount": 8,
+      "CoverageStatus": "Strong",
+      "GeneratedAt": "2026-07-26",
+      "ScoredFieldCount": 34
+    },
+    "updatedAt": "2026-08-07"
+  },
+  {
+    "schemaVersion": 2,
+    "generated": true,
+    "generatedFrom": [
+      "boatmodels.json",
+      "curatedresources.json",
+      "listingsearches.json",
+      "knowledgeannotations.json",
+      "knowledge-coverage.json"
+    ],
+    "identity": {
+      "boatModelId": "BAYL-3058",
+      "manufacturer": "Bayliner",
+      "model": "3058 Command Bridge Command Bridge Cruiser",
+      "displayName": "Bayliner 3058 Command Bridge"
+    },
+    "intelligence": {
+      "overview": "The Bayliner 3058 Command Bridge is a compact flybridge cruiser using twin sterndrives and a two-level cabin arrangement to provide more living space than many boats of similar length. The bridge and lower accommodation improve cruising versatility, while machinery access and twin-drive maintenance remain important ownership compromises.",
+      "suitability": {
+        "CoupleCruising": {
+          "Assessment": "Good",
+          "Summary": "The documented accommodation and cruising layout support use by a couple, subject to individual-condition survey.",
+          "EvidenceRefs": [
+            "https://www.jdpower.com/boats/1993/bayliner-marine-corp/ciera-series/3058-command-bridge/10018363/specs"
+          ]
+        },
+        "FamilyOrGuests": {
+          "Assessment": "Good",
+          "Summary": "Multiple sleeping areas improve guest separation.",
+          "EvidenceRefs": [
+            "https://www.jdpower.com/boats/1993/bayliner-marine-corp/ciera-series/3058-command-bridge/10018363/specs"
+          ]
+        },
+        "InlandAndCoastal": {
+          "Assessment": "Good",
+          "Summary": "The design is primarily suited to inland and coastal cruising within its documented dimensional and sea-state limits.",
+          "EvidenceRefs": [
+            "https://www.jdpower.com/boats/1993/bayliner-marine-corp/ciera-series/3058-command-bridge/10018363/specs"
+          ]
+        },
+        "SoloHandling": {
+          "Assessment": "Mixed",
+          "Summary": "Twin propulsion can aid docking, but duplicate systems and larger flybridge layouts increase workload.",
+          "EvidenceRefs": [
+            "https://www.jdpower.com/boats/1993/bayliner-marine-corp/ciera-series/3058-command-bridge/10018363/specs"
+          ]
+        }
+      },
+      "strengths": [
+        "Flybridge adds an open-air helm and additional seating",
+        "Twin engines aid maneuvering",
+        "Useful interior volume for a roughly 31-foot hull",
+        "Gasoline and diesel twin-engine packages were offered"
+      ],
+      "tradeOffs": [
+        "Twin sterndrives create two complete drive systems to maintain",
+        "Engine-room working space is limited",
+        "Flybridge increases windage and bridge-clearance requirements",
+        "Exact engine packages vary materially by year"
+      ],
+      "bestFor": [
+        "Family cruising where a flybridge is desirable",
+        "Buyers wanting twin-engine handling below 32 feet",
+        "Owners comfortable with sterndrive maintenance"
+      ],
+      "avoidIf": [
+        "You need a single simple propulsion system",
+        "You require low bridge clearance",
+        "You want generous engine-room access"
+      ],
+      "knownConcerns": [],
+      "inspectionFocus": [
+        "Both sterndrives, transom assemblies and steering systems",
+        "Engine-room access, mounts and cooling systems",
+        "Flybridge structure, controls and wiring",
+        "Fuel system and deck moisture"
+      ],
+      "buyerQuestions": [
+        "Which factory engine package is installed?",
+        "When were both sterndrives and transom assemblies last serviced?",
+        "Have flybridge controls or steering components been renewed?"
+      ],
+      "ownerActions": [
+        "Maintain both drive systems on the same service cycle",
+        "Inspect flybridge and control-system connections regularly"
+      ],
+      "modelVariations": [
+        {
+          "Name": "Gasoline twin package",
+          "Description": "1993 references document twin 250-hp gasoline sterndrives.",
+          "AffectedYears": "1993",
+          "EvidenceRefs": [
+            "https://www.jdpower.com/boats/1993/bayliner-marine-corp/ciera-series/3058-command-bridge/10018363/specs"
+          ],
+          "Confidence": "Moderate"
+        },
+        {
+          "Name": "Diesel twin package",
+          "Description": "Contemporary specifications also list twin diesel sterndrive packages.",
+          "AffectedYears": "1992–1993",
+          "EvidenceRefs": [
+            "https://www.jdpower.com/boats/1993/bayliner-marine-corp/ciera-series/3058-command-bridge/10018363/specs"
+          ],
+          "Confidence": "Moderate"
+        }
+      ]
+    },
+    "evidence": [
+      {
+        "Scope": "IdentityAndDimensions",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BAYL-3058"
+          ],
+          "Years": {
+            "From": 1992,
+            "To": 1993
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.jdpower.com/boats/1993/bayliner-marine-corp/ciera-series/3058-command-bridge/10018363/specs"
+        ],
+        "EvidenceTypes": [
+          "Technical or survey source",
+          "Marketplace observation"
+        ],
+        "Confidence": "High",
+        "Notes": "Identity, production period and principal specifications are based on model-specific references. Individual hull documentation remains controlling."
+      },
+      {
+        "Scope": "OverviewAndSuitability",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BAYL-3058"
+          ],
+          "Years": {
+            "From": 1992,
+            "To": 1993
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.jdpower.com/boats/1993/bayliner-marine-corp/ciera-series/3058-command-bridge/10018363/specs"
+        ],
+        "EvidenceTypes": [
+          "Technical or survey source"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Buyer guidance is derived from documented layout, dimensions, hull form and propulsion configuration."
+      },
+      {
+        "Scope": "InspectionFocus",
+        "AppliesTo": {
+          "Scope": "General age-related guidance",
+          "Models": [
+            "BAYL-3058"
+          ],
+          "Years": {
+            "From": 1992,
+            "To": 1993
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.jdpower.com/boats/1993/bayliner-marine-corp/ciera-series/3058-command-bridge/10018363/specs"
+        ],
+        "EvidenceTypes": [
+          "Technical or survey source"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Inspection guidance combines model-specific configuration with age-related system risks. These are inspection priorities, not assertions of a model-wide defect."
+      }
+    ],
+    "images": [
+      {
+        "title": "Bayliner 3058 Command Bridge image",
+        "url": "images/bayl-3058.jpg",
+        "sourceLabel": "B-Atlas image library",
+        "resourceType": "Model image",
+        "verificationStatus": "Local asset"
+      }
+    ],
+    "videos": [],
+    "listings": [],
+    "documents": [
+      {
+        "title": "1991 Bayliner Avanti & Motoryacht factory owner's manual",
+        "url": "https://www.bayliner.com/content/dam/bayliner/brand-assets/marketing-materials/product-info/past-owners-manuals/1991-avanti-%26-motoryacht.pdf",
+        "sourceLabel": "HMY / factory / model archive",
+        "resourceType": "Model guide or reference",
+        "verificationStatus": "Verified",
+        "scope": "Model-specific",
+        "confidence": "High",
+        "notes": ""
+      },
+      {
+        "title": "1992 Bayliner 3058 Command Bridge specifications",
+        "url": "https://www.boatingworld.com/boats/bayliner-boats/1992-bayliner-3058-command-bridge",
+        "sourceLabel": "HMY / factory / model archive",
+        "resourceType": "Model guide or reference",
+        "verificationStatus": "Verified",
+        "scope": "Model-specific",
+        "confidence": "Moderate",
+        "notes": ""
+      }
+    ],
+    "ownerCommunities": [],
+    "knownIssues": [],
+    "similarModels": [],
+    "missingInformation": [],
+    "sources": [
+      {
+        "type": "CuratedResourceSet",
+        "label": "B-Atlas Model Character + Resources Batch 28 — Bayliner",
+        "verificationStatus": "Links researched and checked 2026-08-07"
+      }
+    ],
+    "confidence": "Moderate",
+    "coverage": {
+      "BoatModelID": "BAYL-3058",
+      "Categories": {
+        "Identity": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Specifications": {
+          "Known": 10,
+          "Total": 10,
+          "Score": 100
+        },
+        "Configuration": {
+          "Known": 5,
+          "Total": 5,
+          "Score": 100
+        },
+        "Accommodation": {
+          "Known": 4,
+          "Total": 4,
+          "Score": 100
+        },
+        "Suitability": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Ownership": {
+          "Known": 4,
+          "Total": 5,
+          "Score": 80
+        },
+        "Evidence": {
+          "Known": 0,
+          "Total": 1,
+          "Score": 0
+        }
+      },
+      "OverallScore": 83,
+      "SourceCount": 1,
+      "VerifiedSourceCount": 0,
+      "ContradictionCount": 0,
+      "RelationshipCount": 4,
+      "CoverageStatus": "Strong",
+      "GeneratedAt": "2026-07-26",
+      "ScoredFieldCount": 33
+    },
+    "updatedAt": "2026-08-07"
+  },
+  {
+    "schemaVersion": 2,
+    "generated": true,
+    "generatedFrom": [
+      "boatmodels.json",
+      "curatedresources.json",
+      "listingsearches.json",
+      "knowledgeannotations.json",
+      "knowledge-coverage.json"
+    ],
+    "identity": {
+      "boatModelId": "BAYL-3218",
+      "manufacturer": "Bayliner",
+      "model": "3218 Motoryacht Flybridge Motor Yacht",
+      "displayName": "Bayliner 3218 Motoryacht"
+    },
+    "intelligence": {
+      "overview": "The Bayliner 3218 Motoryacht belongs to the 32xx family of compact flybridge cruisers and uses twin inboards, a lower helm and a two-stateroom interior to deliver unusually high accommodation volume for its length. Diesel Hino installations are common, although gasoline versions also exist.",
+      "suitability": {
+        "CoupleCruising": {
+          "Assessment": "Good",
+          "Summary": "The documented accommodation and cruising layout support use by a couple, subject to individual-condition survey.",
+          "EvidenceRefs": [
+            "https://www.boats.com/power-boats/1989-bayliner-3218-motoryacht-9746507/",
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/3270-explorer-3270-3288-motor-yacht-1981-95"
+          ]
+        },
+        "FamilyOrGuests": {
+          "Assessment": "Good",
+          "Summary": "Multiple sleeping areas improve guest separation.",
+          "EvidenceRefs": [
+            "https://www.boats.com/power-boats/1989-bayliner-3218-motoryacht-9746507/",
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/3270-explorer-3270-3288-motor-yacht-1981-95"
+          ]
+        },
+        "InlandAndCoastal": {
+          "Assessment": "Good",
+          "Summary": "The design is primarily suited to inland and coastal cruising within its documented dimensional and sea-state limits.",
+          "EvidenceRefs": [
+            "https://www.boats.com/power-boats/1989-bayliner-3218-motoryacht-9746507/",
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/3270-explorer-3270-3288-motor-yacht-1981-95"
+          ]
+        },
+        "SoloHandling": {
+          "Assessment": "Mixed",
+          "Summary": "Twin propulsion can aid docking, but duplicate systems and larger flybridge layouts increase workload.",
+          "EvidenceRefs": [
+            "https://www.boats.com/power-boats/1989-bayliner-3218-motoryacht-9746507/",
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/3270-explorer-3270-3288-motor-yacht-1981-95"
+          ]
+        }
+      },
+      "strengths": [
+        "Two private sleeping areas in a compact hull",
+        "Twin shaft-drive inboards on documented diesel examples",
+        "Lower helm plus flybridge",
+        "Good interior volume and useful side access"
+      ],
+      "tradeOffs": [
+        "Machinery access is tight",
+        "Two engines double routine propulsion service points",
+        "Model naming overlaps with 3270/3288 family references",
+        "Individual boats may have gasoline or diesel power"
+      ],
+      "bestFor": [
+        "Couples or families wanting two sleeping areas below 33 feet",
+        "PNW and inland cruising where protected lower helm is useful",
+        "Buyers valuing twin-shaft handling over mechanical simplicity"
+      ],
+      "avoidIf": [
+        "You want single-engine simplicity",
+        "You require easy engine-room access",
+        "You need an unambiguous one-name production history"
+      ],
+      "knownConcerns": [],
+      "inspectionFocus": [
+        "Both engines, transmissions, shafts and cooling systems",
+        "Fuel tanks, crossover plumbing and return routing",
+        "Window and deck moisture",
+        "Electrical and sanitation systems"
+      ],
+      "buyerQuestions": [
+        "Is the boat documented as a 3218, 3270 or related 32xx designation?",
+        "What engines and transmissions are installed, and what major service has been completed?",
+        "Has the fuel-tank and crossover system been inspected or modified?"
+      ],
+      "ownerActions": [
+        "Verify fuel-valve and return-line configuration before extended operation",
+        "Maintain both propulsion trains and cooling systems consistently"
+      ],
+      "modelVariations": [
+        {
+          "Name": "32xx naming overlap",
+          "Description": "Late-1980s examples may be described in records or listings as 3218, 3270 or related 32xx variants; HIN and original documentation should control identity.",
+          "AffectedYears": "Late 1980s",
+          "EvidenceRefs": [
+            "https://www.boats.com/power-boats/1989-bayliner-3218-motoryacht-9746507/",
+            "https://www.hmy.com/yachting/powerboat-guide/bayliner/3270-explorer-3270-3288-motor-yacht-1981-95"
+          ],
+          "Confidence": "Moderate"
+        },
+        {
+          "Name": "Diesel and gasoline power",
+          "Description": "Twin Hino diesels are well documented, while gasoline twin-inboard examples also exist.",
+          "AffectedYears": "Late 1980s",
+          "EvidenceRefs": [
+            "https://www.boats.com/power-boats/1989-bayliner-3218-motoryacht-9746507/"
+          ],
+          "Confidence": "Moderate"
+        }
+      ]
+    },
+    "evidence": [
+      {
+        "Scope": "IdentityAndDimensions",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BAYL-3218"
+          ],
+          "Years": {
+            "From": 1987,
+            "To": 1989
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.boats.com/power-boats/1989-bayliner-3218-motoryacht-9746507/",
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/3270-explorer-3270-3288-motor-yacht-1981-95"
+        ],
+        "EvidenceTypes": [
+          "Technical or survey source",
+          "Marketplace observation"
+        ],
+        "Confidence": "High",
+        "Notes": "Identity, production period and principal specifications are based on model-specific references. Individual hull documentation remains controlling."
+      },
+      {
+        "Scope": "OverviewAndSuitability",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BAYL-3218"
+          ],
+          "Years": {
+            "From": 1987,
+            "To": 1989
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.boats.com/power-boats/1989-bayliner-3218-motoryacht-9746507/",
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/3270-explorer-3270-3288-motor-yacht-1981-95"
+        ],
+        "EvidenceTypes": [
+          "Technical or survey source"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Buyer guidance is derived from documented layout, dimensions, hull form and propulsion configuration."
+      },
+      {
+        "Scope": "InspectionFocus",
+        "AppliesTo": {
+          "Scope": "General age-related guidance",
+          "Models": [
+            "BAYL-3218"
+          ],
+          "Years": {
+            "From": 1987,
+            "To": 1989
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.boats.com/power-boats/1989-bayliner-3218-motoryacht-9746507/",
+          "https://www.hmy.com/yachting/powerboat-guide/bayliner/3270-explorer-3270-3288-motor-yacht-1981-95"
+        ],
+        "EvidenceTypes": [
+          "Technical or survey source"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Inspection guidance combines model-specific configuration with age-related system risks. These are inspection priorities, not assertions of a model-wide defect."
+      }
+    ],
+    "images": [
+      {
+        "title": "Bayliner 3218 Motoryacht image",
+        "url": "images/bayl-3218.jpg",
+        "sourceLabel": "B-Atlas image library",
+        "resourceType": "Model image",
+        "verificationStatus": "Local asset"
+      }
+    ],
+    "videos": [],
+    "listings": [],
+    "documents": [
+      {
+        "title": "Bayliner 3218 Motoryacht owner manual archive",
+        "url": "https://manualzz.com/doc/34718597/bayliner-3218-motoryacht-user-manual",
+        "sourceLabel": "HMY / factory / model archive",
+        "resourceType": "Model guide or reference",
+        "verificationStatus": "Verified",
+        "scope": "Model-specific",
+        "confidence": "Moderate",
+        "notes": ""
+      }
+    ],
+    "ownerCommunities": [],
+    "knownIssues": [],
+    "similarModels": [],
+    "missingInformation": [],
+    "sources": [
+      {
+        "type": "CuratedResourceSet",
+        "label": "B-Atlas Model Character + Resources Batch 28 — Bayliner",
+        "verificationStatus": "Links researched and checked 2026-08-07"
+      }
+    ],
+    "confidence": "Moderate",
+    "coverage": {
+      "BoatModelID": "BAYL-3218",
+      "Categories": {
+        "Identity": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Specifications": {
+          "Known": 10,
+          "Total": 10,
+          "Score": 100
+        },
+        "Configuration": {
+          "Known": 5,
+          "Total": 5,
+          "Score": 100
+        },
+        "Accommodation": {
+          "Known": 4,
+          "Total": 4,
+          "Score": 100
+        },
+        "Suitability": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Ownership": {
+          "Known": 4,
+          "Total": 5,
+          "Score": 80
+        },
+        "Evidence": {
+          "Known": 0,
+          "Total": 1,
+          "Score": 0
+        }
+      },
+      "OverallScore": 83,
+      "SourceCount": 1,
+      "VerifiedSourceCount": 0,
+      "ContradictionCount": 0,
+      "RelationshipCount": 3,
+      "CoverageStatus": "Strong",
+      "GeneratedAt": "2026-07-26",
+      "ScoredFieldCount": 33
+    },
+    "updatedAt": "2026-08-07"
+  },
+  {
+    "schemaVersion": 2,
+    "generated": true,
+    "generatedFrom": [
+      "boatmodels.json",
+      "curatedresources.json",
+      "listingsearches.json",
+      "knowledgeannotations.json",
+      "knowledge-coverage.json"
+    ],
+    "identity": {
+      "boatModelId": "BAYL-3258",
+      "manufacturer": "Bayliner",
+      "model": "3258 Command Bridge Command Bridge Cruiser",
+      "displayName": "Bayliner 3258 Command Bridge"
+    },
+    "intelligence": {
+      "overview": "The Bayliner 3258 Ciera Command Bridge is a twin-sterndrive flybridge cruiser with an 11-foot beam and family-oriented cabin arrangement. Factory documentation confirms substantial tankage and a roughly 33-foot overall length; gasoline and diesel twin-engine packages were offered.",
+      "suitability": {
+        "CoupleCruising": {
+          "Assessment": "Good",
+          "Summary": "The documented accommodation and cruising layout support use by a couple, subject to individual-condition survey.",
+          "EvidenceRefs": [
+            "https://www.bayliner.com/content/dam/bayliner/brand-assets/marketing-materials/product-info/past-owners-manuals/1999-Ciera-3258.pdf"
+          ]
+        },
+        "FamilyOrGuests": {
+          "Assessment": "Good",
+          "Summary": "Multiple sleeping areas improve guest separation.",
+          "EvidenceRefs": [
+            "https://www.bayliner.com/content/dam/bayliner/brand-assets/marketing-materials/product-info/past-owners-manuals/1999-Ciera-3258.pdf"
+          ]
+        },
+        "InlandAndCoastal": {
+          "Assessment": "Good",
+          "Summary": "The design is primarily suited to inland and coastal cruising within its documented dimensional and sea-state limits.",
+          "EvidenceRefs": [
+            "https://www.bayliner.com/content/dam/bayliner/brand-assets/marketing-materials/product-info/past-owners-manuals/1999-Ciera-3258.pdf"
+          ]
+        },
+        "SoloHandling": {
+          "Assessment": "Mixed",
+          "Summary": "Twin propulsion can aid docking, but duplicate systems and larger flybridge layouts increase workload.",
+          "EvidenceRefs": [
+            "https://www.bayliner.com/content/dam/bayliner/brand-assets/marketing-materials/product-info/past-owners-manuals/1999-Ciera-3258.pdf"
+          ]
+        }
+      },
+      "strengths": [
+        "Factory-documented capacities support multi-day cruising",
+        "Twin engines improve docking control",
+        "Flybridge adds visibility and outdoor seating",
+        "Compact beam for the accommodation provided"
+      ],
+      "tradeOffs": [
+        "Twin sterndrives increase service complexity",
+        "Bridge height affects transport and covered storage",
+        "Machinery and drive access require careful survey",
+        "Gasoline and diesel variants have different performance and ownership economics"
+      ],
+      "bestFor": [
+        "Family coastal and inland cruising",
+        "Buyers wanting a flybridge around 33 feet",
+        "Owners comfortable maintaining twin sterndrives"
+      ],
+      "avoidIf": [
+        "You require single shaft-drive simplicity",
+        "You need minimal air draft",
+        "You want low-cost propulsion maintenance"
+      ],
+      "knownConcerns": [],
+      "inspectionFocus": [
+        "Both sterndrives, transom assemblies and steering",
+        "Fuel and holding tanks and associated plumbing",
+        "Flybridge controls and electrical systems",
+        "Deck and transom moisture"
+      ],
+      "buyerQuestions": [
+        "Which gasoline or diesel engine package is installed?",
+        "When were both sterndrives and transom assemblies last serviced?",
+        "Have the fuel, water or holding tanks required repair or replacement?"
+      ],
+      "ownerActions": [
+        "Keep both drive systems on a documented maintenance schedule",
+        "Inspect tank access and plumbing for leaks or corrosion"
+      ],
+      "modelVariations": [
+        {
+          "Name": "Gasoline package",
+          "Description": "Twin gasoline sterndrive configurations were offered.",
+          "AffectedYears": "1995–2000",
+          "EvidenceRefs": [
+            "https://www.bayliner.com/content/dam/bayliner/brand-assets/marketing-materials/product-info/past-owners-manuals/1999-Ciera-3258.pdf"
+          ],
+          "Confidence": "High"
+        },
+        {
+          "Name": "Diesel package",
+          "Description": "Twin diesel sterndrive configurations were also available.",
+          "AffectedYears": "1995–2000",
+          "EvidenceRefs": [
+            "https://www.bayliner.com/content/dam/bayliner/brand-assets/marketing-materials/product-info/past-owners-manuals/1999-Ciera-3258.pdf"
+          ],
+          "Confidence": "High"
+        }
+      ]
+    },
+    "evidence": [
+      {
+        "Scope": "IdentityAndDimensions",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BAYL-3258"
+          ],
+          "Years": {
+            "From": 1995,
+            "To": 2000
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.bayliner.com/content/dam/bayliner/brand-assets/marketing-materials/product-info/past-owners-manuals/1999-Ciera-3258.pdf"
+        ],
+        "EvidenceTypes": [
+          "Technical or survey source",
+          "Marketplace observation"
+        ],
+        "Confidence": "High",
+        "Notes": "Identity, production period and principal specifications are based on model-specific references. Individual hull documentation remains controlling."
+      },
+      {
+        "Scope": "OverviewAndSuitability",
+        "AppliesTo": {
+          "Scope": "Model",
+          "Models": [
+            "BAYL-3258"
+          ],
+          "Years": {
+            "From": 1995,
+            "To": 2000
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.bayliner.com/content/dam/bayliner/brand-assets/marketing-materials/product-info/past-owners-manuals/1999-Ciera-3258.pdf"
+        ],
+        "EvidenceTypes": [
+          "Technical or survey source"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Buyer guidance is derived from documented layout, dimensions, hull form and propulsion configuration."
+      },
+      {
+        "Scope": "InspectionFocus",
+        "AppliesTo": {
+          "Scope": "General age-related guidance",
+          "Models": [
+            "BAYL-3258"
+          ],
+          "Years": {
+            "From": 1995,
+            "To": 2000
+          },
+          "Variations": []
+        },
+        "EvidenceRefs": [
+          "https://www.bayliner.com/content/dam/bayliner/brand-assets/marketing-materials/product-info/past-owners-manuals/1999-Ciera-3258.pdf"
+        ],
+        "EvidenceTypes": [
+          "Technical or survey source"
+        ],
+        "Confidence": "Moderate",
+        "Notes": "Inspection guidance combines model-specific configuration with age-related system risks. These are inspection priorities, not assertions of a model-wide defect."
+      }
+    ],
+    "images": [
+      {
+        "title": "Bayliner 3258 Command Bridge image",
+        "url": "images/bayl-3258.jpg",
+        "sourceLabel": "B-Atlas image library",
+        "resourceType": "Model image",
+        "verificationStatus": "Local asset"
+      }
+    ],
+    "videos": [],
+    "listings": [],
+    "documents": [
+      {
+        "title": "Bayliner 3258 Command Bridge — Powerboat Guide",
+        "url": "https://www.hmy.com/yachting/powerboat-guide/bayliner/3258-command-bridge-1995-2000",
+        "sourceLabel": "HMY / factory / model archive",
+        "resourceType": "Model guide or reference",
+        "verificationStatus": "Verified",
+        "scope": "Model-specific",
+        "confidence": "High",
+        "notes": ""
+      }
+    ],
+    "ownerCommunities": [],
+    "knownIssues": [],
+    "similarModels": [],
+    "missingInformation": [],
+    "sources": [
+      {
+        "type": "CuratedResourceSet",
+        "label": "B-Atlas Model Character + Resources Batch 28 — Bayliner",
+        "verificationStatus": "Links researched and checked 2026-08-07"
+      }
+    ],
+    "confidence": "Moderate",
+    "coverage": {
+      "BoatModelID": "BAYL-3258",
+      "Categories": {
+        "Identity": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Specifications": {
+          "Known": 10,
+          "Total": 10,
+          "Score": 100
+        },
+        "Configuration": {
+          "Known": 5,
+          "Total": 5,
+          "Score": 100
+        },
+        "Accommodation": {
+          "Known": 4,
+          "Total": 4,
+          "Score": 100
+        },
+        "Suitability": {
+          "Known": 2,
+          "Total": 2,
+          "Score": 100
+        },
+        "Ownership": {
+        

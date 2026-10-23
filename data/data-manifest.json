@@ -1,8 +1,8 @@
 {
-  "schemaVersion": 22,
-  "release": "v7.06.0",
-  "lastUpdated": "2026-10-19",
-  "purpose": "Runtime data manifest. Canonical model count must be derived from boatmodels.json rather than maintained as a stale constant.",
+  "schemaVersion": 23,
+  "release": "v7.06.2",
+  "lastUpdated": "2026-10-22",
+  "purpose": "Runtime dependency inventory. The shared repository derives model count from the verified generated release manifest; canonical ownership remains the only editable model authority.",
   "authoritativeModelRecord": "data/canonical/ownership.json",
   "principles": [
     "Each model field has exactly one owner declared in data/canonical/ownership.json.",
@@ -14,7 +14,7 @@
     "Low-confidence estimates are visibly marked and do not hard-eliminate a candidate."
   ],
   "runtimeData": [
-    "boatmodels.json",
+    "data/generated/models/manifest.json",
     "routes.json",
     "data/model-schema.json",
     "data/field-registry.json",
@@ -81,15 +81,34 @@
   },
   "notes": [
     "Public views are generated from source-only canonical datasets. Historical research is excluded from the public build.",
-    "Identity registry records are historical identity decisions; PendingReview is preserved without promoting verification."
+    "Identity registry records are historical identity decisions; PendingReview is preserved without promoting verification.",
+    "Phase 2: public model files and SEO are generated during the build; boatmodels.json is an output-only compatibility endpoint until client migration."
   ],
   "canonicalDatasets": {
-    "identities": "data/canonical/identities.json",
-    "specifications": "data/canonical/specifications.json",
-    "guidance": "data/canonical/guidance.json",
-    "provenance": "data/canonical/provenance.json"
+    "identities": "data/canonical/identities",
+    "specifications": "data/canonical/specifications",
+    "guidance": "data/canonical/guidance",
+    "provenance": "data/canonical/provenance"
   },
   "generatedPublicViews": [
-    "boatmodels.json"
-  ]
+    "boatmodels.json",
+    "data/generated/models/manifest.json",
+    "data/generated/models/*.json"
+  ],
+  "canonicalStorage": {
+    "schemaVersion": 1,
+    "bucketCount": 32,
+    "routing": "sha256-utf8-first8hex-mod32",
+    "index": "data/canonical/index.json",
+    "warningBytes": 150000,
+    "maximumBytes": 200000
+  },
+  "generatedCatalogue": {
+    "manifest": "data/generated/models/manifest.json",
+    "contract": "batlas-catalogue-release-v3",
+    "modelRecords": "Declared search projection at startup; complete records on demand",
+    "supportingDatasets": "Content-hashed snapshots named by the generated manifest. Listed source paths remain for build inputs and compatibility.",
+    "compatibilityEndpoint": "boatmodels.json",
+    "compatibilityRemoval": "Requires a separate external-consumer review."
+  }
 }

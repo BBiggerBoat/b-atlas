@@ -25,11 +25,12 @@ const dataByPath={
  "data/production-phases.json":phases,
  "data/model-search-aliases.json":aliases
 };
-const context={fetch:async url=>({ok:true,json:async()=>dataByPath[url]||[]})};
+const context={...require('./catalogue-fixture.cjs').contextGlobals,fetch:async url=>({ok:true,json:async()=>dataByPath[url]||[]})};
 context.globalThis=context;
 vm.runInNewContext(fs.readFileSync("datarepository.js","utf8"),context,{filename:"datarepository.js"});
 (async()=>{
- const result=await context.BScoutDataRepository.loadApplicationData({fetchImpl:context.fetch});
+ const fetchImpl=await require('./catalogue-fixture.cjs').releaseFetch(context.fetch);
+ const result=await context.BScoutDataRepository.loadApplicationData({fetchImpl});
  assert.equal(result.boats.length,boats.length,"Runtime model count changed");
  const expected=new Map();
  for(const p of phases)expected.set(p.BoatModelID,(expected.get(p.BoatModelID)||0)+1);

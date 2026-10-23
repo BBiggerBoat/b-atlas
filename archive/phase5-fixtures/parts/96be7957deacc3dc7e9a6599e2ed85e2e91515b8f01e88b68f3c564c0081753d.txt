@@ -1,0 +1,3281 @@
+egacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "ResearchNotes": "Batch 31 Beneteau/Jeanneau identity and lineage normalization. Reused model names and market-name aliases are preserved explicitly; uncertain generation-specific values remain listing-specific.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.\n\nCruising Performance Research Wave 5 v7.04 (2026-09-14).",
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "SpecificationConfidence": {
+      "KeelConfigurationCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from unambiguous existing KeelType text."
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing propulsion/keel description; no new factual assertion introduced."
+      },
+      "DisplacementCruiseSpeed": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://www.boote-magazin.de/en/boats/sport-boats/test-beneteau-antares-8-ob/",
+          "https://powerboatandrib.com/boat-reviews/beneteau-antares-8/"
+        ],
+        "Note": "BOOTE instrumented Antares 8 test: 6.8 kn at 2300 rpm burning about 10 L/h. Stored as displacement-speed cruise point."
+      },
+      "DisplacementCruiseFuelBurn": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://www.boote-magazin.de/en/boats/sport-boats/test-beneteau-antares-8-ob/",
+          "https://powerboatandrib.com/boat-reviews/beneteau-antares-8/"
+        ],
+        "Note": "BOOTE instrumented Antares 8 test: 6.8 kn at 2300 rpm burning about 10 L/h. Stored as displacement-speed cruise point."
+      },
+      "PlaningCruiseSpeed": {
+        "Level": "High",
+        "Status": "derived_from_instrumented_test",
+        "EvidenceRefs": [
+          "https://www.boote-magazin.de/en/boats/sport-boats/test-beneteau-antares-8-ob/",
+          "https://powerboatandrib.com/boat-reviews/beneteau-antares-8/"
+        ],
+        "Note": "BOOTE identifies 20 kn at 4500 rpm as the most economical planing speed, at 2.16 L/nm; total burn derived as 43.2 L/h."
+      },
+      "PlaningCruiseFuelBurn": {
+        "Level": "High",
+        "Status": "derived_from_instrumented_test",
+        "EvidenceRefs": [
+          "https://www.boote-magazin.de/en/boats/sport-boats/test-beneteau-antares-8-ob/",
+          "https://powerboatandrib.com/boat-reviews/beneteau-antares-8/"
+        ],
+        "Note": "BOOTE identifies 20 kn at 4500 rpm as the most economical planing speed, at 2.16 L/nm; total burn derived as 43.2 L/h."
+      },
+      "EnginePowerPerEngine": {
+        "Level": "High",
+        "Status": "supported_test_configuration",
+        "EvidenceRefs": [
+          "https://www.boote-magazin.de/en/boats/sport-boats/test-beneteau-antares-8-ob/",
+          "https://powerboatandrib.com/boat-reviews/beneteau-antares-8/"
+        ],
+        "Note": "Published Antares 8 test configuration uses one 200-hp outboard; factory power options vary."
+      }
+    }
+  },
+  {
+    "BoatModelID": "BENE-BAR-8",
+    "ManufacturerID": "BENE",
+    "Manufacturer": "Beneteau",
+    "Model": "Barracuda 8",
+    "Variant": "Sport-Fishing Pilothouse",
+    "Nickname": "Beneteau Barracuda 8",
+    "Active": true,
+    "CanonicalSlug": "beneteau-barracuda-8-sport-fishing-pilothouse",
+    "CanonicalPath": "/models/beneteau-barracuda-8-sport-fishing-pilothouse/",
+    "CanonicalURL": "https://b-atlas.org/models/beneteau-barracuda-8-sport-fishing-pilothouse/",
+    "ImageURL": "images/bene-bar-8.jpg",
+    "FirstYear": 2014,
+    "LastYear": 2020,
+    "TotalBuilt": null,
+    "Designer": "Beneteau Design Group",
+    "HullType": "Planing",
+    "Style": "Pilothouse Cruiser",
+    "Construction": "Fiberglass",
+    "KeelType": "Modified V",
+    "Fuel": "Gasoline",
+    "Cooling": "Raw Water",
+    "EngineConfiguration": "Single or twin outboards; 300 hp maximum total",
+    "Propulsion": "Outboard",
+    "Flybridge": "Optional",
+    "AftCabin": false,
+    "SideDecks": "Medium",
+    "TypicalEngineID": "Yamaha 250",
+    "FuelCapacity": 280.1205,
+    "WaterCapacity": 98.4207,
+    "HoldingCapacity": 75.7082,
+    "Berths": 2,
+    "Cabins": 1,
+    "Heads": 1,
+    "Shower": false,
+    "Galley": false,
+    "CoastalRating": "Limited",
+    "OffshoreRating": "Yes",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "BoatFamily": "Cruiser",
+    "HullBehaviour": "Planing",
+    "Features": [],
+    "NormalizedFuel": "Gasoline",
+    "NormalizedPropulsion": "Outboard",
+    "NormalizedHullForm": "Planing",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Sport Fisher",
+    "EngineCount": null,
+    "Configuration": "Walkaround Pilothouse Sport Fisher",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "BoatFamilyCode": "boat_family.pilothouse",
+    "HullBehaviourCode": "hull_behaviour.planing",
+    "FuelCode": "fuel.gasoline",
+    "MechanicalPropulsionCode": "mechanical_propulsion.outboard",
+    "LOA": 7.99,
+    "Beam": 2.8,
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "LWL": 7.3152,
+    "Draft": 0.6706,
+    "AirDraft": 2.8956,
+    "Displacement": 2644.4,
+    "RudderTypeCode": "rudder.none_external_drive",
+    "StyleCode": "Sport Fisher",
+    "CoolingCode": "cooling.raw_water",
+    "FlybridgeCode": "availability.optional",
+    "SideDecksCode": "side_decks.moderate",
+    "Headroom": 1.95,
+    "ShowerTypeCode": "shower.none",
+    "EnginePowerPerEngine": null,
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "KeelConfigurationCode": "keel.no_keel",
+    "RunningGearProtectionCode": "running_gear.exposed",
+    "Strengths": [
+      "Protected pilothouse with strong exterior access",
+      "Fishing-oriented cockpit and deck layout",
+      "Outboard propulsion and planing performance"
+    ],
+    "Weaknesses": "Limited interior volume.",
+    "CommonProblems": "Bracket corrosion and helm failures.",
+    "TypicalMission": "Coastal cruising and short Loop segments.",
+    "AvoidIf": [
+      "You need large private cabins for extended cruising",
+      "You primarily want economical displacement-speed operation",
+      "You require diesel shaft propulsion"
+    ],
+    "Overview": "The Beneteau Barracuda 8 is an enclosed walkaround sport-fishing cruiser from Beneteau's Barracuda line. Its planing hull, outboard propulsion, broad cockpit and optional upper helm on some versions emphasize fishing versatility and all-weather day use rather than displacement-speed passagemaking.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The enclosed helm and documented accommodation support weekend or extended couple cruising."
+      },
+      "SoloHandling": {
+        "Assessment": "Good",
+        "Summary": "Side-door access and good visibility help; docking burden rises with size, windage and twin-engine/flybridge configuration."
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "The enclosed cruising layout works well on inland routes; beam and air draft must be checked against route restrictions."
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "Factory CE ratings and hull form support coastal use; loading, weather and individual boat condition remain decisive."
+      }
+    },
+    "TradeOffs": [
+      "Accommodation is secondary to fishing and deck space",
+      "Optional flybridge adds air draft and exposure",
+      "Fuel use at planing speeds exceeds slow-cruiser expectations"
+    ],
+    "BestFor": [
+      "Fishing-focused coastal owners",
+      "All-weather day boating",
+      "Buyers wanting a practical outboard pilothouse"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Inspect outboard installation, steering and service history",
+      "Inspect cockpit drainage, fishboxes and deck hardware",
+      "Inspect pilothouse doors/windows and optional flybridge penetrations",
+      "Verify actual engine count and options on the individual boat"
+    ],
+    "BuyerQuestions": [
+      "What service, repair or inspection history is available for inspect outboard installation, steering and service history?",
+      "What service, repair or inspection history is available for inspect cockpit drainage, fishboxes and deck hardware?",
+      "What service, repair or inspection history is available for inspect pilothouse doors/windows and optional flybridge penetrations?",
+      "What service, repair or inspection history is available for verify actual engine count and options on the individual boat?"
+    ],
+    "OwnerActions": [
+      "Keep windows, hatches, deck hardware and exterior penetrations sealed",
+      "Maintain propulsion, cooling, exhaust, steering and electrical systems to documented intervals",
+      "Document machinery and system upgrades for future survey and resale"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "Configuration options",
+        "Description": "Barracuda models were offered in multiple deck/door layouts; flybridge and engine count can vary by version.",
+        "AffectedYears": "Production run",
+        "EvidenceRefs": [
+          "https://www.beneteau.com/en-us/barracuda/barracuda-8-23"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "ModelCharacter": "A walkaround sport-fishing pilothouse from Beneteau's now-discontinued Barracuda family, prioritizing cockpit work space, side-deck access and outboard performance over the cabin comfort of an Antares.",
+    "DesignLineage": [
+      "The Barracuda 8 belonged to Beneteau's dedicated sport-fishing Barracuda range.",
+      "Single- and twin-outboard configurations were offered depending market/equipment.",
+      "Barracuda used more open walkaround deck architecture than the Antares cruiser line.",
+      "The Barracuda family was subsequently discontinued; current Antares Fishing versions now serve a related mission but are not direct renames."
+    ],
+    "OwnershipCharacter": "Outboards and open deck simplify the basic boat, but fishing hardware and heavily exposed deck fittings require maintenance. Used examples vary significantly by engine package.",
+    "DateCreated": "2026-07-18",
+    "LastUpdated": "2026-09-13",
+    "ReviewedBy": "B-Atlas Phase 8C-14 French Production Research",
+    "Revision": 3,
+    "DataConfidence": "High",
+    "ResearchStatus": "Reviewed",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "BENE-BAR-8"
+            ],
+            "Years": {
+              "From": 2014,
+              "To": 2026
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.beneteau.com/en-us/barracuda/barracuda-8-23"
+          ],
+          "EvidenceTypes": [
+            "Factory documented"
+          ],
+          "Confidence": "High",
+          "Notes": "Factory and model-specific documentation support identity and representative specifications."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "BENE-BAR-8"
+            ],
+            "Years": {
+              "From": 2014,
+              "To": 2026
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.beneteau.com/en-us/barracuda/barracuda-8-23"
+          ],
+          "EvidenceTypes": [
+            "Factory documented"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Guidance is derived from documented layout, hull form, propulsion and dimensions."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "BENE-BAR-8"
+            ],
+            "Years": {
+              "From": 2014,
+              "To": 2026
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.beneteau.com/en-us/barracuda/barracuda-8-23"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance reflects configuration and age exposure; it is not a claim that every hull has a defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "ResearchNotes": "Batch 31 Beneteau/Jeanneau identity and lineage normalization. Reused model names and market-name aliases are preserved explicitly; uncertain generation-specific values remain listing-specific.\n\nHigh-impact missing-data research Wave 3 v6.88 (2026-09-13): factory Barracuda 8 documentation gives 1.95 m wheelhouse headroom and single-or-twin outboard propulsion up to 300 hp total. The interior head provides toilet provision but no interior shower; cockpit shower is optional, so interior ShowerTypeCode is none. Sources: https://www.beneteau.com/en-us/barracuda/barracuda-8-23 ; https://www.darthaven.co.uk/userfiles/boat_docs/Beneteau%20Barracuda%208%20Specification%202018.pdf\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "PlanCriticalStatus": {
+      "EngineCount": "configuration_or_production_mixed",
+      "EnginePowerPerEngine": "configuration_or_production_mixed"
+    },
+    "SpecificationConfidence": {
+      "EngineCount": {
+        "Level": "Medium",
+        "Status": "configuration_variable",
+        "EvidenceRefs": [],
+        "Note": "Existing canonical engine-configuration description documents both single and twin installations; a single model-wide engine count would be misleading."
+      },
+      "KeelConfigurationCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from unambiguous existing KeelType text."
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing propulsion/keel description; no new factual assertion introduced."
+      }
+    }
+  },
+  {
+    "BoatModelID": "BENE-ANT-9",
+    "ManufacturerID": "BENE",
+    "Manufacturer": "Beneteau",
+    "Model": "Antares 9",
+    "Variant": "Generation 1",
+    "Nickname": "Beneteau Antares 9",
+    "Active": true,
+    "ModelAliases": [
+      "Antares 9 (2018–2024)"
+    ],
+    "CanonicalSlug": "beneteau-antares-9-series-1-series-2",
+    "CanonicalPath": "/models/beneteau-antares-9-series-1-series-2/",
+    "CanonicalURL": "https://b-atlas.org/models/beneteau-antares-9-series-1-series-2/",
+    "ModelIdentityFamilyID": "BENE-ANT-9",
+    "ImageURL": "images/bene-ant-9.jpg",
+    "FirstYear": 2018,
+    "LastYear": 2024,
+    "TotalBuilt": null,
+    "Designer": "Beneteau Design Team",
+    "HullType": "Planing",
+    "Style": "Outboard Cruiser",
+    "Construction": "Fiberglass",
+    "KeelType": "Modified V",
+    "Fuel": "Gasoline",
+    "Cooling": "Raw Water",
+    "EngineConfiguration": "Twin outboards",
+    "Propulsion": "Outboard",
+    "Flybridge": "No",
+    "AftCabin": false,
+    "SideDecks": "Medium",
+    "TypicalEngineID": "Yamaha 200 Twin",
+    "FuelCapacity": 598.0951,
+    "WaterCapacity": 158.9873,
+    "HoldingCapacity": 75.7082,
+    "Berths": 4,
+    "Cabins": 2,
+    "Heads": 1,
+    "Shower": false,
+    "Galley": false,
+    "CoastalRating": "Limited",
+    "OffshoreRating": "Yes",
+    "GreatLoopSuitable": false,
+    "Trailerable": false,
+    "BoatFamily": "Cruiser",
+    "HullBehaviour": "Planing",
+    "Features": [
+      "Flybridge"
+    ],
+    "NormalizedFuel": "Gasoline",
+    "NormalizedPropulsion": "Outboard",
+    "NormalizedHullForm": "Planing",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Cruiser",
+    "EngineCount": 2,
+    "Configuration": "Pilothouse Outboard Cruiser",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "BoatFamilyCode": "boat_family.sedan_cruiser",
+    "HullBehaviourCode": "hull_behaviour.planing",
+    "FuelCode": "fuel.gasoline",
+    "MechanicalPropulsionCode": "mechanical_propulsion.outboard",
+    "LOA": 9.12,
+    "Beam": 2.99,
+    "Draft": 0.9,
+    "Displacement": 4259,
+    "AirDraft": 3.25,
+    "EnginePowerPerEngine": 149.14,
+    "ShowerTypeCode": "shower.wet_head",
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "LWL": 7.9248,
+    "RudderTypeCode": "rudder.none_external_drive",
+    "StyleCode": "Cruiser",
+    "CoolingCode": "cooling.raw_water",
+    "FlybridgeCode": "availability.no",
+    "SideDecksCode": "side_decks.moderate",
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": 22.07,
+    "PlaningCruiseFuelBurn": 53.416,
+    "KeelConfigurationCode": "keel.no_keel",
+    "RunningGearProtectionCode": "running_gear.exposed",
+    "Strengths": [
+      "Protected pilothouse helm",
+      "Outboard propulsion simplifies engine access and winterization",
+      "Practical cockpit and side-deck access for coastal use"
+    ],
+    "Weaknesses": "Higher fuel burn and limited storage.",
+    "CommonProblems": "Bracket corrosion and helm electronics issues.",
+    "TypicalMission": "Coastal cruising and short Loop segments.",
+    "AvoidIf": [
+      "You primarily cruise at 6–8 knots for maximum economy",
+      "You require large long-range tankage",
+      "You want shaft-drive diesel propulsion"
+    ],
+    "Overview": "The Beneteau Antares 9 is a French enclosed-pilothouse outboard cruiser designed for short coastal trips, fishing and weekend use. The Antares range prioritizes visibility, sheltered helm operation and practical cockpit access rather than traditional trawler-speed efficiency.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The enclosed helm and documented accommodation support weekend or extended couple cruising."
+      },
+      "SoloHandling": {
+        "Assessment": "Good",
+        "Summary": "Side-door access and good visibility help; docking burden rises with size, windage and twin-engine/flybridge configuration."
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "The enclosed cruising layout works well on inland routes; beam and air draft must be checked against route restrictions."
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "Factory CE ratings and hull form support coastal use; loading, weather and individual boat condition remain decisive."
+      }
+    },
+    "TradeOffs": [
+      "Planing-speed operation uses substantially more fuel than displacement cruising",
+      "Outboard installations occupy transom space",
+      "Accommodation and tankage are modest relative to trawler-style cruisers of similar overall length"
+    ],
+    "BestFor": [
+      "Weekend coastal cruising",
+      "Owners wanting enclosed outboard operation",
+      "Fishing and family day use with occasional overnighting"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Inspect outboard service history, mounting and steering",
+      "Inspect pilothouse windows, doors and roof penetrations",
+      "Inspect cockpit drainage and transom structure",
+      "Verify tankage, sleeping layout and fitted sanitation equipment"
+    ],
+    "BuyerQuestions": [
+      "What service, repair or inspection history is available for inspect outboard service history, mounting and steering?",
+      "What service, repair or inspection history is available for inspect pilothouse windows, doors and roof penetrations?",
+      "What service, repair or inspection history is available for inspect cockpit drainage and transom structure?",
+      "What service, repair or inspection history is available for verify tankage, sleeping layout and fitted sanitation equipment?"
+    ],
+    "OwnerActions": [
+      "Keep windows, hatches, deck hardware and exterior penetrations sealed",
+      "Maintain propulsion, cooling, exhaust, steering and electrical systems to documented intervals",
+      "Document machinery and system upgrades for future survey and resale"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "Original modern Antares 9",
+        "Description": "29'11\" generation with twin outboards up to 200 hp each.",
+        "AffectedYears": "2019–mid-2020s",
+        "EvidenceRefs": [
+          "https://www.beneteau.com/5th-generation-antares-2012-today/antares-9"
+        ],
+        "Confidence": "High"
+      },
+      {
+        "Name": "Antares 9 Series 2",
+        "Description": "Redesigned current generation with revised hull/construction and twin 250 hp capability.",
+        "AffectedYears": "mid-2020s onward",
+        "EvidenceRefs": [
+          "https://www.beneteau.com/antares/antares-9"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "ModelCharacter": "A twin-outboard two-cabin weekender that moves the Antares concept into genuine family-cruising territory. The model now spans an original 29'11\" generation and a newer Series 2 with a shorter nominal LOA but higher displacement and up to twin 250 hp.",
+    "DesignLineage": [
+      "The first modern Antares 9 used a 9.12 m / 29'11\" hull with twin outboards up to 200 hp each.",
+      "A new Antares 9 Series 2 later replaced it with revised hull, construction and twin 250 hp capability.",
+      "Both generations share the Antares 9 marketed identity but are materially different boats.",
+      "B-Atlas therefore keeps one searchable model with explicit generation variation rather than pretending the specifications are continuous."
+    ],
+    "OwnershipCharacter": "Twin outboards, two cabins and full weekend systems make it a substantial small yacht. Outboard service access is easy, but two engines, generator/AC options and increasing electronics raise cost sharply over the Antares 7/8.",
+    "DateCreated": "2026-07-18",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "B-Atlas Phase 8C-14 French Production Research",
+    "Revision": 2,
+    "DataConfidence": "High",
+    "ResearchStatus": "Reviewed",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "BENE-ANT-9"
+            ],
+            "Years": {
+              "From": 2019,
+              "To": 2026
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.beneteau.com/en-us/heritage-powerboats/antares-2012-2022"
+          ],
+          "EvidenceTypes": [
+            "Factory documented"
+          ],
+          "Confidence": "High",
+          "Notes": "Factory and model-specific documentation support identity and representative specifications."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "BENE-ANT-9"
+            ],
+            "Years": {
+              "From": 2019,
+              "To": 2026
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.beneteau.com/en-us/heritage-powerboats/antares-2012-2022"
+          ],
+          "EvidenceTypes": [
+            "Factory documented"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Guidance is derived from documented layout, hull form, propulsion and dimensions."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "BENE-ANT-9"
+            ],
+            "Years": {
+              "From": 2019,
+              "To": 2026
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.beneteau.com/en-us/heritage-powerboats/antares-2012-2022"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance reflects configuration and age exposure; it is not a claim that every hull has a defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Production years and exact tankage vary by Antares generation; verify the individual model year.",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "ResearchNotes": "Batch 31 Beneteau/Jeanneau identity and lineage normalization. Reused model names and market-name aliases are preserved explicitly; uncertain generation-specific values remain listing-specific.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.\n\nCruising Performance Research Wave 4 v7.03 (2026-09-14).",
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "SpecificationConfidence": {
+      "KeelConfigurationCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from unambiguous existing KeelType text."
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing propulsion/keel description; no new factual assertion introduced."
+      },
+      "PlaningCruiseSpeed": {
+        "Level": "High",
+        "Status": "derived_from_instrumented_test",
+        "EvidenceRefs": [
+          "https://boattest.com/boats/beneteau/antares-9-2024",
+          "https://boattest.com/boats/beneteau/antares-9-2019"
+        ],
+        "Note": "BoatTEST summary of its instrumented original-generation Antares 9 twin-Mercury-200 test: best cruise 25.4 mph (22.07 kn) at 3500 rpm and 1.8 statute mpg. Total fuel burn is derived as 25.4/1.8 = 14.11 US gal/h."
+      },
+      "PlaningCruiseFuelBurn": {
+        "Level": "High",
+        "Status": "derived_from_instrumented_test",
+        "EvidenceRefs": [
+          "https://boattest.com/boats/beneteau/antares-9-2024",
+          "https://boattest.com/boats/beneteau/antares-9-2019"
+        ],
+        "Note": "BoatTEST summary of its instrumented original-generation Antares 9 twin-Mercury-200 test: best cruise 25.4 mph (22.07 kn) at 3500 rpm and 1.8 statute mpg. Total fuel burn is derived as 25.4/1.8 = 14.11 US gal/h."
+      },
+      "EnginePowerPerEngine": {
+        "Level": "High",
+        "Status": "supported",
+        "EvidenceRefs": [
+          "https://boattest.com/boats/beneteau/antares-9-2024",
+          "https://boattest.com/boats/beneteau/antares-9-2019"
+        ],
+        "Note": "BoatTEST original-generation performance test used twin Mercury 200-hp four-strokes."
+      }
+    }
+  },
+  {
+    "BoatModelID": "BENE-BAR-9",
+    "ManufacturerID": "BENE",
+    "Manufacturer": "Beneteau",
+    "Model": "Barracuda 9",
+    "Variant": "Sport-Fishing Pilothouse",
+    "Nickname": "Beneteau Barracuda 9",
+    "Active": true,
+    "CanonicalSlug": "beneteau-barracuda-9-sport-fishing-pilothouse",
+    "CanonicalPath": "/models/beneteau-barracuda-9-sport-fishing-pilothouse/",
+    "CanonicalURL": "https://b-atlas.org/models/beneteau-barracuda-9-sport-fishing-pilothouse/",
+    "ImageURL": "images/bene-bar-9.jpg",
+    "FirstYear": 2015,
+    "LastYear": 2020,
+    "TotalBuilt": null,
+    "Designer": "Beneteau Design Group",
+    "HullType": "Planing",
+    "Style": "Pilothouse Cruiser",
+    "Construction": "Fiberglass",
+    "KeelType": "Modified V",
+    "Fuel": "Gasoline",
+    "Cooling": "Raw Water",
+    "EngineConfiguration": "Twin outboards up to 250 hp each",
+    "Propulsion": "Outboard",
+    "Flybridge": "Optional",
+    "AftCabin": false,
+    "SideDecks": "Medium",
+    "TypicalEngineID": "Yamaha 250 Twin",
+    "FuelCapacity": 401.2536,
+    "WaterCapacity": 98.4207,
+    "HoldingCapacity": 94.6353,
+    "Berths": 4,
+    "Cabins": 1,
+    "Heads": 1,
+    "Shower": false,
+    "Galley": false,
+    "CoastalRating": "Limited",
+    "OffshoreRating": "Yes",
+    "GreatLoopSuitable": false,
+    "Trailerable": false,
+    "BoatFamily": "Cruiser",
+    "HullBehaviour": "Planing",
+    "Features": [
+      "Flybridge"
+    ],
+    "NormalizedFuel": "Gasoline",
+    "NormalizedPropulsion": "Outboard",
+    "NormalizedHullForm": "Planing",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Sport Fisher",
+    "EngineCount": 2,
+    "Configuration": "Walkaround Pilothouse Sport Fisher",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "BoatFamilyCode": "boat_family.pilothouse",
+    "HullBehaviourCode": "hull_behaviour.planing",
+    "FuelCode": "fuel.gasoline",
+    "MechanicalPropulsionCode": "mechanical_propulsion.outboard",
+    "LOA": 9.1,
+    "Beam": 2.98,
+    "Displacement": 4439,
+    "EnginePowerPerEngine": 167.78,
+    "ShowerTypeCode": "shower.wet_head",
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "LWL": 8.2296,
+    "Draft": 0.701,
+    "AirDraft": 3.2004,
+    "RudderTypeCode": "rudder.none_external_drive",
+    "StyleCode": "Sport Fisher",
+    "CoolingCode": "cooling.raw_water",
+    "FlybridgeCode": "availability.optional",
+    "SideDecksCode": "side_decks.moderate",
+    "DisplacementCruiseSpeed": 8.2,
+    "DisplacementCruiseFuelBurn": 23.848,
+    "PlaningCruiseSpeed": 21.5,
+    "PlaningCruiseFuelBurn": 54.888,
+    "KeelConfigurationCode": "keel.no_keel",
+    "RunningGearProtectionCode": "running_gear.exposed",
+    "Strengths": [
+      "Protected pilothouse with strong exterior access",
+      "Fishing-oriented cockpit and deck layout",
+      "Outboard propulsion and planing performance"
+    ],
+    "Weaknesses": "Higher fuel burn.",
+    "CommonProblems": "Bracket corrosion and electronics failures.",
+    "TypicalMission": "Coastal cruising and Loop segments.",
+    "AvoidIf": [
+      "You need large private cabins for extended cruising",
+      "You primarily want economical displacement-speed operation",
+      "You require diesel shaft propulsion"
+    ],
+    "Overview": "The Beneteau Barracuda 9 is an enclosed walkaround sport-fishing cruiser from Beneteau's Barracuda line. Its planing hull, outboard propulsion, broad cockpit and optional upper helm on some versions emphasize fishing versatility and all-weather day use rather than displacement-speed passagemaking.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The enclosed helm and documented accommodation support weekend or extended couple cruising."
+      },
+      "SoloHandling": {
+        "Assessment": "Good",
+        "Summary": "Side-door access and good visibility help; docking burden rises with size, windage and twin-engine/flybridge configuration."
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "The enclosed cruising layout works well on inland routes; beam and air draft must be checked against route restrictions."
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "Factory CE ratings and hull form support coastal use; loading, weather and individual boat condition remain decisive."
+      }
+    },
+    "TradeOffs": [
+      "Accommodation is secondary to fishing and deck space",
+      "Optional flybridge adds air draft and exposure",
+      "Fuel use at planing speeds exceeds slow-cruiser expectations"
+    ],
+    "BestFor": [
+      "Fishing-focused coastal owners",
+      "All-weather day boating",
+      "Buyers wanting a practical outboard pilothouse"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Inspect outboard installation, steering and service history",
+      "Inspect cockpit drainage, fishboxes and deck hardware",
+      "Inspect pilothouse doors/windows and optional flybridge penetrations",
+      "Verify actual engine count and options on the individual boat"
+    ],
+    "BuyerQuestions": [
+      "What service, repair or inspection history is available for inspect outboard installation, steering and service history?",
+      "What service, repair or inspection history is available for inspect cockpit drainage, fishboxes and deck hardware?",
+      "What service, repair or inspection history is available for inspect pilothouse doors/windows and optional flybridge penetrations?",
+      "What service, repair or inspection history is available for verify actual engine count and options on the individual boat?"
+    ],
+    "OwnerActions": [
+      "Keep windows, hatches, deck hardware and exterior penetrations sealed",
+      "Maintain propulsion, cooling, exhaust, steering and electrical systems to documented intervals",
+      "Document machinery and system upgrades for future survey and resale"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "Configuration options",
+        "Description": "Barracuda models were offered in multiple deck/door layouts; flybridge and engine count can vary by version.",
+        "AffectedYears": "Production run",
+        "EvidenceRefs": [
+          "https://www.beneteau.com/barracuda/barracuda-9"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "ModelCharacter": "The larger twin-outboard Barracuda sport-fishing pilothouse, built around protected helm operation, walkaround decks and a broad working cockpit. It is fundamentally fishing-first compared with the similarly sized Antares 9.",
+    "DesignLineage": [
+      "The Barracuda 9 was a core model in Beneteau's sport-fishing Barracuda line.",
+      "Twin outboards up to 250 hp each were offered.",
+      "Optional upper-helm/flybridge arrangements appeared on some versions.",
+      "The Barracuda line was later discontinued rather than renamed wholesale into Antares."
+    ],
+    "OwnershipCharacter": "Twin outboards are accessible and replaceable, but two engines and fishing equipment raise running cost. Hull/deck hardware and heavily used cockpit fittings deserve close survey on ex-fishing boats.",
+    "DateCreated": "2026-07-18",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "B-Atlas Phase 8C-14 French Production Research",
+    "Revision": 2,
+    "DataConfidence": "High",
+    "ResearchStatus": "Reviewed",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "BENE-BAR-9"
+            ],
+            "Years": {
+              "From": 2015,
+              "To": 2026
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.beneteau.com/barracuda/barracuda-9"
+          ],
+          "EvidenceTypes": [
+            "Factory documented"
+          ],
+          "Confidence": "High",
+          "Notes": "Factory and model-specific documentation support identity and representative specifications."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "BENE-BAR-9"
+            ],
+            "Years": {
+              "From": 2015,
+              "To": 2026
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.beneteau.com/barracuda/barracuda-9"
+          ],
+          "EvidenceTypes": [
+            "Factory documented"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Guidance is derived from documented layout, hull form, propulsion and dimensions."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "BENE-BAR-9"
+            ],
+            "Years": {
+              "From": 2015,
+              "To": 2026
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.beneteau.com/barracuda/barracuda-9"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance reflects configuration and age exposure; it is not a claim that every hull has a defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "ResearchNotes": "Batch 31 Beneteau/Jeanneau identity and lineage normalization. Reused model names and market-name aliases are preserved explicitly; uncertain generation-specific values remain listing-specific.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.\n\nCruising Performance Research Wave 5 v7.04 (2026-09-14).",
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "SpecificationConfidence": {
+      "KeelConfigurationCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from unambiguous existing KeelType text."
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing propulsion/keel description; no new factual assertion introduced."
+      },
+      "DisplacementCruiseSpeed": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://powerandmotoryacht.com/boats/boat-tests/townsend-bell-beneteau-barracuda-9/",
+          "https://www.denisonyachtsales.com/2017/05/beneteau-barracuda-9-test-walkthrough-video-by-boattest-com/"
+        ],
+        "Note": "Power & Motoryacht instrumented Barracuda 9 table, twin Yamaha 225: 8.2 kn at 2000 rpm burning 6.3 US gal/h total. Stored as displacement-speed cruise point."
+      },
+      "DisplacementCruiseFuelBurn": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://powerandmotoryacht.com/boats/boat-tests/townsend-bell-beneteau-barracuda-9/",
+          "https://www.denisonyachtsales.com/2017/05/beneteau-barracuda-9-test-walkthrough-video-by-boattest-com/"
+        ],
+        "Note": "Power & Motoryacht instrumented Barracuda 9 table, twin Yamaha 225: 8.2 kn at 2000 rpm burning 6.3 US gal/h total. Stored as displacement-speed cruise point."
+      },
+      "PlaningCruiseSpeed": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://powerandmotoryacht.com/boats/boat-tests/townsend-bell-beneteau-barracuda-9/",
+          "https://www.denisonyachtsales.com/2017/05/beneteau-barracuda-9-test-walkthrough-video-by-boattest-com/"
+        ],
+        "Note": "Same test: 21.5 kn at 3500 rpm burning 14.5 US gal/h total; representative efficient planing-cruise point."
+      },
+      "PlaningCruiseFuelBurn": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://powerandmotoryacht.com/boats/boat-tests/townsend-bell-beneteau-barracuda-9/",
+          "https://www.denisonyachtsales.com/2017/05/beneteau-barracuda-9-test-walkthrough-video-by-boattest-com/"
+        ],
+        "Note": "Same test: 21.5 kn at 3500 rpm burning 14.5 US gal/h total; representative efficient planing-cruise point."
+      },
+      "EnginePowerPerEngine": {
+        "Level": "High",
+        "Status": "supported_test_configuration",
+        "EvidenceRefs": [
+          "https://powerandmotoryacht.com/boats/boat-tests/townsend-bell-beneteau-barracuda-9/",
+          "https://www.denisonyachtsales.com/2017/05/beneteau-barracuda-9-test-walkthrough-video-by-boattest-com/"
+        ],
+        "Note": "Instrumented test used twin Yamaha 225-hp four-strokes; other factory power packages existed."
+      }
+    }
+  },
+  {
+    "BoatModelID": "BHMB-32",
+    "ManufacturerID": "BHM",
+    "Manufacturer": "BHM",
+    "Model": "32",
+    "Variant": "Flye Point / Semi-Custom Downeast",
+    "Nickname": "BHM 32 / Flye Point 32",
+    "Active": false,
+    "ModelAliases": [
+      "Flye Point 32",
+      "BHM Flye Point 32"
+    ],
+    "CanonicalSlug": "bhm-32-downeast-flye-point",
+    "CanonicalPath": "/models/bhm-32-downeast-flye-point/",
+    "CanonicalURL": "https://b-atlas.org/models/bhm-32-downeast-flye-point/",
+    "ImageURL": "images/bhmb-32.jpg",
+    "FirstYear": 1980,
+    "LastYear": 2000,
+    "TotalBuilt": null,
+    "Designer": "Spencer Lincoln",
+    "HullType": "Semi-Displacement",
+    "Style": "Downeast Cruiser",
+    "Construction": "Fiberglass",
+    "KeelType": "Full Length",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Single diesel inboard typical",
+    "Propulsion": "Shaft",
+    "Flybridge": "No",
+    "AftCabin": false,
+    "SideDecks": "Wide",
+    "TypicalEngineID": "John Deere 200",
+    "FuelCapacity": 567.8118,
+    "WaterCapacity": 264.9788,
+    "HoldingCapacity": null,
+    "Berths": 4,
+    "Cabins": 1,
+    "Heads": 1,
+    "Shower": false,
+    "Galley": false,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "Yes",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "BoatFamily": "Downeast",
+    "HullBehaviour": "Semi-Displacement",
+    "Features": [
+      "Wide Side Decks"
+    ],
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Semi-Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Downeast Cruiser",
+    "EngineCount": 1,
+    "DisplacementLb": 14000,
+    "NormalizedHullType": "Semi-Displacement",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "BoatFamilyCode": "boat_family.downeast",
+    "HullBehaviourCode": "hull_behaviour.semi_displacement",
+    "FuelCode": "fuel.diesel",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "LOA": 9.7536,
+    "KeelConfigurationCode": "keel.full_long",
+    "RunningGearProtectionCode": "running_gear.keel_protected",
+    "FlybridgeCode": "availability.optional",
+    "FuelCapacityUnitStatus": "canonical_litres",
+    "WaterCapacityUnitStatus": "canonical_litres",
+    "HoldingCapacityUnitStatus": "unknown",
+    "Beam": 3.5052000000000003,
+    "Draft": 1.0668,
+    "AirDraft": 3.2,
+    "StyleCode": "Downeast Cruiser",
+    "CoolingCode": "cooling.fresh_water",
+    "SideDecksCode": "side_decks.wide",
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "LWL": 8.914,
+    "ShowerTypeCode": "shower.none",
+    "Strengths": [
+      "Authentic New England working-boat hull heritage",
+      "Simple, practical coastal layout with strong cockpit utility",
+      "Individual examples can be configured effectively for fishing or compact cruising"
+    ],
+    "Weaknesses": "Modest interior volume and older systems.",
+    "CommonProblems": "Deck core moisture and tank corrosion.",
+    "TypicalMission": "Coastal cruising and Loop segments.",
+    "AvoidIf": [
+      "You require standardized production-boat layouts and specifications",
+      "You want extensive factory model documentation",
+      "You are unwilling to investigate custom finish history"
+    ],
+    "Overview": "The BHM 32 is a Downeast/lobster-boat-derived hull whose individual finish and propulsion can vary significantly. B-Atlas treats the hull identity as useful, but not every legacy accommodation, tankage or equipment value as a factory-wide standard.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented layout and protected helm arrangement are practical for a cruising couple, with accommodation depth varying by model."
+      },
+      "SoloHandling": {
+        "Assessment": "Good",
+        "Summary": "Visibility and cockpit access are generally strong; docking burden depends on size, engine arrangement and fitted thrusters."
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "Shallow-to-moderate draft and protected helm layouts suit many inland routes, but beam and air draft remain route-specific."
+      },
+      "ExposedWater": {
+        "Assessment": "Good",
+        "Summary": "Downeast/lobster-derived hull forms are intended for coastal conditions, but individual hull condition, loading and configuration remain decisive."
+      }
+    },
+    "TradeOffs": [
+      "Semi-custom and custom finishes create large hull-to-hull differences",
+      "Model-wide accommodation and tankage data are not consistently standardized",
+      "Older examples may have extensive owner modifications"
+    ],
+    "BestFor": [
+      "Experienced buyers seeking a genuine lobster-boat-style hull",
+      "Coastal cruisers who prioritize seakeeping and cockpit utility",
+      "Owners comfortable verifying hull-specific equipment"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Confirm hull builder, finisher, year and HIN",
+      "Inspect structural additions, deckhouse and bulkhead workmanship",
+      "Inspect engine installation, exhaust, cooling and shaft/outboard conversion",
+      "Verify tankage, wiring and plumbing installations",
+      "Verify actual dimensions, displacement and accommodations"
+    ],
+    "BuyerQuestions": [
+      "What service, inspection or repair history is available for confirm hull builder, finisher, year and HIN?",
+      "What service, inspection or repair history is available for inspect structural additions, deckhouse and bulkhead workmanship?",
+      "What service, inspection or repair history is available for inspect engine installation, exhaust, cooling and shaft/outboard conversion?",
+      "What service, inspection or repair history is available for verify tankage, wiring and plumbing installations?",
+      "What service, inspection or repair history is available for verify actual dimensions, displacement and accommodations?"
+    ],
+    "OwnerActions": [
+      "Keep deck, window, hatch and hardware penetrations sealed",
+      "Maintain engine cooling, exhaust, fuel, steering and drive systems to documented intervals",
+      "Document structural, machinery and system modifications for future survey and resale"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "Hull-specific finishing",
+        "Description": "Commercial-derived Downeast hulls may be finished by different yards or owners, so house, machinery, tankage and interior arrangement require individual verification.",
+        "AffectedYears": "All",
+        "EvidenceRefs": [
+          "https://www.boatdesign.net/threads/over-weight-boat.23483/"
+        ],
+        "Confidence": "Moderate"
+      }
+    ],
+    "ModelCharacter": "A highly regarded Spencer Lincoln-designed Maine lobsterboat hull that became a favorite foundation for custom Downeast cruisers. The BHM 32 combines a deep forefoot, built-down hull, single inboard diesel and full keel with enough beam and displacement for serious coastal cruising or commercial work.",
+    "DesignLineage": [
+      "The BHM 32 is a Spencer Lincoln Downeast design built in Maine and commonly finished by multiple yards.",
+      "Surviving boats are marketed both simply as BHM 32 and as Flye Point 32 cruisers depending on builder/finisher.",
+      "Modern brokerage references also connect the design to the Seaworthy/BHM line, reflecting continued use of the underlying hull concept.",
+      "Because finishing yard, propulsion and accommodations vary substantially, B-Atlas treats BHM 32 as the hull/model family and preserves Flye Point 32 as an alias/configuration."
+    ],
+    "OwnershipCharacter": "A very strong owner-operated platform when finished well: single diesel, protected running gear and commercial-grade hull form. The challenge is non-standardization—survey quality of the finish yard's deckhouse, wiring, tanks, insulation and systems matters as much as the hull itself.",
+    "DateCreated": "2026-07-18",
+    "LastUpdated": "2026-09-12",
+    "ReviewedBy": "B-Atlas Phase 8C-12 Downeast / Lobster-Style Research",
+    "Revision": "3",
+    "DataConfidence": "Low",
+    "ResearchStatus": "Reviewed",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Partial",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "BHMB-32"
+            ],
+            "Years": {
+              "From": 1980,
+              "To": 2000
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.boatdesign.net/threads/over-weight-boat.23483/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Representative model identity and principal specifications are based on model-specific sources where available."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "BHMB-32"
+            ],
+            "Years": {
+              "From": 1980,
+              "To": 2000
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.boatdesign.net/threads/over-weight-boat.23483/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Decision guidance is derived from documented hull, propulsion, layout and intended use rather than advertising claims."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "BHMB-32"
+            ],
+            "Years": {
+              "From": 1980,
+              "To": 2000
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.boatdesign.net/threads/over-weight-boat.23483/"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection items are configuration and age risks, not assertions that every hull suffers a defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Model-wide factory specifications remain incomplete; hull-specific documentation controls configuration.",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "ResearchNotes": "Verified examples span at least 1981–1995, including a 1993 Flye Point 32 cruiser and a 1995 Farrin-finished hull. Representative hull dimensions are about 31'9\"–32', 11'6\" beam and 3'6\" draft. Displacement varies markedly with layup and finish; roughly 14,000 lb is a common baseline but heavily finished boats can be substantially heavier. Batch 10: representative hull beam/draft promoted at 11 ft 6 in / 3 ft 6 in. LWL, air draft, displacement and tankage remain hull/finisher-specific and unsupported legacy fallbacks were removed.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "SpecificationConfidence": {
+      "AirDraft": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [],
+        "Note": "B-Atlas working estimate derived from nearest comparable models with similar style, size and flybridge configuration. Verify actual mast/radar/antenna clearance before route planning. Comparable model IDs: BENE-BAR-9, DUFF-37, BENE-BAR-8"
+      },
+      "FuelCapacity": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [
+          "https://midcoastyacht.com/boats/32-bhm-downeast-cruiser-2021-cummins-210-hp-sold/",
+          "https://www.boats.com/power-boats/1986-bhm-32-10268283/"
+        ],
+        "Note": "Semi-custom BHM 32 examples range from about 100 to 200 US gal fuel; 150 gal retained as a representative working estimate."
+      },
+      "WaterCapacity": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [
+          "https://midcoastyacht.com/boats/32-bhm-downeast-cruiser-2021-cummins-210-hp-sold/",
+          "https://www.boats.com/power-boats/1986-bhm-32-10268283/"
+        ],
+        "Note": "A documented cruising BHM 32 carries 70 US gal fresh water; semi-custom tankage varies by finisher/hull."
+      },
+      "LWL": {
+        "Level": "Low",
+        "Status": "estimated_hull_style_ratio",
+        "EvidenceRefs": [],
+        "Note": "Working LWL estimate derived from the median LWL/LOA ratio (0.914) of B-Atlas boats with the same style/hull-behaviour class. Retained only to reach practical fleet coverage; owner/factory verification is encouraged."
+      },
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      }
+    }
+  },
+  {
+    "BoatModelID": "CDRY-22-CR",
+    "ManufacturerID": "CDORY",
+    "Manufacturer": "C-Dory",
+    "Model": "22 Cruiser",
+    "Variant": "Cruiser",
+    "Nickname": "C-Dory 22 Cruiser",
+    "Active": false,
+    "CanonicalSlug": "c-dory-22-cruiser-cruiser",
+    "CanonicalPath": "/models/c-dory-22-cruiser-cruiser/",
+    "CanonicalURL": "https://b-atlas.org/models/c-dory-22-cruiser-cruiser/",
+    "ImageURL": "images/cdry-22-cr.jpg",
+    "FirstYear": 1987,
+    "LastYear": null,
+    "TotalBuilt": 1200,
+    "Designer": "Marv Cole",
+    "HullType": "Planing",
+    "Style": "Flat-Bottom Pocket",
+    "Construction": "Fiberglass",
+    "KeelType": "None",
+    "Fuel": "Gasoline",
+    "Cooling": "Raw Water",
+    "EngineConfiguration": "Single outboard up to 115 hp",
+    "Propulsion": "Outboard",
+    "Flybridge": "No",
+    "AftCabin": false,
+    "SideDecks": "Narrow",
+    "TypicalEngineID": "Honda BF90",
+    "FuelCapacity": 174.1289,
+    "WaterCapacity": 75.7082,
+    "HoldingCapacity": 30.2833,
+    "Berths": 2,
+    "Cabins": 1,
+    "Heads": 0,
+    "Shower": false,
+    "Galley": false,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "No",
+    "GreatLoopSuitable": true,
+    "Trailerable": true,
+    "BoatFamily": "Cruiser",
+    "HullBehaviour": "Planing",
+    "Features": [
+      "Trailerable"
+    ],
+    "NormalizedFuel": "Gasoline",
+    "NormalizedPropulsion": "Outboard",
+    "NormalizedHullForm": "Planing",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Pilothouse",
+    "EngineCount": 1,
+    "DisplacementLb": 1925,
+    "FuelCapacityGal": 46,
+    "WaterCapacityGal": 18,
+    "NormalizedHullType": "Planing",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "BoatFamilyCode": "boat_family.downeast",
+    "MechanicalPropulsionCode": "mechanical_propulsion.outboard",
+    "FuelCode": "fuel.gasoline",
+    "HullBehaviourCode": "hull_behaviour.planing",
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "LOA": 6.7056000000000004,
+    "Beam": 2.3368,
+    "Draft": 0.1778,
+    "Displacement": 873.2,
+    "RudderTypeCode": "rudder.none_external_drive",
+    "AirDraft": 3.35,
+    "StyleCode": "Pilothouse",
+    "CoolingCode": "cooling.raw_water",
+    "FlybridgeCode": "availability.no",
+    "SideDecksCode": "side_decks.narrow",
+    "DisplacementCruiseSpeed": 5.7,
+    "DisplacementCruiseFuelBurn": 4.164,
+    "PlaningCruiseSpeed": 12.3,
+    "PlaningCruiseFuelBurn": 12.113,
+    "LWL": 6.0442,
+    "ShowerTypeCode": "shower.none",
+    "KeelConfigurationCode": "keel.no_keel",
+    "RunningGearProtectionCode": "running_gear.exposed",
+    "EnginePowerPerEngine": 67.113,
+    "Headroom": 1.8796,
+    "Strengths": [
+      "Light, shallow-draft hull with simple systems",
+      "Enclosed pilothouse provides weather protection and strong visibility",
+      "Trailerability and outboard serviceability support dispersed cruising grounds"
+    ],
+    "Weaknesses": "Flat-bottom hull slams violently if driven hard into a steep head chop, spartan interior quarters.",
+    "CommonProblems": "Transom core moisture intrusion near loose outboard bolts, cabin window seal tracking shrinkage.",
+    "TypicalMission": "Shallow water gunkholing, economic pocket looping, and trailer-to-water flexible travel.",
+    "AvoidIf": [
+      "You need generous liveaboard volume or wide side decks",
+      "You expect heavy-displacement motion in rough water",
+      "You require a conventional inboard diesel trawler layout"
+    ],
+    "Overview": "The C-Dory 22 Cruiser is a practical C-Dory pilothouse design built around light weight, shallow draft and simple cruising or fishing utility. Its layout emphasizes weather protection and cockpit function rather than luxury, with outboard propulsion on the mainstream cruiser and Venture models.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "Compact accommodations are oriented to one couple or a small crew."
+      },
+      "SoloHandling": {
+        "Assessment": "Good",
+        "Summary": "Compact dimensions and straightforward helm arrangements support short-handed operation."
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "Shallow draft and manageable dimensions suit inland and protected-water cruising."
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "Capability depends on hull form, load, weather and operator judgment; verify the individual model’s limits."
+      }
+    },
+    "TradeOffs": [
+      "Light hulls can have a lively ride when conditions and speed are poorly matched",
+      "Compact cabin and side-deck arrangements limit interior volume",
+      "Outboard-powered layouts trade inboard protection for serviceability and shallow draft"
+    ],
+    "BestFor": [
+      "Owners prioritizing simple, trailerable pilothouse cruising or fishing",
+      "Couples or small crews operating on inland and coastal waters",
+      "Buyers who value shallow draft and outboard service access"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Verify exact model, year and hull identity because C-Dory reused related hulls and names over a long production history",
+      "Inspect cored hull/deck areas around penetrations and previous hardware installations",
+      "Inspect transom or outboard bracket structure and engine mounting",
+      "Verify fuel-system, steering and electrical updates on older examples"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for verify exact model, year and hull identity because C-Dory reused related hulls and names over a long production history?",
+      "What inspection, repair or service history is available for inspect cored hull/deck areas around penetrations and previous hardware installations?",
+      "What inspection, repair or service history is available for inspect transom or outboard bracket structure and engine mounting?",
+      "What inspection, repair or service history is available for verify fuel-system, steering and electrical updates on older examples?"
+    ],
+    "OwnerActions": [
+      "Maintain bedding around hardware and inspect cored structures after any leak",
+      "Service outboards, steering and fuel systems to manufacturer intervals",
+      "Keep trailer and launch equipment matched to actual loaded weight where trailering is used"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "Long production and hull-family evolution",
+        "Description": "C-Dory model names span multiple production eras. The 26 Pro Angler is a documented historical model; the current TomCat is the 25-foot TomCat 255, not a current 30-foot model.",
+        "AffectedYears": "Varies by model",
+        "EvidenceRefs": [
+          "https://www.c-dory.com/boats/",
+          "https://www.c-brats.com/media/albums/c-dory-history-page-1.21489/"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "ModelCharacter": "The defining C-Dory pocket cruiser: an exceptionally light, shallow-draft, trailerable pilothouse boat with a nearly flat aft planing surface, single outboard and simple four-person cabin. It trades deep-V ride comfort for low-speed planing, fuel efficiency, easy towing and beachable go-anywhere utility.",
+    "DesignLineage": [
+      "C-Dory states that the 22 Cruiser was introduced in January 1987 and remains its most successful model.",
+      "The 22 Angler uses the same basic hull but shifts cabin length aft-to-forward tradeoff toward a much larger cockpit.",
+      "The hull is nearly flat at the stern with increasing V toward the bow and deep reverse chines; it is not a displacement trawler despite its salty appearance.",
+      "Continuous production has brought material and interior refinements without breaking the core 22 Cruiser lineage."
+    ],
+    "OwnershipCharacter": "One of the simplest cruising boats in B-Atlas: one outboard, minimal plumbing, shallow draft and easy trailering. The key survey issue on older examples is moisture intrusion into cored structures, especially around cockpit/fuel-tank fasteners and owner-added hardware.",
+    "DateCreated": "2026-07-18",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "B-Atlas Phase 8C-9 Family Research",
+    "Revision": 2,
+    "DataConfidence": "Moderate",
+    "ResearchStatus": "Reviewed",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CDRY-22-CR"
+            ],
+            "Years": {
+              "From": 1987,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.c-dory.com/boats/",
+            "https://www.c-brats.com/media/albums/c-dory-history-page-1.21489/",
+            "https://www.c-dory.com/boat/22-cruiser/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Identity and representative specifications are supported by manufacturer or model-specific technical references; unresolved production or configuration differences remain explicit."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CDRY-22-CR"
+            ],
+            "Years": {
+              "From": 1987,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.c-dory.com/boats/",
+            "https://www.c-brats.com/media/albums/c-dory-history-page-1.21489/",
+            "https://www.c-dory.com/boat/22-cruiser/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance is derived from documented configuration, propulsion, dimensions and intended use rather than marketplace promotional language."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "CDRY-22-CR"
+            ],
+            "Years": {
+              "From": 1987,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.c-dory.com/boats/",
+            "https://www.c-brats.com/media/albums/c-dory-history-page-1.21489/",
+            "https://www.c-dory.com/boat/22-cruiser/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance combines documented systems with age- and configuration-related checks; it does not assert that every hull has a defect."
+        },
+        {
+          "Scope": "SpecificationCompletionV647",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CDRY-22-CR"
+            ],
+            "Years": {
+              "From": 1987,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.c-dory.com/boat/22-cruiser/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented"
+          ],
+          "Confidence": "High",
+          "Notes": "Targeted source-backed specification completion v6.47.0."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Factory specifications can vary by model year and optional equipment; individual hull documentation controls.",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold"
+      ]
+    },
+    "ResearchNotes": "Current C-Dory factory page confirms January 1987 introduction, 22' LOA, 7'8\" beam, 7\" draft, up to 115 hp outboard and current dry-weight figures around 1,925–2,600 lb depending on published section/configuration. B-Atlas retains 1,925 lb as the factory general-spec figure and treats towing weight separately.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "SpecificationConfidence": {
+      "AirDraft": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [],
+        "Note": "B-Atlas working estimate derived from nearest comparable models with similar style, size and flybridge configuration. Verify actual mast/radar/antenna clearance before route planning. Comparable model IDs: BKCV-26, CPDR-28-OF, BKCV-29, LUHR-30, BKCV-30, BKCV-33, BKCV-32"
+      },
+      "WaterCapacity": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [],
+        "Note": "Legacy sources conflict on tankage. v6.95 retains the existing working value, interprets its legacy basis as US gallons, and converts it to canonical litres pending owner/source verification."
+      },
+      "LWL": {
+        "Level": "Low",
+        "Status": "restored_legacy_working_value",
+        "EvidenceRefs": [],
+        "Note": "Working LWL restored from the pre-v6.81 archived B-Atlas value (19.83 ft). Retained as a low-confidence community-verifiable value rather than leaving a basic performance input blank."
+      },
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      },
+      "KeelConfigurationCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from unambiguous existing KeelType text."
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing propulsion/keel description; no new factual assertion introduced."
+      },
+      "DisplacementCruiseSpeed": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://boattest.com/boats/c-dory/22-cruiser"
+        ],
+        "Note": "BoatTEST instrumented test, single Honda 90: 5.7 kn at 1.1 US gal/h (2000 rpm) and economical planing cruise 12.3 kn at 3.2 US gal/h (3500 rpm)."
+      },
+      "DisplacementCruiseFuelBurn": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://boattest.com/boats/c-dory/22-cruiser"
+        ],
+        "Note": "BoatTEST instrumented test, single Honda 90: 5.7 kn at 1.1 US gal/h (2000 rpm) and economical planing cruise 12.3 kn at 3.2 US gal/h (3500 rpm)."
+      },
+      "PlaningCruiseSpeed": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://boattest.com/boats/c-dory/22-cruiser"
+        ],
+        "Note": "BoatTEST instrumented test, single Honda 90: 5.7 kn at 1.1 US gal/h (2000 rpm) and economical planing cruise 12.3 kn at 3.2 US gal/h (3500 rpm)."
+      },
+      "PlaningCruiseFuelBurn": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://boattest.com/boats/c-dory/22-cruiser"
+        ],
+        "Note": "BoatTEST instrumented test, single Honda 90: 5.7 kn at 1.1 US gal/h (2000 rpm) and economical planing cruise 12.3 kn at 3.2 US gal/h (3500 rpm)."
+      },
+      "EnginePowerPerEngine": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://boattest.com/boats/c-dory/22-cruiser"
+        ],
+        "Note": "Recovered opportunistically from the same model-specific performance/test source used for v7.01 cruising-performance research."
+      },
+      "Headroom": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://boattest.com/boats/c-dory/22-cruiser"
+        ],
+        "Note": "Recovered opportunistically from the same model-specific performance/test source used for v7.01 cruising-performance research."
+      }
+    }
+  },
+  {
+    "BoatModelID": "CDRY-25-CR",
+    "ManufacturerID": "CDORY",
+    "Manufacturer": "C-Dory",
+    "Model": "25 Cruiser",
+    "Variant": "Cruiser",
+    "Nickname": "C-Dory 25 Cruiser",
+    "Active": false,
+    "CanonicalSlug": "c-dory-25-cruiser-cruiser",
+    "CanonicalPath": "/models/c-dory-25-cruiser-cruiser/",
+    "CanonicalURL": "https://b-atlas.org/models/c-dory-25-cruiser-cruiser/",
+    "ImageURL": "images/cdry-25-cr.jpg",
+    "FirstYear": 1998,
+    "LastYear": null,
+    "TotalBuilt": 400,
+    "Designer": "C-Dory Design",
+    "HullType": "Semi-Displacement",
+    "Style": "Pocket Pilothouse",
+    "Construction": "Fiberglass",
+    "KeelType": "None",
+    "Fuel": "Gasoline",
+    "Cooling": "Raw Outboard",
+    "EngineConfiguration": "Single outboard up to 200 hp",
+    "Propulsion": "Outboard",
+    "Flybridge": "No",
+    "AftCabin": false,
+    "SideDecks": "Narrow",
+    "TypicalEngineID": "Honda 150HP",
+    "FuelCapacity": 378.5412,
+    "WaterCapacity": 87.0645,
+    "HoldingCapacity": 56.7812,
+    "Berths": 4,
+    "Cabins": 1,
+    "Heads": 1,
+    "Shower": false,
+    "Galley": false,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "No",
+    "GreatLoopSuitable": true,
+    "Trailerable": true,
+    "BoatFamily": "Cruiser",
+    "HullBehaviour": "Semi-Displacement",
+    "Features": [
+      "Trailerable"
+    ],
+    "NormalizedFuel": "Gasoline",
+    "NormalizedPropulsion": "Outboard",
+    "NormalizedHullForm": "Semi-Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Pilothouse",
+    "EngineCount": 1,
+    "DisplacementLb": 3950,
+    "FuelCapacityGal": 100,
+    "WaterCapacityGal": 23,
+    "NormalizedHullType": "Planing",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "BoatFamilyCode": "boat_family.downeast",
+    "MechanicalPropulsionCode": "mechanical_propulsion.outboard",
+    "FuelCode": "fuel.gasoline",
+    "HullBehaviourCode": "hull_behaviour.planing",
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "LOA": 7.747000000000001,
+    "Beam": 2.5908,
+    "Draft": 0.3048,
+    "Displacement": 1791.7,
+    "RudderTypeCode": "rudder.none_external_drive",
+    "AirDraft": 3.35,
+    "StyleCode": "Pilothouse",
+    "CoolingCode": "cooling.outboard",
+    "FlybridgeCode": "availability.no",
+    "SideDecksCode": "side_decks.narrow",
+    "DisplacementCruiseSpeed": 6.5,
+    "DisplacementCruiseFuelBurn": 4.542,
+    "PlaningCruiseSpeed": 13.4,
+    "PlaningCruiseFuelBurn": 14.385,
+    "LWL": 7.1628,
+    "ShowerTypeCode": "shower.none",
+    "KeelConfigurationCode": "keel.no_keel",
+    "RunningGearProtectionCode": "running_gear.exposed",
+    "EnginePowerPerEngine": 111.855,
+    "Headroom": 2.0828,
+    "Strengths": [
+      "Light, shallow-draft hull with simple systems",
+      "Enclosed pilothouse provides weather protection and strong visibility",
+      "Trailerability and outboard serviceability support dispersed cruising grounds"
+    ],
+    "Weaknesses": "Flat-bottom hull slams significantly in a steep head chop, Spartan interior insulation profile makes for a noisy ride.",
+    "CommonProblems": "Transom core stress checks if heavy outboards are mounted, window frame weep track clogs.",
+    "TypicalMission": "Fast-transit highway-to-water adventure cruising, protected waterway exploration, and shallow gunkholing.",
+    "AvoidIf": [
+      "You need generous liveaboard volume or wide side decks",
+      "You expect heavy-displacement motion in rough water",
+      "You require a conventional inboard diesel trawler layout"
+    ],
+    "Overview": "The C-Dory 25 Cruiser is a practical C-Dory pilothouse design built around light weight, shallow draft and simple cruising or fishing utility. Its layout emphasizes weather protection and cockpit function rather than luxury, with outboard propulsion on the mainstream cruiser and Venture models.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "Compact accommodations are oriented to one couple or a small crew."
+      },
+      "SoloHandling": {
+        "Assessment": "Good",
+        "Summary": "Compact dimensions and straightforward helm arrangements support short-handed operation."
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "Shallow draft and manageable dimensions suit inland and protected-water cruising."
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "Capability depends on hull form, load, weather and operator judgment; verify the individual model’s limits."
+      }
+    },
+    "TradeOffs": [
+      "Light hulls can have a lively ride when conditions and speed are poorly matched",
+      "Compact cabin and side-deck arrangements limit interior volume",
+      "Outboard-powered layouts trade inboard protection for serviceability and shallow draft"
+    ],
+    "BestFor": [
+      "Owners prioritizing simple, trailerable pilothouse cruising or fishing",
+      "Couples or small crews operating on inland and coastal waters",
+      "Buyers who value shallow draft and outboard service access"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Verify exact model, year and hull identity because C-Dory reused related hulls and names over a long production history",
+      "Inspect cored hull/deck areas around penetrations and previous hardware installations",
+      "Inspect transom or outboard bracket structure and engine mounting",
+      "Verify fuel-system, steering and electrical updates on older examples"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for verify exact model, year and hull identity because C-Dory reused related hulls and names over a long production history?",
+      "What inspection, repair or service history is available for inspect cored hull/deck areas around penetrations and previous hardware installations?",
+      "What inspection, repair or service history is available for inspect transom or outboard bracket structure and engine mounting?",
+      "What inspection, repair or service history is available for verify fuel-system, steering and electrical updates on older examples?"
+    ],
+    "OwnerActions": [
+      "Maintain bedding around hardware and inspect cored structures after any leak",
+      "Service outboards, steering and fuel systems to manufacturer intervals",
+      "Keep trailer and launch equipment matched to actual loaded weight where trailering is used"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "Long production and hull-family evolution",
+        "Description": "C-Dory model names span multiple production eras. The 26 Pro Angler is a documented historical model; the current TomCat is the 25-foot TomCat 255, not a current 30-foot model.",
+        "AffectedYears": "Varies by model",
+        "EvidenceRefs": [
+          "https://www.c-dory.com/boats/",
+          "https://www.c-brats.com/media/albums/c-dory-history-page-1.21489/"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "ModelCharacter": "The larger full-cruising evolution of the C-Dory formula, adding an enclosed head/shower, self-bailing cockpit, larger galley and significantly more headroom while preserving legal-width trailering and simple single-outboard operation.",
+    "DesignLineage": [
+      "The 25 Cruiser was developed as the larger answer to features requested by C-Dory 22 owners.",
+      "It retains the brand's shallow-draft, low-deadrise pilothouse philosophy but adds substantially more interior volume and cruising systems.",
+      "The current 26 Venture is a separate deeper-V development rather than merely a stretched 25 Cruiser.",
+      "The 25 TomCat shares similar length but is a twin-hull catamaran and is completely distinct below the sheer."
+    ],
+    "OwnershipCharacter": "Still simpler than most 25-foot cabin cruisers, but the enclosed head, hot water, larger fuel capacity and heavier towing package make it a meaningful step up from the 22. Core integrity and owner-installed equipment remain important on older boats.",
+    "DateCreated": "2026-07-13",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "B-Atlas Phase 8C-9 Family Research",
+    "Revision": 2,
+    "DataConfidence": "Moderate",
+    "ResearchStatus": "Reviewed",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CDRY-25-CR"
+            ],
+            "Years": {
+              "From": 1998,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.c-dory.com/boats/",
+            "https://www.c-brats.com/media/albums/c-dory-history-page-1.21489/",
+            "https://www.c-dory.com/boat/25-cruiser/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Identity and representative specifications are supported by manufacturer or model-specific technical references; unresolved production or configuration differences remain explicit."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CDRY-25-CR"
+            ],
+            "Years": {
+              "From": 1998,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.c-dory.com/boats/",
+            "https://www.c-brats.com/media/albums/c-dory-history-page-1.21489/",
+            "https://www.c-dory.com/boat/25-cruiser/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance is derived from documented configuration, propulsion, dimensions and intended use rather than marketplace promotional language."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "CDRY-25-CR"
+            ],
+            "Years": {
+              "From": 1998,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.c-dory.com/boats/",
+            "https://www.c-brats.com/media/albums/c-dory-history-page-1.21489/",
+            "https://www.c-dory.com/boat/25-cruiser/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance combines documented systems with age- and configuration-related checks; it does not assert that every hull has a defect."
+        },
+        {
+          "Scope": "SpecificationCompletionV647",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CDRY-25-CR"
+            ],
+            "Years": {
+              "From": 1998,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.c-dory.com/boat/25-cruiser/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented"
+          ],
+          "Confidence": "High",
+          "Notes": "Targeted source-backed specification completion v6.47.0."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Factory specifications can vary by model year and optional equipment; individual hull documentation controls.",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold"
+      ]
+    },
+    "ResearchNotes": "Current C-Dory factory specifications: 25'5\" LOA, 8'6\" beam, 12\" draft, 3,950 lb dry, 100 gal fuel, 23 gal water and single outboard up to 200 hp. Production start year is not forced without a stronger primary chronology.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "SpecificationConfidence": {
+      "AirDraft": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [],
+        "Note": "B-Atlas working estimate derived from nearest comparable models with similar style, size and flybridge configuration. Verify actual mast/radar/antenna clearance before route planning. Comparable model IDs: BKCV-26, CPDR-28-OF, BKCV-29, LUHR-30, BKCV-30, BKCV-33, BKCV-32"
+      },
+      "LWL": {
+        "Level": "Low",
+        "Status": "restored_legacy_working_value",
+        "EvidenceRefs": [],
+        "Note": "Working LWL restored from the pre-v6.81 archived B-Atlas value (23.5 ft). Retained as a low-confidence community-verifiable value rather than leaving a basic performance input blank."
+      },
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      },
+      "KeelConfigurationCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from unambiguous existing KeelType text."
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing propulsion/keel description; no new factual assertion introduced."
+      },
+      "DisplacementCruiseSpeed": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://boattest.com/boats/c-dory/25-2006"
+        ],
+        "Note": "BoatTEST instrumented test, single Honda 150: 6.5 kn at 1.2 US gal/h (2000 rpm) and best economical cruise 13.4 kn at 3.8 US gal/h (3500 rpm)."
+      },
+      "DisplacementCruiseFuelBurn": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://boattest.com/boats/c-dory/25-2006"
+        ],
+        "Note": "BoatTEST instrumented test, single Honda 150: 6.5 kn at 1.2 US gal/h (2000 rpm) and best economical cruise 13.4 kn at 3.8 US gal/h (3500 rpm)."
+      },
+      "PlaningCruiseSpeed": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://boattest.com/boats/c-dory/25-2006"
+        ],
+        "Note": "BoatTEST instrumented test, single Honda 150: 6.5 kn at 1.2 US gal/h (2000 rpm) and best economical cruise 13.4 kn at 3.8 US gal/h (3500 rpm)."
+      },
+      "PlaningCruiseFuelBurn": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://boattest.com/boats/c-dory/25-2006"
+        ],
+        "Note": "BoatTEST instrumented test, single Honda 150: 6.5 kn at 1.2 US gal/h (2000 rpm) and best economical cruise 13.4 kn at 3.8 US gal/h (3500 rpm)."
+      },
+      "EnginePowerPerEngine": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://boattest.com/boats/c-dory/25-2006"
+        ],
+        "Note": "Recovered opportunistically from the same model-specific performance/test source used for v7.01 cruising-performance research."
+      },
+      "Headroom": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://boattest.com/boats/c-dory/25-2006"
+        ],
+        "Note": "Recovered opportunistically from the same model-specific performance/test source used for v7.01 cruising-performance research."
+      }
+    }
+  },
+  {
+    "BoatModelID": "CDRY-25-TC",
+    "ManufacturerID": "CDORY",
+    "Manufacturer": "C-Dory",
+    "Model": "TomCat 255",
+    "Variant": "Power Catamaran",
+    "Nickname": "C-Dory TomCat 255",
+    "Active": true,
+    "CanonicalSlug": "c-dory-tomcat-255-power-catamaran",
+    "CanonicalPath": "/models/c-dory-tomcat-255-power-catamaran/",
+    "CanonicalURL": "https://b-atlas.org/models/c-dory-tomcat-255-power-catamaran/",
+    "ImageURL": "images/cdry-25-tc.jpg",
+    "FirstYear": 2005,
+    "LastYear": null,
+    "TotalBuilt": null,
+    "Designer": "C-Dory Design Team",
+    "HullType": "Catamaran",
+    "Style": "Power Catamaran",
+    "Construction": "Fiberglass",
+    "KeelType": "Twin Hull",
+    "Fuel": "Gasoline",
+    "Cooling": "Raw Water",
+    "EngineConfiguration": "Twin outboards; combined rating up to 350 hp",
+    "Propulsion": "Outboard",
+    "Flybridge": "No",
+    "AftCabin": false,
+    "SideDecks": "Wide",
+    "TypicalEngineID": "Honda 250 Twin",
+    "FuelCapacity": 567.8118,
+    "WaterCapacity": 113.5624,
+    "HoldingCapacity": 113.5624,
+    "Berths": 4,
+    "Cabins": 2,
+    "Heads": 1,
+    "Shower": false,
+    "Galley": false,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "Limited",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "HullBehaviour": "Catamaran",
+    "Features": [
+      "Flybridge",
+      "Wide Side Decks"
+    ],
+    "NormalizedFuel": "Gasoline",
+    "NormalizedPropulsion": "Outboard",
+    "NormalizedHullForm": "Unknown",
+    "NormalizedHullConfiguration": "Catamaran",
+    "NormalizedStyle": "Catamaran",
+    "EngineCount": 2,
+    "DisplacementLb": 6000,
+    "FuelCapacityGal": 150,
+    "WaterCapacityGal": 30,
+    "NormalizedHullType": "Catamaran",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.catamaran",
+    "BoatFamilyCode": "boat_family.power_catamaran",
+    "MechanicalPropulsionCode": "mechanical_propulsion.outboard",
+    "FuelCode": "fuel.gasoline",
+    "HullBehaviourCode": "hull_behaviour.planing",
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "LOA": 7.747000000000001,
+    "Beam": 2.5908,
+    "Displacement": 2449.4,
+    "KeelConfigurationCode": "keel.twin",
+    "RudderTypeCode": "rudder.none_external_drive",
+    "Draft": 0.4572,
+    "AirDraft": 2.6,
+    "StyleCode": "Catamaran",
+    "CoolingCode": "cooling.raw_water",
+    "FlybridgeCode": "availability.no",
+    "SideDecksCode": "side_decks.wide",
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": 26.94,
+    "PlaningCruiseFuelBurn": 49.589,
+    "LWL": 8.5344,
+    "ShowerTypeCode": "shower.none",
+    "RunningGearProtectionCode": "running_gear.exposed",
+    "Strengths": [
+      "Stable twin-hull platform with twin-outboard redundancy",
+      "Enclosed pilothouse and compact cruising accommodations",
+      "Trailerable beam despite substantially larger rigged footprint"
+    ],
+    "Weaknesses": " efficient",
+    "CommonProblems": " stable catamaran ride.",
+    "TypicalMission": "Higher fuel burn at speed.",
+    "AvoidIf": [
+      "You need generous liveaboard volume or wide side decks",
+      "You expect heavy-displacement motion in rough water",
+      "You require a conventional inboard diesel trawler layout"
+    ],
+    "Overview": "The C-Dory TomCat 255 is a trailerable power catamaran with twin outboards, an enclosed pilothouse and cruising accommodations. Its 25-foot hull length contrasts with an overall rigged footprint near 30 feet, which likely contributed to legacy “30 TomCat” naming confusion.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "Compact accommodations are oriented to one couple or a small crew."
+      },
+      "SoloHandling": {
+        "Assessment": "Good",
+        "Summary": "Compact dimensions and straightforward helm arrangements support short-handed operation."
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "Shallow draft and manageable dimensions suit inland and protected-water cruising."
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "Capability depends on hull form, load, weather and operator judgment; verify the individual model’s limits."
+      }
+    },
+    "TradeOffs": [
+      "Light hulls can have a lively ride when conditions and speed are poorly matched",
+      "Compact cabin and side-deck arrangements limit interior volume",
+      "Outboard-powered layouts trade inboard protection for serviceability and shallow draft"
+    ],
+    "BestFor": [
+      "Owners prioritizing simple, trailerable pilothouse cruising or fishing",
+      "Couples or small crews operating on inland and coastal waters",
+      "Buyers who value shallow draft and outboard service access"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Verify exact model, year and hull identity because C-Dory reused related hulls and names over a long production history",
+      "Inspect cored hull/deck areas around penetrations and previous hardware installations",
+      "Inspect transom or outboard bracket structure and engine mounting",
+      "Verify fuel-system, steering and electrical updates on older examples"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for verify exact model, year and hull identity because C-Dory reused related hulls and names over a long production history?",
+      "What inspection, repair or service history is available for inspect cored hull/deck areas around penetrations and previous hardware installations?",
+      "What inspection, repair or service history is available for inspect transom or outboard bracket structure and engine mounting?",
+      "What inspection, repair or service history is available for verify fuel-system, steering and electrical updates on older examples?"
+    ],
+    "OwnerActions": [
+      "Maintain bedding around hardware and inspect cored structures after any leak",
+      "Service outboards, steering and fuel systems to manufacturer intervals",
+      "Keep trailer and launch equipment matched to actual loaded weight where trailering is used"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "Long production and hull-family evolution",
+        "Description": "C-Dory model names span multiple production eras. The 26 Pro Angler is a documented historical model; the current TomCat is the 25-foot TomCat 255, not a current 30-foot model.",
+        "AffectedYears": "Varies by model",
+        "EvidenceRefs": [
+          "https://www.c-dory.com/boats/",
+          "https://www.c-brats.com/media/albums/c-dory-history-page-1.21489/"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "ModelCharacter": "C-Dory's fundamentally different offshore-oriented platform: a trailerable 25½-foot power catamaran with twin outboards, 8'6\" beam, full pilothouse accommodations and a stable, flat-running twin-hull ride that bears little hydrodynamic relationship to the monohull Cruisers.",
+    "DesignLineage": [
+      "The TomCat 255 is the current production C-Dory catamaran and is the successor identity to earlier C-Dory TomCat concepts.",
+      "A 2006/2007 factory owner's manual directly documents the TomCat 255 Pilothouse.",
+      "The 255 uses twin hulls, twin outboards and roughly 150 gallons of fuel rather than the monohull/low-deadrise architecture of the 22/25 Cruisers.",
+      "It remains a distinct canonical model even though C-Dory markets it alongside the 25-foot monohull Cruiser."
+    ],
+    "OwnershipCharacter": "Twin outboards and catamaran structure add cost over a 25 Cruiser, but mechanical access remains straightforward and there are no sterndrives/inboards. Trailer weight is substantial, and bridge-deck/hull condition plus twin-engine synchronization and rigging should be checked carefully.",
+    "DateCreated": "Loop-capable",
+    "LastUpdated": "2026-09-12",
+    "ReviewedBy": "B-Atlas Phase 8C-9 Family Research",
+    "Revision": 2,
+    "DataConfidence": "Moderate",
+    "ResearchStatus": "Reviewed",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CDRY-25-TC"
+            ],
+            "Years": {
+              "From": 2005,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.c-dory.com/boats/",
+            "https://www.c-brats.com/media/albums/c-dory-history-page-1.21489/",
+            "https://www.c-dory.com/boat/25-tomcat-catamaran/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Identity and representative specifications are supported by manufacturer or model-specific technical references; unresolved production or configuration differences remain explicit."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CDRY-25-TC"
+            ],
+            "Years": {
+              "From": 2005,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.c-dory.com/boats/",
+            "https://www.c-brats.com/media/albums/c-dory-history-page-1.21489/",
+            "https://www.c-dory.com/boat/25-tomcat-catamaran/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance is derived from documented configuration, propulsion, dimensions and intended use rather than marketplace promotional language."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "CDRY-25-TC"
+            ],
+            "Years": {
+              "From": 2005,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.c-dory.com/boats/",
+            "https://www.c-brats.com/media/albums/c-dory-history-page-1.21489/",
+            "https://www.c-dory.com/boat/25-tomcat-catamaran/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance combines documented systems with age- and configuration-related checks; it does not assert that every hull has a defect."
+        },
+        {
+          "Scope": "SpecificationCompletionV647",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CDRY-25-TC"
+            ],
+            "Years": {
+              "From": 2005,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.c-dory.com/boat/25-tomcat-catamaran/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented"
+          ],
+          "Confidence": "High",
+          "Notes": "Targeted source-backed specification completion v6.47.0."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Factory specifications can vary by model year and optional equipment; individual hull documentation controls.",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold"
+      ]
+    },
+    "ResearchNotes": "Canonical display simplified to C-Dory TomCat 255. Factory owner's manual revised 2007 documents 6,000 lb dry hull weight, 150 gal fuel and 30 gal water. Current C-Dory lineup continues the 25' TomCat Catamaran. Twin outboards are standard architecture.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.\n\nCruising Performance Research Wave 5 v7.04 (2026-09-14).",
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "PlanCriticalStatus": {
+      "Draft": "researched_unknown"
+    },
+    "SpecificationConfidence": {
+      "AirDraft": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [],
+        "Note": "B-Atlas working estimate derived from nearest comparable models with similar style, size and flybridge configuration. Verify actual mast/radar/antenna clearance before route planning. Comparable model IDs: WIND-26-SN, RNGR-25-CLASSIC, BENE-ANT-7, BENE-ANT-8, JEAU-795, BKCV-26, RNGR-25-SC"
+      },
+      "LWL": {
+        "Level": "Low",
+        "Status": "restored_legacy_working_value",
+        "EvidenceRefs": [],
+        "Note": "Working LWL restored from the pre-v6.81 archived B-Atlas value (28 ft). Retained as a low-confidence community-verifiable value rather than leaving a basic performance input blank."
+      },
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing propulsion/keel description; no new factual assertion introduced."
+      },
+      "PlaningCruiseSpeed": {
+        "Level": "Medium",
+        "Status": "secondary_factory_test",
+        "EvidenceRefs": [
+          "https://www.c-brats.com/threads/tomcat-range.25969/",
+          "https://www.c-brats.com/threads/tomcat-255-questions.3625/",
+          "https://www.c-dory.com/boat/25-tomcat-catamaran/"
+        ],
+        "Note": "C-Brats preserves the C-Dory/BoatTEST twin-Honda-150 test figures: 31 mph (26.94 kn) at 4000 rpm burning 13.1 US gal/h total. Owner reports cluster around similar 22-26 mph cruise speeds but somewhat lower economy when heavily loaded. Stored as Medium-confidence representative planing cruise."
+      },
+      "PlaningCruiseFuelBurn": {
+        "Level": "Medium",
+        "Status": "secondary_factory_test",
+        "EvidenceRefs": [
+          "https://www.c-brats.com/threads/tomcat-range.25969/",
+          "https://www.c-brats.com/threads/tomcat-255-questions.3625/",
+          "https://www.c-dory.com/boat/25-tomcat-catamaran/"
+        ],
+        "Note": "C-Brats preserves the C-Dory/BoatTEST twin-Honda-150 test figures: 31 mph (26.94 kn) at 4000 rpm burning 13.1 US gal/h total. Owner reports cluster around similar 22-26 mph cruise speeds but somewhat lower economy when heavily loaded. Stored as Medium-confidence representative planing cruise."
+      },
+      "EnginePowerPerEngine": {
+        "Level": "Medium",
+        "Status": "varies_by_configuration",
+        "EvidenceRefs": [
+          "https://www.c-brats.com/threads/tomcat-range.25969/",
+          "https://www.c-brats.com/threads/tomcat-255-questions.3625/",
+          "https://www.c-dory.com/boat/25-tomcat-catamaran/"
+        ],
+        "Note": "TomCat 255 installations range from twin 135-hp through twin 175-hp outboards; cited factory/BoatTEST data uses twin Honda 150s."
+      }
+    }
+  },
+  {
+    "BoatModelID": "CDRY-26-PA",
+    "ManufacturerID": "CDORY",
+    "Manufacturer": "C-Dory",
+    "Model": "26 Pro Angler",
+    "Variant": "Walkaround Fishing",
+    "Nickname": "C-Dory 26 Pro Angler",
+    "Active": false,
+    "ModelAliases": [
+      "26 ProAngler"
+    ],
+    "CanonicalSlug": "c-dory-26-pro-angler-walkaround-fishing",
+    "CanonicalPath": "/models/c-dory-26-pro-angler-walkaround-fishing/",
+    "CanonicalURL": "https://b-atlas.org/models/c-dory-26-pro-angler-walkaround-fishing/",
+    "ImageURL": "images/cdry-26-pa.jpg",
+    "FirstYear": 1989,
+    "LastYear": 2005,
+    "TotalBuilt": null,
+    "Designer": "C-Dory Design Team",
+    "HullType": "Planing",
+    "Style": "Pocket Cruiser",
+    "Construction": "Fiberglass",
+    "KeelType": "Flat Bottom",
+    "Fuel": "Gasoline",
+    "Cooling": "Raw Water",
+    "EngineConfiguration": "Outboard or inboard configurations documented; verify individual hull",
+    "Propulsion": "Outboard",
+    "Flybridge": "No",
+    "AftCabin": false,
+    "SideDecks": "Medium",
+    "TypicalEngineID": "Honda 150",
+    "FuelCapacity": 302.8329,
+    "WaterCapacity": 94.6353,
+    "HoldingCapacity": 56.7812,
+    "Berths": 2,
+    "Cabins": 1,
+    "Heads": 1,
+    "Shower": false,
+    "Galley": false,
+    "CoastalRating": "Limited",
+    "OffshoreRating": "Yes",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "BoatFamily": "Cruiser",
+    "HullBehaviour": "Planing",
+    "Features": [],
+    "NormalizedFuel": "Gasoline",
+    "NormalizedPropulsion": "Outboard",
+    "NormalizedHullForm": "Planing",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Pilothouse",
+    "EngineCount": 1,
+    "NormalizedHullType": "Modified-V",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "BoatFamilyCode": "boat_family.downeast",
+    "MechanicalPropulsionCode": "mechanical_propulsion.outboard",
+    "FuelCode": "fuel.gasoline",
+    "HullBehaviourCode": "hull_behaviour.planing",
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "RudderTypeCode": "rudder.none_external_drive",
+    "LOA": 7.9248,
+    "Beam": 2.5908,
+    "Draft": 0.4572,
+    "AirDraft": 3.35,
+    "StyleCode": "Pilothouse",
+    "CoolingCode": "cooling.raw_water",
+    "FlybridgeCode": "availability.no",
+    "SideDecksCode": "side_decks.moderate",
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": 20.9,
+    "PlaningCruiseFuelBurn": 31.419,
+    "LWL": 7.3152,
+    "Displacement": 1587.6,
+    "ShowerTypeCode": "shower.none",
+    "KeelConfigurationCode": "keel.no_keel",
+    "RunningGearProtectionCode": "running_gear.exposed",
+    "Strengths": [
+      "Light, shallow-draft hull with simple systems",
+      "Enclosed pilothouse provides weather protection and strong visibility",
+      "Trailerability and outboard serviceability support dispersed cruising grounds"
+    ],
+    "Weaknesses": "Originally fishing-focused, limited cabin space.",
+    "CommonProblems": "Deck leaks",
+    "TypicalMission": "Day trips, weekend cruising and protected coastal travel, with longer trips dependent on layout, range and condition.",
+    "AvoidIf": [
+      "You need generous liveaboard volume or wide side decks",
+      "You expect heavy-displacement motion in rough water",
+      "You require a conventional inboard diesel trawler layout"
+    ],
+    "Overview": "The C-Dory 26 Pro Angler is a real, low-volume historical C-Dory fishing model documented in late-1980s/early-1990s factory literature and in later owner records. It uses a narrower cabin and walkaround-oriented fishing layout rather than the mainstream Cruiser arrangement; propulsion and year details vary among surviving examples.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "Compact accommodations are oriented to one couple or a small crew."
+      },
+      "SoloHandling": {
+        "Assessment": "Good",
+        "Summary": "Compact dimensions and straightforward helm arrangements support short-handed operation."
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "Shallow draft and manageable dimensions suit inland and protected-water cruising."
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "Capability depends on hull form, load, weather and operator judgment; verify the individual model’s limits."
+      }
+    },
+    "TradeOffs": [
+      "Light hulls can have a lively ride when conditions and speed are poorly matched",
+      "Compact cabin and side-deck arrangements limit interior volume",
+      "Outboard-powered layouts trade inboard protection for serviceability and shallow draft"
+    ],
+    "BestFor": [
+      "Owners prioritizing simple, trailerable pilothouse cruising or fishing",
+      "Couples or small crews operating on inland and coastal waters",
+      "Buyers who value shallow draft and outboard service access"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Verify exact model, year and hull identity because C-Dory reused related hulls and names over a long production history",
+      "Inspect cored hull/deck areas around penetrations and previous hardware installations",
+      "Inspect transom or outboard bracket structure and engine mounting",
+      "Verify fuel-system, steering and electrical updates on older examples"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for verify exact model, year and hull identity because C-Dory reused related hulls and names over a long production history?",
+      "What inspection, repair or service history is available for inspect cored hull/deck areas around penetrations and previous hardware installations?",
+      "What inspection, repair or service history is available for inspect transom or outboard bracket structure and engine mounting?",
+      "What inspection, repair or service history is available for verify fuel-system, steering and electrical updates on older examples?"
+    ],
+    "OwnerActions": [
+      "Maintain bedding around hardware and inspect cored structures after any leak",
+      "Service outboards, steering and fuel systems to manufacturer intervals",
+      "Keep trailer and launch equipment matched to actual loaded weight where trailering is used"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "Long production and hull-family evolution",
+        "Description": "C-Dory model names span multiple production eras. The 26 Pro Angler is a documented historical model; the current TomCat is the 25-foot TomCat 255, not a current 30-foot model.",
+        "AffectedYears": "Varies by model",
+        "EvidenceRefs": [
+          "https://www.c-dory.com/boats/",
+          "https://www.c-brats.com/media/albums/c-dory-history-page-1.21489/"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "ModelCharacter": "A rare wide-walkaround C-Dory fishing model from the brand's earlier experimental period, using a narrower pilothouse and a 12-degree bottom to create safer foredeck access and a much larger working cockpit than the conventional Cruisers. Both inboard and bracketed-outboard examples exist.",
+    "DesignLineage": [
+      "Owner records verify surviving C-Dory 26 Pro Anglers from the 1980s through at least 2005, but production appears to have been very limited.",
+      "The cabin is approximately the width of a C-Dory 22 cabin but longer, leaving true walkaround side decks.",
+      "The model is not the same hull/design as the later 26 Venture; C-Brats owner history describes the Venture as a descendant of the Cape Cruiser line.",
+      "Because factory documentation is sparse and propulsion varied between inboard and outboard, B-Atlas retains the Pro Angler as a separate model at Moderate confidence."
+    ],
+    "OwnershipCharacter": "A highly individual boat rather than a standardized pocket cruiser. Walkaround access is excellent for anchoring and fishing, but propulsion, transom arrangement, cabin fitout and overall weight vary enough that each hull must be evaluated from survey and HIN rather than generic specs.",
+    "DateCreated": "Inland cruising and short Loop segments.",
+    "LastUpdated": "2026-09-12",
+    "ReviewedBy": "B-Atlas Phase 8C-9 Family Research",
+    "Revision": 2,
+    "DataConfidence": "Moderate",
+    "ResearchStatus": "Reviewed",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CDRY-26-PA"
+            ],
+            "Years": {
+              "From": 1989,
+              "To": 2005
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.c-dory.com/boats/",
+            "https://www.c-brats.com/media/albums/c-dory-history-page-1.21489/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Identity and representative specifications are supported by manufacturer or model-specific technical references; unresolved production or configuration differences remain explicit."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CDRY-26-PA"
+            ],
+            "Years": {
+              "From": 1989,
+              "To": 2005
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.c-dory.com/boats/",
+            "https://www.c-brats.com/media/albums/c-dory-history-page-1.21489/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance is derived from documented configuration, propulsion, dimensions and intended use rather than marketplace promotional language."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "CDRY-26-PA"
+            ],
+            "Years": {
+              "From": 1989,
+              "To": 2005
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.c-dory.com/boats/",
+            "https://www.c-brats.com/media/albums/c-dory-history-page-1.21489/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance combines documented systems with age- and configuration-related checks; it does not assert that every hull has a defect."
+        },
+        {
+          "Scope": "SpecificationCompletionV647",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CDRY-26-PA"
+            ],
+            "Years": {
+              "From": 1989,
+              "To": 2005
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.c-brats.com/media/c-dory-26-pilothouse-pro-angler-specifications-1989-1990-pg-4.77624/"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Historical factory-literature archive confirms the model family; scanned specification values require separate transcription before promotion."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Exact production span and propulsion configuration of the low-volume 26 Pro Angler require hull-specific verification.",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold"
+      ]
+    },
+    "ResearchNotes": "Identity verified from long-running C-Brats owner records, including a 2005 HIN and older 1980s/1990s examples. Owner reports describe a 12-degree bottom, narrow walkaround cabin and both inboard and bracketed-outboard versions. Exact production years, standard weight and tankage remain unknown and are intentionally not forced.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "CharacterConfidence": "Moderate",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "PlanCriticalStatus": {
+      "LOA": "researched_unknown",
+      "Beam": "researched_unknown",
+      "Draft": "researched_unknown"
+    },
+    "SpecificationConfidence": {
+      "AirDraft": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [],
+        "Note": "B-Atlas working estimate derived from nearest comparable models with similar style, size and flybridge configuration. Verify actual mast/radar/antenna clearance before route planning. Comparable model IDs: BKCV-26, CPDR-28-OF, BKCV-29, LUHR-30, BKCV-30, BKCV-33, BKCV-32"
+      },
+      "PlaningCruiseSpeed": {
+        "Level": "Medium",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://www.c-brats.com/threads/25-cruiser-fuel-consumption.1728/page-2",
+          "https://www.c-dory.com/boat/26-venture/"
+        ],
+        "Note": "A documented 2005 26 Pro Angler owner reports best economy at 24 mph (20.9 kn) burning 8.3 US gal/h with a single 200-hp Honda. Owner-specific load/prop data make this a Medium-confidence representative planing point, not a factory curve."
+      },
+      "PlaningCruiseFuelBurn": {
+        "Level": "Medium",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://www.c-brats.com/threads/25-cruiser-fuel-consumption.1728/page-2",
+          "https://www.c-dory.com/boat/26-venture/"
+        ],
+        "Note": "A documented 2005 26 Pro Angler owner reports best economy at 24 mph (20.9 kn) burning 8.3 US gal/h with a single 200-hp Honda. Owner-specific load/prop data make this a Medium-confidence representative planing point, not a factory curve."
+      },
+      "EngineCount": {
+        "Level": "Medium",
+        "Status": "supported",
+        "EvidenceRefs": [
+          "https://www.c-brats.com/threads/25-cruiser-fuel-consumption.1728/page-2",
+          "https://www.c-dory.com/boat/26-venture/"
+        ],
+        "Note": "Historical 26 Pro Angler examples and the closely related current 26 Venture use a single outboard configuration; verify unusual repowers individually."
+      },
+      "LWL": {
+        "Level": "Low",
+        "Status": "restored_legacy_working_value",
+        "EvidenceRefs": [],
+        "Note": "Working LWL restored from the pre-v6.81 archived B-Atlas value (24 ft). Retained as a low-confidence community-verifiable value rather than leaving a basic performance input blank."
+      },
+      "Displacement": {
+        "Level": "Low",
+        "Status": "restored_legacy_working_value",
+        "EvidenceRefs": [],
+        "Note": "Working displacement restored from the archived pre-v6.81 value (3500 lb) and converted to canonical kilograms. Community/factory verification remains welcome."
+      },
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      },
+      "KeelConfigurationCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from unambiguous existing KeelType text."
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing propulsion/keel description; no new factual assertion introduced."
+      }
+    }
+  },
+  {
+    "BoatModelID": "CDRY-26-V",
+    "ManufacturerID": "CDORY",
+    "Manufacturer": "C-Dory",
+    "Model": "26 Venture",
+    "Variant": "Venture Cruiser",
+    "Nickname": "C-Dory 26 Venture",
+    "Active": true,
+    "CanonicalSlug": "c-dory-26-venture-venture-cruiser",
+    "CanonicalPath": "/models/c-dory-26-venture-venture-cruiser/",
+    "CanonicalURL": "https://b-atlas.org/models/c-dory-26-venture-venture-cruiser/",
+    "ImageURL": "images/cdry-26-v.jpg",
+    "FirstYear": 2007,
+    "LastYear": null,
+    "TotalBuilt": null,
+    "Designer": "C-Dory Design Team",
+    "HullType": "Planing",
+    "Style": "Pocket Cruiser",
+    "Construction": "Fiberglass",
+    "KeelType": "Flat Bottom",
+    "Fuel": "Gasoline",
+    "Cooling": "Raw Water",
+    "EngineConfiguration": "Single outboard up to 200 hp",
+    "Propulsion": "Outboard",
+    "Flybridge": "No",
+    "AftCabin": false,
+    "SideDecks": "Medium",
+    "TypicalEngineID": "Honda 200",
+    "FuelCapacity": 378.5412,
+    "WaterCapacity": 113.5624,
+    "HoldingCapacity": 75.7082,
+    "Berths": 2,
+    "Cabins": 1,
+    "Heads": 1,
+    "Shower": false,
+    "Galley": false,
+    "CoastalRating": "Limited",
+    "OffshoreRating": "Yes",
+    "GreatLoopSuitable": true,
+    "Trailerable": true,
+    "BoatFamily": "Cruiser",
+    "HullBehaviour": "Planing",
+    "Features": [],
+    "NormalizedFuel": "Gasoline",
+    "NormalizedPropulsion": "Outboard",
+    "NormalizedHullForm": "Planing",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Pilothouse",
+    "EngineCount": 1,
+    "DisplacementLb": 4120,
+    "FuelCapacityGal": 100,
+    "NormalizedHullType": "Modified-V",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass_composite",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "BoatFamilyCode": "boat_family.downeast",
+    "MechanicalPropulsionCode": "mechanical_propulsion.outboard",
+    "FuelCode": "fuel.gasoline",
+    "HullBehaviourCode": "hull_behaviour.planing",
+    "LOA": 7.8486,
+    "Beam": 2.5908,
+    "Draft": 0.3556,
+    "Displacement": 1868.8,
+    "Headroom": 1.9431,
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "RudderTypeCode": "rudder.none_external_drive",
+    "AirDraft": 3.35,
+    "StyleCode": "Pilothouse",
+    "CoolingCode": "cooling.raw_water",
+    "FlybridgeCode": "availability.no",
+    "SideDecksCode": "side_decks.moderate",
+    "DisplacementCruiseSpeed": 7.82,
+    "DisplacementCruiseFuelBurn": 7.192,
+    "PlaningCruiseSpeed": 21.72,
+    "PlaningCruiseFuelBurn": 24.984,
+    "LWL": 7.3152,
+    "ShowerTypeCode": "shower.none",
+    "KeelConfigurationCode": "keel.no_keel",
+    "RunningGearProtectionCode": "running_gear.exposed",
+    "EnginePowerPerEngine": 149.14,
+    "Strengths": [
+      "Light, shallow-draft hull with simple systems",
+      "Enclosed pilothouse provides weather protection and strong visibility",
+      "Trailerability and outboard serviceability support dispersed cruising grounds"
+    ],
+    "Weaknesses": "Limited tankage and modest cabin space.",
+    "CommonProblems": "Window leaks, bracket corrosion.",
+    "TypicalMission": "Loop-capable",
+    "AvoidIf": [
+      "You need generous liveaboard volume or wide side decks",
+      "You expect heavy-displacement motion in rough water",
+      "You require a conventional inboard diesel trawler layout"
+    ],
+    "Overview": "The C-Dory 26 Venture is a practical C-Dory pilothouse design built around light weight, shallow draft and simple cruising or fishing utility. Its layout emphasizes weather protection and cockpit function rather than luxury, with outboard propulsion on the mainstream cruiser and Venture models.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "Compact accommodations are oriented to one couple or a small crew."
+      },
+      "SoloHandling": {
+        "Assessment": "Good",
+        "Summary": "Compact dimensions and straightforward helm arrangements support short-handed operation."
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "Shallow draft and manageable dimensions suit inland and protected-water cruising."
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "Capability depends on hull form, load, weather and operator judgment; verify the individual model’s limits."
+      }
+    },
+    "TradeOffs": [
+      "Light hulls can have a lively ride when conditions and speed are poorly matched",
+      "Compact cabin and side-deck arrangements limit interior volume",
+      "Outboard-powered layouts trade inboard protection for serviceability and shallow draft"
+    ],
+    "BestFor": [
+      "Owners prioritizing simple, trailerable pilothouse cruising or fishing",
+      "Couples or small crews operating on inland and coastal waters",
+      "Buyers who value shallow draft and outboard service access"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Verify exact model, year and hull identity because C-Dory reused related hulls and names over a long production history",
+      "Inspect cored hull/deck areas around penetrations and previous hardware installations",
+      "Inspect transom or outboard bracket structure and engine mounting",
+      "Verify fuel-system, steering and electrical updates on older examples"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for verify exact model, year and hull identity because C-Dory reused related hulls and names over a long production history?",
+      "What inspection, repair or service history is available for inspect cored hull/deck areas around penetrations and previous hardware installations?",
+      "What inspection, repair or service history is available for inspect transom or outboard bracket structure and engine mounting?",
+      "What inspection, repair or service history is available for verify fuel-system, steering and electrical updates on older examples?"
+    ],
+    "OwnerActions": [
+      "Maintain bedding around hardware and inspect cored structures after any leak",
+      "Service outboards, steering and fuel systems to manufacturer intervals",
+      "Keep trailer and launch equipment matched to actual loaded weight where trailering is used"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "Long production and hull-family evolution",
+        "Description": "C-Dory model names span multiple production eras. The 26 Pro Angler is a documented historical model; the current TomCat is the 25-foot TomCat 255, not a current 30-foot model.",
+        "AffectedYears": "Varies by model",
+        "EvidenceRefs": [
+          "https://www.c-dory.com/boats/",
+          "https://www.c-brats.com/media/albums/c-dory-history-page-1.21489/"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "ModelCharacter": "A more offshore-comfort-oriented C-Dory monohull than the classic 22/25 Cruisers, with deeper V, more deadrise, 8'6\" beam, higher freeboard and a more finished four-person cabin while remaining single-outboard and trailerable.",
+    "DesignLineage": [
+      "The 26 Venture belongs to the Venture/Cape Cruiser-derived branch of C-Dory rather than the original flat-aft 22 Cruiser lineage.",
+      "C-Dory explicitly describes the 26 as having deeper V and more deadrise for a smoother open-water ride.",
+      "The Venture 26 is not the same model as the rare earlier 26 Pro Angler.",
+      "The current model remains in production with single-outboard power up to 200 hp."
+    ],
+    "OwnershipCharacter": "More comfortable in chop than the flatter classic C-Dory hulls but also heavier and less minimalist. It retains single-outboard simplicity while adding more interior finish and cruising systems; trailer/tow-vehicle requirements are correspondingly higher.",
+    "DateCreated": "You need large interior volume.",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "B-Atlas Phase 8C-9 Family Research",
+    "Revision": 2,
+    "DataConfidence": "Moderate",
+    "ResearchStatus": "Reviewed",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CDRY-26-V"
+            ],
+            "Years": {
+              "From": 2007,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.c-dory.com/boats/",
+            "https://www.c-brats.com/media/albums/c-dory-history-page-1.21489/",
+            "https://www.c-dory.com/boat/26-venture/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Identity and representative specifications are supported by manufacturer or model-specific technical references; unresolved production or configuration differences remain explicit."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CDRY-26-V"
+            ],
+            "Years": {
+              "From": 2007,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.c-dory.com/boats/",
+            "https://www.c-brats.com/media/albums/c-dory-history-page-1.21489/",
+            "https://www.c-dory.com/boat/26-venture/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance is derived from documented configuration, propulsion, dimensions and intended use rather than marketplace promotional language."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "CDRY-26-V"
+            ],
+            "Years": {
+              "From": 2007,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.c-dory.com/boats/",
+            "https://www.c-brats.com/media/albums/c-dory-history-page-1.21489/",
+            "https://www.c-dory.com/boat/26-venture/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance combines documented systems with age- and configuration-related checks; it does not assert that every hull has a defect."
+        },
+        {
+          "Scope": "SpecificationCompletionV647",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CDRY-26-V"
+            ],
+            "Years": {
+              "From": 2007,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.c-dory.com/boat/26-venture/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented"
+          ],
+          "Confidence": "High",
+          "Notes": "Targeted source-backed specification completion v6.47.0."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Factory specifications can vary by model year and optional equipment; individual hull documentation controls.",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold"
+      ]
+    },
+    "ResearchNotes": "Current factory specs: 25'9\" LOA, 8'6\" beam, 14\" draft, 4,120 lb dry, 100 gal fuel and up to 200 hp single outboard. Water capacity is not forced here because the current page excerpt does not provide a verified universal number.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.\n\nCruising Performance Research Wave 5 v7.04 (2026-09-14).",
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "SpecificationConfidence": {
+      "AirDraft": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [],
+        "Note": "B-Atlas working estimate derived from nearest comparable models with similar style, size and flybridge configuration. Verify actual mast/radar/antenna clearance before route planning. Comparable model IDs: BKCV-26, CPDR-28-OF, BKCV-29, LUHR-30, BKCV-30, BKCV-33, BKCV-32"
+      },
+      "LWL": {
+        "Level": "Low",
+        "Status": "restored_legacy_working_value",
+        "EvidenceRefs": [],
+        "Note": "Working LWL restored from the pre-v6.81 archived B-Atlas value (24 ft). Retained as a low-confidence community-verifiable value rather than leaving a basic performance input blank."
+      },
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      },
+      "KeelConfigurationCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from unambiguous existing KeelType text."
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing propulsion/keel description; no new factual assertion introduced."
+      },
+      "DisplacementCruiseSpeed": {
+        "Level": "Medium",
+        "Status": "owner_instrumented",
+        "EvidenceRefs": [
+          "https://www.c-brats.com/threads/fuel-numbers-for-hull-similar-to-a-venture-26.8291/",
+          "https://www.c-dory.com/boat/26-venture/"
+        ],
+        "Note": "Owner-recorded Honda electronic-gauge data on a Venture/CC26 hull with one 200-hp Honda: 9 mph (7.82 kn) at 1750 rpm burning 1.9 US gal/h. Stored at Medium confidence because it is a single well-documented owner test."
+      },
+      "DisplacementCruiseFuelBurn": {
+        "Level": "Medium",
+        "Status": "owner_instrumented",
+        "EvidenceRefs": [
+          "https://www.c-brats.com/threads/fuel-numbers-for-hull-similar-to-a-venture-26.8291/",
+          "https://www.c-dory.com/boat/26-venture/"
+        ],
+        "Note": "Owner-recorded Honda electronic-gauge data on a Venture/CC26 hull with one 200-hp Honda: 9 mph (7.82 kn) at 1750 rpm burning 1.9 US gal/h. Stored at Medium confidence because it is a single well-documented owner test."
+      },
+      "PlaningCruiseSpeed": {
+        "Level": "Medium",
+        "Status": "owner_instrumented",
+        "EvidenceRefs": [
+          "https://www.c-brats.com/threads/fuel-numbers-for-hull-similar-to-a-venture-26.8291/",
+          "https://www.c-dory.com/boat/26-venture/"
+        ],
+        "Note": "Same owner instrument data: 25 mph (21.72 kn) at 3750 rpm burning 6.6 US gal/h; representative efficient planing cruise for the Honda 200 configuration."
+      },
+      "PlaningCruiseFuelBurn": {
+        "Level": "Medium",
+        "Status": "owner_instrumented",
+        "EvidenceRefs": [
+          "https://www.c-brats.com/threads/fuel-numbers-for-hull-similar-to-a-venture-26.8291/",
+          "https://www.c-dory.com/boat/26-venture/"
+        ],
+        "Note": "Same owner instrument data: 25 mph (21.72 kn) at 3750 rpm burning 6.6 US gal/h; representative efficient planing cruise for the Honda 200 configuration."
+      },
+      "EnginePowerPerEngine": {
+        "Level": "Medium",
+        "Status": "supported_test_configuration",
+        "EvidenceRefs": [
+          "https://www.c-brats.com/threads/fuel-numbers-for-hull-similar-to-a-venture-26.8291/",
+          "https://www.c-dory.com/boat/26-venture/"
+        ],
+        "Note": "Owner instrument test uses the single Honda 200-hp configuration; current C-Dory specifications also rate the hull to 200 hp."
+      }
+    }
+  },
+  {
+    "BoatModelID": "CALF-34-TR",
+    "ManufacturerID": "CALIFORNIAN",
+    "Manufacturer": "Californian",
+    "Model": "34 LRC",
+    "Variant": "Long Range Cruiser",
+    "Nickname": "Californian 34 LRC",
+    "Active": false,
+    "CanonicalSlug": "californian-34-lrc-long-range-cruiser",
+    "CanonicalPath": "/models/californian-34-lrc-long-range-cruiser/",
+    "CanonicalURL": "https://b-atlas.org/models/californian-34-lrc-long-range-cruiser/",
+    "ImageURL": "images/calf-34-tr.jpg",
+    "FirstYear": 1977,
+    "LastYear": 1985,
+    "TotalBuilt": 450,
+    "Designer": "Jule Marshall",
+    "HullType": "Semi-Displacement",
+    "Style": "Flybridge Sedan",
+    "Construction": "Fiberglass",
+    "KeelType": "Twin Skeg",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Twin Inboard",
+    "Propulsion": "Shaft",
+    "Flybridge": "Yes",
+    "AftCabin": false,
+    "SideDecks": "Wide",
+    "TypicalEngineID": "Perkins 6.354",
+    "FuelCapacity": 946.352946,
+    "WaterCapacity": 283.90588379999997,
+    "HoldingCapacity": 113.56235352,
+    "Berths": 6,
+    "Cabins": 2,
+    "Heads": 1,
+    "Shower": false,
+    "Galley": false,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "No",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "BoatFamily": "Trawler",
+    "Configuration": "Classic Trawler",
+    "HullBehaviour": "Semi-Displacement",
+    "Features": [
+      "Flybridge",
+      "Wide Side Decks"
+    ],
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Semi-Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Cruiser",
+    "EngineCount": 2,
+    "DisplacementLb": 18000,
+    "FuelCapacityGal": 250,
+    "WaterCapacityGal": 75,
+    "NormalizedHullType": "Modified-V",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "HullBehaviourCode": "hull_behaviour.planing",
+    "BoatFamilyCode": "boat_family.trawler",
+    "LOA": 10.5156,
+    "Beam": 3.7592,
+    "Draft": 0.9652,
+    "Displacement": 8164.7,
+    "AirDraft": 3.2512,
+    "KeelConfigurationCode": "keel.protective",
+    "ShowerTypeCode": "shower.separate_stall",
+    "FlybridgeCode": "availability.yes",
+    "SideDecksCode": "side_decks.wide",
+    "FuelCode": "fuel.diesel",
+    "FuelCapacityUnitStatus": "canonical_litres",
+    "WaterCapacityUnitStatus": "canonical_litres",
+    "HoldingCapacityUnitStatus": "canonical_litres",
+    "HoldingCapacityGal": 30,
+    "StyleCode": "Cruiser",
+    "CoolingCode": "cooling.fresh_water",
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "LWL": 10.1899,
+    "RunningGearProtectionCode": "running_gear.skeg_protected",
+    "Strengths": [
+      "Solid-fiberglass U.S.-built hull and practical deck access",
+      "Can cruise economically at low speed yet accept higher-power diesel packages",
+      "Useful sedan layout with lower helm and cockpit"
+    ],
+    "Weaknesses": "Snug forward V-berth dimensions, early models lack structural window support framing.",
+    "CommonProblems": "Fuel tank internal rusting, deck core softening beneath anchor windlass mounting plates.",
+    "TypicalMission": "Affordable family coastal looping and regional weekend pathway exploring.",
+    "AvoidIf": [
+      "You require a true full-displacement passagemaker",
+      "You need an aft-cabin layout",
+      "You want predictable economy without verifying the installed engines"
+    ],
+    "Overview": "The Californian 34 LRC is a U.S.-built flybridge sedan cruiser with trawler-like styling but a modified-V hull capable of substantially more than displacement speed with higher-power diesel packages. Wide side decks and practical lower-helm layouts favor family coastal cruising rather than traditional full-displacement operation.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented cruising layout is practical for a couple; guest capacity and privacy vary by model."
+      },
+      "SoloHandling": {
+        "Assessment": "Mixed",
+        "Summary": "Lower-helm access and protected decks can help short-handed operation, but windage, engine count and docking equipment remain hull-specific."
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "Route fit depends on actual beam, draft and air draft; verify bridge and marina limits for the individual boat."
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "Condition, loading and actual hull configuration are decisive; this assessment reflects documented design intent rather than an offshore guarantee."
+      }
+    },
+    "TradeOffs": [
+      "Wide side decks reduce interior width",
+      "Performance and fuel economy vary greatly with engine package",
+      "Older machinery, tanks and deck hardware remain condition-sensitive"
+    ],
+    "BestFor": [
+      "Buyers wanting classic trawler appearance without being limited to trawler speed",
+      "Coastal cruising couples or families using a cockpit-oriented layout",
+      "Owners who value simpler exterior trim than many Taiwan trawlers"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Verify original versus repowered engine package and realistic cruise fuel burn",
+      "Inspect decks, windows, cockpit and flybridge penetrations for moisture",
+      "Inspect fuel tanks, exhaust, cooling and engine beds",
+      "Inspect shafts, struts, rudders and steering",
+      "Confirm lower-helm visibility and side-deck access for the intended crew"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for verify original versus repowered engine package and realistic cruise fuel burn?",
+      "What inspection, repair or service history is available for inspect decks, windows, cockpit and flybridge penetrations for moisture?",
+      "What inspection, repair or service history is available for inspect fuel tanks, exhaust, cooling and engine beds?",
+      "What inspection, repair or service history is available for inspect shafts, struts, rudders and steering?",
+      "What inspection, repair or service history is available for confirm lower-helm visibility and side-deck access for the intended crew?"
+    ],
+    "OwnerActions": [
+      "Keep deck, window and hardware penetrations sealed and investigate leaks promptly",
+      "Maintain propulsion, cooling, exhaust, steering and fuel systems to documented intervals",
+      "Document structural, tank, electrical and machinery repairs for future buyers"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "Engine and layout options",
+        "Description": "Both models were offered with differing layouts and engine packages; performance ranges from displacement-speed economy to planing-capable cruising.",
+        "AffectedYears": "Production run",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/californian/34-lrc-1977-85",
+          "https://www.hmy.com/yachting/powerboat-guide/californian/38-lrc-sedan-1978-85"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "ModelCharacter": "A distinctly American answer to the 1970s Taiwan trawler: the Californian 34 LRC combines traditional trawler styling and excellent low-speed economy with a solid-fiberglass modified-V hull capable of true planing speeds when fitted with larger diesels. Wide side decks, a lower helm and surprising two-stateroom availability make it unusually versatile for 34 feet.",
+    "DesignLineage": [
+      "Jule Marshall and Myrna Elliott developed Californian Yachts around the idea of building faster, moderately priced American trawler-style cruisers rather than copying slow Asian imports.",
+      "The 34 LRC followed the successful 42 LRC and became one of Californian's best-known models, with more than 200 built during the late 1970s and early 1980s.",
+      "Unlike most traditional trawlers, the 34 uses a modified-V hull with nearly flat aft sections, allowing either 7-knot economical operation with small diesels or roughly 16–20-knot cruising with larger engine packages.",
+      "The larger 38 LRC Sedan continues the same trawler-profile/modified-V design philosophy rather than representing a fundamentally different brand branch."
+    ],
+    "OwnershipCharacter": "A relatively straightforward twin-shaft cruiser with strong fiberglass construction and very little exterior teak. Engine packages vary dramatically, so a low-powered Perkins boat and a Caterpillar-powered fast cruiser have very different fuel, performance and maintenance profiles; decks, windows, tanks and decades of owner modifications remain major survey items.",
+    "DateCreated": "2026-07-13",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "B-Atlas Phase 8C-11 Classic Taiwanese / Older Motoryacht Research",
+    "Revision": 2,
+    "DataConfidence": "Moderate",
+    "ResearchStatus": "Reviewed",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CALF-34-TR"
+            ],
+            "Years": {
+              "From": 1977,
+              "To": 1985
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/californian/34-lrc-1977-85",
+            "https://www.hmy.com/yachting/powerboat-guide/californian/38-lrc-sedan-1978-85"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Representative identity and specifications use model-specific references where available; unresolved production or hull differences remain explicit."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CALF-34-TR"
+            ],
+            "Years": {
+              "From": 1977,
+              "To": 1985
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/californian/34-lrc-1977-85",
+            "https://www.hmy.com/yachting/powerboat-guide/californian/38-lrc-sedan-1978-85"
+          ],
+          "EvidenceTypes": [
+            "Technical or s

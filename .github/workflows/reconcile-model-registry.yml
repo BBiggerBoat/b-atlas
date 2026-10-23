@@ -5,15 +5,26 @@ on:
     branches:
       - main
     paths:
-      - 'boatmodels.json'
+      - 'data/canonical/**'
+      - 'developer/canonical-store.cjs'
       - 'data/registry/**'
       - 'data/data-manifest.json'
       - 'data/production-phases.json'
       - 'data/model-search-aliases.json'
       - 'datarepository.js'
+      - 'communityapi.js'
+      - 'communityguide.js'
+      - 'contributionentry.js'
+      - 'knowledge/knowledgecardui.js'
+      - 'developer/moderatorapi.js'
+      - 'developer/public-model-artifacts.cjs'
       - 'filterengine.js'
       - 'valuenormalizer.js'
       - 'tests/**'
+      - 'archive/phase5-fixtures/**'
+      - 'deployment/repository-size-policy.json'
+      - 'developer/historical-fixtures.cjs'
+      - 'developer/check-repository-size.cjs'
       - 'tools/reconcile-model-registry.cjs'
       - '.github/workflows/reconcile-model-registry.yml'
 permissions:
@@ -23,9 +34,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Check repository file sizes and historical fixture integrity
+        run: npm run guard:repository
+      - name: Generate untracked compatibility view
+        run: npm run generate:models
       - name: Verify canonical registry synchronization
         run: node tools/reconcile-model-registry.cjs --check
       - name: Verify canonical loader and filtering
@@ -34,6 +51,8 @@ jobs:
         run: node tests/filter-behavior-regression.cjs
       - name: Verify community overlay compatibility
         run: node tests/community-overlay-regression.cjs
+      - name: Verify shared catalogue equivalence and failure recovery
+        run: node tests/shared-model-repository.cjs && node tests/search-detail-projection.cjs
       - name: Probe live community overlay compatibility
         run: node tests/live-community-overlay-regression.cjs
       - name: Verify correlated configurations

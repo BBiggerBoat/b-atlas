@@ -1,0 +1,3096 @@
+cht-models/retired-models/n40/",
+          "https://nordhavn.com/wp-content/uploads/2021/02/circumnavigatorII.pdf"
+        ],
+        "Note": "Representative later N40II draft is 5 ft 2 in; production phases retain the earlier 4 ft 9 in draft."
+      },
+      "AirDraft": {
+        "Level": "High",
+        "Status": "varies_by_configuration",
+        "EvidenceRefs": [
+          "https://nordhavn.com/wp-content/uploads/2021/02/circumnavigatorII.pdf",
+          "https://nordhavn.com/nordhavn-atw-forums/"
+        ],
+        "Note": "Practical mast-down air draft is about 13 ft 6 in; mast-up is about 29 ft. Special folding/removable arrangements can reduce clearance further."
+      },
+      "DisplacementCruiseSpeed": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://nordhavn.com/nordhavn-yacht-models/retired-models/n40/"
+        ],
+        "Note": "PAE/Nordhavn Around-the-World test data for a heavily loaded Nordhavn 40: 7 kn at 2.6 US gal/h around 1600 rpm. Full-displacement hull; planing cruise not applicable."
+      },
+      "DisplacementCruiseFuelBurn": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://nordhavn.com/nordhavn-yacht-models/retired-models/n40/"
+        ],
+        "Note": "PAE/Nordhavn Around-the-World test data for a heavily loaded Nordhavn 40: 7 kn at 2.6 US gal/h around 1600 rpm. Full-displacement hull; planing cruise not applicable."
+      },
+      "PlaningCruiseSpeed": {
+        "Level": "High",
+        "Status": "not_applicable",
+        "EvidenceRefs": [
+          "https://nordhavn.com/nordhavn-yacht-models/retired-models/n40/"
+        ],
+        "Note": "Full-displacement hull; planing cruise is not applicable."
+      },
+      "PlaningCruiseFuelBurn": {
+        "Level": "High",
+        "Status": "not_applicable",
+        "EvidenceRefs": [
+          "https://nordhavn.com/nordhavn-yacht-models/retired-models/n40/"
+        ],
+        "Note": "Full-displacement hull; planing cruise is not applicable."
+      },
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      }
+    },
+    "DisplacementCruiseSpeed": 7,
+    "DisplacementCruiseFuelBurn": 9.842,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "ShowerTypeCode": "shower.none"
+  },
+  {
+    "ManufacturerID": "NORDIC",
+    "Manufacturer": "Nordic Tugs",
+    "Model": "26",
+    "Variant": null,
+    "Nickname": "Nordic Tug 26",
+    "ImageURL": "images/ndtg-26.jpg",
+    "Active": false,
+    "FirstYear": 1980,
+    "LastYear": 2026,
+    "TotalBuilt": 172,
+    "Designer": "Lynn Senour",
+    "HullType": "Semi-Displacement",
+    "Style": "Tug Pilothouse",
+    "Construction": "Fiberglass",
+    "KeelType": "Full Skeg",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Single inboard diesel",
+    "Propulsion": "Shaft",
+    "Flybridge": "No",
+    "AftCabin": false,
+    "SideDecks": "Moderate",
+    "TypicalEngineID": "Yanmar 4JH",
+    "FuelCapacity": 283.9059,
+    "WaterCapacity": 151.4165,
+    "HoldingCapacity": 75.7082,
+    "Berths": 4,
+    "Cabins": 1,
+    "Heads": 1,
+    "Shower": "Wet head; configuration varies by generation",
+    "Galley": "Compact salon galley",
+    "CoastalRating": "Yes",
+    "OffshoreRating": "No",
+    "GreatLoopSuitable": true,
+    "Trailerable": true,
+    "Strengths": [
+      "Compact pilothouse protection with good all-weather visibility",
+      "Efficient single-diesel shaft propulsion",
+      "Narrow 9 ft 6 in beam and relatively shallow draft",
+      "Strong builder identity and long-lived owner community"
+    ],
+    "Weaknesses": "Limited cockpit and interior volume, compact sleeping arrangements and generation-dependent specifications.",
+    "CommonProblems": "Roof core softness if aftermarket masts were unprofessionally installed.",
+    "TypicalMission": "Couples coastal cruising, canal and Great Loop travel, and economical all-weather operation in a compact footprint.",
+    "AvoidIf": [
+      "You need multiple private cabins",
+      "You require expansive cockpit or liveaboard storage",
+      "You expect automobile-like trailerability or high cruising speeds"
+    ],
+    "DateCreated": "2026-07-13",
+    "LastUpdated": "2026-09-13",
+    "ReviewedBy": "B-Atlas Research v6.93",
+    "Revision": 6,
+    "BoatModelID": "NDTG-26",
+    "BoatFamily": "Tug",
+    "HullBehaviour": "Semi-Displacement",
+    "Features": [
+      "Trailerable"
+    ],
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Semi-Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Tug Cruiser",
+    "ResearchStatus": "Reviewed",
+    "ResearchNotes": "Nordic Tug family normalized 2026-08-07 using builder history and model-specific technical references.\n\nOriginal 26 launched in 1980; retired in 1997 and reintroduced in 2009 as limited production. Early cruiser and Cricket work/fishing configurations vary. Use hull-year evidence for capacities and appendage-inclusive LOA.\n\nHigh-impact missing-data research Wave 2 v6.87 (2026-09-13): Wave 2: Nordic Tug 26 documentation gives 6 ft 4 in salon headroom and 6 ft 2 in pilothouse headroom. The full-length keel continues to a metal/steel rudder shoe supporting the traditional barn-door rudder and protecting the propeller. Sources: https://boattest.com/boats/nordic-tugs/nordic-tug-26-2014 ; https://www.annapolisyachtbroker.com/listings/1997-nordic-tug-26-26-9263362\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "DataConfidence": "Moderate",
+    "Overview": "The Nordic Tug 26 is the original compact Nordic Tugs cruiser, built around a pilothouse, semi-displacement fiberglass hull and single diesel shaft drive. Its narrow beam and one-cabin layout favor economical couple cruising, inland waterways and compact marina footprints rather than large-boat accommodation. Production was interrupted after 1997 and later revived in limited production, so displacement, engines and equipment vary materially by generation.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented pilothouse layout and accommodation are well suited to an owner-operated cruising couple, subject to individual condition and space preferences.",
+        "EvidenceRefs": [
+          "https://www.nordictugs.com/history",
+          "https://www.nordictugs.com/vessels",
+          "https://www.boats.com/reviews/nordic-tug-26/"
+        ]
+      },
+      "SoloHandling": {
+        "Assessment": "Good",
+        "Summary": "Single-diesel propulsion, pilothouse visibility and compact dimensions support manageable owner operation; wind and docking conditions still matter.",
+        "EvidenceRefs": [
+          "https://www.nordictugs.com/history",
+          "https://www.nordictugs.com/vessels",
+          "https://www.boats.com/reviews/nordic-tug-26/"
+        ]
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "Beam, draft and efficient low-speed operation suit many inland routes; bridge clearance must still be verified.",
+        "EvidenceRefs": [
+          "https://www.nordictugs.com/history",
+          "https://www.nordictugs.com/vessels",
+          "https://www.boats.com/reviews/nordic-tug-26/"
+        ]
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "The semi-displacement hull and protected pilothouse support coastal use, but B-Atlas does not treat the model as an unrestricted offshore passagemaker; condition, loading and weather limits remain decisive.",
+        "EvidenceRefs": [
+          "https://www.nordictugs.com/history",
+          "https://www.nordictugs.com/vessels",
+          "https://www.boats.com/reviews/nordic-tug-26/"
+        ]
+      }
+    },
+    "TradeOffs": [
+      "Interior, cockpit and storage volume are limited",
+      "Early and revived-production boats differ in weight, engines and equipment",
+      "Trailerable dimensions do not make it a casual tow for every vehicle or jurisdiction",
+      "Compact sleeping and head arrangements require personal fit testing"
+    ],
+    "BestFor": [
+      "Couples prioritizing economy and pilothouse protection",
+      "Canal, Great Loop and protected coastal cruising",
+      "Owners wanting a compact single-diesel tug cruiser"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Confirm model year, engine installation and any repower work",
+      "Inspect pilothouse windows, cabin-top and deck penetrations for moisture intrusion",
+      "Inspect fuel and water tanks, fill/vent hoses and access",
+      "Inspect exhaust, cooling, shaft, rudder and steering systems",
+      "Review electrical upgrades and owner modifications"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for confirm model year, engine installation and any repower work?",
+      "What inspection, repair or service history is available for inspect pilothouse windows, cabin-top and deck penetrations for moisture intrusion?",
+      "What inspection, repair or service history is available for inspect fuel and water tanks, fill/vent hoses and access?",
+      "What inspection, repair or service history is available for inspect exhaust, cooling, shaft, rudder and steering systems?",
+      "What inspection, repair or service history is available for review electrical upgrades and owner modifications?"
+    ],
+    "OwnerActions": [
+      "Keep pilothouse windows, deck hardware and exterior penetrations sealed and address leaks promptly",
+      "Maintain raw-water cooling, exhaust, shaft, rudder and steering systems to documented service intervals",
+      "Exercise and service bow/stern thrusters and owner-added electrical systems where fitted",
+      "Document repowers, structural repairs, tank work and electrical modifications for future buyers"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "Original production",
+        "Description": "The original 26 launched in 1980 and was retired in 1997 after establishing the Nordic Tug line.",
+        "AffectedYears": "1980–1997",
+        "EvidenceRefs": [
+          "https://www.nordictugs.com/history"
+        ],
+        "Confidence": "High"
+      },
+      {
+        "Name": "Cruiser and Cricket configurations",
+        "Description": "Nordic Tugs built both a cruiser version and the shorter-cabin/open-aft-deck Cricket/work-fishing configuration during the early era.",
+        "AffectedYears": "Early production",
+        "EvidenceRefs": [
+          "https://www.nordictugs.com/history"
+        ],
+        "Confidence": "High"
+      },
+      {
+        "Name": "Limited-production revival",
+        "Description": "The 26 was re-launched in 2009 as a limited-production model. Later published specifications show higher standard power and weight than many early boats.",
+        "AffectedYears": "2009 onward",
+        "EvidenceRefs": [
+          "https://www.nordictugs.com/history",
+          "https://www.nordictugs.com/vessels",
+          "https://www.boats.com/reviews/nordic-tug-26/"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "NDTG-26"
+            ],
+            "Years": {
+              "From": 1980,
+              "To": 2026
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.nordictugs.com/history",
+            "https://www.nordictugs.com/vessels",
+            "https://www.boats.com/reviews/nordic-tug-26/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Identity, production lineage and representative specifications are supported by model-specific or builder sources; individual hull documentation remains controlling."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "NDTG-26"
+            ],
+            "Years": {
+              "From": 1980,
+              "To": 2026
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.nordictugs.com/history",
+            "https://www.nordictugs.com/vessels",
+            "https://www.boats.com/reviews/nordic-tug-26/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance is derived from documented configuration, hull form, propulsion, dimensions and production lineage."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "NDTG-26"
+            ],
+            "Years": {
+              "From": 1980,
+              "To": 2026
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.nordictugs.com/history",
+            "https://www.nordictugs.com/vessels",
+            "https://www.boats.com/reviews/nordic-tug-26/",
+            "manufacturerknowledge:NORDIC:Nordic Tug Family"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance combines model-specific configuration with family and age-related risk areas; it is not an assertion that every hull has these defects."
+        },
+        {
+          "Scope": "HeadroomAndInteriorFit",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "NDTG-26"
+            ],
+            "Years": {
+              "From": null,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.yachtworld.com/research/nordic-tug-26-mini-trawler-huge-popularity/"
+          ],
+          "EvidenceTypes": [
+            "Model-specific walkthrough / specification"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Location-specific interior dimensions are retained separately; they should not be generalized to all interior spaces."
+        },
+        {
+          "Scope": "Wave2CanonicalData",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "NDTG-26"
+            ],
+            "Years": {
+              "From": 1980,
+              "To": 2026
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://boattest.com/boats/nordic-tugs/nordic-tug-26-2014",
+            "https://www.annapolisyachtbroker.com/listings/1997-nordic-tug-26-26-9263362"
+          ],
+          "EvidenceTypes": [
+            "Manufacturer/manual, technical review, or model-specific listing evidence"
+          ],
+          "Confidence": "High",
+          "Notes": "Wave 2: Nordic Tug 26 documentation gives 6 ft 4 in salon headroom and 6 ft 2 in pilothouse headroom. The full-length keel continues to a metal/steel rudder shoe supporting the traditional barn-door rudder and protecting the propeller."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Representative displacement varies by production generation; individual hull documentation controls",
+        "Air draft depends on mast, stack and antenna configuration",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold"
+      ]
+    },
+    "EngineCount": 1,
+    "ModelCharacter": "The original Nordic Tug: a compact single-diesel cruiser with unmistakable working-tug proportions, modest accommodations and unusually low operating demands. It is more pocket cruiser than miniature yacht, with charm and efficiency taking priority over interior volume.",
+    "DesignLineage": [
+      "Nordic Tugs launched the original 26 at the 1980 Seattle International Boat Show.",
+      "Two early 26 configurations were offered: the cruiser and the more open-aft-deck Cricket work/fishing version.",
+      "The 26 established the brand's single-diesel, tug-profile, fuel-efficient semi-displacement formula.",
+      "Production ended in 1997 and the model returned in limited production in 2009."
+    ],
+    "OwnershipCharacter": "Simple by cruising-yacht standards and well suited to a couple willing to live compactly. Small size helps with dockage, haul-out and fuel costs; age, limited storage and model-specific trim can matter more than machinery complexity.",
+    "CharacterConfidence": "High",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "RarityConfidence": "Not rated",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "PriceConfidence": "Not rated",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "FuelCode": "fuel.diesel",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "HullBehaviourCode": "hull_behaviour.semi_displacement",
+    "BoatFamilyCode": "boat_family.tug",
+    "KeelConfigurationCode": "keel.protective",
+    "RunningGearProtectionCode": "running_gear.keel_protected",
+    "LOA": 8.763,
+    "LWL": 7.6708,
+    "Beam": 2.8956,
+    "Draft": 0.9906,
+    "Displacement": 3855.5,
+    "AirDraft": 2.9464,
+    "FlybridgeCode": "availability.no",
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HeadroomSalon": 1.9304,
+    "HeadroomHelm": 1.8796,
+    "HeadroomForwardCabin": 1.8288,
+    "CanonicalSlug": "nordic-tugs-26",
+    "CanonicalPath": "/models/nordic-tugs-26/",
+    "CanonicalURL": "https://b-atlas.org/models/nordic-tugs-26/",
+    "StyleCode": "Tug Cruiser",
+    "CoolingCode": "cooling.fresh_water",
+    "SideDecksCode": "side_decks.moderate",
+    "Headroom": 1.9304,
+    "RudderTypeCode": "rudder.full_keel_attached",
+    "DisplacementCruiseSpeed": 7.5,
+    "DisplacementCruiseFuelBurn": 7.571,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "SpecificationConfidence": {
+      "DisplacementCruiseSpeed": {
+        "Level": "Medium",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://boattest.com/boats/nordic-tugs/nordic-tug-26-2014",
+          "https://busyboater.com/yacht-rental-review-nordic-tug-26/"
+        ],
+        "Note": "Representative Nordic Tug 26 cruise from owner-reported 100 hp Yanmar installation: about 7.5 kn at 2 US gal/h. Builder/BoatTEST also indicates 7-8 kn around 2 US gal/h, with best economy near 6 kn below 1 US gal/h."
+      },
+      "DisplacementCruiseFuelBurn": {
+        "Level": "Medium",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://boattest.com/boats/nordic-tugs/nordic-tug-26-2014",
+          "https://busyboater.com/yacht-rental-review-nordic-tug-26/"
+        ],
+        "Note": "Representative Nordic Tug 26 cruise from owner-reported 100 hp Yanmar installation: about 7.5 kn at 2 US gal/h. Builder/BoatTEST also indicates 7-8 kn around 2 US gal/h, with best economy near 6 kn below 1 US gal/h."
+      },
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      }
+    },
+    "ShowerTypeCode": "shower.wet_head"
+  },
+  {
+    "ManufacturerID": "NORDIC",
+    "Manufacturer": "Nordic Tugs",
+    "Model": "32",
+    "Variant": null,
+    "Nickname": "Nordic Tug 32",
+    "ImageURL": "images/ndtg-32.jpg",
+    "Active": false,
+    "FirstYear": 1985,
+    "LastYear": 2012,
+    "TotalBuilt": 300,
+    "Designer": "Lynn Senour",
+    "HullType": "Semi-Displacement",
+    "Style": "Tug Pilothouse",
+    "Construction": "Fiberglass",
+    "KeelType": "Full keel / propeller-protecting skeg",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Single inboard diesel",
+    "Propulsion": "Shaft",
+    "Flybridge": "No",
+    "AftCabin": false,
+    "SideDecks": "Moderate",
+    "TypicalEngineID": "Cummins diesel; horsepower varies by year",
+    "FuelCapacity": 776.0094,
+    "WaterCapacity": 378.5412,
+    "HoldingCapacity": 113.5624,
+    "Berths": 4,
+    "Cabins": 1,
+    "Heads": 1,
+    "Shower": "Enclosed head with shower; exact arrangement and finish vary by production year",
+    "Galley": "Main-saloon galley with stove, sink and refrigeration; equipment varies by year",
+    "CoastalRating": "Yes",
+    "OffshoreRating": "No",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "Strengths": [
+      "Protected pilothouse with direct side-deck access",
+      "Efficient single-diesel shaft propulsion",
+      "One-cabin couple-cruising layout with usable salon guest berth",
+      "Moderate beam for a substantial pilothouse cruiser"
+    ],
+    "Weaknesses": "Premium used-market pricing, narrow side-deck areas, tight machinery access in places and substantial year-to-year changes in length, power and displacement.",
+    "CommonProblems": "Inspect pilothouse and saloon window leaks, deck penetrations and core moisture, shaft and rudder packing, exhaust and cooling systems, fuel tanks, and the quality of later electrical or machinery upgrades.",
+    "TypicalMission": "Extended Pacific Northwest, Great Loop and four-season coastal cruising for a couple, with occasional guests.",
+    "AvoidIf": [
+      "You need two private cabins",
+      "You require a flybridge",
+      "You need highway trailerability or very low air draft"
+    ],
+    "DateCreated": "2026-07-13",
+    "LastUpdated": "2026-09-14",
+    "ReviewedBy": "B-Atlas Nordic Tug Family Research",
+    "Revision": 4,
+    "BoatModelID": "NDTG-32",
+    "BoatFamily": "Tug",
+    "HullBehaviour": "Semi-Displacement",
+    "Features": [],
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Semi-Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Tug Cruiser",
+    "ResearchStatus": "Reviewed",
+    "ResearchNotes": "Nordic Tug family normalized 2026-08-07 using builder history and model-specific technical references.\n\nIntroduced in 1985. The design evolved and was ultimately represented by the Nordic Tug 34; year-specific length, displacement, power and tankage must be verified rather than inherited from the current 34.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.\n\nv7.05 cruising-performance research: Boats.com model review reports Nordic Tug 32 cruise around 7–8 knots at about 1 US gal/h; representative midpoint used. Faster-cruise context: Charter report for a Nordic Tug 32 records roughly 11 knots at 1.35 nautical miles per US gallon; fuel burn is derived from speed/economy and is configuration/load dependent.",
+    "DataConfidence": "Moderate",
+    "ModelSeries": "Nordic Tug 32/34 lineage",
+    "ModelGeneration": "Nordic Tug 32",
+    "Overview": "The Nordic Tug 32 expanded the original tug concept into a more substantial one-cabin pilothouse cruiser with a semi-displacement hull and single diesel shaft drive. Early boats are roughly 32 feet overall, while later versions gained appendages and platform length as the design evolved toward the later Nordic Tug 34. The model remains primarily a couple-cruising boat with a lower pilothouse, salon and convertible guest accommodation.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented pilothouse layout and accommodation are well suited to an owner-operated cruising couple, subject to individual condition and space preferences.",
+        "EvidenceRefs": [
+          "https://www.nordictugs.com/history",
+          "https://www.yachtworld.com/yacht/1985-nordic-tug-32-9544961/"
+        ]
+      },
+      "SoloHandling": {
+        "Assessment": "Good",
+        "Summary": "Single-diesel propulsion, pilothouse visibility and compact dimensions support manageable owner operation; wind and docking conditions still matter.",
+        "EvidenceRefs": [
+          "https://www.nordictugs.com/history",
+          "https://www.yachtworld.com/yacht/1985-nordic-tug-32-9544961/"
+        ]
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "Beam, draft and efficient low-speed operation suit many inland routes; bridge clearance must still be verified.",
+        "EvidenceRefs": [
+          "https://www.nordictugs.com/history",
+          "https://www.yachtworld.com/yacht/1985-nordic-tug-32-9544961/"
+        ]
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "The semi-displacement hull and protected pilothouse support coastal use, but B-Atlas does not treat the model as an unrestricted offshore passagemaker; condition, loading and weather limits remain decisive.",
+        "EvidenceRefs": [
+          "https://www.nordictugs.com/history",
+          "https://www.yachtworld.com/yacht/1985-nordic-tug-32-9544961/"
+        ]
+      }
+    },
+    "TradeOffs": [
+      "Production evolution makes published LOA, draft and weight figures inconsistent",
+      "One private cabin limits guest privacy",
+      "Machinery and tank access vary with year and refit history",
+      "More substantial than the 26 and not realistically trailerable for routine use"
+    ],
+    "BestFor": [
+      "Couples wanting a traditional pilothouse cruiser without moving into 37-foot dimensions",
+      "Great Loop, inland and coastal cruising",
+      "Owners valuing single-engine simplicity and enclosed helm protection"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Confirm model year, engine installation and any repower work",
+      "Inspect pilothouse windows, cabin-top and deck penetrations for moisture intrusion",
+      "Inspect fuel and water tanks, fill/vent hoses and access",
+      "Inspect exhaust, cooling, shaft, rudder and steering systems",
+      "Review electrical upgrades and owner modifications"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for confirm model year, engine installation and any repower work?",
+      "What inspection, repair or service history is available for inspect pilothouse windows, cabin-top and deck penetrations for moisture intrusion?",
+      "What inspection, repair or service history is available for inspect fuel and water tanks, fill/vent hoses and access?",
+      "What inspection, repair or service history is available for inspect exhaust, cooling, shaft, rudder and steering systems?",
+      "What inspection, repair or service history is available for review electrical upgrades and owner modifications?"
+    ],
+    "OwnerActions": [
+      "Keep pilothouse windows, deck hardware and exterior penetrations sealed and address leaks promptly",
+      "Maintain raw-water cooling, exhaust, shaft, rudder and steering systems to documented service intervals",
+      "Exercise and service bow/stern thrusters and owner-added electrical systems where fitted",
+      "Document repowers, structural repairs, tank work and electrical modifications for future buyers"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "Early and later overall-length treatment",
+        "Description": "The 32 design evolved during its long production run; later examples and published specifications can include platforms or appendages that bring overall length close to the later 34 while the core model identity remains 32.",
+        "AffectedYears": "1985–2012",
+        "EvidenceRefs": [
+          "https://www.nordictugs.com/history",
+          "https://www.yachtworld.com/yacht/1985-nordic-tug-32-9544961/"
+        ],
+        "Confidence": "Moderate"
+      }
+    ],
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "NDTG-32"
+            ],
+            "Years": {
+              "From": 1985,
+              "To": 2012
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.nordictugs.com/history",
+            "https://www.yachtworld.com/yacht/1985-nordic-tug-32-9544961/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Identity, production lineage and representative specifications are supported by model-specific or builder sources; individual hull documentation remains controlling."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "NDTG-32"
+            ],
+            "Years": {
+              "From": 1985,
+              "To": 2012
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.nordictugs.com/history",
+            "https://www.yachtworld.com/yacht/1985-nordic-tug-32-9544961/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance is derived from documented configuration, hull form, propulsion, dimensions and production lineage."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "NDTG-32"
+            ],
+            "Years": {
+              "From": 1985,
+              "To": 2012
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.nordictugs.com/history",
+            "https://www.yachtworld.com/yacht/1985-nordic-tug-32-9544961/",
+            "manufacturerknowledge:NORDIC:Nordic Tug Family"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance combines model-specific configuration with family and age-related risk areas; it is not an assertion that every hull has these defects."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Fuel, water and holding capacities should be confirmed by year; later 32/early 34 specification overlap is significant",
+        "Bridge clearance varies with mast and antenna configuration",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold"
+      ]
+    },
+    "EngineCount": 1,
+    "ModelCharacter": "The model that turned Nordic Tug from a charming niche 26-footer into a serious cruising brand. The 32 combines a raised pilothouse, full-keel prop protection and single-diesel economy with enough salon and cabin space for extended cruising by a couple.",
+    "DesignLineage": [
+      "Introduced in 1985 after the success of the Nordic Tug 26.",
+      "Designed by Lynn Senour around the same classic tug profile and efficient semi-displacement philosophy.",
+      "Early boats used lower-horsepower diesels; later production gained substantially more power while retaining economical displacement-speed operation.",
+      "The 32 later evolved into the Nordic Tug 34 as the transom/swim platform was integrated and the interior was refreshed."
+    ],
+    "OwnershipCharacter": "One of the more approachable traditional cruising boats for a couple: straightforward single-diesel machinery, protected running gear and strong owner support. Interior space is efficient rather than expansive, and older examples vary considerably by engine and refit history.",
+    "CharacterConfidence": "High",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "RarityConfidence": "Not rated",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "PriceConfidence": "Not rated",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "FuelCode": "fuel.diesel",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "HullBehaviourCode": "hull_behaviour.semi_displacement",
+    "BoatFamilyCode": "boat_family.tug",
+    "KeelConfigurationCode": "keel.protective",
+    "RunningGearProtectionCode": "running_gear.keel_protected",
+    "LOA": 10.414,
+    "LWL": 9.9568,
+    "Beam": 3.3528,
+    "Draft": 1.0668,
+    "Displacement": 7257.5,
+    "AirDraft": 3.2004,
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "CanonicalSlug": "nordic-tugs-32",
+    "CanonicalPath": "/models/nordic-tugs-32/",
+    "CanonicalURL": "https://b-atlas.org/models/nordic-tugs-32/",
+    "StyleCode": "Tug Cruiser",
+    "CoolingCode": "cooling.fresh_water",
+    "FlybridgeCode": "availability.no",
+    "SideDecksCode": "side_decks.moderate",
+    "DisplacementCruiseSpeed": 7.5,
+    "DisplacementCruiseFuelBurn": 3.785411784,
+    "PlaningCruiseSpeed": 11,
+    "PlaningCruiseFuelBurn": 30.844096017777773,
+    "ShowerTypeCode": "shower.present_unspecified",
+    "SpecificationConfidence": {
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      },
+      "DisplacementCruiseSpeed": {
+        "Level": "Medium",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://www.boats.com/reviews/modern-classics-nordic-tug-32/"
+        ],
+        "Note": "Boats.com model review reports Nordic Tug 32 cruise around 7–8 knots at about 1 US gal/h; representative midpoint used."
+      },
+      "DisplacementCruiseFuelBurn": {
+        "Level": "Medium",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://www.boats.com/reviews/modern-classics-nordic-tug-32/"
+        ],
+        "Note": "Boats.com model review reports Nordic Tug 32 cruise around 7–8 knots at about 1 US gal/h; representative midpoint used."
+      },
+      "PlaningCruiseSpeed": {
+        "Level": "Medium",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://www.boatdesign.net/threads/help-with-economical-semi-planing-designs.16746/page-15"
+        ],
+        "Note": "Charter report for a Nordic Tug 32 records roughly 11 knots at 1.35 nautical miles per US gallon; fuel burn is derived from speed/economy and is configuration/load dependent."
+      },
+      "PlaningCruiseFuelBurn": {
+        "Level": "Medium",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://www.boatdesign.net/threads/help-with-economical-semi-planing-designs.16746/page-15"
+        ],
+        "Note": "Charter report for a Nordic Tug 32 records roughly 11 knots at 1.35 nautical miles per US gallon; fuel burn is derived from speed/economy and is configuration/load dependent."
+      }
+    }
+  },
+  {
+    "ManufacturerID": "NORDIC",
+    "Manufacturer": "Nordic Tugs",
+    "Model": "34",
+    "Variant": null,
+    "Nickname": "Nordic Tug 34",
+    "ImageURL": "images/ndtg-34.jpg",
+    "Active": false,
+    "FirstYear": 2014,
+    "LastYear": 2026,
+    "TotalBuilt": 80,
+    "Designer": "Lynn Senour",
+    "HullType": "Semi-Displacement",
+    "Style": "Tug Pilothouse",
+    "Construction": "Fiberglass",
+    "KeelType": "Full Skeg",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Single inboard diesel",
+    "Propulsion": "Shaft",
+    "Flybridge": "No",
+    "AftCabin": false,
+    "SideDecks": "Moderate",
+    "TypicalEngineID": "Single 260 hp diesel; verify year and installation",
+    "FuelCapacity": 776.0094,
+    "WaterCapacity": 378.5412,
+    "HoldingCapacity": 113.5624,
+    "Berths": 4,
+    "Cabins": 1,
+    "Heads": 1,
+    "Shower": "Enclosed head with shower",
+    "Galley": "Salon galley; equipment varies by build",
+    "CoastalRating": "Yes",
+    "OffshoreRating": "No",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "Strengths": [
+      "Factory-documented single-diesel simplicity",
+      "Excellent pilothouse visibility and practical side-door access",
+      "Efficient low-speed cruising with useful reserve speed",
+      "Compact beam and one-level salon/cockpit relationship for the class"
+    ],
+    "Weaknesses": "Premium entry cost tier, narrow companionway stepping down to forward cabin area.",
+    "CommonProblems": "Thruster battery isolation switch failures, engine exhaust elbow scaling.",
+    "TypicalMission": "Extended loop cruising networks, couples island hopping, and all-weather transits.",
+    "AvoidIf": [
+      "You need two private cabins",
+      "You want a flybridge",
+      "You require a genuinely trailerable cruising boat"
+    ],
+    "DateCreated": "2026-07-13",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "B-Atlas Nordic Tug Family Research",
+    "Revision": 4,
+    "BoatModelID": "NDTG-34",
+    "BoatFamily": "Tug",
+    "HullBehaviour": "Semi-Displacement",
+    "Features": [],
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Semi-Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Tug Cruiser",
+    "ResearchStatus": "Reviewed",
+    "DataConfidence": "Moderate",
+    "ModelSeries": "Nordic Tug 32/34 lineage",
+    "ModelGeneration": "Nordic Tug 34",
+    "ResearchNotes": "Nordic Tug family normalized 2026-08-07 using builder history and model-specific technical references.\n\nFactory archive specifications support 34 ft 11 in overall, 32 ft 8 in loaded waterline, 11 ft 4 in beam, 3 ft 8 in draft, 15,700 lb, 205 gal fuel, 100 gal water and 30 gal black water.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "Overview": "The Nordic Tug 34 is the modern successor to the long-running 32, retaining the single-cabin pilothouse layout, semi-displacement hull and single diesel shaft drive while integrating the swim platform into the published overall length. Factory specifications place it just under 35 feet overall with an 11 ft 4 in beam. It is designed primarily as an owner-operated couple cruiser capable of efficient displacement-speed travel and mid-teen speeds when required.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented pilothouse layout and accommodation are well suited to an owner-operated cruising couple, subject to individual condition and space preferences.",
+        "EvidenceRefs": [
+          "https://www.nordictugs.com/vessels",
+          "https://www.nordictugs.com/history"
+        ]
+      },
+      "SoloHandling": {
+        "Assessment": "Good",
+        "Summary": "Single-diesel propulsion, pilothouse visibility and compact dimensions support manageable owner operation; wind and docking conditions still matter.",
+        "EvidenceRefs": [
+          "https://www.nordictugs.com/vessels",
+          "https://www.nordictugs.com/history"
+        ]
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "Beam, draft and efficient low-speed operation suit many inland routes; bridge clearance must still be verified.",
+        "EvidenceRefs": [
+          "https://www.nordictugs.com/vessels",
+          "https://www.nordictugs.com/history"
+        ]
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "The semi-displacement hull and protected pilothouse support coastal use, but B-Atlas does not treat the model as an unrestricted offshore passagemaker; condition, loading and weather limits remain decisive.",
+        "EvidenceRefs": [
+          "https://www.nordictugs.com/vessels",
+          "https://www.nordictugs.com/history"
+        ]
+      }
+    },
+    "TradeOffs": [
+      "Only one private stateroom",
+      "Smaller cockpit and storage volume than larger Nordic Tugs",
+      "Single-engine maneuvering benefits from thruster assistance in wind",
+      "Purchase price and system complexity are high relative to older 32s"
+    ],
+    "BestFor": [
+      "Couples wanting a modern compact pilothouse cruiser",
+      "Great Loop and extended inland/coastal cruising",
+      "Owner-operators prioritizing efficiency, visibility and manageable dimensions"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Confirm model year, engine installation and any repower work",
+      "Inspect pilothouse windows, cabin-top and deck penetrations for moisture intrusion",
+      "Inspect fuel and water tanks, fill/vent hoses and access",
+      "Inspect exhaust, cooling, shaft, rudder and steering systems",
+      "Review electrical upgrades and owner modifications"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for confirm model year, engine installation and any repower work?",
+      "What inspection, repair or service history is available for inspect pilothouse windows, cabin-top and deck penetrations for moisture intrusion?",
+      "What inspection, repair or service history is available for inspect fuel and water tanks, fill/vent hoses and access?",
+      "What inspection, repair or service history is available for inspect exhaust, cooling, shaft, rudder and steering systems?",
+      "What inspection, repair or service history is available for review electrical upgrades and owner modifications?"
+    ],
+    "OwnerActions": [
+      "Keep pilothouse windows, deck hardware and exterior penetrations sealed and address leaks promptly",
+      "Maintain raw-water cooling, exhaust, shaft, rudder and steering systems to documented service intervals",
+      "Exercise and service bow/stern thrusters and owner-added electrical systems where fitted",
+      "Document repowers, structural repairs, tank work and electrical modifications for future buyers"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "32-to-34 evolution",
+        "Description": "Nordic Tugs describes the 34 as the evolution of the earlier 32, with integrated transom-platform length and updated interiors and systems.",
+        "AffectedYears": "2014 onward",
+        "EvidenceRefs": [
+          "https://www.nordictugs.com/history",
+          "https://www.nordictugs.com/vessels"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "NDTG-34"
+            ],
+            "Years": {
+              "From": 2014,
+              "To": 2026
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.nordictugs.com/vessels",
+            "https://www.nordictugs.com/history"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Identity, production lineage and representative specifications are supported by model-specific or builder sources; individual hull documentation remains controlling."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "NDTG-34"
+            ],
+            "Years": {
+              "From": 2014,
+              "To": 2026
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.nordictugs.com/vessels",
+            "https://www.nordictugs.com/history"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance is derived from documented configuration, hull form, propulsion, dimensions and production lineage."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "NDTG-34"
+            ],
+            "Years": {
+              "From": 2014,
+              "To": 2026
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.nordictugs.com/vessels",
+            "https://www.nordictugs.com/history",
+            "manufacturerknowledge:NORDIC:Nordic Tug Family"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance combines model-specific configuration with family and age-related risk areas; it is not an assertion that every hull has these defects."
+        },
+        {
+          "Scope": "HeadroomAndInteriorFit",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "NDTG-34"
+            ],
+            "Years": {
+              "From": 2014,
+              "To": 2026
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://marinesource.com/boat/nordic-34-2026-alameda-1d2e53521-for-sale"
+          ],
+          "EvidenceTypes": [
+            "Builder/dealer model specification"
+          ],
+          "Confidence": "High",
+          "Notes": "Current-production model specifications provide separate saloon, pilothouse and forward-cabin headroom. Values are retained by location."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Engine make and output vary by model year and order; confirm the individual hull specification",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold"
+      ]
+    },
+    "EngineCount": 1,
+    "ModelCharacter": "The evolved Nordic Tug 32 generation, retaining the same compact raised-pilothouse cruising character while integrating the transom platform and updating the interior and systems. It feels familiar rather than radically redesigned.",
+    "DesignLineage": [
+      "Nordic Tugs describes the 34 as the evolution of the earlier 32.",
+      "The lineage change incorporated an integrated transom platform and refreshed interiors.",
+      "The 34 remains the compact middle ground between the original 26 and the larger 37/39 family.",
+      "Current factory specifications continue the single-engine, full-keel, semi-displacement concept."
+    ],
+    "OwnershipCharacter": "A mature cruising-couple package with more usable length and contemporary systems than an older 32. Still relatively manageable, but dockage, systems and replacement costs move it clearly above the 26 in ownership scale.",
+    "CharacterConfidence": "High",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "RarityConfidence": "Not rated",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "PriceConfidence": "Not rated",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "FuelCode": "fuel.diesel",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "HullBehaviourCode": "hull_behaviour.semi_displacement",
+    "BoatFamilyCode": "boat_family.tug",
+    "KeelConfigurationCode": "keel.protective",
+    "RunningGearProtectionCode": "running_gear.keel_protected",
+    "LOA": 10.6426,
+    "LWL": 9.9568,
+    "Beam": 3.4544,
+    "Draft": 1.1176,
+    "Displacement": 7121.4,
+    "EnginePowerPerEngine": 193.88,
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HeadroomSalon": 1.98,
+    "HeadroomHelm": 2,
+    "HeadroomForwardCabin": 1.9,
+    "AirDraft": 3.0500000000000003,
+    "CanonicalSlug": "nordic-tugs-34",
+    "CanonicalPath": "/models/nordic-tugs-34/",
+    "CanonicalURL": "https://b-atlas.org/models/nordic-tugs-34/",
+    "StyleCode": "Tug Cruiser",
+    "CoolingCode": "cooling.fresh_water",
+    "FlybridgeCode": "availability.no",
+    "SideDecksCode": "side_decks.moderate",
+    "SpecificationConfidence": {
+      "AirDraft": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [],
+        "Note": "B-Atlas working estimate derived from nearest comparable models with similar style, size and flybridge configuration. Verify actual mast/radar/antenna clearance before route planning. Comparable model IDs: RNGR-R-31, NDTG-32, RNGR-R-29, RNGR-R-27, RNGR-27-OB, RNGR-29-CLASSIC, NDTG-26"
+      },
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      },
+      "Headroom": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Representative headroom normalized from existing location-specific canonical values: HeadroomHelm, HeadroomSalon, HeadroomForwardCabin."
+      },
+      "DisplacementCruiseSpeed": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://boattest.com/boats/nordic-tugs/nordic-tug-34-2014"
+        ],
+        "Note": "BoatTEST instrumented test, single 260-hp Yanmar: efficient displacement cruise 6.5 kn at 1.05 US gal/h (1750 rpm); representative faster semi-displacement cruise 12.1 kn at 10.2 US gal/h (3750 rpm)."
+      },
+      "DisplacementCruiseFuelBurn": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://boattest.com/boats/nordic-tugs/nordic-tug-34-2014"
+        ],
+        "Note": "BoatTEST instrumented test, single 260-hp Yanmar: efficient displacement cruise 6.5 kn at 1.05 US gal/h (1750 rpm); representative faster semi-displacement cruise 12.1 kn at 10.2 US gal/h (3750 rpm)."
+      },
+      "PlaningCruiseSpeed": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://boattest.com/boats/nordic-tugs/nordic-tug-34-2014"
+        ],
+        "Note": "BoatTEST instrumented test, single 260-hp Yanmar: efficient displacement cruise 6.5 kn at 1.05 US gal/h (1750 rpm); representative faster semi-displacement cruise 12.1 kn at 10.2 US gal/h (3750 rpm)."
+      },
+      "PlaningCruiseFuelBurn": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://boattest.com/boats/nordic-tugs/nordic-tug-34-2014"
+        ],
+        "Note": "BoatTEST instrumented test, single 260-hp Yanmar: efficient displacement cruise 6.5 kn at 1.05 US gal/h (1750 rpm); representative faster semi-displacement cruise 12.1 kn at 10.2 US gal/h (3750 rpm)."
+      }
+    },
+    "DisplacementCruiseSpeed": 6.5,
+    "DisplacementCruiseFuelBurn": 3.975,
+    "PlaningCruiseSpeed": 12.1,
+    "PlaningCruiseFuelBurn": 38.611,
+    "ShowerTypeCode": "shower.present_unspecified",
+    "Headroom": 2
+  },
+  {
+    "ManufacturerID": "NORDIC",
+    "Manufacturer": "Nordic Tugs",
+    "Model": "37",
+    "Variant": null,
+    "Nickname": "Nordic Tug 37",
+    "ImageURL": "images/ndtg-37.jpg",
+    "Active": false,
+    "FirstYear": 1998,
+    "LastYear": 2009,
+    "TotalBuilt": 220,
+    "Designer": "Lynn Senour",
+    "HullType": "Semi-Displacement",
+    "Style": "Tug Pilothouse",
+    "Construction": "Fiberglass",
+    "KeelType": "Full Skeg",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Single inboard diesel",
+    "Propulsion": "Shaft",
+    "Flybridge": "No",
+    "AftCabin": false,
+    "SideDecks": "Moderate",
+    "TypicalEngineID": "Cummins QSB",
+    "FuelCapacity": 1226.4734,
+    "WaterCapacity": 567.8118,
+    "HoldingCapacity": 151.4165,
+    "Berths": 6,
+    "Cabins": 2,
+    "Heads": 1,
+    "Shower": false,
+    "Galley": false,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "Limited",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "Strengths": [
+      "Two-stateroom accommodation in a manageable owner-operated platform",
+      "Protected pilothouse and strong side-deck access",
+      "Single-diesel efficiency with mid-teen speed capability",
+      "Established hull lineage that continued into the 39 and 40"
+    ],
+    "Weaknesses": "Engine room layout requires crawling to service outboard components.",
+    "CommonProblems": "Molded step gelcoat cracking, high-amp alternator belt wear.",
+    "TypicalMission": "Extended regional cruising, loops, and serious multi-week island hopping.",
+    "AvoidIf": [
+      "You need narrow-slip dimensions",
+      "You require twin-engine redundancy",
+      "You want compact-boat operating and haul-out costs"
+    ],
+    "DateCreated": "2026-07-13",
+    "LastUpdated": "2026-09-14",
+    "ReviewedBy": "B-Atlas Nordic Tug Family Research",
+    "Revision": 4,
+    "BoatModelID": "NDTG-37",
+    "BoatFamily": "Tug",
+    "HullBehaviour": "Semi-Displacement",
+    "Features": [],
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Semi-Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Tug Cruiser",
+    "ResearchStatus": "Reviewed",
+    "DataConfidence": "Moderate",
+    "ModelSeries": "Nordic Tug 37/39 lineage",
+    "ModelGeneration": "Nordic Tug 37",
+    "ResearchNotes": "Nordic Tug family normalized 2026-08-07 using builder history and model-specific technical references.\n\nThe 37 was introduced in the late 1990s and later evolved into the 39. Specifications and systems changed during production; verify year-specific dimensions, engine and capacities.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.\n\nv7.05 cruising-performance research: Nordic Tug 37 owner notes provide an RPM/fuel/speed table: about 8 knots at 1300 rpm burning 1.6 US gal/h. Faster-cruise context: Same owner notes report about 9.5 knots at 1800 rpm burning 4.5 US gal/h; stored as the faster semi-displacement cruise point.",
+    "Overview": "The Nordic Tug 37 introduced the builder’s midsize two-stateroom pilothouse platform in 1998. It uses a semi-displacement fiberglass hull, single diesel shaft drive, raised pilothouse and larger salon than the 32, giving a cruising couple substantially more storage and guest capability. The same basic hull later evolved into the Nordic Tug 39 and then the Nordic Tug 40.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented pilothouse layout and accommodation are well suited to an owner-operated cruising couple, subject to individual condition and space preferences.",
+        "EvidenceRefs": [
+          "https://www.nordictugs.com/history",
+          "https://www.boats.com/reviews/sea-trial-nordic-tug-37/",
+          "https://www.boats.com/reviews/first-look-at-the-new-nordic-tugs-39/"
+        ]
+      },
+      "SoloHandling": {
+        "Assessment": "Mixed",
+        "Summary": "Pilothouse visibility and side access help, but vessel size, windage and optional flybridge equipment increase docking workload.",
+        "EvidenceRefs": [
+          "https://www.nordictugs.com/history",
+          "https://www.boats.com/reviews/sea-trial-nordic-tug-37/",
+          "https://www.boats.com/reviews/first-look-at-the-new-nordic-tugs-39/"
+        ]
+      },
+      "InlandWaterways": {
+        "Assessment": "Mixed",
+        "Summary": "The hull is efficient for inland travel, but beam and air draft require route-specific verification.",
+        "EvidenceRefs": [
+          "https://www.nordictugs.com/history",
+          "https://www.boats.com/reviews/sea-trial-nordic-tug-37/",
+          "https://www.boats.com/reviews/first-look-at-the-new-nordic-tugs-39/"
+        ]
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "The semi-displacement hull and protected pilothouse support coastal use, but B-Atlas does not treat the model as an unrestricted offshore passagemaker; condition, loading and weather limits remain decisive.",
+        "EvidenceRefs": [
+          "https://www.nordictugs.com/history",
+          "https://www.boats.com/reviews/sea-trial-nordic-tug-37/",
+          "https://www.boats.com/reviews/first-look-at-the-new-nordic-tugs-39/"
+        ]
+      }
+    },
+    "TradeOffs": [
+      "Nearly 40-foot overall length once appendages are included",
+      "Single-engine docking can depend heavily on thrusters and technique",
+      "Larger systems, generator and tankage raise maintenance burden over the 32/34",
+      "Published dimensions vary slightly by production year and measurement convention"
+    ],
+    "BestFor": [
+      "Couples wanting extended-cruising comfort with guest capability",
+      "Pacific Northwest, Great Lakes and coastal cruising",
+      "Owners wanting single-engine simplicity in a substantial pilothouse boat"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Confirm model year, engine package and factory or owner-added flybridge equipment",
+      "Inspect pilothouse and saloon window sealing and surrounding structure",
+      "Moisture-test deck penetrations, cabin-top hardware and boat-deck areas",
+      "Inspect exhaust, cooling, shaft, rudder and steering systems",
+      "Inspect thrusters, generator, charging systems and owner-added electrical equipment",
+      "Verify tank condition, supports, hoses and access for future replacement"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for confirm model year, engine package and factory or owner-added flybridge equipment?",
+      "What inspection, repair or service history is available for inspect pilothouse and saloon window sealing and surrounding structure?",
+      "What inspection, repair or service history is available for moisture-test deck penetrations, cabin-top hardware and boat-deck areas?",
+      "What inspection, repair or service history is available for inspect exhaust, cooling, shaft, rudder and steering systems?",
+      "What inspection, repair or service history is available for inspect thrusters, generator, charging systems and owner-added electrical equipment?",
+      "What inspection, repair or service history is available for verify tank condition, supports, hoses and access for future replacement?"
+    ],
+    "OwnerActions": [
+      "Keep pilothouse windows, deck hardware and exterior penetrations sealed and address leaks promptly",
+      "Maintain raw-water cooling, exhaust, shaft, rudder and steering systems to documented service intervals",
+      "Exercise and service bow/stern thrusters and owner-added electrical systems where fitted",
+      "Document repowers, structural repairs, tank work and electrical modifications for future buyers"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "37 platform",
+        "Description": "Introduced in 1998; approximately 214 were built before the design was revised into the Nordic Tug 39.",
+        "AffectedYears": "1998–2009",
+        "EvidenceRefs": [
+          "https://www.nordictugs.com/history",
+          "https://www.boats.com/reviews/first-look-at-the-new-nordic-tugs-39/"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "NDTG-37"
+            ],
+            "Years": {
+              "From": 1998,
+              "To": 2009
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.nordictugs.com/history",
+            "https://www.boats.com/reviews/sea-trial-nordic-tug-37/",
+            "https://www.boats.com/reviews/first-look-at-the-new-nordic-tugs-39/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Identity, production lineage and representative specifications are supported by model-specific or builder sources; individual hull documentation remains controlling."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "NDTG-37"
+            ],
+            "Years": {
+              "From": 1998,
+              "To": 2009
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.nordictugs.com/history",
+            "https://www.boats.com/reviews/sea-trial-nordic-tug-37/",
+            "https://www.boats.com/reviews/first-look-at-the-new-nordic-tugs-39/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance is derived from documented configuration, hull form, propulsion, dimensions and production lineage."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "NDTG-37"
+            ],
+            "Years": {
+              "From": 1998,
+              "To": 2009
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.nordictugs.com/history",
+            "https://www.boats.com/reviews/sea-trial-nordic-tug-37/",
+            "https://www.boats.com/reviews/first-look-at-the-new-nordic-tugs-39/",
+            "manufacturerknowledge:NORDIC:Nordic Tug Family"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance combines model-specific configuration with family and age-related risk areas; it is not an assertion that every hull has these defects."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Representative published LOA varies around 39 feet depending on appendages; verify the individual hull",
+        "Air draft varies with mast and optional equipment",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold"
+      ]
+    },
+    "EngineCount": 1,
+    "ModelCharacter": "A substantial midsize Nordic Tug that preserves the brand's single-engine efficiency and commercial-looking pilothouse while providing true extended-cruising room. It is large enough for two couples yet remains comparatively simple mechanically.",
+    "DesignLineage": [
+      "Introduced in the late 1990s as Nordic Tugs expanded beyond the 26/32 family.",
+      "The 37 uses a solid-fiberglass semi-displacement hull with a full prop-protecting keel.",
+      "Later 37s integrated the formerly bolt-on swim step into the hull, lengthening the effective waterline.",
+      "The same family was renamed/evolved into the Nordic Tug 39 for the 2013–2015 generation."
+    ],
+    "OwnershipCharacter": "A strong fit for serious cruising couples who want space and weather protection without twin engines. Systems and displacement are substantial enough that annual maintenance and marina costs are materially higher than on the 32/34.",
+    "CharacterConfidence": "High",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "RarityConfidence": "Not rated",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "PriceConfidence": "Not rated",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "FuelCode": "fuel.diesel",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "HullBehaviourCode": "hull_behaviour.semi_displacement",
+    "BoatFamilyCode": "boat_family.tug",
+    "KeelConfigurationCode": "keel.protective",
+    "RunningGearProtectionCode": "running_gear.keel_protected",
+    "LOA": 11.8618,
+    "LWL": 11.3792,
+    "Beam": 3.937,
+    "Draft": 1.3208,
+    "Displacement": 10251.2,
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "AirDraft": 3.2,
+    "CanonicalSlug": "nordic-tugs-37",
+    "CanonicalPath": "/models/nordic-tugs-37/",
+    "CanonicalURL": "https://b-atlas.org/models/nordic-tugs-37/",
+    "StyleCode": "Tug Cruiser",
+    "CoolingCode": "cooling.fresh_water",
+    "FlybridgeCode": "availability.no",
+    "SideDecksCode": "side_decks.moderate",
+    "SpecificationConfidence": {
+      "AirDraft": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [],
+        "Note": "B-Atlas working estimate derived from nearest comparable models with similar style, size and flybridge configuration. Verify actual mast/radar/antenna clearance before route planning. Comparable model IDs: RNGR-R-31, NDTG-32, RNGR-R-29, RNGR-R-27, RNGR-27-OB, RNGR-43-S, RNGR-29-CLASSIC"
+      },
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      },
+      "DisplacementCruiseSpeed": {
+        "Level": "Medium",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://manualzz.com/doc/7447575/nordic-tug-37-kingfisher-boat-owner-s-notes"
+        ],
+        "Note": "Nordic Tug 37 owner notes provide an RPM/fuel/speed table: about 8 knots at 1300 rpm burning 1.6 US gal/h."
+      },
+      "DisplacementCruiseFuelBurn": {
+        "Level": "Medium",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://manualzz.com/doc/7447575/nordic-tug-37-kingfisher-boat-owner-s-notes"
+        ],
+        "Note": "Nordic Tug 37 owner notes provide an RPM/fuel/speed table: about 8 knots at 1300 rpm burning 1.6 US gal/h."
+      },
+      "PlaningCruiseSpeed": {
+        "Level": "Medium",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://manualzz.com/doc/7447575/nordic-tug-37-kingfisher-boat-owner-s-notes"
+        ],
+        "Note": "Same owner notes report about 9.5 knots at 1800 rpm burning 4.5 US gal/h; stored as the faster semi-displacement cruise point."
+      },
+      "PlaningCruiseFuelBurn": {
+        "Level": "Medium",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://manualzz.com/doc/7447575/nordic-tug-37-kingfisher-boat-owner-s-notes"
+        ],
+        "Note": "Same owner notes report about 9.5 knots at 1800 rpm burning 4.5 US gal/h; stored as the faster semi-displacement cruise point."
+      }
+    },
+    "DisplacementCruiseSpeed": 8,
+    "DisplacementCruiseFuelBurn": 6.0566588544,
+    "PlaningCruiseSpeed": 9.5,
+    "PlaningCruiseFuelBurn": 17.034353027999998,
+    "ShowerTypeCode": "shower.none"
+  },
+  {
+    "ManufacturerID": "NORDIC",
+    "Manufacturer": "Nordic Tugs",
+    "Model": "39",
+    "Variant": null,
+    "Nickname": "Nordic Tug 39",
+    "ImageURL": "images/ndtg-39.jpg",
+    "Active": false,
+    "FirstYear": 2010,
+    "LastYear": 2015,
+    "TotalBuilt": 45,
+    "Designer": "Lynn Senour",
+    "HullType": "Semi-Displacement",
+    "Style": "Tug Pilothouse",
+    "Construction": "Fiberglass",
+    "KeelType": "Full Skeg",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Single inboard diesel",
+    "Propulsion": "Shaft",
+    "Flybridge": "Optional",
+    "AftCabin": false,
+    "SideDecks": "Moderate",
+    "TypicalEngineID": "Cummins QSB 6.7",
+    "FuelCapacity": 1211.3318,
+    "WaterCapacity": 545.0993,
+    "HoldingCapacity": 121.1332,
+    "Berths": 6,
+    "Cabins": 2,
+    "Heads": 2,
+    "Shower": false,
+    "Galley": false,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "Limited",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "Strengths": [
+      "Improved pilothouse visibility and helm ergonomics over the 37",
+      "Two-stateroom extended-cruising layout",
+      "Efficient single-diesel propulsion with useful mid-teen performance",
+      "Large fuel and water capacity for owner-operated cruising"
+    ],
+    "Weaknesses": "Noticeable low-speed hull lean when fighting heavy crosswinds solo, heavy fuel footprint at top speed tiers.",
+    "CommonProblems": "Raw water pump seal weeping, flybridge step companionway drainage track clogs.",
+    "TypicalMission": "All-season remote passage tracking, blue water loop transits, and long-term liveaboard comfort.",
+    "AvoidIf": [
+      "You need compact marina dimensions",
+      "You require twin-engine redundancy",
+      "You need very low bridge clearance"
+    ],
+    "DateCreated": "2026-07-13",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "B-Atlas Nordic Tug Family Research",
+    "Revision": 4,
+    "BoatModelID": "NDTG-39",
+    "BoatFamily": "Tug",
+    "HullBehaviour": "Semi-Displacement",
+    "Features": [],
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Semi-Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Tug Cruiser",
+    "ResearchStatus": "Reviewed",
+    "DataConfidence": "Moderate",
+    "ResearchNotes": "Nordic Tug family normalized 2026-08-07 using builder history and model-specific technical references.\n\nSuccessor/evolution of the Nordic Tug 37 lineage. Verify year-specific specifications and equipment; B-Atlas does not treat the model as an unrestricted offshore passagemaker.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "Overview": "The Nordic Tug 39 is an evolutionary update of the 37 using the same basic hull with significant topside, pilothouse, visibility, interior and systems revisions. Published specifications show a 40-foot overall length, 12 ft 11 in beam and single diesel shaft propulsion. It is a two-stateroom cruising platform intended for owner-operated extended coastal and inland travel, with flybridge installations available on some examples.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented pilothouse layout and accommodation are well suited to an owner-operated cruising couple, subject to individual condition and space preferences.",
+        "EvidenceRefs": [
+          "https://powerandmotoryacht.com/boats/boat-tests/nordic-tug-39/?tab=boat",
+          "https://www.boats.com/reviews/first-look-at-the-new-nordic-tugs-39/",
+          "https://www.nordictugs.com/history"
+        ]
+      },
+      "SoloHandling": {
+        "Assessment": "Mixed",
+        "Summary": "Pilothouse visibility and side access help, but vessel size, windage and optional flybridge equipment increase docking workload.",
+        "EvidenceRefs": [
+          "https://powerandmotoryacht.com/boats/boat-tests/nordic-tug-39/?tab=boat",
+          "https://www.boats.com/reviews/first-look-at-the-new-nordic-tugs-39/",
+          "https://www.nordictugs.com/history"
+        ]
+      },
+      "InlandWaterways": {
+        "Assessment": "Mixed",
+        "Summary": "The hull is efficient for inland travel, but beam and air draft require route-specific verification.",
+        "EvidenceRefs": [
+          "https://powerandmotoryacht.com/boats/boat-tests/nordic-tug-39/?tab=boat",
+          "https://www.boats.com/reviews/first-look-at-the-new-nordic-tugs-39/",
+          "https://www.nordictugs.com/history"
+        ]
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "The semi-displacement hull and protected pilothouse support coastal use, but B-Atlas does not treat the model as an unrestricted offshore passagemaker; condition, loading and weather limits remain decisive.",
+        "EvidenceRefs": [
+          "https://powerandmotoryacht.com/boats/boat-tests/nordic-tug-39/?tab=boat",
+          "https://www.boats.com/reviews/first-look-at-the-new-nordic-tugs-39/",
+          "https://www.nordictugs.com/history"
+        ]
+      }
+    },
+    "TradeOffs": [
+      "Substantial beam, weight and systems increase operating and storage costs",
+      "Flybridge-equipped boats carry more windage and vertical clearance",
+      "Single-engine maneuvering benefits from working thrusters",
+      "The model had a short production life before evolving into the 40"
+    ],
+    "BestFor": [
+      "Couples wanting a two-stateroom pilothouse cruiser",
+      "Extended Great Loop, Great Lakes and coastal cruising",
+      "Owners prioritizing single-engine efficiency with modernized 37-family ergonomics"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Confirm model year, engine package and factory or owner-added flybridge equipment",
+      "Inspect pilothouse and saloon window sealing and surrounding structure",
+      "Moisture-test deck penetrations, cabin-top hardware and boat-deck areas",
+      "Inspect exhaust, cooling, shaft, rudder and steering systems",
+      "Inspect thrusters, generator, charging systems and owner-added electrical equipment",
+      "Verify tank condition, supports, hoses and access for future replacement"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for confirm model year, engine package and factory or owner-added flybridge equipment?",
+      "What inspection, repair or service history is available for inspect pilothouse and saloon window sealing and surrounding structure?",
+      "What inspection, repair or service history is available for moisture-test deck penetrations, cabin-top hardware and boat-deck areas?",
+      "What inspection, repair or service history is available for inspect exhaust, cooling, shaft, rudder and steering systems?",
+      "What inspection, repair or service history is available for inspect thrusters, generator, charging systems and owner-added electrical equipment?",
+      "What inspection, repair or service history is available for verify tank condition, supports, hoses and access for future replacement?"
+    ],
+    "OwnerActions": [
+      "Keep pilothouse windows, deck hardware and exterior penetrations sealed and address leaks promptly",
+      "Maintain raw-water cooling, exhaust, shaft, rudder and steering systems to documented service intervals",
+      "Exercise and service bow/stern thrusters and owner-added electrical systems where fitted",
+      "Document repowers, structural repairs, tank work and electrical modifications for future buyers"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "37-to-39 evolution",
+        "Description": "The 39 retained the 37 hull but received significant changes to pilothouse windows, helm, head, guest-stateroom and galley arrangements.",
+        "AffectedYears": "2010–2015",
+        "EvidenceRefs": [
+          "https://www.boats.com/reviews/first-look-at-the-new-nordic-tugs-39/"
+        ],
+        "Confidence": "High"
+      },
+      {
+        "Name": "Flybridge option",
+        "Description": "Some Nordic Tug 39s were delivered with a flybridge and boat-deck arrangement; verify air draft and tender equipment on the individual boat.",
+        "AffectedYears": "Production run",
+        "EvidenceRefs": [
+          "https://powerandmotoryacht.com/boats/boat-tests/nordic-tug-39/?tab=boat"
+        ],
+        "Confidence": "Moderate"
+      }
+    ],
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "NDTG-39"
+            ],
+            "Years": {
+              "From": 2010,
+              "To": 2015
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://powerandmotoryacht.com/boats/boat-tests/nordic-tug-39/?tab=boat",
+            "https://www.boats.com/reviews/first-look-at-the-new-nordic-tugs-39/",
+            "https://www.nordictugs.com/history"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Identity, production lineage and representative specifications are supported by model-specific or builder sources; individual hull documentation remains controlling."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "NDTG-39"
+            ],
+            "Years": {
+              "From": 2010,
+              "To": 2015
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://powerandmotoryacht.com/boats/boat-tests/nordic-tug-39/?tab=boat",
+            "https://www.boats.com/reviews/first-look-at-the-new-nordic-tugs-39/",
+            "https://www.nordictugs.com/history"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance is derived from documented configuration, hull form, propulsion, dimensions and production lineage."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "NDTG-39"
+            ],
+            "Years": {
+              "From": 2010,
+              "To": 2015
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://powerandmotoryacht.com/boats/boat-tests/nordic-tug-39/?tab=boat",
+            "https://www.boats.com/reviews/first-look-at-the-new-nordic-tugs-39/",
+            "https://www.nordictugs.com/history",
+            "manufacturerknowledge:NORDIC:Nordic Tug Family"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance combines model-specific configuration with family and age-related risk areas; it is not an assertion that every hull has these defects."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Air draft and holding capacity vary with configuration and model year; confirm individual specifications",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold"
+      ]
+    },
+    "EngineCount": 1,
+    "ModelCharacter": "The final named evolution of the Nordic Tug 37 family, using the longer integrated-transom form and refreshed accommodation while preserving the same raised-pilothouse, single-diesel cruising mission.",
+    "DesignLineage": [
+      "Powerboat Guide identifies the 37/39 as one production family, with the 37 called the 39 in 2013–2015.",
+      "Nordic Tugs' own history similarly describes the 37 as evolving into the 39.",
+      "The 39 is therefore best treated as a later generation/name within the 37 lineage rather than an unrelated hull concept.",
+      "Its core design philosophy remains single-diesel efficiency, protected running gear and pilothouse visibility."
+    ],
+    "OwnershipCharacter": "Similar ownership scale to a late Nordic Tug 37: capable, comfortable and relatively straightforward for its size, but firmly in yacht-scale dockage, systems and refit territory.",
+    "CharacterConfidence": "High",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "RarityConfidence": "Not rated",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "PriceConfidence": "Not rated",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "FuelCode": "fuel.diesel",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "HullBehaviourCode": "hull_behaviour.semi_displacement",
+    "BoatFamilyCode": "boat_family.tug",
+    "KeelConfigurationCode": "keel.protective",
+    "RunningGearProtectionCode": "running_gear.keel_protected",
+    "Beam": 3.937,
+    "Draft": 1.3208,
+    "Displacement": 10251.2,
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "LOA": 11.8618,
+    "LWL": 11.3792,
+    "AirDraft": 3.2,
+    "CanonicalSlug": "nordic-tugs-39",
+    "CanonicalPath": "/models/nordic-tugs-39/",
+    "CanonicalURL": "https://b-atlas.org/models/nordic-tugs-39/",
+    "StyleCode": "Tug Cruiser",
+    "CoolingCode": "cooling.fresh_water",
+    "FlybridgeCode": "availability.optional",
+    "SideDecksCode": "side_decks.moderate",
+    "SpecificationConfidence": {
+      "AirDraft": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [],
+        "Note": "B-Atlas working estimate derived from nearest comparable models with similar style, size and flybridge configuration. Verify actual mast/radar/antenna clearance before route planning. Comparable model IDs: DUFF-37, BENE-BAR-9, BENE-BAR-8"
+      },
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      },
+      "DisplacementCruiseSpeed": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://boattest.com/boats/nordic-tugs/nordic-tug-39-2014"
+        ],
+        "Note": "BoatTEST instrumented test, single 380-hp Cummins QSB: 7.4 kn at 1.5 US gal/h (1250 rpm) and representative faster semi-displacement cruise 15.0 kn at 14.4 US gal/h (2750 rpm)."
+      },
+      "DisplacementCruiseFuelBurn": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://boattest.com/boats/nordic-tugs/nordic-tug-39-2014"
+        ],
+        "Note": "BoatTEST instrumented test, single 380-hp Cummins QSB: 7.4 kn at 1.5 US gal/h (1250 rpm) and representative faster semi-displacement cruise 15.0 kn at 14.4 US gal/h (2750 rpm)."
+      },
+      "PlaningCruiseSpeed": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://boattest.com/boats/nordic-tugs/nordic-tug-39-2014"
+        ],
+        "Note": "BoatTEST instrumented test, single 380-hp Cummins QSB: 7.4 kn at 1.5 US gal/h (1250 rpm) and representative faster semi-displacement cruise 15.0 kn at 14.4 US gal/h (2750 rpm)."
+      },
+      "PlaningCruiseFuelBurn": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://boattest.com/boats/nordic-tugs/nordic-tug-39-2014"
+        ],
+        "Note": "BoatTEST instrumented test, single 380-hp Cummins QSB: 7.4 kn at 1.5 US gal/h (1250 rpm) and representative faster semi-displacement cruise 15.0 kn at 14.4 US gal/h (2750 rpm)."
+      },
+      "EnginePowerPerEngine": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://boattest.com/boats/nordic-tugs/nordic-tug-39-2014"
+        ],
+        "Note": "Recovered opportunistically from the same model-specific performance/test source used for v7.01 cruising-performance research."
+      },
+      "Headroom": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://boattest.com/boats/nordic-tugs/nordic-tug-39-2014"
+        ],
+        "Note": "Recovered opportunistically from the same model-specific performance/test source used for v7.01 cruising-performance research."
+      }
+    },
+    "DisplacementCruiseSpeed": 7.4,
+    "DisplacementCruiseFuelBurn": 5.678,
+    "PlaningCruiseSpeed": 15,
+    "PlaningCruiseFuelBurn": 54.51,
+    "ShowerTypeCode": "shower.none",
+    "EnginePowerPerEngine": 283.366,
+    "Headroom": 2.0066
+  },
+  {
+    "ManufacturerID": "NORDIC",
+    "Manufacturer": "Nordic Tugs",
+    "Model": "42",
+    "Variant": null,
+    "Nickname": "Nordic Tug 42",
+    "ImageURL": "images/ndtg-42-ph.jpg",
+    "Active": false,
+    "FirstYear": 1997,
+    "LastYear": 2015,
+    "TotalBuilt": 110,
+    "Designer": "Lynn Senour",
+    "HullType": "Semi-Displacement",
+    "Style": "Tug Pilothouse",
+    "Construction": "Fiberglass",
+    "KeelType": "Full Skeg",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Single inboard diesel",
+    "Propulsion": "Shaft",
+    "Flybridge": "Optional",
+    "AftCabin": false,
+    "SideDecks": "Moderate",
+    "TypicalEngineID": "Cummins QSC",
+    "FuelCapacity": 2271.2471,
+    "WaterCapacity": 757.0824,
+    "HoldingCapacity": 170.3435,
+    "Berths": 6,
+    "Cabins": 2,
+    "Heads": 2,
+    "Shower": false,
+    "Galley": false,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "Yes",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "Strengths": [
+      "Two private staterooms and two heads",
+      "Large pilothouse, salon and tankage for extended cruising",
+      "Single-diesel shaft propulsion with substantial range potential",
+      "Heavy construction and protected running gear suited to serious coastal cruising"
+    ],
+    "Weaknesses": "Decks are high off the water making solo spring-line setups difficult.",
+    "CommonProblems": "Bow thruster gear failure, primary raw water intake hose chaffing.",
+    "TypicalMission": "Long-distance ocean coastal voyaging, permanent remote cruising.",
+    "AvoidIf": [
+      "You need low bridge clearance or small-marina dimensions",
+      "You require twin-engine redundancy",
+      "You want compact ownership costs or simple systems"
+    ],
+    "DateCreated": "2026-07-10",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "B-Atlas Nordic Tug Family Research",
+    "Revision": 4,
+    "BoatModelID": "NDTG-42",
+    "BoatFamily": "Tug",
+    "HullBehaviour": "Semi-Displacement",
+    "Features": [],
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Semi-Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Tug Cruiser",
+    "ResearchStatus": "Reviewed",
+    "DataConfidence": "Moderate",
+    "ResearchNotes": "Nordic Tug family normalized 2026-08-07 using builder history and model-specific technical references.\n\nReviewed within the Nordic Tug family. Exact year-specific specifications should be confirmed from builder literature or hull documentation.\n\nIdentity normalized 2026-08-07: Pilothouse is standard Nordic Tug architecture, not a separate model variant. Legacy ID NDTG-42-PH redirects to NDTG-42.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "Overview": "The Nordic Tug 42 is the builder’s large two-stateroom pilothouse cruiser from the late 1990s through the mid-2010s. Despite the model name, representative later boats measure about 44 ft 8 in overall and use a single large diesel, shaft drive, substantial tankage and two heads. Many examples have a flybridge and boat deck; the model was replaced and refined by the Nordic Tug 44.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented pilothouse layout and accommodation are well suited to an owner-operated cruising couple, subject to individual condition and space preferences.",
+        "EvidenceRefs": [
+          "https://www.nordictugs.com/history",
+          "https://nordictug42.com/specifications/",
+          "https://nordictug42forsale.com/specifications/",
+          "https://www.greatlakesscuttlebutt.com/news/featured-news/revisiting-the-no-nonsense-nordic-tug-44-an-american-classic/"
+        ]
+      },
+      "SoloHandling": {
+        "Assessment": "Mixed",
+        "Summary": "Pilothouse visibility and side access help, but vessel size, windage and optional flybridge equipment increase docking workload.",
+        "EvidenceRefs": [
+          "https://www.nordictugs.com/history",
+          "https://nordictug42.com/specifications/",
+          "https://nordictug42forsale.com/specifications/",
+          "https://www.greatlakesscuttlebutt.com/news/featured-news/revisiting-the-no-nonsense-nordic-tug-44-an-american-classic/"
+        ]
+      },
+      "InlandWaterways": {
+        "Assessment": "Mixed",
+        "Summary": "The hull is efficient for inland travel, but beam and air draft require route-specific verification.",
+        "EvidenceRefs": [
+          "https://www.nordictugs.com/history",
+          "https://nordictug42.com/specifications/",
+          "https://nordictug42forsale.com/specifications/",
+          "https://www.greatlakesscuttlebutt.com/news/featured-news/revisiting-the-no-nonsense-nordic-tug-44-an-american-classic/"
+        ]
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "The semi-displacement hull and protected pilothouse support coastal use, but B-Atlas does not treat the model as an unrestricted offshore passagemaker; condition, loading and weather limits remain decisive.",
+        "EvidenceRefs": [
+          "https://www.nordictugs.com/history",
+          "https://nordictug42.com/specifications/",
+          "https://nordictug42forsale.com/specifications/",
+          "https://www.greatlakesscuttlebutt.com/news/featured-news/revisiting-the-no-nonsense-nordic-tug-44-an-american-classic/"
+        ]
+      }
+    },
+    "TradeOffs": [
+      "Marina, haul-out and maintenance costs are yacht-scale",
+      "Flybridge and boat-deck equipment increase windage and vertical clearance",
+      "Single large-engine propulsion lacks twin-engine redundancy",
+      "Exterior access to the flybridge on many 42s is less convenient than the later 44 interior-stair arrangement"
+    ],
+    "BestFor": [
+      "Couples planning extended cruising with regular guests",
+      "Pacific Northwest, Alaska, Great Lakes and coastal cruising",
+      "Owners wanting long-range tankage and a substantial pilothouse platform"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Confirm model year, engine package and factory or owner-added flybridge equipment",
+      "Inspect pilothouse and saloon window sealing and surrounding structure",
+      "Moisture-test deck penetrations, cabin-top hardware and boat-deck areas",
+      "Inspect exhaust, cooling, shaft, rudder and steering systems",
+      "Inspect thrusters, generator, charging systems and owner-added electrical equipment",
+      "Verify tank condition, supports, hoses and access for future replacement"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for confirm model year, engine package and factory or owner-added flybridge equipment?",
+      "What inspection, repair or service history is available for inspect pilothouse and saloon window sealing and surrounding structure?",
+      "What inspection, repair or service history is available for moisture-test deck penetrations, cabin-top hardware and boat-deck areas?",
+      "What inspection, repair or service history is available for inspect exhaust, cooling, shaft, rudder and steering systems?",
+      "What inspection, repair or service history is available for inspect thrusters, generator, charging systems and owner-added electrical equipment?",
+      "What inspection, repair or service history is available for verify tank condition, supports, hoses and access for future replacement?"
+    ],
+    "OwnerActions": [
+      "Keep pilothouse windows, deck hardware and exterior penetrations sealed and address leaks promptly",
+      "Maintain raw-water cooling, exhaust, shaft, rudder and steering systems to documented service intervals",
+      "Exercise and service bow/stern thrusters and owner-added electrical systems where fitted",
+      "Document repowers, structural repairs, tank work and electrical modifications for future buyers"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "Flybridge and non-flybridge configurations",
+        "Description": "The 42 was delivered in differing upper-deck arrangements; flybridge boats require separate assessment of bridge, boat-deck, davit and air-draft implications.",
+        "AffectedYears": "Production run",
+        "EvidenceRefs": [
+          "https://nordictug42.com/specifications/",
+          "https://nordictug42forsale.com/specifications/"
+        ],
+        "Confidence": "Moderate"
+      },
+      {
+        "Name": "42-to-44 transition",
+        "Description": "The Nordic Tug 44 replaced the 42 and retained the core concept while adding an interior staircase to the flybridge and other accommodation refinements.",
+        "AffectedYears": "Replacement around 2016",
+        "EvidenceRefs": [
+          "https://www.greatlakesscuttlebutt.com/news/featured-news/revisiting-the-no-nonsense-nordic-tug-44-an-american-classic/"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "NDTG-42-PH"
+            ],
+            "Years": {
+              "From": 1997,
+              "To": 2015
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.nordictugs.com/history",
+            "https://nordictug42.com/specifications/",
+            "https://nordictug42forsale.com/specifications/",
+            "https://www.greatlakesscuttlebutt.com/news/featured-news/revisiting-the-no-nonsense-nordic-tug-44-an-american-classic/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Identity, production lineage and representative specifications are supported by model-specific or builder sources; individual hull documentation remains controlling."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "NDTG-42-PH"
+            ],
+            "Years": {
+              "From": 1997,
+              "To": 2015
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.nordictugs.com/history",
+            "https://nordictug42.com/specifications/",
+            "https://nordictug42forsale.com/specifications/",
+            "https://www.greatlakesscuttlebutt.com/news/featured-news/revisiting-the-no-nonsense-nordic-tug-44-an-american-classic/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance is derived from documented configuration, hull form, propulsion, dimensions and production lineage."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "NDTG-42-PH"
+            ],
+            "Years": {
+              "From": 1997,
+              "To": 2015
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.nordictugs.com/history",
+            "https://nordictug42.com/specifications/",
+            "https://nordictug42forsale.com/specifications/",
+            "https://www.greatlakesscuttlebutt.com/news/featured-news/revisiting-the-no-nonsense-nordic-tug-44-an-american-classic/",
+            "manufacturerknowledge:NORDIC:Nordic Tug Family"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance combines model-specific configuration with family and age-related risk areas; it is not an assertion that every hull has these defects."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Published displacement ranges by year and loading; representative dry weight is used",
+        "Air draft changes materially with flybridge, mast and antenna configuration",
+        "Fuel capacity varies between documented examples; verify the individual hull",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold"
+      ]
+    },
+    "EngineCount": 1,
+    "ModelCharacter": "The classic large Nordic Tug: a heavily built two-stateroom pilothouse cruiser with the brand's tug profile, full-keel protection and efficient single-diesel operation, but with genuine long-range cruising and liveaboard-scale accommodation.",
+    "DesignLineage": [
+      "Introduced in the mid-to-late 1990s as Nordic Tugs moved into larger cruising yachts.",
+      "The 42 uses the same core semi-displacement, single-engine and protected-running-gear philosophy as smaller Nordic Tugs.",
+      "The 42 later evolved into the Nordic Tug 44, with the model family commonly treated together in reference guides.",
+      "The larger model added significantly more privacy, tankage and systems while retaining the brand's pilothouse identity."
+    ],
+    "OwnershipCharacter": "A serious cruising yacht rather than a simple pocket tug. The single engine reduces propulsion complexity, but size, tankage, electrical systems, heating/air-conditioning and haul-out requirements make ownership materially more demanding.",
+    "CharacterConfidence": "High",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "RarityConfidence": "Not rated",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "PriceConfidence": "Not rated",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "FuelCode": "fuel.diesel",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "HullBehaviourCode": "hull_behaviour.semi_displacement",
+    "BoatFamilyCode": "boat_family.tug",
+    "KeelConfigurationCode": "keel.protective",
+    "RunningGearProtectionCode": "running_gear.keel_protected",
+    "LOA": 13.6144,
+    "LWL": 11.684,
+    "Beam": 4.2164,
+    "Draft": 1.397,
+    "Displacement": 14242.8,
+    "Headroom": 1.9812,
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "AirDraft": 3.2,
+    "CanonicalSlug": "nordic-tugs-42",
+    "CanonicalPath": "/models/nordic-tugs-42/",
+    "CanonicalURL": "https://b-atlas.org/models/nordic-tugs-42/",
+    "StyleCode": "Tug Cruiser",
+    "CoolingCode": "cooling.fresh_water",
+    "FlybridgeCode": "availability.optional",
+    "SideDecksCode": "side_decks.moderate",
+    "SpecificationConfidence": {
+      "AirDraft": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [],
+        "Note": "B-Atlas working estimate derived from nearest comparable models with similar style, size and flybridge configuration. Verify actual mast/radar/antenna clearance before route planning. Comparable model IDs: DUFF-37, BENE-BAR-9, BENE-BAR-8"
+      },
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      },
+      "DisplacementCruiseSpeed": {
+        "Level": "Medium",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://boattest.com/boats/nordic-tugs/nordic-tug-42-2009"
+        ],
+        "Note": "Nordic Tugs factory-reported typical range summarized by BoatTEST: about 1,700 nm at 8 kn, approximately 3.15 nmpg. Fuel burn is derived from stated economy; no instrumented faster-cruise point was available."
+      },
+      "DisplacementCruiseFuelBurn": {
+        "Level": "Medium",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://boattest.com/boats/nordic-tugs/nordic-tug-42-2009"
+        ],
+        "Note": "Nordic Tugs factory-reported typical range summarized by BoatTEST: about 1,700 nm at 8 kn, approximately 3.15 nmpg. Fuel burn is derived from stated economy; no instrumented faster-cruise point was available."
+      },
+      "EnginePowerPerEngine": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://boattest.com/boats/nordic-tugs/nordic-tug-42-2009"
+        ],
+        "Note": "Recovered opportunistically from the same model-specific performance/test source used for v7.01 cruising-performance research."
+      }
+    },
+    "DisplacementCruiseSpeed": 8,
+    "DisplacementCruiseFuelBurn": 9.614,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "ShowerTypeCode": "shower.none",
+    "EnginePowerPerEngine": 402.6779
+  },
+  {
+    "ManufacturerID": "NORTH",
+    "Manufacturer": "North Pacific",
+    "Model": "28 Pilothouse",
+    "Variant": "Pilothouse",
+    "Nickname": "North Pacific 28 Pilothouse",
+    "ImageURL": "images/npac-28.jpg",
+    "Active": false,
+    "FirstYear": 2009,
+    "LastYear": 2012,
+    "TotalBuilt": 45,
+    "Designer": "Karl Stambaugh",
+    "HullType": "Semi-Displacement",
+    "Style": "Pilothouse Trawler",
+    "Construction": "Fiberglass",
+    "KeelType": "Full Skeg",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Single 130 hp Cummins QSD diesel",
+    "Propulsion": "Shaft",
+    "Flybridge": "Yes",
+    "AftCabin": false,
+    "SideDecks": "Moderate",
+    "TypicalEngineID": "Cummins QSD 2.0 150 hp",
+    "FuelCapacity": 378.54,
+    "WaterCapacity": 189.27,
+    "HoldingCapacity": 94.6353,
+    "Berths": 4,
+    "Cabins": 1,
+    "Heads": 1,
+    "Shower": true,
+    "Galley": true,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "No",
+    "GreatLoopSuitable": true,
+    "Trailerable": true,
+    "Strengths": [
+      "Practical machinery access and owner-oriented systems",
+      "Single-diesel economy with enclosed lower-helm protection",
+      "Low-maintenance exterior compared with teak-heavy traditional trawlers"
+    ],
+    "Weaknesses": "Compact machinery access and accommodations require careful crew-fit testing; trailering remains a heavy-duty undertaking despite the legal-width beam.",
+    "CommonProblems": "Inspect cooling and exhaust systems, shaft and rudder gear, trim-tab hydraulics, glazing and deck penetrations, and confirm trailer condition and actual loaded towing weight.",
+    "TypicalMission": "Couple cruising on inland waterways and protected coasts, with seasonal relocation by road where tow equipment and launch facilities are suitable.",
+    "AvoidIf": [
+      "You require twin-engine propulsion redundancy",
+      "You want high-speed planing performance",
+      "You need broad dealer-network support for a high-volume production brand"
+    ],
+    "DateCreated": "2026-07-13",
+    "LastUpdated": "2026-09-12",
+    "ReviewedBy": "B-Atlas Phase 8C-10 Traditional Trawler Family Research",
+    "Revision": "4",
+    "BoatModelID": "NPAC-28",
+    "BoatFamily": "Trawler",
+    "Configuration": "Pilothouse Trawler",
+    "HullBehaviour": "Semi-Displacement",
+    "Features": [],
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Semi-Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Trawler",
+    "ResearchNotes": "First NP28 hull delivered in 2009. Period North Pacific-hosted tests report approximately 27'10\" hull length and 31' overall including appendages, 8'6\" beam, 2'–2'5\" draft, 8,000–8,400 lb dry, 100 gal fuel, 50 gal water and single 130–150 hp Cummins QSD. B-Atlas uses the 31 ft overall cruising dimension. A reliable production end year was not established and therefore remains unknown. Batch 10: published LWL and bridge clearance promoted. Draft is now explicitly unresolved because two factory-hosted period tests conflict. Fuel/water are verified U.S.-gallon values; holding capacity conflicts at 20 versus 25 gal.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "DataConfidence": "Moderate",
+    "ResearchStatus": "Reviewed",
+    "Overview": "The North Pacific 28 Pilothouse is a China-built cruising trawler developed around practical owner operation, low-maintenance exterior surfaces and warm wood interiors. The 28 is a compact pilothouse design aimed at trailerable-style cruising, while the 38 Sedan is a substantially larger Europa-style long-range coastal cruiser.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented layout and cruising systems are well suited to a cruising couple, with guest capacity varying by model."
+      },
+      "SoloHandling": {
+        "Assessment": "Mixed",
+        "Summary": "Protected helms and deck access can support short-handed operation, but displacement, windage, engine arrangement and docking equipment vary materially by model."
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "Route suitability depends on beam, draft and actual air draft; larger models may face marina and lock constraints."
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "Hull form and construction support the documented cruising role, but condition, loading, weather and individual configuration remain decisive."
+      }
+    },
+    "TradeOffs": [
+      "Limited production makes brokerage availability uneven",
+      "Single-engine propulsion provides no second-engine redundancy",
+      "The 38 requires conventional yacht-scale marina and haul-out infrastructure"
+    ],
+    "BestFor": [
+      "Couples wanting practical pilothouse or sedan cruising",
+      "Owners prioritizing economy, systems access and low exterior maintenance",
+      "Protected-water and coastal cruisers who value single-diesel simplicity"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Verify exact hull year and factory equipment list",
+      "Inspect windows, deck hardware and cored structures for leakage",
+      "Inspect single-diesel cooling, exhaust, shaft, rudder and fuel systems",
+      "Review thruster, inverter/charger, heating and electrical installations",
+      "Confirm tank capacities and weight from hull-specific documentation"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for verify exact hull year and factory equipment list?",
+      "What inspection, repair or service history is available for inspect windows, deck hardware and cored structures for leakage?",
+      "What inspection, repair or service history is available for inspect single-diesel cooling, exhaust, shaft, rudder and fuel systems?",
+      "What inspection, repair or service history is available for review thruster, inverter/charger, heating and electrical installations?",
+      "What inspection, repair or service history is available for confirm tank capacities and weight from hull-specific documentation?"
+    ],
+    "OwnerActions": [
+      "Keep deck, window and hardware penetrations sealed and investigate leaks promptly",
+      "Service propulsion, cooling, exhaust, steering and fuel systems to documented intervals",
+      "Document structural, tank, electrical and machinery repairs for future buyers"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "28 versus 38 mission difference",
+        "Description": "The NP28 is a compact pilothouse pocket trawler; the NP38 Sedan is a larger Europa-style cruiser with substantially greater displacement and tankage.",
+        "AffectedYears": "Model-specific",
+        "EvidenceRefs": [
+          "https://northpacificyachts.com/news/"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "NPAC-28"
+            ],
+            "Years": {
+              "From": 2009,
+              "To": 2012
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://northpacificyachts.com/news/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Representative identity and specifications are based on manufacturer, owner-association or model-specific technical references; hull-specific differences remain explicit."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "NPAC-28"
+            ],
+            "Years": {
+              "From": 2009,
+              "To": 2012
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://northpacificyachts.com/news/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance is derived from documented configuration, dimensions, propulsion and intended use rather than sales language."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "NPAC-28"
+            ],
+            "Years": {
+              "From": 2009,
+              "To": 2012
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://northpacificyachts.com/news/"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance identifies systems and age/configuration risks to inspect; it is not an assertion that every hull has a defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Published overall-length conventions vary because the 28-foot design includes swim platform and bow appendages.",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "EngineCount": 1,
+    "ModelCharacter": "A purpose-built pocket trawler that combines a legal-width 8'6\" beam, raised pilothouse, warm teak interior and single Cummins shaft drive in a genuinely transportable package. It cruises efficiently at 6–8 knots but uses a modified semi-displacement version of Karl Stambaugh's original full-displacement concept to reach roughly 10–13 knots when needed.",
+    "DesignLineage": [
+      "North Pacific Yachts was founded in 2004 by John and Trevor Brice; the 28 became the company's third model.",
+      "Trevor Brice developed the NP28 after seeing Karl Stambaugh's Trailer Trawler 28 concept in Passagemaker in 2007.",
+      "Stambaugh's original concept was full displacement; North Pacific modified the hull slightly to semi-displacement to increase maximum speed.",
+      "The first China-built NP28 hull arrived in 2009, establishing a distinct compact branch below North Pacific's larger pilothouse and sedan cruisers."
+    ],
+    "OwnershipCharacter": "A strong owner-operator design with single-shaft diesel propulsion, bow thruster, excellent machinery access for the size and little exterior wood. Trailerability is real in beam, but total rig weight, length and height demand serious tow equipment rather than casual SUV trailering.",
+    "CharacterConfidence": "High",
+    "DisplacementLb": 8400,
+    "FuelCapacityGal": 100,
+    "WaterCapacityGal": 50,
+    "NormalizedHullType": "Semi-Displacement",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "RarityConfidence": "Not rated",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "PriceConfidence": "Not rated",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "BoatFamilyCode": "boat_family.trawler",
+    "HullBehaviourCode": "hull_behaviour.semi_displacement",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "FuelCode": "fuel.diesel",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "KeelConfigurationCode": "keel.full_long",
+    "RunningGearProtectionCode": "running_gear.keel_protected",
+    "LOA": 9.4488,
+    "Beam": 2.5908,
+    "Draft": 0.7376,
+    "Displacement": 3810.2,
+    "FlybridgeCode": "availability.no",
+    "FuelCapacityUnitStatus": "canonical_litres",
+    "WaterCapacityUnitStatus": "canonical_litres",
+    "HoldingCapacityUnitStatus": "canonical_litres",
+    "LWL": 8.077200000000001,
+    "AirDraft": 3.5814000000000004,
+    "PlanCriticalStatus": {
+      "Draft": "researched_unknown"
+    },
+    "CanonicalSlug": "north-pacific-28-pilothouse-pilothouse",
+    "CanonicalPath": "/models/north-pacific-28-pilothouse-pilothouse/",
+    "CanonicalURL": "https://b-atlas.org/models/north-pacific-28-pilothouse-pilothouse/",
+    "StyleCode": "Trawler",
+    "CoolingCode": "cooling.fresh_water",
+    "SideDecksCode": "side_decks.moderate",
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "SpecificationConfidence": {
+      "HoldingCapacity": {
+        "Level": "High",
+        "Status": "supported",
+        "EvidenceRefs": [
+          "https://northpacificyachts.com/wp-content/uploads/2024/11/NPY-28-Pacific-Yachting-Jan-2010.pdf"
+        ],
+        "Note": "Pacific Yachting test specification lists 25 US gal holding capacity."
+      },
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      }
+    },
+    "ShowerTypeCode": "shower.present_unspecified"
+  },
+  {
+    "ManufacturerID": "NORTH",
+    "Manufacturer": "North Pacific",
+    "Model": "38 Sedan",
+    "Variant": "Europa Sedan",
+    "Nickname": "North Pacific 38 Sedan",
+    "ImageURL": "images/npac-38.jpg",
+    "Active": false,
+    "FirstYear": 2012,
+    "LastYear": 2015,
+    "TotalBuilt": 65,
+    "Designer": "Trevor Brigham",
+    "HullType": "Semi-Displacement",
+    "Style": "Pilothouse Trawler",
+    "Construction": "Fiberglass",
+    "KeelType": "Full Skeg",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Single 250 hp Cummins QSB 6.7 diesel",
+    "Propulsion": "Shaft",
+    "Flybridge": "Yes",
+    "AftCabin": false,
+    "SideDecks": "Wide",
+    "TypicalEngineID": "Cummins QSB 5.9",
+    "FuelCapacity": 1324.8941,
+    "WaterCapacity": 757.082,
+    "HoldingCapacity": 151.4165,
+    "Berths": 6,
+    "Cabins": 2,
+    "Heads": 1,
+    "Shower": false,
+    "Galley": false,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "Limited",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "Strengths": [
+      "Practical machinery access and owner-oriented systems",
+      "Single-diesel economy with enclosed lower-helm protection",
+      "Low-maintenance exterior compared with teak-heavy traditional trawlers"
+    ],
+    "Weaknesses": "Deep vertical profile creates prominent sail area windage when docking, heavy hull demands active thruster deployment.",
+    "CommonProblems": "Dripless shaft log seal early weeping, forward deck stanchion backing plate minor moisture tracking.",
+    "TypicalMission": "Long-term liveaboard comfort, complete Great Loop navigation transits, and reliable coastal tracking.",
+    "AvoidIf": [
+      "You require twin-engine propulsion redundancy",
+      "You want high-speed planing performance",
+      "You need broad dealer-network support for a high-volume production brand"
+    ],
+    "DateCreated": "2026-07-13",
+    "LastUpdated": "2026-09-12",
+    "ReviewedBy": "B-Atlas Phase 8C-10 Traditional Trawler Family Research",
+    "Revision": "3",
+    "BoatModelID": "NPAC-38",
+    "BoatFamily": "Trawler",
+    "Configuration": "Pilothouse Trawler",
+    "HullBehaviour": "Semi-Displacement",
+    "Features": [
+      "Flybridge",
+      "Wide Side Decks"
+    ],
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Semi-Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Trawler",
+    "DataConfidence": "Moderate",
+    "ResearchStatus": "Reviewed",
+    "Overview": "The North Pacific 38 Sedan is a China-built cruising trawler developed around practical owner operation, low-maintenance exterior surfaces and warm wood interiors. The 28 is a compact pilothouse design aimed at trailerable-style cruising, while the 38 Sedan is a substantially larger Europa-style long-range coastal cruiser.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented layout and cruising systems are well suited to a cruising couple, with guest capacity varying by model."
+      },
+      "SoloHandling": {
+        "Assessment": "Mixed",
+        "Summary": "Protected helms and deck access can support short-handed operation, but displacement, windage, engine arrangement and docking equipment vary materially by model."
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "Route suitability depends on beam, draft and actual air draft; larger models may face marina and lock constraints."
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "Hull form and construction support the documented cruising role, but condition, loading, weather and individual configuration remain decisive."
+      }
+    },
+    "TradeOffs": [
+      "Limited production makes brokerage availability uneven",
+      "Single-engine propulsion provides no second-engine redundancy",
+      "The 38 requires conventional yacht-scale marina and haul-out infrastructure"
+    ],
+    "BestFor": [
+      "Couples wanting practical pilothouse or sedan cruising",
+      "Owners prioritizing economy, systems access and low exterior maintenance",
+      "Protected-water and coastal cruisers who value single-diesel simplicity"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Verify exact hull year and factory equipment list",
+      "Inspect windows, deck hardware and cored structures for leakage",
+      "Inspect single-diesel cooling, exhaust, shaft, rudder and fuel systems",
+      "Review thruster, inverter/charger, heating and electrical installations",
+      "Confirm tank capacities and weight from hull-specific documentation"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for verify exact hull year and factory equipment list?",
+      "What inspection, repair or service history is available for inspect windows, deck hardware and cored structures for leakage?",
+      "What inspection, repair or service history is available for inspect single-diesel cooling, exhaust, shaft, rudder and fuel systems?",
+      "What inspection, repair or service history is available for review thruster, inverter/charger, heating and electrical installations?",
+      "What inspection, repair or service history is available for confirm tank capacities and weight from hull-specific documentation?"
+    ],
+    "OwnerActions": [
+      "Keep deck, window and hardware penetrations sealed and investigate leaks promptly",
+      "Service propulsion, cooling, exhaust, steering and fuel systems to documented intervals",
+      "Document structural, tank, electrical and machinery repairs for future buyers"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "28 versus 38 mission difference",
+        "Description": "The NP28 is a compact pilothouse pocket trawler; the NP38 Sedan is a larger Europa-style cruiser with substantially greater displacement and tankage.",
+        "AffectedYears": "Model-specific",
+        "EvidenceRefs": [
+          "https://northpacificyachts.com/news/"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "NPAC-38"
+            ],
+            "Years": {
+              "From": 2012,
+              "To": 2015
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://northpacificyachts.com/news/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Representative identity and specifications are based on manufacturer, owner-association or model-specific technical references; hull-specific differences remain explicit."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "NPAC-38"
+            ],
+            "Years": {
+              "From": 2012,
+              "To": 2015
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://northpacificyachts.com/news/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance is derived from documented configuration, dimensions, propulsion and intended use rather than sales language."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "NPAC-38"
+            ],
+            "Years": {
+              "From": 2012,
+              "To": 2015
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://northpacificyachts.com/news/"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance identifies systems and age/configuration risks to inspect; it is not an assertion that every hull has a defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "EngineCount": 1,
+    "ResearchNotes": "First North American NP38 Sedan delivered in January 2010. Canadian Yachting's 2013 test reports 41'6\" LOA, 12'9\" beam, 4' draft, 24,000 lb, 350 gal fuel, 200 gal water and single Cummins QSB. Later brokerage records sometimes report 42'6\" overall, likely reflecting appendage measurement; B-Atlas retains the contemporary published 41'6\" specification. Production end year remains unforced. Batch 10: unsupported LWL and air-draft shadows cleared. Water capacity is treated as hull/configuration-dependent because period evidence supports both 200- and 300-gallon installations.\n\nCruising Performance Research Wave 3 / core cleanup v6.96 (2026-09-13).\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "ModelCharacter": "A traditional Europa-style sedan trawler interpreted through North Pacific's modern semi-displacement construction: one-level salon/galley/lower helm, covered walkaround decks, large cockpit, command bridge and a single protected Cummins diesel intended for economical long-distance coastal cruising.",
+    "DesignLineage": [
+      "The first North Pacific 38 Sedan was delivered to North America in early 2010.",
+      "The 38 was created after owner feedback requested a salon, galley and helm on one level plus covered walkaround side decks.",
+      "North Pacific openly credited classic CHB sedan trawlers as inspiration, while giving the 38 a larger beam, longer hull and modern fiberglass construction.",
+      "The 38 uses a new mold but draws its semi-displacement hull philosophy from the company's earlier North Pacific 39 and 43 pilothouse models."
+    ],
+    "OwnershipCharacter": "Designed for hands-on cruising couples: wide protected decks, single diesel, accessible systems and substantial tankage reduce operational stress. It is nevertheless a 24,000-pound yacht with flybridge, heating, thrusters and significant hotel systems, so annual ownership is materially beyond pocket-trawler scale.",
+    "CharacterConfidence": "High",
+    "DisplacementLb": 24000,
+    "FuelCapacityGal": 350,
+    "WaterCapacityGal": null,
+    "NormalizedHullType": "Semi-Displacement",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "RarityConfidence": "Not rated",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "PriceConfidence": "Not rated",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "BoatFamilyCode": "boat_family.trawler",
+    "HullBehaviourCode": "hull_behaviour.semi_displacement",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "FuelCode": "fuel.diesel",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "KeelConfigurationCode": "keel.protective",
+    "RunningGearProtectionCode": "running_gear.keel_protected",
+    "LOA": 12.6492,
+    "Beam": 3.8862,
+    "Draft": 1.2192,
+    "Displacement": 10886.2,
+    "EnginePowerPerEngine": 186.42,
+    "FlybridgeCode": "availability.yes",
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "AirDraft": 4.55,
+    "CanonicalSlug": "north-pacific-38-sedan-europa-sedan",
+    "CanonicalPath": "/models/north-pacific-38-sedan-europa-sedan/",
+    "CanonicalURL": "https://b-atlas.org/models/north-pacific-38-sedan-europa-sedan/",
+    "StyleCode": "Trawler",
+    "CoolingCode": "cooling.fresh_water",
+    "SideDecksCode": "side_decks.wide",
+    "SpecificationConfidence": {
+      "AirDraft": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [],
+        "Note": "B-Atlas working estimate derived from nearest comparable models with similar style, size and flybridge configuration. Verify actual mast/radar/antenna clearance before route planning. Comparable model IDs: ISGY-40, UNIV-40-TR, GRBK-42-CL, GULF-43-TR, MNSH-34-TR, ISGY-44, GULF-44-MC"
+      },
+      "WaterCapacity": {
+        "Level": "High",
+        "Status": "supported",
+        "EvidenceRefs": [
+          "https://www.canadianyachting.ca/images/PDF/CYE_May2013-1.pdf",
+          "https://yachtr.com/42-north_pacific-2011-2841159/"
+        ],
+        "Note": "Canadian Yachting review specifies 200 US gal water for the North Pacific 38 Sedan; later individual boats can carry different tank arrangements, including 200-300 gal examples."
+      },
+      "LWL": {
+        "Level": "Low",
+        "Status": "estimated_family_ratio",
+        "EvidenceRefs": [],
+        "Note": "Working LWL estimate derived from the median LWL/LOA ratio (0.855) of other B-Atlas North Pacific models with recorded waterline lengths. Intended for hull-speed context and community verification, not survey use."
+      },
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      }
+    },
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "LWL": 10.813,
+    "ShowerTypeCode": "shower.none"
+  },
+  {
+    "ManufacturerID": "OCEA",
+    "Manufacturer": "Oceania Yachts",
+    "Model": "36 Sedan",
+    "Variant": "Sedan Trawler",
+    "Nickname": "Oceania 36 Sedan",
+    "ImageURL": "images/boat-placeholder.svg",
+    "Active": false,
+    "FirstYear": 1980,
+    "LastYear": null,
+    "TotalBuilt": 150,
+    "Designer": "Ed Monk Jr.",
+    "HullType": "Semi-Displacement",
+    "Style": "Flybridge Sedan",
+    "Construction": "Fiberglass",
+    "KeelType": "Full Length",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Single Ford Lehman 120 hp diesel",
+    "Propulsion": "Shaft",
+    "Flybridge": "Yes",
+    "AftCabin": false,
+    "SideDecks": "Wide",
+    "TypicalEngineID": "Ford Lehman 120",
+    "FuelCapacity": 1135.62,
+    "WaterCapacity": 567.81,
+    "HoldingCapacity": 151.42,
+    "Berths": 5,
+    "Cabins": 2,
+    "Heads": 1,
+    "Shower": false,
+    "Galley": false,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "Limited",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "Strengths": [
+      "Traditional teak interior and practical flybridge-sedan layout",
+      "Twin-diesel shaft propulsion provides maneuvering redundancy",
+      "Ocean Alexander developed a strong reputation for fit and finish among Taiwan builders"
+    ],
+    "Weaknesses": "Demanding maintenance schedule for extensive exterior structural brightwork, tight engine workspace access lines between blocks.",
+    "CommonProblems": "Mild steel fuel tank base seam corrosion, flybridge control station secondary steering pressure drops.",
+    "TypicalMission": "Extended family weekend coastal cruising and reliable inland waterway looping.",
+    "AvoidIf": [
+      "You require fully documented factory specifications before purchase",
+      "You prefer single-engine economy and simplicity",
+      "You want low-maintenance modern construction details"
+    ],
+    "DateCreated": "2026-07-13",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "B-Atlas Phase 8C-11 Classic Taiwanese / Older Motoryacht Research",
+    "Revision": 2,
+    "BoatModelID": "OCEA-36-SE",
+    "HullBehaviour": "Semi-Displacement",
+    "Features": [
+      "Flybridge",
+      "Wide Side Decks"
+    ],
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Semi-Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Cruiser",
+    "DataConfidence": "Low",
+    "ResearchStatus": "Reviewed",
+    "Overview": "The Ocean Alexander 36 Sedan is an early Taiwan-built flybridge sedan cruiser associated with Alexander Marine's better-finished motoryacht tradition. The recorded layout emphasizes teak interior joinery, twin-diesel shaft propulsion and coastal cruising, but early small-model documentation is less complete than for later Ocean Alexander ranges.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented cruising layout is practical for a couple; guest capacity and privacy vary by model."
+      },
+      "SoloHandling": {
+        "Assessment": "Mixed",
+        "Summary": "Lower-helm access and protected decks can help short-handed operation, but windage, engine count and docking equipment remain hull-specific."
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "Route fit depends on actual beam, draft and air draft; verify bridge and marina limits for the individual boat."
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "Condition, loading and actual hull configuration are decisive; this assessment reflects documented design intent rather than an offshore guarantee."
+      }
+    },
+    "TradeOffs": [
+      "Early-model documentation and standard specifications are incomplete",
+      "Twin machinery and aging systems increase maintenance burden",
+      "Individual boats can differ materially after decades of refits"
+    ],
+    "BestFor": [
+      "Buyers seeking a traditional Northwest-style twin-diesel sedan",
+      "Coastal cruising couples wanting lower and upper helm positions",
+      "Owners willing to verify an uncommon early model carefully"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Confirm exact model, year and builder plate before relying on marketplace naming",
+      "Inspect decks, windows, flybridge and rail penetrations for moisture",
+      "Inspect tanks, wiring, plumbing, generator and HVAC installations",
+      "Inspect twin diesels, exhaust, cooling, shafts and steering",
+      "Verify hull-specific air draft, displacement and tankage"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for confirm exact model, year and builder plate before relying on marketplace naming?",
+      "What inspection, repair or service history is available for inspect decks, windows, flybridge and rail penetrations for moisture?",
+      "What inspection, repair or service history is available for inspect tanks, wiring, plumbing, generator and HVAC installations?",
+      "What inspection, repair or service history is available for inspect twin diesels, exhaust, cooling, shafts and steering?",
+      "What inspection, repair or service history is available for verify hull-specific air draft, displacement and tankage?"
+    ],
+    "OwnerActions": [
+      "Keep deck, window and hardware penetrations sealed and investigate leaks promptly",
+      "Maintain propulsion, cooling, exhaust, steering and fuel systems to documented intervals",
+      "Document structural, tank, electrical and machinery repairs for future buyers"
+    ],
+    "ModelVariations": [],
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Partial",
+      "EvidenceQuality": "Low",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "OCEA-36-SE"
+            ],
+            "Years": {
+              "From": 1981,
+              "To": 1993
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/ocean-alexander",
+            "https://ca.boats.com/power-boats/1986-ocean-alexander-39-sedan-10098720/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Representative identity and specifications use model-specific references where available; unresolved production or hull differences remain explicit."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "OCEA-36-SE"
+            ],
+            "Years": {
+              "From": 1981,
+              "To": 1993
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/ocean-alexander",
+            "https://ca.boats.com/power-boats/1986-ocean-alexander-39-sedan-10098720/"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Guidance is derived from documented configuration and design traits, not marketplace promotion."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "OCEA-36-SE"
+            ],
+            "Years": {
+              "From": 1981,
+              "To": 1993
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/ocean-alexander",
+            "https://ca.boats.com/power-boats/1986-ocean-alexander-39-sedan-10098720/"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection items are age/configuration risks to investigate and are not assertions that every hull has the defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "The 36 Sedan identity remains weakly documented in the current research set and should be treated as provisional pending stronger model-specific evidence.",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "EngineCount": 1,
+    "ResearchNotes": "Canonical identity correction 2026-08-07: former OCEA-36-SE 'Ocean Alexander 36 Sedan' reclassified as OCEA-36-SE Oceania 36 Sedan. Canadian Yachting's September 1980 test directly documents the Oceania marque, Donaldson Yacht Sales importation, 35'6\" hull length and 38'6\" published overall length, 12'2\"–12'6\" beam depending on text/spec box, 19,000 lb displacement, 300 gal fuel, 150 gal water and single Ford Lehman 120. B-Atlas uses the published 38.5 ft overall figure and preserves the source variation in notes.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "ModelCharacter": "A Canadian-market Taiwan-built sedan trawler from 1980, combining broad covered walkaround decks, an unusually teak-rich interior and a single Ford Lehman diesel in a roomy 36-foot cruising package. It is a separate Oceania Yachts identity, not an Ocean Alexander model.",
+    "DesignLineage": [
+      "Canadian Yachting tested the first Oceania 36 Sedan imported to Canada in 1980 by Donaldson Yacht Sales of Port Credit, Ontario.",
+      "The boat was marketed under the Oceania Yachts name as part of a range of Oriental trawlers; available companion configurations included aft-cabin styles.",
+      "Its U.S.-origin design and Taiwan construction reflect the broad late-1970s/early-1980s trawler-import market rather than Ocean Alexander's documented model lineage.",
+      "B-Atlas corrected the prior Ocean Alexander attribution because exact-model research found no credible historical Ocean Alexander 36 Sedan, while contemporary documentation clearly establishes the Oceania 36 Sedan."
+    ],
+    "OwnershipCharacter": "Single-engine simplicity and excellent sheltered deck circulation make the boat attractive for slow cruising. Extensive teak, vintage deckhouse construction, old tanks/windows and the rarity of the Oceania marque make condition and prior restoration more important than model-specific parts availability.",
+    "CharacterConfidence": "High",
+    "DisplacementLb": 19000,
+    "FuelCapacityGal": 300,
+    "WaterCapacityGal": 150,
+    "NormalizedHullType": "Semi-Displacement",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "RarityConfidence": "Not rated",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "PriceConfidence": "Not rated",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "BoatFamilyCode": "boat_family.trawler",
+    "HullBehaviourCode": "hull_behaviour.semi_displacement",
+    "FuelCode": "fuel.diesel",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "LOA": 11.7348,
+    "Beam": 3.81,
+    "Draft": 1.0668,
+    "Displacement": 8618.3,
+    "EnginePowerPerEngine": 89.48,
+    "FlybridgeCode": "availability.yes",
+    "HullLength": 10.8204,
+    "KeelConfigurationCode": "keel.full_long",
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityGal": 40,
+    "AirDraft": 4.3,
+    "CanonicalSlug": "oceania-yachts-36-sedan-sedan-trawler",
+    "CanonicalPath": "/models/oceania-yachts-36-sedan-sedan-trawler/",
+    "CanonicalURL": "https://b-atlas.org/models/oceania-yachts-36-sedan-sedan-trawler/",
+    "StyleCode": "Cruiser",
+    "CoolingCode": "cooling.fresh_water",
+    "SideDecksCode": "side_decks.wide",
+    "SpecificationConfidence": {
+      "AirDraft": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [],
+        "Note": "B-Atlas working estimate derived from nearest comparable models with similar style, size and flybridge configuration. Verify actual mast/radar/antenna clearance before route planning. Comparable model IDs: MERI-381-SE, BAYL-3888-MO, CUTW-32, TOLL-37-SE, MNSH-350-TR, MNSH-390-TR, CARV-36-MAR"
+      },
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing propulsion/keel description; no new factual assertion introduced."
+      }
+    },
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "ShowerTypeCode": "shower.none",
+    "RunningGearProtectionCode": "running_gear.keel_protected"
+  },
+  {
+    "ManufacturerID": "OCEAN",
+    "Manufacturer": "Ocean Alexander",
+    "Model": "39 Sedan",
+    "Variant": "Flybridge Sedan",
+    "Nickname": "Ocean Alexander 39 Sedan",
+    "ImageURL": "images/boat-placeholder.svg",
+    "Active": false,
+    "FirstYear": 1984,
+    "LastYear": 1994,
+    "TotalBuilt": 120,
+    "Designer": "Ed Monk / early Ocean Alexander attribution; verify by hull",
+    "HullType": "Semi-Displacement",
+    "Style": "Flybridge Sedan",
+    "Construction": "Fiberglass",
+    "KeelType": "Full Length",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Twin Inboard",
+    "Propulsion": "Shaft",
+    "Flybridge": "Yes",
+    "AftCabin": false,
+    "SideDecks": "Wide",
+    "TypicalEngineID": "Caterpillar 3208",
+    "FuelCapacity": 1514.1647,
+    "WaterCapacity": 605.6659,
+    "HoldingCapacity": 189.2706,
+    "Berths": 6,
+    "Cabins": 2,
+    "Heads": 1,
+    "Shower": false,
+    "Galley": false,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "Yes",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "Strengths": [
+      "Traditional teak interior and practical flybridge-sedan layout",
+      "Twin-diesel shaft propulsion provides maneuvering redundancy",
+      "Ocean Alexander developed a strong reputation for fit and finish among Taiwan builders"
+    ],
+    "Weaknesses": "Substantial fuel burn profile when operating on active plane speeds, heavy tracking sluggish in low-speed tight turns.",
+    "CommonProblems": "Exhaust riser elbow scaling build-up, window tracking perimeter core moisture leaks.",
+    "TypicalMission": "Long-range coastal exploration, multi-month loop tracking, and comfortable liveaboard living.",
+    "AvoidIf": [
+      "You require fully documented factory specifications before purchase",
+      "You prefer single-engine economy and simplicity",
+      "You want low-maintenance modern construction details"
+    ],
+    "DateCreated": "2026-07-13",
+    "LastUpdated": "2026-09-12",
+    "ReviewedBy": "B-Atlas Phase 8C-11 Classic Taiwanese / Older Motoryacht Research",
+    "Revision": 2,
+    "BoatModelID": "OCAL-39-SE",
+    "HullBehaviour": "Semi-Displacement",
+    "Features": [
+      "Flybridge",
+      "Wide Side Decks"
+    ],
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Semi-Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Cruiser",
+    "DataConfidence": "Low",
+    "ResearchStatus": "Reviewed",
+    "Overview": "The Ocean Alexander 39 Sedan is an early Taiwan-built flybridge sedan cruiser associated with Alexander Marine's better-finished motoryacht tradition. The recorded layout emphasizes teak interior joinery, twin-diesel shaft propulsion and coastal cruising, but early small-model documentation is less complete than for later Ocean Alexander ranges.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented cruising layout is practical for a couple; guest capacity and privacy vary by model."
+      },
+      "SoloHandling": {
+        "Assessment": "Mixed",
+        "Summary": "Lower-helm access and protected decks can help short-handed operation, but windage, engine count and docking equipment remain hull-specific."
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "Route fit depends on actual beam, draft and air draft; verify bridge and marina limits for the individual boat."
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "Condition, loading and actual hull configuration are decisive; this assessment reflects documented design intent rather than an offshore guarantee."
+      }
+    },
+    "TradeOffs": [
+      "Early-model documentation and standard specifications are incomplete",
+      "Twin machinery and aging systems increase maintenance burden",
+      "Individual boats can differ materially after decades of refits"
+    ],
+    "BestFor": [
+      "Buyers seeking a traditional Northwest-style twin-diesel sedan",
+      "Coastal cruising couples wanting lower and upper helm positions",
+      "Owners willing to verify an uncommon early model carefully"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Confirm exact model, year and builder plate before relying on marketplace naming",
+      "Inspect decks, windows, flybridge and rail penetrations for moisture",
+      "Inspect tanks, wiring, plumbing, generator and HVAC installations",
+      "Inspect twin diesels, exhaust, cooling, shafts and steering",
+      "Verify hull-specific air draft, displacement and tankage"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for confirm exact model, year and builder plate before relying on marketplace naming?",
+      "What inspection, repair or service history is available for inspect decks, windows, flybridge and rail penetrations for moisture?",
+      "What inspection, repair or service history is available for inspect tanks, wiring, plumbing, generator and HVAC installations?",
+      "What inspection, repair or service history is available for inspect twin diesels, exhaust, cooling, shafts and steering?",
+      "What inspection, repair or service history is available for verify hull-specific air draft, displacement and tankage?"
+    ],
+    "OwnerActions": [
+      "Keep deck, window and hardware penetrations sealed and investigate leaks promptly",
+      "Maintain propulsion, cooling, exhaust, steering and fuel systems to documented intervals",
+      "Document structural, tank, electrical and machinery repairs for future buyers"
+    ],
+    "ModelVariations": [],
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Partial",

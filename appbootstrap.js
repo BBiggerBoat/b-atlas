@@ -47,7 +47,7 @@
         }
 
         startupPromise = Promise.all([
-            repository.loadApplicationData(settings.repositoryOptions),
+            (repository.loadSearchData || repository.loadApplicationData)(settings.repositoryOptions),
             imageManager.loadImageAssetRegistry(settings.fetchImpl)
         ])
             .then(([data]) => initialize(data))

@@ -1,0 +1,2895 @@
+urvey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Guidance is derived from documented configuration and design traits, not marketplace promotion."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "CALF-34-TR"
+            ],
+            "Years": {
+              "From": 1977,
+              "To": 1985
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/californian/34-lrc-1977-85",
+            "https://www.hmy.com/yachting/powerboat-guide/californian/38-lrc-sedan-1978-85"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection items are age/configuration risks to investigate and are not assertions that every hull has the defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "ResearchNotes": "Canonical name normalized from generic '34 Trawler' to documented '34 LRC'. Powerboat Guide gives 34'6\" LOA, 12'4\" beam, 3'2\" draft, 18,000 lb, 250 gal fuel and 75 gal water. Production references vary between 1977–84 and 1977–85; the current Powerboat Guide uses 1977–85, retained here. Engine options ranged from small Perkins diesels cruising near 7 knots to Caterpillar/large Perkins packages capable of 16–20+ knots.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "SpecificationConfidence": {
+      "LWL": {
+        "Level": "Low",
+        "Status": "estimated_family_ratio",
+        "EvidenceRefs": [],
+        "Note": "Working LWL estimate derived from the median LWL/LOA ratio (0.969) of other B-Atlas Californian models with recorded waterline lengths. Intended for hull-speed context and community verification, not survey use."
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing propulsion/keel description; no new factual assertion introduced."
+      }
+    }
+  },
+  {
+    "BoatModelID": "CALF-38-TR",
+    "ManufacturerID": "CALIFORNIAN",
+    "Manufacturer": "Californian",
+    "Model": "38 LRC Sedan",
+    "Variant": "Long Range Cruiser Sedan",
+    "Nickname": "Californian 38 LRC Sedan",
+    "Active": false,
+    "CanonicalSlug": "californian-38-lrc-sedan-long-range-cruiser-sedan",
+    "CanonicalPath": "/models/californian-38-lrc-sedan-long-range-cruiser-sedan/",
+    "CanonicalURL": "https://b-atlas.org/models/californian-38-lrc-sedan-long-range-cruiser-sedan/",
+    "ImageURL": "images/calf-38-tr.jpg",
+    "FirstYear": 1978,
+    "LastYear": 1985,
+    "TotalBuilt": 300,
+    "Designer": "Jule Marshall",
+    "HullType": "Semi-Displacement",
+    "Style": "Tri-Cabin Trawler",
+    "Construction": "Fiberglass",
+    "KeelType": "Full Length",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Twin Inboard",
+    "Propulsion": "Shaft",
+    "Flybridge": "Yes",
+    "AftCabin": false,
+    "SideDecks": "Wide",
+    "TypicalEngineID": "Perkins 6.354",
+    "FuelCapacity": 1514.1647136,
+    "WaterCapacity": 378.5411784,
+    "HoldingCapacity": 94.6352946,
+    "Berths": 6,
+    "Cabins": 2,
+    "Heads": 2,
+    "Shower": false,
+    "Galley": false,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "Limited",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "BoatFamily": "Trawler",
+    "Configuration": "Classic Trawler",
+    "HullBehaviour": "Semi-Displacement",
+    "Features": [
+      "Flybridge",
+      "Aft Cabin",
+      "Wide Side Decks"
+    ],
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Semi-Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Cruiser",
+    "EngineCount": 2,
+    "DisplacementLb": 28000,
+    "FuelCapacityGal": 400,
+    "WaterCapacityGal": 100,
+    "NormalizedHullType": "Modified-V",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "HullBehaviourCode": "hull_behaviour.planing",
+    "BoatFamilyCode": "boat_family.trawler",
+    "LOA": 11.4808,
+    "LWL": 11.1252,
+    "Beam": 3.9624,
+    "Draft": 1.0668,
+    "Displacement": 12700.6,
+    "KeelConfigurationCode": "keel.protective",
+    "ShowerTypeCode": "shower.separate_stall",
+    "FlybridgeCode": "availability.yes",
+    "SideDecksCode": "side_decks.wide",
+    "FuelCode": "fuel.diesel",
+    "FuelCapacityUnitStatus": "canonical_litres",
+    "WaterCapacityUnitStatus": "canonical_litres",
+    "HoldingCapacityUnitStatus": "canonical_litres",
+    "HoldingCapacityGal": 25,
+    "AirDraft": 4.3,
+    "StyleCode": "Cruiser",
+    "CoolingCode": "cooling.fresh_water",
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "RunningGearProtectionCode": "running_gear.keel_protected",
+    "Strengths": [
+      "Solid-fiberglass U.S.-built hull and practical deck access",
+      "Can cruise economically at low speed yet accept higher-power diesel packages",
+      "Useful sedan layout with lower helm and cockpit"
+    ],
+    "Weaknesses": "Extensive layout volume demands a large docking footprint, slow max speeds.",
+    "CommonProblems": "Black iron fuel tank side pit corrosion, window track slider drainage path blocking.",
+    "TypicalMission": "Long-term coastal liveaboard usage and multi-month loop exploration.",
+    "AvoidIf": [
+      "You require a true full-displacement passagemaker",
+      "You need an aft-cabin layout",
+      "You want predictable economy without verifying the installed engines"
+    ],
+    "Overview": "The Californian 38 LRC Sedan is a U.S.-built flybridge sedan cruiser with trawler-like styling but a modified-V hull capable of substantially more than displacement speed with higher-power diesel packages. Wide side decks and practical lower-helm layouts favor family coastal cruising rather than traditional full-displacement operation.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented cruising layout is practical for a couple; guest capacity and privacy vary by model."
+      },
+      "SoloHandling": {
+        "Assessment": "Mixed",
+        "Summary": "Lower-helm access and protected decks can help short-handed operation, but windage, engine count and docking equipment remain hull-specific."
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "Route fit depends on actual beam, draft and air draft; verify bridge and marina limits for the individual boat."
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "Condition, loading and actual hull configuration are decisive; this assessment reflects documented design intent rather than an offshore guarantee."
+      }
+    },
+    "TradeOffs": [
+      "Wide side decks reduce interior width",
+      "Performance and fuel economy vary greatly with engine package",
+      "Older machinery, tanks and deck hardware remain condition-sensitive"
+    ],
+    "BestFor": [
+      "Buyers wanting classic trawler appearance without being limited to trawler speed",
+      "Coastal cruising couples or families using a cockpit-oriented layout",
+      "Owners who value simpler exterior trim than many Taiwan trawlers"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Verify original versus repowered engine package and realistic cruise fuel burn",
+      "Inspect decks, windows, cockpit and flybridge penetrations for moisture",
+      "Inspect fuel tanks, exhaust, cooling and engine beds",
+      "Inspect shafts, struts, rudders and steering",
+      "Confirm lower-helm visibility and side-deck access for the intended crew"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for verify original versus repowered engine package and realistic cruise fuel burn?",
+      "What inspection, repair or service history is available for inspect decks, windows, cockpit and flybridge penetrations for moisture?",
+      "What inspection, repair or service history is available for inspect fuel tanks, exhaust, cooling and engine beds?",
+      "What inspection, repair or service history is available for inspect shafts, struts, rudders and steering?",
+      "What inspection, repair or service history is available for confirm lower-helm visibility and side-deck access for the intended crew?"
+    ],
+    "OwnerActions": [
+      "Keep deck, window and hardware penetrations sealed and investigate leaks promptly",
+      "Maintain propulsion, cooling, exhaust, steering and fuel systems to documented intervals",
+      "Document structural, tank, electrical and machinery repairs for future buyers"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "Engine and layout options",
+        "Description": "Both models were offered with differing layouts and engine packages; performance ranges from displacement-speed economy to planing-capable cruising.",
+        "AffectedYears": "Production run",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/californian/34-lrc-1977-85",
+          "https://www.hmy.com/yachting/powerboat-guide/californian/38-lrc-sedan-1978-85"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "ModelCharacter": "The larger sedan expression of Californian's LRC formula: a broad 13-foot-beam trawler-profile cruiser with wide side decks, lower helm, large cockpit and solid-fiberglass modified-V hull capable of everything from economical displacement-speed running to nearly 20-knot cruising with higher-output Caterpillar diesels.",
+    "DesignLineage": [
+      "The 38 LRC Sedan was produced from 1978–1985 as the larger companion to the Californian 34 LRC.",
+      "It preserves the 34's defining combination of trawler appearance, mahogany interior, broad side decks and a modified-V hull capable of much higher speeds than conventional displacement trawlers.",
+      "Single- and twin-stateroom layouts were offered, both using a galley-up sedan arrangement and standard lower helm.",
+      "The 38 LRC Sedan should not be conflated with later Californian 38 Convertibles or Motor Yachts, which belong to different model families."
+    ],
+    "OwnershipCharacter": "A strong liveaboard/coastal-cruising layout with excellent deck access and minimal exterior wood compared with many contemporaries. Twin engines, 400 gallons of fuel and 28,000 pounds of boat make it materially more expensive to own than the 34, while machinery choice can shift performance from trawler-like economy to fast-cruiser fuel consumption.",
+    "DateCreated": "2026-07-13",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "B-Atlas Phase 8C-11 Classic Taiwanese / Older Motoryacht Research",
+    "Revision": 2,
+    "DataConfidence": "Moderate",
+    "ResearchStatus": "Reviewed",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CALF-38-TR"
+            ],
+            "Years": {
+              "From": 1978,
+              "To": 1985
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/californian/34-lrc-1977-85",
+            "https://www.hmy.com/yachting/powerboat-guide/californian/38-lrc-sedan-1978-85"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Representative identity and specifications use model-specific references where available; unresolved production or hull differences remain explicit."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CALF-38-TR"
+            ],
+            "Years": {
+              "From": 1978,
+              "To": 1985
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/californian/34-lrc-1977-85",
+            "https://www.hmy.com/yachting/powerboat-guide/californian/38-lrc-sedan-1978-85"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Guidance is derived from documented configuration and design traits, not marketplace promotion."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "CALF-38-TR"
+            ],
+            "Years": {
+              "From": 1978,
+              "To": 1985
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/californian/34-lrc-1977-85",
+            "https://www.hmy.com/yachting/powerboat-guide/californian/38-lrc-sedan-1978-85"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection items are age/configuration risks to investigate and are not assertions that every hull has the defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "ResearchNotes": "Canonical name normalized to '38 LRC Sedan'. Powerboat Guide documents 1978–85 production, 37'8\" LOA, 13' beam, 3'6\" draft, 28,000 lb, 400 gal fuel and 100 gal water. Multiple engine packages were offered; performance varied from roughly 12-knot cruise with 210-hp Cats to 19–20 knots with 300-hp Cats.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "SpecificationConfidence": {
+      "AirDraft": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [],
+        "Note": "B-Atlas working estimate derived from nearest comparable models with similar style, size and flybridge configuration. Verify actual mast/radar/antenna clearance before route planning. Comparable model IDs: CUTW-32, TOLL-37-SE, BAYL-3888-MO, MERI-381-SE, CARV-36-MAR, ISGY-36EURO, MERI-341-SE"
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing propulsion/keel description; no new factual assertion introduced."
+      }
+    }
+  },
+  {
+    "BoatModelID": "CAMA-28-GN",
+    "ManufacturerID": "CAMANO",
+    "Manufacturer": "Camano",
+    "Model": "28/31",
+    "Variant": "Gnome",
+    "Nickname": "Camano 28/31 Gnome",
+    "Active": false,
+    "CanonicalSlug": "camano-28-31-gnome",
+    "CanonicalPath": "/models/camano-28-31-gnome/",
+    "CanonicalURL": "https://b-atlas.org/models/camano-28-31-gnome/",
+    "ModelIdentityFamilyID": "CAMA-28-31",
+    "ImageURL": "images/cama-28-gn.jpg",
+    "FirstYear": 1990,
+    "LastYear": 1995,
+    "TotalBuilt": null,
+    "Designer": "Bob Warman",
+    "HullType": "Semi-Displacement",
+    "Style": "Sedan Trawler",
+    "Construction": "Fiberglass composite; cored hull sides and cored deck reported, with model/year verification required",
+    "KeelType": "Wide Keelform propeller-protecting keel",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Single inboard diesel",
+    "Propulsion": "Shaft",
+    "Flybridge": "No",
+    "AftCabin": false,
+    "SideDecks": "Moderate",
+    "TypicalEngineID": "Yanmar 4JH",
+    "FuelCapacity": 349.772,
+    "WaterCapacity": 253.6226,
+    "HoldingCapacity": 54.8885,
+    "Berths": 4,
+    "Cabins": 1,
+    "Heads": 1,
+    "Shower": "Head with shower opposite the galley",
+    "Galley": "Galley-down arrangement with stove, sink and under-counter refrigeration; equipment varies by year",
+    "CoastalRating": "Yes",
+    "OffshoreRating": "No",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "BoatFamily": "Trawler",
+    "Configuration": "Sedan / lower-helm pocket trawler",
+    "HullBehaviour": "Semi-Displacement",
+    "Features": [],
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Semi-Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Trawler",
+    "HullLength_ft": 28,
+    "EngineCount": 1,
+    "RarityScore": null,
+    "RarityLabel": "",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "LOA": 9.4488,
+    "Beam": 3.2004,
+    "Draft": 0.9906,
+    "FuelCode": "fuel.diesel",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "HullBehaviourCode": "hull_behaviour.semi_displacement",
+    "KeelConfigurationCode": "keel.protective",
+    "RunningGearProtectionCode": "running_gear.keel_protected",
+    "ShowerTypeCode": "shower.wet_head",
+    "BoatFamilyCode": "boat_family.trawler",
+    "FlybridgeCode": "availability.no",
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "LWL": 8.001,
+    "AirDraft": 2.85,
+    "StyleCode": "Trawler",
+    "CoolingCode": "cooling.fresh_water",
+    "SideDecksCode": "side_decks.moderate",
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "Displacement": 4535.9,
+    "Strengths": [
+      "Lower air draft and windage than the Troll",
+      "Single-diesel shaft simplicity with protected running gear",
+      "Excellent lower-helm visibility and compact couple-cruising footprint",
+      "Same efficient Keelform hull and owner-community support as the Troll"
+    ],
+    "Weaknesses": "Small cockpit, narrow side decks, compact wet head, limited storage and privacy, and no flybridge helm.",
+    "CommonProblems": "Inspect deck and window bedding, cored structure around penetrations, fuel and water tanks, exhaust and raw-water systems, steering and shaft gear, and the condition of original or replacement diesel installations.",
+    "TypicalMission": "Couple-focused inland-waterway, Great Loop and protected coastal cruising where low profile and lower-helm operation matter more than flybridge space.",
+    "AvoidIf": [
+      "You specifically want a flybridge or upper outdoor helm",
+      "You need multiple private cabins or large-family accommodation",
+      "You require large cockpit or liveaboard storage volume"
+    ],
+    "Overview": "The Camano 28/31 Gnome is the no-flybridge sistership to the Camano Troll, using the same Bob Warman Keelform hull, 28-foot hull length and roughly 31-foot overall envelope. Its lower profile removes the upper helm and associated ladder, windage and flybridge maintenance while retaining the single-diesel shaft drive, bright deckhouse and couple-oriented interior. The Gnome was discontinued early in the family’s production, making it substantially rarer than the Troll.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented layout is explicitly couple-oriented, with occasional guest berths rather than multiple private cabins.",
+        "EvidenceRefs": [
+          "https://www.camanopacific.com/documents/Camano31Handbook.pdf",
+          "https://www.camanopacific.com/about",
+          "https://www.hmy.com/yachting/powerboat-guide/camano/28-31-1990-2007",
+          "https://www.salts.ca/media/documents/boat-dono/camano-28-articles.pdf"
+        ]
+      },
+      "SoloHandling": {
+        "Assessment": "Good",
+        "Summary": "Compact dimensions, strong visibility and single-shaft propulsion support owner operation; docking conditions and thruster fit still matter.",
+        "EvidenceRefs": [
+          "https://www.camanopacific.com/documents/Camano31Handbook.pdf",
+          "https://www.camanopacific.com/about",
+          "https://www.hmy.com/yachting/powerboat-guide/camano/28-31-1990-2007",
+          "https://www.salts.ca/media/documents/boat-dono/camano-28-articles.pdf"
+        ]
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "The 10 ft 6 in beam, modest draft and efficient low-speed operation suit many inland routes; actual air draft must be verified.",
+        "EvidenceRefs": [
+          "https://www.camanopacific.com/documents/Camano31Handbook.pdf",
+          "https://www.camanopacific.com/about",
+          "https://www.hmy.com/yachting/powerboat-guide/camano/28-31-1990-2007",
+          "https://www.salts.ca/media/documents/boat-dono/camano-28-articles.pdf"
+        ]
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "The Keelform hull, protected running gear and pilothouse support coastal use, but B-Atlas does not treat these models as unrestricted offshore passagemakers; condition, loading and weather limits remain decisive.",
+        "EvidenceRefs": [
+          "https://www.camanopacific.com/documents/Camano31Handbook.pdf",
+          "https://www.camanopacific.com/about",
+          "https://www.hmy.com/yachting/powerboat-guide/camano/28-31-1990-2007",
+          "https://www.salts.ca/media/documents/boat-dono/camano-28-articles.pdf"
+        ]
+      }
+    },
+    "TradeOffs": [
+      "No elevated flybridge helm or upper outdoor seating",
+      "Small cockpit and modest storage for extended liveaboard use",
+      "Engine and tank access are compact compared with larger trawlers",
+      "Published listings sometimes call the same design a 28 or 31, so identity requires year and configuration verification"
+    ],
+    "BestFor": [
+      "Couples wanting the Camano hull without flybridge height or maintenance",
+      "Great Loop, canal and protected coastal cruising",
+      "Owners prioritizing lower-helm operation, efficiency and manageable dimensions"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Confirm hull number, marketed model designation and actual Troll/Gnome configuration",
+      "Moisture-test windows, deck fittings, cabin-top and flybridge penetrations where applicable",
+      "Inspect cored hull-side/deck areas around penetrations and previous repairs",
+      "Inspect aluminum fuel tanks, plastic water tanks, fill/vent hoses and shutoff/return valves",
+      "Inspect raw-water cooling, exhaust, shaft, cutlass bearing, rudder and hydraulic steering",
+      "Check bonding, sacrificial anodes and shaft-zinc clearance near the keel exit"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for confirm hull number, marketed model designation and actual Troll/Gnome configuration?",
+      "What inspection, repair or service history is available for moisture-test windows, deck fittings, cabin-top and flybridge penetrations where applicable?",
+      "What inspection, repair or service history is available for inspect cored hull-side/deck areas around penetrations and previous repairs?",
+      "What inspection, repair or service history is available for inspect aluminum fuel tanks, plastic water tanks, fill/vent hoses and shutoff/return valves?",
+      "What inspection, repair or service history is available for inspect raw-water cooling, exhaust, shaft, cutlass bearing, rudder and hydraulic steering?",
+      "What inspection, repair or service history is available for check bonding, sacrificial anodes and shaft-zinc clearance near the keel exit?"
+    ],
+    "OwnerActions": [
+      "Keep window, deck-hardware and flybridge penetrations sealed and investigate leaks promptly",
+      "Service raw-water cooling, exhaust, shaft, rudder and hydraulic steering systems to documented intervals",
+      "Exercise fuel-tank shutoff/return valves and keep fuel filtration service records",
+      "Inspect bonding and sacrificial anodes at haul-out, including shaft-zinc clearance at the keel exit",
+      "Document tank, engine, electrical and structural repairs for future buyers"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "28/31 designation",
+        "Description": "The shared Camano hull is 28 feet on deck and about 31 feet overall with platform and bow gear. B-Atlas therefore uses “28/31 Gnome” to preserve both naming conventions, matching the Troll record.",
+        "AffectedYears": "Production run",
+        "EvidenceRefs": [
+          "https://www.camanopacific.com/documents/Camano31Handbook.pdf",
+          "https://www.camanopacific.com/about",
+          "https://www.hmy.com/yachting/powerboat-guide/camano/28-31-1990-2007"
+        ],
+        "Confidence": "High"
+      },
+      {
+        "Name": "Gnome configuration",
+        "Description": "The Gnome is the same basic Camano hull and interior concept without the Troll flybridge.",
+        "AffectedYears": "Early production",
+        "EvidenceRefs": [
+          "https://www.camanopacific.com/documents/Camano31Handbook.pdf",
+          "https://www.camanopacific.com/about",
+          "https://www.hmy.com/yachting/powerboat-guide/camano/28-31-1990-2007"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "ModelCharacter": "The low-profile Camano: the same compact Keelform pocket-trawler concept as the Troll, but without the flybridge. It favors lower air draft, lower windage and simpler exterior upkeep over the outdoor upper helm.",
+    "DesignLineage": [
+      "Original Camano family designed by Bob Warman.",
+      "Gnome and Troll use the same 28-foot-on-deck / roughly 31-foot-overall family hull.",
+      "Gnome is the no-flybridge sistership; it was discontinued while the Troll continued.",
+      "The family was marketed as Camano 28 and later Camano 31."
+    ],
+    "OwnershipCharacter": "Compact, economical and comparatively simple. Best understood as a couple's cruiser: easy to run and dock for its class, but with modest cockpit, side-deck and storage volume.",
+    "DateCreated": "2026-07-10",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "B-Atlas Camano Family Research",
+    "Revision": 3,
+    "ResearchStatus": "Reviewed",
+    "ResearchNotes": "Camano family normalized 2026-08-07. Naming convention uses 28/31 for both Troll and Gnome because the shared hull is 28 ft on deck and about 31 ft overall; marketplace listings may use either number.\n\nDocumented sistership to the Camano 28/31 Troll, the documented no-flybridge sistership. HMY identifies Gnome production as 1990–1995. The marketed length changed across the shared 28-foot hull family; use hull length and year to resolve listing identity.\n\n[Phase 8A legacy structured context]\n{\n  \"marketAvailability\": \"Used-market availability varies by region and condition.\",\n  \"partsAvailability\": \"Generally available for major systems; model-specific trim and glazing require verification.\",\n  \"commonUpgrades\": [\n    \"Bow thruster\",\n    \"Updated navigation electronics\",\n    \"Improved ventilation and heating\"\n  ],\n  \"comparableModels\": [\n    \"Camano Troll 31\",\n    \"Nordic Tug 26\",\n    \"Rosborough RF-246\"\n  ],\n  \"knowledgeRelationships\": {\n    \"comparableTo\": [\n      \"Camano Troll 31\",\n      \"Nordic Tug 26\"\n    ],\n    \"alternativeIf\": [\n      \"Lower air draft or simpler exterior maintenance is important\"\n    ],\n    \"stepDownFrom\": [\n      \"Camano Troll 31 flybridge complexity\"\n    ]\n  },\n  \"bScoutNotes\": [\n    \"The lack of flybridge materially changes air draft, windage and exterior upkeep.\",\n    \"Do not treat Gnome and Troll images or listings as interchangeable.\"\n  ],\n  \"refitPriority\": {\n    \"essential\": [\n      \"Moisture around windows and deck fittings\",\n      \"Engine cooling and exhaust\"\n    ],\n    \"recommended\": [\n      \"Bow thruster\",\n      \"Updated navigation electronics\"\n    ],\n    \"optional\": [\n      \"Improved ventilation and heating\"\n    ]\n  },\n  \"ownershipScores\": {\n    \"mechanicalSimplicity\": 3,\n    \"maintenanceEase\": 3,\n    \"partsAvailability\": 3,\n    \"diyFriendliness\": 3,\n    \"operatingAffordability\": 3\n  },\n  \"ownershipEase\": \"Moderate\",\n  \"maintenanceEase\": \"Moderate\"\n}\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "DataConfidence": "Moderate",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CAMA-28-GN"
+            ],
+            "Years": {
+              "From": 1990,
+              "To": 1995
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.camanopacific.com/documents/Camano31Handbook.pdf",
+            "https://www.camanopacific.com/about",
+            "https://www.hmy.com/yachting/powerboat-guide/camano/28-31-1990-2007",
+            "https://www.salts.ca/media/documents/boat-dono/camano-28-articles.pdf"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source",
+            "Marketplace observation"
+          ],
+          "Confidence": "High",
+          "Notes": "Model identity and representative specifications are supported by the Camano owner handbook, owner-group documentation and model-specific technical sources. Conflicting hull-specific figures remain explicitly unresolved."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CAMA-28-GN"
+            ],
+            "Years": {
+              "From": 1990,
+              "To": 1995
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.camanopacific.com/documents/Camano31Handbook.pdf",
+            "https://www.camanopacific.com/about",
+            "https://www.hmy.com/yachting/powerboat-guide/camano/28-31-1990-2007",
+            "https://www.salts.ca/media/documents/boat-dono/camano-28-articles.pdf"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance is derived from documented configuration, propulsion, dimensions and production history rather than marketplace sales language."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "CAMA-28-GN"
+            ],
+            "Years": {
+              "From": 1990,
+              "To": 1995
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.camanopacific.com/documents/Camano31Handbook.pdf",
+            "https://www.camanopacific.com/about",
+            "https://www.hmy.com/yachting/powerboat-guide/camano/28-31-1990-2007",
+            "https://www.salts.ca/media/documents/boat-dono/camano-28-articles.pdf",
+            "manufacturerknowledge:CAMANO:Camano Keelform Trawler Family"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance combines model-specific systems with family and age-related maintenance points. It is not an assertion that every hull has these defects."
+        }
+      ],
+      "UnresolvedInformation": [
+        "HMY identifies Gnome production as 1990–1995, while later marketplace records sometimes label post-1995 no-flybridge boats as Gnomes; factory documentation should control individual-year identity",
+        "Exact air draft is not sufficiently documented and remains unknown",
+        "Tank capacities vary by hull number and later modifications; early-family representative values are used",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold"
+      ]
+    },
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "SpecificationConfidence": {
+      "AirDraft": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [],
+        "Note": "B-Atlas working estimate derived from nearest comparable models with similar style, size and flybridge configuration. Verify actual mast/radar/antenna clearance before route planning. Comparable model IDs: NPAC-28, CUTW-28-P, CUTW-30-P, WIND-26-SN"
+      },
+      "Displacement": {
+        "Level": "Low",
+        "Status": "restored_legacy_working_value",
+        "EvidenceRefs": [],
+        "Note": "Working displacement restored from the archived pre-v6.81 value (10000 lb) and converted to canonical kilograms. Community/factory verification remains welcome."
+      }
+    }
+  },
+  {
+    "BoatModelID": "CAMA-31-TR",
+    "ManufacturerID": "CAMANO",
+    "Manufacturer": "Camano",
+    "Model": "28/31",
+    "Variant": "Troll",
+    "Nickname": "Camano 28/31 Troll",
+    "Active": false,
+    "CanonicalSlug": "camano-28-31-troll",
+    "CanonicalPath": "/models/camano-28-31-troll/",
+    "CanonicalURL": "https://b-atlas.org/models/camano-28-31-troll/",
+    "ModelIdentityFamilyID": "CAMA-28-31",
+    "ImageURL": "images/cama-31-tr.jpg",
+    "FirstYear": 1990,
+    "LastYear": 2011,
+    "TotalBuilt": 270,
+    "Designer": "Bob Warman",
+    "HullType": "Semi-Displacement",
+    "Style": "Flybridge Sedan",
+    "Construction": "Solid fiberglass bottom with cored hull sides and cored deck; verify year-specific repairs and modifications",
+    "KeelType": "Wide Keelform propeller-protecting keel",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Single inboard diesel",
+    "Propulsion": "Shaft",
+    "Flybridge": "Yes",
+    "AftCabin": false,
+    "SideDecks": "Moderate",
+    "TypicalEngineID": "Volvo TMD31",
+    "FuelCapacity": 349.772,
+    "WaterCapacity": 253.6226,
+    "HoldingCapacity": 54.8885,
+    "Berths": 4,
+    "Cabins": 1,
+    "Heads": 1,
+    "Shower": "Wet head with shower",
+    "Galley": "Galley down opposite the head",
+    "CoastalRating": "Yes",
+    "OffshoreRating": "No",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "HullBehaviour": "Semi-Displacement",
+    "Features": [
+      "Flybridge"
+    ],
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Semi-Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Trawler",
+    "EngineCount": 1,
+    "HullLength_ft": 28,
+    "Configuration": "Flybridge pocket trawler",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "LOA": 9.4488,
+    "LWL": 8.001,
+    "Beam": 3.2004,
+    "Draft": 0.9906,
+    "FuelCode": "fuel.diesel",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "HullBehaviourCode": "hull_behaviour.semi_displacement",
+    "KeelConfigurationCode": "keel.protective",
+    "RunningGearProtectionCode": "running_gear.keel_protected",
+    "BoatFamilyCode": "boat_family.trawler",
+    "FlybridgeCode": "availability.yes",
+    "ShowerTypeCode": "shower.wet_head",
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "Displacement": 4535.9,
+    "HeadroomSalon": 1.8796,
+    "HeadroomGalley": 2.4638,
+    "HeadroomHead": 1.8034,
+    "HeadroomForwardCabin": 1.8542,
+    "VBerthLength": 1.9812,
+    "AirDraft": 4.1000000000000005,
+    "StyleCode": "Trawler",
+    "CoolingCode": "cooling.fresh_water",
+    "SideDecksCode": "side_decks.moderate",
+    "Headroom": 1.8796,
+    "RudderTypeCode": "rudder.full_keel_attached",
+    "DisplacementCruiseSpeed": 7,
+    "DisplacementCruiseFuelBurn": 5.678,
+    "PlaningCruiseSpeed": 14,
+    "PlaningCruiseFuelBurn": 22.712,
+    "Strengths": [
+      "Efficient single-diesel operation across displacement and moderate semi-planing speeds",
+      "Protected shaft, large rudder and low engine placement in the Keelform hull",
+      "Excellent visibility from both lower and flybridge helms",
+      "Compact beam and length with useful cruising accommodation for two"
+    ],
+    "Weaknesses": "Small cockpit, constrained side decks, steep flybridge access, modest tankage and storage, and limited privacy beyond a cruising couple.",
+    "CommonProblems": "Inspect deck and window bedding, cored structure around penetrations, plastic above-waterline fittings on applicable boats, fuel and water tanks, exhaust and raw-water systems, steering and shaft gear, and bow-thruster installations on later or modified examples.",
+    "TypicalMission": "Couples Great Loop, inland-waterway and coastal cruising with economical low-speed operation and the option for moderate higher-speed passages.",
+    "AvoidIf": [
+      "You need two private cabins or large-family accommodation",
+      "Flybridge ladder access is unacceptable",
+      "You require sustained high-speed cruising or large cockpit space"
+    ],
+    "Overview": "The Camano 28/31 Troll is a compact British Columbia-designed flybridge cruiser built around Bob Warman’s distinctive Keelform semi-displacement hull. The hull measures 28 feet on deck and roughly 31 feet overall, which explains the model’s changing 28, 30 and 31 marketing designations. A single diesel sits low in the keel and drives a protected shaft, while lower and upper helms, a bright deckhouse and one-cabin interior make the boat primarily a couple-oriented inland and coastal cruiser.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented layout is explicitly couple-oriented, with occasional guest berths rather than multiple private cabins.",
+        "EvidenceRefs": [
+          "https://www.camanopacific.com/documents/Camano31Handbook.pdf",
+          "https://www.camanopacific.com/about",
+          "https://www.hmy.com/yachting/powerboat-guide/camano/28-31-1990-2007",
+          "https://www.salts.ca/media/documents/boat-dono/camano-28-articles.pdf",
+          "https://passagemaker.com/design-restoration-and-refit/revived-the-camano-31-which-now-comes-in-colors/"
+        ]
+      },
+      "SoloHandling": {
+        "Assessment": "Good",
+        "Summary": "Compact dimensions, strong visibility and single-shaft propulsion support owner operation; docking conditions and thruster fit still matter.",
+        "EvidenceRefs": [
+          "https://www.camanopacific.com/documents/Camano31Handbook.pdf",
+          "https://www.camanopacific.com/about",
+          "https://www.hmy.com/yachting/powerboat-guide/camano/28-31-1990-2007",
+          "https://www.salts.ca/media/documents/boat-dono/camano-28-articles.pdf",
+          "https://passagemaker.com/design-restoration-and-refit/revived-the-camano-31-which-now-comes-in-colors/"
+        ]
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "The 10 ft 6 in beam, modest draft and efficient low-speed operation suit many inland routes; actual air draft must be verified.",
+        "EvidenceRefs": [
+          "https://www.camanopacific.com/documents/Camano31Handbook.pdf",
+          "https://www.camanopacific.com/about",
+          "https://www.hmy.com/yachting/powerboat-guide/camano/28-31-1990-2007",
+          "https://www.salts.ca/media/documents/boat-dono/camano-28-articles.pdf",
+          "https://passagemaker.com/design-restoration-and-refit/revived-the-camano-31-which-now-comes-in-colors/"
+        ]
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "The Keelform hull, protected running gear and pilothouse support coastal use, but B-Atlas does not treat these models as unrestricted offshore passagemakers; condition, loading and weather limits remain decisive.",
+        "EvidenceRefs": [
+          "https://www.camanopacific.com/documents/Camano31Handbook.pdf",
+          "https://www.camanopacific.com/about",
+          "https://www.hmy.com/yachting/powerboat-guide/camano/28-31-1990-2007",
+          "https://www.salts.ca/media/documents/boat-dono/camano-28-articles.pdf",
+          "https://passagemaker.com/design-restoration-and-refit/revived-the-camano-31-which-now-comes-in-colors/"
+        ]
+      }
+    },
+    "TradeOffs": [
+      "Small cockpit and modest storage compared with wider cruisers",
+      "Steep flybridge ladder and upper-station exposure affect accessibility",
+      "One private cabin limits guest privacy",
+      "Production changes in engines and tankage require hull-number-specific verification"
+    ],
+    "BestFor": [
+      "Couples seeking an economical flybridge pocket trawler",
+      "Great Loop, inland-waterway and protected coastal cruising",
+      "Owner-operators valuing visibility, simple single-diesel propulsion and manageable dimensions"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Confirm hull number, marketed model designation and actual Troll/Gnome configuration",
+      "Moisture-test windows, deck fittings, cabin-top and flybridge penetrations where applicable",
+      "Inspect cored hull-side/deck areas around penetrations and previous repairs",
+      "Inspect aluminum fuel tanks, plastic water tanks, fill/vent hoses and shutoff/return valves",
+      "Inspect raw-water cooling, exhaust, shaft, cutlass bearing, rudder and hydraulic steering",
+      "Check bonding, sacrificial anodes and shaft-zinc clearance near the keel exit"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for confirm hull number, marketed model designation and actual Troll/Gnome configuration?",
+      "What inspection, repair or service history is available for moisture-test windows, deck fittings, cabin-top and flybridge penetrations where applicable?",
+      "What inspection, repair or service history is available for inspect cored hull-side/deck areas around penetrations and previous repairs?",
+      "What inspection, repair or service history is available for inspect aluminum fuel tanks, plastic water tanks, fill/vent hoses and shutoff/return valves?",
+      "What inspection, repair or service history is available for inspect raw-water cooling, exhaust, shaft, cutlass bearing, rudder and hydraulic steering?",
+      "What inspection, repair or service history is available for check bonding, sacrificial anodes and shaft-zinc clearance near the keel exit?"
+    ],
+    "OwnerActions": [
+      "Keep window, deck-hardware and flybridge penetrations sealed and investigate leaks promptly",
+      "Service raw-water cooling, exhaust, shaft, rudder and hydraulic steering systems to documented intervals",
+      "Exercise fuel-tank shutoff/return valves and keep fuel filtration service records",
+      "Inspect bonding and sacrificial anodes at haul-out, including shaft-zinc clearance at the keel exit",
+      "Document tank, engine, electrical and structural repairs for future buyers"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "28 / 30 / 31 marketing names",
+        "Description": "The unchanged core hull is 28 feet on deck and about 31 feet overall. It was marketed first as the 28, also appeared as the 30, and later as the 31.",
+        "AffectedYears": "Production run",
+        "EvidenceRefs": [
+          "https://www.camanopacific.com/documents/Camano31Handbook.pdf",
+          "https://www.camanopacific.com/about",
+          "https://passagemaker.com/design-restoration-and-refit/revived-the-camano-31-which-now-comes-in-colors/"
+        ],
+        "Confidence": "High"
+      },
+      {
+        "Name": "Fuel-capacity change",
+        "Description": "The owner handbook records approximately 92.4 gallons through hull 179 and about 130 gallons beginning with hull 180.",
+        "AffectedYears": "Hull-number dependent",
+        "EvidenceRefs": [
+          "https://www.camanopacific.com/documents/Camano31Handbook.pdf",
+          "https://www.camanopacific.com/about"
+        ],
+        "Confidence": "High"
+      },
+      {
+        "Name": "Engine evolution",
+        "Description": "Early boats used smaller Volvo diesels, followed by 150 hp and then 200 hp Volvo six-cylinder installations; Volvo D4 and later Yanmar 6BY installations appear at the end of the production lineage.",
+        "AffectedYears": "Production run",
+        "EvidenceRefs": [
+          "https://www.camanopacific.com/documents/Camano31Handbook.pdf",
+          "https://www.camanopacific.com/about"
+        ],
+        "Confidence": "High"
+      },
+      {
+        "Name": "Builder succession",
+        "Description": "Camano Marine production changed ownership in 2007, followed by limited Bracewell and Camano Yachts America production before the original lineage ended; Helmsman later revived the design as a substantially updated separate product.",
+        "AffectedYears": "2007–2011 and later revival",
+        "EvidenceRefs": [
+          "https://www.camanopacific.com/documents/Camano31Handbook.pdf",
+          "https://www.camanopacific.com/about",
+          "https://passagemaker.com/design-restoration-and-refit/revived-the-camano-31-which-now-comes-in-colors/"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "ModelCharacter": "A compact flybridge pocket trawler built around Bob Warman's distinctive Keelform hull, combining economical displacement-speed cruising with the ability to run materially faster when needed.",
+    "DesignLineage": [
+      "Introduced as the Camano Troll with a flybridge; the sister Gnome omitted the flybridge.",
+      "The same family hull was marketed as the Camano 28 and later renamed Camano 31.",
+      "More than 270 Camano 31-family boats were built before the design lineage passed to Helmsman.",
+      "The Helmsman 31 Sedan is the modernized descendant of this hull."
+    ],
+    "OwnershipCharacter": "A practical cruising-couple boat with single-diesel economy, protected shafting and strong owner support. The trade is compact living/storage space and flybridge ladder access.",
+    "DateCreated": "2026-07-10",
+    "LastUpdated": "2026-09-13",
+    "ReviewedBy": "B-Atlas Research v6.93",
+    "Revision": 5,
+    "ResearchStatus": "Reviewed",
+    "ResearchNotes": "Camano family normalized 2026-08-07. Naming convention uses 28/31 for both Troll and Gnome because the shared hull is 28 ft on deck and about 31 ft overall; marketplace listings may use either number.\n\nSame 28-foot hull was marketed as Camano 28, later 30 and then 31; HMY reports the 31 name from 1997. Fuel capacity increased from 100 to 133 gallons on later production around 2003, so listing-year verification is required. Approximately 270 boats were built across several British Columbia builders before tooling later moved to Helmsman.\n\n[Phase 8A legacy structured context]\n{\n  \"marketAvailability\": \"Common in established trawler markets; regionally variable.\",\n  \"partsAvailability\": \"Generally good for common diesel and marine systems; model-specific components require verification.\",\n  \"commonUpgrades\": [\n    \"Modern navigation electronics\",\n    \"Improved anchoring equipment\",\n    \"Electrical and charging-system modernization\"\n  ],\n  \"comparableModels\": [\n    \"Grand Banks 32 Classic\",\n    \"Nordic Tug 26\",\n    \"Rosborough RF-28\"\n  ],\n  \"ownershipEase\": \"High\",\n  \"maintenanceEase\": \"Moderate\"\n}\n\nHigh-impact missing-data research Wave 2 v6.87 (2026-09-13): Wave 2: Camano 31 sources consistently report about 6 ft 2 in general interior headroom. Technical review describes the full/protective keel extending aft as a shoe supporting the large barn-door rudder and protecting the propeller. Sources: https://helmsmantrawlers.com/wp-content/uploads/2011/10/PY_FEB16_HLT_31_Camano.pdf ; https://www.camanotrawlers.com/camano_31_trawler-boat-310067.html\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "DataConfidence": "Moderate",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CAMA-31-TR"
+            ],
+            "Years": {
+              "From": 1990,
+              "To": 2011
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.camanopacific.com/documents/Camano31Handbook.pdf",
+            "https://www.camanopacific.com/about",
+            "https://www.hmy.com/yachting/powerboat-guide/camano/28-31-1990-2007",
+            "https://www.salts.ca/media/documents/boat-dono/camano-28-articles.pdf",
+            "https://passagemaker.com/design-restoration-and-refit/revived-the-camano-31-which-now-comes-in-colors/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source",
+            "Marketplace observation"
+          ],
+          "Confidence": "High",
+          "Notes": "Model identity and representative specifications are supported by the Camano owner handbook, owner-group documentation and model-specific technical sources. Conflicting hull-specific figures remain explicitly unresolved."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CAMA-31-TR"
+            ],
+            "Years": {
+              "From": 1990,
+              "To": 2011
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.camanopacific.com/documents/Camano31Handbook.pdf",
+            "https://www.camanopacific.com/about",
+            "https://www.hmy.com/yachting/powerboat-guide/camano/28-31-1990-2007",
+            "https://www.salts.ca/media/documents/boat-dono/camano-28-articles.pdf",
+            "https://passagemaker.com/design-restoration-and-refit/revived-the-camano-31-which-now-comes-in-colors/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance is derived from documented configuration, propulsion, dimensions and production history rather than marketplace sales language."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "CAMA-31-TR"
+            ],
+            "Years": {
+              "From": 1990,
+              "To": 2011
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.camanopacific.com/documents/Camano31Handbook.pdf",
+            "https://www.camanopacific.com/about",
+            "https://www.hmy.com/yachting/powerboat-guide/camano/28-31-1990-2007",
+            "https://www.salts.ca/media/documents/boat-dono/camano-28-articles.pdf",
+            "https://passagemaker.com/design-restoration-and-refit/revived-the-camano-31-which-now-comes-in-colors/",
+            "manufacturerknowledge:CAMANO:Camano Keelform Trawler Family"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance combines model-specific systems with family and age-related maintenance points. It is not an assertion that every hull has these defects."
+        },
+        {
+          "Scope": "HeadroomAndInteriorFit",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CAMA-31-TR"
+            ],
+            "Years": {
+              "From": null,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://2yachts.com/boat/785433-camano-31-troll"
+          ],
+          "EvidenceTypes": [
+            "Model-specific walkthrough / specification"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Location-specific interior dimensions are retained separately; they should not be generalized to all interior spaces."
+        },
+        {
+          "Scope": "Wave2CanonicalData",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CAMA-31-TR"
+            ],
+            "Years": {
+              "From": 1990,
+              "To": 2011
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://helmsmantrawlers.com/wp-content/uploads/2011/10/PY_FEB16_HLT_31_Camano.pdf",
+            "https://www.camanotrawlers.com/camano_31_trawler-boat-310067.html"
+          ],
+          "EvidenceTypes": [
+            "Manufacturer/manual, technical review, or model-specific listing evidence"
+          ],
+          "Confidence": "High",
+          "Notes": "Wave 2: Camano 31 sources consistently report about 6 ft 2 in general interior headroom. Technical review describes the full/protective keel extending aft as a shoe supporting the large barn-door rudder and protecting the propeller."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Sources differ on the exact final year of pre-Helmsman production; documented examples extend through 2011, which B-Atlas uses as the end of the original Camano lineage",
+        "Exact air draft depends on mast, antenna and flybridge equipment and is not assigned a universal value",
+        "Representative tank capacities shown are early-production values; later hulls have materially larger fuel capacity",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold"
+      ]
+    },
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "SpecificationConfidence": {
+      "AirDraft": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [],
+        "Note": "B-Atlas working estimate derived from nearest comparable models with similar style, size and flybridge configuration. Verify actual mast/radar/antenna clearance before route planning. Comparable model IDs: BENE-30-SW, MNSH-34-MK2, MNSH-34-MK1, ALBN-36-CL, ISGY-36, MONK-36-TR, BENE-34-SW"
+      },
+      "DisplacementCruiseSpeed": {
+        "Level": "Medium",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://marinesource.com/boat/camano-31-troll-2001-palmetto-100777688-for-sale",
+          "https://www.edwardsyachtsales.com/boat/2001/camano/31-troll/27867/"
+        ],
+        "Note": "Representative Camano 31 Troll performance repeated across multiple listings: about 7 kn at 1.5 US gal/h and 14 kn at 6 US gal/h. Actual burn varies with engine, load and condition."
+      },
+      "DisplacementCruiseFuelBurn": {
+        "Level": "Medium",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://marinesource.com/boat/camano-31-troll-2001-palmetto-100777688-for-sale",
+          "https://www.edwardsyachtsales.com/boat/2001/camano/31-troll/27867/"
+        ],
+        "Note": "Representative Camano 31 Troll performance repeated across multiple listings: about 7 kn at 1.5 US gal/h and 14 kn at 6 US gal/h. Actual burn varies with engine, load and condition."
+      },
+      "PlaningCruiseSpeed": {
+        "Level": "Medium",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://marinesource.com/boat/camano-31-troll-2001-palmetto-100777688-for-sale",
+          "https://www.edwardsyachtsales.com/boat/2001/camano/31-troll/27867/"
+        ],
+        "Note": "Representative Camano 31 Troll performance repeated across multiple listings: about 7 kn at 1.5 US gal/h and 14 kn at 6 US gal/h. Actual burn varies with engine, load and condition."
+      },
+      "PlaningCruiseFuelBurn": {
+        "Level": "Medium",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://marinesource.com/boat/camano-31-troll-2001-palmetto-100777688-for-sale",
+          "https://www.edwardsyachtsales.com/boat/2001/camano/31-troll/27867/"
+        ],
+        "Note": "Representative Camano 31 Troll performance repeated across multiple listings: about 7 kn at 1.5 US gal/h and 14 kn at 6 US gal/h. Actual burn varies with engine, load and condition."
+      }
+    }
+  },
+  {
+    "BoatModelID": "CAMA-41",
+    "ManufacturerID": "CAMANO",
+    "Manufacturer": "Camano",
+    "Model": "41",
+    "Variant": "Trawler",
+    "Nickname": "Camano 41 Trawler",
+    "Active": false,
+    "CanonicalSlug": "camano-41-trawler",
+    "CanonicalPath": "/models/camano-41-trawler/",
+    "CanonicalURL": "https://b-atlas.org/models/camano-41-trawler/",
+    "ImageURL": "images/cama-41.jpg",
+    "FirstYear": 2006,
+    "LastYear": 2007,
+    "TotalBuilt": null,
+    "Designer": "Bob Warman",
+    "HullType": "Semi-Displacement",
+    "Style": "Flybridge Trawler",
+    "Construction": "Fiberglass composite; model-specific survey required",
+    "KeelType": "Keelform / protected single-shaft running gear",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Single inboard diesel",
+    "Propulsion": "Shaft",
+    "Flybridge": "Yes",
+    "AftCabin": false,
+    "SideDecks": "Moderate",
+    "TypicalEngineID": "Yanmar 6LY3-STP / 6CXM-GTE",
+    "FuelCapacity": 1514.1647,
+    "WaterCapacity": 685.1595,
+    "HoldingCapacity": 158.9873,
+    "Berths": 4,
+    "Cabins": 1,
+    "Heads": 1,
+    "Shower": "Separate head and shower arrangement reported",
+    "Galley": "Salon-level galley with dining bar; equipment varies by boat",
+    "CoastalRating": "Yes",
+    "OffshoreRating": "Limited",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "BoatFamily": "Trawler",
+    "Configuration": "Flybridge pilothouse cruiser",
+    "HullBehaviour": "Semi-Displacement",
+    "Features": [
+      "Flybridge"
+    ],
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Semi-Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Cruiser",
+    "EngineCount": 1,
+    "RarityScore": null,
+    "RarityLabel": "",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "LOA": 12.4968,
+    "Beam": 4.2672,
+    "Draft": 1.143,
+    "Displacement": 12700.6,
+    "FuelCode": "fuel.diesel",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "EnginePowerPerEngine": 328.11,
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "HullBehaviourCode": "hull_behaviour.semi_displacement",
+    "KeelConfigurationCode": "keel.protective",
+    "RunningGearProtectionCode": "running_gear.keel_protected",
+    "ShowerTypeCode": "shower.separate_stall",
+    "BoatFamilyCode": "boat_family.trawler",
+    "FlybridgeCode": "availability.yes",
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "LWL": 11.7602,
+    "AirDraft": 4.3,
+    "StyleCode": "Cruiser",
+    "CoolingCode": "cooling.fresh_water",
+    "SideDecksCode": "side_decks.moderate",
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "Strengths": [
+      "Large one-stateroom interior optimized for a cruising couple",
+      "Single-diesel shaft propulsion with unusually good machinery access",
+      "Large flybridge, lower helm and excellent all-around visibility",
+      "Substantial fuel capacity and useful speed range from displacement to semi-planing operation"
+    ],
+    "Weaknesses": "Very rare, substantially larger and more complex than the 28/31 family, with limited model-specific community knowledge and higher operating and systems costs.",
+    "CommonProblems": "Confirm model-specific construction and inspect deck/window bedding, fuel and water tanks, exhaust and raw-water systems, shaft and steering gear, bow thruster, generator, air conditioning, electrical upgrades and any flybridge or mast hardware.",
+    "TypicalMission": "Extended couple cruising, Great Loop travel and coastal passages where single-engine efficiency and larger accommodations are preferred over twin-engine redundancy.",
+    "AvoidIf": [
+      "You require a narrow-beam or easily transported boat",
+      "You want twin-engine redundancy",
+      "You prefer low-complexity ownership or two private staterooms"
+    ],
+    "Overview": "The Camano 41 is a rare Canadian-built fast-trawler-style cruiser developed as a much larger interpretation of the company’s Keelform concept. It combines a single high-output Yanmar diesel and straight shaft with lower and flybridge helms, a large one-stateroom interior, split head/shower arrangement and substantial machinery space. Its 14-foot beam, roughly 28,000-pound displacement and extensive onboard systems place it in a different ownership and marina class from the compact Camano 28/31.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented layout is explicitly couple-oriented, with occasional guest berths rather than multiple private cabins.",
+        "EvidenceRefs": [
+          "https://powerandmotoryacht.com/boats/boat-tests/camano-41/",
+          "https://soundingsonline.com/news/feature-boat-camano/",
+          "https://marinesource.com/boat/camano-41-trawler-2006-fort-myers-100789077-for-sale"
+        ]
+      },
+      "SoloHandling": {
+        "Assessment": "Mixed",
+        "Summary": "Visibility, large rudder and bow thruster help, but the 41’s beam, windage and displacement increase docking workload.",
+        "EvidenceRefs": [
+          "https://powerandmotoryacht.com/boats/boat-tests/camano-41/",
+          "https://soundingsonline.com/news/feature-boat-camano/",
+          "https://marinesource.com/boat/camano-41-trawler-2006-fort-myers-100789077-for-sale"
+        ]
+      },
+      "InlandWaterways": {
+        "Assessment": "Mixed",
+        "Summary": "Efficient low-speed operation suits inland travel, but 14-foot beam and air draft materially constrain route and marina choices.",
+        "EvidenceRefs": [
+          "https://powerandmotoryacht.com/boats/boat-tests/camano-41/",
+          "https://soundingsonline.com/news/feature-boat-camano/",
+          "https://marinesource.com/boat/camano-41-trawler-2006-fort-myers-100789077-for-sale"
+        ]
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "The Keelform hull, protected running gear and pilothouse support coastal use, but B-Atlas does not treat these models as unrestricted offshore passagemakers; condition, loading and weather limits remain decisive.",
+        "EvidenceRefs": [
+          "https://powerandmotoryacht.com/boats/boat-tests/camano-41/",
+          "https://soundingsonline.com/news/feature-boat-camano/",
+          "https://marinesource.com/boat/camano-41-trawler-2006-fort-myers-100789077-for-sale"
+        ]
+      }
+    },
+    "TradeOffs": [
+      "Rare model with limited model-specific inventory and community knowledge",
+      "14-foot beam and yacht-scale displacement materially increase marina, haul-out and operating costs",
+      "Generator, thruster, inverter and other cruising systems increase maintenance complexity",
+      "Single-engine propulsion does not provide twin-engine redundancy"
+    ],
+    "BestFor": [
+      "Couples wanting a spacious single-stateroom fast trawler",
+      "Extended Great Loop, Great Lakes and coastal cruising",
+      "Owners who value machinery access, tankage and a flybridge more than compact dimensions"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Confirm the individual 41 specification because published beam, draft and tank figures vary between factory-era and brokerage sources",
+      "Inspect windows, deck, flybridge and mast penetrations for moisture intrusion",
+      "Inspect the single Yanmar installation, cooling, exhaust, shaft, rudder and steering systems",
+      "Inspect aluminum fuel tanks, water/holding systems, manifolds and access",
+      "Test bow thruster, generator, charging/inverter systems and owner-added electrical equipment",
+      "Verify flybridge, tender/davit and folding-mast condition and actual air draft"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for confirm the individual 41 specification because published beam, draft and tank figures vary between factory-era and brokerage sources?",
+      "What inspection, repair or service history is available for inspect windows, deck, flybridge and mast penetrations for moisture intrusion?",
+      "What inspection, repair or service history is available for inspect the single Yanmar installation, cooling, exhaust, shaft, rudder and steering systems?",
+      "What inspection, repair or service history is available for inspect aluminum fuel tanks, water/holding systems, manifolds and access?",
+      "What inspection, repair or service history is available for test bow thruster, generator, charging/inverter systems and owner-added electrical equipment?",
+      "What inspection, repair or service history is available for verify flybridge, tender/davit and folding-mast condition and actual air draft?"
+    ],
+    "OwnerActions": [
+      "Maintain the single Yanmar installation, cooling, exhaust and fuel-filtration systems to documented intervals",
+      "Exercise and service bow thruster, generator and owner-added systems regularly",
+      "Keep flybridge, mast, window and deck penetrations sealed and address water intrusion promptly",
+      "Inspect shaft, rudder, steering, bonding and underwater hardware at haul-out",
+      "Document machinery, tank, electrical and structural work for future buyers"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "Standard and optional Yanmar power",
+        "Description": "Contemporary testing lists a 440 hp Yanmar as standard and higher-output Yanmar installations as optional or test-boat configurations.",
+        "AffectedYears": "2006–2007",
+        "EvidenceRefs": [
+          "https://powerandmotoryacht.com/boats/boat-tests/camano-41/",
+          "https://soundingsonline.com/news/feature-boat-camano/"
+        ],
+        "Confidence": "High"
+      },
+      {
+        "Name": "Published specification differences",
+        "Description": "Contemporary editorial sources generally cite 14 ft beam, 3 ft 9 in draft and about 400 gal fuel, while individual brokerage records report values such as 14 ft 5 in, 4 ft 5 in and 385 gal. Individual hull documentation controls.",
+        "AffectedYears": "2006–2007",
+        "EvidenceRefs": [
+          "https://powerandmotoryacht.com/boats/boat-tests/camano-41/",
+          "https://soundingsonline.com/news/feature-boat-camano/",
+          "https://marinesource.com/boat/camano-41-trawler-2006-fort-myers-100789077-for-sale"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "ModelCharacter": "A short-lived larger Camano that scales the brand's Keelform philosophy into a 41-foot cruising-couple sedan, adding substantially more living space, tankage and passagemaking comfort without abandoning single-diesel economy.",
+    "DesignLineage": [
+      "Developed after the commercial success of the Camano 31.",
+      "Retains the Camano Keelform design concept with displacement-like forward sections and flatter aft sections.",
+      "It is a separate larger design, not a stretched Camano 31 hull.",
+      "Production appears concentrated around 2006–2007 and is relatively scarce."
+    ],
+    "OwnershipCharacter": "More yacht-like and systems-heavy than the 31, with larger marina, haul-out and maintenance demands. Still oriented toward a cruising couple rather than maximizing guest cabins.",
+    "DateCreated": "2026-07-10",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "B-Atlas Camano Family Research",
+    "Revision": 4,
+    "ResearchStatus": "Reviewed",
+    "ResearchNotes": "Camano family normalized 2026-08-07. Naming convention uses 28/31 for both Troll and Gnome because the shared hull is 28 ft on deck and about 31 ft overall; marketplace listings may use either number.\n\nDocumented 2006–2007 Camano model. Broker and brochure-derived specifications support a single 440 hp Yanmar installation, 14 ft 5 in beam, 4 ft 5 in draft, approximately 28,000 lb displacement and 385/170/42 gallon capacities. Earlier database twin-engine and two-stateroom claims were removed.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "DataConfidence": "Moderate",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CAMA-41"
+            ],
+            "Years": {
+              "From": 2006,
+              "To": 2007
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://powerandmotoryacht.com/boats/boat-tests/camano-41/",
+            "https://soundingsonline.com/news/feature-boat-camano/",
+            "https://marinesource.com/boat/camano-41-trawler-2006-fort-myers-100789077-for-sale"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source",
+            "Marketplace observation"
+          ],
+          "Confidence": "High",
+          "Notes": "Model identity and representative specifications are supported by the Camano owner handbook, owner-group documentation and model-specific technical sources. Conflicting hull-specific figures remain explicitly unresolved."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CAMA-41"
+            ],
+            "Years": {
+              "From": 2006,
+              "To": 2007
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://powerandmotoryacht.com/boats/boat-tests/camano-41/",
+            "https://soundingsonline.com/news/feature-boat-camano/",
+            "https://marinesource.com/boat/camano-41-trawler-2006-fort-myers-100789077-for-sale"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance is derived from documented configuration, propulsion, dimensions and production history rather than marketplace sales language."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "CAMA-41"
+            ],
+            "Years": {
+              "From": 2006,
+              "To": 2007
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://powerandmotoryacht.com/boats/boat-tests/camano-41/",
+            "https://soundingsonline.com/news/feature-boat-camano/",
+            "https://marinesource.com/boat/camano-41-trawler-2006-fort-myers-100789077-for-sale",
+            "manufacturerknowledge:CAMANO:Camano Keelform Trawler Family"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance combines model-specific systems with family and age-related maintenance points. It is not an assertion that every hull has these defects."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Only a small number of original Camano 41s were built; confirm builder and hull-specific configuration",
+        "Published water capacity differs between contemporary sources (approximately 170–181 gallons)",
+        "Air draft is based on an individual documented example and varies with folding mast, antennas and bridge equipment",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold"
+      ]
+    },
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "SpecificationConfidence": {
+      "AirDraft": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [],
+        "Note": "B-Atlas working estimate derived from nearest comparable models with similar style, size and flybridge configuration. Verify actual mast/radar/antenna clearance before route planning. Comparable model IDs: MNSH-400-TR, MNSH-350-TR, MNSH-390-TR, MERI-381-SE, BAYL-3888-MO, CUTW-32, TOLL-37-SE"
+      }
+    }
+  },
+  {
+    "BoatModelID": "CPDR-28-FB",
+    "ManufacturerID": "CAPE",
+    "Manufacturer": "Cape Dory",
+    "Model": "28",
+    "Variant": "Flybridge Cruiser",
+    "Nickname": "Cape Dory 28 Flybridge Cruiser",
+    "Active": false,
+    "CanonicalSlug": "cape-dory-28-flybridge-cruiser-flybridge-cruiser",
+    "CanonicalPath": "/models/cape-dory-28-flybridge-cruiser-flybridge-cruiser/",
+    "CanonicalURL": "https://b-atlas.org/models/cape-dory-28-flybridge-cruiser-flybridge-cruiser/",
+    "ModelIdentityFamilyID": "CPDR-28",
+    "ImageURL": "images/cpdr-28-fb.jpg",
+    "FirstYear": 1985,
+    "LastYear": 1991,
+    "TotalBuilt": 60,
+    "Designer": "C. J. Jannace",
+    "HullType": "Semi-Displacement",
+    "Style": "Downeast Flybridge Cruiser",
+    "Construction": "Fiberglass; solid bottom with cored hull-side structures reported",
+    "KeelType": "Full Length",
+    "Fuel": "Gasoline or Diesel",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Single Inboard",
+    "Propulsion": "Shaft",
+    "Flybridge": "Yes",
+    "AftCabin": false,
+    "SideDecks": "Wide",
+    "TypicalEngineID": "Westerbeke 100",
+    "FuelCapacity": 454.2494,
+    "WaterCapacity": 268.7642,
+    "HoldingCapacity": 94.6353,
+    "Berths": 4,
+    "Cabins": 1,
+    "Heads": 1,
+    "Shower": false,
+    "Galley": false,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "No",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "BoatFamily": "Downeast",
+    "Configuration": "Flybridge Cruiser",
+    "HullBehaviour": "Semi-Displacement",
+    "Features": [
+      "Flybridge"
+    ],
+    "NormalizedFuel": null,
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Semi-Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Downeast",
+    "EngineCount": 1,
+    "DisplacementLb": 8000,
+    "FuelCapacityGal": 120,
+    "WaterCapacityGal": 71,
+    "NormalizedHullType": "Semi-Displacement",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "LOA": 8.509,
+    "LWL": 7.8994,
+    "Beam": 3.0226,
+    "FuelCode": "fuel.mixed",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "HullBehaviourCode": "hull_behaviour.semi_displacement",
+    "KeelConfigurationCode": "keel.full_long",
+    "RunningGearProtectionCode": "running_gear.keel_protected",
+    "BoatFamilyCode": "boat_family.downeast",
+    "FlybridgeCode": "availability.yes",
+    "SideDecksCode": "side_decks.wide",
+    "Draft": 0.889,
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "AirDraft": 3.4036,
+    "StyleCode": "Downeast",
+    "CoolingCode": "cooling.fresh_water",
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "Displacement": 3628.739,
+    "ShowerTypeCode": "shower.none",
+    "Strengths": [
+      "Protected single-shaft running gear and strong directional stability",
+      "Lower and flybridge helms provide weather protection plus elevated visibility",
+      "Wide side decks and compact beam support practical couple cruising",
+      "Traditional teak interior and strong model recognition among classic Downeast buyers"
+    ],
+    "Weaknesses": "Engine compartment workspace is exceptionally tight, small cockpit deck area for active outdoor lounging.",
+    "CommonProblems": "Aluminum fuel tank oxidation from top-deck water weeping, window frame seal weeping.",
+    "TypicalMission": "Couples budget Great Loop transits and regional coastal exploring.",
+    "AvoidIf": [
+      "Flybridge ladder access or bridge clearance is a significant constraint",
+      "You need two private cabins or large-family accommodation",
+      "You require twin-engine redundancy or sustained high-speed planing performance"
+    ],
+    "Overview": "The Cape Dory 28 Flybridge Cruiser is the upper-helm version of Cape Dory’s 28-foot Downeast powerboat family. It uses the same full-keel semi-displacement hull as the Power Cruiser and Open Fisherman, adding a compact flybridge above the enclosed lower helm and salon. Most surviving examples are single-shaft boats, with both gasoline and diesel power appearing during production; diesel installations are especially common in the used market.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "Layouts and helm arrangements are well suited to owner-operated cruising by a couple.",
+        "EvidenceRefs": [
+          "https://www.capedory28.info/downloads/1986Brochure.pdf",
+          "https://capedory.org/cdinfo.html",
+          "https://www.hmy.com/yachting/powerboat-guide/cape-dory/28-flybridge-cruiser-1985-91",
+          "https://www.jdpower.com/boats/1986/cape-dory-yachts",
+          "https://www.capedory.org/specs/brochures/1991_NewportShipyards_brochure.pdf"
+        ]
+      },
+      "SoloHandling": {
+        "Assessment": "Good",
+        "Summary": "Manageable dimensions and good helm visibility support solo operation; actual docking conditions and equipment still matter.",
+        "EvidenceRefs": [
+          "https://www.capedory28.info/downloads/1986Brochure.pdf",
+          "https://capedory.org/cdinfo.html",
+          "https://www.hmy.com/yachting/powerboat-guide/cape-dory/28-flybridge-cruiser-1985-91",
+          "https://www.jdpower.com/boats/1986/cape-dory-yachts",
+          "https://www.capedory.org/specs/brochures/1991_NewportShipyards_brochure.pdf"
+        ]
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "Moderate draft and protected running gear suit many inland routes; actual air draft must be verified.",
+        "EvidenceRefs": [
+          "https://www.capedory28.info/downloads/1986Brochure.pdf",
+          "https://capedory.org/cdinfo.html",
+          "https://www.hmy.com/yachting/powerboat-guide/cape-dory/28-flybridge-cruiser-1985-91",
+          "https://www.jdpower.com/boats/1986/cape-dory-yachts",
+          "https://www.capedory.org/specs/brochures/1991_NewportShipyards_brochure.pdf"
+        ]
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "The protected keel, Downeast hull forms and enclosed helm arrangements support coastal use, but condition, power configuration and weather limits remain decisive.",
+        "EvidenceRefs": [
+          "https://www.capedory28.info/downloads/1986Brochure.pdf",
+          "https://capedory.org/cdinfo.html",
+          "https://www.hmy.com/yachting/powerboat-guide/cape-dory/28-flybridge-cruiser-1985-91",
+          "https://www.jdpower.com/boats/1986/cape-dory-yachts",
+          "https://www.capedory.org/specs/brochures/1991_NewportShipyards_brochure.pdf"
+        ]
+      }
+    },
+    "TradeOffs": [
+      "Flybridge adds height, windage, ladder access and canvas/structure maintenance",
+      "Compact machinery and accommodation spaces remain those of a narrow 28-footer",
+      "Published displacement and water-capacity figures vary between factory-era and later technical references",
+      "Single-engine propulsion lacks twin-engine redundancy"
+    ],
+    "BestFor": [
+      "Couples wanting a compact traditional flybridge cruiser",
+      "Great Loop, inland-waterway and protected coastal cruising",
+      "Owners who value protected running gear and classic New England styling"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Confirm exact 28 configuration and model year from HIN and original documentation",
+      "Moisture-test cabin sides, deck and cored hull-side areas around penetrations and previous repairs",
+      "Inspect cabin windows, windshield frames and deck hardware for leakage history",
+      "Inspect engine cooling, exhaust, mounts and tight service-access areas",
+      "Inspect shaft, cutlass bearing, rudder, steering and full-keel running-gear protection",
+      "Verify actual fuel, water, holding and air-draft figures because published specifications vary by year and configuration"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for confirm exact 28 configuration and model year from HIN and original documentation?",
+      "What inspection, repair or service history is available for moisture-test cabin sides, deck and cored hull-side areas around penetrations and previous repairs?",
+      "What inspection, repair or service history is available for inspect cabin windows, windshield frames and deck hardware for leakage history?",
+      "What inspection, repair or service history is available for inspect engine cooling, exhaust, mounts and tight service-access areas?",
+      "What inspection, repair or service history is available for inspect shaft, cutlass bearing, rudder, steering and full-keel running-gear protection?",
+      "What inspection, repair or service history is available for verify actual fuel, water, holding and air-draft figures because published specifications vary by year and configuration?"
+    ],
+    "OwnerActions": [
+      "Keep cabin-window, deck-hardware and rail penetrations sealed and investigate leaks promptly",
+      "Service cooling, exhaust, fuel filtration, shaft, cutlass bearing, rudder and steering systems to documented intervals",
+      "Inspect cored structures around penetrations during haul-out or survey and document repairs",
+      "Maintain exterior teak and hardware bedding according to the individual boat’s finish and use",
+      "Document engine, tank, electrical and structural work for future buyers"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "28 Power family configuration",
+        "Description": "Factory literature identifies four 28 power configurations: Fly Bridge Cruiser, Power Cruiser, Open Fisherman and 280 Sport. “Pilothouse” was not a separate factory model designation.",
+        "AffectedYears": "1985–1991",
+        "EvidenceRefs": [
+          "https://www.capedory28.info/downloads/1986Brochure.pdf",
+          "https://capedory.org/cdinfo.html"
+        ],
+        "Confidence": "High"
+      },
+      {
+        "Name": "1990 flybridge update",
+        "Description": "Technical model guidance reports a reengineered/retooled flybridge around 1990.",
+        "AffectedYears": "1990–1991",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/cape-dory/28-flybridge-cruiser-1985-91"
+        ],
+        "Confidence": "Moderate"
+      },
+      {
+        "Name": "Power options",
+        "Description": "Gasoline and diesel single-inboard installations were offered; used examples are commonly found with Volvo diesel power.",
+        "AffectedYears": "Production run",
+        "EvidenceRefs": [
+          "https://www.capedory28.info/downloads/1986Brochure.pdf",
+          "https://www.jdpower.com/boats/1986/cape-dory-yachts",
+          "https://www.hmy.com/yachting/powerboat-guide/cape-dory/28-flybridge-cruiser-1985-91"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "ModelCharacter": "The best-known Cape Dory powerboat: a compact New England flybridge cruiser with a lobster-boat-derived semi-displacement hull, full protective keel, single inboard and unusually yacht-like teak interior for 28 feet.",
+    "DesignLineage": [
+      "The Cape Dory 28 power family was introduced in the mid-1980s as the company's first major pleasure-power line.",
+      "Factory literature identifies four related configurations on the same hull: Flybridge Cruiser, Power Cruiser, Open Fisherman and 280 Sport.",
+      "The Flybridge Cruiser adds an upper helm to the enclosed Power Cruiser arrangement and became the best-known version.",
+      "More than 220 Cape Dory 28 powerboats were built across the family, representing roughly three-quarters of Cape Dory's pleasure-power production."
+    ],
+    "OwnershipCharacter": "A mechanically simple classic cruiser with protected single-shaft propulsion and good deck access. Core moisture, windows, aging tanks, old Volvo/Chrysler installations and flybridge structure are more important ownership variables than system complexity.",
+    "DateCreated": "2026-07-13",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "B-Atlas Cape Dory Family Research",
+    "Revision": 2,
+    "DataConfidence": "Moderate",
+    "ResearchStatus": "Reviewed",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CPDR-28-FB"
+            ],
+            "Years": {
+              "From": 1985,
+              "To": 1991
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.capedory28.info/downloads/1986Brochure.pdf",
+            "https://capedory.org/cdinfo.html",
+            "https://www.hmy.com/yachting/powerboat-guide/cape-dory/28-flybridge-cruiser-1985-91",
+            "https://www.jdpower.com/boats/1986/cape-dory-yachts",
+            "https://www.capedory.org/specs/brochures/1991_NewportShipyards_brochure.pdf"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Identity and representative specifications are supported by factory-era literature and model-specific technical references; documented conflicts remain visible."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CPDR-28-FB"
+            ],
+            "Years": {
+              "From": 1985,
+              "To": 1991
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.capedory28.info/downloads/1986Brochure.pdf",
+            "https://capedory.org/cdinfo.html",
+            "https://www.hmy.com/yachting/powerboat-guide/cape-dory/28-flybridge-cruiser-1985-91",
+            "https://www.jdpower.com/boats/1986/cape-dory-yachts",
+            "https://www.capedory.org/specs/brochures/1991_NewportShipyards_brochure.pdf"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance is derived from documented configuration, dimensions, propulsion and production history rather than sales claims."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "CPDR-28-FB"
+            ],
+            "Years": {
+              "From": 1985,
+              "To": 1991
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.capedory28.info/downloads/1986Brochure.pdf",
+            "https://capedory.org/cdinfo.html",
+            "https://www.hmy.com/yachting/powerboat-guide/cape-dory/28-flybridge-cruiser-1985-91",
+            "https://www.jdpower.com/boats/1986/cape-dory-yachts",
+            "https://www.capedory.org/specs/brochures/1991_NewportShipyards_brochure.pdf",
+            "manufacturerknowledge:CAPEDORY:Cape Dory Powerboat Family"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance combines model construction details with family and age-related risks; it does not assert that every hull has a defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Published displacement varies between approximately 8,000 and 9,500 lb; individual hull documentation controls",
+        "Published water capacity varies by year/source; 71 gal is retained as a representative Flybridge figure while later factory literature lists 45 gal",
+        "Newport-era continuation after Cape Dory’s Massachusetts operation requires hull-specific verification",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold"
+      ]
+    },
+    "ResearchNotes": "Cape Dory's 1986 factory brochure confirms the 28 Flybridge Cruiser as one of four configurations on the same hull. HMY catalogs the Flybridge as 1985–91. Family production totals are approximately 223 boats across all 28 power variants, not 223 Flybridge boats alone. Variant tankage and weights differ by source/year.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "PlanCriticalStatus": {
+      "FuelCode": "configuration_or_production_mixed"
+    },
+    "SpecificationConfidence": {
+      "Displacement": {
+        "Level": "High",
+        "Status": "supported",
+        "EvidenceRefs": [
+          "https://manualzz.com/doc/10729383/cape-dory-yachts-28-power-cruiser--flybridge-cruiser--ope...",
+          "https://www.capedory.org/specs/cd28pwr.htm"
+        ],
+        "Note": "Cape Dory 28 powerboat documentation lists approximately 8,000 lb for the Cruiser/Flybridge family."
+      },
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      }
+    }
+  },
+  {
+    "BoatModelID": "CPDR-28-OF",
+    "ManufacturerID": "CAPE",
+    "Manufacturer": "Cape Dory",
+    "Model": "28",
+    "Variant": "Open Fisherman",
+    "Nickname": "Cape Dory 28 Open Fisherman",
+    "Active": false,
+    "CanonicalSlug": "cape-dory-28-open-fisherman-open-fisherman",
+    "CanonicalPath": "/models/cape-dory-28-open-fisherman-open-fisherman/",
+    "CanonicalURL": "https://b-atlas.org/models/cape-dory-28-open-fisherman-open-fisherman/",
+    "ModelIdentityFamilyID": "CPDR-28",
+    "ImageURL": "images/cpdr-28-of.jpg",
+    "FirstYear": 1985,
+    "LastYear": 1990,
+    "TotalBuilt": null,
+    "Designer": "C. J. Jannace",
+    "HullType": "Semi-Displacement",
+    "Style": "Downeast Open Cruiser",
+    "Construction": "Fiberglass; solid bottom with cored hull-side structures reported",
+    "KeelType": "Full Length",
+    "Fuel": "Gasoline or Diesel",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Single Inboard",
+    "Propulsion": "Shaft",
+    "Flybridge": "No",
+    "AftCabin": false,
+    "SideDecks": "Wide",
+    "TypicalEngineID": "Volvo Penta MD17",
+    "FuelCapacity": 454.2494,
+    "WaterCapacity": 117.3478,
+    "HoldingCapacity": 56.7812,
+    "Berths": 2,
+    "Cabins": 1,
+    "Heads": 1,
+    "Shower": true,
+    "Galley": false,
+    "CoastalRating": "Limited",
+    "OffshoreRating": "Yes",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "BoatFamily": "Downeast",
+    "HullBehaviour": "Semi-Displacement",
+    "Features": [],
+    "NormalizedFuel": null,
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Semi-Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Downeast",
+    "EngineCount": 1,
+    "Configuration": "Open Fisherman",
+    "DisplacementLb": 8000,
+    "FuelCapacityGal": 120,
+    "WaterCapacityGal": 31,
+    "NormalizedHullType": "Semi-Displacement",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "HullBehaviourCode": "hull_behaviour.semi_displacement",
+    "BoatFamilyCode": "boat_family.downeast",
+    "LOA": 8.509,
+    "LWL": 7.8994,
+    "Beam": 3.0226,
+    "Draft": 0.889,
+    "KeelConfigurationCode": "keel.full_long",
+    "RunningGearProtectionCode": "running_gear.keel_protected",
+    "FuelCode": "fuel.mixed",
+    "FlybridgeCode": "availability.no",
+    "ShowerTypeCode": "shower.wet_head",
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "AirDraft": 2.4384,
+    "StyleCode": "Downeast",
+    "CoolingCode": "cooling.fresh_water",
+    "SideDecksCode": "side_decks.wide",
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "Displacement": 3175.1466,
+    "Strengths": [
+      "Large open cockpit relative to the other Cape Dory 28 configurations",
+      "Protected shaft, rudder and propeller behind the full keel/skeg",
+      "Wide side decks and simple open helm arrangement",
+      "Compact overnight accommodation without sacrificing fishing space"
+    ],
+    "Weaknesses": " economical diesel.",
+    "CommonProblems": "Limited cabin space",
+    "TypicalMission": " originally fishing-focused.",
+    "AvoidIf": [
+      "You need an enclosed lower salon/helm for all-weather cruising",
+      "You need four-berth family accommodation or private cabins",
+      "You want a flybridge or upper helm"
+    ],
+    "Overview": "The Cape Dory 28 Open Fisherman is the open-helm, cockpit-focused version of the 28 powerboat family. It retains the same protected full-keel semi-displacement hull but trades the Cruiser’s enclosed salon and flybridge structure for a large working cockpit and open helm deck. A compact cabin forward still provides V-berths, galley functions and an enclosed head, making it usable for short cruising as well as fishing.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "Basic overnight accommodations suit short trips for two, while cockpit use is the priority.",
+        "EvidenceRefs": [
+          "https://www.capedory28.info/downloads/1986Brochure.pdf",
+          "https://www.capedory.org/specs/brochures/1991_NewportShipyards_brochure.pdf",
+          "https://www.hmy.com/yachting/powerboat-guide/cape-dory/28-open-fisherman-1985-90",
+          "https://www.jdpower.com/boats/1986/cape-dory-yachts"
+        ]
+      },
+      "SoloHandling": {
+        "Assessment": "Good",
+        "Summary": "Manageable dimensions and good helm visibility support solo operation; actual docking conditions and equipment still matter.",
+        "EvidenceRefs": [
+          "https://www.capedory28.info/downloads/1986Brochure.pdf",
+          "https://www.capedory.org/specs/brochures/1991_NewportShipyards_brochure.pdf",
+          "https://www.hmy.com/yachting/powerboat-guide/cape-dory/28-open-fisherman-1985-90",
+          "https://www.jdpower.com/boats/1986/cape-dory-yachts"
+        ]
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "Moderate draft and protected running gear suit many inland routes; actual air draft must be verified.",
+        "EvidenceRefs": [
+          "https://www.capedory28.info/downloads/1986Brochure.pdf",
+          "https://www.capedory.org/specs/brochures/1991_NewportShipyards_brochure.pdf",
+          "https://www.hmy.com/yachting/powerboat-guide/cape-dory/28-open-fisherman-1985-90",
+          "https://www.jdpower.com/boats/1986/cape-dory-yachts"
+        ]
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "The protected keel, Downeast hull forms and enclosed helm arrangements support coastal use, but condition, power configuration and weather limits remain decisive.",
+        "EvidenceRefs": [
+          "https://www.capedory28.info/downloads/1986Brochure.pdf",
+          "https://www.capedory.org/specs/brochures/1991_NewportShipyards_brochure.pdf",
+          "https://www.hmy.com/yachting/powerboat-guide/cape-dory/28-open-fisherman-1985-90",
+          "https://www.jdpower.com/boats/1986/cape-dory-yachts"
+        ]
+      }
+    },
+    "TradeOffs": [
+      "Less weather protection than the enclosed Cruiser variants",
+      "Only compact V-berth accommodation for overnight use",
+      "Open helm and cockpit increase exposure in cold or wet climates",
+      "Single-engine propulsion lacks redundancy"
+    ],
+    "BestFor": [
+      "Fishing-focused owners who still want basic overnight accommodations",
+      "Day boating and short coastal cruising",
+      "Buyers prioritizing cockpit area over enclosed salon space"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Confirm exact 28 configuration and model year from HIN and original documentation",
+      "Moisture-test cabin sides, deck and cored hull-side areas around penetrations and previous repairs",
+      "Inspect cabin windows, windshield frames and deck hardware for leakage history",
+      "Inspect engine cooling, exhaust, mounts and tight service-access areas",
+      "Inspect shaft, cutlass bearing, rudder, steering and full-keel running-gear protection",
+      "Verify actual fuel, water, holding and air-draft figures because published specifications vary by year and configuration"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for confirm exact 28 configuration and model year from HIN and original documentation?",
+      "What inspection, repair or service history is available for moisture-test cabin sides, deck and cored hull-side areas around penetrations and previous repairs?",
+      "What inspection, repair or service history is available for inspect cabin windows, windshield frames and deck hardware for leakage history?",
+      "What inspection, repair or service history is available for inspect engine cooling, exhaust, mounts and tight service-access areas?",
+      "What inspection, repair or service history is available for inspect shaft, cutlass bearing, rudder, steering and full-keel running-gear protection?",
+      "What inspection, repair or service history is available for verify actual fuel, water, holding and air-draft figures because published specifications vary by year and configuration?"
+    ],
+    "OwnerActions": [
+      "Keep cabin-window, deck-hardware and rail penetrations sealed and investigate leaks promptly",
+      "Service cooling, exhaust, fuel filtration, shaft, cutlass bearing, rudder and steering systems to documented intervals",
+      "Inspect cored structures around penetrations during haul-out or survey and document repairs",
+      "Maintain exterior teak and hardware bedding according to the individual boat’s finish and use",
+      "Document engine, tank, electrical and structural work for future buyers"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "Open Fisherman / Open Sportsman naming",
+        "Description": "Factory-era material uses Open Fisherman and later Open Sportsman terminology for the open cockpit member of the 28 family. B-Atlas retains Open Fisherman as the canonical historic name and keeps Open Sportsman as a search alias.",
+        "AffectedYears": "Production and Newport-era literature",
+        "EvidenceRefs": [
+          "https://www.capedory28.info/downloads/1986Brochure.pdf",
+          "https://www.capedory.org/specs/brochures/1991_NewportShipyards_brochure.pdf",
+          "https://www.hmy.com/yachting/powerboat-guide/cape-dory/28-open-fisherman-1985-90"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "ModelCharacter": "The cockpit-first member of the Cape Dory 28 family: an open Down East fisherman with the same protected semi-displacement hull as the cruisers, but substantially less enclosed superstructure and a large working cockpit.",
+    "DesignLineage": [
+      "The Open Fisherman shares the Cape Dory 28 hull with the Flybridge Cruiser, Power Cruiser and 280 Sport.",
+      "Factory and later Newport literature also use Open Sportsman terminology for this open-cockpit configuration.",
+      "The Open retains V-berths, a compact galley and enclosed head despite its fishing-oriented deck arrangement.",
+      "It is a genuine factory configuration rather than a stripped Flybridge Cruiser."
+    ],
+    "OwnershipCharacter": "Simpler topside and easier to use for fishing, swimming or day cruising than the enclosed 28s. The same hull/deck-core and vintage-system issues apply, but there is less cabin/flybridge structure to maintain.",
+    "DateCreated": "Inland cruising and short Loop segments.",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "B-Atlas Cape Dory Family Research",
+    "Revision": 2,
+    "DataConfidence": "Moderate",
+    "ResearchStatus": "Reviewed",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CPDR-28-OF"
+            ],
+            "Years": {
+              "From": 1985,
+              "To": 1990
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.capedory28.info/downloads/1986Brochure.pdf",
+            "https://www.capedory.org/specs/brochures/1991_NewportShipyards_brochure.pdf",
+            "https://www.hmy.com/yachting/powerboat-guide/cape-dory/28-open-fisherman-1985-90",
+            "https://www.jdpower.com/boats/1986/cape-dory-yachts"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Identity and representative specifications are supported by factory-era literature and model-specific technical references; documented conflicts remain visible."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CPDR-28-OF"
+            ],
+            "Years": {
+              "From": 1985,
+              "To": 1990
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.capedory28.info/downloads/1986Brochure.pdf",
+            "https://www.capedory.org/specs/brochures/1991_NewportShipyards_brochure.pdf",
+            "https://www.hmy.com/yachting/powerboat-guide/cape-dory/28-open-fisherman-1985-90",
+            "https://www.jdpower.com/boats/1986/cape-dory-yachts"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance is derived from documented configuration, dimensions, propulsion and production history rather than sales claims."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "CPDR-28-OF"
+            ],
+            "Years": {
+              "From": 1985,
+              "To": 1990
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.capedory28.info/downloads/1986Brochure.pdf",
+            "https://www.capedory.org/specs/brochures/1991_NewportShipyards_brochure.pdf",
+            "https://www.hmy.com/yachting/powerboat-guide/cape-dory/28-open-fisherman-1985-90",
+            "https://www.jdpower.com/boats/1986/cape-dory-yachts",
+            "manufacturerknowledge:CAPEDORY:Cape Dory Powerboat Family"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance combines model construction details with family and age-related risks; it does not assert that every hull has a defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Factory and technical references differ between approximately 7,000 and 8,000 lb displacement; 7,000 lb is retained from later factory literature",
+        "Later Newport-era Open Sportsman production may extend beyond the 1985–1990 Cape Dory run and requires hull-specific verification",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold"
+      ]
+    },
+    "ResearchNotes": "HMY documents 1985–90 production and 8,000 lb specification for the Open Fisherman. Factory/N​ewport literature also uses 'Open Sportsman' terminology; retained as alias.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "PlanCriticalStatus": {
+      "FuelCode": "configuration_or_production_mixed"
+    },
+    "SpecificationConfidence": {
+      "Displacement": {
+        "Level": "High",
+        "Status": "supported",
+        "EvidenceRefs": [
+          "https://www.capedory.org/specs/cd28pwr.htm",
+          "https://manualzz.com/doc/10729383/cape-dory-yachts-28-power-cruiser--flybridge-cruiser--ope..."
+        ],
+        "Note": "Cape Dory 28 Open Fisherman documentation lists approximately 7,000 lb light displacement."
+      }
+    }
+  },
+  {
+    "BoatModelID": "CPDR-28-CR",
+    "ManufacturerID": "CAPE",
+    "Manufacturer": "Cape Dory",
+    "Model": "28",
+    "Variant": "Cruiser",
+    "Nickname": "Cape Dory 28 Power Cruiser",
+    "Active": false,
+    "CanonicalSlug": "cape-dory-28-power-cruiser-power-cruiser",
+    "CanonicalPath": "/models/cape-dory-28-power-cruiser-power-cruiser/",
+    "CanonicalURL": "https://b-atlas.org/models/cape-dory-28-power-cruiser-power-cruiser/",
+    "ModelIdentityFamilyID": "CPDR-28",
+    "ImageURL": "images/cpdr-28-cr.jpg",
+    "FirstYear": 1985,
+    "LastYear": 1991,
+    "TotalBuilt": 220,
+    "Designer": "C. J. Jannace",
+    "HullType": "Semi-Displacement",
+    "Style": "Downeast Cruiser",
+    "Construction": "Fiberglass",
+    "KeelType": "Full Length",
+    "Fuel": "Gasoline or Diesel",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Single Inboard",
+    "Propulsion": "Shaft",
+    "Flybridge": "No",
+    "AftCabin": false,
+    "SideDecks": "Wide",
+    "TypicalEngineID": "Single Volvo 200 hp diesel commonly installed; gasoline installations also exist",
+    "FuelCapacity": 454.2494,
+    "WaterCapacity": 170.3435,
+    "HoldingCapacity": 94.6353,
+    "Berths": 4,
+    "Cabins": 1,
+    "Heads": 1,
+    "Shower": false,
+    "Galley": true,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "No",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "BoatFamily": null,
+    "Configuration": "Enclosed Lower-Helm Cruiser",
+    "HullBehaviour": "Semi-Displacement",
+    "Features": [
+      "Protective Keel",
+      "Wide Side Decks",
+      "Lower Helm",
+      "Convertible Dinette",
+      "Enclosed Head",
+      "Galley"
+    ],
+    "NormalizedFuel": null,
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Semi-Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Downeast",
+    "HullLength_ft": 28,
+    "EngineCount": 1,
+    "DisplacementLb": 8000,
+    "FuelCapacityGal": 120,
+    "WaterCapacityGal": 45,
+    "NormalizedHullType": "Semi-Displacement",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "HullBehaviourCode": "hull_behaviour.semi_displacement",
+    "BoatFamilyCode": "boat_family.downeast",
+    "LOA": 8.509,
+    "LWL": 7.8994,
+    "Beam": 3.0226,
+    "Draft": 0.889,
+    "KeelConfigurationCode": "keel.full_long",
+    "RunningGearProtectionCode": "running_gear.keel_protected",
+    "FuelCode": "fuel.mixed",
+    "FlybridgeCode": "availability.no",
+    "Displacement": 3628.7,
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "AirDraft": 3.35,
+    "StyleCode": "Downeast",
+    "CoolingCode": "cooling.fresh_water",
+    "SideDecksCode": "side_decks.wide",
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "ShowerTypeCode": "shower.none",
+    "Strengths": [
+      "Lower profile and reduced windage compared with the Flybridge Cruiser",
+      "Protected single-shaft running gear and full-keel tracking",
+      "Four-berth cruising interior in a compact Downeast footprint",
+      "Lower helm and enclosed salon suit shoulder-season cruising"
+    ],
+    "Weaknesses": "Compact accommodations, limited payload compared with larger trawlers, and meaningful variation among Cruiser, Flybridge, Open and Sport configurations.",
+    "CommonProblems": "Inspect deck and cabin core moisture, window leakage, fuel tank and exhaust condition, engine access points, shaft and rudder gear, wiring, plumbing and flybridge structure where fitted.",
+    "TypicalMission": "Couple-oriented coastal cruising, Great Loop segments and weekend use in a compact single-diesel Downeast cruiser.",
+    "AvoidIf": [
+      "You specifically want an upper helm or flybridge seating",
+      "You need multiple private cabins or large storage volume",
+      "You require twin-engine redundancy or sustained high-speed operation"
+    ],
+    "Overview": "The Cape Dory 28 Power Cruiser is the enclosed lower-helm, no-flybridge member of Cape Dory’s 28-foot powerboat family. “Cruiser” is an authentic factory powerboat designation here—not the Cape Dory 28 sailboat—and B-Atlas uses the full name “28 Power Cruiser” to keep the two identities distinct. The boat shares the full-keel semi-displacement hull, protected single shaft and traditional interior of the Flybridge Cruiser while retaining a lower profile.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "Layouts and helm arrangements are well suited to owner-operated cruising by a couple.",
+        "EvidenceRefs": [
+          "https://www.capedory28.info/downloads/1986Brochure.pdf",
+          "https://www.capedory.org/specs/brochures/1991_NewportShipyards_brochure.pdf",
+          "https://www.jdpower.com/boats/1986/cape-dory-yachts",
+          "https://capedory.org/cdinfo.html"
+        ]
+      },
+      "SoloHandling": {
+        "Assessment": "Good",
+        "Summary": "Manageable dimensions and good helm visibility support solo operation; actual docking conditions and equipment still matter.",
+        "EvidenceRefs": [
+          "https://www.capedory28.info/downloads/1986Brochure.pdf",
+          "https://www.capedory.org/specs/brochures/1991_NewportShipyards_brochure.pdf",
+          "https://www.jdpower.com/boats/1986/cape-dory-yachts",
+          "https://capedory.org/cdinfo.html"
+        ]
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "Moderate draft and protected running gear suit many inland routes; actual air draft must be verified.",
+        "EvidenceRefs": [
+          "https://www.capedory28.info/downloads/1986Brochure.pdf",
+          "https://www.capedory.org/specs/brochures/1991_NewportShipyards_brochure.pdf",
+          "https://www.jdpower.com/boats/1986/cape-dory-yachts",
+          "https://capedory.org/cdinfo.html"
+        ]
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "The protected keel, Downeast hull forms and enclosed helm arrangements support coastal use, but condition, power configuration and weather limits remain decisive.",
+        "EvidenceRefs": [
+          "https://www.capedory28.info/downloads/1986Brochure.pdf",
+          "https://www.capedory.org/specs/brochures/1991_NewportShipyards_brochure.pdf",
+          "https://www.jdpower.com/boats/1986/cape-dory-yachts",
+          "https://capedory.org/cdinfo.html"
+        ]
+      }
+    },
+    "TradeOffs": [
+      "No elevated helm or flybridge outdoor seating",
+      "Compact engine and storage spaces limit service access and liveaboard capacity",
+      "Single-engine propulsion lacks redundancy",
+      "Published tank and displacement figures differ among years and sources"
+    ],
+    "BestFor": [
+      "Couples wanting the Cape Dory 28 hull without flybridge height",
+      "Inland, canal and protected coastal cruising where lower air draft matters",
+      "Owners who value traditional interiors and simple single-shaft propulsion"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Confirm exact 28 configuration and model year from HIN and original documentation",
+      "Moisture-test cabin sides, deck and cored hull-side areas around penetrations and previous repairs",
+      "Inspect cabin windows, windshield frames and deck hardware for leakage history",
+      "Inspect engine cooling, exhaust, mounts and tight service-access areas",
+      "Inspect shaft, cutlass bearing, rudder, steering and full-keel running-gear protection",
+      "Verify actual fuel, water, holding and air-draft figures because published specifications vary by year and configuration"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for confirm exact 28 configuration and model year from HIN and original documentation?",
+      "What inspection, repair or service history is available for moisture-test cabin sides, deck and cored hull-side areas around penetrations and previous repairs?",
+      "What inspection, repair or service history is available for inspect cabin windows, windshield frames and deck hardware for leakage history?",
+      "What inspection, repair or service history is available for inspect engine cooling, exhaust, mounts and tight service-access areas?",
+      "What inspection, repair or service history is available for inspect shaft, cutlass bearing, rudder, steering and full-keel running-gear protection?",
+      "What inspection, repair or service history is available for verify actual fuel, water, holding and air-draft figures because published specifications vary by year and configuration?"
+    ],
+    "OwnerActions": [
+      "Keep cabin-window, deck-hardware and rail penetrations sealed and investigate leaks promptly",
+      "Service cooling, exhaust, fuel filtration, shaft, cutlass bearing, rudder and steering systems to documented intervals",
+      "Inspect cored structures around penetrations during haul-out or survey and document repairs",
+      "Maintain exterior teak and hardware bedding according to the individual boat’s finish and use",
+      "Document engine, tank, electrical and structural work for future buyers"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "Factory designation",
+        "Description": "Cape Dory factory literature calls this configuration the CD/28 Cruiser or 28 Power Cruiser. B-Atlas uses “28 Power Cruiser” to distinguish it from the unrelated Cape Dory 28 sailboat.",
+        "AffectedYears": "Production run",
+        "EvidenceRefs": [
+          "https://www.capedory28.info/downloads/1986Brochure.pdf",
+          "https://www.capedory.org/specs/brochures/1991_NewportShipyards_brochure.pdf"
+        ],
+        "Confidence": "High"
+      },
+      {
+        "Name": "Flybridge relationship",
+        "Description": "The Flybridge Cruiser is the same core cruising configuration with the factory flybridge added; it remains a separate B-Atlas variant because height, access and use differ materially.",
+        "AffectedYears": "Production run",
+        "EvidenceRefs": [
+          "https://www.capedory28.info/downloads/1986Brochure.pdf",
+          "https://www.capedory.org/specs/brochures/1991_NewportShipyards_brochure.pdf"
+        ],
+        "Confidence": "High"
+      },
+      {
+        "Name": "Power options",
+        "Description": "Factory and valuation sources document both gasoline and diesel single-inboard options.",
+        "AffectedYears": "Production run",
+        "EvidenceRefs": [
+          "https://www.capedory28.info/downloads/1986Brochure.pdf",
+          "https://www.jdpower.com/boats/1986/cape-dory-yachts"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "ModelCharacter": "The low-profile enclosed cruiser in the Cape Dory 28 family, combining a lower inside helm, teak-trimmed salon, single protected shaft and the same salty semi-displacement hull without the height or complexity of a flybridge.",
+    "DesignLineage": [
+      "Factory literature explicitly identifies the CD/28 Cruiser as one of four Cape Dory 28 power configurations.",
+      "The Flybridge Cruiser is the same core cruising concept with an upper helm added.",
+      "The 28 Open Fisherman and 280 Sport use the same hull but different deck/cockpit missions.",
+      "B-Atlas uses '28 Power Cruiser' to keep this factory powerboat distinct from the unrelated Cape Dory 28 sailboat."
+    ],
+    "OwnershipCharacter": "A strong choice for buyers who value classic appearance and inside steering but want to avoid a flybridge. Single-engine simplicity keeps running costs modest; age-related core, window, tank and repower work remain the main ownership risks.",
+    "DateCreated": "2026-07-27",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "B-Atlas Cape Dory Family Research",
+    "Revision": 4,
+    "ResearchStatus": "Reviewed",
+    "ResearchNotes": "Factory brochure verifies 'CD/28 Cruiser' / Power Cruiser nomenclature. Exact variant production count is not known; do not assign the 223-family total to this variant.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "DataConfidence": "Moderate",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CPDR-28-CR"
+            ],
+            "Years": {
+              "From": 1985,
+              "To": 1991
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.capedory28.info/downloads/1986Brochure.pdf",
+            "https://www.capedory.org/specs/brochures/1991_NewportShipyards_brochure.pdf",
+            "https://www.jdpower.com/boats/1986/cape-dory-yachts",
+            "https://capedory.org/cdinfo.html"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Identity and representative specifications are supported by factory-era literature and model-specific technical references; documented conflicts remain visible."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CPDR-28-CR"
+            ],
+            "Years": {
+              "From": 1985,
+              "To": 1991
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.capedory28.info/downloads/1986Brochure.pdf",
+            "https://www.capedory.org/specs/brochures/1991_NewportShipyards_brochure.pdf",
+            "https://www.jdpower.com/boats/1986/cape-dory-yachts",
+            "https://capedory.org/cdinfo.html"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance is derived from documented configuration, dimensions, propulsion and production history rather than sales claims."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "CPDR-28-CR"
+            ],
+            "Years": {
+              "From": 1985,
+              "To": 1991
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.capedory28.info/downloads/1986Brochure.pdf",
+            "https://www.capedory.org/specs/brochures/1991_NewportShipyards_brochure.pdf",
+            "https://www.jdpower.com/boats/1986/cape-dory-yachts",
+            "https://capedory.org/cdinfo.html",
+            "manufacturerknowledge:CAPEDORY:Cape Dory Powerboat Family"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance combines model construction details with family and age-related risks; it does not assert that every hull has a defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Air draft for the no-flybridge Power Cruiser is not assigned until a reliable factory figure is confirmed",
+        "Published water and holding capacities vary by year and source",
+        "Newport-era continuation requires hull-specific verification",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold"
+      ]
+    },
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "PlanCriticalStatus": {
+      "FuelCode": "configuration_or_production_mixed"
+    },
+    "SpecificationConfidence": {
+      "AirDraft": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [],
+        "Note": "B-Atlas working estimate derived from nearest comparable models with similar style, size and flybridge configuration. Verify actual mast/radar/antenna clearance before route planning. Comparable model IDs: CPDR-28-OF, BKCV-26, BKCV-29, LUHR-30, BKCV-30, BKCV-33, BKCV-32"
+      },
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      }
+    }
+  },
+  {
+    "BoatModelID": "CPDR-30-FB",
+    "ManufacturerID": "CAPE",
+    "Manufacturer": "Cape Dory",
+    "Model": "30",
+    "Variant": "Flybridge",
+    "Nickname": "Cape Dory 30 PowerYacht",
+    "Active": false,
+    "CanonicalSlug": "cape-dory-30-poweryacht-flybridge",
+    "CanonicalPath": "/models/cape-dory-30-poweryacht-flybridge/",
+    "CanonicalURL": "https://b-atlas.org/models/cape-dory-30-poweryacht-flybridge/",
+    "ImageURL": "images/cpdr-30-fb.jpg",
+    "FirstYear": 1990,
+    "LastYear": 1991,
+    "TotalBuilt": 15,
+    "Designer": "C. J. Jannace",
+    "HullType": "Modified-V",
+    "Style": "Downeast Flybridge Cruiser",
+    "Construction": "Fiberglass; balsa-cored hull sides reported",
+    "KeelType": "Full Length",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Twin Inboard",
+    "Propulsion": "Shaft",
+    "Flybridge": "Yes",
+    "AftCabin": false,
+    "SideDecks": "Wide",
+    "TypicalEngineID": "Volvo TMD41",
+    "FuelCapacity": 870.6447,
+    "WaterCapacity": 234.6955,
+    "HoldingCapacity": 75.7082,
+    "Berths": 4,
+    "Cabins": 1,
+    "Heads": 1,
+    "Shower": true,
+    "Galley": false,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "No",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "BoatFamily": "Trawler",
+    "Configuration": "Flybridge Cruiser",
+    "HullBehaviour": "Planing / Modified-V",
+    "Features": [
+      "Flybridge",
+      "Wide Side Decks"
+    ],
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Modified-V",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Downeast",
+    "EngineCount": 2,
+    "DisplacementLb": 12500,
+    "FuelCapacityGal": 230,
+    "WaterCapacityGal": 62,
+    "NormalizedHullType": "Modified-V",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "HullBehaviourCode": "hull_behaviour.planing",
+    "BoatFamilyCode": "boat_family.downeast",
+    "LOA": 9.2202,
+    "Beam": 3.6576,
+    "Draft": 0.9144,
+    "Displacement": 5669.9,
+    "KeelConfigurationCode": "keel.full_long",
+    "RunningGearProtectionCode": "running_gear.keel_protected",
+    "FlybridgeCode": "availability.yes",
+    "FuelCode": "fuel.diesel",
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "AirDraft": 3.7338,
+    "StyleCode": "Downeast",
+    "CoolingCode": "cooling.fresh_water",
+    "SideDecksCode": "side_decks.wide",
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "LWL": 8.5862,
+    "ShowerTypeCode": "shower.present_unspecified",
+    "Strengths": [
+      "Wide 12-foot beam gives unusually useful interior volume for a 30-footer",
+      "Full-length keel protects running gear despite the faster modified-V hull",
+      "Flybridge plus optional lower helm provide flexible operation",
+      "Good engine-room access for the size"
+    ],
+    "Weaknesses": "Heavy roll profile at anchor without stabilization, engine access space is tight.",
+    "CommonProblems": "Teak covering board wood seam leaks, forward cabin trunk window cracks.",
+    "TypicalMission": "Classic New England coastal cruising and protected regional loop voyages.",
+    "AvoidIf": [
+      "You specifically want single-diesel simplicity or displacement-speed economy",
+      "A 12-foot beam or roughly 12-foot-plus bridge clearance is unacceptable",
+      "You need multiple private staterooms"
+    ],
+    "Overview": "The Cape Dory 30 Flybridge is a compact hard-chine modified-V Downeast cruiser introduced near the end of Cape Dory’s Massachusetts production. Unlike the semi-displacement 28, the 30 was designed for substantially higher cruising speeds while retaining a full-length keel, protected running gear, a traditional teak interior, flybridge and optional lower helm. Twin inboard installations are typical, and surviving boats may have significant repower histories.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "Layouts and helm arrangements are well suited to owner-operated cruising by a couple.",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/cape-dory/30-flybridge-1990-91",
+          "https://capedory.org/cdinfo.html"
+        ]
+      },
+      "SoloHandling": {
+        "Assessment": "Good",
+        "Summary": "Manageable dimensions and good helm visibility support solo operation; actual docking conditions and equipment still matter.",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/cape-dory/30-flybridge-1990-91",
+          "https://capedory.org/cdinfo.html"
+        ]
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "Moderate draft and protected running gear suit many inland routes; actual air draft must be verified.",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/cape-dory/30-flybridge-1990-91",
+          "https://capedory.org/cdinfo.html"
+        ]
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "The protected keel, Downeast hull forms and enclosed helm arrangements support coastal use, but condition, power configuration and weather limits remain decisive.",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/cape-dory/30-flybridge-1990-91",
+          "https://capedory.org/cdinfo.html"
+        ]
+      }
+    },
+    "TradeOffs": [
+      "Twin engines increase service cost and systems complexity",
+      "12-foot beam and flybridge height reduce transport and marina flexibility",
+      "Balsa-cored hull-side structures require careful moisture inspection around penetrations",
+      "Short original production run means fewer comparable boats and model-specific parts sources"
+    ],
+    "BestFor": [
+      "Couples wanting classic Cape Dory styling with faster cruise capability",
+      "Coastal and Great Lakes cruising where twin-engine performance is useful",
+      "Owners comfortable maintaining twin diesels and flybridge systems"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Confirm original versus repowered engine configuration and document engine-bed or shaft-line changes",
+      "Moisture-test balsa-cored hull sides, side decks and cabin/deck penetrations",
+      "Inspect windows, lower-helm area and cockpit/deck structures for leakage history",
+      "Inspect twin-engine cooling, exhaust, mounts, shafts, cutlass bearings, rudders and steering",
+      "Inspect fuel, water and holding tanks, fill/vent hoses and access",
+      "Verify flybridge structure, ladder, steering controls and actual bridge clearance"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for confirm original versus repowered engine configuration and document engine-bed or shaft-line changes?",
+      "What inspection, repair or service history is available for moisture-test balsa-cored hull sides, side decks and cabin/deck penetrations?",
+      "What inspection, repair or service history is available for inspect windows, lower-helm area and cockpit/deck structures for leakage history?",
+      "What inspection, repair or service history is available for inspect twin-engine cooling, exhaust, mounts, shafts, cutlass bearings, rudders and steering?",
+      "What inspection, repair or service history is available for inspect fuel, water and holding tanks, fill/vent hoses and access?",
+      "What inspection, repair or service history is available for verify flybridge structure, ladder, steering controls and actual bridge clearance?"
+    ],
+    "OwnerActions": [
+      "Keep windows, deck, flybridge and hardware penetrations sealed and investigate water intrusion promptly",
+      "Service engines, cooling, exhaust, fuel filtration, shafts, rudders and steering to documented intervals",
+      "Inspect tanks, hoses, bonding and underwater hardware during haul-out",
+      "Maintain exterior teak and cockpit trim according to the individual boat’s finish and use",
+      "Document machinery, electrical, tank and structural work for future buyers"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "Original Cape Dory production",
+        "Description": "HMY documents the Cape Dory-branded 30 Flybridge in 1990–1991; the molds later went to Nauset Marine, which continued related semi-custom production.",
+        "AffectedYears": "1990–1991 and later mold history",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/cape-dory/30-flybridge-1990-91",
+          "https://capedory.org/cdinfo.html"
+        ],
+        "Confidence": "High"
+      },
+      {
+        "Name": "Repowers",
+        "Description": "Surviving boats may have substantial engine replacements; verify shafting, controls, exhaust, weight and engine-bed work rather than assuming the original installation remains.",
+        "AffectedYears": "Used market",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/cape-dory/30-flybridge-1990-91"
+        ],
+        "Confidence": "Moderate"
+      }
+    ],
+    "ModelCharacter": "A compact twin-engine Cape Dory PowerYacht designed for substantially more speed than the 28: hard-chine modified-V hull, full-length protective keel, wide 12-foot beam, flybridge and traditional teak interior in a short-lived 30-foot family cruiser.",
+    "DesignLineage": [
+      "The factory called the model the Cape Dory 30 PowerYacht; Powerboat Guide commonly catalogs it as the 30 Flybridge.",
+      "It was introduced near the end of Cape Dory's Massachusetts production and only about 15 were built in the original run.",
+      "The 30 uses a hard-chine modified-V hull and twin propulsion rather than the 28 family's rounded-bilge semi-displacement formula.",
+      "The molds later passed to Nauset Marine, which continued related semi-custom production."
+    ],
+    "OwnershipCharacter": "Twin diesels provide useful high-teens cruising speed, but double machinery count and a 12-foot beam materially raise ownership costs over the 28. The short original production run makes Cape Dory-specific trim and model knowledge less common.",
+    "DateCreated": "2026-07-13",
+    "LastUpdated": "2026-09-12",
+    "ReviewedBy": "B-Atlas Cape Dory Family Research",
+    "Revision": 2,
+    "DataConfidence": "Moderate",
+    "ResearchStatus": "Reviewed",
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CPDR-30-FB"
+            ],
+            "Years": {
+              "From": 1990,
+              "To": 1991
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/cape-dory/30-flybridge-1990-91",
+            "https://capedory.org/cdinfo.html"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Identity and representative specifications are supported by factory-era literature and model-specific technical references; documented conflicts remain visible."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "CPDR-30-FB"
+            ],
+            "Years": {
+              "From": 1990,
+              "To": 1991
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/cape-dory/30-flybridge-1990-91",
+            "https://capedory.org/cdinfo.html"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance is derived from documented configuration, dimensions, propulsion and production history rather than sales claims."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "CPDR-30-FB"
+            ],
+            "Years": {
+              "From": 1990,
+              "To": 1991
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/cape-dory/30-flybridge-1990-91",
+            "https://capedory.org/cdinfo.html",
+            "manufacturerknowledge:CAPEDORY:Cape Dory Powerboat Family"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance combines model construction details with family and age-related risks; it does not assert that every hull has a defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Original engine-package details vary among surviving boats; hull-specific documentation controls",
+        "Some later Nauset-built boats derive from the molds but should not be treated as Cape Dory production automatically",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold"
+      ]
+    },
+    "ResearchNotes": "Factory Cape Dory brochure calls the model 30 PowerYacht (1989–90, 15 built); HMY catalogs the same flybridge family as 1990–91. B-Atlas uses 1989–91 to preserve the full documented transition window. Factory brochure gives 32' overall including appendages, while HMY's 30'3\" hull length is retained as the principal LengthFt value for model comparison.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "CharacterConfidence": "High",
+    "RarityConfidence": "Not rated",
+    "PriceConfidence": "Not rated",
+    "SpecificationConfidence": {
+      "LWL": {
+        "Level": "Low",
+        "Status": "restored_legacy_working_value",
+        "EvidenceRefs": [],
+        "Note": "Working LWL restored from the pre-v6.81 archived B-Atlas value (28.17 ft). Retained as a low-confidence community-verifiable value rather than leaving a basic performance input blank."
+      },
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      }
+    }
+  },
+  {
+    "BoatModelID": "CPDR-33-FB",
+    "ManufacturerID": "CAPE",
+    "Manufacturer": "Cape Dory",
+    "Model": "33",
+    "Variant": "Flybridge",
+    "Nickname": "Cape Dory 33 PowerYacht",
+    "Active": false,
+    "CanonicalSlug": "cape-dory-33-poweryacht-flybridge",
+    "CanonicalPath": "/models/cape-dory-33-poweryacht-flybridge/",
+    "CanonicalURL": "https://b-atlas.org/models/cape-dory-33-poweryacht-flybridge/",
+    "ImageURL": "images/cpdr-33-fb.jpg",
+    "FirstYear": 1988,
+    "LastYear": 1994,
+    "TotalBuilt": 23,
+    "Designer": "C. J. Jannace",
+    "HullType": "Modified-V",
+    "Style": "Downeast Flybridge Cruiser",
+    "Construction": "Fiberglass",
+    "KeelType": "Full Length",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Twin Inboard",
+    "Propulsion": "Shaft",
+    "Flybridge": "Yes",
+    "AftCabin": false,
+    "SideDecks": "Wide",
+    "TypicalEngineID": "Perkins 6.354",
+    "FuelCapacity": 984.2071,
+    "WaterCapacity": 378.5412,
+    "HoldingCapacity": 151.4165,
+    "Berths": 4,
+    "Cabins": 1,
+    "Heads": 1,
+    "Shower": true,
+    "Galley": false,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "Limited",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "BoatFamily": "Trawler",
+    "Configuration": "Flybridge Power Yacht",
+    "HullBehaviour": "Planing / Modified-V",
+    "Features": [
+      "Flybridge",
+      "Wide Side Decks"
+    ],
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Modified-V",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Downeast",
+    "EngineCount": 2,
+    "DisplacementLb": 15500,
+    "FuelCapacityGal": 260,
+    "WaterCapacityGal": 100,
+    "NormalizedHullType": "Modified-V",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "HullBehaviourCode": "hull_behaviour.planing",
+    "BoatFamilyCode": "boat_family.downeast",
+    "LOA": 10.0076,
+    "Beam": 3.7084,
+    "Draft": 0.889,
+    "Displacement": 7030.7,
+    "KeelConfigurationCode": "keel.full_long",
+    "RunningGearProtectionCode": "running_gear.keel_protected",
+    "ShowerTypeCode": "shower.separate_stall",
+    "FlybridgeCode": "availability.yes",
+    "SideDecksCode": "side_decks.wide",
+    "FuelCode": "fuel.diesel",
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "AirDraft": 3.8608,
+    "StyleCode": "Downeast",
+    "CoolingCode": "cooling.fresh_water",
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "LWL": 9.144,
+    "Strengths": [
+      "Twin-diesel performance with full-length keel protection",
+      "Excellent lower-helm visibility and useful flybridge station",
+      "Wide side decks and sturdy rails support secure movement forward",
+      "Large head with separate stall shower is unusual in this size range"
+    ],
+    "Weaknesses": "Cruising speeds are very low (8-9 knots), limited deep storage configurations.",
+    "CommonProblems": "Molded step gelcoat cracking pathways, original copper domestic water plumbing leaks.",
+    "TypicalMission": "Protected inside passage voyages and long-term economical loop crawling.",
+    "AvoidIf": [
+      "You require two private staterooms",
+      "You want single-engine operating simplicity",
+      "Flybridge height or ladder access is a major constraint"
+    ],
+    "Overview": "The Cape Dory 33 Power Yacht is a twin-diesel Downeast flybridge cruiser introduced in 1988 as the smaller sister to the 36 Power Yacht. Its modified-V hull, full-length protective keel, lower helm, wide side decks and single private forward stateroom make it a couple-oriented cruising boat rather than an aft-cabin trawler. Period and later sources also call it the 33 Flybridge or 33 Cruiser.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "Layouts and helm arrangements are well suited to owner-operated cruising by a couple.",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/cape-dory/33-flybridge-1988-94",
+          "https://capedoryhistory.com/",
+          "https://capedory.org/cdinfo.html",
+          "https://www.jdpower.com/boats/1992/cape-dory-yachts"
+        ]
+      },
+      "SoloHandling": {
+        "Assessment": "Good",
+        "Summary": "Manageable dimensions and good helm visibility support solo operation; actual docking conditions and equipment still matter.",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/cape-dory/33-flybridge-1988-94",
+          "https://capedoryhistory.com/",
+          "https://capedory.org/cdinfo.html",
+          "https://www.jdpower.com/boats/1992/cape-dory-yachts"
+        ]
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "Moderate draft and protected running gear suit many inland routes; actual air draft must be verified.",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/cape-dory/33-flybridge-1988-94",
+          "https://capedoryhistory.com/",
+          "https://capedory.org/cdinfo.html",
+          "https://www.jdpower.com/boats/1992/cape-dory-yachts"
+        ]
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "The protected keel, Downeast hull forms and enclosed helm arrangements support coastal use, but condition, power configuration and weather limits remain decisive.",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/cape-dory/33-flybridge-1988-94",
+          "https://capedoryhistory.com/",
+          "https://capedory.org/cdinfo.html",
+          "https://www.jdpower.com/boats/1992/cape-dory-yachts"
+        ]
+      }
+    },
+    "TradeOffs": [
+      "Twin diesels increase service and replacement cost",
+      "Single private stateroom limits guest privacy",
+      "Flybridge adds clearance, ladder-access and enclosure maintenance",
+      "Relatively low production volume limits direct comparables"
+    ],
+    "BestFor": [
+      "Cruising couples wanting a traditional twin-diesel flybridge yacht",
+      "Great Lakes and coastal cruising with moderate-speed capability",
+      "Owners who value lower-helm visibility and protected running gear"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Confirm hull identity, build year and any Newport Shipyards-era continuation documentation",
+      "Inspect deck, cabin and window penetrations for moisture intrusion and previous repairs",
+      "Inspect twin-diesel cooling, exhaust, mounts, shafts, cutlass bearings, rudders and steering",
+      "Inspect fuel, water and holding systems and verify tank capacities",
+      "Test lower and flybridge helm controls and steering",
+      "Verify stall-shower plumbing, seacocks and sanitation systems"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for confirm hull identity, build year and any Newport Shipyards-era continuation documentation?",
+      "What inspection, repair or service history is available for inspect deck, cabin and window penetrations for moisture intrusion and previous repairs?",
+      "What inspection, repair or service history is available for inspect twin-diesel cooling, exhaust, mounts, shafts, cutlass bearings, rudders and steering?",
+      "What inspection, repair or service history is available for inspect fuel, water and holding systems and verify tank capacities?",
+      "What inspection, repair or service history is available for test lower

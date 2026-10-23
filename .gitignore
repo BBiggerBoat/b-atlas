@@ -9,6 +9,8 @@
 .bscout-data/
 dist/
 node_modules/
+/boatmodels.json
+/data/generated/
 
 # Credentials / private keys
 *.pem
@@ -24,3 +26,17 @@ secrets.json
 Thumbs.db
 .vscode/
 .idea/
+
+# Reproducible public outputs; deploy dist/, never the source checkout.
+/models/
+/manufacturers/
+/boats/
+/compare/
+/sitemap.xml
+/data/model-permalinks.json
+/reports/canonical-inventory.json
+/reports/image-coverage-audit.json
+/reports/production-image-availability.json
+# Superseded archives and Phase 2 aggregates live in verified small fixtures.
+/archive/canonical-migration-baseline/
+/data/phase2-live-*.json

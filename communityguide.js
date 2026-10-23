@@ -4,28 +4,25 @@ const KNOWLEDGE_KEY="bscoutCommunityKnowledgeItemsV1";
 const REVIEWED_KEY="bscoutReviewedContributionsV1";
 const ATTACHMENT_DB="bscoutContributionAttachmentsV1";
 const ATTACHMENT_STORE="files";
-const COMMUNITY_API_BASE="https://api.b-atlas.org";
 let staticKnowledge=[];
 let staticEvidence=[];
 let staticReviewed=[];
-let readyPromise=null;
+let readyPromise=null,readyEpoch=-1;
 const esc=v=>String(v??"").replace(/[&<>'"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","'":"&#39;",'"':"&quot;"}[c]));
 const read=key=>{try{const v=JSON.parse(root.localStorage?.getItem(key)||"[]");return Array.isArray(v)?v:[]}catch{return[]}};
 const safeUrl=v=>{try{const u=new URL(String(v||""),root.location?.href);return ["http:","https:"].includes(u.protocol)?u.href:""}catch{return""}};
 const uniqBy=(rows,key)=>{const m=new Map();for(const r of rows||[]){const k=r?.[key];if(k)m.set(k,r)}return [...m.values()]};
 async function init(){
- if(readyPromise)return readyPromise;
- readyPromise=Promise.all([
-  fetch("data/community-knowledge-items.json",{cache:"no-store"}).then(r=>r.ok?r.json():[]).catch(()=>[]),
-  fetch("data/community-knowledge-evidence.json",{cache:"no-store"}).then(r=>r.ok?r.json():[]).catch(()=>[]),
-  fetch("data/community-reviewed-contributions.json",{cache:"no-store"}).then(r=>r.ok?r.json():[]).catch(()=>[]),
-  fetch(`${COMMUNITY_API_BASE}/api/public/overlays`,{cache:"no-store"}).then(r=>r.ok?r.json():null).catch(()=>null)
- ]).then(([k,e,r,live])=>{
+ const repository=root.BScoutDataRepository.getRepository();
+ if(readyPromise&&readyEpoch===repository.epoch)return readyPromise;
+ readyEpoch=repository.epoch;
+ readyPromise=repository.loadSearchData().then(data=>{
+  const k=data.communityKnowledgeItems,e=data.communityKnowledgeEvidence,r=data.communityReviewedContributions,live=data.communityOverlay;
   staticKnowledge=uniqBy([...(Array.isArray(k)?k:[]),...(Array.isArray(live?.knowledgeItems)?live.knowledgeItems:[])],"KnowledgeItemID");
   staticEvidence=uniqBy([...(Array.isArray(e)?e:[]),...(Array.isArray(live?.knowledgeEvidence)?live.knowledgeEvidence:[])],"KnowledgeEvidenceID");
   staticReviewed=uniqBy([...(Array.isArray(r)?r:[]),...(Array.isArray(live?.reviewedContributions)?live.reviewedContributions:[])],"ContributionID");
   return true
- });
+ }).catch(error=>{readyPromise=null;throw error;});
  return readyPromise;
 }
 function itemsForModel(modelId){

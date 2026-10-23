@@ -1,0 +1,3124 @@
+ps://www.boats.com/power-boats/2020-rosborough-rf-246-custom-wheelhouse-10182555/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance combines documented systems with age- and configuration-related checks; it does not assert that every hull has a defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Published displacement, fuel capacity and overall length vary significantly by build, power package and measurement convention.",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold"
+      ]
+    },
+    "ModelCharacter": "The working-boat expression of the Rosborough 246: a trailerable Nova Scotia-derived wheelhouse cruiser with 360-degree visibility, sliding pilot doors and a large open cockpit. It is equally credible as a fishing, patrol, search-and-rescue or minimalist cruising platform.",
+    "DesignLineage": [
+      "Bob Rosborough developed the first fiberglass RF-246 after experimenting with several earlier designs; the first 246 was delivered in 1987.",
+      "The Custom Wheelhouse is the utility-oriented branch of the same proven 25-foot RF-246 hull family.",
+      "Rosborough built nearly 500 examples over roughly 25 years before selling the molds to Eastern Boats in New Hampshire.",
+      "Eastern Boat Works continues the Rosborough 246 hull today, with the Custom Wheelhouse retained alongside more cruising-focused Yarmouth, Halifax and Digby layouts."
+    ],
+    "OwnershipCharacter": "Rugged, simple and highly adaptable. Outboard versions are particularly easy to service, while older boats may have diesel inboard or sterndrive power; sparse interior trim and commercial-style construction generally reduce cosmetic maintenance compared with yachtier pocket cruisers.",
+    "CharacterConfidence": "High",
+    "DisplacementLb": 5000,
+    "FuelCapacityGal": 115,
+    "NormalizedHullType": "Semi-Displacement",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "RarityConfidence": "Not rated",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "PriceConfidence": "Not rated",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "BoatFamilyCode": "boat_family.downeast",
+    "HullBehaviourCode": "hull_behaviour.semi_displacement",
+    "LOA": 7.4676,
+    "Beam": 2.5908,
+    "ModelAliases": [
+      "RF-246 Custom Wheelhouse"
+    ],
+    "FuelCode": "fuel.gasoline",
+    "MechanicalPropulsionCode": "mechanical_propulsion.outboard",
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres",
+    "HoldingCapacityUnitStatus": "canonical_litres",
+    "LWL": 7.112,
+    "KeelConfigurationCode": "keel.protective",
+    "RudderTypeCode": "rudder.none_external_drive",
+    "Draft": 0.4572,
+    "PlanCriticalStatus": {
+      "Draft": "researched_unknown"
+    },
+    "AirDraft": 3.35,
+    "CanonicalSlug": "rosborough-rf-246-custom-wheelhouse",
+    "CanonicalPath": "/models/rosborough-rf-246-custom-wheelhouse/",
+    "CanonicalURL": "https://b-atlas.org/models/rosborough-rf-246-custom-wheelhouse/",
+    "ModelIdentityFamilyID": "ROSB-RF246",
+    "StyleCode": "Downeast",
+    "CoolingCode": "cooling.outboard",
+    "FlybridgeCode": "availability.no",
+    "SideDecksCode": "side_decks.moderate",
+    "SpecificationConfidence": {
+      "AirDraft": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [],
+        "Note": "B-Atlas working estimate derived from nearest comparable models with similar style, size and flybridge configuration. Verify actual mast/radar/antenna clearance before route planning. Comparable model IDs: BKCV-26, CPDR-28-OF, BKCV-29, LUHR-30, BKCV-30, BKCV-33, BKCV-32"
+      },
+      "PlaningCruiseSpeed": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://boattest.com/boats/eastern-boats/rosborough-246-yarmouth-2022",
+          "https://easternboats.com/boats/rosborough-246-yarmouth/"
+        ],
+        "Note": "BoatTEST measured a current single-200-hp outboard RF-246/Yarmouth at best cruise 14.4 mph (12.5 kn) burning 5.7 US gal/h. Older diesel/I-O RF-246 configurations can differ substantially."
+      },
+      "PlaningCruiseFuelBurn": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://boattest.com/boats/eastern-boats/rosborough-246-yarmouth-2022",
+          "https://easternboats.com/boats/rosborough-246-yarmouth/"
+        ],
+        "Note": "BoatTEST measured a current single-200-hp outboard RF-246/Yarmouth at best cruise 14.4 mph (12.5 kn) burning 5.7 US gal/h. Older diesel/I-O RF-246 configurations can differ substantially."
+      },
+      "WaterCapacity": {
+        "Level": "High",
+        "Status": "supported",
+        "EvidenceRefs": [
+          "https://easternboats.com/boats/rosborough-246-yarmouth/"
+        ],
+        "Note": "Current Eastern/Rosborough 246 Yarmouth factory specification lists 40 US gal fresh water."
+      },
+      "HoldingCapacity": {
+        "Level": "High",
+        "Status": "supported",
+        "EvidenceRefs": [
+          "https://easternboats.com/boats/rosborough-246-yarmouth/"
+        ],
+        "Note": "Current Eastern/Rosborough 246 Yarmouth factory specification lists 33 US gal black water."
+      },
+      "Displacement": {
+        "Level": "High",
+        "Status": "supported",
+        "EvidenceRefs": [
+          "https://easternboats.com/boats/rosborough-246-yarmouth/"
+        ],
+        "Note": "Current Eastern/Rosborough 246 Yarmouth factory specification lists 6,000 lb dry weight; stored as representative displacement/weight for the current outboard configuration."
+      },
+      "EngineCount": {
+        "Level": "High",
+        "Status": "supported",
+        "EvidenceRefs": [
+          "https://easternboats.com/boats/rosborough-246-yarmouth/"
+        ],
+        "Note": "Current Yarmouth configuration is designed around a single 150–200 hp outboard; older RF-246 propulsion arrangements differ by variant."
+      },
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing propulsion/keel description; no new factual assertion introduced."
+      }
+    },
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": 12.5,
+    "PlaningCruiseFuelBurn": 21.577,
+    "Displacement": 2721.6,
+    "EngineCount": 1,
+    "ShowerTypeCode": "shower.varies",
+    "RunningGearProtectionCode": "running_gear.exposed"
+  },
+  {
+    "ManufacturerID": "ROSBOROUGH",
+    "Manufacturer": "Rosborough",
+    "Model": "RF-246",
+    "Variant": "Legacy Sedan Cruiser Diesel",
+    "Nickname": "Rosborough RF-246 Sedan Cruiser Diesel",
+    "ImageURL": "images/rosb-246-ls.jpg",
+    "Active": false,
+    "FirstYear": 1987,
+    "LastYear": 2012,
+    "TotalBuilt": null,
+    "Designer": "James “Bob” Rosborough",
+    "HullType": "Semi-Displacement",
+    "Style": "Pilothouse Sedan Cruiser",
+    "Construction": "Fiberglass; exact laminate and structural details vary by year",
+    "KeelType": "Sterndrive installation; no shaft-protecting full keel",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh-water-cooled diesel",
+    "EngineConfiguration": "Single inboard diesel with sterndrive on documented examples",
+    "Propulsion": "Sterndrive",
+    "Flybridge": "No",
+    "AftCabin": false,
+    "SideDecks": "Moderate",
+    "TypicalEngineID": "Volvo Penta diesel/sterndrive installations vary; documented example uses TAMD22 105 hp",
+    "FuelCapacity": 264.9788,
+    "WaterCapacity": 113.5624,
+    "HoldingCapacity": null,
+    "Berths": 3,
+    "Cabins": 1,
+    "Heads": 1,
+    "Shower": "Varies; not established as a universal enclosed shower",
+    "Galley": "Compact deckhouse galley; equipment varies by boat",
+    "CoastalRating": "Yes",
+    "OffshoreRating": "Limited",
+    "GreatLoopSuitable": true,
+    "Trailerable": true,
+    "Strengths": [
+      "Rugged compact hull with practical enclosed wheelhouse",
+      "Trailerable beam and shallow draft for a boat with genuine coastal-cruising capability",
+      "Long production history with cruising, fishing and commercial derivatives"
+    ],
+    "Weaknesses": "Legacy diesel and sterndrive parts support can be more difficult than current outboards; machinery access is compact and specifications vary significantly among custom boats.",
+    "CommonProblems": "Inspect sterndrive corrosion, bellows and transom assembly, diesel cooling and exhaust systems, fuel tank and hoses, window and door leaks, deck moisture, steering, wiring and trailer capacity.",
+    "TypicalMission": "Economical trailerable couple cruising and inland or coastal passages for an owner prepared to maintain an older diesel/sterndrive installation.",
+    "AvoidIf": [
+      "You need wide side decks or large private accommodations",
+      "You want a standardized model with little year-to-year variation",
+      "You prioritize high-speed planing performance"
+    ],
+    "DateCreated": "2026-07-10",
+    "LastUpdated": "2026-09-12",
+    "ReviewedBy": "B-Atlas Phase 8C-9 Family Research",
+    "Revision": 4,
+    "BoatModelID": "ROSB-246-LS",
+    "HullBehaviour": "Semi-Displacement",
+    "Features": [
+      "Trailerable"
+    ],
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Sterndrive",
+    "NormalizedHullForm": "Semi-Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Downeast",
+    "BoatFamily": "Downeast",
+    "Configuration": "Legacy Sedan Cruiser",
+    "ResearchStatus": "Reviewed",
+    "DataConfidence": "Moderate",
+    "ModelSeries": "RF-246",
+    "ModelGeneration": "Legacy Rosborough-built diesel/sterndrive",
+    "EvolutionNotes": "Legacy Rosborough-built Sedan Cruisers were highly customizable and may use diesel sterndrive or outboard propulsion. This record represents documented diesel/sterndrive examples, not every RF-246 Sedan Cruiser.",
+    "ResearchNotes": "Legacy Sedan Cruiser record is intentionally narrowed to the diesel cruising identity seen in period/used-boat records. It shares the RF-246 hull with the Custom Wheelhouse and is a predecessor in mission to the modern Yarmouth cruising layout. Draft standardized at 2 ft (0.6096 m), supported by period RF-246 specifications and independent used-boat review/listing evidence.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "Overview": "The Rosborough RF-246 Legacy Sedan Cruiser Diesel is a Nova Scotia-designed compact semi-displacement cruiser/workboat derivative built around an 8-foot-6-inch trailerable beam. The RF-246 has appeared with materially different interior layouts and propulsion packages over its long production history, so exact engine, tank and accommodation details must be matched to the individual build.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "Compact accommodations are oriented to one couple or a small crew."
+      },
+      "SoloHandling": {
+        "Assessment": "Good",
+        "Summary": "Compact dimensions and straightforward helm arrangements support short-handed operation."
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "Shallow draft and manageable dimensions suit inland and protected-water cruising."
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "Capability depends on hull form, load, weather and operator judgment; verify the individual model’s limits."
+      }
+    },
+    "TradeOffs": [
+      "Narrow beam limits side-deck and interior volume",
+      "Long production history creates substantial variation in engines, tanks and layouts",
+      "Utilitarian finish and workboat ergonomics may feel basic compared with modern cruisers"
+    ],
+    "BestFor": [
+      "Couples wanting a compact all-weather coastal cruiser",
+      "Owners needing trailerable beam with more displacement and workboat character than a light pilothouse boat",
+      "Cruising, fishing or mixed-use operation"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Confirm exact builder, year, layout and propulsion package",
+      "Inspect hull/deck structure, wheelhouse joints and previous hardware penetrations",
+      "Inspect engine/outboard installation, fuel system and steering",
+      "Verify actual tank capacities, loaded weight and trailer suitability"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for confirm exact builder, year, layout and propulsion package?",
+      "What inspection, repair or service history is available for inspect hull/deck structure, wheelhouse joints and previous hardware penetrations?",
+      "What inspection, repair or service history is available for inspect engine/outboard installation, fuel system and steering?",
+      "What inspection, repair or service history is available for verify actual tank capacities, loaded weight and trailer suitability?"
+    ],
+    "OwnerActions": [
+      "Maintain engine, cooling, fuel and steering systems to manufacturer intervals",
+      "Keep deck, window and hardware penetrations sealed and investigate leaks promptly",
+      "Document structural, electrical and propulsion repairs for future buyers"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "RF-246 layout and propulsion families",
+        "Description": "Historical Sedan Cruiser, Custom Wheelhouse and later Digby/Halifax/Yarmouth arrangements share the RF-246 platform but differ materially in interior layout, power and tankage.",
+        "AffectedYears": "Long production history",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/rosborough/rf-246-sedan-cruiser-1988-13",
+          "https://boattest.com/boats/eastern-boats/rosborough-246-yarmouth-2022",
+          "https://www.boats.com/power-boats/2020-rosborough-rf-246-custom-wheelhouse-10182555/"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "ROSB-246-LS"
+            ],
+            "Years": {
+              "From": 1987,
+              "To": 2012
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/rosborough/rf-246-sedan-cruiser-1988-13",
+            "https://boattest.com/boats/eastern-boats/rosborough-246-yarmouth-2022",
+            "https://www.boats.com/power-boats/2020-rosborough-rf-246-custom-wheelhouse-10182555/",
+            "https://soundingsonline.com/news/used-boat-review-rosborough-rf-246/",
+            "https://www.boatdealers.ca/boats-for-sale/670866/rosborough-rf-246-kingston-ontario"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Identity and representative specifications are supported by manufacturer or model-specific technical references; unresolved production or configuration differences remain explicit."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "ROSB-246-LS"
+            ],
+            "Years": {
+              "From": 1987,
+              "To": 2012
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/rosborough/rf-246-sedan-cruiser-1988-13",
+            "https://boattest.com/boats/eastern-boats/rosborough-246-yarmouth-2022",
+            "https://www.boats.com/power-boats/2020-rosborough-rf-246-custom-wheelhouse-10182555/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance is derived from documented configuration, propulsion, dimensions and intended use rather than marketplace promotional language."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "ROSB-246-LS"
+            ],
+            "Years": {
+              "From": 1987,
+              "To": 2012
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/rosborough/rf-246-sedan-cruiser-1988-13",
+            "https://boattest.com/boats/eastern-boats/rosborough-246-yarmouth-2022",
+            "https://www.boats.com/power-boats/2020-rosborough-rf-246-custom-wheelhouse-10182555/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance combines documented systems with age- and configuration-related checks; it does not assert that every hull has a defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Published displacement, fuel capacity and overall length vary significantly by build, power package and measurement convention.",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold"
+      ]
+    },
+    "ModelCharacter": "The classic Canadian 'trailerable trawler' version of the RF-246: a sedan cabin extended aft for a larger dinette and galley, with a covered cockpit and economical diesel propulsion. It is one of the earliest boats to prove that a cruising couple could combine real coastal capability with road portability.",
+    "DesignLineage": [
+      "The RF-246 Sedan Cruiser grew from the same Bob Rosborough hull first delivered in 1987.",
+      "Period reviews describe the Sedan as the longer-cabin cruising alternative to the Custom Wheelhouse, with substantially more enclosed living space.",
+      "Diesel inboard, diesel sterndrive and outboard power were all used across the broad RF-246 family; this B-Atlas record represents the legacy diesel Sedan Cruiser identity.",
+      "After Eastern Boats acquired the molds, the cruising-sedan tradition continued in modern 246 layouts such as the Yarmouth rather than under the old Sedan Cruiser Diesel name."
+    ],
+    "OwnershipCharacter": "A rare combination of simple diesel economy, trailerability and genuine overnight accommodation. Older Volvo/Yanmar propulsion, fuel tanks, cabin systems and trailers deserve age-specific inspection, but the hull itself has a strong reputation for durability and rough-water security.",
+    "CharacterConfidence": "High",
+    "DisplacementLb": 6000,
+    "FuelCapacityGal": 87,
+    "NormalizedHullType": "Semi-Displacement",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "RarityConfidence": "Not rated",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "PriceConfidence": "Not rated",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "BoatFamilyCode": "boat_family.downeast",
+    "HullBehaviourCode": "hull_behaviour.semi_displacement",
+    "LOA": 7.4676,
+    "Beam": 2.5908,
+    "ModelAliases": [
+      "RF-246 Sedan Cruiser"
+    ],
+    "FuelCode": "fuel.diesel",
+    "MechanicalPropulsionCode": "mechanical_propulsion.sterndrive",
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "unit_unverified",
+    "LWL": 7.112,
+    "KeelConfigurationCode": "keel.protective",
+    "RudderTypeCode": "rudder.none_external_drive",
+    "Draft": 0.6096,
+    "AirDraft": 3.35,
+    "CanonicalSlug": "rosborough-rf-246-legacy-sedan-cruiser-diesel",
+    "CanonicalPath": "/models/rosborough-rf-246-legacy-sedan-cruiser-diesel/",
+    "CanonicalURL": "https://b-atlas.org/models/rosborough-rf-246-legacy-sedan-cruiser-diesel/",
+    "ModelIdentityFamilyID": "ROSB-RF246",
+    "StyleCode": "Downeast",
+    "CoolingCode": "cooling.fresh_water",
+    "FlybridgeCode": "availability.no",
+    "SideDecksCode": "side_decks.moderate",
+    "SpecificationConfidence": {
+      "AirDraft": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [],
+        "Note": "B-Atlas working estimate derived from nearest comparable models with similar style, size and flybridge configuration. Verify actual mast/radar/antenna clearance before route planning. Comparable model IDs: BKCV-26, CPDR-28-OF, BKCV-29, LUHR-30, BKCV-30, BKCV-33, BKCV-32"
+      },
+      "FuelCapacity": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [],
+        "Note": "Legacy sources conflict on tankage. v6.95 retains the existing working value, interprets its legacy basis as US gallons, and converts it to canonical litres pending owner/source verification."
+      },
+      "Displacement": {
+        "Level": "Low",
+        "Status": "restored_legacy_working_value",
+        "EvidenceRefs": [],
+        "Note": "Working displacement restored from the archived pre-v6.81 value (6000 lb) and converted to canonical kilograms. Community/factory verification remains welcome."
+      },
+      "EngineCount": {
+        "Level": "Medium",
+        "Status": "inferred_from_engine_configuration",
+        "EvidenceRefs": [],
+        "Note": "Engine count (1) normalized from the existing canonical EngineConfiguration description; no new external specification source was required."
+      },
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing propulsion/keel description; no new factual assertion introduced."
+      }
+    },
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "Displacement": 2721.6,
+    "EngineCount": 1,
+    "ShowerTypeCode": "shower.varies",
+    "RunningGearProtectionCode": "running_gear.exposed"
+  },
+  {
+    "ManufacturerID": "ROSBOROUGH",
+    "Manufacturer": "Rosborough",
+    "Model": "246",
+    "Variant": "Yarmouth",
+    "Nickname": "Rosborough 246 Yarmouth",
+    "ImageURL": "images/rosb-246.jpg",
+    "Active": true,
+    "FirstYear": 1987,
+    "LastYear": null,
+    "TotalBuilt": null,
+    "Designer": "James “Bob” Rosborough",
+    "HullType": "Semi-Displacement",
+    "Style": "Downeast Pilothouse Cruiser",
+    "Construction": "Hand-laid fiberglass hull; solid fiberglass except transom, with one-piece stringer grid and foam flotation on current Eastern-built generation",
+    "KeelType": "Shallow-draft outboard hull; no protected shaft keel",
+    "Fuel": "Gasoline",
+    "Cooling": "Raw-water-cooled outboard",
+    "EngineConfiguration": "Single outboard, typically 150–250 hp",
+    "Propulsion": "Outboard",
+    "Flybridge": "No",
+    "AftCabin": false,
+    "SideDecks": "Moderate",
+    "TypicalEngineID": "150–200 hp modern outboard; verify year and installation",
+    "FuelCapacity": 435.3224,
+    "WaterCapacity": 151.4165,
+    "HoldingCapacity": 124.9186,
+    "Berths": 3,
+    "Cabins": 1,
+    "Heads": 1,
+    "Shower": "Cockpit shower optional; no standard enclosed interior shower in Yarmouth layout",
+    "Galley": "Port-side cruising galley with sink, cooktop and refrigerator; equipment varies by generation",
+    "CoastalRating": "Yes",
+    "OffshoreRating": "Limited",
+    "GreatLoopSuitable": true,
+    "Trailerable": true,
+    "Strengths": [
+      "Rugged compact hull with practical enclosed wheelhouse",
+      "Trailerable beam and shallow draft for a boat with genuine coastal-cruising capability",
+      "Long production history with cruising, fishing and commercial derivatives"
+    ],
+    "Weaknesses": "Compact accommodations, utilitarian finish compared with traditional yachts, limited private sleeping space and substantial configuration differences between legacy Rosborough-built and current Eastern-built boats.",
+    "CommonProblems": "Confirm generation and propulsion first. Inspect pilothouse and deck penetrations for moisture, window and door sealing, aluminum fuel tank and hoses, transom or outboard-bracket structure, cockpit drainage, steering, electrical additions and trailer condition.",
+    "TypicalMission": "Trailerable couple cruising, Great Loop and inland-waterway travel, fishing and protected-to-moderate coastal cruising with modern outboard serviceability.",
+    "AvoidIf": [
+      "You need wide side decks or large private accommodations",
+      "You want a standardized model with little year-to-year variation",
+      "You prioritize high-speed planing performance"
+    ],
+    "DateCreated": "2026-07-13",
+    "LastUpdated": "2026-09-12",
+    "ReviewedBy": "B-Atlas Phase 8C-9 Family Research",
+    "Revision": 3,
+    "BoatModelID": "ROSB-246",
+    "BoatFamily": "Downeast",
+    "HullBehaviour": "Semi-Displacement",
+    "Features": [
+      "Trailerable"
+    ],
+    "NormalizedFuel": "Gasoline",
+    "NormalizedPropulsion": "Outboard",
+    "NormalizedHullForm": "Semi-Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Downeast",
+    "ResearchStatus": "Reviewed",
+    "ResearchNotes": "Yarmouth is a current Eastern Boat Works Rosborough 246 cruising layout. Halifax and Digby are sister layouts on the same hull but are not separate live B-Atlas records.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "Configuration": "Pilothouse Cruiser",
+    "DataConfidence": "Moderate",
+    "ModelSeries": "RF-246",
+    "ModelGeneration": "Current Eastern-built cruising layout",
+    "EvolutionNotes": "The first RF-246 was delivered in 1987. After roughly 25 years and almost 500 boats, the molds transferred to Eastern Boats. The current 246 is offered in Yarmouth, Halifax and Digby interior layouts plus a Custom Wheelhouse.",
+    "Overview": "The Rosborough RF-246 Yarmouth / current cruising layout is a Nova Scotia-designed compact semi-displacement cruiser/workboat derivative built around an 8-foot-6-inch trailerable beam. The RF-246 has appeared with materially different interior layouts and propulsion packages over its long production history, so exact engine, tank and accommodation details must be matched to the individual build.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "Compact accommodations are oriented to one couple or a small crew."
+      },
+      "SoloHandling": {
+        "Assessment": "Good",
+        "Summary": "Compact dimensions and straightforward helm arrangements support short-handed operation."
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "Shallow draft and manageable dimensions suit inland and protected-water cruising."
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "Capability depends on hull form, load, weather and operator judgment; verify the individual model’s limits."
+      }
+    },
+    "TradeOffs": [
+      "Narrow beam limits side-deck and interior volume",
+      "Long production history creates substantial variation in engines, tanks and layouts",
+      "Utilitarian finish and workboat ergonomics may feel basic compared with modern cruisers"
+    ],
+    "BestFor": [
+      "Couples wanting a compact all-weather coastal cruiser",
+      "Owners needing trailerable beam with more displacement and workboat character than a light pilothouse boat",
+      "Cruising, fishing or mixed-use operation"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Confirm exact builder, year, layout and propulsion package",
+      "Inspect hull/deck structure, wheelhouse joints and previous hardware penetrations",
+      "Inspect engine/outboard installation, fuel system and steering",
+      "Verify actual tank capacities, loaded weight and trailer suitability"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for confirm exact builder, year, layout and propulsion package?",
+      "What inspection, repair or service history is available for inspect hull/deck structure, wheelhouse joints and previous hardware penetrations?",
+      "What inspection, repair or service history is available for inspect engine/outboard installation, fuel system and steering?",
+      "What inspection, repair or service history is available for verify actual tank capacities, loaded weight and trailer suitability?"
+    ],
+    "OwnerActions": [
+      "Maintain engine, cooling, fuel and steering systems to manufacturer intervals",
+      "Keep deck, window and hardware penetrations sealed and investigate leaks promptly",
+      "Document structural, electrical and propulsion repairs for future buyers"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "RF-246 layout and propulsion families",
+        "Description": "Historical Sedan Cruiser, Custom Wheelhouse and later Digby/Halifax/Yarmouth arrangements share the RF-246 platform but differ materially in interior layout, power and tankage.",
+        "AffectedYears": "Long production history",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/rosborough/rf-246-sedan-cruiser-1988-13",
+          "https://boattest.com/boats/eastern-boats/rosborough-246-yarmouth-2022",
+          "https://www.boats.com/power-boats/2020-rosborough-rf-246-custom-wheelhouse-10182555/"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "ROSB-246"
+            ],
+            "Years": {
+              "From": 1987,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/rosborough/rf-246-sedan-cruiser-1988-13",
+            "https://boattest.com/boats/eastern-boats/rosborough-246-yarmouth-2022",
+            "https://www.boats.com/power-boats/2020-rosborough-rf-246-custom-wheelhouse-10182555/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Identity and representative specifications are supported by manufacturer or model-specific technical references; unresolved production or configuration differences remain explicit."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "ROSB-246"
+            ],
+            "Years": {
+              "From": 1987,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/rosborough/rf-246-sedan-cruiser-1988-13",
+            "https://boattest.com/boats/eastern-boats/rosborough-246-yarmouth-2022",
+            "https://www.boats.com/power-boats/2020-rosborough-rf-246-custom-wheelhouse-10182555/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance is derived from documented configuration, propulsion, dimensions and intended use rather than marketplace promotional language."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "ROSB-246"
+            ],
+            "Years": {
+              "From": 1987,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/rosborough/rf-246-sedan-cruiser-1988-13",
+            "https://boattest.com/boats/eastern-boats/rosborough-246-yarmouth-2022",
+            "https://www.boats.com/power-boats/2020-rosborough-rf-246-custom-wheelhouse-10182555/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance combines documented systems with age- and configuration-related checks; it does not assert that every hull has a defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Published displacement, fuel capacity and overall length vary significantly by build, power package and measurement convention.",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold"
+      ]
+    },
+    "ModelCharacter": "The modern cruising-couple evolution of the Rosborough 246: a protected cabin with V-berth, full galley, convertible dinette and single outboard, retaining the original trailerable workboat hull while making it easier to own and more comfortable for Great Loop-style cruising.",
+    "DesignLineage": [
+      "Eastern Boat Works acquired the Rosborough 246 molds after roughly 25 years and almost 500 Canadian-built boats.",
+      "The Yarmouth is one of three current cruising layouts—Yarmouth, Halifax and Digby—sharing the 246 hull but differing mainly in galley, dinette and head placement.",
+      "The Yarmouth specifically places the convertible dinette behind the helm on the starboard side.",
+      "It continues the original Sedan Cruiser's cruising mission with modern outboard propulsion, composite trim and updated systems rather than being a new hull lineage."
+    ],
+    "OwnershipCharacter": "One of the simpler modern pocket cruisers to own: single outboard, 8'6\" beam, modest systems and current builder support. The trade is limited side-deck width and compact accommodations; optional roof extensions, thruster, HVAC and cruising equipment can materially increase complexity.",
+    "CharacterConfidence": "High",
+    "DisplacementLb": 6000,
+    "FuelCapacityGal": 115,
+    "WaterCapacityGal": 40,
+    "NormalizedHullType": "Semi-Displacement",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "RarityConfidence": "Not rated",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "PriceConfidence": "Not rated",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "BoatFamilyCode": "boat_family.downeast",
+    "HullBehaviourCode": "hull_behaviour.semi_displacement",
+    "LOA": 7.4676,
+    "Beam": 2.5908,
+    "ModelAliases": [
+      "RF-246",
+      "RF-246 Yarmouth"
+    ],
+    "FuelCode": "fuel.gasoline",
+    "MechanicalPropulsionCode": "mechanical_propulsion.outboard",
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "LWL": 7.112,
+    "KeelConfigurationCode": "keel.protective",
+    "RudderTypeCode": "rudder.none_external_drive",
+    "Draft": 0.4572,
+    "PlanCriticalStatus": {
+      "Draft": "researched_unknown"
+    },
+    "AirDraft": 3.35,
+    "CanonicalSlug": "rosborough-246-yarmouth",
+    "CanonicalPath": "/models/rosborough-246-yarmouth/",
+    "CanonicalURL": "https://b-atlas.org/models/rosborough-246-yarmouth/",
+    "StyleCode": "Downeast",
+    "CoolingCode": "cooling.outboard",
+    "FlybridgeCode": "availability.no",
+    "SideDecksCode": "side_decks.moderate",
+    "SpecificationConfidence": {
+      "AirDraft": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [],
+        "Note": "B-Atlas working estimate derived from nearest comparable models with similar style, size and flybridge configuration. Verify actual mast/radar/antenna clearance before route planning. Comparable model IDs: BKCV-26, CPDR-28-OF, BKCV-29, LUHR-30, BKCV-30, BKCV-33, BKCV-32"
+      },
+      "Displacement": {
+        "Level": "Low",
+        "Status": "restored_legacy_working_value",
+        "EvidenceRefs": [],
+        "Note": "Working displacement restored from the archived pre-v6.81 value (7500 lb) and converted to canonical kilograms. Community/factory verification remains welcome."
+      },
+      "EngineCount": {
+        "Level": "Medium",
+        "Status": "inferred_from_engine_configuration",
+        "EvidenceRefs": [],
+        "Note": "Engine count (1) normalized from the existing canonical EngineConfiguration description; no new external specification source was required."
+      },
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing propulsion/keel description; no new factual assertion introduced."
+      }
+    },
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "Displacement": 3401.9,
+    "EngineCount": 1,
+    "ShowerTypeCode": "shower.none",
+    "RunningGearProtectionCode": "running_gear.exposed"
+  },
+  {
+    "ManufacturerID": "SABRE",
+    "Manufacturer": "Sabre",
+    "Model": "34",
+    "Variant": "Hard Top Express",
+    "Nickname": "Sabre 34 Express",
+    "ImageURL": "images/sabr-34-ex.jpg",
+    "Active": false,
+    "FirstYear": 2004,
+    "LastYear": 2009,
+    "TotalBuilt": 115,
+    "Designer": "Sabre Design Team",
+    "HullType": "Planing",
+    "Style": "Express Cruiser",
+    "Construction": "Fiberglass",
+    "KeelType": "Modified V",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Twin diesel inboards",
+    "Propulsion": "Shaft",
+    "Flybridge": "No",
+    "AftCabin": false,
+    "SideDecks": "Moderate",
+    "TypicalEngineID": "Yanmar 6LY",
+    "FuelCapacity": 946.3529,
+    "WaterCapacity": 227.1247,
+    "HoldingCapacity": 113.5624,
+    "Berths": 4,
+    "Cabins": 1,
+    "Heads": 1,
+    "Shower": false,
+    "Galley": false,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "Limited",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "Strengths": [
+      "High-quality Maine construction and interior finish",
+      "Protected salon/helm with good all-weather visibility",
+      "Twin-diesel performance supports fast coastal passages"
+    ],
+    "Weaknesses": "Canvas center enclosure upkeep demands high cyclical care, fuel delivery costs spike under active planning.",
+    "CommonProblems": "Core softness near cockpit engine access deck hatches, transmission cooler internal scaling.",
+    "TypicalMission": "Rapid coastal cruising, long-weekend hopping, and fine luxury couples cruising.",
+    "AvoidIf": [
+      "You want minimal mechanical complexity",
+      "You primarily cruise at displacement speed for maximum economy",
+      "You need a commercial-style open cockpit and simple finish"
+    ],
+    "DateCreated": "2026-07-13",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "B-Atlas Phase 8C-12 Downeast / Lobster-Style Research",
+    "Revision": 2,
+    "BoatModelID": "SABR-34-EX",
+    "BoatFamily": "Cruiser",
+    "Configuration": "Express Cruiser",
+    "HullBehaviour": "Planing",
+    "Features": [],
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Planing",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Downeast Cruiser",
+    "DataConfidence": "Moderate",
+    "ResearchStatus": "Reviewed",
+    "Overview": "The Sabre 34 Express is a Maine-built Downeast express cruiser combining traditional exterior proportions with higher-speed twin-diesel propulsion and yacht-finish accommodations. Sabre places more emphasis on refinement, systems integration and cruising speed than working-lobster-boat derivatives.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented layout and protected helm arrangement are practical for a cruising couple, with accommodation depth varying by model."
+      },
+      "SoloHandling": {
+        "Assessment": "Mixed",
+        "Summary": "Visibility and cockpit access are generally strong; docking burden depends on size, engine arrangement and fitted thrusters."
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "Shallow-to-moderate draft and protected helm layouts suit many inland routes, but beam and air draft remain route-specific."
+      },
+      "ExposedWater": {
+        "Assessment": "Good",
+        "Summary": "Downeast/lobster-derived hull forms are intended for coastal conditions, but individual hull condition, loading and configuration remain decisive."
+      }
+    },
+    "TradeOffs": [
+      "Twin engines and integrated systems increase maintenance cost",
+      "Purchase and operating costs are high relative to simpler single-diesel cruisers",
+      "Express layout provides less exterior working space than commercial-derived lobster boats"
+    ],
+    "BestFor": [
+      "Couples seeking premium Downeast cruising at planing speeds",
+      "Owners valuing finish quality and all-weather salon comfort",
+      "Coastal cruising where speed and refinement matter"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Inspect propulsion service history, including pods where fitted",
+      "Inspect hull/deck coring and hardware bedding",
+      "Review electrical, HVAC, generator and integrated electronics maintenance",
+      "Inspect windows, doors and salon seals",
+      "Confirm machinery and drive configuration for model year"
+    ],
+    "BuyerQuestions": [
+      "What service, inspection or repair history is available for inspect propulsion service history, including pods where fitted?",
+      "What service, inspection or repair history is available for inspect hull/deck coring and hardware bedding?",
+      "What service, inspection or repair history is available for review electrical, HVAC, generator and integrated electronics maintenance?",
+      "What service, inspection or repair history is available for inspect windows, doors and salon seals?",
+      "What service, inspection or repair history is available for confirm machinery and drive configuration for model year?"
+    ],
+    "OwnerActions": [
+      "Keep deck, window, hatch and hardware penetrations sealed",
+      "Maintain engine cooling, exhaust, fuel, steering and drive systems to documented intervals",
+      "Document structural, machinery and system modifications for future survey and resale"
+    ],
+    "ModelVariations": [],
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "SABR-34-EX"
+            ],
+            "Years": {
+              "From": 2004,
+              "To": 2009
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.sabreyachts.com/owners/heritage-models/sabre-38-hard-top-express",
+            "https://www.sabreyachts.com/yachts/38-salon-express",
+            "https://sabreyachts.s3.us-east-2.amazonaws.com/sabre/wp-content/uploads/2012/09/12103435/34x-specs.pdf"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Representative model identity and principal specifications are based on model-specific sources where available."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "SABR-34-EX"
+            ],
+            "Years": {
+              "From": 2004,
+              "To": 2009
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.sabreyachts.com/owners/heritage-models/sabre-38-hard-top-express",
+            "https://www.sabreyachts.com/yachts/38-salon-express",
+            "https://sabreyachts.s3.us-east-2.amazonaws.com/sabre/wp-content/uploads/2012/09/12103435/34x-specs.pdf"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Decision guidance is derived from documented hull, propulsion, layout and intended use rather than advertising claims."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "SABR-34-EX"
+            ],
+            "Years": {
+              "From": 2004,
+              "To": 2009
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.sabreyachts.com/owners/heritage-models/sabre-38-hard-top-express",
+            "https://www.sabreyachts.com/yachts/38-salon-express",
+            "https://sabreyachts.s3.us-east-2.amazonaws.com/sabre/wp-content/uploads/2012/09/12103435/34x-specs.pdf"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection items are configuration and age risks, not assertions that every hull suffers a defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "EngineCount": 2,
+    "ResearchNotes": "Verified 2007 boats and JD Power establish the 34 Express identity. Detailed brokerage specs support 34' LOA, 13'3\" beam, 3' draft, 20,000 lb, 16-degree transom deadrise and twin direct-drive diesels. Exact production chronology and universal tankage are not forced beyond the existing representative 250/60 gal values.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "ModelCharacter": "A refined Maine-built twin-diesel express cruiser that translates traditional Downeast proportions into true 25-knot-class performance, large helm-deck social space and premium cherry-finished cruising accommodations.",
+    "DesignLineage": [
+      "The Sabre 34 Express belongs to Sabre's pre-pod twin-shaft powerboat generation.",
+      "Verified 2007 examples use twin direct-drive Volvo or Yanmar diesels and a 16-degree transom deadrise hull.",
+      "The 34 sits below the contemporary Sabre 38 Hard Top Express and 42 Express in the same traditional Downeast performance family.",
+      "The later Sabre 38 Salon Express represents a new pod-drive/salon architecture rather than a simple enlargement of the 34."
+    ],
+    "OwnershipCharacter": "Twin shaft diesels are mechanically conventional and easier to service long-term than pod drives, but they double routine propulsion maintenance compared with a Back Cove. Premium joinery, generator, HVAC and hydraulic helm-deck access create normal high-end yacht upkeep.",
+    "CharacterConfidence": "High",
+    "DisplacementLb": 20000,
+    "FuelCapacityGal": 250,
+    "WaterCapacityGal": 60,
+    "NormalizedHullType": "Planing",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "RarityConfidence": "Not rated",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "PriceConfidence": "Not rated",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "HullBehaviourCode": "hull_behaviour.planing",
+    "BoatFamilyCode": "boat_family.express_cruiser",
+    "FuelCode": "fuel.diesel",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "LOA": 10.5156,
+    "Beam": 4.0386,
+    "Draft": 0.9144,
+    "ShowerTypeCode": "shower.separate_stall",
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "AirDraft": 3.8608,
+    "Displacement": 9071.8,
+    "CanonicalSlug": "sabre-34-express-hardtop-express",
+    "CanonicalPath": "/models/sabre-34-express-hardtop-express/",
+    "CanonicalURL": "https://b-atlas.org/models/sabre-34-express-hardtop-express/",
+    "StyleCode": "Downeast Cruiser",
+    "CoolingCode": "cooling.fresh_water",
+    "FlybridgeCode": "availability.no",
+    "SideDecksCode": "side_decks.moderate",
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "LWL": 9.6926,
+    "SpecificationConfidence": {
+      "LWL": {
+        "Level": "Low",
+        "Status": "restored_legacy_working_value",
+        "EvidenceRefs": [],
+        "Note": "Working LWL restored from the pre-v6.81 archived B-Atlas value (31.8 ft). Retained as a low-confidence community-verifiable value rather than leaving a basic performance input blank."
+      },
+      "KeelConfigurationCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from unambiguous existing KeelType text."
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from canonical no-keel geometry with inboard shaft/V-drive propulsion; propeller/rudder running gear is exposed below the hull rather than protected by a keel or skeg."
+      }
+    },
+    "KeelConfigurationCode": "keel.no_keel",
+    "RunningGearProtectionCode": "running_gear.exposed"
+  },
+  {
+    "ManufacturerID": "SABRE",
+    "Manufacturer": "Sabre",
+    "Model": "38 Salon Express",
+    "Variant": "Salon Express",
+    "Nickname": "Sabre 38 Salon Express",
+    "ImageURL": "images/sabr-38-sa.jpg",
+    "Active": false,
+    "FirstYear": 2012,
+    "LastYear": null,
+    "TotalBuilt": 165,
+    "Designer": "Sabre Design Team",
+    "HullType": "Planing",
+    "Style": "Downeast Express",
+    "Construction": "Fiberglass",
+    "KeelType": "Modified V",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Twin diesel inboards",
+    "Propulsion": "Pod Drive",
+    "Flybridge": "No",
+    "AftCabin": false,
+    "SideDecks": "Moderate",
+    "TypicalEngineID": "Volvo Penta D4-IPS",
+    "FuelCapacity": 1135.62,
+    "WaterCapacity": 378.54,
+    "HoldingCapacity": 151.42,
+    "Berths": 6,
+    "Cabins": 2,
+    "Heads": 1,
+    "Shower": false,
+    "Galley": false,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "Limited",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "Strengths": [
+      "High-quality Maine construction and interior finish",
+      "Protected salon/helm with good all-weather visibility",
+      "Twin-diesel performance supports fast coastal passages"
+    ],
+    "Weaknesses": "High complexity pod drive maintenance costs, restricted cockpit workspace when engine hatch is raised.",
+    "CommonProblems": "IPS pod seal degradation, trim tab actuator sync calibration faults.",
+    "TypicalMission": "Fast-transit luxury coastal cruising and premium couple's destination hops.",
+    "AvoidIf": [
+      "You want minimal mechanical complexity",
+      "You primarily cruise at displacement speed for maximum economy",
+      "You need a commercial-style open cockpit and simple finish"
+    ],
+    "DateCreated": "2026-07-13",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "B-Atlas Phase 8C-12 Downeast / Lobster-Style Research",
+    "Revision": 2,
+    "BoatModelID": "SABR-38-SA",
+    "BoatFamily": "Downeast",
+    "Configuration": "Express Cruiser",
+    "HullBehaviour": "Planing",
+    "Features": [],
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Pod",
+    "NormalizedHullForm": "Planing",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Downeast Cruiser",
+    "DataConfidence": "Moderate",
+    "ResearchStatus": "Reviewed",
+    "Overview": "The Sabre 38 Salon Express is a Maine-built Downeast express cruiser combining traditional exterior proportions with higher-speed twin-diesel propulsion and yacht-finish accommodations. Sabre places more emphasis on refinement, systems integration and cruising speed than working-lobster-boat derivatives.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented layout and protected helm arrangement are practical for a cruising couple, with accommodation depth varying by model."
+      },
+      "SoloHandling": {
+        "Assessment": "Mixed",
+        "Summary": "Visibility and cockpit access are generally strong; docking burden depends on size, engine arrangement and fitted thrusters."
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "Shallow-to-moderate draft and protected helm layouts suit many inland routes, but beam and air draft remain route-specific."
+      },
+      "ExposedWater": {
+        "Assessment": "Good",
+        "Summary": "Downeast/lobster-derived hull forms are intended for coastal conditions, but individual hull condition, loading and configuration remain decisive."
+      }
+    },
+    "TradeOffs": [
+      "Twin engines and integrated systems increase maintenance cost",
+      "Purchase and operating costs are high relative to simpler single-diesel cruisers",
+      "Express layout provides less exterior working space than commercial-derived lobster boats"
+    ],
+    "BestFor": [
+      "Couples seeking premium Downeast cruising at planing speeds",
+      "Owners valuing finish quality and all-weather salon comfort",
+      "Coastal cruising where speed and refinement matter"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Inspect propulsion service history, including pods where fitted",
+      "Inspect hull/deck coring and hardware bedding",
+      "Review electrical, HVAC, generator and integrated electronics maintenance",
+      "Inspect windows, doors and salon seals",
+      "Confirm machinery and drive configuration for model year"
+    ],
+    "BuyerQuestions": [
+      "What service, inspection or repair history is available for inspect propulsion service history, including pods where fitted?",
+      "What service, inspection or repair history is available for inspect hull/deck coring and hardware bedding?",
+      "What service, inspection or repair history is available for review electrical, HVAC, generator and integrated electronics maintenance?",
+      "What service, inspection or repair history is available for inspect windows, doors and salon seals?",
+      "What service, inspection or repair history is available for confirm machinery and drive configuration for model year?"
+    ],
+    "OwnerActions": [
+      "Keep deck, window, hatch and hardware penetrations sealed",
+      "Maintain engine cooling, exhaust, fuel, steering and drive systems to documented intervals",
+      "Document structural, machinery and system modifications for future survey and resale"
+    ],
+    "ModelVariations": [],
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "SABR-38-SA"
+            ],
+            "Years": {
+              "From": 2012,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.sabreyachts.com/owners/heritage-models/sabre-38-hard-top-express",
+            "https://www.sabreyachts.com/yachts/38-salon-express",
+            "https://sabreyachts.s3.us-east-2.amazonaws.com/sabre/wp-content/uploads/2012/09/12103435/34x-specs.pdf",
+            "https://www.sabreyachts.com/yachts/38-salon-express"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Representative model identity and principal specifications are based on model-specific sources where available."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "SABR-38-SA"
+            ],
+            "Years": {
+              "From": 2012,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.sabreyachts.com/owners/heritage-models/sabre-38-hard-top-express",
+            "https://www.sabreyachts.com/yachts/38-salon-express",
+            "https://sabreyachts.s3.us-east-2.amazonaws.com/sabre/wp-content/uploads/2012/09/12103435/34x-specs.pdf",
+            "https://www.sabreyachts.com/yachts/38-salon-express"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Decision guidance is derived from documented hull, propulsion, layout and intended use rather than advertising claims."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "SABR-38-SA"
+            ],
+            "Years": {
+              "From": 2012,
+              "To": null
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.sabreyachts.com/owners/heritage-models/sabre-38-hard-top-express",
+            "https://www.sabreyachts.com/yachts/38-salon-express",
+            "https://sabreyachts.s3.us-east-2.amazonaws.com/sabre/wp-content/uploads/2012/09/12103435/34x-specs.pdf",
+            "https://www.sabreyachts.com/yachts/38-salon-express"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection items are configuration and age risks, not assertions that every hull suffers a defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "EngineCount": 2,
+    "ResearchNotes": "Factory brochure and current Sabre page support 38' hull length / 41'9\" current overall, 13'4\" beam, 3'4\" draft, 21,500 lb, 300 gal fuel and 100 gal water. First hull launched July 2012. Major 2026 generation update replaces pod drives with twin Volvo Penta D4/DPI 320 hp sterndrive packages.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.\n\nCruising Performance Research Wave 4 v7.03 (2026-09-14).",
+    "ModelCharacter": "A pivotal Sabre model launched in 2012 around pod propulsion, resin-infused construction and a fully enclosed salon that opens dramatically to the cockpit. It preserved Downeast exterior character while moving Sabre decisively toward quiet joystick-controlled, all-weather luxury cruising.",
+    "DesignLineage": [
+      "The first Sabre 38 Salon Express launched in July 2012.",
+      "It was designed from the outset around close-coupled pod drives rather than adapting a conventional shaft hull.",
+      "The 38 SE followed the same pod-drive design movement as the Sabre 48 Salon Express introduced in 2011.",
+      "In 2026 Sabre reintroduced the 38 Salon Express with Volvo Penta DPI sterndrive propulsion, creating a significant new drivetrain generation within the same model identity."
+    ],
+    "OwnershipCharacter": "Exceptionally refined and easy to maneuver, but pod-drive generations carry higher specialist service costs than straight shafts. The 2026 DPI version changes that ownership equation materially, so propulsion generation should be explicit when comparing listings.",
+    "CharacterConfidence": "High",
+    "DisplacementLb": 21500,
+    "FuelCapacityGal": 300,
+    "WaterCapacityGal": 100,
+    "NormalizedHullType": "Planing",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "RarityConfidence": "Not rated",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "PriceConfidence": "Not rated",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "HullBehaviourCode": "hull_behaviour.planing",
+    "BoatFamilyCode": "boat_family.express_cruiser",
+    "FuelCode": "fuel.diesel",
+    "LOA": 12.7254,
+    "Beam": 4.064,
+    "Draft": 1.016,
+    "Displacement": 9752.2,
+    "Headroom": 1.9812,
+    "MechanicalPropulsionCode": "mechanical_propulsion.mixed",
+    "FuelCapacityUnitStatus": "canonical_litres",
+    "WaterCapacityUnitStatus": "canonical_litres",
+    "HoldingCapacityUnitStatus": "canonical_litres",
+    "LWL": 10.4902,
+    "AirDraft": 4.0386,
+    "RudderTypeCode": "rudder.none_external_drive",
+    "HoldingCapacityGal": 40,
+    "PlanCriticalStatus": {
+      "MechanicalPropulsionCode": "configuration_or_production_mixed"
+    },
+    "CanonicalSlug": "sabre-38-salon-express-salon-express",
+    "CanonicalPath": "/models/sabre-38-salon-express-salon-express/",
+    "CanonicalURL": "https://b-atlas.org/models/sabre-38-salon-express-salon-express/",
+    "StyleCode": "Downeast Cruiser",
+    "CoolingCode": "cooling.fresh_water",
+    "FlybridgeCode": "availability.no",
+    "SideDecksCode": "side_decks.moderate",
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": 25,
+    "PlaningCruiseFuelBurn": 85.172,
+    "ShowerTypeCode": "shower.none",
+    "SpecificationConfidence": {
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      },
+      "KeelConfigurationCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from unambiguous existing KeelType text."
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing propulsion/keel description; no new factual assertion introduced."
+      },
+      "PlaningCruiseSpeed": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://www.sabreyachts.com/sabre/wp-content/uploads/2012/10/Sabre-MBHH123.pdf",
+          "https://www.sabreyachts.com/yachts/38-salon-express"
+        ],
+        "Note": "Sabre-hosted performance review: 25 kn at 3170 rpm with 22.5 US gal/h total fuel burn using twin Volvo Penta D4-300 / IPS400. Stored as representative planing cruise for that production configuration."
+      },
+      "PlaningCruiseFuelBurn": {
+        "Level": "High",
+        "Status": "researched",
+        "EvidenceRefs": [
+          "https://www.sabreyachts.com/sabre/wp-content/uploads/2012/10/Sabre-MBHH123.pdf",
+          "https://www.sabreyachts.com/yachts/38-salon-express"
+        ],
+        "Note": "Sabre-hosted performance review: 25 kn at 3170 rpm with 22.5 US gal/h total fuel burn using twin Volvo Penta D4-300 / IPS400. Stored as representative planing cruise for that production configuration."
+      },
+      "EnginePowerPerEngine": {
+        "Level": "High",
+        "Status": "supported",
+        "EvidenceRefs": [
+          "https://www.sabreyachts.com/sabre/wp-content/uploads/2012/10/Sabre-MBHH123.pdf",
+          "https://www.sabreyachts.com/yachts/38-salon-express"
+        ],
+        "Note": "Cited production/test configuration uses twin Volvo Penta D4 300-hp diesels with IPS400 pods; later drivetrain packages differ."
+      }
+    },
+    "KeelConfigurationCode": "keel.no_keel",
+    "RunningGearProtectionCode": "running_gear.exposed",
+    "EnginePowerPerEngine": 223.71
+  },
+  {
+    "ManufacturerID": "SAGA",
+    "Manufacturer": "Saga",
+    "Model": "26 HT",
+    "Variant": "Hardtop Cruiser",
+    "Nickname": "Saga 26 HT",
+    "ImageURL": "images/saga-26-ht.jpg",
+    "Active": false,
+    "FirstYear": 1990,
+    "LastYear": 2009,
+    "TotalBuilt": 180,
+    "Designer": "Saga Marine Design",
+    "HullType": "Semi-planing / planing depending version",
+    "Style": "Scandinavian Double-Ender",
+    "Construction": "Fiberglass",
+    "KeelType": "Configuration-dependent: keel/rudder or V-bottom sterndrive",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Single diesel inboard; semi-planing and planing versions documented",
+    "Propulsion": "Mixed: shaft or sterndrive by version",
+    "Flybridge": "No",
+    "AftCabin": false,
+    "SideDecks": "Moderate",
+    "TypicalEngineID": "Yanmar 3JH",
+    "FuelCapacity": 200,
+    "WaterCapacity": 95,
+    "HoldingCapacity": 55,
+    "Berths": 4,
+    "Cabins": 2,
+    "Heads": 1,
+    "Shower": false,
+    "Galley": false,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "No",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "Strengths": [
+      "Compact hardtop provides useful weather protection",
+      "Single diesel keeps basic machinery relatively simple",
+      "Norwegian design suits practical coastal and inland use"
+    ],
+    "Weaknesses": "Narrow beam profile minimizes indoor floor area, small wet head configuration.",
+    "CommonProblems": "Rudder post packing gland weeping, plastic thru-hull fitting UV degradation.",
+    "TypicalMission": "Efficient solo or couples canal tracking, protected waterway exploration, and weekend looping.",
+    "AvoidIf": [
+      "You require a true aft-cabin layout",
+      "You need standardized modern production specifications",
+      "You expect full-displacement trawler behavior from every version"
+    ],
+    "DateCreated": "2026-07-13",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "B-Atlas Phase 8C-13 Scandinavian Research",
+    "Revision": 2,
+    "BoatModelID": "SAGA-26-HT",
+    "Configuration": "Hardtop Cruiser",
+    "HullBehaviour": "Configuration-dependent: semi-planing or planing",
+    "Features": [
+      "Aft Cabin"
+    ],
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Unknown",
+    "NormalizedHullForm": "Semi-Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Hardtop Cruiser",
+    "DataConfidence": "High",
+    "ResearchStatus": "Reviewed",
+    "Overview": "The Saga 26 HT is a Norwegian hardtop motor cruiser, not a double-ender aft-cabin boat. Period references describe both semi-planing and planing versions with single inboard diesel power, emphasizing compact all-weather family cruising.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented accommodation and protected helm arrangement suit a cruising couple."
+      },
+      "SoloHandling": {
+        "Assessment": "Good",
+        "Summary": "Visibility is generally strong; docking burden depends on size, propulsion and fitted thrusters."
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "Dimensions suit many inland routes, but air draft and speed-oriented propulsion remain route-specific."
+      },
+      "ExposedWater": {
+        "Assessment": "Good",
+        "Summary": "Scandinavian designs emphasize protected operation, but model-specific CE category, loading and condition govern exposed-water suitability."
+      }
+    },
+    "TradeOffs": [
+      "Different propulsion/hull versions require individual verification",
+      "Interior and tankage data are less consistently documented than newer Saga models",
+      "Older examples may have significant owner modifications"
+    ],
+    "BestFor": [
+      "Couples seeking a compact Scandinavian hardtop cruiser",
+      "Inland and sheltered/coastal cruising",
+      "Owners wanting simple single-diesel operation"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Confirm whether the boat is semi-planing or full-planing version",
+      "Verify shaft or sterndrive arrangement and engine installation",
+      "Inspect hardtop windows, deck fittings and cockpit enclosure",
+      "Inspect cooling, exhaust, fuel and steering systems",
+      "Verify tankage, berths and sanitation equipment on the individual boat"
+    ],
+    "BuyerQuestions": [
+      "What inspection, service or repair history is available for confirm whether the boat is semi-planing or full-planing version?",
+      "What inspection, service or repair history is available for verify shaft or sterndrive arrangement and engine installation?",
+      "What inspection, service or repair history is available for inspect hardtop windows, deck fittings and cockpit enclosure?",
+      "What inspection, service or repair history is available for inspect cooling, exhaust, fuel and steering systems?",
+      "What inspection, service or repair history is available for verify tankage, berths and sanitation equipment on the individual boat?"
+    ],
+    "OwnerActions": [
+      "Keep windows, deck hardware, hatches and exterior penetrations sealed",
+      "Maintain propulsion, cooling, exhaust, steering and electrical systems to documented intervals",
+      "Document propulsion, battery and system upgrades for future survey and resale"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "Hull/drive versions",
+        "Description": "Period references describe semi-planing and full-planing versions; drive arrangement and performance should be verified on each hull.",
+        "AffectedYears": "Production run",
+        "EvidenceRefs": [
+          "https://www.boat.no/asp/boats/show.asp?id=16263&mid=90566",
+          "https://www.skippo.se/batar/batmarken/saga/26-ht"
+        ],
+        "Confidence": "Moderate"
+      }
+    ],
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "SAGA-26-HT"
+            ],
+            "Years": {
+              "From": 1992,
+              "To": 2005
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.boat.no/asp/boats/show.asp?id=16263&mid=90566",
+            "https://www.skippo.se/batar/batmarken/saga/26-ht"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Identity and representative specifications are based on model-specific documentation."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "SAGA-26-HT"
+            ],
+            "Years": {
+              "From": 1992,
+              "To": 2005
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.boat.no/asp/boats/show.asp?id=16263&mid=90566",
+            "https://www.skippo.se/batar/batmarken/saga/26-ht"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Guidance is derived from documented layout, hull and propulsion characteristics."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "SAGA-26-HT"
+            ],
+            "Years": {
+              "From": 1992,
+              "To": 2005
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.boat.no/asp/boats/show.asp?id=16263&mid=90566",
+            "https://www.skippo.se/batar/batmarken/saga/26-ht"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance addresses configuration and age risks and is not a claim of universal model defects."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Production start/end years remain less firmly documented than principal identity and dimensions.",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "EngineCount": 1,
+    "ResearchNotes": "Batch 32 specialist-tail research. Identity, lineage and specifications normalized from model-specific builder, owner-archive and Powerboat Guide evidence; unsupported details remain unknown. v6.90 draft/air-draft completion: representative draft restored under confidence-aware policy.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "ModelCharacter": "A durable Norwegian 26-foot hardtop cruiser offered in both keel/shaft semi-planing and faster V-bottom sterndrive configurations. Its teak-trimmed cabin, large sheltered cockpit and single diesel make it a compact all-weather touring boat with unusually serious cruising character.",
+    "DesignLineage": [
+      "Saga Boats of Selje, Norway developed the 26 HT as part of its long-running family of compact cruising motorboats.",
+      "Documented boats span at least the late 1990s through the 2000s.",
+      "Semi-planing keel-and-shaft and full-planing sterndrive versions were both sold under the same 26 HT model name.",
+      "Engine options ranged from modest 75–85 hp diesels to 150–170 hp high-performance packages."
+    ],
+    "OwnershipCharacter": "Single-diesel ownership is simple, but drivetrain choice matters greatly: shaft versions are low-maintenance and trawler-like, while DuoProp sterndrive boats require drive/corrosion service. Scandinavian joinery and enclosed systems are generally durable.",
+    "CharacterConfidence": "High",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "RarityConfidence": "Not rated",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "PriceConfidence": "Not rated",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "BoatFamilyCode": "boat_family.express_cruiser",
+    "HullBehaviourCode": "hull_behaviour.unknown",
+    "FuelCode": "fuel.diesel",
+    "MechanicalPropulsionCode": "mechanical_propulsion.mixed",
+    "LOA": 8.03,
+    "Beam": 2.67,
+    "Draft": 0.8,
+    "Displacement": 2500,
+    "KeelConfigurationCode": null,
+    "FuelCapacityUnitStatus": "canonical_litres",
+    "WaterCapacityUnitStatus": "canonical_litres",
+    "HoldingCapacityUnitStatus": "canonical_litres",
+    "Headroom": 1.85,
+    "FuelCapacityGal": 52.83,
+    "PlanCriticalStatus": {
+      "MechanicalPropulsionCode": "configuration_or_production_mixed",
+      "HullBehaviourCode": "configuration_dependent_or_unknown",
+      "KeelConfigurationCode": "configuration_or_production_mixed"
+    },
+    "AirDraft": 3.0500000000000003,
+    "CanonicalSlug": "saga-26-ht-hardtop-cruiser",
+    "CanonicalPath": "/models/saga-26-ht-hardtop-cruiser/",
+    "CanonicalURL": "https://b-atlas.org/models/saga-26-ht-hardtop-cruiser/",
+    "StyleCode": "Hardtop Cruiser",
+    "CoolingCode": "cooling.fresh_water",
+    "FlybridgeCode": "availability.no",
+    "SideDecksCode": "side_decks.moderate",
+    "SpecificationConfidence": {
+      "Draft": {
+        "Level": "Medium",
+        "Status": "estimated",
+        "EvidenceRefs": [
+          "https://www.boote-magazin.de/en/bootsmarkt/boot/713633/",
+          "https://yachtundboot.de/en/a/10398/"
+        ],
+        "Note": "Multiple independent 26 HT listings report 0.80 m draft; drivetrain variants can differ."
+      },
+      "AirDraft": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [],
+        "Note": "B-Atlas working estimate derived from nearest comparable models with similar style, size and flybridge configuration. Verify actual mast/radar/antenna clearance before route planning. Comparable model IDs: BAYL-2859, BAYL-2855, CUTW-28-P, BAYL-2452, HUNT-29, CRUY-3280, CRUY-3260"
+      },
+      "WaterCapacity": {
+        "Level": "Medium",
+        "Status": "supported",
+        "EvidenceRefs": [
+          "https://wales.boatshed.com/saga_26ht-boat-165654.html"
+        ],
+        "Note": "Representative 1999 Saga 26 HT lists 95 L fresh-water capacity."
+      },
+      "HoldingCapacity": {
+        "Level": "Medium",
+        "Status": "supported",
+        "EvidenceRefs": [
+          "https://wales.boatshed.com/saga_26ht-boat-165654.html"
+        ],
+        "Note": "Representative 1999 Saga 26 HT lists 55 L holding capacity."
+      },
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing propulsion/keel description; no new factual assertion introduced."
+      }
+    },
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "ShowerTypeCode": "shower.none",
+    "RunningGearProtectionCode": "running_gear.exposed"
+  },
+  {
+    "ManufacturerID": "SEA",
+    "Manufacturer": "Sea Ray",
+    "Model": "340 Sundancer",
+    "Variant": "Generation 1",
+    "Nickname": "Sea Ray 340 Sundancer",
+    "ImageURL": "images/sear-340-su.jpg",
+    "Active": false,
+    "FirstYear": 1984,
+    "LastYear": 1989,
+    "TotalBuilt": 1400,
+    "Designer": "Sea Ray Design",
+    "HullType": "Deep-V",
+    "Style": "Express Cruiser",
+    "Construction": "Fiberglass",
+    "KeelType": "Modified V",
+    "Fuel": "Gasoline",
+    "Cooling": "Fresh/Raw",
+    "EngineConfiguration": "Twin gasoline inboards or sterndrives depending generation",
+    "Propulsion": "Shaft/V-Drive",
+    "Flybridge": "No",
+    "AftCabin": false,
+    "SideDecks": "Narrow",
+    "TypicalEngineID": "Mercruiser 8.1L",
+    "FuelCapacity": 651.09,
+    "WaterCapacity": 196.84,
+    "HoldingCapacity": 105.9915,
+    "Berths": 6,
+    "Cabins": 1,
+    "Heads": 1,
+    "Shower": false,
+    "Galley": false,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "No",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "Strengths": [
+      "Large social cockpit for the boat size",
+      "Planing performance and responsive handling",
+      "Useful weekend accommodation",
+      "Broad service and parts familiarity in the production-cruiser market"
+    ],
+    "Weaknesses": "Cockpit canvas enclosure setup creates prominent greenhouse heat, narrow side walkways require agile steps forward.",
+    "CommonProblems": "V-drive transmission fluid leaks, wet core spots beneath foredeck stanchion pads.",
+    "TypicalMission": "Family weekend overnight hopping and casual regional inland waterway day cruising.",
+    "AvoidIf": [
+      "You require displacement-speed fuel economy",
+      "You want a flybridge or separate aft-cabin privacy",
+      "You need long-range passagemaking capability"
+    ],
+    "DateCreated": "2026-07-13",
+    "LastUpdated": "2026-09-12",
+    "ReviewedBy": "B-Atlas Phase 8C-15 Production Motoryacht/Cruiser Research",
+    "Revision": 2,
+    "BoatModelID": "SEAR-340-SU",
+    "BoatFamily": "Cruiser",
+    "Configuration": "Express Cruiser",
+    "HullBehaviour": "Planing",
+    "Features": [],
+    "NormalizedFuel": "Gasoline",
+    "NormalizedPropulsion": "Shaft/V-Drive",
+    "NormalizedHullForm": "Planing",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Cruiser",
+    "DataConfidence": "Moderate",
+    "ResearchStatus": "Reviewed",
+    "Overview": "The Sea Ray 340 Sundancer (multi-generation) is a production express cruiser designed around cockpit social space, planing performance and overnight accommodation below. Twin-engine propulsion is typical, with model generations varying in drive type, dimensions and interior arrangement.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented accommodation and enclosed living spaces support weekend or regional couple cruising."
+      },
+      "SoloHandling": {
+        "Assessment": "Mixed",
+        "Summary": "Twin engines can assist close-quarters maneuvering, but size, windage and multi-level access increase workload."
+      },
+      "InlandWaterways": {
+        "Assessment": "Mixed",
+        "Summary": "Comfortable for inland cruising, but beam, air draft and fuel consumption must be checked against route and marina constraints."
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "These are coastal production cruisers; actual capability depends on generation, loading, machinery, weather and individual condition."
+      }
+    },
+    "TradeOffs": [
+      "Fuel consumption rises sharply at planing speeds",
+      "Engine-room access can be tight",
+      "Sleeping areas may rely on curtains or convertible spaces",
+      "Low-profile express layouts provide less enclosed living volume than flybridge yachts"
+    ],
+    "BestFor": [
+      "Weekend cruising and entertaining",
+      "Buyers who value speed over displacement economy",
+      "Marina-based coastal and inland use"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Verify moisture around deck hardware, windows, hatches and rail bases",
+      "Inspect fuel, water and waste tanks plus hoses and fittings",
+      "Inspect engines, transmissions or sterndrives, exhaust and cooling systems",
+      "Review AC/DC wiring, shore-power equipment and documented electrical modifications",
+      "Confirm steering, trim-tab and generator operation where fitted"
+    ],
+    "BuyerQuestions": [
+      "What repair or survey history is available for moisture around deck hardware, windows, hatches and rail bases?",
+      "What repair or survey history is available for fuel, water and waste tanks plus hoses and fittings?",
+      "What repair or survey history is available for engines, transmissions or sterndrives, exhaust and cooling systems?",
+      "What repair or survey history is available for ac/dc wiring, shore-power equipment and documented electrical modifications?",
+      "What repair or survey history is available for steering, trim-tab and generator operation where fitted?"
+    ],
+    "OwnerActions": [
+      "Keep deck, window and hardware penetrations sealed",
+      "Maintain propulsion, cooling, exhaust, steering and electrical systems to documented intervals",
+      "Document structural, tank, electrical and machinery repairs for future survey and resale"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "1984–89 generation",
+        "Description": "Early 340 Sundancer generation; roughly 35 ft 11 in overall with swim platform, 11 ft 11 in beam and 172 gal fuel.",
+        "AffectedYears": "1984–1989",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-sundancer-1984-89"
+        ],
+        "Confidence": "High"
+      },
+      {
+        "Name": "1999–2002 generation",
+        "Description": "Later 340 Sundancer generation with 11 ft 5 in beam and 225 gal fuel.",
+        "AffectedYears": "1999–2002",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-sundancer-1999-2002"
+        ],
+        "Confidence": "High"
+      },
+      {
+        "Name": "2003–08 generation",
+        "Description": "Redesigned, larger 340 Sundancer with 12 ft beam and substantially different hull and cockpit.",
+        "AffectedYears": "2003–2008",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-sundancer-2003-08"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "SEAR-340-SU"
+            ],
+            "Years": {
+              "From": 1984,
+              "To": 2008
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-sundancer-2003-08"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Model identity and representative specifications checked against model-guide or catalog evidence."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "SEAR-340-SU"
+            ],
+            "Years": {
+              "From": 1984,
+              "To": 2008
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-sundancer-2003-08"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance derives from documented configuration, propulsion and accommodation."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "General age-related guidance",
+            "Models": [
+              "SEAR-340-SU"
+            ],
+            "Years": {
+              "From": 1984,
+              "To": 2008
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/sea-ray/340-sundancer-2003-08"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance is age/configuration based and is not a claim of a model-wide defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "The 340 Sundancer name covers materially different generations; dimensions in the top-level record are representative and should not substitute for year-specific verification.",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "EngineCount": 2,
+    "ResearchNotes": "Production is intentionally not represented as one continuous YearStart/YearEnd because the 340 Sundancer name was reused across distinct generations: 1984–89, 1999–2002 and 2003–08. Existing baseline dimensions/tankage correspond most closely to the 1999–2002 generation. B-Atlas should use ModelVariations/listing year for generation-specific comparison.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "ModelCharacter": "One of Sea Ray's most enduring model names, but not one continuous boat. The 340 Sundancer appeared in at least three distinct generations—1984–89, 1999–2002 and 2003–08—each a twin-engine planing express with large social cockpit and overnight cabin, but with materially different dimensions, hulls and layouts.",
+    "DesignLineage": [
+      "The first major 340 Sundancer generation ran from 1984–1989.",
+      "Sea Ray revived the 340 Sundancer name for an all-new 1999–2002 generation.",
+      "A substantially larger redesigned 340 followed for 2003–2008 with 12-foot beam and different cockpit/hull architecture.",
+      "The repeated model name should never be treated as a single continuous hull family; listing year is essential to identity."
+    ],
+    "OwnershipCharacter": "Broad dealer knowledge and mass-market parts support are advantages, but ownership varies strongly by generation and drivetrain. Twin gasoline engines are common and fuel-intensive; sterndrive examples add drive/bellows maintenance, while inboard boats trade efficiency for simpler underwater gear.",
+    "CharacterConfidence": "High",
+    "DisplacementLb": 14600,
+    "FuelCapacityGal": 172,
+    "WaterCapacityGal": 52,
+    "NormalizedHullType": "Modified-V",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "RarityConfidence": "Not rated",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "PriceConfidence": "Not rated",
+    "ModelAliases": [
+      "340 Sundancer (1984–89)"
+    ],
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "BoatFamilyCode": "boat_family.express_cruiser",
+    "HullBehaviourCode": "hull_behaviour.planing",
+    "FuelCode": "fuel.gasoline",
+    "MechanicalPropulsionCode": "mechanical_propulsion.v_drive",
+    "LOA": 10.9474,
+    "HullLength": 10.2362,
+    "Beam": 3.6322,
+    "Draft": 0.7366,
+    "Displacement": 5669.9,
+    "EnginePowerPerEngine": 253.54,
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "AirDraft": 3.6500000000000004,
+    "CanonicalSlug": "sea-ray-340-sundancer-multi-generation-express-cruiser",
+    "CanonicalPath": "/models/sea-ray-340-sundancer-multi-generation-express-cruiser/",
+    "CanonicalURL": "https://b-atlas.org/models/sea-ray-340-sundancer-multi-generation-express-cruiser/",
+    "ModelIdentityFamilyID": "SEAR-340-SU",
+    "StyleCode": "Cruiser",
+    "CoolingCode": "cooling.fresh_raw",
+    "FlybridgeCode": "availability.no",
+    "SideDecksCode": "side_decks.narrow",
+    "SpecificationConfidence": {
+      "AirDraft": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [],
+        "Note": "B-Atlas working estimate derived from nearest comparable models with similar style, size and flybridge configuration. Verify actual mast/radar/antenna clearance before route planning. Comparable model IDs: CRUY-320-EXP, CRUY-3375, CRUY-3470, BENE-ANT-11, JEAU-1095, NMBS-365-CO, GRNL-33"
+      },
+      "LWL": {
+        "Level": "Low",
+        "Status": "restored_legacy_working_value",
+        "EvidenceRefs": [],
+        "Note": "Working LWL restored from the pre-v6.81 archived B-Atlas value (31.4 ft). Retained as a low-confidence community-verifiable value rather than leaving a basic performance input blank."
+      },
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      },
+      "KeelConfigurationCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from unambiguous existing KeelType text."
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from canonical no-keel geometry with inboard shaft/V-drive propulsion; propeller/rudder running gear is exposed below the hull rather than protected by a keel or skeg."
+      }
+    },
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "LWL": 9.5707,
+    "ShowerTypeCode": "shower.none",
+    "KeelConfigurationCode": "keel.no_keel",
+    "RunningGearProtectionCode": "running_gear.exposed"
+  },
+  {
+    "ManufacturerID": "SEA",
+    "Manufacturer": "Sea Ray",
+    "Model": "390 / 40 Motor Yacht",
+    "Variant": "Flush-Deck Motor Yacht",
+    "Nickname": "Sea Ray 390 / 40 Motor Yacht",
+    "ImageURL": "images/sear-390-mo.jpg",
+    "Active": false,
+    "FirstYear": 2003,
+    "LastYear": 2007,
+    "TotalBuilt": 210,
+    "Designer": "Sea Ray Design",
+    "HullType": "Modified-V",
+    "Style": "Aft Cabin Motor Yacht",
+    "Construction": "Fiberglass",
+    "KeelType": "Modified V",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Twin gasoline or diesel inboards",
+    "Propulsion": "Shaft/V-Drive",
+    "Flybridge": "No",
+    "AftCabin": true,
+    "SideDecks": "Wide",
+    "TypicalEngineID": "Cummins QSB 5.9",
+    "FuelCapacity": 1135.62,
+    "WaterCapacity": 378.54,
+    "HoldingCapacity": 204.41,
+    "Berths": 6,
+    "Cabins": 2,
+    "Heads": 2,
+    "Shower": false,
+    "Galley": false,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "No",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "Strengths": [
+      "High interior volume for length",
+      "Private aft-cabin accommodation",
+      "Twin-engine maneuverability",
+      "Strong used-market recognition for its production segment"
+    ],
+    "Weaknesses": "Prominent crosswind profile makes tight docking demanding, substantial fuel burn when pushed up to plane.",
+    "CommonProblems": "Dripless shaft log tracking line weeping, air conditioning condensation pan overflow blocks.",
+    "TypicalMission": "Extended multi-week family liveaboard tracking, loops, and dockside entertaining.",
+    "AvoidIf": [
+      "You require low air draft or simple single-level access",
+      "You want single-diesel displacement economy",
+      "You need easy trailerability or low marina beam requirements"
+    ],
+    "DateCreated": "2026-07-13",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "B-Atlas Phase 8C-15 Production Motoryacht/Cruiser Research",
+    "Revision": 2,
+    "BoatModelID": "SEAR-390-MO",
+    "BoatFamily": "Motor Yacht",
+    "Configuration": "Aft Cabin Cruiser",
+    "HullBehaviour": "Planing",
+    "Features": [
+      "Aft Cabin",
+      "Wide Side Decks"
+    ],
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft/V-Drive",
+    "NormalizedHullForm": "Planing",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Motor Yacht",
+    "DataConfidence": "Moderate",
+    "ResearchStatus": "Reviewed",
+    "Overview": "The Sea Ray 390 / 40 Motor Yacht is a production aft-cabin motor yacht built around high interior volume, two-stateroom privacy and twin-engine coastal performance. Its multi-level deck plan trades easy all-on-one-level movement for substantial accommodation in a relatively modest overall length.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented accommodation and enclosed living spaces support weekend or regional couple cruising."
+      },
+      "SoloHandling": {
+        "Assessment": "Mixed",
+        "Summary": "Twin engines can assist close-quarters maneuvering, but size, windage and multi-level access increase workload."
+      },
+      "InlandWaterways": {
+        "Assessment": "Mixed",
+        "Summary": "Comfortable for inland cruising, but beam, air draft and fuel consumption must be checked against route and marina constraints."
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "These are coastal production cruisers; actual capability depends on generation, loading, machinery, weather and individual condition."
+      }
+    },
+    "TradeOffs": [
+      "Multiple steps between swim platform, aft deck, bridge and cabins",
+      "High windage and relatively high air draft",
+      "Twin-engine operating and maintenance cost",
+      "Age and system complexity make condition more important than model reputation"
+    ],
+    "BestFor": [
+      "Couples or families prioritizing accommodation over low operating cost",
+      "Inland and coastal cruising with marina-based use",
+      "Buyers wanting two private sleeping areas"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Verify moisture around deck hardware, windows, hatches and rail bases",
+      "Inspect fuel, water and waste tanks plus hoses and fittings",
+      "Inspect engines, transmissions or sterndrives, exhaust and cooling systems",
+      "Review AC/DC wiring, shore-power equipment and documented electrical modifications",
+      "Confirm steering, trim-tab and generator operation where fitted",
+      "Inspect aft-cabin windows, aft-deck enclosure and access steps"
+    ],
+    "BuyerQuestions": [
+      "What repair or survey history is available for moisture around deck hardware, windows, hatches and rail bases?",
+      "What repair or survey history is available for fuel, water and waste tanks plus hoses and fittings?",
+      "What repair or survey history is available for engines, transmissions or sterndrives, exhaust and cooling systems?",
+      "What repair or survey history is available for ac/dc wiring, shore-power equipment and documented electrical modifications?",
+      "What repair or survey history is available for steering, trim-tab and generator operation where fitted?"
+    ],
+    "OwnerActions": [
+      "Keep deck, window and hardware penetrations sealed",
+      "Maintain propulsion, cooling, exhaust, steering and electrical systems to documented intervals",
+      "Document structural, tank, electrical and machinery repairs for future survey and resale"
+    ],
+    "ModelVariations": [
+      {
+        "Name": "390 / 40 naming",
+        "Description": "Sold as 390 Motor Yacht in 2003–05 and 40 Motor Yacht in 2006–07.",
+        "AffectedYears": "2003–2007",
+        "EvidenceRefs": [
+          "https://www.hmy.com/yachting/powerboat-guide/sea-ray/390-motor-yacht-40-motor-yacht-2003-07"
+        ],
+        "Confidence": "High"
+      }
+    ],
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Strong",
+      "EvidenceQuality": "Moderate",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "SEAR-390-MO"
+            ],
+            "Years": {
+              "From": 2003,
+              "To": 2007
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/sea-ray/390-motor-yacht-40-motor-yacht-2003-07"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "High",
+          "Notes": "Model identity and representative specifications checked against model-guide or catalog evidence."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "SEAR-390-MO"
+            ],
+            "Years": {
+              "From": 2003,
+              "To": 2007
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/sea-ray/390-motor-yacht-40-motor-yacht-2003-07"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Buyer guidance derives from documented configuration, propulsion and accommodation."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "General age-related guidance",
+            "Models": [
+              "SEAR-390-MO"
+            ],
+            "Years": {
+              "From": 2003,
+              "To": 2007
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.hmy.com/yachting/powerboat-guide/sea-ray/390-motor-yacht-40-motor-yacht-2003-07"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection guidance is age/configuration based and is not a claim of a model-wide defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "EngineCount": 2,
+    "ResearchNotes": "Canonical combined identity retained because the same model was sold as 390 Motor Yacht (2003–05) and 40 Motor Yacht (2006–07). HMY documents 18-knot cruise with standard gas inboards and low-20-knot cruise with optional Cummins diesels.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "ModelCharacter": "A distinctive Sea Ray flush-deck motor yacht that places the helm and sheltered aft deck on one social level rather than separating the skipper on a flybridge. Beneath that unconventional profile is a high-volume two-stateroom planing yacht capable of roughly 18–22-knot cruise with gasoline or diesel inboards.",
+    "DesignLineage": [
+      "Sea Ray introduced the 390 Motor Yacht for 2003.",
+      "The same model was renamed 40 Motor Yacht for 2006–2007 without becoming a fundamentally different hull.",
+      "The defining design departure is the single-level helm/aft-deck social area under a long hardtop rather than a conventional raised flybridge.",
+      "The 390/40 MY is distinct from Sea Ray's Sundancer express and Sedan Bridge families despite overlapping size."
+    ],
+    "OwnershipCharacter": "Very comfortable and weather-protected, but this is a systems-dense motor yacht with twin mains, generator, HVAC, two heads and high air draft. Gas versions have high fuel burn; diesel versions cost more to maintain but suit heavier cruising better.",
+    "CharacterConfidence": "High",
+    "DisplacementLb": 26500,
+    "FuelCapacityGal": 300,
+    "WaterCapacityGal": 100,
+    "NormalizedHullType": "Modified-V",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "RarityConfidence": "Not rated",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "PriceConfidence": "Not rated",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "BoatFamilyCode": "boat_family.motor_yacht",
+    "HullBehaviourCode": "hull_behaviour.planing",
+    "MechanicalPropulsionCode": "mechanical_propulsion.v_drive",
+    "LOA": 12.7254,
+    "Beam": 4.3434,
+    "Draft": 0.9144,
+    "Displacement": 12020.2,
+    "AirDraft": 4.1656,
+    "ShowerTypeCode": "shower.separate_stall",
+    "ModelAliases": [
+      "390 Motor Yacht",
+      "40 Motor Yacht"
+    ],
+    "FuelCode": "fuel.diesel",
+    "FuelCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "WaterCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityUnitStatus": "canonical_litres_assumed_us_gal",
+    "HoldingCapacityGal": 54,
+    "CanonicalSlug": "sea-ray-390-40-motor-yacht-flush-deck-motor-yacht",
+    "CanonicalPath": "/models/sea-ray-390-40-motor-yacht-flush-deck-motor-yacht/",
+    "CanonicalURL": "https://b-atlas.org/models/sea-ray-390-40-motor-yacht-flush-deck-motor-yacht/",
+    "StyleCode": "Motor Yacht",
+    "CoolingCode": "cooling.fresh_water",
+    "FlybridgeCode": "availability.no",
+    "SideDecksCode": "side_decks.wide",
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "LWL": 11.0338,
+    "SpecificationConfidence": {
+      "LWL": {
+        "Level": "Low",
+        "Status": "restored_legacy_working_value",
+        "EvidenceRefs": [],
+        "Note": "Working LWL restored from the pre-v6.81 archived B-Atlas value (36.2 ft). Retained as a low-confidence community-verifiable value rather than leaving a basic performance input blank."
+      },
+      "KeelConfigurationCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from unambiguous existing KeelType text."
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from canonical no-keel geometry with inboard shaft/V-drive propulsion; propeller/rudder running gear is exposed below the hull rather than protected by a keel or skeg."
+      }
+    },
+    "KeelConfigurationCode": "keel.no_keel",
+    "RunningGearProtectionCode": "running_gear.exposed"
+  },
+  {
+    "ManufacturerID": "SEAHORSE",
+    "Manufacturer": "Seahorse",
+    "Model": "Coot 35",
+    "Variant": "Steel Pocket Trawler",
+    "Nickname": "Seahorse Coot 35",
+    "ImageURL": "images/seah-35-ph.jpg",
+    "Active": false,
+    "FirstYear": 2005,
+    "LastYear": 2021,
+    "TotalBuilt": null,
+    "Designer": "Seahorse Design Group",
+    "HullType": "Semi-Displacement",
+    "Style": "Pilothouse Trawler",
+    "Construction": "Steel",
+    "KeelType": "Full Length",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Single Inboard",
+    "Propulsion": "Shaft",
+    "Flybridge": "Yes",
+    "AftCabin": false,
+    "SideDecks": "Wide",
+    "TypicalEngineID": "Perkins 135",
+    "FuelCapacity": 1514.1647,
+    "WaterCapacity": 794.9365,
+    "HoldingCapacity": 113.5624,
+    "Berths": 4,
+    "Cabins": 2,
+    "Heads": 1,
+    "Shower": false,
+    "Galley": false,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "Yes",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "Strengths": [
+      "Potentially useful classic cruising configuration if the individual hull matches the recorded identity"
+    ],
+    "Weaknesses": "Older systems and modest tankage.",
+    "CommonProblems": "Deck core moisture and tank corrosion.",
+    "TypicalMission": "Loop cruising and coastal passages.",
+    "AvoidIf": [
+      "You require a fully documented model history before considering a candidate",
+      "You are unwilling to commission careful survey and identity verification"
+    ],
+    "DateCreated": "2026-07-18",
+    "LastUpdated": "2026-09-02",
+    "ReviewedBy": "B-Atlas Phase 8C-11 Classic Taiwanese / Older Motoryacht Research",
+    "Revision": "3",
+    "BoatModelID": "SEAH-35-PH",
+    "BoatFamily": "Trawler",
+    "Configuration": "Pilothouse Trawler",
+    "HullBehaviour": "Semi-Displacement",
+    "Features": [
+      "Flybridge",
+      "Wide Side Decks"
+    ],
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Trawler",
+    "DataConfidence": "High",
+    "ResearchStatus": "Reviewed",
+    "Overview": "The Seahorse 35 Pilothouse is retained as a provisional B-Atlas model because surviving-market evidence suggests the identity exists, but the current source set does not establish a complete factory specification or production history. Its recorded configuration should therefore be treated as a research lead rather than a fully verified model standard.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented cruising layout is practical for a couple; guest capacity and privacy vary by model."
+      },
+      "SoloHandling": {
+        "Assessment": "Mixed",
+        "Summary": "Lower-helm access and protected decks can help short-handed operation, but windage, engine count and docking equipment remain hull-specific."
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "Route fit depends on actual beam, draft and air draft; verify bridge and marina limits for the individual boat."
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "Condition, loading and actual hull configuration are decisive; this assessment reflects documented design intent rather than an offshore guarantee."
+      }
+    },
+    "TradeOffs": [
+      "Documentation is sparse and marketplace naming may be inconsistent",
+      "Hull-specific condition and equipment dominate the buying decision",
+      "Factory-standard dimensions and systems are not yet sufficiently verified"
+    ],
+    "BestFor": [
+      "Experienced buyers willing to verify an uncommon model from primary hull documentation"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Confirm builder plate, HIN, model designation and year before relying on B-Atlas specifications",
+      "Obtain prior surveys, manuals and original documentation where available",
+      "Inspect decks, windows, structure, tanks, wiring and plumbing",
+      "Inspect engines, exhaust, cooling, shafts, rudders and steering",
+      "Verify actual dimensions, tankage and air draft"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for confirm builder plate, HIN, model designation and year before relying on B-Atlas specifications?",
+      "What inspection, repair or service history is available for obtain prior surveys, manuals and original documentation where available?",
+      "What inspection, repair or service history is available for inspect decks, windows, structure, tanks, wiring and plumbing?",
+      "What inspection, repair or service history is available for inspect engines, exhaust, cooling, shafts, rudders and steering?",
+      "What inspection, repair or service history is available for verify actual dimensions, tankage and air draft?"
+    ],
+    "OwnerActions": [
+      "Keep deck, window and hardware penetrations sealed and investigate leaks promptly",
+      "Maintain propulsion, cooling, exhaust, steering and fuel systems to documented intervals",
+      "Document structural, tank, electrical and machinery repairs for future buyers"
+    ],
+    "ModelVariations": [],
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Partial",
+      "EvidenceQuality": "Low",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "SEAH-35-PH"
+            ],
+            "Years": {
+              "From": 1990,
+              "To": 2005
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://passagemaker.com/cruiser-reviews/the-mighty-ducks/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Representative identity and specifications use model-specific references where available; unresolved production or hull differences remain explicit."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "SEAH-35-PH"
+            ],
+            "Years": {
+              "From": 1990,
+              "To": 2005
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://passagemaker.com/cruiser-reviews/the-mighty-ducks/"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Guidance is derived from documented configuration and design traits, not marketplace promotion."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "SEAH-35-PH"
+            ],
+            "Years": {
+              "From": 1990,
+              "To": 2005
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://passagemaker.com/cruiser-reviews/the-mighty-ducks/"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection items are age/configuration risks to investigate and are not assertions that every hull has the defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "The current research set confirms Seahorse as a yacht-building/importing operation but does not establish these 35/40 Pilothouse records as standardized production models with reliable model-wide specifications. Retain as provisional until stronger evidence is found.",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "EngineCount": 1,
+    "ResearchNotes": "Batch 32 specialist-tail research. Identity, lineage and specifications normalized from model-specific builder, owner-archive and Powerboat Guide evidence; unsupported details remain unknown. Batch 10: legacy construction corrected to Steel; dimension shadows reconciled. Rudder classified skeg-hung from the documented rudder skeg. Conflicting tank capacities were cleared rather than generalized.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "ModelCharacter": "A George Buehler-designed steel pocket trawler built in China by Seahorse Marine to workboat principles: heavy displacement, one low-powered diesel, huge tankage and a snug pilothouse prioritize rugged long-distance coastal cruising over speed or light-boat aesthetics.",
+    "DesignLineage": [
+      "The Coot 35 was designed by George Buehler for Seahorse Marine.",
+      "The production boat uses a steel displacement hull with fiberglass/aluminum-style non-rusting superstructure approach depending generation.",
+      "Documented 2005 examples use a 115 hp John Deere; later Coot 35/38 literature specifies Beta Marine power.",
+      "The current Coot 38 represents an enlarged/evolved version of the same pocket-trawler concept."
+    ],
+    "OwnershipCharacter": "Steel hull inspection, coatings and corrosion management are the central ownership tasks. In exchange, the single diesel, enormous fuel/water capacity and workboat systems are simple and repairable almost anywhere.",
+    "CharacterConfidence": "High",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "RarityConfidence": "Not rated",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "PriceConfidence": "Not rated",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.steel",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "BoatFamilyCode": "boat_family.trawler",
+    "HullBehaviourCode": "hull_behaviour.displacement",
+    "FuelCode": "fuel.diesel",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "KeelConfigurationCode": "keel.full_long",
+    "RunningGearProtectionCode": "running_gear.skeg_protected",
+    "LOA": 10.87,
+    "LWL": 9.65,
+    "Beam": 3.96,
+    "Draft": 1.19,
+    "Displacement": 12701,
+    "EnginePowerPerEngine": 63.38,
+    "FuelCapacityUnitStatus": "canonical_litres",
+    "WaterCapacityUnitStatus": "canonical_litres",
+    "HoldingCapacityUnitStatus": "canonical_litres",
+    "RudderTypeCode": "rudder.skeg_hung",
+    "AirDraft": 3.8000000000000003,
+    "CanonicalSlug": "seahorse-coot-35-steel-pocket-trawler",
+    "CanonicalPath": "/models/seahorse-coot-35-steel-pocket-trawler/",
+    "CanonicalURL": "https://b-atlas.org/models/seahorse-coot-35-steel-pocket-trawler/",
+    "StyleCode": "Trawler",
+    "CoolingCode": "cooling.fresh_water",
+    "FlybridgeCode": "availability.yes",
+    "SideDecksCode": "side_decks.wide",
+    "SpecificationConfidence": {
+      "AirDraft": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [],
+        "Note": "B-Atlas working estimate derived from nearest comparable models with similar style, size and flybridge configuration. Verify actual mast/radar/antenna clearance before route planning. Comparable model IDs: ALBN-36-CL, ISGY-36, MONK-36-TR, BENE-34-SW, GULF-36-TR, KDKR-36-MA, ATLB-37-TR"
+      },
+      "FuelCapacity": {
+        "Level": "Medium",
+        "Status": "estimated",
+        "EvidenceRefs": [
+          "https://www.boattrader.com/boat/2005-seahorse-coot-35-8632224/",
+          "https://uk.boats.com/power-boats/2005-seahorse-coot-35-8632224/",
+          "https://dailyboats.com/ca/boat/339048-buy-seahorse-coot-35-38-for-sale"
+        ],
+        "Note": "A documented 2005 Coot 35 carries 400 US gal; later combined Coot 35/38 literature differs, so verify production version."
+      },
+      "WaterCapacity": {
+        "Level": "Medium",
+        "Status": "estimated",
+        "EvidenceRefs": [
+          "https://www.boattrader.com/boat/2005-seahorse-coot-35-8632224/",
+          "https://uk.boats.com/power-boats/2005-seahorse-coot-35-8632224/",
+          "https://dailyboats.com/ca/boat/339048-buy-seahorse-coot-35-38-for-sale"
+        ],
+        "Note": "A documented 2005 Coot 35 carries 210 US gal fresh water; production versions differ."
+      },
+      "HoldingCapacity": {
+        "Level": "Medium",
+        "Status": "estimated",
+        "EvidenceRefs": [
+          "https://www.boattrader.com/boat/2005-seahorse-coot-35-8632224/",
+          "https://uk.boats.com/power-boats/2005-seahorse-coot-35-8632224/",
+          "https://dailyboats.com/ca/boat/339048-buy-seahorse-coot-35-38-for-sale"
+        ],
+        "Note": "A documented 2005 Coot 35 reports 30 US gal holding; verify hull/year."
+      },
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      }
+    },
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "ShowerTypeCode": "shower.none"
+  },
+  {
+    "ManufacturerID": "SEAHORSE",
+    "Manufacturer": "Seahorse",
+    "Model": "Coot 38",
+    "Variant": "Steel Pocket Trawler",
+    "Nickname": "Seahorse Coot 38",
+    "ImageURL": "images/seah-40-ph.jpg",
+    "Active": false,
+    "FirstYear": 2021,
+    "LastYear": null,
+    "TotalBuilt": null,
+    "Designer": "Seahorse Design Group",
+    "HullType": "Semi-Displacement",
+    "Style": "Pilothouse Trawler",
+    "Construction": "Steel",
+    "KeelType": "Full Length",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Twin Inboard",
+    "Propulsion": "Shaft",
+    "Flybridge": "Yes",
+    "AftCabin": false,
+    "SideDecks": "Wide",
+    "TypicalEngineID": "Perkins 6.354",
+    "FuelCapacity": 1854.8518,
+    "WaterCapacity": 378.5412,
+    "HoldingCapacity": null,
+    "Berths": 6,
+    "Cabins": 1,
+    "Heads": 1,
+    "Shower": false,
+    "Galley": false,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "Yes",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "Strengths": [
+      "Potentially useful classic cruising configuration if the individual hull matches the recorded identity"
+    ],
+    "Weaknesses": "Older systems and teak maintenance.",
+    "CommonProblems": "Deck core moisture and window leaks.",
+    "TypicalMission": "Loop cruising and extended coastal passages.",
+    "AvoidIf": [
+      "You require a fully documented model history before considering a candidate",
+      "You are unwilling to commission careful survey and identity verification"
+    ],
+    "DateCreated": "2026-07-18",
+    "LastUpdated": "2026-09-02",
+    "ReviewedBy": "B-Atlas Phase 8C-11 Classic Taiwanese / Older Motoryacht Research",
+    "Revision": "3",
+    "BoatModelID": "SEAH-38-CO",
+    "BoatFamily": "Trawler",
+    "Configuration": "Pilothouse Trawler",
+    "HullBehaviour": "Semi-Displacement",
+    "Features": [
+      "Flybridge",
+      "Aft Cabin",
+      "Wide Side Decks"
+    ],
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Trawler",
+    "DataConfidence": "High",
+    "ResearchStatus": "Reviewed",
+    "Overview": "The Seahorse 40 Pilothouse is retained as a provisional B-Atlas model because surviving-market evidence suggests the identity exists, but the current source set does not establish a complete factory specification or production history. Its recorded configuration should therefore be treated as a research lead rather than a fully verified model standard.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented cruising layout is practical for a couple; guest capacity and privacy vary by model."
+      },
+      "SoloHandling": {
+        "Assessment": "Mixed",
+        "Summary": "Lower-helm access and protected decks can help short-handed operation, but windage, engine count and docking equipment remain hull-specific."
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "Route fit depends on actual beam, draft and air draft; verify bridge and marina limits for the individual boat."
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "Condition, loading and actual hull configuration are decisive; this assessment reflects documented design intent rather than an offshore guarantee."
+      }
+    },
+    "TradeOffs": [
+      "Documentation is sparse and marketplace naming may be inconsistent",
+      "Hull-specific condition and equipment dominate the buying decision",
+      "Factory-standard dimensions and systems are not yet sufficiently verified"
+    ],
+    "BestFor": [
+      "Experienced buyers willing to verify an uncommon model from primary hull documentation"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Confirm builder plate, HIN, model designation and year before relying on B-Atlas specifications",
+      "Obtain prior surveys, manuals and original documentation where available",
+      "Inspect decks, windows, structure, tanks, wiring and plumbing",
+      "Inspect engines, exhaust, cooling, shafts, rudders and steering",
+      "Verify actual dimensions, tankage and air draft"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for confirm builder plate, HIN, model designation and year before relying on B-Atlas specifications?",
+      "What inspection, repair or service history is available for obtain prior surveys, manuals and original documentation where available?",
+      "What inspection, repair or service history is available for inspect decks, windows, structure, tanks, wiring and plumbing?",
+      "What inspection, repair or service history is available for inspect engines, exhaust, cooling, shafts, rudders and steering?",
+      "What inspection, repair or service history is available for verify actual dimensions, tankage and air draft?"
+    ],
+    "OwnerActions": [
+      "Keep deck, window and hardware penetrations sealed and investigate leaks promptly",
+      "Maintain propulsion, cooling, exhaust, steering and fuel systems to documented intervals",
+      "Document structural, tank, electrical and machinery repairs for future buyers"
+    ],
+    "ModelVariations": [],
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Partial",
+      "EvidenceQuality": "Low",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "SEAH-40-PH"
+            ],
+            "Years": {
+              "From": 1990,
+              "To": 2010
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://passagemaker.com/cruiser-reviews/the-mighty-ducks/"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Representative identity and specifications use model-specific references where available; unresolved production or hull differences remain explicit."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "SEAH-40-PH"
+            ],
+            "Years": {
+              "From": 1990,
+              "To": 2010
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://passagemaker.com/cruiser-reviews/the-mighty-ducks/"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Guidance is derived from documented configuration and design traits, not marketplace promotion."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "SEAH-40-PH"
+            ],
+            "Years": {
+              "From": 1990,
+              "To": 2010
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://passagemaker.com/cruiser-reviews/the-mighty-ducks/"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection items are age/configuration risks to investigate and are not assertions that every hull has the defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "The current research set confirms Seahorse as a yacht-building/importing operation but does not establish these 35/40 Pilothouse records as standardized production models with reliable model-wide specifications. Retain as provisional until stronger evidence is found.",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "EngineCount": 1,
+    "ResearchNotes": "Batch 32 specialist-tail research. Identity, lineage and specifications normalized from model-specific builder, owner-archive and Powerboat Guide evidence; unsupported details remain unknown. Batch 10: legacy construction corrected to Steel and rudder classified skeg-hung. Builder-derived LWL is internally inconsistent between metric and imperial values, so LWL is now unresolved. Displacement and tankage also remain unresolved because reviewed sources use different loading bases/configurations.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "ModelCharacter": "The enlarged contemporary evolution of Seahorse Marine's Coot pocket-trawler idea: a heavy steel displacement cruiser with one modest diesel, approximately 1,500-mile range, shallow four-foot draft and straightforward long-range systems.",
+    "DesignLineage": [
+      "The Coot 38 grew from the George Buehler Coot 35 concept and is often marketed jointly as the 'Coot 35 & 38' family.",
+      "The 38 retains the steel displacement hull and single-diesel workboat philosophy.",
+      "Current listings describe the 38 as intended for river, canal, coastal and Great Loop cruising rather than as a primary ocean passagemaker.",
+      "B-Atlas replaced an unsupported provisional 'Seahorse 40 Pilothouse' record with this verified Coot 38 identity."
+    ],
+    "OwnershipCharacter": "Rugged and repairable, but steel-hull coating and corrosion inspection are non-negotiable. A single diesel keeps propulsion simple; heavy displacement and 13-foot beam increase haul-out requirements.",
+    "CharacterConfidence": "High",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "RarityConfidence": "Not rated",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "PriceConfidence": "Not rated",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.steel",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "BoatFamilyCode": "boat_family.trawler",
+    "HullBehaviourCode": "hull_behaviour.displacement",
+    "FuelCode": "fuel.diesel",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "KeelConfigurationCode": "keel.full_long",
+    "RunningGearProtectionCode": "running_gear.skeg_protected",
+    "LOA": 11.582,
+    "LWL": 9.652,
+    "Beam": 3.912,
+    "Draft": 1.16,
+    "EnginePowerPerEngine": 63.38,
+    "FuelCapacityUnitStatus": "canonical_litres",
+    "WaterCapacityUnitStatus": "canonical_litres",
+    "HoldingCapacityUnitStatus": "unknown",
+    "RudderTypeCode": "rudder.skeg_hung",
+    "AirDraft": 5.5,
+    "CanonicalSlug": "seahorse-coot-38-steel-pocket-trawler",
+    "CanonicalPath": "/models/seahorse-coot-38-steel-pocket-trawler/",
+    "CanonicalURL": "https://b-atlas.org/models/seahorse-coot-38-steel-pocket-trawler/",
+    "StyleCode": "Trawler",
+    "CoolingCode": "cooling.fresh_water",
+    "FlybridgeCode": "availability.yes",
+    "SideDecksCode": "side_decks.wide",
+    "SpecificationConfidence": {
+      "AirDraft": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [],
+        "Note": "B-Atlas working estimate derived from nearest comparable models with similar style, size and flybridge configuration. Verify actual mast/radar/antenna clearance before route planning. Comparable model IDs: MNSH-34-TR, BENE-35-SW, GRBK-36-CL, ATLB-37-TR, PRAI-36-TR, KDKR-36-MA, GULF-36-TR"
+      },
+      "LWL": {
+        "Level": "High",
+        "Status": "supported",
+        "EvidenceRefs": [
+          "https://seahorse-marine.ueniweb.com/products/pocket/coot-38-35-50767788",
+          "https://www.youboat.com/boat/2025-seahorse-coot38-522264/"
+        ],
+        "Note": "Published Coot 38 specification gives LWL 31 ft 8 in."
+      },
+      "Displacement": {
+        "Level": "Medium",
+        "Status": "supported",
+        "EvidenceRefs": [
+          "https://seahorse-marine.ueniweb.com/products/pocket/coot-38-35-50767788",
+          "https://www.youboat.com/boat/2025-seahorse-coot38-522264/"
+        ],
+        "Note": "Manufacturer-style Coot 38 specification gives approximately 28,000 lb; another listing reports 17 t loaded, indicating load-state variation."
+      },
+      "FuelCapacity": {
+        "Level": "Medium",
+        "Status": "supported",
+        "EvidenceRefs": [
+          "https://seahorse-marine.ueniweb.com/products/pocket/coot-38-35-50767788",
+          "https://www.youboat.com/boat/2025-seahorse-coot38-522264/"
+        ],
+        "Note": "Manufacturer-style specification reports 490 US gal; later/alternate specification reports 650 gal, so verify production version."
+      },
+      "WaterCapacity": {
+        "Level": "Medium",
+        "Status": "supported",
+        "EvidenceRefs": [
+          "https://seahorse-marine.ueniweb.com/products/pocket/coot-38-35-50767788",
+          "https://www.youboat.com/boat/2025-seahorse-coot38-522264/"
+        ],
+        "Note": "Manufacturer-style specification reports 100 US gal; later/alternate specification reports 150 gal."
+      },
+      "ShowerTypeCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing Shower description in the canonical model record."
+      }
+    },
+    "Displacement": 12700.5864,
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "ShowerTypeCode": "shower.none"
+  },
+  {
+    "ManufacturerID": "SEALORD",
+    "Manufacturer": "Sealord",
+    "Model": "34 Double Cabin Trawler",
+    "Variant": "Tri-Cabin / Double Cabin",
+    "Nickname": "Sealord 34 Double Cabin Trawler",
+    "ImageURL": "images/seal-34-tc.jpg",
+    "Active": false,
+    "FirstYear": 1987,
+    "LastYear": 1987,
+    "TotalBuilt": null,
+    "Designer": null,
+    "HullType": "Semi-Displacement",
+    "Style": "Tri-Cabin Trawler",
+    "Construction": "Chien Hwa-built fiberglass Taiwan trawler; verify exact yard and construction details by HIN",
+    "KeelType": "Protective keel",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Twin Volvo Penta MD31A diesels documented on a surviving example",
+    "Propulsion": "Shaft",
+    "Flybridge": "Yes",
+    "AftCabin": true,
+    "SideDecks": "Moderate",
+    "TypicalEngineID": "Twin Volvo Penta MD31A 63 hp",
+    "FuelCapacity": 757.0823568,
+    "WaterCapacity": 378.5411784,
+    "HoldingCapacity": 94.6352946,
+    "Berths": 6,
+    "Cabins": 2,
+    "Heads": 2,
+    "Shower": "Verify listing",
+    "Galley": "Full galley",
+    "CoastalRating": "Yes",
+    "OffshoreRating": "No",
+    "GreatLoopSuitable": true,
+    "Trailerable": false,
+    "Strengths": [
+      "Potentially useful classic cruising configuration if the individual hull matches the recorded identity"
+    ],
+    "Weaknesses": "Sparse manufacturer documentation and likely Taiwan-trawler moisture and systems risks.",
+    "CommonProblems": "Inspect teak deck removal or recore history, window leaks, plywood/cored structure, tanks, twin-engine cooling/exhaust and legacy wiring.",
+    "TypicalMission": "Family inland-waterway and coastal cruising.",
+    "AvoidIf": [
+      "You require a fully documented model history before considering a candidate",
+      "You are unwilling to commission careful survey and identity verification"
+    ],
+    "DateCreated": "2026-07-27",
+    "LastUpdated": "2026-08-07",
+    "ReviewedBy": "B-Atlas Phase 8C-11 Classic Taiwanese / Older Motoryacht Research",
+    "Revision": 3,
+    "BoatModelID": "SEAL-34-TC",
+    "BoatFamily": null,
+    "Configuration": null,
+    "HullBehaviour": "Semi-Displacement",
+    "Features": [],
+    "NormalizedFuel": "Diesel",
+    "NormalizedPropulsion": "Shaft",
+    "NormalizedHullForm": "Semi-Displacement",
+    "NormalizedHullConfiguration": "Monohull",
+    "NormalizedStyle": "Cruiser",
+    "ResearchStatus": "Reviewed",
+    "ResearchNotes": "Canonical name refined from Sealord 34 Tri-Cabin to Sealord 34 Double Cabin Trawler, with Tri-Cabin retained as an alias. A verified 1987 Ontario listing identifies the boat as a Sealord (Chien Hwa) Trawler at 34', 12' beam, 3'6\" draft, 18,000 lb and twin Volvo MD31A 63-hp diesels. A 1986 Sea Lord listing reports 34', 11'9\" beam, ~16,000 lb, twin Volvo MD30A 65-hp diesels, 200 gal fuel and 100 gal water. B-Atlas uses the directly documented 1987 dimensions and representative 200/100 gal tankage; exact builder/model equivalence with CHB remains unresolved.\n\nBatch 33 confidence audit: exact-model identity and source quality rechecked. Confidence is intentionally retained where factory/importer documentation is incomplete; missing evidence does not trigger deletion or inferred consolidation. Batch 14 final-tail review: exact 1986/1987 surviving examples continue to support 34 ft class dimensions and twin Volvo diesels. Exact 1986 listing gives 757/378/94 L capacities, consistent with approximately 200/100/25 US gal. LWL, air draft and rudder subtype remain unverified.\n\nv6.98 operational-completeness policy: fields with fewer than 5% genuine model records missing are considered operationally complete. Remaining blanks stay visible as community contribution opportunities rather than driving endless research.",
+    "DataConfidence": "Low",
+    "Overview": "The Sealord 34 Tri-Cabin Tri-Cabin is retained as a provisional B-Atlas model because surviving-market evidence suggests the identity exists, but the current source set does not establish a complete factory specification or production history. Its recorded configuration should therefore be treated as a research lead rather than a fully verified model standard.",
+    "Suitability": {
+      "CoupleCruising": {
+        "Assessment": "Good",
+        "Summary": "The documented cruising layout is practical for a couple; guest capacity and privacy vary by model."
+      },
+      "SoloHandling": {
+        "Assessment": "Mixed",
+        "Summary": "Lower-helm access and protected decks can help short-handed operation, but windage, engine count and docking equipment remain hull-specific."
+      },
+      "InlandWaterways": {
+        "Assessment": "Good",
+        "Summary": "Route fit depends on actual beam, draft and air draft; verify bridge and marina limits for the individual boat."
+      },
+      "ExposedWater": {
+        "Assessment": "Mixed",
+        "Summary": "Condition, loading and actual hull configuration are decisive; this assessment reflects documented design intent rather than an offshore guarantee."
+      }
+    },
+    "TradeOffs": [
+      "Documentation is sparse and marketplace naming may be inconsistent",
+      "Hull-specific condition and equipment dominate the buying decision",
+      "Factory-standard dimensions and systems are not yet sufficiently verified"
+    ],
+    "BestFor": [
+      "Experienced buyers willing to verify an uncommon model from primary hull documentation"
+    ],
+    "KnownConcerns": [],
+    "InspectionFocus": [
+      "Confirm builder plate, HIN, model designation and year before relying on B-Atlas specifications",
+      "Obtain prior surveys, manuals and original documentation where available",
+      "Inspect decks, windows, structure, tanks, wiring and plumbing",
+      "Inspect engines, exhaust, cooling, shafts, rudders and steering",
+      "Verify actual dimensions, tankage and air draft"
+    ],
+    "BuyerQuestions": [
+      "What inspection, repair or service history is available for confirm builder plate, HIN, model designation and year before relying on B-Atlas specifications?",
+      "What inspection, repair or service history is available for obtain prior surveys, manuals and original documentation where available?",
+      "What inspection, repair or service history is available for inspect decks, windows, structure, tanks, wiring and plumbing?",
+      "What inspection, repair or service history is available for inspect engines, exhaust, cooling, shafts, rudders and steering?",
+      "What inspection, repair or service history is available for verify actual dimensions, tankage and air draft?"
+    ],
+    "OwnerActions": [
+      "Keep deck, window and hardware penetrations sealed and investigate leaks promptly",
+      "Maintain propulsion, cooling, exhaust, steering and fuel systems to documented intervals",
+      "Document structural, tank, electrical and machinery repairs for future buyers"
+    ],
+    "ModelVariations": [],
+    "EvidenceSummary": {
+      "KnowledgeCoverage": "Partial",
+      "EvidenceQuality": "Low",
+      "Statements": [
+        {
+          "Scope": "IdentityAndDimensions",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "SEAL-34-TC"
+            ],
+            "Years": {
+              "From": 1987,
+              "To": 1987
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.boatdealers.ca/boats-for-sale/542099/sealord-tricabin-hamilton-ontario"
+          ],
+          "EvidenceTypes": [
+            "Factory documented",
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Representative identity and specifications use model-specific references where available; unresolved production or hull differences remain explicit."
+        },
+        {
+          "Scope": "OverviewAndSuitability",
+          "AppliesTo": {
+            "Scope": "Model",
+            "Models": [
+              "SEAL-34-TC"
+            ],
+            "Years": {
+              "From": 1987,
+              "To": 1987
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.boatdealers.ca/boats-for-sale/542099/sealord-tricabin-hamilton-ontario"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Guidance is derived from documented configuration and design traits, not marketplace promotion."
+        },
+        {
+          "Scope": "InspectionFocus",
+          "AppliesTo": {
+            "Scope": "Model family",
+            "Models": [
+              "SEAL-34-TC"
+            ],
+            "Years": {
+              "From": 1987,
+              "To": 1987
+            },
+            "Variations": []
+          },
+          "EvidenceRefs": [
+            "https://www.boatdealers.ca/boats-for-sale/542099/sealord-tricabin-hamilton-ontario"
+          ],
+          "EvidenceTypes": [
+            "Technical or survey source"
+          ],
+          "Confidence": "Moderate",
+          "Notes": "Inspection items are age/configuration risks to investigate and are not assertions that every hull has the defect."
+        }
+      ],
+      "UnresolvedInformation": [
+        "Current evidence establishes at least one 1987 Sealord (Chien Hwa) 34 Tri-Cabin and its principal dimensions, but not a complete model-wide production history.",
+        "Legacy CommonProblems were not promoted to KnownConcerns without model-specific evidence meeting the approved threshold."
+      ]
+    },
+    "EngineCount": 2,
+    "ModelCharacter": "A rare late-1980s Chien Hwa-built Taiwan trawler marketed under the Sealord/Sea Lord name, using a traditional double-cabin layout, teak interior and low-powered twin diesels for approximately 6-knot cruising. It belongs to the broad CHB/Chien Hwa import tradition but is retained as a separate market identity because direct evidence does not prove it is merely a renamed CHB 34.",
+    "DesignLineage": [
+      "Verified 1986 and 1987 Ontario examples establish a 34-foot Sealord/Sea Lord double-cabin or tri-cabin trawler identity.",
+      "A current 1987 listing explicitly identifies the builder lineage as 'Sealord (Chien Hwa) Trawler'.",
+      "Chien Hwa was one of Taiwan's major trawler builders and produced boats sold under numerous importer and distributor names.",
+      "Because no reliable source directly equates the Sealord 34 with B-Atlas's canonical CHB 34 Double Cabin, B-Atlas preserves it as a distinct record at Moderate confidence rather than merging on similarity alone."
+    ],
+    "OwnershipCharacter": "Low-speed twin diesels, full displacement and a teak-rich interior make it an economical classic cruiser underway, but the age and low documentation level shift risk toward teak decks, deck core, tanks, windows and electrical systems. Builder-specific parts are effectively custom or owner-sourced.",
+    "CharacterConfidence": "Moderate",
+    "DisplacementLb": 18000,
+    "FuelCapacityGal": 200,
+    "WaterCapacityGal": 100,
+    "NormalizedHullType": "Displacement",
+    "RarityScore": null,
+    "RarityLabel": "",
+    "RarityConfidence": "Not rated",
+    "PriceLevel": null,
+    "PriceLevelLabel": "",
+    "PriceConfidence": "Not rated",
+    "VesselCategoryCode": "vessel.power",
+    "PrimaryPropulsionModeCode": "primary_propulsion.power",
+    "HullMaterialCode": "hull_material.fiberglass",
+    "HullConfigurationCode": "hull_configuration.monohull",
+    "BoatFamilyCode": "boat_family.trawler",
+    "HullBehaviourCode": "hull_behaviour.semi_displacement",
+    "FuelCode": "fuel.diesel",
+    "MechanicalPropulsionCode": "mechanical_propulsion.shaft",
+    "LOA": 10.3632,
+    "Beam": 3.6576,
+    "Draft": 1.0668,
+    "Displacement": 8164.7,
+    "EnginePowerPerEngine": 46.98,
+    "Builder": "Chien Hwa (surviving-example attribution; verify HIN)",
+    "ShowerTypeCode": "shower.unknown",
+    "KeelConfigurationCode": "keel.protective",
+    "FuelCapacityUnitStatus": "canonical_litres",
+    "WaterCapacityUnitStatus": "canonical_litres",
+    "HoldingCapacityUnitStatus": "canonical_litres",
+    "HoldingCapacityGal": 25,
+    "AirDraft": 3.6500000000000004,
+    "CanonicalSlug": "sealord-34-double-cabin-trawler-tri-cabin-double-cabin",
+    "CanonicalPath": "/models/sealord-34-double-cabin-trawler-tri-cabin-double-cabin/",
+    "CanonicalURL": "https://b-atlas.org/models/sealord-34-double-cabin-trawler-tri-cabin-double-cabin/",
+    "StyleCode": "Cruiser",
+    "CoolingCode": "cooling.fresh_water",
+    "FlybridgeCode": "availability.yes",
+    "SideDecksCode": "side_decks.moderate",
+    "SpecificationConfidence": {
+      "AirDraft": {
+        "Level": "Low",
+        "Status": "estimated",
+        "EvidenceRefs": [],
+        "Note": "B-Atlas working estimate derived from nearest comparable models with similar style, size and flybridge configuration. Verify actual mast/radar/antenna clearance before route planning. Comparable model IDs: TOLL-34-SE, MNSH-34-MK3, JEAU-1095-FLY, CALF-34-TR, MTRA-34-SE, BAYL-3258, MERI-341-SE-03"
+      },
+      "RunningGearProtectionCode": {
+        "Level": "Medium",
+        "Status": "normalized_from_existing_record",
+        "EvidenceRefs": [],
+        "Note": "Normalized from existing propulsion/keel description; no new factual assertion introduced."
+      }
+    },
+    "DisplacementCruiseSpeed": null,
+    "DisplacementCruiseFuelBurn": null,
+    "PlaningCruiseSpeed": null,
+    "PlaningCruiseFuelBurn": null,
+    "RunningGearProtectionCode": "running_gear.keel_protected"
+  },
+  {
+    "ManufacturerID": "SEAPIPER",
+    "Manufacturer": "SeaPiper",
+    "Model": "35",
+    "Variant": "Narrow-Beam Long-Range Cruiser",
+    "Nickname": "SeaPiper 35",
+    "ImageURL": "images/seap-35.jpg",
+    "Active": false,
+    "FirstYear": 2018,
+    "LastYear": null,
+    "TotalBuilt": 35,
+    "Designer": "SeaPiper Team",
+    "HullType": "Displacement",
+    "Style": "Compact Trawler",
+    "Construction": "Fiberglass",
+    "KeelType": "Full Length",
+    "Fuel": "Diesel",
+    "Cooling": "Fresh Water",
+    "EngineConfiguration": "Single Beta Marine 85 hp diesel",
+    "Propulsion": "Shaft",
+    "Flybridge": "No",
+    "AftCabin": false,
+    "SideDecks": "Wide",
+    "TypicalEngineID": "Beta Marine 85",
+    "FuelCapacity": 757.0823568,
+    "WaterCapacity": 302.83294272,
+    "HoldingCapacity": 83.279059248,
+    "Berths": 4,
+    "Cabins": 1,
+    "Heads": 1,
+    "Shower": false,
+    "Galley": false,
+    "CoastalRating": "Yes",
+    "OffshoreRating": "No",
+    "GreatLoopSuitable": true,
+    "Trailerable": true,
+    "Strengths": [
+      "8 ft 6 in beam is exceptionally narrow for a 35-foot cruising boat",
+      "Single-diesel displacement efficiency with substantial 240-gallon fuel capacity",
+      "Shallow draft and low bridge-clearance configuration expand route options"
+    ],
+    "Weaknesses": "Narrow interior beam layout feels tight for groups, modest hull speed ceiling limits rapid transit options.",
+    "CommonProblems": "Engine raw water intake hose chaffing, forward cabin entry hatch latch seal cracking.",
+    "TypicalMission": "All-weather minimalist couples pocket cruising, canal tracking, and road-to-wate

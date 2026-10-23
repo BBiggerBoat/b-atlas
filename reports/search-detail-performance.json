@@ -1,0 +1,73 @@
+{
+  "baseline": "4990f6a994c6d600e4489b63c42eac8e7153c0da",
+  "method": "Installed Edge, three alternating fresh contexts per viewport, localhost, normalized LF, uncompressed and unthrottled, external requests and writes blocked. Body work includes completion, not pure parse CPU; heap is a point sample. Phase 3 runtime reconstructed from 4990f6a with its release digest verified.",
+  "summary": [
+    {
+      "name": "desktop",
+      "version": "before",
+      "catalogueReadyMs": 1151.6000000238419,
+      "decodedBytes": 10311069,
+      "requests": 130,
+      "catalogueDecodedBytes": 7365088,
+      "catalogueRequests": 64,
+      "guideVisibleMs": 56.5,
+      "guideReadyMs": 56.5,
+      "bodyCompletionMs": 93.59999990463257,
+      "longTaskMs": 840,
+      "heapBytes": 31569555,
+      "parseMs": 11.899999976158142,
+      "compatibilityMs": 4.200000047683716
+    },
+    {
+      "name": "desktop",
+      "version": "after",
+      "catalogueReadyMs": 1050,
+      "decodedBytes": 15641864,
+      "requests": 197,
+      "catalogueDecodedBytes": 5329850,
+      "catalogueRequests": 51,
+      "guideVisibleMs": 39,
+      "guideReadyMs": 269.6999999284744,
+      "bodyCompletionMs": 74.50000023841858,
+      "longTaskMs": 798,
+      "heapBytes": 21263003,
+      "parseMs": 6.699999928474426,
+      "compatibilityMs": 3.799999952316284
+    },
+    {
+      "name": "mobile",
+      "version": "before",
+      "catalogueReadyMs": 1343.8999999761581,
+      "decodedBytes": 9914450,
+      "requests": 113,
+      "catalogueDecodedBytes": 7365088,
+      "catalogueRequests": 64,
+      "guideVisibleMs": 68.69999992847443,
+      "guideReadyMs": 68.69999992847443,
+      "bodyCompletionMs": 107.30000030994415,
+      "longTaskMs": 971,
+      "heapBytes": 31477948,
+      "parseMs": 13,
+      "compatibilityMs": 4.800000071525574
+    },
+    {
+      "name": "mobile",
+      "version": "after",
+      "catalogueReadyMs": 1214.6000000238419,
+      "decodedBytes": 13501135,
+      "requests": 161,
+      "catalogueDecodedBytes": 5329850,
+      "catalogueRequests": 51,
+      "guideVisibleMs": 66.5,
+      "guideReadyMs": 266.7000000476837,
+      "bodyCompletionMs": 107.7999997138977,
+      "longTaskMs": 893,
+      "heapBytes": 21437530,
+      "parseMs": 8.799999952316284,
+      "compatibilityMs": 4.900000095367432
+    }
+  ],
+  "interpretation": "Catalogue bytes and requests reduced. Local startup medians improved. Full cold guide knowledge completes later: performance acceptance remains open; visible guide is no slower. Image/fallback totals vary and are not the catalogue budget. Heap is a point sample, not retained memory.",
+  "physicalSafari": "not available",
+  "productionMeasurements": false
+}

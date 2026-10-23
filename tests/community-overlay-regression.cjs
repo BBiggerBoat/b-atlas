@@ -58,13 +58,14 @@ const fetch = async url => {
   return { ok: true, json: async () => [] };
 };
 
-const context = { fetch, console };
+const context = { ...require('./catalogue-fixture.cjs').contextGlobals, fetch, console };
 context.window = context;
 context.globalThis = context;
 vm.runInNewContext(fs.readFileSync("datarepository.js", "utf8"), context, { filename: "datarepository.js" });
 
 (async () => {
-  const data = await context.BScoutDataRepository.loadApplicationData({ fetchImpl: fetch });
+  const fetchImpl=await require('./catalogue-fixture.cjs').releaseFetch(fetch);
+  const data = await context.BScoutDataRepository.loadApplicationData({ fetchImpl });
 
   assert.equal(data.boats.length, 2, "duplicate overlay BoatModelID must not append");
   assert.equal(data.manufacturers.length, 2, "duplicate manufacturer canonical name must not append");

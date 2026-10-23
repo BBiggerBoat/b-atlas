@@ -14,6 +14,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Generate untracked compatibility view
+        run: npm run generate:models
       - name: Audit provisional identity references
         run: node tools/audit-pending-identities.cjs
       - name: Inventory historical research references
