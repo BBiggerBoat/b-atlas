@@ -8,9 +8,10 @@ The delivery receipt records the final review commit.
 
 ## Status and review boundary
 
-Implementation and the full production verification suite pass. The read-only
-local release preview is prepared; owner preview approval remains open before
-calling the Phase 5 acceptance gate complete. This is not deployment approval.
+Phase 5 is complete and accepted as of October 23, 2026. Implementation and the
+full production verification suite pass. The owner confirmed acceptance of the
+read-only local release preview, closing the preview acceptance gate. This
+acceptance does not authorize a push, merge or deployment.
 The preview blocks external API connections and accepts only GET/HEAD requests.
 The earlier Phase 4 owner acceptance of the roughly 0.2-second first-guide delay
 is retained; this cleanup introduces no public-content change.
@@ -158,9 +159,9 @@ are retained under ignored `.bscout-data/phase5/`.
 
 ## Migration, review and rollback
 
-1. Review this local branch and the read-only preview. Record explicit preview
-   acceptance before closing Phase 5; neither acceptance nor this branch is a
-   merge/deployment instruction.
+1. Owner review of this local branch and read-only preview was accepted on
+   October 23, 2026. Phase 5 is closed; neither acceptance nor this branch is a
+   push, merge or deployment instruction.
 2. When publication is separately authorized, run the complete release gate from
    a clean Git checkout. Verify representative canonical partition and archive
    reads through GitHub after the branch is available remotely. Deploy only the
