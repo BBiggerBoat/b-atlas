@@ -14,6 +14,9 @@ const localAvailable = new Set(local.filter(a => a.status === "available" && a.p
 const externalRegistered = new Set(external.filter(a => a.status === "external_reference" && (a.externalThumbnailURL || a.externalImageURL)).map(a => a.boatModelId));
 const externalCandidateIds = new Set(candidateModels.filter(a => (a.candidates || []).length > 0).map(a => a.boatModelId));
 const uncovered = ids.filter(id => !localAvailable.has(id) && !externalRegistered.has(id));
+const missingLocalFiles = local.filter(a => models.has(a.boatModelId) && localAvailable.has(a.boatModelId)
+  && a.status === "available" && a.path && a.path !== "images/boat-placeholder.svg"
+  && !fs.existsSync(path.join(root, a.path))).map(a => ({ boatModelId: a.boatModelId, path: a.path }));
 const counts = {healthy:0,failed:0,unknown:0,other:0};
 let candidateURLs = 0;
 for (const item of candidateModels) for (const candidate of item.candidates || []) {
@@ -34,6 +37,7 @@ const result = {
   withBoth:ids.filter(id => localAvailable.has(id) && externalRegistered.has(id)).length,
   withoutRegisteredPhotograph:uncovered.length,
   missingModelIDs:uncovered,
+  missingLocalFiles,
   candidateURLs,
   candidateHealth:counts,
   externalWithoutCandidate:ids.filter(id => externalRegistered.has(id) && !externalCandidateIds.has(id)),
@@ -41,4 +45,4 @@ const result = {
   note:"HTTP health metadata is not proof that a photo correctly depicts the model or is licensed for reuse. Run npm run check:image-health separately for live URL reachability."
 };
 console.log(JSON.stringify(result,null,2));
-if (process.argv.includes("--strict") && (uncovered.length || Object.values(orphans).some(a => a.length))) process.exitCode=1;
+if (process.argv.includes("--strict") && (uncovered.length || missingLocalFiles.length || Object.values(orphans).some(a => a.length))) process.exitCode=1;

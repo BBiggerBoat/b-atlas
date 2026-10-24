@@ -11,14 +11,19 @@ const now = new Date().toISOString().slice(0, 10);
 
 async function checkUrl(url) {
   if (!url) return { ok: false, status: 0 };
+  const signal = AbortSignal.timeout(15000);
+  let response;
   try {
-    let response = await fetch(url, {
+    response = await fetch(url, {
+      signal,
       method: "HEAD",
       redirect: "follow",
       headers: { "User-Agent": "B-Atlas-Image-Health/1.0" }
     });
     if (response.status === 405 || response.status === 403 || response.status === 400) {
+      await response.body?.cancel();
       response = await fetch(url, {
+        signal,
         method: "GET",
         redirect: "follow",
         headers: {
@@ -28,9 +33,11 @@ async function checkUrl(url) {
       });
     }
     const type = response.headers.get("content-type") || "";
-    return { ok: response.ok && (!type || type.startsWith("image/")), status: response.status, contentType: type };
+    return { ok: response.ok && type.toLowerCase().startsWith("image/"), status: response.status, contentType: type, finalURL: response.url };
   } catch (error) {
     return { ok: false, status: 0, error: error.message };
+  } finally {
+    await response?.body?.cancel().catch(() => {});
   }
 }
 
@@ -69,6 +76,9 @@ runPool(flat, 8, async ({ model, candidate, candidateIndex }) => {
     candidateIndex,
     ok: result.ok,
     status: result.status,
+    contentType: result.contentType || null,
+    finalURL: result.finalURL || null,
+    error: result.error || null,
     domain: candidate.sourceDomain || ""
   };
 }).then(results => {
@@ -76,6 +86,12 @@ runPool(flat, 8, async ({ model, candidate, candidateIndex }) => {
   const failed = results.length - healthy;
   const failedModels = results.filter(item => !item.ok).map(item => `${item.boatModelId} [${item.candidateIndex}] ${item.domain} HTTP ${item.status || "error"}`);
   console.log(`Checked ${results.length} image candidates: ${healthy} healthy, ${failed} failed.`);
+  const reportIndex = process.argv.indexOf("--report");
+  if (reportIndex !== -1) {
+    const reportPath = process.argv[reportIndex + 1];
+    if (!reportPath || reportPath.startsWith("--")) throw new Error("--report requires an output path");
+    fs.writeFileSync(reportPath, JSON.stringify({ checkedAt: new Date().toISOString(), healthy, failed, results }, null, 2) + "\n");
+  }
   if (failedModels.length) console.log(failedModels.join("\n"));
 
   if (writeChanges) {

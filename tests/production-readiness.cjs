@@ -25,6 +25,23 @@ function filesAt(rel){const stat=fs.statSync(rel);return stat.isDirectory()?fs.r
 assert.deepEqual(protectedResearch.roots.flatMap(filesAt).sort(),Object.keys(protectedResearch.files).sort(),'Historical research file set changed');
 for(const [file,expectedHash] of Object.entries(protectedResearch.files)){
  let content=fs.readFileSync(file,'utf8').replace(/\r\n/g,'\n');
+ if(['data/image-candidates.json','data/imageassets-external.json'].includes(file)){
+  // Permit only the eleven reviewed additions; retain the original checksum for every existing entry.
+  const imageIDs=['PRES-41-DC','PRES-42-TR','OCAL-42-SE','DEFE-44-OC','MRTR-40-SU','CHBY-38-DC','KHAS-40-SU','CRUY-3260','SEAR-340-SU-99','SEAR-340-SU-03','BENE-ANT-9-S2'];
+  const registry=JSON.parse(content),key=file.includes('candidates')?'models':'assets';
+  const additions=registry[key].filter(row=>imageIDs.includes(row.boatModelId));
+  assert.deepEqual(additions.map(row=>row.boatModelId),imageIDs,'Missing or duplicate reviewed image addition: '+file);
+  const evidence=read('reports/model-image-sources-2026-10-24.json').sources;
+  for(const row of additions){
+   const source=evidence.find(item=>item.id===row.boatModelId);assert(source);
+   const candidate=key==='models'?row.candidates[0]:row;
+   assert.equal(candidate.externalThumbnailURL,source.imageURL);assert.equal(candidate.sourcePageURL,source.page);
+   if(key==='models'){assert.equal(row.candidates.length,1);assert.equal(row.selectedCandidate,0);}
+   else{assert.equal(row.status,'external_reference');assert.equal(row.publicUseEligible,false);assert.equal(row.path,null);}
+  }
+  registry[key]=registry[key].filter(row=>!imageIDs.includes(row.boatModelId));
+  content=JSON.stringify(registry,null,2)+'\n';
+ }
  if(['data/model-search-aliases.json','data/registry/boat-registry.json'].includes(file)){
   const rows=JSON.parse(content),{additionIDs}=require('./catalogue-evolution.cjs');
   assert.deepEqual(rows.filter(row=>additionIDs.includes(row.BoatModelID)).map(row=>row.BoatModelID),additionIDs,'Missing or duplicate integration identities: '+file);
@@ -135,6 +152,6 @@ const plain=x=>JSON.parse(JSON.stringify(x));
   assert(redirect.includes('http-equiv="refresh"')&&redirect.includes('noindex'),'Retired page must redirect');
   assert(!redirect.includes('class="specs"'),'Retired page still contains competing specifications');
  }
- const result={status:'PASS',models:modelCount,baseline:'checksum-verified original Git snapshot fixture',fieldOwners:Object.keys(rules.fields).length,filterProfiles:profiles.length,filterEvaluations:evaluations,knowledgeDisplays:guidanceChecks,comparisonModelChecks:comparisonChecks,contributionCatalogModels:contributionCatalog.length,imageResolution:imageCounts,imageFallbackChecks:fallbackChecks,staticModelPages:modelCount,historicalResearch:'unchanged',liveWrites:0};
+ const result={status:'PASS',models:modelCount,baseline:'checksum-verified original Git snapshot fixture',fieldOwners:Object.keys(rules.fields).length,filterProfiles:profiles.length,filterEvaluations:evaluations,knowledgeDisplays:guidanceChecks,comparisonModelChecks:comparisonChecks,contributionCatalogModels:contributionCatalog.length,imageResolution:imageCounts,imageFallbackChecks:fallbackChecks,staticModelPages:modelCount,historicalResearch:'existing entries unchanged; eleven reviewed image references added',liveWrites:0};
  fs.mkdirSync('reports',{recursive:true});fs.writeFileSync('reports/production-readiness-results.json',JSON.stringify(result,null,2)+'\n');console.log(JSON.stringify(result,null,2));
 })().catch(e=>{console.error(e);process.exitCode=1});

@@ -1,56 +1,68 @@
 # B-Atlas image coverage audit — 2026-10-24
 
-## Scope
-Source-data audit of `main` at start of branch, 1,002 canonical models. This is **not** a live HTTP or visual-correctness test. Run `node tools/audit-model-image-coverage.cjs` to recalculate counts from current registries.
+## Scope and refreshed baseline
 
-## Coverage
-- 236 models have an `available` local-asset registry entry with a non-placeholder path.
-- 766 have an `external_reference` registry entry with a URL.
-- 9 overlap both groups.
-- 14 models have neither of these registered photograph sources.
-- 775 external candidate URLs have a stored health status of `unknown`. No successful live reachability claim can be made without executing the existing `npm run check:image-health` command.
+Executed against PR #19 on `audit/model-image-coverage-20261024`, starting at `c840b5d6a97797bf08dc45b92cd8030c628c9420`. No merge or deployment. Counts refer to the 1,002 canonical model IDs, excluding orphaned registry entries.
 
-## Missing registered photographs (14)
-- `OCEA-36-SE` — Oceania 36 Sedan
-- `MNSH-34-MK3` — Mainship 34 MK III
-- `KDKR-44-AE` — Kadey-Krogen 44 AE
-- `BENE-ANT-9-S2` — Beneteau Antares 9 Series 2
-- `CRUY-3260` — Cruisers 3260
-- `SEAR-340-SU-99` — Sea Ray 340 Sundancer (1999 generation)
-- `SEAR-340-SU-03` — Sea Ray 340 Sundancer (2003 generation)
-- `PRES-41-DC` — President 41 Double Cabin
-- `PRES-42-TR` — President 42 Trawler
-- `OCAL-42-SE` — Ocean Alexander 42 Sedan
-- `DEFE-44-OC` — DeFever 44 Offshore Cruiser
-- `MRTR-40-SU` — Marine Trader 40 Sundeck
-- `CHBY-38-DC` — CHB 38 Double Cabin
-- `KHAS-40-SU` — Kha Shing 40 Sundeck
+The original report overstated coverage: the executable baseline returns **233 local**, **764 external**, **9 overlapping**, and **14 missing**, rather than 236/766. The earlier totals included noncanonical entries. The baseline's 775 candidate URLs included two orphaned model entries; these remain visible in the audit instead of being silently deleted.
 
-## Resolution order
-1. Select credible, **model-correct** source-page/photo candidates for these 14; verify name, hull/layout and production period, avoiding photos claimed as authorized where permissions are unknown.
-2. Run `npm run check:image-health` to test external URL reachability. Do not run `--write` without assessing the volume of metadata churn; use `--write` only when refreshing the tracking registry is approved.
-3. Review failed URLs and replace only when a valid alternate is independently verified.
-4. Visually audit photos for mislabeled models, duplicates, cross-generational images, broken redirects, and rights/attribution; HTTP 200 alone is insufficient.
-5. Re-run coverage audit, tests and production checks. No merge/deployment before owner approval.
+## Remediation
 
-### Reporting distinction
-A working local path, an externally referenced URL, and a photograph verified as depicting the stated model are **different** milestones. Placeholder fallback guarantees a stable page, not photographic coverage.
+Added **11 remote references** with precise source pages and candidate records. Temporary downloaded photographs were decoded and visually inspected alongside their source labels, production dates and layouts. The external-reference convention is preserved: photographs are not copied into the repository, reuse permission remains unverified, and `publicUseEligible` stays false. Source labels plus a visually consistent configuration do not independently identify a photographed hull.
 
+| Model ID | Source and visual review |
+|---|---|
+| PRES-41-DC | HMY President 41 Double Cabin, 1982–87; traditional aft-cabin flybridge cruiser |
+| PRES-42-TR | HMY President 42 Trawler, 2002–06; raised-pilothouse trawler, distinct from the 41 |
+| OCAL-42-SE | HMY Ocean Alexander 42 Sedan, 1986–93; sedan flybridge configuration |
+| DEFE-44-OC | HMY DeFever 44 Offshore Cruiser, 1981–2007; aft-cabin trawler configuration |
+| MRTR-40-SU | HMY Marine Trader 40 Sundeck, 1983–2000; covered aft sundeck |
+| CHBY-38-DC | HMY CHB 38 Double Cabin, 1978–85; double-cabin trawler configuration |
+| KHAS-40-SU | HMY Kha Shing 40 Sundeck, 1980–88; covered aft sundeck |
+| CRUY-3260 | HMY combined 3260/3270 Esprit guide, 1988–94; express photo, **Moderate** confidence because exact variant is unresolved |
+| SEAR-340-SU-99 | HMY 1999–2002 guide; its own photo, distinct from the 2003–08 generation |
+| SEAR-340-SU-03 | HMY 2003–08 guide; its own photo, distinct from the 1999–2002 generation |
+| BENE-ANT-9-S2 | Current BENETEAU Antares 9 page, Series 2 profile/layout diagrams and exterior photo; avoid the earlier-generation heritage page |
 
-## Seven new Taiwanese-trawler image-source pages (candidate discovery only)
+[Source evidence](model-image-sources-2026-10-24.json) records exact page/image URLs, titles, decoded dimensions and SHA-256 hashes. The eleven downloaded files have distinct hashes. No licensing claim is made.
 
-The following pages contain explicitly labeled model photographs and are suitable for **visual review of model identity**, but do not establish permission to copy images or long-term external availability. No image URL has been written into production registries.
+## Remaining coverage gaps
 
-| BoatModelID | Reference page | Published model years |
-|---|---|---|
-| PRES-41-DC | https://www.hmy.com/yachting/powerboat-guide/president/41-double-cabin-1982-87 | 1982–87 |
-| PRES-42-TR | https://www.hmy.com/yachting/powerboat-guide/president/42-trawler-2002-06 | 2002–06 |
-| OCAL-42-SE | https://www.hmy.com/yachting/powerboat-guide/ocean-alexander/42-sedan-1986-93 | 1986–93 |
-| DEFE-44-OC | https://www.hmy.com/yachting/powerboat-guide/defever/44-offshore-cruiser-1981-2007 | 1981–2007 |
-| MRTR-40-SU | https://www.hmy.com/yachting/powerboat-guide/marine-trader/40-sundeck-1983-2000 | 1983–2000 |
-| CHBY-38-DC | https://www.hmy.com/yachting/powerboat-guide/chb/38-double-cabin-1978-85 | 1978–85 |
-| KHAS-40-SU | https://www.hmy.com/yachting/powerboat-guide/kha-shing/40-sundeck-1980-88 | 1980–88 |
+Final canonical counts: **233 local**, **775 external**, **9 overlapping**, **3 missing**. All registered canonical local files exist; the auditor now checks for missing files separately from registry status.
 
-**Next integration boundary:** For each, inspect the page's specific image URL and verify that it genuinely depicts the named model, HTTP response/content type, availability/attribution and rights status. If B-Atlas's established external-reference policy permits linking rather than copying, register a model-specific external URL with its precise source page and transparent unverified status; retain a placeholder when no usable image can be established. Do not imply these are licensed photos.
+- `OCEA-36-SE`: the existing record's evidence links point to Ocean Alexander, while its corrected model character explicitly identifies a separate Oceania Yachts boat. Do not substitute an Ocean Alexander image.
+- `MNSH-34-MK3`: the model-specific 1983 MarineSource page returns HTTP 200 but exposes a placeholder and recommendations for other models; these are unsuitable replacements. The HMY 1978–82 Mainship 34 guide covers an earlier generation.
+- `KDKR-44-AE`: the recorded manufacturer history URL returns HTTP 410. No independently established AE-specific photograph was obtained; do not substitute a generic Krogen 44.
 
-**Image-health limitation:** GitHub connector analysis is read-only and does not execute Node in the repo. The existing checker must be run in the project checkout against all 775 external candidates, with timeout/rate limiting appropriate to remote hosts. Avoid automatically committing failures as definitive permanent broken links when bot protection or temporary failures are possible.
+Retain placeholders for these three until model-correct imagery is established.
+
+## Live URL health and existing review backlog
+
+The checker now bounds each candidate to 15 seconds across HEAD and GET fallback, cancels unused response bodies, requires an image content type, and supports `--report PATH` for response details. Eight workers remain in use. A live success establishes reachability/content type, not model identity or licensing.
+
+The baseline run tested all 775 candidates: **687 healthy, 88 failed**. The final run tested 786 candidates, including the eleven additions: **698 healthy, 88 failed**. See the checked summary and failures in [the live results](model-image-health-2026-10-24.json). No `--write` was used: existing health metadata remains `unknown`, avoiding wholesale tracking churn and permanent conclusions from one run.
+
+The baseline failures comprise 85 HTTP 404s, one HTTP 403, and two transport errors. Failures by source: HMY 63, boats.com 11, Formula 3, Jeanneau 3, Fjord 3, boatsonline.com.au 2, Carver 2, Alexander Marine USA 1. Existing failed URLs remain unchanged: each replacement needs separate source/visual verification. HTTP 403 and transport errors can reflect access policy or temporary conditions.
+
+Duplicate-URL screening found three cross-model groups requiring review:
+
+- `FWIN-315-EX` / `FWIN-325-EX`: shared HMY combined-model guide photo.
+- `PURS-OS375` / `PURS-OS385`: shared HMY combined-model guide photo.
+- `COBA-A36` / `COBA-A36BR`: shared URL whose filename explicitly describes A36 BR; possible variant mismatch.
+
+These are review flags, not proof of incorrect imagery. This session visually reviewed the eleven additions, not every existing photograph. A full catalogue visual/rights audit remains outstanding.
+
+Existing orphan IDs remain reported: local `BENE-34-ST`, `CHBB-34-TC`, `GRNL-33-HY`, `JEAU-NC1095`, `JEAU-NC895`; external and candidates `CHCR-55-CO`, `CHCR-60-CO`. Identity reconciliation requires evidence before moving or deleting these records.
+
+## Reproduction and validation
+
+- `node tools/audit-model-image-coverage.cjs`: final counts above, no missing canonical local files. `--strict` intentionally exits 1 while the three gaps and orphan records remain.
+- `NODE_USE_ENV_PROXY=1 npm run check:image-health -- --report /tmp/b-atlas-image-health.json`: on this Node 24 executor, explicitly honors the inherited proxy. Run with the supported per-command network permission. Other Node runtimes must use their supported proxy configuration.
+- `npm run test:image-health`: passes deterministic coverage of image responses, missing/non-image types, HEAD-to-GET fallback, shared timeout signal, body cleanup and transport errors.
+- `npm run verify:production`: passes the canonical checks, test suite, moderation/page checks, public build, deployment artifact validation, production readiness/worker checks, baseline/secret/repository guards. These are local production validation checks, not a deployment or live-site test.
+
+## Corrected environment diagnosis
+
+The default command sandbox denied network sockets (`Operation not permitted`), which surfaced in curl as failure to connect to `proxy:8080`. With supported per-command network permission, the unchanged proxy returned GitHub HTTP 200 and cloning succeeded. The proxy was not shown to be down; the earlier PR blocker comment's root-cause attribution was incorrect. No proxy bypass, TLS relaxation, credential exposure or security configuration changes were needed.
+
+The historical research checksum guard explicitly permits only the eleven reviewed image additions and verifies their source URLs and external-reference status. After removing those additions in memory, both image registries must still match the original snapshot checksums; all existing records remain protected.
