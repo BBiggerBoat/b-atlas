@@ -35,3 +35,22 @@ Source-data audit of `main` at start of branch, 1,002 canonical models. This is 
 
 ### Reporting distinction
 A working local path, an externally referenced URL, and a photograph verified as depicting the stated model are **different** milestones. Placeholder fallback guarantees a stable page, not photographic coverage.
+
+
+## Seven new Taiwanese-trawler image-source pages (candidate discovery only)
+
+The following pages contain explicitly labeled model photographs and are suitable for **visual review of model identity**, but do not establish permission to copy images or long-term external availability. No image URL has been written into production registries.
+
+| BoatModelID | Reference page | Published model years |
+|---|---|---|
+| PRES-41-DC | https://www.hmy.com/yachting/powerboat-guide/president/41-double-cabin-1982-87 | 1982–87 |
+| PRES-42-TR | https://www.hmy.com/yachting/powerboat-guide/president/42-trawler-2002-06 | 2002–06 |
+| OCAL-42-SE | https://www.hmy.com/yachting/powerboat-guide/ocean-alexander/42-sedan-1986-93 | 1986–93 |
+| DEFE-44-OC | https://www.hmy.com/yachting/powerboat-guide/defever/44-offshore-cruiser-1981-2007 | 1981–2007 |
+| MRTR-40-SU | https://www.hmy.com/yachting/powerboat-guide/marine-trader/40-sundeck-1983-2000 | 1983–2000 |
+| CHBY-38-DC | https://www.hmy.com/yachting/powerboat-guide/chb/38-double-cabin-1978-85 | 1978–85 |
+| KHAS-40-SU | https://www.hmy.com/yachting/powerboat-guide/kha-shing/40-sundeck-1980-88 | 1980–88 |
+
+**Next integration boundary:** For each, inspect the page's specific image URL and verify that it genuinely depicts the named model, HTTP response/content type, availability/attribution and rights status. If B-Atlas's established external-reference policy permits linking rather than copying, register a model-specific external URL with its precise source page and transparent unverified status; retain a placeholder when no usable image can be established. Do not imply these are licensed photos.
+
+**Image-health limitation:** GitHub connector analysis is read-only and does not execute Node in the repo. The existing checker must be run in the project checkout against all 775 external candidates, with timeout/rate limiting appropriate to remote hosts. Avoid automatically committing failures as definitive permanent broken links when bot protection or temporary failures are possible.
