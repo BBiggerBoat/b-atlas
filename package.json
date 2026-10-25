@@ -14,7 +14,7 @@
     "validate:backup": "node developer/validate-backup.js",
     "restore:sql": "node developer/backup-to-d1-sql.js",
     "check:image-health": "node developer/check-image-health.js",
-    "test:image-health": "node tests/image-health.cjs",
+    "test:image-health": "node tests/image-health.cjs && node tests/image-review.cjs",
     "update:image-health": "node developer/check-image-health.js --write",
     "generate:models": "node developer/canonical-store.cjs",
     "check:canonical": "node developer/canonical-store.cjs --check",
